@@ -1,0 +1,450 @@
+{
+  "Metadata": {
+    "title": "OmniMES - Fertigungsleitsystem",
+    "description": "OmniMES is a state-of-the-art Manufacturing Execution System, streamlining production processes for enhanced efficiency and quality control",
+    "keywords": "Fertigungsleitsystem, OmniMES, Produktioneffizienz, Qualitätskontrolle, moderne Produktionstechnologie",
+    "postNotFound": "Beitrag nicht gefunden",
+    "blog_title": "OmniMES Blog: Entdecken Sie die Welt der Industrie 4.0",
+    "blog_desc": "Entdecken Sie die Welt von OmniMES und Industrie 4.0 auf unserem Blog! Entdecken Sie innovative Inhalte, lernen Sie die Geheimnisse der Produktionseffizienz und moderner Technologien kennen.",
+    "blog_keywords": "Industrie 4.0, Fertigungstechnologien, MES-Software, Innovationen in der Industrie, Produktionswirkungsgrad, Prozessautomatisierung, Produktionsmanagement, Unternehmensdigitalisierung, Analyse von Produktionsdaten, Moderne industrielle Lösungen"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, pl {Polish} en {English} de {Deutsch} other {Unbekannt}}"
+  },
+  "Error": {
+    "title": "Etwas ist schiefgelaufen!",
+    "description": "<p>Leider ist ein Fehler aufgetreten.</p><p>Sie können versuchen, die Seite <retry>neu zu laden</retry>, die Sie besucht haben.</p>"
+  },
+  "NotFound": {
+    "title": "Leider konnten wir diese Seite nicht finden.",
+    "description": "Aber keine Sorge, auf unserer Homepage finden Sie noch viele andere Dinge.",
+    "action": "Zurück zur Startseite"
+  },
+  "HeaderLinks": {
+    "home": "Startseite",
+    "blog": "Blog",
+    "about": "Über uns",
+    "project": "Projekt",
+    "contact": "Kontakt",
+    "main": "Menu",
+    "page": "seite",
+    "faq": "FAQ",
+    "offer": "Angebot",
+    "privacy-policy": "Datenschutzrichtlinie",
+    "tags": "Stichworte",
+    "terms": "Regelwerk",
+    "resources": "Ressourcen",
+    "offerDesc": "Entdecken Sie die Vielfalt der Möglichkeiten, die unser OmniMES-System bietet, und erfahren Sie, warum unser Angebot die perfekte Lösung für Ihr Unternehmen ist.",
+    "projectDesc": "Machen Sie sich mit dem OmniMES-Projekt vertraut - einer Initiative, die Standards für Effizienz und Kontrolle im Produktionsprozess neu definiert.",
+    "resourcesDesc": "Entdecken Sie unsere Bildungsressourcen, die Ihnen helfen, unser System besser zu verstehen.",
+    "faqDesc": "Nutzen Sie unser umfangreiches Frage- und Antwortset, um klare Erklärungen zu Funktionen, Preisen, Nutzungsbedingungen und mehr zu erhalten.",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "omniMESDropDown": "Erweitern Sie das OmniMES-bezogene Menü",
+    "titleSectionDropDown": "Geschäftslösungen",
+    "titleSectionDropDown2": "Unterstützung und Informationen",
+    "demo": "Demo-Schreibtisch",
+    "titleSectionDropDown3": "Präsentation",
+    "demoDesc": "Präsentation des dynamischen OmniMES-Desktops - Demoversion",
+    "searchSubtitle": "Schauen Sie sich das Angebot des OmniMES-Systems an.",
+    "searchSubtitle2": "Erfahren Sie mehr über OmniMES.",
+    "searchSubtitle3": "Überprüfen Sie die FAQs und finden Sie Antworten auf Fragen.",
+    "searchSubtitle4": "Laden Sie Materialien zum System herunter."
+  },
+  "Blog": {
+    "title": "Alle Artikel",
+    "NotFound": "Entschuldigung, keine verfügbaren Beiträge."
+  },
+  "ListLayout": {
+    "search": "Artikel durchsuchen",
+    "publishedOn": "Veröffentlicht auf",
+    "NotFound": "Entschuldigung, keine Beiträge gefunden."
+  },
+  "Pagination": {
+    "next": "Nächste",
+    "prev": "Vorherige",
+    "of": "von"
+  },
+  "PostLayout": {
+    "publishedOn": "Veröffentlicht auf",
+    "authors": "Autoren",
+    "name": "Name",
+    "occupation": "Beruf",
+    "tags": "Stichworte",
+    "back": "Zurück zum Blog"
+  },
+  "HeroSection": {
+    "title": "Optimiere deine produktion mit unserem",
+    "title2": "MES-System",
+    "subTitle": "Steigere die effizienz, reduziere kosten und erziele eine perfekte kontrolle in jedem produktionsstadium mit unserem MES-System",
+    "contact": "Kontakt",
+    "more": "Mehr erfahren"
+  },
+  "OmnimesInformation": {
+    "smallSubtitle": "Was ist OmniMES?",
+    "heading": "ist ein innovatives produktionserfüllungssystem",
+    "description": "Überwacht prozesse in echtzeit, ermöglicht eine kontinuierliche analyse und beseitigung von engpässen. Mit zuverlässigen informationen und gesteigerter effizienz revolutioniert OmniMES die produktionsleitung und eröffnet neue möglichkeiten zur optimierung.",
+    "title1": "Produktionspotenzial freischalten",
+    "descriptionCard1": "Wir führen ihr fertigungsunternehmen durch den prozess der digitalen transformation.",
+    "title2": "Analyse der kundenbedürfnisse",
+    "descriptionCard2": "Wir identifizieren präzise, was geändert, angepasst oder verbessert werden muss, um die implementierung des systems so effizient wie möglich zu gestalten. Dies umfasst sowohl technische aspekte wie die integration von maschinen als auch organisatorische aspekte.",
+    "title3": "Vorbereitung der fabrikinfrastruktur",
+    "descriptionCard3": "Wir werden die umfassende vorbereitung der fabrikinfrastruktur in angriff nehmen und die notwendigen mittel für die effektive umsetzung digitaler lösungen bereitstellen. Unser ziel ist es, eine solide grundlage für die moderne produktion zu schaffen.",
+    "title4": "Systemimplementierung",
+    "descriptionCard4": "Ein expertenteam wird die effektive implementierung des systems durchführen, das auf den ergebnissen der analyse basiert. Gemeinsam werden wir das potenzial ihrer produktion freischalten, indem wir innovative technologische lösungen einführen."
+  },
+  "Feature": {
+    "Monitoring": "Echtzeitüberwachung des maschinenstatus",
+    "Monitoring_desc": "Absolute kontrolle über den maschinenstatus, ermöglicht sofortige reaktion auf mögliche ausfälle und effektive verfolgung der produktionsleistung in echtzeit.",
+    "Creator": "Intuitiver konfigurationsassistent",
+    "Creator_desc": "Außergewöhnlich einfache anpassung der systemeinstellungen durch einen intuitiven konfigurationsassistenten, der eine flexible anpassung des systems an individuelle bedürfnisse und produktionsanforderungen ermöglicht.",
+    "Analyse": "Schnelle ereignisanalyse auf der produktionslinie",
+    "Analyse_desc": "Sofortige analyse von ereignissen auf der produktionslinie, identifizierung potenzieller probleme und reduzierung der reaktionszeit zur sicherung des reibungslosen ablaufs der produktionsprozesse.",
+    "Schedule": "Fähigkeit zur erstellung von produktionsplänen",
+    "Schedule_desc": "Flexible produktionsplanung durch funktionen zur erstellung von zeitplänen, die eine optimale ressourcennutzung ermöglichen und die anpassung der produktion an sich ändernde bedingungen erleichtern.",
+    "Pulpits": "Erstellung von sich dynamisch verändernden Datenanalyse-Dashboards",
+    "Pulpits_desc": "Erstellung interaktiver dashboards mit sich dynamisch verändernden datenanalysen, ermöglicht eine schnelle bewertung des produktionsstatus und die fokussierung auf wichtige leistungskennzahlen.",
+    "Raports": "Flexible berichterstellung im konfigurator",
+    "Raports_desc": "Der berichtskonfigurator bietet die möglichkeit zur erstellung flexibler berichte, die auf spezifische anforderungen zugeschnitten sind und die sammlung, analyse und präsentation wichtiger produktionsbezogener daten erleichtern.",
+    "Feature": "Besonderheit",
+    "title": "Effektive MES-Lösungen für maximale kontrolle und optimierung der produktion",
+    "desc": "Automatisierte Überwachung von produktionsprozessen - erlangen sie die volle kontrolle und maximieren sie die effizienz ihrer produktion mit innovativen funktionalitäten des OmniMES-Systems."
+  },
+  "Time": {
+    "smallSubtitle": "Zeit bei pausen sparen!",
+    "heading": "Was kostet Sie eine stunde stillstand? Mit",
+    "heading_part2": " können wir diese Kosten erheblich reduzieren.",
+    "description": "Wie erreichen wir das?",
+    "text": "Sofortige Informationen ermöglichen eine effektive Identifizierung von fehlerhaften Elementen im Maschinenpark, wodurch nicht nur die für Reparaturen benötigte Zeit minimiert wird, sondern auch Mikroausfallzeiten, die die Gesamteffizienz der Produktion beeinträchtigen können. Dadurch kann Ihr Unternehmen effizienter arbeiten und sowohl Zeit als auch Kosten im Zusammenhang mit Maschinenstillständen sparen."
+  },
+  "Team": {
+    "company": "Die Automatisierung eines Unternehmens ist ein komplexer Prozess, der Fachkenntnisse und zuverlässige Lieferanten erfordert. Aus diesem Grund hat sich das Unternehmen MultiProjekt zum Ziel gesetzt, polnische Unternehmen in der Automatisierung der Industrie auf jeder Stufe zu unterstützen. MultiProjekt ist ein bewährter Lieferant von Automatisierungskomponenten und Maschinenteilen mit 20-jähriger Erfahrung. Was uns jedoch am meisten auszeichnet, ist die fachkundige Beratung und der individuelle Ansatz gegenüber dem Kunden.",
+    "descriptionCompany": "Dank jahrelanger Erfahrung in der Automatisierung hat das Unternehmen MultiProjekt ein eigenes Programm namens OmniMES entwickelt. Diese Software reagiert nicht nur, sondern prognostiziert auch Veränderungen in der Industrie. Es verspricht eine verbesserte Effizienz, höhere Qualität und Vorhersehbarkeit der Fertigungsprozesse.",
+    "descriptionTeam": "Wir sind ein eingespieltes Team, das seine Fähigkeiten und Enthusiasmus bündelt, um unseren Kunden Software höchster Qualität zu liefern. Jedes Mitglied unseres Teams ist Experte auf seinem Gebiet, verfügt über reichhaltige Erfahrung und entwickelt sich ständig in seinem Fachgebiet weiter.",
+    "tilte": "Unser Team"
+  },
+  "ContactHeading": {
+    "title": "Bestellen Sie noch heute OmniMES und erreichen Sie ein höheres Niveau",
+    "message1": "Effizienz",
+    "message2": "Innovation",
+    "message3": "Kontrolle",
+    "message4": "Wettbewerbsfähigkeit",
+    "message5": "Optimierung",
+    "message6": "Exzellenz"
+  },
+  "Contact": {
+    "title": "Kontaktieren Sie den Vertrieb",
+    "description": "Kontaktieren Sie uns, und wir öffnen die Türen zu neuen Möglichkeiten für Ihr Unternehmen. Warten Sie nicht - nutzen Sie die Gelegenheit, Ihre Produktionsprozesse zu optimieren!"
+  },
+  "Form": {
+    "FirstNameLabel": "Vorname",
+    "FirstNamePlaceholder": "Jan",
+    "FirstNameMessage": "Mindestens 3 Zeichen erforderlich",
+    "LastNameLabel": "Nachname",
+    "LastNamePlaceholder": "Kowalski",
+    "LastNameMessage": "Mindestens 3 Zeichen erforderlich",
+    "CompanyLabel": "Firma",
+    "CompanyPlaceholder": "Multiprojekt",
+    "CompanyMessage": "Mindestens 3 Zeichen erforderlich",
+    "EmailLabel": "E-Mail",
+    "EmailPlaceholder": "Jan.Kowalski@gmail.com",
+    "EmailMessage": "Bitte geben Sie eine gültige E-Mail-Adresse an",
+    "PhoneLabel": "Telefonnummer",
+    "PhonePlaceholder": "888456172",
+    "PhoneMessage": "Bitte geben Sie eine gültige Telefonnummer an",
+    "SelectLabel": "Land auswählen",
+    "Poland": "Polen",
+    "England": "England",
+    "Switzerland": "Schweiz",
+    "Germany": "Deutschland",
+    "Spain": "Spanien",
+    "France": "Frankreich",
+    "Italy": "Italien",
+    "TextareaLabel": "Nachricht",
+    "TextareaPlaceholder": "Geben Sie Ihre Nachricht ein",
+    "TextareaMessage": "Mindestens 3 Zeichen erforderlich",
+    "Agree": "Zustimmen",
+    "AgreeMessage": "Durch Auswahl dieser Option stimmen Sie unserer",
+    "Privacy": "Datenschutzerklärung zu",
+    "DangerAlertTitle": "Nicht alle Felder wurden ausgefüllt.",
+    "DangerAlertMessage": "Bitte füllen Sie alle erforderlichen Felder aus und senden Sie das Formular erneut.",
+    "SuccessForm": "Ihre Nachricht wurde erfolgreich gesendet.",
+    "SuccessFormMessage": "Vielen Dank für Ihre Kontaktaufnahme! Unser Team wird sich in Kürze bei Ihnen melden.",
+    "ErrorForm": "Leider konnte die Nachricht nicht gesendet werden.",
+    "ErrorFormMessage": "Bitte versuchen Sie es erneut oder nehmen Sie direkt Kontakt mit uns auf.",
+    "Button": "Lass uns reden"
+  },
+  "Widget": {
+    "title": "Entfesseln Sie das Potenzial mit OmniMES! Holen Sie sich jetzt ein Angebot und optimieren Sie Ihre Produktion noch heute.",
+    "text": "Jetzt bestellen"
+  },
+  "Opinion": {
+    "opinion": "Meinungen",
+    "opinion1": "OmniMES ist eine Revolution in unserem Produktionsprozess! Dank dieses Systems haben wir nicht nur die volle Kontrolle über die Produktion erlangt, sondern auch neue Effizienzlevel erreicht. Dieses Tool ist unverzichtbar für jedes Unternehmen, das seine Standards erhöhen und operative Exzellenz erreichen möchte.",
+    "opinion2": "Die Erfahrung mit dem OmniMES-Team war äußerst professionell. Vom ersten Kontakt bis zur vollständigen Implementierung des Systems fühlten wir uns von kompetenten und freundlichen Experten unterstützt. Ihr Engagement für unseren Erfolg hebt sich wirklich von anderen Dienstleistern ab.",
+    "opinion3": "Als schnell wachsendes Unternehmen schätzen wir die Flexibilität und Skalierbarkeit, die OmniMES bietet. Das System passt sich perfekt an unsere wachsenden Anforderungen an und ermöglicht es uns, die Wettbewerbsfähigkeit auf dem Markt zu erhalten. Es ist ein Schlüsselelement unseres Erfolgs.",
+    "opinion4": "OmniMES liefert nicht nur Echtzeitdaten, sondern stattet uns auch mit analytischen Werkzeugen aus, die es uns ermöglichen, zukünftige Trends vorherzusagen. Dies ist zweifellos ein Wettbewerbsvorteil, der es uns ermöglicht, strategische Entscheidungen mit einem vollständigen Verständnis des Marktes zu treffen.",
+    "opinion5": "Die Implementierung des OmniMES-Systems verlief reibungslos dank des Engagements und Professionalität des Implementierungsteams. Jeder Schritt wurde sorgfältig geplant, und die Spezialisten waren immer bereit, unsere Fragen zu beantworten. Es ist ein Gefühl voller Zuversicht, dass wir in guten Händen sind.",
+    "opinion6": "OmniMES ist mehr als nur ein System - es ist ein moderner Ansatz für die Produktion. Dank dieser Plattform haben wir unsere Prozesse revolutioniert und Innovationen eingeführt, die zu erheblichen Effizienzsteigerungen geführt haben. Ein unverzichtbares Werkzeug für Unternehmen, die der Konkurrenz einen Schritt voraus sein möchten.",
+    "title": "Was sagen sie über uns?",
+    "other": "andere"
+  },
+  "Timeline": {
+    "step1": "Schritt 1",
+    "step2": "Schritt 2",
+    "step3": "Schritt 3",
+    "step4": "Schritt 4",
+    "step5": "Schritt 5",
+    "title1": "Öffnen Sie die Türen zur Innovation! Starten Sie eine Revolution in Ihrer Fabrik mit nur einem Anruf.",
+    "title2": "Entdecken Sie wichtige Tipps zur Optimierung der Produktion in Ihrer Fabrik.",
+    "title3": "Digitalisieren Sie Ihre Produktion noch heute zum Vorteil der Effizienz und Wettbewerbsfähigkeit Ihrer Fabrik.",
+    "title4": "Digitale Optimierung Ihrer Produktion ohne zusätzliche Kosten",
+    "title5": "Wir bieten vollständige Unterstützung und notwendiges Wissen, um das Potenzial unseres Systems voll auszuschöpfen.",
+    "subtitle1": "Kontaktieren Sie uns",
+    "subtitle2": "Innovatives Produktionsaudit",
+    "subtitle3": "Lösung maßgeschneidert auf Ihre Bedürfnisse",
+    "subtitle4": "Kostenvoranschlag und kostenlose Systemimplementierung",
+    "subtitle5": "Vollständige Unterstützung und kostenlose Schulung",
+    "description1": "Initiieren Sie den Prozess, indem Sie uns anrufen, damit wir Ihre Bedürfnisse verstehen und den ersten Schritt zur Transformation Ihrer Fabrik planen können.",
+    "description2": "Unsere Experten kommen zu Ihrer Fabrik und führen eine umfassende Produktionsprüfung durch. Innerhalb weniger Tage erhalten Sie detaillierte Ergebnisse, einschließlich Empfehlungen und potenziellen Optimierungsbereichen, die es Ihnen ermöglichen, schnell den Weg zur Produktionsexzellenz einzuschlagen.",
+    "description3": "Ob Ihre aktuelle Infrastruktur die Anforderungen für die MES-Implementierung erfüllt oder Anpassungen erfordert, unser Unternehmen bietet vollständige Unterstützung, um Ihre Produktion an moderne Standards anzupassen. Von der Auswahl der richtigen Komponenten bis zur Bereitstellung technischer Beratung konzentrieren wir uns auf die Modernisierung Ihrer Fabrik.",
+    "description4": "Wenn Ihre Fabrik für die MES-Implementierung bereit ist, werden wir mit einem individuellen Serviceangebot fortfahren. Unser Angebot wird alle notwendigen Elemente enthalten und Ihnen Transparenz und Klarheit hinsichtlich der Kosten bieten. Ob Sie eine grundlegende Implementierung oder ein vollständiges individuelles Paket benötigen, wir werden uns an Ihre Bedürfnisse anpassen.",
+    "description5": "Wir bieten Ihrem Team kostenlose Schulungen an, damit alle Mitarbeiter das neue System effektiv nutzen können. Unsere Zusammenarbeit endet nicht hier - wir unterstützen und aktualisieren das System während des gesamten Abonnementzeitraums, um kontinuierliche Entwicklung und Produktionsexzellenz zu gewährleisten.",
+    "text": "Mit uns ist es einfach",
+    "textHeading": "Bringen Sie Ihre Produktion noch heute auf ein neues Niveau",
+    "textDesc": "MES auf Knopfdruck - mit uns durch jede Phase der Implementierung"
+  },
+  "Footer": {
+    "title": "Innovatives Produktionserfassungssystem - Dein Auge auf dem Produktionsprozess",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "Cooperation": {
+    "subtitle": "Zusammenarbeit",
+    "title": "Sie haben uns vertraut"
+  },
+  "Video": {
+    "title": "Schauen Sie sich ein kurzes Video an, das unser System vorstellt!"
+  },
+  "Performance": {
+    "subtitle": "Überwachung der Produktivität",
+    "title": "Automatisch Daten von Ihren Maschinen sammeln",
+    "desc": "Das OmniMES-System ist spezialisiert auf die effiziente Erfassung von Daten aus verschiedenen Maschinen, unabhängig von deren Alter oder technologischem Fortschritt. Sein fortschrittliches Modul zur Maschinenkommunikation wurde entwickelt, um eine sichere und effiziente Kommunikation zu gewährleisten.",
+    "heading": "Die vollständige Kontrolle über den Produktionsprozess wird durch die fortschrittliche Kommunikation der Maschinen mit dem OmniMES-System möglich. Das System erleichtert die Integration mit über 300 Kommunikationsprotokollen von Steuerungen und HMI-Panels.",
+    "heading1": "Überwachen Sie Maschinen",
+    "s1": "OmniMES zeigt Produktionsdaten in Echtzeit an.",
+    "desc1": "Dieses System erfasst nicht nur Daten, sondern ermöglicht auch eine Echtzeitanalyse, die schnelle Reaktionen auf Probleme oder die Optimierung des Produktionsprozesses ermöglicht. OmniMES legt eine solide Grundlage für effiziente Produktion, Leistungsverbesserung und Minimierung potenzieller Ausfälle.",
+    "alt1": "Beispielkommunikationsprotokolle mit dem MES-System",
+    "alt2": "Produktionslinie mit Beispielen für Signale, die von Maschinen gesendet werden",
+    "heading2": "Erhöhen Sie die Kontrolle über den Produktionsprozess",
+    "s2": "Die Möglichkeit, jede Maschine individuell und kollektiv in Echtzeit zu überwachen, bietet detaillierte Einblicke in die Qualität Ihrer Produktion.",
+    "desc2": "Mit präzisen Daten, die von jeder Maschine gesammelt werden, ermöglicht das System ein genaues Verständnis des aktuellen Produktionsstatus. Dies ermöglicht eine schnelle Erkennung potenzieller Probleme, Minimierung von Ausfallzeiten und Optimierung des Produktionsprozesses.",
+    "heading3": "Sammeln und analysieren Sie historische Daten",
+    "s3": "Die intuitive und klare Anzeige von Produktionsdaten spart Zeit bei der Analyse.",
+    "desc3": "Das Sammeln und Analysieren historischer Daten ist ein entscheidendes Element im Prozess der Produktionsverbesserung. Mit dem OmniMES-System erfolgt die Erfassung von Informationen zum Produktionsprozess automatisch und fehlerfrei. Diese Daten dienen als wertvolle Wissensquellen und ermöglichen die Verfolgung von Trends, die Identifizierung von Mustern und die Erkennung von Anomalien."
+  },
+  "Tags": {
+    "title": "OmniMES - Liste der verwendeten Tags auf der Website",
+    "desc": "Liste der verwendeten Tags auf der Website",
+    "keywords": "Tag, Tags, Liste, Liste der Tags",
+    "tags": "Tags",
+    "notfoundTag": "Tags nicht gefunden"
+  },
+  "Tag": {
+    "title": "Tag {tag} - Liste von Beiträgen mit dem Tag {tag}",
+    "desc": "Die Seite zeigt eine Zusammenstellung von Beiträgen, die mit dem Tag {tag} verbunden sind. Beim Durchsuchen dieser Seite entdecken Sie verschiedene Inhalte rund um das Thema {tag}, die Sie interessieren und Ihr Wissen zu diesem Thema erweitern können.",
+    "keywords": "tag, tags, index, tag index, list of tags, list of posts, posts, {tag}",
+    "notFound": "Entschuldigung, keine Tags gefunden",
+    "displayPostsNotFound": "Entschuldigung, keine Beiträge mit dem Tag {tag} gefunden",
+    "publishedOn": "Veröffentlicht auf",
+    "allPost": "Alle Artikel",
+    "link": "Beiträge mit dem Tag anzeigen {tag}"
+  },
+  "ProjectCard": {
+    "linkto": "Link zur {title}-Seite",
+    "LearnMore": "Mehr erfahren",
+    "titleMonitoring": "Echtzeitüberwachung",
+    "descriptionMonitoring": "Überwachen Sie Ihre Produktionsprozesse in Echtzeit, um schnell auf etwaige Anomalien zu reagieren und die Leistung zu optimieren.",
+    "titlegpt": "GPT-Assistentensystem",
+    "descriptiongpt": "Nutzen Sie die fortschrittliche GPT-Technologie, um sofortige Unterstützung und Datenanalyse im OmniMES-System zu erhalten.",
+    "titleConfig": "Flexibler Konfigurator",
+    "descriptionConfig": "Passen Sie das OmniMES-System mit dem flexiblen Konfigurator an Ihre individuellen Bedürfnisse an, der eine einfache Anpassung von Funktionen und Benutzeroberfläche ermöglicht.",
+    "titleDashboard": "Interaktive Dashboards zur Datenexploration und -visualisierung",
+    "descriptionDashboard": "Erkunden und analysieren Sie Produktionsdaten in intuitiven interaktiven Dashboards, um fundierte Geschäftsentscheidungen zu treffen.",
+    "titlePlanogram": "Produktionsprozessvisualisierer",
+    "descriptionPlanogram": "Verfolgen und verstehen Sie Ihre Produktionsprozesse durch intuitive Visualisierungen, die die Identifizierung von Optimierungsbereichen erleichtern.",
+    "titleHistory": "Ereignishistorie",
+    "descriptionHistory": "Verfolgen Sie die Ereignishistorie Ihrer Produktion, um Prozessabläufe besser zu verstehen und diese Informationen zur Verbesserung der Betriebsabläufe zu nutzen.",
+    "titleSchedule": "Produktionsplan",
+    "descriptionSchedule": "Planen und verwalten Sie Produktionspläne effizient, unter Berücksichtigung variabler Faktoren und Sicherstellung einer rechtzeitigen Auftragsabwicklung.",
+    "titleAnalyse": "Analysemodule",
+    "descriptionAnalyse": "Nutzen Sie vielfältige Analysemodule, um tiefer in die Leistung und Effizienz Ihrer Produktion einzutauchen.",
+    "titleReports": "Berichterstellung",
+    "descriptionReports": "Erstellen Sie ganz einfach personalisierte Berichte, um wichtige Leistungsindikatoren und geschäftsrelevante Produktionsinformationen zu präsentieren.",
+    "titleAdministration": "Benutzerverwaltung",
+    "descriptionAdministration": "Verwalten Sie Benutzerberechtigungen und Zugriffe im OmniMES-System, um Datensicherheit und effiziente Ressourcennutzung zu gewährleisten."
+  },
+  "Project": {
+    "project": "OmniMES - Produktionserfüllungssystem",
+    "projectDesc": "Erfahren Sie mehr über das Projekt OmniMES - eine Initiative, die die Standards für Effizienz und Kontrolle im Produktionsprozess neu definiert."
+  },
+  "Offer": {
+    "title": "OmniMES - Entdecken Sie das Angebot und revolutionieren Sie Ihre Produktion mit dem OmniMES-System",
+    "desc": "Entdecken Sie das innovative OmniMES-System, das die Verwaltung von Produktionsprozessen revolutioniert. Nutzen Sie fortschrittliche Funktionen, interaktive Datenanalysetools und flexible Konfigurationen, um Effizienz und Kontrolle in der Produktion zu optimieren. Mit OmniMES können Sie schnell auf Veränderungen reagieren, Prozesse optimieren und ausgezeichnete Geschäftsergebnisse erzielen.",
+    "keywords": "OmniMES-System, Produktionsmanagement, Prozessoptimierung, Datenanalysetools, Flexible Konfiguration, Produktionswirkungsgrad, Prozesskontrolle, Innovative Lösungen, Effektives Management, Ausgezeichnete Geschäftsergebnisse",
+    "howMany": "Anzahl der Maschinen",
+    "machineDesc": "Ab {machine} Stück",
+    "message": "{count, plural, =3 {Monate} =6 {Monate} other {Monate}}",
+    "perMachine": "pro Maschine",
+    "aria": "Monatliches Abonnement für die Überwachung von Maschinen - Preisliste.",
+    "contact": "Kontakt",
+    "subtitle": "Warum OmniMES wählen?",
+    "heading": "Exzellenz in der Produktionsdurchführung",
+    "descript": "Fertigungsausführungssysteme (MES) spielen eine entscheidende Rolle bei der effizienten Durchführung der Produktion. Unser MES-System bietet umfassende Lösungen, die eine Prozessoptimierung und Produktionsüberwachung ermöglichen.",
+    "head2": "Vorteile der Nutzung unseres MES-Systems",
+    "head2desc": "Mit OmniMES identifizieren Sie schnell Verbesserungsbereiche, optimieren Kosten und gewährleisten eine hervorragende Produktqualität, um die Position Ihres Unternehmens auf dem Markt zu stärken und echte finanzielle Vorteile zu erzielen.",
+    "cta": "Heute beginnen",
+    "info": "*Die Preisliste stellt kein Angebot dar",
+    "head3": "Warten Sie nicht! Optimieren Sie Ihre Produktion noch heute",
+    "head3desc": "Erfragen Sie ein individuelles kommerzielles Angebot für Ihre Fabrik"
+  },
+  "FAQ": {
+    "options": "Optionen",
+    "service": "Dienstleistungen",
+    "hardware": "Hardware",
+    "subtitle": "Alles, was du wissen musst – FAQ",
+    "heading": "Finde Antworten auf die häufig gestellten Fragen",
+    "desc": "Willkommen in unserem FAQ, wo wir Antworten auf die Fragen sammeln, die unsere Kunden am häufigsten stellen. Hier findest du umfassende Informationen zu unserem System, damit du schnell die benötigten Informationen finden und eventuelle Zweifel klären kannst."
+  },
+  "AboutMeta": {
+    "title": "OmniMES - Über uns - Lernen Sie unser Unternehmen und unser Team von Spezialisten kennen",
+    "desc": "Erfahren Sie mehr über unser Unternehmen und das Team von Spezialisten, das am Projekt OmniMES arbeitet. Entdecken Sie unsere Vision, Mission und unser Engagement für die Bereitstellung hochwertiger Lösungen für unsere Kunden.",
+    "keywords": "über uns, OmniMES, Unternehmen, Team, Mission, Vision, Qualität, Lösungen, Kunde, MES, System, IT, Industrie"
+  },
+  "ContactMeta": {
+    "title": "OmniMES - Kontakt - Kontaktieren Sie uns",
+    "desc": "Kontaktieren Sie uns über unser Kontaktformular und erfahren Sie mehr über unser Unternehmen und unsere Produkte. Wir sind bereit, alle Ihre Fragen zu beantworten.",
+    "keywords": "Kontakt, Kontakt aufnehmen, Kontaktformular, OmniMES, Unternehmen, Produkte, Fragen"
+  },
+  "DemoMeta": {
+    "title": "OmniMES - Demo - Sehen Sie, wie dynamische Dashboards funktionieren",
+    "desc": "Besuchen Sie unsere Demo-Seite, um zu sehen, wie dynamische Dashboards im OmniMES-System funktionieren. Erfahren Sie mehr über die Funktionen und Möglichkeiten unseres Systems.",
+    "keywords": "Demo, dynamische Dashboards, OmniMES, Managementsystem, Funktionen, Möglichkeiten"
+  },
+  "FaqMeta": {
+    "title": "OmniMES - FAQ - Häufig gestellte Fragen",
+    "desc": "Finden Sie Antworten auf häufig gestellte Fragen zum OmniMES-System. Unsere FAQ enthält nützliche Informationen zum System, Support, Hardware und Problembehebung.",
+    "keywords": "FAQ, häufig gestellte Fragen, Antworten, OmniMES, Funktionen, Support, Probleme"
+  },
+  "OfferMeta": {
+    "title": "OmniMES - Entdecken Sie das Angebot und revolutionieren Sie Ihre Produktion mit dem OmniMES-System",
+    "desc": "Entdecken Sie das innovative OmniMES-System, das die Produktionsprozessverwaltung revolutioniert. Nutzen Sie fortschrittliche Funktionen, interaktive Datenanalysetools und flexible Konfigurationen, um Leistung und Kontrolle in der Produktion zu optimieren. Mit OmniMES können Sie schnell auf Veränderungen reagieren, Prozesse optimieren und ausgezeichnete Geschäftsergebnisse erzielen.",
+    "keywords": "OmniMES-System, Produktionsmanagement, Prozessoptimierung, Datenanalysetools, flexible Konfiguration, Produktionsleistung, Prozesskontrolle, innovative Lösungen, effizientes Management, ausgezeichnete Geschäftsergebnisse"
+  },
+  "PrivacyMeta": {
+    "title": "OmniMES - Datenschutzrichtlinie",
+    "desc": "Lesen Sie unsere Datenschutzrichtlinie, um zu erfahren, wie wir Ihre persönlichen Daten schützen und wie wir sie verwenden.",
+    "keywords": "Datenschutzrichtlinie, OmniMES, Datenschutz, persönliche Daten, Datenverarbeitung"
+  },
+  "ResourcesMeta": {
+    "title": "OmniMES - Ressourcen - Schulungsmaterialien, Tutorials, Anleitungen usw.",
+    "desc": "Entdecken Sie unsere reichhaltige Quelle an herunterladbaren Ressourcen, einschließlich Schulungsmaterialien, Tutorials und anderen Lernmaterialien zum OmniMES-System.",
+    "keywords": "herunterladbare Ressourcen, Schulungsmaterialien, Tutorials, Lernen, OmniMES, Anwendungen, Dokumentation, Bildungsmaterialien"
+  },
+  "TermsMeta": {
+    "title": "OmniMES - Nutzungsbedingungen - Nutzungsregeln",
+    "desc": "Lesen Sie unsere Nutzungsbedingungen, um die Regeln für die Nutzung unserer Dienste und die Pflichten der Benutzer kennenzulernen.",
+    "keywords": "Nutzungsbedingungen, Nutzungsregeln, OmniMES, Dienste, Benutzer"
+  },
+  "ProjectMeta": {
+    "title": "OmniMES - Projekt - Entdecken Sie unser System, Funktionsbeschreibungen",
+    "desc": "Lesen Sie Beschreibungen der Funktionalitäten des OmniMES-Systems und erfahren Sie mehr über die Möglichkeiten unseres Systems.",
+    "keywords": "funktionale Beschreibungen, OmniMES, System, Möglichkeiten, Funktionen"
+  },
+  "AdministrationMeta": {
+    "title": "OmniMES - Benutzerverwaltungsmodul - Sicherheit und Effizienz",
+    "desc": "Erfahren Sie mehr über das Benutzerverwaltungsmodul im OmniMES-System. Verwalten Sie Benutzerberechtigungen und Zugriff, um die Sicherheit des Systems zu gewährleisten.",
+    "keywords": "Benutzerverwaltungsmodul, Berechtigungsmanagement, Systemsicherheit, Effizienz, OmniMES"
+  },
+  "AnalysisMeta": {
+    "title": "OmniMES - Analysemodule - Tiefergehende Produktionsanalyse",
+    "desc": "Verwenden Sie verschiedene Datenanalysemodule im OmniMES-System, um tiefer in die Leistung und Effizienz Ihrer Produktion einzutauchen.",
+    "keywords": "Analysemodule, Datenanalyse, Produktionsleistung, Effizienz, OmniMES"
+  },
+  "ConfiguratorMeta": {
+    "title": "OmniMES - Flexibler Konfigurator - Passen Sie das System an Ihre Bedürfnisse an",
+    "desc": "Passen Sie das OmniMES-System an Ihre individuellen Bedürfnisse mit einem flexiblen Konfigurator an, der eine einfache Anpassung des Systems ermöglicht.",
+    "keywords": "flexibler Konfigurator, Anpassung, Benutzeroberfläche, OmniMES"
+  },
+  "DashboardMeta": {
+    "title": "Interaktive Dashboards - OmniMES: Datenexploration und -visualisierung",
+    "desc": "Erkunden und analysieren Sie Produktionsdaten in intuitiven interaktiven Dashboards, um fundierte Geschäftsentscheidungen im OmniMES-System zu treffen.",
+    "keywords": "interaktive Dashboards, Datenexploration, Datenvisualisierung, Geschäftsentscheidungen, OmniMES"
+  },
+  "GPTMeta": {
+    "title": "OmniMES - GPT-Assistenzsystem - Sofortige Hilfe und Datenanalyse",
+    "desc": "Nutzen Sie die fortschrittliche GPT-Technologie, um sofortige Hilfe und Datenanalyse im OmniMES-System zu erhalten.",
+    "keywords": "GPT-Assistenzsystem, Hilfe, Datenanalyse, GPT, OmniMES"
+  },
+  "HistoryMeta": {
+    "title": "OmniMES - Ereignishistorie - Prozessverlauf verfolgen",
+    "desc": "Verfolgen Sie die Ereignishistorie in Ihrer Produktion, um den Prozessverlauf besser zu verstehen und diese Informationen zur Verbesserung der Abläufe im OmniMES-System zu nutzen.",
+    "keywords": "Ereignishistorie, Prozessverfolgung, Betriebsverbesserung, Produktion, OmniMES"
+  },
+  "MonitoringMeta": {
+   "title": "OmniMES - Echtzeitüberwachung - Schnelle Reaktion und Leistungsoptimierung",
+    "desc": "Überwachen Sie Ihre Produktionsprozesse in Echtzeit, um schnell auf Abweichungen zu reagieren.",
+    "keywords": "Echtzeitüberwachung, Produktionsprozesse, Abweichungsreaktion, Leistungsoptimierung, OmniMES"
+  },
+  "PlanogramMeta": {
+    "title": "OmniMES - Planogramm - Produktionsprozessvisualisierung - Verstehen Sie Ihre Prozesse",
+    "desc": "Verfolgen und verstehen Sie Ihre Produktionsprozesse durch Visualisierung im Planogramm. Erleichtern Sie die Identifizierung von Bereichen zur Optimierung im OmniMES-System.",
+    "keywords": "Produktionsprozessvisualisierung, Planogramm, Bereichsidentifikation, Prozessoptimierung, OmniMES"
+  },
+  "ReportMeta": {
+    "title": "OmniMES - Berichtersteller - Erstellen Sie individuelle Berichte",
+    "desc": "Erstellen Sie ganz einfach individuelle Berichte, um wichtige Leistungskennzahlen und geschäftliche Informationen zur Produktion im OmniMES-System zu präsentieren.",
+    "keywords": "Berichtersteller, individuelle Berichte, Leistungskennzahlen, geschäftliche Informationen, Produktion, OmniMES"
+  },
+  "ScheduleMeta": {
+    "title": "OmniMES - Produktionsplanung - Effizient planen",
+    "desc": "Planen und verwalten Sie die Produktionsplanung effizient, unter Berücksichtigung variabler Faktoren und gewährleisten Sie die rechtzeitige Auftragsabwicklung im OmniMES-System.",
+    "keywords": "Produktionsplanung, Produktionsplanung, Terminplanung, rechtzeitige Erfüllung, Aufträge, OmniMES"
+  },
+  "Login": {
+    "title": "OmniMES - Anmeldung - Melden Sie sich an Ihrem Konto an",
+    "desc": "Melden Sie sich in Ihrem Konto im OmniMES-System an, um auf Ihre Daten zuzugreifen und unsere Dienste zu nutzen. Verwalten Sie Ihre Produktion und verfolgen Sie Ihre Prozesse mit Leichtigkeit.",
+    "keywords": "Anmeldung, anmelden, Konto, OmniMES, Produktion, Prozesse"
+  },
+  "Register": {
+    "title": "OmniMES - Registrierung - Erstellen Sie ein neues Konto",
+    "desc": "Erstellen Sie ein neues Konto im OmniMES-System, um unsere Dienste und verfügbaren Funktionen zu nutzen. Werden Sie Teil unserer Community und steigern Sie die Effizienz Ihrer Produktion.",
+    "keywords": "Registrierung, Konto erstellen, neues Konto, OmniMES, Dienste, Produktion"
+  },
+  "LoginPage": {
+    "back": "Zurück",
+    "welcome": "Willkommen zurück",
+    "info": "Geben Sie Ihre E-Mail-Adresse ein, um sich anzumelden",
+    "link": "Sie haben kein Konto? Registrieren Sie sich"
+  },
+  "LoginForm" : {
+    "EmailLabel": "E-Mail",
+    "EmailPlaceholder": "Jan.Kowalski@gmail.com",
+    "invalid": "Invalid email",
+    "mail": "Melden Sie sich mit E-Mail an",
+    "continue": "Oder weitermachen mit",
+    "toastWrong": "Etwas ist schief gelaufen.",
+    "toastWrongDesc": "Ihre Anmeldeanfrage ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "toastSuccess": "Überprüfen Sie Ihre E-Mails",
+    "toastSuccessDesc": "Wir haben Ihnen einen Anmelde-Link geschickt. Vergewissern Sie sich auch, dass Sie Ihren Spam-Ordner überprüfen."
+  },
+  "RegisterPage": {
+    "back": "Zurück",
+    "create": "Ein Konto erstellen",
+    "info": "Geben Sie unten Ihre E-Mail-Adresse ein, um Ihr Konto zu erstellen",
+    "info2": "Durch Klicken auf Weiter stimmen Sie unseren",
+    "info3": "Nutzungsbedingungen",
+    "info4": "und",
+    "info5": "Datenschutzbestimmungen zu"
+    }
+}

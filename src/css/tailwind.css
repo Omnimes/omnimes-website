@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@200&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --primary-foreground: 210 40% 98%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+  }
+
+  .dark {
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+  }
+}
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
+}
+
+.data-footnote-backref {
+  @apply no-underline;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+.navbar header {
+  @apply xl:px-0;
+}
+
+input,
+textarea {
+  border-width: 0 !important;
+}
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+
+.katex-display {
+  overflow: auto hidden;
+}
+
+body > [data-overlay-container] {
+  height: 100%;
+}
+pre {
+  text-wrap: wrap;
+}
+pre code {
+  border-radius: 0.4rem !important;
+}
+
+/* card */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  3% {
+    opacity: 0.7;
+    transform: scale(1.03);
+  }
+
+  3.6% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+
+  4.2% {
+    opacity: 0.9;
+    transform: scale(1.03);
+  }
+
+  6% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  95% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+svg.card {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  overflow: visible;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.card .satellite {
+  fill: #ffffff;
+  stroke-width: 1.165;
+  /* animation: fade-in 1s both; */
+}
+
+.card .pink.satellite {
+  stroke: rgb(236 72 153);
+}
+
+.card .gray.satellite {
+  stroke: #999;
+}
+
+.card .orbit {
+  fill: none;
+  stroke-width: 1.165;
+  animation: grow 5s linear both infinite;
+}
+
+.card .orbits > g {
+  animation: spin 60s linear both infinite;
+}
+
+.card .orbits > g:nth-child(2) {
+  animation-duration: 80s;
+}
+
+.card .orbits > g:nth-child(3) {
+  animation-duration: 100s;
+}
+
+.card .orbits > g:nth-child(4) {
+  animation-duration: 120s;
+}
+
+.card stop {
+  stop-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 786px) {
+  svg.card {
+    top: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .card .orbits > g:nth-child(2) {
+    animation-duration: 120s;
+  }
+
+  .card .orbits > g:nth-child(3) {
+    animation-duration: 150s;
+  }
+
+  .card .orbits > g:nth-child(4) {
+    animation-duration: 180s;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark .card stop {
+    stop-color: white;
+  }
+
+  .dark .card .satellite {
+    fill: var(--nextui-background);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card .satellite,
+  .card .orbit,
+  .card .orbits > g {
+    animation: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s;
+}
+
+video {
+  @apply rounded-lg;
+}
+
+.spline {
+  min-width: 300px !important;
+  width: 100% !important;
+}
+
+.spline canvas {
+  @apply mx-auto aspect-video w-full;
+}
+
+.card_hover:hover a img {
+  -webkit-transform: scale(1.1) rotate(2deg);
+  transform: scale(1.1) rotate(2deg);
+}
