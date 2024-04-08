@@ -3,7 +3,6 @@ import { NextAuthOptions } from "next-auth"
 import EmailProvider from "next-auth/providers/email"
 import GitHubProvider from "next-auth/providers/github"
 import { db } from "./db"
-import siteMetadata from "@/data/siteMetadata"
 import { createTransport } from "nodemailer"
 import { html, htmlLogin, text, textLogin } from "@/utils/utils"
 export const authOptions: NextAuthOptions = {
@@ -14,9 +13,6 @@ export const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
-  // pages: {
-  //   signIn: ":locale/login",
-  // },
   providers: [
     GitHubProvider({
       clientId: process.env.GITHUB_CLIENT_ID as string,
