@@ -6,4 +6,5 @@ module.exports = {
     changefreq: 'daily',
     priority: 0.7,
     sitemapSize: 5000,
+    exclude: ['/admin', '/dashboard', '/outstatic'],
 }
