@@ -1,6 +1,6 @@
 {
-  "commit": "51f0f18640101bc717d3c40ea6f5b2b3bfde3aed",
-  "generated": "Tue, 09 Apr 2024 06:20:41 GMT",
+  "commit": "d3c43c0025f3d6c29abb4c10cc7ad6228e412235",
+  "generated": "2024-04-09T08:49:13.708Z",
   "metadata": [
     {
       "__outstatic": {
@@ -21,6 +21,26 @@
       "status": "published",
       "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
       "title": "Rewolucja w Przemyśle: Jak System OmniMES Rewolucjonizuje Zakłady Produkcyjne"
+    },
+    {
+      "__outstatic": {
+        "commit": "d3c43c0025f3d6c29abb4c10cc7ad6228e412235",
+        "hash": "3159872813",
+        "path": "outstatic/content/posts/testowy-wpis-na-bloga.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/plakat3-Q3OD.png",
+      "description": "Przemysł 4.0, zwany również \"czwartą rewolucją przemysłową\", to paradygmat zmieniający sposób prowadzenia produkcji. Obejmuje on integrację nowoczesnych technologii, takich jak sztuczna inteligencja, Internet Rzeczy (IoT) i analiza danych, w celu stworzenia inteligentnych fabryk. Polski sektor przemysłowy przeżywa transformację, dostosowując się do nowych realiów, co przyczynia się do zwiększenia efektywności, redukcji kosztów i zwiększenia konkurencyjności.",
+      "lang": "pl",
+      "publishedAt": "2024-04-09T08:57:38.696Z",
+      "slug": "testowy-wpis-na-bloga",
+      "status": "published",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, test-z-pauza",
+      "title": "Testowy wpis na bloga"
     }
   ]
 }
