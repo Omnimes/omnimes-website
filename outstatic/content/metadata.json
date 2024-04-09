@@ -1,0 +1,26 @@
+{
+  "commit": "f02d301245da43f30cff31cee2675c9046139b98",
+  "generated": "Tue, 09 Apr 2024 13:57:45 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "e91faa8b253794ba0307145deac2175ae75c32f4",
+        "hash": "2391129758",
+        "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/plakat4-E3NT.png",
+      "description": "W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.\n",
+      "lang": "pl",
+      "publishedAt": "2024-04-09T14:05:43.694Z",
+      "slug": "przemysl-5-0-nowa-era-produkcji",
+      "status": "published",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "Przemysł 5.0: Nowa Era Produkcji"
+    }
+  ]
+}
