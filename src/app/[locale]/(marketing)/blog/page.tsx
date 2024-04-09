@@ -28,47 +28,42 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 export type ExtendedOstDocument = OstDocument & { tags?: string };
-async function getData(locale: string) {
-  const db = await load();
-  const allPosts = await db
-    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
-      'title',
-      'publishedAt',
-      'slug',
-      'coverImage',
-      'description',
-      'author',
-      'tags'
-    ])
-    .sort({ publishedAt: -1 })
-    .limit(POSTS_PER_PAGE)
-    .toArray()
+// async function getData(locale: string) {
+//   const db = await load();
+//   const allPosts = await db
+//     .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
+//       'title',
+//       'publishedAt',
+//       'slug',
+//       'coverImage',
+//       'description',
+//       'author',
+//       'tags'
+//     ])
+//     .sort({ publishedAt: -1 })
+//     .limit(POSTS_PER_PAGE)
+//     .toArray()
   
-  console.log(allPosts)
+//   const postsLength = getDocuments('posts').length
 
-  const postsLength = getDocuments('posts').length
-
-  console.log(postsLength);
-  
-  return {
-    allPosts,
-    postsLength
-  }
-}
+//   return {
+//     allPosts,
+//     postsLength
+//   }
+// }
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   // await generateSearchJSON();
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
-
-  const { allPosts, postsLength } = await getData(locale);
+  // const { allPosts, postsLength } = await getData(locale);
 
   const pageNumber = 1
 
   const pagination = {
     currentPage: pageNumber,
-    totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
+    // totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
   }
 
   return (
