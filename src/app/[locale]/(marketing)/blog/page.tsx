@@ -2,9 +2,10 @@ import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import ListLayout from "@/layouts/ListLayout";
 import { generateSearchJSON } from "@/lib/generateSearchJSON";
-import { getPostsMeta } from "@/lib/posts";
 import {getTranslations} from 'next-intl/server';
 import { unstable_setRequestLocale } from "next-intl/server";
+import { OstDocument } from "outstatic";
+import { getDocuments, load } from 'outstatic/server';
 
 export const revalidate = 900;
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -24,33 +25,55 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 const POSTS_PER_PAGE = 10;
+export type ExtendedOstDocument = OstDocument & { tags?: string };
+async function getData(locale: string) {
+  const db = await load();
+  const allPosts = await db
+    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
+      'title',
+      'publishedAt',
+      'slug',
+      'coverImage',
+      'description',
+      'author',
+      'tags'
+    ])
+    .sort({ publishedAt: -1 })
+    .limit(POSTS_PER_PAGE)
+    .toArray()
+
+  const postsLength = getDocuments('posts').length
+
+  return {
+    allPosts,
+    postsLength
+  }
+}
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   await generateSearchJSON();
   // Enable static rendering
   unstable_setRequestLocale(locale);
-  const posts = await getPostsMeta(locale);
   const t = await getTranslations('Blog');
 
-  if (posts?.length == 0 || !posts) {
+  const { allPosts, postsLength } = await getData(locale);
+
+  if (allPosts?.length == 0 || !allPosts) {
     return <p className="mt-10 text-center">{t("NotFound")}</p>;
   }
 
   const pageNumber = 1
-  const initialDisplayPosts = posts.slice(
-    POSTS_PER_PAGE * (pageNumber - 1),
-    POSTS_PER_PAGE * pageNumber
-  )
+
   const pagination = {
     currentPage: pageNumber,
-    totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+    totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
   }
 
   return (
     <main>
       <ListLayout
-        posts={posts}
-        initialDisplayPosts={initialDisplayPosts}
+        posts={allPosts}
+        initialDisplayPosts={allPosts}
         pagination={pagination}
         title={t('title')}
       />

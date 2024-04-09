@@ -1,10 +1,13 @@
-import { getPostsMeta, getPostByName } from "@/lib/posts";
-import { notFound } from "next/navigation";
 import "highlight.js/styles/github-dark.css";
 import siteMetadata from "@/data/siteMetadata";
 import PostLayout from "@/layouts/PostLayout";
-import { getTranslations } from "next-intl/server";
+import MDXServer from "@/lib/mdx-server";
 import { getLocalePrimaryDialects } from "@/data/locales";
+import { getDocumentSlugs, load } from "outstatic/server";
+import { ExtendedOstDocument } from "../page";
+import { getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 export const revalidate = 900;
 type Props = {
@@ -19,47 +22,74 @@ export async function generateStaticParams({
 }: {
   params: { locale: string };
 }) {
-  const posts = await getPostsMeta(locale);
+  const posts = getDocumentSlugs("posts");
   if (!posts) return [];
 
   return posts.map((post) => ({
-    postId: post.id,
+    postId: post,
     locale: locale,
   }));
 }
 
-export async function generateMetadata({ params: { postId, locale } }: Props) {
+async function getData({ params }: Props) {
+    const db = await load();
+
+    const post = await db
+        .find<ExtendedOstDocument>({ collection: "posts", slug: params.postId, lang: params.locale }, [
+            "title",
+            "publishedAt",
+            "description",
+            "slug",
+            "author",
+            "content",
+            "coverImage",
+            "tags",
+            "lang"
+        ])
+        .first();
+
+
+    if (!post) {
+        return undefined
+    }
+
+    const content = await MDXServer(post.content);
+
+    return {
+        ...post,
+        content,
+    };
+}
+
+export async function generateMetadata( params: Props): Promise<Metadata> {
+  const post = await getData(params)
+  const { params: { locale } } = params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
-  const post = await getPostByName(`${postId}.${locale}.mdx`);
+  
   if (!post) {
     return {
       title: t("postNotFound"),
     };
   }
-
-  const { title, subtitle, date, authors } = post.meta;
-  const stringAuthor = authors.map((item: { meta: { name: string; }; }) => {
-    return item.meta.name
-  })
-
+ 
   return {
-    title,
-    description: subtitle,
+    title: post.title,
+    description: post.description,
     openGraph: {
-      title,
-      description: subtitle,
+      title: post.title,
+      description: post.description,
       siteName: siteMetadata.title,
       locale: getLocalePrimaryDialects(locale),
       type: "article",
-      publishedTime: new Date(date).toISOString(),
-      url: siteMetadata.siteUrl + "/" + locale + "/blog/" + postId,
+      publishedTime: new Date(post.publishedAt).toISOString(),
+      url: siteMetadata.siteUrl + "/" + locale + "/blog/" + post.slug,
       images: [siteMetadata.socialBanner],
-      authors: stringAuthor.join(', ')
+      authors: post.author?.name || ""
     },
     twitter: {
       card: "summary_large_image",
-      title: title,
-      description: subtitle,
+      title: post.title,
+      description: post.description,
       images: [siteMetadata.socialBanner],
     },
     robots: {
@@ -76,17 +106,11 @@ export async function generateMetadata({ params: { postId, locale } }: Props) {
   };
 }
 
-export default async function Post({ params: { postId, locale }}: Props) {
-  const post = await getPostByName(`${postId}.${locale}.mdx`);
+export default async function Post(params: Props) {
+  const post = await getData(params);
   if (!post || post == undefined) notFound();
-  const { meta, content } = post;
 
   return (
-    <PostLayout
-      content={content}
-      meta={meta}
-      locale={locale}
-      authors={meta.authors}
-    />
+    <PostLayout post={post} />
   );
 }

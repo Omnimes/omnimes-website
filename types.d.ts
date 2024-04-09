@@ -1,11 +1,3 @@
-type Filetree = {
-  tree: [
-    {
-      path: string;
-    }
-  ];
-};
-
 type Meta = {
     id: string,
     title: string,
@@ -21,6 +13,10 @@ type MetaTags = {
   keywords: string
 }
 
+type MetaNews = {
+  tags: string
+}
+
 type BlogPost = {
     meta: Meta,
     content: ReactElement<any, string | JSXElementConstructor<any>>,
@@ -32,13 +28,12 @@ type BlogPostTags = {
   }
 }
 
-type AuthorMeta = {
+type Teams = {
   name: string,
   avatar: string,
   occupation: string,
-  company: string,
-  github: string,
-  linkedin: string,
+  github?: string,
+  linkedin?: string,
 }
 
 type AuthorObject = {

@@ -4,25 +4,26 @@ import { CustomLink } from '@/components/Link'
 import getFormattedDate from '@/lib/getFormattedDate'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 
 interface PaginationProps {
   totalPages: number
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: Meta[]
+  posts: ExtendedOstDocument[]
   title: string
-  initialDisplayPosts?: Meta[]
+  initialDisplayPosts?: ExtendedOstDocument[]
   pagination?: PaginationProps
 }
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
-  const t = useTranslations('Pagination');
-  const pathname = usePathname();
-  const basePath = pathname?.split('/')[2];
-  const prevPage = currentPage - 1 > 0;
-  const nextPage = currentPage + 1 <= totalPages;
+  const t = useTranslations('Pagination')
+  const pathname = usePathname()
+  const basePath = pathname?.split('/')[2]
+  const prevPage = currentPage - 1 > 0
+  const nextPage = currentPage + 1 <= totalPages
 
   return (
     <div className="space-y-2 pb-8 pt-6 md:space-y-5">
@@ -69,9 +70,10 @@ export default function ListLayout({
     const searchContent = post.title + post.subtitle + post.keywords
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
-  const t = useTranslations('ListLayout');
-  const pathname = usePathname();
-  const basePath = pathname?.split('/')[2];
+  const t = useTranslations('ListLayout')
+  const lang = useLocale()
+  const pathname = usePathname()
+  const basePath = pathname?.split('/')[2]
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
@@ -112,36 +114,37 @@ export default function ListLayout({
         <ul>
           {!filteredBlogPosts.length && t('NotFound')}
           {displayPosts.map((post) => {
-            const { id, date, title, subtitle, keywords, lang } = post
+            const { title, description, tags, publishedAt, slug } = post
             return (
-              <li key={id} className="py-4">
+              <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                   <dl>
                     <dt className="sr-only">{t('publishedOn')}</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>{getFormattedDate(date, lang)}</time>
+                      <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
                         <CustomLink
-                          href={`/${basePath}/${id}`}
+                          href={`/${basePath}/${slug}`}
                           rel="noopener noreferrer"
                           target="_self"
-                          className="text-gray-900 dark:text-gray-100">
+                          className="text-gray-900 dark:text-gray-100"
+                        >
                           {title}
                         </CustomLink>
                       </h3>
                       <div className="flex flex-wrap">
-                        {keywords?.split(',').map((tag: string) => {
+                        {tags?.split(',').map((tag: string) => {
                           const data = tag.replace(' ', '')
                           return <Tag key={data} text={data} />
                         })}
                       </div>
                     </div>
                     <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                        {subtitle}
+                      {description}
                     </div>
                   </div>
                 </article>

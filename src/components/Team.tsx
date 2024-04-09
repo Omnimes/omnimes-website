@@ -1,15 +1,14 @@
 import { useLocale } from 'next-intl'
 import { CardAuthor } from './atoms/AuthorsCard'
-import { getAuthors } from '@/lib/autors'
 import { Company } from './Company'
 import { DescriptionPrimary } from './atoms/Description'
 import { Heading } from './atoms/Heading'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
+import { TeamsData } from "@/data/team";
 export const Team = async () => {
   const locale = useLocale();
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Team');
-  const authors = await getAuthors()
   return (
     <>
       <div className="mx-auto max-w-screen-xl py-8 text-center lg:py-16">
@@ -22,24 +21,19 @@ export const Team = async () => {
           <DescriptionPrimary text={t("descriptionTeam")} />
         </div>
         <div className="flex flex-col items-center gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:gap-16">
-          {authors && (
-            <>
-              {authors.map((author: { meta: AuthorMeta }) => {
-                const { meta } = author;
-                const { name, avatar, occupation, github, linkedin } = meta;
-                return (
-                  <CardAuthor
-                    key={name}
-                    image={avatar}
-                    name={name}
-                    occupation={occupation}
-                    github={github}
-                    linkedin={linkedin}
-                  />
-                )
-              })}
-            </>
-          )}
+          {TeamsData.map((author: Teams) => {
+            const { name, avatar, occupation, github, linkedin } = author;
+            return (
+              <CardAuthor
+                key={name}
+                image={avatar}
+                name={name}
+                occupation={occupation}
+                github={github}
+                linkedin={linkedin}
+              />
+            )
+          })}
         </div>
       </div>
     </>

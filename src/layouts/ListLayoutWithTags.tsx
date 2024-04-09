@@ -3,19 +3,19 @@ import { usePathname } from 'next/navigation'
 import { slug } from 'github-slugger'
 import { CustomLink } from '@/components/Link'
 import Tag from '@/components/Tag'
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import getFormattedDate from '@/lib/getFormattedDate'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 
 interface PaginationProps {
   totalPages: number
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: Meta[]
+  posts: ExtendedOstDocument[]
   title: string
   tags: Record<string, number>
   tag: string
-  initialDisplayPosts?: Meta[]
   pagination?: PaginationProps
 }
 
@@ -65,14 +65,14 @@ export default function ListLayoutWithTags({
   title,
   tags,
   tag,
-  initialDisplayPosts = [],
   pagination,
 }: ListLayoutProps) {
   const t = useTranslations('Tag');
   const pathname = usePathname()
+  const lang = useLocale();
   const tagKeys = Object.keys(tags)
   const sortedTags = tagKeys.sort((a, b) => tags[b] - tags[a])
-  const displayPosts = initialDisplayPosts.length > 0 ? initialDisplayPosts : posts
+
   return (
     <>
       <div>
@@ -119,34 +119,34 @@ export default function ListLayoutWithTags({
           </div>
           <div>
             <ul>
-              {!displayPosts.length && t("displayPostsNotFound", { tag: decodeURI(tag) })}
-              {displayPosts.map((post) => {
-                const { id, date, title, subtitle, keywords, lang } = post
+              {!posts.length && t("displayPostsNotFound", { tag: decodeURI(tag) })}
+              {posts.map((post) => {
+                const { title, description, tags, publishedAt, slug } = post
                 return (
-                  <li key={id} className="py-5">
+                  <li key={slug} className="py-5">
                     <article className="flex flex-col space-y-2 xl:space-y-0">
                       <dl>
                         <dt className="sr-only">{t("publishedOn")}</dt>
                         <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                          <time dateTime={date}>{getFormattedDate(date, lang)}</time>
+                          <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>
                         </dd>
                       </dl>
                       <div className="space-y-3">
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <CustomLink href={`/blog/${id}`} className="text-gray-900 dark:text-gray-100">
+                            <CustomLink href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
                               {title}
                             </CustomLink>
                           </h2>
                           <div className="flex flex-wrap">
-                            {keywords?.split(',').map((tag) => {
-                              const data = tag.replace(' ', '')
-                              return <Tag key={data} text={data} />
-                            })}
+                            {tags?.split(',').map((tag: string) => {
+                          const data = tag.replace(' ', '')
+                          return <Tag key={data} text={data} />
+                        })}
                           </div>
                         </div>
                         <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                         {subtitle}
+                         {description}
                         </div>
                       </div>
                     </article>

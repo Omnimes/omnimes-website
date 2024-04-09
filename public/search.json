@@ -1,58 +1,18 @@
 [
   {
-    "path": "another",
-    "title": "Another Test Post",
-    "keywords": "omnimes, industry, revolution, innovation",
-    "subtitle": "Test en",
-    "section": "Blog",
-    "lang": "en"
+    "title": "Testowy wpis na bloga",
+    "path": "testowy-wpis-na-bloga",
+    "keywords": "omnimes, przemysł, rewolucja, innowacja, test-z-pauza",
+    "subtitle": "Przemysł 4.0, zwany również \"czwartą rewolucją przemysłową\", to paradygmat zmieniający sposób prowadzenia produkcji. Obejmuje on integrację nowoczesnych technologii, takich jak sztuczna inteligencja, Internet Rzeczy (IoT) i analiza danych, w celu stworzenia inteligentnych fabryk. Polski sektor przemysłowy przeżywa transformację, dostosowując się do nowych realiów, co przyczynia się do zwiększenia efektywności, redukcji kosztów i zwiększenia konkurencyjności.",
+    "lang": "pl",
+    "section": "Blog"
   },
   {
-    "path": "jak-cyfrowa-transformacja-rewolucjonizuje-produkcje",
-    "title": "Przemysł 4.0: Jak Cyfrowa Transformacja Rewolucjonizuje Produkcję",
-    "keywords": "omnimes, przemysł, rewolucja, innowacja, produkcja",
-    "subtitle": "Przemysł 4.0 otwiera przed zakładami produkcyjnymi nowe możliwości rozwoju i konkurencyjności. Dzięki cyfrowej transformacji, fabryki stają się bardziej inteligentne, efektywne i elastyczne.",
-    "section": "Blog",
-    "lang": "pl"
-  },
-  {
-    "path": "jak-system-omnimes-rewolucjonizuje-zaklady-produkcyjne",
     "title": "Rewolucja w Przemyśle: Jak System OmniMES Rewolucjonizuje Zakłady Produkcyjne",
+    "path": "jak-system-omnimes-rewolucjonizuje-zaklady-produkcyjne",
     "keywords": "omnimes, przemysł, rewolucja, innowacja, produkcja",
     "subtitle": "W dobie szybko rozwijającej się technologii, przemysł stoi przed wyzwaniem adaptacji do nowych realiów. Systemy zarządzania produkcją, takie jak OmniMES, stają się niezbędnym narzędziem w transformacji zakładów produkcyjnych.",
-    "section": "Blog",
-    "lang": "pl"
-  },
-  {
-    "path": "test",
-    "title": "Testowy wpis na bloga",
-    "keywords": "omnimes, przemysł, rewolucja, innowacja, test-z-pauza",
-    "subtitle": "Test pl",
-    "section": "Blog",
-    "lang": "pl"
-  },
-  {
-    "path": "weekend",
-    "title": "Industrie 4.0: Technologische Revolution, Innovationen und die Vision der zukünftigen Industrie",
-    "keywords": "omnimes, industrie, revolution, innovation",
-    "subtitle": "Industrie 4.0",
-    "section": "Blog",
-    "lang": "de"
-  },
-  {
-    "path": "weekend",
-    "title": "Industry 4.0: Technological Revolution, Innovations, and the Vision of the Future Industry",
-    "keywords": "omnimes, industry, revolution, innovation",
-    "subtitle": "Industry 4.0",
-    "section": "Blog",
-    "lang": "en"
-  },
-  {
-    "path": "weekend",
-    "title": "Przemysł 4.0: Rewolucja Technologiczna, Innowacje i Wizja Przemysłu Przyszłości",
-    "keywords": "omnimes, przemysł, rewolucja, innowacja",
-    "subtitle": "Przemysł 4.0",
-    "section": "Blog",
-    "lang": "pl"
+    "lang": "pl",
+    "section": "Blog"
   }
 ]
