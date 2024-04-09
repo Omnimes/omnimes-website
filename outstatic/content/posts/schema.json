@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "lang"
+    },
+    "tags": {
+      "required": true,
+      "description": "Dodawaj tagi w stringu po przecinku.",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Tags"
     }
   }
 }
