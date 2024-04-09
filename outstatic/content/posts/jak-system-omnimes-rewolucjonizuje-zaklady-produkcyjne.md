@@ -2,8 +2,8 @@
 title: 'Rewolucja w Przemyśle: Jak System OmniMES Rewolucjonizuje Zakłady Produkcyjne'
 status: 'published'
 author:
-  name: 'OmniMES'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  name: 'Piotr Sierant'
+  picture: '/images/piotr-Y1Nz.png'
 slug: 'jak-system-omnimes-rewolucjonizuje-zaklady-produkcyjne'
 description: 'W dobie szybko rozwijającej się technologii, przemysł stoi przed wyzwaniem adaptacji do nowych realiów. Systemy zarządzania produkcją, takie jak OmniMES, stają się niezbędnym narzędziem w transformacji zakładów produkcyjnych.'
 coverImage: '/images/pexels-rolled-alloys-specialty-metal-supplier-8973132--1--M1Mj.jpg'
