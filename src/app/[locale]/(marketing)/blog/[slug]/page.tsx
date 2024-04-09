@@ -12,7 +12,7 @@ import { Metadata } from "next";
 export const revalidate = 900;
 type Props = {
   params: {
-    postId: string;
+    slug: string;
     locale: string;
   };
 };
@@ -26,7 +26,7 @@ export async function generateStaticParams({
   if (!posts) return [];
 
   return posts.map((post) => ({
-    postId: post,
+    slug: post,
     locale: locale,
   }));
 }
@@ -35,7 +35,7 @@ async function getData({ params }: Props) {
     const db = await load();
 
     const post = await db
-        .find<ExtendedOstDocument>({ collection: "posts", slug: params.postId, lang: params.locale }, [
+        .find<ExtendedOstDocument>({ collection: "posts", slug: params.slug, lang: params.locale }, [
             "title",
             "publishedAt",
             "description",

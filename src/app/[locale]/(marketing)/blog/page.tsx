@@ -1,13 +1,15 @@
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import ListLayout from "@/layouts/ListLayout";
-import { generateSearchJSON } from "@/lib/generateSearchJSON";
+// import { generateSearchJSON } from "@/lib/generateSearchJSON";
 import {getTranslations} from 'next-intl/server';
 import { unstable_setRequestLocale } from "next-intl/server";
 import { OstDocument } from "outstatic";
 import { getDocuments, load } from 'outstatic/server';
 
 export const revalidate = 900;
+const POSTS_PER_PAGE = 10;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const title = t('blog_title');
@@ -24,7 +26,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
    
   return meta
 }
-const POSTS_PER_PAGE = 10;
+
 export type ExtendedOstDocument = OstDocument & { tags?: string };
 async function getData(locale: string) {
   const db = await load();
@@ -51,16 +53,12 @@ async function getData(locale: string) {
 }
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
-  await generateSearchJSON();
+  // await generateSearchJSON();
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
 
   const { allPosts, postsLength } = await getData(locale);
-
-  if (allPosts?.length == 0 || !allPosts) {
-    return <p className="mt-10 text-center">{t("NotFound")}</p>;
-  }
 
   const pageNumber = 1
 
@@ -70,13 +68,11 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   }
 
   return (
-    <main>
       <ListLayout
         posts={allPosts}
         initialDisplayPosts={allPosts}
         pagination={pagination}
         title={t('title')}
       />
-    </main>
   );
 }

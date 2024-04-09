@@ -17,11 +17,12 @@ export const pathnames = {
     pl: '/rejestracja'
   },
 
-  '/blog/[articleSlug]-[articleId]': {
-    en: '/blog/[articleSlug]-[articleId]',
-    de: '/blog/[articleSlug]-[articleId]',
-    pl: '/blog/[articleSlug]-[articleId]',
+  '/blog/[slug]': {
+    en: '/blog/[slug]',
+    de: '/blog/[slug]',
+    pl: '/blog/[slug]'
   },
+
   '/about': {
     en: '/about',
     de: '/ueber-uns',
