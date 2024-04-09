@@ -43,9 +43,13 @@ async function getData(locale: string) {
     .sort({ publishedAt: -1 })
     .limit(POSTS_PER_PAGE)
     .toArray()
+  
+  console.log(allPosts)
 
   const postsLength = getDocuments('posts').length
 
+  console.log(postsLength);
+  
   return {
     allPosts,
     postsLength
@@ -68,11 +72,12 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   }
 
   return (
-      <ListLayout
-        posts={allPosts}
-        initialDisplayPosts={allPosts}
-        pagination={pagination}
-        title={t('title')}
-      />
+    <p>test</p>
+      // <ListLayout
+      //   posts={allPosts}
+      //   initialDisplayPosts={allPosts}
+      //   pagination={pagination}
+      //   title={t('title')}
+      // />
   );
 }
