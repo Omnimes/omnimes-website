@@ -2,17 +2,15 @@ import ListLayout from '@/layouts/ListLayoutWithTags'
 import { genPageMetadata } from '@/app/seo'
 import { Metadata } from 'next'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
-import { getTagsMeta } from '@/lib/tags'
 import { getLocalePrimaryDialects } from '@/data/locales'
 import { ExtendedOstDocument } from '../../blog/page'
-import { load } from 'outstatic/server'
+import { getDocuments, load } from 'outstatic/server'
 type Props = {
   params: {
     tag: string
     locale: string
   }
 }
-export const revalidate = 900;
 
 export async function generateMetadata({ params: { locale, tag } }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'Tag' })
@@ -35,7 +33,7 @@ export const generateStaticParams = async ({
 }: {
   params: { locale: string }
 }) => {
-  let tags = (await getTagsMeta(locale)) as Record<string, number>
+  let tags = (await getDataTags(locale)) as Record<string, number>
   if (!tags) return []
 
   return Object.keys(tags).map((tag) => ({
@@ -43,6 +41,33 @@ export const generateStaticParams = async ({
     locale: locale,
   }))
 }
+
+
+async function getDataTags(locale: string) {
+  const posts = getDocuments('posts', ['lang', 'tags']);
+  
+  if (!posts || posts.length == 0 || posts === undefined) {
+    return undefined
+  }
+    
+    const localePosts = posts.filter((post) => post.lang == locale).map(post => post.tags);
+    const tagCounts = {} as Record<string, number>
+    
+  if (localePosts.length > 0) {
+    localePosts.forEach((obj) => {
+      if (typeof obj == 'string') {
+        const keywordsArray = obj.split(', ');
+        keywordsArray.forEach((keyword) => {
+          tagCounts[keyword] = (tagCounts[keyword] || 0) + 1
+        })
+      }
+    })
+  }
+  
+  return tagCounts
+}
+
+
 async function getData({ params }: Props) {
     const db = await load();
     const posts = await db
@@ -60,7 +85,7 @@ async function getData({ params }: Props) {
         return undefined
   }
   
-  const filteredPosts = posts.filter(post => post.tags?.includes(params.tag))
+  const filteredPosts = posts.filter(post => post.tags?.includes(decodeURI(params.tag)))
   
   return filteredPosts
 }
@@ -70,11 +95,10 @@ export default async function TagPage(params: Props) {
   unstable_setRequestLocale(locale)
   const t = await getTranslations('Tag')
 
-  let tags = (await getTagsMeta(locale)) as Record<string, number>
+    let tags = (await getDataTags(locale)) as Record<string, number>
   if (tags?.length == 0 || !tags) return <p className="mt-10 text-center">{t('notFound')}</p>
 
   const posts = await getData(params);
-  
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1);
   if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
 
