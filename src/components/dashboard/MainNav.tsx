@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import siteMetadata from "@/data/siteMetadata"
+import { siteMetadata } from "@/data/siteMetadata"
 import { cn } from "@/utils/utils"
 import { MobileNav } from "@/components/mobile-nav"
 import { LuX, LuMenu } from "react-icons/lu";

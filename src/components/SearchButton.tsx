@@ -1,4 +1,4 @@
-import siteMetadata from '@/data/siteMetadata'
+import { siteMetadata } from '@/data/siteMetadata'
 import { AlgoliaButton } from 'pliny/search/AlgoliaButton.js'
 import { KBarButton } from 'pliny/search/KBarButton.js'
 

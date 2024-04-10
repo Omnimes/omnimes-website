@@ -27,12 +27,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default async function TagsPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Tags');
-  let tags = await getTagsMeta(locale) as Record<string, number>;
+  // let tags = await getTagsMeta(locale) as Record<string, number>;
+  let tags: undefined | unknown;
   if (tags == undefined) {
     tags = {}
   }
-  const tagKeys = Object.keys(tags)
-  const sortedTags = tagKeys.sort((a, b) => tags[b] - tags[a])
+  // const tagKeys = Object.keys(tags)
+  // const sortedTags = tagKeys.sort((a, b) => tags[b] - tags[a])
 
   return (
     <>
@@ -43,7 +44,7 @@ export default async function TagsPage({ params: { locale } }: { params: { local
           </h1>
         </div>
         <div className="flex max-w-lg flex-wrap">
-          {tagKeys.length === 0 &&  t("notfoundTag")}
+          {/* {tagKeys.length === 0 &&  t("notfoundTag")}
           {sortedTags.map((t) => {
             return (
               <div key={t} className="mb-2 mr-5 mt-2">
@@ -57,7 +58,7 @@ export default async function TagsPage({ params: { locale } }: { params: { local
                 </CustomLink>
               </div>
             )
-          })}
+          })} */}
         </div>
       </div>
     </>

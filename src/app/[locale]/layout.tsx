@@ -6,7 +6,7 @@ import { NextUIProviders } from "./nextui-providers";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import siteMetadata from "@/data/siteMetadata";
+import { siteMetadata } from "@/data/siteMetadata";
 import { Widget } from '@/components/atoms/Widget';
 import { useTranslations } from 'next-intl';
 import { Toaster } from "@/components/atoms/toaster";

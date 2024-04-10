@@ -1,5 +1,4 @@
 import "highlight.js/styles/github-dark.css";
-import siteMetadata from "@/data/siteMetadata";
 import PostLayout from "@/layouts/PostLayout";
 import MDXServer from "@/lib/mdx-server";
 import { getLocalePrimaryDialects } from "@/data/locales";
@@ -8,7 +7,7 @@ import { ExtendedOstDocument } from "../page";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-
+import { siteMetadata } from "@/data/siteMetadata";
 export const revalidate = 900;
 type Props = {
   params: {

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import siteMetadata from '@/data/siteMetadata'
+import { siteMetadata } from '@/data/siteMetadata'
 import { cn } from '@/utils/utils'
 import Link from 'next/link'
 import Image from 'next/image'

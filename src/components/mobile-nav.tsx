@@ -1,7 +1,7 @@
 import * as React from "react"
 import Link from "next/link"
 
-import siteMetadata from "@/data/siteMetadata"
+import { siteMetadata } from "@/data/siteMetadata"
 import { cn } from "@/utils/utils"
 import { useLockBody } from "@/hooks/use-lock-body"
 import Logo from "@/data/logo.svg";

@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getTagsMeta } from '@/lib/tags'
 import { getLocalePrimaryDialects } from '@/data/locales'
-import { ExtendedOstDocument } from '../../blog/page'
+// import { ExtendedOstDocument } from '../../blog/page'
 import { load } from 'outstatic/server'
 type Props = {
   params: {
@@ -43,27 +43,27 @@ export const generateStaticParams = async ({
     locale: locale,
   }))
 }
-async function getData({ params }: Props) {
-    const db = await load();
-    const posts = await db
-        .find<ExtendedOstDocument>({ collection: "posts", lang: params.locale }, [
-            "title",
-            "publishedAt",
-            "description",
-            "slug",
-            "tags"
-        ])
-        .sort({ publishedAt: -1 })
-        .toArray()
+// async function getData({ params }: Props) {
+//     const db = await load();
+//     const posts = await db
+//         .find<ExtendedOstDocument>({ collection: "posts", lang: params.locale }, [
+//             "title",
+//             "publishedAt",
+//             "description",
+//             "slug",
+//             "tags"
+//         ])
+//         .sort({ publishedAt: -1 })
+//         .toArray()
   
-    if (!posts) {
-        return undefined
-  }
+//     if (!posts) {
+//         return undefined
+//   }
   
-  const filteredPosts = posts.filter(post => post.tags?.includes(params.tag))
+//   const filteredPosts = posts.filter(post => post.tags?.includes(params.tag))
   
-  return filteredPosts
-}
+//   return filteredPosts
+// }
 
 export default async function TagPage(params: Props) {
   const { locale, tag } = params.params
@@ -73,13 +73,13 @@ export default async function TagPage(params: Props) {
   let tags = (await getTagsMeta(locale)) as Record<string, number>
   if (tags?.length == 0 || !tags) return <p className="mt-10 text-center">{t('notFound')}</p>
 
-  const posts = await getData(params);
+  // const posts = await getData(params);
   
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1);
-  if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
+  // if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
 
   return <ListLayout
-      posts={posts}
+      posts={[]}
       title={title}
       tags={tags}
       tag={tag}
