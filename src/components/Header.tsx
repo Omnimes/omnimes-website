@@ -26,12 +26,14 @@ import {
 import { LuChevronDown } from 'react-icons/lu'
 import { useState } from 'react'
 
-import { User } from "next-auth"
-import { UserAccountNav } from './user-account-nav'
-interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
-  user: Pick<User, "name" | "image" | "email"> | undefined
-}
-export default function Header({ user }: UserAccountNavProps) {
+// import { User } from "next-auth"
+// import { UserAccountNav } from './user-account-nav'
+// import { getCurrentUser } from "@/utils/session";
+
+// interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
+//   user: Pick<User, "name" | "image" | "email"> | undefined
+// }{ user }: UserAccountNavProps
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('HeaderLinks');
   return (
@@ -141,14 +143,14 @@ export default function Header({ user }: UserAccountNavProps) {
         <LocaleSwitcher />
         <SearchButton />
         <ThemeSwitch />
-        <UserAccountNav user={user} />
+        {/* <UserAccountNav user={user} /> */}
       </NavbarContent>
 
       <NavbarContent justify="center" className="flex sm:hidden">
         <LocaleSwitcher />
         <SearchButton />
         <ThemeSwitch />
-        <UserAccountNav user={user} />
+        {/* <UserAccountNav user={user} /> */}
       </NavbarContent>
 
       <NavbarMenu>
