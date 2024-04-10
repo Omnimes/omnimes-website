@@ -1,6 +1,6 @@
 {
-  "commit": "f02d301245da43f30cff31cee2675c9046139b98",
-  "generated": "Tue, 09 Apr 2024 13:57:45 GMT",
+  "commit": "9ed73d9b341df2e6423cdd9f2d1ea85eb576cfd3",
+  "generated": "2024-04-10T08:18:52.222Z",
   "metadata": [
     {
       "__outstatic": {
@@ -21,6 +21,26 @@
       "status": "published",
       "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
       "title": "Przemysł 5.0: Nowa Era Produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "9ed73d9b341df2e6423cdd9f2d1ea85eb576cfd3",
+        "hash": "1273605054",
+        "path": "outstatic/content/posts/test.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "test",
+      "lang": "de",
+      "publishedAt": "2024-04-10T08:30:14.410Z",
+      "slug": "test",
+      "status": "published",
+      "tags": "tsasa, asdas, asdasd",
+      "title": "Test"
     }
   ]
 }
