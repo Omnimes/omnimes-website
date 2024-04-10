@@ -1,6 +1,6 @@
 {
-  "commit": "1ee2c26fb5c1c94eb19fb1bd65b0ec9e90f52949",
-  "generated": "2024-04-10T12:55:08.843Z",
+  "commit": "a0fcfc339a2ce30f4a37d25cc96217a63a2451ad",
+  "generated": "2024-04-10T13:00:34.978Z",
   "metadata": [
     {
       "__outstatic": {
@@ -41,26 +41,6 @@
       "status": "published",
       "tags": "przemysł, definicje",
       "title": "Czwarta rewolucja przemysłowa"
-    },
-    {
-      "__outstatic": {
-        "commit": "1ee2c26fb5c1c94eb19fb1bd65b0ec9e90f52949",
-        "hash": "2127101160",
-        "path": "outstatic/content/posts/testowy-post-sadasd.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin-g2Nj.png"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "asdasdJJdsaasdasdJJdsaasdasdJJdsaasdasdJJdsaasdasdJJdsaasdasdJJdsa",
-      "lang": "en",
-      "publishedAt": "2024-04-10T13:03:09.003Z",
-      "slug": "testowy-post-sadasd",
-      "status": "published",
-      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
-      "title": "Testowy post"
     }
   ]
 }
