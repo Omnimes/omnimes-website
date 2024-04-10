@@ -5,15 +5,14 @@ import { CustomLink } from '@/components/Link'
 import Tag from '@/components/Tag'
 import { useLocale, useTranslations } from 'next-intl';
 import getFormattedDate from '@/lib/getFormattedDate'
-import { OstDocument } from 'outstatic'
-// import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 
 interface PaginationProps {
   totalPages: number
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: OstDocument[]
+  posts: ExtendedOstDocument[]
   title: string
   tags: Record<string, number>
   tag: string
@@ -140,10 +139,10 @@ export default function ListLayoutWithTags({
                             </CustomLink>
                           </h2>
                           <div className="flex flex-wrap">
-                            {/* {tags?.split(',').map((tag: string) => {
+                            {tags?.split(',').map((tag: string) => {
                           const data = tag.replace(' ', '')
                           return <Tag key={data} text={data} />
-                        })} */}
+                        })}
                           </div>
                         </div>
                         <div className="prose max-w-none text-gray-500 dark:text-gray-400">

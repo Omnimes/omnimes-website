@@ -4,13 +4,12 @@ import PageTitle from '@/components/PageTitle'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import Image from "next/image"
 import { useLocale, useTranslations } from 'next-intl'
-// import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 import getFormattedDate from '@/lib/getFormattedDate'
 import MDXComponent from '@/components/mdx/mdx-component'
 import Default from "../../public/images/default.png"
-import { OstDocument } from 'outstatic'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 interface LayoutProps {
-  post: OstDocument;
+  post: ExtendedOstDocument;
 }
 
 export default function PostLayout({ post }: LayoutProps) {
@@ -70,10 +69,10 @@ export default function PostLayout({ post }: LayoutProps) {
                       {t('tags')}
                     </h2>
                     <div className="flex flex-wrap">
-                     {/* {tags?.split(',').map((tag: string) => {
+                     {tags?.split(',').map((tag: string) => {
                           const data = tag.replace(' ', '')
                           return <Tag key={data} text={data} />
-                        })} */}
+                        })}
                     </div>
                   </div>
               </div>

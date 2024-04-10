@@ -5,17 +5,16 @@ import getFormattedDate from '@/lib/getFormattedDate'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
-import { OstDocument } from 'outstatic'
-// import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 
 interface PaginationProps {
   totalPages: number
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: OstDocument[]
+  posts: ExtendedOstDocument[]
   title: string
-  initialDisplayPosts?: OstDocument[]
+  initialDisplayPosts?: ExtendedOstDocument[]
   pagination?: PaginationProps
 }
 
@@ -138,10 +137,10 @@ export default function ListLayout({
                         </CustomLink>
                       </h3>
                       <div className="flex flex-wrap">
-                        {/* {tags?.split(',').map((tag: string) => {
+                        {tags?.split(',').map((tag: string) => {
                           const data = tag.replace(' ', '')
                           return <Tag key={data} text={data} />
-                        })} */}
+                        })}
                       </div>
                     </div>
                     <div className="prose max-w-none text-gray-500 dark:text-gray-400">
