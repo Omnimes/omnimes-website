@@ -21,13 +21,19 @@ export async function generateStaticParams({
 }: {
   params: { locale: string };
 }) {
-  const posts = getDocumentSlugs("posts");
-  if (!posts) return [];
+  const db = await load()
+  const posts = await db
+    .find({
+      collection: 'posts'
+    })
+    .project(['slug', 'lang'])
+    .toArray()
   
-  return posts.map((post) => ({
-    slug: post,
-    locale: locale,
+  const filteredPosts = posts.filter(post => post.lang == locale).map((post) => ({
+    slug: post.slug,
   }));
+
+  return filteredPosts
 }
 
 async function getData({ params }: Props) {
