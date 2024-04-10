@@ -1,12 +1,12 @@
 import fs from 'fs/promises'; 
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page";
+// import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page";
 import { load } from "outstatic/server";
 
 export const generateSearchJSON = async (): Promise<Search[] | undefined> => {
   const db = await load();
   // get all posts. Example of fetching a specific collection
   const allPosts = await db
-    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published' }, [
+    .find({ collection: 'posts', status: 'published' }, [
       'title',
       'slug',
       'description',
