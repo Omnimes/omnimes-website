@@ -5,7 +5,6 @@ import { slug } from 'github-slugger'
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from '@/data/locales'
 
-export const revalidate = 3600;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Tags" });

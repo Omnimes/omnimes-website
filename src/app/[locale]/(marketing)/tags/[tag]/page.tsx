@@ -11,7 +11,6 @@ type Props = {
     locale: string
   }
 }
-export const revalidate = 900;
 
 export async function generateMetadata({ params: { locale, tag } }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'Tag' })

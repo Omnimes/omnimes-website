@@ -6,8 +6,6 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import { OstDocument } from "outstatic";
 import { getDocuments, load } from 'outstatic/server';
 
-export const revalidate = 900;
-
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const title = t('blog_title');
@@ -29,15 +27,15 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   // await generateSearchJSON();
   // Enable static rendering
   unstable_setRequestLocale(locale);
-  const t = await getTranslations('Blog');
+  // const t = await getTranslations('Blog');
   const { allPosts, postsLength } = await getData(locale);
-
+  console.log(allPosts)
   const pageNumber = 1
 
-  const pagination = {
-    currentPage: pageNumber,
-    totalPages: Math.ceil(postsLength / 10),
-  }
+  // const pagination = {
+  //   currentPage: pageNumber,
+  //   totalPages: Math.ceil(postsLength / 10),
+  // }
 
   return (
       // <ListLayout
@@ -48,11 +46,11 @@ export default async function BlogPage({ params: { locale } }: { params: { local
     // />
     <>
       Lista postów: 
-      {allPosts.map(post => {
+      {allPosts.map(post => (
         <li key={post.slug}>
               {post.title}
           </li>
-        })}
+        ))}
     </>
   );
 }

@@ -29,15 +29,13 @@ export async function generateMetadata({ params: { locale } }: Props) {
   return meta
 }
 
-const POSTS_PER_PAGE = 10
-
 export const generateStaticParams = async ({ params: { locale } }: Props) => {
   const posts = getDocuments('posts', ['lang'])
   if (!posts || posts.length == 0 || posts === undefined) {
     return []
   }
   const localePosts = posts.filter((post) => post.lang == locale)
-  const totalPages = Math.ceil(localePosts.length / POSTS_PER_PAGE)
+  const totalPages = Math.ceil(localePosts.length / 10)
   const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
 
   return paths

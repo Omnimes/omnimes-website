@@ -8,7 +8,7 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { siteMetadata } from "@/data/siteMetadata";
-export const revalidate = 900;
+
 type Props = {
   params: {
     slug: string;

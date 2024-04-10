@@ -1,8 +1,6 @@
 import { locales } from "../../config";
 import { ReactNode } from "react";
 import { Space_Grotesk } from "next/font/google";
-import { ThemeProviders } from "./theme-providers";
-import { NextUIProviders } from "./nextui-providers";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -10,6 +8,8 @@ import { siteMetadata } from "@/data/siteMetadata";
 import { Widget } from '@/components/atoms/Widget';
 import { useTranslations } from 'next-intl';
 import { Toaster } from "@/components/atoms/toaster";
+import { NextUIProviders } from "@/components/providers/nextui-providers";
+import { ThemeProviders } from "@/components/providers/theme-providers";
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
