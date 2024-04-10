@@ -4,9 +4,7 @@ import Tag from '@/components/Tag'
 import { slug } from 'github-slugger'
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from '@/data/locales'
-import { getTagsMeta } from '@/lib/tags'
-
-export const revalidate = 3600;
+import { getDocuments } from 'outstatic/server';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Tags" });
@@ -27,7 +25,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default async function TagsPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Tags');
-  let tags = await getTagsMeta(locale) as Record<string, number>;
+  let tags = await getData(locale) as Record<string, number>;
   if (tags == undefined) {
     tags = {}
   }
@@ -62,4 +60,29 @@ export default async function TagsPage({ params: { locale } }: { params: { local
       </div>
     </>
   )
+} 
+
+
+async function getData(locale: string) {
+  const posts = getDocuments('posts', ['lang', 'tags']);
+  
+  if (!posts || posts.length == 0 || posts === undefined) {
+    return undefined
+  }
+    
+    const localePosts = posts.filter((post) => post.lang == locale).map(post => post.tags);
+    const tagCounts = {} as Record<string, number>
+    
+  if (localePosts.length > 0) {
+    localePosts.forEach((obj) => {
+      if (typeof obj == 'string') {
+        const keywordsArray = obj.split(', ');
+        keywordsArray.forEach((keyword) => {
+          tagCounts[keyword] = (tagCounts[keyword] || 0) + 1
+        })
+      }
+    })
+  }
+  
+  return tagCounts
 }
