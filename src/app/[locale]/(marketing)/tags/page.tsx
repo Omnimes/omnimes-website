@@ -4,7 +4,6 @@ import Tag from '@/components/Tag'
 import { slug } from 'github-slugger'
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from '@/data/locales'
-import { getTagsMeta } from '@/lib/tags'
 
 export const revalidate = 3600;
 

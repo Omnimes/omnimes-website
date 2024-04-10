@@ -1,7 +1,6 @@
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import ListLayout from "@/layouts/ListLayout";
-import { generateSearchJSON } from "@/lib/generateSearchJSON";
 import {getTranslations} from 'next-intl/server';
 import { unstable_setRequestLocale } from "next-intl/server";
 import { OstDocument } from "outstatic";

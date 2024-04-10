@@ -2,7 +2,6 @@ import ListLayout from '@/layouts/ListLayoutWithTags'
 import { genPageMetadata } from '@/app/seo'
 import { Metadata } from 'next'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
-import { getTagsMeta } from '@/lib/tags'
 import { getLocalePrimaryDialects } from '@/data/locales'
 // import { ExtendedOstDocument } from '../../blog/page'
 import { load } from 'outstatic/server'
@@ -35,10 +34,8 @@ export const generateStaticParams = async ({
 }: {
   params: { locale: string }
 }) => {
-  let tags = (await getTagsMeta(locale)) as Record<string, number>
-  if (!tags) return []
 
-  return Object.keys(tags).map((tag) => ({
+  return Object.keys([]).map((tag) => ({
     tag: tag,
     locale: locale,
   }))
@@ -70,7 +67,8 @@ export default async function TagPage(params: Props) {
   unstable_setRequestLocale(locale)
   const t = await getTranslations('Tag')
 
-  let tags = (await getTagsMeta(locale)) as Record<string, number>
+  // let tags = [{}] as Record<string, number>
+  let tags: string | any[] | Record<string, number> = [];
   if (tags?.length == 0 || !tags) return <p className="mt-10 text-center">{t('notFound')}</p>
 
   // const posts = await getData(params);
@@ -78,10 +76,13 @@ export default async function TagPage(params: Props) {
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1);
   // if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
 
-  return <ListLayout
-      posts={[]}
-      title={title}
-      tags={tags}
-      tag={tag}
-    />
+  return (
+    <p> tagi </p>
+  )
+  // return <ListLayout
+  //     posts={[]}
+  //     title={title}
+  //     tags={tags}
+  //     tag={tag}
+  //   />
 }
