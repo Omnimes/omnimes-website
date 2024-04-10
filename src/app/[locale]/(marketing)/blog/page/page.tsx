@@ -3,7 +3,9 @@ import { getLocalePrimaryDialects } from '@/data/locales'
 import ListLayout from '@/layouts/ListLayout'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getDocuments, load } from 'outstatic/server'
-import { ExtendedOstDocument, POSTS_PER_PAGE } from '../page'
+import { ExtendedOstDocument } from '../page'
+
+const POSTS_PER_PAGE = 10;
 
 type Props = {
   params: {

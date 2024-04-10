@@ -6,8 +6,8 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import { OstDocument } from "outstatic";
 import { getDocuments, load } from 'outstatic/server';
 
-export const POSTS_PER_PAGE = 10;
 export type ExtendedOstDocument = OstDocument & { tags?: string };
+const POSTS_PER_PAGE = 10;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
