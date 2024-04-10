@@ -2,7 +2,7 @@ import "highlight.js/styles/github-dark.css";
 import PostLayout from "@/layouts/PostLayout";
 import MDXServer from "@/lib/mdx-server";
 import { getLocalePrimaryDialects } from "@/data/locales";
-import { getDocumentSlugs, load } from "outstatic/server";
+import { load } from "outstatic/server";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";

@@ -10,6 +10,7 @@ import { useTranslations } from 'next-intl';
 import { Toaster } from "@/components/atoms/toaster";
 import { NextUIProviders } from "@/components/providers/nextui-providers";
 import { ThemeProviders } from "@/components/providers/theme-providers";
+import { Analytics } from "@vercel/analytics/react"
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
@@ -120,7 +121,8 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
             <ThemeProviders>
                 <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
                 {children}   
-                <Toaster />
+              <Toaster />
+              <Analytics />
             </ThemeProviders>
           </NextIntlClientProvider>
         </NextUIProviders>

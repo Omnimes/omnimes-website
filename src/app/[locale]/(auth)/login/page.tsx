@@ -31,7 +31,7 @@ export default function LoginPage({ params: { locale } }: { params: { locale: st
     <div className="h-screen flex w-full flex-col items-center md:justify-center py-16 md:py-0 px-4">
       <Link
         href="/"
-        className="hover:bg-accent hover:text-accent-foreground absolute left-4 top-8 md:left-8 flex gap-2 justify-center items-center"
+        className="hover:bg-accent hover:text-accent-foreground absolute left-4 top-8 md:left-8 flex gap-2 justify-center items-center py-1 px-3 rounded-md"
       >
         <LuMoveLeft className="h-4 w-4" />
         {t("back")}
