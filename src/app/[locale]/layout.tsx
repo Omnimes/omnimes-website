@@ -120,7 +120,8 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         <NextUIProviders>
           <NextIntlClientProvider messages={messages}>
             <ThemeProviders>
-                <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
+                {/* <Widget text={t("title")} href={"/contact"} buttonText={t("text")} /> */}
+                <Widget text={t("titleHanover")} />
                 {children}   
               <Toaster />
               <Analytics />

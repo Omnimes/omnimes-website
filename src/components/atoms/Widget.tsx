@@ -3,8 +3,8 @@ import { usePathname } from 'next/navigation'
 import { useIsClient, useWindowSize } from 'usehooks-ts'
 type WidgetProps = {
   text: string
-  href: string
-  buttonText: string
+  href?: string
+  buttonText?: string
 }
 export const Widget = ({ text, href, buttonText }: WidgetProps) => {
   const isClient = useIsClient();
@@ -75,7 +75,7 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
                 {text}
               </span>
             </a>
-            <a
+            { href && buttonText && <a
               className="focus-visible:outline-primary group relative flex min-w-[120px] items-center gap-1.5 overflow-hidden rounded-full p-[1px] font-semibold text-foreground shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               href={href}
               rel="noopener noreferrer"
@@ -103,6 +103,7 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
                 </svg>
               </div>
             </a>
+          }
           </div>
         </div>
       ) : null}

@@ -10,7 +10,6 @@ import rehypeCitation from "rehype-citation";
 import rehypeHighlight from "rehype-highlight";
 import rehypePrismPlus from 'rehype-prism-plus';
 import {
-  remarkExtractFrontmatter,
   remarkCodeTitles,
   remarkImgToJsx,
 } from 'pliny/mdx-plugins/index.js'
