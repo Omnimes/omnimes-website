@@ -66,4 +66,23 @@ export const projectsData: Project[] = [
     imgSrc: '/images/project/10.png',
     href: '/administration',
   },
+  {
+    title: 'titleInstall',
+    description: 'descriptionInstall',
+    imgSrc: '/images/project/11.png',
+    href: '/installation',
+  },
+  {
+    title: 'titleSubscription',
+    description: 'descriptionSubscription',
+    imgSrc: '/images/project/12.png',
+    href: '/subscription',
+  },
+]
+
+export const ProjectContent = [
+  {
+    title: "",
+    
+  }
 ]

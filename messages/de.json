@@ -178,7 +178,12 @@
   "Widget": {
     "title": "Entfesseln Sie das Potenzial mit OmniMES! Holen Sie sich jetzt ein Angebot und optimieren Sie Ihre Produktion noch heute.",
     "text": "Jetzt bestellen",
-    "titleHanover": "Besuchen Sie unseren Stand (Halle 7, Stand A21) vom 22. bis 26. April 2024, um unsere neuesten Produkte und innovativen Lösungen kennenzulernen. Bis bald!"
+    "titleHanover": "Besuchen Sie unseren Stand (Halle 7, Stand A21) vom 22. bis 26. April 2024, um unsere neuesten Produkte und innovativen Lösungen kennenzulernen. Bis bald!",
+    "titleHannover": "Besuchen Sie unseren Stand (Halle 7, Stand A21) vom 22. bis 26. April 2024, um unsere neuesten Produkte und innovativen Lösungen, einschließlich des OmniMES-Systems, kennenzulernen. OmniMES wird auf unserem Stand zur Ansicht verfügbar sein, wo unsere Experten gerne seine Funktionen und Möglichkeiten vorstellen.",
+    "seeyou": "Bis bald!",
+    "textButton": "Überprüfen",
+    "textButtonSection": "Details überprüfen",
+    "content": "Die <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> Messe"
   },
   "Opinion": {
     "opinion": "Meinungen",
@@ -283,7 +288,11 @@
     "titleReports": "Berichterstellung",
     "descriptionReports": "Erstellen Sie ganz einfach personalisierte Berichte, um wichtige Leistungsindikatoren und geschäftsrelevante Produktionsinformationen zu präsentieren.",
     "titleAdministration": "Benutzerverwaltung",
-    "descriptionAdministration": "Verwalten Sie Benutzerberechtigungen und Zugriffe im OmniMES-System, um Datensicherheit und effiziente Ressourcennutzung zu gewährleisten."
+    "descriptionAdministration": "Verwalten Sie Benutzerberechtigungen und Zugriffe im OmniMES-System, um Datensicherheit und effiziente Ressourcennutzung zu gewährleisten.",
+    "titleInstall": "Schnelle Systeminstallation auf jedem Betriebssystem",
+    "descriptionInstall": "Das Omnimes-System ist eine wegweisende Plattform, die die Produktionssteuerung durch die Verwendung von Docker-Containerisierung revolutioniert.",
+    "titleSubscription": "Abonnement basierend auf einem Lizenzschlüssel",
+    "descriptionSubscription": "Entwickelt mit Flexibilität und Skalierbarkeit im Sinn, ist unser Abonnementangebot auf die Größe und Bedürfnisse Ihres Unternehmens zugeschnitten."
   },
   "Project": {
     "project": "OmniMES - Produktionserfüllungssystem",
@@ -393,7 +402,7 @@
     "keywords": "Ereignishistorie, Prozessverfolgung, Betriebsverbesserung, Produktion, OmniMES"
   },
   "MonitoringMeta": {
-   "title": "OmniMES - Echtzeitüberwachung - Schnelle Reaktion und Leistungsoptimierung",
+    "title": "OmniMES - Echtzeitüberwachung - Schnelle Reaktion und Leistungsoptimierung",
     "desc": "Überwachen Sie Ihre Produktionsprozesse in Echtzeit, um schnell auf Abweichungen zu reagieren.",
     "keywords": "Echtzeitüberwachung, Produktionsprozesse, Abweichungsreaktion, Leistungsoptimierung, OmniMES"
   },
@@ -412,6 +421,16 @@
     "desc": "Planen und verwalten Sie die Produktionsplanung effizient, unter Berücksichtigung variabler Faktoren und gewährleisten Sie die rechtzeitige Auftragsabwicklung im OmniMES-System.",
     "keywords": "Produktionsplanung, Produktionsplanung, Terminplanung, rechtzeitige Erfüllung, Aufträge, OmniMES"
   },
+  "InstallationMeta": {
+    "title": "OmniMES - Systeminstallation - Schnelle Bereitstellung",
+    "desc": "Wir bieten eine schnelle Bereitstellung unseres Ökosystems, das eine breite Palette von Mikroservices umfasst und Zuverlässigkeit und Flexibilität in jedem Schritt gewährleistet.",
+    "keywords": "OmniMES, Installation, System, Bereitstellung, Geschwindigkeit, Effizienz, Betrieb"
+  },
+  "SubscriptionMeta": {
+    "title": "OmniMES - Systemabonnement - Lizenzschlüssel",
+    "desc": "OmniMES - Abonnement ist auf die Größe und Bedürfnisse Ihres Unternehmens zugeschnitten.",
+    "keywords": "OmniMES, Abonnement, Zahlung, Anzahl der Maschinen, Anzahl der Signale"
+  },
   "Login": {
     "title": "OmniMES - Anmeldung - Melden Sie sich an Ihrem Konto an",
     "desc": "Melden Sie sich in Ihrem Konto im OmniMES-System an, um auf Ihre Daten zuzugreifen und unsere Dienste zu nutzen. Verwalten Sie Ihre Produktion und verfolgen Sie Ihre Prozesse mit Leichtigkeit.",
@@ -428,7 +447,7 @@
     "info": "Geben Sie Ihre E-Mail-Adresse ein, um sich anzumelden",
     "link": "Sie haben kein Konto? Registrieren Sie sich"
   },
-  "LoginForm" : {
+  "LoginForm": {
     "EmailLabel": "E-Mail",
     "EmailPlaceholder": "Jan.Kowalski@gmail.com",
     "invalid": "Invalid email",
@@ -447,5 +466,5 @@
     "info3": "Nutzungsbedingungen",
     "info4": "und",
     "info5": "Datenschutzbestimmungen zu"
-    }
+  }
 }

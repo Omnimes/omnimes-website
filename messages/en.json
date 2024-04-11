@@ -178,7 +178,12 @@
   "Widget": {
     "title": "Unleash the potential with OmniMES! Get a quote now and optimize your production today.",
     "text": "Order Now",
-    "titleHanover": "Visit our booth (Hall 7, Booth A21) from April 22nd to 26th, 2024, to discover our latest products and innovative solutions. See you there!"
+    "titleHanover": "Visit our booth (Hall 7, Booth A21) from April 22nd to 26th, 2024, to discover our latest products and innovative solutions. See you there!",
+    "titleHannover": "Visit our booth (Hall 7, Booth A21) from April 22nd to 26th, 2024, to discover our latest products and innovative solutions, including the OmniMES system. OmniMES will be available for viewing at our booth, where our experts will be happy to demonstrate its features and capabilities.",
+    "seeyou": "See you there!",
+    "textButton": "Check",
+    "textButtonSection": "Check details",
+    "content": "The <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> trade fair"
   },
   "Opinion": {
     "opinion": "Opinions",
@@ -283,7 +288,11 @@
     "titleReports": "Report Creator",
     "descriptionReports": "Easily create personalized reports to present key performance indicators and business-related production information.",
     "titleAdministration": "User Management Module",
-    "descriptionAdministration": "Manage user permissions and access in the OmniMES system, ensuring data security and efficient resource utilization."
+    "descriptionAdministration": "Manage user permissions and access in the OmniMES system, ensuring data security and efficient resource utilization.",
+    "titleInstall": "Quick system installation on any operating system",
+    "descriptionInstall": "The Omnimes system is a pioneering platform that revolutionizes production management through the use of Docker containerization.",
+    "titleSubscription": "Subscription based on a license key",
+    "descriptionSubscription": "Designed with flexibility and scalability in mind, our subscription offering is tailored to the size and needs of your business."
   },
   "Project": {
     "project": "OmniMES - production execution system",
@@ -393,7 +402,7 @@
     "keywords": "event history, process tracking, operation improvement, production, OmniMES"
   },
   "MonitoringMeta": {
-   "title": "OmniMES - Real-Time Monitoring - Quick Reaction and Performance Optimization",
+    "title": "OmniMES - Real-Time Monitoring - Quick Reaction and Performance Optimization",
     "desc": "Monitor your production processes in real-time to quickly respond to any anomalies.",
     "keywords": "real-time monitoring, production processes, anomaly response, performance optimization, OmniMES"
   },
@@ -412,6 +421,16 @@
     "desc": "Plan and manage the production schedule efficiently, taking into account variable factors and ensuring timely order fulfillment in the OmniMES system.",
     "keywords": "production schedule, production planning, schedule management, timely fulfillment, orders, OmniMES"
   },
+  "InstallationMeta": {
+    "title": "OmniMES - System Installation - Rapid Deployment",
+    "desc": "We provide rapid deployment of our ecosystem, which includes a wide range of microservices, ensuring reliability and flexibility at every step.",
+    "keywords": "OmniMES, installation, system, deployment, speed, efficiency, operation"
+  },
+  "SubscriptionMeta": {
+    "title": "OmniMES - System Subscription - License Key",
+    "desc": "OmniMES - Subscription is tailored to the size and needs of your business.",
+    "keywords": "OmniMES, subscription, payment, number of machines, number of signals"
+  },
   "Login": {
     "title": "OmniMES - Login - Sign in to Your Account",
     "desc": "Sign in to your account in the OmniMES system to access your data and start using our services. Manage your production and track your processes with ease.",
@@ -428,7 +447,7 @@
     "info": "Enter your email to sign in to your account",
     "link": "Don't have an account? Sign Up"
   },
-  "LoginForm" : {
+  "LoginForm": {
     "EmailLabel": "Email",
     "EmailPlaceholder": "John.Doe@gmail.com",
     "invalid": "Invalid email",

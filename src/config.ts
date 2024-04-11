@@ -66,6 +66,16 @@ export const pathnames = {
     de: "/project/verwaltung",
     pl: "/project/administracja",
   },
+  '/project/installation': {
+    en: "/project/installation",
+    de: "/project/installation",
+    pl: "/project/instalacja",
+  },
+  '/project/subscription': {
+    en: "/project/subscription",
+    de: "/project/abonnement",
+    pl: "/project/subskrypcja",
+  },
   '/offer': {
     en: '/offer',
     de: '/angebot',
