@@ -1,5 +1,5 @@
-import { Button, Card, CardFooter, Image, Link } from '@nextui-org/react'
-
+import { Button, Card, CardFooter, Link } from '@nextui-org/react'
+import Image from "next/image"
 export const CardAuthor = ({
   image,
   name,
@@ -20,7 +20,8 @@ export const CardAuthor = ({
           alt="Relaxing app background"
           className="z-0 h-full w-full object-cover"
           src={image}
-          removeWrapper
+          width={600}
+          height={600}
         />
         <CardFooter className="absolute bottom-0 z-1 border-t-1 border-default-600 bg-black/40 dark:border-default-100">
           <div className="flex flex-grow items-center gap-2">

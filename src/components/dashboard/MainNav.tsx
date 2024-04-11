@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { siteMetadata } from "@/data/siteMetadata"
 import { cn } from "@/utils/utils"
-import { MobileNav } from "@/components/mobile-nav"
+import { MobileNav } from "@/components/MobileNav"
 import { LuX, LuMenu } from "react-icons/lu";
 import { useSelectedLayoutSegment } from "next/navigation"
 import { useState } from "react";

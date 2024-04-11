@@ -1,4 +1,4 @@
-import { Image } from '@nextui-org/react'
+import Image from 'next/image'
 import { SubtitleNormal } from './atoms/Subtitle'
 import { Heading } from './atoms/Heading'
 import { useTranslations } from 'next-intl'
@@ -17,6 +17,8 @@ export const Cooperation = () => {
               src={'/images/saz.png'}
               alt={'logo saz'}
               className="z-1 max-h-[100px] brightness-0 dark:brightness-100"
+              width={500}
+              height={500}
             />
           </a>
           <a href="#" className="flex items-center justify-center">
@@ -24,6 +26,8 @@ export const Cooperation = () => {
               src={'/images/eldrew.png'}
               alt={'logo eldrew'}
               className="z-1 max-h-[100px] dark:brightness-0 dark:grayscale-0 dark:invert"
+              width={500}
+              height={500}
             />
           </a>
           <a href="#" className="flex items-center justify-center">
@@ -31,6 +35,8 @@ export const Cooperation = () => {
               src={'/images/tartak.png'}
               alt={'logo tartak'}
               className="z-1 max-h-[100px] dark:brightness-0 dark:grayscale-0 dark:invert"
+              width={500}
+              height={500}
             />
           </a>
           <a href="#" className="flex items-center justify-center">
@@ -38,6 +44,8 @@ export const Cooperation = () => {
               src={'/images/triwall.png'}
               alt={'logo triwall'}
               className="z-1 max-h-[100px] dark:brightness-0 dark:grayscale-0 dark:invert"
+              width={500}
+              height={500}
             />
           </a>
           {/* <a href="#" className="flex items-center justify-center">

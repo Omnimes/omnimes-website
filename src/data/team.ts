@@ -1,7 +1,7 @@
 export const TeamsData: Teams[] = [
   {
     name: "Michał Cichoń",
-    avatar: "/images/cichon.png",
+    avatar: "/images/michal.png",
     occupation: "Project Manager",
     },
     {

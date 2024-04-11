@@ -7,7 +7,7 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { siteMetadata } from "@/data/siteMetadata";
 import { Widget } from '@/components/atoms/Widget';
 import { useTranslations } from 'next-intl';
-import { Toaster } from "@/components/atoms/toaster";
+import { Toaster } from "@/components/atoms/Toaster";
 import { NextUIProviders } from "@/components/providers/nextui-providers";
 import { ThemeProviders } from "@/components/providers/theme-providers";
 import { Analytics } from "@vercel/analytics/react"

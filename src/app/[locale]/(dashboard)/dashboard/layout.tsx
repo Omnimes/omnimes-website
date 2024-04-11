@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import { dashboardConfig } from "@/data/dashboard"
 import { getCurrentUser } from "@/utils/session"
 import { MainNav } from "@/components/dashboard/MainNav";
-import { UserAccountNav } from "@/components/user-account-nav";
+import { UserAccountNav } from "@/components/UserAccountNav";
 import { DashboardNav } from "@/components/dashboard/DashboardNav";
 import { SiteFooter } from "@/components/dashboard/SiteFooter";
 

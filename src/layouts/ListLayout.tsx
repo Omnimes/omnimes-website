@@ -112,7 +112,11 @@ export default function ListLayout({
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && t('NotFound')}
+          {!filteredBlogPosts.length && (
+            <p className="mt-10 text-center">
+              {t('NotFound')}
+            </p>
+          )}
           {displayPosts.map((post) => {
             const { title, description, tags, publishedAt, slug } = post
             return (

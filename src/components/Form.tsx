@@ -15,7 +15,7 @@ import { useTranslations } from 'next-intl'
 import { useWindowSize } from 'usehooks-ts'
 import { LuMail, LuUser, LuUsers, LuBuilding, LuPhone } from 'react-icons/lu'
 import { FormEvent, useCallback, useMemo, useState } from 'react'
-import { sendEmail } from '@/utils/send-email'
+import { sendEmail } from '@/utils/sendEmail'
 import { DangerAlert, SuccessAlert } from './atoms/Alerts'
 import { useParams } from 'next/navigation'
 export type FormData = {

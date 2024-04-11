@@ -74,7 +74,11 @@ export default async function Page({ params }: { params: { page: string; locale:
   const t = await getTranslations('Blog')
    const { allPosts, postsLength } = await getData(params.locale, params.page);
   if (!allPosts || allPosts.length == 0 || allPosts === undefined) {
-    return <p>{t('NotFound')}</p>
+    return (
+            <p className="mt-10 text-center">
+              {t('NotFound')}
+            </p>
+          )
   }
 
   const pageNumber = parseInt(params.page as string)

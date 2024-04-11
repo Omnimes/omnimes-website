@@ -8,7 +8,6 @@ export const pathnames = {
   '/admin': '/admin',
   '/faq': '/faq',
   '/blog': '/blog',
-  '/demo': '/demo',
 
   '/login': '/login',
   '/register': {

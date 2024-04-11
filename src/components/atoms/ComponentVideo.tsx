@@ -1,6 +1,6 @@
 'use client'
 import dynamic from 'next/dynamic'
-import { Suspense, useState } from 'react'
+import { useState } from 'react'
 import { Skeleton } from '@nextui-org/react'
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false })
 

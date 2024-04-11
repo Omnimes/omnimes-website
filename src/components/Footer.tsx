@@ -1,4 +1,4 @@
-import { Image } from '@nextui-org/react'
+import Image from 'next/image'
 import Logo from '@/data/logo.svg'
 import { DescriptionSecondary } from './atoms/Description'
 import SectionContainer from './SectionContainer'
@@ -26,7 +26,6 @@ export const Footer = () => {
           className="my-6 flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
         >
           <Image
-            disableSkeleton
             src={Logo.src}
             alt={'OmniMES logo'}
             width={44}

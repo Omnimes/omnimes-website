@@ -1,26 +1,5 @@
 {
   "commit": "7a511dc6637a6416869f219a8ddd412b7a7f125e",
   "generated": "2024-04-11T07:09:31.734Z",
-  "metadata": [
-    {
-      "__outstatic": {
-        "commit": "09ef6bc098e065e51b535fe216239101f4982e26",
-        "hash": "1391597258",
-        "path": "outstatic/content/posts/czwarta-rewolucja-przemyslowa.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/obraz-a0mt-Q4Mj.jpg",
-      "description": "Przemysł 4.0, nazywany także \"czwartą rewolucją przemysłową\", to termin odnoszący się do nowoczesnych innowacji technologicznych, które zmieniają sposób, w jaki przemysł jest prowadzony, produkty są wytwarzane, oraz jak pracownicy są zatrudniani i szkoleni.",
-      "lang": "pl",
-      "publishedAt": "2024-04-10T08:30:14.410Z",
-      "slug": "czwarta-rewolucja-przemyslowa",
-      "status": "published",
-      "tags": "przemysł, definicje",
-      "title": "Czwarta rewolucja przemysłowa"
-    }
-  ]
+  "metadata": []
 }

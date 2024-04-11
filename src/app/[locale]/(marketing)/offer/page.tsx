@@ -5,7 +5,8 @@ import { Heading } from '@/components/atoms/Heading'
 import { SubtitleNormal } from '@/components/atoms/Subtitle'
 import { AbstractBackgroundSecond } from '@/components/decorate/AbstractBackground'
 import { getLocalePrimaryDialects } from '@/data/locales'
-import { Button, Image, Link } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
+import Image from 'next/image';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 type Data = {
   count: number
@@ -157,15 +158,15 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
             className="w-full dark:hidden z-0"
             src="/images/monitoring.png"
             alt="omnimes mockup"
-            disableSkeleton={true}
-            removeWrapper={true}
+            width={992}
+            height={715}
           />
           <Image
             className="hidden w-full dark:block z-0"
             src="/images/monitoring-dark.png"
             alt="omnimes mockup"
-            disableSkeleton={true}
-            removeWrapper={true}
+            width={992}
+            height={715}
           />
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">

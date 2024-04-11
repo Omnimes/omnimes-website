@@ -5,7 +5,7 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import Image from "next/image"
 import { useLocale, useTranslations } from 'next-intl'
 import getFormattedDate from '@/lib/getFormattedDate'
-import MDXComponent from '@/components/mdx/mdx-component'
+import MDXComponent from '@/components/mdx/MdxComponent'
 import Default from "../../public/images/default.png"
 import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 interface LayoutProps {

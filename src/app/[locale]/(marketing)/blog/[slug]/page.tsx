@@ -1,6 +1,6 @@
 import "highlight.js/styles/github-dark.css";
 import PostLayout from "@/layouts/PostLayout";
-import MDXServer from "@/lib/mdx-server";
+import MDXServer from "@/lib/mdxServer";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import { load } from "outstatic/server";
 import { getTranslations } from "next-intl/server";
