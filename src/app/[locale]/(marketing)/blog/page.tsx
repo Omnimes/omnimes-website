@@ -1,6 +1,7 @@
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import ListLayout from "@/layouts/ListLayout";
+import { generateSearchJSON } from "@/lib/generateSearchJSON";
 import {getTranslations} from 'next-intl/server';
 import { unstable_setRequestLocale } from "next-intl/server";
 import { OstDocument } from "outstatic";
@@ -28,6 +29,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   // await generateSearchJSON();
+  await getDataToSearch(locale);
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
@@ -74,4 +76,12 @@ async function getData(locale: string) {
     allPosts,
     postsLength
   }
+}
+
+async function getDataToSearch(locale: string) {
+  const posts = getDocuments('posts', ['slug', 'title', 'description', 'tags', 'lang'])
+    .filter(post => post.status == 'published')
+    .filter(post => post.lang == locale)
+  
+  await generateSearchJSON(posts);
 }

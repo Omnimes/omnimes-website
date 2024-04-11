@@ -3,14 +3,7 @@ import { ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { KBarSearchProvider } from 'pliny/search/KBar.js'
 import { usePathname, useRouter } from 'next/navigation'
-type BlogPost = {
-  path: string
-  title: string
-  keywords: string
-  section: string
-  subtitle: string
-  lang: string
-}
+
 
 export const ComponentSearch = ({ children }: { children: ReactNode }) => {
   const router = useRouter()
@@ -97,12 +90,12 @@ export const ComponentSearch = ({ children }: { children: ReactNode }) => {
             return json
               .filter((post: BlogPost) => post.lang === lang)
               .map((post: BlogPost) => ({
-                id: post.path,
+                id: post.slug,
                 name: post.title,
-                keywords: post?.keywords || '',
+                keywords: post.tags || "",
                 section: 'Blog',
-                subtitle: post.subtitle,
-                perform: () => router.push('/blog/' + post.path),
+                subtitle: post.description || "",
+                perform: () => router.push('/blog/' + post.slug),
               }))
           },
         }}

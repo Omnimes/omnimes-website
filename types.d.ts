@@ -6,13 +6,12 @@ type Teams = {
   linkedin?: string,
 }
 
-type Search = {
-    path: string,
-    title: string,
-    keywords: string,
-    subtitle: string,
-    section: string,
-    lang: string,
+type BlogPost = {
+  slug: string
+  title: string
+  tags: string
+  description: string
+  lang: string
 }
 
 type NavItem = {
