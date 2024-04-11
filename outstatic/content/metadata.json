@@ -1,26 +1,6 @@
 {
-  "commit": "ad2bf5960c5993ee3a497d7286c8bb45b604098b",
-  "generated": "2024-04-11T09:47:59.096Z",
+  "commit": "7f1c6ae43dc3b6790b3b95b27f10a372da5d8a04",
+  "generated": "2024-04-11T09:53:27.156Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "ad2bf5960c5993ee3a497d7286c8bb45b604098b",
-        "hash": "4229677919",
-        "path": "outstatic/content/posts/testujemy-post.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/10-c4ND.png",
-      "description": "Testujemy post",
-      "lang": "pl",
-      "publishedAt": "2024-04-11T09:57:35.499Z",
-      "slug": "testujemy-post",
-      "status": "published",
-      "tags": "test, post",
-      "title": "Testujemy post"
-    }
   ]
 }
