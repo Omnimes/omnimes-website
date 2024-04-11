@@ -1,5 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
-const excludePaths = ['/en/admin', '/pl/admin', '/de/admin']
+const excludePaths = [
+  '/en/admin', '/pl/admin', '/de/admin',
+  '/en/dashboard', '/pl/dashboard', '/de/dashboard'
+]
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://omnimes.com/',
   generateRobotsTxt: true,

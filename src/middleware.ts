@@ -3,8 +3,9 @@ import createMiddleware from 'next-intl/middleware';
 import {pathnames, locales, localePrefix, localeDetection} from './config';
 import { NextRequest } from "next/server";
 
-const protectedPages = ['/dashboard'] // dodawać wszystkie protected page
 const adminPages = ['/admin'] // dodawać wszystkie admin page
+const protectedPages = ['/dashboard'] // dodawać wszystkie protected page
+/* wykluczenie z sitemapy -> dodać do pliku next-sitemap.config.js */
 
 export const intlMiddleware =  createMiddleware({
   defaultLocale: 'pl',
