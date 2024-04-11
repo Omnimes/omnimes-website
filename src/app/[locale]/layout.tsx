@@ -11,6 +11,7 @@ import { Toaster } from "@/components/atoms/toaster";
 import { NextUIProviders } from "@/components/providers/nextui-providers";
 import { ThemeProviders } from "@/components/providers/theme-providers";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
@@ -123,6 +124,7 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
                 {children}   
               <Toaster />
               <Analytics />
+              <SpeedInsights />
             </ThemeProviders>
           </NextIntlClientProvider>
         </NextUIProviders>
