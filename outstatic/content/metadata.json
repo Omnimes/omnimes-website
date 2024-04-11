@@ -1,26 +1,26 @@
 {
   "commit": "7a511dc6637a6416869f219a8ddd412b7a7f125e",
-  "generated": "2024-04-11T07:09:27.697Z",
+  "generated": "2024-04-11T07:09:31.734Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "e91faa8b253794ba0307145deac2175ae75c32f4",
-        "hash": "2391129758",
-        "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
+        "commit": "09ef6bc098e065e51b535fe216239101f4982e26",
+        "hash": "1391597258",
+        "path": "outstatic/content/posts/czwarta-rewolucja-przemyslowa.md"
       },
       "author": {
         "name": "OmniMES",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/plakat4-E3NT.png",
-      "description": "W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.\n",
+      "coverImage": "/images/obraz-a0mt-Q4Mj.jpg",
+      "description": "Przemysł 4.0, nazywany także \"czwartą rewolucją przemysłową\", to termin odnoszący się do nowoczesnych innowacji technologicznych, które zmieniają sposób, w jaki przemysł jest prowadzony, produkty są wytwarzane, oraz jak pracownicy są zatrudniani i szkoleni.",
       "lang": "pl",
-      "publishedAt": "2024-04-09T14:05:43.694Z",
-      "slug": "przemysl-5-0-nowa-era-produkcji",
+      "publishedAt": "2024-04-10T08:30:14.410Z",
+      "slug": "czwarta-rewolucja-przemyslowa",
       "status": "published",
-      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
-      "title": "Przemysł 5.0: Nowa Era Produkcji"
+      "tags": "przemysł, definicje",
+      "title": "Czwarta rewolucja przemysłowa"
     }
   ]
 }
