@@ -2,6 +2,7 @@ import { genPageMetadata } from '@/app/seo'
 import { getLocalePrimaryDialects } from '@/data/locales'
 import { useTranslations } from 'next-intl'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
+import Image from 'next/image'
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'MonitoringMeta' })
@@ -21,8 +22,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function MonitoringPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
-  unstable_setRequestLocale(locale)
-  const t = useTranslations("MonitoringPage")
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("MonitoringPage");
+  const localPath = locale == 'pl' ? 'pl' : 'en';
   return (
     <main>
       <h1
@@ -51,14 +53,15 @@ export default function MonitoringPage({ params: { locale } }: { params: { local
         {t("heading3")}
       </h2>
      <p dangerouslySetInnerHTML={{ __html: t.raw('p3') }} className="mt-6 mb-10 text-lg leading-8 text-gray-500 dark:text-gray-400" />
-      {/* img? */}
+      <Image src={`/images/project/${localPath}/monitoring/light.png`} alt={t("altLight")} width={1650} height={656} className="w-full h-auto object-contain dark:hidden rounded-md shadow-md mb-10" />
+      <Image src={`/images/project/${localPath}/monitoring/dark.png`} alt={t("altDark")} width={1650} height={656} className="w-full h-auto object-contain hidden dark:flex rounded-md shadow-md mb-10" />
       <h2 className="font-sans text-2xl font-bold tracking-tight sm:text-4xl mt-2">
         {t("heading4")}
       </h2>
       <p className="mt-6 mb-10 text-lg leading-8 text-gray-500 dark:text-gray-400">
         {t("p4")}
       </p>
-      {/* img? */}
+      <Image src={`/images/project/${localPath}/monitoring/fullpage.png`} alt={t("altTV")} width={1902} height={512} className="w-full h-auto object-contain rounded-md shadow-md mb-10" />
     </main>
   )
 }

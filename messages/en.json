@@ -480,7 +480,10 @@
     "l3": "Throughput scale <strong>from 1,000 to 1,000,000 signals per second</strong>, ensuring comprehensive monitoring of even the most complex production systems.",
     "p2": "The use of <strong>MQTT version SparkPlug B</strong> has allowed for the standardization of data structure, resulting in ease of system configuration. Each monitored element is represented through <strong>tags and values</strong>, facilitating management and quick adaptation to changing requirements of production processes.",
     "p3": "The <strong>Omnimes</strong> system monitoring is designed with flexibility and personalization in mind. Users have the ability to customize the interface appearance according to their own preferences and enterprise needs.",
-    "p4": "Additionally, to meet enterprise expectations, we have implemented a special TV monitoring mode. It allows for convenient display of key information on large monitors, enabling efficient tracking of production processes from any location within the facility."
+    "p4": "Additionally, to meet enterprise expectations, we have implemented a special TV monitoring mode. It allows for convenient display of key information on large monitors, enabling efficient tracking of production processes from any location within the facility.",
+    "altLight": "Photo depicting the Monitoring module in light theme",
+    "altDark": "Photo depicting the Monitoring module in dark theme",
+    "altTV": "Photo depicting the Monitoring module in TV mode"
   },
   "GPTPage": {
     "title": "GPT Assistant System",
@@ -492,7 +495,13 @@
     "heading2": "Experience Personalization",
     "p3": "We understand that every production process is unique. Therefore, our system offers the possibility of personalizing the behavior of the AI assistant. You can specify which information is most important to you, and the system will adjust the way data is presented and analyzed to your individual needs. This flexibility ensures that you receive precisely the information that is most relevant to your enterprise.",
     "heading3": "Ease of Use",
-    "p4": "We have designed the interface of our MES system with maximum intuitiveness and simplicity of use in mind. <strong>Activation of the GPT assistant</strong> is possible by pressing a combination of three buttons: G + P + T. This makes system management quick and does not require advanced technical knowledge. The only requirement of our solution is to possess a GPT API token."
+    "p4": "We have designed the interface of our MES system with maximum intuitiveness and simplicity of use in mind. <strong>Activation of the GPT assistant</strong> is possible by pressing a combination of three buttons: G + P + T. This makes system management quick and does not require advanced technical knowledge. The only requirement of our solution is to possess a GPT API token.",
+    "altLight": "A photo showing the Dashboard module with a dynamic panel in light mode",
+    "altDark": "A photo showing the Dashboard module with a dynamic panel in dark mode",
+    "altLight2": "A photo showing how to perform analysis using the GPT assistant in light mode",
+    "altDark2": "A photo showing how to perform analysis using the GPT assistant in dark mode",
+    "altLight3": "A photo showing how to configure the GPT assistant in light mode",
+    "altDark3": "A photo showing how to configure the GPT assistant in dark mode"
   },
   "ConfigurationPage": {
     "title": "Flexible Configurator",
@@ -504,7 +513,12 @@
     "heading3": "Solutions for Incompatible Devices",
     "p3": "We understand that not all devices may <strong>natively support the Mqtt Sparkplug B protocol.</strong> For such cases, we provide special communication gateways that convert signals to a compatible format. These versatile gateways support over <strong>300 different protocols, from popular ones like OPC UA, MQTT, Ethernet, to lesser-known ones</strong> - ensuring that almost any device can be integrated with our system.",
     "heading4": "Customization of Statuses",
-    "p4": "Each status assigned to a machine or workstation can be fully personalized, allowing for the customization of how information is presented to the user's needs and preferences. Colors, font sizes, icons, and even the way data is presented can be changed - for example, pressure measurement can be displayed in the form of a gauge. This flexibility greatly facilitates monitoring of production processes and quick response to any abnormalities."
+    "p4": "Each status assigned to a machine or workstation can be fully personalized, allowing for the customization of how information is presented to the user's needs and preferences. Colors, font sizes, icons, and even the way data is presented can be changed - for example, pressure measurement can be displayed in the form of a gauge. This flexibility greatly facilitates monitoring of production processes and quick response to any abnormalities.",
+    "altTree": "A photo depicting the structure of the machinery park in a tree view",
+    "altLight1": "A photo depicting machine editing and its statuses in light mode",
+    "altDark1": "A photo depicting machine editing and its statuses in dark mode",
+    "altLight2": "A photo depicting profile editing in light mode",
+    "altDark2": "A photo depicting profile editing in dark mode"
   },
   "DashboardPage": {
     "title": "Interactive Dashboards for Data Exploration and Visualization",
@@ -512,7 +526,9 @@
     "p2": "The system utilizes the <strong>Redash</strong> tool to create dynamic charts. Redash uses the Omnimes system API to retrieve necessary data from selected machine/machines for a specified period, enabling monitoring of their changes, <strong>such as compiling downtime of the last 24 hours for several production lines</strong>, or performing comparisons, like <strong>the ratio of failure occurrences to the time of producing good products</strong>.",
     "p3": "Each of these visualizations allows for individual adjustment of data refresh frequency, <strong>ranging from 1 minute to 60 minutes</strong>. Additionally, this tool offers <strong>the ability to set email alerts when a specified value exceeds a set limit.</strong>",
     "p4": "The tool has been integrated with Omnimes system users, offering a unique monitoring mode. This monitoring mode differs from real-time monitoring because it allows presenting data from a wider period - up to 24 hours or 10,000 documents per visualization, meaning that the data refresh time can be up to 1 minute.",
-    "p5": "The visualizations offer a wide range of customization - from bar charts, through donut-type pie charts, to tables with data search capabilities. With these options, each data presentation can be maximally tailored to the user's preferences, providing precise and intuitive tools for analysis and monitoring."
+    "p5": "The visualizations offer a wide range of customization - from bar charts, through donut-type pie charts, to tables with data search capabilities. With these options, each data presentation can be maximally tailored to the user's preferences, providing precise and intuitive tools for analysis and monitoring.",
+    "altRedash": "A photo depicting interactive dashboards for data exploration and visualization",
+    "altRedashAdding": "A photo depicting the addition of charts to the dynamic dashboard"
   },
   "PlanogramPage": {
     "title": "Production Process Visualizer",
@@ -523,7 +539,9 @@
     "heading2": "Real-Time Monitoring and Analytics",
     "p3": "Each element representing a machine - its status on the planogram is updated in real-time, providing information about current status, performance, as well as potential issues or failures.",
     "heading3": "Customization and Scalability",
-    "p4": "The planogram is highly flexible, allowing for customization and adaptation to the unique needs of each enterprise. Users can customize the appearance of tiles, the information displayed on them, and their organization to best suit the characteristics and requirements of a specific production line."
+    "p4": "The planogram is highly flexible, allowing for customization and adaptation to the unique needs of each enterprise. Users can customize the appearance of tiles, the information displayed on them, and their organization to best suit the characteristics and requirements of a specific production line.",
+    "altLight": "A photo depicting the Planogram module, which is a visualizer of production processes in light mode",
+    "altDark": "A photo depicting the Planogram module, which is a visualizer of production processes in dark mode"
   },
   "HistoryPage": {
     "title": "Event History",
@@ -535,7 +553,9 @@
     "heading3": "Big Data and Apache Spark – AI Driving Force",
     "p3": "<strong>For data reaching petabytes,</strong> we offer support through renowned <strong>Apache Spark</strong> software, ensuring that our MES system can scale with your enterprise's needs. If your company desires to delve into the world of <strong>Big Data</strong>, Omnimes is prepared to adapt to and handle data on an unprecedented scale. In this era of data, <strong>Big Data is not just a trend - it's the foundation of AI solutions driving innovation and efficiency</strong>.",
     "heading4": "Analysis Supported by GPT Assistant",
-    "p4": "But that's not all. Event history in our MES system is further supported by <strong>GPT Assistant analysis - artificial intelligence from OpenAI</strong>. The GPT Assistant processes collected data and provides insightful analyses that enable informed operational decision-making."
+    "p4": "But that's not all. Event history in our MES system is further supported by <strong>GPT Assistant analysis - artificial intelligence from OpenAI</strong>. The GPT Assistant processes collected data and provides insightful analyses that enable informed operational decision-making.",
+    "altLight": "A photo depicting the Event History module in light mode",
+    "altDark": "A photo depicting the Event History module in dark mode"
   },
   "SchedulePage": {
     "title": "Production Schedule - Your Central Order Management Hub",
@@ -549,7 +569,9 @@
     "heading2": "Visualization That Aids Decision-Making",
     "p1": "Plan your production with precision, using easily customizable views and filters that help you focus on the most important details and priorities.",
     "heading3": "Always One Step Ahead",
-    "p2": "With the Omnimes system, scheduling becomes proactive, not reactive. Anticipate needs, react to changes, and optimize production processes, all from one central place that is always available to you and your team."
+    "p2": "With the Omnimes system, scheduling becomes proactive, not reactive. Anticipate needs, react to changes, and optimize production processes, all from one central place that is always available to you and your team.",
+    "altLight": "A photo depicting the production schedule in light mode",
+    "altDark": "A photo depicting the production schedule in dark mode"
   },
   "AnalysisPage": {
     "title": "Analysis Modules",
@@ -563,7 +585,17 @@
     "l2-p": "<strong>Utilities</strong> - this category includes analysis of measurements from devices such as temperature, pressure, instantaneous and total media consumption, etc., providing detailed insight into resource utilization.",
     "l2-p2": "<strong>Device Errors</strong> - while these data do not directly impact the production process, they are invaluable for service and maintenance teams. Supported by Pareto charts, these analyses reveal common causes of problems, allowing for preventive maintenance actions.",
     "l3": "GPT Assistant Analyses",
-    "l3-p": "<strong>GPT Assistant</strong> - finally, we present a list of text analyses generated by the GPT Assistant, which, using AI, delves deeper into data, offering interpretations and recommendations that can revolutionize decision-making in your company."
+    "l3-p": "<strong>GPT Assistant</strong> - finally, we present a list of text analyses generated by the GPT Assistant, which, using AI, delves deeper into data, offering interpretations and recommendations that can revolutionize decision-making in your company.",
+    "altLight": "A photo depicting a time analysis, the chart includes information such as breakdowns, setups, and micro-stoppages. All in light mode.",
+    "altDark": "A photo depicting a time analysis, the chart includes information such as breakdowns, setups, and micro-stoppages. All in dark mode.",
+    "altLight1": "A photo depicting OEE analysis. All in light mode.",
+    "altDark1": "A photo depicting OEE analysis. All in dark mode.",
+    "altLight2": "A photo depicting media analysis. All in light mode.",
+    "altDark2": "A photo depicting media analysis. All in dark mode.",
+    "altLight3": "A photo depicting error analysis. All in light mode.",
+    "altDark3": "A photo depicting error analysis. All in dark mode.",
+    "altLight4": "A photo depicting a list of GPT assistant analyses. All in light mode.",
+    "altDark4": "A photo depicting a list of GPT assistant analyses. All in dark mode."
   },
   "CreatorPage": {
     "title": "Report Creator",
@@ -578,16 +610,22 @@
     "l1": "<strong>Your company's image</strong>: Customize reports to match your company's visual identity, including the logo and small details that matter.",
     "l2": "<strong>Custom formulas</strong>: Every company is different, so we offer the ability to create custom calculation formulas – even for standard indicators like OEE.",
     "l3": "<strong>Flexibility in usage</strong>: Use, modify, and customize report templates to meet current needs and changing business conditions.",
-    "p5": "With Omnimes, you gain not only a tool for creating reports – you gain a partner who helps you fully understand and utilize production data. Harness the power of personalization and precision in reporting to outpace the competition and streamline your production processes. Omnimes – where flexibility meets innovation."
+    "p5": "With Omnimes, you gain not only a tool for creating reports – you gain a partner who helps you fully understand and utilize production data. Harness the power of personalization and precision in reporting to outpace the competition and streamline your production processes. Omnimes – where flexibility meets innovation.",
+    "altLight": "A photo depicting the report generation module in light mode.",
+    "altDark": "A photo depicting the report generation module in dark mode.",
+    "altLight1": "A photo depicting a list of templates for report generation in light mode.",
+    "altDark1": "A photo depicting a list of templates for report generation in dark mode."
   },
   "AdministrationPage": {
     "title": "User Management Module",
     "heading1": "User and Permission Management in Omnimes – Full Control and Security of Your Data",
     "p1": "Our Omnimes system is designed to provide you with the highest level of flexibility and security through advanced user and permission management. We offer powerful tools that allow you to customize the system to the needs of any organization, regardless of its size or industry.",
-    "heading2": "User Creation and Management:",
+    "heading2": "User Creation and Management",
     "p2": "Creating users in Omnimes is intuitive and fast. It allows administrators to easily add new team members, which is crucial for dynamically growing companies. Each user can be assigned to one or more groups, facilitating easy coordination of teamwork and access to the appropriate resources.",
-    "heading3": "Groups and Permission Hierarchy:",
-    "p3": "Establish a clear organizational structure with user groups. Groups allow for collective management of access and permissions, significantly simplifying the administration of large teams and ensuring that each individual has access only to the resources they need for their work."
+    "heading3": "Groups and Permission Hierarchy",
+    "p3": "Establish a clear organizational structure with user groups. Groups allow for collective management of access and permissions, significantly simplifying the administration of large teams and ensuring that each individual has access only to the resources they need for their work.",
+    "altLight": "A photo depicting the user management module in the system. In light mode.",
+    "altDark": "A photo depicting the user management module in the system. In dark mode."
   },
   "InstallationPage": {
     "title": "Fast System Installation via Docker Containerization on Any Operating System",

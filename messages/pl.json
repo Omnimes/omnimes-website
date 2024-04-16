@@ -480,7 +480,10 @@
     "l3": "skalę przepustowości <strong>od 1 000 do 1 000 000 sygnałów na sekundę</strong>, zapewniającą wszechstronne monitorowanie nawet najbardziej złożonych systemów produkcyjnych.",
     "p2": "Wykorzystanie <strong>MQTT w wersji SparkPlug B</strong> pozwoliło na standaryzację struktury danych, co przekłada się na łatwość w konfiguracji systemu. Każdy element monitorowany jest poprzez <strong>tagi i wartości</strong>, co ułatwia zarządzanie i szybkie adaptacje do zmieniających się wymagań procesów produkcyjnych.",
     "p3": "Monitoring systemu <strong>Omnimes</strong> został zaprojektowany z myślą o elastyczności i personalizacji. Użytkownicy mają możliwość dostosowania wyglądu interfejsu do własnych preferencji i potrzeb przedsiębiorstwa.",
-    "p4": "Dodatkowo, wychodząc naprzeciw oczekiwaniom przedsiębiorstw, zaimplementowaliśmy specjalny tryb monitoringu TV. Pozwala on na wygodne wyświetlanie kluczowych informacji na dużych monitorach, umożliwiając efektywne śledzenie procesów produkcyjnych z dowolnego miejsca w hali."
+    "p4": "Dodatkowo, wychodząc naprzeciw oczekiwaniom przedsiębiorstw, zaimplementowaliśmy specjalny tryb monitoringu TV. Pozwala on na wygodne wyświetlanie kluczowych informacji na dużych monitorach, umożliwiając efektywne śledzenie procesów produkcyjnych z dowolnego miejsca w hali.",
+    "altLight": "Zdjęcie przedstawiające moduł Monitoring w motywie jasnym",
+    "altDark": "Zdjęcie przedstawiające moduł Monitoring w motywie ciemnym",
+    "altTV": "Zdjęcie przedstawiające moduł Monitoring w trybie TV"
   },
   "GPTPage": {
     "title": "System asystenta GPT",
@@ -492,7 +495,13 @@
     "heading2": "Personalizacja doświadczenia",
     "p3": "Rozumiemy, że każdy proces produkcyjny jest unikatowy. Dlatego nasz system oferuje możliwość personalizacji zachowania asystenta AI. Możesz określić, jakie informacje są dla Ciebie najważniejsze, a system dostosuje sposób prezentacji i analizy danych do Twoich indywidualnych potrzeb. Ta elastyczność gwarantuje, że otrzymujesz dokładnie te informacje, które są najbardziej relewantne dla Twojego przedsiębiorstwa.",
     "heading3": "Łatwość obsługi",
-    "p4": "Zaprojektowaliśmy interfejs naszego systemu MES z myślą o maksymalnej intuicyjności i prostocie obsługi. <strong>Aktywacja asystenta GPT</strong> możliwa jest przez wciśnięcie kombinacji trzech przycisków: G + P + T. To sprawia, że zarządzanie systemem jest szybkie i nie wymaga zaawansowanej wiedzy technicznej. Jedynym wymogiem naszego rozwiązania jest posiadanie tokena do API GPT."
+    "p4": "Zaprojektowaliśmy interfejs naszego systemu MES z myślą o maksymalnej intuicyjności i prostocie obsługi. <strong>Aktywacja asystenta GPT</strong> możliwa jest przez wciśnięcie kombinacji trzech przycisków: G + P + T. To sprawia, że zarządzanie systemem jest szybkie i nie wymaga zaawansowanej wiedzy technicznej. Jedynym wymogiem naszego rozwiązania jest posiadanie tokena do API GPT.",
+    "altLight": "Zdjęcie przedstawiające moduł Dashboard z dynamicznym pulpitem w motywie jasnym",
+    "altDark": "Zdjęcie przedstawiające moduł Dashboard z dynamicznym pulpitem w motywie ciemnym",
+    "altLight2": "Zdjęcie przedstawia jak wykonać analizę przy pomocy asystenta GPT w motywie jasnym",
+    "altDark2": "Zdjęcie przedstawia jak wykonać analizę przy pomocy asystenta GPT w motywie ciemnym",
+    "altLight3": "Zdjęcie przedstawia jak skonfigurować asystenta GPT w motywie jasnym",
+    "altDark3": "Zdjęcie przedstawia jak skonfigurować asystenta GPT w motywie ciemnym"
   },
   "ConfigurationPage": {
     "title": "Elastyczny konfigurator",
@@ -504,7 +513,12 @@
     "heading3": "Rozwiązania dla niekompatybilnych urządzeń",
     "p3": "Rozumiemy, że nie wszystkie urządzenia mogą <strong>natywnie wspierać protokół Mqtt Sparkplug B.</strong> Dla takich przypadków zapewniamy specjalne bramki komunikacyjne, które konwertują sygnały na kompatybilny format. Te wszechstronne bramki obsługują ponad <strong>300 różnych protokołów, od popularnych jak OPC UA, MQTT, Ethernet, po mniej znane</strong> – co gwarantuje, że prawie każde urządzenie można zintegrować z naszym systemem.",
     "heading4": "Personalizacja Statusów",
-    "p4": "Każdy status przypisany do maszyny lub stanowiska może być w pełni spersonalizowany, co pozwala na dostosowanie sposobu prezentacji informacji do potrzeb i preferencji użytkownika. Można zmieniać kolory, rozmiary czcionek, ikony, a nawet sposób prezentacji danych – na przykład pomiar ciśnienia może być wyświetlany w formie licznika. Ta elastyczność znacząco ułatwia monitorowanie procesów produkcyjnych i szybką reakcję na ewentualne nieprawidłowości."
+    "p4": "Każdy status przypisany do maszyny lub stanowiska może być w pełni spersonalizowany, co pozwala na dostosowanie sposobu prezentacji informacji do potrzeb i preferencji użytkownika. Można zmieniać kolory, rozmiary czcionek, ikony, a nawet sposób prezentacji danych – na przykład pomiar ciśnienia może być wyświetlany w formie licznika. Ta elastyczność znacząco ułatwia monitorowanie procesów produkcyjnych i szybką reakcję na ewentualne nieprawidłowości.",
+    "altTree": "Zdjęcie przedstawia strukturę parku maszynowego w drzewku",
+    "altLight1": "Zdjęcie przedstawia edycję maszyny i jej statusy w trybie jasnym",
+    "altDark1": "Zdjęcie przedstawia edycję maszyny i jej statusy w trybie ciemnym",
+    "altLight2": "Zdjęcie przedstawia edycję profilu w trybie jasnym",
+    "altDark2": "Zdjęcie przedstawia edycję profilu w trybie ciemnym"
   },
   "DashboardPage": {
     "title": "Interaktywne pulpity do eksploracji i wizualizacji danych",
@@ -512,7 +526,9 @@
     "p2": "System wykorzystuje narzędzie <strong>Redash</strong> do tworzenia dynamicznych wykresów. Redash korzysta z API systemu Omnimes, aby pobierać potrzebne dane z wybranej maszyny/maszyn za określony okres czasu, umożliwiając monitorowanie ich zmian, <strong>na przykład zestawienie czasu trwania awarii ostatnich 24 godzin kilku linii produkcyjnych</strong>, czy też wykonanie zestawień lub porównań, jak <strong>stosunek występowania awarii do czasu wyprodukowania dobrych produktów</strong>.",
     "p3": "Każda z tych wizualizacji pozwala na indywidualne dostosowanie częstotliwości odświeżania danych, <strong>w zakresie od 1 minuty do 60 minut</strong>. Dodatkowo, narzędzie to oferuje <strong>możliwość ustawienia alertów e-mail, gdy określona wartość przekroczy ustaloną granicę.</strong>",
     "p4": "Narzędzie zostało zintegrowane z użytkownikami systemu Omnimes, oferując unikatowy tryb monitoringu. Ten sposób monitorowania różni się od monitorowania w czasie rzeczywistym, ponieważ umożliwia przedstawienie danych z szerszego okresu – maksymalnie do 24 godzin lub do 10 000 dokumentów na jedną wizualizację, co oznacza, że czas odświeżenia danych może wynosić maksymalnie 1 minutę.",
-    "p5": "Wizualizacje oferują szeroki zakres personalizacji – od wykresów słupkowych, przez wykresy kołowe typu donut, po tabele z możliwością wyszukiwania danych. Dzięki tym opcjom, każda prezentacja danych może zostać maksymalnie dopasowana do preferencji użytkownika, zapewniając precyzyjne i intuicyjne narzędzie do analizy i monitoringu."
+    "p5": "Wizualizacje oferują szeroki zakres personalizacji – od wykresów słupkowych, przez wykresy kołowe typu donut, po tabele z możliwością wyszukiwania danych. Dzięki tym opcjom, każda prezentacja danych może zostać maksymalnie dopasowana do preferencji użytkownika, zapewniając precyzyjne i intuicyjne narzędzie do analizy i monitoringu.",
+    "altRedash": "Zdjęcie przedstawia interaktywne pulpity do eksploracji i wizualizacji danych",
+    "altRedashAdding": "Zdjęcie przedstawia dodawanie wykresów do dynamicznego pulpitu"
   },
   "PlanogramPage": {
     "title": "Wizualizator procesów produkcyjnych",
@@ -523,7 +539,9 @@
     "heading2": "Real-Time Monitoring i Analityka",
     "p3": "Każdy element reprezentujący maszynę – „jego stan” na planogramie jest aktualizowany w czasie rzeczywistym, dostarczając informacji o bieżącym statusie, wydajności, a także potencjalnych problemach lub awariach.",
     "heading3": "Personalizacja i Skalowalność",
-    "p4": "Planogram jest niezwykle elastyczny, pozwalając na personalizację i dostosowanie do unikalnych potrzeb każdego przedsiębiorstwa. Użytkownicy mogą dostosować wygląd kafli, informacje na nich wyświetlane oraz sposób ich organizacji, aby najlepiej odpowiadały charakterystyce i wymaganiom konkretnej linii produkcyjnej."
+    "p4": "Planogram jest niezwykle elastyczny, pozwalając na personalizację i dostosowanie do unikalnych potrzeb każdego przedsiębiorstwa. Użytkownicy mogą dostosować wygląd kafli, informacje na nich wyświetlane oraz sposób ich organizacji, aby najlepiej odpowiadały charakterystyce i wymaganiom konkretnej linii produkcyjnej.",
+    "altLight": "Zdjęcie przedstawia moduł Planogram czyli wizualizator procesów produkcyjnych w motywie jasnym",
+    "altDark": "Zdjęcie przedstawia moduł Planogram czyli wizualizator procesów produkcyjnych w motywie ciemnym"
   },
   "HistoryPage": {
     "title": "Historia zdarzeń",
@@ -535,7 +553,9 @@
     "heading3": "Big Data i Apache Spark – siła napędowa AI",
     "p3": "<strong>Dla danych osiągających petabajty</strong>, oferujemy opcję wsparcia przez renomowane oprogramowanie <strong>Apache Spark</strong>, gwarantując, że nasz system MES może skalować się wraz z potrzebami Twojego przedsiębiorstwa. Jeśli Twoja firma pragnie zagłębić się w świat <strong>Big Data</strong>, Omnimes jest przygotowany do dostosowania i obsługi danych na niespotykaną dotąd skalę. W tej erze danych, <strong>Big Data nie jest tylko trendem – to fundament rozwiązań AI, które napędzają innowacje i efektywność</strong>.",
     "heading4": "Analiza wspierana przez asystenta GPT",
-    "p4": "Ale to nie wszystko. Historia zdarzeń w naszym systemie MES jest dodatkowo wsparta przez <strong>analizę asystenta GPT – sztucznej inteligencji od firmy OpenAI</strong>. Asystent GPT, przetwarza zebrane dane i dostarcza wnikliwe analizy, które umożliwiają podejmowanie świadomych decyzji operacyjnych. "
+    "p4": "Ale to nie wszystko. Historia zdarzeń w naszym systemie MES jest dodatkowo wsparta przez <strong>analizę asystenta GPT – sztucznej inteligencji od firmy OpenAI</strong>. Asystent GPT, przetwarza zebrane dane i dostarcza wnikliwe analizy, które umożliwiają podejmowanie świadomych decyzji operacyjnych. ",
+    "altLight": "Zdjęcie przedstawia moduł Historii Zdarzeń w motywie jasnym",
+    "altDark": "Zdjęcie przedstawia moduł Historii Zdarzeń w motywie ciemnym"
   },
   "SchedulePage": {
     "title": "Harmonogram produkcji - twoja centrala zarządzania zleceniami",
@@ -549,7 +569,9 @@
     "heading2": "Wizualizacja, która pomaga w decyzjach",
     "p1": "Zaplanuj swoją produkcję z precyzją, wykorzystując łatwo dostosowywane widoki i filtry, które pomogą Ci skupić się na najważniejszych szczegółach i priorytetach.",
     "heading3": "Zawsze o krok do przodu",
-    "p2": "Z systemem Omnimes harmonogramowanie staje się proaktywne, a nie reaktywne. Przewiduj potrzeby, reaguj na zmiany i optymalizuj procesy produkcyjne, wszystko to z jednego, centralnego miejsca, które jest zawsze dostępne dla Ciebie i Twojego zespołu."
+    "p2": "Z systemem Omnimes harmonogramowanie staje się proaktywne, a nie reaktywne. Przewiduj potrzeby, reaguj na zmiany i optymalizuj procesy produkcyjne, wszystko to z jednego, centralnego miejsca, które jest zawsze dostępne dla Ciebie i Twojego zespołu.",
+    "altLight": "Zdjęcie przedstawia harmonogram produkcji w trybie jasnym",
+    "altDark": "Zdjęcie przedstawia harmonogram produkcji w trybie ciemnym"
   },
   "AnalysisPage": {
     "title": "Moduły analizy",
@@ -563,7 +585,17 @@
     "l2-p": "<strong>Media</strong> - ta kategoria obejmuje analizę pomiarów z urządzeń, takich jak np.: temperatura, ciśnienie, chwilowe i całkowite zużycie mediów itp., zapewniając szczegółowy wgląd w wykorzystanie zasobów.",
     "l2-p2": "<strong>Błędy urządzeń</strong> - te dane, choć nie wpływają bezpośrednio na proces produkcyjny, są bezcenne dla ekip serwisowych i konserwacyjnych. Wsparte wykresami Pareto, te analizy ujawniają częste przyczyny problemów, pozwalając na prewencyjne działania konserwacyjne.",
     "l3": "Analizy asystenta GPT",
-    "l3-p": "<strong>Asystent GPT</strong> - na koniec prezentujemy listę analiz tekstowych wygenerowanych przez Asystenta GPT, który za pomocą AI wnika głębiej w dane, oferując interpretacje i rekomendacje, które mogą zrewolucjonizować podejmowanie decyzji w Twojej firmie."
+    "l3-p": "<strong>Asystent GPT</strong> - na koniec prezentujemy listę analiz tekstowych wygenerowanych przez Asystenta GPT, który za pomocą AI wnika głębiej w dane, oferując interpretacje i rekomendacje, które mogą zrewolucjonizować podejmowanie decyzji w Twojej firmie.",
+    "altLight": "Zdjęcie przedstawia analizę czasu pracy, wykres zawiera takie ingoramcje jak Awarie, posoje czy też mikropostoje. Całość w motywie jasnym.",
+    "altDark": "Zdjęcie przedstawia analizę czasu pracy, wykres zawiera takie ingoramcje jak Awarie, posoje czy też mikropostoje. Całość w motywie ciemnym.",
+    "altLight1": "Zdjęcie przedstawia analizę OEE. Całość w motywie jasnym.",
+    "altDark1": "Zdjęcie przedstawia analizę OEE. Całość w motywie ciemnym.",
+    "altLight2": "Zdjęcie przedstawia analizę Mediów. Całość w motywie jasnym.",
+    "altDark2": "Zdjęcie przedstawia analizę Mediów. Całość w motywie ciemnym.",
+    "altLight3": "Zdjęcie przedstawia analizę Błędów. Całość w motywie jasnym.",
+    "altDark3": "Zdjęcie przedstawia analizę Błędów. Całość w motywie ciemnym.",
+    "altLight4": "Zdjęcie przedstawia listę analizy asystenta GPT. Całość w motywie jasnym.",
+    "altDark4": "Zdjęcie przedstawia listę analizy asystenta GPT. Całość w motywie ciemnym."
   },
   "CreatorPage": {
     "title": "Kreator raportów",
@@ -578,16 +610,22 @@
     "l1": "<strong>wizerunek Twojej firmy</strong>: Dostosuj raporty do identyfikacji wizualnej swojej firmy, włącznie z logiem i drobnymi detalami, które mają znaczenie.",
     "l2": "<strong>własne wzory</strong>: Każda firma jest inna, dlatego oferujemy możliwość tworzenia własnych wzorów wyliczeniowych – nawet dla tak standardowych wskaźników jak OEE.",
     "l3": "<strong>elastyczność w użyciu</strong>: Używaj, modyfikuj i dopasowuj szablony raportów, aby odpowiadały bieżącym potrzebom i zmieniającym się warunkom biznesowym.",
-    "p5": "Z Omnimes zyskujesz nie tylko narzędzie do kreowania raportów – zyskujesz partnera, który pomaga Ci w pełnym zrozumieniu i wykorzystaniu danych produkcyjnych. Wykorzystaj potęgę personalizacji i precyzji w raportowaniu, aby wyprzedzić konkurencję i usprawnić swoje procesy produkcyjne. Omnimes – tam, gdzie elastyczność spotyka się z innowacyjnością."
+    "p5": "Z Omnimes zyskujesz nie tylko narzędzie do kreowania raportów – zyskujesz partnera, który pomaga Ci w pełnym zrozumieniu i wykorzystaniu danych produkcyjnych. Wykorzystaj potęgę personalizacji i precyzji w raportowaniu, aby wyprzedzić konkurencję i usprawnić swoje procesy produkcyjne. Omnimes – tam, gdzie elastyczność spotyka się z innowacyjnością.",
+    "altLight": "Zdjęcie przedstawia moduł generowania raportów w motywie jasnym",
+    "altDark": "Zdjęcie przedstawia moduł generowania raportów w motywie ciemnym",
+    "altLight1": "Zdjęcie przedstawia listę szablonów do generowania raportów w motywie jasnym",
+    "altDark1": "Zdjęcie przedstawia listę szablonów do generowania raportów w motywie ciemnym"
   },
   "AdministrationPage": {
     "title": "Moduł zarządzania użytkownikami",
     "heading1": "Zarządzanie Użytkownikami i Uprawnieniami w Omnimes – Pełna Kontrola i Bezpieczeństwo Twoich Danych",
     "p1": "Nasz system Omnimes został zaprojektowany, by dostarczyć Ci najwyższy poziom elastyczności oraz bezpieczeństwa poprzez zaawansowane zarządzanie użytkownikami i uprawnieniami. Oferujemy potężne narzędzia, które pozwalają na dostosowanie systemu do potrzeb każdej organizacji, niezależnie od jej wielkości czy branży.",
-    "heading2": "Tworzenie i Zarządzanie Użytkownikami:",
+    "heading2": "Tworzenie i Zarządzanie Użytkownikami",
     "p2": "Tworzenie użytkowników w Omnimes jest intuicyjne i szybkie. Pozwala administratorom na łatwe dodawanie nowych członków zespołu, co jest kluczowe dla dynamicznie rozwijających się firm. Każdy użytkownik może być przypisany do jednej lub wielu grup, co umożliwia łatwą koordynację pracy zespołowej i dostęp do odpowiednich zasobów.",
-    "heading3": "Grupy i Hierarchia Uprawnień:",
-    "p3": "Wprowadź klarowną strukturę organizacyjną dzięki grupom użytkowników. Grupy pozwalają na zbiorcze zarządzanie dostępem oraz uprawnieniami, co znacznie upraszcza administrowanie dużymi zespołami i zapewnia, że każdy ma dostęp tylko do tych zasobów, które są mu potrzebne do pracy."
+    "heading3": "Grupy i Hierarchia Uprawnień",
+    "p3": "Wprowadź klarowną strukturę organizacyjną dzięki grupom użytkowników. Grupy pozwalają na zbiorcze zarządzanie dostępem oraz uprawnieniami, co znacznie upraszcza administrowanie dużymi zespołami i zapewnia, że każdy ma dostęp tylko do tych zasobów, które są mu potrzebne do pracy.",
+    "altLight": "Zdjęcie przedstawia moduł zarządzania użytkownikami w systemie. W motywie jasnym",
+    "altDark": "Zdjęcie przedstawia moduł zarządzania użytkownikami w systemie. W motywie ciemnym"
   },
   "InstallationPage": {
     "title": "Szybka instalacja systemu poprzez kontentyryzcję Docker na każdym systemie operacyjnym",

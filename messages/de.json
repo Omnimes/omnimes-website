@@ -480,7 +480,10 @@
     "l3": "Durchsatzskala <strong>von 1.000 bis 1.000.000 Signalen pro Sekunde</strong>, die eine umfassende Überwachung selbst der komplexesten Produktionssysteme gewährleistet.",
     "p2": "Die Verwendung von <strong>MQTT-Version SparkPlug B</strong> hat die Standardisierung der Datenstruktur ermöglicht, was zu einer vereinfachten Systemkonfiguration führt. Jedes überwachte Element wird durch <strong>Tags und Werte</strong> repräsentiert, was die Verwaltung und schnelle Anpassung an sich ändernde Anforderungen der Produktionsprozesse erleichtert.",
     "p3": "Die Überwachung des <strong>Omnimes-Systems</strong> wurde mit Flexibilität und Personalisierung im Sinn entworfen. Die Benutzer haben die Möglichkeit, das Erscheinungsbild der Benutzeroberfläche nach ihren eigenen Vorlieben und den Bedürfnissen des Unternehmens anzupassen.",
-    "p4": "Zusätzlich haben wir, um den Erwartungen der Unternehmen gerecht zu werden, einen speziellen TV-Überwachungsmodus implementiert. Dies ermöglicht die bequeme Anzeige wichtiger Informationen auf großen Monitoren und eine effiziente Verfolgung der Produktionsprozesse von jedem Ort in der Halle."
+    "p4": "Zusätzlich haben wir, um den Erwartungen der Unternehmen gerecht zu werden, einen speziellen TV-Überwachungsmodus implementiert. Dies ermöglicht die bequeme Anzeige wichtiger Informationen auf großen Monitoren und eine effiziente Verfolgung der Produktionsprozesse von jedem Ort in der Halle.",
+    "altLight": "Foto des Überwachungsmoduls im hellen Design",
+    "altDark": "Foto des Überwachungsmoduls im dunklen Design",
+    "altTV": "Foto des Überwachungsmoduls im TV-Modus"
   },
   "GPTPage": {
     "title": "GPT-Assistentensystem",
@@ -492,7 +495,13 @@
     "heading2": "Personalisierung des Erlebnisses",
     "p3": "Wir verstehen, dass jeder Produktionsprozess einzigartig ist. Daher bietet unser System die Möglichkeit, das Verhalten des KI-Assistenten zu personalisieren. Sie können angeben, welche Informationen für Sie am wichtigsten sind, und das System passt die Art und Weise der Präsentation und Analyse der Daten an Ihre individuellen Bedürfnisse an. Diese Flexibilität stellt sicher, dass Sie genau die Informationen erhalten, die für Ihr Unternehmen am relevantesten sind.",
     "heading3": "Benutzerfreundlichkeit",
-    "p4": "Wir haben die Benutzeroberfläche unseres MES-Systems mit maximaler Benutzerfreundlichkeit und einfacher Bedienung entwickelt. <strong>Die Aktivierung des GPT-Assistenten</strong> ist durch Drücken einer Kombination von drei Tasten möglich: G + P + T. Dies ermöglicht eine schnelle Systemverwaltung und erfordert kein fortgeschrittenes technisches Wissen. Die einzige Anforderung unserer Lösung besteht darin, über ein GPT-API-Token zu verfügen."
+    "p4": "Wir haben die Benutzeroberfläche unseres MES-Systems mit maximaler Benutzerfreundlichkeit und einfacher Bedienung entwickelt. <strong>Die Aktivierung des GPT-Assistenten</strong> ist durch Drücken einer Kombination von drei Tasten möglich: G + P + T. Dies ermöglicht eine schnelle Systemverwaltung und erfordert kein fortgeschrittenes technisches Wissen. Die einzige Anforderung unserer Lösung besteht darin, über ein GPT-API-Token zu verfügen.",
+    "altLight": "Ein Foto zeigt das Dashboard-Modul mit einem dynamischen Panel im hellen Modus",
+    "altDark": "Ein Foto zeigt das Dashboard-Modul mit einem dynamischen Panel im dunklen Modus",
+    "altLight2": "Ein Foto zeigt, wie man eine Analyse mithilfe des GPT-Assistenten im hellen Modus durchführt",
+    "altDark2": "Ein Foto zeigt, wie man eine Analyse mithilfe des GPT-Assistenten im dunklen Modus durchführt",
+    "altLight3": "Ein Foto zeigt, wie man den GPT-Assistenten im hellen Modus konfiguriert",
+    "altDark3": "Ein Foto zeigt, wie man den GPT-Assistenten im dunklen Modus konfiguriert"
   },
   "ConfigurationPage": {
     "title": "Flexibler Konfigurator",
@@ -504,7 +513,12 @@
     "heading3": "Lösungen für inkompatible Geräte",
     "p3": "Wir verstehen, dass nicht alle Geräte das <strong>Mqtt Sparkplug B-Protokoll nativ unterstützen.</strong> Für solche Fälle bieten wir spezielle Kommunikationsgateways an, die Signale in ein kompatibles Format umwandeln. Diese vielseitigen Gateways unterstützen über <strong>300 verschiedene Protokolle, von beliebten wie OPC UA, MQTT, Ethernet bis hin zu weniger bekannten,</strong> was sicherstellt, dass nahezu jedes Gerät in unser System integriert werden kann.",
     "heading4": "Anpassung von Status",
-    "p4": "Jeder einem Gerät oder Arbeitsplatz zugeordnete Status kann vollständig personalisiert werden und ermöglicht die Anpassung der Informationspräsentation an die Bedürfnisse und Vorlieben des Benutzers. Farben, Schriftgrößen, Symbole und sogar die Art und Weise, wie Daten präsentiert werden, können geändert werden - beispielsweise kann eine Druckmessung in Form eines Messgeräts angezeigt werden. Diese Flexibilität erleichtert die Überwachung von Produktionsprozessen erheblich und ermöglicht eine schnelle Reaktion auf Unregelmäßigkeiten."
+    "p4": "Jeder einem Gerät oder Arbeitsplatz zugeordnete Status kann vollständig personalisiert werden und ermöglicht die Anpassung der Informationspräsentation an die Bedürfnisse und Vorlieben des Benutzers. Farben, Schriftgrößen, Symbole und sogar die Art und Weise, wie Daten präsentiert werden, können geändert werden - beispielsweise kann eine Druckmessung in Form eines Messgeräts angezeigt werden. Diese Flexibilität erleichtert die Überwachung von Produktionsprozessen erheblich und ermöglicht eine schnelle Reaktion auf Unregelmäßigkeiten.",
+    "altTree": "Ein Foto, das die Struktur des Maschinenparks in einer Baumansicht zeigt",
+    "altLight1": "Ein Foto zeigt die Bearbeitung von Maschinen und ihre Status in hellem Modus",
+    "altDark1": "Ein Foto zeigt die Bearbeitung von Maschinen und ihre Status in dunklem Modus",
+    "altLight2": "Ein Foto zeigt die Profilbearbeitung im hellen Modus",
+    "altDark2": "Ein Foto zeigt die Profilbearbeitung im dunklen Modus"
   },
   "DashboardPage": {
     "title": "Interaktive Dashboards zur Datenexploration und -visualisierung",
@@ -512,7 +526,11 @@
     "p2": "Das System verwendet das Tool <strong>Redash</strong>, um dynamische Diagramme zu erstellen. Redash verwendet die Omnimes-System-API, um erforderliche Daten von ausgewählten Maschinen für einen bestimmten Zeitraum abzurufen, was das Monitoring ihrer Änderungen ermöglicht, <strong>wie die Kompilierung von Ausfallzeiten der letzten 24 Stunden für mehrere Produktionslinien</strong> oder Vergleiche wie <strong>das Verhältnis von Ausfallhäufigkeiten zur Produktionszeit guter Produkte</strong>.",
     "p3": "Jede dieser Visualisierungen ermöglicht eine individuelle Anpassung der Datenaktualisierungsfrequenz, <strong>im Bereich von 1 Minute bis 60 Minuten</strong>. Darüber hinaus bietet dieses Tool <strong>die Möglichkeit, E-Mail-Benachrichtigungen einzurichten, wenn ein bestimmter Wert einen festgelegten Grenzwert überschreitet.</strong>",
     "p4": "Das Tool wurde mit den Benutzern des Omnimes-Systems integriert und bietet einen einzigartigen Überwachungsmodus. Dieser Überwachungsmodus unterscheidet sich vom Echtzeit-Monitoring, da er Daten aus einem breiteren Zeitraum präsentieren kann - bis zu 24 Stunden oder 10.000 Dokumente pro Visualisierung, was bedeutet, dass die Datenaktualisierungszeit bis zu 1 Minute betragen kann.",
-    "p5": "Die Visualisierungen bieten eine Vielzahl von Anpassungsmöglichkeiten - von Balkendiagrammen über Donut-Typ-Pie-Charts bis hin zu Tabellen mit Datenfiltersuche. Mit diesen Optionen kann jede Datendarstellung maximal an die Vorlieben des Benutzers angepasst werden und bietet präzise und intuitive Tools für Analyse und Überwachung."
+    "p5": "Die Visualisierungen bieten eine Vielzahl von Anpassungsmöglichkeiten - von Balkendiagrammen über Donut-Typ-Pie-Charts bis hin zu Tabellen mit Datenfiltersuche. Mit diesen Optionen kann jede Datendarstellung maximal an die Vorlieben des Benutzers angepasst werden und bietet präzise und intuitive Tools für Analyse und Überwachung.",
+    "altRedash": "Ein Foto zeigt interaktive Dashboards zur Datenexploration und -visualisierung",
+    "altRedashAdding": "Ein Foto zeigt das Hinzufügen von Diagrammen zum dynamischen Dashboard",
+    "altLight": "Ein Foto zeigt das Planogramm-Modul, einen Visualisierer für Produktionsprozesse im hellen Modus",
+    "altDark": "Ein Foto zeigt das Planogramm-Modul, einen Visualisierer für Produktionsprozesse im dunklen Modus"
   },
   "PlanogramPage": {
     "title": "Visualisierer für Produktionsprozesse",
@@ -523,7 +541,9 @@
     "heading2": "Echtzeitüberwachung und Analytik",
     "p3": "Jedes Element, das eine Maschine repräsentiert - ihr Status im Planogramm wird in Echtzeit aktualisiert und liefert Informationen über den aktuellen Status, die Leistung sowie potenzielle Probleme oder Ausfälle.",
     "heading3": "Anpassung und Skalierbarkeit",
-    "p4": "Das Planogramm ist äußerst flexibel und ermöglicht eine Anpassung an die individuellen Bedürfnisse jedes Unternehmens. Benutzer können das Aussehen der Kacheln, die darauf angezeigten Informationen und deren Organisation an die Eigenschaften und Anforderungen einer bestimmten Produktionslinie anpassen."
+    "p4": "Das Planogramm ist äußerst flexibel und ermöglicht eine Anpassung an die individuellen Bedürfnisse jedes Unternehmens. Benutzer können das Aussehen der Kacheln, die darauf angezeigten Informationen und deren Organisation an die Eigenschaften und Anforderungen einer bestimmten Produktionslinie anpassen.",
+    "altLight": "Ein Foto zeigt das Planogramm-Modul, einen Visualisierer für Produktionsprozesse im hellen Modus",
+    "altDark": "Ein Foto zeigt das Planogramm-Modul, einen Visualisierer für Produktionsprozesse im dunklen Modus"
   },
   "HistoryPage": {
     "title": "Ereignishistorie",
@@ -535,7 +555,9 @@
     "heading3": "Big Data und Apache Spark – KI-Treibende Kraft",
     "p3": "<strong>Für Daten, die Petabytes erreichen,</strong> bieten wir Unterstützung durch die renommierte Software <strong>Apache Spark</strong> an, um sicherzustellen, dass unser MES-System mit den Bedürfnissen Ihres Unternehmens skalieren kann. Wenn Ihr Unternehmen in die Welt von <strong>Big Data</strong> eintauchen möchte, ist Omnimes darauf vorbereitet, Daten in einem bisher unerreichten Maßstab anzupassen und zu verarbeiten. In diesem Datenzeitalter ist <strong>Big Data nicht nur ein Trend - es ist die Grundlage für KI-Lösungen, die Innovation und Effizienz vorantreiben</strong>.",
     "heading4": "Analyse Unterstützt durch GPT Assistant",
-    "p4": "Aber das ist noch nicht alles. Die Ereignishistorie in unserem MES-System wird durch <strong>GPT Assistant-Analysen - künstliche Intelligenz von OpenAI</strong> weiter unterstützt. Der GPT Assistant verarbeitet gesammelte Daten und bietet aufschlussreiche Analysen, die fundierte operative Entscheidungen ermöglichen."
+    "p4": "Aber das ist noch nicht alles. Die Ereignishistorie in unserem MES-System wird durch <strong>GPT Assistant-Analysen - künstliche Intelligenz von OpenAI</strong> weiter unterstützt. Der GPT Assistant verarbeitet gesammelte Daten und bietet aufschlussreiche Analysen, die fundierte operative Entscheidungen ermöglichen.",
+    "altLight": "Ein Foto zeigt das Ereignisverlauf-Modul im hellen Modus",
+    "altDark": "Ein Foto zeigt das Ereignisverlauf-Modul im dunklen Modus"
   },
   "SchedulePage": {
     "title": "Produktionsplan - Ihre zentrale Auftragsverwaltungszentrale",
@@ -549,7 +571,9 @@
     "heading2": "Visualisierung, die Entscheidungsfindung unterstützt",
     "p1": "Planen Sie Ihre Produktion präzise, indem Sie einfach anpassbare Ansichten und Filter verwenden, die Ihnen helfen, sich auf die wichtigsten Details und Prioritäten zu konzentrieren.",
     "heading3": "Immer einen Schritt voraus",
-    "p2": "Mit dem Omnimes-System wird die Planung proaktiv, nicht reaktiv. Antizipieren Sie Bedürfnisse, reagieren Sie auf Veränderungen und optimieren Sie Produktionsprozesse - alles von einem zentralen Ort aus, der Ihnen und Ihrem Team immer zur Verfügung steht."
+    "p2": "Mit dem Omnimes-System wird die Planung proaktiv, nicht reaktiv. Antizipieren Sie Bedürfnisse, reagieren Sie auf Veränderungen und optimieren Sie Produktionsprozesse - alles von einem zentralen Ort aus, der Ihnen und Ihrem Team immer zur Verfügung steht.",
+    "altLight": "Ein Foto zeigt den Produktionsplan im hellen Modus",
+    "altDark": "Ein Foto zeigt den Produktionsplan im dunklen Modus"
   },
   "AnalysisPage": {
     "title": "Analysemodule",
@@ -563,7 +587,17 @@
     "l2-p": "<strong>Versorgungseinrichtungen</strong> - Diese Kategorie umfasst die Analyse von Messungen aus Geräten wie Temperatur, Druck, sofortigem und Gesamtmedienverbrauch usw., was detaillierte Einblicke in die Ressourcennutzung bietet.",
     "l2-p2": "<strong>Gerätefehler</strong> - Obwohl diese Daten den Produktionsprozess nicht direkt beeinflussen, sind sie für Service- und Wartungsteams von unschätzbarem Wert. Unterstützt durch Pareto-Diagramme zeigen diese Analysen häufige Ursachen von Problemen auf und ermöglichen präventive Wartungsmaßnahmen.",
     "l3": "GPT Assistant-Analysen",
-    "l3-p": "<strong>GPT Assistant</strong> - schließlich präsentieren wir eine Liste von Textanalysen, die vom GPT Assistant generiert wurden, der mit Hilfe von KI tiefer in die Daten eindringt und Interpretationen und Empfehlungen bietet, die die Entscheidungsfindung in Ihrem Unternehmen revolutionieren können."
+    "l3-p": "<strong>GPT Assistant</strong> - schließlich präsentieren wir eine Liste von Textanalysen, die vom GPT Assistant generiert wurden, der mit Hilfe von KI tiefer in die Daten eindringt und Interpretationen und Empfehlungen bietet, die die Entscheidungsfindung in Ihrem Unternehmen revolutionieren können.",
+    "altLight": "Ein Foto zeigt eine Zeitanalyse, das Diagramm enthält Informationen wie Ausfälle, Rüstzeiten und Mikroausfälle. Alles im hellen Modus.",
+    "altDark": "Ein Foto zeigt eine Zeitanalyse, das Diagramm enthält Informationen wie Ausfälle, Rüstzeiten und Mikroausfälle. Alles im dunklen Modus.",
+    "altLight1": "Ein Foto zeigt die OEE-Analyse. Alles im hellen Modus.",
+    "altDark1": "Ein Foto zeigt die OEE-Analyse. Alles im dunklen Modus.",
+    "altLight2": "Ein Foto zeigt die Medienanalyse. Alles im hellen Modus.",
+    "altDark2": "Ein Foto zeigt die Medienanalyse. Alles im dunklen Modus.",
+    "altLight3": "Ein Foto zeigt die Fehleranalyse. Alles im hellen Modus.",
+    "altDark3": "Ein Foto zeigt die Fehleranalyse. Alles im dunklen Modus.",
+    "altLight4": "Ein Foto zeigt eine Liste der Analysen des GPT-Assistenten. Alles im hellen Modus.",
+    "altDark4": "Ein Foto zeigt eine Liste der Analysen des GPT-Assistenten. Alles im dunklen Modus."
   },
   "CreatorPage": {
     "title": "Berichtersteller",
@@ -578,16 +612,22 @@
     "l1": "<strong>Das Image Ihres Unternehmens</strong>: Passen Sie Berichte an das visuelle Erscheinungsbild Ihres Unternehmens an, einschließlich des Logos und kleiner Details, die wichtig sind.",
     "l2": "<strong>Benutzerdefinierte Formeln</strong>: Jedes Unternehmen ist anders, daher bieten wir die Möglichkeit, benutzerdefinierte Berechnungsformeln zu erstellen – selbst für Standardindikatoren wie OEE.",
     "l3": "<strong>Flexibilität in der Anwendung</strong>: Verwenden, ändern und passen Sie Vorlagenberichte an, um aktuellen Anforderungen und sich ändernden Geschäftsbedingungen gerecht zu werden.",
-    "p5": "Mit Omnimes erhalten Sie nicht nur ein Tool zur Erstellung von Berichten – Sie erhalten einen Partner, der Ihnen hilft, Produktionsdaten vollständig zu verstehen und zu nutzen. Nutzen Sie die Kraft der Personalisierung und Präzision im Berichtswesen, um die Konkurrenz zu übertreffen und Ihre Produktionsprozesse zu optimieren. Omnimes – wo Flexibilität auf Innovation trifft."
+    "p5": "Mit Omnimes erhalten Sie nicht nur ein Tool zur Erstellung von Berichten – Sie erhalten einen Partner, der Ihnen hilft, Produktionsdaten vollständig zu verstehen und zu nutzen. Nutzen Sie die Kraft der Personalisierung und Präzision im Berichtswesen, um die Konkurrenz zu übertreffen und Ihre Produktionsprozesse zu optimieren. Omnimes – wo Flexibilität auf Innovation trifft.",
+    "altLight": "Ein Foto zeigt das Modul zur Berichterstellung im hellen Modus.",
+    "altDark": "Ein Foto zeigt das Modul zur Berichterstellung im dunklen Modus.",
+    "altLight1": "Ein Foto zeigt eine Liste von Vorlagen zur Berichterstellung im hellen Modus.",
+    "altDark1": "Ein Foto zeigt eine Liste von Vorlagen zur Berichterstellung im dunklen Modus."
   },
   "AdministrationPage": {
     "title": "Benutzerverwaltungsmodul",
     "heading1": "Benutzer- und Berechtigungsverwaltung in Omnimes – Vollständige Kontrolle und Sicherheit Ihrer Daten",
     "p1": "Unser Omnimes-System ist so konzipiert, dass es Ihnen durch fortgeschrittenes Benutzer- und Berechtigungsmanagement höchste Flexibilität und Sicherheit bietet. Wir bieten leistungsstarke Tools, mit denen Sie das System an die Bedürfnisse jeder Organisation anpassen können, unabhängig von ihrer Größe oder Branche.",
-    "heading2": "Benutzererstellung und -verwaltung:",
+    "heading2": "Benutzererstellung und -verwaltung",
     "p2": "Die Erstellung von Benutzern in Omnimes ist intuitiv und schnell. Administratoren können problemlos neue Teammitglieder hinzufügen, was für dynamisch wachsende Unternehmen entscheidend ist. Jeder Benutzer kann einer oder mehreren Gruppen zugewiesen werden, was die einfache Koordination von Teamarbeit und den Zugriff auf die entsprechenden Ressourcen erleichtert.",
-    "heading3": "Gruppen und Berechtigungshierarchie:",
-    "p3": "Legen Sie eine klare organisatorische Struktur mit Benutzergruppen fest. Gruppen ermöglichen die kollektive Verwaltung von Zugriffen und Berechtigungen, was die Verwaltung großer Teams erheblich vereinfacht und sicherstellt, dass jeder Einzelne nur auf die für seine Arbeit benötigten Ressourcen zugreifen kann."
+    "heading3": "Gruppen und Berechtigungshierarchie",
+    "p3": "Legen Sie eine klare organisatorische Struktur mit Benutzergruppen fest. Gruppen ermöglichen die kollektive Verwaltung von Zugriffen und Berechtigungen, was die Verwaltung großer Teams erheblich vereinfacht und sicherstellt, dass jeder Einzelne nur auf die für seine Arbeit benötigten Ressourcen zugreifen kann.",
+    "altLight": "Ein Foto zeigt das Benutzerverwaltungsmodul im System. Im hellen Modus.",
+    "altDark": "Ein Foto zeigt das Benutzerverwaltungsmodul im System. Im dunklen Modus."
   },
   "InstallationPage": {
     "title": "Schnelle Systeminstallation über Docker-Containerisierung auf jedem Betriebssystem",
