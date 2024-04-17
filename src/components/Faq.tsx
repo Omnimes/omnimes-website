@@ -6,7 +6,8 @@ import { FAQSystem, FAQServices, FAQHardware } from '@/data/faq'
 import { useTranslations } from 'next-intl'
 export const Faq = () => {
   const [selected, setSelected] = useState('photos')
-const t = useTranslations("FAQ")
+  const t = useTranslations("FAQ");
+  const tl = useTranslations("FAQQuestion")
   return (
     <div className="flex w-full flex-col">
       <Tabs
@@ -39,8 +40,8 @@ const t = useTranslations("FAQ")
           >
             {FAQSystem.map((item) => {
               return (
-                <AccordionItem key={item.question} aria-label={item.question} title={item.question}>
-                  {item.answer}
+                <AccordionItem key={tl(item.question)} aria-label={tl(item.question)} title={tl(item.question)}>
+                  {tl(item.answer)}
                 </AccordionItem>
               )
             })}
@@ -66,8 +67,8 @@ const t = useTranslations("FAQ")
           >
             {FAQServices.map((item) => {
               return (
-                <AccordionItem key={item.question} aria-label={item.question} title={item.question}>
-                  {item.answer}
+                <AccordionItem key={tl(item.question)} aria-label={tl(item.question)} title={tl(item.question)}>
+                  {tl(item.answer)}
                 </AccordionItem>
               )
             })}
@@ -93,8 +94,8 @@ const t = useTranslations("FAQ")
           >
             {FAQHardware.map((item) => {
               return (
-                <AccordionItem key={item.question} aria-label={item.question} title={item.question}>
-                  {item.answer}
+                <AccordionItem key={tl(item.question)} aria-label={tl(item.question)} title={tl(item.question)}>
+                  {tl(item.answer)}
                 </AccordionItem>
               )
             })}

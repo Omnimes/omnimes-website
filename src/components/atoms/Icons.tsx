@@ -239,9 +239,9 @@ export const VideoPlayIcon = () => {
       viewBox="0 0 18 14"
       fill="#FFF"
       focusable="false"
-      height="1em"
+      height="2em"
       role="presentation"
-      width="1em"
+      width="2em"
     >
       <path d="M15.5987 6.2911L3.45577 0.110898C2.83667 -0.204202 2.06287 0.189698 2.06287 0.819798V13.1802C2.06287 13.8103 2.83667 14.2042 3.45577 13.8891L15.5987 7.7089C16.2178 7.3938 16.2178 6.6061 15.5987 6.2911Z"></path>
     </svg>

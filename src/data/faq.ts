@@ -1,44 +1,76 @@
 export const FAQSystem = [
-    {
-        question: "Czym jest system OmniMES?",
-        answer: "OmnieMES to zaawansowany system zarządzania produkcją, integrujący procesy produkcyjne w jednym zintegrowanym środowisku, zapewniając kompleksowe wsparcie dla produkcji.",
-    },
-    {
-        question: "Jakie są główne korzyści korzystania z systemu OmniMES?",
-        answer: "Korzyści obejmują optymalizację efektywności produkcyjnej, zwiększenie jakości produktów, redukcję kosztów, poprawę śledzenia i kontroli nad procesami, oraz usprawnienie zarządzania danymi produkcyjnymi.",
-    },
-    {
-        question: "Jakie funkcje oferuje system OmniMES?",
-        answer: "System OmniMES oferuje szereg funkcji, w tym planowanie produkcji, śledzenie stanu maszyn, zarządzanie jakością, zarządzanie magazynem, raportowanie i analizy danych produkcyjnych.",
-    },
+  {
+    question: 'q1',
+    answer: 'a1',
+  },
+  {
+    question: 'q2',
+    answer: 'a2',
+  },
+  {
+    question: 'q3',
+    answer: 'a3',
+  },
+  {
+    question: 'q4',
+    answer: 'a4',
+  },
+  {
+    question: 'q5',
+    answer: 'a5',
+  },
 ]
 
 export const FAQServices = [
-    {
-        question: "Czy istnieje wsparcie techniczne dla użytkowników systemu OmniMES?",
-        answer: "Tak, oferujemy wsparcie techniczne dla naszych użytkowników, które obejmuje szkolenia, pomoc techniczną online oraz wsparcie telefoniczne.",
-    },
-    {
-        question: "Jak mogę rozpocząć korzystanie z systemu OmniMES w mojej firmie?",
-        answer: "Aby rozpocząć korzystanie z systemu OmniMES w swojej firmie, skontaktuj się z naszym zespołem sprzedaży, który chętnie udzieli Ci wszelkich niezbędnych informacji i pomoże w wdrożeniu systemu.",
-    },
-    {
-        question: "Czy system OmniMES jest dostępny w chmurze?",
-        answer: "Tak, oferujemy możliwość korzystania z systemu OmniMES w modelu chmurowym, co zapewnia łatwy dostęp do danych z dowolnego miejsca i urządzenia.",
-    },
+  {
+    question: 'q6',
+    answer: 'a6',
+  },
+  {
+    question: 'q7',
+    answer: 'a7',
+  },
+  {
+    question: 'q8',
+    answer: 'a8',
+  },
+  {
+    question: 'q9',
+    answer: 'a9',
+  },
+  {
+    question: 'q10',
+    answer: 'a10',
+  },
+  {
+    question: 'q11',
+    answer: 'a11',
+  },
 ]
 
 export const FAQHardware = [
-    {
-        question: "Czy system OmniMES wymaga specjalnego sprzętu?",
-        answer: "System OmniMES jest elastyczny i może działać na różnych rodzajach sprzętu, jednak zalecamy wybór sprzętu o odpowiednich parametrach i wydajności, aby zapewnić płynne działanie systemu.",
-    },
-    {
-        question: "Czy istnieją minimalne wymagania sprzętowe dla systemu OmniMES?",
-        answer: "Tak, istnieją minimalne wymagania sprzętowe, które zależą od wielkości instalacji i liczby użytkowników. Nasz zespół techniczny chętnie udzieli Ci szczegółowych informacji na ten temat.",
-    },
-    {
-        question: "Czy oferujecie sprzęt wraz z wdrożeniem systemu OmniMES?",
-        answer: "Tak, możemy zaoferować kompleksowe rozwiązanie, które obejmuje nie tylko oprogramowanie, ale także niezbędny sprzęt, w zależności od indywidualnych potrzeb i preferencji klienta. Skontaktuj się z nami, aby uzyskać więcej informacji na ten temat.",
-    },
+  {
+    question: 'q12',
+    answer: 'a12',
+  },
+  {
+    question: 'q13',
+    answer: 'a13',
+  },
+  {
+    question: 'q14',
+    answer: 'a14',
+  },
+  {
+    question: 'q15',
+    answer: 'a15',
+  },
+  {
+    question: 'q16',
+    answer: 'a16',
+  },
+  {
+    question: 'q17',
+    answer: 'a17',
+  },
 ]
