@@ -1,22 +1,20 @@
-"use client"
-import Link from "next/link"
-import { User } from "next-auth"
-import { signOut } from "next-auth/react"
+import Link from "next/link";
+import { getCurrentUser } from "@/utils/session";
+import { signOut } from "next-auth/react";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/atoms/DropdownMenu"
-import { UserAvatar } from "@/components/UserAvatar"
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/atoms/DropdownMenu";
+import { UserAvatar } from "@/components/UserAvatar";
+import { getTranslations } from "next-intl/server";
+export default async function UserNav() {
+    const user = await getCurrentUser();
+    const t = await getTranslations("UserNav");
 
-interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
-  user: Pick<User, "name" | "image" | "email"> | undefined
-}
-
-export function UserAccountNav({ user }: UserAccountNavProps) {
-  if (user == undefined) {
+    if (user == undefined) {
     return (
       <DropdownMenu>
       <DropdownMenuTrigger>
@@ -27,10 +25,10 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem asChild>
-          <Link href="/login">Logowanie</Link>
+            <Link href="/login">{t("login")}</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-          <Link href="/register">Rejestracja</Link>
+            <Link href="/register">{t("register")}</Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
@@ -57,7 +55,7 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
         </div>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <Link href="/dashboard">Dashboard</Link>
+                  <Link href="/dashboard">{t("dashboard")}</Link>
         </DropdownMenuItem>
         {/* <DropdownMenuItem asChild className="cursor-not-allowed opacity-80">
           <Link href="/dashboard/billing">Billing</Link>
@@ -67,14 +65,14 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
         </DropdownMenuItem> */}
         <DropdownMenuSeparator />
         <DropdownMenuItem
-          onSelect={(event) => {
+          onSelect={(event: { preventDefault: () => void; }) => {
             event.preventDefault()
             signOut({
               callbackUrl: `${window.location.origin}/login`,
             })
           }}
         >
-          Sign out
+          {t("logout")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

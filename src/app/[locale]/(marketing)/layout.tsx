@@ -5,6 +5,7 @@ import SectionContainer from "@/components/SectionContainer";
 import { unstable_setRequestLocale } from "next-intl/server";
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import { Footer } from "@/components/Footer";
+import UserAccountNav from "@/components/UserNav";
 
 type Props = {
   children: ReactNode;
@@ -17,7 +18,9 @@ export default function MarketingLayout({ children, params: { locale } }: Props)
     return (
         <>
             <ComponentSearch>
-                <Header />
+                <Header>
+                    <UserAccountNav />
+                </Header>
             </ComponentSearch>
             <SectionContainer> 
                 {children}

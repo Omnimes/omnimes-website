@@ -687,5 +687,11 @@
     "a16": "Yes, however, this requires consultation with our technical team, which includes automation specialists.",
     "q17": "Does the system allow for connecting controllers from different manufacturers?",
     "a17": "OmniMes is software developed within the company Multiprojekt Automatyka, which has 20 years of experience in selecting and delivering software and components for industry. The team of technical advisors and automation specialists assists in selecting, configuring, and commissioning equipment dedicated to OmniMES."
+  },
+  "UserNav": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "dashboard": "Dashboard"
   }
 }

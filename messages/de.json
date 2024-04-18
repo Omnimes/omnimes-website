@@ -689,5 +689,11 @@
     "a16": "Ja, dies erfordert jedoch eine Beratung mit unserem technischen Team, das Automatisierungsspezialisten umfasst.",
     "q17": "Ermöglicht das System das Anschließen von Steuerungen unterschiedlicher Hersteller?",
     "a17": "OmniMes ist eine Software, die innerhalb des Unternehmens Multiprojekt Automatyka entwickelt wurde, das über 20 Jahre Erfahrung in der Auswahl und Bereitstellung von Software und Komponenten für die Industrie verfügt. Das Team technischer Berater und Automatisierungsspezialisten unterstützt bei der Auswahl, Konfiguration und Inbetriebnahme von auf OmniMES zugeschnittenen Geräten."
+  },
+  "UserNav": {
+    "login": "Anmeldung",
+    "logout": "Abmelden",
+    "register": "Registrierung",
+    "dashboard": "Dashboard"
   }
 }

@@ -687,5 +687,11 @@
     "a16": "Tak, wymaga to jednak konsultacji z naszym zespołem technicznym w skład którego wchodzą automatycy.",
     "q17": "Czy system pozwala na łączenie sterowników różnych producentów?",
     "a17": "OmniMes jest oprogramowaniem stworzonym w obrębie firmy Multiprojekt Automatyka posiadającej 20 letnie doświadczenie w doborze i dostarczaniu oprogramowania i podzespołów dla przemysłu.  Zespół doradców technicznych oraz automatyków pomaga w wyborze, konfiguracji i uruchomieniu sprzętu dedykowanego do OmniMESa."
+  },
+  "UserNav": {
+    "login": "Logowanie",
+    "logout": "Wyloguj",
+    "register": "Rejestracja",
+    "dashboard": "Dashboard"
   }
 }

@@ -1,10 +1,12 @@
 'use client'
+import Logo from '@/data/logo.svg'
+import Image from 'next/image'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
-import Image from 'next/image'
-import Logo from '@/data/logo.svg'
 import LocaleSwitcher from './LocaleSwitcher'
+import { ReactNode, useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { LuChevronDown } from 'react-icons/lu'
 import { headerNavLinks, headerNavLinksDropDown } from '@/data/headerNavLinks'
 import {
   Navbar,
@@ -23,17 +25,8 @@ import {
   DropdownSection,
   Divider
 } from '@nextui-org/react'
-import { LuChevronDown } from 'react-icons/lu'
-import { useState } from 'react'
 
-// import { User } from "next-auth"
-// import { UserAccountNav } from './user-account-nav'
-// import { getCurrentUser } from "@/utils/session";
-
-// interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
-//   user: Pick<User, "name" | "image" | "email"> | undefined
-// }{ user }: UserAccountNavProps
-export default function Header() {
+export default function Header({ children }: { children: ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('HeaderLinks');
   return (
@@ -41,11 +34,13 @@ export default function Header() {
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="navbar sticky top-0 xl:px-0"
+      className="navbar sticky top-0 xl:px-0 border-b border-[#e5e7eb] dark:border-[#1D283A]"
     >
+      {/* Mobile Menu Toogle */}
       <NavbarContent className="min-[690px]:hidden" justify="start">
         <NavbarMenuToggle aria-label={isMenuOpen ? t('menuClose') : t('menuOpen')} />
       </NavbarContent>
+      {/* Logo + napis Omnimes */}
       <NavbarContent className="hidden gap-4 min-[690px]:flex" justify="start">
         <NavbarBrand>
           <Image
@@ -62,7 +57,7 @@ export default function Header() {
           </Link>
         </NavbarBrand>
       </NavbarContent>
-
+      {/* Linki w centrum navBar - w tym dropdown */}
      <NavbarContent justify="center" className="hidden gap-4 min-[690px]:flex">
         <Dropdown backdrop="blur">
           <NavbarItem>
@@ -98,20 +93,6 @@ export default function Header() {
                 )
               })}
             </DropdownSection>
-            {/* <DropdownSection title={t("titleSectionDropDown3")} showDivider>
-              {headerNavLinksDropDown.slice(2,3).map((item) => {
-                return (
-                  <DropdownItem
-                    key={item.href}
-                    href={item.href}
-                    description={t(item.desc)}
-                    startContent={<item.icon size={25} color={item.color} />}
-                  >
-                    {t(item.title)}
-                  </DropdownItem>
-                )
-              })}
-            </DropdownSection> */}
             <DropdownSection title={t("titleSectionDropDown2")}>
               {headerNavLinksDropDown.slice(2).map((item) => {
                 return (
@@ -138,21 +119,20 @@ export default function Header() {
             </NavbarItem>
           ))}
       </NavbarContent>
-
+      {/* Widgety(język, wyszukiwarka i dark mode) na końcu */}
       <NavbarContent justify="end" className="hidden sm:flex">
         <LocaleSwitcher />
         <SearchButton />
         <ThemeSwitch />
-        {/* <UserAccountNav user={user} /> */}
+        {children}
       </NavbarContent>
-
       <NavbarContent justify="center" className="flex sm:hidden">
         <LocaleSwitcher />
         <SearchButton />
         <ThemeSwitch />
-        {/* <UserAccountNav user={user} /> */}
+        {children}
       </NavbarContent>
-
+      {/* Linki w mobile menu */}
       <NavbarMenu>
         <NavbarMenuItem>
           <Link href={'/'} color="foreground" size="lg">
