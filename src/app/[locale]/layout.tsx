@@ -47,12 +47,6 @@ export async function generateMetadata({
       locale: locale,
       type: "website",
     },
-    alternates: {
-      canonical: "./",
-      types: {
-        "application/rss+xml": `${siteMetadata.siteUrl}/feed.xml`,
-      },
-    },
     robots: {
       index: true,
       follow: true,

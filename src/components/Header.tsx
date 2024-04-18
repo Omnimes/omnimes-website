@@ -25,8 +25,8 @@ import {
   DropdownSection,
   Divider
 } from '@nextui-org/react'
-
-export default function Header({ children }: { children: ReactNode }) {
+// { children }: { children: ReactNode }
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('HeaderLinks');
   return (
@@ -124,13 +124,13 @@ export default function Header({ children }: { children: ReactNode }) {
         <LocaleSwitcher />
         <SearchButton />
         <ThemeSwitch />
-        {children}
+        {/* {children} */}
       </NavbarContent>
       <NavbarContent justify="center" className="flex sm:hidden">
         <LocaleSwitcher />
         <SearchButton />
         <ThemeSwitch />
-        {children}
+        {/* {children} */}
       </NavbarContent>
       {/* Linki w mobile menu */}
       <NavbarMenu>
