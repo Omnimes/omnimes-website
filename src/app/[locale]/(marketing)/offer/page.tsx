@@ -92,9 +92,9 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
   const price = {
     base: JSON.parse(settings.results[0].data)['base'] || 100,
     currency: JSON.parse(settings.results[0].data)['currency'] || "PLN",
-    base_eu: JSON.parse(settings.results[0].data)['base_eu'] || 80,
+    base_eu: JSON.parse(settings.results[0].data)['base_eu'] || 25,
     currency_eu: JSON.parse(settings.results[0].data)['currency_eu'] || 'EUR',
-    base_us: JSON.parse(settings.results[0].data)['base_us'] || 85,
+    base_us: JSON.parse(settings.results[0].data)['base_us'] || 25,
     currency_us: JSON.parse(settings.results[0].data)['currency_us'] || 'USD',
   }
 
