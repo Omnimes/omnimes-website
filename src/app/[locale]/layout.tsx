@@ -114,8 +114,8 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         <NextUIProviders>
           <NextIntlClientProvider messages={messages}>
             <ThemeProviders>
-                {/* <Widget text={t("title")} href={"/contact"} buttonText={t("text")} /> */}
-                <Widget text={t("titleHanover")}  href={"https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"} buttonText={t("textButton")}  />
+                <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
+                {/* <Widget text={t("titleHanover")}  href={"https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"} buttonText={t("textButton")}  /> */}
                 {children}   
               <Toaster />
               <Analytics />
