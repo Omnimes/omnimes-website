@@ -20,7 +20,7 @@ export default function Home({params: { locale }}: {params: { locale: string }})
     <>
         <HeroImage />
         <Hero />
-        <Hannover />
+        {/* <Hannover /> */}
         <WhatIsOmnimes />
         <Feature />
         <ComponentVideo />
