@@ -94,7 +94,7 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
     currency: JSON.parse(settings.results[0].data)['currency'] || "PLN",
     base_eu: JSON.parse(settings.results[0].data)['base_eu'] || 25,
     currency_eu: JSON.parse(settings.results[0].data)['currency_eu'] || 'EUR',
-    base_us: JSON.parse(settings.results[0].data)['base_us'] || 25,
+    base_usd: JSON.parse(settings.results[0].data)['base_usd'] || 25,
     currency_us: JSON.parse(settings.results[0].data)['currency_us'] || 'USD',
   }
 
@@ -136,7 +136,7 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
         t('perMachine')
     } else {
       rows[item.machine][periodKey] =
-        (item.price * price.base_us).toFixed(2).toString() +
+        (item.price * price.base_usd).toFixed(2).toString() +
         ' ' +
         price.currency_us +
         ' ' +
