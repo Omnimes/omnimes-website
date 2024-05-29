@@ -4,9 +4,9 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/data/logo.svg'
-import { UserAuthForm } from '@/components/auth/user-auth-form'
 import { LuMoveLeft  } from 'react-icons/lu'
 import { useTranslations } from 'next-intl'
+import { UserAuthForm } from '@/components/auth/UserAuthForm'
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'Login' })
   const title = t('title')

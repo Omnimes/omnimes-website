@@ -695,5 +695,35 @@
     "logout": "Abmelden",
     "register": "Registrierung",
     "dashboard": "Dashboard"
+  },
+  "GalleryMeta": {
+    "title": "OmniMES - Galerie - Durchsuchen Sie unser Album unvergesslicher Momente",
+    "desc": "Unsere Galerie enthält sorgfältig ausgewählte Fotos von verschiedenen Veranstaltungen, die wir organisiert oder an denen wir teilgenommen haben. Jedes Foto erzählt eine einzigartige Geschichte und fängt die Atmosphäre des Augenblicks ein. Durchsuchen Sie unsere Alben, um zu sehen, wie wir während dieser unvergesslichen Momente gefeiert, gelernt, gespielt und zusammengearbeitet haben.",
+    "keywords": "Galerie, Fotos, Veranstaltungen, Alben, Fotoberichte, Partys, Konferenzen, Workshops, Festivals, Treffen, Fotografien"
+  },
+  "Gallery": {
+    "eventMesse": "Hannover Messe 2024",
+    "eventWIA": "WIA Messe 2024",
+    "title": "OmniMES Galerie",
+    "desc": "Wir laden Sie ein, unsere Sammlung einzigartiger Fotografien zu entdecken, die die schönsten Momente verschiedener Veranstaltungen eingefangen haben.",
+    "contact": "Kontakt",
+    "alt1": "Menschen versammeln sich um einen Messestand, der Technologie- und Softwarelösungen präsentiert. Der Stand verfügt über Bildschirme mit digitalen Inhalten, Banner verschiedener Firmen, darunter 'Omnimes', und Informationsmaterialien. Die Umgebung ist geschäftig und interaktiv.",
+    "alt2": "Drei Personen stehen und schauen auf einen Computerbildschirm, der verschiedene Diagramme und Daten anzeigt. Sie scheinen den Inhalt auf dem Bildschirm zu besprechen. Im Hintergrund zeigen die Stände Firmennamen wie MultiProjekt und Omnimes.",
+    "alt3": "Drei Personen stehen vor einem digitalen Display, das Diagramme und Grafiken zeigt, und diskutieren ein 'Manufacturing Execution System' am Omnimes-Stand. Die Umgebung scheint eine Messe oder eine Konferenz zu sein, die sich auf Industrieinnovationen konzentriert.",
+    "alt4": "Drei Männer in Geschäftskleidung versammeln sich um einen Bildschirm, der Diagramme und Grafiken anzeigt. Ein Mann zeigt auf den Bildschirm und erklärt die Daten den anderen beiden. Hinter ihnen befindet sich ein Schild mit der Aufschrift 'omnimes industry 4.0'.",
+    "alt5": "Eine Gruppe von Menschen steht in einem gut beleuchteten Ausstellungsstand. Sie sind im Gespräch und schauen auf einen großen Monitor. Der Stand verfügt über Banner mit polnischem Text, der technologische Audits und Industrie 4.0-Lösungen bewirbt. Es gibt Displays und Broschüren rundherum.",
+    "alt6": "Ein Mann in einem grauen Anzug inspiziert zwei große Monitore, die Fertigungssoftware auf einem Messestand von omniMES zeigen. Der Stand enthält den Text 'Manufacturing Execution System' und ein Schild, das zum Testen des MES-Systems mit KI auf Polnisch einlädt.",
+    "alt7": "Ein Mann und eine Frau unterhalten sich an einem Ausstellungsstand der Firma MultiProjekt. Hinter ihnen zeigt ein großer Bildschirm bunte Symbole und Texte. Der Stand hat auch einen zweiten Bildschirm auf der rechten Seite, der eine industrielle Szene zeigt.",
+    "alt8": "Zwei Personen stehen vor einem Stand mit der Aufschrift omnimes. Der Stand verfügt über einen großen Bildschirm, der Diagramme und Daten anzeigt, sowie ein anderes Touchscreen-Gerät. Ein Plakat auf Polnisch lädt die Besucher ein, ihr KI-basiertes MES-System auszuprobieren. Die Umgebung scheint eine Ausstellung zu sein.",
+    "alt9": "Foto eines Messestands von Omnimes, der ein Manufacturing Execution System präsentiert. Im Vordergrund ist ein Roboterarm zu sehen, mit mehreren Bildschirmen, die Daten und Grafiken anzeigen. Zwei Männer unterhalten sich auf der rechten Seite, einer hält eine Cembre-Tasche.",
+    "alt10": "Drei Personen unterhalten sich an einem Technologieausstellungsstand. Im Hintergrund befindet sich ein großer Bildschirm, der Informationen anzeigt, und der Stand verfügt über Displays und Broschüren zu Robotik und Digitalisierung. Die Umgebung ist professionell und modern.",
+    "alt11": "Ein Mann im Anzug steht vor einem Ausstellungsstand, der Omnimes Industry 4.0 präsentiert. Er hält eine kleine rote Schachtel mit einem Gegenstand darin. Hinter ihm zeigt ein großer Bildschirm Diagramme und Grafiken, und ein Schild lautet 'Wypróbuj nasz system MES z AI'.",
+    "alt12": "Fünf Personen stehen vor einem Bildschirm an einem Messestand. Der Stand verfügt über Branding für MultiProjekt und Banner mit Wörtern wie AUDYTY und MES. Eine Frau hält eine rote Auszeichnung. Alle Personen sind in Geschäftskleidung und lächeln.",
+    "alt13": "Nahaufnahme einer Auszeichnung, die auf einem Stand ausgestellt ist. Die Auszeichnung enthält eine silberne Medaille mit der Aufschrift QUALITY & INNOVATION Expo 2024, eingebettet in einem orangefarbenen Etui. Der Hintergrund ist verschwommen, wodurch der Fokus auf der Auszeichnung liegt.",
+    "alt14": "Vier Männer in Geschäftskleidung versammeln sich um einen großen Bildschirm am MultiProjekt-Stand während einer Ausstellung. Im Hintergrund sind andere Stände und Displays zu sehen.",
+    "alt15": "Ein Messestand, der modulare Roboter, Simulationssoftware und KI-unterstützte Manufacturing Execution Systems zeigt. Ein großer Bildschirm zeigt Datenanalysen und Systeminformationen, mit verschiedenen Geräten rundherum.",
+    "alt16": "Vier Personen sind im Gespräch an einem Technologieausstellungsstand. Ein Mann in einem weinroten Blazer und ein anderer in einer grauen Jacke sprechen mit zwei Frauen, eine trägt einen weißen Mantel und die andere schwarz. Der Stand zeigt Displays zu modularen Robotern und KI-Systemen.",
+    "alt17": "Eine Gruppe von Menschen unterhält sich vor einem Stand mit der Aufschrift 'MultiProjekt' auf einer Messe oder Konferenz. Der Stand verfügt über verschiedene ausgestellte Materialien und einen Monitor. Eine Person hat einen orangefarbenen Rucksack, und die Atmosphäre wirkt professionell und ansprechend.",
+    "alt18": "Eine Gruppe von Männern in Geschäftskleidung steht an einem Ausstellungsstand, durchsucht Broschüren und diskutiert. Hinter ihnen befinden sich Displays und Banner, die ein Manufacturing Execution System bewerben. Die Umgebung scheint eine Branchenmesse oder Konferenz zu sein."
   }
 }

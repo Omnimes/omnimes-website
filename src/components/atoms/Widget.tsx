@@ -15,7 +15,7 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
   // nie chcę wyświetlać na stronach:
   // kontakt, oferta, o nas - dodawaj opcjonalnie po | w regexp poniżej
   const localePrefixRegex =
-    /^\/(de|pl|en)(\/(?!about$|ueber-uns$|o-nas$|kontakt$|contact$|oferta$|offer$|angebot$|demo$|login$|register$|rejestracja$|admin$|dashboard$|outstatic$|outstatic\/(?:[^\/]+)$).*)?$/
+    /^\/(de|pl|en)(\/(?!about$|ueber-uns$|o-nas$|kontakt$|contact$|oferta$|offer$|angebot$|demo$|login$|register$|rejestracja$|admin$|dashboard$|gallery$|galeria$|galerie$|outstatic$|outstatic\/(?:[^\/]+)$).*)?$/
 
   if (!localePrefixRegex.test(pathname)) {
     return null

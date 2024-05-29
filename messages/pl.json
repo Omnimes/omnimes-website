@@ -693,5 +693,35 @@
     "logout": "Wyloguj",
     "register": "Rejestracja",
     "dashboard": "Dashboard"
+  },
+  "GalleryMeta": {
+    "title": "OmniMES - Galeria - Przeglądaj nasz album z niezapomnianych chwil",
+    "desc": "Nasza galeria zawiera starannie wyselekcjonowane zdjęcia z różnych wydarzeń, które organizowaliśmy lub w których braliśmy udział. Każde zdjęcie opowiada unikalną historię i oddaje atmosferę chwili. Przeglądaj nasze albumy, aby zobaczyć, jak świętowaliśmy, uczyliśmy się, bawiliśmy i współpracowaliśmy podczas tych niezapomnianych momentów.",
+    "keywords": "galeria, zdjęcia, wydarzenia, albumy, fotorelacje, imprezy, konferencje, warsztaty, festiwale, spotkania, fotografie"
+  },
+  "Gallery": {
+    "eventMesse": "Hannover Messe 2024",
+    "eventWIA": "Targi WIA 2024",
+    "title": "OmniMES Galeria",
+    "desc": "Zapraszamy do odkrycia naszego zbioru wyjątkowych fotografii, które uchwyciły najpiękniejsze chwile z najróżniejszych wydarzeń.",
+    "contact": "Kontakt",
+    "alt1": "Ludzie gromadzą się wokół stoiska targowego prezentującego technologie i rozwiązania programowe. Stoisko wyposażone jest w ekrany z treściami cyfrowymi, banery różnych firm, w tym 'Omnimes', oraz materiały informacyjne. Atmosfera jest ruchliwa i interaktywna.",
+    "alt2": "Trzy osoby stoją i patrzą na ekran komputera wyświetlający różne wykresy i dane. Wydają się omawiać zawartość na ekranie. W tle stoiska pokazują nazwy firm MultiProjekt i Omnimes.",
+    "alt3": "Trzy osoby stoją przed cyfrowym wyświetlaczem pokazującym wykresy i grafiki, dyskutując o 'Manufacturing Execution System' na stoisku Omnimes. Otoczenie wydaje się być targami lub konferencją skupioną na innowacjach przemysłowych.",
+    "alt4": "Trzej mężczyźni w biznesowych strojach zgromadzeni wokół ekranu wyświetlającego wykresy i grafiki. Jeden z mężczyzn wskazuje na ekran, tłumacząc dane pozostałym dwóm. Za nimi znajduje się znak z napisem 'omnimes industry 4.0'.",
+    "alt5": "Grupa ludzi stoi wewnątrz dobrze oświetlonego stoiska wystawowego. Są zaangażowani w rozmowę i patrzą na duży monitor. Stoisko wyposażone jest w banery z polskim tekstem, promujące audyty technologiczne i rozwiązania Przemysłu 4.0. Wokół znajdują się wyświetlacze i broszury.",
+    "alt6": "Mężczyzna w szarym garniturze ogląda dwa duże monitory prezentujące oprogramowanie produkcyjne na stoisku targowym omniMES. Stoisko zawiera tekst 'Manufacturing Execution System' oraz znak zachęcający do wypróbowania systemu MES z AI w języku polskim.",
+    "alt7": "Mężczyzna i kobieta rozmawiają na stoisku wystawowym firmy MultiProjekt. Za nimi duży ekran wyświetla kolorowe ikony i tekst. Stoisko ma również drugi ekran po prawej stronie, pokazujący scenę przemysłową.",
+    "alt8": "Dwie osoby stoją przed stoiskiem z napisem omnimes. Stoisko wyposażone jest w duży ekran wyświetlający wykresy i dane oraz inne urządzenie dotykowe. Plakat w języku polskim zaprasza odwiedzających do wypróbowania systemu MES z AI. Otoczenie wydaje się być wystawą.",
+    "alt9": "Zdjęcie stoiska targowego Omnimes prezentującego Manufacturing Execution System. Na pierwszym planie znajduje się ramię robotyczne, z kilkoma ekranami pokazującymi dane i grafiki. Dwaj mężczyźni rozmawiają po prawej stronie, jeden trzyma torbę Cembre.",
+    "alt10": "Trzy osoby rozmawiają na stoisku technologicznym. W tle znajduje się duży ekran wyświetlający informacje, a stoisko zawiera wyświetlacze i broszury związane z robotyką i cyfryzacją. Otoczenie jest profesjonalne i nowoczesne.",
+    "alt11": "Mężczyzna w garniturze stoi przed stoiskiem wystawowym prezentującym Omnimes Industry 4.0. Trzyma małe czerwone pudełko z przedmiotem w środku. Za nim duży ekran wyświetla wykresy i grafiki, a znak głosi 'Wypróbuj nasz system MES z AI'.",
+    "alt12": "Pięć osób stoi przed ekranem wyświetlacza na stoisku targowym. Stoisko zawiera markę MultiProjekt oraz banery z napisami takimi jak AUDYTY i MES. Jedna kobieta trzyma czerwoną nagrodę. Wszyscy są ubrani w biznesowe stroje i uśmiechają się.",
+    "alt13": "Zbliżenie nagrody wystawionej na stojaku. Nagroda zawiera srebrny medalion z napisem QUALITY & INNOVATION Expo 2024, osadzony w pomarańczowym etui. Tło jest rozmyte, skupiając uwagę na nagrodzie.",
+    "alt14": "Czterech mężczyzn w biznesowych strojach zgromadzonych wokół dużego ekranu na stoisku MultiProjekt podczas wystawy. W tle widoczne są inne stoiska i wyświetlacze.",
+    "alt15": "Stoisko targowe prezentujące modułowe roboty, oprogramowanie symulacyjne i systemy MES wspierane przez AI. Duży ekran wyświetla analizy danych i informacje o systemie, z różnym sprzętem wokół.",
+    "alt16": "Cztery osoby rozmawiają na stoisku technologicznym. Jeden mężczyzna w bordowej marynarce i drugi w szarej kurtce rozmawiają z dwiema kobietami, jedną ubraną w biały płaszcz, a drugą na czarno. Stoisko zawiera wyświetlacze dotyczące modułowych robotów i systemów AI.",
+    "alt17": "Grupa ludzi rozmawia przed stoiskiem oznaczonym 'MultiProjekt' na targach lub konferencji. Stoisko zawiera różne wyświetlane materiały i monitor. Jedna osoba ma pomarańczowy plecak, a atmosfera wydaje się być profesjonalna i angażująca.",
+    "alt18": "Grupa mężczyzn w biznesowych strojach stoi na stoisku wystawowym, przeglądając broszury i dyskutując. Za nimi znajdują się wyświetlacze i banery promujące Manufacturing Execution System. Otoczenie wydaje się być targami lub konferencją branżową."
   }
 }

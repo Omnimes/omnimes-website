@@ -1,14 +1,11 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { CardAuthor } from './atoms/AuthorsCard'
 import { Company } from './Company'
 import { DescriptionPrimary } from './atoms/Description'
 import { Heading } from './atoms/Heading'
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { TeamsData } from "@/data/team";
-export const Team = async () => {
-  const locale = useLocale();
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Team');
+export const Team = () => {
+  const t = useTranslations('Team');
   return (
     <>
       <div className="mx-auto max-w-screen-xl py-8 text-center lg:py-16">

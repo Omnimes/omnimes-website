@@ -6,7 +6,7 @@ import Logo from '@/data/logo.svg'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { LuMoveLeft  } from 'react-icons/lu'
-import { UserAuthForm } from '@/components/auth/user-auth-form'
+import { UserAuthForm } from '@/components/auth/UserAuthForm'
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Register" });

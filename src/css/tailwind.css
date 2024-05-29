@@ -272,3 +272,66 @@ video {
   -webkit-transform: scale(1.1) rotate(2deg);
   transform: scale(1.1) rotate(2deg);
 }
+
+.btn-conteiner {
+  display: flex;
+  --color-text: #db2777;
+  --color-background: #353535;
+  --color-outline: #db2777;
+  --color-shadow: #00000080;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: .8rem;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+  cursor: pointer;
+}
+
+.btn-content:hover,
+.btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+}
+
+.icon-arrow {
+  position: relative;
+}
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-25%);
+}
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}

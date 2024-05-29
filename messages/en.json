@@ -693,5 +693,35 @@
     "logout": "Logout",
     "register": "Register",
     "dashboard": "Dashboard"
+  },
+  "GalleryMeta": {
+    "title": "OmniMES - Gallery - Browse our album of unforgettable moments",
+    "desc": "Our gallery features carefully selected photos from various events we have organized or participated in. Each photo tells a unique story and captures the atmosphere of the moment. Browse our albums to see how we celebrated, learned, played, and collaborated during these unforgettable moments.",
+    "keywords": "gallery, photos, events, albums, photo reports, parties, conferences, workshops, festivals, meetings, photographs"
+  },
+  "Gallery": {
+    "eventMesse": "Hannover Messe 2024",
+    "eventWIA": "WIA Fair 2024",
+    "title": "OmniMES Gallery",
+    "desc": "We invite you to discover our collection of unique photographs that captured the most beautiful moments from various events.",
+    "contact": "Contact",
+    "alt1": "People gather around a trade show booth displaying technology and software solutions. The booth features screens with digital content, banners for various companies including 'Omnimes', and informational materials. The environment is busy and interactive.",
+    "alt2": "Three individuals are standing and looking at a computer screen displaying various charts and data. They appear to be discussing the content on the screen. Booths in the background show company names MultiProjekt and Omnimes",
+    "alt3": "Three people are standing in front of a digital display showing charts and graphs, discussing a 'Manufacturing Execution System' at the Omnimes booth. The surrounding area appears to be a trade show or conference setting focused on industry innovations.",
+    "alt4": "Three men in business attire are gathered around a screen displaying charts and graphs. One man is pointing at the screen, explaining the data to the other two. Behind them is a sign that reads 'omnimes industry 4.0'.",
+    "alt5": "A group of people stand inside a well-lit exhibition booth. They are engaged in conversation and looking at a large monitor. The booth features banners with Polish text, promoting technological audits and Industry 4.0 solutions. There are displays and brochures around.",
+    "alt6": "A man in a gray suit inspects two large monitors showcasing manufacturing software at a trade show booth for omniMES. The booth features the text 'Manufacturing Execution System' and a sign encouraging the trial of the MES system with AI in Polish.",
+    "alt7": "A man and a woman are conversing at an exhibition booth featuring a company called MultiProjekt. Behind them, a large screen displays colorful icons and text. The booth also has a secondary screen on the right showing an industrial scene.",
+    "alt8": "Two individuals stand in front of a booth with the sign omnimes. The booth features a large screen displaying charts and data and another touchscreen device. A poster in Polish invites visitors to try their AI-based MES system. The setting appears to be an exhibition.",
+    "alt9": "Photo of a trade show booth for Omnimes featuring a Manufacturing Execution System. A robotic arm is displayed in the forefront, with several screens showing data and graphics. Two men are conversing on the right, one holding a Cembre tote bag.",
+    "alt10": "Three individuals are engaging in conversation at a technology exhibition booth. A large screen displaying information is in the background, and the booth features displays and brochures related to robotics and digitalization. The setting is professional and modern.",
+    "alt11": "A man in a suit is standing in front of a display booth showcasing Omnimes Industry 4.0. He is holding a small red box with an item inside. Behind him, a large screen displays charts and graphs, and a sign reads Wypróbuj nasz system MES z AI.",
+    "alt12": "Five people stand in front of a display screen at a trade show booth. The booth features branding for MultiProjekt and banners with words like AUDYTY and MES. One woman holds a red award. All individuals are dressed in business attire and smiling.",
+    "alt13": "A close-up of an award displayed on a stand. The award features a silver medallion with the inscription QUALITY & INNOVATION Expo 2024, embedded in an orange case. The background is blurred, keeping the focus on the award.",
+    "alt14": "Four men in business attire are gathered around a large screen at the MultiProjekt booth during an exhibition. Other booths and displays are visible in the background.",
+    "alt15": "A trade show booth featuring modular robots, simulation software, and AI-enhanced manufacturing execution systems. A large display screen shows data analytics and system information, with various equipment around.",
+    "alt16": "Four people are engaged in a discussion at a technology exhibition booth. One man in a burgundy blazer and another in a grey jacket are speaking to two women, one wearing a white coat and the other in black. The booth features displays about modular robots and AI systems.",
+    "alt17": "A group of people are gathered and conversing in front of a booth labeled 'MultiProjekt' at a trade show or conference. The booth features various displayed materials and a monitor. One person has an orange backpack, and the atmosphere appears professional and engaging.",
+    "alt18": "A group of men in business attire stand at an exhibition booth, examining brochures and discussing. Behind them are displays and banners promoting a Manufacturing Execution System. The setting appears to be an industry trade show or conference."
   }
 }
