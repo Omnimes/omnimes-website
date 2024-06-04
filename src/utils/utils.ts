@@ -9,6 +9,20 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export const sortImagesByDate = (images: ImageGallery[]) => {
+  return images.sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB.getTime() - dateA.getTime();
+  });
+};
+
+export const extractOrientationNumber = (orientation: string): number | null => {
+  if(orientation == undefined) return null
+  const match = orientation.match(/\d+/);
+  return match ? parseInt(match[0], 10) : null;
+}
+
 export function text({ url, host }: { url: string, host: string }) {
   return `Activate your account ${host}\n${url}\n\n`
 }
@@ -70,7 +84,6 @@ export function html(params: { url: string }) {
 </body>
 `
 }
-
 
 export function htmlLogin(params: { url: string }) {
   const { url } = params

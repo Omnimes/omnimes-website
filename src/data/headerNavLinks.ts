@@ -3,7 +3,7 @@ import { LuAtom } from 'react-icons/lu'
 import { LuCombine } from 'react-icons/lu'
 import { LuClipboardSignature } from 'react-icons/lu'
 import { LuCable } from 'react-icons/lu'
-import { LuMonitorStop } from "react-icons/lu";
+import { LuGalleryHorizontalEnd } from "react-icons/lu";
 export const headerNavLinks: NavLink[] = [
   { href: '/', title: 'home' },
   { href: '/blog', title: 'blog' },
@@ -29,6 +29,7 @@ export const headerNavLinksDropDown: NavLinkDrop[] = [
     color: '#18c964',
   },
   { href: '/faq', title: 'faq', desc: 'faqDesc', icon: LuCable, color: '#f31260' },
+  { href: '/gallery', title: 'gallery', desc: "galleryDesc", icon: LuGalleryHorizontalEnd, color: '#c7861f'}
 ]
 
 type NavLink = {

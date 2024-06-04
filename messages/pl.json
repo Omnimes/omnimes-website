@@ -30,6 +30,7 @@
     "main": "Menu",
     "page": "strona",
     "faq": "FAQ",
+    "gallery": "Galeria",
     "offer": "Oferta",
     "privacy-policy": "Polityka Prywatnosci",
     "tags": "Tagi",
@@ -41,16 +42,19 @@
     "demoDesc": "Prezentacja dynamicznego pulpitu systemu OmniMES - wersja demo",
     "resourcesDesc": "Zapoznaj się z naszymi zasobami edukacyjnymi, które pomogą Ci w lepszym zrozumieniu naszego systemu.",
     "faqDesc": "Skorzystaj z naszego obszernego zestawu pytań i odpowiedzi, aby uzyskać klarowne wyjaśnienia dotyczące funkcji, cen, warunków użytkowania i nie tylko.",
+    "galleryDesc": "Odkryj nasz zbior wyjątkowych fotografii, które uchwyciły najpiękniejsze chwile z najróżniejszych wydarzeń.",
     "menuOpen": "Otwórz menu",
     "menuClose": "Zamknij menu",
     "omniMESDropDown": "Rozwiń menu związane z OmniMES",
     "titleSectionDropDown": "Rozwiązania Biznesowe",
     "titleSectionDropDown2": "Wsparcie i Informacje",
     "titleSectionDropDown3": "Prezentacja",
+    "titleSectionDropDown4": "Społeczność",
     "searchSubtitle": "Sprawdź ofertę systemu OmniMES.",
     "searchSubtitle2": "Dowiedz się więcej na temat OmniMES.",
     "searchSubtitle3": "Sprawdź faq i znajdź odpowiedź na pytania.",
-    "searchSubtitle4": "Pobierz materiały dotyczące systemu."
+    "searchSubtitle4": "Pobierz materiały dotyczące systemu.",
+    "searchSubtitle5": "Zobacz galerię zdjęć OmniMES"
   },
   "Blog": {
     "title": "Wszystkie posty",
@@ -704,7 +708,16 @@
     "eventWIA": "Targi WIA 2024",
     "title": "OmniMES Galeria",
     "desc": "Zapraszamy do odkrycia naszego zbioru wyjątkowych fotografii, które uchwyciły najpiękniejsze chwile z najróżniejszych wydarzeń.",
+    "titleHero": "Przeżyjmy to Jeszcze Raz",
+    "descHero": "Nasze wydarzenia społecznościowe to czas, kiedy możemy się spotkać, wymieniać doświadczeniami i świętować nasze wspólne sukcesy. ",
+    "subtitle": "OmniGaleria",
+    "scroll": "Przewiń w dół",
     "contact": "Kontakt",
+    "nextLabel": "Następne zdjęcie",
+    "prevLabel": "Poprzednie zdjęcie",
+    "zoomInLabel": "Przybliż",
+    "zoomOutLabel": "Oddal",
+    "closeLabel": "Zamknij",
     "alt1": "Ludzie gromadzą się wokół stoiska targowego prezentującego technologie i rozwiązania programowe. Stoisko wyposażone jest w ekrany z treściami cyfrowymi, banery różnych firm, w tym 'Omnimes', oraz materiały informacyjne. Atmosfera jest ruchliwa i interaktywna.",
     "alt2": "Trzy osoby stoją i patrzą na ekran komputera wyświetlający różne wykresy i dane. Wydają się omawiać zawartość na ekranie. W tle stoiska pokazują nazwy firm MultiProjekt i Omnimes.",
     "alt3": "Trzy osoby stoją przed cyfrowym wyświetlaczem pokazującym wykresy i grafiki, dyskutując o 'Manufacturing Execution System' na stoisku Omnimes. Otoczenie wydaje się być targami lub konferencją skupioną na innowacjach przemysłowych.",
@@ -722,6 +735,7 @@
     "alt15": "Stoisko targowe prezentujące modułowe roboty, oprogramowanie symulacyjne i systemy MES wspierane przez AI. Duży ekran wyświetla analizy danych i informacje o systemie, z różnym sprzętem wokół.",
     "alt16": "Cztery osoby rozmawiają na stoisku technologicznym. Jeden mężczyzna w bordowej marynarce i drugi w szarej kurtce rozmawiają z dwiema kobietami, jedną ubraną w biały płaszcz, a drugą na czarno. Stoisko zawiera wyświetlacze dotyczące modułowych robotów i systemów AI.",
     "alt17": "Grupa ludzi rozmawia przed stoiskiem oznaczonym 'MultiProjekt' na targach lub konferencji. Stoisko zawiera różne wyświetlane materiały i monitor. Jedna osoba ma pomarańczowy plecak, a atmosfera wydaje się być profesjonalna i angażująca.",
-    "alt18": "Grupa mężczyzn w biznesowych strojach stoi na stoisku wystawowym, przeglądając broszury i dyskutując. Za nimi znajdują się wyświetlacze i banery promujące Manufacturing Execution System. Otoczenie wydaje się być targami lub konferencją branżową."
+    "alt18": "Grupa mężczyzn w biznesowych strojach stoi na stoisku wystawowym, przeglądając broszury i dyskutując. Za nimi znajdują się wyświetlacze i banery promujące Manufacturing Execution System. Otoczenie wydaje się być targami lub konferencją branżową.",
+    "alt19": "Stoisko targowe z różnymi technologicznymi prezentacjami. Mężczyzna w garniturze stoi obok małego okrągłego stolika z krzesłami. Na oznakowaniu znajdują się napisy 'Audyt', 'Multi-Projekt' i 'MES & AI'. Widoczny jest duży ekran oraz tablice informacyjne, wyświetlające treści związane z technologią."
   }
 }

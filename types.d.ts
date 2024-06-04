@@ -43,6 +43,17 @@ type SidebarNavItem = {
     }
 )
 
+type ImageGallery = {
+  src: string;
+  width: number;
+  height: number;
+  title: string;
+  alt: string;
+  caption: string;
+  tags: stirng[];
+  date: string;
+}
+
 declare module 'rehype-citation' {
   const rehypeCitation: any;
   export default rehypeCitation;

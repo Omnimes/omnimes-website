@@ -30,6 +30,7 @@
     "main": "Main",
     "page": "page",
     "faq": "FAQ",
+    "gallery": "Gallery",
     "offer": "Offer",
     "privacy-policy": "Privacy Policy",
     "tags": "Tags",
@@ -39,18 +40,21 @@
     "projectDesc": "Get acquainted with the OmniMES project - an initiative that redefines standards of efficiency and control in the production process.",
     "resourcesDesc": "Explore our educational resources that will help you better understand our system.",
     "faqDesc": "Take advantage of our extensive set of questions and answers to get clear explanations about features, pricing, terms of use, and more.",
+    "galleryDesc": "Discover our collection of unique photographs that capture the most beautiful moments from various events.",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "omniMESDropDown": "Expand OmniMES-related menu",
     "titleSectionDropDown": "Business Solutions",
     "titleSectionDropDown2": "Support and Information",
-    "demo": "Demo Desktop",
     "titleSectionDropDown3": "Presentation",
+    "titleSectionDropDown4": "Community",
+    "demo": "Demo Desktop",
     "demoDesc": "Presentation of the dynamic OmniMES desktop - demo version",
     "searchSubtitle": "Check out the OmniMES system offer.",
     "searchSubtitle2": "Learn more about OmniMES.",
     "searchSubtitle3": "Check FAQs and find answers to questions.",
-    "searchSubtitle4": "Download materials related to the system."
+    "searchSubtitle4": "Download materials related to the system.",
+    "searchSubtitle5": "See the OmniMES photo gallery"
   },
   "Blog": {
     "title": "All posts",
@@ -704,7 +708,16 @@
     "eventWIA": "WIA Fair 2024",
     "title": "OmniMES Gallery",
     "desc": "We invite you to discover our collection of unique photographs that captured the most beautiful moments from various events.",
+    "titleHero": "Let's live this one more time",
+    "descHero": "Our community events are a time when we can meet, share experiences and celebrate our shared successes.",
+    "subtitle": "OmniGaleria",
+    "scroll": "Scroll down",
     "contact": "Contact",
+    "nextLabel": "Next photo",
+    "prevLabel": "Previous photo",
+    "zoomInLabel": "Zoom in",
+    "zoomOutLabel": "Zoom out",
+    "closeLabel": "Close",
     "alt1": "People gather around a trade show booth displaying technology and software solutions. The booth features screens with digital content, banners for various companies including 'Omnimes', and informational materials. The environment is busy and interactive.",
     "alt2": "Three individuals are standing and looking at a computer screen displaying various charts and data. They appear to be discussing the content on the screen. Booths in the background show company names MultiProjekt and Omnimes",
     "alt3": "Three people are standing in front of a digital display showing charts and graphs, discussing a 'Manufacturing Execution System' at the Omnimes booth. The surrounding area appears to be a trade show or conference setting focused on industry innovations.",
@@ -722,6 +735,7 @@
     "alt15": "A trade show booth featuring modular robots, simulation software, and AI-enhanced manufacturing execution systems. A large display screen shows data analytics and system information, with various equipment around.",
     "alt16": "Four people are engaged in a discussion at a technology exhibition booth. One man in a burgundy blazer and another in a grey jacket are speaking to two women, one wearing a white coat and the other in black. The booth features displays about modular robots and AI systems.",
     "alt17": "A group of people are gathered and conversing in front of a booth labeled 'MultiProjekt' at a trade show or conference. The booth features various displayed materials and a monitor. One person has an orange backpack, and the atmosphere appears professional and engaging.",
-    "alt18": "A group of men in business attire stand at an exhibition booth, examining brochures and discussing. Behind them are displays and banners promoting a Manufacturing Execution System. The setting appears to be an industry trade show or conference."
+    "alt18": "A group of men in business attire stand at an exhibition booth, examining brochures and discussing. Behind them are displays and banners promoting a Manufacturing Execution System. The setting appears to be an industry trade show or conference.",
+    "alt19": "A trade show booth with various technology displays. A man in a suit stands by a small round table with chairs. Signage includes Audyt, Multi-Projekt and 'MES & AI.' A large screen and information boards are visible, displaying tech-related content."
   }
 }

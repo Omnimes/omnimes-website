@@ -335,3 +335,141 @@ video {
     outline-offset: 0;
   }
 }
+
+div[data-testid="grid-gallery-item"] {
+  @apply shadow-lg bg-transparent
+}
+
+div[data-testid="grid-gallery-item"] {
+  background-color: transparent !important;
+}
+
+div[data-testid="grid-gallery-item_viewport"] {
+  @apply rounded-md w-full relative max-w-sm mx-auto h-auto
+}
+
+img[data-testid="grid-gallery-item_thumbnail"] {
+  @apply w-full max-w-sm mx-auto h-auto relative z-0
+}
+
+.ReactGridGallery_tile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  opacity: 0 !important;
+  transition: all .3s ease-in-out;
+  border-radius: 0.375rem;
+}
+
+.ReactGridGallery_tile:hover .ReactGridGallery_tile-overlay {
+  @apply bg-black dark:bg-white shadow-lg !important
+}
+
+.ReactGridGallery_tile:hover .ReactGridGallery_tile-overlay {
+  opacity: .2 !important;
+  border-radius: 0.375rem;
+}
+.ReactGridGallery_tile-icon-bar {
+  display: none;
+}
+.ReactGridGallery_tile-bottom-bar {
+  z-index: 30 !important;
+}
+.ReactGridGallery_tile-bottom-bar div {
+  @apply cursor-default !important
+}
+.ReactGridGallery_tile-bottom-bar div span {
+  color:#db2777 !important;
+  font-weight: 900 !important;
+}
+
+.containerArrow {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: auto;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  width: 51%;
+}
+
+.chevron:before, .chevron:after {
+  @apply bg-white absolute top-0 h-full
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  @apply text-white text-sm uppercase whitespace-nowrap opacity-25 block
+}
+.text {
+  margin-top: 75px;
+  /* margin-left: -30px; */
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+#gallery {
+  @apply scroll-mt-20
+}
+
+.ril-toolbar__item > span {
+  display: none !important;
+}

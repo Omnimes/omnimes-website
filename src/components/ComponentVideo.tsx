@@ -67,7 +67,7 @@ export const ComponentVideo = () => {
             />
           }
           playIcon={
-            <button className="animate-fade-in group absolute left-1/2 top-1/2 z-1 box-border inline-flex h-unit-20 w-unit-20 min-w-unit-20 -translate-x-1/2 -translate-y-1/2 select-none appearance-none items-center justify-center gap-unit-3 overflow-hidden whitespace-nowrap rounded-large bg-default bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] px-unit-0 text-medium font-normal text-default-foreground subpixel-antialiased shadow-lg outline-none tap-highlight-transparent transition-transform-colors-opacity data-[focus-visible=true]:z-10 data-[pressed=true]:scale-[0.97] data-[hover=true]:opacity-hover data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:outline-focus motion-reduce:transition-none">
+            <button className="animate-fade-in p-2 group absolute left-1/2 top-1/2 z-1 box-border inline-flex h-unit-20 w-unit-20 min-w-unit-20 -translate-x-1/2 select-none appearance-none items-center justify-center gap-unit-3 overflow-hidden whitespace-nowrap rounded-large bg-default bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] px-unit-0 text-medium font-normal text-default-foreground subpixel-antialiased shadow-lg outline-none tap-highlight-transparent transition-transform-colors-opacity data-[focus-visible=true]:z-10 data-[pressed=true]:scale-[0.97] data-[hover=true]:opacity-hover data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:outline-focus motion-reduce:transition-none">
               <VideoPlayIcon />
             </button>
           }

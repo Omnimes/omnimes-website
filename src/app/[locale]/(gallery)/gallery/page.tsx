@@ -1,7 +1,7 @@
 import { genPageMetadata } from '@/app/seo';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { Gallery } from '@/components/Gallery';
+import { GalleryMES } from '@/components/Gallery';
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "GalleryMeta" });
   const title = t('title');
@@ -17,8 +17,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const meta = genPageMetadata(obj)
   return meta
 }
-
 export default function GalleryPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  return ( <Gallery /> )
+  return ( <GalleryMES /> )
 }

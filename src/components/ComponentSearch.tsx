@@ -85,6 +85,15 @@ export const ComponentSearch = ({ children }: { children: ReactNode }) => {
               section: 'OmniMES',
               perform: () => router.push('/faq'),
             },
+            {
+              id: 'gallery',
+              name: t('gallery'),
+              shortcut: ['g'],
+              keywords: t('gallery'),
+              subtitle: t('searchSubtitle5'),
+              section: t("titleSectionDropDown4"),
+              perform: () => router.push('/gallery'),
+            },
           ],
           onSearchDocumentsLoad(json) {
             return json

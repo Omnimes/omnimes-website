@@ -30,6 +30,7 @@
     "main": "Menu",
     "page": "seite",
     "faq": "FAQ",
+    "gallery": "Galerie",
     "offer": "Angebot",
     "privacy-policy": "Datenschutzrichtlinie",
     "tags": "Stichworte",
@@ -39,18 +40,21 @@
     "projectDesc": "Machen Sie sich mit dem OmniMES-Projekt vertraut - einer Initiative, die Standards für Effizienz und Kontrolle im Produktionsprozess neu definiert.",
     "resourcesDesc": "Entdecken Sie unsere Bildungsressourcen, die Ihnen helfen, unser System besser zu verstehen.",
     "faqDesc": "Nutzen Sie unser umfangreiches Frage- und Antwortset, um klare Erklärungen zu Funktionen, Preisen, Nutzungsbedingungen und mehr zu erhalten.",
+    "galleryDesc": "Entdecken Sie unsere Sammlung einzigartiger Fotos, die die schönsten Momente verschiedener Veranstaltungen festhalten.",
     "menuOpen": "Menü öffnen",
     "menuClose": "Menü schließen",
     "omniMESDropDown": "Erweitern Sie das OmniMES-bezogene Menü",
     "titleSectionDropDown": "Geschäftslösungen",
     "titleSectionDropDown2": "Unterstützung und Informationen",
-    "demo": "Demo-Schreibtisch",
     "titleSectionDropDown3": "Präsentation",
+    "titleSectionDropDown4": "Gemeinschaft",
+    "demo": "Demo-Schreibtisch",
     "demoDesc": "Präsentation des dynamischen OmniMES-Desktops - Demoversion",
     "searchSubtitle": "Schauen Sie sich das Angebot des OmniMES-Systems an.",
     "searchSubtitle2": "Erfahren Sie mehr über OmniMES.",
     "searchSubtitle3": "Überprüfen Sie die FAQs und finden Sie Antworten auf Fragen.",
-    "searchSubtitle4": "Laden Sie Materialien zum System herunter."
+    "searchSubtitle4": "Laden Sie Materialien zum System herunter.",
+    "searchSubtitle5": "Sehen Sie sich die OmniMES-Fotogalerie an"
   },
   "Blog": {
     "title": "Alle Artikel",
@@ -706,7 +710,16 @@
     "eventWIA": "WIA Messe 2024",
     "title": "OmniMES Galerie",
     "desc": "Wir laden Sie ein, unsere Sammlung einzigartiger Fotografien zu entdecken, die die schönsten Momente verschiedener Veranstaltungen eingefangen haben.",
+    "titleHero": "Lasst uns das noch einmal durchleben",
+    "descHero": "Unsere Community-Events sind eine Zeit, in der wir uns treffen, Erfahrungen austauschen und unsere gemeinsamen Erfolge feiern können.",
+    "subtitle": "OmniGaleria",
+    "scroll": "Runterscrollen",
     "contact": "Kontakt",
+    "nextLabel": "Nächstes Foto",
+    "prevLabel": "Vorheriges Foto",
+    "zoomInLabel": "Hineinzoomen",
+    "zoomOutLabel": "Rauszoomen",
+    "closeLabel": "Schließen",
     "alt1": "Menschen versammeln sich um einen Messestand, der Technologie- und Softwarelösungen präsentiert. Der Stand verfügt über Bildschirme mit digitalen Inhalten, Banner verschiedener Firmen, darunter 'Omnimes', und Informationsmaterialien. Die Umgebung ist geschäftig und interaktiv.",
     "alt2": "Drei Personen stehen und schauen auf einen Computerbildschirm, der verschiedene Diagramme und Daten anzeigt. Sie scheinen den Inhalt auf dem Bildschirm zu besprechen. Im Hintergrund zeigen die Stände Firmennamen wie MultiProjekt und Omnimes.",
     "alt3": "Drei Personen stehen vor einem digitalen Display, das Diagramme und Grafiken zeigt, und diskutieren ein 'Manufacturing Execution System' am Omnimes-Stand. Die Umgebung scheint eine Messe oder eine Konferenz zu sein, die sich auf Industrieinnovationen konzentriert.",
@@ -724,6 +737,7 @@
     "alt15": "Ein Messestand, der modulare Roboter, Simulationssoftware und KI-unterstützte Manufacturing Execution Systems zeigt. Ein großer Bildschirm zeigt Datenanalysen und Systeminformationen, mit verschiedenen Geräten rundherum.",
     "alt16": "Vier Personen sind im Gespräch an einem Technologieausstellungsstand. Ein Mann in einem weinroten Blazer und ein anderer in einer grauen Jacke sprechen mit zwei Frauen, eine trägt einen weißen Mantel und die andere schwarz. Der Stand zeigt Displays zu modularen Robotern und KI-Systemen.",
     "alt17": "Eine Gruppe von Menschen unterhält sich vor einem Stand mit der Aufschrift 'MultiProjekt' auf einer Messe oder Konferenz. Der Stand verfügt über verschiedene ausgestellte Materialien und einen Monitor. Eine Person hat einen orangefarbenen Rucksack, und die Atmosphäre wirkt professionell und ansprechend.",
-    "alt18": "Eine Gruppe von Männern in Geschäftskleidung steht an einem Ausstellungsstand, durchsucht Broschüren und diskutiert. Hinter ihnen befinden sich Displays und Banner, die ein Manufacturing Execution System bewerben. Die Umgebung scheint eine Branchenmesse oder Konferenz zu sein."
+    "alt18": "Eine Gruppe von Männern in Geschäftskleidung steht an einem Ausstellungsstand, durchsucht Broschüren und diskutiert. Hinter ihnen befinden sich Displays und Banner, die ein Manufacturing Execution System bewerben. Die Umgebung scheint eine Branchenmesse oder Konferenz zu sein.",
+    "alt19": "Ein Messestand mit verschiedenen Technologiepräsentationen. Ein Mann im Anzug steht an einem kleinen runden Tisch mit Stühlen. Die Beschilderung umfasst Audyt, Multi-Projekt und MES & AI. Ein großer Bildschirm und Informationstafeln sind sichtbar, die technologiebezogene Inhalte anzeigen."
   }
 }

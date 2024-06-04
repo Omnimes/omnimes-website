@@ -94,7 +94,21 @@ export default function Header() {
               })}
             </DropdownSection>
             <DropdownSection title={t("titleSectionDropDown2")}>
-              {headerNavLinksDropDown.slice(2).map((item) => {
+              {headerNavLinksDropDown.slice(2,4).map((item) => {
+                return (
+                  <DropdownItem
+                    key={item.href}
+                    href={item.href}
+                    description={t(item.desc)}
+                    startContent={<item.icon size={25} color={item.color} />}
+                  >
+                    {t(item.title)}
+                  </DropdownItem>
+                )
+              })}
+            </DropdownSection>
+            <DropdownSection title={t("titleSectionDropDown4")}>
+              {headerNavLinksDropDown.slice(4).map((item) => {
                 return (
                   <DropdownItem
                     key={item.href}
