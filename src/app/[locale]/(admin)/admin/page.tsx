@@ -18,7 +18,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 //   return meta
 // }
 
-export default function RegisterPage({ params: { locale } }: { params: { locale: string } }) {
+export default function AdminPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
   return (

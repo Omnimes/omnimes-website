@@ -64,7 +64,7 @@ export default async function UserNav() {
           <Link href="/dashboard/settings">Settings</Link>
         </DropdownMenuItem> */}
         <DropdownMenuSeparator />
-        <DropdownMenuItem
+        {/* <DropdownMenuItem
           onSelect={(event: { preventDefault: () => void; }) => {
             event.preventDefault()
             signOut({
@@ -73,7 +73,7 @@ export default async function UserNav() {
           }}
         >
           {t("logout")}
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
       </DropdownMenuContent>
     </DropdownMenu>
   )
