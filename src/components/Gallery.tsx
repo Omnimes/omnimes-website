@@ -10,7 +10,7 @@ import { importAll } from "@/lib/importImage";
 import { sortImagesByDate } from "@/utils/utils";
 import { SubtitleNormal } from "./atoms/Subtitle";
 import { ImagesSlider } from "./atoms/ImagesSlider";
-
+import { Spinner } from "@nextui-org/react";
 export const GalleryMES = () => {
     const [index, setIndex] = useState(-1);
     const [images, setImages] = useState<Image[]>([]);
@@ -59,11 +59,11 @@ export const GalleryMES = () => {
             .catch(error => {
                 console.error("Error loading images:", error);
             });
-
     }, [imagesFHD, t]);
 
     return (
         <main className="pb-20 relative">
+            {!imagesSlider.length && <div className="mx-auto max-w-5xl text-center absolute top-1/2 left-1/2 z-[130] -translate-x-1/2 -translate-y-1/2"><Spinner color="primary" /></div>}
             <ImagesSlider className="h-[calc(100vh-64px)]" images={imagesSlider}>
                 <motion.div
                     initial={{
@@ -77,7 +77,7 @@ export const GalleryMES = () => {
                     transition={{
                     duration: 0.6,
                     }}
-                    className="z-50 flex flex-col justify-center items-center"
+                    className="z-50 flex flex-col justify-center items-center max-w-5xl"
                 >
                     <SubtitleNormal text={t("subtitle")} />
                     <motion.p className="text-2xl md:text-4xl lg:text-7xl font-bold inter-var text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-1">
@@ -86,13 +86,13 @@ export const GalleryMES = () => {
                     <motion.p className="text-base md:text-lg font-normal inter-var text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
                         {t("descHero")}
                     </motion.p>
-                    <Link href="#gallery" className="containerArrow">
+                </motion.div>
+                <Link href="#gallery" className="containerArrow">
                         <div className="chevron"></div>
                         <div className="chevron"></div>
                         <div className="chevron"></div>
                         <p className="text">{t("scroll")}</p>
                     </Link>
-                </motion.div>
                 </ImagesSlider>
             <Gallery
                 id="gallery"
