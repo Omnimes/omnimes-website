@@ -15,7 +15,9 @@ export default async function sitemap() {
     const urlObjects = generateURLObjects(paths, defaultLocale, host);
 
     const xml = generateXML(urlObjects);
-    generateXMLSitemap(xml);
 
-    return []
+    // console.log(xml)
+    // generateXMLSitemap(xml);
+
+    return `${xml}`
 }
