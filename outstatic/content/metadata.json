@@ -1,6 +1,26 @@
 {
-  "commit": "7f1c6ae43dc3b6790b3b95b27f10a372da5d8a04",
-  "generated": "2024-04-11T09:53:27.156Z",
+  "commit": "aa3870ac018961c71460b14d07ba3695136c3f3d",
+  "generated": "2024-06-06T05:41:00.454Z",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "aa3870ac018961c71460b14d07ba3695136c3f3d",
+        "hash": "44427823",
+        "path": "outstatic/content/posts/test-post.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Desct",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T05:52:11.674Z",
+      "slug": "test-post",
+      "status": "draft",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "Test post"
+    }
   ]
 }
