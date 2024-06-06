@@ -18,7 +18,7 @@
       "lang": "pl",
       "publishedAt": "2024-06-06T05:52:11.674Z",
       "slug": "test-post",
-      "status": "draft",
+      "status": "published",
       "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
       "title": "Test post"
     },
@@ -38,7 +38,7 @@
       "lang": "en",
       "publishedAt": "2024-06-06T05:53:10.523Z",
       "slug": "new-post-2",
-      "status": "draft",
+      "status": "published",
       "tags": "tsasa, asdas, asdasd",
       "title": "new post 2"
     },
@@ -58,7 +58,7 @@
       "lang": "pl",
       "publishedAt": "2024-06-06T05:54:50.210Z",
       "slug": "test-3",
-      "status": "draft",
+      "status": "published",
       "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
       "title": "test 3"
     },
@@ -77,7 +77,7 @@
       "description": "desc ",
       "publishedAt": "2024-06-06T06:09:09.509Z",
       "slug": "news-news",
-      "status": "draft",
+      "status": "published",
       "title": "news news "
     }
   ]

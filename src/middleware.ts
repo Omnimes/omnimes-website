@@ -5,10 +5,11 @@ import { NextRequest } from "next/server";
 
 const adminPages = ['/admin'] // dodawać wszystkie admin page
 const protectedPages = ['/dashboard'] // dodawać wszystkie protected page
-/* wykluczenie z sitemapy -> dodać do pliku next-sitemap.config.js */
+export const excludePaths = [...adminPages, ...protectedPages, '/blog/[slug]'];
+export const defaultLocale = 'en' as const;
 
 export const intlMiddleware =  createMiddleware({
-  defaultLocale: 'pl',
+  defaultLocale: defaultLocale,
   locales,
   pathnames,
   localeDetection,

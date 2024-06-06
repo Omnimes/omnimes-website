@@ -1,8 +1,9 @@
 import fs from 'fs/promises'; 
 import { locales } from "@/config"
 import { create } from 'xmlbuilder2';
+import { OstDocument } from 'outstatic';
 
-type changeFrequency =
+export type changeFrequency =
   | 'always'
   | 'hourly'
   | 'daily'
@@ -19,17 +20,18 @@ type Paths = {
   [key: string]: string | LanguagePaths;
 };
 
-type URLObject = {
-    url: string;
-    lastModified: Date;
-    changeFrequency: changeFrequency,
-    alternates: {
-      languages: {
-        [key: string]: string;
-      };
+export type URLObject = {
+  url: string;
+  lastModified?: string | Date;
+  changeFrequency?: changeFrequency,
+  priority?: number
+  alternates?: {
+    languages: {
+      [key: string]: string;
     };
   };
-  
+};
+
 export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
   const transformedPaths: Paths = {};
   
@@ -51,6 +53,17 @@ export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
   return transformedPaths;
 }
 
+export function generateURLObjectsWithoutAlternate(paths: OstDocument<{ [key: string]: unknown; }>[], host: string): URLObject[] {
+  return paths.map(url => {
+    return ({
+      url: `${host}${url.lang ?? 'pl'}/${url.slug}`,
+      lastModified: url.publishedAt || new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    })
+  })
+}
+
 export function generateURLObjects(paths: Paths, defaultLocale: string, baseURL: string): URLObject[] {
   const urlObjects: URLObject[] = [];
   for (const key in paths) {
@@ -64,13 +77,14 @@ export function generateURLObjects(paths: Paths, defaultLocale: string, baseURL:
       url: `${baseURL}${defaultLocale}${path[defaultLocale]}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
+      priority: 0.9,
       alternates: {
         languages: {}
       }
     };
 
     for (const lang in path) {
-      if (lang !== defaultLocale) {
+      if (lang !== defaultLocale && urlObject.alternates) {
         urlObject.alternates.languages[lang] = `${baseURL}${lang}${path[lang as keyof LanguagePaths]}`;
       }
     }
@@ -92,15 +106,19 @@ export function generateXML(urlObjects: URLObject[]): string {
     urlObjects.forEach(obj => {
       const urlElement = root.ele('url');
       urlElement.ele('loc').txt(obj.url);
-      urlElement.ele('changefreq').txt(obj.changeFrequency);
-      urlElement.ele('lastmod').txt(obj.lastModified.toISOString());
+      obj.lastModified && (typeof obj.lastModified == 'string' ? urlElement.ele('lastmod').txt(obj.lastModified) : urlElement.ele('lastmod').txt(obj.lastModified.toISOString()))
+        
+      obj.changeFrequency && urlElement.ele('changefreq').txt(obj.changeFrequency);
+      obj.priority && urlElement.ele('priority').txt(String(obj.priority))
   
-      for (const lang in obj.alternates.languages) {
-        urlElement.ele('xhtml:link', {
-          rel: 'alternate',
-          hreflang: lang,
-          href: obj.alternates.languages[lang]
-        }).up();
+      if(obj.alternates) {
+        for (const lang in obj.alternates.languages) {
+          urlElement.ele('xhtml:link', {
+            rel: 'alternate',
+            hreflang: lang,
+            href: obj.alternates.languages[lang]
+          }).up();
+        }
       }
     });
   
