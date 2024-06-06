@@ -31,23 +31,24 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   // await generateSearchJSON();
   // await getDataToSearch(locale);
   // Enable static rendering
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Blog');
-  const { allPosts, postsLength } = await getData(locale);
-  const pageNumber = 1
+  // unstable_setRequestLocale(locale);
+  // const t = await getTranslations('Blog');
+  // const { allPosts, postsLength } = await getData(locale);
+  // const pageNumber = 1
 
-  const pagination = {
-    currentPage: pageNumber,
-    totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
-  }
+  // const pagination = {
+  //   currentPage: pageNumber,
+  //   totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
+  // }
 
   return (
-      <ListLayout
-        posts={allPosts}
-        initialDisplayPosts={allPosts}
-        pagination={pagination}
-        title={t('title')}
-    />
+    <p>test</p>
+    //   <ListLayout
+    //     posts={allPosts}
+    //     initialDisplayPosts={allPosts}
+    //     pagination={pagination}
+    //     title={t('title')}
+    // />
   );
 }
 
