@@ -35,27 +35,27 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 async function getData(locale: string) {
   const db = await load();
-  const allPosts = await db
-    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
-      'title',
-      'publishedAt',
-      'slug',
-      'coverImage',
-      'description',
-      'author',
-      'tags'
-    ])
-    .sort({ publishedAt: -1 })
-    .limit(POSTS_PER_PAGE)
-    .toArray()
+  // const allPosts = await db
+  //   .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
+  //     'title',
+  //     'publishedAt',
+  //     'slug',
+  //     'coverImage',
+  //     'description',
+  //     'author',
+  //     'tags'
+  //   ])
+  //   .sort({ publishedAt: -1 })
+  //   .limit(POSTS_PER_PAGE)
+  //   .toArray()
 
-  const postsLength = getDocuments('posts', ['lang'])
-    .filter(post => post.status == 'published')
-    .filter(post => post.lang == locale)
-    .length;
+  // const postsLength = getDocuments('posts', ['lang'])
+  //   .filter(post => post.status == 'published')
+  //   .filter(post => post.lang == locale)
+  //   .length;
 
     // console.log(postsLength)
-    // let allPosts: any = []
+    let allPosts: any = []; let postsLength = 0;
   return {
     allPosts,
     postsLength
