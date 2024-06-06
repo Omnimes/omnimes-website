@@ -9,7 +9,7 @@ description: 'Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kont
 coverImage: ''
 tags: 'MQTT, Sparkplug B, Internet of Things, IIoT, Protokół komunikacyjny, Jakość usług, QoS, Retencyjność wiadomości, Przemysłowy Internet Rzeczy, Protokół MQTT, Protokół Sparkplug, Komunikacja IoT, Omnimes, Przemysł 4.0, Standardy komunikacyjne'
 lang: 'pl'
-publishedAt: '2024-06-06T10:56:31.490Z'
+publishedAt: '2024-06-05T10:56:31.000Z'
 ---
 
 #### **Wprowadzenie**
