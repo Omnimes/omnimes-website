@@ -1,5 +1,5 @@
 ---
-title: ' SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II'
+title: 'SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II'
 status: 'published'
 author:
   name: 'Martin Szerment'
