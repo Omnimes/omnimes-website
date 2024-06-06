@@ -27,6 +27,9 @@ export async function GET() {
     
     const xml = generateXML(arrUrlObjects);
 
+    // dodać trasy z blog/page/ liczby
+    // dodać trasy z tagami i postami na tagach
+
   return new Response(xml, {
     headers: {
       "content-type": "application/xml;charset=UTF-8",

@@ -34,26 +34,28 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 async function getData(locale: string) {
-  const db = await load();
-  const allPosts = await db
-    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
-      'title',
-      'publishedAt',
-      'slug',
-      'coverImage',
-      'description',
-      'author',
-      'tags'
-    ])
-    .sort({ publishedAt: -1 })
-    .limit(POSTS_PER_PAGE)
-    .toArray()
+  // const db = await load();
+  // const allPosts = await db
+  //   .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
+  //     'title',
+  //     'publishedAt',
+  //     'slug',
+  //     'coverImage',
+  //     'description',
+  //     'author',
+  //     'tags'
+  //   ])
+  //   .sort({ publishedAt: -1 })
+  //   .limit(POSTS_PER_PAGE)
+  //   .toArray()
 
   const postsLength = getDocuments('posts', ['lang'])
     .filter(post => post.status == 'published')
     .filter(post => post.lang == locale)
     .length;
 
+    console.log(postsLength)
+    let allPosts: any = []
   return {
     allPosts,
     postsLength
@@ -76,8 +78,9 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   // await getDataToSearch(locale);
   const user = await getCurrentUser();
 
-  // const { allPosts, postsLength } = await getData(locale);
-  let allPosts: any = []; let postsLength = 0 
+  let { allPosts, postsLength } = await getData(locale);
+  allPosts = [];
+  postsLength = 0 
   const pageNumber = 1
   const pagination = {
     currentPage: pageNumber,
