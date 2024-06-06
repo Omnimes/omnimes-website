@@ -1,6 +1,6 @@
 {
-  "commit": "18ec125ab88655d5e2f5d9c4e890b61a15ed527e",
-  "generated": "2024-06-06T05:43:11.266Z",
+  "commit": "1e2babb959bdc50d2f087ff46fbc19e86da5d709",
+  "generated": "2024-06-06T05:57:48.169Z",
   "metadata": [
     {
       "__outstatic": {
@@ -61,6 +61,24 @@
       "status": "draft",
       "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
       "title": "test 3"
+    },
+    {
+      "__outstatic": {
+        "commit": "1e2babb959bdc50d2f087ff46fbc19e86da5d709",
+        "hash": "3400176995",
+        "path": "outstatic/content/news/news-news.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "",
+      "description": "desc ",
+      "publishedAt": "2024-06-06T06:09:09.509Z",
+      "slug": "news-news",
+      "status": "draft",
+      "title": "news news "
     }
   ]
 }
