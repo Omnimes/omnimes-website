@@ -1,6 +1,26 @@
 {
-  "commit": "7f1c6ae43dc3b6790b3b95b27f10a372da5d8a04",
-  "generated": "2024-04-11T09:53:27.156Z",
+  "commit": "aa3870ac018961c71460b14d07ba3695136c3f3d",
+  "generated": "2024-06-06T08:42:22.603Z",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "aa3870ac018961c71460b14d07ba3695136c3f3d",
+        "hash": "2766716397",
+        "path": "outstatic/content/posts/test-post-1.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "test post 1",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T08:53:56.510Z",
+      "slug": "test-post-1",
+      "status": "published",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "Test post 1"
+    }
   ]
 }
