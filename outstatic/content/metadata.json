@@ -1,6 +1,6 @@
 {
-  "commit": "40031cd156ce89bd6ce227eabc5df9de2f39d779",
-  "generated": "2024-06-06T05:42:05.756Z",
+  "commit": "18ec125ab88655d5e2f5d9c4e890b61a15ed527e",
+  "generated": "2024-06-06T05:43:11.266Z",
   "metadata": [
     {
       "__outstatic": {
@@ -41,6 +41,26 @@
       "status": "draft",
       "tags": "tsasa, asdas, asdasd",
       "title": "new post 2"
+    },
+    {
+      "__outstatic": {
+        "commit": "18ec125ab88655d5e2f5d9c4e890b61a15ed527e",
+        "hash": "856390048",
+        "path": "outstatic/content/posts/test-3.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "test 3",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T05:54:50.210Z",
+      "slug": "test-3",
+      "status": "draft",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "test 3"
     }
   ]
 }
