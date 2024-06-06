@@ -1,10 +1,10 @@
 {
-  "commit": "423b9bbd1f14d75887563eb1b0611bb4db7d0d7d",
-  "generated": "2024-06-06T09:48:54.432Z",
+  "commit": "7e913c4ebd6485c9aead631cc22713c858f7381e",
+  "generated": "Thu, 06 Jun 2024 09:51:50 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "423b9bbd1f14d75887563eb1b0611bb4db7d0d7d",
+        "commit": "2514537e829b94c256b2e53b322f00a88e26eee5",
         "hash": "1284393233",
         "path": "outstatic/content/posts/nowy-post.md"
       },
