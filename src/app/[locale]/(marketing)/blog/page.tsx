@@ -31,11 +31,11 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   // await generateSearchJSON();
   // await getDataToSearch(locale);
   // Enable static rendering
-  // unstable_setRequestLocale(locale);
-  // const t = await getTranslations('Blog');
-  // const { allPosts, postsLength } = await getData(locale);
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations('Blog');
+  const { allPosts, postsLength } = await getData(locale);
   // const pageNumber = 1
-
+  console.log(allPosts)
   // const pagination = {
   //   currentPage: pageNumber,
   //   totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
