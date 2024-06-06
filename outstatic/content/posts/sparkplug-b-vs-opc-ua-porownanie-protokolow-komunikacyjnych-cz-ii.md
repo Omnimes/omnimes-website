@@ -1,6 +1,5 @@
 ---
-title: '
-SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II'
+title: ' SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II'
 status: 'published'
 author:
   name: 'Martin Szerment'
@@ -72,6 +71,6 @@ Główna różnica obu protokołów polega na braku centralizacji w OPC UA, co w
 
 #### **Podsumowanie**
 
-Oba protokoły, OPC UA i Sparkplug B, mają swoje unikalne zalety i są używane w różnych kontekstach przemysłowych. OPC UA oferuje bardziej kompleksową i bezpieczną strukturę, idealną dla skomplikowanych systemów wymagających wysokiego poziomu bezpieczeństwa i standaryzacji. Sparkplug B, z kolei, jest lżejszy, prostszy i bardziej wydajny, co czyni go idealnym wyborem dla aplikacji wymagających niskiego opóźnienia i prostoty implementacji. 
+Oba protokoły, OPC UA i Sparkplug B, mają swoje unikalne zalety i są używane w różnych kontekstach przemysłowych. OPC UA oferuje bardziej kompleksową i bezpieczną strukturę, idealną dla skomplikowanych systemów wymagających wysokiego poziomu bezpieczeństwa i standaryzacji. Sparkplug B, z kolei, jest lżejszy, prostszy i bardziej wydajny, co czyni go idealnym wyborem dla aplikacji wymagających niskiego opóźnienia i prostoty implementacji.
 
 ### 

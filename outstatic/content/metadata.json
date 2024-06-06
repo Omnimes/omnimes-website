@@ -1,6 +1,6 @@
 {
-  "commit": "b25e86dd7ba9bb90c15047b067bf96efa011ee2c",
-  "generated": "2024-06-06T11:19:10.848Z",
+  "commit": "e9070d3bdb44400dd3cda1a47761625124a5177f",
+  "generated": "2024-06-06T11:30:22.926Z",
   "metadata": [
     {
       "__outstatic": {
@@ -64,8 +64,8 @@
     },
     {
       "__outstatic": {
-        "commit": "b25e86dd7ba9bb90c15047b067bf96efa011ee2c",
-        "hash": "2295304198",
+        "commit": "e9070d3bdb44400dd3cda1a47761625124a5177f",
+        "hash": "1921287499",
         "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
       },
       "author": {
