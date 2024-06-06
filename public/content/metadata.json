@@ -1,0 +1,66 @@
+{
+  "commit": "3cb3b44cd8f7ab6e943dda5f6b09bc1513472acc",
+  "generated": "2024-06-06T10:57:19.523Z",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "2514537e829b94c256b2e53b322f00a88e26eee5",
+        "hash": "1284393233",
+        "path": "outstatic/content/posts/nowy-post.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "tresci dodane",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T10:00:07.156Z",
+      "slug": "nowy-post",
+      "status": "published",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "Nowy post"
+    },
+    {
+      "__outstatic": {
+        "commit": "6badfe69c35296d8f404c6e3c94131b259ed34e5",
+        "hash": "2743328472",
+        "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "/images/piotr-QyMT.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T11:16:54.000Z",
+      "slug": "przemysl-5-0-nowa-era-produkcji",
+      "status": "published",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "Przemysł 5.0: Nowa Era Produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "3cb3b44cd8f7ab6e943dda5f6b09bc1513472acc",
+        "hash": "304350954",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T10:56:31.490Z",
+      "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych",
+      "status": "published",
+      "tags": "MQTT, Sparkplug B, Internet of Things, IIoT, Protokół komunikacyjny, Jakość usług, QoS, Retencyjność wiadomości, Przemysłowy Internet Rzeczy, Protokół MQTT, Protokół Sparkplug, Komunikacja IoT, Omnimes, Przemysł 4.0, Standardy komunikacyjne",
+      "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych"
+    }
+  ]
+}
