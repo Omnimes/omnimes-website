@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "tags"
+    },
+    "lang": {
+      "required": false,
+      "description": "Dodaj język w którym napisałeś artykuł, podając jego skrót np.  Polska - pl, Anglia - en, Niemcy - de.",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "lang"
     }
   }
 }
