@@ -1,11 +1,11 @@
 [
   {
-    "slug": "test-post-1",
-    "title": "Test post 1",
-    "description": "test post 1",
+    "slug": "nowy-post",
+    "title": "Nowy post",
+    "description": "tresci dodane",
     "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
     "lang": "pl",
-    "publishedAt": "2024-06-06T08:53:56.510Z",
+    "publishedAt": "2024-06-06T10:00:07.156Z",
     "status": "published"
   }
 ]

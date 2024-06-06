@@ -65,7 +65,6 @@ export default async function TagsPage({ params: { locale } }: { params: { local
 
 async function getData(locale: string) {
   const posts = getDocuments('posts', ['lang', 'tags']);
-  
   if (!posts || posts.length == 0 || posts === undefined) {
     return undefined
   }
