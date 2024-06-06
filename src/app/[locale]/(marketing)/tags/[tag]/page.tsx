@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getLocalePrimaryDialects } from '@/data/locales'
 import { getDocuments, load } from 'outstatic/server'
-import { ExtendedOstDocument } from '@/app/[locale]/(blog)/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
 
 type Props = {
   params: {

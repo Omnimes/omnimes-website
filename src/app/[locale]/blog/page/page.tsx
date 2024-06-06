@@ -74,8 +74,6 @@ async function getData(locale: string, page: string) {
 }
 
 export default async function Page({ params }: { params: { page: string; locale: string } }) {
-  console.log(params)
-
   unstable_setRequestLocale(params.locale)
   const t = await getTranslations('Blog')
    const { allPosts, postsLength } = await getData(params.locale, params.page);

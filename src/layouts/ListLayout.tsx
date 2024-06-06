@@ -5,7 +5,7 @@ import getFormattedDate from '@/lib/getFormattedDate'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
-import { ExtendedOstDocument } from '@/app/[locale]/(blog)/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
 
 interface PaginationProps {
   totalPages: number

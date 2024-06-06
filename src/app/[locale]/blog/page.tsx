@@ -14,7 +14,6 @@ import { Footer } from "@/components/Footer";
 import { getCurrentUser } from "@/utils/session";
 import { UserAccountNav } from "@/components/UserAccountNav";
 
-
 export type ExtendedOstDocument = OstDocument & { tags?: string };
 export const POSTS_PER_PAGE = 10;
 
