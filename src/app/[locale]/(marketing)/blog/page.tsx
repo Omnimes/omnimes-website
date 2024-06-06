@@ -23,29 +23,25 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     localeShort,
   }
   const meta = genPageMetadata(obj)
-   
   return meta
 }
+
 async function getData(locale: string) {
   const db = await load();
+  const allPosts = await db
+    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
+      'title',
+      'publishedAt',
+      'slug',
+      'coverImage',
+      'description',
+      'author',
+      'tags'
+    ])
+    .sort({ publishedAt: -1 })
+    .limit(POSTS_PER_PAGE)
+    .toArray()
 
-  // const allPosts = await db
-  //   .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
-  //     'title',
-  //     'publishedAt',
-  //     'slug',
-  //     'coverImage',
-  //     'description',
-  //     'author',
-  //     'tags'
-  //   ])
-  //   .sort({ publishedAt: -1 })
-  //   .limit(10)
-  //   .toArray()
-
-  const allPosts: any = [];
-
-  
   const postsLength = getDocuments('posts', ['lang'])
     .filter(post => post.status == 'published')
     .filter(post => post.lang == locale)
@@ -57,23 +53,22 @@ async function getData(locale: string) {
   }
 }
 
-// async function getDataToSearch(locale: string) {
-//   const posts = getDocuments('posts', ['slug', 'title', 'description', 'tags', 'lang'])
-//     .filter(post => post.status == 'published')
-//     .filter(post => post.lang == locale)
+async function getDataToSearch(locale: string) {
+  const posts = getDocuments('posts', ['slug', 'title', 'description', 'tags', 'lang'])
+    .filter(post => post.status == 'published')
+    .filter(post => post.lang == locale)
   
-//   await generateSearchJSON(posts);
-// }
+  await generateSearchJSON(posts);
+}
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   // await generateSearchJSON();
-  // await getDataToSearch(locale);
+  await getDataToSearch(locale);
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
   const { allPosts, postsLength } = await getData(locale);
   const pageNumber = 1
-  console.log(allPosts)
   const pagination = {
     currentPage: pageNumber,
     totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
@@ -88,4 +83,3 @@ export default async function BlogPage({ params: { locale } }: { params: { local
     />
   );
 }
-
