@@ -29,7 +29,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   // await generateSearchJSON();
-  await getDataToSearch(locale);
+  // await getDataToSearch(locale);
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
