@@ -1,6 +1,6 @@
 {
-  "commit": "3cb3b44cd8f7ab6e943dda5f6b09bc1513472acc",
-  "generated": "2024-06-06T10:57:19.523Z",
+  "commit": "b25e86dd7ba9bb90c15047b067bf96efa011ee2c",
+  "generated": "2024-06-06T11:19:10.848Z",
   "metadata": [
     {
       "__outstatic": {
@@ -61,6 +61,26 @@
       "status": "published",
       "tags": "MQTT, Sparkplug B, Internet of Things, IIoT, Protokół komunikacyjny, Jakość usług, QoS, Retencyjność wiadomości, Przemysłowy Internet Rzeczy, Protokół MQTT, Protokół Sparkplug, Komunikacja IoT, Omnimes, Przemysł 4.0, Standardy komunikacyjne",
       "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych"
+    },
+    {
+      "__outstatic": {
+        "commit": "b25e86dd7ba9bb90c15047b067bf96efa011ee2c",
+        "hash": "2295304198",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
+      "lang": "",
+      "publishedAt": "2024-06-06T11:14:29.222Z",
+      "slug": "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii",
+      "status": "published",
+      "tags": "Sparkplug B, OPC UA, MQTT, IIoT, Internet of Things, Protokół komunikacyjny, Automatyka przemysłowa, Architektura klient/serwer, Jakość usług, Bezpieczeństwo danych, Standaryzacja danych",
+      "title": " SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
     }
   ]
 }
