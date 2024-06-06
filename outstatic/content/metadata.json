@@ -1,6 +1,6 @@
 {
-  "commit": "42596228a694eb6a4b5f08c38b242ba84ac30ba3",
-  "generated": "Thu, 06 Jun 2024 10:19:03 GMT",
+  "commit": "6badfe69c35296d8f404c6e3c94131b259ed34e5",
+  "generated": "2024-06-06T11:06:45.224Z",
   "metadata": [
     {
       "__outstatic": {
@@ -21,6 +21,26 @@
       "status": "published",
       "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
       "title": "Nowy post"
+    },
+    {
+      "__outstatic": {
+        "commit": "6badfe69c35296d8f404c6e3c94131b259ed34e5",
+        "hash": "2743328472",
+        "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "/images/piotr-QyMT.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T11:16:54.000Z",
+      "slug": "przemysl-5-0-nowa-era-produkcji",
+      "status": "published",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "Przemysł 5.0: Nowa Era Produkcji"
     }
   ]
 }
