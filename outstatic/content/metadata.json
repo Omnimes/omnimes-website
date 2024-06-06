@@ -1,7 +1,27 @@
 {
   "commit": "65da93e81e8553198dff60b5fe155ea339c56920",
-  "generated": "2024-06-06T08:02:34.841Z",
+  "generated": "2024-06-06T08:02:37.306Z",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "aa3870ac018961c71460b14d07ba3695136c3f3d",
+        "hash": "44427823",
+        "path": "outstatic/content/posts/test-post.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Desct",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T05:52:11.674Z",
+      "slug": "test-post",
+      "status": "published",
+      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
+      "title": "Test post"
+    },
     {
       "__outstatic": {
         "commit": "40031cd156ce89bd6ce227eabc5df9de2f39d779",
@@ -21,26 +41,6 @@
       "status": "published",
       "tags": "tsasa, asdas, asdasd",
       "title": "new post 2"
-    },
-    {
-      "__outstatic": {
-        "commit": "18ec125ab88655d5e2f5d9c4e890b61a15ed527e",
-        "hash": "856390048",
-        "path": "outstatic/content/posts/test-3.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "test 3",
-      "lang": "pl",
-      "publishedAt": "2024-06-06T05:54:50.210Z",
-      "slug": "test-3",
-      "status": "published",
-      "tags": "omnimes, przemysł, rewolucja, innowacja, produkcja",
-      "title": "test 3"
     },
     {
       "__outstatic": {
