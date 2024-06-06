@@ -1,0 +1,13 @@
+{
+  "title": "posts",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": false,
+      "description": "Dodawaj tagi w stringu po przecinku.",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "tags"
+    }
+  }
+}
