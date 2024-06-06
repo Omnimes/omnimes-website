@@ -26,48 +26,50 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-async function getData(locale: string) {
-  const db = await load();
-  const allPosts = await db
-    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
-      'title',
-      'publishedAt',
-      'slug',
-      'coverImage',
-      'description',
-      'author',
-      'tags'
-    ])
-    .sort({ publishedAt: -1 })
-    .limit(POSTS_PER_PAGE)
-    .toArray()
+// async function getData(locale: string) {
+//   const db = await load();
+//   const allPosts = await db
+//     .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
+//       'title',
+//       'publishedAt',
+//       'slug',
+//       'coverImage',
+//       'description',
+//       'author',
+//       'tags'
+//     ])
+//     .sort({ publishedAt: -1 })
+//     .limit(POSTS_PER_PAGE)
+//     .toArray()
 
-  const postsLength = getDocuments('posts', ['lang'])
-    .filter(post => post.status == 'published')
-    .filter(post => post.lang == locale)
-    .length;
+//   const postsLength = getDocuments('posts', ['lang'])
+//     .filter(post => post.status == 'published')
+//     .filter(post => post.lang == locale)
+//     .length;
   
-  return {
-    allPosts,
-    postsLength
-  }
-}
+//   return {
+//     allPosts,
+//     postsLength
+//   }
+// }
 
-async function getDataToSearch(locale: string) {
-  const posts = getDocuments('posts', ['slug', 'title', 'description', 'tags', 'lang'])
-    .filter(post => post.status == 'published')
-    .filter(post => post.lang == locale)
+// async function getDataToSearch(locale: string) {
+//   const posts = getDocuments('posts', ['slug', 'title', 'description', 'tags', 'lang'])
+//     .filter(post => post.status == 'published')
+//     .filter(post => post.lang == locale)
   
-  await generateSearchJSON(posts);
-}
+//   await generateSearchJSON(posts);
+// }
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   // await generateSearchJSON();
-  await getDataToSearch(locale);
+  // await getDataToSearch(locale);
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
-  const { allPosts, postsLength } = await getData(locale);
+  // const { allPosts, postsLength } = await getData(locale);
+  let allPosts: any = []
+  let postsLength = 0
   const pageNumber = 1
   const pagination = {
     currentPage: pageNumber,
