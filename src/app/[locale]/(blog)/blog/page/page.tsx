@@ -3,9 +3,14 @@ import { getLocalePrimaryDialects } from '@/data/locales'
 import ListLayout from '@/layouts/ListLayout'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getDocuments, load } from 'outstatic/server'
-import { ExtendedOstDocument } from '../page'
-
-const POSTS_PER_PAGE = 10;
+import { ExtendedOstDocument, POSTS_PER_PAGE } from '../page'
+import { ComponentSearch } from "@/components/ComponentSearch";
+import Header from "@/components/Header";
+import SectionContainer from "@/components/SectionContainer";
+import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import { Footer } from "@/components/Footer";
+import { getCurrentUser } from "@/utils/session";
+import { UserAccountNav } from "@/components/UserAccountNav";
 
 type Props = {
   params: {
@@ -27,7 +32,6 @@ export async function generateMetadata({ params: { locale } }: Props) {
     localeShort,
   }
   const meta = genPageMetadata(obj)
-
   return meta
 }
 
@@ -37,7 +41,7 @@ export const generateStaticParams = async ({ params: { locale } }: Props) => {
     return []
   }
   const localePosts = posts.filter((post) => post.lang == locale)
-  const totalPages = Math.ceil(localePosts.length / 10)
+  const totalPages = Math.ceil(localePosts.length / POSTS_PER_PAGE)
   const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
 
   return paths
@@ -70,9 +74,13 @@ async function getData(locale: string, page: string) {
 }
 
 export default async function Page({ params }: { params: { page: string; locale: string } }) {
+  console.log(params)
+
   unstable_setRequestLocale(params.locale)
   const t = await getTranslations('Blog')
    const { allPosts, postsLength } = await getData(params.locale, params.page);
+  const user = await getCurrentUser();
+
   if (!allPosts || allPosts.length == 0 || allPosts === undefined) {
     return (
             <p className="mt-10 text-center">
@@ -89,11 +97,22 @@ export default async function Page({ params }: { params: { page: string; locale:
   }
 
   return (
-    <ListLayout
+    <>
+      <ComponentSearch>
+        <Header>
+          <UserAccountNav user={user} />
+        </Header>
+      </ComponentSearch>
+      <SectionContainer>
+      <ListLayout
       posts={allPosts}
       initialDisplayPosts={allPosts}
       pagination={pagination}
       title={t('title')}
     />
+      </SectionContainer>
+      <ScrollTopAndComment />
+      <Footer />
+    </>
   )
 }

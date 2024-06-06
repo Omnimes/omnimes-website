@@ -3,8 +3,9 @@ import { genPageMetadata } from '@/app/seo'
 import { Metadata } from 'next'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getLocalePrimaryDialects } from '@/data/locales'
-import { ExtendedOstDocument } from '../../blog/page'
 import { getDocuments, load } from 'outstatic/server'
+import { ExtendedOstDocument } from '@/app/[locale]/(blog)/blog/page'
+
 type Props = {
   params: {
     tag: string

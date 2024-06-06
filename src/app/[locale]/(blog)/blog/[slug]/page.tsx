@@ -8,7 +8,13 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { siteMetadata } from "@/data/siteMetadata";
 import { ExtendedOstDocument } from "../page";
-
+import { ComponentSearch } from "@/components/ComponentSearch";
+import Header from "@/components/Header";
+import SectionContainer from "@/components/SectionContainer";
+import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import { Footer } from "@/components/Footer";
+import { getCurrentUser } from "@/utils/session";
+import { UserAccountNav } from "@/components/UserAccountNav";
 type Props = {
   params: {
     slug: string;
@@ -114,8 +120,20 @@ export async function generateMetadata( params: Props): Promise<Metadata> {
 export default async function Post(params: Props) {
   const post = await getData(params);
   if (!post || post == undefined) notFound();
+  const user = await getCurrentUser();
 
   return (
-    <PostLayout post={post} />
+    <>
+    <ComponentSearch>
+        <Header>
+          <UserAccountNav user={user} />
+        </Header>
+      </ComponentSearch>
+      <SectionContainer>
+            <PostLayout post={post} />
+      </SectionContainer>
+      <ScrollTopAndComment />
+      <Footer />
+      </>
   );
 }

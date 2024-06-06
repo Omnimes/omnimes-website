@@ -5,7 +5,7 @@ import { CustomLink } from '@/components/Link'
 import Tag from '@/components/Tag'
 import { useLocale, useTranslations } from 'next-intl';
 import getFormattedDate from '@/lib/getFormattedDate'
-import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/(blog)/blog/page'
 
 interface PaginationProps {
   totalPages: number
