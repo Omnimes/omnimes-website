@@ -73,10 +73,11 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
 
-  await getDataToSearch(locale);
+  // await getDataToSearch(locale);
   const user = await getCurrentUser();
 
-  const { allPosts, postsLength } = await getData(locale);
+  // const { allPosts, postsLength } = await getData(locale);
+  let allPosts: any = []; let postsLength = 0 
   const pageNumber = 1
   const pagination = {
     currentPage: pageNumber,
