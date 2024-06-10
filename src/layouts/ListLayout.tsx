@@ -14,6 +14,7 @@ interface PaginationProps {
 interface ListLayoutProps {
   posts: ExtendedOstDocument[]
   title: string
+  initialDisplayPosts?: ExtendedOstDocument[]
   pagination?: PaginationProps
 }
 
@@ -61,6 +62,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 export default function ListLayout({
   posts,
   title,
+  initialDisplayPosts = [],
   pagination,
 }: ListLayoutProps) {
   const [searchValue, setSearchValue] = useState('')
@@ -72,7 +74,8 @@ export default function ListLayout({
   const lang = useLocale()
   const pathname = usePathname()
   const basePath = pathname?.split('/')[2]
-  const displayPosts = posts.length > 0 && !searchValue ? posts : filteredBlogPosts
+  const displayPosts =
+    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
   return (
     <main>
@@ -138,7 +141,7 @@ export default function ListLayout({
                         </CustomLink>
                       </h3>
                       <div className="flex flex-wrap">
-                        {tags.map((tag: {value: string, label: string}) => {
+                        {tags.map((tag: { value: string, label: string }) => {
                           return <Tag key={tag.value} text={tag.label} />
                         })}
                       </div>

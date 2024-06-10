@@ -7,10 +7,9 @@ import { useLocale, useTranslations } from 'next-intl'
 import getFormattedDate from '@/lib/getFormattedDate'
 import MDXComponent from '@/components/mdx/MdxComponent'
 import Default from "../../public/images/default.png"
-// import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 interface LayoutProps {
-  post: any;
-  // post: ExtendedOstDocument;
+  post: ExtendedOstDocument;
 }
 
 export default function PostLayout({ post }: LayoutProps) {
@@ -28,7 +27,7 @@ export default function PostLayout({ post }: LayoutProps) {
                 <div>
                   <dt className="sr-only">{t('publishedOn')}</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>
+                    <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>
                   </dd>
                 </div>
               </dl>
@@ -42,19 +41,19 @@ export default function PostLayout({ post }: LayoutProps) {
               <dt className="sr-only">{t('authors')}</dt>
               <dd>
                 <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
-                     <li className="flex items-center space-x-2" key={author?.name}>
-                        <Image
-                          src={author?.picture || Default.src}
-                          width={38}
-                          height={38}
-                          alt="avatar"
-                          className="h-10 w-10 rounded-full"
-                        />
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                        <dt className="sr-only">{t('name')}</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">{author?.name}</dd>
-                      </dl>
-                    </li>
+                  <li className="flex items-center space-x-2" key={author?.name}>
+                    <Image
+                      src={author?.picture || Default.src}
+                      width={38}
+                      height={38}
+                      alt="avatar"
+                      className="h-10 w-10 rounded-full"
+                    />
+                    <dl className="whitespace-nowrap text-sm font-medium leading-5">
+                      <dt className="sr-only">{t('name')}</dt>
+                      <dd className="text-gray-900 dark:text-gray-100">{author?.name}</dd>
+                    </dl>
+                  </li>
                 </ul>
               </dd>
             </dl>
@@ -65,17 +64,16 @@ export default function PostLayout({ post }: LayoutProps) {
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
-                  <div className="py-4 xl:py-8">
-                    <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                      {t('tags')}
-                    </h2>
-                    <div className="flex flex-wrap">
-                     {tags?.split(',').map((tag: string) => {
-                          const data = tag.replace(' ', '')
-                          return <Tag key={data} text={data} />
-                        })}
-                    </div>
+                <div className="py-4 xl:py-8">
+                  <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                    {t('tags')}
+                  </h2>
+                  <div className="flex flex-wrap">
+                    {tags.map((tag: { value: string, label: string }) => {
+                      return <Tag key={tag.value} text={tag.label} />
+                    })}
                   </div>
+                </div>
               </div>
               <div className="pt-4 xl:pt-8">
                 <CustomLink

@@ -50,7 +50,9 @@ Aby zintegrować API GPT-4, potrzebujesz środowiska programistycznego dla swoje
 
 Jeśli nie masz jeszcze zainstalowanego Flaska, możesz go zainstalować za pomocą pip:
 
-`pip install Flask`
+```python
+pip install Flask
+```
 
 ### Tworzenie Podstawowej Aplikacji Flask
 

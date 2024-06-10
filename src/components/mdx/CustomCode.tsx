@@ -49,19 +49,19 @@ export function CustomCode(props: ComponentPropsWithRef<"code">) {
         : null;
 
     return (
-        <code {...props} data-code-type={language && "code-block"}>
+        <code {...props} data-code-type={language && "code-block"} className="bg-transparent">
             {language ? (
-                <div className="overflow-x-auto pt-4">{props.children}</div>
+                <div className="overflow-x-auto pt-2">{props.children}</div>
             ) : (
                 <span>{props.children}</span>
             )}
-            {language ? (
+            {/* {language ? (
                 <div className="absolute left-4 top-0 rounded-b-md border border-t-0 border-gray-600 px-3 py-1">
                     <span className="from-primary-300 to-primary-400 select-none bg-gradient-to-tr bg-clip-text font-medium text-white">
                         {language}
                     </span>
                 </div>
-            ) : null}
+            ) : null} */}
         </code>
     );
 }

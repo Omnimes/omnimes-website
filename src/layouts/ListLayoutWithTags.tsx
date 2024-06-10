@@ -5,17 +5,16 @@ import { CustomLink } from '@/components/Link'
 import Tag from '@/components/Tag'
 import { useLocale, useTranslations } from 'next-intl';
 import getFormattedDate from '@/lib/getFormattedDate'
-// import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 
 interface PaginationProps {
   totalPages: number
   currentPage: number
 }
 interface ListLayoutProps {
-  // posts: ExtendedOstDocument[]
-  posts: any[]
+  posts: ExtendedOstDocument[]
   title: string
-  tags: Record<string, number>
+  tags: { value: string, label: string, count: number }[]
   tag: string
   pagination?: PaginationProps
 }
@@ -71,8 +70,9 @@ export default function ListLayoutWithTags({
   const t = useTranslations('Tag');
   const pathname = usePathname()
   const lang = useLocale();
-  const tagKeys = Object.keys(tags)
-  const sortedTags = tagKeys.sort((a, b) => tags[b] - tags[a])
+  const sortedTags = tags.sort((a, b) => b.count - a.count);
+
+  console.log(sortedTags)
 
   return (
     <>
@@ -96,20 +96,20 @@ export default function ListLayoutWithTags({
                 </CustomLink>
               )}
               <ul>
-                {sortedTags.map((ta) => {
+                {sortedTags.map((tag) => {
                   return (
-                    <li key={ta} className="my-3">
-                      {pathname && decodeURI(pathname.split('/tags/')[1]) === slug(ta) ? (
-                        <h3 className="inline px-3 py-2 text-sm font-bold uppercase text-primary-500">
-                          {`${ta} (${tags[ta]})`}
+                    <li key={tag.value} className="my-3">
+                      {pathname && decodeURI(pathname.split('/tags/')[1]) === slug(tag.label) ? (
+                        <h3 className="inline py-2 text-sm font-bold uppercase text-primary-500">
+                          {`${tag.label} (${tag.count})`}
                         </h3>
                       ) : (
                         <CustomLink
-                          href={`/tags/${slug(ta)}`}
-                          className="px-3 py-2 text-sm font-medium uppercase text-gray-500 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-500"
-                          aria-label={t("link", { tag: tag })}
+                          href={`/tags/${slug(tag.label)}`}
+                          className="py-2 text-sm font-medium uppercase text-gray-500 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-500"
+                          aria-label={t("link", { tag: tag.label })}
                         >
-                          {`${ta} (${tags[ta]})`}
+                          {`${tag.label} (${tag.count})`}
                         </CustomLink>
                       )}
                     </li>
@@ -140,14 +140,13 @@ export default function ListLayoutWithTags({
                             </CustomLink>
                           </h2>
                           <div className="flex flex-wrap">
-                            {tags?.split(',').map((tag: string) => {
-                          const data = tag.replace(' ', '')
-                          return <Tag key={data} text={data} />
-                        })}
+                            {tags.map((tag: { value: string, label: string }) => {
+                              return <Tag key={tag.value} text={tag.label} />
+                            })}
                           </div>
                         </div>
                         <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                         {description}
+                          {description}
                         </div>
                       </div>
                     </article>

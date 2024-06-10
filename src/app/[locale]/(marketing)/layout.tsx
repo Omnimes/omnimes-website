@@ -7,8 +7,6 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import { Footer } from "@/components/Footer";
 import { getCurrentUser } from "@/utils/session";
 import { UserAccountNav } from "@/components/UserAccountNav";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/utils/auth";
 
 type Props = {
   children: ReactNode;
@@ -17,14 +15,11 @@ type Props = {
 
 export default async function MarketingLayout({ children, params: { locale } }: Props) {
     unstable_setRequestLocale(locale);
-    // const user = await getCurrentUser();
-    const session = await getServerSession(authOptions);
+    const user = await getCurrentUser();
     return (
         <>
             <ComponentSearch>
-                <Header>
-                <UserAccountNav session={session} />
-                </Header>
+                <Header />
             </ComponentSearch>
             <SectionContainer> 
                 {children}

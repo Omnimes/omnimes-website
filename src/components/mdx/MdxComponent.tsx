@@ -10,7 +10,7 @@ const MDXComponentsMap = {
     Image,
     img: ({ ...props }: ImgHTMLAttributes<HTMLImageElement>) => (
         // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
-        <img className="rounded-lg border" {...props} />
+        <img className="rounded-lg border w-100" {...props} />
     ),
     pre: Pre,
     code: CustomCode,
