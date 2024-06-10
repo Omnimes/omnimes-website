@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { User } from "next-auth"
+import { Session, User } from "next-auth"
 import { signOut } from "next-auth/react"
 import {
   DropdownMenu,
@@ -15,8 +15,8 @@ interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email"> | undefined
 }
 
-export function UserAccountNav({ user }: UserAccountNavProps) {
-  if (user == undefined) {
+export function UserAccountNav({ session }: {session: Session | null}) {
+  if (session == undefined) {
     return (
       <DropdownMenu>
       <DropdownMenuTrigger>
@@ -40,17 +40,17 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
     <DropdownMenu>
       <DropdownMenuTrigger>
         <UserAvatar
-          user={{ name: user.name || null, image: user.image || null }}
+          user={{ name: session.user.name || null, image: session.user.image || null }}
           className="h-8 w-8"
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <div className="flex items-center justify-start gap-2 p-2">
           <div className="flex flex-col space-y-1 leading-none">
-            {user.name && <p className="font-medium">{user.name}</p>}
-            {user.email && (
+            {session.user.name && <p className="font-medium">{session.user.name}</p>}
+            {session.user.email && (
               <p className="w-[200px] truncate text-sm ">
-                {user.email}
+                {session.user.email}
               </p>
             )}
           </div>

@@ -5,22 +5,25 @@ import SectionContainer from "@/components/SectionContainer";
 import { unstable_setRequestLocale } from "next-intl/server";
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import { Footer } from "@/components/Footer";
-// import { getCurrentUser } from "@/utils/session";
+import { getCurrentUser } from "@/utils/session";
 import { UserAccountNav } from "@/components/UserAccountNav";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/utils/auth";
 
 type Props = {
   children: ReactNode;
   params: { locale: string };
 };
-// async
-export default function MarketingLayout({ children, params: { locale } }: Props) {
+
+export default async function MarketingLayout({ children, params: { locale } }: Props) {
     unstable_setRequestLocale(locale);
     // const user = await getCurrentUser();
+    const session = await getServerSession(authOptions);
     return (
         <>
             <ComponentSearch>
                 <Header>
-                    <UserAccountNav user={undefined} />
+                <UserAccountNav session={session} />
                 </Header>
             </ComponentSearch>
             <SectionContainer> 
