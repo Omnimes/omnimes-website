@@ -14,7 +14,7 @@ publishedAt: '2024-06-10T08:10:14.654Z'
 
 W dzisiejszym dynamicznym świecie technologicznym, integracja inteligentnych asystentów, takich jak GPT-4, z aplikacjami webowymi staje się coraz bardziej popularna. GPT-4, opracowany przez [OpenAI](https://openai.com/), oferuje potężne możliwości analizy danych, które mogą znacząco poprawić funkcjonalność i wartość aplikacji webowych. W tym artykule przedstawimy krok po kroku, jak podłączyć API GPT-4 do aplikacji webowej w celu analizy danych.
 
-![logo open ai](/images/image-M3OT.png)
+![](/images/image-cxMD.png)
 
 Oczywiście, podłączenie tego typu asystenta GPT lub innego dużego modelu językowego (LLM) opartego na zewnętrznych serwerach powoduje, że aplikacja webowa, z której korzysta użytkownik końcowy, musi mieć dostęp do zewnętrznego internetu.
 
