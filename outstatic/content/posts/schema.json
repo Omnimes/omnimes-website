@@ -44,6 +44,26 @@
         {
           "value": "standardyKomunikacyjne",
           "label": "Standardy komunikacyjne"
+        },
+        {
+          "value": "opcUa",
+          "label": "OPC UA"
+        },
+        {
+          "value": "automatykaPrzemysłowa",
+          "label": "Automatyka przemysłowa"
+        },
+        {
+          "value": "architekturaKlient/serwer",
+          "label": "Architektura klient/serwer"
+        },
+        {
+          "value": "bezpieczeństwoDanych",
+          "label": "Bezpieczeństwo danych"
+        },
+        {
+          "value": "standaryzacjaDanych",
+          "label": "Standaryzacja danych"
         }
       ]
     },
