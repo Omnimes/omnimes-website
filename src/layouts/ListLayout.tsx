@@ -5,18 +5,15 @@ import getFormattedDate from '@/lib/getFormattedDate'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
-// import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 
 interface PaginationProps {
   totalPages: number
   currentPage: number
 }
 interface ListLayoutProps {
-  // posts: ExtendedOstDocument[]
-  posts: any[]
+  posts: ExtendedOstDocument[]
   title: string
-  // initialDisplayPosts?: ExtendedOstDocument[]
-  initialDisplayPosts?: any[]
   pagination?: PaginationProps
 }
 
@@ -64,7 +61,6 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 export default function ListLayout({
   posts,
   title,
-  initialDisplayPosts = [],
   pagination,
 }: ListLayoutProps) {
   const [searchValue, setSearchValue] = useState('')
@@ -76,8 +72,7 @@ export default function ListLayout({
   const lang = useLocale()
   const pathname = usePathname()
   const basePath = pathname?.split('/')[2]
-  const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+  const displayPosts = posts.length > 0 && !searchValue ? posts : filteredBlogPosts
 
   return (
     <main>
