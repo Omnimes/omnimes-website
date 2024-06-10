@@ -1,6 +1,6 @@
 import useCopyToClipboard from "@/hooks/useCopyToClipboard";
 import clsx from "clsx";
-import { Check, Copy } from "lucide-react";
+import { LuCheck, LuClipboardCopy  } from "react-icons/lu";
 import { ComponentPropsWithRef, useRef, useState } from "react";
 
 export const Pre = (props: ComponentPropsWithRef<"pre">) => {
@@ -27,11 +27,11 @@ export const Pre = (props: ComponentPropsWithRef<"pre">) => {
                 >
                     {isCopied ? (
                         <>
-                            <Check size={14} /> done
+                            <LuCheck size={14} /> done
                         </>
                     ) : (
                         <>
-                            <Copy size={14} /> copy
+                            <LuClipboardCopy size={14} /> copy
                         </>
                     )}
                 </button>

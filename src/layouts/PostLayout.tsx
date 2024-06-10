@@ -7,9 +7,10 @@ import { useLocale, useTranslations } from 'next-intl'
 import getFormattedDate from '@/lib/getFormattedDate'
 import MDXComponent from '@/components/mdx/MdxComponent'
 import Default from "../../public/images/default.png"
-import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
+// import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
 interface LayoutProps {
-  post: ExtendedOstDocument;
+  post: any;
+  // post: ExtendedOstDocument;
 }
 
 export default function PostLayout({ post }: LayoutProps) {

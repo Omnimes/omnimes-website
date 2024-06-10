@@ -5,16 +5,18 @@ import getFormattedDate from '@/lib/getFormattedDate'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
-import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
+// import { ExtendedOstDocument } from '@/app/[locale]/blog/page'
 
 interface PaginationProps {
   totalPages: number
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: ExtendedOstDocument[]
+  // posts: ExtendedOstDocument[]
+  posts: any[]
   title: string
-  initialDisplayPosts?: ExtendedOstDocument[]
+  // initialDisplayPosts?: ExtendedOstDocument[]
+  initialDisplayPosts?: any[]
   pagination?: PaginationProps
 }
 

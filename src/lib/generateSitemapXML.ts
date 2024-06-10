@@ -1,7 +1,7 @@
 import fs from 'fs/promises'; 
 import { locales } from "@/config"
 import { create } from 'xmlbuilder2';
-import { OstDocument } from 'outstatic';
+// import { OstDocument } from 'outstatic';
 
 export type changeFrequency =
   | 'always'
@@ -52,9 +52,9 @@ export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
 
   return transformedPaths;
 }
-
-export function generateURLObjectsWithoutAlternate(paths: OstDocument<{ [key: string]: unknown; }>[], host: string): URLObject[] {
-  return paths.map(url => {
+// OstDocument<{ [key: string]: unknown; }>[]
+export function generateURLObjectsWithoutAlternate(paths: any, host: string): URLObject[] {
+  return paths.map((url: any) => {
     return ({
       url: `${host}${url.lang ?? 'pl'}/${url.slug}`,
       lastModified: url.publishedAt || new Date(),
