@@ -20,17 +20,17 @@ Oczywiście, podłączenie tego typu asystenta GPT lub innego dużego modelu ję
 
 Modele GPT od wersji 3.5 i wyższych są udostępniane poprzez API, ale znajdują się wyłącznie na serwerach firmy [OpenAI](https://openai.com/).
 
-Lokalnym rozwiązaniem są jedynie model GPT w wersji 2.0, dostępne w trzech wersjach wagowych, z największą wersją XL ważącą około 6 GB. Model ten jest jakościowo słabszy w porównaniu do wersji 3.5, jednak do prostych zadań się nadaje. Warto nadmienić, że obsługuje wyłącznie język angielski. 
+Lokalnym rozwiązaniem są jedynie model GPT w wersji 2.0, dostępne w trzech wersjach wagowych, z największą wersją XL ważącą około 6 GB. Model ten jest jakościowo słabszy w porównaniu do wersji 3.5, jednak do prostych zadań się nadaje. Warto nadmienić, że obsługuje wyłącznie język angielski.
 
-Innym rozwiązaniem jest skorzystanie z modeli LLM z strony: 
+Innym rozwiązaniem jest skorzystanie z modeli LLM z strony:
 
 [https://huggingface.com/](https://huggingface.co/)
 
 które już możemy stosować lokalnie i są trenowane pod różne zastosowania.
 
-O wdrażaniu lokalnych modeli językowych (LLM) i bezpieczeństwie przekzywanych danych na zewnętrzne serwery napiszę w kolejnym artykule, a teraz przedstawię prosty sposób na wdrożenie asystenta GPT poprzez API OpenAI, korzystając z frameworka Flask ze względu na szybkie tworzenie w nim API aplikacji. 
+O wdrażaniu lokalnych modeli językowych (LLM) i bezpieczeństwie przekzywanych danych na zewnętrzne serwery napiszę w kolejnym artykule, a teraz przedstawię prosty sposób na wdrożenie asystenta GPT poprzez API OpenAI, korzystając z frameworka Flask ze względu na szybkie tworzenie w nim API aplikacji.
 
-Przedstawię także praktyczne zastosowanie asystenta GPT na konkretnym przykładzie, mianowicie na systemie [Omnimes](omnimes.com) tworzonym przez firmę [Multiprojekt. ](https://www.multiprojekt.pl/)
+Przedstawię także praktyczne zastosowanie asystenta GPT na konkretnym przykładzie, mianowicie na systemie [Omnimes](omnimes.com) tworzonym przez firmę [Multiprojekt.](https://www.multiprojekt.pl/)
 
 Omawiany system służy do monitorowania i realizacji produkcji w fabrykach i zakładach produkcyjnych.
 
@@ -82,7 +82,7 @@ W pliku HTML dodajemy formularz do wprowadzenia tekstu oraz przycisk do wysłani
 
 ![](/images/image-g1Mj.png)
 
-## Praktyczne zastosowanie asystent AI na przykładzie systemu realizacji produkcji
+## Praktyczne zastosowanie asystenta AI na przykładzie systemu realizacji produkcji OMNIMES
 
 Poniższy przykład omawia tylko samo działanie asystenta GPT w już działającym systemie.\
 \
@@ -119,4 +119,4 @@ Odpowiedź jest prosta: trzeba wziąć pod uwagę, że do takiego asystenta prze
 
 Chociaż tłumaczenie się takim argumentem może być skuteczne, to jednak może stanowić barierę nie do przebycia w stosunku do polityki bezpieczeństwa niektórych przedsiębiorstw.
 
-Dlatego istnieje możliwość wdrożenia modelu lokalnie, o czym napiszę w kolejnym artykule.
+Dlatego istnieje możliwość wdrożenia modelu LLM lokalnie, o czym napiszę w kolejnym artykule.

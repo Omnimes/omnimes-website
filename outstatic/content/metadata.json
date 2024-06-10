@@ -1,6 +1,6 @@
 {
-  "commit": "73ba302931949001008ed9c831af4447821a916e",
-  "generated": "2024-06-10T09:20:14.144Z",
+  "commit": "77972bf004deb53792f88370d7def8653b2be85b",
+  "generated": "2024-06-10T09:23:59.506Z",
   "metadata": [
     {
       "__outstatic": {
@@ -118,8 +118,8 @@
     },
     {
       "__outstatic": {
-        "commit": "73ba302931949001008ed9c831af4447821a916e",
-        "hash": "1905952218",
+        "commit": "77972bf004deb53792f88370d7def8653b2be85b",
+        "hash": "134111184",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
       },
       "author": {
