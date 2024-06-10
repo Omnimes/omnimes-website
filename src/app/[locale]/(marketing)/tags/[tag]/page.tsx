@@ -35,30 +35,24 @@ export const generateStaticParams = async ({
 }: {
   params: { locale: string }
 }) => {
-  let tags = (await getDataTags(locale)) as { value: string, label: string, count: number }[];
+  let tags = await getDataTags(locale) as { value: string, label: string, count: number }[];
   if (!tags) return []
 
-  const test =  tags.map((tag) => ({
-    tag: tag.label,
+  const staticParams = tags.map((tag) => ({
+    tag: slug(tag.label),
     locale: locale,
   }))
 
-return tags.map((tag) => ({
-    tag: tag.label,
-    locale: locale,
-  }))
+  return staticParams
 }
 
 
 async function getDataTags(locale: string) {
   const posts = getDocuments('posts', ['lang', 'tags']);
-  
-  if (!posts || posts.length == 0 || posts === undefined) {
-    return undefined
-  }
-    
+
+  if (!posts || posts.length == 0 || posts === undefined) return undefined
+
   const localePosts = posts.filter((post) => post.lang == locale).map(post => post.tags);
-  
   const tagCounts = {} as Record<string, { value: string, label: string, count: number }>;
 
   if (localePosts.length > 0) {
@@ -75,50 +69,41 @@ async function getDataTags(locale: string) {
       }
     });
   }
-  
+
   return Object.values(tagCounts);
 }
 
-
 async function getData({ params }: Props) {
-    const db = await load();
-    const posts = await db
-        .find<ExtendedOstDocument>({ collection: "posts", lang: params.locale }, [
-            "title",
-            "publishedAt",
-            "description",
-            "slug",
-            "tags"
-        ])
-        .sort({ publishedAt: -1 })
-        .toArray()
-  
-    if (!posts) {
-        return undefined
-  }
+  const db = await load();
+  const posts = await db
+    .find<ExtendedOstDocument>({ collection: "posts", lang: params.locale }, [
+      "title",
+      "publishedAt",
+      "description",
+      "slug",
+      "tags"
+    ])
+    .sort({ publishedAt: -1 })
+    .toArray()
 
-    const filteredPosts = posts.filter(post => post.tags.some(tag => slug(tag.label) == slug(decodeURIComponent(params.tag))))
-    return filteredPosts
+  if (!posts) return undefined
+  return posts.filter(post => post.tags.some(tag => slug(tag.label) == slug(decodeURIComponent(params.tag))))
 }
 
 export default async function TagPage(params: Props) {
-  const { locale, tag } = params.params
+  const { locale, tag } = params.params;
   unstable_setRequestLocale(locale)
   const t = await getTranslations('Tag')
 
-    let tags = (await getDataTags(locale)) as { value: string, label: string, count: number }[];
+  let tags = await getDataTags(locale) as { value: string, label: string, count: number }[];
+  if (tags?.length == 0 || !tags) return <p className="mt-10 text-center">{t('notFound')}</p>
 
-    if (tags?.length == 0 || !tags) return <p className="mt-10 text-center">{t('notFound')}</p>
-
-    const posts = await getData(params);
-    // const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1);
-    const title = "test";
-    if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
+  const posts = await getData(params);
+  if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
 
   return <ListLayout
-      posts={posts}
-      title={title}
-      tags={tags}
-      tag={tag}
-    />
+    posts={posts}
+    tags={tags}
+    tag={tag}
+  />
 }

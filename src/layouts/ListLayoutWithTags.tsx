@@ -13,7 +13,6 @@ interface PaginationProps {
 }
 interface ListLayoutProps {
   posts: ExtendedOstDocument[]
-  title: string
   tags: { value: string, label: string, count: number }[]
   tag: string
   pagination?: PaginationProps
@@ -62,26 +61,18 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 
 export default function ListLayoutWithTags({
   posts,
-  title,
   tags,
   tag,
   pagination,
 }: ListLayoutProps) {
   const t = useTranslations('Tag');
-  const pathname = usePathname()
+  const pathname = usePathname();
   const lang = useLocale();
   const sortedTags = tags.sort((a, b) => b.count - a.count);
-
-  console.log(sortedTags)
 
   return (
     <>
       <div>
-        <div className="pb-6 pt-6">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:hidden sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            {title}
-          </h1>
-        </div>
         <div className="flex sm:space-x-24">
           <div className="hidden h-full max-h-screen min-w-[280px] max-w-[280px] flex-wrap overflow-auto rounded bg-gray-50 pt-5 shadow-md dark:bg-gray-900/70 dark:shadow-gray-800/40 sm:flex">
             <div className="px-6 py-4">
@@ -120,7 +111,7 @@ export default function ListLayoutWithTags({
           </div>
           <div>
             <ul>
-              {!posts.length && t("displayPostsNotFound", { tag: decodeURI(tag) })}
+              {!posts.length && t("displayPostsNotFound", { tag: decodeURIComponent(tag) })}
               {posts.map((post) => {
                 const { title, description, tags, publishedAt, slug } = post
                 return (
