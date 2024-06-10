@@ -11,7 +11,6 @@ import { WhatPeopleSay } from '@/components/WhatPeopleSay';
 import { Timeline } from '@/components/Timeline';
 import { Performance } from '@/components/Performance';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
-import { Hannover } from '@/components/Hannover';
 
 export default function Home({params: { locale }}: {params: { locale: string }}) {
   unstable_setRequestLocale(locale);
@@ -20,7 +19,6 @@ export default function Home({params: { locale }}: {params: { locale: string }})
     <>
         <HeroImage />
         <Hero />
-        {/* <Hannover /> */}
         <WhatIsOmnimes />
         <Feature />
         <ComponentVideo />
