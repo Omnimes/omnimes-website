@@ -143,9 +143,8 @@ export default function ListLayout({
                         </CustomLink>
                       </h3>
                       <div className="flex flex-wrap">
-                        {tags?.split(',').map((tag: string) => {
-                          const data = tag.replace(' ', '')
-                          return <Tag key={data} text={data} />
+                        {tags.map((tag: {value: string, label: string}) => {
+                          return <Tag key={tag.value} text={tag.label} />
                         })}
                       </div>
                     </div>
