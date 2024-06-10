@@ -100,11 +100,11 @@ Zapytanie do asystenta odbywa się poprzez przesłanie głównego zapytania usta
 \
 ![omnimes asystent gpt open ai - zapytanie do asystenta GPT](/images/image-I3ND.png)
 
-W prawym górnym rogu widoczny jest przycisk do wykonania analizy, dzięki któremu dosłownie za jednym kliknięciem uzyskamy analizę przesłanych danych widocznych na wykresach. Poniżej znajduje się rezultat analizy.
+W prawym górnym rogu widoczny jest przycisk do wykonania analizy, dzięki któremu dosłownie **za jednym kliknięciem** uzyskamy analizę przesłanych danych widocznych na wykresach. Poniżej znajduje się rezultat analizy.
 
 ![](/images/image-U4OT.png)
 
-Fajnym zastosowaniem jest możliwość przeglądania wykonanych analiz przez asystenta, a także uzyskanie informacji o użytym modelu i liczbie wykorzystanych tokenów.
+Fajnym zastosowaniem jest możliwość przeglądania wykonanych analiz przez asystenta, a także uzyskanie **informacji o użytym modelu i liczbie wykorzystanych tokenów**.
 
 \
 ![](/images/image-AxNz.png)
