@@ -8,7 +8,44 @@
       "fieldType": "Tags",
       "dataType": "array",
       "title": "tags",
-      "values": []
+      "values": [
+        {
+          "value": "mqtt",
+          "label": "MQTT"
+        },
+        {
+          "value": "sparkplugB",
+          "label": "Sparkplug B"
+        },
+        {
+          "value": "protokółKomunikacyjny",
+          "label": "Protokół komunikacyjny"
+        },
+        {
+          "value": "qoS",
+          "label": "QoS"
+        },
+        {
+          "value": "iIoT",
+          "label": "IIoT"
+        },
+        {
+          "value": "komunikacjaIoT",
+          "label": "Komunikacja IoT"
+        },
+        {
+          "value": "omnimes",
+          "label": "Omnimes"
+        },
+        {
+          "value": "przemysł40",
+          "label": "Przemysł 4.0"
+        },
+        {
+          "value": "standardyKomunikacyjne",
+          "label": "Standardy komunikacyjne"
+        }
+      ]
     },
     "lang": {
       "required": true,
