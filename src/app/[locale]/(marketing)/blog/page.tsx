@@ -27,7 +27,30 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     return meta
 }
 
-export async function getData(locale: string) {
+export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
+    // await generateSearchJSON();
+    // await getDataToSearch(locale);
+    // Enable static rendering
+    unstable_setRequestLocale(locale);
+    const t = await getTranslations('Blog');
+    const { allPosts, postsLength } = await getData(locale);
+    const pageNumber = 1
+  
+    const pagination = {
+      currentPage: pageNumber,
+      totalPages: Math.ceil( postsLength / POSTS_PER_PAGE),
+    }
+    return (
+        <ListLayout
+          posts={allPosts}
+          initialDisplayPosts={allPosts}
+          pagination={pagination}
+          title={t('title')}
+      />
+    );
+  }
+
+async function getData(locale: string) {
     const db = await load();
     const allPosts = await db
       .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
@@ -54,27 +77,4 @@ export async function getData(locale: string) {
       allPosts,
       postsLength
     }
-  }
-
-export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
-    // await generateSearchJSON();
-    // await getDataToSearch(locale);
-    // Enable static rendering
-    unstable_setRequestLocale(locale);
-    const t = await getTranslations('Blog');
-    const { allPosts, postsLength } = await getData(locale);
-    const pageNumber = 1
-  
-    const pagination = {
-      currentPage: pageNumber,
-      totalPages: Math.ceil( postsLength / POSTS_PER_PAGE),
-    }
-    return (
-        <ListLayout
-          posts={allPosts}
-          initialDisplayPosts={allPosts}
-          pagination={pagination}
-          title={t('title')}
-      />
-    );
   }
