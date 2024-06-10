@@ -12,7 +12,7 @@ lang: 'pl'
 publishedAt: '2024-06-10T08:10:14.654Z'
 ---
 
-W dzisiejszym dynamicznym świecie technologicznym, integracja inteligentnych asystentów, takich jak GPT-4, z aplikacjami webowymi staje się coraz bardziej popularna. GPT-4, opracowany przez OpenAI, oferuje potężne możliwości analizy danych, które mogą znacząco poprawić funkcjonalność i wartość aplikacji webowych. W tym artykule przedstawimy krok po kroku, jak podłączyć API GPT-4 do aplikacji webowej w celu analizy danych.
+W dzisiejszym dynamicznym świecie technologicznym, integracja inteligentnych asystentów, takich jak GPT-4, z aplikacjami webowymi staje się coraz bardziej popularna. GPT-4, opracowany przez [OpenAI](https://openai.com/), oferuje potężne możliwości analizy danych, które mogą znacząco poprawić funkcjonalność i wartość aplikacji webowych. W tym artykule przedstawimy krok po kroku, jak podłączyć API GPT-4 do aplikacji webowej w celu analizy danych.
 
 ![logo open ai](/images/image-M3OT.png)
 
@@ -96,7 +96,7 @@ Kolejne pola to pola ograniczające długość odpowiedzi asystenta oraz ilość
 
 Fajnym trybem jest możliwość ukrycia trybu asystenta GPT w całym systemie.
 
-Zapytanie do asystenta odbywa się poprzez przesłanie głównego zapytania ustawionego we wcześniejszej konfiguracji oraz załączenie danych pochodzących z podsumowania, które użytkownik sam może skonfigurować. Poniżej znajdują się zdjęcia z panelu głównego:\
+Zapytanie do asystenta odbywa się poprzez przesłanie głównego zapytania ustawionego we wcześniejszej konfiguracji oraz załączenie danych pochodzących z podsumowania, które użytkownik sam może stworzyć. Poniżej znajdują się zdjęcia z panelu głównego:\
 \
 ![omnimes asystent gpt open ai - zapytanie do asystenta GPT](/images/image-I3ND.png)
 
