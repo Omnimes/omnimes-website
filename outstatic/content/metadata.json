@@ -1,6 +1,6 @@
 {
-  "commit": "d7e409ecd3938c4a44aacaac45886334203adab4",
-  "generated": "Mon, 10 Jun 2024 07:32:02 GMT",
+  "commit": "73ba302931949001008ed9c831af4447821a916e",
+  "generated": "2024-06-10T09:20:14.144Z",
   "metadata": [
     {
       "__outstatic": {
@@ -115,6 +115,47 @@
         }
       ],
       "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
+    },
+    {
+      "__outstatic": {
+        "commit": "73ba302931949001008ed9c831af4447821a916e",
+        "hash": "1905952218",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "lang": "pl",
+      "publishedAt": "2024-06-10T08:10:14.654Z",
+      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Modele LLM",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "API GPT-4",
+          "value": "apiGpt4"
+        },
+        {
+          "label": "analiza danych",
+          "value": "analizaDanych"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
+        }
+      ],
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT-4 z Aplikacją Webową do Analizy Danych"
     }
   ]
 }

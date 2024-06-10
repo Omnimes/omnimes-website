@@ -64,6 +64,22 @@
         {
           "value": "standaryzacjaDanych",
           "label": "Standaryzacja danych"
+        },
+        {
+          "value": "ai",
+          "label": "AI"
+        },
+        {
+          "value": "modeleLlm",
+          "label": "Modele LLM"
+        },
+        {
+          "value": "apiGpt4",
+          "label": "API GPT-4"
+        },
+        {
+          "value": "analizaDanych",
+          "label": "analiza danych"
         }
       ]
     },
