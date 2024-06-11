@@ -7,7 +7,14 @@ author:
 slug: 'praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych'
 description: 'Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.'
 coverImage: ''
-tags: [{"label":"AI","value":"ai"},{"label":"Modele LLM","value":"modeleLlm"},{"label":"API GPT-4","value":"apiGpt4"},{"label":"analiza danych","value":"analizaDanych"},{"value":"bezpieczeństwoDanych","label":"Bezpieczeństwo danych"}]
+tags:
+  [
+    { 'label': 'AI', 'value': 'ai' },
+    { 'label': 'Modele LLM', 'value': 'modeleLlm' },
+    { 'label': 'API GPT-4', 'value': 'apiGpt4' },
+    { 'label': 'analiza danych', 'value': 'analizaDanych' },
+    { 'value': 'bezpieczeństwoDanych', 'label': 'Bezpieczeństwo danych' },
+  ]
 lang: 'pl'
 publishedAt: '2024-06-10T08:10:14.654Z'
 ---
@@ -58,7 +65,34 @@ pip install Flask
 
 Stwórz nowy plik o nazwie `app.py` i dodaj podstawowy kod aplikacji Flask:
 
-![](/images/image-A2ND.png)
+```python
+from flask import Flask, request, jsonify
+import openai
+
+app = Flask(__name__)
+
+# Klucz API OpenAI
+openai.api_key = 'TWÓJ_KLUCZ_API'
+
+@app.route('/analyze', methods=['POST'])
+def analyze():
+  data = request.json
+  prompt = data.get('prompt')
+
+  if not prompt:
+    return jsonify({'error': 'Brak promptu'}), 400
+
+  response = openai.Completion.create(
+    engine="text-davinci-003",
+    prompt=prompt,
+    max_tokens=150
+  )
+
+  return jsonify(response.choices[0].text)
+
+if __name__ == '__main__':
+  app.run(debug=True)
+```
 
 ## Krok 3: Konfiguracja i Wywoływanie API GPT-4
 
@@ -70,7 +104,11 @@ W powyższym kodzie, skonfigurowaliśmy klucz API OpenAI oraz endpoint `/analyze
 
 Aby przetestować naszą aplikację, możemy użyć narzędzia takiego jak Postman lub curl. Oto przykład użycia curl do wysłania zapytania:
 
-![](/images/image-c3Mj.png)
+```bash
+curl -X POST http://127.0.0.1:5000/analyze \
+-H "Content-Type: application/json" \
+-d '{"prompt": "Przykładowy tekst do analizy"}'
+```
 
 Aplikacja powinna zwrócić odpowiedź zawierającą analizę promptu wykonaną przez GPT-4.
 
@@ -82,12 +120,49 @@ Następnie, musimy zintegrować nasz endpoint z frontendem aplikacji webowej. Mo
 
 W pliku HTML dodajemy formularz do wprowadzenia tekstu oraz przycisk do wysłania danych do naszego endpointu:
 
-![](/images/image-g1Mj.png)
+```html
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Integracja GPT-4</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Analiza Tekstu z GPT-4</h1>
+    <textarea id="prompt" rows="10" cols="50"></textarea>
+    <br />
+    <button id="analyze-button">Analizuj</button>
+    <h2>Wynik:</h2>
+    <pre id="result"></pre>
+
+    <script>
+      $(document).ready(function() {
+        $('#analyze-button').click(function() {
+          const prompt = $('#prompt').val();
+          $.ajax({
+            url: '/analyze',
+            method: 'POST'.
+            contentType: 'application/json',
+            data: JSON.stringify({ prompt: prompt }),
+            success: function(response) {
+              $('#result').text(response);
+            },
+            error: function(error) {
+              $('#result').text('Wystąpił błąd: ' + error.responseJSON.error);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+```
 
 ## Praktyczne zastosowanie asystenta AI na przykładzie systemu realizacji produkcji OMNIMES
 
-Poniższy przykład omawia tylko samo działanie asystenta GPT w już działającym systemie.\
-\
+Poniższy przykład omawia tylko samo działanie asystenta GPT w już działającym systemie.
+
 ![omnimes asystent gpt open ai - ustawienia](/images/image-IxOD.png)
 
 Powyższe zdjęcie przedstawia opcje ustawień asystenta. Pierwsze pole wymaga od użytkownika podania tokena API z OpenAI. W tym przykładzie użytkownik ma do wyboru dwa modele: wersję 3.5 i 4. Osobiście doradzam korzystanie z wersji 3.5, gdyż jest dużo tańsza. Główna różnica polega na tym, że wersja 4 lepiej sprawdza się w dłuższych konwersacjach. W tym przykładzie będziemy zadawać asystentowi jedno pytanie z przekazanymi danymi produkcyjnymi w celu ich szybkiej analizy.

@@ -1,5 +1,4 @@
 import useCopyToClipboard from "@/hooks/useCopyToClipboard";
-import clsx from "clsx";
 import { LuCheck, LuClipboardCopy  } from "react-icons/lu";
 import { ComponentPropsWithRef, useRef, useState } from "react";
 
@@ -9,7 +8,7 @@ export const Pre = (props: ComponentPropsWithRef<"pre">) => {
     const [copy] = useCopyToClipboard();
     return (
         <div className="relative p-0">
-            <div className="absolute right-4 top-2 flex rounded-md border border-gray-600">
+            <div className="absolute right-4 top-2">
                 <button
                     onClick={() => {
                         copy(preRef?.current?.textContent ?? "").then(() => {
@@ -18,22 +17,10 @@ export const Pre = (props: ComponentPropsWithRef<"pre">) => {
                         });
                     }}
                     title="Copy code"
-                    className={clsx([
-                        "hidden rounded px-1 transition-colors md:flex items-center gap-1 text-sm",
-                        "border border-gray-300 dark:border-gray-600",
-                        "text-gray-700",
-                        "bg-gray-50 hover:bg-gray-300",
-                    ])}
+                    className="copy"
                 >
-                    {isCopied ? (
-                        <>
-                            <LuCheck size={14} /> done
-                        </>
-                    ) : (
-                        <>
-                            <LuClipboardCopy size={14} /> copy
-                        </>
-                    )}
+                    <span data-text-end="Copied!" data-text-initial="Copy to clipboard" className="tooltip"></span>
+                    {isCopied ? <LuCheck size={20} /> : <LuClipboardCopy size={20} /> }
                 </button>
             </div>
             <pre {...props} ref={preRef}>
