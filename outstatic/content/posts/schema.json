@@ -96,6 +96,22 @@
         {
           "value": "communicationStandards",
           "label": "Communication Standards"
+        },
+        {
+          "value": "industrialAutomation",
+          "label": "Industrial Automation"
+        },
+        {
+          "value": "client/serverArchitecture",
+          "label": "Client/Server Architecture"
+        },
+        {
+          "value": "dataSecurity",
+          "label": "Data Security"
+        },
+        {
+          "value": "dataStandardization",
+          "label": "Data Standardization"
         }
       ]
     },
