@@ -106,7 +106,7 @@ export const Hannover = () => {
                 </div>
               </div>
               <Image
-                src="/images/bg.webp"
+                src="/images/decorate/bg.webp"
                 width="2880"
                 height="1358"
                 decoding="async"

@@ -17,14 +17,14 @@ export const Company = () => {
         <div className="mt-8 grid grid-cols-2 gap-4">
           <Image
             className="w-full rounded-lg z-1"
-            src="/images/company.png"
+            src="/images/about/company.png"
             alt="office content 1"
             width={300}
             height={400}
           />
           <Image
             className="mt-4 w-full rounded-lg lg:mt-10 z-1"
-            src="/images/company2.png"
+            src="/images/about/company2.png"
             alt="office content 2"
             width={300}
             height={400}

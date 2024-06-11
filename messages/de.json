@@ -21,6 +21,11 @@
     "description": "Aber keine Sorge, auf unserer Homepage finden Sie noch viele andere Dinge.",
     "action": "Zurück zur Startseite"
   },
+  "NotFoundBlog": {
+    "title": "Es tut uns leid, der Beitrag konnte nicht gefunden werden.",
+    "description": "Versuchen Sie, die Sprache zu ändern, oder kehren Sie zur Liste der Beiträge zurück.",
+    "action": "Zurück zum Blog"
+  },
   "HeaderLinks": {
     "home": "Startseite",
     "blog": "Blog",

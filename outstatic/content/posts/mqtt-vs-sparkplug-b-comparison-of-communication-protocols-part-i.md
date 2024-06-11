@@ -102,7 +102,7 @@ The implementation of Sparkplug B in the Omnimes system has brought several bene
 - No imposition of data structure on the user
 - Shifting the responsibility for configuration to the user
 
-![On the computer screen, a dashboard with Polish text, tables, and charts is displayed. Two green arrows point from a JSON code snippet at the top to elements in the lower part, illustrating the connection between input data and control elements on the Omnimes system dashboard.](/images/image-uyot-ywnt-g4OT.png)
+![On the computer screen, a dashboard with Polish text, tables, and charts is displayed. Two green arrows point from a JSON code snippet at the top to elements in the lower part, illustrating the connection between input data and control elements on the Omnimes system dashboard.](/images/image-uyot-YwNT.png)
 
 ## **Summary**
 

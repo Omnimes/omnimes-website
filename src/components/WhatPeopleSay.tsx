@@ -12,32 +12,32 @@ export const WhatPeopleSay = () => {
     {
       opinion: t("opinion1"),
       name: 'Aleksandra Nowak',
-      images: '/images/avatar_w1.png',
+      images: '/images/avatars/avatar_w1.png',
     },
     {
       opinion: t("opinion2"),
       name: 'Michał Zając',
-      images: '/images/avatar_m1.png',
+      images: '/images/avatars/avatar_m1.png',
     },
     {
       opinion: t("opinion3"),
       name: 'Piotr Nowicki',
-      images: '/images/avatar_m2.png',
+      images: '/images/avatars/avatar_m2.png',
     },
     {
       opinion: t("opinion4"),
       name: 'Joanna Kwiatkowska',
-      images: '/images/avatar_w2.png',
+      images: '/images/avatars/avatar_w2.png',
     },
     {
       opinion: t("opinion5"),
       name: 'Robert Kowalik',
-      images: '/images/avatar_m3.png',
+      images: '/images/avatars/avatar_m3.png',
     },
     {
       opinion: t("opinion6"),
       name: 'Adrian Woźniak',
-      images: '/images/avatar_m4.png',
+      images: '/images/avatars/avatar_m4.png',
     },
   ]
   return (

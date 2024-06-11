@@ -6,7 +6,6 @@ import Image from "next/image"
 import { useLocale, useTranslations } from 'next-intl'
 import getFormattedDate from '@/lib/getFormattedDate'
 import MDXComponent from '@/components/mdx/MdxComponent'
-import Default from "../../public/images/default.png"
 import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 interface LayoutProps {
   post: ExtendedOstDocument;
@@ -43,7 +42,7 @@ export default function PostLayout({ post }: LayoutProps) {
                 <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2" key={author?.name}>
                     <Image
-                      src={author?.picture || Default.src}
+                      src={author?.picture || '/images/avatars/default.png'}
                       width={38}
                       height={38}
                       alt="avatar"

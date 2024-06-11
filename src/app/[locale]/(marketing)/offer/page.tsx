@@ -156,14 +156,14 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
         <div className="mx-auto max-w-screen-xl items-center gap-8 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16">
           <Image
             className="w-full dark:hidden z-0"
-            src="/images/monitoring.png"
+            src="/images/offer/monitoring.png"
             alt="omnimes mockup"
             width={992}
             height={715}
           />
           <Image
             className="hidden w-full dark:block z-0"
-            src="/images/monitoring-dark.png"
+            src="/images/offer/monitoring-dark.png"
             alt="omnimes mockup"
             width={992}
             height={715}

@@ -17,8 +17,8 @@ export const ComponentVideo = () => {
 
   const playerRef = useRef<any>()
 
-  const pathPoster = theme == 'dark' ? '/images/poster.dark.pl.png' : '/images/poster.pl.png'
-  const pathPosterOther = theme == 'dark' ? '/images/poster.dark.en.png' : '/images/poster.en.png'
+  const pathPoster = theme == 'dark' ? '/images/poster/poster.dark.pl.png' : '/images/poster/poster.pl.png'
+  const pathPosterOther = theme == 'dark' ? '/images/poster/poster.dark.en.png' : '/images/poster/poster.en.png'
 
   const poster = locale == 'pl' ? pathPoster : pathPosterOther
   const path = locale == 'pl' ? '/videos/video.pl.mp4' : '/videos/video.en.mp4'

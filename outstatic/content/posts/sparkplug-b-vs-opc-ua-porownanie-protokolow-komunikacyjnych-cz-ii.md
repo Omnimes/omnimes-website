@@ -64,7 +64,7 @@ Sparkplug B to protokół oparty na MQTT, rozwijany przez Arlena Nippera, jedneg
 
 - **Sparkplug B**: Format danych jest lżejszy i bardziej wydajny, bez dodatkowych nagłówków metadanych.
 
-![xml i json - główne różnice w formacie danych](/images/image-AxNT.png)
+![XML i JSON - główne różnice w formacie danych](/images/image-AxNT.png)
 
 Główna różnica obu protokołów polega na braku centralizacji w OPC UA, co w przypadku próby zbierania danych może być wyzwaniem.
 

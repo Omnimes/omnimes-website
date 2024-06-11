@@ -3,8 +3,6 @@ import { DescriptionPrimary, DescriptionSecondary } from './atoms/Description'
 import { Heading, HeadingCard } from './atoms/Heading'
 import { SubtitleNormal, Subtitle } from './atoms/Subtitle'
 import Image from 'next/image'
-import image1 from '../../public/images/1.png'
-import image2 from '../../public/images/2.png'
 import { useTranslations } from 'next-intl'
 export const Performance = () => {
   const t = useTranslations('Performance')
@@ -20,7 +18,7 @@ export const Performance = () => {
           <div className="relative grid grid-cols-6 gap-3">
             <div className="relative col-span-full overflow-hidden md:col-span-3">
               <Image
-                src={image1}
+                src={'/images/home/1.png'}
                 alt={t('alt1')}
                 width={875}
                 height={528}
@@ -46,7 +44,7 @@ export const Performance = () => {
           <div className="relative grid grid-cols-6 content-between gap-3">
             <div className="relative order-1 col-span-full overflow-hidden md:col-span-3 ">
               <Image
-                src={image2}
+                src={'/images/home/2.png'}
                 alt={t('alt2')}
                 width={875}
                 height={528}

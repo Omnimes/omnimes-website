@@ -14,7 +14,7 @@ export const Cooperation = () => {
         <div className="mt-8 flex flex-row flex-wrap justify-center gap-8 cursor-default">
           <a href="#" className="flex items-center justify-center">
             <Image
-              src={'/images/saz.png'}
+              src={'/images/company/saz.png'}
               alt={'logo saz'}
               className="z-1 max-h-[100px] brightness-0 dark:brightness-100"
               width={500}
@@ -23,7 +23,7 @@ export const Cooperation = () => {
           </a>
           <a href="#" className="flex items-center justify-center">
             <Image
-              src={'/images/eldrew.png'}
+              src={'/images/company/eldrew.png'}
               alt={'logo eldrew'}
               className="z-1 max-h-[100px] dark:brightness-0 dark:grayscale-0 dark:invert"
               width={500}
@@ -32,7 +32,7 @@ export const Cooperation = () => {
           </a>
           <a href="#" className="flex items-center justify-center">
             <Image
-              src={'/images/tartak.png'}
+              src={'/images/company/tartak.png'}
               alt={'logo tartak'}
               className="z-1 max-h-[100px] dark:brightness-0 dark:grayscale-0 dark:invert"
               width={500}
@@ -41,7 +41,7 @@ export const Cooperation = () => {
           </a>
           <a href="#" className="flex items-center justify-center">
             <Image
-              src={'/images/triwall.png'}
+              src={'/images/company/triwall.png'}
               alt={'logo triwall'}
               className="z-1 max-h-[100px] dark:brightness-0 dark:grayscale-0 dark:invert"
               width={500}
@@ -133,22 +133,22 @@ export const Cooperation = () => {
 //               >
 //                 <li>
 //                   <a href="#" className="flex items-center justify-center">
-//                     <Image src={"/images/saz.png"} alt={'logo'} className="max-h-[100px] mix-blend-multiply" />
+//                     <Image src={"/images/company/saz.png"} alt={'logo'} className="max-h-[100px] mix-blend-multiply" />
 //                   </a>
 //                 </li>
 //                 <li>
 //                   <a href="#" className="flex items-center justify-center">
-//                     <Image src={"/images/eldrew.png"} alt={'logo'} className="max-h-[100px] mix-blend-darken" />
+//                     <Image src={"/images/company/eldrew.png"} alt={'logo'} className="max-h-[100px] mix-blend-darken" />
 //                   </a>
 //                 </li>
 //                 <li>
 //                   <a href="#" className="flex items-center justify-center">
-//                     <Image src={"/images/tartak.png"} alt={'logo'} className="max-h-[100px] mix-blend-darken" />
+//                     <Image src={"/images/company/tartak.png"} alt={'logo'} className="max-h-[100px] mix-blend-darken" />
 //                   </a>
 //                 </li>
 //                 <li>
 //                   <a href="#" className="flex items-center justify-center">
-//                     <Image src={"/images/triwall.png"} alt={'logo'} className="max-h-[100px] mix-blend-darken" />
+//                     <Image src={"/images/company/triwall.png"} alt={'logo'} className="max-h-[100px] mix-blend-darken" />
 //                   </a>
 //                 </li>
 //               </ul>
