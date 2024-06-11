@@ -5,7 +5,7 @@ import { NextRequest } from "next/server";
 
 const adminPages = ['/admin'] // dodawać wszystkie admin page
 const protectedPages = ['/dashboard'] // dodawać wszystkie protected page
-export const excludePaths = [...adminPages, ...protectedPages, '/blog/[slug]'];
+export const excludePaths = [...adminPages, ...protectedPages, '/blog/[slug]', '/tags/[tag]'];
 export const defaultLocale = 'en' as const;
 
 export const intlMiddleware =  createMiddleware({

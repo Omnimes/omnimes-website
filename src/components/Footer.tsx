@@ -18,6 +18,7 @@ export const Footer = () => {
     'terms',
     'resources',
   ]
+  
   return (
     <SectionContainer>
       <footer className="mx-auto max-w-screen-xl pb-4 text-center md:p-8 lg:p-10">
@@ -40,7 +41,7 @@ export const Footer = () => {
           <li><a href={"/"} className="mr-4 hover:underline md:mr-6">{tl('home')}</a></li>
           {links.map(link => (
             <li key={link}>
-              <a href={link} className="mr-4 hover:underline md:mr-6">
+              <a href={`/${link}`} className="mr-4 hover:underline md:mr-6">
                 {tl(link)}
               </a>
             </li>

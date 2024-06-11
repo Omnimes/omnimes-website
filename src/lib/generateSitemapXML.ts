@@ -1,7 +1,7 @@
 import fs from 'fs/promises'; 
 import { locales } from "@/config"
 import { create } from 'xmlbuilder2';
-// import { OstDocument } from 'outstatic';
+import { OstDocument } from 'outstatic';
 
 export type changeFrequency =
   | 'always'
@@ -32,6 +32,10 @@ export type URLObject = {
   };
 };
 
+type TagsPath = {
+  [key: string]: string[]
+}
+
 export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
   const transformedPaths: Paths = {};
   
@@ -52,8 +56,34 @@ export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
 
   return transformedPaths;
 }
-// OstDocument<{ [key: string]: unknown; }>[]
-export function generateURLObjectsWithoutAlternate(paths: any, host: string): URLObject[] {
+
+export function generateURLObjectsTags(paths: TagsPath, host: string): URLObject[] {
+  let urls: URLObject[] = [];
+  const pathMapping: { [key: string]: string } = {
+    pl: 'tagi',
+    en: 'tags',
+    de: 'stichworte'
+  };
+
+  for (let lang in paths) {
+    paths[lang].forEach(tag => {
+      let pathTag = pathMapping[lang] || pathMapping['pl'];
+
+      const urlObj: URLObject = {
+        url: `${host}${lang ?? 'pl'}/${pathTag}/${tag}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.9,
+      }
+
+      urls.push(urlObj);
+    });
+  }
+
+  return urls;
+}
+
+export function generateURLObjectsWithoutAlternate(paths: OstDocument<{ [key: string]: unknown; }>[], host: string): URLObject[] {
   return paths.map((url: any) => {
     return ({
       url: `${host}${url.lang ?? 'pl'}/${url.slug}`,

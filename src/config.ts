@@ -94,6 +94,11 @@ export const pathnames = {
     de: '/stichworte',
     pl: '/tagi',
   },
+  '/tags/[tag]': {
+    en: '/tags/[tag]',
+    de: '/stichworte/[tag]',
+    pl: '/tagi/[tag]'
+  },
   '/terms': {
     en: '/terms',
     de: '/regelwerk',
