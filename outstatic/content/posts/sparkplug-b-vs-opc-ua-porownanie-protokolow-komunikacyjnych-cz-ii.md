@@ -61,9 +61,10 @@ Sparkplug B to protokół oparty na MQTT, rozwijany przez Arlena Nippera, jedneg
 ## **Format Danych: OPC UA vs Sparkplug B**
 
 - **OPC UA**: Preferuje format XML, ale może również przesyłać dane w JSON. Dane zawierają nagłówki z metadanymi, co zwiększa ich złożoność.
+
 - **Sparkplug B**: Format danych jest lżejszy i bardziej wydajny, bez dodatkowych nagłówków metadanych.
 
-  [![](/images/image-cynz-UzOD.png)](https://github.com/Omnimes/omnimes-website/blob/5694d60b486ceb045eb3fe6c290eaf0e65c7f0bd/images/image-cyNz.png)
+![xml i json - główne różnice w formacie danych](/images/image-AxNT.png)
 
 Główna różnica obu protokołów polega na braku centralizacji w OPC UA, co w przypadku próby zbierania danych może być wyzwaniem.
 
