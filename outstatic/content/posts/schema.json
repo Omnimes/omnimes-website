@@ -80,6 +80,22 @@
         {
           "value": "analizaDanych",
           "label": "analiza danych"
+        },
+        {
+          "value": "communicationProtocol",
+          "label": "Communication Protocol"
+        },
+        {
+          "value": "ioTCommunication",
+          "label": "IoT Communication"
+        },
+        {
+          "value": "industry40",
+          "label": "Industry 4.0"
+        },
+        {
+          "value": "communicationStandards",
+          "label": "Communication Standards"
         }
       ]
     },

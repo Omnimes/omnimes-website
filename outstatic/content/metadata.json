@@ -1,6 +1,6 @@
 {
-  "commit": "960dd1bca1d6470ae328d9d9f0ab06c419d9f6c8",
-  "generated": "2024-06-11T08:09:09.913Z",
+  "commit": "4e7de919f01ca6cd92a56c48b3e084000c9ab2e0",
+  "generated": "2024-06-11T09:43:34.441Z",
   "metadata": [
     {
       "__outstatic": {
@@ -156,6 +156,63 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
+    },
+    {
+      "__outstatic": {
+        "commit": "4e7de919f01ca6cd92a56c48b3e084000c9ab2e0",
+        "hash": "2932893177",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
+      "lang": "en",
+      "publishedAt": "2024-06-05T09:20:51.000Z",
+      "slug": "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "QoS",
+          "value": "qoS"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "IoT Communication",
+          "value": "ioTCommunication"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Communication Standards",
+          "value": "communicationStandards"
+        }
+      ],
+      "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
     }
   ]
 }
