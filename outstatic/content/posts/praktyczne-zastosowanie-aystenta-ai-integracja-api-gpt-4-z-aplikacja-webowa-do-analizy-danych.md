@@ -1,5 +1,5 @@
 ---
-title: 'Praktyczne zastosowanie aystenta AI. Integracja API GPT-4 z Aplikacją Webową do Analizy Danych'
+title: 'Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych'
 status: 'published'
 author:
   name: 'Martin Szerment'

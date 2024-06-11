@@ -1,6 +1,6 @@
 {
-  "commit": "7419a3c3dd0217ab1f3355c66c6497f63d524a5f",
-  "generated": "2024-06-10T19:01:51.105Z",
+  "commit": "cc042d417d36b21d893a317d1860532aa86ec436",
+  "generated": "2024-06-11T06:01:13.357Z",
   "metadata": [
     {
       "__outstatic": {
@@ -118,8 +118,8 @@
     },
     {
       "__outstatic": {
-        "commit": "7419a3c3dd0217ab1f3355c66c6497f63d524a5f",
-        "hash": "1540641479",
+        "commit": "cc042d417d36b21d893a317d1860532aa86ec436",
+        "hash": "1318979106",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
       },
       "author": {
@@ -155,7 +155,7 @@
           "value": "bezpieczeństwoDanych"
         }
       ],
-      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT-4 z Aplikacją Webową do Analizy Danych"
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
     }
   ]
 }
