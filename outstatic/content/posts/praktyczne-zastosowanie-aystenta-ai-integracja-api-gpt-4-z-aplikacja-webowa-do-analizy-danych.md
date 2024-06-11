@@ -1,5 +1,5 @@
 ---
-title: 'Praktyczne zastosowanie aystenta AI. Integracja API GPT-4 z Aplikacją Webową do Analizy Danych'
+title: 'Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych'
 status: 'published'
 author:
   name: 'Martin Szerment'
@@ -113,7 +113,7 @@ Fajnym zastosowaniem jest możliwość przeglądania wykonanych analiz przez asy
 
 ## Podsumowanie
 
-Integracja API GPT-4 z aplikacją webową pozwala na wykorzystanie zaawansowanych funkcji analizy tekstu, co może znacznie zwiększyć wartość i funkcjonalność Twojej aplikacji. Proces ten obejmuje uzyskanie klucza API, skonfigurowanie aplikacji backendowej i zintegrowanie jej z frontendem. Dzięki temu użytkownicy Twojej aplikacji będą mogli korzystać z potężnych możliwości analitycznych oferowanych przez GPT-4.
+Integracja API GPT-4 z aplikacją webową pozwala na wykorzystanie zaawansowanych funkcji analizy danych, co może znacznie zwiększyć wartość i funkcjonalność Twojej aplikacji. Proces ten obejmuje uzyskanie klucza API, skonfigurowanie aplikacji backendowej i zintegrowanie jej z frontendem. Dzięki temu użytkownicy Twojej aplikacji będą mogli korzystać z potężnych możliwości analitycznych oferowanych przez GPT-4.
 
 Jednakże, wraz z korzystaniem z tego typu rozwiązań, nasuwa się pytanie: co z polityką bezpieczeństwa danych?
 

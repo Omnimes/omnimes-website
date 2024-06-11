@@ -1,6 +1,6 @@
 {
-  "commit": "77972bf004deb53792f88370d7def8653b2be85b",
-  "generated": "2024-06-10T09:38:06.493Z",
+  "commit": "cc042d417d36b21d893a317d1860532aa86ec436",
+  "generated": "2024-06-11T06:01:13.357Z",
   "metadata": [
     {
       "__outstatic": {
@@ -10,7 +10,7 @@
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": ""
+        "picture": "/images/martin-AyNz.png"
       },
       "collection": "posts",
       "coverImage": "",
@@ -118,13 +118,13 @@
     },
     {
       "__outstatic": {
-        "commit": "77972bf004deb53792f88370d7def8653b2be85b",
-        "hash": "556208393",
+        "commit": "cc042d417d36b21d893a317d1860532aa86ec436",
+        "hash": "1318979106",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin-AyNz.png"
       },
       "collection": "posts",
       "coverImage": "",
@@ -155,7 +155,7 @@
           "value": "bezpieczeństwoDanych"
         }
       ],
-      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT-4 z Aplikacją Webową do Analizy Danych"
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
     }
   ]
 }
