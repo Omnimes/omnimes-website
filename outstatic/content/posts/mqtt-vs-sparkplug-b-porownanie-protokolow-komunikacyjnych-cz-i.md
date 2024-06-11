@@ -32,7 +32,9 @@ Protokół MQTT został wynaleziony w 1999 roku przez **Andy'ego Stanforda-Clark
 
 MQTT działa w trybie nasłuchiwania, gdzie klient subskrybuje określone topiki i odbiera wiadomości. Przykładowy topik może wyglądać tak: `switch/light/`, a ładunek to dokument JSON:
 
-`{status:”ON”, color:"red", date:"2023-01-08", time:"10:23"}`
+```json
+{status: "ON", color:"red", date:"2023-01-08", time:"10:23"}
+```
 
 ![Schemat ilustrujący centralny czerwony blok oznaczony jako „Broker” ze strzałkami łączącymi się z pięcioma szarymi blokami zatytułowanymi „Urzadzenie 1”, „Urzadzenie 2”, „Urzadzenie 3”, „Urzadzenie 4” i „Urzadzenie 5”. Strzałki wskazujące „Subskrypcję” i „Publikację” ilustrują komunikację MQTT](/images/image-y0nj-QyMD.png)
 
@@ -55,13 +57,39 @@ Sparkplug B to protokół oparty na MQTT, rozwijany przez **Arlena Nippera (zał
 ## **Różnice między MQTT a Sparkplug B**
 
 1. **Schemat kanału i ładunku:**
-
    - **Sparkplug B**: Ustandaryzowany schemat topików i ładunków. Przykładowy topik: `spBv1.0/switch/light/#`. Przykładowy ładunek:
-   - `{"timestamp":1673262477011, "metrics":[{"name":"status", "timestamp":1673262477011, "dataType":"Int16", "value":"ON"}, {"name":"color", "timestamp":1673262477011, "dataType":"Int16", "value":"red"}], "seq":9}`.
-   - **MQTT**: Dowolność w tworzeniu topików i ładunków. Przykładowy topik: `switch/light/`. Przykładowy ładunek: `{status:”ON”, color:"red", date:"2023-01-08", time:"10:23"}`.
+   
+     ```json
+     {
+       "timestamp": 1673262477011,
+       "metrics": [
+         {
+           "name": "status",
+           "timestamp": 1673262477011,
+           "dataType": "Int16",
+           "value": "ON"
+         },
+         {
+           "name": "color",
+           "timestamp": 1673262477011,
+           "dataType": "Int16",
+           "value": "red"
+         }
+       ],
+       "seq": 9
+     }
+     ```
+   - **MQTT**: Dowolność w tworzeniu topików i ładunków. Przykładowy topik: `switch/light/`. Przykładowy ładunek:
 
+     ```json
+     {
+       "status": "ON",
+       "color": "red",
+       "date": "2023-01-08",
+       "time": "10:23"
+     }
+     ```
 2. **Retencyjność wiadomości:**
-
    - **Sparkplug B**: Brak natywnej retencyjności wiadomości. Konieczne jest stworzenie magazynu danych, który będzie przechowywał ostatnie stany/informacje z danego urządzenia.
    - **MQTT**: Wbudowana funkcjonalność retencyjności.
 
