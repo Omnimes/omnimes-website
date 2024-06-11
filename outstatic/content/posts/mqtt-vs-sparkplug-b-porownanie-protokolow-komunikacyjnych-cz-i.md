@@ -34,7 +34,7 @@ MQTT działa w trybie nasłuchiwania, gdzie klient subskrybuje określone topiki
 
 `{status:”ON”, color:"red", date:"2023-01-08", time:"10:23"}`
 
-[![](/images/image-y0nj-QyMD.png)](https://github.com/Omnimes/omnimes-website/blob/5694d60b486ceb045eb3fe6c290eaf0e65c7f0bd/images/image-Y0Nj.png)
+![Schemat ilustrujący centralny czerwony blok oznaczony jako „Broker” ze strzałkami łączącymi się z pięcioma szarymi blokami zatytułowanymi „Urzadzenie 1”, „Urzadzenie 2”, „Urzadzenie 3”, „Urzadzenie 4” i „Urzadzenie 5”. Strzałki wskazujące „Subskrypcję” i „Publikację” ilustrują komunikację MQTT](/images/image-y0nj-QyMD.png)
 
 ## **Jakość usług (QoS) w MQTT**
 
@@ -74,7 +74,7 @@ Implementacja Sparkplug B w systemie Omnimes przyniosła kilka korzyści:
 - Brak narzucania struktury danych użytkownikowi
 - Przerzucenie odpowiedzialności za konfigurację na użytkownika
 
-[![](/images/image-uyot-YwNT.png)](https://github.com/Omnimes/omnimes-website/blob/5694d60b486ceb045eb3fe6c290eaf0e65c7f0bd/images/image-UyOT.png)
+![Na ekranie komputera wyświetlany jest dashboard z polskim tekstem, tabelami i wykresami. Dwie zielone strzałki wskazują fragment kodu JSON u góry do elementów w dolnej części, ilustrując połączenie między danymi wejściowymi a elementami sterującymi pulpitu nawigacyjnego w systemie Omnimes.](/images/image-uyot-YwNT.png)
 
 ## **Podsumowanie**
 

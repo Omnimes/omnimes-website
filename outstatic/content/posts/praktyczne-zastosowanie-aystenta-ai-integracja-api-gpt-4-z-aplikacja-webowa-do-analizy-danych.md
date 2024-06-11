@@ -3,7 +3,7 @@ title: 'Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z apli
 status: 'published'
 author:
   name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  picture: '/images/martin.png'
 slug: 'praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych'
 description: 'Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.'
 coverImage: ''
@@ -21,7 +21,7 @@ publishedAt: '2024-06-10T08:10:14.654Z'
 
 W dzisiejszym dynamicznym świecie technologicznym, integracja inteligentnych asystentów, takich jak GPT-4, z aplikacjami webowymi staje się coraz bardziej popularna. GPT-4, opracowany przez [OpenAI](https://openai.com/), oferuje potężne możliwości analizy danych, które mogą znacząco poprawić funkcjonalność i wartość aplikacji webowych. W tym artykule przedstawimy krok po kroku, jak podłączyć API GPT-4 do aplikacji webowej w celu analizy danych.
 
-![](/images/image-cxMD.png)
+![OpenAI logo](/images/image-cxMD.png)
 
 Oczywiście, podłączenie tego typu asystenta GPT lub innego dużego modelu językowego (LLM) opartego na zewnętrznych serwerach powoduje, że aplikacja webowa, z której korzysta użytkownik końcowy, musi mieć dostęp do zewnętrznego internetu.
 
@@ -173,18 +173,17 @@ Kolejne pola to pola ograniczające długość odpowiedzi asystenta oraz ilość
 
 Fajnym trybem jest możliwość ukrycia trybu asystenta GPT w całym systemie.
 
-Zapytanie do asystenta odbywa się poprzez przesłanie głównego zapytania ustawionego we wcześniejszej konfiguracji oraz załączenie danych pochodzących z podsumowania, które użytkownik sam może stworzyć. Poniżej znajdują się zdjęcia z panelu głównego:\
-\
+Zapytanie do asystenta odbywa się poprzez przesłanie głównego zapytania ustawionego we wcześniejszej konfiguracji oraz załączenie danych pochodzących z podsumowania, które użytkownik sam może stworzyć. Poniżej znajdują się zdjęcia z panelu głównego:
+
 ![omnimes asystent gpt open ai - zapytanie do asystenta GPT](/images/image-I3ND.png)
 
 W prawym górnym rogu widoczny jest przycisk do wykonania analizy, dzięki któremu dosłownie **za jednym kliknięciem** uzyskamy analizę przesłanych danych widocznych na wykresach. Poniżej znajduje się rezultat analizy.
 
-![](/images/image-U4OT.png)
+![Wynik analizy GPT](/images/image-U4OT.png)
 
 Fajnym zastosowaniem jest możliwość przeglądania wykonanych analiz przez asystenta, a także uzyskanie **informacji o użytym modelu i liczbie wykorzystanych tokenów**.
 
-\
-![](/images/image-AxNz.png)
+![lista analiz gpt wraz ze szczegółami zużycia tokenów](/images/image-AxNz.png)
 
 ## Podsumowanie
 
