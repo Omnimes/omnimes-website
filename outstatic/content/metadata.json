@@ -1,64 +1,7 @@
 {
-  "commit": "cc042d417d36b21d893a317d1860532aa86ec436",
-  "generated": "2024-06-11T06:01:13.357Z",
+  "commit": "960dd1bca1d6470ae328d9d9f0ab06c419d9f6c8",
+  "generated": "2024-06-11T08:09:09.913Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "708087c880785b109559a4b6a204bd213deb0324",
-        "hash": "958022409",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
-      "lang": "pl",
-      "publishedAt": "2024-06-06T07:36:29.000Z",
-      "slug": "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "OPC UA",
-          "value": "opcUa"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Protokół komunikacyjny",
-          "value": "protokółKomunikacyjny"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Automatyka przemysłowa",
-          "value": "automatykaPrzemysłowa"
-        },
-        {
-          "label": "Architektura klient/serwer",
-          "value": "architekturaKlient/serwer"
-        },
-        {
-          "label": "Bezpieczeństwo danych",
-          "value": "bezpieczeństwoDanych"
-        },
-        {
-          "label": "Standaryzacja danych",
-          "value": "standaryzacjaDanych"
-        }
-      ],
-      "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
-    },
     {
       "__outstatic": {
         "commit": "5ce0360568a6daaa1b12c5bc7f629ac5e0a33a78",
@@ -156,6 +99,63 @@
         }
       ],
       "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+    },
+    {
+      "__outstatic": {
+        "commit": "960dd1bca1d6470ae328d9d9f0ab06c419d9f6c8",
+        "hash": "1698846131",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": ""
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
+      "lang": "pl",
+      "publishedAt": "2024-06-06T07:36:29.000Z",
+      "slug": "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "OPC UA",
+          "value": "opcUa"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Protokół komunikacyjny",
+          "value": "protokółKomunikacyjny"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Automatyka przemysłowa",
+          "value": "automatykaPrzemysłowa"
+        },
+        {
+          "label": "Architektura klient/serwer",
+          "value": "architekturaKlient/serwer"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
+        },
+        {
+          "label": "Standaryzacja danych",
+          "value": "standaryzacjaDanych"
+        }
+      ],
+      "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
     }
   ]
 }
