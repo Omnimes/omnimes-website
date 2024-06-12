@@ -26,7 +26,7 @@ import {
   Divider
 } from '@nextui-org/react'
 
-export default function Header() {
+export default function Header({children}: {children: React.ReactNode}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('HeaderLinks');
   return (
@@ -136,13 +136,13 @@ export default function Header() {
       {/* Widgety(język, wyszukiwarka i dark mode) na końcu */}
       <NavbarContent justify="end" className="hidden sm:flex">
         <LocaleSwitcher />
-        {/* {children} */}
+        {children}
         <SearchButton />
         <ThemeSwitch />
       </NavbarContent>
       <NavbarContent justify="center" className="flex sm:hidden">
         <LocaleSwitcher />
-        {/* {children} */}
+        {children}
         <SearchButton />
         <ThemeSwitch />
       </NavbarContent>
