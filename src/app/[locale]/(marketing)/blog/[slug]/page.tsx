@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { siteMetadata } from "@/data/siteMetadata";
 import { ExtendedOstDocument } from "../page";
+import { redirect } from 'next/navigation';
 
 type Props = {
   params: {
@@ -29,16 +30,11 @@ export async function generateStaticParams({
     .project(['slug', 'lang'])
     .toArray()
   
-  const filteredPosts = posts.filter(post => post.lang == locale).map((post) => ({
-    slug: post.slug,
-  }));
-
-  return filteredPosts
+  return posts.filter(post => post.lang == locale).map((post) => ({ slug: post.slug }));
 }
 
 async function getData({ params }: Props) {
     const db = await load();
-
     const post = await db
         .find<ExtendedOstDocument>({ collection: "posts", slug: params.slug, lang: params.locale }, [
             "title",
@@ -53,13 +49,11 @@ async function getData({ params }: Props) {
         ])
         .first();
 
-
     if (!post) {
         return undefined
     }
 
     const content = await MDXServer(post.content);
-
     return {
         ...post,
         content,
@@ -113,7 +107,7 @@ export async function generateMetadata( params: Props): Promise<Metadata> {
 
 export default async function Post(params: Props) {
   const post = await getData(params);
-  if (!post || post == undefined) notFound();
+  if (!post || post == undefined) redirect(`/blog`)
 
   return (
     <PostLayout post={post} />
