@@ -124,7 +124,7 @@ export default async function Post(params: Props) {
           <div className="flex justify-center py-6 lg:py-10">
           <Button
             as={Link}
-            href="/"
+            href="/blog"
             className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
           >
             <LucideChevronLeft className="mr-2 size-4" />
