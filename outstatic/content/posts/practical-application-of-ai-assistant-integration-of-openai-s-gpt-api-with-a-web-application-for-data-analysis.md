@@ -14,7 +14,7 @@ publishedAt: '2024-06-12T06:07:41.881Z'
 
 In today's dynamic technological world, the integration of intelligent assistants, such as GPT-4, with web applications is becoming increasingly popular. GPT-4, developed by [OpenAI](https://openai.com/), offers powerful data analysis capabilities that can significantly enhance the functionality and value of web applications. In this article, we will present a step-by-step guide on how to connect the GPT-4 API to a web application for data analysis.
 
-![OpenAI logo](/images/image-cxmd-kwMz.png)
+![OpenAI logo](/images/image-cxMD.png)
 
 Of course, connecting such a GPT assistant or another large language model (LLM) based on external servers means that the web application used by the end-user must have access to the external internet.
 
@@ -22,7 +22,7 @@ GPT models from version 3.5 and above are made available via API, but they resid
 
 A local solution includes the GPT-2.0 model, available in three weight versions, with the largest XL version weighing about 6 GB. This model is qualitatively weaker compared to version 3.5, but it is suitable for simple tasks. It is worth noting that it supports only the English language.
 
-Another solution is to use LLM models from the website: <https://huggingface.com/>
+Another solution is to use LLM models from the website: [https://huggingface.com/](https://huggingface.co/)
 
 These models can be used locally and are trained for various applications.
 
@@ -154,7 +154,7 @@ In the HTML file, we add a form for entering text and a button to send data to o
 
 The following example discusses only the operation of the GPT assistant within the already functioning Omnimes production management system.
 
-![Settings for Omnimes GPT OpenAI Assistant](/images/image-ixod-kwMT.png)
+![Settings for Omnimes GPT OpenAI Assistant](/images/image-IxOD.png)
 
 The above image depicts the assistant's settings options. The first field requires the user to input the OpenAI API token. In this example, the user has two model options: version 3.5 and 4. Personally, I recommend using version 3.5 as it is much cheaper. The main difference is that version 4 performs better in longer conversations. In this example, we will ask the assistant one question with provided production data for quick analysis.
 
@@ -166,15 +166,15 @@ A neat feature is the ability to hide the GPT assistant mode throughout the enti
 
 Querying the assistant involves sending the main query set in the earlier configuration and attaching data from the summary, which the user can create themselves. Below are images from the main panel:
 
-![Omnimes GPT OpenAI Assistant - Query to the GPT Assistant](/images/image-i3nd-Q3NT.png)
+![Omnimes GPT OpenAI Assistant - Query to the GPT Assistant](/images/image-I3ND.png)
 
 In the top right corner, there is a button for performing the analysis, thanks to which, literally with one click, we will obtain an analysis of the data sent, visible in the charts. Below is the result of the analysis.
 
-![The result of the GPT analysis](/images/image-u4ot-kyNT.png)
+![The result of the GPT analysis](/images/image-U4OT.png)
 
 A cool application is the ability to browse the analyses performed by the assistant, as well as obtaining information about the used model and the number of tokens used.
 
-![List of GPT analyses along with details of token consumption](/images/image-axnz-Q5MD.png)
+![List of GPT analyses along with details of token consumption](/images/image-AxNz.png)
 
 ## Summary
 

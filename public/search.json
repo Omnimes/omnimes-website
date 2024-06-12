@@ -1,4 +1,33 @@
-[
+[]  {
+    "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+    "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis",
+    "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+    "tags": [
+      {
+        "value": "ai",
+        "label": "AI"
+      },
+      {
+        "label": "Data Analysis",
+        "value": "dataAnalysis"
+      },
+      {
+        "value": "dataSecurity",
+        "label": "Data Security"
+      },
+      {
+        "label": "GPT-4 API",
+        "value": "gpt4Api"
+      },
+      {
+        "label": "LLM Models",
+        "value": "llmModels"
+      }
+    ],
+    "lang": "en",
+    "publishedAt": "2024-06-12T06:07:41.881Z",
+    "status": "published"
+  },
   {
     "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
     "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II",
@@ -89,49 +118,6 @@
     ],
     "lang": "en",
     "publishedAt": "2024-06-05T09:20:51.000Z",
-    "status": "published"
-  }
-] (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
-    "tags": [
-      {
-        "label": "MQTT",
-        "value": "mqtt"
-      },
-      {
-        "label": "Sparkplug B",
-        "value": "sparkplugB"
-      },
-      {
-        "label": "Protokół komunikacyjny",
-        "value": "protokółKomunikacyjny"
-      },
-      {
-        "label": "QoS",
-        "value": "qoS"
-      },
-      {
-        "label": "IIoT",
-        "value": "iIoT"
-      },
-      {
-        "label": "Komunikacja IoT",
-        "value": "komunikacjaIoT"
-      },
-      {
-        "label": "Omnimes",
-        "value": "omnimes"
-      },
-      {
-        "label": "Przemysł 4.0",
-        "value": "przemysł40"
-      },
-      {
-        "label": "Standardy komunikacyjne",
-        "value": "standardyKomunikacyjne"
-      }
-    ],
-    "lang": "pl",
-    "publishedAt": "2024-06-05T07:21:12.000Z",
     "status": "published"
   }
 ]

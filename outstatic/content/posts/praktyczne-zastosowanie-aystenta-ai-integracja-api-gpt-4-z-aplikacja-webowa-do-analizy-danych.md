@@ -29,15 +29,13 @@ Modele GPT od wersji 3.5 i wyższych są udostępniane poprzez API, ale znajduj�
 
 Lokalnym rozwiązaniem są jedynie model GPT w wersji 2.0, dostępne w trzech wersjach wagowych, z największą wersją XL ważącą około 6 GB. Model ten jest jakościowo słabszy w porównaniu do wersji 3.5, jednak do prostych zadań się nadaje. Warto nadmienić, że obsługuje wyłącznie język angielski.
 
-Innym rozwiązaniem jest skorzystanie z modeli LLM z strony:
-
-[https://huggingface.com/](https://huggingface.co/)
+Innym rozwiązaniem jest skorzystanie z modeli LLM z strony: [https://huggingface.com/](https://huggingface.co/)
 
 które już możemy stosować lokalnie i są trenowane pod różne zastosowania.
 
 O wdrażaniu lokalnych modeli językowych (LLM) i bezpieczeństwie przekzywanych danych na zewnętrzne serwery napiszę w kolejnym artykule, a teraz przedstawię prosty sposób na wdrożenie asystenta GPT poprzez API OpenAI, korzystając z frameworka Flask ze względu na szybkie tworzenie w nim API aplikacji.
 
-Przedstawię także praktyczne zastosowanie asystenta GPT na konkretnym przykładzie, mianowicie na systemie [Omnimes](omnimes.com) tworzonym przez firmę [Multiprojekt.](https://www.multiprojekt.pl/)
+Przedstawię także praktyczne zastosowanie asystenta GPT na konkretnym przykładzie, mianowicie na systemie [Omnimes](https://www.omnimes.com/) tworzonym przez firmę [Multiprojekt.](https://www.multiprojekt.pl/)
 
 Omawiany system służy do monitorowania i realizacji produkcji w fabrykach i zakładach produkcyjnych.
 
