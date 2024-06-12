@@ -81,7 +81,12 @@
     "name": "Imię",
     "occupation": "Zawód",
     "tags": "Tagi",
-    "back": "Powrót do bloga"
+    "back": "Powrót do bloga",
+    "allPost": "Wszystkie posty",
+    "publish": "Opublikowano dnia",
+    "by": "przez",
+    "postNotFound": "Artykułu nie znaleziono",
+    "postNotFoundDesc": "Przepraszamy, ale nie udało się odnaleźć tego artykułu lub może on znajdować się pod innym adresem URL. Możesz przeczytać inne dostępne artykuły w tym języku, przechodząc do wszystkich postów."
   },
   "HeroSection": {
     "title": "Optymalizuj swoją produkcję z naszym",

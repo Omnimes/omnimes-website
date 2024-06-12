@@ -9,6 +9,7 @@ import { getDocuments, load } from 'outstatic/server';
 
 export type ExtendedOstDocument = OstDocument & { tags: { value: string, label: string }[] };
 const POSTS_PER_PAGE: number = 10;
+export const revalidate = 3600;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });

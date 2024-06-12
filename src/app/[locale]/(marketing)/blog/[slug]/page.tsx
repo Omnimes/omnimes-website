@@ -4,12 +4,11 @@ import MDXServer from "@/lib/mdxServer";
 import { getLocalePrimaryDialects } from "@/data/locales";
 import { load } from "outstatic/server";
 import { getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { siteMetadata } from "@/data/siteMetadata";
 import { ExtendedOstDocument } from "../page";
-import { redirect } from 'next/navigation';
-
+import { Button, Link } from '@nextui-org/react';
+import { LucideChevronLeft } from "lucide-react";
 type Props = {
   params: {
     slug: string;
@@ -22,7 +21,7 @@ export async function generateStaticParams({
 }: {
   params: { locale: string };
 }) {
-  const db = await load()
+  const db = await load();
   const posts = await db
     .find({
       collection: 'posts'
@@ -107,7 +106,30 @@ export async function generateMetadata( params: Props): Promise<Metadata> {
 
 export default async function Post(params: Props) {
   const post = await getData(params);
-  if (!post || post == undefined) redirect(`/blog`)
+  const t = await getTranslations('PostLayout');
+
+  if (!post || post == undefined) {
+    return (
+      <article className="mx-auto mt-32 max-w-screen-lg px-4 text-center md:px-0">
+          <h1 className="font-heading my-2 inline-block text-4xl leading-tight lg:text-5xl">
+              {t("postNotFound")}
+          </h1>
+          <p>
+              {t("postNotFoundDesc")}
+          </p>
+          <div className="flex justify-center py-6 lg:py-10">
+          <Button
+            as={Link}
+            href="/"
+            className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
+          >
+            <LucideChevronLeft className="mr-2 size-4" />
+            {t("allPost")}
+          </Button>
+          </div>
+      </article>
+    )
+  }
 
   return (
     <PostLayout post={post} />

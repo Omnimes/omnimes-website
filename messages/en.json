@@ -81,7 +81,12 @@
     "name": "Name",
     "occupation": "Occupation",
     "tags": "Tags",
-    "back": "Back to the blog"
+    "back": "Back to the blog",
+    "allPost": "All posts",
+    "publish": "Published on",
+    "by": "by",
+    "postNotFound": "Article not found",
+    "postNotFoundDesc": "Sorry, but we couldn't find this article or it may be located at a different URL. You can read other available articles in this language by going to all posts."
   },
   "HeroSection": {
     "title": "Optimize your production with our",

@@ -81,7 +81,12 @@
     "name": "Name",
     "occupation": "Beruf",
     "tags": "Stichworte",
-    "back": "Zurück zum Blog"
+    "back": "Zurück zum Blog",
+    "allPost": "Alle Beiträge",
+    "publish": "Veröffentlicht am",
+    "by": "von",
+    "postNotFound": "Artikel nicht gefunden",
+    "postNotFoundDesc": "Entschuldigung, aber wir konnten diesen Artikel nicht finden oder er befindet sich möglicherweise an einer anderen URL. Sie können andere verfügbare Artikel in dieser Sprache lesen, indem Sie zu allen Beiträgen gehen."
   },
   "HeroSection": {
     "title": "Optimiere deine produktion mit unserem",

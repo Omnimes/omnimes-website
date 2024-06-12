@@ -3,7 +3,7 @@ import { getLocalePrimaryDialects } from '@/data/locales'
 import ListLayout from '@/layouts/ListLayout'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getDocuments, load } from 'outstatic/server'
-import { ExtendedOstDocument } from '../page'
+import { ExtendedOstDocument } from '../../page'
 
 type Props = {
   params: {
