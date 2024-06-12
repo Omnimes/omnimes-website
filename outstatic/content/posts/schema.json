@@ -112,6 +112,18 @@
         {
           "value": "dataStandardization",
           "label": "Data Standardization"
+        },
+        {
+          "value": "dataAnalysis",
+          "label": "Data Analysis"
+        },
+        {
+          "value": "gpt4Api",
+          "label": "GPT-4 API"
+        },
+        {
+          "value": "llmModels",
+          "label": "LLM Models"
         }
       ]
     },
