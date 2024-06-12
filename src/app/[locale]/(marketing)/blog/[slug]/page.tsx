@@ -2,7 +2,7 @@ import "highlight.js/styles/github-dark.css";
 import PostLayout from "@/layouts/PostLayout";
 import MDXServer from "@/lib/mdxServer";
 import { getLocalePrimaryDialects } from "@/data/locales";
-import { load } from "outstatic/server";
+import { getDocumentSlugs, load } from "outstatic/server";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import { siteMetadata } from "@/data/siteMetadata";
@@ -21,15 +21,19 @@ export async function generateStaticParams({
 }: {
   params: { locale: string };
 }) {
-  const db = await load();
-  const posts = await db
-    .find({
-      collection: 'posts'
-    })
-    .project(['slug', 'lang'])
-    .toArray()
+  // const db = await load();
+  // const posts = await db
+  //   .find({
+  //     collection: 'posts'
+  //   })
+  //   .project(['slug', 'lang'])
+  //   .toArray()
   
-  return posts.filter(post => post.lang == locale).map((post) => ({ slug: post.slug }));
+  // .filter(post => post.lang == locale)
+  // return posts.map((post) => ({ slug: post.slug }));
+
+  const posts = getDocumentSlugs("posts");
+  return posts.map((slug) => ({ slug }));
 }
 
 async function getData({ params }: Props) {
