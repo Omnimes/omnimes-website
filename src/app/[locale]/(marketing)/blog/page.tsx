@@ -8,7 +8,6 @@ import { OstDocument } from "outstatic";
 import { getDocuments, load } from 'outstatic/server';
 
 export type ExtendedOstDocument = OstDocument & { tags: { value: string, label: string }[] };
-const POSTS_PER_PAGE: number = 1;
 export const revalidate = 3600;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -40,7 +39,7 @@ async function getData(locale: string) {
       'tags'
     ])
     .sort({ publishedAt: -1 })
-    .limit(POSTS_PER_PAGE)
+    .limit(20)
     .toArray()
 
   const postsLength = getDocuments('posts', ['lang'])
@@ -70,7 +69,7 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   const pageNumber = 1
   const pagination = {
     currentPage: pageNumber,
-    totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
+    totalPages: Math.ceil(postsLength / 20),
   }
   return (
     <ListLayout

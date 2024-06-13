@@ -11,8 +11,6 @@ type Props = {
     page: string
   }
 }
-const POSTS_PER_PAGE: number = 1;
-
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: 'Metadata' })
   const title = t('blog_title')
@@ -54,8 +52,8 @@ async function getData(locale: string, page: string) {
       'tags',
     ])
     .sort({ publishedAt: -1 })
-    .skip((Number(page) - 1) * POSTS_PER_PAGE)
-    .limit(POSTS_PER_PAGE)
+    .skip((Number(page) - 1) * 20)
+    .limit(20)
     .toArray()
 
     const postsLength = getDocuments('posts', ['lang'])
@@ -85,7 +83,7 @@ export default async function BlogPagePage({ params }: { params: { page: string;
 
   const pagination = {
       currentPage: pageNumber,
-      totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
+      totalPages: Math.ceil(postsLength / 20),
   }
 
   return (
