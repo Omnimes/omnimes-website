@@ -11,7 +11,7 @@ import Header from '@/components/Header';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import SectionContainer from '@/components/SectionContainer';
 import { UserAccountNav } from '@/components/UserAccountNav';
-import { getCurrentUser } from "@/utils/session";
+// import { getCurrentUser } from "@/utils/session";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Tags" });
@@ -54,18 +54,18 @@ async function getData(locale: string) {
 
 export default async function TagsPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const user = await getCurrentUser();
   const t = await getTranslations('Tags');
   let tags = await getData(locale) as { value: string, label: string, count: number }[];
   if (tags == undefined) {
     tags = []
-  }
+    }
+  // const user = await getCurrentUser();
   const sortedTags = tags.sort((a, b) => b.count - a.count);
   return (
     <>
       <ComponentSearch>
         <Header>
-          <UserAccountNav user={user} />
+          <UserAccountNav user={undefined} />
         </Header>
       </ComponentSearch>
       <SectionContainer>
