@@ -3,9 +3,14 @@ import { genPageMetadata } from '@/app/seo'
 import { Metadata } from 'next'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getLocalePrimaryDialects } from '@/data/locales'
-import { ExtendedOstDocument } from '../../blog/page'
 import { getDocuments, load } from 'outstatic/server'
 import { slug } from 'github-slugger'
+import Header from '@/components/Header';
+import SectionContainer from '@/components/SectionContainer';
+import { UserAccountNav } from '@/components/UserAccountNav';
+import { getCurrentUser } from "@/utils/session";
+import { ComponentSearch } from '@/components/ComponentSearch';
+import { ExtendedOstDocument } from '../../blog/page'
 
 type Props = {
   params: {
@@ -51,10 +56,10 @@ async function getDataTags(locale: string) {
   const posts = getDocuments('posts', ['lang', 'tags']);
 
   if (!posts || posts.length == 0 || posts === undefined) return undefined
-
+  
   const localePosts = posts.filter((post) => post.lang == locale).map(post => post.tags);
   const tagCounts = {} as Record<string, { value: string, label: string, count: number }>;
-
+  
   if (localePosts.length > 0) {
     localePosts.forEach(tagsArray => {
       if (Array.isArray(tagsArray)) {
@@ -69,7 +74,7 @@ async function getDataTags(locale: string) {
       }
     });
   }
-
+  
   return Object.values(tagCounts);
 }
 
@@ -92,8 +97,9 @@ async function getData({ params }: Props) {
 
 export default async function TagPage(params: Props) {
   const { locale, tag } = params.params;
-  unstable_setRequestLocale(locale)
-  const t = await getTranslations('Tag')
+  unstable_setRequestLocale(locale);
+  const user = await getCurrentUser();
+  const t = await getTranslations('Tag');
 
   let tags = await getDataTags(locale) as { value: string, label: string, count: number }[];
   if (tags?.length == 0 || !tags) return <p className="mt-10 text-center">{t('notFound')}</p>
@@ -101,9 +107,20 @@ export default async function TagPage(params: Props) {
   const posts = await getData(params);
   if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
 
-  return <ListLayout
-    posts={posts}
-    tags={tags}
-    tag={tag}
-  />
+  return (
+    <>
+      <ComponentSearch>
+        <Header>
+          <UserAccountNav user={user} />
+        </Header>
+      </ComponentSearch>
+      <SectionContainer>
+        <ListLayout
+          posts={posts}
+          tags={tags}
+          tag={tag}
+        />
+      </SectionContainer>
+    </>
+  )
 }

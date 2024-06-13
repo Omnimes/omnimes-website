@@ -16,18 +16,10 @@ type Props = {
 export default function MarketingLayout({ children, params: { locale } }: Props) {
     unstable_setRequestLocale(locale);
     // const user = await getCurrentUser();
+
     return (
         <>
-            {/* <ComponentSearch>
-                <Header>
-                    <UserAccountNav user={user} />
-                </Header>
-            </ComponentSearch> */}
-            <SectionContainer> 
-                {children}
-            </SectionContainer> 
-            <ScrollTopAndComment />
-            <Footer />  
+            {children}
         </>
     )
 }
