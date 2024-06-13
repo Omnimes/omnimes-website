@@ -16,22 +16,7 @@ type Props = {
   };
 };
 
-export async function generateStaticParams({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  // const db = await load();
-  // const posts = await db
-  //   .find({
-  //     collection: 'posts'
-  //   })
-  //   .project(['slug', 'lang'])
-  //   .toArray()
-  
-  // .filter(post => post.lang == locale)
-  // return posts.map((post) => ({ slug: post.slug }));
-
+export async function generateStaticParams() {
   const posts = getDocumentSlugs("posts");
   return posts.map((slug) => ({ slug }));
 }
@@ -108,7 +93,7 @@ export async function generateMetadata( params: Props): Promise<Metadata> {
   };
 }
 
-export default async function Post(params: Props) {
+export default async function BlogPost(params: Props) {
   const post = await getData(params);
   const t = await getTranslations('PostLayout');
 

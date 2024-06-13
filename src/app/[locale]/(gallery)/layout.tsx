@@ -5,7 +5,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import { Footer } from "@/components/Footer";
 import { UserAccountNav } from "@/components/UserAccountNav";
-import { getCurrentUser } from "@/utils/session";
+// import { getCurrentUser } from "@/utils/session";
 
 type Props = {
   children: ReactNode;
@@ -19,8 +19,7 @@ export default function GalleryLayout({ children, params: { locale } }: Props) {
         <>
             <ComponentSearch>
             <Header>
-                {null}
-                {/* <UserAccountNav /> */}
+                <UserAccountNav user={undefined} />
                 </Header>
             </ComponentSearch>
                 {children}

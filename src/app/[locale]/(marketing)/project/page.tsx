@@ -1,9 +1,9 @@
 import { projectsData } from "@/data/projects";
 import { Card } from '@/components/Card';
-
 import { genPageMetadata } from '@/app/seo';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { useTranslations } from "next-intl";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "ProjectMeta" });
@@ -21,10 +21,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-export default async function ProjectPage({ params: { locale } }: { params: { locale: string } }) {
+export default function ProjectPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
-  const t = await getTranslations('Project');
+  const t = useTranslations('Project');
 
   return (
       <main className="divide-y divide-gray-200 dark:divide-gray-700">

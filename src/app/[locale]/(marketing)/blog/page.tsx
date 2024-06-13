@@ -8,7 +8,7 @@ import { OstDocument } from "outstatic";
 import { getDocuments, load } from 'outstatic/server';
 
 export type ExtendedOstDocument = OstDocument & { tags: { value: string, label: string }[] };
-const POSTS_PER_PAGE: number = 10;
+const POSTS_PER_PAGE: number = 1;
 export const revalidate = 3600;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -67,7 +67,6 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   await getDataToSearch(locale);
   const { allPosts, postsLength } = await getData(locale);
   const t = await getTranslations('Blog');
-  // Enable static rendering
   const pageNumber = 1
   const pagination = {
     currentPage: pageNumber,

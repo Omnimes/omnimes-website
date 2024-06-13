@@ -11,7 +11,7 @@ type Props = {
     page: string
   }
 }
-const POSTS_PER_PAGE: number = 10;
+const POSTS_PER_PAGE: number = 1;
 
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -38,13 +38,11 @@ export const generateStaticParams = async ({ params: { locale } }: Props) => {
   const localePosts = posts.filter((post) => post.lang == locale)
   const totalPages = Math.ceil(localePosts.length / 10)
   const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
-
   return paths
 }
 
 async function getData(locale: string, page: string) {
   const db = await load()
-  // get all posts. Example of fetching a specific collection
   const allPosts = await db
     .find<ExtendedOstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
       'title',
@@ -60,7 +58,10 @@ async function getData(locale: string, page: string) {
     .limit(POSTS_PER_PAGE)
     .toArray()
 
-  const postsLength = getDocuments('posts').length
+    const postsLength = getDocuments('posts', ['lang'])
+    .filter(post => post.status == 'published')
+    .filter(post => post.lang == locale)
+    .length;
 
   return {
     allPosts,
@@ -68,7 +69,7 @@ async function getData(locale: string, page: string) {
   }
 }
 
-export default async function Page({ params }: { params: { page: string; locale: string } }) {
+export default async function BlogPagePage({ params }: { params: { page: string; locale: string } }) {
   unstable_setRequestLocale(params.locale)
   const t = await getTranslations('Blog')
    const { allPosts, postsLength } = await getData(params.locale, params.page);

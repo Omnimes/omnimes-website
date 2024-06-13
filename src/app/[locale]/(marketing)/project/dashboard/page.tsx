@@ -20,7 +20,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-export default function DashboardPage({ params: { locale } }: { params: { locale: string } }) {
+export default function DashboardProjectPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = useTranslations("DashboardPage");
