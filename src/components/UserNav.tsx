@@ -8,7 +8,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu";
-import { UserAvatar } from "@/components/UserAvatar";
+import { UserAvatar } from "@/utils/UserAvatar";
 import { getTranslations } from "next-intl/server";
 export default async function UserNav() {
     const user = await getCurrentUser();

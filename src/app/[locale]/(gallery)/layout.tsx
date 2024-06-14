@@ -17,11 +17,11 @@ export default function GalleryLayout({ children, params: { locale } }: Props) {
     // const user = await getCurrentUser();
     return (
         <>
-            <ComponentSearch>
+            {/* <ComponentSearch>
             <Header>
                 <UserAccountNav user={undefined} />
-                </Header>
-            </ComponentSearch>
+            </Header>
+            </ComponentSearch> */}
                 {children}
             <ScrollTopAndComment />
             <Footer />  

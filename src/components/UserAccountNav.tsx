@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { User } from "next-auth"
-import { signOut } from "next-auth/react"
+import { signOut, useSession } from "next-auth/react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,13 +9,15 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu"
-import { UserAvatar } from "@/components/UserAvatar"
+import { UserAvatar } from "@/utils/UserAvatar"
 
 interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email"> | undefined
 }
 
-export function UserAccountNav({ user }: UserAccountNavProps) {
+export function UserAccountNav() {
+  const { data: session } = useSession(); 
+  const user: Pick<User, "name" | "image" | "email"> | undefined = session?.user
   if (user == undefined) {
     return (
       <DropdownMenu>

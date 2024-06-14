@@ -12,6 +12,7 @@ import { ThemeProviders } from "@/components/providers/theme-providers";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Toaster } from "@/components/atoms/Toaster";
+import { NextAuthProviders } from "@/components/providers/nextauth-providers";
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
@@ -111,18 +112,20 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         color="#5bbad5"
       />
       <body className="min-h-screen overflow-x-hidden h-full relative">
-        <NextUIProviders>
-          <NextIntlClientProvider messages={messages}>
-            <ThemeProviders>
-                <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
-                {/* <Widget text={t("titleHanover")}  href={"https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"} buttonText={t("textButton")}  /> */}
-                {children}   
-              <Toaster />
-              <Analytics />
-              <SpeedInsights />
-            </ThemeProviders>
-          </NextIntlClientProvider>
-        </NextUIProviders>
+        <NextAuthProviders>
+          <NextUIProviders>
+            <NextIntlClientProvider messages={messages}>
+              <ThemeProviders>
+                  <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
+                  {/* <Widget text={t("titleHanover")}  href={"https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"} buttonText={t("textButton")}  /> */}
+                  {children}   
+                <Toaster />
+                <Analytics />
+                <SpeedInsights />
+              </ThemeProviders>
+            </NextIntlClientProvider>
+          </NextUIProviders>
+        </NextAuthProviders>
       </body>
     </html>
   );

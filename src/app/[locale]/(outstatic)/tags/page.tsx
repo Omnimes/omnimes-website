@@ -11,9 +11,6 @@ import Header from '@/components/Header';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import SectionContainer from '@/components/SectionContainer';
 import { UserAccountNav } from '@/components/UserAccountNav';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/utils/auth';
-import { getCurrentUser } from '@/utils/session';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Tags" });
@@ -31,7 +28,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-async function getData(locale: string): Promise<{ value: string, label: string, count: number }[] | undefined> {
+async function getData(locale: string) {
   const posts = getDocuments('posts', ['lang', 'tags']);
   if (!posts || posts.length == 0 || posts === undefined) return undefined
   const localePosts = posts.filter((post) => post.lang == locale).map(post => post.tags);
@@ -57,21 +54,18 @@ async function getData(locale: string): Promise<{ value: string, label: string, 
 export default async function TagsPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Tags');
-
-  const tagsData = getData(locale) as unknown as { value: string, label: string, count: number }[];
-  const userData = getCurrentUser();
-
-  let [user, tags] = await Promise.all([userData, tagsData])
-
-  if (tags == undefined) { tags = [] }
+  let tags = await getData(locale) as { value: string, label: string, count: number }[];
+  if (tags == undefined) {
+    tags = []
+    }
   const sortedTags = tags.sort((a, b) => b.count - a.count);
   return (
     <>
-      <ComponentSearch>
+      {/* <ComponentSearch>
         <Header>
-          <UserAccountNav user={user} />
+          <UserAccountNav user={undefined} />
         </Header>
-      </ComponentSearch>
+      </ComponentSearch> */}
       <SectionContainer>
         <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
           <div className="space-x-2 pb-8 pt-6 md:space-y-5">

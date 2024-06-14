@@ -109,11 +109,11 @@ export default async function TagPage(params: Props) {
 
   return (
     <>
-      <ComponentSearch>
+      {/* <ComponentSearch>
         <Header>
           <UserAccountNav user={user} />
         </Header>
-      </ComponentSearch>
+      </ComponentSearch> */}
       <SectionContainer>
         <ListLayout
           posts={posts}
