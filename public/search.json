@@ -1,123 +1,124 @@
-[]  {
-    "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
-    "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych",
-    "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+[
+  {
+    "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+    "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis",
+    "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
     "tags": [
       {
-        "label": "AI",
-        "value": "ai"
+        "value": "ai",
+        "label": "AI"
       },
       {
-        "label": "Modele LLM",
-        "value": "modeleLlm"
+        "label": "Data Analysis",
+        "value": "dataAnalysis"
       },
       {
-        "label": "API GPT-4",
-        "value": "apiGpt4"
+        "value": "dataSecurity",
+        "label": "Data Security"
       },
       {
-        "label": "analiza danych",
-        "value": "analizaDanych"
+        "label": "GPT-4 API",
+        "value": "gpt4Api"
       },
       {
-        "value": "bezpieczeństwoDanych",
-        "label": "Bezpieczeństwo danych"
+        "label": "LLM Models",
+        "value": "llmModels"
       }
     ],
-    "lang": "pl",
-    "publishedAt": "2024-06-10T08:10:14.654Z",
+    "lang": "en",
+    "publishedAt": "2024-06-12T06:07:41.881Z",
     "status": "published"
   },
   {
-    "slug": "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii",
-    "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II",
-    "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
+    "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+    "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II",
+    "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
     "tags": [
       {
         "value": "sparkplugB",
         "label": "Sparkplug B"
       },
       {
-        "label": "OPC UA",
-        "value": "opcUa"
+        "value": "opcUa",
+        "label": "OPC UA"
       },
       {
         "value": "mqtt",
         "label": "MQTT"
       },
       {
-        "value": "protokółKomunikacyjny",
-        "label": "Protokół komunikacyjny"
+        "value": "communicationProtocol",
+        "label": "Communication Protocol"
       },
       {
         "value": "iIoT",
         "label": "IIoT"
       },
       {
-        "label": "Automatyka przemysłowa",
-        "value": "automatykaPrzemysłowa"
+        "label": "Industrial Automation",
+        "value": "industrialAutomation"
       },
       {
-        "label": "Architektura klient/serwer",
-        "value": "architekturaKlient/serwer"
+        "label": "Client/Server Architecture",
+        "value": "client/serverArchitecture"
       },
       {
-        "label": "Bezpieczeństwo danych",
-        "value": "bezpieczeństwoDanych"
+        "label": "Data Security",
+        "value": "dataSecurity"
       },
       {
-        "label": "Standaryzacja danych",
-        "value": "standaryzacjaDanych"
+        "label": "Data Standardization",
+        "value": "dataStandardization"
       }
     ],
-    "lang": "pl",
-    "publishedAt": "2024-06-06T07:36:29.000Z",
+    "lang": "en",
+    "publishedAt": "2024-06-11T10:33:08.620Z",
     "status": "published"
   },
   {
-    "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
-    "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I",
-    "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
+    "slug": "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
+    "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I",
+    "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
     "tags": [
       {
-        "label": "MQTT",
-        "value": "mqtt"
+        "value": "mqtt",
+        "label": "MQTT"
       },
       {
-        "label": "Sparkplug B",
-        "value": "sparkplugB"
+        "value": "sparkplugB",
+        "label": "Sparkplug B"
       },
       {
-        "label": "Protokół komunikacyjny",
-        "value": "protokółKomunikacyjny"
+        "label": "Communication Protocol",
+        "value": "communicationProtocol"
       },
       {
-        "label": "QoS",
-        "value": "qoS"
+        "value": "qoS",
+        "label": "QoS"
       },
       {
-        "label": "IIoT",
-        "value": "iIoT"
+        "value": "iIoT",
+        "label": "IIoT"
       },
       {
-        "label": "Komunikacja IoT",
-        "value": "komunikacjaIoT"
+        "label": "IoT Communication",
+        "value": "ioTCommunication"
       },
       {
-        "label": "Omnimes",
-        "value": "omnimes"
+        "value": "omnimes",
+        "label": "Omnimes"
       },
       {
-        "label": "Przemysł 4.0",
-        "value": "przemysł40"
+        "label": "Industry 4.0",
+        "value": "industry40"
       },
       {
-        "label": "Standardy komunikacyjne",
-        "value": "standardyKomunikacyjne"
+        "label": "Communication Standards",
+        "value": "communicationStandards"
       }
     ],
-    "lang": "pl",
-    "publishedAt": "2024-06-05T07:21:12.000Z",
+    "lang": "en",
+    "publishedAt": "2024-06-05T09:20:51.000Z",
     "status": "published"
   }
 ]
