@@ -5,11 +5,6 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getLocalePrimaryDialects } from '@/data/locales'
 import { getDocuments, load } from 'outstatic/server'
 import { slug } from 'github-slugger'
-import Header from '@/components/Header';
-import SectionContainer from '@/components/SectionContainer';
-import { UserAccountNav } from '@/components/UserAccountNav';
-import { getCurrentUser } from "@/utils/session";
-import { ComponentSearch } from '@/components/ComponentSearch';
 import { ExtendedOstDocument } from '../../blog/page'
 
 type Props = {
@@ -98,29 +93,17 @@ async function getData({ params }: Props) {
 export default async function TagPage(params: Props) {
   const { locale, tag } = params.params;
   unstable_setRequestLocale(locale);
-  const user = await getCurrentUser();
   const t = await getTranslations('Tag');
-
   let tags = await getDataTags(locale) as { value: string, label: string, count: number }[];
   if (tags?.length == 0 || !tags) return <p className="mt-10 text-center">{t('notFound')}</p>
-
   const posts = await getData(params);
   if (posts?.length == 0 || !posts) return <p className="mt-10 text-center">{t('notFound')}</p>
 
   return (
-    <>
-      {/* <ComponentSearch>
-        <Header>
-          <UserAccountNav user={user} />
-        </Header>
-      </ComponentSearch> */}
-      <SectionContainer>
         <ListLayout
           posts={posts}
           tags={tags}
           tag={tag}
         />
-      </SectionContainer>
-    </>
   )
 }

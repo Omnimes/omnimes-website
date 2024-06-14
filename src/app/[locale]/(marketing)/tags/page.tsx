@@ -5,12 +5,6 @@ import { slug } from 'github-slugger'
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from '@/data/locales'
 import { getDocuments } from 'outstatic/server';
-import { ComponentSearch } from '@/components/ComponentSearch';
-import { Footer } from '@/components/Footer';
-import Header from '@/components/Header';
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
-import SectionContainer from '@/components/SectionContainer';
-import { UserAccountNav } from '@/components/UserAccountNav';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Tags" });
@@ -61,12 +55,6 @@ export default async function TagsPage({ params: { locale } }: { params: { local
   const sortedTags = tags.sort((a, b) => b.count - a.count);
   return (
     <>
-      {/* <ComponentSearch>
-        <Header>
-          <UserAccountNav user={undefined} />
-        </Header>
-      </ComponentSearch> */}
-      <SectionContainer>
         <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
           <div className="space-x-2 pb-8 pt-6 md:space-y-5">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
@@ -91,9 +79,6 @@ export default async function TagsPage({ params: { locale } }: { params: { local
             })}
           </div>
         </div>
-      </SectionContainer>
-      <ScrollTopAndComment />
-      <Footer />
     </>
   )
 }

@@ -6,7 +6,7 @@ import Image from "next/image"
 import { useLocale, useTranslations } from 'next-intl'
 import getFormattedDate from '@/lib/getFormattedDate'
 import MDXComponent from '@/components/mdx/MdxComponent'
-import { ExtendedOstDocument } from '@/app/[locale]/(outstatic)/blog/page'
+import { ExtendedOstDocument } from '@/app/[locale]/(marketing)/blog/page'
 interface LayoutProps {
   post: ExtendedOstDocument;
 }
