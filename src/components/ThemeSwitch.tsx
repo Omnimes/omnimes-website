@@ -10,7 +10,7 @@ const ThemeSwitch = () => {
   useEffect(() => setMounted(true), [])
 
   if (!mounted) {
-    return <Skeleton className="w-6 h-6 rounded"/>
+    return <Skeleton className="w-7 h-7 rounded"/>
   }
 
   return (

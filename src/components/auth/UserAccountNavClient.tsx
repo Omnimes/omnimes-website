@@ -10,17 +10,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu"
 import { UserAvatar } from "@/utils/UserAvatar"
+import {Skeleton} from "@nextui-org/react";
 
 export function UserAccountNavClient() {
-  const { data: session } = useSession(); 
+  const { status, data: session } = useSession(); 
   const user: Pick<User, "name" | "image" | "email"> | undefined = session?.user
+ if(status == 'loading' && user == undefined) {
+    return (<Skeleton className="w-7 h-7 rounded"/>)
+ }
   if (user == undefined) {
     return (
       <DropdownMenu>
       <DropdownMenuTrigger>
         <UserAvatar
           user={{ name: null, image: null }}
-          className="h-8 w-8"
+          className="h-7 w-7"
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -39,7 +43,7 @@ export function UserAccountNavClient() {
       <DropdownMenuTrigger>
         <UserAvatar
           user={{ name: user.name || null, image: user.image || null }}
-          className="h-8 w-8"
+          className="h-7 w-7"
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
