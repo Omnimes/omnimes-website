@@ -13,7 +13,6 @@ import SectionContainer from '@/components/SectionContainer';
 import { UserAccountNav } from '@/components/UserAccountNav';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/utils/auth';
-// import { getCurrentUser } from "@/utils/session";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Tags" });
@@ -54,7 +53,7 @@ async function getData(locale: string) {
   return Object.values(tagCounts);
 }
 
-export async function getCurrentUser() {
+async function getCurrentUser() {
   const session = await getServerSession(authOptions);
   console.log(session)
   return session?.user
