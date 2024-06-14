@@ -13,6 +13,7 @@ import SectionContainer from '@/components/SectionContainer';
 import { UserAccountNav } from '@/components/UserAccountNav';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/utils/auth';
+import { getCurrentUser } from '@/utils/session';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Tags" });
@@ -30,7 +31,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-async function getData(locale: string) {
+async function getData(locale: string): Promise<{ value: string, label: string, count: number }[] | undefined> {
   const posts = getDocuments('posts', ['lang', 'tags']);
   if (!posts || posts.length == 0 || posts === undefined) return undefined
   const localePosts = posts.filter((post) => post.lang == locale).map(post => post.tags);
@@ -53,20 +54,16 @@ async function getData(locale: string) {
   return Object.values(tagCounts);
 }
 
-async function getCurrentUser() {
-  const session = await getServerSession(authOptions);
-  console.log(session)
-  return session?.user
-}
-
 export default async function TagsPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Tags');
-  let tags = await getData(locale) as { value: string, label: string, count: number }[];
-  if (tags == undefined) {
-    tags = []
-    }
-  const user = await getCurrentUser();
+
+  const tagsData = getData(locale) as unknown as { value: string, label: string, count: number }[];
+  const userData = getCurrentUser();
+
+  let [user, tags] = await Promise.all([userData, tagsData])
+
+  if (tags == undefined) { tags = [] }
   const sortedTags = tags.sort((a, b) => b.count - a.count);
   return (
     <>
