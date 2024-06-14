@@ -11,11 +11,7 @@ import {
 } from "@/components/atoms/DropdownMenu"
 import { UserAvatar } from "@/utils/UserAvatar"
 
-interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
-  user: Pick<User, "name" | "image" | "email"> | undefined
-}
-
-export function UserAccountNav() {
+export function UserAccountNavClient() {
   const { data: session } = useSession(); 
   const user: Pick<User, "name" | "image" | "email"> | undefined = session?.user
   if (user == undefined) {

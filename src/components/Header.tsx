@@ -1,13 +1,13 @@
 'use client'
-import Logo from '@/data/logo.svg'
-import Image from 'next/image'
-import ThemeSwitch from './ThemeSwitch'
-import SearchButton from './SearchButton'
-import LocaleSwitcher from './LocaleSwitcher'
-import { ReactNode, useState } from 'react'
-import { useTranslations } from 'next-intl'
-import { LuChevronDown } from 'react-icons/lu'
-import { headerNavLinks, headerNavLinksDropDown } from '@/data/headerNavLinks'
+import Logo from '@/data/logo.svg';
+import Image from 'next/image';
+import ThemeSwitch from './ThemeSwitch';
+import SearchButton from './SearchButton';
+import LocaleSwitcher from './LocaleSwitcher';
+import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { LuChevronDown } from 'react-icons/lu';
+import { headerNavLinks, headerNavLinksDropDown } from '@/data/headerNavLinks';
 import {
   Navbar,
   NavbarBrand,
@@ -24,9 +24,9 @@ import {
   Button,
   DropdownSection,
   Divider
-} from '@nextui-org/react'
-import { SessionProvider } from 'next-auth/react'
-import { UserAccountNav } from './UserAccountNav'
+} from '@nextui-org/react';
+import { SessionProvider } from 'next-auth/react';
+import { UserAccountNavClient } from './auth/UserAccountNavClient';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -139,13 +139,13 @@ export default function Header() {
         {/* Widgety(język, wyszukiwarka i dark mode) na końcu */}
         <NavbarContent justify="end" className="hidden sm:flex">
           <LocaleSwitcher />
-          <UserAccountNav />
+          <UserAccountNavClient />
           <SearchButton />
           <ThemeSwitch />
         </NavbarContent>
         <NavbarContent justify="center" className="flex sm:hidden">
           <LocaleSwitcher />
-          <UserAccountNav />
+          <UserAccountNavClient />
           <SearchButton />
           <ThemeSwitch />
         </NavbarContent>
