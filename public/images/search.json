@@ -1,0 +1,124 @@
+[
+  {
+    "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+    "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych",
+    "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+    "tags": [
+      {
+        "label": "AI",
+        "value": "ai"
+      },
+      {
+        "label": "Modele LLM",
+        "value": "modeleLlm"
+      },
+      {
+        "label": "API GPT-4",
+        "value": "apiGpt4"
+      },
+      {
+        "label": "analiza danych",
+        "value": "analizaDanych"
+      },
+      {
+        "value": "bezpieczeństwoDanych",
+        "label": "Bezpieczeństwo danych"
+      }
+    ],
+    "lang": "pl",
+    "publishedAt": "2024-06-10T08:10:14.654Z",
+    "status": "published"
+  },
+  {
+    "slug": "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii",
+    "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II",
+    "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
+    "tags": [
+      {
+        "value": "sparkplugB",
+        "label": "Sparkplug B"
+      },
+      {
+        "label": "OPC UA",
+        "value": "opcUa"
+      },
+      {
+        "value": "mqtt",
+        "label": "MQTT"
+      },
+      {
+        "value": "protokółKomunikacyjny",
+        "label": "Protokół komunikacyjny"
+      },
+      {
+        "value": "iIoT",
+        "label": "IIoT"
+      },
+      {
+        "label": "Automatyka przemysłowa",
+        "value": "automatykaPrzemysłowa"
+      },
+      {
+        "label": "Architektura klient/serwer",
+        "value": "architekturaKlient/serwer"
+      },
+      {
+        "label": "Bezpieczeństwo danych",
+        "value": "bezpieczeństwoDanych"
+      },
+      {
+        "label": "Standaryzacja danych",
+        "value": "standaryzacjaDanych"
+      }
+    ],
+    "lang": "pl",
+    "publishedAt": "2024-06-06T07:36:29.000Z",
+    "status": "published"
+  },
+  {
+    "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
+    "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I",
+    "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
+    "tags": [
+      {
+        "label": "MQTT",
+        "value": "mqtt"
+      },
+      {
+        "label": "Sparkplug B",
+        "value": "sparkplugB"
+      },
+      {
+        "label": "Protokół komunikacyjny",
+        "value": "protokółKomunikacyjny"
+      },
+      {
+        "label": "QoS",
+        "value": "qoS"
+      },
+      {
+        "label": "IIoT",
+        "value": "iIoT"
+      },
+      {
+        "label": "Komunikacja IoT",
+        "value": "komunikacjaIoT"
+      },
+      {
+        "label": "Omnimes",
+        "value": "omnimes"
+      },
+      {
+        "label": "Przemysł 4.0",
+        "value": "przemysł40"
+      },
+      {
+        "label": "Standardy komunikacyjne",
+        "value": "standardyKomunikacyjne"
+      }
+    ],
+    "lang": "pl",
+    "publishedAt": "2024-06-05T07:21:12.000Z",
+    "status": "published"
+  }
+]
