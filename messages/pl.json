@@ -751,5 +751,51 @@
     "alt21": "Slajd z prezentacji omawiający połączenie AI, Big Data i Przemysłu 4.0 w Przemysł 5.0. Ilustracje przedstawiające człowieka, AI i produkcję.",
     "alt22": "Wykładowca prezentuje analizę danych produkcyjnych na wykładzie. Na ekranie wyświetlony jest panel główny systemu Omnimes z wykresami i danymi.",
     "alt23": "Wykładowca prezentuje harmonogram produkcji na wykładzie z systemu. Na ekranie wyświetlony jest kalendarz harmonogramu produkcji w systemie Omnimes."
+  },
+  "DashboardNav": {
+    "home": "Strona Główna",
+    "docs": "Dokumnetacja",
+    "support": "Wsparcie",
+    "webinars": "Webinaria",
+    "billing": "Rozliczenia",
+    "settings": "Ustawienia"
+  },
+  "DashboardFooter": {
+    "footer": "System Realizacji Produkcji."
+  },
+  "DashboardPanelMeta": {
+    "title": "OmniMES - Panel",
+    "desc": "To wszechstronny panel zarządzania, który umożliwia użytkownikom kontrolę i optymalizację różnych aspektów ich działalności. Zaprojektowany z myślą o intuicyjności i funkcjonalności.",
+    "keywords": "dashboard zarządzania, panel zarządzania, panel dewelopera, zarządzanie zasobami, analizy i raporty, zarządzanie użytkownikami, integracja systemów, narzędzia deweloperskie, dostęp do API, optymalizacja procesów, monitoring zasobów, raportowanie, zaawansowane ustawienia, kontrola operacyjna, efektywność zarządzania"
+  },
+  "SettingsPage": {
+    "title": "OmniMES - Ustawienia",
+    "desc": "Zarządzaj ustawieniami konta i strony internetowej.",
+    "keywords": "ustawienia konta, ustawienia strony internetowej, zarządzanie ustawieniami, konfiguracja konta, personalizacja strony, opcje konta, preferencje użytkownika, panel administracyjny, edycja ustawień"
+  },
+  "SettingsForm": {
+    "toastWrong": "Coś poszło nie tak.",
+    "toastWrongDesc": "Twoje imię nie zostało zaktualizowane. Proszę spróbuj ponownie.",
+    "toastSuccessDesc": "Twoje imię zostało zaktualizowane.",
+    "title": "Twoje Imię",
+    "description": "Proszę podaj swoje pełne imię lub nazwę, którą preferujesz.",
+    "name": "Imię",
+    "save": "Zapisz",
+    "nameMsg": "Imię musi składać się z co najmniej 3 znaków.",
+    "nameMsg2": "Imię nie może być dłuższe niż 32 znaki."
+  },
+  "DropdownNav": {
+    "login": "Logowanie",
+    "register": "Rejestracja",
+    "dashboard": "Panel",
+    "webinars": "Webinaria",
+    "billing": "Rozliczenia",
+    "settings": "Ustawienia",
+    "logout": "Wyloguj"
+  },
+  "WebinarsPage": {
+    "title":"Omnimes - Webinary",
+    "desc": "Zdobądź nową wiedzę i umiejętności. Oferujemy szeroki zakres tematów prowadzonych przez ekspertów z branży.",
+    "keywords": "webinary, szkolenia online, nauka zdalna, edukacja, rozwój zawodowy, szkolenia, kursy online, webinaria eksperckie"
   }
 }

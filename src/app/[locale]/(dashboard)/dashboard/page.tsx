@@ -1,21 +1,38 @@
+import { unstable_setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation'
-import { authOptions } from '@/utils/auth'
 import { getCurrentUser } from '@/utils/session'
+import { getTranslations } from 'next-intl/server';
+import { getLocalePrimaryDialects } from '@/data/locales';
+import { genPageMetadata } from '@/app/seo';
 // import { EmptyPlaceholder } from "@/components/empty-placeholder"
 // import { DashboardHeader } from "@/components/header"
 // import { PostCreateButton } from "@/components/post-create-button"
 // import { PostItem } from "@/components/post-item"
 // import { DashboardShell } from "@/components/shell"
 
-export const metadata = {
-  title: 'Dashboard',
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: "DashboardPanelMeta" });
+  const title = t('title');
+  const description = t('desc');
+  const keywords = t('keywords');
+  const localeShort = getLocalePrimaryDialects(locale);
+  const obj = {
+    title,
+    description,
+    keywords,
+    localeShort,
+  }
+  const meta = genPageMetadata(obj)
+  return meta
 }
 
-export default async function DashboardPage() {
-  const user = await getCurrentUser()
+export default async function DashboardPage({params: { locale }}: {params: { locale: string }}) {
+  unstable_setRequestLocale(locale);
+  const user = await getCurrentUser();
 
   if (!user) {
-    redirect(authOptions?.pages?.signIn || '/login')
+    redirect('/login')
   }
 
   return (

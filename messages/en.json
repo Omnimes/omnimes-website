@@ -751,5 +751,51 @@
     "alt21": "Slide from a presentation discussing the integration of AI, Big Data, and Industry 4.0 into Industry 5.0. Illustrations depicting a human, AI, and production.",
     "alt22": "Lecturer presenting an analysis of production data at a lecture. The screen displays the main panel of the Omnimes system with charts and data.",
     "alt23": "Lecturer presenting a production schedule at a lecture from the system. The screen displays the production schedule calendar in the Omnimes system."
+  },
+  "DashboardNav": {
+    "home": "Home",
+    "docs": "Documentation",
+    "support": "Support",
+    "webinars": "Webinars",
+    "billing": "Billing",
+    "settings": "Settings"
+  },
+  "DashboardFooter": {
+    "footer": "Production Execution System."
+  },
+  "DashboardPanelMeta": {
+    "title": "OmniMES - Dashboard",
+    "desc": "This is a comprehensive management dashboard that allows users to control and optimize various aspects of their operations. Designed with intuitiveness and functionality in mind.",
+    "keywords": "management dashboard, admin panel, developer panel, resource management, analyses and reports, user management, system integration, developer tools, API access, process optimization, resource monitoring, reporting, advanced settings, operational control, management efficiency"
+  },
+  "SettingsPage": {
+    "title": "Settings",
+    "desc": "Manage account and website settings.",
+    "keywords": "account settings, website settings, settings management, account configuration, website customization, account options, user preferences, admin panel, settings editing"
+  },
+  "SettingsForm": {
+    "toastWrong": "Something went wrong.",
+    "toastWrongDesc": "Your name was not updated. Please try again.",
+    "toastSuccessDesc": "Your name has been updated.",
+    "title": "Your Name",
+    "description": "Please enter your full name or a display name you are comfortable with.",
+    "name": "Name",
+    "save": "Save",
+    "nameMsg": "Name must be at least 3 characters long.",
+    "nameMsg2": "Name cannot be longer than 32 characters."
+  },
+  "DropdownNav": {
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "webinars": "Webinars",
+    "billing": "Billing",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "WebinarsPage": {
+    "title": "Omnimes - Webinars",
+    "desc": "Gain new knowledge and skills. We offer a wide range of topics led by industry experts.",
+    "keywords": "webinars, online training, remote learning, education, professional development, training, online courses, expert webinars"
   }
 }

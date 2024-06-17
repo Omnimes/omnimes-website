@@ -37,7 +37,7 @@ export default function Header() {
         isBordered
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className="navbar sticky top-0 xl:px-0 border-b border-[#e5e7eb] dark:border-[#1D283A]"
+        className="navbar sticky top-0 xl:px-0 border-b border-border"
       >
         {/* Mobile Menu Toogle */}
         <NavbarContent className="min-[690px]:hidden" justify="start">

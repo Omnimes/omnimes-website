@@ -1,11 +1,9 @@
 'use client'
-
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-
 import { cn } from '@/utils/utils'
 import { LuFileVideo2, LuCreditCard, LuSettings } from 'react-icons/lu'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 interface DashboardNavProps {
   items: SidebarNavItem[]
@@ -14,6 +12,8 @@ interface DashboardNavProps {
 export function DashboardNav({ items }: DashboardNavProps) {
   const path = usePathname()
   const locale = useLocale()
+  const t = useTranslations("DashboardNav")
+
   if (!items?.length) {
     return null
   }
@@ -33,7 +33,7 @@ export function DashboardNav({ items }: DashboardNavProps) {
                 {item.icon == 'webinar' && <LuFileVideo2 className="mr-2 h-4 w-4" />}
                 {item.icon == 'billing' && <LuCreditCard className="mr-2 h-4 w-4" />}
                 {item.icon == 'settings' && <LuSettings className="mr-2 h-4 w-4" />}
-                <span>{item.title}</span>
+                <span>{t(item.title)}</span>
               </span>
             </Link>
           )

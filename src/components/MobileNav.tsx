@@ -1,11 +1,12 @@
 import * as React from "react"
 import Link from "next/link"
-
 import { siteMetadata } from "@/data/siteMetadata"
 import { cn } from "@/utils/utils"
 import { useLockBody } from "@/hooks/useLockBody"
 import Logo from "@/data/logo.svg";
 import Image from "next/image"
+import { useTranslations } from "next-intl"
+
 interface MobileNavProps {
   items: MainNavItem[]
   children?: React.ReactNode
@@ -13,20 +14,20 @@ interface MobileNavProps {
 
 export function MobileNav({ items, children }: MobileNavProps) {
   useLockBody()
-
+  const t = useTranslations("DashboardNav")
   return (
     <div
       className={cn(
-          "fixed inset-0 top-16 z-60 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden"
+          "fixed inset-0 top-16 z-60 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-4 pb-32 animate-in slide-in-from-bottom-80 md:hidden bg-white/80 dark:bg-black/80"
       )}
     >
-      <div className="relative z-60 grid gap-6 rounded-md p-4 shadow-md backdrop-blur-xl backdrop-saturate-150 bg-background/70">
+      <div className="relative border border-foreground-200 z-60 grid gap-6 rounded-md p-4 shadow-lg backdrop-blur-xl backdrop-saturate-150 bg-background/90">
         <Link href="/" className="flex items-center space-x-2">
         <Image
             src={Logo.src}
             alt={'OmniMES logo'}
             width={44}
-            height={36}
+            height={44}
             priority
             className="mr-2"
             style={{ width: '44px', height: 'auto' }}
@@ -43,7 +44,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
             >
-              {item.title}
+              {t(item.title)}
             </Link>
           ))}
         </nav>

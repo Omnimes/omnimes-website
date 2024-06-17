@@ -1,38 +1,36 @@
-
 export const dashboardConfig: DashboardConfig = {
     mainNav: [
     {
-      title: "Strona Główna",
+      title: "home",
       href: "/",
     },
     {
-      title: "Documentation",
+      title: "docs",
       href: "/docs",
       disabled: true,
     },
     {
-      title: "Support",
+      title: "support",
       href: "/support",
       disabled: true,
     },
   ],
   sidebarNav: [
     {
-      title: "Webinary",
-      href: "/dashboard",
+      title: "webinars",
+      href: "/dashboard/webinars",
       icon: "webinar",
     },
     {
-      title: "Billing",
+      title: "billing",
       href: "/dashboard/billing",
       icon: "billing",
       disabled: true
     },
     {
-      title: "Settings",
+      title: "settings",
       href: "/dashboard/settings",
       icon: "settings",
-      disabled: true
     },
   ],
 }

@@ -6,36 +6,40 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu"
 import { UserAvatar } from "@/utils/UserAvatar"
-import {Skeleton} from "@nextui-org/react";
+import { Skeleton } from "@nextui-org/react";
+import { useTranslations } from "next-intl"
 
 export function UserAccountNavClient() {
-  const { status, data: session } = useSession(); 
+  const { status, data: session } = useSession();
   const user: Pick<User, "name" | "image" | "email"> | undefined = session?.user
- if(status == 'loading' && user == undefined) {
-    return (<Skeleton className="w-7 h-7 rounded"/>)
- }
+  const t = useTranslations("DropdownNav")
+
+  if (status == 'loading' && user == undefined) {
+    return (<Skeleton className="w-7 h-7 rounded" />)
+  }
   if (user == undefined) {
     return (
       <DropdownMenu>
-      <DropdownMenuTrigger>
-        <UserAvatar
-          user={{ name: null, image: null }}
-          className="h-7 w-7"
-        />
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem asChild>
-          <Link href="/login">Logowanie</Link>
+        <DropdownMenuTrigger>
+          <UserAvatar
+            user={{ name: null, image: null }}
+            className="h-7 w-7"
+          />
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end">
+          <DropdownMenuItem asChild>
+            <Link href="/login">{t("login")}</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-          <Link href="/register">Rejestracja</Link>
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+            <Link href="/register">{t("register")}</Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     )
   }
   return (
@@ -46,12 +50,12 @@ export function UserAccountNavClient() {
           className="h-7 w-7"
         />
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="w-56">
         <div className="flex items-center justify-start gap-2 p-2">
           <div className="flex flex-col space-y-1 leading-none">
             {user.name && <p className="font-medium">{user.name}</p>}
             {user.email && (
-              <p className="w-[200px] truncate text-sm ">
+              <p className="w-[200px] truncate text-sm text-foreground-400">
                 {user.email}
               </p>
             )}
@@ -59,14 +63,17 @@ export function UserAccountNavClient() {
         </div>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <Link href="/dashboard">Dashboard</Link>
+          <Link href="/dashboard">{t("dashboard")}</Link>
         </DropdownMenuItem>
-        {/* <DropdownMenuItem asChild className="cursor-not-allowed opacity-80">
-          <Link href="/dashboard/billing">Billing</Link>
+        <DropdownMenuItem asChild>
+          <Link href="/dashboard/webinars">{t("webinars")}</Link>
         </DropdownMenuItem>
-        <DropdownMenuItem asChild className="cursor-not-allowed opacity-80">
-          <Link href="/dashboard/settings">Settings</Link>
+        {/* <DropdownMenuItem asChild>
+          <Link href="/dashboard/billing">{t("billing")}</Link>
         </DropdownMenuItem> */}
+        <DropdownMenuItem asChild>
+          <Link href="/dashboard/settings">{t("settings")}</Link>
+        </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onSelect={(event) => {
@@ -76,7 +83,7 @@ export function UserAccountNavClient() {
             })
           }}
         >
-          Sign out
+          {t("logout")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

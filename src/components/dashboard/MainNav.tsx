@@ -8,6 +8,7 @@ import { useSelectedLayoutSegment } from "next/navigation"
 import { useState } from "react";
 import Image from "next/image";
 import Logo from "@/data/logo.svg";
+import { useTranslations } from "next-intl"
 
 interface MainNavProps {
   items?: MainNavItem[]
@@ -15,26 +16,27 @@ interface MainNavProps {
 }
 
 export const MainNav = ({ items, children }: MainNavProps) => {
-    const segment = useSelectedLayoutSegment();
-    const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
+  const segment = useSelectedLayoutSegment();
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
+  const t = useTranslations("DashboardNav")
   return (
     <div className="flex gap-6 md:gap-10">
-     <Link href="/" className="hidden items-center space-x-2 md:flex">
-         <Image
-            src={Logo.src}
-            alt={'OmniMES logo'}
-            width={44}
-            height={36}
-            priority
-            className="mr-2"
-            style={{ width: '44px', height: 'auto' }}
-          />
+      <Link href="/" className="hidden items-center space-x-2 md:flex">
+        <Image
+          src={Logo.src}
+          alt={'OmniMES logo'}
+          width={32}
+          height={32}
+          priority
+          className="mr-2"
+          style={{ width: '32px', height: 'auto' }}
+        />
         <span className="hidden font-bold sm:inline-block">
           {siteMetadata.headerTitle}
         </span>
       </Link>
-       {items?.length ? (
+      {items?.length ? (
         <nav className="hidden gap-6 md:flex">
           {items?.map((item, index) => (
             <Link
@@ -48,7 +50,7 @@ export const MainNav = ({ items, children }: MainNavProps) => {
                 item.disabled && "cursor-not-allowed opacity-80"
               )}
             >
-              {item.title}
+              {t(item.title)}
             </Link>
           ))}
         </nav>

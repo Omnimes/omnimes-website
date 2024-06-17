@@ -10,30 +10,32 @@ import {
   DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu"
 import { UserAvatar } from "@/utils/UserAvatar"
+import { useTranslations } from "next-intl"
 
 interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email"> | undefined
 }
 
 export function UserAccountNavServer({ user }: UserAccountNavProps) {
+  const t = useTranslations("DropdownNav")
   if (user == undefined) {
     return (
       <DropdownMenu>
-      <DropdownMenuTrigger>
-        <UserAvatar
-          user={{ name: null, image: null }}
-          className="h-8 w-8"
-        />
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem asChild>
-          <Link href="/login">Logowanie</Link>
+        <DropdownMenuTrigger>
+          <UserAvatar
+            user={{ name: null, image: null }}
+            className="h-7 w-7"
+          />
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end">
+          <DropdownMenuItem asChild>
+            <Link href="/login">{t("login")}</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-          <Link href="/register">Rejestracja</Link>
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+            <Link href="/register">{t("register")}</Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     )
   }
   return (
@@ -41,7 +43,7 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
       <DropdownMenuTrigger>
         <UserAvatar
           user={{ name: user.name || null, image: user.image || null }}
-          className="h-8 w-8"
+          className="h-7 w-7"
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -49,7 +51,7 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
           <div className="flex flex-col space-y-1 leading-none">
             {user.name && <p className="font-medium">{user.name}</p>}
             {user.email && (
-              <p className="w-[200px] truncate text-sm ">
+              <p className="w-[200px] truncate text-sm">
                 {user.email}
               </p>
             )}
@@ -57,14 +59,17 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
         </div>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <Link href="/dashboard">Dashboard</Link>
+          <Link href="/dashboard">{t("dashboard")}</Link>
         </DropdownMenuItem>
-        {/* <DropdownMenuItem asChild className="cursor-not-allowed opacity-80">
-          <Link href="/dashboard/billing">Billing</Link>
+        <DropdownMenuItem asChild>
+          <Link href="/dashboard/webinars">{t("webinars")}</Link>
         </DropdownMenuItem>
-        <DropdownMenuItem asChild className="cursor-not-allowed opacity-80">
-          <Link href="/dashboard/settings">Settings</Link>
+        {/* <DropdownMenuItem asChild>
+          <Link href="/dashboard/billing">{t("billing")}</Link>
         </DropdownMenuItem> */}
+        <DropdownMenuItem asChild>
+          <Link href="/dashboard/settings">{t("settings")}</Link>
+        </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onSelect={(event) => {
@@ -74,7 +79,7 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
             })
           }}
         >
-          Sign out
+          {t("logout")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

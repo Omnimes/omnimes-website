@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import { FeatureCard } from './atoms/Card'
+import { FeatureCard } from './atoms/FeatureCard'
 import {
   AnalyseIcon,
   CreatorIcon,
