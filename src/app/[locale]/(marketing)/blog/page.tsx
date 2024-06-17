@@ -33,7 +33,6 @@ async function getData(locale: string) {
       'title',
       'publishedAt',
       'slug',
-      'coverImage',
       'description',
       'author',
       'tags'
@@ -54,8 +53,22 @@ async function getData(locale: string) {
 }
 
 async function getDataToSearch() {
-  const posts = getDocuments('posts', ['slug', 'title', 'description', 'tags', 'lang'])
-    .filter(post => post.status == 'published')
+  const db = await load();
+  const AllPosts = await db
+    .find<ExtendedOstDocument>({ collection: 'posts', status: 'published' }, [
+      'title',
+      'slug',
+      'description',
+      'lang',
+      'tags'
+    ])
+    .sort({ publishedAt: -1 })
+    .toArray()
+    
+    const posts = AllPosts.map(post => ({
+        ...post,
+        tags: post.tags.map(tag => tag.label).join(", ")
+      }))
 
   await generateSearchJSON(posts);
   return
