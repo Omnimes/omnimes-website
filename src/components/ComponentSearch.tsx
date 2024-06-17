@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl'
 import { KBarSearchProvider } from 'pliny/search/KBar.js'
 import { usePathname, useRouter } from 'next/navigation'
 
-
 export const ComponentSearch = ({ children }: { children: ReactNode }) => {
   const router = useRouter()
   const pathname = usePathname()
@@ -13,7 +12,7 @@ export const ComponentSearch = ({ children }: { children: ReactNode }) => {
   return (
       <KBarSearchProvider
         kbarConfig={{
-          searchDocumentsPath: '/images/search.json',
+          searchDocumentsPath: 'search/search.json',
           defaultActions: [
             // Sekcja MAin
             {
