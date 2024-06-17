@@ -53,17 +53,17 @@ async function getData(locale: string) {
   }
 }
 
-async function getDataToSearch(locale: string) {
+async function getDataToSearch() {
   const posts = getDocuments('posts', ['slug', 'title', 'description', 'tags', 'lang'])
     .filter(post => post.status == 'published')
-    .filter(post => post.lang == locale)
 
   await generateSearchJSON(posts);
+  return
 }
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  await getDataToSearch(locale);
+  await getDataToSearch();
   const { allPosts, postsLength } = await getData(locale);
   const t = await getTranslations('Blog');
   const pageNumber = 1
