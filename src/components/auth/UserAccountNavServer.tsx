@@ -9,8 +9,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu"
-import { UserAvatar } from "@/utils/UserAvatar"
 import { useTranslations } from "next-intl"
+import { UserAvatar } from "../UserAvatar"
 
 interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email"> | undefined

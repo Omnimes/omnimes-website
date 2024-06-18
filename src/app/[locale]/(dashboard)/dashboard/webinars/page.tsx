@@ -1,5 +1,3 @@
-import { redirect } from 'next/navigation'
-import { getCurrentUser } from '@/utils/session'
 import { getTranslations } from 'next-intl/server';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { genPageMetadata } from '@/app/seo';
@@ -21,14 +19,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-export default async function WebinarsPage({params: { locale }}: {params: { locale: string }}) {
+export default function WebinarsPage({params: { locale }}: {params: { locale: string }}) {
   unstable_setRequestLocale(locale);
-  const user = await getCurrentUser();
-
-  if (!user) {
-    redirect('/login')
-  }
-
   return (
     <main>
       już wkrótce...

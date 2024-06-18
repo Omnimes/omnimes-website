@@ -8,8 +8,8 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu";
-import { UserAvatar } from "@/utils/UserAvatar";
 import { getTranslations } from "next-intl/server";
+import { UserAvatar } from "./UserAvatar";
 export default async function UserNav() {
     const user = await getCurrentUser();
     const t = await getTranslations("UserNav");

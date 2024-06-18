@@ -4,8 +4,10 @@ import {pathnames, locales, localePrefix, localeDetection} from './config';
 import { NextRequest } from "next/server";
 
 const adminPages = ['/admin'] // dodawać wszystkie admin page
-const protectedPages = ['/dashboard'] // dodawać wszystkie protected page
-export const excludePaths = [...adminPages, ...protectedPages, '/blog/[slug]', '/tags/[tag]'];
+const LoginAndRegisterPages = ['/login', '/register']
+const protectedPages = ['/dashboard', '/dashboard/settings'] // dodawać wszystkie protected page
+const developerPages = ['/dashboard/webinars', '/dashboard/billing'] // dodawać wszystkie developer page
+export const excludePaths = [...adminPages, ...protectedPages, ...developerPages, '/blog/[slug]', '/tags/[tag]'];
 export const defaultLocale = 'en' as const;
 
 export const intlMiddleware =  createMiddleware({
@@ -15,6 +17,24 @@ export const intlMiddleware =  createMiddleware({
   localeDetection,
   localePrefix
 });
+
+// Middleware dla uzytkowników zalogowanych 
+const LoginAndRegisterMiddleware = withAuth(
+  // Note that this callback is only invoked if
+  // the `authorized` callback has returned `true`
+  // and not for pages listed in `pages`.
+  function onSuccess(req) {
+    return intlMiddleware(req);
+  },
+  {
+    callbacks: {
+      authorized: ({token}) => token == null
+    },
+    pages: {
+      signIn: `/`
+    }
+  }
+);
 
 // Middleware dla uzytkowników zalogowanych 
 const authMiddleware = withAuth(
@@ -35,6 +55,19 @@ const authMiddleware = withAuth(
 );
 
 // Middleware dla użytkowników Administracyjnych
+const developerMidleware = withAuth(
+  {
+  callbacks: {
+        authorized: ({ token }) => {
+          return token?.role === "developer" || token?.role === "admin"
+        }
+    },
+    pages: {
+      signIn: `/dashboard`
+    }
+})
+
+// Middleware dla użytkowników Administracyjnych
 const adminMidleware = withAuth(
   {
   callbacks: {
@@ -49,9 +82,25 @@ const adminMidleware = withAuth(
 
 export default function middleware(req: NextRequest) {
 
+  /* Dopasowanie do tras logowania i rejestracji */
+  const LoginAndRegisterPathnameRegexp = RegExp(
+    `^(/(${locales.join('|')}))?(${LoginAndRegisterPages
+      .flatMap((p) => (p === '/' ? ['', '/'] : p))
+      .join('|')})/?$`,
+    'i'
+  );
+
   /* Dopasowanie do chronionych tras */
   const ProtectedPathnameRegexp = RegExp(
     `^(/(${locales.join('|')}))?(${protectedPages
+      .flatMap((p) => (p === '/' ? ['', '/'] : p))
+      .join('|')})/?$`,
+    'i'
+  );
+
+  /* Dopasowanie do chronionych tras developera */
+  const DeveloperPathnameRegexp = RegExp(
+    `^(/(${locales.join('|')}))?(${developerPages
       .flatMap((p) => (p === '/' ? ['', '/'] : p))
       .join('|')})/?$`,
     'i'
@@ -68,6 +117,16 @@ export default function middleware(req: NextRequest) {
   /* Sprawdzenie czy trasa jest dostępna tylko dla admina */
   if (AdminPathnameRegexp.test(req.nextUrl.pathname)) {
     return (adminMidleware as any)(req);
+  }
+
+  /* Sprawdzenie czy trasa jest dostępna tylko dla developera i admina */
+  if(DeveloperPathnameRegexp.test(req.nextUrl.pathname)) {
+    return (developerMidleware as any)(req);
+  }
+
+  /* Trasy dla niezalogowanych - blokujemy dla zalogowanych */
+  if(LoginAndRegisterPathnameRegexp.test(req.nextUrl.pathname)) {
+    return (LoginAndRegisterMiddleware as any)(req);
   }
   
   /* Sprawdzenie czy trasa jest dostępna tylko dla zalogowanego uzytkownika */

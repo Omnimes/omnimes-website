@@ -79,10 +79,3 @@ export const projectsData: Project[] = [
     href: '/subscription',
   },
 ]
-
-export const ProjectContent = [
-  {
-    title: "",
-    
-  }
-]

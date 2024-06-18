@@ -10,9 +10,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu"
-import { UserAvatar } from "@/utils/UserAvatar"
 import { Skeleton } from "@nextui-org/react";
 import { useTranslations } from "next-intl"
+import { UserAvatar } from "../UserAvatar"
 
 export function UserAccountNavClient() {
   const { status, data: session } = useSession();
