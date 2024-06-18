@@ -603,3 +603,7 @@ img[data-testid="grid-gallery-item_thumbnail"] {
 .copy:hover svg {
   color: #8bb9fe;
 }
+
+.border-w-input {
+  border-width: 1px !important;
+}
