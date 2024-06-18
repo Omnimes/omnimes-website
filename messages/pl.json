@@ -758,7 +758,13 @@
     "support": "Wsparcie",
     "webinars": "Webinaria",
     "billing": "Rozliczenia",
-    "settings": "Ustawienia"
+    "settings": "Ustawienia",
+    "demo": "Demo",
+    "materials": "Materiały",
+    "advertising": "Reklamowe",
+    "information": "Informacyjne",
+    "manual": "Instrukcje",
+    "dashboard": "Panel"
   },
   "DashboardFooter": {
     "footer": "System Realizacji Produkcji."

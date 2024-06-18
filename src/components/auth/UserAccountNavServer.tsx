@@ -64,9 +64,9 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
         <DropdownMenuItem asChild>
           <Link href="/dashboard/webinars">{t("webinars")}</Link>
         </DropdownMenuItem>
-        {/* <DropdownMenuItem asChild>
+        <DropdownMenuItem asChild>
           <Link href="/dashboard/billing">{t("billing")}</Link>
-        </DropdownMenuItem> */}
+        </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link href="/dashboard/settings">{t("settings")}</Link>
         </DropdownMenuItem>

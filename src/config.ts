@@ -6,7 +6,49 @@ export const pathnames = {
   '/': '/',
   '/admin': '/admin',
   '/dashboard': '/dashboard',
-
+  '/dashboard/billing': {
+    en: '/dashboard/billing',
+    de: '/dashboard/abrechnung',
+    pl: '/dashboard/rozliczenia'
+  },
+  '/dashboard/demo': '/dashboard/demo',
+  '/dashboard/docs': '/dashboard/docs',
+  '/dashboard/materials': {
+    en: '/dashboard/materials',
+    de: '/dashboard/materialien',
+    pl: '/dashboard/materialy',
+  },
+  '/dashboard/materials/advertising': {
+    en: '/dashboard/materials/advertising',
+    de: '/dashboard/materialien/werbung',
+    pl: '/dashboard/materialy/reklama',
+  },
+  '/dashboard/materials/information': {
+    en: '/dashboard/materials/information',
+    de: '/dashboard/materialien/information',
+    pl: '/dashboard/materialy/informacja',
+  },
+  '/dashboard/materials/manual': {
+    en: '/dashboard/materials/manual',
+    de: '/dashboard/materialien/handbuch',
+    pl: '/dashboard/materialy/instrukcja',
+  },
+  '/dashboard/settings': {
+    en: '/dashboard/settings',
+    de: '/dashboard/einstellungen',
+    pl: '/dashboard/ustawienia'
+  },
+  '/dashboard/support': {
+    en: '/dashboard/support',
+    de: '/dashboard/unterstützung',
+    pl: '/dashboard/wsparcie'
+  },
+  '/dashboard/webinars': {
+    en: '/dashboard/webinars',
+    de: '/dashboard/webinare',
+    pl: '/dashboard/webinaria'
+  },
+  
   '/faq': '/faq',
   '/blog': '/blog',
   '/login': '/login',

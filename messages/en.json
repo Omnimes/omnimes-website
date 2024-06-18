@@ -758,7 +758,13 @@
     "support": "Support",
     "webinars": "Webinars",
     "billing": "Billing",
-    "settings": "Settings"
+    "settings": "Settings",
+    "demo": "Demo",
+    "materials": "Materials",
+    "advertising": "Advertising",
+    "information": "Informational",
+    "manual": "Manuals",
+    "dashboard": "Dashboard"
   },
   "DashboardFooter": {
     "footer": "Production Execution System."

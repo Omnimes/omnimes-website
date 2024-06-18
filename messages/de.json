@@ -760,7 +760,13 @@
     "support": "Unterstützung",
     "webinars": "Webinare",
     "billing": "Abrechnung",
-    "settings": "Einstellungen"
+    "settings": "Einstellungen",
+    "demo": "Demo",
+    "materials": "Materialien",
+    "advertising": "Werbung",
+    "information": "Informationen",
+    "manual": "Handbücher",
+    "dashboard": "Dashboard"
   },
   "DashboardFooter": {
     "footer": "Produktionsausführungssystem."

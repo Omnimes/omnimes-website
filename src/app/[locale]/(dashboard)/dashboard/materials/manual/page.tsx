@@ -19,11 +19,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-export default function WebinarsPage({params: { locale }}: {params: { locale: string }}) {
+export default function BillingPage({params: { locale }}: {params: { locale: string }}) {
   unstable_setRequestLocale(locale);
   return (
     <main>
-      już wkrótce... webinars
+      już wkrótce... manual
     </main>
   )
 }

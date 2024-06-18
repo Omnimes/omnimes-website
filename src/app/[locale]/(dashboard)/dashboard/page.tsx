@@ -27,17 +27,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 
-export default async function DashboardPage({params: { locale }}: {params: { locale: string }}) {
+export default function DashboardPage({params: { locale }}: {params: { locale: string }}) {
   unstable_setRequestLocale(locale);
-  const user = await getCurrentUser();
-
-  if (!user) {
-    redirect('/login')
-  }
 
   return (
     <main>
-      już wkrótce...
+      już wkrótce... dashboard
     </main>
     // <DashboardShell>
     //   <DashboardHeader heading="Posts" text="Create and manage posts.">
