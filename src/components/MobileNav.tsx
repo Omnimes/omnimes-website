@@ -6,13 +6,15 @@ import { useLockBody } from "@/hooks/useLockBody"
 import Logo from "@/data/logo.svg";
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { Separator } from "./atoms/Separator"
 
 interface MobileNavProps {
-  items: MainNavItem[]
+  items: MainNavItem[] & SidebarNavItem[];
+  hideMenu: () => void;
   children?: React.ReactNode
 }
 
-export function MobileNav({ items, children }: MobileNavProps) {
+export function MobileNav({ items, hideMenu, children }: MobileNavProps) {
   useLockBody()
   const t = useTranslations("DashboardNav")
   return (
@@ -35,7 +37,13 @@ export function MobileNav({ items, children }: MobileNavProps) {
             <span className="font-bold">{siteMetadata.headerTitle}</span>
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
-          {items.map((item, index) => (
+          {items.map((item, index) => {
+            if(item.separator) {
+              return (
+                <Separator key={item.title} />
+              )
+            }
+            return (
             <Link
               key={index}
               href={item.disabled ? "#" : item.href}
@@ -43,10 +51,11 @@ export function MobileNav({ items, children }: MobileNavProps) {
                 "flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline",
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
+              onClick={hideMenu}
             >
               {t(item.title)}
             </Link>
-          ))}
+          )})}
         </nav>
         {children}
       </div>

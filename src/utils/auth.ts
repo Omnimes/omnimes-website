@@ -60,8 +60,6 @@ export const authOptions: NextAuthOptions = {
         })
 
         const failed = result.rejected.concat(result.pending).filter(Boolean)
-        console.log(result);
-        console.log(failed);
         if (failed.length) {
           throw new Error(`Email(s) (${failed.join(", ")}) could not be sent`)
         }
@@ -75,6 +73,7 @@ export const authOptions: NextAuthOptions = {
         session.user.name = token.name
         session.user.email = token.email
         session.user.image = token.picture
+        session.user.role = token.role as string;
       }
 
       return session

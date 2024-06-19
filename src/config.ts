@@ -57,6 +57,13 @@ export const pathnames = {
     de: '/register',
     pl: '/rejestracja'
   },
+
+  '/verify-email': {
+    en: "/verify-email",
+    de: "/email-verifizieren",
+    pl: "/zweryfikuj-email"
+  },
+
   '/blog/[slug]': {
     en: '/blog/[slug]',
     de: '/blog/[slug]',

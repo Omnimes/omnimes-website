@@ -805,5 +805,23 @@
     "title": "Omnimes - Webinare",
     "desc": "Erwerben Sie neue Kenntnisse und Fähigkeiten. Wir bieten eine breite Palette von Themen, die von Branchenexperten geleitet werden.",
     "keywords": "Webinare, Online-Schulungen, Fernunterricht, Bildung, berufliche Weiterbildung, Schulungen, Online-Kurse, Experten-Webinare"
+  },
+  "VerifyEmail": {
+    "title": "OmniMES - E-Mail-Adresse Bestätigung",
+    "desc": "Verifizieren Sie Ihre E-Mail-Adresse, um den Registrierungsprozess abzuschließen und vollen Zugriff auf alle Funktionen unserer Website zu erhalten.",
+    "keywords": "E-Mail-Verifizierung, E-Mail-Bestätigung, Registrierung, Sicherheit"
+  },
+  "VerifyEmailPage": {
+    "NoTokenProvided": "Kein Token bereitgestellt",
+    "unexpectedError": "Ein unerwarteter Fehler ist aufgetreten",
+    "redirectedSoon": "Sie werden bald weitergeleitet...",
+    "loading": "Laden!",
+    "loadingDesc": "Wir bestätigen Ihre E-Mail-Adresse. Bitte haben Sie Geduld.",
+    "success": "Erfolg",
+    "error": "Fehler",
+    "invalidToken": "Ungültiger Token",
+    "tokenHasExpired": "Token ist abgelaufen",
+    "userNotFound": "Benutzer nicht gefunden",
+    "emailVerified": "E-Mail-Adresse bestätigt"
   }
 }

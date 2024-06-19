@@ -22,6 +22,7 @@ export const excludePaths = [
   ...developerPages,
   '/blog/[slug]',
   '/tags/[tag]',
+  '/verify-email'
 ]
 export const defaultLocale = 'en' as const
 

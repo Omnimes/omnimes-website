@@ -52,7 +52,7 @@ export default function LoginPage({ params: { locale } }: { params: { locale: st
             {t("info")}
           </p>
         </div>
-        <UserAuthForm />
+        <UserAuthForm location={"login"} />
         <p className="text-muted-foreground px-8 text-center text-sm">
           <Link href="/register" className="hover:text-brand underline underline-offset-4">
             {t("link")}

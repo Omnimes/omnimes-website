@@ -800,8 +800,26 @@
     "logout": "Wyloguj"
   },
   "WebinarsPage": {
-    "title":"Omnimes - Webinary",
+    "title": "Omnimes - Webinary",
     "desc": "Zdobądź nową wiedzę i umiejętności. Oferujemy szeroki zakres tematów prowadzonych przez ekspertów z branży.",
     "keywords": "webinary, szkolenia online, nauka zdalna, edukacja, rozwój zawodowy, szkolenia, kursy online, webinaria eksperckie"
+  },
+  "VerifyEmail": {
+    "title": "OmniMES - Potwierdzenie adresu e-mail",
+    "desc": "Zweryfikuj swój adres e-mail, aby zakończyć proces rejestracji i uzyskać dostęp do pełnych funkcji naszej strony.",
+    "keywords": "weryfikacja e-mail, potwierdzenie adresu e-mail, rejestracja, bezpieczeństwo"
+  },
+  "VerifyEmailPage": {
+    "NoTokenProvided": "Brak tokenu",
+    "unexpectedError": "Wystąpił nieoczekiwany błąd",
+    "redirectedSoon": "Zaraz nastąpi przekierowanie...",
+    "loading": "Ładowanie!",
+    "loadingDesc": "Potwierdzamy Twój adres e-mail. Proszę o cierpliwość.",
+    "success": "Sukces",
+    "error": "Błąd",
+    "invalidToken": "Nieprawidłowy token",
+    "tokenHasExpired": "Token wygasł",
+    "userNotFound": "Użytkownik nie znaleziony",
+    "emailVerified": "Adres e-mail zweryfikowany"
   }
 }

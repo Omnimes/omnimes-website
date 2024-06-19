@@ -15,6 +15,7 @@ type BlogPost = {
 }
 
 type NavItem = {
+  separator?: boolean
   title: string
   href: string
   disabled?: boolean
@@ -30,7 +31,7 @@ type DashboardConfig = {
 type SidebarNavItem = {
   title: string
   disabled?: boolean
-  external?: boolean
+  separator?: boolean
   icon?: keyof typeof Icons
 } & (
   | {
@@ -38,8 +39,8 @@ type SidebarNavItem = {
       items?: never
     }
   | {
-      href?: string
-      items: NavLink[]
+      href: string
+      items?: NavLink[]
     }
 )
 

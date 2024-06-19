@@ -17,6 +17,11 @@ sidebarNav: [
     icon: "demo",
   },
   {
+    title: "separator",
+    href: "#",
+    separator: true,
+  },
+  {
     title: "settings",
     href: "/dashboard/settings",
     icon: "settings",
@@ -48,6 +53,11 @@ export const dashboardConfigDeveloper: DashboardConfig = {
       icon: "dashboard",
     },
     {
+      title: "separator1",
+      href: "#",
+      separator: true,
+    },
+    {
       title: "webinars",
       href: "/dashboard/webinars",
       icon: "webinar",
@@ -56,7 +66,6 @@ export const dashboardConfigDeveloper: DashboardConfig = {
       title: "materials",
       href: "/dashboard/materials",
       icon: "materials",
-      external: true,
       items: [
         {
           title: "advertising",
@@ -74,6 +83,16 @@ export const dashboardConfigDeveloper: DashboardConfig = {
           icon: "manual",
         },
       ]
+    },
+    {
+      title: "demo",
+      href: "/dashboard/demo",
+      icon: "demo",
+    },
+    {
+      title: "separator",
+      href: "#",
+      separator: true,
     },
     {
       title: "billing",

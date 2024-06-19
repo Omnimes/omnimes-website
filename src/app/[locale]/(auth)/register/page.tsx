@@ -58,7 +58,7 @@ export default function RegisterPage({ params: { locale } }: { params: { locale:
               {t("info")}
             </p>
           </div>
-          <UserAuthForm />
+          <UserAuthForm location={"register"} />
           <p className="px-8 text-center text-sm text-muted-foreground">
             {t("info2")}{" "}
             <Link

@@ -11,15 +11,20 @@ import Logo from "@/data/logo.svg";
 import { useTranslations } from "next-intl"
 
 interface MainNavProps {
-  items?: MainNavItem[]
+  items?: MainNavItem[];
+  mobileNav?: MainNavItem[] & SidebarNavItem[];
   children?: React.ReactNode
 }
 
-export const MainNav = ({ items, children }: MainNavProps) => {
+export const MainNav = ({ items, mobileNav, children }: MainNavProps) => {
   const segment = useSelectedLayoutSegment();
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
-  const t = useTranslations("DashboardNav")
+  const t = useTranslations("DashboardNav");
+
+  const hideMenu = () => {
+    setShowMobileMenu(false);
+  }
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
@@ -62,8 +67,8 @@ export const MainNav = ({ items, children }: MainNavProps) => {
         {showMobileMenu ? <LuX /> : <LuMenu />}
         <span className="font-bold">Menu</span>
       </button>
-      {showMobileMenu && items && (
-        <MobileNav items={items}>{children}</MobileNav>
+      {showMobileMenu && mobileNav && (
+        <MobileNav items={mobileNav} hideMenu={hideMenu} >{children}</MobileNav>
       )}
     </div>
   )

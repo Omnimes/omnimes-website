@@ -803,5 +803,23 @@
     "title": "Omnimes - Webinars",
     "desc": "Gain new knowledge and skills. We offer a wide range of topics led by industry experts.",
     "keywords": "webinars, online training, remote learning, education, professional development, training, online courses, expert webinars"
+  },
+  "VerifyEmail": {
+    "title": "OmniMES - Email Address Confirmation",
+    "desc": "Verify your email address to complete the registration process and gain access to the full features of our site.",
+    "keywords": "email verification, email confirmation, registration, security"
+  },
+  "VerifyEmailPage": {
+    "NoTokenProvided": "No token provided",
+    "unexpectedError": "An unexpected error occurred",
+    "redirectedSoon": "You will be redirected soon...",
+    "loading": "Loading!",
+    "loadingDesc": "We confirm your email address. Please be patient.",
+    "success": "Success",
+    "error": "Error",
+    "invalidToken": "Nieprawidłowy Token",
+    "tokenHasExpired": "Token has expired",
+    "userNotFound": "User not found",
+    "emailVerified": "Email verified"
   }
 }

@@ -11,10 +11,12 @@ import { useState, HTMLAttributes } from "react"
 import { useTranslations } from "next-intl"
 import { toast } from "../atoms/UseToast"
 
-interface UserAuthFormProps extends HTMLAttributes<HTMLDivElement> {}
+interface UserAuthFormProps extends HTMLAttributes<HTMLDivElement> {
+  location: "login" | "register";
+}
 type FormData = z.infer<typeof userAuthSchema>
 
-export const UserAuthForm = ({ className, ...props }: UserAuthFormProps) => {
+export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProps) => {
   const {
     register,
     handleSubmit,
@@ -32,7 +34,7 @@ export const UserAuthForm = ({ className, ...props }: UserAuthFormProps) => {
     const signInResult = await signIn("email", {
       email: data.email.toLowerCase(),
       redirect: false,
-      callbackUrl: "/dashboard",
+      callbackUrl: location == 'login' ? "/dashboard" : "/verify-email",
     }) 
     setIsLoading(false)
 
