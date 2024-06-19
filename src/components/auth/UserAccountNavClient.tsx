@@ -13,11 +13,16 @@ import {
 import { Skeleton } from "@nextui-org/react";
 import { useTranslations } from "next-intl"
 import { UserAvatar } from "../UserAvatar"
+import { getSubNav } from "@/lib/getSubNav"
+
+interface MyUser extends User {
+  role: string;
+}
 
 export function UserAccountNavClient() {
   const { status, data: session } = useSession();
-  const user: Pick<User, "name" | "image" | "email"> | undefined = session?.user
-  const t = useTranslations("DropdownNav")
+  const user: Pick<MyUser, "name" | "image" | "email" | "role"> | undefined = session?.user
+  const t = useTranslations("DropdownNav");
 
   if (status == 'loading' && user == undefined) {
     return (<Skeleton className="w-7 h-7 rounded" />)
@@ -62,18 +67,16 @@ export function UserAccountNavClient() {
           </div>
         </div>
         <DropdownMenuSeparator />
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard">{t("dashboard")}</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard/webinars">{t("webinars")}</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard/billing">{t("billing")}</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard/settings">{t("settings")}</Link>
-        </DropdownMenuItem>
+        {getSubNav(user.role).map(item => {
+          if(item.separator) {
+            return <DropdownMenuSeparator key={item.title} />
+          }
+          return (
+            <DropdownMenuItem asChild key={item.title}>
+              <Link href={item.href}>{t(item.title)}</Link>
+            </DropdownMenuItem>
+          )
+        })}
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onSelect={(event) => {

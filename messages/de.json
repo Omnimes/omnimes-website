@@ -799,7 +799,9 @@
     "webinars": "Webinare",
     "billing": "Abrechnung",
     "settings": "Einstellungen",
-    "logout": "Abmelden"
+    "logout": "Abmelden",
+    "demo": "Demo",
+    "materials": "Materialien"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinare",

@@ -11,9 +11,14 @@ import {
 } from "@/components/atoms/DropdownMenu"
 import { useTranslations } from "next-intl"
 import { UserAvatar } from "../UserAvatar"
+import { getSubNav } from "@/lib/getSubNav"
+
+interface MyUser extends User {
+  role: string;
+}
 
 interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
-  user: Pick<User, "name" | "image" | "email"> | undefined
+  user: Pick<MyUser, "name" | "image" | "email" | "role"> | undefined
 }
 
 export function UserAccountNavServer({ user }: UserAccountNavProps) {
@@ -58,18 +63,16 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
           </div>
         </div>
         <DropdownMenuSeparator />
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard">{t("dashboard")}</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard/webinars">{t("webinars")}</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard/billing">{t("billing")}</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/dashboard/settings">{t("settings")}</Link>
-        </DropdownMenuItem>
+        {getSubNav(user.role).map(item => {
+          if(item.separator) {
+            return <DropdownMenuSeparator key={item.title} />
+          }
+          return (
+            <DropdownMenuItem asChild key={item.title}>
+              <Link href={item.href}>{t(item.title)}</Link>
+            </DropdownMenuItem>
+          )
+        })}
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onSelect={(event) => {

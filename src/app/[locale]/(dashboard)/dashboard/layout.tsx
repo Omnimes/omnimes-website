@@ -9,6 +9,7 @@ import ThemeSwitch from "@/components/ThemeSwitch";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
+import { getMainNav, getSubNav } from "@/lib/getSubNav";
 
 type DashboardLayoutProps = {
   children: ReactNode;
@@ -23,10 +24,9 @@ export default async function DashboardLayout({ children, params: { locale }}: D
     redirect("/login")
   }
 
-  const isNotRegularUser = user.role !== 'user';
-  const mainNav = isNotRegularUser ? dashboardConfigDeveloper.mainNav : dashboardConfigBasic.mainNav;
-  const subNav = isNotRegularUser ? dashboardConfigDeveloper.sidebarNav : dashboardConfigBasic.sidebarNav;
-
+  // const isNotRegularUser = user.role !== 'user';
+  const mainNav = getMainNav(user.role);
+  const subNav = getSubNav(user.role);
   const mobileNav = [...mainNav, ...subNav];
   return (
     <div className="flex min-h-screen flex-col space-y-6">
@@ -40,6 +40,7 @@ export default async function DashboardLayout({ children, params: { locale }}: D
                 name: user.name,
                 image: user.image,
                 email: user.email,
+                role: user.role,
               }}
             />
             <ThemeSwitch />
