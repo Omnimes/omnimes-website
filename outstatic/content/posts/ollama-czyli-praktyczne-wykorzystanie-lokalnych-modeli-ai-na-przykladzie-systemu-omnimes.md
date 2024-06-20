@@ -100,7 +100,7 @@ Jakość odpowiedzi jest również na poziomie - jeśli chodzi o logiczną skła
 
 ## Porównanie z innymi modelami
 
-Chyba najlepszy porównaniem świadczącym o **możliwościach modelu Llama3 będzie jego zestawienie z modelem GPT 2, 3.5 czy 4 oraz np.: modelem AI Gemma od Googla oraz Mistral od Apache.** Porównanie takie możemy dokonać zestawiając modele w benchmarkach.
+Chyba najlepszy porównaniem świadczącym o **możliwościach modelu Llama3 będzie jego zestawienie z modelem GPT 2, 3.5 czy 4 oraz z modelem AI Gemma od Googla oraz Mistral od Apache.** Porównanie takie możemy dokonać zestawiając modele w benchmarkach.
 
 ![](/images/image-gxNz.png)
 
