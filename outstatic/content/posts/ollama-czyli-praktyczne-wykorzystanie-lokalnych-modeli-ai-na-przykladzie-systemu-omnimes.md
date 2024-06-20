@@ -152,7 +152,7 @@ Jak widzimy korzystanie z lokalnej AI jaką nam oferujemy oprogramowanie **Ollam
 
 Daje nam to duże możliwości oczywiście ograniczone sprzętowo a tym samym finansowo bo tutaj działanie samej AI zależy wyłącznie od sprzętu z jakiego korzystamy model **Llama3** oferuje również **większą wersję Llama3:70b ale sam model waży 40 GB**, a do jego obsługi już raczej nam nie wystarczy pojedyncza karta graficzna.
 
-Jednakże używanie **Ollama** dla potrzeb przedsiębiorstw jak w tego typu systemach jak **Omnimes**, który skupia się na realizacji produkcji jest dobrym podejściem jak również odpowiedzią na **restrykcyjną politykę bezpieczeństwa danego przedsiębiorstwa** czyli **brak możliwości podłączania systemu z danymi produkcyjnymi do zewnętrznych serwerów lub chociażby brak zewnętrznego internetu na hali produkcyjnej**.\
+Jednakże używanie **Ollama** dla potrzeb przedsiębiorstw w tego typu systemach jak **Omnimes**, który skupia się na realizacji produkcji jest dobrym podejściem jak również odpowiedzią na **restrykcyjną politykę bezpieczeństwa danego przedsiębiorstwa** czyli **brak możliwości podłączania systemu z danymi produkcyjnymi do zewnętrznych serwerów lub chociażby brak zewnętrznego internetu na hali produkcyjnej**.\
 \
 Dodatkowo otrzymujemy model AI nieskażony błędnymi informacjami ze świata zewnętrznego - przez to mniej podatny na tzw. halucynacje czyli krótko mówiąc przekłamywaniu lub wymyślaniu.
 
