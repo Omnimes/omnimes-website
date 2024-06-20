@@ -130,7 +130,7 @@ Obecnie w systemie Omnimes mamy do wyboru czy chcemy korzystać z zewnętrznej A
 
 Po wybraniu typu AI, w przypadku AI od Ollama mamy możliwość wyboru modelu AI.
 
-**Ilość modeli zależy ilości pobranych modeli na serwer Ollama. Możemy również dodać swój własny model, pamiętając tylko by został zapisany w formacie zgodnym dla oprogramowania Ollama.**
+Ilość modeli zależy ilości pobranych modeli na serwer Ollama. Możemy również dodać swój własny model, pamiętając tylko by został zapisany w formacie zgodnym dla oprogramowania Ollama.
 
 A tu poniżej przedstawienie analizy danych z podsumowania znajdującego się na panelu głównym systemu Omnimes
 

@@ -1,6 +1,6 @@
 {
   "commit": "81c9eda751e02ee368a1356ba1cf879b8da13af1",
-  "generated": "2024-06-20T17:22:42.024Z",
+  "generated": "2024-06-20T17:23:23.697Z",
   "metadata": [
     {
       "__outstatic": {
@@ -315,7 +315,7 @@
     {
       "__outstatic": {
         "commit": "81c9eda751e02ee368a1356ba1cf879b8da13af1",
-        "hash": "3642289722",
+        "hash": "2991812676",
         "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
       },
       "author": {
