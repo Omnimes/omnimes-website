@@ -14,7 +14,7 @@ publishedAt: '2024-06-20T12:47:51.265Z'
 
 ![](/images/image-E3MT.png)
 
-Może od początku czym jest **projekt Ollama** ? Jest to otwarte bezpłatne oprogramowanie do uruchamiania lokalnych (na własnym komputerze/serwerze) modeli AI typu LLM (duże modele językowe) przy stosunkowo niskich wymaganiach sprzętowych. Oprogramowanie to jak i jeden z modeli llama3 pochodzi od META (wcześniej Facebook)\
+Może od początku czym jest **projekt Ollama** ? Jest to otwarte ,bezpłatne oprogramowanie do uruchamiania lokalnych (na własnym komputerze/serwerze) modeli AI typu LLM (duże modele językowe) przy stosunkowo niskich wymaganiach sprzętowych. Oprogramowanie to jak i jeden z modeli llama3 pochodzi od META (wcześniej Facebook)\
 \
 Oprogramowanie to pozwala na korzystanie na chwilę obecną z dostępnych 93 modeli AI przez średnie i małe firmy z niewielkimi lub żadnymi ograniczeniami.
 
