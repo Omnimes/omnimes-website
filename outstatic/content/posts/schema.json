@@ -124,6 +124,38 @@
         {
           "value": "llmModels",
           "label": "LLM Models"
+        },
+        {
+          "value": "ollama",
+          "label": "Ollama"
+        },
+        {
+          "value": "llama3",
+          "label": "llama3"
+        },
+        {
+          "value": "meta",
+          "label": "Meta"
+        },
+        {
+          "value": "gemma",
+          "label": "Gemma"
+        },
+        {
+          "value": "mistral",
+          "label": "Mistral"
+        },
+        {
+          "value": "gpt4",
+          "label": "GPT-4"
+        },
+        {
+          "value": "gpt35",
+          "label": "GPT-3.5"
+        },
+        {
+          "value": "aiLocal",
+          "label": "AI local"
         }
       ]
     },

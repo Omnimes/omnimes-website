@@ -1,6 +1,6 @@
 {
-  "commit": "fabe9712a4295b328242eb1d80edc47b2b78f24e",
-  "generated": "2024-06-12T06:20:34.804Z",
+  "commit": "bf765fda1a6bae9275ad8dc4326c9000ca190a66",
+  "generated": "2024-06-20T15:11:54.529Z",
   "metadata": [
     {
       "__outstatic": {
@@ -311,6 +311,63 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "bf765fda1a6bae9275ad8dc4326c9000ca190a66",
+        "hash": "1369539709",
+        "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2024-06-20T12:47:51.265Z",
+      "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Ollama",
+          "value": "ollama"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        }
+      ],
+      "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
     }
   ]
 }
