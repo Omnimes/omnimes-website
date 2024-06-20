@@ -84,7 +84,7 @@ O konfiguracji tego interfejsu jak i pełnej instalacji serwera **Ollama** zapra
 
 Dość krótkie przedstawienie oprogramowania i jego instalacji mamy za sobą. W innym poście przedstawię pełną instalację serwera **Ollama** jako zdalny serwer AI jak i zestawienie najlepszych dostępnych modeli.
 
-## Wymaganie techniczne
+## Wymagania techniczne
 
 **Oczywiście warto dodać że serwer Ollama oferuje nam również API które możemy wykorzystać do własnych aplikacji, gdzie nie będzie wymagane instalwoanie interfejsu webowego.**
 
