@@ -156,4 +156,4 @@ Jednakże używanie **Ollama** dla potrzeb przedsiębiorstw w tego typu systemac
 \
 Dodatkowo otrzymujemy model AI nieskażony błędnymi informacjami ze świata zewnętrznego - przez to mniej podatny na tzw. halucynacje czyli krótko mówiąc przekłamywaniu lub wymyślaniu.
 
-Jeśli jesteś zainteresowany naszym rozwiązaniem na swoim parku maszynowym lub hali produkcyjnej i usprawnieniu procesu produkcyjnego wykorzystując przy tym nowoczesne metody zbierania danych i ich analizowaniu zapraszam do zapoznania się z oferta systemu [Omnimes](https://www.omnimes.com/pl/oferta)
+Jeśli jesteś zainteresowany naszym rozwiązaniem na swoim parku maszynowym lub hali produkcyjnej i usprawnieniu procesu produkcyjnego wykorzystując przy tym nowoczesne metody zbierania danych i ich analizowanie, zapraszam do zapoznania się z oferta systemu [Omnimes](https://www.omnimes.com/pl/oferta)
