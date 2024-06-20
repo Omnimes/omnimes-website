@@ -116,7 +116,7 @@ Największe znaczenie ma wynik testu **MMLU** gdzie widzimy że **model llama3 p
 
 **W związku z czym wynik używania tego modelu jako naszej lokalnej AI odzwierciedla pozytywne odczucie w jej używaniu.**
 
-Skoro mamy już opis oprogramowanie Ollama oraz modelu Llama3 z częściowym porównaniem go na tle innych modeli, przystąpmy do przedstawienia jego działania w akcji na przykładzie systemu do realizacji produkcji - OMNIMES.
+Skoro mamy już opis oprogramowanie **Ollama** oraz modelu **Llama3** z częściowym porównaniem go na tle innych modeli, przystąpmy do przedstawienia jego działania w akcji na przykładzie systemu do realizacji produkcji - **Ominmes**.
 
 ## Wykorzystanie Ollama na przykładzie Omnimes
 
