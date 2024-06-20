@@ -12,13 +12,15 @@ lang: 'pl'
 publishedAt: '2024-06-20T12:47:51.265Z'
 ---
 
-![](/images/image-E3MT.png)\
-\
+![](/images/image-E3MT.png)
+
 Może od początku czym jest projekt Ollama ? Jest to otwarte bezpłatne oprogramowanie do uruchamiania lokalnych (na własnym komputerze/serwerze) modeli AI typu LLM (duże modele językowe) przy stosunkowo niskich wymaganiach sprzętowych. Oprogramowanie to jak i jeden z modeli llama3 pochodzi od META (wcześniej Facebook)\
 \
 Oprogramowanie to pozwala na korzystanie na chwilę obecną z dostępnych 93 modeli AI przez średnie i małe firmy z niewielkimi lub żadnymi ograniczeniami.
 
 Oprogramowanie jest dostępne na każdą platformę czyli Windows/Linux/MacOs jak również jest dostępne na Docker.
+
+## Uruchomienie
 
 Samo uruchomienie oprogramowania jest banalnie proste. Poniżej streszczę w wielkim skrócie na przykładzie uruchomienia na Windows, zaś po dokładną instrukcję instalacji odsyłam pod adres projektu:[https://ollama.com](https://ollama.com/)
 
@@ -80,7 +82,9 @@ O konfiguracji tego interfejsu jak i pełnej instalacji serwera **Ollama** zapra
 
 <https://www.youtube.com/watchv=Wjrdr0NU4Sk>
 
-Oki dość krótkie przedstawienie oprogramowania i jego instalacji mamy za sobą. W innym poście przedstawię pełną instalację serwera **Ollama** jako zdalny serwer AI jak i zestawienie najlepszych dostępnych modeli.
+Dość krótkie przedstawienie oprogramowania i jego instalacji mamy za sobą. W innym poście przedstawię pełną instalację serwera **Ollama** jako zdalny serwer AI jak i zestawienie najlepszych dostępnych modeli.
+
+## Wymaganie techniczne
 
 **Oczywiście warto dodać że serwer Ollama oferuje nam również API które możemy wykorzystać do własnych aplikacji, gdzie nie będzie wymagane instalwoanie interfejsu webowego.**
 
@@ -93,6 +97,8 @@ Ale do własnych celów lub do działania jako mała AI **wystarczy pojedyńcza 
 Wrażenia są zaskakująco dobre, odpowiedź trwa od 5 do 10s. Co jak na lokalną AI jest bardzo dobrym wynikiem.
 
 Jakość odpowiedzi jest również na poziomie - jeśli chodzi o logiczną składnie. Większe porównanie modeli w innym poście. Teraz skupimy się na modelu **Llama3** - firmowanym modelu AI od META (dawniej FaceBook).
+
+## Porównanie z innymi modelami
 
 Chyba najlepszy porównaniem świadczącym o **możliwościach modelu Llama3 będzie jego zestawienie z modelem GPT 2, 3.5 czy 4 oraz np.: modelem AI Gemma od Googla oraz Mistral od Apache.** Porównanie takie możemy dokonać zestawiając modele w benchmarkach.
 
@@ -112,15 +118,17 @@ Największe znaczenie ma wynik testu **MMLU** gdzie widzimy że **model llama3 p
 
 Skoro mamy już opis oprogramowanie Ollama oraz modelu Llama3 z częściowym porównaniem go na tle innych modeli, przystąpmy do przedstawienia jego działania w akcji na przykładzie systemu do realizacji produkcji - OMNIMES.
 
+## Wykorzystanie Ollama na przykładzie Omnimes
+
 Korzystając z API serwera Ollama zaimplementowaliśmy korzystanie lokalnej AI w systemie Omnimes. Jej działanie opiera się na bardzo prostym ustawianiu danych podobnych jak w przypadku korzystania z API od Open AI o czym pisałem we wczęsnijszym poście link poniżej:
 
 <https://www.omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych>
 
 ![](/images/image-U0Nj.png)
 
-**Obecnie w systemie Omnimes mamy do wyboru czy chcemy korzystać z zewnętrznej AI czyli tu - API od Open AI lub wewnętrznej AI tu - Ollama**
+Obecnie w systemie Omnimes mamy do wyboru czy chcemy korzystać z zewnętrznej AI czyli tu - API od Open AI lub wewnętrznej AI tu - Ollama
 
-**Po wybraniu typu AI, w przypadku AI od Ollama mamy możliwość wyboru modelu AI.**
+Po wybraniu typu AI, w przypadku AI od Ollama mamy możliwość wyboru modelu AI.
 
 **Ilość modeli zależy ilości pobranych modeli na serwer Ollama. Możemy również dodać swój własny model, pamiętając tylko by został zapisany w formacie zgodnym dla oprogramowania Ollama.**
 
