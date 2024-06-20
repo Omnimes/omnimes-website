@@ -120,7 +120,7 @@ Skoro mamy już opis oprogramowanie Ollama oraz modelu Llama3 z częściowym por
 
 ## Wykorzystanie Ollama na przykładzie Omnimes
 
-Korzystając z API serwera Ollama zaimplementowaliśmy korzystanie lokalnej AI w systemie Omnimes. Jej działanie opiera się na bardzo prostym ustawianiu danych podobnych jak w przypadku korzystania z API od Open AI o czym pisałem we wczęsnijszym poście link poniżej:
+Korzystając z API serwera Ollama zaimplementowaliśmy korzystanie lokalnej AI w systemie Omnimes. Jej działanie opiera się na bardzo prostym ustawianiu danych podobnych jak w przypadku korzystania z API od Open AI o czym pisałem we wcześniejszym poście link poniżej:
 
 <https://www.omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych>
 
