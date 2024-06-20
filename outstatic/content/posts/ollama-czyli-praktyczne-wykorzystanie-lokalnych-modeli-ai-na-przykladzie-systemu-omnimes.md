@@ -112,7 +112,7 @@ Chyba najlepszy porównaniem świadczącym o **możliwościach modelu Llama3 bę
 - **GSM-8K** sprawdza umiejętności rozwiązywania problemów matematycznych na podstawowym poziomie.
 - **MATH** testuje bardziej zaawansowane umiejętności matematyczne.
 
-Największe znaczenie ma wynik testu **MMLU** gdzie widzimy że **model llama3 przewyższa GPT 3,5 o 8,5 jednostek**.
+Największe znaczenie ma wynik testu **MMLU** gdzie widzimy że **model Llama3 przewyższa GPT 3,5 o 8,5 jednostek**.
 
 **W związku z czym wynik używania tego modelu jako naszej lokalnej AI odzwierciedla pozytywne odczucie w jej używaniu.**
 
