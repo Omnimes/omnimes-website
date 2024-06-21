@@ -1,6 +1,6 @@
 {
-  "commit": "c8e559c1c8ee3c475363069fb54ce43236a5120b",
-  "generated": "2024-06-21T21:03:04.377Z",
+  "commit": "4602e46cb90d97cd7557988b6a320dbe14ec80f8",
+  "generated": "2024-06-21T21:03:53.406Z",
   "metadata": [
     {
       "__outstatic": {
@@ -428,8 +428,8 @@
     },
     {
       "__outstatic": {
-        "commit": "c8e559c1c8ee3c475363069fb54ce43236a5120b",
-        "hash": "3089381040",
+        "commit": "4602e46cb90d97cd7557988b6a320dbe14ec80f8",
+        "hash": "3775546706",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
       },
       "author": {
