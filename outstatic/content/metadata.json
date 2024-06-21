@@ -1,6 +1,6 @@
 {
   "commit": "4602e46cb90d97cd7557988b6a320dbe14ec80f8",
-  "generated": "2024-06-21T21:57:43.510Z",
+  "generated": "2024-06-21T21:58:45.325Z",
   "metadata": [
     {
       "__outstatic": {
@@ -429,7 +429,7 @@
     {
       "__outstatic": {
         "commit": "4602e46cb90d97cd7557988b6a320dbe14ec80f8",
-        "hash": "4065755900",
+        "hash": "741101838",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
       },
       "author": {
