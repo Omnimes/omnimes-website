@@ -2,11 +2,11 @@
 title: 'Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI'
 status: 'published'
 author:
-  name: 'OmniMES'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  name: 'Administrator'
+  picture: '/images/default-Y0OT.png'
 slug: 'nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai'
 description: 'Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI'
-coverImage: ''
+coverImage: '/images/image-e3mt-gxNj.png'
 lang: 'pl'
 publishedAt: '2024-06-21T06:19:30.177Z'
 ---

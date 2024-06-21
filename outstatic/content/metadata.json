@@ -1,6 +1,6 @@
 {
-  "commit": "10ba558fe993dac002a387dfc619449bc4f2abca",
-  "generated": "2024-06-21T09:44:15.093Z",
+  "commit": "b68ac48f2da98bd5fc57ba99d74a8e9941950108",
+  "generated": "2024-06-21T09:45:45.123Z",
   "metadata": [
     {
       "__outstatic": {
@@ -371,25 +371,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3861e3cfdeffb3a9f90cd03faa7b15c905c8d03f",
-        "hash": "1250848647",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
-      "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
-    },
-    {
-      "__outstatic": {
         "commit": "10ba558fe993dac002a387dfc619449bc4f2abca",
         "hash": "3621790274",
         "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
@@ -406,6 +387,25 @@
       "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
       "status": "published",
       "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "b68ac48f2da98bd5fc57ba99d74a8e9941950108",
+        "hash": "63472335",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+      },
+      "author": {
+        "name": "Administrator",
+        "picture": "/images/default-Y0OT.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-e3mt-gxNj.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "status": "published",
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
     }
   ]
 }
