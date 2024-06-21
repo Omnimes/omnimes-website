@@ -12,7 +12,7 @@ tags: [{"label":"redash","value":"redash"},{"label":"wizualziacja danych","value
 publishedAt: '2024-06-15T21:02:14.000Z'
 ---
 
-![](/images/image-QzMT.png)
+![](/images/image-EzOT.png)
 
 ## Wstępem
 
@@ -30,11 +30,33 @@ REdash to samoobsługowa platforma open source do tworzenia zapytań i wizualiza
 
 ### Główne cechy Redash:
 
-- **Przeglądarka i API REST**: Działa w pełni w przeglądarce, z udostępnianymi URL i dobrze zdefiniowanym interfejsem API.
-- **Edytor zapytań**: Tworzenie zapytań SQL i NoSQL z przeglądarką schematów i autouzupełnianiem. Możliwość tworzenia i ponownego użycia fragmentów.
+- **Przeglądarka i API REST**: działa w pełni w przeglądarce, z udostępnianymi URL i dobrze zdefiniowanym interfejsem API.
+- **Edytor zapytań**: tworzenie zapytań SQL i NoSQL z przeglądarką schematów i autouzupełnianiem. Możliwość tworzenia i ponownego użycia fragmentów w celu przedstawienia danych na wykresach.
 - **Wizualizacja i dashboardy**: Tworzenie wizualizacji metodą przeciągnij i upuść. Grupowanie wizualizacji w pulpity nawigacyjne, automatycznie aktualizowane.
 - **Alerty**: Definiowanie warunków wyzwalania i natychmiastowe powiadomienia w przypadku zmiany danych, np. przekroczenia ustalonego ciśnienia lub temperatury.
 
-Platforma Redash wspiera różnorodne produkty, co czyni ją wszechstronnym narzędziem do wizualizacji danych w systemie Omnimes.\
-\
+Platforma Redash wspiera różnorodne produkty, co czyni ją wszechstronnym narzędziem do wizualizacji danych w systemie Omnimes.
+
 ![](/images/image-AzMT.png)
+
+Po więcej informacji na temat Redash oraz jego konfiguracji i wdrażania do własnego projektu odsyłam pod adres: <https://redash.io>
+
+Po tym krótkim opisie narzędzia Redash przedstawię nowe możliwości w systemie Omnimes po jego zaimplementowaniu.
+
+## Redash w Omnimes
+
+Po uruchomieniu Redash mamy do wykonania trzy kroki, aby stworzyć dashboard z danymi, mianowicie:
+
+- stworzenie zapytanie - czyli pobranie danych z bazy danych
+- na podstawie pobranych danych, stworzenie wykresu
+- umieszczenie wykresu na dashbordzie
+
+Warto zwrócić uwagę na dwie praktyczne możliwości takiego dashboardu:
+
+1. **Udostępnianie bez potrzeby tworzenia konta**: Taki dashboard można udostępnić każdemu bez konieczności tworzenia konta użytkownika w systemie Omnimes. Przykładowo, może być używany do podglądu na hali produkcyjnej przez kierowników zarządzania ruchem lub osoby na wyższych szczeblach, a także w celu mobilizacji pracowników.
+
+2. **Częste odświeżanie danych**: Udostępniony dashboard można ustawić na minimalny czas odświeżania co minutę, co pozwala na ciągłe, aktualne podsumowanie tego, co dzieje się na parku maszynowym.
+
+Dla ułatwienia, w systemie Omnimes wprowadziliśmy własny edytor tworzenia zapytań, jak pokazano poniżej:\
+\
+![](/images/image-Y0OT.png)
