@@ -40,10 +40,10 @@
     "privacy-policy": "Datenschutzrichtlinie",
     "tags": "Stichworte",
     "terms": "Regelwerk",
-    "resources": "Ressourcen",
+    "news": "Nachrichten",
     "offerDesc": "Entdecken Sie die Vielfalt der Möglichkeiten, die unser OmniMES-System bietet, und erfahren Sie, warum unser Angebot die perfekte Lösung für Ihr Unternehmen ist.",
     "projectDesc": "Machen Sie sich mit dem OmniMES-Projekt vertraut - einer Initiative, die Standards für Effizienz und Kontrolle im Produktionsprozess neu definiert.",
-    "resourcesDesc": "Entdecken Sie unsere Bildungsressourcen, die Ihnen helfen, unser System besser zu verstehen.",
+    "NewsDesc": "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten und Ereignissen rund um OmniMES. Überprüfen Sie die neuesten Updates, Innovationen und Angebote.",
     "faqDesc": "Nutzen Sie unser umfangreiches Frage- und Antwortset, um klare Erklärungen zu Funktionen, Preisen, Nutzungsbedingungen und mehr zu erhalten.",
     "galleryDesc": "Entdecken Sie unsere Sammlung einzigartiger Fotos, die die schönsten Momente verschiedener Veranstaltungen festhalten.",
     "menuOpen": "Menü öffnen",
@@ -58,7 +58,7 @@
     "searchSubtitle": "Schauen Sie sich das Angebot des OmniMES-Systems an.",
     "searchSubtitle2": "Erfahren Sie mehr über OmniMES.",
     "searchSubtitle3": "Überprüfen Sie die FAQs und finden Sie Antworten auf Fragen.",
-    "searchSubtitle4": "Laden Sie Materialien zum System herunter.",
+    "searchSubtitle4": "Überprüfen Sie die Nachrichten von OmniMES.",
     "searchSubtitle5": "Sehen Sie sich die OmniMES-Fotogalerie an"
   },
   "Blog": {
@@ -370,10 +370,15 @@
     "desc": "Lesen Sie unsere Datenschutzrichtlinie, um zu erfahren, wie wir Ihre persönlichen Daten schützen und wie wir sie verwenden.",
     "keywords": "Datenschutzrichtlinie, OmniMES, Datenschutz, persönliche Daten, Datenverarbeitung"
   },
-  "ResourcesMeta": {
-    "title": "OmniMES - Ressourcen - Schulungsmaterialien, Tutorials, Anleitungen usw.",
-    "desc": "Entdecken Sie unsere reichhaltige Quelle an herunterladbaren Ressourcen, einschließlich Schulungsmaterialien, Tutorials und anderen Lernmaterialien zum OmniMES-System.",
-    "keywords": "herunterladbare Ressourcen, Schulungsmaterialien, Tutorials, Lernen, OmniMES, Anwendungen, Dokumentation, Bildungsmaterialien"
+  "NewsMeta": {
+    "title": "OmniMES - Nachrichten - Bleiben Sie auf dem Laufenden mit dem, was bei uns passiert!",
+    "desc": "Besuchen Sie unsere Seite, um die neuesten Nachrichten und Updates über OmniMES zu erhalten. Bleiben Sie informiert über die neuesten Ereignisse, Innovationen und Angebote.",
+    "keywords": "OmniMES, Nachrichten, Updates, Ereignisse, Innovationen, Angebote"
+  },
+  "NewsData": {
+    "newsNotFound": "Artikel nicht gefunden",
+    "newsNotFoundDesc": "Entschuldigung, aber wir konnten diesen Artikel nicht finden oder er könnte unter einer anderen URL zu finden sein. Sie können andere verfügbare Artikel in dieser Sprache lesen, indem Sie zu allen Beiträgen gehen.",
+    "allnews": "Alle Nachrichten"
   },
   "TermsMeta": {
     "title": "OmniMES - Nutzungsbedingungen - Nutzungsregeln",
@@ -543,7 +548,7 @@
     "p5": "Die Visualisierungen bieten eine Vielzahl von Anpassungsmöglichkeiten - von Balkendiagrammen über Donut-Typ-Pie-Charts bis hin zu Tabellen mit Datenfiltersuche. Mit diesen Optionen kann jede Datendarstellung maximal an die Vorlieben des Benutzers angepasst werden und bietet präzise und intuitive Tools für Analyse und Überwachung.",
     "altRedash": "Ein Foto zeigt interaktive Dashboards zur Datenexploration und -visualisierung",
     "altRedashAdding": "Ein Foto zeigt das Hinzufügen von Diagrammen zum dynamischen Dashboard"
-   },
+  },
   "PlanogramPage": {
     "title": "Visualisierer für Produktionsprozesse",
     "subTitle": "Moderne MES (Manufacturing Execution Systems) sind in den Händen von Produktionsmanagern unverzichtbare Werkzeuge, die nicht nur umfassende Einblicke in aktuelle Prozesse bieten, sondern auch eine effiziente Verwaltung des Maschinenparks ermöglichen. Eines der Schlüsselelemente moderner MES-Systeme ist der Planogramm.",

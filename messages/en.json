@@ -40,10 +40,10 @@
     "privacy-policy": "Privacy Policy",
     "tags": "Tags",
     "terms": "Terms",
-    "resources": "Resources",
+    "news": "News",
     "offerDesc": "Discover the wealth of opportunities offered by our OmniMES system and learn why our offer is the perfect solution for your company.",
     "projectDesc": "Get acquainted with the OmniMES project - an initiative that redefines standards of efficiency and control in the production process.",
-    "resourcesDesc": "Explore our educational resources that will help you better understand our system.",
+    "NewsDesc": "Stay up-to-date with the latest news and events related to OmniMES. Check out the latest updates, innovations, and offers.",
     "faqDesc": "Take advantage of our extensive set of questions and answers to get clear explanations about features, pricing, terms of use, and more.",
     "galleryDesc": "Discover our collection of unique photographs that capture the most beautiful moments from various events.",
     "menuOpen": "Open menu",
@@ -58,7 +58,7 @@
     "searchSubtitle": "Check out the OmniMES system offer.",
     "searchSubtitle2": "Learn more about OmniMES.",
     "searchSubtitle3": "Check FAQs and find answers to questions.",
-    "searchSubtitle4": "Download materials related to the system.",
+    "searchSubtitle4": "Check out OmniMES news.",
     "searchSubtitle5": "See the OmniMES photo gallery"
   },
   "Blog": {
@@ -370,10 +370,15 @@
     "desc": "Read our privacy policy to learn how we protect your personal data and how we use it.",
     "keywords": "privacy policy, OmniMES, data protection, personal data, data processing"
   },
-  "ResourcesMeta": {
-    "title": "OmniMES - Resources - Training Materials, Tutorials, Instructions, etc.",
-    "desc": "Discover our rich source of downloadable resources, including training materials, tutorials, and other learning materials related to the OmniMES system.",
-    "keywords": "downloadable resources, training materials, tutorials, learning, OmniMES, applications, documentation, educational materials"
+  "NewsMeta": {
+    "title": "OmniMES - News - Stay Updated with What's Happening Here!",
+    "desc": "Visit our site to get the latest news and updates about OmniMES. Stay informed about the latest events, innovations, and offers.",
+    "keywords": "OmniMES, news, updates, events, innovations, offers"
+  },
+  "NewsData": {
+    "newsNotFound": "Article not found",
+    "newsNotFoundDesc": "Sorry, but we couldn't find this article or it might be located at a different URL. You can read other available articles in this language by going to all posts.",
+    "allnews": "All news"
   },
   "TermsMeta": {
     "title": "OmniMES - Terms of Service - Usage Rules",

@@ -67,13 +67,13 @@ export const ComponentSearch = ({ children }: { children: ReactNode }) => {
               perform: () => router.push('/project'),
             },
             {
-              id: 'resources',
-              name: t('resources'),
+              id: 'news',
+              name: t('news'),
               shortcut: ['r'],
-              keywords: t('resources'),
+              keywords: t('news'),
               subtitle: t('searchSubtitle4'),
               section: 'OmniMES',
-              perform: () => router.push('/resources'),
+              perform: () => router.push('/news'),
             },
             {
               id: 'faq',

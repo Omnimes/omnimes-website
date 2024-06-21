@@ -16,7 +16,7 @@ export const Footer = () => {
     'privacy-policy',
     'tags',
     'terms',
-    'resources',
+    'news',
   ]
   
   return (

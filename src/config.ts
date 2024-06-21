@@ -154,10 +154,10 @@ export const pathnames = {
     de: '/regelwerk',
     pl: '/regulamin',
   },
-  '/resources': {
-    en: '/resources',
-    de: '/ressourcen',
-    pl: '/zasoby',
+  '/news': {
+    en: '/news',
+    de: '/nachrichten',
+    pl: '/aktualności',
   },
   '/gallery': {
     en: '/gallery',

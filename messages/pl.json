@@ -40,12 +40,12 @@
     "privacy-policy": "Polityka Prywatnosci",
     "tags": "Tagi",
     "terms": "Regulamin",
-    "resources": "Zasoby",
+    "news": "Aktualności",
     "offerDesc": "Odkryj bogactwo możliwości oferowanych przez nasz system OmniMES i dowiedz się, dlaczego nasza oferta to idealne rozwiązanie dla Twojej firmy.",
     "projectDesc": "Zapoznaj się z projektem OmniMES - inicjatywą, która redefiniuje standardy efektywności i kontroli w procesie produkcji.",
     "demo": "Pulpit demo",
     "demoDesc": "Prezentacja dynamicznego pulpitu systemu OmniMES - wersja demo",
-    "resourcesDesc": "Zapoznaj się z naszymi zasobami edukacyjnymi, które pomogą Ci w lepszym zrozumieniu naszego systemu.",
+    "NewsDesc": "Bądź na bieżąco z najnowszymi informacjami i wydarzeniami związanymi z OmniMES. Sprawdź aktualności, innowacje i oferty.",
     "faqDesc": "Skorzystaj z naszego obszernego zestawu pytań i odpowiedzi, aby uzyskać klarowne wyjaśnienia dotyczące funkcji, cen, warunków użytkowania i nie tylko.",
     "galleryDesc": "Odkryj nasz zbior wyjątkowych fotografii, które uchwyciły najpiękniejsze chwile z najróżniejszych wydarzeń.",
     "menuOpen": "Otwórz menu",
@@ -58,7 +58,7 @@
     "searchSubtitle": "Sprawdź ofertę systemu OmniMES.",
     "searchSubtitle2": "Dowiedz się więcej na temat OmniMES.",
     "searchSubtitle3": "Sprawdź faq i znajdź odpowiedź na pytania.",
-    "searchSubtitle4": "Pobierz materiały dotyczące systemu.",
+    "searchSubtitle4": "Sprawdź aktualności OmniMES.",
     "searchSubtitle5": "Zobacz galerię zdjęć OmniMES"
   },
   "Blog": {
@@ -370,10 +370,15 @@
     "desc": "Przeczytaj naszą politykę prywatności, aby dowiedzieć się, w jaki sposób chronimy Twoje dane osobowe i jak je wykorzystujemy.",
     "keywords": "polityka prywatności, OmniMES, ochrona danych, dane osobowe, przetwarzanie danych"
   },
-  "ResourcesMeta": {
-    "title": "OmniMES - Zasoby - Materiały Szkoleniowe, Tutoriale, Instrukcje itp",
-    "desc": "Odkryj nasze bogate źródło zasobów do pobrania, w tym materiały szkoleniowe, tutoriale i inne materiały do nauki dotyczące systemu OmniMES.",
-    "keywords": "źródła do pobrania, materiały szkoleniowe, tutoriale, nauka, OmniMES, aplikacje, dokumentacja, materiały edukacyjne"
+  "NewsMeta": {
+    "title": "OmniMES - Aktualności - Bądź na bieżąco z tym co się u nas dzieje!",
+    "desc": "Odwiedź naszą stronę, aby poznać najnowsze informacje i aktualności dotyczące OmniMES. Bądź na bieżąco z najnowszymi wydarzeniami, innowacjami i ofertami.",
+    "keywords": "OmniMES, aktualności, nowości, wydarzenia, innowacje, oferta"
+  },
+  "NewsData": {
+    "newsNotFound": "Nie znaleziono artykułu",
+    "newsNotFoundDesc": "Przepraszamy, ale nie udało się odnaleźć tego artykułu lub może on znajdować się pod innym adresem URL. Możesz przeczytać inne dostępne artykuły w tym języku, przechodząc do wszystkich postów.",
+    "allnews": "Wszystkie aktualności"
   },
   "TermsMeta": {
     "title": "OmniMES - Regulamin Strony - Zasady Korzystania",

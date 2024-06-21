@@ -22,9 +22,9 @@ export const headerNavLinksDropDown: NavLinkDrop[] = [
   { href: '/project', title: 'project', desc: 'projectDesc', icon: LuAtom, color: '#0070f0' },
   // { href: '/demo', title: 'demo', desc: 'demoDesc', icon: LuMonitorStop , color: '#c7861f' },
   {
-    href: '/resources',
-    title: 'resources',
-    desc: 'resourcesDesc',
+    href: '/news',
+    title: 'news',
+    desc: 'NewsDesc',
     icon: LuCombine,
     color: '#18c964',
   },
