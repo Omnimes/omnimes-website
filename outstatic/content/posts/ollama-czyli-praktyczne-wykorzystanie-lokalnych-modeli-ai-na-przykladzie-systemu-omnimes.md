@@ -22,7 +22,7 @@ Oprogramowanie jest dostępne na każdą platformę czyli Windows/Linux/MacOs ja
 
 ## Uruchomienie
 
-Samo uruchomienie oprogramowania jest banalnie proste. Poniżej streszczę w wielkim skrócie na przykładzie uruchomienia na Windows, zaś po dokładną instrukcję instalacji odsyłam pod adres projektu:[https://ollama.com](https://ollama.com/)
+Samo uruchomienie oprogramowania jest banalnie proste. Poniżej streszczę w wielkim skrócie na przykładzie uruchomienia na Windows, zaś po dokładną instrukcję instalacji odsyłam pod adres projektu:[https://ollama.com](https://www.ollama.com/)
 
 Z strony projektu wystarczy pobrać instalator. Jedno kliknięcie i w tej chwili już mamy zainstalowane oprogramowanie. Wpisując po instalacji w przeglądarce:
 
@@ -34,7 +34,7 @@ Powinniśmy zobaczyć że serwer został uruchomiony
 
 ![](/images/image-ExNT.png)
 
-Dostępne modele wraz z ich opisami są na stronie projektu <https://ollama.com/library>
+Dostępne modele wraz z ich opisami są na stronie projektu [https://ollama.com/library](https://www.ollama.com/library)
 
 Po instalacji wystarczy pobrać model wpisując w **cmd** np. :
 
@@ -58,7 +58,7 @@ Wpisujemy pytanie i czekamy na odpowiedź:\
 \
 Oczywiście nie wszyscy będą preferować tego typu interfejs komunikacji. Innym sposób to interfejs webowy ale tu jest wymagany zainstalowany Docker. Jeśli go mamy to z strony:
 
-<https://github.com/open-webui/open-webui>
+[https://github.com/open-webui/open-webui](https://www.github.com/open-webui/open-webui)
 
 możemy pobrać interesującą nas wersję. Ja wybieram standardową i wystarczy że w **cmd** wkleję:
 
@@ -80,7 +80,7 @@ Od teraz możemy w pełni korzystać z naszego lokalnego modelu poprzez taki sam
 
 O konfiguracji tego interfejsu jak i pełnej instalacji serwera **Ollama** zapraszam na obejrzenie tego filmiku:
 
-<https://www.youtube.com/watchv=Wjrdr0NU4Sk>
+[https://www.youtube.com/watchv=Wjrdr0NU4Sk](https://youtube.com/watchv=Wjrdr0NU4Sk)
 
 Dość krótkie przedstawienie oprogramowania i jego instalacji mamy za sobą. W innym poście przedstawię pełną instalację serwera **Ollama** jako zdalny serwer AI jak i zestawienie najlepszych dostępnych modeli.
 
@@ -122,7 +122,7 @@ Skoro mamy już opis oprogramowanie **Ollama** oraz modelu **Llama3** z części
 
 Korzystając z API serwera Ollama zaimplementowaliśmy korzystanie lokalnej AI w systemie Omnimes. Jej działanie opiera się na bardzo prostym ustawianiu danych podobnych jak w przypadku korzystania z API od Open AI o czym pisałem we wcześniejszym poście link poniżej:
 
-<https://www.omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych>
+[https://www.omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych](https://omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych)
 
 ![](/images/image-U0Nj.png)
 
@@ -156,4 +156,4 @@ Jednakże używanie **Ollama** dla potrzeb przedsiębiorstw w tego typu systemac
 \
 Dodatkowo otrzymujemy model AI nieskażony błędnymi informacjami ze świata zewnętrznego - przez to mniej podatny na tzw. halucynacje czyli krótko mówiąc przekłamywaniu lub wymyślaniu.
 
-Jeśli jesteś zainteresowany naszym rozwiązaniem na swoim parku maszynowym lub hali produkcyjnej i usprawnieniu procesu produkcyjnego wykorzystując przy tym nowoczesne metody zbierania danych i ich analizowanie, zapraszam do zapoznania się z oferta systemu [Omnimes](https://www.omnimes.com/pl/oferta)
+Jeśli jesteś zainteresowany naszym rozwiązaniem na swoim parku maszynowym lub hali produkcyjnej i usprawnieniu procesu produkcyjnego wykorzystując przy tym nowoczesne metody zbierania danych i ich analizowanie, zapraszam do zapoznania się z oferta systemu [Omnimes](https://omnimes.com/pl/oferta)
