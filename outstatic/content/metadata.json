@@ -1,6 +1,6 @@
 {
-  "commit": "b1678f03945f3decd4b2540017ed4a642daca50a",
-  "generated": "2024-06-21T05:33:17.750Z",
+  "commit": "ae3f386c3abf4eed33685efe529afa5533333851",
+  "generated": "2024-06-21T06:02:22.654Z",
   "metadata": [
     {
       "__outstatic": {
@@ -368,6 +368,25 @@
         }
       ],
       "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
+    },
+    {
+      "__outstatic": {
+        "commit": "ae3f386c3abf4eed33685efe529afa5533333851",
+        "hash": "11803259",
+        "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "",
+      "description": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:10:18.344Z",
+      "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
+      "status": "published",
+      "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
     }
   ]
 }
