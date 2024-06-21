@@ -1,6 +1,6 @@
 {
-  "commit": "c2ed14a217dce9ab80180f94b9a365a7131788c4",
-  "generated": "2024-06-21T11:32:30.266Z",
+  "commit": "c8e559c1c8ee3c475363069fb54ce43236a5120b",
+  "generated": "2024-06-21T21:03:04.377Z",
   "metadata": [
     {
       "__outstatic": {
@@ -425,6 +425,43 @@
       "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
       "status": "published",
       "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "c8e559c1c8ee3c475363069fb54ce43236a5120b",
+        "hash": "3089381040",
+        "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2024-06-15T21:02:14.000Z",
+      "slug": "wizualizacja-danych-sukcesem-analizy-redash",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "wizualziacja danych",
+          "value": "wizualziacjaDanych"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "raporty",
+          "value": "raporty"
+        }
+      ],
+      "title": "Wizualizacja danych - sukcesem analizy. Redash"
     }
   ]
 }
