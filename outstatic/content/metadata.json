@@ -1,6 +1,6 @@
 {
   "commit": "562af0fc7e001dbb4f82ebc6e829936b69c5e0e2",
-  "generated": "2024-06-21T11:30:07.501Z",
+  "generated": "2024-06-21T11:30:41.202Z",
   "metadata": [
     {
       "__outstatic": {
@@ -410,12 +410,12 @@
     {
       "__outstatic": {
         "commit": "562af0fc7e001dbb4f82ebc6e829936b69c5e0e2",
-        "hash": "2395773940",
+        "hash": "3594628495",
         "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
       },
       "author": {
         "name": "Omnimes",
-        "picture": "/images/166378457-MwND.png"
+        "picture": "/images/166378457-A5OD.png"
       },
       "collection": "news",
       "coverImage": "/images/image-e3mt-gxNj.png",
