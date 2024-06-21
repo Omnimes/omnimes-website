@@ -1,6 +1,6 @@
 {
   "commit": "4602e46cb90d97cd7557988b6a320dbe14ec80f8",
-  "generated": "2024-06-21T21:35:46.535Z",
+  "generated": "2024-06-21T21:57:43.510Z",
   "metadata": [
     {
       "__outstatic": {
@@ -429,7 +429,7 @@
     {
       "__outstatic": {
         "commit": "4602e46cb90d97cd7557988b6a320dbe14ec80f8",
-        "hash": "1592802970",
+        "hash": "4065755900",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
       },
       "author": {
@@ -442,7 +442,7 @@
       "lang": "pl",
       "publishedAt": "2024-06-15T21:02:14.000Z",
       "slug": "wizualizacja-danych-sukcesem-analizy-redash",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "redash",

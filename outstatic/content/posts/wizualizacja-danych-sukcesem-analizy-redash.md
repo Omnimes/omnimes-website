@@ -1,6 +1,6 @@
 ---
 title: 'Wizualizacja danych - sukcesem analizy. Redash'
-status: 'draft'
+status: 'published'
 author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
@@ -12,7 +12,7 @@ tags: [{"label":"redash","value":"redash"},{"label":"wizualziacja danych","value
 publishedAt: '2024-06-15T21:02:14.000Z'
 ---
 
-![](/images/image-EzOT.png)
+![](/images/image-M4MT.png)
 
 ## Wstępem
 
@@ -59,4 +59,51 @@ Warto zwrócić uwagę na dwie praktyczne możliwości takiego dashboardu:
 
 Dla ułatwienia, w systemie Omnimes wprowadziliśmy własny edytor tworzenia zapytań, jak pokazano poniżej:\
 \
-![](/images/image-Y0OT.png)
+![](/images/image-I2NT.png)
+
+Po stworzeniu interesujących nas zapytań przechodzimy do do samego Redash do listy z utworzonymi zapytaniami o dane.
+
+![](/images/image-MxNz.png)
+
+Następnie wchodzimy w dane zapytanie i je edytujemy oraz jeśli jesteśmy prawidłowo podłączeni do źródła danych otrzymujemy wyniki:\
+![](/images/image-QzMz.png)
+
+Następnie przechodzimy do zakładki "Chart", gdzie tworzymy wizualizacje, określając sposób przedstawienia danych. Możliwości jest wiele, zarówno pod względem typów wykresów, jak i sposobów ich prezentacji. Poniżej znajduje się przykład wykresu typu "bar", który zestawia maszyny pod kątem występowania najczęstszych błędów.
+
+![](/images/image-c5NT.png)
+
+Po stworzeniu interesujących nas wykresów z danymi, przechodzimy do zakładki "Dashboard", gdzie decydujemy, które z wykresów mają się na nim znaleźć.
+
+![](/images/image-A4Nj.png)
+
+W tym miejscu możemy włączyć publiczne udostępnianie dashboardu oraz ustawić, co jaki czas dane mają się odświeżać.\
+\
+W systemie Omnimes mamy możliwość zdecydowania, który z dashboardów ma znaleźć się na stronie głównej systemu. Nie ogranicza to tworzenia kolejnych dashboardów, które można udostępniać innym działom lub osobom.
+
+![](/images/image-AxMT.png)
+
+W rezultacie otrzymujemy gotowy dashboard jak poniżej:\
+\
+![](/images/image-c0Mj.png)
+
+Tak przygotowane dane możemy wykorzystać dalej jak do chociażby do analizy poprzez AI - tak jak to się dzieje w przypadku systemu Omnimes.
+
+![](/images/image-Y1ND.png)
+
+I uzyskać pełne podsumowanie jak np. to:
+
+![](/images/image-I5ND.png)
+
+## Podsumowanie
+
+W dynamicznie rozwijającym się świecie technologii, efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak **Omnimes**, zintegrowane z narzędziami do wizualizacji danych, takimi jak **Redash**, oferują zaawansowane możliwości optymalizacji procesów produkcyjnych.
+
+REdash to wszechstronna platforma open source do tworzenia zapytań i wizualizacji danych, współpracująca z wieloma źródłami danych, jak Redshift, Google BigQuery czy PostgreSQL. 
+
+**Integracja Redash z Omnimes** pozwala na tworzenie interaktywnych dashboardów, które można udostępniać publicznie bez potrzeby tworzenia konta, oraz ustawiać częste odświeżanie danych, co zapewnia aktualne informacje na temat produkcji. W systemie **Omnimes** użytkownicy mogą także decydować, które dashboardy mają być widoczne na stronie głównej, oraz tworzyć dodatkowe dashboardy do użytku wewnętrznego.
+
+**Przedstawione przykłady pokazują, jak takie narzędzia mogą wspierać efektywne zarządzanie produkcją, lepszą komunikację w zespole oraz szybsze reagowanie na problemy**. 
+
+Dzięki temu firmy mogą podejmować bardziej świadome decyzje, optymalizować procesy produkcyjne i poprawiać jakość swoich produktów.
+
+W rezultacie, **zastosowanie Redash w systemie Omnimes** prowadzi do stworzenia zaawansowanych dashboardów, **które można wykorzystać do dalszej analizy danych, na przykład z użyciem sztucznej inteligencji**, co umożliwia uzyskanie pełnego podsumowania i lepsze zarządzanie produkcją.
