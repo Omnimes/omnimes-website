@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "OmniMES - system realizacji produkcji",
+    "title": "OmniMES - System realizacji produkcji",
     "description": "OmniMES to nowoczesny system realizacji produkcji, usprawniający procesy produkcyjne dla lepszej efektywności i kontroli jakości",
-    "keywords": "system realizacji produkcji, OmniMES, efektywność produkcji, kontrola jakości, zaawansowana technologia produkcji",
+    "keywords": "System realizacji produkcji, OmniMES, efektywność produkcji, kontrola jakości, zaawansowana technologia produkcji",
     "postNotFound": "Artykułu nie znaleziono",
     "blog_title": "OmniMES Blog: Odkrywaj Świat Przemysłu 4.0",
     "blog_desc": "Odkryj świat OmniMES i Przemysłu 4.0 na naszym blogu! Eksploruj innowacyjne treści, zgłębiaj tajniki efektywności produkcyjnej i nowoczesnych technologii.",
@@ -309,7 +309,7 @@
     "descriptionSubscription": "Zaprojektowana z myślą o elastyczności i skalowalności, nasza oferta subskrypcyjna jest dostosowana do rozmiarów i potrzeb Twojego przedsiębiorstwa."
   },
   "Project": {
-    "project": "OmniMES - system realizacji produkcji",
+    "project": "OmniMES - System realizacji produkcji",
     "projectDesc": "Zapoznaj się z projektem OmniMES - inicjatywą, która redefiniuje standardy efektywności i kontroli w procesie produkcji."
   },
   "Offer": {
@@ -754,7 +754,7 @@
   },
   "DashboardNav": {
     "home": "Strona Główna",
-    "docs": "Dokumnetacja",
+    "docs": "Dokumentacja",
     "support": "Wsparcie",
     "webinars": "Webinaria",
     "billing": "Rozliczenia",
@@ -764,7 +764,10 @@
     "advertising": "Reklamowe",
     "information": "Informacyjne",
     "manual": "Instrukcje",
-    "dashboard": "Panel"
+    "dashboard": "Panel",
+    "administrationPanel": "Panel administracyjny",
+    "users": "Użytkownicy",
+    "outstatic": "Treści"
   },
   "DashboardFooter": {
     "footer": "System Realizacji Produkcji."
@@ -799,7 +802,8 @@
     "settings": "Ustawienia",
     "logout": "Wyloguj",
     "demo": "Demo",
-    "materials": "Materiały"
+    "materials": "Materiały",
+    "administrationPanel": "Panel administracyjny"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinary",
@@ -823,5 +827,28 @@
     "tokenHasExpired": "Token wygasł",
     "userNotFound": "Użytkownik nie znaleziony",
     "emailVerified": "Adres e-mail zweryfikowany"
+  },
+  "AdminUsersMeta": {
+    "title": "Omnimes - Użytkownicy",
+    "desc": "Zarządzaj użytkownikami systemu Omnimes.",
+    "keywords": "Users, OmniMES, Panel administracyjny, Uprawnienia"
+  },
+  "AdminUsers": {
+    "users": "Użytkownicy",
+    "searchUsers": "Wyszukaj użytkownika...",
+    "name": "Imię",
+    "email": "Email",
+    "role": "Rola",
+    "action": "Akcje",
+    "next": "Następna strona",
+    "prev": "Poprzednia strona",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "all": "Wszyscy",
+    "admin": "Admin",
+    "developer": "Developer",
+    "user": "Użytkownik",
+    "placeholderRole": "Wybierz role",
+    "noData": "Brak danych"
   }
 }

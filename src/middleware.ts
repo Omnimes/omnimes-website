@@ -3,7 +3,7 @@ import createMiddleware from 'next-intl/middleware'
 import { pathnames, locales, localePrefix, localeDetection } from './config'
 import { NextRequest } from 'next/server'
 
-const adminPages = ['/admin'] // dodawać wszystkie admin page
+const adminPages = ['/admin', '/admin/users'] // dodawać wszystkie admin page
 const LoginAndRegisterPages = ['/login', '/register']
 const protectedPages = ['/dashboard', '/dashboard/settings', '/dashboard/demo'] // dodawać wszystkie protected page
 const developerPages = [
@@ -24,7 +24,7 @@ export const excludePaths = [
   '/tags/[tag]',
   '/verify-email'
 ]
-export const defaultLocale = 'en' as const
+export const defaultLocale = 'pl' as const
 
 export const intlMiddleware = createMiddleware({
   defaultLocale: defaultLocale,

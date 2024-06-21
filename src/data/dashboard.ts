@@ -29,7 +29,7 @@ sidebarNav: [
 ],
 }
 
-export const dashboardConfigDeveloper: DashboardConfig = {
+export const dashboardConfigExtend: DashboardConfig = {
     mainNav: [
     {
       title: "home",
@@ -51,6 +51,11 @@ export const dashboardConfigDeveloper: DashboardConfig = {
       title: "dashboard",
       href: "/dashboard",
       icon: "dashboard",
+    },
+    {
+      title: "administrationPanel",
+      href: "/admin",
+      icon: "administrationPanel",
     },
     {
       title: "separator1",
@@ -105,4 +110,30 @@ export const dashboardConfigDeveloper: DashboardConfig = {
       icon: "settings",
     },
   ],
+}
+
+export const dashboardConfigAdmin: DashboardConfig = {
+  mainNav: [
+    {
+      title: "home",
+      href: "/",
+    },
+  ],
+  sidebarNav: [
+    {
+      title: "dashboard",
+      href: "/admin",
+      icon: "dashboard",
+    },
+    {
+      title: "users",
+      href: "/admin/users",
+      icon: "users",
+    },
+    {
+      title: "outstatic",
+      href: "/outstatic",
+      icon: "outstatic"
+    }
+  ]
 }

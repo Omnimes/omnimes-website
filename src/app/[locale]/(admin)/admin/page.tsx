@@ -23,7 +23,7 @@ export default function AdminPage({ params: { locale } }: { params: { locale: st
   unstable_setRequestLocale(locale);
   return (
     <main>
-      Admin
+      już wkrótce ... Admin
     </main>
   );
 }

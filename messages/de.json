@@ -542,10 +542,8 @@
     "p4": "Das Tool wurde mit den Benutzern des Omnimes-Systems integriert und bietet einen einzigartigen Überwachungsmodus. Dieser Überwachungsmodus unterscheidet sich vom Echtzeit-Monitoring, da er Daten aus einem breiteren Zeitraum präsentieren kann - bis zu 24 Stunden oder 10.000 Dokumente pro Visualisierung, was bedeutet, dass die Datenaktualisierungszeit bis zu 1 Minute betragen kann.",
     "p5": "Die Visualisierungen bieten eine Vielzahl von Anpassungsmöglichkeiten - von Balkendiagrammen über Donut-Typ-Pie-Charts bis hin zu Tabellen mit Datenfiltersuche. Mit diesen Optionen kann jede Datendarstellung maximal an die Vorlieben des Benutzers angepasst werden und bietet präzise und intuitive Tools für Analyse und Überwachung.",
     "altRedash": "Ein Foto zeigt interaktive Dashboards zur Datenexploration und -visualisierung",
-    "altRedashAdding": "Ein Foto zeigt das Hinzufügen von Diagrammen zum dynamischen Dashboard",
-    "altLight": "Ein Foto zeigt das Planogramm-Modul, einen Visualisierer für Produktionsprozesse im hellen Modus",
-    "altDark": "Ein Foto zeigt das Planogramm-Modul, einen Visualisierer für Produktionsprozesse im dunklen Modus"
-  },
+    "altRedashAdding": "Ein Foto zeigt das Hinzufügen von Diagrammen zum dynamischen Dashboard"
+   },
   "PlanogramPage": {
     "title": "Visualisierer für Produktionsprozesse",
     "subTitle": "Moderne MES (Manufacturing Execution Systems) sind in den Händen von Produktionsmanagern unverzichtbare Werkzeuge, die nicht nur umfassende Einblicke in aktuelle Prozesse bieten, sondern auch eine effiziente Verwaltung des Maschinenparks ermöglichen. Eines der Schlüsselelemente moderner MES-Systeme ist der Planogramm.",
@@ -766,7 +764,10 @@
     "advertising": "Werbung",
     "information": "Informationen",
     "manual": "Handbücher",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "administrationPanel": "Verwaltungsbereich",
+    "users": "Benutzer",
+    "outstatic": "Inhalte"
   },
   "DashboardFooter": {
     "footer": "Produktionsausführungssystem."
@@ -801,7 +802,8 @@
     "settings": "Einstellungen",
     "logout": "Abmelden",
     "demo": "Demo",
-    "materials": "Materialien"
+    "materials": "Materialien",
+    "administrationPanel": "Verwaltungsbereich"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinare",
@@ -825,5 +827,28 @@
     "tokenHasExpired": "Token ist abgelaufen",
     "userNotFound": "Benutzer nicht gefunden",
     "emailVerified": "E-Mail-Adresse bestätigt"
+  },
+  "AdminUsersMeta": {
+    "title": "Omnimes - Benutzer",
+    "desc": "Verwalten Sie Benutzer des Omnimes-Systems.",
+    "keywords": "Benutzer, OmniMES, Verwaltungsbereich, Berechtigungen"
+  },
+  "AdminUsers": {
+    "users": "Benutzer",
+    "searchUsers": "Benutzer suchen...",
+    "name": "Name",
+    "email": "E-Mail",
+    "role": "Rolle",
+    "action": "Aktionen",
+    "next": "Nächste Seite",
+    "prev": "Vorherige Seite",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "all": "Alle",
+    "admin": "Admin",
+    "developer": "Entwickler",
+    "user": "Benutzer",
+    "placeholderRole": "Rolle auswählen",
+    "noData": "Keine Daten"
   }
 }

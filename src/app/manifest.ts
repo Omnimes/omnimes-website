@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'OmniMES - system realizacji produkcji',
+        name: 'OmniMES - System realizacji produkcji',
         short_name: 'OmniMES',
         description: 'OmniMES to nowoczesny system realizacji produkcji, usprawniający procesy produkcyjne dla lepszej efektywności i kontroli jakości',
         start_url: '/',

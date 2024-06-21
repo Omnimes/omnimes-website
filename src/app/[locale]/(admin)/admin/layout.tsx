@@ -1,14 +1,14 @@
-import { redirect } from "next/navigation"
-import { getCurrentUser } from "@/utils/session"
-import { MainNav } from "@/components/dashboard/MainNav";
-import { DashboardNav } from "@/components/dashboard/DashboardNav";
-import { SiteFooter } from "@/components/dashboard/SiteFooter";
-import { UserAccountNavServer } from "@/components/auth/UserAccountNavServer";
-import ThemeSwitch from "@/components/ThemeSwitch";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
+import ThemeSwitch from "@/components/ThemeSwitch";
+import { UserAccountNavServer } from "@/components/auth/UserAccountNavServer";
+import { DashboardNav } from "@/components/dashboard/DashboardNav";
+import { MainNav } from "@/components/dashboard/MainNav";
+import { SiteFooter } from "@/components/dashboard/SiteFooter";
+import { getMainAdmin, getSubAdmin } from "@/lib/getSubNav";
+import { getCurrentUser } from "@/utils/session";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { redirect } from "next/navigation";
 import { ReactNode } from "react";
-import { getMainNav, getSubNav } from "@/lib/getSubNav";
 
 type DashboardLayoutProps = {
   children: ReactNode;
@@ -23,10 +23,11 @@ export default async function DashboardLayout({ children, params: { locale }}: D
     redirect("/login")
   }
 
-  const mainNav = getMainNav(user.role);
-  const subNav = getSubNav(user.role);
+  const mainNav = getMainAdmin();
+  const subNav = getSubAdmin();
 
   const mobileNav = [...mainNav, ...subNav];
+
   return (
     <div className="flex min-h-screen flex-col space-y-6">
       <header className="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none inset-x-0 border-b border-border backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70 navbar sticky top-0 xl:px-0">
@@ -40,7 +41,7 @@ export default async function DashboardLayout({ children, params: { locale }}: D
                 image: user.image,
                 email: user.email,
                 role: user.role,
-              }}
+              }} 
             />
             <ThemeSwitch />
           </section>

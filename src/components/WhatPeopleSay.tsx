@@ -1,9 +1,10 @@
 'use client'
-import { Avatar, AvatarGroup } from '@nextui-org/react'
+// import { Avatar, AvatarGroup } from '@nextui-org/react'
 import { Heading } from './atoms/Heading'
 import { SubtitleNormal } from './atoms/Subtitle'
 import { DescriptionSecondary } from './atoms/Description'
 import { useTranslations } from 'next-intl'
+import { Avatar, AvatarImage } from './atoms/Avatar'
 
 export const WhatPeopleSay = () => {
   const t = useTranslations('Opinion')
@@ -48,24 +49,23 @@ export const WhatPeopleSay = () => {
         {opinion.slice(0, 3).map((item) => {
           return (
             <div key={item.name} className="break-inside-avoid-column pt-6 text-left">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
+              <section
                 className="bg-layer-2 hover:bg-layer-3 block rounded-2xl pb-5 pt-4 md:p-2"
               >
                 <div className="flex mb-4 content-center items-center gap-2">
-                  <Avatar isBordered size='sm' color="default" src={item.images} />
+                  <Avatar>
+                    <AvatarImage alt="Picture" src={item.images} />
+                  </Avatar>
                   <h6 className="text-heading font-semibold">{item.name}</h6>
                 </div>
                 <DescriptionSecondary text={item.opinion} />
-              </a>
+              </section>
             </div>
           )
         })}
       </div>
       <section className="d-flex mt-10 gap-1">
-        <AvatarGroup
+        {/* <AvatarGroup
           isBordered
           max={3}
           total={10}
@@ -76,7 +76,7 @@ export const WhatPeopleSay = () => {
           {opinion.slice(0, 3).map((item) => {
             return <Avatar key={item.name} src={item.images} />
           })}
-        </AvatarGroup>
+        </AvatarGroup> */}
       </section>
     </div>
   )

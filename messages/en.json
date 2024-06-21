@@ -309,7 +309,7 @@
     "descriptionSubscription": "Designed with flexibility and scalability in mind, our subscription offering is tailored to the size and needs of your business."
   },
   "Project": {
-    "project": "OmniMES - production execution system",
+    "project": "OmniMES - Production execution system",
     "projectDesc": "Explore the OmniMES project - an initiative that redefines standards of efficiency and control in the production process."
   },
   "Offer": {
@@ -764,7 +764,10 @@
     "advertising": "Advertising",
     "information": "Informational",
     "manual": "Manuals",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "administrationPanel": "Administration Panel",
+    "users": "Users",
+    "outstatic": "Content"
   },
   "DashboardFooter": {
     "footer": "Production Execution System."
@@ -799,7 +802,8 @@
     "settings": "Settings",
     "logout": "Logout",
     "demo": "Demo",
-    "materials": "Materials"
+    "materials": "Materials",
+    "administrationPanel": "Administration Panel"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinars",
@@ -823,5 +827,28 @@
     "tokenHasExpired": "Token has expired",
     "userNotFound": "User not found",
     "emailVerified": "Email verified"
+  },
+  "AdminUsersMeta": {
+    "title": "Omnimes - Users",
+    "desc": "Manage Omnimes system users.",
+    "keywords": "Users, OmniMES, Administration Panel, Permissions"
+  },
+  "AdminUsers": {
+    "users": "Users",
+    "searchUsers": "Search users...",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "action": "Actions",
+    "next": "Next page",
+    "prev": "Previous page",
+    "delete": "Delete",
+    "edit": "Edit",
+    "all": "All",
+    "admin": "Admin",
+    "developer": "Developer",
+    "user": "User",
+    "placeholderRole": "Select role",
+    "noData": "No data"
   }
 }

@@ -2,13 +2,26 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/utils/utils'
-import { LuFileVideo2, LuCreditCard, LuSettings, LuSparkles, LuBadgeInfo, LuVideo, LuFileCog2, LuLayoutDashboard, LuTv2 } from 'react-icons/lu'
 import { useLocale, useTranslations } from 'next-intl'
 import { Separator } from '../atoms/Separator'
+import { LuBadgeInfo, LuCreditCard, LuFileCog2, LuFileVideo2, LuLayoutDashboard, LuLayoutGrid, LuPencilLine, LuSettings, LuSparkles, LuTv2, LuUsers2, LuVideo } from 'react-icons/lu'
 interface DashboardNavProps {
   items: SidebarNavItem[]
 }
-
+const iconMapping: { [key: string]: React.ComponentType<{ className?: string }> } = {
+  dashboard: LuLayoutDashboard,
+  administrationPanel: LuLayoutGrid,
+  webinar: LuFileVideo2,
+  billing: LuCreditCard,
+  settings: LuSettings,
+  demo: LuTv2,
+  materials: LuSparkles,
+  advertising: LuVideo,
+  information: LuBadgeInfo,
+  manual: LuFileCog2,
+  users: LuUsers2,
+  outstatic: LuPencilLine,
+}
 export function DashboardNav({ items }: DashboardNavProps) {
   const path = usePathname();
   const locale = useLocale();
@@ -19,6 +32,8 @@ export function DashboardNav({ items }: DashboardNavProps) {
   return (
     <nav className="grid items-start gap-2">
       {items.map((item, index) => {
+        const IconComponent = item.icon ? iconMapping[item.icon as keyof typeof iconMapping] : null;
+
         if(item.separator) {
           return (
             <Separator key={item.title} />
@@ -35,24 +50,22 @@ export function DashboardNav({ items }: DashboardNavProps) {
                     item.disabled && 'cursor-not-allowed opacity-80'
                   )}
                 >
-                  {item.icon == 'materials' && <LuSparkles className="mr-2 h-4 w-4" />}
+                  {IconComponent && <IconComponent className="mr-2 h-4 w-4" />}
                   <span>{t(item.title)}</span>
                 </span>
               </Link>)}
 
               {item.items.map(link => {
+                const LinkIconComponent = link.icon ? iconMapping[link.icon as keyof typeof iconMapping] : null;
                 return (
                   <Link key={link.title} href={link.href}>
                     <span
                       className={cn(
                         'hover:bg-accent hover:text-accent-foreground group flex items-center rounded-md px-3 py-2 text-sm font-medium ml-6',
                         path === `/${locale}${link.href}` ? 'bg-accent' : 'transparent',
-                        link.disabled && 'cursor-not-allowed opacity-80'
                       )}
                     >
-                      {link.icon == 'advertising' && <LuVideo className="mr-2 h-4 w-4" />}
-                      {link.icon == 'information' && <LuBadgeInfo className="mr-2 h-4 w-4" />}
-                      {link.icon == 'manual' && <LuFileCog2 className="mr-2 h-4 w-4" />}
+                       {LinkIconComponent && <LinkIconComponent className="mr-2 h-4 w-4" />}
                       <span>{t(link.title)}</span>
                     </span>
                   </Link>
@@ -71,11 +84,7 @@ export function DashboardNav({ items }: DashboardNavProps) {
                 item.disabled && 'cursor-not-allowed opacity-80'
               )}
             >
-              {item.icon == 'dashboard' && <LuLayoutDashboard className="mr-2 h-4 w-4" />}
-              {item.icon == 'webinar' && <LuFileVideo2 className="mr-2 h-4 w-4" />}
-              {item.icon == 'billing' && <LuCreditCard className="mr-2 h-4 w-4" />}
-              {item.icon == 'settings' && <LuSettings className="mr-2 h-4 w-4" />}
-              {item.icon == 'demo' && <LuTv2 className="mr-2 h-4 w-4" />}
+              {IconComponent && <IconComponent className="mr-2 h-4 w-4" />}
               <span>{t(item.title)}</span>
             </span>
           </Link>

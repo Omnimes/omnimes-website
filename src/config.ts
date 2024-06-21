@@ -5,6 +5,7 @@ export const locales = ['en', 'pl', 'de'] as const;
 export const pathnames = {
   '/': '/',
   '/admin': '/admin',
+  '/admin/users': '/admin/users',
   '/dashboard': '/dashboard',
   '/dashboard/billing': {
     en: '/dashboard/billing',

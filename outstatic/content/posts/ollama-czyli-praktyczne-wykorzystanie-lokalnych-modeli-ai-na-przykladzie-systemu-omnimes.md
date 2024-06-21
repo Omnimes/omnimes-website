@@ -3,16 +3,16 @@ title: 'Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykład
 status: 'published'
 author:
   name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  picture: '/images/martin.png'
 slug: 'ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes'
-description: ''
+description: 'Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.'
 coverImage: ''
 tags: [{"value":"ai","label":"AI"},{"label":"Ollama","value":"ollama"},{"label":"llama3","value":"llama3"},{"label":"Meta","value":"meta"},{"label":"Gemma","value":"gemma"},{"label":"Mistral","value":"mistral"},{"label":"GPT-4","value":"gpt4"},{"label":"GPT-3.5","value":"gpt35"},{"label":"AI local","value":"aiLocal"}]
 lang: 'pl'
 publishedAt: '2024-06-20T12:47:51.265Z'
 ---
 
-![](/images/image-E3MT.png)
+![Meta - ollama logo - model AI](/images/image-E3MT.png)
 
 Może od początku czym jest **projekt Ollama** ? Jest to otwarte ,bezpłatne oprogramowanie do uruchamiania lokalnych (na własnym komputerze/serwerze) modeli AI typu LLM (duże modele językowe) przy stosunkowo niskich wymaganiach sprzętowych. Oprogramowanie to jak i jeden z modeli **Llama3** pochodzi od **META (wcześniej Facebook)**\
 \
@@ -32,7 +32,7 @@ localhost:11434
 
 Powinniśmy zobaczyć że serwer został uruchomiony
 
-![](/images/image-ExNT.png)
+![Screenshot konsoli która pokazuje uruchomiony serwer Ollama](/images/image-ExNT.png)
 
 Dostępne modele wraz z ich opisami są na stronie projektu [https://ollama.com/library](https://www.ollama.com/library)
 
@@ -50,11 +50,11 @@ ollama run llama3
 
 Po czym uzyskamy gotowy interfejs komunikacji,
 
-![](/images/image-I3OT.png)
+![Interface komunikacji ollama](/images/image-I3OT.png)
 
 Wpisujemy pytanie i czekamy na odpowiedź:\
 \
-![](/images/image-UyND.png)\
+![Odpowiedź na pytanie kim jest Elon Musk przez model językowy Ollama](/images/image-UyND.png)\
 \
 Oczywiście nie wszyscy będą preferować tego typu interfejs komunikacji. Innym sposób to interfejs webowy ale tu jest wymagany zainstalowany Docker. Jeśli go mamy to z strony:
 
@@ -74,7 +74,7 @@ localhost:3000
 
 i na czym oczom ukaże się interfejs bardzo dobrze znany z OpenAI:
 
-![](/images/image-kzNj.png)
+![Zdjęcie przedstawia interface graficzny Ollamy. Interfejs znany z OpenAI.](/images/image-kzNj.png)
 
 Od teraz możemy w pełni korzystać z naszego lokalnego modelu poprzez taki sam interfejs jak Chat GPT
 
@@ -102,7 +102,7 @@ Jakość odpowiedzi jest również na poziomie - jeśli chodzi o logiczną skła
 
 Chyba najlepszy porównaniem świadczącym o **możliwościach modelu Llama3 będzie jego zestawienie z modelem GPT 2, 3.5 czy 4 oraz z modelem AI Gemma od Googla oraz Mistral od Apache.** Porównanie takie możemy dokonać zestawiając modele w benchmarkach.
 
-![](/images/image-gxNz.png)
+![Tabela porównująca modele językowe.](/images/image-gxNz.png)
 
 **Znaczenie benchmarków:**
 
@@ -124,7 +124,7 @@ Korzystając z API serwera Ollama zaimplementowaliśmy korzystanie lokalnej AI w
 
 [https://www.omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych](https://omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych)
 
-![](/images/image-U0Nj.png)
+![Ustawienia modelu AI w systemie Omimes](/images/image-U0Nj.png)
 
 Obecnie w systemie Omnimes mamy do wyboru czy chcemy korzystać z zewnętrznej AI czyli tu - API od Open AI lub wewnętrznej AI tu - Ollama
 
@@ -134,15 +134,15 @@ Ilość modeli zależy ilości pobranych modeli na serwer Ollama. Możemy równi
 
 A tu poniżej przedstawienie analizy danych z podsumowania znajdującego się na panelu głównym systemu Omnimes
 
-![](/images/image-gyNz.png)
+![Dashboard w systemie Omnimes](/images/image-gyNz.png)
 
 *Wynik analizy przez GPT 3.5*
 
-![](/images/image-M5NT.png)
+![Wynik analizy przez GPT 3.5](/images/image-M5NT.png)
 
 *Wynik analizy przez Llama3*
 
-![](/images/image-c0Nz.png)
+![Wynik analizy przez model Ollama](/images/image-c0Nz.png)
 
 Jak widzimy, składnia logiczna lokalnego modelu Llama3 jest bardzo dobra i niczym nie odstępuje od GPT 3.5. Warto dodać że sam model Llama3 waży zaledwie 4,5 GB zaś model GPT 2 w wersji XL 6GB, waga modelu GPT 3.5 nie została podana do wiadomości publicznej.
 
