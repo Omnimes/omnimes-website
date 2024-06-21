@@ -1,6 +1,6 @@
 {
-  "commit": "81c9eda751e02ee368a1356ba1cf879b8da13af1",
-  "generated": "2024-06-20T19:28:39.401Z",
+  "commit": "ea113a01a40d5ace421b729eb7d31a73eda20784",
+  "generated": "2024-06-21T05:16:24.363Z",
   "metadata": [
     {
       "__outstatic": {
@@ -368,6 +368,31 @@
         }
       ],
       "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
+    },
+    {
+      "__outstatic": {
+        "commit": "ea113a01a40d5ace421b729eb7d31a73eda20784",
+        "hash": "2273037742",
+        "path": "outstatic/content/posts/test-linki.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T05:27:11.012Z",
+      "slug": "test-linki",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        }
+      ],
+      "title": "test linki"
     }
   ]
 }
