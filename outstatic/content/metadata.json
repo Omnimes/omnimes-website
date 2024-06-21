@@ -1,6 +1,6 @@
 {
-  "commit": "ea113a01a40d5ace421b729eb7d31a73eda20784",
-  "generated": "2024-06-21T05:16:24.363Z",
+  "commit": "ec0d9f7d813852638ddb51854c928108a57e7f5e",
+  "generated": "2024-06-21T05:17:01.998Z",
   "metadata": [
     {
       "__outstatic": {
@@ -371,8 +371,8 @@
     },
     {
       "__outstatic": {
-        "commit": "ea113a01a40d5ace421b729eb7d31a73eda20784",
-        "hash": "2273037742",
+        "commit": "ec0d9f7d813852638ddb51854c928108a57e7f5e",
+        "hash": "3051634736",
         "path": "outstatic/content/posts/test-linki.md"
       },
       "author": {

@@ -18,4 +18,4 @@ publishedAt: '2024-06-21T05:27:11.012Z'
 
 <https://omnimes.com>
 
-<https://omnimes.com>
+[https://omnimes.com](https://www.omnimes.com)
