@@ -1,6 +1,6 @@
 {
-  "commit": "562af0fc7e001dbb4f82ebc6e829936b69c5e0e2",
-  "generated": "2024-06-21T11:30:41.202Z",
+  "commit": "4097c0adb3bf7db512260a2705744e7846d5a99e",
+  "generated": "2024-06-21T11:32:12.104Z",
   "metadata": [
     {
       "__outstatic": {
@@ -371,13 +371,32 @@
     },
     {
       "__outstatic": {
-        "commit": "10ba558fe993dac002a387dfc619449bc4f2abca",
-        "hash": "3621790274",
+        "commit": "562af0fc7e001dbb4f82ebc6e829936b69c5e0e2",
+        "hash": "1670757753",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": ""
+      },
+      "collection": "news",
+      "coverImage": "/images/image-e3mt-gxNj.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "status": "published",
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "03fb3299c52fd8c1dce845487a485b38dd328859",
+        "hash": "3965136867",
         "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
       },
       "author": {
-        "name": "Administrator",
-        "picture": "/images/default-Y0OT.png"
+        "name": "Omnimes",
+        "picture": ""
       },
       "collection": "news",
       "coverImage": "/images/22-k0Mj.jpg",
@@ -390,8 +409,8 @@
     },
     {
       "__outstatic": {
-        "commit": "9f2eeab17876739645854f7f6fcb32a1c98f31cb",
-        "hash": "1372985175",
+        "commit": "4097c0adb3bf7db512260a2705744e7846d5a99e",
+        "hash": "2003061435",
         "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
       },
       "author": {
@@ -406,25 +425,6 @@
       "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
       "status": "published",
       "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
-    },
-    {
-      "__outstatic": {
-        "commit": "562af0fc7e001dbb4f82ebc6e829936b69c5e0e2",
-        "hash": "3594628495",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/166378457-A5OD.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-e3mt-gxNj.png",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
-      "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
     }
   ]
 }
