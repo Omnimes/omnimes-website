@@ -3,7 +3,7 @@ title: 'Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI'
 status: 'published'
 author:
   name: 'Omnimes'
-  picture: ''
+  picture: '/images/166378457-MwND.png'
 slug: 'nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai'
 description: 'Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI'
 coverImage: '/images/image-e3mt-gxNj.png'
