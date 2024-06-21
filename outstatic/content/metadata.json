@@ -1,6 +1,6 @@
 {
   "commit": "b1678f03945f3decd4b2540017ed4a642daca50a",
-  "generated": "2024-06-21T05:31:59.840Z",
+  "generated": "2024-06-21T05:33:17.750Z",
   "metadata": [
     {
       "__outstatic": {
@@ -315,16 +315,16 @@
     {
       "__outstatic": {
         "commit": "b1678f03945f3decd4b2540017ed4a642daca50a",
-        "hash": "2637033033",
+        "hash": "3504171653",
         "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "",
-      "description": "",
+      "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
       "lang": "pl",
       "publishedAt": "2024-06-20T12:47:51.265Z",
       "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
