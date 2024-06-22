@@ -37,7 +37,7 @@ REdash to samoobsługowa platforma open source do tworzenia zapytań i wizualiza
 
 Platforma Redash wspiera różnorodne produkty, co czyni ją wszechstronnym narzędziem do wizualizacji danych w systemie Omnimes.
 
-![](/images/image-AzMT.png)
+![Firmy korzytające z Redash](/images/image-AzMT.png)
 
 Po więcej informacji na temat Redash oraz jego konfiguracji i wdrażania do własnego projektu odsyłam pod adres: <https://redash.io>
 
@@ -59,50 +59,50 @@ Warto zwrócić uwagę na dwie praktyczne możliwości takiego dashboardu:
 
 Dla ułatwienia, w systemie Omnimes wprowadziliśmy własny edytor tworzenia zapytań, jak pokazano poniżej:\
 \
-![](/images/image-U4OT.png)
+![Edytor zapytań do REdash w Omnimes](/images/image-U4OT.png)
 
 Po stworzeniu interesujących nas zapytań przechodzimy do do samego Redash do listy z utworzonymi zapytaniami o dane.
 
-![](/images/image-UyNT.png)
+![Lista zapytań w Redash](/images/image-UyNT.png)
 
 Następnie wchodzimy w dane zapytanie i je edytujemy oraz jeśli jesteśmy prawidłowo podłączeni do źródła danych otrzymujemy wyniki:\
-![](/images/image-k1OT.png)
+![Edycja zapytania w Redash](/images/image-k1OT.png)
 
 Następnie przechodzimy do zakładki "Chart", gdzie tworzymy wizualizacje, określając sposób przedstawienia danych. Możliwości jest wiele, zarówno pod względem typów wykresów, jak i sposobów ich prezentacji. Poniżej znajduje się przykład wykresu typu "bar", który zestawia maszyny pod kątem występowania najczęstszych błędów.
 
-![](/images/image-Y2MT.png)
+![Wykres danych w Redash](/images/image-Y2MT.png)
 
 Po stworzeniu interesujących nas wykresów z danymi, przechodzimy do zakładki "Dashboard", gdzie decydujemy, które z wykresów mają się na nim znaleźć.
 
-![](/images/image-c4MD.png)
+![Dodanie wykresu na dshboard w Redash](/images/image-c4MD.png)
 
 W tym miejscu możemy włączyć publiczne udostępnianie dashboardu oraz ustawić, co jaki czas dane mają się odświeżać.\
 \
 W systemie Omnimes mamy możliwość zdecydowania, który z dashboardów ma znaleźć się na stronie głównej systemu. Nie ogranicza to tworzenia kolejnych dashboardów, które można udostępniać innym działom lub osobom.
 
-![](/images/image-MxND.png)
+![Lista dashbordow w Omnimes](/images/image-MxND.png)
 
 W rezultacie otrzymujemy gotowy dashboard jak poniżej:\
 \
-![](/images/image-A4NT.png)
+![Gotowy dashboard w Omnimes](/images/image-A4NT.png)
 
 Tak przygotowane dane możemy wykorzystać dalej jak do chociażby do analizy poprzez AI - tak jak to się dzieje w przypadku systemu Omnimes.
 
-![](/images/image-Q1MT.png)
+![Wykorzystania danych z Redash w anlizie AI](/images/image-Q1MT.png)
 
 I uzyskać pełne podsumowanie jak np. to:
 
-![](/images/image-k3Mj.png)
+![Wynik analizy AI](/images/image-k3Mj.png)
 
 ## Podsumowanie
 
 W dynamicznie rozwijającym się świecie technologii, efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak **Omnimes**, zintegrowane z narzędziami do wizualizacji danych, takimi jak **Redash**, oferują zaawansowane możliwości optymalizacji procesów produkcyjnych.
 
-Redash to wszechstronna platforma open source do tworzenia zapytań i wizualizacji danych, współpracująca z wieloma źródłami danych, jak Redshift, Google BigQuery czy PostgreSQL. 
+Redash to wszechstronna platforma open source do tworzenia zapytań i wizualizacji danych, współpracująca z wieloma źródłami danych, jak Redshift, Google BigQuery czy PostgreSQL.
 
 **Integracja Redash z Omnimes** pozwala na tworzenie interaktywnych dashboardów, które można udostępniać publicznie bez potrzeby tworzenia konta, oraz ustawiać częste odświeżanie danych, co zapewnia aktualne informacje na temat produkcji. W systemie **Omnimes** użytkownicy mogą także decydować, które dashboardy mają być widoczne na stronie głównej, oraz tworzyć dodatkowe dashboardy do użytku wewnętrznego.
 
-**Przedstawione przykłady pokazują, jak takie narzędzia mogą wspierać efektywne zarządzanie produkcją, lepszą komunikację w zespole oraz szybsze reagowanie na problemy**. 
+**Przedstawione przykłady pokazują, jak takie narzędzia mogą wspierać efektywne zarządzanie produkcją, lepszą komunikację w zespole oraz szybsze reagowanie na problemy**.
 
 Dzięki temu firmy mogą podejmować bardziej świadome decyzje, optymalizować procesy produkcyjne i poprawiać jakość swoich produktów.
 
