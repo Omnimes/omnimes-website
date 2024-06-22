@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'wizualizacja-danych-sukcesem-analizy-redash'
-description: ''
+description: 'Wizualizacja danych - sukcesem analizy. Redash'
 coverImage: ''
 lang: 'pl'
 tags: [{"label":"redash","value":"redash"},{"label":"wizualziacja danych","value":"wizualziacjaDanych"},{"label":"big data","value":"bigData"},{"label":"raporty","value":"raporty"}]

@@ -1,6 +1,6 @@
 {
   "commit": "8feb4482a77175403d2569178c2bc5fc4bcf91b5",
-  "generated": "2024-06-22T06:10:41.905Z",
+  "generated": "2024-06-22T06:11:03.924Z",
   "metadata": [
     {
       "__outstatic": {
@@ -429,7 +429,7 @@
     {
       "__outstatic": {
         "commit": "8feb4482a77175403d2569178c2bc5fc4bcf91b5",
-        "hash": "2372183312",
+        "hash": "1001640988",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
       },
       "author": {
@@ -438,7 +438,7 @@
       },
       "collection": "posts",
       "coverImage": "",
-      "description": "",
+      "description": "Wizualizacja danych - sukcesem analizy. Redash",
       "lang": "pl",
       "publishedAt": "2024-06-15T21:02:14.000Z",
       "slug": "wizualizacja-danych-sukcesem-analizy-redash",
