@@ -1,6 +1,6 @@
 {
-  "commit": "50c7f1161988f3849624ed7546236527c08c2574",
-  "generated": "2024-06-24T06:48:01.010Z",
+  "commit": "9d507fef7cd2e1d5df6e1be45b898911cc843843",
+  "generated": "2024-06-24T06:51:23.776Z",
   "metadata": [
     {
       "__outstatic": {
@@ -20,63 +20,6 @@
       "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
       "status": "published",
       "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
-    },
-    {
-      "__outstatic": {
-        "commit": "6dc120dd61086b4257e5f134a976d7f9fffdd229",
-        "hash": "3504171653",
-        "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
-      "lang": "pl",
-      "publishedAt": "2024-06-20T12:47:51.265Z",
-      "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Ollama",
-          "value": "ollama"
-        },
-        {
-          "label": "llama3",
-          "value": "llama3"
-        },
-        {
-          "label": "Meta",
-          "value": "meta"
-        },
-        {
-          "label": "Gemma",
-          "value": "gemma"
-        },
-        {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
-        },
-        {
-          "label": "AI local",
-          "value": "aiLocal"
-        }
-      ],
-      "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
     },
     {
       "__outstatic": {
@@ -462,6 +405,63 @@
       "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
       "status": "published",
       "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "9d507fef7cd2e1d5df6e1be45b898911cc843843",
+        "hash": "2676530120",
+        "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
+      "lang": "pl",
+      "publishedAt": "2024-06-20T12:47:51.265Z",
+      "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Ollama",
+          "value": "ollama"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        }
+      ],
+      "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
     }
   ]
 }

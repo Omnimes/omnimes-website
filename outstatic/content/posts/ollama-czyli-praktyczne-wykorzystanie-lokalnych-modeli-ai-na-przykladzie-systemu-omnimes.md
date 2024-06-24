@@ -148,7 +148,7 @@ Jak widzimy, składnia logiczna lokalnego modelu Llama3 jest bardzo dobra i nicz
 
 ## Podsumowanie
 
-Jak widzimy korzystanie z lokalnej AI jaką nam oferujemy oprogramowanie **Ollama** nie odstępuje w żaden sposób od korzystania z zewnętrznych serwerów **Open AI** poprzez ich API.
+Jak widzimy korzystanie z lokalnej AI jaką nam oferuje oprogramowanie **Ollama** nie odstępuje w żaden sposób od korzystania z zewnętrznych serwerów **Open AI** poprzez ich API.
 
 Daje nam to duże możliwości oczywiście ograniczone sprzętowo a tym samym finansowo bo tutaj działanie samej AI zależy wyłącznie od sprzętu z jakiego korzystamy model **Llama3** oferuje również **większą wersję Llama3:70b ale sam model waży 40 GB**, a do jego obsługi już raczej nam nie wystarczy pojedyncza karta graficzna.
 
