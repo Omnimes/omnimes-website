@@ -23,4 +23,5 @@ Dzięki wdrożeniu Ollama, Omnimes oferuje bardziej bezpieczne i ekonomiczne roz
 
 Omnimes zaprasza zainteresowane firmy do zapoznania się z ofertą systemu, który dzięki integracji z Ollama, umożliwia nowoczesne zbieranie i analizowanie danych produkcyjnych, zapewniając jednocześnie najwyższy poziom bezpieczeństwa i efektywności.
 
-Po więcej informacji dotyczącego tego rozwiązania zapraszamy na stronę artykułu:<https://www.omnimes.com/pl/blog/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes>
+Po więcej informacji dotyczącego tego rozwiązania zapraszamy na stronę artykułu: \
+[**Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES**](https://www.omnimes.com/pl/blog/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes)

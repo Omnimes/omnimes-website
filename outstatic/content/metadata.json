@@ -1,6 +1,6 @@
 {
   "commit": "50c7f1161988f3849624ed7546236527c08c2574",
-  "generated": "2024-06-24T06:43:36.462Z",
+  "generated": "2024-06-24T06:48:01.010Z",
   "metadata": [
     {
       "__outstatic": {
@@ -447,7 +447,7 @@
     {
       "__outstatic": {
         "commit": "50c7f1161988f3849624ed7546236527c08c2574",
-        "hash": "186149948",
+        "hash": "555515395",
         "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
       },
       "author": {
