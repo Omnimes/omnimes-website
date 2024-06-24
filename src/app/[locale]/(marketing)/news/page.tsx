@@ -47,18 +47,18 @@ export default async function NewsPage({ params: { locale } }: { params: { local
 
   return (
       <main className='py-24'>
-           <BentoGrid className="max-w-4xl mx-auto">
-            {allNews.map((item, i) => (
-              <BentoGridItem
-                key={i}
-                slug={'/news/'+item.slug}
-                title={item.title}
-                description={item.description}
-                header={<Skeleton src={item.coverImage} />}
-                className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-              />
-            ))}
-    </BentoGrid>
+        <BentoGrid className="max-w-4xl mx-auto">
+        {allNews.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            slug={'/news/'+item.slug}
+            title={item.title}
+            description={item.description}
+            header={<Skeleton src={item.coverImage} />}
+            className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          />
+        ))}
+        </BentoGrid>
     </main>
   )
 }
