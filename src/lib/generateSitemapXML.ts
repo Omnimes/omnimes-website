@@ -152,7 +152,7 @@ export function generateURLObjects(paths: Paths, defaultLocale: string, baseURL:
 }
 
 export function generateXML(urlObjects: URLObject[]): string {
-    const root = create({ version: '1.0', encoding: 'UTF-8' })
+    const root = create()
     .ele('urlset', { 
         'xmlns': 'http://www.sitemaps.org/schemas/sitemap/0.9', 
         'xmlns:xhtml': 'http://www.w3.org/TR/xhtml11/xhtml11_schema.html',
@@ -179,7 +179,7 @@ export function generateXML(urlObjects: URLObject[]): string {
       }
     });
   
-    return root.end({ prettyPrint: true });
+    return root.end({prettyPrint: true});
   }
 
 export const generateXMLSitemap = async (xmlDoc: any) => {

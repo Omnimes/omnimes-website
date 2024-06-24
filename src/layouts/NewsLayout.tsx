@@ -13,7 +13,7 @@ interface LayoutProps {
 
 export default function NewsLayout({ post }: LayoutProps) {
   const t = useTranslations('PostLayout');
-  const { title, publishedAt, content, tags, author } = post;
+  const { title, publishedAt, content, author } = post;
   const lang = useLocale();
   return (
     <>
@@ -59,6 +59,14 @@ export default function NewsLayout({ post }: LayoutProps) {
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">
                 <MDXComponent content={content} />
+                <hr />
+                <CustomLink
+                  href={`/blog`}
+                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  aria-label={t('backToNews')}
+                >
+                  &larr; {t('backToNews')}
+                </CustomLink>
               </div>
             </div>
             <footer>
@@ -66,9 +74,9 @@ export default function NewsLayout({ post }: LayoutProps) {
                 <CustomLink
                   href={`/news`}
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                  aria-label={t('back')}
+                  aria-label={t('backToNews')}
                 >
-                  &larr; {t('back')}
+                  &larr; {t('backToNews')}
                 </CustomLink>
               </div>
             </footer>

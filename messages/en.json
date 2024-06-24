@@ -86,7 +86,8 @@
     "publish": "Published on",
     "by": "by",
     "postNotFound": "Article not found",
-    "postNotFoundDesc": "Sorry, but we couldn't find this article or it may be located at a different URL. You can read other available articles in this language by going to all posts."
+    "postNotFoundDesc": "Sorry, but we couldn't find this article or it may be located at a different URL. You can read other available articles in this language by going to all posts.",
+    "backToNews": "Back to News"
   },
   "HeroSection": {
     "title": "Optimize your production with our",
