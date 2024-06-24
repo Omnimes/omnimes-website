@@ -24,3 +24,5 @@ Multiprojekt oferuje kompleksową pomoc w procesie ubiegania się o dofinansowan
 Wdrożenie systemu **Omnimes** dzięki funduszom unijnym to doskonała okazja do zwiększenia efektywności produkcji, poprawy jakości procesów oraz zwiększenia konkurencyjności na rynku. System **Omnimes**, dzięki integracji z oprogramowaniem *Ollama*, oferuje zaawansowane rozwiązania AI, które mogą znacząco usprawnić procesy produkcyjne.
 
 Dzięki finansowaniu z Funduszy Europejskich, przedsiębiorstwa mogą teraz łatwiej niż kiedykolwiek wdrażać innowacyjne technologie, które przyczynią się do ich rozwoju i sukcesu na rynku. Multiprojekt zachęca do skorzystania z tej unikalnej szansy i zapoznania się z pełną ofertą systemu **Omnimes**.
+
+Po więcej informacji odsyłamy na stronę poświęconą audytom - [link tutaj](https://audittech.pl/)
