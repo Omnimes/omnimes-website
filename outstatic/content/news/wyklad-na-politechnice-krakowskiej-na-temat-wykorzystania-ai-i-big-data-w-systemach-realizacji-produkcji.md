@@ -13,6 +13,8 @@ publishedAt: '2024-06-21T06:10:18.344Z'
 
 Firma Multiprojekt, lider w dziedzinie automatyki przemysłowej, miała zaszczyt udzielić wykładu na temat „Sztuczna inteligencja i big data w systemach realizacji produkcji” na Wydziale Infotronika Politechniki Krakowskiej. Wykład, przeprowadzony na przykładzie autorskiego systemu OMNIMES firmy Multiprojekt, przyciągnął liczne grono studentów i pracowników naukowych zainteresowanych nowoczesnymi rozwiązaniami w zakresie zarządzania produkcją.
 
+![](/images/22.64af08a8-Y5NT.jpg)
+
 ## Wykład na Temat Sztucznej Inteligencji i Big Data w MES
 
 Systemy typu MES (Manufacturing Execution System) są kluczowymi elementami nowoczesnych zakładów produkcyjnych, umożliwiając monitorowanie i kontrolowanie procesów produkcyjnych w czasie rzeczywistym. Podczas wykładu specjaliści z firmy Multiprojekt zaprezentowali, jak sztuczna inteligencja (AI) i big data mogą być zintegrowane z systemami MES, aby znacznie zwiększyć efektywność i precyzję operacji produkcyjnych.

@@ -1,6 +1,6 @@
 {
-  "commit": "f347499d00ac231546ce85304651241efc46bfbe",
-  "generated": "2024-06-24T06:59:07.275Z",
+  "commit": "94ddfa53de9dace6e03c369e5d36e12981067661",
+  "generated": "2024-06-24T07:05:37.486Z",
   "metadata": [
     {
       "__outstatic": {
@@ -115,25 +115,6 @@
         }
       ],
       "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
-    },
-    {
-      "__outstatic": {
-        "commit": "88116a1400e9b066b2db4d74d53480a5f2e7ca07",
-        "hash": "3430253096",
-        "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/166378457-A2OT.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:10:18.344Z",
-      "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
-      "status": "published",
-      "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
     },
     {
       "__outstatic": {
@@ -462,6 +443,25 @@
       "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
       "status": "published",
       "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
+    },
+    {
+      "__outstatic": {
+        "commit": "94ddfa53de9dace6e03c369e5d36e12981067661",
+        "hash": "4231367574",
+        "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/166378457-A2OT.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:10:18.344Z",
+      "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
+      "status": "published",
+      "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
     }
   ]
 }
