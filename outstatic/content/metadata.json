@@ -1,320 +1,48 @@
 {
-  "commit": "427c16bf8aec8932e15e2ccb5b68983dcd4559fb",
-  "generated": "2024-06-24T06:21:14.734Z",
+  "commit": "d30a02c4dc227bb1a626c4ebd8e5281ac9af6077",
+  "generated": "Mon, 24 Jun 2024 06:22:10 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "5ce0360568a6daaa1b12c5bc7f629ac5e0a33a78",
-        "hash": "1524137513",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
+        "commit": "1652b345748dabe01980acf6107f99d3e3155d35",
+        "hash": "3594628495",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
       },
       "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "name": "Omnimes",
+        "picture": "/images/166378457-A5OD.png"
       },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
+      "collection": "news",
+      "coverImage": "/images/image-e3mt-gxNj.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
       "lang": "pl",
-      "publishedAt": "2024-06-05T07:21:12.000Z",
-      "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
       "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "Protokół komunikacyjny",
-          "value": "protokółKomunikacyjny"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Komunikacja IoT",
-          "value": "komunikacjaIoT"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Przemysł 4.0",
-          "value": "przemysł40"
-        },
-        {
-          "label": "Standardy komunikacyjne",
-          "value": "standardyKomunikacyjne"
-        }
-      ],
-      "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
     },
     {
       "__outstatic": {
-        "commit": "cc042d417d36b21d893a317d1860532aa86ec436",
-        "hash": "1318979106",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
+        "commit": "4f9e37d39c284040a0064ca9dc682f6557b27fa4",
+        "hash": "2003061435",
+        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
       },
       "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
-      "collection": "posts",
+      "collection": "news",
       "coverImage": "",
-      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
       "lang": "pl",
-      "publishedAt": "2024-06-10T08:10:14.654Z",
-      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+      "publishedAt": "2024-06-21T10:14:26.438Z",
+      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
       "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Modele LLM",
-          "value": "modeleLlm"
-        },
-        {
-          "label": "API GPT-4",
-          "value": "apiGpt4"
-        },
-        {
-          "label": "analiza danych",
-          "value": "analizaDanych"
-        },
-        {
-          "label": "Bezpieczeństwo danych",
-          "value": "bezpieczeństwoDanych"
-        }
-      ],
-      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
     },
     {
       "__outstatic": {
-        "commit": "960dd1bca1d6470ae328d9d9f0ab06c419d9f6c8",
-        "hash": "1698846131",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
-      "lang": "pl",
-      "publishedAt": "2024-06-06T07:36:29.000Z",
-      "slug": "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "OPC UA",
-          "value": "opcUa"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Protokół komunikacyjny",
-          "value": "protokółKomunikacyjny"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Automatyka przemysłowa",
-          "value": "automatykaPrzemysłowa"
-        },
-        {
-          "label": "Architektura klient/serwer",
-          "value": "architekturaKlient/serwer"
-        },
-        {
-          "label": "Bezpieczeństwo danych",
-          "value": "bezpieczeństwoDanych"
-        },
-        {
-          "label": "Standaryzacja danych",
-          "value": "standaryzacjaDanych"
-        }
-      ],
-      "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
-    },
-    {
-      "__outstatic": {
-        "commit": "4e7de919f01ca6cd92a56c48b3e084000c9ab2e0",
-        "hash": "2932893177",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
-      "lang": "en",
-      "publishedAt": "2024-06-05T09:20:51.000Z",
-      "slug": "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "IoT Communication",
-          "value": "ioTCommunication"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Communication Standards",
-          "value": "communicationStandards"
-        }
-      ],
-      "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
-    },
-    {
-      "__outstatic": {
-        "commit": "7aee4c78b4a85ae0ebfa723f62cbfb07f45f4e7d",
-        "hash": "826880843",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
-      "lang": "en",
-      "publishedAt": "2024-06-11T10:33:08.620Z",
-      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "OPC UA",
-          "value": "opcUa"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Client/Server Architecture",
-          "value": "client/serverArchitecture"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "Data Standardization",
-          "value": "dataStandardization"
-        }
-      ],
-      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
-    },
-    {
-      "__outstatic": {
-        "commit": "fabe9712a4295b328242eb1d80edc47b2b78f24e",
-        "hash": "1661998403",
-        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
-      "lang": "en",
-      "publishedAt": "2024-06-12T06:07:41.881Z",
-      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "GPT-4 API",
-          "value": "gpt4Api"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        }
-      ],
-      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
-    },
-    {
-      "__outstatic": {
-        "commit": "b1678f03945f3decd4b2540017ed4a642daca50a",
+        "commit": "6dc120dd61086b4257e5f134a976d7f9fffdd229",
         "hash": "3504171653",
         "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
       },
@@ -371,26 +99,121 @@
     },
     {
       "__outstatic": {
-        "commit": "562af0fc7e001dbb4f82ebc6e829936b69c5e0e2",
-        "hash": "1670757753",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+        "commit": "40be1b8776911cb3631b93e2c9add9d37d429c53",
+        "hash": "4199830827",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": ""
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/image-e3mt-gxNj.png",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
       "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "publishedAt": "2024-06-05T07:21:12.000Z",
+      "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
       "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "Protokół komunikacyjny",
+          "value": "protokółKomunikacyjny"
+        },
+        {
+          "label": "QoS",
+          "value": "qoS"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Komunikacja IoT",
+          "value": "komunikacjaIoT"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Przemysł 4.0",
+          "value": "przemysł40"
+        },
+        {
+          "label": "Standardy komunikacyjne",
+          "value": "standardyKomunikacyjne"
+        }
+      ],
+      "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
     },
     {
       "__outstatic": {
-        "commit": "c2ed14a217dce9ab80180f94b9a365a7131788c4",
+        "commit": "310ce00a63eac5c0380670326f368725037a3dfa",
+        "hash": "3699466235",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
+      "lang": "en",
+      "publishedAt": "2024-06-05T09:20:51.000Z",
+      "slug": "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "QoS",
+          "value": "qoS"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "IoT Communication",
+          "value": "ioTCommunication"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Communication Standards",
+          "value": "communicationStandards"
+        }
+      ],
+      "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
+    },
+    {
+      "__outstatic": {
+        "commit": "88116a1400e9b066b2db4d74d53480a5f2e7ca07",
         "hash": "3430253096",
         "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
       },
@@ -409,7 +232,7 @@
     },
     {
       "__outstatic": {
-        "commit": "252cad06fdd63d4ed3d17b24c5c11419ea26931d",
+        "commit": "6f70784e584590cd56d8c4c698643cefdeb396cf",
         "hash": "44760254",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
       },
@@ -446,22 +269,199 @@
     },
     {
       "__outstatic": {
-        "commit": "427c16bf8aec8932e15e2ccb5b68983dcd4559fb",
-        "hash": "1212607374",
-        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
+        "commit": "57d0bf0f97d9de5e1db61adfde89ec23c898e054",
+        "hash": "1335098520",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
       },
       "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/image-cxnj-QxOT.png",
-      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
       "lang": "pl",
-      "publishedAt": "2024-06-21T10:14:26.438Z",
-      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
+      "publishedAt": "2024-06-06T07:36:29.000Z",
+      "slug": "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii",
       "status": "published",
-      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
+      "tags": [
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "OPC UA",
+          "value": "opcUa"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Protokół komunikacyjny",
+          "value": "protokółKomunikacyjny"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Automatyka przemysłowa",
+          "value": "automatykaPrzemysłowa"
+        },
+        {
+          "label": "Architektura klient/serwer",
+          "value": "architekturaKlient/serwer"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
+        },
+        {
+          "label": "Standaryzacja danych",
+          "value": "standaryzacjaDanych"
+        }
+      ],
+      "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
+    },
+    {
+      "__outstatic": {
+        "commit": "8af889fa4485765de935c96f57cf1096c7ce1be6",
+        "hash": "3803415294",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+      "lang": "en",
+      "publishedAt": "2024-06-11T10:33:08.620Z",
+      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "OPC UA",
+          "value": "opcUa"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Client/Server Architecture",
+          "value": "client/serverArchitecture"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "Data Standardization",
+          "value": "dataStandardization"
+        }
+      ],
+      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
+    },
+    {
+      "__outstatic": {
+        "commit": "c55bfa8e3872bdc0583b8892ec3f5f9a882c274f",
+        "hash": "2823158254",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "lang": "pl",
+      "publishedAt": "2024-06-10T08:10:14.654Z",
+      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Modele LLM",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "API GPT-4",
+          "value": "apiGpt4"
+        },
+        {
+          "label": "analiza danych",
+          "value": "analizaDanych"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
+        }
+      ],
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+    },
+    {
+      "__outstatic": {
+        "commit": "85a8acbeb57c51d8d6ca6fd6f1f15e88316b9907",
+        "hash": "2238396446",
+        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+      "lang": "en",
+      "publishedAt": "2024-06-12T06:07:41.881Z",
+      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "GPT-4 API",
+          "value": "gpt4Api"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        }
+      ],
+      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
     }
   ]
 }
