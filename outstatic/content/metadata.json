@@ -1,26 +1,7 @@
 {
-  "commit": "9d507fef7cd2e1d5df6e1be45b898911cc843843",
-  "generated": "2024-06-24T06:51:23.776Z",
+  "commit": "f347499d00ac231546ce85304651241efc46bfbe",
+  "generated": "2024-06-24T06:59:07.275Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "4f9e37d39c284040a0064ca9dc682f6557b27fa4",
-        "hash": "2003061435",
-        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-cxnj-QxOT.png",
-      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T10:14:26.438Z",
-      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
-      "status": "published",
-      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
-    },
     {
       "__outstatic": {
         "commit": "40be1b8776911cb3631b93e2c9add9d37d429c53",
@@ -462,6 +443,25 @@
         }
       ],
       "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
+    },
+    {
+      "__outstatic": {
+        "commit": "f347499d00ac231546ce85304651241efc46bfbe",
+        "hash": "3801226291",
+        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-cxnj-QxOT.png",
+      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T10:14:26.438Z",
+      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
+      "status": "published",
+      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
     }
   ]
 }
