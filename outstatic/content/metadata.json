@@ -1,6 +1,6 @@
 {
-  "commit": "3237775dec8019852b94e61b73ae4b3239fc92a9",
-  "generated": "2024-06-24T06:07:07.839Z",
+  "commit": "252cad06fdd63d4ed3d17b24c5c11419ea26931d",
+  "generated": "2024-06-24T06:11:22.878Z",
   "metadata": [
     {
       "__outstatic": {
@@ -428,8 +428,8 @@
     },
     {
       "__outstatic": {
-        "commit": "3237775dec8019852b94e61b73ae4b3239fc92a9",
-        "hash": "643629687",
+        "commit": "252cad06fdd63d4ed3d17b24c5c11419ea26931d",
+        "hash": "44760254",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
       },
       "author": {
@@ -438,7 +438,7 @@
       },
       "collection": "posts",
       "coverImage": "",
-      "description": "Wizualizacja danych - sukcesem analizy. Redash",
+      "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
       "lang": "pl",
       "publishedAt": "2024-06-15T21:02:14.000Z",
       "slug": "wizualizacja-danych-sukcesem-analizy-redash",
