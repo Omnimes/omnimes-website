@@ -43,8 +43,6 @@ Po więcej informacji na temat Redash oraz jego konfiguracji i wdrażania do wł
 
 Po tym krótkim opisie narzędzia Redash przedstawię nowe możliwości w systemie Omnimes po jego zaimplementowaniu.
 
-\[[redash.io](http://redash.io)\](<https://www.redash.io>)
-
 [redash.io](https://www.redash.io)
 
 ## Redash w Omnimes
