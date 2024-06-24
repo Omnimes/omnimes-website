@@ -36,6 +36,15 @@ type TagsPath = {
   [key: string]: string[]
 }
 
+interface urlDate extends OstDocument {
+  slug: string;
+  lang: string;
+  tags: string[];
+  publishedAt: string;
+  status: string;
+}
+
+
 export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
   const transformedPaths: Paths = {};
   
@@ -73,7 +82,7 @@ export function generateURLObjectsTags(paths: TagsPath, host: string): URLObject
         url: `${host}${lang ?? 'pl'}/${pathTag}/${tag}`,
         lastModified: new Date(),
         changeFrequency: "weekly",
-        priority: 0.9,
+        priority: 0.8,
       }
 
       urls.push(urlObj);
@@ -83,10 +92,28 @@ export function generateURLObjectsTags(paths: TagsPath, host: string): URLObject
   return urls;
 }
 
-export function generateURLObjectsWithoutAlternate(paths: OstDocument<{ [key: string]: unknown; }>[], host: string): URLObject[] {
-  return paths.map((url: any) => {
+export function generateURLObjectsWithoutAlternate(paths: OstDocument[], host: string, collection: string): URLObject[] {
+  const pathMappingNews: { [key: string]: string } = {
+    en: 'news',
+    de: 'nachrichten',
+    pl: 'aktualności',
+  };
+
+  if(collection == 'news') {
+    return paths.map((url) => {
+      const lang = (url.lang ?? 'pl') as 'en' | 'de' | 'pl'; 
+      return ({
+        url: `${host}${url.lang ?? 'pl'}/${pathMappingNews[lang]}/${url.slug}`,
+        lastModified: url.publishedAt || new Date(),
+        changeFrequency: "weekly",
+        priority: 0.9,
+      })
+    })
+  }
+
+  return paths.map((url) => {
     return ({
-      url: `${host}${url.lang ?? 'pl'}/${url.slug}`,
+      url: `${host}${url.lang ?? 'pl'}/blog/${url.slug}`,
       lastModified: url.publishedAt || new Date(),
       changeFrequency: "weekly",
       priority: 0.9,

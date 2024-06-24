@@ -20,7 +20,7 @@ export async function GET() {
 
   collections.forEach(collection => {
       const date = getDocuments(collection, ['slug', 'lang', 'tags']).filter(entry => entry.status == 'published');
-      const results = generateURLObjectsWithoutAlternate(date, host);
+      const results = generateURLObjectsWithoutAlternate(date, host, collection);
       prepareUrls.push(...results);
 
       date.forEach(article => {
