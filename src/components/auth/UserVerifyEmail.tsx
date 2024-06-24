@@ -6,6 +6,8 @@ import { useEffect, useState, useCallback } from "react"
 import { Alert, AlertDescription, AlertTitle } from "../atoms/Alerts";
 import { LuTerminal, LuCircleEllipsis, LuAlertCircle } from "react-icons/lu";
 import { useTranslations } from "next-intl";
+import { revalidatePath } from 'next/cache';
+
 export const UserVerifyEmail = () => {
     const [error, setError] = useState<string | undefined>(undefined);
     const [success, setSuccess] = useState<string | undefined>(undefined);
@@ -37,6 +39,7 @@ export const UserVerifyEmail = () => {
             setTimeoutMessage("redirectedSoon");
             setTimeout(() => {
                 router.push('/dashboard');
+                revalidatePath('/');
             },2000)
         })
     }, [success, error, token, router])
