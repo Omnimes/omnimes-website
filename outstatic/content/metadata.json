@@ -1,6 +1,6 @@
 {
-  "commit": "9f2eeab17876739645854f7f6fcb32a1c98f31cb",
-  "generated": "2024-06-21T10:02:57.285Z",
+  "commit": "8feb4482a77175403d2569178c2bc5fc4bcf91b5",
+  "generated": "2024-06-22T06:11:03.924Z",
   "metadata": [
     {
       "__outstatic": {
@@ -371,32 +371,13 @@
     },
     {
       "__outstatic": {
-        "commit": "10ba558fe993dac002a387dfc619449bc4f2abca",
-        "hash": "3621790274",
-        "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
-      },
-      "author": {
-        "name": "Administrator",
-        "picture": "/images/default-Y0OT.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:10:18.344Z",
-      "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
-      "status": "published",
-      "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
-    },
-    {
-      "__outstatic": {
-        "commit": "b68ac48f2da98bd5fc57ba99d74a8e9941950108",
-        "hash": "63472335",
+        "commit": "562af0fc7e001dbb4f82ebc6e829936b69c5e0e2",
+        "hash": "1670757753",
         "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
       },
       "author": {
-        "name": "Administrator",
-        "picture": "/images/default-Y0OT.png"
+        "name": "Omnimes",
+        "picture": ""
       },
       "collection": "news",
       "coverImage": "/images/image-e3mt-gxNj.png",
@@ -409,8 +390,8 @@
     },
     {
       "__outstatic": {
-        "commit": "9f2eeab17876739645854f7f6fcb32a1c98f31cb",
-        "hash": "1372985175",
+        "commit": "4097c0adb3bf7db512260a2705744e7846d5a99e",
+        "hash": "2003061435",
         "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
       },
       "author": {
@@ -425,6 +406,62 @@
       "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
       "status": "published",
       "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
+    },
+    {
+      "__outstatic": {
+        "commit": "c2ed14a217dce9ab80180f94b9a365a7131788c4",
+        "hash": "3430253096",
+        "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/166378457-A2OT.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:10:18.344Z",
+      "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
+      "status": "published",
+      "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "8feb4482a77175403d2569178c2bc5fc4bcf91b5",
+        "hash": "1001640988",
+        "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Wizualizacja danych - sukcesem analizy. Redash",
+      "lang": "pl",
+      "publishedAt": "2024-06-15T21:02:14.000Z",
+      "slug": "wizualizacja-danych-sukcesem-analizy-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "wizualziacja danych",
+          "value": "wizualziacjaDanych"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "raporty",
+          "value": "raporty"
+        }
+      ],
+      "title": "Wizualizacja danych - sukcesem analizy. Redash"
     }
   ]
 }

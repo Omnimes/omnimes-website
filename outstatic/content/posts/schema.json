@@ -156,6 +156,22 @@
         {
           "value": "aiLocal",
           "label": "AI local"
+        },
+        {
+          "value": "redash",
+          "label": "redash"
+        },
+        {
+          "value": "wizualziacjaDanych",
+          "label": "wizualziacja danych"
+        },
+        {
+          "value": "bigData",
+          "label": "big data"
+        },
+        {
+          "value": "raporty",
+          "label": "raporty"
         }
       ]
     },

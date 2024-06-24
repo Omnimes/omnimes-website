@@ -2,8 +2,8 @@
 title: 'Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI'
 status: 'published'
 author:
-  name: 'Administrator'
-  picture: '/images/default-Y0OT.png'
+  name: 'Omnimes'
+  picture: '/images/166378457-A5OD.png'
 slug: 'nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai'
 description: 'Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI'
 coverImage: '/images/image-e3mt-gxNj.png'
@@ -11,7 +11,7 @@ lang: 'pl'
 publishedAt: '2024-06-21T06:19:30.177Z'
 ---
 
-![](/images/image-EwOT.png)
+![](/images/image-kxNT.png)
 
 W systemie Omnimes wdrożono nowe rozwiązanie AI, wykorzystujące oprogramowanie Ollama, które umożliwia uruchamianie lokalnych modeli językowych AI przy stosunkowo niskich wymaganiach sprzętowych. Ollama, będące darmowym, otwartym oprogramowaniem od Meta (dawniej Facebook), umożliwia małym i średnim firmom korzystanie z aż 93 modeli AI bez istotnych ograniczeń.
 
