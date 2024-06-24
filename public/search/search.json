@@ -7,6 +7,13 @@
     "tags": "AI, Ollama, llama3, Meta, Gemma, Mistral, GPT-4, GPT-3.5, AI local"
   },
   {
+    "title": "Wizualizacja danych - sukcesem analizy. Redash",
+    "slug": "wizualizacja-danych-sukcesem-analizy-redash",
+    "description": "Wizualizacja danych - sukcesem analizy. Redash",
+    "lang": "pl",
+    "tags": "redash, wizualziacja danych, big data, raporty"
+  },
+  {
     "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis",
     "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
     "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",

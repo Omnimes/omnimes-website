@@ -39,7 +39,7 @@ Platforma Redash wspiera różnorodne produkty, co czyni ją wszechstronnym narz
 
 ![Firmy korzytające z Redash](/images/image-AzMT.png)
 
-Po więcej informacji na temat Redash oraz jego konfiguracji i wdrażania do własnego projektu odsyłam pod adres: <https://redash.io>
+Po więcej informacji na temat Redash oraz jego konfiguracji i wdrażania do własnego projektu odsyłam pod adres: [redash.io](https://redash.io)
 
 Po tym krótkim opisie narzędzia Redash przedstawię nowe możliwości w systemie Omnimes po jego zaimplementowaniu.
 
