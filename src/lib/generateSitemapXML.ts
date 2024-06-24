@@ -155,7 +155,7 @@ export function generateXML(urlObjects: URLObject[]): string {
     const root = create()
     .ele('urlset', { 
         'xmlns': 'http://www.sitemaps.org/schemas/sitemap/0.9', 
-        'xmlns:xhtml': 'http://www.w3.org/TR/xhtml11/xhtml11_schema.html',
+        'xmlns:xhtml': 'http://www.w3.org/1999/xhtml',
         'xmlns:mobile': 'http://www.google.com/schemas/sitemap-mobile/1.0',
         'xmlns:news': 'http://www.google.com/schemas/sitemap-news/0.9'
       });
