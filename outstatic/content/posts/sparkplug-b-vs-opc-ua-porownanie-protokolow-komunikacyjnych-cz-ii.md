@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii'
 description: 'Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.'
-coverImage: ''
+coverImage: '/images/3.png'
 tags: [{"value":"sparkplugB","label":"Sparkplug B"},{"label":"OPC UA","value":"opcUa"},{"value":"mqtt","label":"MQTT"},{"value":"protokółKomunikacyjny","label":"Protokół komunikacyjny"},{"value":"iIoT","label":"IIoT"},{"label":"Automatyka przemysłowa","value":"automatykaPrzemysłowa"},{"label":"Architektura klient/serwer","value":"architekturaKlient/serwer"},{"label":"Bezpieczeństwo danych","value":"bezpieczeństwoDanych"},{"label":"Standaryzacja danych","value":"standaryzacjaDanych"}]
 lang: 'pl'
 publishedAt: '2024-06-06T07:36:29.000Z'

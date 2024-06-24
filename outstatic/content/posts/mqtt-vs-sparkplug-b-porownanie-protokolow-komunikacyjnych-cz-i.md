@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i'
 description: 'Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.'
-coverImage: ''
+coverImage: '/images/4.png'
 lang: 'pl'
 tags: [{"label":"MQTT","value":"mqtt"},{"label":"Sparkplug B","value":"sparkplugB"},{"label":"Protokół komunikacyjny","value":"protokółKomunikacyjny"},{"label":"QoS","value":"qoS"},{"label":"IIoT","value":"iIoT"},{"label":"Komunikacja IoT","value":"komunikacjaIoT"},{"label":"Omnimes","value":"omnimes"},{"label":"Przemysł 4.0","value":"przemysł40"},{"label":"Standardy komunikacyjne","value":"standardyKomunikacyjne"}]
 publishedAt: '2024-06-05T07:21:12.000Z'

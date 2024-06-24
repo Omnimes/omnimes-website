@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes'
 description: 'Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.'
-coverImage: ''
+coverImage: '/images/1.png'
 tags: [{"value":"ai","label":"AI"},{"label":"Ollama","value":"ollama"},{"label":"llama3","value":"llama3"},{"label":"Meta","value":"meta"},{"label":"Gemma","value":"gemma"},{"label":"Mistral","value":"mistral"},{"label":"GPT-4","value":"gpt4"},{"label":"GPT-3.5","value":"gpt35"},{"label":"AI local","value":"aiLocal"}]
 lang: 'pl'
 publishedAt: '2024-06-20T12:47:51.265Z'

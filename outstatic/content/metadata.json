@@ -32,7 +32,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/1.png",
       "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
       "lang": "pl",
       "publishedAt": "2024-06-20T12:47:51.265Z",
@@ -89,7 +89,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/4.png",
       "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
       "lang": "pl",
       "publishedAt": "2024-06-05T07:21:12.000Z",
@@ -146,7 +146,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/4.png",
       "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
       "lang": "en",
       "publishedAt": "2024-06-05T09:20:51.000Z",
@@ -241,7 +241,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/5.png",
       "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
       "lang": "pl",
       "publishedAt": "2024-06-15T21:02:14.000Z",
@@ -278,7 +278,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/3.png",
       "description": "Porównanie protokołów komunikacyjnych Sparkplug B i OPC UA w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich architekturze, formatach danych, bezpieczeństwie oraz zastosowaniach. Odkryj, który protokół lepiej spełni wymagania Twojego projektu automatyki przemysłowej.",
       "lang": "pl",
       "publishedAt": "2024-06-06T07:36:29.000Z",
@@ -335,7 +335,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/3.png",
       "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
       "lang": "en",
       "publishedAt": "2024-06-11T10:33:08.620Z",
@@ -392,7 +392,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/2.png",
       "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
       "lang": "pl",
       "publishedAt": "2024-06-10T08:10:14.654Z",
@@ -433,7 +433,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "",
+      "coverImage": "/images/2.png",
       "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
       "lang": "en",
       "publishedAt": "2024-06-12T06:07:41.881Z",

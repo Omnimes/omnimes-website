@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych'
 description: 'Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.'
-coverImage: ''
+coverImage: '/images/2.png'
 tags:
   [
     { 'label': 'AI', 'value': 'ai' },
