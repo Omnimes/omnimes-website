@@ -1,26 +1,7 @@
 {
-  "commit": "d30a02c4dc227bb1a626c4ebd8e5281ac9af6077",
-  "generated": "Mon, 24 Jun 2024 06:22:10 GMT",
+  "commit": "50c7f1161988f3849624ed7546236527c08c2574",
+  "generated": "2024-06-24T06:43:36.462Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "1652b345748dabe01980acf6107f99d3e3155d35",
-        "hash": "3594628495",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/166378457-A5OD.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-e3mt-gxNj.png",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
-      "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
-    },
     {
       "__outstatic": {
         "commit": "4f9e37d39c284040a0064ca9dc682f6557b27fa4",
@@ -462,6 +443,25 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "50c7f1161988f3849624ed7546236527c08c2574",
+        "hash": "186149948",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/166378457-A5OD.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-e3mt-gxNj.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "status": "published",
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
     }
   ]
 }

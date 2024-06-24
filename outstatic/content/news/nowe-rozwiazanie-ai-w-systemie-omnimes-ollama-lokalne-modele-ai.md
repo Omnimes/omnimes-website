@@ -22,3 +22,5 @@ Przykład działania lokalnego modelu Llama3 w Omnimes pokazał, że jego odpowi
 Dzięki wdrożeniu Ollama, Omnimes oferuje bardziej bezpieczne i ekonomiczne rozwiązanie AI, idealnie odpowiadające na potrzeby produkcyjne, eliminując jednocześnie ryzyko związane z błędnymi informacjami z zewnętrznych źródeł.
 
 Omnimes zaprasza zainteresowane firmy do zapoznania się z ofertą systemu, który dzięki integracji z Ollama, umożliwia nowoczesne zbieranie i analizowanie danych produkcyjnych, zapewniając jednocześnie najwyższy poziom bezpieczeństwa i efektywności.
+
+Po więcej informacji dotyczącego tego rozwiązania zapraszamy na stronę artykułu:<https://www.omnimes.com/pl/blog/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes>
