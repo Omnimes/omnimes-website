@@ -855,5 +855,17 @@
     "user": "Użytkownik",
     "placeholderRole": "Wybierz role",
     "noData": "Brak danych"
+  },
+  "OmniNews": {
+    "small": "OmniNews",
+    "title": "Aktualności",
+    "desc": "Bądź na bieżąco z najnowszymi informacjami i wydarzeniami związanymi z OmniMES. Sprawdź aktualności, innowacje i oferty.",
+    "lastNews": "Ostatnie Newsy",
+    "seeAll": "(zobacz wszystkie)",
+    "lastPosts": "Ostatnie Posty",
+    "lackNews": "Brak newsów!",
+    "lackNewsDesc": "Nie znaleziono żadnych aktualności. Prosimy sprawdzić później, ponieważ mogą pojawić się nowe wiadomości.",
+    "lackPosts": "Brak postów!",
+    "lackPostsDesc": "Nie znaleziono żadnych postów. Prosimy sprawdzić później, ponieważ mogą pojawić się nowe wpisy na blogu."
   }
 }

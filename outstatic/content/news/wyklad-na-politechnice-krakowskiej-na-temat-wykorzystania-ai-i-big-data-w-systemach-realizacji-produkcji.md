@@ -3,7 +3,7 @@ title: 'Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data
 status: 'published'
 author:
   name: 'Omnimes'
-  picture: '/images/166378457-A2OT.png'
+  picture: '/images/logo.png'
 slug: 'wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji'
 description: 'Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji'
 coverImage: '/images/22-k0Mj.jpg'

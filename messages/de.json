@@ -855,5 +855,17 @@
     "user": "Benutzer",
     "placeholderRole": "Rolle auswählen",
     "noData": "Keine Daten"
-  }
+  },
+  "OmniNews": {
+    "small": "OmniNews",
+    "title": "Nachrichten",
+    "desc": "Bleiben Sie mit den neuesten Informationen und Ereignissen rund um OmniMES auf dem Laufenden. Schauen Sie sich die Nachrichten, Innovationen und Angebote an.",
+    "lastNews": "Letzte Nachrichten",
+    "seeAll": "(alle ansehen)",
+    "lastPosts": "Letzte Beiträge",
+    "lackNews": "Keine Nachrichten!",
+    "lackNewsDesc": "Keine Nachrichten gefunden. Bitte später erneut überprüfen, da neue Updates erscheinen könnten.",
+    "lackPosts": "Keine Beiträge!",
+    "lackPostsDesc": "Keine Beiträge gefunden. Bitte später erneut überprüfen, da neue Blogeinträge erscheinen könnten."
+}
 }

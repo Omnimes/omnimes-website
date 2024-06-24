@@ -13,7 +13,7 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "news",
-      "coverImage": "/images/image-cxnj-QxOT.png",
+      "coverImage": "/images/image-cxNj.png",
       "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
       "lang": "pl",
       "publishedAt": "2024-06-21T10:14:26.438Z",
@@ -200,7 +200,7 @@
       },
       "author": {
         "name": "Omnimes",
-        "picture": "/images/166378457-A2OT.png"
+        "picture": "/images/logo.png"
       },
       "collection": "news",
       "coverImage": "/images/22-k0Mj.jpg",
@@ -219,7 +219,7 @@
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "",
@@ -452,10 +452,10 @@
       },
       "author": {
         "name": "Omnimes",
-        "picture": "/images/166378457-A5OD.png"
+        "picture": "/images/logo.png"
       },
       "collection": "news",
-      "coverImage": "/images/image-e3mt-gxNj.png",
+      "coverImage": "/images/image-E3MT.png",
       "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
       "lang": "pl",
       "publishedAt": "2024-06-21T06:19:30.177Z",

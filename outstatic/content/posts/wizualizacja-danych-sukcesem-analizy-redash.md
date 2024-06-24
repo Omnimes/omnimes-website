@@ -3,7 +3,7 @@ title: 'Wizualizacja danych - sukcesem analizy. Redash'
 status: 'published'
 author:
   name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  picture: '/images/martin.png'
 slug: 'wizualizacja-danych-sukcesem-analizy-redash'
 description: 'W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.'
 coverImage: ''

@@ -10,7 +10,8 @@ const alertVariants = cva(
         default: "bg-background text-foreground",
         destructive: "border-[#EE4444] bg-[#ef44441a] text-[#EE4444] [&>svg]:text-[#EE4444]",
         success: "border-[#22c55e] bg-[#22c55e1a] text-[#22c55e] [&>svg]:text-[#22c55e]",
-        loading: "border-[#3B82F6] bg-[#3b82f61a] text-[#3B82F6] [&>svg]:text-[#3B82F6]"
+        loading: "border-[#3B82F6] bg-[#3b82f61a] text-[#3B82F6] [&>svg]:text-[#3B82F6]",
+        primary: "border-[#ec4899]"
       },
     },
     defaultVariants: {
