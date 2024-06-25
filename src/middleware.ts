@@ -8,13 +8,13 @@ const LoginAndRegisterPages = ['/login', '/register']
 const protectedPages = ['/dashboard', '/dashboard/settings', '/dashboard/demo'] // dodawać wszystkie protected page
 const developerPages = [
   '/dashboard/billing',
-  '/dashboard/docs',
   '/dashboard/materials',
   '/dashboard/materials/advertising',
   '/dashboard/materials/information',
   '/dashboard/materials/manual',
   '/dashboard/support',
   '/dashboard/webinars',
+  '/docs'
 ] // dodawać wszystkie developer page
 export const excludePaths = [
   ...adminPages,

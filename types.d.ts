@@ -25,12 +25,12 @@ type ImageGallery = {
   date: string;
 }
 
-
 type NavItem = {
   separator?: boolean
   title: string
   href: string
   disabled?: boolean
+  external?: boolean
 }
 
 type MainNavItem = NavItem
@@ -44,6 +44,7 @@ type SidebarNavItem = {
   title: string
   disabled?: boolean
   separator?: boolean
+  external?: boolean
   icon?: keyof typeof Icons
 } & (
   | {
@@ -55,6 +56,11 @@ type SidebarNavItem = {
       items?: NavLink[]
     }
 )
+
+type DocsConfig = {
+  mainNav: MainNavItem[]
+  sidebarNav: SidebarNavItem[]
+}
 
 declare module 'rehype-citation' {
   const rehypeCitation: any;

@@ -6,6 +6,11 @@ export const pathnames = {
   '/': '/',
   '/admin': '/admin',
   '/admin/users': '/admin/users',
+  '/documentation': {
+    en: "/documentation",
+    de: "/dokumentation",
+    pl: "/dokumentacja"
+  },
   '/dashboard': '/dashboard',
   '/dashboard/billing': {
     en: '/dashboard/billing',
@@ -13,7 +18,6 @@ export const pathnames = {
     pl: '/dashboard/rozliczenia'
   },
   '/dashboard/demo': '/dashboard/demo',
-  '/dashboard/docs': '/dashboard/docs',
   '/dashboard/materials': {
     en: '/dashboard/materials',
     de: '/dashboard/materialien',

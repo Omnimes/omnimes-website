@@ -49,9 +49,9 @@ export async function GET() {
   const arrUrlObjects = [...urlObjects, ...prepareUrls, ...urlTags];
   const xml = generateXML(arrUrlObjects);
   return new Response(xml);
+  // return new Response(xml, {
+  //   headers: {
+  //     "Content-Type": "application/xml; charset=UTF-8",
+  //   },
+  // });
 }
-// return new Response(xml, {
-//   headers: {
-//     "Content-Type": "application/xml; charset=UTF-8",
-//   },
-// });

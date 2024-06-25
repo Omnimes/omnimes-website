@@ -14,4 +14,7 @@ export const siteMetadata = {
       searchDocumentsPath: "search.json", // path to load documents to search
     },
   },
+  links: {
+    github: "https://github.com/PiotrSierant",
+  },
 };

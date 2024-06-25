@@ -773,7 +773,9 @@
     "dashboard": "Panel",
     "administrationPanel": "Panel administracyjny",
     "users": "Użytkownicy",
-    "outstatic": "Treści"
+    "outstatic": "Treści",
+    "start": "Start",
+    "guides": "Poradniki"
   },
   "DashboardFooter": {
     "footer": "System Realizacji Produkcji."

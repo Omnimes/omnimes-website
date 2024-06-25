@@ -773,7 +773,8 @@
     "dashboard": "Dashboard",
     "administrationPanel": "Verwaltungsbereich",
     "users": "Benutzer",
-    "outstatic": "Inhalte"
+    "outstatic": "Inhalte",
+    "start": "Start"
   },
   "DashboardFooter": {
     "footer": "Produktionsausführungssystem."

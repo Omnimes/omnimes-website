@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import { cn } from '@/utils/utils'
 import { useLocale, useTranslations } from 'next-intl'
 import { Separator } from '../atoms/Separator'
-import { LuBadgeInfo, LuCreditCard, LuFileCog2, LuFileVideo2, LuLayoutDashboard, LuLayoutGrid, LuPencilLine, LuSettings, LuSparkles, LuTv2, LuUsers2, LuVideo } from 'react-icons/lu'
+import { LuBadgeInfo, LuCreditCard, LuFileCog2, LuFileVideo2, LuLayoutDashboard, LuLayoutGrid, LuPencilLine, LuSettings, LuSparkles, LuTv2, LuUsers2, LuVideo, LuVote } from 'react-icons/lu'
 interface DashboardNavProps {
   items: SidebarNavItem[]
 }
@@ -21,6 +21,7 @@ const iconMapping: { [key: string]: React.ComponentType<{ className?: string }> 
   manual: LuFileCog2,
   users: LuUsers2,
   outstatic: LuPencilLine,
+  start: LuVote,
 }
 export function DashboardNav({ items }: DashboardNavProps) {
   const path = usePathname();

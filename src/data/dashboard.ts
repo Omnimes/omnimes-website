@@ -37,12 +37,12 @@ export const dashboardConfigExtend: DashboardConfig = {
     },
     {
       title: "docs",
-      href: "/docs",
+      href: "/documentation",
       disabled: true,
     },
     {
       title: "support",
-      href: "/support",
+      href: "/dashboard/support",
       disabled: true,
     },
   ],
@@ -121,8 +121,18 @@ export const dashboardConfigAdmin: DashboardConfig = {
   ],
   sidebarNav: [
     {
-      title: "dashboard",
+      title: "start",
       href: "/admin",
+      icon: "start",
+    },
+    {
+      title: "separator",
+      href: "#",
+      separator: true,
+    },
+    {
+      title: "dashboard",
+      href: "/dashboard",
       icon: "dashboard",
     },
     {

@@ -9,7 +9,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   const t = useTranslations("DashboardFooter")
   return (
     <footer className={cn(className)}>
-      <div className="flex w-full max-w-[1024px] flex-col items-center justify-between gap-4 md:h-16 md:flex-row md:py-0 py-2 px-6 md:px-2 lg:px-0">
+      <div className="flex w-full container px-4 py-2 md:px-8 mx-auto flex-col items-center justify-between gap-4 md:h-16 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4 md:flex-row md:gap-2 md:px-0">
           <Link href="/" className="items-center space-x-2 flex">
             <Image

@@ -66,8 +66,10 @@ export const MainNav = ({ items, mobileNav, children }: MainNavProps) => {
         {showMobileMenu ? <LuX /> : <LuMenu />}
         <span className="font-bold">Menu</span>
       </button>
-      {showMobileMenu && mobileNav && (
-        <MobileNav items={mobileNav} hideMenu={hideMenu} >{children}</MobileNav>
+      {showMobileMenu && (
+        <MobileNav items={mobileNav} hideMenu={hideMenu}>
+          {children}
+        </MobileNav>
       )}
     </div>
   )

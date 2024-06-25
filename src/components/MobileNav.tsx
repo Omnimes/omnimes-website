@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl"
 import { Separator } from "./atoms/Separator"
 
 interface MobileNavProps {
-  items: MainNavItem[] & SidebarNavItem[];
+  items: MainNavItem[] & SidebarNavItem[] | undefined;
   hideMenu: () => void;
   children?: React.ReactNode
 }
@@ -37,7 +37,7 @@ export function MobileNav({ items, hideMenu, children }: MobileNavProps) {
             <span className="font-bold">{siteMetadata.headerTitle}</span>
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
-          {items.map((item, index) => {
+          {items?.map((item, index) => {
             if(item.separator) {
               return (
                 <Separator key={item.title} />
@@ -55,8 +55,8 @@ export function MobileNav({ items, hideMenu, children }: MobileNavProps) {
               {t(item.title)}
             </Link>
           )})}
+          {children}
         </nav>
-        {children}
       </div>
     </div>
   )

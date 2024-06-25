@@ -2,7 +2,6 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { genPageMetadata } from '@/app/seo';
-import { revalidatePath } from 'next/cache';
 // import { EmptyPlaceholder } from "@/components/empty-placeholder"
 // import { DashboardHeader } from "@/components/header"
 // import { PostCreateButton } from "@/components/post-create-button"
@@ -27,7 +26,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function DashboardPage({params: { locale }}: {params: { locale: string }}) {
   unstable_setRequestLocale(locale);
-  revalidatePath('/');
 
   return (
     <main>

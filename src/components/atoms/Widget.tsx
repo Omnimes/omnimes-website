@@ -14,16 +14,29 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
   if(pathname == null) return null
   // nie chcę wyświetlać na stronach:
   // kontakt, oferta, o nas - dodawaj opcjonalnie po | w regexp poniżej
-  const localePrefixRegex =
-    /^\/(de|pl|en)(\/(?!about$|ueber-uns$|o-nas$|kontakt$|contact$|oferta$|offer$|angebot$|demo$|login$|register$|rejestracja$|admin$|admin\/(?:[^\/]+)$|admin\/(?:[^\/]+)\/(?:[^\/]+)$|dashboard$|dashboard\/(?:[^\/]+)$|dashboard\/(?:[^\/]+)\/(?:[^\/]+)$|gallery$|galeria$|galerie$|outstatic$|outstatic\/(?:[^\/]+)$|outstatic\/(?:[^\/]+)\/(?:[^\/]+)$).*)?$/
+  // const localePrefixRegex =
+  // /^\/(de|pl|en)(\/(?!about$|ueber-uns$|o-nas$|kontakt$|contact$|oferta$|offer$|angebot$|demo$|login$|register$|rejestracja$|admin$|admin\/(?:[^\/]+)$|admin\/(?:[^\/]+)\/(?:[^\/]+)$|dashboard$|dashboard\/(?:[^\/]+)$|dashboard\/(?:[^\/]+)\/(?:[^\/]+)$|documentation$|documentation\/(?:[^\/]+)$|documentation\/(?:[^\/]+)\/(?:[^\/]+)$|gallery$|galeria$|galerie$|outstatic$|outstatic\/(?:[^\/]+)$|outstatic\/(?:[^\/]+)\/(?:[^\/]+)$).*)?$/
+
+    const forbiddenPaths = [
+      'demo', 
+      'login', 
+      'kontakt', 'contact', 
+      'register', 'rejestracja',
+      'oferta', 'offer', 'angebot',
+      'about', 'ueber-uns', 'o-nas',
+      'gallery', 'galeria', 'galerie',
+      'admin', 'admin\/(?:[^\/]+)', 'admin\/(?:[^\/]+)\/(?:[^\/]+)',
+      'outstatic', 'outstatic\/(?:[^\/]+)', 'outstatic\/(?:[^\/]+)\/(?:[^\/]+)',
+      'dashboard', 'dashboard\/(?:[^\/]+)', 'dashboard\/(?:[^\/]+)\/(?:[^\/]+)',
+      'documentation', 'documentation\/(?:[^\/]+)', 'documentation\/(?:[^\/]+)\/(?:[^\/]+)',
+  ];
+  
+  const forbiddenPathsRegex = forbiddenPaths.join('|');
+  const localePrefixRegex = new RegExp(`^\/(de|pl|en)(\/(?!${forbiddenPathsRegex}$).*)?$`);
 
   if (!localePrefixRegex.test(pathname)) {
     return null
   }
-
-  // nie chcę wyświetlać na stronach:
-  // kontakt, oferta, o nas - dodawaj opcjonalnie po | w regexp poniżej
-  // const localePrefixRegex = /^\/(de|pl|en)(?!\/(contact|kontakt|ueber-uns|about|o-nas|offer|angebot|oferta))\/(.*)$/;
 
   return (
     <>

@@ -161,7 +161,7 @@ export function generateXML(urlObjects: URLObject[]): string {
         'xmlns:image': 'http://www.google.com/schemas/sitemap-image/1.1',
         'xmlns:video': 'http://www.google.com/schemas/sitemap-video/1.1',
       });
-      
+      // http://www.w3.org/TR/xhtml11/xhtml11_schema.html
     urlObjects.forEach(obj => {
       const urlElement = root.ele('url');
       urlElement.ele('loc').txt(obj.url);
