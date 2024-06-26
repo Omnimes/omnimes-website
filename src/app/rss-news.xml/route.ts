@@ -30,8 +30,8 @@ export async function GET() {
 
     feed.item({
       title: post.title,
-      guid: `${host}${pathMappingNews[lang]}/blog/${post.slug}`,
-      url: `${host}${pathMappingNews[lang]}/blog/${post.slug}`,
+      guid: `${host}${post.lang}/${pathMappingNews[lang]}/${post.slug}`,
+      url: `${host}${post.lang}/${pathMappingNews[lang]}/${post.slug}`,
       date: new Date(post.publishedAt),
       description: post.description ?? "",
       author: post.author?.name,
