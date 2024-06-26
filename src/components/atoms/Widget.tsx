@@ -25,11 +25,13 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
       'oferta', 'offer', 'angebot',
       'about', 'ueber-uns', 'o-nas',
       'gallery', 'galeria', 'galerie',
+      'verify-email', 'email-verifizieren', 'zweryfikuj-email',
       'admin', 'admin\/(?:[^\/]+)', 'admin\/(?:[^\/]+)\/(?:[^\/]+)',
       'outstatic', 'outstatic\/(?:[^\/]+)', 'outstatic\/(?:[^\/]+)\/(?:[^\/]+)',
       'dashboard', 'dashboard\/(?:[^\/]+)', 'dashboard\/(?:[^\/]+)\/(?:[^\/]+)',
+      'dokumentacja', 'dokumentacja\/(?:[^\/]+)', 'dokumentacja\/(?:[^\/]+)\/(?:[^\/]+)',
       'documentation', 'documentation\/(?:[^\/]+)', 'documentation\/(?:[^\/]+)\/(?:[^\/]+)',
-  ];
+    ];
   
   const forbiddenPathsRegex = forbiddenPaths.join('|');
   const localePrefixRegex = new RegExp(`^\/(de|pl|en)(\/(?!${forbiddenPathsRegex}$).*)?$`);

@@ -51,7 +51,7 @@ export async function getUsers(
     const whereClause: any = {};
   
     if (search) {
-      whereClause.name = {
+      whereClause.email = {
         contains: search,
         mode: 'insensitive',
       };

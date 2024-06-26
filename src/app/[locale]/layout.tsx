@@ -106,19 +106,27 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         sizes="16x16"
         href="/favicons/favicon-16x16.png"
       />
-      <link
+      <link 
         rel="mask-icon"
         href="/favicons/safari-pinned-tab.svg"
         color="#5bbad5"
       />
+      <link rel="canonical" href="https://omnimes.com/pl/" key="canonical" />
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://omnimes.com/sitemap.xml" />
+      <link rel="alternate" type="application/rss+xml; charset=utf-8" title="RSS POSTS" href="https://omnimes.com/rss.xml" />
+      <link rel="alternate" type="application/rss+xml; charset=utf-8" title="RSS NEWS" href="https://omnimes.com/rss-news.xml" />
+      <link rel="alternate" type="application/atom+xml; charset=utf-8" title="FEED POSTS" href="https://omnimes.com/feed.xml" />
+      <link rel="alternate" type="application/atom+xml; charset=utf-8" title="FEED NEWS" href="https://omnimes.com/feed-news.xml" />
+      <link rel="alternate" type="application/json; charset=utf-8" title="JSON FEED POSTS" href="https://omnimes.com/posts.json" />
+      <link rel="alternate" type="application/json; charset=utf-8" title="JSON FEED NEWS" href="https://omnimes.com/news.json" />
       <body className="min-h-screen overflow-x-hidden h-full relative">
         <NextAuthProviders>
           <NextUIProviders>
             <NextIntlClientProvider messages={messages}>
               <ThemeProviders>
-                  <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
-                  {/* <Widget text={t("titleHanover")}  href={"https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"} buttonText={t("textButton")}  /> */}
-                  {children}   
+                <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
+                {/* <Widget text={t("titleHanover")}  href={"https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"} buttonText={t("textButton")}  /> */}
+                {children}
                 <Toaster />
                 <Analytics />
                 <SpeedInsights />
@@ -130,4 +138,3 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
     </html>
   );
 }
-// test
