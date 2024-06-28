@@ -17,7 +17,7 @@ interface MyUser extends User {
   role: string;
 }
 
-interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<MyUser, "name" | "image" | "email" | "role"> | undefined
 }
 

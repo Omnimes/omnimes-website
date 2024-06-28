@@ -34,7 +34,7 @@ export default async function UsersPage({
   const t = await getTranslations("AdminUsers")
 
   return (
-    <main className="flex flex-1 flex-col p-4 md:p-6">
+    <section className="flex flex-1 flex-col md:p-6 w-full">
       <div className="flex items-center mb-8">
         <h1 className="font-semibold text-lg md:text-2xl">{t("users")}</h1>
       </div>
@@ -43,6 +43,6 @@ export default async function UsersPage({
         <SearchRole value={searchParams.r} />
       </div>
       <UsersTable users={users} offset={newOffset} prevOffset={prevOffset} />
-    </main>
+    </section>
   );
 }

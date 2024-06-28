@@ -870,5 +870,36 @@
     "lackNewsDesc": "Nie znaleziono żadnych aktualności. Prosimy sprawdzić później, ponieważ mogą pojawić się nowe wiadomości.",
     "lackPosts": "Brak postów!",
     "lackPostsDesc": "Nie znaleziono żadnych postów. Prosimy sprawdzić później, ponieważ mogą pojawić się nowe wpisy na blogu."
+  },
+  "SupportPage": {
+    "title": "Formularz wsparcia",
+    "desc": "Prosimy o dokładne wypełnienie poniższych pól, abyśmy mogli jak najszybciej i najskuteczniej pomóc w rozwiązaniu Twojego problemu. Twoje zgłoszenie zostanie przekazane do odpowiedniego działu, a nasz zespół skontaktuje się z Tobą w możliwie najkrótszym czasie.",
+    "ProblemPlaceholder": "W czym masz problem?",
+    "SelectLabel": "Wybierz rodzaj problemu:",
+    "item1": "Zapytanie o nową funkcjonalność",
+    "item2": "Problem z systemem",
+    "item3": "Problem ze sprzętem",
+    "item4": "Wycena",
+    "item5": "Inne",
+    "send": "Wyślij",
+    "otherPlaceholder": "Opisz typ problemu",
+    "otherLabel": "Jaki masz problem?",
+    "messageLabel": "Opisz problem lub napisz wiadomość",
+    "messagePlaceholder": "Opowiedź nam w jakiej sprawie piszesz...",
+    "toastWrong": "Niestety, nie udało się wysłać wiadomości.",
+    "toastWrongDesc": "Prosimy spróbować ponownie lub skontaktować się z nami bezpośrednio.",
+    "toastSuccess": "Twoja wiadomość została pomyślnie wysłana.",
+    "toastSuccessDesc": "Dziękujemy za kontakt! Nasz zespół skontaktuje się z Tobą wkrótce."
+  },
+  "SupportPageMeta": {
+    "title": "Wsparcie - Skontaktuj się z nami w razie problemów!",
+    "desc": "Skontaktuj się z naszym zespołem wsparcia, aby uzyskać pomoc w rozwiązaniu problemów. Wypełnij formularz wsparcia, a nasz zespół skontaktuje się z Tobą wkrótce.",
+    "keywords": "wsparcie, pomoc, asysta, obsługa klienta, kontakt, rozwiązanie problemu, zapytanie o nową funkcjonalność, wsparcie techniczne"
+  },
+  "FormMessage": {
+    "SelectProblem": "Wybierz problem.",
+    "RequiredTextArea": "Pole wiadomości jest wymagane",
+    "TextareaMessage": "Wiadomośc powinna być dłuższa",
+    "InputText": "Wymagane minimum 3 znaki"
   }
 }

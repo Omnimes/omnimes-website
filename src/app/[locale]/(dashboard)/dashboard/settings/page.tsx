@@ -2,7 +2,7 @@ import { redirect } from "next/navigation"
 import { getCurrentUser } from "@/utils/session"
 import { DashboardShell } from "@/components/dashboard/Shell"
 import { DashboardHeader } from "@/components/dashboard/Header"
-import { UserNameForm } from "@/components/settings/UserNameForm"
+import { UserNameForm } from "@/components/forms/settings/UserNameForm"
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { genPageMetadata } from "@/app/seo"
@@ -38,7 +38,6 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
         heading={t("title")}
         text={t("desc")}
       />
-      
       <div className="grid gap-10">
         <UserNameForm user={{ id: user.id, name: user.name || "" }} />
       </div>

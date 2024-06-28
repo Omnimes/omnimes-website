@@ -869,5 +869,36 @@
     "lackNewsDesc": "Keine Nachrichten gefunden. Bitte später erneut überprüfen, da neue Updates erscheinen könnten.",
     "lackPosts": "Keine Beiträge!",
     "lackPostsDesc": "Keine Beiträge gefunden. Bitte später erneut überprüfen, da neue Blogeinträge erscheinen könnten."
-}
+  },
+  "SupportPage": {
+    "title": "Support-Formular",
+    "desc": "Bitte füllen Sie die unten stehenden Felder sorgfältig aus, damit wir Ihnen so schnell und effektiv wie möglich bei der Lösung Ihres Problems helfen können. Ihre Anfrage wird an die zuständige Abteilung weitergeleitet und unser Team wird sich so schnell wie möglich mit Ihnen in Verbindung setzen.",
+    "ProblemPlaceholder": "Was ist Ihr Problem?",
+    "SelectLabel": "Wählen Sie die Art des Problems:",
+    "item1": "Anfrage für neue Funktion",
+    "item2": "Systemproblem",
+    "item3": "Hardwareproblem",
+    "item4": "Kostenvoranschlag",
+    "item5": "Sonstiges",
+    "send": "Absenden",
+    "otherPlaceholder": "Beschreiben Sie den Typ des Problems",
+    "otherLabel": "Was ist Ihr Problem?",
+    "messageLabel": "Beschreiben Sie das Problem oder schreiben Sie eine Nachricht",
+    "messagePlaceholder": "Erzählen Sie uns, worum es geht...",
+    "toastWrong": "Leider konnte die Nachricht nicht gesendet werden.",
+    "toastWrongDesc": "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+    "toastSuccess": "Ihre Nachricht wurde erfolgreich gesendet.",
+    "toastSuccessDesc": "Vielen Dank für Ihre Kontaktaufnahme! Unser Team wird sich in Kürze bei Ihnen melden."
+  },
+  "SupportPageMeta": {
+    "title": "Support - Kontaktieren Sie uns bei Problemen!",
+    "desc": "Kontaktieren Sie unser Support-Team, um Hilfe bei der Lösung von Problemen zu erhalten. Füllen Sie das Support-Formular aus und unser Team wird sich in Kürze bei Ihnen melden.",
+    "keywords": "Support, Hilfe, Unterstützung, Kundenservice, Kontakt, Problemlösung, Anfrage für neue Funktion, technischer Support"
+  },
+  "FormMessage": {
+    "SelectProblem": "Wählen Sie ein Problem.",
+    "RequiredTextArea": "Nachrichtenfeld ist erforderlich",
+    "TextareaMessage": "Nachricht sollte länger sein",
+    "InputText": "Mindestens 3 Zeichen erforderlich"
+  }
 }

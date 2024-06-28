@@ -869,5 +869,36 @@
     "lackNewsDesc": "No news found. Please check back later as new updates may appear.",
     "lackPosts": "No posts!",
     "lackPostsDesc": "No posts found. Please check back later as new blog entries may appear."
-}
+  },
+  "SupportPage": {
+    "title": "Support Form",
+    "desc": "Please fill out the fields below carefully so that we can help you resolve your issue as quickly and effectively as possible. Your inquiry will be forwarded to the appropriate department, and our team will contact you as soon as possible.",
+    "ProblemPlaceholder": "What is your issue?",
+    "SelectLabel": "Select type of issue:",
+    "item1": "Feature request",
+    "item2": "System issue",
+    "item3": "Hardware issue",
+    "item4": "Quotation",
+    "item5": "Other",
+    "send": "Submit",
+    "otherPlaceholder": "Describe the type of issue",
+    "otherLabel": "What is your issue?",
+    "messageLabel": "Describe the issue or write a message",
+    "messagePlaceholder": "Tell us what you're writing about...",
+    "toastWrong": "Unfortunately, the message could not be sent.",
+    "toastWrongDesc": "Please try again or contact us directly.",
+    "toastSuccess": "Your message has been successfully sent.",
+    "toastSuccessDesc": "Thank you for reaching out! Our team will contact you soon."
+  },
+  "SupportPageMeta": {
+    "title": "Support - Contact us if you have any issues!",
+    "desc": "Contact our support team for help resolving issues. Fill out the support form and our team will get back to you soon.",
+    "keywords": "support, help, assistance, customer service, contact, issue resolution, feature request, technical support"
+  },
+  "FormMessage": {
+    "SelectProblem": "Select an issue.",
+    "RequiredTextArea": "Message field is required",
+    "TextareaMessage": "Message should be longer",
+    "InputText": "At least 3 characters required"
+  }
 }
