@@ -172,6 +172,14 @@
         {
           "value": "raporty",
           "label": "raporty"
+        },
+        {
+          "value": "dataVisualization",
+          "label": "Data Visualization"
+        },
+        {
+          "value": "reports",
+          "label": "Reports"
         }
       ]
     },
