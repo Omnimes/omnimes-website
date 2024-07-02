@@ -1,6 +1,6 @@
 {
-  "commit": "6291c9c20f250226c70de3472877cc204579a093",
-  "generated": "2024-07-01T07:05:35.625Z",
+  "commit": "0595d3e5f1a19d66ca9c1a4dd9e579e856cabf61",
+  "generated": "2024-07-02T06:42:31.574Z",
   "metadata": [
     {
       "__outstatic": {
@@ -499,6 +499,59 @@
         }
       ],
       "title": "Data Visualization - The Success of Analysis. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "0595d3e5f1a19d66ca9c1a4dd9e579e856cabf61",
+        "hash": "2027840702",
+        "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
+      "lang": "en",
+      "publishedAt": "2024-07-02T05:47:43.362Z",
+      "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        }
+      ],
+      "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
     }
   ]
 }
