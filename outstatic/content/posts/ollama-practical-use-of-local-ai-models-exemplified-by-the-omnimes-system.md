@@ -22,7 +22,7 @@ The software is available on all platforms, including Windows/Linux/MacOS, and i
 
 ## Launching
 
-Launching the software is incredibly simple. Below, I'll briefly summarize the process using a Windows example. For detailed installation instructions, please refer to the project's website: [\[https://ollama.com\](https://www.ollama.com/](https://ollama.com]\(https://www.ollama.com/\)))
+Launching the software is incredibly simple. Below, I'll briefly summarize the process using a Windows example. For detailed installation instructions, please refer to the project's website: [https://ollama.com](https://www.ollama.com/)
 
 From the project website, simply download the installer. One click and the software is installed. After installation, type in your browser:
 
@@ -34,7 +34,7 @@ You should see that the server has started.
 
 ![Screenshot of the Console Showing the Running Ollama Server](/images/image-ExNT.png)
 
-The available models along with their descriptions are on the project's website [\[https://ollama.com/library\](https://www.ollama.com/library](https://ollama.com/library]\(https://www.ollama.com/library\)))
+The available models along with their descriptions are on the project's website [https://ollama.com/library](https://www.ollama.com/library)
 
 After installation, simply download a model by typing the following in **cmd**, for example:
 
@@ -56,7 +56,9 @@ We enter a question and wait for the answer.
 
 ![Answer to the question "who is Elon Musk?" by the Ollama language model](/images/image-UyND.png)
 
-Of course, not everyone will prefer this type of communication interface. Another way is through a web interface, but this requires Docker to be installed. If we have Docker installed, then from the website: [\[https://github.com/open-webui/open-webui\](https://www.github.com/open-webui/open-webui](https://github.com/open-webui/open-webui]\(https://www.github.com/open-webui/open-webui\)))
+Of course, not everyone will prefer this type of communication interface. Another way is through a web interface, but this requires Docker to be installed. If we have Docker installed, then from the website: 
+
+[https://github.com/open-webui/open-webui](https://www.github.com/open-webui/open-webui)
 
 We can download the version that interests us. I choose the standard version, and all I need to do is paste the following into **cmd**:
 
@@ -78,7 +80,7 @@ From now on, we can fully utilize our local model through the same interface as 
 
 For configuring this interface and complete server installation of **Ollama**, I invite you to watch this video:
 
-\[<https://www.youtube.com/watchv=Wjrdr0NU4Sk\](https://youtube.com/watchv=Wjrdr0NU4Sk)>
+[https://www.youtube.com/watchv=Wjrdr0NU4Sk](https://youtube.com/watchv=Wjrdr0NU4Sk)
 
 We've covered a brief overview of the software and its installation. In another post, I'll present a complete installation of the **Ollama** server as a remote AI server, along with a comparison of the best available models.
 
@@ -120,7 +122,7 @@ Now that we have described the Ollama software and the Llama3 model, including a
 
 Using the Ollama server API, we have implemented the use of local AI within the Omnimes system. Its operation is based on straightforward data setup similar to using the OpenAI API, as discussed in my earlier post linked below:
 
-\[<https://www.omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych\](https://omnimes.com/pl/blog/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych)>
+[https://www.omnimes.com/en/blog/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis](https://www.omnimes.com/en/blog/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis)
 
 ![Settings for the AI model in the Omnimes system](/images/image-U0Nj.png)
 
@@ -154,6 +156,6 @@ However, utilizing **Ollama** for enterprise needs in systems like **Omnimes**, 
 
 Additionally, we benefit from an AI model that is less susceptible to external world misinformation, thereby reducing the risk of hallucinations or false outputs.
 
-If you are interested in our solution for your machinery park or production floor to enhance production processes using modern data collection and analysis methods, I invite you to explore our system's offerings \[Omnimes\][(https://omnimes.com/en/offer](https://omnimes.com/pl/oferta))
+If you are interested in our solution for your machinery park or production floor to enhance production processes using modern data collection and analysis methods, I invite you to explore our system's offerings [Omnimes](https://omnimes.com/en/offer)
 
  

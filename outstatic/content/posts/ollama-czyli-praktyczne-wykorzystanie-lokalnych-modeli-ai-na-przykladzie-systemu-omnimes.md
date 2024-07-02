@@ -22,7 +22,7 @@ Oprogramowanie jest dostępne na każdą platformę czyli Windows/Linux/MacOs ja
 
 ## Uruchomienie
 
-Samo uruchomienie oprogramowania jest banalnie proste. Poniżej streszczę w wielkim skrócie na przykładzie uruchomienia na Windows, zaś po dokładną instrukcję instalacji odsyłam pod adres projektu:[https://ollama.com](https://www.ollama.com/)
+Samo uruchomienie oprogramowania jest banalnie proste. Poniżej streszczę w wielkim skrócie na przykładzie uruchomienia na Windows, zaś po dokładną instrukcję instalacji odsyłam pod adres projektu: [https://ollama.com](https://www.ollama.com/)
 
 Z strony projektu wystarczy pobrać instalator. Jedno kliknięcie i w tej chwili już mamy zainstalowane oprogramowanie. Wpisując po instalacji w przeglądarce:
 
