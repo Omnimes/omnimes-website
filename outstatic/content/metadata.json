@@ -1,6 +1,6 @@
 {
-  "commit": "c4412852699d119fcc8726778a64ed824c5360a3",
-  "generated": "2024-07-04T06:46:19.171Z",
+  "commit": "6e4cc7faa7f28120ffc9315c852aaa1ec6fcf798",
+  "generated": "2024-07-04T06:51:01.210Z",
   "metadata": [
     {
       "__outstatic": {
@@ -571,6 +571,25 @@
       "slug": "lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems",
       "status": "published",
       "title": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "6e4cc7faa7f28120ffc9315c852aaa1ec6fcf798",
+        "hash": "1542179832",
+        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
+      "lang": "en",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
+      "status": "published",
+      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
     }
   ]
 }
