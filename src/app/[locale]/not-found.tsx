@@ -26,6 +26,10 @@ export default function NotFoundPage() {
             href="/"
             showAnchorIcon
             anchorIcon={<AnchorIcon />}
+            aria-label={t('action')}
+            aria-labelledby={t('action')}
+            title={t('action')}
+            role="button"
             className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
           >
             {t('action')} 

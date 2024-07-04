@@ -29,12 +29,22 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
     <div className="space-y-2 pb-8 pt-6 md:space-y-5">
       <nav className="flex justify-between">
         {!prevPage && (
-          <button className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
+          <button
+            aria-label={t('prev')}
+            aria-labelledby={t('prev')}
+            title={t('prev')}
+            role="button"
+            className="cursor-auto disabled:opacity-50"
+            disabled={!prevPage}>
             {t('prev')}
           </button>
         )}
         {prevPage && (
           <CustomLink
+            aria-label={t('prev')}
+            aria-labelledby={t('prev')}
+            title={t('prev')}
+            role="button"
             href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
             rel="prev"
           >
@@ -45,12 +55,25 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
           {currentPage} {t('of')} {totalPages}
         </span>
         {!nextPage && (
-          <button className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
+          <button
+            aria-label={t('next')}
+            aria-labelledby={t('next')}
+            title={t('next')}
+            role="button"
+            className="cursor-auto disabled:opacity-50"
+            disabled={!nextPage}
+          >
             {t('next')}
           </button>
         )}
         {nextPage && (
-          <CustomLink href={`/${basePath}/page/${currentPage + 1}`} rel="next">
+          <CustomLink aria-label={t('next')}
+            aria-labelledby={t('next')}
+            title={t('next')}
+            role="button" 
+            href={`/${basePath}/page/${currentPage + 1}`} 
+            rel="next"
+          >
             {t('next')}
           </CustomLink>
         )}

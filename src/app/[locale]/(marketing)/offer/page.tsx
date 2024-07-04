@@ -178,6 +178,10 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
             <Button
               as={Link}
               href="/contact"
+              aria-label={t('buttonAria')}
+              aria-labelledby={t('buttonAria')}
+              title={t('contact')}
+              role="button"
               showAnchorIcon
               className="mt-8 bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
             >

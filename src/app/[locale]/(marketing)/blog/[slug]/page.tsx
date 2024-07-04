@@ -62,6 +62,9 @@ export async function generateMetadata( params: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: siteMetadata.siteUrl + "/" + locale + "/blog"
+    },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -110,6 +113,10 @@ export default async function BlogPost(params: Props) {
           <Button
             as={Link}
             href="/blog"
+            aria-label={t('back')}
+            aria-labelledby={t('back')}
+            title={t('back')}
+            role="button"
             className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
           >
             <LucideChevronLeft className="mr-2 size-4" />

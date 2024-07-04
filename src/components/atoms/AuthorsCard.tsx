@@ -38,6 +38,9 @@ export const CardAuthor = ({
               href={github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={"github link"}
+              aria-labelledby={'github link'}
+              title={'github link'}
               className="bg-transparent p-1 text-white"
             >
               <svg
@@ -65,6 +68,9 @@ export const CardAuthor = ({
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={"linkedin link"}
+              aria-labelledby={'linkedin link'}
+              title={'linkedin link'}
               className="bg-transparent p-1 text-white"
             >
               <svg

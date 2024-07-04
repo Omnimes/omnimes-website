@@ -99,6 +99,9 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
         <CardFooter>
           <button
             type="submit"
+            aria-label={t("save")}
+            aria-labelledby={t("save")}
+            title={t("save")}
             className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
             disabled={isSaving}
           >

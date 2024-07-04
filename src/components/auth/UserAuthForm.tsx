@@ -71,6 +71,9 @@ export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProp
         /> 
         <Button
           type="submit"
+          aria-label={t('loginMailAria')}
+          aria-labelledby={t('loginMailAria')}
+          title={t('loginMailAria')}
           variant="bordered"
           spinner={<Spinner size="sm" />}
           spinnerPlacement={"start"}
@@ -93,6 +96,9 @@ export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProp
       </div>
       <Button
         type="button"
+        aria-label={t('loginGithubAria')}
+        aria-labelledby={t('loginGithubAria')}
+        title={t('loginGithubAria')}
         variant="bordered"
         spinner={<Spinner size="sm" />}
         spinnerPlacement={"start"}

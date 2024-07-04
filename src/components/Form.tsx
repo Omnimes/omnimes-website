@@ -395,6 +395,9 @@ export const Form = () => {
           isLoading={isPending}
           spinner={<Spinner size="sm" />}
           spinnerPlacement={'end'}
+          aria-label={t('AriaButton')}
+          aria-labelledby={t('AriaButton')}
+          title={t('AriaButton')}
           type="submit"
         >
           {t("Button")}

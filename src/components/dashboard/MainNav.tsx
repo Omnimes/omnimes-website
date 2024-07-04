@@ -60,6 +60,10 @@ export const MainNav = ({ items, mobileNav, children }: MainNavProps) => {
         </nav>
       ) : null}
       <button
+        aria-label={t('ariaMenu')}
+        aria-labelledby={t('ariaMenu')}
+        title={t('ariaMenu')}
+        role="menu"
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
       >

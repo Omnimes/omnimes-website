@@ -59,7 +59,8 @@
     "searchSubtitle2": "Erfahren Sie mehr über OmniMES.",
     "searchSubtitle3": "Überprüfen Sie die FAQs und finden Sie Antworten auf Fragen.",
     "searchSubtitle4": "Überprüfen Sie die Nachrichten von OmniMES.",
-    "searchSubtitle5": "Sehen Sie sich die OmniMES-Fotogalerie an"
+    "searchSubtitle5": "Sehen Sie sich die OmniMES-Fotogalerie an",
+    "ariaTriger": "Menü erweitern und alle Optionen anzeigen"
   },
   "Blog": {
     "title": "Alle Artikel",
@@ -94,7 +95,9 @@
     "title2": "MES-System",
     "subTitle": "Steigere die effizienz, reduziere kosten und erziele eine perfekte kontrolle in jedem produktionsstadium mit unserem MES-System",
     "contact": "Kontakt",
-    "more": "Mehr erfahren"
+    "more": "Mehr erfahren",
+    "buttonAria": "Kontaktformular absenden",
+    "buttonOmnimes": "Zur Sektion mit detaillierten Informationen über OmniMes gehen"
   },
   "OmnimesInformation": {
     "smallSubtitle": "Was ist OmniMES?",
@@ -188,7 +191,8 @@
     "SuccessFormMessage": "Vielen Dank für Ihre Kontaktaufnahme! Unser Team wird sich in Kürze bei Ihnen melden.",
     "ErrorForm": "Leider konnte die Nachricht nicht gesendet werden.",
     "ErrorFormMessage": "Bitte versuchen Sie es erneut oder nehmen Sie direkt Kontakt mit uns auf.",
-    "Button": "Lass uns reden"
+    "Button": "Lass uns reden",
+    "AriaButton": "Kontaktformular absenden"
   },
   "Widget": {
     "title": "Entfesseln Sie das Potenzial mit OmniMES! Holen Sie sich jetzt ein Angebot und optimieren Sie Ihre Produktion noch heute.",
@@ -198,7 +202,8 @@
     "seeyou": "Bis bald!",
     "textButton": "Überprüfen",
     "textButtonSection": "Details überprüfen",
-    "content": "Die <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> Messe"
+    "content": "Die <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> Messe",
+    "ariaWidget": "Gehe zur Multiprojekt-Seite, wo wir die Ausstellung auf Messen zeigen"
   },
   "Opinion": {
     "opinion": "Meinungen",
@@ -245,7 +250,8 @@
     "title": "Sie haben uns vertraut"
   },
   "Video": {
-    "title": "Schauen Sie sich ein kurzes Video an, das unser System vorstellt!"
+    "title": "Schauen Sie sich ein kurzes Video an, das unser System vorstellt!",
+    "playAria": "Video über das OmniMes-System abspielen"
   },
   "Performance": {
     "subtitle": "Überwachung der Produktivität",
@@ -331,7 +337,8 @@
     "cta": "Heute beginnen",
     "info": "*Die Preisliste stellt kein Angebot dar",
     "head3": "Warten Sie nicht! Optimieren Sie Ihre Produktion noch heute",
-    "head3desc": "Erfragen Sie ein individuelles kommerzielles Angebot für Ihre Fabrik"
+    "head3desc": "Erfragen Sie ein individuelles kommerzielles Angebot für Ihre Fabrik",
+    "buttonAria": "Zur Seite mit dem Kontaktformular gehen"
   },
   "FAQ": {
     "options": "Optionen",
@@ -379,7 +386,8 @@
   "NewsData": {
     "newsNotFound": "Artikel nicht gefunden",
     "newsNotFoundDesc": "Entschuldigung, aber wir konnten diesen Artikel nicht finden oder er könnte unter einer anderen URL zu finden sein. Sie können andere verfügbare Artikel in dieser Sprache lesen, indem Sie zu allen Beiträgen gehen.",
-    "allnews": "Alle Nachrichten"
+    "allnews": "Alle Nachrichten",
+    "backToNews": "Zurück zu den Nachrichten"
   },
   "TermsMeta": {
     "title": "OmniMES - Nutzungsbedingungen - Nutzungsregeln",
@@ -476,7 +484,9 @@
     "toastWrong": "Etwas ist schief gelaufen.",
     "toastWrongDesc": "Ihre Anmeldeanfrage ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "toastSuccess": "Überprüfen Sie Ihre E-Mails",
-    "toastSuccessDesc": "Wir haben Ihnen einen Anmelde-Link geschickt. Vergewissern Sie sich auch, dass Sie Ihren Spam-Ordner überprüfen."
+    "toastSuccessDesc": "Wir haben Ihnen einen Anmelde-Link geschickt. Vergewissern Sie sich auch, dass Sie Ihren Spam-Ordner überprüfen.",
+    "loginMailAria": "Mit E-Mail anmelden",
+    "loginGithubAria": "Mit GitHub anmelden"
   },
   "RegisterPage": {
     "back": "Zurück",
@@ -774,7 +784,8 @@
     "administrationPanel": "Verwaltungsbereich",
     "users": "Benutzer",
     "outstatic": "Inhalte",
-    "start": "Start"
+    "start": "Start",
+    "ariaMenu": "Menü anzeigen/ausblenden"
   },
   "DashboardFooter": {
     "footer": "Produktionsausführungssystem."

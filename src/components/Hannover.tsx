@@ -99,6 +99,9 @@ export const Hannover = () => {
                     as={Link}
                     href="https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"
                     showAnchorIcon
+                    aria-label={t('ariaWidget')}
+                    aria-labelledby={t('ariaWidget')}
+                    title={t('ariaWidget')}
                     className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
                   >
                     {t('textButtonSection')}

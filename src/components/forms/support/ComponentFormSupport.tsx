@@ -137,6 +137,9 @@ export function ComponentFormSupport({ user }: UserAccountNavProps) {
 
         <Button
           type="submit"
+          aria-label={t('send')}
+          aria-labelledby={t('send')}
+          title={t('send')}
           className={cn(buttonVariants({ variant: "primary", size: "sm" }))}
           disabled={isSending}
         >

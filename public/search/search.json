@@ -1,5 +1,19 @@
 [
   {
+    "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System",
+    "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
+    "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
+    "lang": "en",
+    "tags": "AI, AI local, llama3, Meta, Gemma, Mistral, GPT-4, GPT-3.5"
+  },
+  {
+    "title": "Data Visualization - The Success of Analysis. Redash",
+    "slug": "data-visualization-the-success-of-analysis-redash",
+    "description": "In today's world, the rapid development of technology and increasing market demands make efficient production management crucial for a company's success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.",
+    "lang": "en",
+    "tags": "redash, Data Visualization, big data, Reports"
+  },
+  {
     "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES",
     "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
     "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",

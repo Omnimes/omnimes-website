@@ -59,7 +59,8 @@
     "searchSubtitle2": "Learn more about OmniMES.",
     "searchSubtitle3": "Check FAQs and find answers to questions.",
     "searchSubtitle4": "Check out OmniMES news.",
-    "searchSubtitle5": "See the OmniMES photo gallery"
+    "searchSubtitle5": "See the OmniMES photo gallery",
+    "ariaTriger": "Expand menu and view all options"
   },
   "Blog": {
     "title": "All posts",
@@ -94,7 +95,9 @@
     "title2": "MES System",
     "subTitle": "Increase efficiency, reduce costs, and achieve perfect control at every stage of production with our MES system",
     "contact": "Contact",
-    "more": "Learn more"
+    "more": "Learn more",
+    "buttonAria": "Go to the contact form page",
+    "buttonOmnimes": "Go to the section with detailed information about OmniMes"
   },
   "OmnimesInformation": {
     "smallSubtitle": "What is OmniMES?",
@@ -188,7 +191,8 @@
     "SuccessFormMessage": "Thank you for getting in touch! Our team will contact you shortly.",
     "ErrorForm": "Unfortunately, the message could not be sent.",
     "ErrorFormMessage": "Please try again or contact us directly.",
-    "Button": "Let's talk"
+    "Button": "Let's talk",
+    "AriaButton": "Submit contact form"
   },
   "Widget": {
     "title": "Unleash the potential with OmniMES! Get a quote now and optimize your production today.",
@@ -198,7 +202,8 @@
     "seeyou": "See you there!",
     "textButton": "Check",
     "textButtonSection": "Check details",
-    "content": "The <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> trade fair"
+    "content": "The <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> trade fair",
+    "ariaWidget": "Go to the Multiprojekt page where we showcase the exhibition at trade shows"
   },
   "Opinion": {
     "opinion": "Opinions",
@@ -245,7 +250,8 @@
     "title": "They trusted us"
   },
   "Video": {
-    "title": "Check out a short video presenting our system!"
+    "title": "Check out a short video presenting our system!",
+    "playAria": "Play video about the OmniMes system"
   },
   "Performance": {
     "subtitle": "Monitoring production efficiency",
@@ -331,7 +337,8 @@
     "cta": "Start Today",
     "info": "*Price list is not a commercial offer",
     "head3": "Don't wait! Optimize your production today",
-    "head3desc": "Inquire about a customized commercial offer for your factory"
+    "head3desc": "Inquire about a customized commercial offer for your factory",
+    "buttonAria": "Go to the contact form page"
   },
   "FAQ": {
     "options": "Options",
@@ -379,7 +386,8 @@
   "NewsData": {
     "newsNotFound": "Article not found",
     "newsNotFoundDesc": "Sorry, but we couldn't find this article or it might be located at a different URL. You can read other available articles in this language by going to all posts.",
-    "allnews": "All news"
+    "allnews": "All news",
+    "backToNews": "Back to News"
   },
   "TermsMeta": {
     "title": "OmniMES - Terms of Service - Usage Rules",
@@ -476,7 +484,9 @@
     "toastWrong": "Something went wrong.",
     "toastWrongDesc": "Your sign in request failed. Please try again.",
     "toastSuccess": "Check your email",
-    "toastSuccessDesc": "We sent you a login link. Be sure to check your spam too."
+    "toastSuccessDesc": "We sent you a login link. Be sure to check your spam too.",
+    "loginMailAria": "Log in with email",
+    "loginGithubAria": "Log in with GitHub"
   },
   "RegisterPage": {
     "back": "Back",
@@ -774,7 +784,8 @@
     "administrationPanel": "Administration Panel",
     "users": "Users",
     "outstatic": "Content",
-    "start": "Start"
+    "start": "Start",
+    "ariaMenu": "Show/Hide menu"
   },
   "DashboardFooter": {
     "footer": "Production Execution System."

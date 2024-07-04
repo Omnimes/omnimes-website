@@ -65,6 +65,10 @@ export function UsersTable({
                     <Button
                         className="mt-4 w-40"
                         variant="primary"
+                        aria-label={t('prev')}
+                        aria-labelledby={t('prev')}
+                        title={t('prev')}
+                        role="button"
                         onClick={() => onClickPrev()}
                     >
                         {t("prev")}
@@ -74,6 +78,10 @@ export function UsersTable({
                     <Button
                         className="mt-4 w-40"
                         variant="primary"
+                        aria-label={t('prev')}
+                        aria-labelledby={t('prev')}
+                        title={t('prev')}
+                        role="button"
                         disabled={Number(offset) == 1}
                         onClick={() => onClickPrev()}
                     >
@@ -86,6 +94,10 @@ export function UsersTable({
                 <Button
                     className="mt-4 w-40"
                     variant="primary"
+                    aria-label={t('next')}
+                    aria-labelledby={t('next')}
+                    title={t('next')}
+                    role="button"
                     onClick={() => onClick()}
                 >
                     {t("next")}
@@ -123,6 +135,10 @@ function UserRow({ user }: { user: SelectUser }) {
                     className="w-fit"
                     size="sm"
                     variant="destructive"
+                    aria-label={t('delete')}
+                    aria-labelledby={t('delete')}
+                    title={t('delete')}
+                    role="button"
                     formAction={deleteUserWithId}
                 >
                    <LuTrash2 />

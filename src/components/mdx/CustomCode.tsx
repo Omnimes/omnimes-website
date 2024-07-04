@@ -17,6 +17,8 @@ export const Pre = (props: ComponentPropsWithRef<"pre">) => {
                         });
                     }}
                     title="Copy code"
+                    aria-label="Copy code"
+                    aria-labelledby="Copy code"
                     className="copy"
                 >
                     <span data-text-end="Copied!" data-text-initial="Copy to clipboard" className="tooltip"></span>

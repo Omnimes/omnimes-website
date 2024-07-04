@@ -34,6 +34,10 @@ export const Hero = () => {
             as={Link}
             href="/contact"
             showAnchorIcon
+            aria-label={t('buttonAria')}
+            aria-labelledby={t('buttonAria')}
+            title={t('contact')}
+            role="button"
             className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
           >
             {t('contact')}
@@ -43,6 +47,9 @@ export const Hero = () => {
             href="#omnimes"
             showAnchorIcon
             anchorIcon={<AnchorIcon />}
+            aria-label={t('buttonOmnimes')}
+            aria-labelledby={t('buttonOmnimes')}
+            title={t('more')}
             className="bg-transparent"
           >
             {t('more')}

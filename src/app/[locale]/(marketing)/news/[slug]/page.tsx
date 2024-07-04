@@ -60,6 +60,9 @@ export async function generateMetadata( params: Props): Promise<Metadata> {
   return {
     title: news.title,
     description: news.description,
+    alternates: {
+      canonical: siteMetadata.siteUrl + "/" + locale + "/news"
+    },
     openGraph: {
       title: news.title,
       description: news.description,
@@ -67,7 +70,7 @@ export async function generateMetadata( params: Props): Promise<Metadata> {
       locale: getLocalePrimaryDialects(locale),
       type: "article",
       publishedTime: new Date(news.publishedAt).toISOString(),
-      url: siteMetadata.siteUrl + "/" + locale + "/blog/" + news.slug,
+      url: siteMetadata.siteUrl + "/" + locale + "/news/" + news.slug,
       images: [siteMetadata.socialBanner],
       authors: news.author?.name || ""
     },
@@ -108,6 +111,10 @@ export default async function NewsPost(params: Props) {
           <Button
             as={Link}
             href="/news"
+            aria-label={t('backToNews')}
+            aria-labelledby={t('backToNews')}
+            title={t('backToNews')}
+            role="button"
             className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
           >
             <LucideChevronLeft className="mr-2 size-4" />

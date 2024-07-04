@@ -59,7 +59,8 @@
     "searchSubtitle2": "Dowiedz się więcej na temat OmniMES.",
     "searchSubtitle3": "Sprawdź faq i znajdź odpowiedź na pytania.",
     "searchSubtitle4": "Sprawdź aktualności OmniMES.",
-    "searchSubtitle5": "Zobacz galerię zdjęć OmniMES"
+    "searchSubtitle5": "Zobacz galerię zdjęć OmniMES",
+    "ariaTriger": "Rozwiń menu i zobacz wszystkie opcje"
   },
   "Blog": {
     "title": "Wszystkie posty",
@@ -94,7 +95,9 @@
     "title2": "systemem MES",
     "subTitle": "Zwiększ efektywność, redukuj koszty i osiągnij doskonałą kontrolę nad każdym etapem produkcji dzięki naszemu systemowi MES",
     "contact": "Kontakt",
-    "more": "Zobacz więcej"
+    "more": "Zobacz więcej",
+    "buttonAria": "Przejdź do strony z formularzem kontaktowym",
+    "buttonOmnimes": "Przejdź do sekcji ze szczegółowymi informacjami o OmniMes"
   },
   "OmnimesInformation": {
     "smallSubtitle": "Czym jest omniMES?",
@@ -188,7 +191,8 @@
     "SuccessFormMessage": "Dziękujemy za kontakt! Nasz zespół skontaktuje się z Tobą wkrótce.",
     "ErrorForm": "Niestety, nie udało się wysłać wiadomości.",
     "ErrorFormMessage": "Prosimy spróbować ponownie lub skontaktować się z nami bezpośrednio.",
-    "Button": "Porozmawiajmy"
+    "Button": "Porozmawiajmy",
+    "AriaButton": "Prześlij formularz kontaktowy"
   },
   "Widget": {
     "title": "Odkryj potencjał z OmniMES! Zdobądź wycenę już teraz i optymalizuj produkcję już dziś.",
@@ -198,7 +202,8 @@
     "seeyou": "Do zobaczenia!",
     "textButton": "Sprawdź",
     "textButtonSection": "Sprawdź szczegóły",
-    "content": "Targi <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span>"
+    "content": "Targi <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span>",
+    "ariaWidget": "Przejdź do strony multiprojekt gdzie pokazujemy wystawe na targach"
   },
   "Opinion": {
     "opinion": "Opinie",
@@ -245,7 +250,8 @@
     "title": "Zaufali nam"
   },
   "Video": {
-    "title": "Zobacz krótki film prezentujący nasz system!"
+    "title": "Zobacz krótki film prezentujący nasz system!",
+    "playAria": "Odtwórz film o systemie OmniMes"
   },
   "Performance": {
     "subtitle": "Monitorowanie efektywności produkcji",
@@ -331,7 +337,8 @@
     "cta": "Rozpocznij już dziś",
     "info": "*Cennik nie stanowi oferty handlowej",
     "head3": "Nie czekaj! Zoptymalizuj swoją produkcję już dziś",
-    "head3desc": "Zapytaj o indywidualną ofertę handlową dla Twojej fabryki"
+    "head3desc": "Zapytaj o indywidualną ofertę handlową dla Twojej fabryki",
+    "buttonAria": "Przejdź do strony z formularzem kontaktowym"
   },
   "FAQ": {
     "options": "Opcje",
@@ -379,7 +386,8 @@
   "NewsData": {
     "newsNotFound": "Nie znaleziono artykułu",
     "newsNotFoundDesc": "Przepraszamy, ale nie udało się odnaleźć tego artykułu lub może on znajdować się pod innym adresem URL. Możesz przeczytać inne dostępne artykuły w tym języku, przechodząc do wszystkich postów.",
-    "allnews": "Wszystkie aktualności"
+    "allnews": "Wszystkie aktualności",
+    "backToNews": "Powrót do aktualności"
   },
   "TermsMeta": {
     "title": "OmniMES - Regulamin Strony - Zasady Korzystania",
@@ -476,7 +484,9 @@
     "toastWrong": "Coś poszło nie tak.",
     "toastWrongDesc": "Twoja prośba o logowanie nie powiodła się. Spróbuj ponownie.",
     "toastSuccess": "Sprawdź swoją pocztę e-mail",
-    "toastSuccessDesc": "Wysłaliśmy Ci link do logowania. Upewnij się również, że sprawdzisz folder ze spamem."
+    "toastSuccessDesc": "Wysłaliśmy Ci link do logowania. Upewnij się również, że sprawdzisz folder ze spamem.",
+    "loginMailAria": "Zaloguj za pomocą emaila",
+    "loginGithubAria": "Zaloguj za pomocą Github"
   },
   "RegisterPage": {
     "back": "Powrót",
@@ -674,7 +684,7 @@
   },
   "FAQQuestion": {
     "q1": "Czym jest system OmniMES?",
-    "a1": "OmnieMES to zaawansowany system zarządzania produkcją, integrujący procesy produkcyjne w jednym zintegrowanym środowisku, zapewniając kompleksowe wsparcie dla produkcji.",
+    "a1": "OmniMES to zaawansowany system zarządzania produkcją, integrujący procesy produkcyjne w jednym zintegrowanym środowisku, zapewniając kompleksowe wsparcie dla produkcji.",
     "q2": "Jakie są główne korzyści korzystania z systemu OmniMES?",
     "a2": "Korzyści obejmują optymalizację efektywności produkcyjnej, zwiększenie jakości produktów, redukcję kosztów, poprawę śledzenia i kontroli nad procesami, oraz usprawnienie zarządzania danymi produkcyjnymi.",
     "q3": "Jakie funkcje oferuje system OmniMES?",
@@ -775,7 +785,8 @@
     "users": "Użytkownicy",
     "outstatic": "Treści",
     "start": "Start",
-    "guides": "Poradniki"
+    "guides": "Poradniki",
+    "ariaMenu": "Pokaż/Ukryj menu"
   },
   "DashboardFooter": {
     "footer": "System Realizacji Produkcji."

@@ -69,6 +69,10 @@ export default function Header() {
                   disableRipple
                   className="box-border list-none whitespace-nowrap bg-transparent p-0 text-medium data-[hover=true]:bg-transparent data-[active=true]:font-semibold"
                   endContent={<LuChevronDown />}
+                  aria-label={t('ariaTriger')}
+                  aria-labelledby={t('ariaTriger')}
+                  title={t('ariaTriger')}
+                  role="button"
                 >
                   OmniMES
                 </Button>
