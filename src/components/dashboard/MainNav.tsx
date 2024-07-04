@@ -33,7 +33,6 @@ export const MainNav = ({ items, mobileNav, children }: MainNavProps) => {
           alt={'OmniMES logo'}
           width={32}
           height={32}
-          priority
           className="mr-2"
           style={{ width: '32px', height: 'auto' }}
         />

@@ -51,7 +51,6 @@ export default function Header() {
                 alt={'OmniMES logo'}
                 width={44}
                 height={36}
-                priority
                 className="mr-2"
                 style={{ width: '44px', height: 'auto' }}
               />

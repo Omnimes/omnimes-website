@@ -30,7 +30,6 @@ export function MobileNav({ items, hideMenu, children }: MobileNavProps) {
             alt={'OmniMES logo'}
             width={44}
             height={44}
-            priority
             className="mr-2"
             style={{ width: '44px', height: 'auto' }}
         />

@@ -62,7 +62,6 @@ export const ComponentVideo = () => {
               alt={'poster'}
               width={1024}
               height={576}
-              priority
               className="shadow-video dark:shadow-video-dark h-auto w-full rounded-lg"
             />
           }
