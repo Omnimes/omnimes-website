@@ -821,7 +821,9 @@
     "logout": "Logout",
     "demo": "Demo",
     "materials": "Materials",
-    "administrationPanel": "Administration Panel"
+    "administrationPanel": "Administration Panel",
+    "DropDownTriggerUserUndefined": "Expand menu for unidentified user",
+    "DropDownTriggerUser": "Expand menu for logged-in user"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinars",

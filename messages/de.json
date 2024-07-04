@@ -821,7 +821,9 @@
     "logout": "Abmelden",
     "demo": "Demo",
     "materials": "Materialien",
-    "administrationPanel": "Verwaltungsbereich"
+    "administrationPanel": "Verwaltungsbereich",
+    "DropDownTriggerUserUndefined": "Erweitern Sie das Menü für nicht identifizierte Benutzer",
+    "DropDownTriggerUser": "Erweitern Sie das Menü für eingeloggte Benutzer"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinare",

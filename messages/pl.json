@@ -822,7 +822,9 @@
     "logout": "Wyloguj",
     "demo": "Demo",
     "materials": "Materiały",
-    "administrationPanel": "Panel administracyjny"
+    "administrationPanel": "Panel administracyjny",
+    "DropDownTriggerUserUndefined": "Rozwiń menu niezalogowanego użytkownika",
+    "DropDownTriggerUser": "Rozwiń menu zalogowanego użytkownika"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinary",

@@ -6,7 +6,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/atoms/DropdownMenu"
@@ -30,7 +29,12 @@ export function UserAccountNavClient() {
   if (user == undefined) {
     return (
       <DropdownMenu>
-        <DropdownMenuTrigger>
+        <DropdownMenuTrigger
+          aria-label={t('DropDownTriggerUserUndefined')}
+          aria-labelledby={t('DropDownTriggerUserUndefined')}
+          title={t('DropDownTriggerUserUndefined')}
+          role="button"
+        >
           <UserAvatar
             user={{ name: null, image: null }}
             className="h-7 w-7"
@@ -49,7 +53,12 @@ export function UserAccountNavClient() {
   }
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
+      <DropdownMenuTrigger
+        aria-label={t('DropDownTriggerUser')}
+        aria-labelledby={t('DropDownTriggerUser')}
+        title={t('DropDownTriggerUser')}
+        role="button"
+      >
         <UserAvatar
           user={{ name: user.name || null, image: user.image || null }}
           className="h-7 w-7"
