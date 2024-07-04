@@ -1,6 +1,6 @@
 {
-  "commit": "0595d3e5f1a19d66ca9c1a4dd9e579e856cabf61",
-  "generated": "2024-07-02T06:42:31.574Z",
+  "commit": "c4412852699d119fcc8726778a64ed824c5360a3",
+  "generated": "2024-07-04T06:46:19.171Z",
   "metadata": [
     {
       "__outstatic": {
@@ -552,6 +552,25 @@
         }
       ],
       "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
+    },
+    {
+      "__outstatic": {
+        "commit": "c4412852699d119fcc8726778a64ed824c5360a3",
+        "hash": "4160280333",
+        "path": "outstatic/content/news/lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems",
+      "lang": "en",
+      "publishedAt": "2024-06-21T06:52:47.000Z",
+      "slug": "lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems",
+      "status": "published",
+      "title": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems"
     }
   ]
 }
