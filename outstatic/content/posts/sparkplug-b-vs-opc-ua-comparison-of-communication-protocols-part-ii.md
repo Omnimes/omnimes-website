@@ -9,7 +9,7 @@ description: 'Comparison of Sparkplug B and OPC UA Communication Protocols in th
 coverImage: '/images/3.png'
 lang: 'en'
 tags: [{"value":"sparkplugB","label":"Sparkplug B"},{"value":"opcUa","label":"OPC UA"},{"value":"mqtt","label":"MQTT"},{"value":"communicationProtocol","label":"Communication Protocol"},{"value":"iIoT","label":"IIoT"},{"label":"Industrial Automation","value":"industrialAutomation"},{"label":"Client/Server Architecture","value":"client/serverArchitecture"},{"label":"Data Security","value":"dataSecurity"},{"label":"Data Standardization","value":"dataStandardization"}]
-publishedAt: '2024-06-11T10:33:08.620Z'
+publishedAt: '2024-06-06T08:36:29.000Z'
 ---
 
 ## **Introduction**

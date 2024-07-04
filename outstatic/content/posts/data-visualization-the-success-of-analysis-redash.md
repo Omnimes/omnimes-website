@@ -9,7 +9,7 @@ description: 'In today''s world, the rapid development of technology and increas
 coverImage: '/images/5.png'
 lang: 'en'
 tags: [{"value":"redash","label":"redash"},{"label":"Data Visualization","value":"dataVisualization"},{"value":"bigData","label":"big data"},{"label":"Reports","value":"reports"}]
-publishedAt: '2024-07-01T06:47:38.501Z'
+publishedAt: '2024-06-15T22:02:14.000Z'
 ---
 
 ![Logo redash](/images/image-U2ND.png)
@@ -37,7 +37,7 @@ Redash is a self-service, open-source platform for data querying and visualizati
 
 The Redash platform supports a wide range of products, making it a versatile tool for data visualization within the Omnimes system.
 
-!\[Companies Using Redash\](/images/image-AzMT.png)
+![Companies Using Redash](/images/image-AzMT.png)
 
 For more information about Redash, as well as its configuration and implementation into your own project, please visit: [redash.io](https://redash.io).
 

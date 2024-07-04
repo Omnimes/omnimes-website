@@ -2,8 +2,8 @@
 title: 'Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027'
 status: 'published'
 author:
-  name: 'OmniMES'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  name: 'Omnimes'
+  picture: '/images/logo.png'
 slug: 'omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027'
 description: 'Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027'
 coverImage: '/images/image-cxNj.png'
@@ -11,7 +11,7 @@ lang: 'pl'
 publishedAt: '2024-06-21T10:14:26.438Z'
 ---
 
-![](/images/image-cxNj.png)
+![Logo Funduszy Europejskich](/images/image-cxNj.png)
 
 Firma Multiprojekt Automatyka Sp. z o.o informuje, że **wdrożenie systemu Omnimes**, **może być sfinansowane z Funduszy Europejskich na lata 2021-2027**.
 

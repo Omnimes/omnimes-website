@@ -3,7 +3,7 @@ title: 'Lecture at the Cracow University of Technology on the Use of AI and Big 
 status: 'published'
 author:
   name: 'Omnimes'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  picture: '/images/logo.png'
 slug: 'lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems'
 description: 'Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems'
 coverImage: '/images/22-k0Mj.jpg'

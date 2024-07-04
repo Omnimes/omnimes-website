@@ -9,7 +9,7 @@ description: 'The Ollama project is an open, free software that allows running l
 coverImage: '/images/1.png'
 lang: 'en'
 tags: [{"value":"ai","label":"AI"},{"value":"aiLocal","label":"AI local"},{"value":"llama3","label":"llama3"},{"value":"meta","label":"Meta"},{"value":"gemma","label":"Gemma"},{"value":"mistral","label":"Mistral"},{"value":"gpt4","label":"GPT-4"},{"value":"gpt35","label":"GPT-3.5"}]
-publishedAt: '2024-07-02T05:47:43.362Z'
+publishedAt: '2024-06-20T13:47:51.265Z'
 ---
 
 ![Meta - ollama logo - model AI](/images/image-E3MT.png)

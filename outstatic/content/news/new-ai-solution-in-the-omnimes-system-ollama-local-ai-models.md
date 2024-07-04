@@ -3,7 +3,7 @@ title: 'New AI Solution in the Omnimes System – Ollama, Local AI Models'
 status: 'published'
 author:
   name: 'Omnimes'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  picture: '/images/logo.png'
 slug: 'new-ai-solution-in-the-omnimes-system-ollama-local-ai-models'
 description: 'New AI Solution in the Omnimes System – Ollama, Local AI Models'
 coverImage: '/images/image-E3MT.png'

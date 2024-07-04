@@ -11,7 +11,7 @@ lang: 'pl'
 publishedAt: '2024-06-21T06:19:30.177Z'
 ---
 
-![](/images/image-E3MT.png)
+![Meta - ollama logo - model AI](/images/image-E3MT.png)
 
 W systemie Omnimes wdrożono nowe rozwiązanie AI, wykorzystujące oprogramowanie Ollama, które umożliwia uruchamianie lokalnych modeli językowych AI przy stosunkowo niskich wymaganiach sprzętowych. Ollama, będące darmowym, otwartym oprogramowaniem od Meta (dawniej Facebook), umożliwia małym i średnim firmom korzystanie z aż 93 modeli AI bez istotnych ograniczeń.
 

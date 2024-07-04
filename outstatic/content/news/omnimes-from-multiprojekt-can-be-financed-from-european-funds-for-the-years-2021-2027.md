@@ -3,7 +3,7 @@ title: 'Omnimes from Multiprojekt can be financed from European Funds for the ye
 status: 'published'
 author:
   name: 'Omnimes'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  picture: '/images/logo.png'
 slug: 'omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027'
 description: 'Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027'
 coverImage: '/images/en-gxNT.png'

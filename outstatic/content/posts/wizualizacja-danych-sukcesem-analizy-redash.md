@@ -12,7 +12,7 @@ tags: [{"label":"redash","value":"redash"},{"label":"wizualziacja danych","value
 publishedAt: '2024-06-15T21:02:14.000Z'
 ---
 
-![](/images/image-U2ND.png)
+![Logo redash](/images/image-U2ND.png)
 
 ## Wstępem
 
@@ -57,15 +57,16 @@ Warto zwrócić uwagę na dwie praktyczne możliwości takiego dashboardu:
 
 2. **Częste odświeżanie danych**: Udostępniony dashboard można ustawić na minimalny czas odświeżania co minutę, co pozwala na ciągłe, aktualne podsumowanie tego, co dzieje się na parku maszynowym.
 
-Dla ułatwienia, w systemie Omnimes wprowadziliśmy własny edytor tworzenia zapytań, jak pokazano poniżej:\
-\
+Dla ułatwienia, w systemie Omnimes wprowadziliśmy własny edytor tworzenia zapytań, jak pokazano poniżej:
+
 ![Edytor zapytań do REdash w Omnimes](/images/image-U4OT.png)
 
 Po stworzeniu interesujących nas zapytań przechodzimy do do samego Redash do listy z utworzonymi zapytaniami o dane.
 
 ![Lista zapytań w Redash](/images/image-UyNT.png)
 
-Następnie wchodzimy w dane zapytanie i je edytujemy oraz jeśli jesteśmy prawidłowo podłączeni do źródła danych otrzymujemy wyniki:\
+Następnie wchodzimy w dane zapytanie i je edytujemy oraz jeśli jesteśmy prawidłowo podłączeni do źródła danych otrzymujemy wyniki:
+
 ![Edycja zapytania w Redash](/images/image-k1OT.png)
 
 Następnie przechodzimy do zakładki "Chart", gdzie tworzymy wizualizacje, określając sposób przedstawienia danych. Możliwości jest wiele, zarówno pod względem typów wykresów, jak i sposobów ich prezentacji. Poniżej znajduje się przykład wykresu typu "bar", który zestawia maszyny pod kątem występowania najczęstszych błędów.
@@ -76,14 +77,14 @@ Po stworzeniu interesujących nas wykresów z danymi, przechodzimy do zakładki 
 
 ![Dodanie wykresu na dshboard w Redash](/images/image-c4MD.png)
 
-W tym miejscu możemy włączyć publiczne udostępnianie dashboardu oraz ustawić, co jaki czas dane mają się odświeżać.\
-\
+W tym miejscu możemy włączyć publiczne udostępnianie dashboardu oraz ustawić, co jaki czas dane mają się odświeżać.
+
 W systemie Omnimes mamy możliwość zdecydowania, który z dashboardów ma znaleźć się na stronie głównej systemu. Nie ogranicza to tworzenia kolejnych dashboardów, które można udostępniać innym działom lub osobom.
 
 ![Lista dashbordow w Omnimes](/images/image-MxND.png)
 
-W rezultacie otrzymujemy gotowy dashboard jak poniżej:\
-\
+W rezultacie otrzymujemy gotowy dashboard jak poniżej:
+
 ![Gotowy dashboard w Omnimes](/images/image-A4NT.png)
 
 Tak przygotowane dane możemy wykorzystać dalej jak do chociażby do analizy poprzez AI - tak jak to się dzieje w przypadku systemu Omnimes.
