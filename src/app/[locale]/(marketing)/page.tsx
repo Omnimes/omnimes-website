@@ -5,8 +5,6 @@ import { HeroImage } from '@/components/HeroImage'
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { ComponentVideo } from '@/components/ComponentVideo';
 import { Time } from '@/components/Time';
-import { Cooperation } from '@/components/Cooperation';
-import { SocialProf } from '@/components/SocialProf';
 import { WhatPeopleSay } from '@/components/WhatPeopleSay';
 import { Timeline } from '@/components/Timeline';
 import { Performance } from '@/components/Performance';
@@ -14,6 +12,8 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import { LastUpdates } from '@/components/LastUpdates';
 import { OstDocument } from "outstatic";
 import { load } from "outstatic/server";
+import { Skeleton } from '@/components/atoms/Skeleton';
+import { Suspense } from 'react';
 
 async function getData(locale: string) {
   const db = await load();
@@ -58,7 +58,9 @@ export default async function Home(
     <>
         <HeroImage />
         <Hero />
-        <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+        <Suspense fallback={<Skeleton className="h-8 w-full" />}>
+          <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+        </Suspense>
         <WhatIsOmnimes />
         <Feature />
         <ComponentVideo />
