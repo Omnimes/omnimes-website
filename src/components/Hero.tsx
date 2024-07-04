@@ -5,7 +5,6 @@ import { AnchorIcon } from './atoms/Icons'
 export const Hero = () => {
   const t = useTranslations('HeroSection')
   return (
-    // mb-5 mt-8
     <div className="h-100 relative flex min-h-96 w-full flex-col justify-start sm:-mt-8 sm:mb-0 sm:h-[calc(100svh-65px)] sm:justify-center">
       <section className="h-100 mt-8 flex flex-col justify-between gap-6">
         <div>

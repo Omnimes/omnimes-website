@@ -22,9 +22,9 @@ export const TimelineItem = ({ step, subtitle, title, description }: Props) => {
         >
           {step}
         </Chip>
-        <h6 className="mb-3 pt-1 text-md md:text-xl font-bold leading-5">
+        <h5 className="mb-3 pt-1 text-md md:text-xl font-bold leading-5">
           {title}
-        </h6>
+        </h5>
       </div>
       <DescriptionSecondary text={description} />
     </div>

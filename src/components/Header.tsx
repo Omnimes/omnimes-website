@@ -45,113 +45,113 @@ export default function Header() {
         </NavbarContent>
         {/* Logo + napis Omnimes */}
         <NavbarContent className="hidden gap-4 min-[690px]:flex" justify="start">
-          <NavbarBrand>
+          <li className='flex basis-0 flex-row flex-grow flex-nowrap justify-start bg-transparent items-center no-underline text-medium whitespace-nowrap box-border'>
             <Image
-              src={Logo.src}
-              alt={'OmniMES logo'}
-              width={44}
-              height={36}
-              priority
-              className="mr-2"
-              style={{ width: '44px', height: 'auto' }}
-            />
-            <Link href="/" className="font-bold text-inherit hidden min-[760px]:flex">
-              OmniMES
-            </Link>
-          </NavbarBrand>
+                src={Logo.src}
+                alt={'OmniMES logo'}
+                width={44}
+                height={36}
+                priority
+                className="mr-2"
+                style={{ width: '44px', height: 'auto' }}
+              />
+              <Link href="/" className="font-bold text-inherit hidden min-[760px]:flex">
+                OmniMES
+              </Link>
+          </li>
         </NavbarContent>
         {/* Linki w centrum navBar - w tym dropdown */}
-      <NavbarContent justify="center" className="hidden gap-4 min-[690px]:flex">
-          <Dropdown backdrop="blur">
-            <NavbarItem>
-              <DropdownTrigger>
-                <Button
-                  disableRipple
-                  className="box-border list-none whitespace-nowrap bg-transparent p-0 text-medium data-[hover=true]:bg-transparent data-[active=true]:font-semibold"
-                  endContent={<LuChevronDown />}
-                  aria-label={t('ariaTriger')}
-                  aria-labelledby={t('ariaTriger')}
-                  title={t('ariaTriger')}
-                  role="button"
-                >
-                  OmniMES
-                </Button>
-              </DropdownTrigger>
-            </NavbarItem>
-            <DropdownMenu
-              key={'omniMESDropDown'}
-              aria-label={t('omniMESDropDown')}
-              className="w-[500px]"
-              itemClasses={{
-                base: 'gap-4',
-              }}
-            >
-              <DropdownSection title={t("titleSectionDropDown")} showDivider>
-                {headerNavLinksDropDown.slice(0,2).map((item) => {
-                  return (
-                    <DropdownItem
-                      key={item.href}
-                      href={item.href}
-                      description={t(item.desc)}
-                      startContent={<item.icon size={25} color={item.color} />}
-                    >
-                      {t(item.title)}
-                    </DropdownItem>
-                  )
-                })}
-              </DropdownSection>
-              <DropdownSection title={t("titleSectionDropDown2")}>
-                {headerNavLinksDropDown.slice(2,4).map((item) => {
-                  return (
-                    <DropdownItem
-                      key={item.href}
-                      href={item.href}
-                      description={t(item.desc)}
-                      startContent={<item.icon size={25} color={item.color} />}
-                    >
-                      {t(item.title)}
-                    </DropdownItem>
-                  )
-                })}
-              </DropdownSection>
-              <DropdownSection title={t("titleSectionDropDown4")}>
-                {headerNavLinksDropDown.slice(4).map((item) => {
-                  return (
-                    <DropdownItem
-                      key={item.href}
-                      href={item.href}
-                      description={t(item.desc)}
-                      startContent={<item.icon size={25} color={item.color} />}
-                    >
-                      {t(item.title)}
-                    </DropdownItem>
-                  )
-                })}
-              </DropdownSection>
-            </DropdownMenu>
-          </Dropdown>
-          {headerNavLinks
-            .filter((link) => link.href !== '/')
-            .map((link) => (
-              <NavbarItem key={link.title}>
-                <Link href={link.href} color="foreground">
-                  {t(`${link.title}`)}
-                </Link>
+        <NavbarContent justify="center" className="hidden gap-4 min-[690px]:flex">
+            <Dropdown backdrop="blur">
+              <NavbarItem>
+                <DropdownTrigger>
+                  <Button
+                    disableRipple
+                    className="box-border list-none whitespace-nowrap bg-transparent p-0 text-medium data-[hover=true]:bg-transparent data-[active=true]:font-semibold"
+                    endContent={<LuChevronDown />}
+                    aria-label={t('ariaTriger')}
+                    aria-labelledby={t('ariaTriger')}
+                    title={t('ariaTriger')}
+                    role="button"
+                  >
+                    OmniMES
+                  </Button>
+                </DropdownTrigger>
               </NavbarItem>
-            ))}
+              <DropdownMenu
+                key={'omniMESDropDown'}
+                aria-label={t('omniMESDropDown')}
+                className="w-[500px]"
+                itemClasses={{
+                  base: 'gap-4',
+                }}
+              >
+                <DropdownSection title={t("titleSectionDropDown")} showDivider>
+                  {headerNavLinksDropDown.slice(0,2).map((item) => {
+                    return (
+                      <DropdownItem
+                        key={item.href}
+                        href={item.href}
+                        description={t(item.desc)}
+                        startContent={<item.icon size={25} color={item.color} />}
+                      >
+                        {t(item.title)}
+                      </DropdownItem>
+                    )
+                  })}
+                </DropdownSection>
+                <DropdownSection title={t("titleSectionDropDown2")}>
+                  {headerNavLinksDropDown.slice(2,4).map((item) => {
+                    return (
+                      <DropdownItem
+                        key={item.href}
+                        href={item.href}
+                        description={t(item.desc)}
+                        startContent={<item.icon size={25} color={item.color} />}
+                      >
+                        {t(item.title)}
+                      </DropdownItem>
+                    )
+                  })}
+                </DropdownSection>
+                <DropdownSection title={t("titleSectionDropDown4")}>
+                  {headerNavLinksDropDown.slice(4).map((item) => {
+                    return (
+                      <DropdownItem
+                        key={item.href}
+                        href={item.href}
+                        description={t(item.desc)}
+                        startContent={<item.icon size={25} color={item.color} />}
+                      >
+                        {t(item.title)}
+                      </DropdownItem>
+                    )
+                  })}
+                </DropdownSection>
+              </DropdownMenu>
+            </Dropdown>
+            {headerNavLinks
+              .filter((link) => link.href !== '/')
+              .map((link) => (
+                <NavbarItem key={link.title}>
+                  <Link href={link.href} color="foreground">
+                    {t(`${link.title}`)}
+                  </Link>
+                </NavbarItem>
+              ))}
         </NavbarContent>
         {/* Widgety(język, wyszukiwarka i dark mode) na końcu */}
         <NavbarContent justify="end" className="hidden sm:flex">
-          <LocaleSwitcher />
-          <UserAccountNavClient />
-          <SearchButton />
-          <ThemeSwitch />
+          <li><LocaleSwitcher /></li>
+          <li><UserAccountNavClient /></li>
+          <li><SearchButton /></li>
+          <li><ThemeSwitch /></li>
         </NavbarContent>
         <NavbarContent justify="center" className="flex sm:hidden">
-          <LocaleSwitcher />
-          <UserAccountNavClient />
-          <SearchButton />
-          <ThemeSwitch />
+           <li><LocaleSwitcher /></li>
+           <li><UserAccountNavClient /></li>
+           <li><SearchButton /></li>
+           <li><ThemeSwitch /></li>
         </NavbarContent>
         {/* Linki w mobile menu */}
         <NavbarMenu>

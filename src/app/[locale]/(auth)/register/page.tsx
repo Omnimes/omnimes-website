@@ -37,7 +37,7 @@ export default function RegisterPage({ params: { locale } }: { params: { locale:
         {t("back")}
       </Link>
       <div className="hidden h-full bg-slate-100 dark:bg-zinc-950 lg:block relative shadow-xl rounded-none">
-        <video className="absolute min-h-full min-w-full object-cover rounded-none" src="/videos/register.mp4" autoPlay muted loop />
+        <video aria-label='video Omnimes'  className="absolute min-h-full min-w-full object-cover rounded-none" src="/videos/register.mp4" autoPlay muted loop />
       </div>
       <div className="lg:p-8">
         <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
