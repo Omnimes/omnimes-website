@@ -1,6 +1,6 @@
 {
-  "commit": "dc7ab5fd92e9cadc48fd4fbfa8bb0a5520ce21a6",
-  "generated": "2024-07-09T06:15:06.774Z",
+  "commit": "fd9292a1730c91d76b2a30fa3879cf7fd9ee5e25",
+  "generated": "2024-07-09T07:07:56.056Z",
   "metadata": [
     {
       "__outstatic": {
@@ -723,6 +723,47 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Vergleich der Kommunikationsprotokolle Teil II"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd9292a1730c91d76b2a30fa3879cf7fd9ee5e25",
+        "hash": "806471358",
+        "path": "outstatic/content/posts/praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/martin.png",
+      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+      "lang": "de",
+      "publishedAt": "2024-06-10T07:08:06.000Z",
+      "slug": "praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Datenanalyse",
+          "value": "datenanalyse"
+        },
+        {
+          "label": "Datensicherheit",
+          "value": "datensicherheit"
+        },
+        {
+          "label": "API GPT-4",
+          "value": "apiGpt4"
+        },
+        {
+          "label": "LLM-Modelle",
+          "value": "llmModelle"
+        }
+      ],
+      "title": "Praktische Anwendung eines KI-Assistenten: Integration der OpenAI GPT-API in eine Webanwendung für Datenanalyse"
     }
   ]
 }

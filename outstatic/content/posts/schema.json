@@ -208,6 +208,14 @@
         {
           "value": "datenstandardisierung",
           "label": "Datenstandardisierung"
+        },
+        {
+          "value": "datenanalyse",
+          "label": "Datenanalyse"
+        },
+        {
+          "value": "llmModelle",
+          "label": "LLM-Modelle"
         }
       ]
     },
