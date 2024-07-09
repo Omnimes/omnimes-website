@@ -180,6 +180,18 @@
         {
           "value": "reports",
           "label": "Reports"
+        },
+        {
+          "value": "kommunikationsprotokoll",
+          "label": "Kommunikationsprotokoll"
+        },
+        {
+          "value": "ioTKommunikation",
+          "label": "IoT-Kommunikation"
+        },
+        {
+          "value": "kommunikationsstandards",
+          "label": "Kommunikationsstandards"
         }
       ]
     },
