@@ -5,6 +5,5 @@ module.exports = {
     cssnano: { preset: 'default' },
     'tailwindcss/nesting': {},
     'postcss-variable-compress': {},
-    'postcss-deadcss': {}
   },
 };

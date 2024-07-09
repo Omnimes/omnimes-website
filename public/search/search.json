@@ -56,6 +56,13 @@
     "tags": "Sparkplug B, OPC UA, MQTT, Protokół komunikacyjny, IIoT, Automatyka przemysłowa, Architektura klient/serwer, Bezpieczeństwo danych, Standaryzacja danych"
   },
   {
+    "title": "SPARKPLUG B vs OPC UA: Vergleich der Kommunikationsprotokolle Teil II",
+    "slug": "sparkplug-b-vs-opc-ua-vergleich-der-kommunikationsprotokolle-teil-ii",
+    "description": "Vergleich der Kommunikationsprotokolle Sparkplug B und OPC UA im Kontext des industriellen Internets der Dinge (IIoT) Erfahren Sie mehr über ihre Architekturen, Datenformate, Sicherheit und Anwendungen. Entdecken Sie, welches Protokoll die Anforderungen Ihres Industrieautomatisierungsprojekts besser erfüllt.",
+    "lang": "de",
+    "tags": "Sparkplug B, OPC UA, MQTT, Kommunikationsprotokoll, IIoT, Industrielle Automatisierung, Client/Server-Architektur, Datensicherheit, Datenstandardisierung"
+  },
+  {
     "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I",
     "slug": "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
     "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
@@ -68,5 +75,12 @@
     "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
     "lang": "pl",
     "tags": "MQTT, Sparkplug B, Protokół komunikacyjny, QoS, IIoT, Komunikacja IoT, Omnimes, Przemysł 4.0, Standardy komunikacyjne"
+  },
+  {
+    "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I",
+    "slug": "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
+    "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
+    "lang": "de",
+    "tags": "MQTT, Sparkplug B, QoS, IIoT, Omnimes, Industry 4.0, Kommunikationsprotokoll, IoT-Kommunikation, Kommunikationsstandards"
   }
 ]
