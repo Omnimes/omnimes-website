@@ -58,7 +58,37 @@ Sparkplug B ist ein auf MQTT basierendes Protokoll, das von **Arlen Nipper (Grü
 
 1. **Kanal- und Nutzlastschema**:
    - **Sparkplug B**: Standardisiertes Thema und Nutzlastschema. Beispielthema: `spBv1.0/switch/light/#`. Beispiel-Nutzlast:
+
+      ```json
+     {
+       "timestamp": 1673262477011,
+       "metrics": [
+         {
+           "name": "status",
+           "timestamp": 1673262477011,
+           "dataType": "Int16",
+           "value": "ON"
+         },
+         {
+           "name": "color",
+           "timestamp": 1673262477011,
+           "dataType": "Int16",
+           "value": "red"
+         }
+       ],
+       "seq": 9
+     }
+     ```
    - **MQTT**: Flexibility in der Gestaltung von Themen und Nutzlasten. Beispielthema: `switch/light/`. Beispiel-Nutzlast:
+
+   ```json
+     {
+       "status": "ON",
+       "color": "red",
+       "date": "2023-01-08",
+       "time": "10:23"
+     }
+     ```
 2. **Nachrichtenaufbewahrung**:
    - **Sparkplug B**: Keine natürliche Nachrichtenaufbewahrung. Es ist notwendig, einen Datenspeicher zu erstellen, der die letzten Zustände/Informationen eines bestimmten Geräts aufrechterhält.
    - **MQTT**: Eingebaute Nachrichtenaufbewahrungsfunktionalität.
