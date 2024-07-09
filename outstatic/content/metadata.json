@@ -1,6 +1,6 @@
 {
-  "commit": "884d254a8b48057a5e533484b40ba59786c896ac",
-  "generated": "2024-07-09T07:58:28.769Z",
+  "commit": "1d6a29db6239ea1960d4dd6c5bf01af31efc3eca",
+  "generated": "2024-07-09T08:31:28.603Z",
   "metadata": [
     {
       "__outstatic": {
@@ -764,6 +764,59 @@
         }
       ],
       "title": "Data Visualization - The Success of Analysis. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "1d6a29db6239ea1960d4dd6c5bf01af31efc3eca",
+        "hash": "3912465102",
+        "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "Das Ollama-Projekt ist eine offene und kostenlose Software, die es ermöglicht, lokale KI-Modelle, insbesondere große Sprachmodelle (LLMs), auf Ihrem eigenen Computer oder Server auszuführen. Aufgrund seiner geringen Hardware-Anforderungen ist diese Software für mittlere und kleine Unternehmen zugänglich und bietet Zugang zu 93 KI-Modellen ohne signifikante Einschränkungen.",
+      "lang": "de",
+      "publishedAt": "2024-06-20T08:28:30.000Z",
+      "slug": "ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        }
+      ],
+      "title": "Ollama - Praktische Anwendung lokaler KI-Modelle am Beispiel des OMNIMES-Systems"
     }
   ]
 }
