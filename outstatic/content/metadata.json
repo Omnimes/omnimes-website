@@ -1,6 +1,6 @@
 {
-  "commit": "1d6a29db6239ea1960d4dd6c5bf01af31efc3eca",
-  "generated": "2024-07-09T08:31:28.603Z",
+  "commit": "7ba0f7bc04c66a09a4e5e5587f02776e3f802546",
+  "generated": "2024-07-09T08:49:01.896Z",
   "metadata": [
     {
       "__outstatic": {
@@ -730,43 +730,6 @@
     },
     {
       "__outstatic": {
-        "commit": "884d254a8b48057a5e533484b40ba59786c896ac",
-        "hash": "256088254",
-        "path": "outstatic/content/posts/data-visualization-the-success-of-analysis-redash.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
-      "lang": "de",
-      "publishedAt": "2024-07-09T07:31:17.779Z",
-      "slug": "data-visualization-the-success-of-analysis-redash",
-      "status": "published",
-      "tags": [
-        {
-          "label": "redash",
-          "value": "redash"
-        },
-        {
-          "label": "Datenvisualisierung",
-          "value": "datenvisualisierung"
-        },
-        {
-          "label": "big data",
-          "value": "bigData"
-        },
-        {
-          "label": "Berichte",
-          "value": "berichte"
-        }
-      ],
-      "title": "Data Visualization - The Success of Analysis. Redash"
-    },
-    {
-      "__outstatic": {
         "commit": "1d6a29db6239ea1960d4dd6c5bf01af31efc3eca",
         "hash": "3912465102",
         "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
@@ -817,6 +780,43 @@
         }
       ],
       "title": "Ollama - Praktische Anwendung lokaler KI-Modelle am Beispiel des OMNIMES-Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "7ba0f7bc04c66a09a4e5e5587f02776e3f802546",
+        "hash": "3831515894",
+        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-06-15T07:31:17.000Z",
+      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
     }
   ]
 }

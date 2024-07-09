@@ -1,22 +1,20 @@
 ---
-title: 'Data Visualization - The Success of Analysis. Redash'
+title: 'Datenvisualisierung – Der Erfolg der Analyse. Redash'
 status: 'published'
 author:
   name: 'Martin Szerment'
   picture: '/images/martin.png'
-slug: 'data-visualization-the-success-of-analysis-redash'
+slug: 'datenvisualisierung-der-erfolg-der-analyse-redash'
 description: 'In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.'
 coverImage: '/images/5.png'
 lang: 'de'
 tags: [{"value":"redash","label":"redash"},{"label":"Datenvisualisierung","value":"datenvisualisierung"},{"value":"bigData","label":"big data"},{"label":"Berichte","value":"berichte"}]
-publishedAt: '2024-07-09T07:31:17.779Z'
+publishedAt: '2024-06-15T07:31:17.000Z'
 ---
 
 ![Logo redash](/images/image-U2ND.png)
 
 ## Einführung
-
- 
 
 In der heutigen Welt machen die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse effizientes Produktionsmanagement entscheidend für den Erfolg eines Unternehmens. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.
 
@@ -83,7 +81,7 @@ An diesem Punkt können wir die öffentliche Freigabe des Dashboards aktivieren 
 
 In Omnimes haben wir die Möglichkeit zu entscheiden, welche Dashboards auf der Startseite des Systems angezeigt werden sollen. Dies beschränkt nicht die Erstellung zusätzlicher Dashboards, die mit anderen Abteilungen oder Personen geteilt werden können.
 
- ![Liste der Dashboards in Omnimes](/images/redash2-MyNj.png)
+![Liste der Dashboards in Omnimes](/images/redash2-MyNj.png)
 
 Als Ergebnis erhalten wir ein fertiges Dashboard, wie unten dargestellt:
 
