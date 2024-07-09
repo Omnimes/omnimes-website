@@ -216,6 +216,14 @@
         {
           "value": "llmModelle",
           "label": "LLM-Modelle"
+        },
+        {
+          "value": "datenvisualisierung",
+          "label": "Datenvisualisierung"
+        },
+        {
+          "value": "berichte",
+          "label": "Berichte"
         }
       ]
     },

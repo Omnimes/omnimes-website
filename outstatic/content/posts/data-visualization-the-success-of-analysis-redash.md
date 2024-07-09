@@ -5,106 +5,108 @@ author:
   name: 'Martin Szerment'
   picture: '/images/martin.png'
 slug: 'data-visualization-the-success-of-analysis-redash'
-description: 'In today''s world, the rapid development of technology and increasing market demands make efficient production management crucial for a company''s success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.'
+description: 'In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.'
 coverImage: '/images/5.png'
-lang: 'en'
-tags: [{"value":"redash","label":"redash"},{"label":"Data Visualization","value":"dataVisualization"},{"value":"bigData","label":"big data"},{"label":"Reports","value":"reports"}]
-publishedAt: '2024-06-15T22:02:14.000Z'
+lang: 'de'
+tags: [{"value":"redash","label":"redash"},{"label":"Datenvisualisierung","value":"datenvisualisierung"},{"value":"bigData","label":"big data"},{"label":"Berichte","value":"berichte"}]
+publishedAt: '2024-07-09T07:31:17.779Z'
 ---
 
 ![Logo redash](/images/image-U2ND.png)
 
-## Introduction
+## Einführung
 
-In today's world, the rapid development of technology and increasing market demands make efficient production management crucial for a company's success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.
+ 
 
-Data visualization transforms raw data into valuable information that is easy to interpret at various levels within an organization. With tools like Redash, Omnimes users can create interactive dashboards that present key performance indicators (KPIs), monitor production progress, and identify areas for improvement.
+In der heutigen Welt machen die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse effizientes Produktionsmanagement entscheidend für den Erfolg eines Unternehmens. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.
 
-In this article, we will discuss how the integration of Omnimes with Redash supports production through effective data visualization. We will present specific application examples, showcasing benefits such as production optimization, improved team communication, quicker problem resolution, and more informed decision-making.
+Datenvisualisierung wandelt Rohdaten in wertvolle Informationen um, die auf verschiedenen Ebenen innerhalb einer Organisation leicht interpretierbar sind. Mit Werkzeugen wie Redash können Omnimes-Benutzer interaktive Dashboards erstellen, die wichtige Leistungsindikatoren (KPIs) darstellen, die Produktionsfortschritte überwachen und Bereiche zur Verbesserung identifizieren.
 
-## What is Redash?
+In diesem Artikel werden wir diskutieren, wie die Integration von Omnimes mit Redash die Produktion durch effektive Datenvisualisierung unterstützt. Wir werden spezifische Anwendungsbeispiele vorstellen, die Vorteile wie Produktionsoptimierung, verbesserte Teamkommunikation, schnellere Problembehebung und informiertere Entscheidungsfindung demonstrieren.
 
-In rapidly evolving technology, effective production management is crucial. The Omnimes system, integrated with the Redash platform, offers advanced tools for process optimization, including data visualization, which supports analysis and decision-making.
+## Was ist Redash?
 
-Redash is a self-service, open-source platform for data querying and visualization. Quick to set up, it works with numerous data sources such as Redshift, Google BigQuery, MongoDB, Google Sheets, PostgreSQL, MySQL, and ElasticSearch.
+In der schnelllebigen Technologiewelt ist effektives Produktionsmanagement entscheidend. Das Omnimes-System, integriert mit der Redash-Plattform, bietet fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.
 
-### Key Features of Redash:
+Redash ist eine selbstbedienbare, Open-Source-Plattform für Datenabfrage und -visualisierung. Schnell einzurichten, arbeitet sie mit zahlreichen Datenquellen wie Redshift, Google BigQuery, MongoDB, Google Sheets, PostgreSQL, MySQL und ElasticSearch zusammen.
 
-- **Browser-Based and REST API**: Fully operates in a web browser, with shareable URLs and a well-defined API interface.
-- **Query Editor**: Create SQL and NoSQL queries with a schema browser and autocomplete. Ability to create and reuse query snippets for data presentation in charts.
-- **Visualization and Dashboards**: Create visualizations using a drag-and-drop method. Group visualizations into dashboards, which are automatically updated.
-- **Alerts**: Define trigger conditions and receive instant notifications when data changes, such as exceeding a set pressure or temperature.
+### Hauptmerkmale von Redash:
 
-The Redash platform supports a wide range of products, making it a versatile tool for data visualization within the Omnimes system.
+- **Browser-basiert und REST-API**: Funktioniert vollständig in einem Webbrowser mit sharebaren URLs und einer gut definierten API-Schnittstelle.
+- **Abfrage-Editor**: Erstellen Sie SQL- und NoSQL-Abfragen mit einem Schema-Browser und Autovervollständigung. Möglichkeit, Abfrage-Snippets zu erstellen und wiederzuverwenden, um Daten in Diagrammen darzustellen.
+- **Visualisierung und Dashboards**: Erstellen Sie Visualisierungen mithilfe einer Drag-and-Drop-Methode. Gruppieren Sie Visualisierungen in Dashboards, die automatisch aktualisiert werden.
+- **Benachrichtigungen**: Definieren Sie Auslösebedingungen und erhalten Sie sofortige Benachrichtigungen bei Datenänderungen, z. B. Überschreiten eines festgelegten Drucks oder einer Temperatur.
 
-![Companies Using Redash](/images/image-AzMT.png)
+Die Redash-Plattform unterstützt eine Vielzahl von Produkten, was sie zu einem vielseitigen Werkzeug für die Datenvisualisierung innerhalb des Omnimes-Systems macht.
 
-For more information about Redash, as well as its configuration and implementation into your own project, please visit: [redash.io](https://redash.io).
+![Unternehmen, die Redash verwenden](/images/image-AzMT.png)
 
-After this brief overview of the Redash tool, I will present the new possibilities within the Omnimes system following its implementation.
+Für weitere Informationen über Redash, sowie seine Konfiguration und Implementierung in Ihr eigenes Projekt, besuchen Sie bitte: [redash.io](https://redash.io).
+
+Nach diesem kurzen Überblick über das Redash-Tool werde ich die neuen Möglichkeiten innerhalb des Omnimes-Systems nach seiner Implementierung vorstellen.
 
 ## Redash in Omnimes
 
-After launching Redash, there are three steps to create a data dashboard:
+Nach dem Start von Redash gibt es drei Schritte zur Erstellung eines Daten-Dashboards:
 
-- **Creating a query**: This involves retrieving data from the database.
-- **Creating a chart**: Based on the retrieved data.
-- **Adding the chart to a dashboard**.
+- **Erstellung einer Abfrage**: Dies umfasst das Abrufen von Daten aus der Datenbank.
+- **Erstellung eines Diagramms**: Basierend auf den abgerufenen Daten.
+- **Hinzufügen des Diagramms zu einem Dashboard**.
 
-Two practical features of such a dashboard are worth noting:
+Zwei praktische Funktionen eines solchen Dashboards sind erwähnenswert:
 
-1. **Sharing without account creation**: This type of dashboard can be shared with anyone without requiring the creation of a user account in the Omnimes system. For example, it can be used for viewing on the production floor by traffic management supervisors or higher-level personnel, and for motivating employees.
+1. **Teilen ohne Erstellung eines Kontos**: Ein solches Dashboard kann ohne Erstellung eines Benutzerkontos im Omnimes-System mit anderen geteilt werden. Zum Beispiel kann es von Verkehrsmanagement-Supervisoren oder höherem Personal auf der Produktionsfläche eingesehen werden, um Mitarbeiter zu motivieren.
 
-2. **Frequent data refreshing**: The shared dashboard can be set to refresh as frequently as every minute, allowing for continuous, up-to-date summaries of what is happening on the shop floor.
+2. **Häufige Aktualisierung der Daten**: Das geteilte Dashboard kann so eingestellt werden, dass es sich so häufig wie jede Minute aktualisiert, um kontinuierliche und aktuelle Zusammenfassungen dessen zu liefern, was auf der Shop-Floor passiert.
 
-To facilitate this, we have introduced our own query editor in the Omnimes system, as shown below:
+Um dies zu erleichtern, haben wir im Omnimes-System unseren eigenen Abfrage-Editor eingeführt, wie unten dargestellt:
 
-![Query editor for Redash in Omnimes](/images/redash1-k5Mj.png)!
+![Abfrage-Editor für Redash in Omnimes](/images/redash1-k5Mj.png)
 
-After creating the queries of interest, we proceed to Redash itself to access the list of created data queries.
+Nachdem die gewünschten Abfragen erstellt wurden, gehen wir zu Redash selbst, um auf die Liste der erstellten Datenabfragen zuzugreifen.
 
-![The list of queries in Redash](/images/image-UyNT.png)
+![Die Liste der Abfragen in Redash](/images/image-UyNT.png)
 
-Next, we access the specific query and edit it within Redash. If our connection to the data source is correct, we receive the results.
+Als nächstes greifen wir auf die spezifische Abfrage zu und bearbeiten sie innerhalb von Redash. Wenn unsere Verbindung zur Datenquelle korrekt ist, erhalten wir die Ergebnisse.
 
-![Editing a query in Redash](/images/image-k1OT.png)
+![Eine Abfrage in Redash bearbeiten](/images/image-k1OT.png)
 
-Next, we move to the "Chart" tab in Redash, where we create visualizations by specifying how data should be presented. There are many options available, both in terms of chart types and presentation styles. Below is an example of a "bar" chart that compares machines based on the occurrence of the most common errors.
+Als nächstes wechseln wir zum Tab "Diagramm" in Redash, wo wir Visualisierungen erstellen, indem wir angeben, wie Daten dargestellt werden sollen. Es gibt viele Optionen, sowohl für Diagrammtypen als auch für Darstellungsstile. Hier ist ein Beispiel für ein "Balken"-Diagramm, das Maschinen basierend auf dem Auftreten der häufigsten Fehler vergleicht.
 
-![A data chart in Redash](/images/image-Y2MT.png)
+![Ein Daten-Diagramm in Redash](/images/image-Y2MT.png)
 
-After creating the charts of interest with the data, we proceed to the "Dashboard" tab in Redash, where we decide which charts should be included on it.
+Nachdem wir die gewünschten Diagramme mit den Daten erstellt haben, gehen wir zum Tab "Dashboard" in Redash, wo wir entscheiden, welche Diagramme darin enthalten sein sollen.
 
-![Adding a chart to a dashboard in Redash](/images/image-c4MD.png)
+![Ein Diagramm zu einem Dashboard in Redash hinzufügen](/images/image-c4MD.png)
 
-At this point, we can enable public sharing of the dashboard and set the data refresh interval in Redash.
+An diesem Punkt können wir die öffentliche Freigabe des Dashboards aktivieren und das Datenaktualisierungsintervall in Redash festlegen.
 
-In Omnimes, we have the option to decide which dashboards should appear on the system's homepage. This does not limit the creation of additional dashboards, which can be shared with other departments or individuals.
+In Omnimes haben wir die Möglichkeit zu entscheiden, welche Dashboards auf der Startseite des Systems angezeigt werden sollen. Dies beschränkt nicht die Erstellung zusätzlicher Dashboards, die mit anderen Abteilungen oder Personen geteilt werden können.
 
-![List of dashboards in Omnimes](/images/redash2-MyNj.png)
+ ![Liste der Dashboards in Omnimes](/images/redash2-MyNj.png)
 
-As a result, we get a finished dashboard as shown below:
+Als Ergebnis erhalten wir ein fertiges Dashboard, wie unten dargestellt:
 
-![Completed dashboard in Omnimes](/images/redash3-c1Nz.png)
+![Fertiges Dashboard in Omnimes](/images/redash3-c1Nz.png)
 
-The data prepared in this way can be further utilized, for example, for analysis through AI, as is the case with the Omnimes system.
+Die auf diese Weise vorbereiteten Daten können weiterhin genutzt werden, beispielsweise für die Analyse durch Künstliche Intelligenz, wie es im Fall des Omnimes-Systems der Fall ist.
 
-![Utilizing data from Redash in AI analysis](/images/redash4-M2MD.png)
+![Nutzung von Daten aus Redash für die AI-Analyse](/images/redash4-M2MD.png)
 
-And obtain a comprehensive summary, similar to this one:
+Und erhalten eine umfassende Zusammenfassung, ähnlich wie diese:
 
-![Result of AI analysis](/images/redash5-I4Nj.png)
+![Ergebnis der KI-Analyse](/images/redash5-I4Nj.png)
 
-## Summary
+## Zusammenfassung
 
-In today's rapidly evolving world of technology, effective production management is crucial for the success of companies. Systems like **Omnimes**, integrated with data visualization tools such as **Redash**, offer advanced capabilities for optimizing production processes.
+In der heutigen schnelllebigen Welt der Technologie ist eine effektive Produktionsmanagement entscheidend für den Erfolg von Unternehmen. Systeme wie **Omnimes**, die mit Datenvisualisierungstools wie **Redash** integriert sind, bieten fortschrittliche Funktionen zur Optimierung von Produktionsprozessen.
 
-Redash is a versatile open-source platform for querying and visualizing data, compatible with various data sources like Redshift, Google BigQuery, and PostgreSQL.
+Redash ist eine vielseitige Open-Source-Plattform für Abfragen und Datenvisualisierungen, die mit verschiedenen Datenquellen wie Redshift, Google BigQuery und PostgreSQL kompatibel ist.
 
-**Integrating Redash with Omnimes** allows for the creation of interactive dashboards that can be publicly shared without requiring user accounts, and enables frequent data refresh for real-time production insights. Within the **Omnimes** system, users can also decide which dashboards appear on the homepage and create additional dashboards for internal use.
+**Die Integration von Redash mit Omnimes** ermöglicht die Erstellung interaktiver Dashboards, die öffentlich geteilt werden können, ohne dass Benutzerkonten erforderlich sind, und ermöglicht häufige Datenaktualisierungen für Echtzeit-Einblicke in die Produktion. Innerhalb des **Omnimes**-Systems können Benutzer auch entscheiden, welche Dashboards auf der Startseite angezeigt werden sollen, und zusätzliche Dashboards für den internen Gebrauch erstellen.
 
-**The examples presented demonstrate how these tools can support effective production management, improve team communication, and enable faster response to issues**.
+**Die vorgestellten Beispiele zeigen, wie diese Tools ein effektives Produktionsmanagement unterstützen können, die Teamkommunikation verbessern und eine schnellere Reaktion auf Probleme ermöglichen**.
 
-As a result, companies can make more informed decisions, optimize production processes, and enhance product quality.
+Als Ergebnis können Unternehmen fundiertere Entscheidungen treffen, Produktionsprozesse optimieren und die Produktqualität verbessern.
 
-Ultimately, **implementing Redash in the Omnimes system** leads to the creation of advanced dashboards **that can be used for further data analysis, including leveraging artificial intelligence**, thereby providing comprehensive summaries and improving production management.
+Letztlich führt die **Implementierung von Redash im Omnimes-System** zur Erstellung fortschrittlicher Dashboards, **die für weitere Datenanalysen genutzt werden können, einschließlich der Nutzung von Künstlicher Intelligenz**, um umfassende Zusammenfassungen bereitzustellen und das Produktionsmanagement zu verbessern.

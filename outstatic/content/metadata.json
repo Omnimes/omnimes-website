@@ -1,6 +1,6 @@
 {
-  "commit": "fd9292a1730c91d76b2a30fa3879cf7fd9ee5e25",
-  "generated": "2024-07-09T07:07:56.056Z",
+  "commit": "884d254a8b48057a5e533484b40ba59786c896ac",
+  "generated": "2024-07-09T07:58:28.769Z",
   "metadata": [
     {
       "__outstatic": {
@@ -465,43 +465,6 @@
     },
     {
       "__outstatic": {
-        "commit": "6291c9c20f250226c70de3472877cc204579a093",
-        "hash": "312854036",
-        "path": "outstatic/content/posts/data-visualization-the-success-of-analysis-redash.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In today's world, the rapid development of technology and increasing market demands make efficient production management crucial for a company's success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.",
-      "lang": "en",
-      "publishedAt": "2024-07-01T06:47:38.501Z",
-      "slug": "data-visualization-the-success-of-analysis-redash",
-      "status": "published",
-      "tags": [
-        {
-          "label": "redash",
-          "value": "redash"
-        },
-        {
-          "label": "Data Visualization",
-          "value": "dataVisualization"
-        },
-        {
-          "label": "big data",
-          "value": "bigData"
-        },
-        {
-          "label": "Reports",
-          "value": "reports"
-        }
-      ],
-      "title": "Data Visualization - The Success of Analysis. Redash"
-    },
-    {
-      "__outstatic": {
         "commit": "0595d3e5f1a19d66ca9c1a4dd9e579e856cabf61",
         "hash": "2027840702",
         "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
@@ -764,6 +727,43 @@
         }
       ],
       "title": "Praktische Anwendung eines KI-Assistenten: Integration der OpenAI GPT-API in eine Webanwendung für Datenanalyse"
+    },
+    {
+      "__outstatic": {
+        "commit": "884d254a8b48057a5e533484b40ba59786c896ac",
+        "hash": "256088254",
+        "path": "outstatic/content/posts/data-visualization-the-success-of-analysis-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-07-09T07:31:17.779Z",
+      "slug": "data-visualization-the-success-of-analysis-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Data Visualization - The Success of Analysis. Redash"
     }
   ]
 }
