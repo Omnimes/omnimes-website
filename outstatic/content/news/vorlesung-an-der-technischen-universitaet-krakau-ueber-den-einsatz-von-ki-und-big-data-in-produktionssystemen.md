@@ -1,6 +1,6 @@
 ---
 title: 'Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen'
-status: 'veröffentlicht'
+status: 'published'
 author:
   name: 'Omnimes'
   picture: '/images/logo.png'

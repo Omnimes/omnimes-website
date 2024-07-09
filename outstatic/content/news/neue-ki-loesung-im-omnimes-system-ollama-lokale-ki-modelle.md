@@ -1,6 +1,6 @@
 ---
 title: 'Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle'
-status: 'veröffentlicht'
+status: 'published'
 author:
   name: 'Omnimes'
   picture: '/images/logo.png'

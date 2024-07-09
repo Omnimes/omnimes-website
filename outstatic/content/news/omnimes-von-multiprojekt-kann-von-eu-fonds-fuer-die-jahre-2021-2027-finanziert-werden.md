@@ -1,6 +1,6 @@
 ---
 title: 'Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden'
-status: 'veröffentlicht'
+status: 'published'
 author:
   name: 'Omnimes'
   picture: '/images/logo.png'

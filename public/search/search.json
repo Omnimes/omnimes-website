@@ -21,6 +21,13 @@
     "tags": "AI, AI local, llama3, Meta, Gemma, Mistral, GPT-4, GPT-3.5"
   },
   {
+    "title": "Data Visualization - The Success of Analysis. Redash",
+    "slug": "data-visualization-the-success-of-analysis-redash",
+    "description": "In today's world, the rapid development of technology and increasing market demands make efficient production management crucial for a company's success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.",
+    "lang": "en",
+    "tags": "redash, Data Visualization, big data, Reports"
+  },
+  {
     "title": "Wizualizacja danych - sukcesem analizy. Redash",
     "slug": "wizualizacja-danych-sukcesem-analizy-redash",
     "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
@@ -42,13 +49,6 @@
     "tags": "AI, Data Analysis, Data Security, GPT-4 API, LLM Models"
   },
   {
-    "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II",
-    "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
-    "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
-    "lang": "en",
-    "tags": "Sparkplug B, OPC UA, MQTT, Communication Protocol, IIoT, Industrial Automation, Client/Server Architecture, Data Security, Data Standardization"
-  },
-  {
     "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych",
     "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
     "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
@@ -61,6 +61,13 @@
     "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
     "lang": "de",
     "tags": "AI, Datenanalyse, Datensicherheit, API GPT-4, LLM-Modelle"
+  },
+  {
+    "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II",
+    "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+    "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+    "lang": "en",
+    "tags": "Sparkplug B, OPC UA, MQTT, Communication Protocol, IIoT, Industrial Automation, Client/Server Architecture, Data Security, Data Standardization"
   },
   {
     "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II",
