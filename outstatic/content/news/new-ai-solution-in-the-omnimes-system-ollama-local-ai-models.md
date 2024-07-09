@@ -24,4 +24,4 @@ By implementing Ollama, Omnimes offers a more secure and cost-effective AI solut
 Omnimes invites interested companies to explore the system's offerings, which, thanks to integration with Ollama, enable modern data collection and analysis while ensuring the highest levels of security and efficiency.
 
 For more information on this solution, visit the article:\
-[**Ollama - Practical Use of Local AI Models in the Omnimes System**](https://www.omnimes.com/pl/blog/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes)
+[**Ollama - Practical Use of Local AI Models in the Omnimes System**](https://www.omnimes.com/en/blog/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system)
