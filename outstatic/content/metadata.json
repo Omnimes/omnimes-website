@@ -1,6 +1,6 @@
 {
-  "commit": "3f1d4ff612e8319d6d019dc70e14234a798e1f0c",
-  "generated": "Tue, 09 Jul 2024 09:34:19 GMT",
+  "commit": "560a00aa6ef52b9f7c3b9ec4028d5ce199b7fe23",
+  "generated": "Tue, 09 Jul 2024 09:43:50 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -42,8 +42,8 @@
     },
     {
       "__outstatic": {
-        "commit": "674c5ca98b3b5f4ae4b91b970c6ac6bc2d88a321",
-        "hash": "457483969",
+        "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
+        "hash": "1225348516",
         "path": "outstatic/content/news/neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle.md"
       },
       "author": {
@@ -56,7 +56,7 @@
       "lang": "de",
       "publishedAt": "2024-07-21T06:59:08.000Z",
       "slug": "neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle",
-      "status": "veröffentlicht",
+      "status": "published",
       "title": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle"
     },
     {
@@ -99,8 +99,8 @@
     },
     {
       "__outstatic": {
-        "commit": "18109e11623b63843043c8bf2bba57c7f82188a5",
-        "hash": "370485000",
+        "commit": "f8f259ab4d4120d2b4f1c225835cde14948bd812",
+        "hash": "898511171",
         "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
       },
       "author": {
@@ -113,13 +113,13 @@
       "lang": "de",
       "publishedAt": "2024-06-21T06:52:47.000Z",
       "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
-      "status": "veröffentlicht",
+      "status": "published",
       "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
     },
     {
       "__outstatic": {
-        "commit": "51a1829b0219ccb8695aab54694cf37ef10b9d0c",
-        "hash": "3937048690",
+        "commit": "6472c1701ed0b44315884d373eb35e8cbf2b4bb3",
+        "hash": "588738348",
         "path": "outstatic/content/news/omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden.md"
       },
       "author": {
@@ -132,7 +132,7 @@
       "lang": "de",
       "publishedAt": "2024-06-21T07:04:37.000Z",
       "slug": "omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden",
-      "status": "veröffentlicht",
+      "status": "published",
       "title": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden"
     },
     {
