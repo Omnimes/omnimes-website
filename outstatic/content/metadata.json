@@ -1,7 +1,64 @@
 {
-  "commit": "9ef0e78944bb5e758caadff188e57dacd9793fda",
-  "generated": "Tue, 09 Jul 2024 09:08:50 GMT",
+  "commit": "3f1d4ff612e8319d6d019dc70e14234a798e1f0c",
+  "generated": "Tue, 09 Jul 2024 09:34:19 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
+        "hash": "3468461650",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "status": "published",
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "1e98b3a410a871dd245d0bd3d6f35e03ec990e7f",
+        "hash": "40590163",
+        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
+      "lang": "en",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
+      "status": "published",
+      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
+    },
+    {
+      "__outstatic": {
+        "commit": "674c5ca98b3b5f4ae4b91b970c6ac6bc2d88a321",
+        "hash": "457483969",
+        "path": "outstatic/content/news/neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle",
+      "lang": "de",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle",
+      "status": "veröffentlicht",
+      "title": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle"
+    },
     {
       "__outstatic": {
         "commit": "3238617c4850544d9e833cb956837cab6137934a",
@@ -42,6 +99,44 @@
     },
     {
       "__outstatic": {
+        "commit": "18109e11623b63843043c8bf2bba57c7f82188a5",
+        "hash": "370485000",
+        "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen",
+      "lang": "de",
+      "publishedAt": "2024-06-21T06:52:47.000Z",
+      "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
+      "status": "veröffentlicht",
+      "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "51a1829b0219ccb8695aab54694cf37ef10b9d0c",
+        "hash": "3937048690",
+        "path": "outstatic/content/news/omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/en-gxNT.png",
+      "description": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden",
+      "lang": "de",
+      "publishedAt": "2024-06-21T07:04:37.000Z",
+      "slug": "omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden",
+      "status": "veröffentlicht",
+      "title": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden"
+    },
+    {
+      "__outstatic": {
         "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
         "hash": "290669405",
         "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
@@ -77,44 +172,6 @@
       "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
       "status": "published",
       "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
-    },
-    {
-      "__outstatic": {
-        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
-        "hash": "3468461650",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
-      "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
-    },
-    {
-      "__outstatic": {
-        "commit": "f5af514bb465aad23a5550b3179da44369fc744d",
-        "hash": "4160812469",
-        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
-      "lang": "en",
-      "publishedAt": "2024-07-21T06:59:08.000Z",
-      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
-      "status": "published",
-      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
     },
     {
       "__outstatic": {
@@ -232,43 +289,6 @@
     },
     {
       "__outstatic": {
-        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
-        "hash": "3831515894",
-        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
-      "lang": "de",
-      "publishedAt": "2024-06-15T07:31:17.000Z",
-      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
-      "status": "published",
-      "tags": [
-        {
-          "label": "redash",
-          "value": "redash"
-        },
-        {
-          "label": "Datenvisualisierung",
-          "value": "datenvisualisierung"
-        },
-        {
-          "label": "big data",
-          "value": "bigData"
-        },
-        {
-          "label": "Berichte",
-          "value": "berichte"
-        }
-      ],
-      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
-    },
-    {
-      "__outstatic": {
         "commit": "5755fbb0c9bebd63a54a2f061caa781338c82d76",
         "hash": "3421174015",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
@@ -323,6 +343,43 @@
         }
       ],
       "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
+        "hash": "3831515894",
+        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-06-15T07:31:17.000Z",
+      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
     },
     {
       "__outstatic": {
@@ -702,63 +759,6 @@
     },
     {
       "__outstatic": {
-        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
-        "hash": "2060488888",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/3.png",
-      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
-      "lang": "en",
-      "publishedAt": "2024-06-06T08:36:29.000Z",
-      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "OPC UA",
-          "value": "opcUa"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Client/Server Architecture",
-          "value": "client/serverArchitecture"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "Data Standardization",
-          "value": "dataStandardization"
-        }
-      ],
-      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
-    },
-    {
-      "__outstatic": {
         "commit": "53965b5050bb639ee0c4c3f334f68202a1d32810",
         "hash": "3217791798",
         "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
@@ -813,6 +813,63 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
+    },
+    {
+      "__outstatic": {
+        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
+        "hash": "2060488888",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/3.png",
+      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+      "lang": "en",
+      "publishedAt": "2024-06-06T08:36:29.000Z",
+      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "OPC UA",
+          "value": "opcUa"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Client/Server Architecture",
+          "value": "client/serverArchitecture"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "Data Standardization",
+          "value": "dataStandardization"
+        }
+      ],
+      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
     },
     {
       "__outstatic": {
