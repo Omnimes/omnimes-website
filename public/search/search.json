@@ -1,12 +1,5 @@
 [
   {
-    "title": "Data Visualization - The Success of Analysis. Redash",
-    "slug": "data-visualization-the-success-of-analysis-redash",
-    "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
-    "lang": "de",
-    "tags": "redash, Datenvisualisierung, big data, Berichte"
-  },
-  {
     "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System",
     "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
     "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
@@ -33,6 +26,13 @@
     "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
     "lang": "pl",
     "tags": "redash, wizualziacja danych, big data, raporty"
+  },
+  {
+    "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash",
+    "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+    "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+    "lang": "de",
+    "tags": "redash, Datenvisualisierung, big data, Berichte"
   },
   {
     "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis",

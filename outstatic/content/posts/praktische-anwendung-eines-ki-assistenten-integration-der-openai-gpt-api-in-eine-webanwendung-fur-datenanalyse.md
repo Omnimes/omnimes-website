@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse'
 description: 'Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.'
-coverImage: '/images/martin.png'
+coverImage: '/images/2.png'
 lang: 'de'
 tags: [{"value":"ai","label":"AI"},{"label":"Datenanalyse","value":"datenanalyse"},{"value":"datensicherheit","label":"Datensicherheit"},{"value":"apiGpt4","label":"API GPT-4"},{"label":"LLM-Modelle","value":"llmModelle"}]
 publishedAt: '2024-06-10T07:08:06.000Z'
