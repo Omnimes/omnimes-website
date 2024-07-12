@@ -9,6 +9,21 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export const getInputType = (fieldName: string) => {
+  switch (fieldName) {
+    case "email":
+      return "email";
+    case "phoneNumber":
+      return "tel";
+    case "website":
+      return "url";
+    case "nip": 
+      return "number"
+    default:
+      return "text";
+  }
+};
+
 export const sortImagesByDate = (images: ImageGallery[]) => {
   return images.sort((a, b) => {
       const dateA = new Date(a.date);

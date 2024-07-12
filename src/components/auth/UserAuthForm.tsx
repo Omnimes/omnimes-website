@@ -30,11 +30,14 @@ export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProp
 
   async function onSubmit(data: FormData) {
     setIsLoading(true)
-
+    /* Zmieniony callback na /dashboard co spowodowało nie potwierdzeniu adresu email */
+    /* bug: prisma adapter zapisuje inny token do bazy danych i inny wysyła w mailu */
+    /* rozwiązanie tymczasowe: w ustawieniach przycisk który spowoduje potwierdzenie adresu email ?? */ 
     const signInResult = await signIn("email", {
       email: data.email.toLowerCase(),
       redirect: false,
-      callbackUrl: location == 'login' ? "/dashboard" : "/verify-email",
+      // callbackUrl: location == 'login' ? "/dashboard" : "/verify-email",
+      callbackUrl: "/dashboard",
     }) 
     setIsLoading(false)
 

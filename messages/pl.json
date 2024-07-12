@@ -786,7 +786,8 @@
     "outstatic": "Treści",
     "start": "Start",
     "guides": "Poradniki",
-    "ariaMenu": "Pokaż/Ukryj menu"
+    "ariaMenu": "Pokaż/Ukryj menu",
+    "becomeDeveloper": "Zostań developerem"
   },
   "DashboardFooter": {
     "footer": "System Realizacji Produkcji."
@@ -824,7 +825,8 @@
     "materials": "Materiały",
     "administrationPanel": "Panel administracyjny",
     "DropDownTriggerUserUndefined": "Rozwiń menu niezalogowanego użytkownika",
-    "DropDownTriggerUser": "Rozwiń menu zalogowanego użytkownika"
+    "DropDownTriggerUser": "Rozwiń menu zalogowanego użytkownika",
+    "becomeDeveloper": "Zostań developerem"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinary",
@@ -914,5 +916,25 @@
     "RequiredTextArea": "Pole wiadomości jest wymagane",
     "TextareaMessage": "Wiadomośc powinna być dłuższa",
     "InputText": "Wymagane minimum 3 znaki"
+  },
+  "BecomeDeveloperPage": {
+    "title": "Zostań developerem produktu OmniMes",
+    "desc": "Aby zostać developerem produktu OmniMes, wyślij prośbę. Uzupełnij niezbędne informacje w poniższym formularzu.",
+    "keywords": "OmniMes developer, aplikacja OmniMes, programista aplikacji, rozwój oprogramowania, technologia IT"
+  },
+  "CompanyForm": {
+    "name": "Nazwa firmy",
+    "nip": "Nip firmy",
+    "streetAddress": "Adres firmy",
+    "postalCode": "Kod pocztowy",
+    "city": "Miasto",
+    "country": "Państwo",
+    "industry": "Branża",
+    "phoneNumber": "Numer telefonu",
+    "email": "Adres email",
+    "website": "Strona internetowa",
+    "save": "Zapisz",
+    "title": "Dane firmy",
+    "description": "Uzupełnij poniższe pola, aby dodać szczegółowe informacje o Twojej firmie. Pamiętaj, aby podać dokładne dane, które będą używane do kontaktu i identyfikacji firmy."
   }
 }

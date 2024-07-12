@@ -2,15 +2,13 @@ import { redirect } from "next/navigation"
 import { getCurrentUser } from "@/utils/session"
 import { DashboardShell } from "@/components/dashboard/Shell"
 import { DashboardHeader } from "@/components/dashboard/Header"
-import { UserNameForm } from "@/components/forms/settings/UserNameForm"
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { genPageMetadata } from "@/app/seo"
-import { CompanyForm } from "@/components/forms/settings/CompanyForm"
-import { doesUserHaveCompany, doesUserHaveRequest } from "@/actions/company"
+import { BecomeDeveloperForm } from "@/components/forms/become-developer/BecomeDeveloper"
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: "SettingsPage" });
+  const t = await getTranslations({ locale, namespace: "BecomeDeveloperPage" });
   const title = t('title');
   const description = t('desc');
   const keywords = t('keywords');
@@ -22,20 +20,18 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     localeShort,
   }
   const meta = genPageMetadata(obj)
-  return meta
+  return meta 
 }
 export default async function SettingsPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const user = await getCurrentUser();
-  const t = await getTranslations("SettingsPage");
+  const t = await getTranslations("BecomeDeveloperPage");
 
   if (!user) {
     redirect("/login")
   }
 
-  const company = await doesUserHaveCompany(user.id);
-  const requestCompany = await doesUserHaveRequest(user.id);
   return (
     <DashboardShell>
       <DashboardHeader
@@ -43,16 +39,7 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
         text={t("desc")}
       />
       <div className="grid gap-10">
-        <UserNameForm user={{ id: user.id, name: user.name || "" }} />
-      </div>
-      <div className="grid gap-10">
-        <CompanyForm 
-          user={{ id: user.id }} 
-          belongCompany={company.belongCompany} 
-          company={company.company} 
-          requestCompany={requestCompany.requestCompany}
-          requestCompanyData={requestCompany.reqCompany}
-        />
+        <BecomeDeveloperForm user={{ id: user.id, name: user.name || "" }} />
       </div>
     </DashboardShell>
   )

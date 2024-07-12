@@ -5,7 +5,7 @@ import { NextRequest } from 'next/server'
 
 const adminPages = ['/admin', '/admin/users'] // dodawać wszystkie admin page
 const LoginAndRegisterPages = ['/login', '/register']
-const protectedPages = ['/dashboard', '/dashboard/settings', '/dashboard/demo'] // dodawać wszystkie protected page
+const protectedPages = ['/dashboard', '/dashboard/settings', '/dashboard/demo', '/dashboard/become-developer'] // dodawać wszystkie protected page
 const developerPages = [
   '/dashboard/billing',
   '/dashboard/materials',

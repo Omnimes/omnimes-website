@@ -12,6 +12,11 @@ export const pathnames = {
     pl: "/dokumentacja"
   },
   '/dashboard': '/dashboard',
+  '/dashboard/become-developer': {
+    en: '/dashboard/become-developer',
+    de: '/dashboard/werde-entwickler',
+    pl: '/dashboard/zostan-developerem'
+  },
   '/dashboard/billing': {
     en: '/dashboard/billing',
     de: '/dashboard/abrechnung',
@@ -53,7 +58,6 @@ export const pathnames = {
     de: '/dashboard/webinare',
     pl: '/dashboard/webinaria'
   },
-  
   '/faq': '/faq',
   '/blog': '/blog',
   '/login': '/login',
@@ -62,7 +66,6 @@ export const pathnames = {
     de: '/register',
     pl: '/rejestracja'
   },
-
   '/verify-email': {
     en: "/verify-email",
     de: "/email-verifizieren",

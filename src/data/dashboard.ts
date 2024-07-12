@@ -22,6 +22,11 @@ sidebarNav: [
     separator: true,
   },
   {
+    title: "becomeDeveloper",
+    href: "/dashboard/become-developer",
+    icon: 'developer',
+  },
+  {
     title: "settings",
     href: "/dashboard/settings",
     icon: "settings",
