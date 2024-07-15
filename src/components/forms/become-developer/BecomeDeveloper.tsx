@@ -35,11 +35,11 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
       nip: ""
     },
   });
-  const [isSaving, setIsSaving] = React.useState<boolean>(false);
+  const [isSending, setIsSending] = React.useState<boolean>(false);
   const t = useTranslations("BecomeDeveloperForm")
 
   async function onSubmit(data: FormData) {
-    setIsSaving(true)
+    setIsSending(true)
 
     const response = await fetch(`/api/users/${user.id}`, {
       method: "PATCH",
@@ -51,7 +51,7 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
       }),
     })
 
-    setIsSaving(false)
+    setIsSending(false)
 
     if (!response?.ok) {
       return toast({
@@ -83,7 +83,7 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
         </CardHeader>
         <CardContent className='flex flex-col gap-2'>
           <div className="grid gap-1">
-            <Label htmlFor="name">
+            <Label htmlFor="company">
             {t("companyName")}
             </Label>
             <Input
@@ -98,7 +98,7 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
           </div>
 
           <div className="grid gap-1">
-            <Label htmlFor="name">
+            <Label htmlFor="nip">
             {t("NIP")}
             </Label>
             <Input
@@ -109,8 +109,8 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
               min={0}
               {...register("nip")}
             />
-            {errors?.company && (
-              <p className="px-1 text-xs text-red-600">{t(errors.company.message)}</p>
+            {errors?.nip && (
+              <p className="px-1 text-xs text-red-600">{t(errors.nip.message)}</p>
             )}
           </div>
 
@@ -118,16 +118,16 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
         <CardFooter>
           <button
             type="submit"
-            aria-label={t("save")}
-            aria-labelledby={t("save")}
-            title={t("save")}
+            aria-label={t("send")}
+            aria-labelledby={t("send")}
+            title={t("send")}
             className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
-            disabled={isSaving}
+            disabled={isSending}
           >
-            {isSaving && (
+            {isSending && (
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
             )}
-            <span>{t("save")}</span>
+            <span>{t("send")}</span>
           </button>
         </CardFooter>
       </Card>

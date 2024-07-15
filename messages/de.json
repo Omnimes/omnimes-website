@@ -785,7 +785,9 @@
     "users": "Benutzer",
     "outstatic": "Inhalte",
     "start": "Start",
-    "ariaMenu": "Menü anzeigen/ausblenden"
+    "guides": "Anleitungen",
+    "ariaMenu": "Menü anzeigen/ausblenden",
+    "becomeDeveloper": "Werde Entwickler"
   },
   "DashboardFooter": {
     "footer": "Produktionsausführungssystem."
@@ -823,7 +825,8 @@
     "materials": "Materialien",
     "administrationPanel": "Verwaltungsbereich",
     "DropDownTriggerUserUndefined": "Erweitern Sie das Menü für nicht identifizierte Benutzer",
-    "DropDownTriggerUser": "Erweitern Sie das Menü für eingeloggte Benutzer"
+    "DropDownTriggerUser": "Erweitern Sie das Menü für eingeloggte Benutzer",
+    "becomeDeveloper": "Werde Entwickler"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinare",
@@ -913,5 +916,60 @@
     "RequiredTextArea": "Nachrichtenfeld ist erforderlich",
     "TextareaMessage": "Nachricht sollte länger sein",
     "InputText": "Mindestens 3 Zeichen erforderlich"
+  },
+  "BecomeDeveloperPage": {
+    "title": "Werden Sie OmniMes-Produktentwickler",
+    "desc": "Um OmniMes-Produktentwickler zu werden, senden Sie eine Anfrage. Füllen Sie die notwendigen Informationen im untenstehenden Formular aus.",
+    "keywords": "OmniMes Entwickler, OmniMes App, Anwendungsprogrammierer, Softwareentwicklung, IT-Technologie"
+  },
+  "BecomeDeveloperForm": {
+    "toastWrong": "Etwas ist schief gelaufen.",
+    "toastWrongDesc": "Bitte versuchen Sie es später noch einmal.",
+    "toastSuccessDesc": "Anfrage gesendet. Bitte haben Sie Geduld.",
+    "title": "Entwickler-Formular",
+    "description": "Unten finden Sie die notwendigen Daten, die wir benötigen, damit Sie mit uns zusammenarbeiten können.",
+    "companyName": "Firmenname",
+    "NIP": "NIP",
+    "send": "Senden",
+    "nameMsg": "Der Firmenname sollte mindestens 3 Zeichen enthalten.",
+    "nameMsg2": "Der Firmenname ist zu lang! Maximal 32 Zeichen.",
+    "NipMsg": "Die NIP muss nur aus Ziffern bestehen."
+  },
+  "CompanyForm": {
+    "name": "Firmenname",
+    "nip": "Firmen-NIP",
+    "streetAddress": "Straßenadresse",
+    "postalCode": "Postleitzahl",
+    "city": "Stadt",
+    "country": "Land",
+    "industry": "Branche",
+    "phoneNumber": "Telefonnummer",
+    "email": "E-Mail-Adresse",
+    "website": "Webseite",
+    "save": "Speichern",
+    "title": "Firmendaten",
+    "description": "Füllen Sie die untenstehenden Felder aus, um detaillierte Informationen über Ihr Unternehmen hinzuzufügen. Denken Sie daran, genaue Daten anzugeben, die für die Kontaktaufnahme und Identifizierung des Unternehmens verwendet werden."
+  },
+  "dashboardTable": {
+    "check": "Bestätigen",
+    "delete": "Löschen",
+    "name": "Name",
+    "email": "E-Mail",
+    "action": "Aktionen",
+    "noData": "Keine Beitrittsanfragen",
+    "title": "Beitrittsanfragen",
+    "desc": "Akzeptieren oder löschen Sie die Anfrage, dem Unternehmen beizutreten."
+  },
+  "ComponentCompany": {
+    "title": "Ihre Firma",
+    "status": "Status:",
+    "BelongsTo": "Gehört zu",
+    "sended": "Anfrage gesendet",
+    "add": "Firma hinzufügen",
+    "name": "Firmenname",
+    "nip": "Firmen-NIP",
+    "email": "E-Mail",
+    "website": "Webseite",
+    "phoneNumber": "Telefonnummer"
   }
 }

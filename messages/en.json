@@ -785,7 +785,9 @@
     "users": "Users",
     "outstatic": "Content",
     "start": "Start",
-    "ariaMenu": "Show/Hide menu"
+    "guides": "Guides",
+    "ariaMenu": "Show/Hide menu",
+    "becomeDeveloper": "Become a developer"
   },
   "DashboardFooter": {
     "footer": "Production Execution System."
@@ -823,7 +825,8 @@
     "materials": "Materials",
     "administrationPanel": "Administration Panel",
     "DropDownTriggerUserUndefined": "Expand menu for unidentified user",
-    "DropDownTriggerUser": "Expand menu for logged-in user"
+    "DropDownTriggerUser": "Expand menu for logged-in user",
+    "becomeDeveloper": "Become a developer"
   },
   "WebinarsPage": {
     "title": "Omnimes - Webinars",
@@ -913,5 +916,60 @@
     "RequiredTextArea": "Message field is required",
     "TextareaMessage": "Message should be longer",
     "InputText": "At least 3 characters required"
+  },
+  "BecomeDeveloperPage": {
+    "title": "Become an OmniMes Product Developer",
+    "desc": "To become an OmniMes product developer, submit a request. Fill in the necessary information in the form below.",
+    "keywords": "OmniMes developer, OmniMes app, application programmer, software development, IT technology"
+  },
+  "BecomeDeveloperForm": {
+    "toastWrong": "Something went wrong.",
+    "toastWrongDesc": "Please try again later.",
+    "toastSuccessDesc": "Request sent. Please be patient.",
+    "title": "Developer Form",
+    "description": "Below are the necessary details we need for you to be able to collaborate with us.",
+    "companyName": "Company name",
+    "NIP": "NIP",
+    "send": "Send",
+    "nameMsg": "The company name should contain at least 3 characters.",
+    "nameMsg2": "The company name is too long! Max 32 characters.",
+    "NipMsg": "NIP must consist of digits only."
+  },
+  "CompanyForm": {
+    "name": "Company name",
+    "nip": "Company NIP",
+    "streetAddress": "Street address",
+    "postalCode": "Postal code",
+    "city": "City",
+    "country": "Country",
+    "industry": "Industry",
+    "phoneNumber": "Phone number",
+    "email": "Email address",
+    "website": "Website",
+    "save": "Save",
+    "title": "Company Details",
+    "description": "Fill in the fields below to add detailed information about your company. Remember to provide accurate data that will be used for contact and company identification."
+  },
+  "dashboardTable": {
+    "check": "Confirm",
+    "delete": "Delete",
+    "name": "Name",
+    "email": "Email",
+    "action": "Actions",
+    "noData": "No join requests",
+    "title": "Join Requests",
+    "desc": "Accept or delete the request to join the company."
+  },
+  "ComponentCompany": {
+    "title": "Your Company",
+    "status": "Status:",
+    "BelongsTo": "Belongs to",
+    "sended": "Request sent",
+    "add": "Add company",
+    "name": "Company name",
+    "nip": "Company NIP",
+    "email": "Email",
+    "website": "Website",
+    "phoneNumber": "Phone number"
   }
 }

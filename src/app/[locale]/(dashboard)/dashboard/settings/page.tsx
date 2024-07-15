@@ -7,7 +7,7 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { genPageMetadata } from "@/app/seo"
 import { CompanyForm } from "@/components/forms/settings/CompanyForm"
-import { doesUserHaveCompany, doesUserHaveRequest } from "@/actions/company"
+import { doesUserHaveCompany, doesUserHaveRequest, GetIsAdminCompany } from "@/actions/company"
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "SettingsPage" });
@@ -33,8 +33,8 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
   if (!user) {
     redirect("/login")
   }
-
   const company = await doesUserHaveCompany(user.id);
+  const isAdminCompany = await GetIsAdminCompany(user.id);
   const requestCompany = await doesUserHaveRequest(user.id);
   return (
     <DashboardShell>
@@ -45,13 +45,14 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
       <div className="grid gap-10">
         <UserNameForm user={{ id: user.id, name: user.name || "" }} />
       </div>
-      <div className="grid gap-10">
+      <div id="company" className="grid gap-10">
         <CompanyForm 
           user={{ id: user.id }} 
           belongCompany={company.belongCompany} 
           company={company.company} 
           requestCompany={requestCompany.requestCompany}
           requestCompanyData={requestCompany.reqCompany}
+          isAdminCompany={isAdminCompany.isAdmin}
         />
       </div>
     </DashboardShell>

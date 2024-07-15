@@ -32,7 +32,7 @@ export function DashboardNav({ items }: DashboardNavProps) {
   if (!items?.length) return null
 
   return (
-    <nav className="grid items-start gap-2">
+    <nav className="grid items-start gap-2 overflow-hidden">
       {items.map((item, index) => {
         const IconComponent = item.icon ? iconMapping[item.icon as keyof typeof iconMapping] : null;
 
@@ -78,7 +78,7 @@ export function DashboardNav({ items }: DashboardNavProps) {
         }
 
         return (
-          <Link key={index} href={item.disabled ? '/' : item.href}>
+          <Link key={index} href={item.disabled ? '/' : item.href} className='overflow-hidden'>
             <span
               className={cn(
                 'hover:bg-accent hover:text-accent-foreground group flex items-center rounded-md px-3 py-2 text-sm font-medium',

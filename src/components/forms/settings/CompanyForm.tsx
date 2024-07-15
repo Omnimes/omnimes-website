@@ -15,7 +15,7 @@ import { Loader2 } from "lucide-react"
 import { toast } from "../../atoms/UseToast"
 import { cn, getInputType } from "@/utils/utils"
 import { companySchema } from "@/utils/validations/company"
-import { createCompany, createPromisesToCompany, getCompany, sendResetRequest } from "@/actions/company"
+import { createCompany, createPromisesToCompany, getCompany, sendResetRequest, updateCompany } from "@/actions/company"
 import { useDebouncedCallback } from 'use-debounce';
 type FormData = z.infer<typeof companySchema>
 
@@ -25,6 +25,7 @@ interface Props {
   belongCompany: boolean;
   requestCompany: boolean;
   requestCompanyData: ReqCompany;
+  isAdminCompany: boolean;
   className?: string;
 }
 
@@ -48,9 +49,8 @@ export type Company = {
   website: string;
 }
 
-export const CompanyForm = ({ user, company, belongCompany, requestCompany, requestCompanyData, className, ...props }: Props) => {
+export const CompanyForm = ({ user, company, belongCompany, requestCompany, requestCompanyData, isAdminCompany, className, ...props }: Props) => {
   const t = useTranslations("CompanyForm")
-  const router = useRouter();
   const [isSaving, setIsSaving] = React.useState<boolean>(false);
   const [isSendPromise, setIsSendPromise] = React.useState<boolean>(false);
   const [sendPromise, setSendPromise] = React.useState<boolean>(false);
@@ -82,8 +82,11 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, requ
 
   async function onSubmit(data: FormData) {
     setIsSaving(true)
-    const response = await createCompany(data, user.id);
-
+    const response = belongCompany
+      ? await updateCompany(company?.id ?? "", data)
+      : await createCompany(data, user.id);
+    // const response = await createCompany(data, user.id);
+    console.log(response)
     setIsSaving(false)
   }
 
@@ -185,34 +188,6 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, requ
             </section>
           </div>
         )}
-        {/* {requestCompany && (
-          <div className="absolute z-10 w-full h-full backdrop-blur-md border flex flex-col justify-center items-center gap-4 p-4">
-            <h3 className="text-2xl font-medium">Twoja prośba oczekuje na potwierdzenie</h3>
-            <p className="pb-4">Twoja prośba została wysłana do administratora firmy. Prosimy o cierpliwość, już wkrótce wniosek zostanie rozpatrzony.</p>
-            <section className="flex gap-2">
-              <Button variant={"outline"} onClick={(e) => resetFormReq(e)}>
-                Wpowadź inne dane
-              </Button>
-            </section>
-          </div>
-        )}
-        {isSendPromise && (
-          <div className="absolute z-10 w-full h-full backdrop-blur-md border flex flex-col justify-center items-center gap-4 p-4">
-            <h3 className="text-2xl font-medium">Firma {getValues("name")} znajduję się w bazie</h3>
-            <p className="pb-4">Wyślij prośbę o zatwierdzenie do administratora firmy</p>
-            <section className="flex gap-2">
-              <Button variant={"primary"} onClick={(e) => sendPromiseFunc(e, getValues("nip"))}>
-                {sendPromise && (
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                )}
-                <span>Wyślij prośbę</span>
-              </Button>
-              <Button variant={"outline"} onClick={resetForm}>
-                Wpowadź inne dane
-              </Button>
-            </section>
-          </div>
-        )} */}
         <CardHeader>
           <CardTitle>{t("title")}</CardTitle>
           <CardDescription>
@@ -244,19 +219,35 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, requ
           ))}
         </CardContent>
         <CardFooter>
-          <Button
-            type="submit"
-            aria-label={t("save")}
-            aria-labelledby={t("save")}
-            title={t("save")}
-            className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
-            disabled={isSaving}
-          >
-            {isSaving && (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            )}
-            <span>{t("save")}</span>
-          </Button>
+          {isAdminCompany
+            ? <Button
+              type="submit"
+              aria-label={t("save")}
+              aria-labelledby={t("save")}
+              title={t("save")}
+              className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
+              disabled={isSaving}
+            >
+              {isSaving && (
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              )}
+              <span>{t("save")}</span>
+            </Button>
+            : <Button
+              type="submit"
+              aria-label={t("save")}
+              aria-labelledby={t("save")}
+              title={t("save")}
+              className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
+              disabled={isSaving || belongCompany}
+            >
+              {isSaving && (
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              )}
+              <span>{t("save")}</span>
+            </Button>
+          }
+
         </CardFooter>
       </Card>
     </form>

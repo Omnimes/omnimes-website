@@ -45,7 +45,7 @@ export function UsersTable({
                             <TableHead className="max-w-[150px]">{t("name")}</TableHead>
                             <TableHead className="hidden md:table-cell">{t("email")}</TableHead>
                             <TableHead className="hidden md:table-cell">{t("role")}</TableHead>
-                            <TableHead>Action</TableHead>
+                            <TableHead>{t("action")}</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>

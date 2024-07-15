@@ -922,6 +922,19 @@
     "desc": "Aby zostać developerem produktu OmniMes, wyślij prośbę. Uzupełnij niezbędne informacje w poniższym formularzu.",
     "keywords": "OmniMes developer, aplikacja OmniMes, programista aplikacji, rozwój oprogramowania, technologia IT"
   },
+  "BecomeDeveloperForm": {
+    "toastWrong": "Coś poszło nie tak.",
+    "toastWrongDesc": "Prosimy spróbować ponownie później.",
+    "toastSuccessDesc": "Wysłano prośbę. Prosimy o cierpliowść.",
+    "title": "Formularz developera",
+    "description": "Poniżej znajdują się niezbędne nam dane do tego abyś mógł z nami współpracować",
+    "companyName": "Nazwa firmy",
+    "NIP": "NIP",
+    "send": "Wyślij",
+    "nameMsg": "Nazwa firmy powinna zawierać minimum 3 znaki,",
+    "nameMsg2": "Nazwa firmy jest zbyt długa! Max 32 znaki.",
+    "NipMsg": "NIP musi składać się tylko z cyfr"
+  },
   "CompanyForm": {
     "name": "Nazwa firmy",
     "nip": "Nip firmy",
@@ -936,5 +949,27 @@
     "save": "Zapisz",
     "title": "Dane firmy",
     "description": "Uzupełnij poniższe pola, aby dodać szczegółowe informacje o Twojej firmie. Pamiętaj, aby podać dokładne dane, które będą używane do kontaktu i identyfikacji firmy."
+  },
+  "dashboardTable": {
+    "check": "Potwierdź",
+    "delete": "Usuń",
+    "name": "Imię",
+    "email": "Email",
+    "action": "Akcje",
+    "noData": "Brak próśb o dołączenie",
+    "title": "Prośby o dołączenie",
+    "desc": "Zakceptuj lub usuń prośbę o dołącznie do firmy."
+  },
+  "ComponentCompany": {
+    "title": "Twoja Firma",
+    "status": "Status:",
+    "BelongsTo": "Należysz do ",
+    "sended": "Wysłano prośbę",
+    "add": "Dodaj firmę",
+    "name":"Nazwa firmy",
+    "nip": "Nip firmy",
+    "email": "Email",
+    "website": "Strona",
+    "phoneNumber": "Numer telefonu"
   }
 }

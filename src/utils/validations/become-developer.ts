@@ -9,5 +9,7 @@ export const becomeDeveloperSchema = z.object({
     .max(32, {
       message: "nameMsg2",
     }),
-  nip: z.string()
+    nip: z.string().refine(value => /^\d+$/.test(value), {
+      message: "NipMsg",
+    }),
 })
