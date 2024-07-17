@@ -40,15 +40,6 @@ model Session {
   @@map("sessions")
 }
 
-/// Model reprezentujący prośbę o role developera.
-model RoleRequest {
-  userId    String   @id
-  createdAt DateTime @default(now()) @map("created_at")
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@map("role_requests")
-}
-
 /// Model reprezentujący tabelę z tokenami weryfikacyjnymi.
 model VerificationToken {
   identifier String
@@ -132,4 +123,16 @@ model CompanyRequest {
   company Company @relation(fields: [companyId], references: [id])
 
   @@map("company_requests")
+}
+
+/// Model reprezentujący prośbę o role developera.
+model RoleRequest {
+  userId    String   @id
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  nip       String?  @map("nip")
+  
+  @@map("role_requests")
 }

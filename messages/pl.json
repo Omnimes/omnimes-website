@@ -933,7 +933,10 @@
     "send": "Wyślij",
     "nameMsg": "Nazwa firmy powinna zawierać minimum 3 znaki,",
     "nameMsg2": "Nazwa firmy jest zbyt długa! Max 32 znaki.",
-    "NipMsg": "NIP musi składać się tylko z cyfr"
+    "NipMsg": "NIP musi składać się tylko z cyfr",
+    "name": "Imię",
+    "nameMsg3": "Imię musi składać się z co najmniej 3 znaków.",
+    "nameMsg5": "Imię nie może być dłuższe niż 32 znaki."
   },
   "CompanyForm": {
     "name": "Nazwa firmy",

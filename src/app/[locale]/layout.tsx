@@ -13,6 +13,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Toaster } from "@/components/atoms/Toaster";
 import { NextAuthProviders } from "@/components/providers/nextauth-providers";
+import { TailwindIndicator } from "@/components/TailwindIndicator";
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
@@ -130,6 +131,7 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
                 <Toaster />
                 <Analytics />
                 <SpeedInsights />
+                <TailwindIndicator />
               </ThemeProviders>
             </NextIntlClientProvider>
           </NextUIProviders>

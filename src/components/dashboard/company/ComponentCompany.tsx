@@ -22,7 +22,7 @@ export const ComponentCompany = (
 
   const t = useTranslations('ComponentCompany');
   return (
-    <Card x-chunk="dashboard-07-chunk-3">
+    <Card>
       <CardHeader>
         <CardTitle>{t("title")}</CardTitle>
       </CardHeader>

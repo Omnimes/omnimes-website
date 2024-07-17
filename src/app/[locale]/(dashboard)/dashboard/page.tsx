@@ -34,7 +34,7 @@ export default async function DashboardPage({params: { locale }}: {params: { loc
 
   if(!isAdminCompany.isAdmin) {
     return (
-      <div className={"grid gap-4"}>
+      <div className={"grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"}>
         <ComponentCompany    
           status={status}
           data={data}

@@ -224,6 +224,7 @@ export const aproveUserToCompany = async(obj: {userId: string; companyId: string
 }
 
 type status = 'belongs' | 'noData' | 'sended'
+/* sprawdzenie czy user ma firme lub prosbe o dolaczenie do firmy */
 export const getCompanyUser = async(userId: string) => {
   /* czy ma przypisaną firme */
   const company = await db.company.findFirst({

@@ -6,6 +6,8 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { genPageMetadata } from "@/app/seo"
 import { BecomeDeveloperForm } from "@/components/forms/become-developer/BecomeDeveloper"
+import { getCompanyUser } from "@/actions/company"
+import { checkIsUserHaveRoleRequest } from "@/actions/become-developer"
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "BecomeDeveloperPage" });
@@ -28,10 +30,9 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
   const user = await getCurrentUser();
   const t = await getTranslations("BecomeDeveloperPage");
 
-  if (!user) {
-    redirect("/login")
-  }
-
+  if (!user) redirect("/login")
+  const data = await getCompanyUser(user.id);
+  const HaveRoleRequest = await checkIsUserHaveRoleRequest(user.id);
   return (
     <DashboardShell>
       <DashboardHeader
@@ -39,7 +40,11 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
         text={t("desc")}
       />
       <div className="grid gap-10">
-        <BecomeDeveloperForm user={{ id: user.id, name: user.name || "" }} />
+        <BecomeDeveloperForm
+          user={{ id: user.id, name: user.name || "" }}
+          data={data}
+          haveRequest={HaveRoleRequest}
+        />
       </div>
     </DashboardShell>
   )

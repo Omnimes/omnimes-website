@@ -15,14 +15,30 @@ import { Input } from "../../atoms/Input"
 import { buttonVariants } from "../../atoms/Button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../atoms/Card"
 import { useTranslations } from "next-intl"
+import { createPromisesToBecomeDeveloper } from "@/actions/become-developer"
+import { ComponentFormBlurInfo } from "../component-form/ComponentFromBlurInfo"
 
 interface UserNameFormProps extends React.HTMLAttributes<HTMLFormElement> {
   user: Pick<User, "id" | "name">
+  data: CompanyStatus,
+  haveRequest: boolean
+}
+
+interface CompanyStatus {
+  status: 'belongs' | 'noData' | 'sended',
+  data: {
+    id: string;
+    name: string;
+    nip: string;
+    phoneNumber: string;
+    email: string;
+    website: string;
+  } | null
 }
 
 type FormData = z.infer<typeof becomeDeveloperSchema>
 
-export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormProps) {
+export function BecomeDeveloperForm({ user, data, haveRequest, className, ...props }: UserNameFormProps) {
   const router = useRouter();
   const {
     handleSubmit,
@@ -31,8 +47,9 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
   } = useForm<FormData>({
     resolver: zodResolver(becomeDeveloperSchema),
     defaultValues: {
-      company: "",
-      nip: ""
+      company: data.data?.name ?? "",
+      nip: data.data?.nip ?? "",
+      name: user.name ?? ""
     },
   });
   const [isSending, setIsSending] = React.useState<boolean>(false);
@@ -40,30 +57,21 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
 
   async function onSubmit(data: FormData) {
     setIsSending(true)
-
-    const response = await fetch(`/api/users/${user.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        company: data.company,
-      }),
-    })
-
-    setIsSending(false)
-
-    if (!response?.ok) {
-      return toast({
-        title: t("toastWrong"),
-        description: t("toastWrongDesc"),
-        variant: "destructive",
+    createPromisesToBecomeDeveloper(user.id, data.nip)
+      .then((response) => {
+          if(response) {
+            toast({
+              description: t("toastSuccessDesc"),
+            })
+          }
+      }).catch((e) => {
+        return toast({
+          title: t("toastWrong"),
+          description: t("toastWrongDesc"),
+          variant: "destructive",
+        })
       })
-    }
-
-    toast({
-      description: t("toastSuccessDesc"),
-    })
+    setIsSending(false)
 
     router.refresh()
   }
@@ -74,7 +82,8 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
       onSubmit={handleSubmit(onSubmit)}
       {...props}
     >
-      <Card>
+      <Card className="relative">
+        <ComponentFormBlurInfo haveRequest={haveRequest} userId={user.id} status={data.status} data={data.data} />
         <CardHeader>
           <CardTitle>{t("title")}</CardTitle>
           <CardDescription>
@@ -114,6 +123,22 @@ export function BecomeDeveloperForm({ user, className, ...props }: UserNameFormP
             )}
           </div>
 
+          <div className="grid gap-1">
+            <Label htmlFor="name">
+            {t("name")}
+            </Label>
+            <Input
+              id="name"
+              className="w-full"
+              size={32}
+              type="text"
+              min={0}
+              {...register("name")}
+            />
+            {errors?.name && (
+              <p className="px-1 text-xs text-red-600">{t(errors.name.message)}</p>
+            )}
+          </div>
         </CardContent>
         <CardFooter>
           <button
