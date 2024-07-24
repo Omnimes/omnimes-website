@@ -54,6 +54,7 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, requ
   const [isSaving, setIsSaving] = React.useState<boolean>(false);
   const [isSendPromise, setIsSendPromise] = React.useState<boolean>(false);
   const [sendPromise, setSendPromise] = React.useState<boolean>(false);
+  const router = useRouter();
 
   const defVal = {
     name: "",
@@ -85,9 +86,21 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, requ
     const response = belongCompany
       ? await updateCompany(company?.id ?? "", data)
       : await createCompany(data, user.id);
-    // const response = await createCompany(data, user.id);
-    console.log(response)
+
     setIsSaving(false)
+
+    if(response.status == 201 || response.status == 200) {
+      toast({
+        description: t("toastSuccessDesc"),
+      })
+    } else {
+      toast({
+        title: t("toastWrong"),
+        description: t("toastWrongDesc"),
+        variant: "destructive",
+      })
+    }
+    router.refresh()
   }
 
   const checkCompany = useDebouncedCallback(async (nip: string) => {

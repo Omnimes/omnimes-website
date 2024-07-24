@@ -951,7 +951,12 @@
     "website": "Strona internetowa",
     "save": "Zapisz",
     "title": "Dane firmy",
-    "description": "Uzupełnij poniższe pola, aby dodać szczegółowe informacje o Twojej firmie. Pamiętaj, aby podać dokładne dane, które będą używane do kontaktu i identyfikacji firmy."
+    "description": "Uzupełnij poniższe pola, aby dodać szczegółowe informacje o Twojej firmie. Pamiętaj, aby podać dokładne dane, które będą używane do kontaktu i identyfikacji firmy.",
+    "toastWrong": "Coś poszło nie tak.",
+    "toastWrongDesc": "Twoje imię nie zostało zaktualizowane. Proszę spróbuj ponownie.",
+    "toastSuccessDesc": "Twoje imię zostało zaktualizowane.",
+    "nameMsg": "Imię musi składać się z co najmniej 3 znaków.",
+    "nameMsg2": "Imię nie może być dłuższe niż 32 znaki."
   },
   "dashboardTable": {
     "check": "Potwierdź",

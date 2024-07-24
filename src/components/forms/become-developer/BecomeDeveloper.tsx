@@ -57,22 +57,21 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
 
   async function onSubmit(data: FormData) {
     setIsSending(true)
-    createPromisesToBecomeDeveloper(user.id, data.nip)
-      .then((response) => {
-          if(response) {
-            toast({
-              description: t("toastSuccessDesc"),
-            })
-          }
-      }).catch((e) => {
-        return toast({
-          title: t("toastWrong"),
-          description: t("toastWrongDesc"),
-          variant: "destructive",
-        })
-      })
+    const response = await createPromisesToBecomeDeveloper(user.id);
     setIsSending(false)
 
+    if (response.status === 201) {
+      toast({
+        description: t("toastSuccessDesc"),
+      });
+    } else {
+      toast({
+        title: t("toastWrong"),
+        description: response.message || t("toastWrongDesc"),
+        variant: "destructive",
+      });
+    }
+    
     router.refresh()
   }
 
@@ -115,6 +114,7 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
               className="w-full"
               size={32}
               type="number"
+              disabled={true}
               min={0}
               {...register("nip")}
             />

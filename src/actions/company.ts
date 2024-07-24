@@ -30,42 +30,70 @@ export const getCompany = async (nip: string) => {
 }
 
 /* Tworzenie firmy */
+// export const createCompany = async (data: FormData, userId: string) => {
+//     const createCompany = await db.company.create({
+//         data: {
+//             ...data,
+//             admins: {
+//                 connect: {id: userId}
+//             }
+//         },
+//         include: {
+//             users: true,   // Załącz użytkowników firmy
+//             admins: true,  // Załącz administratorów firmy
+//           },
+//     });
+//     return createCompany
+// }
+
 type FormData = z.infer<typeof companySchema>
 export const createCompany = async (data: FormData, userId: string) => {
-    const createCompany = await db.company.create({
-        data: {
-            ...data,
-            admins: {
-                connect: {id: userId}
-            }
-        },
-        include: {
-            users: true,   // Załącz użytkowników firmy
-            admins: true,  // Załącz administratorów firmy
-          },
-    });
-    return createCompany
-}
-
-export const updateCompany = async(companyId: string, data: Partial<FormData>) => {
   try {
-    const updatedCompany = await db.company.update({
-      where: { id: companyId },
+    const validatedData = companySchema.parse(data);
+    const createdCompany = await db.company.create({
       data: {
-        ...data,
+        ...validatedData,
+        admins: {
+          connect: { id: userId }
+        }
       },
       include: {
-        users: true,   // Załącz użytkowników firmy
-        admins: true,  // Załącz administratorów firmy
+        users: true,
+        admins: true,
       },
     });
 
-    return updatedCompany;
+    return { status: 201, data: createdCompany };
   } catch (error) {
-    console.error('Error updating company:', error);
-    throw error;
+    if (error instanceof z.ZodError) {
+      return { status: 422, errors: error.issues };
+    }
+    console.error('Error creating company:', error);
+    return { status: 500, message: 'Internal server error' };
   }
-}
+};
+
+export const updateCompany = async (companyId: string, data: FormData) => {
+  try {
+    const validatedData = companySchema.partial().parse(data);
+    const updatedCompany = await db.company.update({
+      where: { id: companyId },
+      data: validatedData,
+      include: {
+        users: true,
+        admins: true,
+      },
+    });
+
+    return { status: 200, data: updatedCompany };
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return { status: 422, errors: error.issues };
+    }
+    console.error('Error updating company:', error);
+    return { status: 500, message: 'Internal server error' };
+  }
+};
 
 /* Sprawdzenie czy uzytkownik ma przypisaną firmę */
 export async function doesUserHaveCompany(userId: string) {
