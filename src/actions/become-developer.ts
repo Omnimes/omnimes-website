@@ -65,3 +65,20 @@ export const sendResetRequestDeveloper = async (userId: string) => {
 
   return 
 }
+
+export const getAllRequests = async () => {
+
+  try {
+    const requests = await db.roleRequest.findMany({
+      include: {
+        user: true,
+        company: true
+      }
+    });
+    console.log(requests)
+    return requests
+  } catch (error) {
+    console.log(error)
+  }
+
+}

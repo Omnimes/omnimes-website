@@ -106,7 +106,8 @@ model Company {
   admins User[] @relation("AdminCompany")
 
   companyRequests CompanyRequest[] // Relacja do CompanyRequest
-
+  roleRequests  RoleRequest[] @relation(name: "CompanyToRoleRequest")
+  
   @@map("companies")
 }
 
@@ -133,6 +134,7 @@ model RoleRequest {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   
   nip       String?  @map("nip")
-  
+  company   Company? @relation(name: "CompanyToRoleRequest", fields: [nip], references: [nip])
+
   @@map("role_requests")
 }
