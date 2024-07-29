@@ -76,16 +76,73 @@ export const sendResetRequestDeveloper = async (userId: string) => {
   return
 }
 
-export const getAllRequests = async () => {
+
+interface User {
+  name: string;
+  email: string;
+}
+
+interface Company {
+  name: string;
+}
+
+export interface RoleRequest {
+  userId: string;
+  createdAt: Date;
+  nip: string;
+  user: User;
+  company: Company;
+}
+
+
+export const getAllRequests = async (): Promise<RoleRequest[]> => {
   try {
     const requests = await db.roleRequest.findMany({
       include: {
-        user: true,
-        company: true,
+        user: {
+          select: {
+            name: true,
+            email: true,
+          }
+        },
+        company: {
+          select: {
+            name: true,
+          }
+        },
       },
     })
-    console.log(requests)
-    return requests
+    return requests.length > 0 ? requests as RoleRequest[] : [] 
+  } catch (error) {
+    console.log(error)
+    return []
+  }
+}
+
+/* usunięcie requestu */
+export const deleteRequest = async(userId: string) => {
+  try {
+    await db.roleRequest.delete({
+      where: { userId }
+    })
+    revalidatePath('/admin');
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+/* Zmiana userowi roli na developera */
+export const aproveRequestDeveloper = async (userId: string) => {
+  try {
+    await db.user.update({
+      where: { id: userId },
+      data: { role: "developer" },
+    });
+    // usun z request
+    await db.roleRequest.delete({
+      where: {userId}
+    })
+    revalidatePath('/admin');
   } catch (error) {
     console.log(error)
   }

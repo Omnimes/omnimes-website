@@ -10,7 +10,6 @@ import { LuChevronDown } from 'react-icons/lu';
 import { headerNavLinks, headerNavLinksDropDown } from '@/data/headerNavLinks';
 import {
   Navbar,
-  NavbarBrand,
   NavbarMenuToggle,
   NavbarMenuItem,
   NavbarMenu,
@@ -27,7 +26,8 @@ import {
 } from '@nextui-org/react';
 import { SessionProvider } from 'next-auth/react';
 import { UserAccountNavClient } from './auth/UserAccountNavClient';
-
+import { Notification } from "@/components/Notification"
+import { CreateNotification } from '@/actions/notification';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('HeaderLinks');
@@ -140,17 +140,19 @@ export default function Header() {
               ))}
         </NavbarContent>
         {/* Widgety(język, wyszukiwarka i dark mode) na końcu */}
-        <NavbarContent justify="end" className="hidden sm:flex">
-          <li><LocaleSwitcher /></li>
-          <li><UserAccountNavClient /></li>
-          <li><SearchButton /></li>
-          <li><ThemeSwitch /></li>
+        <NavbarContent justify="end" className="hidden sm:flex items-center justify-center">
+          <li className="flex items-center justify-center"><LocaleSwitcher /></li>
+          <li className="flex items-center justify-center"><UserAccountNavClient /></li>
+          <li className="flex items-center justify-center"><Notification /></li>
+          <li className="flex items-center justify-center"><SearchButton /></li>
+          <li className="flex items-center justify-center"><ThemeSwitch /></li>
         </NavbarContent>
         <NavbarContent justify="center" className="flex sm:hidden">
-           <li><LocaleSwitcher /></li>
-           <li><UserAccountNavClient /></li>
-           <li><SearchButton /></li>
-           <li><ThemeSwitch /></li>
+          <li className="flex items-center justify-center"><LocaleSwitcher /></li>
+          <li className="flex items-center justify-center"><UserAccountNavClient /></li>
+          <li className="flex items-center justify-center"><Notification /></li>
+          <li className="flex items-center justify-center"><SearchButton /></li>
+          <li className="flex items-center justify-center"><ThemeSwitch /></li>
         </NavbarContent>
         {/* Linki w mobile menu */}
         <NavbarMenu>

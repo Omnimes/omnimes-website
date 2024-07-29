@@ -72,7 +72,7 @@ function UserRow({ userProps }: { userProps: CompanyRequest }) {
         reqId: userProps.id
     }
     const deleteRequestWithId = deleteRequest.bind(null, userProps.id);
-    const aproveRequestWithId = aproveUserToCompany.bind(null, obj)
+    const aproveRequestWithId = aproveUserToCompany.bind(null, obj);
     return (
         <TableRow>
             <TableCell className="font-medium">{user.name}</TableCell>

@@ -14,7 +14,7 @@ import { useTranslations } from "next-intl"
 import { UserAvatar } from "../UserAvatar"
 import { getSubNav } from "@/lib/getSubNav"
 
-interface MyUser extends User {
+export interface MyUser extends User {
   role: string;
 }
 

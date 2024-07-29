@@ -1,7 +1,9 @@
-import { getAllRequests } from '@/actions/become-developer';
+import { getAllRequests, RoleRequest } from '@/actions/become-developer';
 import { genPageMetadata } from '@/app/seo';
+import { DeveloperTable } from '@/components/dashboard/requsets/DeveloperTable';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { getCurrentUser } from '@/utils/session';
+import { cn } from '@/utils/utils';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 
@@ -27,22 +29,13 @@ export default async function AdminPage({ params: { locale } }: { params: { loca
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
-  const requests = await getAllRequests();
+  const requests = await getAllRequests() as RoleRequest[];
 
   return (
-    <main>
-      // lista zgloszen developerów
-      // tabela role requests
-
-      {requests?.map(item => {
-        return (
-          <div key={item.userId}>
-            <p>{item.user.email}</p>
-            <p>{item.company?.name}</p>
-          </div>
-        )
-      })}
-
-    </main>
+    <div className={cn("grid grid-cols-1 gap-4 lg:grid-cols-[1fr_250px] xl:grid-cols-3 xl:gap-8")}>
+      <div className="md:grid auto-rows-max items-start gap-4 xl:col-span-2 xl:gap-8">
+        <DeveloperTable requests={requests} />
+      </div>
+    </div>
   );
 }
