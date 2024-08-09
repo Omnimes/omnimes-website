@@ -1,6 +1,6 @@
 {
-  "commit": "560a00aa6ef52b9f7c3b9ec4028d5ce199b7fe23",
-  "generated": "Tue, 09 Jul 2024 09:43:50 GMT",
+  "commit": "66200fc2674460514734b2d8c4694bb1e865c6c2",
+  "generated": "2024-08-09T10:56:22.217Z",
   "metadata": [
     {
       "__outstatic": {
@@ -911,6 +911,25 @@
         }
       ],
       "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+    },
+    {
+      "__outstatic": {
+        "commit": "66200fc2674460514734b2d8c4694bb1e865c6c2",
+        "hash": "3441803672",
+        "path": "outstatic/content/news/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "/images/piotr.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/webinar-A3MT.png",
+      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
+      "lang": "pl",
+      "publishedAt": "2024-08-09T10:56:10.162Z",
+      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
+      "status": "published",
+      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
     }
   ]
 }
