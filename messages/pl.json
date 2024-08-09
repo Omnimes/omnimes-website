@@ -803,7 +803,6 @@
     "keywords": "ustawienia konta, ustawienia strony internetowej, zarządzanie ustawieniami, konfiguracja konta, personalizacja strony, opcje konta, preferencje użytkownika, panel administracyjny, edycja ustawień"
   },
   "SettingsForm": {
-    "toastWrong": "Coś poszło nie tak.",
     "toastWrongDesc": "Twoje imię nie zostało zaktualizowane. Proszę spróbuj ponownie.",
     "toastSuccessDesc": "Twoje imię zostało zaktualizowane.",
     "title": "Twoje Imię",
@@ -865,6 +864,7 @@
     "action": "Akcje",
     "next": "Następna strona",
     "prev": "Poprzednia strona",
+    "check": "Potwierdź",
     "delete": "Usuń",
     "edit": "Edytuj",
     "all": "Wszyscy",
@@ -872,7 +872,14 @@
     "developer": "Developer",
     "user": "Użytkownik",
     "placeholderRole": "Wybierz role",
-    "noData": "Brak danych"
+    "noData": "Brak danych",
+    "company": "Firma",
+    "title": "Prośby o zostanie developerem",
+    "desc": "Zakceptuj lub usuń prośbę o zostanie developerem.",
+    "deleteRequestBecameDeveloperSuccess": "Pomyślnie usunięto prośbę.",    
+    "deleteRequestBecameDeveloperError": "Nie udało się usunąć prośby, spróbuj ponownie później.",
+    "aproveRequestBecameDeveloperSuccess": "Pomyślnie dodano nowego developera.",
+    "aproveRequestBecameDeveloperError": "Nie udało się dodać nowego developera, spróbuj później."
   },
   "OmniNews": {
     "small": "OmniNews",
@@ -923,7 +930,6 @@
     "keywords": "OmniMes developer, aplikacja OmniMes, programista aplikacji, rozwój oprogramowania, technologia IT"
   },
   "BecomeDeveloperForm": {
-    "toastWrong": "Coś poszło nie tak.",
     "toastWrongDesc": "Prosimy spróbować ponownie później.",
     "toastSuccessDesc": "Wysłano prośbę. Prosimy o cierpliowść.",
     "title": "Formularz developera",
@@ -936,7 +942,10 @@
     "NipMsg": "NIP musi składać się tylko z cyfr",
     "name": "Imię",
     "nameMsg3": "Imię musi składać się z co najmniej 3 znaków.",
-    "nameMsg5": "Imię nie może być dłuższe niż 32 znaki."
+    "nameMsg5": "Imię nie może być dłuższe niż 32 znaki.",
+    "userNotAssociated": "Użytkownik nie jest powiązany z żadną firmą",
+    "successCreatePromiseToBecameDeveloper": "Twoja prośba została przesłana pomyślnie.",
+    "errorCreatePromiseToBecameDeveloper": "Twoja prośba nie została przesłana. Spróbuj ponownie później."
   },
   "CompanyForm": {
     "name": "Nazwa firmy",
@@ -956,7 +965,23 @@
     "toastWrongDesc": "Twoje imię nie zostało zaktualizowane. Proszę spróbuj ponownie.",
     "toastSuccessDesc": "Twoje imię zostało zaktualizowane.",
     "nameMsg": "Imię musi składać się z co najmniej 3 znaków.",
-    "nameMsg2": "Imię nie może być dłuższe niż 32 znaki."
+    "nameMsg2": "Imię nie może być dłuższe niż 32 znaki.",
+    "titleRequestPending": "Twoja prośba oczekuje na potwierdzenie",
+    "descRequestPending": "Twoja prośba została wysłana do administratora firmy. Prosimy o cierpliwość, już wkrótce wniosek zostanie rozpatrzony.",
+    "ifCompanyExist": "Firma {company} znajduję się w bazie",
+    "descIfCompanyExist": "Wyślij prośbę o zatwierdzenie do administratora firmy",
+    "enterOtherData": "Wpowadź inne dane",
+    "sendRequest": "Wyślij prośbę",
+    "ErrorGetCompanyAfterWriteNip": "Nie udało się pobrać firmy po numerze NIP",
+    "sendRequestSuccess": "Twoja prośba została wysłana.",
+    "sendRequestError": "Nie udało się wysłać prośby, spróbuj ponownie później.",
+    "errorCreatePromisesToCompany": "Nie udało się wysłać prośby, spróbuj ponownie później.",
+    "deleteCompanyRequestSuccess": "Twoja prośba została anulowana",
+    "deleteCompanyRequestError": "Twoja prośba nie mogła zostać usunięta",
+    "createCompanySuccess": "Udało się! Twoja firma została utworzona",
+    "createCompanyError": "Coś poszło nie tak! Twoja firma nie została utworzona",
+    "updatedCompanySuccess": "Pomyślnie zaktualizowano dane firmy",
+    "updatedCompanyError": "Nie udało się zaktualizować danych firmy."
   },
   "dashboardTable": {
     "check": "Potwierdź",
@@ -966,7 +991,11 @@
     "action": "Akcje",
     "noData": "Brak próśb o dołączenie",
     "title": "Prośby o dołączenie",
-    "desc": "Zakceptuj lub usuń prośbę o dołącznie do firmy."
+    "desc": "Zakceptuj lub usuń prośbę o dołącznie do firmy.",
+    "msgSuccessDeleteRequest": "Prośba została usunięta pomyślnie.",
+    "msgErrorDeleteRequest": "Prośba nie mogła zostać usunięta, spróbuj później.",
+    "msgSuccessAproveUserToCompany": "Prośba została zaakceptowana.",
+    "msgErrorAproveUserToCompany": "Prośba nie mogła zostać zaakceptowana, spróbuj później."
   },
   "ComponentCompany": {
     "title": "Twoja Firma",
@@ -979,5 +1008,45 @@
     "email": "Email",
     "website": "Strona",
     "phoneNumber": "Numer telefonu"
+  },
+  "CompanyUsersTable": {
+    "title": "Użytkownicy firmy",
+    "desc": "Tabela zawiera informacje o wszystkich użytkownikach firmy. Zarządzaj pracownikami oraz ich rolami w systemie OmnieMes.",
+    "name": "Imię",
+    "email": "Email",
+    "role": "Rola w firmie",
+    "ceo": "Admin firmy",
+    "user": "Użytkownik",
+    "action": "Akcje",
+    "noData":"Brak danych",
+    "placeholderRole": "Wybierz role",
+    "delete": "Usuń",
+    "msgSuccessDeleteUserFromCompany": "Użytkownik został usunięty z Twojej firmy.",
+    "msgErrorDeleteUserFromCompany": "Coś poszło nie tak, nie udało się usunąć użytkownika z firmy.",
+    "msgSuccessChangeUserRoleInCompany": "Rola użytkownika w firmie została zmieniona.",
+    "msgErrorChangeUserRoleInCompany": "Coś poszło nie tak, nie udało się zmienić roli użytkownika w firmie."
+  },
+  "ComponentBluredInfo": {
+    "titleHaveRequest": "Twoja prośba została przesłana!",
+    "descHaveRequest": "Już w krótce otrzymasz informację czy zostaniesz developerem OmniMES.",
+    "resign": "Zrezygnuj",
+    "titleNoData": "Uzupełnij dane o firmie",
+    "descNoData": "Aby zostać developerem musisz uzupełnić dane o firmie.",
+    "goToSettings": "Przejdź do ustawień",
+    "titleSended": "Już wkrótce będziesz mógł zostać developerem",
+    "descSended": "Twoja prośba o dołączenie do firmy oczekuje na potwierdzenie.",
+    "successSendResetRequestDeveloper": "Udało się zrezygnować.",
+    "errorSendResetRequestDeveloper": "Nie udało się zrezygnować, spróbuj ponownie później."
+  },
+  "Notification": {
+    "mark": "Oznacz jako przeczytane",
+    "markAll": "Oznacz wszystkie jako przeczytane",
+    "loadMore": "Załaduj więcej",
+    "lackNotification": "Brak powiadomień",
+    "title": "Powiadomienia",
+    "titleMessageCreateCompanyRequestNotification": "chce dołączyć do Twojej firmy",
+    "descMessageCreateCompanyRequestNotification": "Przejdź do panelu i odpowiedz na prośbę o przyjęcie użytkownika do firmy.",
+    "titleMessageCreatePromisesToBecameDeveloperNotification": "chce zostać developerem",
+    "descMessageCreatePromisesToBecameDeveloperNotification": "Przejdź do panelu admina i odpowiedz na prośbę o zostanie developerem."
   }
 }

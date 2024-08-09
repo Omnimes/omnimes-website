@@ -1,29 +1,25 @@
 "use client"
-
 import * as React from "react"
 import * as z from "zod"
+import { cn } from "@/utils/utils"
 import { User } from "@prisma/client"
+import { Loader2 } from "lucide-react"
 import { useForm } from "react-hook-form"
-import { useRouter } from "next/navigation"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { userNameSchema } from "@/utils/validations/user"
-import { cn } from "@/utils/utils"
-import { toast } from "../../atoms/UseToast"
-import { Loader2 } from "lucide-react"
-import { Label } from "@/components/atoms/Label"
-import { Input } from "../../atoms/Input"
-import { buttonVariants } from "../../atoms/Button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../atoms/Card"
 import { useTranslations } from "next-intl"
+import { changeName } from "@/actions/user"
+import { toast } from "@/components/atoms/UseToast"
+import { Label } from "@/components/atoms/Label"
+import { Input } from "@/components/atoms/Input"
+import { buttonVariants } from "@/components/atoms/Button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/atoms/Card"
 
 interface UserNameFormProps extends React.HTMLAttributes<HTMLFormElement> {
   user: Pick<User, "id" | "name">
 }
-
 type FormData = z.infer<typeof userNameSchema>
-
 export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
-  const router = useRouter();
   const {
     handleSubmit,
     register,
@@ -38,33 +34,20 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
   const t = useTranslations("SettingsForm")
 
   async function onSubmit(data: FormData) {
-    setIsSaving(true)
-
-    const response = await fetch(`/api/users/${user.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: data.name,
-      }),
-    })
-
-    setIsSaving(false)
-
-    if (!response?.ok) {
-      return toast({
-        title: t("toastWrong"),
-        description: t("toastWrongDesc"),
+    setIsSaving(true);
+    const response = await changeName(data.name, user.id);
+    if(response.success) {
+      toast({
+        description: t(response.message),
+        variant: "success"
+      });
+    } else if (response.error) {
+      toast({
+        description: t(response.message),
         variant: "destructive",
-      })
+      });
     }
-
-    toast({
-      description: t("toastSuccessDesc"),
-    })
-
-    router.refresh()
+    setIsSaving(false);
   }
 
   return (

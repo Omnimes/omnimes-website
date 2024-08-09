@@ -4,101 +4,82 @@ import { z } from "zod";
 import { db } from "@/utils/db"
 import { Company } from "@/components/forms/settings/CompanyForm";
 import { companySchema } from "@/utils/validations/company";
-import { Requests } from '@/components/dashboard/requsets/ComponentRequests';
+import { Requests } from '@/components/dashboard/requsets/ComponentRequestsTable';
 import { ReqCompany } from './../components/forms/settings/CompanyForm';
 import { revalidatePath } from 'next/cache';
 
 /* Pobranie firmy po nip */
-export const getCompany = async (nip: string) => {
+export const getCompany = async(nip: string) => {
   if (!nip || typeof nip !== "string") {
-    return {status: 'error', message: "invalid nip"}
+    return {success: false, message: "Invalid Nip"}
   }
 
-  const company = await db.company.findUnique({
-    where: { nip },
-    include: {
-        users: true,   // Załącz użytkowników firmy
-        admins: true,  // Załącz administratorów firmy
-      },
-  });
-
-  if (company) {
-    return {status: 'success', company: company as Company}
-  } else {
-    return {status: 'error', message: "not found"}
+  try {
+    const company = await db.company.findUnique({
+      where: { nip },
+      include: {
+          users: true,   // Załącz użytkowników firmy
+          admins: true,  // Załącz administratorów firmy
+        },
+    });
+    if (company) {
+      return {success: true, company: company as Company}
+    } else {
+      return {success: true, message: "Not Found"}
+    }
+  } catch (error) {
+    console.error(error);
+    return { error: true, message: "ErrorGetCompanyAfterWriteNip"}
   }
 }
 
-/* Tworzenie firmy */
-// export const createCompany = async (data: FormData, userId: string) => {
-//     const createCompany = await db.company.create({
-//         data: {
-//             ...data,
-//             admins: {
-//                 connect: {id: userId}
-//             }
-//         },
-//         include: {
-//             users: true,   // Załącz użytkowników firmy
-//             admins: true,  // Załącz administratorów firmy
-//           },
-//     });
-//     return createCompany
-// }
-
 type FormData = z.infer<typeof companySchema>
-export const createCompany = async (data: FormData, userId: string) => {
+export const createCompany = async(data: FormData, userId: string) => {
   try {
     const validatedData = companySchema.parse(data);
-    const createdCompany = await db.company.create({
+    
+    await db.company.create({
       data: {
         ...validatedData,
         admins: {
           connect: { id: userId }
         }
-      },
-      include: {
-        users: true,
-        admins: true,
-      },
+      }
     });
 
-    return { status: 201, data: createdCompany };
+    revalidatePath("/dashboard/settings")
+    return { success: true, message: "createCompanySuccess" };
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return { status: 422, errors: error.issues };
+      return { error: true, errors: error.issues };
     }
     console.error('Error creating company:', error);
-    return { status: 500, message: 'Internal server error' };
+    return { error: true, message: 'createCompanyError' };
   }
 };
 
-export const updateCompany = async (companyId: string, data: FormData) => {
+export const updateCompany = async(companyId: string, data: FormData) => {
   try {
     const validatedData = companySchema.partial().parse(data);
-    const updatedCompany = await db.company.update({
+    
+    await db.company.update({
       where: { id: companyId },
-      data: validatedData,
-      include: {
-        users: true,
-        admins: true,
-      },
+      data: validatedData
     });
 
-    return { status: 200, data: updatedCompany };
+    return { success: true, message: "updatedCompanySuccess" };
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return { status: 422, errors: error.issues };
+      return { error: true, errors: error.issues };
     }
     console.error('Error updating company:', error);
-    return { status: 500, message: 'Internal server error' };
+    return { error: true, message: 'updatedCompanyError' };
   }
 };
 
-/* Sprawdzenie czy uzytkownik ma przypisaną firmę */
-export async function doesUserHaveCompany(userId: string) {
+export const getUserCompanyInfo = async(userId: string) => {
   try {
-    // Sprawdź, czy istnieje firma, w której użytkownik jest użytkownikiem lub administratorem
+    // Znajdź firmę, w której użytkownik jest użytkownikiem lub administratorem
     const company = await db.company.findFirst({
       where: {
         OR: [
@@ -106,43 +87,37 @@ export async function doesUserHaveCompany(userId: string) {
           { admins: { some: { id: userId } } },  // Użytkownik jest administratorem
         ],
       },
-    });
-
-    return { belongCompany: company !== null, company: company as Company};
-  } catch (error) {
-    console.error('Error checking user\'s company:', error);
-    throw error;
-  }
-}
-
-/* Sprawdź czy user jest adminem firmy */
-export async function GetIsAdminCompany(userId: string) {
-  try {
-    // Znajdź firmę, w której użytkownik jest administratorem
-    const company = await db.company.findFirst({
-      where: {
-        admins: { some: { id: userId } },  // Użytkownik jest administratorem
-      },
       include: {
         admins: true,  // Włącz tablicę adminów do wyniku
       },
     });
 
-    // Jeśli firma istnieje, znajdź użytkownika w tablicy adminów
     if (company) {
-      const adminUser = company.admins.find(admin => admin.id === userId);
-      return { isAdmin: true, user: adminUser };
+      const isAdmin = company.admins.some(admin => admin.id === userId);
+      return {
+        belongCompany: true,
+        company: company as Company,
+        isAdmin: isAdmin,
+      };
     }
 
-    return { isAdmin: false, user: null };
+    return {
+      belongCompany: false,
+      company: null,
+      isAdmin: false,
+    };
   } catch (error) {
     console.error('Error checking user\'s company:', error);
-    throw error;
+    return {
+      belongCompany: false,
+      company: null,
+      isAdmin: false,
+    };
   }
 }
 
 /* Pobranie listy requestów danej firmy wraz z danymi o userze */
-export async function getRequestsForAdmin(companyId: string): Promise<Requests> {
+export const getRequestsForAdmin = async(companyId: string): Promise<Requests> => {
   try {
     const requests = await db.companyRequest.findMany({
       where: { companyId: companyId },
@@ -164,26 +139,33 @@ export async function getRequestsForAdmin(companyId: string): Promise<Requests> 
 }
 
 /* Sprawdzenie czy użytkownik ma request */
-export async function doesUserHaveRequest(userId: string) {
+export const doesUserHaveRequest = async(userId: string) => {
   try {
     const req = await db.companyRequest.findFirst({
       where: { userId }
-    })
-  
-    return { requestCompany: req !== null, reqCompany: req as ReqCompany }
-  }
-  catch(error) {
-    console.log(error)
-    throw error
+    });
+
+    return req as ReqCompany | null;
+  } catch (error) {
+    console.error('Error checking user\'s request:', error);
+    return null;
   }
 }
 
 /* Prośba o dodanie usera do firmy */
-export async function createPromisesToCompany(userId: string, nip: string) {
+export const createPromisesToCompany = async(userId: string, nip: string) => {
     try {
       const companyId = await db.company.findFirst({
         where: { nip },
-        select: { id: true }
+        select: { id: true, admins: true }
+      })
+
+      const user = await db.user.findUnique({
+        where: { id: userId },
+        select: {
+          name: true,
+          email: true,
+        },
       })
 
       if(companyId && companyId.id) {
@@ -193,14 +175,27 @@ export async function createPromisesToCompany(userId: string, nip: string) {
             companyId: companyId.id,
           },
         });
-       
-        return revalidatePath('/dashboard/settings')
+    
+        companyId.admins.forEach(async admin => {
+          await db.notification.create({
+            data: {
+              userId: admin.id,
+              title: `titleMessageCreateCompanyRequestNotification`,
+              userNameCreator: user?.name ?? user?.email ?? "",
+              message: "descMessageCreateCompanyRequestNotification",
+              type: "info",
+            },
+          })
+        })
+
+        revalidatePath('/dashboard/settings')
+        return {success: true, message: "sendRequestSuccess"}
       } else {
-        return {error: true, messsage: "Nie udało się wysłać prośby, spróbuj ponownie później."}
+        return {error: true, messsage: "sendRequestError"}
       }
   } catch (error) {
     console.log(error)
-    return { error: true, data: error}
+    return { error: true, message: "errorCreatePromisesToCompany"}
   }
 }
 
@@ -209,9 +204,11 @@ export const sendResetRequest = async(id: string) => {
     await db.companyRequest.delete({
       where: { id },
     })
-    revalidatePath('/dashboard/settings')
+    revalidatePath('/dashboard/settings');
+    return { success: true, message: "deleteCompanyRequestSuccess"}
   } catch (error) {
-    console.log(error)
+    console.error(error)
+    return { error: true, message: "deleteCompanyRequestError"}
   }
 }
 
@@ -222,8 +219,11 @@ export const deleteRequest = async(idRequest: string) => {
       where: {id: idRequest}
     })
     revalidatePath('/dashboard');
+    return {success: true, message: "msgSuccessDeleteRequest"}
   } catch (error) {
-    console.log(error)
+    console.error(error)
+    return {error: true, message: "msgErrorDeleteRequest"}
+
   }
 }
 
@@ -245,9 +245,10 @@ export const aproveUserToCompany = async(obj: {userId: string; companyId: string
       where: {id: reqId}
     })
     revalidatePath('/dashboard');
-
+    return {success: true, message: "msgSuccessAproveUserToCompany" }
   } catch (error) {
     console.log(error)
+    return {error: true, message: "msgErrorAproveUserToCompany"}
   }
 }
 
@@ -277,8 +278,117 @@ export const getCompanyUser = async(userId: string) => {
     const req = await db.companyRequest.findFirst({
       where: { userId }
     })
-    return { status: req == null ? "noData" : "sended" as status, data: null}
+    return { status: (req == null ? "noData" : "sended") as status, data: null}
   }
-
   return { status: "belongs" as status, data: company}
+}
+
+// /* Sprawdź czy user jest adminem firmy */
+export const GetIsAdminCompany = async(userId: string) => {
+  try {
+    // Znajdź firmę, w której użytkownik jest administratorem
+    const company = await db.company.findFirst({
+      where: {
+        admins: { some: { id: userId } },  // Użytkownik jest administratorem
+      },
+      include: {
+        admins: true,  // Włącz tablicę adminów do wyniku
+      },
+    });
+
+    // Jeśli firma istnieje, znajdź użytkownika w tablicy adminów
+    if (company) {
+      const adminUser = company.admins.find(admin => admin.id === userId);
+      return { isAdmin: true, user: adminUser };
+    }
+
+    return { isAdmin: false, user: null };
+  } catch (error) {
+    console.error('Error checking user\'s company:', error);
+    return { isAdmin: false, user: null }
+  }
+}
+
+/* Pobranie wszystkich userów należących do firmy */
+export const getAllUsersFromComapny = async(companyId: string) => {
+  try {
+    const users = await db.user.findMany({
+      where: {
+        OR: [
+          { companyId: companyId },
+          { adminCompanyId: companyId },
+        ],
+      },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        companyId: true,
+        adminCompanyId: true,
+      }
+    });
+    
+    return users;
+  } catch (error) {
+    console.error(error)
+    return []
+  }
+}
+
+type UserCompany = {
+  id: string,
+  name: string | null,
+  email: string | null,
+  companyId: string | null,
+  adminCompanyId: string | null,
+}
+
+/* zmiana roli w firmie */
+export const changeRoleInCompany = async(user: UserCompany, role: 'admin' | 'user') => {
+  const updateData = role === 'admin'
+      ? { companyId: null, adminCompanyId: user.companyId }
+      : { companyId: user.adminCompanyId, adminCompanyId: null };
+
+  try {
+    await db.user.update({
+      where: {
+        id: user.id,
+      },
+      data: updateData,
+    });
+
+    revalidatePath('/dashboard');
+    return { success: true, message: "msgSuccessChangeUserRoleInCompany" };
+  } catch (error) {
+    console.error(error)
+    return {error: true, message: "msgErrorChangeUserRoleInCompany"}
+  }
+}
+
+/* Usunięcie usera z firmy */
+export const deleteUserCompany = async(user: UserCompany) => {
+  try {
+    await db.user.update({
+      where: {
+        id: user.id,
+      },
+      data: {
+        companyId: null,
+        role: 'user' // dodatkowo jeśli jes developerem zostaje zmieniony na user
+      },
+    });
+
+    // usun prośbę o zostanie developerem jeśli istnieje 
+    await db.roleRequest.delete({
+      where: {
+        userId: user.id,
+      },
+    })
+
+    revalidatePath('/dashboard');
+    return {success: true, message: "msgSuccessDeleteUserFromCompany" }
+  } catch(error) {
+    console.error(error)
+    return {error: true, message: "msgErrorDeleteUserFromCompany"}
+  }
 }

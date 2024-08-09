@@ -27,7 +27,6 @@ import {
 import { SessionProvider } from 'next-auth/react';
 import { UserAccountNavClient } from './auth/UserAccountNavClient';
 import { Notification } from "@/components/Notification"
-import { CreateNotification } from '@/actions/notification';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('HeaderLinks');
@@ -143,14 +142,14 @@ export default function Header() {
         <NavbarContent justify="end" className="hidden sm:flex items-center justify-center">
           <li className="flex items-center justify-center"><LocaleSwitcher /></li>
           <li className="flex items-center justify-center"><UserAccountNavClient /></li>
-          <li className="flex items-center justify-center"><Notification /></li>
+          <Notification />
           <li className="flex items-center justify-center"><SearchButton /></li>
           <li className="flex items-center justify-center"><ThemeSwitch /></li>
         </NavbarContent>
         <NavbarContent justify="center" className="flex sm:hidden">
           <li className="flex items-center justify-center"><LocaleSwitcher /></li>
           <li className="flex items-center justify-center"><UserAccountNavClient /></li>
-          <li className="flex items-center justify-center"><Notification /></li>
+          <Notification />
           <li className="flex items-center justify-center"><SearchButton /></li>
           <li className="flex items-center justify-center"><ThemeSwitch /></li>
         </NavbarContent>

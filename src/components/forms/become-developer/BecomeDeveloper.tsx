@@ -1,45 +1,43 @@
 "use client"
-
-import * as React from "react"
 import * as z from "zod"
 import { User } from "@prisma/client"
 import { useForm } from "react-hook-form"
-import { useRouter } from "next/navigation"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { becomeDeveloperSchema } from "@/utils/validations/become-developer"
 import { cn } from "@/utils/utils"
-import { toast } from "../../atoms/UseToast"
 import { Loader2 } from "lucide-react"
 import { Label } from "@/components/atoms/Label"
-import { Input } from "../../atoms/Input"
-import { buttonVariants } from "../../atoms/Button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../atoms/Card"
+import { Input } from "@/components/atoms/Input"
+import { toast } from "@/components/atoms/UseToast"
+import { Button, buttonVariants } from "@/components/atoms/Button"
 import { useTranslations } from "next-intl"
 import { createPromisesToBecomeDeveloper } from "@/actions/become-developer"
-import { ComponentFormBlurInfo } from "../component-form/ComponentFromBlurInfo"
+import { ComponentFormBlurInfo } from "@/components/forms/component-form/ComponentFromBlurInfo"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/atoms/Card"
+import { useState } from "react"
 
 interface UserNameFormProps extends React.HTMLAttributes<HTMLFormElement> {
   user: Pick<User, "id" | "name">
-  data: CompanyStatus,
-  haveRequest: boolean
+  data: CompanyStatus & { haveRoleRequest: boolean },
 }
 
-interface CompanyStatus {
-  status: 'belongs' | 'noData' | 'sended',
-  data: {
-    id: string;
-    name: string;
-    nip: string;
-    phoneNumber: string;
-    email: string;
-    website: string;
-  } | null
+interface BelongsCompanyStatus {
+  status: 'belongs',
+  name: string,
+  nip: string,
 }
 
+interface NoDataOrSendedCompanyStatus {
+  status: 'noData' | 'sended',
+  name: null,
+  nip: null,
+}
+
+export type CompanyStatus = BelongsCompanyStatus | NoDataOrSendedCompanyStatus;
 type FormData = z.infer<typeof becomeDeveloperSchema>
 
-export function BecomeDeveloperForm({ user, data, haveRequest, className, ...props }: UserNameFormProps) {
-  const router = useRouter();
+export function BecomeDeveloperForm({ user, data, className, ...props }: UserNameFormProps) {
+  const t = useTranslations("BecomeDeveloperForm")
   const {
     handleSubmit,
     register,
@@ -47,32 +45,29 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
   } = useForm<FormData>({
     resolver: zodResolver(becomeDeveloperSchema),
     defaultValues: {
-      company: data.data?.name ?? "",
-      nip: data.data?.nip ?? "",
+      company: data.status === "belongs" ? data.name : "",
+      nip: data.status === "belongs" ? data.nip : "",
       name: user.name ?? ""
     },
   });
-  const [isSending, setIsSending] = React.useState<boolean>(false);
-  const t = useTranslations("BecomeDeveloperForm")
+  const [isSending, setIsSending] = useState<boolean>(false);
 
-  async function onSubmit(data: FormData) {
+  async function onSubmit() {
     setIsSending(true)
     const response = await createPromisesToBecomeDeveloper(user.id);
-    setIsSending(false)
 
-    if (response.status === 201) {
+    if (response.success) {
       toast({
-        description: t("toastSuccessDesc"),
+        description: t(response.message),
+        variant: "success"
       });
     } else {
       toast({
-        title: t("toastWrong"),
-        description: response.message || t("toastWrongDesc"),
+        description: response.message ? t(response.message) : t("toastWrongDesc"),
         variant: "destructive",
       });
     }
-    
-    router.refresh()
+    setIsSending(false)
   }
 
   return (
@@ -82,18 +77,14 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
       {...props}
     >
       <Card className="relative">
-        <ComponentFormBlurInfo haveRequest={haveRequest} userId={user.id} status={data.status} data={data.data} />
+        <ComponentFormBlurInfo haveRequest={data.haveRoleRequest} userId={user.id} status={data.status} />
         <CardHeader>
           <CardTitle>{t("title")}</CardTitle>
-          <CardDescription>
-          {t("description")}
-          </CardDescription>
+          <CardDescription>{t("description")}</CardDescription>
         </CardHeader>
         <CardContent className='flex flex-col gap-2'>
           <div className="grid gap-1">
-            <Label htmlFor="company">
-            {t("companyName")}
-            </Label>
+            <Label htmlFor="company">{t("companyName")}</Label>
             <Input
               id="company"
               className="w-full"
@@ -106,9 +97,7 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
           </div>
 
           <div className="grid gap-1">
-            <Label htmlFor="nip">
-            {t("NIP")}
-            </Label>
+            <Label htmlFor="nip">{t("NIP")}</Label>
             <Input
               id="nip"
               className="w-full"
@@ -124,9 +113,7 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
           </div>
 
           <div className="grid gap-1">
-            <Label htmlFor="name">
-            {t("name")}
-            </Label>
+            <Label htmlFor="name">{t("name")}</Label>
             <Input
               id="name"
               className="w-full"
@@ -141,7 +128,7 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
           </div>
         </CardContent>
         <CardFooter>
-          <button
+          <Button
             type="submit"
             aria-label={t("send")}
             aria-labelledby={t("send")}
@@ -149,11 +136,9 @@ export function BecomeDeveloperForm({ user, data, haveRequest, className, ...pro
             className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
             disabled={isSending}
           >
-            {isSending && (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            )}
+            {isSending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
             <span>{t("send")}</span>
-          </button>
+          </Button>
         </CardFooter>
       </Card>
     </form>

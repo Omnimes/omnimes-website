@@ -1,55 +1,60 @@
 import { sendResetRequestDeveloper } from "@/actions/become-developer";
 import { Button } from "@/components/atoms/Button";
+import { toast } from "@/components/atoms/UseToast";
 import { CustomLink } from "@/components/Link";
+import { useTranslations } from "next-intl";
 
 interface Props {
     status: 'belongs' | 'noData' | 'sended',
-    data: {
-        id: string;
-        name: string;
-        nip: string;
-        phoneNumber: string;
-        email: string;
-        website: string;
-      } | null,
     haveRequest: boolean,
     userId: string,
 }
 
-export const ComponentFormBlurInfo = ({status, data, haveRequest, userId}: Props) => {
-    
-    const reset = (e: React.MouseEvent<HTMLButtonElement>) => {
+export const ComponentFormBlurInfo = ({status, haveRequest, userId}: Props) => {
+    const t = useTranslations("ComponentBluredInfo");
+    const reset = async(e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         e.stopPropagation();
-        sendResetRequestDeveloper(userId);
+        const result = await sendResetRequestDeveloper(userId);
+        if(result.success) {
+            toast({
+                description: t(result.message),
+                variant: "success",
+              })
+        } else if(result.error) {
+            toast({
+                description: t(result.message),
+                variant: "destructive",
+              })
+        }
     }
 
     if(haveRequest) {
         return <BlurComponent
-                    title={"Twoja prośba została przesłana!"}
-                    text={"Już w krótce otrzymasz informację czy zostaniesz developerem OmniMES."}
+                    title={t("titleHaveRequest")}
+                    text={t("descHaveRequest")}
                 >
                     <Button variant={"outline"} onClick={(e) => reset(e)}>
-                        Zrezygnuj
+                        {t('resign')}
                     </Button>
                 </BlurComponent>
     }
     if(status == "noData") {
         return <BlurComponent 
-                    title={"Uzupełnij dane o firmie"} 
-                    text={"Aby zostać developerem musisz uzupełnić dane o firmie."} 
+                    title={t("titleNoData")} 
+                    text={t("descNoData")} 
                 >
                      <CustomLink 
                         href="/dashboard/settings" 
                         className="h-10 py-1 px-4 inline-flex shadow items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background whitespace-nowrap border border-input hover:bg-accent hover:text-accent-foreground"
                     >
-                        Przejdź do ustawień
+                        {t("goToSettings")}
                     </CustomLink>
                 </BlurComponent>
     } else if (status == "sended") {
         return <BlurComponent 
-                    title={"Już wkrótce będziesz mógł zostać developerem"} 
-                    text={"Twoja prośba o dołączenie do firmy oczekuje na potwierdzenie."} 
+                    title={t("titleSended")} 
+                    text={t("descSended")} 
                 />
     } else if (status == "belongs") {
         return null

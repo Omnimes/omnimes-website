@@ -36,6 +36,8 @@ export function UsersTable({
     function onClickPrev() {
         router.replace(`${pathname}/?offset=${prevOffset}`);
     }
+
+    console.log(users)
     return (
         <>
             <form className="border shadow-sm rounded-lg">

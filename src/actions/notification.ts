@@ -2,17 +2,19 @@
 import { db } from '@/utils/db'
 type Props = {
     userId: string,
+    userNameCreator: string,
     title: string,
     message: string,
     type: string,
 }
 
-export const CreateNotification = async({userId, title, message, type} : Props) => {
+export const CreateNotification = async({userId, userNameCreator, title, message, type} : Props) => {
     try {
         const notification = await db.notification.create({
           data: {
             userId,
             title,
+            userNameCreator,
             message,
             type,
           },

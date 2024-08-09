@@ -2,12 +2,13 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { genPageMetadata } from '@/app/seo';
-import { getCompanyUser, GetIsAdminCompany, getRequestsForAdmin } from '@/actions/company';
+import { getAllUsersFromComapny, getCompanyUser, GetIsAdminCompany, getRequestsForAdmin } from '@/actions/company';
 import { getCurrentUser } from '@/utils/session';
 import { redirect } from 'next/navigation';
-import { ComponentRequests } from '@/components/dashboard/requsets/ComponentRequests';
+import { ComponentRequests } from '@/components/dashboard/requsets/ComponentRequestsTable';
 import { ComponentCompany } from '@/components/dashboard/company/ComponentCompany';
 import { cn } from '@/utils/utils';
+import { CompanyUsersTable } from '@/components/dashboard/company/CompanyUsersTable';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "DashboardPanelMeta" });
@@ -50,12 +51,22 @@ export default async function DashboardPage({params: { locale }}: {params: { loc
     }
   }
 
+  const CompanyUsers = async() => {
+    if(isAdminCompany.user?.adminCompanyId) {
+      const allUsersComapny = await getAllUsersFromComapny(data?.id ?? "");
+      return <CompanyUsersTable
+              allUsersComapny={allUsersComapny}
+            />
+    }
+  }
+
   return (
     <div className={cn("grid grid-cols-1 gap-4 lg:grid-cols-[1fr_250px] xl:grid-cols-3 xl:gap-8")}>
-      <div className="md:grid auto-rows-max items-start gap-4 xl:col-span-2 xl:gap-8">
+      <div className="grid grid-cols-1 auto-rows-max gap-4 xl:col-span-2 xl:gap-8">
         <CompanyRequset />
+        <CompanyUsers />
       </div>
-      <div className="md:grid auto-rows-max items-start gap-4 xl:gap-8">
+      <div className="grid grid-cols-1 auto-rows-max gap-4 xl:gap-8">
         <ComponentCompany    
           status={status}
           data={data}  

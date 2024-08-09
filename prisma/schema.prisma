@@ -80,8 +80,8 @@ model User {
   adminCompany   Company? @relation("AdminCompany", fields: [adminCompanyId], references: [id])
   adminCompanyId String?
 
-  companyRequest CompanyRequest?  // Relacja do CompanyRequest
-  Notification Notification[] // Relacja do Notification
+  companyRequest CompanyRequest? // Relacja do CompanyRequest
+  Notification   Notification[] // Relacja do Notification
 
   @@map("users")
 }
@@ -109,15 +109,15 @@ model Company {
   admins User[] @relation("AdminCompany")
 
   companyRequests CompanyRequest[] // Relacja do CompanyRequest
-  roleRequests  RoleRequest[] @relation(name: "CompanyToRoleRequest")
-  
+  roleRequests    RoleRequest[]    @relation(name: "CompanyToRoleRequest")
+
   @@map("companies")
 }
 
 /// Model reprezentujący prośbę o dodanie do firmy.
 model CompanyRequest {
-  id        String   @id @default(cuid())
-  userId    String   @unique
+  id        String @id @default(cuid())
+  userId    String @unique
   companyId String
 
   createdAt DateTime @default(now()) @map("created_at")
@@ -134,24 +134,25 @@ model RoleRequest {
   userId    String   @id
   createdAt DateTime @default(now()) @map("created_at")
 
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  
-  nip       String?  @map("nip")
-  company   Company? @relation(name: "CompanyToRoleRequest", fields: [nip], references: [nip])
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  nip     String?  @map("nip")
+  company Company? @relation(name: "CompanyToRoleRequest", fields: [nip], references: [nip])
 
   @@map("role_requests")
 }
 
 model Notification {
-  id        String   @id @default(cuid())
-  userId    String   // ID użytkownika, do którego należy powiadomienie
-  message   String   // Treść powiadomienia
-  title     String   // Treść powiadomienia
-  type      String   // Typ powiadomienia (info, success, error)
-  isRead    Boolean  @default(false) // Status przeczytane/nieprzeczytane
-  createdAt DateTime @default(now())
+  id              String   @id @default(cuid())
+  userId          String // ID użytkownika, do którego należy powiadomienie
+  message         String // Treść powiadomienia
+  userNameCreator String
+  title           String // Treść powiadomienia
+  type            String // Typ powiadomienia (info, success, error)
+  isRead          Boolean  @default(false) // Status przeczytane/nieprzeczytane
+  createdAt       DateTime @default(now())
 
-  user      User     @relation(fields: [userId], references: [id])
+  user User @relation(fields: [userId], references: [id])
 
   @@map("notifications")
 }

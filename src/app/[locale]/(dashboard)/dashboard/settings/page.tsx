@@ -7,7 +7,7 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { genPageMetadata } from "@/app/seo"
 import { CompanyForm } from "@/components/forms/settings/CompanyForm"
-import { doesUserHaveCompany, doesUserHaveRequest, GetIsAdminCompany } from "@/actions/company"
+import { doesUserHaveRequest, getUserCompanyInfo } from "@/actions/company"
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "SettingsPage" });
@@ -25,34 +25,28 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta
 }
 export default async function SettingsPage({ params: { locale } }: { params: { locale: string } }) {
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
   const user = await getCurrentUser();
+  if (!user) { redirect("/login") }
+
+  unstable_setRequestLocale(locale);
   const t = await getTranslations("SettingsPage");
 
-  if (!user) {
-    redirect("/login")
-  }
-  const company = await doesUserHaveCompany(user.id);
-  const isAdminCompany = await GetIsAdminCompany(user.id);
+  const { belongCompany, company, isAdmin } = await getUserCompanyInfo(user.id);
   const requestCompany = await doesUserHaveRequest(user.id);
+
   return (
     <DashboardShell>
-      <DashboardHeader
-        heading={t("title")}
-        text={t("desc")}
-      />
+      <DashboardHeader heading={t("title")} text={t("desc")} />
       <div className="grid gap-10">
         <UserNameForm user={{ id: user.id, name: user.name || "" }} />
       </div>
       <div id="company" className="grid gap-10">
         <CompanyForm 
           user={{ id: user.id }} 
-          belongCompany={company.belongCompany} 
-          company={company.company} 
-          requestCompany={requestCompany.requestCompany}
-          requestCompanyData={requestCompany.reqCompany}
-          isAdminCompany={isAdminCompany.isAdmin}
+          isAdminCompany={isAdmin}
+          belongCompany={belongCompany} 
+          company={company} 
+          requestCompany={requestCompany}
         />
       </div>
     </DashboardShell>

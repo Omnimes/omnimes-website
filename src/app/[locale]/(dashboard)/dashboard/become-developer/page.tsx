@@ -6,8 +6,7 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { genPageMetadata } from "@/app/seo"
 import { BecomeDeveloperForm } from "@/components/forms/become-developer/BecomeDeveloper"
-import { getCompanyUser } from "@/actions/company"
-import { checkIsUserHaveRoleRequest } from "@/actions/become-developer"
+import { getCompanyAndRoleRequestStatus } from "@/actions/become-developer"
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "BecomeDeveloperPage" });
@@ -25,14 +24,16 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return meta 
 }
 export default async function SettingsPage({ params: { locale } }: { params: { locale: string } }) {
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
+
   const user = await getCurrentUser();
+  if (!user) redirect("/login")
+  if (user.role == 'developer') redirect("/dashboard")
+    
+  unstable_setRequestLocale(locale);
   const t = await getTranslations("BecomeDeveloperPage");
 
-  if (!user) redirect("/login")
-  const data = await getCompanyUser(user.id);
-  const HaveRoleRequest = await checkIsUserHaveRoleRequest(user.id);
+  const data = await getCompanyAndRoleRequestStatus(user.id);
+
   return (
     <DashboardShell>
       <DashboardHeader
@@ -43,7 +44,6 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
         <BecomeDeveloperForm
           user={{ id: user.id, name: user.name || "" }}
           data={data}
-          haveRequest={HaveRoleRequest}
         />
       </div>
     </DashboardShell>
