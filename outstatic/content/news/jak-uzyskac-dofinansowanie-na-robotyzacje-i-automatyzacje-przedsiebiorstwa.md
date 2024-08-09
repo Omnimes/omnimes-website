@@ -23,6 +23,16 @@ Zapisz się na nasz webinar, aby dowiedzieć się jak dostać środki z UE. Do w
 
 Plan wydarzenia:
 
-✅ Omówienie bieżących programów unijnych na robotyzację i automatyzację przedsiębiorstw ✅ Co zyskasz z programów unijnych? ✅ Jakie są wymagania programów unijnych? ✅ Jak przygotować Plan Transformacji Cyfrowej? ✅ Przebieg procesu audytowego ✅ Jak złożyć wniosek do programu unijnego?
+✅ Omówienie bieżących programów unijnych na robotyzację i automatyzację przedsiębiorstw 
+
+✅ Co zyskasz z programów unijnych? 
+
+✅ Jakie są wymagania programów unijnych? 
+
+✅ Jak przygotować Plan Transformacji Cyfrowej? 
+
+✅ Przebieg procesu audytowego 
+
+✅ Jak złożyć wniosek do programu unijnego?
 
 Nie przegap okazji, aby zdobyć wiedzę i środki na rozwój swojej firmy. Zarejestruj się już dziś na jeden z naszych webinarów i zacznij przygotowania do zdobycia funduszy!
