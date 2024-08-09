@@ -1,6 +1,6 @@
 {
-  "commit": "66200fc2674460514734b2d8c4694bb1e865c6c2",
-  "generated": "2024-08-09T10:56:22.217Z",
+  "commit": "f49380c5950f955853d3b0d30606387e2d59661a",
+  "generated": "2024-08-09T11:02:49.187Z",
   "metadata": [
     {
       "__outstatic": {
@@ -914,8 +914,8 @@
     },
     {
       "__outstatic": {
-        "commit": "66200fc2674460514734b2d8c4694bb1e865c6c2",
-        "hash": "3441803672",
+        "commit": "f49380c5950f955853d3b0d30606387e2d59661a",
+        "hash": "292674596",
         "path": "outstatic/content/news/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
       },
       "author": {
