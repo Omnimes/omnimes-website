@@ -1,11 +1,11 @@
 'use client';
 
-import {useParams} from 'next/navigation';
-import {ChangeEvent, useTransition} from 'react';
-import {useRouter, usePathname} from '../navigation';
-import { Select, SelectItem, Avatar, Spinner } from "@nextui-org/react";
+import { locales } from '../config';
+import { useParams } from 'next/navigation';
+import { useRouter, usePathname } from '../navigation';
+import { ChangeEvent, useTransition } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import {locales} from '../config';
+import { Select, SelectItem, Avatar, Spinner } from "@nextui-org/react";
 
 export default function LocaleSwitcher() {
   const t = useTranslations('LocaleSwitcher');

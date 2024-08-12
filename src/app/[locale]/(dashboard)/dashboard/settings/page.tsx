@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation"
-import { getCurrentUser } from "@/utils/session"
+import { getCurrentUser } from "@/actions/session";
 import { DashboardShell } from "@/components/dashboard/Shell"
 import { DashboardHeader } from "@/components/dashboard/Header"
 import { UserNameForm } from "@/components/forms/settings/UserNameForm"

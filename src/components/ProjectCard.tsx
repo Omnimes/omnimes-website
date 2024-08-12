@@ -1,8 +1,8 @@
-import { Image } from './atoms/Image'
+import { Image } from './ui/Image'
 import { CustomLink } from "./Link"
 import { Project } from "@/data/projects";
 import { useTranslations } from 'next-intl'
-export const Card = ({ title, description, imgSrc, href }: Project) => {
+export const ProjectCard = ({ title, description, imgSrc, href }: Project) => {
     const t = useTranslations('ProjectCard');
     return (
         <div className="max-w-full md:max-w-[544px] p-4 md:w-1/2">

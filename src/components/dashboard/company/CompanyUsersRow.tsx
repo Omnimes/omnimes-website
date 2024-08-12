@@ -1,9 +1,9 @@
 "use client"
 import { changeRoleInCompany, deleteUserCompany } from "@/actions/company";
-import { Button } from "@/components/atoms/Button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/atoms/Select";
-import { TableCell, TableRow } from "@/components/atoms/Table";
-import { toast } from "@/components/atoms/UseToast";
+import { Button } from "@/components/ui/Button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
+import { TableCell, TableRow } from "@/components/ui/Table";
+import { toast } from "@/components/ui/UseToast";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { LuLoader2, LuTrash2 } from "react-icons/lu";

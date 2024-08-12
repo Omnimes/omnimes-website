@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { FormSchemaSupport } from "@/utils/validations/support";
 import { useTranslations } from "next-intl";
-import { toast } from "@/components/atoms/UseToast";
+import { toast } from "@/components/ui/UseToast";
 import {
   Form,
   FormControl,
@@ -13,14 +13,14 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/atoms/Form";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/atoms/Select";
-import { Input } from "@/components/atoms/Input"
-import { Button } from "@/components/atoms/Button";
-import { buttonVariants } from "../../atoms/Button"
+} from "@/components/ui/Form";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
+import { Input } from "@/components/ui/Input"
+import { Button } from "@/components/ui/Button";
+import { buttonVariants } from "../../ui/Button"
 import { Loader2 } from "lucide-react"
 import { cn } from "@/utils/utils"
-import { Textarea } from "@/components/atoms/Textarea"
+import { Textarea } from "@/components/ui/Textarea"
 import { UserAccountNavProps } from "@/components/auth/UserAccountNavServer"
 import { sendSupportMail } from "@/actions/send-support-form"
 

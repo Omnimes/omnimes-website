@@ -1,6 +1,6 @@
 import { Link, Button } from '@nextui-org/react'
 import { useTranslations } from 'next-intl'
-import { AnchorIcon } from './atoms/Icons'
+import { AnchorIcon } from './ui/Icons'
 
 export const Hero = () => {
   const t = useTranslations('HeroSection')

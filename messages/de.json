@@ -879,7 +879,13 @@
     "deleteRequestBecameDeveloperSuccess": "Anfrage erfolgreich gelöscht.",
     "deleteRequestBecameDeveloperError": "Anfrage konnte nicht gelöscht werden, bitte versuchen Sie es später erneut.",
     "aproveRequestBecameDeveloperSuccess": "Neuer Entwickler erfolgreich hinzugefügt.",
-    "aproveRequestBecameDeveloperError": "Neuer Entwickler konnte nicht hinzugefügt werden, bitte versuchen Sie es später erneut."
+    "aproveRequestBecameDeveloperError": "Neuer Entwickler konnte nicht hinzugefügt werden, bitte versuchen Sie es später erneut.",
+    "descUsers": "Verwalten Sie Benutzer, ändern Sie deren Rollen oder entfernen Sie sie aus dem System.",
+    "allUsers": "Alle Benutzer",
+    "changeRoleSuccess": "Die Benutzerrolle wurde erfolgreich geändert.",
+    "changeRoleError": "Die Benutzerrolle konnte nicht geändert werden. Bitte versuchen Sie es später erneut.",
+    "deleteUserSuccess": "Der Benutzer wurde gelöscht.",
+    "deleteUserError": "Der Benutzer konnte nicht gelöscht werden. Bitte versuchen Sie es später erneut."
   },
   "OmniNews": {
     "small": "OmniNews",

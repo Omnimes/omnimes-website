@@ -1,8 +1,8 @@
 import { genPageMetadata } from '@/app/seo';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { BentoGrid, BentoGridItem } from "@/components/atoms/BentoGrid";
-// import { Skeleton } from '@/components/atoms/Skeleton';
+import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
+// import { Skeleton } from '@/components/ui/Skeleton';
 import { load } from 'outstatic/server';
 import { OstDocument } from 'outstatic';
 import Image from 'next/image';

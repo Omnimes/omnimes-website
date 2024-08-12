@@ -5,11 +5,11 @@ import { DashboardNav } from "@/components/dashboard/DashboardNav";
 import { MainNav } from "@/components/dashboard/MainNav";
 import { SiteFooter } from "@/components/dashboard/SiteFooter";
 import { getMainAdmin, getSubAdmin } from "@/lib/getSubNav";
-import { getCurrentUser } from "@/utils/session";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { ReactNode } from "react";
 import { Notification } from "@/components/Notification";
+import { getCurrentUser } from "@/actions/session";
 
 type DashboardLayoutProps = {
   children: ReactNode;

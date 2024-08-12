@@ -1,7 +1,6 @@
-import { DescriptionPrimary } from '@/components/atoms/Description'
-import { Heading } from '@/components/atoms/Heading'
-import { SubtitleNormal } from '@/components/atoms/Subtitle'
-import { AbstractBackgroundSecond } from '@/components/decorate/AbstractBackground'
+import { DescriptionPrimary } from '@/components/ui/Description'
+import { Heading } from '@/components/ui/Heading'
+import { SubtitleNormal } from '@/components/ui/Subtitle'
 import { Faq } from '@/components/Faq'
 import { useTranslations } from 'next-intl'
 
@@ -38,5 +37,14 @@ export default function FaqPage({ params: { locale } }: { params: { locale: stri
         <DescriptionPrimary text={t("desc")} />
         <Faq />
     </main>
+  )
+}
+
+const AbstractBackgroundSecond = () => {
+  return (
+    <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20 z-[-1]">
+        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-fuchsia-700"></div>
+        <div className="blur-[106px] h-32 bg-gradient-to-r from-fuchsia-700 dark:from-red-300 to-pink-200 dark:to-purple-400 "></div>
+    </div>
   )
 }

@@ -5,13 +5,13 @@ import { getLocalePrimaryDialects } from "@/data/locales";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { siteMetadata } from "@/data/siteMetadata";
-import { Widget } from '@/components/atoms/Widget';
+import { Widget } from '@/components/ui/Widget';
 import { useTranslations } from 'next-intl';
 import { NextUIProviders } from "@/components/providers/nextui-providers";
 import { ThemeProviders } from "@/components/providers/theme-providers";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Toaster } from "@/components/atoms/Toaster";
+import { Toaster } from "@/components/ui/Toaster";
 import { NextAuthProviders } from "@/components/providers/nextauth-providers";
 import { TailwindIndicator } from "@/components/TailwindIndicator";
 const space_grotesk = Space_Grotesk({

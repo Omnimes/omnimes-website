@@ -1,7 +1,7 @@
 'use client'
+import { Skeleton } from '@nextui-org/react';
 import React, { Suspense } from 'react';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
-import { Skeleton } from '@nextui-org/react';
 
 export default function ComponentSpline({ url }: { url: string }) {
   return (

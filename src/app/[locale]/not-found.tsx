@@ -1,4 +1,4 @@
-import { AnchorIcon } from '@/components/atoms/Icons';
+import { AnchorIcon } from '@/components/ui/Icons';
 import { Button, Link } from '@nextui-org/react';
 import {useTranslations} from 'next-intl';
 // Note that `app/[locale]/[...rest]/page.tsx`

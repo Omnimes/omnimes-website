@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Logo from '@/data/logo.svg'
-import { DescriptionSecondary } from './atoms/Description'
 import SectionContainer from './SectionContainer'
 import { useTranslations } from 'next-intl'
+import { DescriptionSecondary } from './ui/Description'
 export const Footer = () => {
   const t = useTranslations('Footer')
   const tl = useTranslations('HeaderLinks')

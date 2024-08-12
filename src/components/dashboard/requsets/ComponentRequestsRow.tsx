@@ -1,12 +1,12 @@
 "use client"
 import { aproveUserToCompany, deleteRequest } from '@/actions/company';
-import { Button } from '@/components/atoms/Button';
-import { TableCell, TableRow } from '@/components/atoms/Table';
+import { Button } from '@/components/ui/Button';
+import { TableCell, TableRow } from '@/components/ui/Table';
 import { useTranslations } from 'next-intl';
 import { LuCheck, LuLoader2, LuTrash2 } from 'react-icons/lu';
 import { CompanyRequest } from "./ComponentRequestsTable"
 import { useState } from 'react';
-import { toast } from '@/components/atoms/UseToast';
+import { toast } from '@/components/ui/UseToast';
 type status = 'aprove' | 'delete' | false;
 export function UserRow({ userProps }: { userProps: CompanyRequest }) {
     const t = useTranslations("dashboardTable");

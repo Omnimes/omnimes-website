@@ -9,7 +9,7 @@ import { Button, Input, Spinner } from "@nextui-org/react"
 import { LuGithub, LuMail } from "react-icons/lu";
 import { useState, HTMLAttributes } from "react"
 import { useTranslations } from "next-intl"
-import { toast } from "../atoms/UseToast"
+import { toast } from "../ui/UseToast"
 
 interface UserAuthFormProps extends HTMLAttributes<HTMLDivElement> {
   location: "login" | "register";

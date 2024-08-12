@@ -1,5 +1,6 @@
 "use server"
-import { db } from '@/utils/db'
+import { db } from '@/utils/db';
+
 type Props = {
     userId: string,
     userNameCreator: string,

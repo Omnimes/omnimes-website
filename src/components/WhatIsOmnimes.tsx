@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
-import { SubtitleNormal } from './atoms/Subtitle'
-import { Heading } from './atoms/Heading'
-import { DescriptionPrimary } from './atoms/Description'
+import { SubtitleNormal } from './ui/Subtitle'
+import { Heading } from './ui/Heading'
+import { DescriptionPrimary } from './ui/Description'
 
 export const WhatIsOmnimes = () => {
   const t = useTranslations('OmnimesInformation')

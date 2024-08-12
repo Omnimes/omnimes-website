@@ -1,5 +1,5 @@
 import { FormData } from "@/components/Form";
-export const sendEmail = async (data: FormData, locale: string) => {
+export const sendEmail = async (data: FormData) => {
     try {
         const res = await fetch(`/api/form`, {
             method: "POST",

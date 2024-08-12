@@ -1,5 +1,5 @@
 import { projectsData } from "@/data/projects";
-import { Card } from '@/components/Card';
+import { ProjectCard } from '@/components/ProjectCard';
 import { genPageMetadata } from '@/app/seo';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
@@ -39,7 +39,7 @@ export default function ProjectPage({ params: { locale } }: { params: { locale: 
       <section className="mx-auto max-w-5xl xl:max-w-5xl px-0 py-12">
       <div className="-m-4 flex flex-wrap">
         {projectsData.map((d) => (
-          <Card
+          <ProjectCard
             key={d.title}
             title={d.title}
             description={d.description}

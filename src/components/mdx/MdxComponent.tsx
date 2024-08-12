@@ -1,9 +1,9 @@
 "use client";
-import { getMDXComponent } from "mdx-bundler/client";
 import Image from "next/image";
-import { ImgHTMLAttributes, useMemo } from "react";
-import { CustomCode, Pre } from "./CustomCode";
 import CustomLink from "./CustomLink";
+import { CustomCode, Pre } from "./CustomCode";
+import { getMDXComponent } from "mdx-bundler/client";
+import { ImgHTMLAttributes, useMemo } from "react";
 
 const MDXComponentsMap = {
     a: CustomLink,

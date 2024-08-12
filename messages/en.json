@@ -879,7 +879,13 @@
     "deleteRequestBecameDeveloperSuccess": "Request successfully deleted.",
     "deleteRequestBecameDeveloperError": "Failed to delete the request, please try again later.",
     "aproveRequestBecameDeveloperSuccess": "Successfully added a new developer.",
-    "aproveRequestBecameDeveloperError": "Failed to add the new developer, please try again later."
+    "aproveRequestBecameDeveloperError": "Failed to add the new developer, please try again later.",
+    "descUsers": "Manage users, change their roles, or remove them from the system.",
+    "allUsers": "All users",
+    "changeRoleSuccess": "Successfully changed the user's role.",
+    "changeRoleError": "Failed to change the user's role. Please try again later.",
+    "deleteUserSuccess": "The user has been deleted.",
+    "deleteUserError": "Failed to delete the user. Please try again later."
   },
   "OmniNews": {
     "small": "OmniNews",

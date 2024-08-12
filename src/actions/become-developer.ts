@@ -59,11 +59,7 @@ export const createPromisesToBecomeDeveloper = async(userId: string) => {
     return { success: true, message: "successCreatePromiseToBecameDeveloper" }
   } catch (error) {
     console.log(error)
-    if (error instanceof Error) {
-      return { error: true, message: false }
-    } else {
-      return { error: true, message: "errorCreatePromiseToBecameDeveloper" }
-    }
+    return { error: true, message: "errorCreatePromiseToBecameDeveloper" }
   }
 }
 

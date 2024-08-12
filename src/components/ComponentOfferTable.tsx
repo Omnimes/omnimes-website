@@ -31,39 +31,3 @@ export const ComponentOfferTable = ({ columns,  rows, aria }: Props) => {
     </Table>
   )
 }
-
-// <TableRow key="0">
-//   <TableCell>Tony Reichert {base}</TableCell>
-//   <TableCell>CEO {currency}</TableCell>
-//   <TableCell>Active</TableCell>
-//   <TableCell>Active</TableCell>
-//   <TableCell>Active</TableCell>
-// </TableRow>
-// <TableRow key="1">
-//   <TableCell>Tony Reichert</TableCell>
-//   <TableCell>CEO</TableCell>
-//   <TableCell>CEO</TableCell>
-//   <TableCell>CEO</TableCell>
-//   <TableCell>Active</TableCell>
-// </TableRow>
-// <TableRow key="2">
-//   <TableCell>Zoey Lang</TableCell>
-//   <TableCell>Technical Lead</TableCell>
-//   <TableCell>Technical Lead</TableCell>
-//   <TableCell>Technical Lead</TableCell>
-//   <TableCell>Paused</TableCell>
-// </TableRow>
-// <TableRow key="3">
-//   <TableCell>Jane Fisher</TableCell>
-//   <TableCell>Senior Developer</TableCell>
-//   <TableCell>Senior Developer</TableCell>
-//   <TableCell>Senior Developer</TableCell>
-//   <TableCell>Active</TableCell>
-// </TableRow>
-// <TableRow key="4">
-//   <TableCell>William Howard</TableCell>
-//   <TableCell>Community Manager</TableCell>
-//   <TableCell>Community Manager</TableCell>
-//   <TableCell>Community Manager</TableCell>
-//   <TableCell>Vacation</TableCell>
-// </TableRow>

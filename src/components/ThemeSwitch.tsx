@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import {Skeleton} from "@nextui-org/react";
@@ -9,9 +8,7 @@ const ThemeSwitch = () => {
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
 
-  if (!mounted) {
-    return <Skeleton className="w-7 h-7 rounded"/>
-  }
+  if (!mounted) return <Skeleton className="w-7 h-7 rounded"/>
 
   return (
     <button

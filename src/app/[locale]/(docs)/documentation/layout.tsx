@@ -1,6 +1,6 @@
 import { docsConfig } from "@/data/docs"
 import { SiteFooter } from "@/components/dashboard/SiteFooter"
-import { getCurrentUser } from "@/utils/session"
+import { getCurrentUser } from "@/actions/session";
 import { unstable_setRequestLocale } from "next-intl/server"
 import { redirect } from "next/navigation"
 import ThemeSwitch from "@/components/ThemeSwitch"

@@ -1,13 +1,12 @@
-import { useLocale, useTranslations } from 'next-intl'
-import { CardAuthor } from './atoms/AuthorsCard'
 import { Company } from './Company'
-import { DescriptionPrimary } from './atoms/Description'
-import { Heading } from './atoms/Heading'
+import { Heading } from './ui/Heading'
 import { TeamsData } from "@/data/team";
+import { CardAuthor } from './ui/AuthorsCard'
+import { useTranslations } from 'next-intl'
+import { DescriptionPrimary } from './ui/Description'
 export const Team = () => {
   const t = useTranslations('Team');
   return (
-    <>
       <div className="mx-auto max-w-screen-xl py-8 text-center lg:py-16">
         <Company />
         <h6 className="pt-16 inline-flex  text-xl md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-gray-500 via-gray-700 to-gray-500  dark:from-slate-200/60 dark:via-slate-200 dark:to-slate-200/60 pb-4">
@@ -33,6 +32,5 @@ export const Team = () => {
           })}
         </div>
       </div>
-    </>
   )
 }

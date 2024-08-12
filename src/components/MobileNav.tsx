@@ -1,12 +1,12 @@
 import * as React from "react"
 import Link from "next/link"
-import { siteMetadata } from "@/data/siteMetadata"
-import { cn } from "@/utils/utils"
-import { useLockBody } from "@/hooks/useLockBody"
-import Logo from "@/data/logo.svg";
 import Image from "next/image"
+import Logo from "@/data/logo.svg";
+import { cn } from "@/utils/utils"
+import { Separator } from "./ui/Separator"
+import { useLockBody } from "@/hooks/useLockBody"
+import { siteMetadata } from "@/data/siteMetadata"
 import { useTranslations } from "next-intl"
-import { Separator } from "./atoms/Separator"
 
 interface MobileNavProps {
   items: MainNavItem[] & SidebarNavItem[] | undefined;

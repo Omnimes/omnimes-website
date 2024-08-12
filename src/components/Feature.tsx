@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import { FeatureCard } from './atoms/FeatureCard'
+import { FeatureCard } from './ui/FeatureCard'
 import {
   AnalyseIcon,
   CreatorIcon,
@@ -8,11 +8,10 @@ import {
   PulpitsIcon,
   RaportsIcon,
   ScheduleIcon,
-} from './atoms/Icons'
-import { SubtitleNormal } from './atoms/Subtitle'
-import { Heading } from './atoms/Heading'
-import { DescriptionPrimary } from './atoms/Description'
-import { Dots } from './decorate/Dots'
+} from './ui/Icons'
+import { SubtitleNormal } from './ui/Subtitle'
+import { Heading } from './ui/Heading'
+import { DescriptionPrimary } from './ui/Description'
 
 export const Feature = () => {
   const t = useTranslations('Feature')
@@ -23,7 +22,20 @@ export const Feature = () => {
       <div className="mb-10 lg:mx-auto md:mb-12 md:text-center">
         <SubtitleNormal text={t('Feature')} />
         <Heading text={t('title')}>
-          <Dots />
+        <span className="relative inline-block">
+        <svg
+          viewBox="0 0 52 24"
+          fill="currentColor"
+          className="text-blue-gray-100 absolute left-0 top-0 z-0 -ml-20 -mt-8 w-32 text-primary-500 sm:block lg:-ml-28 lg:-mt-10 lg:w-32"
+        >
+          <defs>
+            <pattern id="07690130-d013-42bc-83f4-90de7ac68f76" x="0" y="0" width=".135" height=".30">
+              <circle cx="1" cy="1" r=".7" />
+            </pattern>
+          </defs>
+          <rect fill="url(#07690130-d013-42bc-83f4-90de7ac68f76)" width="52" height="24" />
+        </svg>
+      </span>
         </Heading>
         <DescriptionPrimary text={t('desc')} />
       </div>

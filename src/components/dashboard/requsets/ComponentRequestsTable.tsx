@@ -1,5 +1,5 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/atoms/Card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import {
     TableHead,
     TableRow,
@@ -7,7 +7,7 @@ import {
     TableCell,
     TableBody,
     Table
-} from '@/components/atoms/Table';
+} from '@/components/ui/Table';
 import { useTranslations } from 'next-intl';
 import { UserRow } from './ComponentRequestsRow';
 

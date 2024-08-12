@@ -879,7 +879,13 @@
     "deleteRequestBecameDeveloperSuccess": "Pomyślnie usunięto prośbę.",    
     "deleteRequestBecameDeveloperError": "Nie udało się usunąć prośby, spróbuj ponownie później.",
     "aproveRequestBecameDeveloperSuccess": "Pomyślnie dodano nowego developera.",
-    "aproveRequestBecameDeveloperError": "Nie udało się dodać nowego developera, spróbuj później."
+    "aproveRequestBecameDeveloperError": "Nie udało się dodać nowego developera, spróbuj później.",
+    "descUsers": "Zarządzaj użytkownikami, zmieniaj ich role lub usuń ich z systemu.",
+    "allUsers": "Wszystkich użytkowników",
+    "changeRoleSuccess": "Udało się zmienić rolę użytkownika.",
+    "changeRoleError": "Nie udało się zmienić roli użytkownika. Spróbuj ponownie później.",
+    "deleteUserSuccess": "Użytkownik został usunięty.",
+    "deleteUserError": "Nie udało się usunąć użytkowania. Spróbuj ponownie później."
   },
   "OmniNews": {
     "small": "OmniNews",

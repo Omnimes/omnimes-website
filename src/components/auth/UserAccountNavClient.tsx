@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/atoms/DropdownMenu"
+} from "@/components/ui/DropdownMenu"
 import { Skeleton } from "@nextui-org/react";
 import { useTranslations } from "next-intl"
 import { UserAvatar } from "../UserAvatar"

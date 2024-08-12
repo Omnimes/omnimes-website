@@ -1,12 +1,12 @@
 "use client"
 
-import { newVerification } from "@/actions/new-verification";
 import { useRouter, useSearchParams } from "next/navigation"
 import { useEffect, useState, useCallback } from "react"
-import { Alert, AlertDescription, AlertTitle } from "../atoms/Alerts";
+import { Alert, AlertDescription, AlertTitle } from "../ui/Alerts";
 import { LuTerminal, LuCircleEllipsis, LuAlertCircle } from "react-icons/lu";
 import { useTranslations } from "next-intl";
 import { revalidatePath } from 'next/cache';
+import { newVerification } from "@/actions/verification";
 
 export const UserVerifyEmail = () => {
     const [error, setError] = useState<string | undefined>(undefined);

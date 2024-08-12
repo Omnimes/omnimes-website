@@ -1,7 +1,7 @@
-import { DescriptionPrimary } from './atoms/Description'
-import { Heading } from './atoms/Heading'
-import { SubtitleNormal } from './atoms/Subtitle'
-import { TimelineItem } from './atoms/TimelineItem'
+import { DescriptionPrimary } from './ui/Description'
+import { Heading } from './ui/Heading'
+import { SubtitleNormal } from './ui/Subtitle'
+import { TimelineItem } from './ui/TimelineItem'
 import { useTranslations } from 'next-intl'
 
 export const Timeline = () => {
@@ -11,7 +11,6 @@ export const Timeline = () => {
       <SubtitleNormal text={t('text')} />
       <Heading text={t('textHeading')} />
       <DescriptionPrimary text={t('textDesc')} />
-      {/* Ilość przetłumaczonych kroków */}
       {[1, 2, 3, 4, 5].map((_, index) => {
         return (
           <TimelineItem

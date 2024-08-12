@@ -9,7 +9,8 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-  } from "@/components/atoms/Select"
+  } from "@/components/ui/Select"
+import { LuLoader2 } from 'react-icons/lu';
 
 export function SearchRole(props: { value?: string }) {
   const router = useRouter();
@@ -37,9 +38,14 @@ export function SearchRole(props: { value?: string }) {
 
   return (
     <div className="relative">
-        <Select onValueChange={(e) => {setValue(e)}}>
+        <Select disabled={isPending} onValueChange={(e) => {setValue(e)}} defaultValue={t('all')}>
             <SelectTrigger className="w-[180px] h-9">
-                <SelectValue placeholder={t("placeholderRole")} />
+              <SelectValue placeholder={t("placeholderRole")}>
+                <span className="flex gap-2 items-center">
+                  {isPending && <LuLoader2 className="animate-spin" />}
+                  {t(value ?? 'all')}
+                </span>
+              </SelectValue>
             </SelectTrigger>
             <SelectContent>
                 <SelectItem value="all">{t("all")}</SelectItem>
@@ -48,7 +54,6 @@ export function SearchRole(props: { value?: string }) {
                 <SelectItem value="user">{t("user")}</SelectItem>
             </SelectContent>
         </Select>
-      {/* {isPending && <Spinner />} */}
     </div>
   );
 }

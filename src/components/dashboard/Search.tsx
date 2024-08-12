@@ -1,11 +1,10 @@
 'use client';
 
-import { Input } from '@/components/atoms/Input';
-import { Spinner } from '@nextui-org/react';
+import { Input } from '@/components/ui/Input';
 import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTransition, useEffect, useRef, useState } from 'react';
-import { LuSearch } from 'react-icons/lu';
+import { LuLoader2, LuSearch } from 'react-icons/lu';
 
 export function Search(props: { value?: string }) {
   const router = useRouter();
@@ -45,7 +44,7 @@ export function Search(props: { value?: string }) {
         className="w-full shadow-none appearance-none pl-8"
         placeholder={t("searchUsers")}
       />
-      {/* {isPending && <Spinner />} */}
+      {isPending && <LuLoader2 className="animate-spin absolute top-2.5 right-2.5" />}
     </div>
   );
 }

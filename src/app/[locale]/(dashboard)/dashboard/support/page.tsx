@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/utils/session";
+import { getCurrentUser } from "@/actions/session";
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { genPageMetadata } from '@/app/seo';

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/utils/utils'
 import { useLocale, useTranslations } from 'next-intl'
-import { Separator } from '../atoms/Separator'
+import { Separator } from '../ui/Separator'
 import { LuBadgeInfo, LuCreditCard, LuFileCog2, LuFileVideo2, LuLayoutDashboard, LuLayoutGrid, LuPencilLine, LuSettings, LuSparkles, LuTv2, LuUser, LuUsers2, LuVideo, LuVote } from 'react-icons/lu'
 interface DashboardNavProps {
   items: SidebarNavItem[]

@@ -12,7 +12,7 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import { LastUpdates } from '@/components/LastUpdates';
 import { OstDocument } from "outstatic";
 import { load } from "outstatic/server";
-import { Skeleton } from '@/components/atoms/Skeleton';
+import { Skeleton } from '@/components/ui/Skeleton';
 import { Suspense } from 'react';
 
 async function getData(locale: string) {

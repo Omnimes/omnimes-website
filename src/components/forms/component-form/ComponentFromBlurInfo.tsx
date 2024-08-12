@@ -1,6 +1,6 @@
 import { sendResetRequestDeveloper } from "@/actions/become-developer";
-import { Button } from "@/components/atoms/Button";
-import { toast } from "@/components/atoms/UseToast";
+import { Button } from "@/components/ui/Button";
+import { toast } from "@/components/ui/UseToast";
 import { CustomLink } from "@/components/Link";
 import { useTranslations } from "next-intl";
 

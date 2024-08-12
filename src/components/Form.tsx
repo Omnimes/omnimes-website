@@ -16,8 +16,8 @@ import { useWindowSize } from 'usehooks-ts'
 import { LuMail, LuUser, LuUsers, LuBuilding, LuPhone } from 'react-icons/lu'
 import { FormEvent, useCallback, useMemo, useState } from 'react'
 import { sendEmail } from '@/utils/sendEmail'
-import { DangerAlert, SuccessAlert } from './atoms/Alerts'
-import { useParams } from 'next/navigation'
+import { DangerAlert, SuccessAlert } from './ui/Alerts'
+
 export type FormData = {
   name: string
   lastName: string
@@ -30,8 +30,6 @@ export type FormData = {
 
 export const Form = () => {
   const t = useTranslations('Form');
-  const params = useParams();
-  const lang = params?.locale as string;
   const { width = 0 } = useWindowSize();
   const [isPending, setIsPending] = useState<boolean>(false);
   const [validPrivacy, setValidPrivacy] = useState<boolean>(false);
@@ -101,12 +99,10 @@ export const Form = () => {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Akceptacja polityki prywatności
     if (privacyConsent !== true) {
       setValidPrivacy(true)
       return
     }
-    // VALIDACJA PRZED WYSYŁKĄ 
     if (isInvalidName || isInvalidLastName || isInvalidCompany || isInvalidEmail || isInvalidNumber || isInvalidMessage) {
       setAlert(true)
       return
@@ -114,7 +110,7 @@ export const Form = () => {
 
     setIsPending(true);
 
-    const response = await sendEmail(formValues, lang);
+    const response = await sendEmail(formValues);
     if (response) {
       setResponseMessage({
         message: response.message,

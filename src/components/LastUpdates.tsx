@@ -1,12 +1,12 @@
 import { OstDocument } from "outstatic";
-import { DescriptionPrimary } from "./atoms/Description";
-import { Heading } from "./atoms/Heading";
-import { SubtitleNormal } from "./atoms/Subtitle";
-import { BentoGrid, BentoGridItem } from "./atoms/BentoGrid";
+import { DescriptionPrimary } from "./ui/Description";
+import { Heading } from "./ui/Heading";
+import { SubtitleNormal } from "./ui/Subtitle";
+import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Alert, AlertDescription, AlertTitle } from "./atoms/Alerts";
+import { Alert, AlertDescription, AlertTitle } from "./ui/Alerts";
 import { LuNewspaper } from "react-icons/lu";
 export const LastUpdates = ({ allNews, allPosts, locale }: { allNews: OstDocument[], allPosts: OstDocument[], locale: string }) => {
     const t = useTranslations("OmniNews");

@@ -1,6 +1,6 @@
 import { DashboardShell } from "@/components/dashboard/Shell"
 import { CardSkeleton } from "@/components/dashboard/CardSkeleton"
-import { Skeleton } from "@/components/atoms/Skeleton"
+import { Skeleton } from "@/components/ui/Skeleton"
 
 export default function DashboardSettingsLoading() {
   return (

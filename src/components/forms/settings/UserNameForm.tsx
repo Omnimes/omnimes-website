@@ -9,11 +9,11 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { userNameSchema } from "@/utils/validations/user"
 import { useTranslations } from "next-intl"
 import { changeName } from "@/actions/user"
-import { toast } from "@/components/atoms/UseToast"
-import { Label } from "@/components/atoms/Label"
-import { Input } from "@/components/atoms/Input"
-import { buttonVariants } from "@/components/atoms/Button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/atoms/Card"
+import { toast } from "@/components/ui/UseToast"
+import { Label } from "@/components/ui/Label"
+import { Input } from "@/components/ui/Input"
+import { Button, buttonVariants } from "@/components/ui/Button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/Card"
 
 interface UserNameFormProps extends React.HTMLAttributes<HTMLFormElement> {
   user: Pick<User, "id" | "name">
@@ -80,7 +80,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
           </div>
         </CardContent>
         <CardFooter>
-          <button
+          <Button
             type="submit"
             aria-label={t("save")}
             aria-labelledby={t("save")}
@@ -88,11 +88,9 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
             className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
             disabled={isSaving}
           >
-            {isSaving && (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            )}
+            {isSaving && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
             <span>{t("save")}</span>
-          </button>
+          </Button>
         </CardFooter>
       </Card>
     </form>

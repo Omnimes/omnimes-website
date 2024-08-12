@@ -1,4 +1,4 @@
-import { Skeleton } from "../atoms/Skeleton"
+import { Skeleton } from "../ui/Skeleton"
 
 interface DashboardHeaderProps {
     heading: string

@@ -2,11 +2,11 @@
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { useLocale } from 'next-intl'
-import { VideoPlayIcon } from './atoms/Icons'
+import { VideoPlayIcon } from './ui/Icons'
 import { Skeleton } from '@nextui-org/react'
 import { Suspense, useEffect, useRef } from 'react'
 import { useTheme } from 'next-themes'
-import { Subtitle } from './atoms/Subtitle'
+import { Subtitle } from './ui/Subtitle'
 import { useTranslations } from 'next-intl'
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false })
 

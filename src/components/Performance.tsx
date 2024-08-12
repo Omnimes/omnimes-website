@@ -1,9 +1,9 @@
-import { ComponentVideo } from './atoms/ComponentVideo'
-import { DescriptionPrimary, DescriptionSecondary } from './atoms/Description'
-import { Heading, HeadingCard } from './atoms/Heading'
-import { SubtitleNormal, Subtitle } from './atoms/Subtitle'
 import Image from 'next/image'
+import { ComponentVideo } from './ui/ComponentVideo'
 import { useTranslations } from 'next-intl'
+import { Heading, HeadingCard } from './ui/Heading'
+import { SubtitleNormal, Subtitle } from './ui/Subtitle'
+import { DescriptionPrimary, DescriptionSecondary } from './ui/Description'
 export const Performance = () => {
   const t = useTranslations('Performance')
   return (

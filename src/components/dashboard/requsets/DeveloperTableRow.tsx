@@ -1,12 +1,12 @@
 "use client"
-import { Button } from "@/components/atoms/Button";
-import { TableCell, TableRow } from "@/components/atoms/Table";
+import { Button } from "@/components/ui/Button";
+import { TableCell, TableRow } from "@/components/ui/Table";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { LuCheck, LuLoader2, LuTrash2 } from "react-icons/lu";
 import { deleteRequest } from '@/actions/become-developer';
 import { aproveRequestDeveloper, RoleRequest } from '@/actions/become-developer';
-import { toast } from "@/components/atoms/UseToast";
+import { toast } from "@/components/ui/UseToast";
 
 type status = 'aprove' | 'delete' | false;
 export function DeveloperTableRow({ req }: { req: RoleRequest }) {

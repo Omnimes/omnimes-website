@@ -178,14 +178,6 @@ export const HeroImage = () => {
             }}
           />
         </linearGradient>
-        {/* <symbol id="preact-logo" viewBox="0 0 23 20.46348">
-          <svg viewBox="-256 -256 512 512">
-            <path d="M0,-256 221.7025033688164,-128 221.7025033688164,128 0,256 -221.7025033688164,128 -221.7025033688164,-128z" fill="#673ab8" stroke="white" strokeWidth="4px" />
-            <ellipse cx="0" cy="0" rx="75px" ry="196px" transform="rotate(52)" fill="none" stroke="white" strokeWidth="16px" />
-            <ellipse cx="0" cy="0" rx="75px" ry="196px" transform="rotate(-52)" fill="none" stroke="white" strokeWidth="16px" />
-            <circle cx="0" cy="0" r="34" fill="white" />
-          </svg>
-        </symbol> */}
         <linearGradient id="#mask-gradient">
           <stop offset="0" stopColor="black" />
           <stop offset="1" stopColor="white" />

@@ -2,7 +2,7 @@ import { getAllRequests, RoleRequest } from '@/actions/become-developer';
 import { genPageMetadata } from '@/app/seo';
 import { DeveloperTable } from '@/components/dashboard/requsets/DeveloperTable';
 import { getLocalePrimaryDialects } from '@/data/locales';
-import { getCurrentUser } from '@/utils/session';
+import { getCurrentUser } from "@/actions/session";
 import { cn } from '@/utils/utils';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';

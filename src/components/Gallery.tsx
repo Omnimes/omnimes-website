@@ -8,8 +8,8 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from "react";
 import { importAll } from "@/lib/importImage";
 import { sortImagesByDate } from "@/utils/utils";
-import { SubtitleNormal } from "./atoms/Subtitle";
-import { ImagesSlider } from "./atoms/ImagesSlider";
+import { SubtitleNormal } from "./ui/Subtitle";
+import { ImagesSlider } from "./ui/ImagesSlider";
 import { Spinner } from "@nextui-org/react";
 export const GalleryMES = () => {
     const [index, setIndex] = useState(-1);

@@ -1,23 +1,19 @@
 "use client"
-import { useEffect, useState } from "react"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/atoms/Popover"
-import { HiOutlineBellAlert } from "react-icons/hi2";
-import { useSession } from "next-auth/react";
-import { MyUser } from "./auth/UserAccountNavClient";
-import { Skeleton } from "./atoms/Skeleton";
-import { getNotifications, markAsRead, markAsReadAllNotification, deleteAllNotificationOfUser } from "@/actions/notification";
 import { cn } from "@/utils/utils";
-import { useTimeAgo } from 'next-timeago';
-import { Separator } from "./atoms/Separator";
-import { Button } from "./atoms/Button";
-import { LuCheck, LuTrash2 } from "react-icons/lu";
-import { ScrollArea } from "./atoms/ScrollArea";
+import { useEffect, useState } from "react"
+import { Button } from "./ui/Button";
+import { MyUser } from "./auth/UserAccountNavClient";
 import { Loader2 } from "lucide-react"
+import { Skeleton } from "./ui/Skeleton";
+import { Separator } from "./ui/Separator";
+import { useTimeAgo } from 'next-timeago';
+import { useSession } from "next-auth/react";
+import { ScrollArea } from "./ui/ScrollArea";
+import { LuCheck, LuTrash2 } from "react-icons/lu";
+import { HiOutlineBellAlert } from "react-icons/hi2";
 import { useLocale, useTranslations } from "next-intl";
+import { Popover, PopoverContent, PopoverTrigger, } from "@/components/ui/Popover"
+import { getNotifications, markAsRead, markAsReadAllNotification, deleteAllNotificationOfUser } from "@/actions/notification";
 
 type DataNotification = {
   id: string;

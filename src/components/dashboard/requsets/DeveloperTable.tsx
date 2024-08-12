@@ -5,11 +5,11 @@ import {
     TableCell,
     TableBody,
     Table
-} from '@/components/atoms/Table';
+} from '@/components/ui/Table';
 import { useTranslations } from 'next-intl';
 import { RoleRequest } from '@/actions/become-developer';
 import { DeveloperTableRow } from './DeveloperTableRow';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/atoms/Card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 
 export function DeveloperTable({
     requests,

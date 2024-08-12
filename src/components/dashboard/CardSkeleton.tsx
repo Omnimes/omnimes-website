@@ -1,5 +1,5 @@
-import { Card, CardContent, CardFooter, CardHeader } from "../atoms/Card"
-import { Skeleton } from "../atoms/Skeleton"
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/Card"
+import { Skeleton } from "../ui/Skeleton"
 
 export function CardSkeleton() {
   return (

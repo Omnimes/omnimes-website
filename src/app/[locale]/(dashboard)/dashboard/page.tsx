@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { genPageMetadata } from '@/app/seo';
 import { getAllUsersFromComapny, getCompanyUser, GetIsAdminCompany, getRequestsForAdmin } from '@/actions/company';
-import { getCurrentUser } from '@/utils/session';
+import { getCurrentUser } from "@/actions/session";
 import { redirect } from 'next/navigation';
 import { ComponentRequests } from '@/components/dashboard/requsets/ComponentRequestsTable';
 import { ComponentCompany } from '@/components/dashboard/company/ComponentCompany';
