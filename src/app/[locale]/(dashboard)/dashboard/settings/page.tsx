@@ -26,7 +26,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 export default async function SettingsPage({ params: { locale } }: { params: { locale: string } }) {
   const user = await getCurrentUser();
-  if (!user) { redirect("/login") }
+  if (!user) redirect("/login")
 
   unstable_setRequestLocale(locale);
   const t = await getTranslations("SettingsPage");
@@ -41,11 +41,11 @@ export default async function SettingsPage({ params: { locale } }: { params: { l
         <UserNameForm user={{ id: user.id, name: user.name || "" }} />
       </div>
       <div id="company" className="grid gap-10">
-        <CompanyForm 
-          user={{ id: user.id }} 
+        <CompanyForm
+          user={{ id: user.id }}
           isAdminCompany={isAdmin}
-          belongCompany={belongCompany} 
-          company={company} 
+          belongCompany={belongCompany}
+          company={company}
           requestCompany={requestCompany}
         />
       </div>

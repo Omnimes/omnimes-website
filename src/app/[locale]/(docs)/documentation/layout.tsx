@@ -18,10 +18,8 @@ export default async function DocsLayout({ children, params: { locale } }: DocsL
   unstable_setRequestLocale(locale);
 
   const user = await getCurrentUser();
+  if (!user) redirect("/login")
 
-  if (!user) {
-    redirect("/login")
-  }
   return (
     <div className="flex min-h-screen flex-col">
       <header className="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none inset-x-0 border-b !border-border backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70 navbar sticky top-0 xl:px-0">
@@ -43,9 +41,7 @@ export default async function DocsLayout({ children, params: { locale } }: DocsL
           </section>
         </div>
       </header>
-      <div className="container mx-auto px-8 w-full flex-1">
-        {children}
-      </div>
+      <div className="container mx-auto px-8 w-full flex-1">{children}</div>
       <SiteFooter className="border-t !border-border w-full flex justify-center" />
     </div>
   )

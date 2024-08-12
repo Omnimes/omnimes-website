@@ -19,18 +19,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 
 export default async function SupportPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
   const user = await getCurrentUser();
-  const t = await getTranslations("SupportPage");
+  if (!user) redirect("/login")
 
-  if (!user) {
-    redirect("/login")
-  }
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations("SupportPage");
 
   return (
     <DashboardShell>

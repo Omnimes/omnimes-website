@@ -14,8 +14,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 export default function GalleryPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);

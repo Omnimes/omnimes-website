@@ -1,12 +1,12 @@
-import { genPageMetadata } from '@/app/seo'
-import { getLocalePrimaryDialects } from '@/data/locales'
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/data/logo.svg'
 import { LuMoveLeft  } from 'react-icons/lu'
-import { useTranslations } from 'next-intl'
 import { UserAuthForm } from '@/components/auth/UserAuthForm'
+import { genPageMetadata } from '@/app/seo'
+import { useTranslations } from 'next-intl'
+import { getLocalePrimaryDialects } from '@/data/locales'
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'Login' })
   const title = t('title')
@@ -19,14 +19,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 
 export default function LoginPage({ params: { locale } }: { params: { locale: string } }) {
-  // Enable static rendering
   unstable_setRequestLocale(locale);
-  const t = useTranslations("LoginPage")
+  const t = useTranslations("LoginPage");
+
   return (
     <div className="h-screen flex w-full flex-col items-center md:justify-center py-16 md:py-0 px-4">
       <Link

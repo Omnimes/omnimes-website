@@ -19,14 +19,12 @@ export default async function DashboardLayout({ children, params: { locale }}: D
   unstable_setRequestLocale(locale);
   const user = await getCurrentUser();
 
-  if (!user) {
-    redirect("/login")
-  }
+  if (!user) redirect("/login")
 
   const mainNav = getMainNav(user.role);
   const subNav = getSubNav(user.role);
-
   const mobileNav = [...mainNav, ...subNav];
+
   return (
     <div className="flex min-h-screen flex-col space-y-6">
       <header className="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none inset-x-0 border-b !border-border backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70 navbar sticky top-0 xl:px-0">

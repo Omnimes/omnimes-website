@@ -22,21 +22,21 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 
-export default async function DashboardPage({params: { locale }}: {params: { locale: string }}) {
+export default async function DashboardPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const user = await getCurrentUser();
-  if (!user) redirect("/login")
-  const {status, data} = await getCompanyUser(user.id);
+  if (!user) redirect("/login");
+  
+  const { status, data } = await getCompanyUser(user.id);
   const isAdminCompany = await GetIsAdminCompany(user.id);
 
-  if(!isAdminCompany.isAdmin) {
+  if (!isAdminCompany.isAdmin) {
     return (
       <div className={"grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"}>
-        <ComponentCompany    
+        <ComponentCompany
           status={status}
           data={data}
         />
@@ -44,19 +44,19 @@ export default async function DashboardPage({params: { locale }}: {params: { loc
     )
   }
 
-  const CompanyRequset = async() => {
-    if(isAdminCompany.user?.adminCompanyId) {
+  const CompanyRequset = async () => {
+    if (isAdminCompany.user?.adminCompanyId) {
       const requests = await getRequestsForAdmin(isAdminCompany.user?.adminCompanyId);
       return <ComponentRequests requests={requests} />
     }
   }
 
-  const CompanyUsers = async() => {
-    if(isAdminCompany.user?.adminCompanyId) {
+  const CompanyUsers = async () => {
+    if (isAdminCompany.user?.adminCompanyId) {
       const allUsersComapny = await getAllUsersFromComapny(data?.id ?? "");
       return <CompanyUsersTable
-              allUsersComapny={allUsersComapny}
-            />
+        allUsersComapny={allUsersComapny}
+      />
     }
   }
 
@@ -67,9 +67,9 @@ export default async function DashboardPage({params: { locale }}: {params: { loc
         <CompanyUsers />
       </div>
       <div className="grid grid-cols-1 auto-rows-max gap-4 xl:gap-8">
-        <ComponentCompany    
+        <ComponentCompany
           status={status}
-          data={data}  
+          data={data}
         />
       </div>
     </div>

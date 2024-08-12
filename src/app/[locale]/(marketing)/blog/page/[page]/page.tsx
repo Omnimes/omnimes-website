@@ -23,9 +23,7 @@ export async function generateMetadata({ params: { locale } }: Props) {
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-
-  return meta
+  return genPageMetadata(obj)
 }
 
 export const generateStaticParams = async ({ params: { locale } }: Props) => {
@@ -67,18 +65,13 @@ async function getData(locale: string, page: string) {
   }
 }
 
-export default async function BlogPagePage({ params }: { params: { page: string; locale: string } }) {
+export default async function BlogPagePage({ params }: Props) {
   unstable_setRequestLocale(params.locale)
   const t = await getTranslations('Blog')
-   const { allPosts, postsLength } = await getData(params.locale, params.page);
-  if (!allPosts || allPosts.length == 0 || allPosts === undefined) {
-    return (
-            <p className="mt-10 text-center">
-              {t('NotFound')}
-            </p>
-          )
-  }
+  const { allPosts, postsLength } = await getData(params.locale, params.page);
 
+  if (!allPosts || allPosts.length == 0 || allPosts === undefined) return <p className="mt-10 text-center">{t('NotFound')}</p>
+  
   const pageNumber = parseInt(params.page as string)
 
   const pagination = {

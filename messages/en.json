@@ -855,6 +855,11 @@
     "desc": "Manage Omnimes system users.",
     "keywords": "Users, OmniMES, Administration Panel, Permissions"
   },
+  "AdminDashboardMeta": {
+  "title": "Admin Dashboard - Admin Management Panel",
+  "desc": "Manage the OmniMes system",
+  "keywords": "Panel, Admin Panel, admin, omnimes"
+},
   "AdminUsers": {
     "users": "Users",
     "searchUsers": "Search for a user...",

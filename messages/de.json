@@ -850,6 +850,11 @@
     "userNotFound": "Benutzer nicht gefunden",
     "emailVerified": "E-Mail-Adresse bestätigt"
   },
+  "AdminDashboardMeta": {
+  "title": "Admin-Dashboard - Verwaltungs-Panel des Admins",
+  "desc": "Verwalten Sie das OmniMes-System",
+  "keywords": "Panel, Admin-Panel, admin, omnimes"
+},
   "AdminUsersMeta": {
     "title": "Omnimes - Benutzer",
     "desc": "Verwalten Sie Benutzer des Omnimes-Systems.",

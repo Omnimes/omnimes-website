@@ -47,11 +47,7 @@ async function getData(locale: string) {
   }
 }
 
-export default async function Home(
-  {params: { locale }}: 
-  {
-    params: { locale: string },
-}) {
+export default async function Home({params: { locale }}: {params: { locale: string }}) {
   unstable_setRequestLocale(locale);
   const {allNews, allPosts} = await getData(locale);
   return (

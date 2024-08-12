@@ -26,15 +26,10 @@ export async function generateMetadata({ params: { locale, tag } }: Props): Prom
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 
-export const generateStaticParams = async ({
-  params: { locale },
-}: {
-  params: { locale: string }
-}) => {
+export const generateStaticParams = async ({ params: { locale }}: { params: { locale: string }}) => {
   let tags = await getDataTags(locale) as { value: string, label: string, count: number }[];
   if (!tags) return []
 

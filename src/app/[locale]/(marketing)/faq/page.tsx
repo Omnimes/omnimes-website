@@ -3,7 +3,6 @@ import { Heading } from '@/components/ui/Heading'
 import { SubtitleNormal } from '@/components/ui/Subtitle'
 import { Faq } from '@/components/Faq'
 import { useTranslations } from 'next-intl'
-
 import { genPageMetadata } from '@/app/seo';
 import { getLocalePrimaryDialects } from '@/data/locales';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
@@ -20,12 +19,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 
 export default function FaqPage({ params: { locale } }: { params: { locale: string } }) {
-  // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = useTranslations("FAQ")
   

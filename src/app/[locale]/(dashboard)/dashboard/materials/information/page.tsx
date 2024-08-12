@@ -15,8 +15,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 
 export default function BillingPage({params: { locale }}: {params: { locale: string }}) {

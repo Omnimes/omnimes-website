@@ -20,13 +20,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 
 export default function RegisterPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const t = useTranslations("RegisterPage")
+  const t = useTranslations("RegisterPage");
+  
   return (
     <div className="grid h-screen w-screen flex-col py-16 md:py-0 md:items-center justify-center lg:max-w-none lg:grid-cols-2 px-4 lg:px-0">
       <Link

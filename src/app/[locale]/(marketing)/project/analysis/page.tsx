@@ -16,11 +16,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-  return meta
+  return genPageMetadata(obj)
 }
 export default function AnalysisPage({ params: { locale } }: { params: { locale: string } }) {
-  // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = useTranslations("AnalysisPage");
   const localPath = locale == 'pl' ? 'pl' : 'en';
