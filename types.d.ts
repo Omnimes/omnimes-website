@@ -66,3 +66,5 @@ declare module 'rehype-citation' {
   const rehypeCitation: any;
   export default rehypeCitation;
 }
+
+declare module 'node-regon';

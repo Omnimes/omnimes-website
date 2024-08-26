@@ -16,6 +16,8 @@ import { cn, getInputType } from "@/utils/utils"
 import { companySchema } from "@/utils/validations/company"
 import { createCompany, createPromisesToCompany, getCompany, sendResetRequest, updateCompany } from "@/actions/company"
 import { useDebouncedCallback } from 'use-debounce';
+import axios from "axios";
+
 type FormData = z.infer<typeof companySchema>
 
 interface Props {
@@ -104,6 +106,7 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
   }
 
   const checkCompany = useDebouncedCallback(async (nip: string) => {
+
     const response = await getCompany(nip);
 
     if (response.success && response.company) {

@@ -378,13 +378,23 @@ export const deleteUserCompany = async(user: UserCompany) => {
       },
     });
 
-    // usun prośbę o zostanie developerem jeśli istnieje 
-    await db.roleRequest.delete({
-      where: {
-        userId: user.id,
-      },
-    })
 
+       // Sprawdzenie, czy istnieje roleRequest
+       const existingRoleRequest = await db.roleRequest.findFirst({
+        where: {
+          userId: user.id,
+        },
+      });
+  
+      // Jeśli istnieje roleRequest, usuń go
+      if (existingRoleRequest) {
+        await db.roleRequest.delete({
+          where: {
+            userId: user.id,
+          },
+        });
+      }
+  
     revalidatePath('/dashboard');
     return {success: true, message: "msgSuccessDeleteUserFromCompany" }
   } catch(error) {
