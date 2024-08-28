@@ -324,7 +324,7 @@
     "desc": "Discover the innovative OmniMES system that revolutionizes production process management. Utilize advanced features, interactive data analysis tools, and flexible configurations to optimize efficiency and control in production. With OmniMES, you can quickly adapt to changes, streamline processes, and achieve excellent business results.",
     "keywords": "OmniMES System, Production Management, Process Optimization, Data Analysis Tools, Flexible Configuration, Production Efficiency, Process Control, Innovative Solutions, Effective Management, Excellent Business Results",
     "howMany": "Number of machines",
-    "machineDesc": "From {machine} pieces",
+    "machineDesc": "From {startMachine} to {machine} pieces",
     "message": "{count, plural, =3 {months} =6 {months} other {months}}",
     "perMachine": "per machine",
     "aria": "Monthly subscription for machine monitoring - price list.",

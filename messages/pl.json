@@ -324,7 +324,7 @@
     "desc": "Zapoznaj się z innowacyjnym systemem OmniMES, który rewolucjonizuje zarządzanie procesami produkcyjnymi. Wykorzystaj zaawansowane funkcje, interaktywne narzędzia analizy danych i elastyczne konfiguracje, aby zoptymalizować wydajność i kontrolę nad produkcją. Dzięki OmniMES możesz szybko reagować na zmiany, optymalizować procesy oraz osiągać doskonałe wyniki biznesowe.",
     "keywords": "System OmniMES, Zarządzanie Produkcją, Optymalizacja Procesów, Narzędzia Analizy Danych, Elastyczna Konfiguracja, Wydajność Produkcji, Kontrola Procesów, Innowacyjne Rozwiązania, Efektywne Zarządzanie, Doskonałe Wyniki Biznesowe",
     "howMany": "Liczba maszyn",
-    "machineDesc": "Od {machine} sztuk",
+    "machineDesc": "Od {startMachine} do {machine} sztuk",
     "message": "{count, plural, =3 {miesiące} =6 {miesięcy} other {miesięcy}}",
     "perMachine": "za maszynę",
     "aria": "Abonament miesięczny za monitoring maszyn - cennik",

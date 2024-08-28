@@ -106,9 +106,10 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
 
   data.results.forEach((item) => {
     if (!rows[item.machine]) {
+      let startCountMachine: number = item.machine == 30 ? item.machine - 14 : item.machine - 4;
       rows[item.machine] = {
         key: item.machine.toString(),
-        machine: t('machineDesc', { machine: item.machine }),
+        machine: t('machineDesc', { startMachine: startCountMachine, machine: item.machine }),
         period3: '',
         period6: '',
         period9: '',

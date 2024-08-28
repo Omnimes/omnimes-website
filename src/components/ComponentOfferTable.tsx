@@ -15,7 +15,7 @@ type Props = {
     }[],
   aria: string;
 }
-export const ComponentOfferTable = ({ columns,  rows, aria }: Props) => {
+export const ComponentOfferTable = ({ columns, rows, aria }: Props) => {
   return (
     <Table aria-labelledby={aria} classNames={{ th: 'text-primary-600 font-black', base: "text-left" }}>
       <TableHeader columns={columns}>
