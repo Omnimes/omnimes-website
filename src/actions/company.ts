@@ -8,6 +8,19 @@ import { Requests } from '@/components/dashboard/requsets/ComponentRequestsTable
 import { ReqCompany } from './../components/forms/settings/CompanyForm';
 import { revalidatePath } from 'next/cache';
 
+export const getCompanyInGUSDatabaseServer = async(nip: string) => {
+  const res = await fetch(`http://p4-1.omnimes.com/api/nip/${nip}/`, {
+    method: 'GET',
+    cache: 'no-cache',
+    headers: {
+      Authorization: `Token ${process.env.API_TOKEN_GUS}`,
+    },
+  })
+
+  const data = await res.json();
+  return data
+}
+
 /* Pobranie firmy po nip */
 export const getCompany = async(nip: string) => {
   if (!nip || typeof nip !== "string") {

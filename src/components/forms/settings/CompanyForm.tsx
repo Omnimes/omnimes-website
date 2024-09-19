@@ -14,9 +14,8 @@ import { Loader2 } from "lucide-react"
 import { toast } from "../../ui/UseToast"
 import { cn, getInputType } from "@/utils/utils"
 import { companySchema } from "@/utils/validations/company"
-import { createCompany, createPromisesToCompany, getCompany, sendResetRequest, updateCompany } from "@/actions/company"
+import { createCompany, createPromisesToCompany, getCompany, getCompanyInGUSDatabaseServer, sendResetRequest, updateCompany } from "@/actions/company"
 import { useDebouncedCallback } from 'use-debounce';
-import axios from "axios";
 
 type FormData = z.infer<typeof companySchema>
 
@@ -74,6 +73,8 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
     register,
     reset,
     getValues,
+    setError,
+    clearErrors,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(companySchema),
@@ -105,10 +106,8 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
     setIsSaving(false)
   }
 
-  const checkCompany = useDebouncedCallback(async (nip: string) => {
-
+  const getCompanyInOwnDatabase = async(nip: string) => {
     const response = await getCompany(nip);
-
     if (response.success && response.company) {
       setIsSendPromise(true);
       reset({
@@ -123,15 +122,63 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
         email: response.company.email,
         website: response.company.website ?? "",
       });
+      return true
     }
     else if (response.error) {
       toast({
         description: t(response.message),
         variant: "destructive",
       })
+      return false
     }
-    else { reset((values) => ({ ...values })); }
+    else { 
+      reset((values) => ({ ...values })); 
+      return false
+    }
+  }
 
+  const getCompanyInGUSDatabase = async(nip: string) => {
+    const data = await getCompanyInGUSDatabaseServer(nip)
+    if (data && data.nip) {
+      setError('nip', { type: 'custom', message: 'Podany nip jest niepoprawny' });
+      reset((values) => ({ ...values })); 
+      return
+    } else if(data.error) {
+      setError('nip', { type: 'custom', message: 'Nie znaleziono Nipu w bazie' });
+      reset((values) => ({ ...values })); 
+      return 
+    } else if(JSON.parse(data)) {
+        const company = JSON.parse(data);
+        reset({
+          name: company.Nazwa,
+          nip: company.Nip,
+          streetAddress: `${company.Ulica !== null ? company.Ulica : ""} ${company.NrNieruchomosci !== null ? company.NrNieruchomosci : ""} ${company.NrLokalu !== null ? company.NrLokalu: ""}`.trim(),
+          postalCode: company.KodPocztowy,
+          city: company.Miejscowosc,
+          country: "",
+          industry: "",
+          phoneNumber: "",
+          email: "",
+          website: "",
+        });
+        clearErrors('nip')
+    } else {
+      reset((values) => ({ ...values })); 
+    }
+  }
+
+  const checkCompany = useDebouncedCallback(async (nip: string) => {
+
+    if(nip.length !== 10) {
+      setError('nip', { type: 'custom', message: 'Podany nip jest niepoprawny' });
+      return 
+    } 
+    clearErrors('nip')
+
+    const isCompanyData = await getCompanyInOwnDatabase(nip);
+    if(!isCompanyData) await getCompanyInGUSDatabase(nip);
+
+    return
   }, 500)
 
   const handleReset = async(e: React.MouseEvent<HTMLButtonElement>, isRequest: boolean = false) => {
