@@ -46,7 +46,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 async function getData(): Promise<Data> {
   const res = await fetch(
-    'https://licencje.webface.pl/package-price/?limit=20&offset=0&ordering=period',
+    'https://licencje.eomni.pl/package-price/?limit=20&offset=0&ordering=period',
     {
       method: 'GET',
       cache: 'no-cache',
@@ -64,7 +64,7 @@ async function getData(): Promise<Data> {
 }
 
 async function getSettings() {
-  const res = await fetch('https://licencje.webface.pl/settings/', {
+  const res = await fetch('https://licencje.eomni.pl/settings/', {
     method: 'GET',
     cache: 'no-cache',
     headers: {
