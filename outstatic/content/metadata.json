@@ -1,6 +1,6 @@
 {
-  "commit": "f0d22cf530a28a1b93935716d7346a55165a84e9",
-  "generated": "2024-12-09T10:53:49.566Z",
+  "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
+  "generated": "2024-12-09T11:19:37.991Z",
   "metadata": [
     {
       "__outstatic": {
@@ -969,6 +969,51 @@
         { "label": "redukcja przestojów produkcyjnych", "value": "redukcjaPrzestojówProdukcyjnych" }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
+        "hash": "1084193773",
+        "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pobrane-QzND.png",
+      "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
+      "lang": "pl",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "wykorzystanie-tensorflow-w-systemach-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "wydajność algorytmów",
+          "value": "wydajnośćAlgorytmów"
+        }
+      ],
+      "title": "Wykorzystanie TensorFlow w systemach MES"
     }
   ]
 }

@@ -224,6 +224,30 @@
         {
           "value": "berichte",
           "label": "Berichte"
+        },
+        {
+          "value": "tensorFlow",
+          "label": "TensorFlow"
+        },
+        {
+          "value": "xgBoost",
+          "label": "XGBoost"
+        },
+        {
+          "value": "lightGbm",
+          "label": "LightGBM"
+        },
+        {
+          "value": "catBoost",
+          "label": "CatBoost"
+        },
+        {
+          "value": "mesSystem",
+          "label": "MES system"
+        },
+        {
+          "value": "wydajnośćAlgorytmów",
+          "label": "wydajność algorytmów"
         }
       ]
     },
