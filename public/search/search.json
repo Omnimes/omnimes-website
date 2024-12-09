@@ -1,5 +1,103 @@
 [
   {
+    "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen",
+    "slug": "der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen",
+    "description": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.",
+    "lang": "de",
+    "tags": "Web3, Blockchain, RES, Erneuerbare Energiequellen, Energietokenisierung, Smart Contracts, Energieverbrauchsüberwachung, Automatisierte Abrechnungen, P2P-Energiehandel, Nachhaltige Energie"
+  },
+  {
+    "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources",
+    "slug": "the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources",
+    "description": "The use of Web3 and blockchain technology in managing industrial data and promoting renewable energy sources (RES). This article discusses energy consumption monitoring, automated settlements, energy tokenization, and peer-to-peer trading, emphasizing the benefits of using Web3 in the industry.",
+    "lang": "en",
+    "tags": "Web3, blockchain, RES, renewable energy sources, energy tokenization, smart contracts, energy consumption monitoring, automated settlements, P2P energy trading, sustainable energy"
+  },
+  {
+    "title": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu OZE",
+    "slug": "zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze",
+    "description": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu odnawialnych źródeł energii (OZE). Artykuł omawia monitorowanie zużycia energii, automatyczne rozliczenia, tokenizację energii oraz handel peer-to-peer, podkreślając korzyści z zastosowania Web3 w przemyśle",
+    "lang": "pl",
+    "tags": "Web3, blockchain, OZE, odnawialne źródła energii, tokenizacja energii, smart kontrakty, monitorowanie zużycia energii, automatyzacja rozliczeń,  handel energią P2P, zrównoważona energetyka"
+  },
+  {
+    "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB",
+    "slug": "einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb",
+    "description": "Ein Vergleich von InfluxDB und MongoDB für die industrielle Datensammlung. Dieser Artikel diskutiert den Einsatz von InfluxDB für Zeitreihendatenanalyse, Maschinenüberwachung und IoT sowie MongoDB als universelle Datenbank für MES-Systeme. Praktische Tipps, wann jede dieser Datenbanken gewählt werden sollte.",
+    "lang": "de",
+    "tags": "InfluxDB, MongoDB, Zeitreihendaten, Zeitreihendatenanalyse"
+  },
+  {
+    "title": "Using InfluxDB for Industrial Data Collection and Comparison with MongoDB",
+    "slug": "using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb",
+    "description": "A comparison of InfluxDB and MongoDB for industrial data collection. This article discusses the use of InfluxDB for time-series data analysis, machine monitoring, and IoT, as well as MongoDB as a universal database for MES systems. Practical tips on when to choose each database.",
+    "lang": "en",
+    "tags": "InfluxDB, MongoDB, time-series data, time-series data analysis"
+  },
+  {
+    "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB",
+    "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
+    "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
+    "lang": "pl",
+    "tags": "InfluxDB, MongoDB, time-series data, analiza danych czasowych"
+  },
+  {
+    "title": "Wykorzystanie PyTorch w danych przemysłowych",
+    "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
+    "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
+    "lang": "pl",
+    "tags": "PyTorch, TensorFlow, XGBoost, LightGBM, CatBoost, dane przemysłowe, automatyzacja przemysłowa, porównanie algorytmów"
+  },
+  {
+    "title": "Verwendung von PyTorch in Industriedaten",
+    "slug": "verwendung-von-pytorch-in-industriedaten",
+    "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
+    "lang": "de",
+    "tags": "PyTorch, TensorFlow, XGBoost, LightGBM, CatBoost, Industriedaten, industrielle Automatisierung, Algorithmusvergleich"
+  },
+  {
+    "title": "Using PyTorch in Industrial Data",
+    "slug": "using-pytorch-in-industrial-data",
+    "description": "Comparison of PyTorch, TensorFlow, XGBoost, LightGBM, and CatBoost in industrial data analysis. The article discusses the use of PyTorch in machine failure prediction, time series data analysis, and compares it with other tools in terms of flexibility, performance, and applications.",
+    "lang": "en",
+    "tags": "PyTorch, TensorFlow, XGBoost, LightGBM, CatBoost, industrial data, industrial automation, algorithm comparison"
+  },
+  {
+    "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge",
+    "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
+    "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
+    "lang": "de",
+    "tags": "industrielle Datenerfassung, Maschinendaten, maschinelles Lernen in der Industrie"
+  },
+  {
+    "title": "Collecting Data from Industrial Machines: Methods and Tools",
+    "slug": "collecting-data-from-industrial-machines-methods-and-tools",
+    "description": "An overview of two approaches for collecting industrial machine data: implementing an MES system such as OMNIMES by Multiprojekt, and using public datasets from platforms like Statista and Kaggle. Practical solutions for building predictive maintenance models.",
+    "lang": "en",
+    "tags": "industrial data collection, machine data, machine learning in industry"
+  },
+  {
+    "title": "Zbieranie danych z rzeczywistych maszyn przemysłowych: Metody i narzędzia",
+    "slug": "zbieranie-danych-z-rzeczywistych-maszyn-przemyslowych-metody-i-narzedzia",
+    "description": "Zbieranie danych z maszyn przemysłowych – omówienie dwóch podejść: wdrożenia systemu MES, takiego jak OMNIMES firmy Multiprojekt, oraz wykorzystania publicznych danych z platform takich jak Statista i Kaggle. Praktyczne rozwiązania dla budowy modeli predykcji awarii",
+    "lang": "pl",
+    "tags": "zbieranie danych przemysłowych, dane z maszyn, uczenie maszynowe w przemyśle"
+  },
+  {
+    "title": "Einsatz von TensorFlow in MES-Systemen",
+    "slug": "einsatz-von-tensorflow-in-mes-systemen",
+    "description": "Vergleich der Algorithmen TensorFlow, XGBoost, LightGBM und CatBoost zur Fehlererkennung in MES-Systemen. Praktische Anwendungen, Analyse von Zeitreihendaten und tabellarischen Daten sowie Leistungsbewertung in Bezug auf Geschwindigkeit und Rechenressourcen.",
+    "lang": "de",
+    "tags": "TensorFlow, XGBoost, LightGBM, CatBoost, MES-System, Algorithmusleistung"
+  },
+  {
+    "title": "Using TensorFlow in MES Systems",
+    "slug": "using-tensorflow-in-mes-systems",
+    "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
+    "lang": "en",
+    "tags": "TensorFlow, XGBoost, LightGBM, CatBoost, MES system, algorithm performance"
+  },
+  {
     "title": "Wykorzystanie TensorFlow w systemach MES",
     "slug": "wykorzystanie-tensorflow-w-systemach-mes",
     "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
@@ -117,5 +215,19 @@
     "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
     "lang": "de",
     "tags": "MQTT, Sparkplug B, QoS, IIoT, Omnimes, Industry 4.0, Kommunikationsprotokoll, IoT-Kommunikation, Kommunikationsstandards"
+  },
+  {
+    "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost",
+    "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
+    "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
+    "lang": "en",
+    "tags": "XGBoost, LightGBM, CatBoost, MES Systems, Fault Detection"
+  },
+  {
+    "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost",
+    "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
+    "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
+    "lang": "de",
+    "tags": "XGBoost, LightGBM, CatBoost, MES-Systeme, Fehlererkennung"
   }
 ]

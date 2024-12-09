@@ -19,6 +19,7 @@ tags:
     value: 'mes-systeme'
   - label: 'Fehlererkennung'
     value: 'fehlererkennung'
+publishedAt: '2024-12-09T12:12:36.342Z'
 ---
 
 # Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost

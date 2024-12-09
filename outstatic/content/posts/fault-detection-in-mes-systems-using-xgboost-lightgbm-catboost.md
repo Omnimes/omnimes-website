@@ -19,6 +19,7 @@ tags:
     value: 'mes-systems'
   - label: 'Fault Detection'
     value: 'fault-detection'
+publishedAt: '2024-12-09T12:12:36.342Z'
 ---
 
 # Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost
