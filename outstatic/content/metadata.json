@@ -1,6 +1,6 @@
 {
-  "commit": "b4a2c96ca1ff2c62589ea3064f9d92949c531a08",
-  "generated": "2024-12-09T11:34:09.209Z",
+  "commit": "b780f30722ee13d52f10b8411633a3a3320d6343",
+  "generated": "2024-12-09T11:36:44.427Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1059,8 +1059,8 @@
     },
     {
       "__outstatic": {
-        "commit": "b4a2c96ca1ff2c62589ea3064f9d92949c531a08",
-        "hash": "2124463995",
+        "commit": "b780f30722ee13d52f10b8411633a3a3320d6343",
+        "hash": "2180200241",
         "path": "outstatic/content/posts/zbieranie-danych-z-rzeczywistych-maszyn-przemyslowych-metody-i-narzedzia.md"
       },
       "author": {
@@ -1073,7 +1073,7 @@
       "lang": "pl",
       "publishedAt": "2024-09-15T10:29:21.000Z",
       "slug": "zbieranie-danych-z-rzeczywistych-maszyn-przemyslowych-metody-i-narzedzia",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "zbieranie danych przemysłowych",

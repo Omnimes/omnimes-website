@@ -1,6 +1,6 @@
 ---
 title: 'Zbieranie danych z rzeczywistych maszyn przemysłowych: Metody i narzędzia'
-status: 'draft'
+status: 'published'
 author:
   name: 'Martin Szerment'
   picture: '/images/martin.png'
