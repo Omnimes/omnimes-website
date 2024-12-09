@@ -1,7 +1,83 @@
 {
-  "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
-  "generated": "2024-12-09T11:23:01.725Z",
+  "commit": "c3f47fb7a10064e3b06ef2da08f1e02cd820d82d",
+  "generated": "Mon, 09 Dec 2024 11:23:15 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "3238617c4850544d9e833cb956837cab6137934a",
+        "hash": "3455486355",
+        "path": "outstatic/content/news/lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems",
+      "lang": "en",
+      "publishedAt": "2024-06-21T06:52:47.000Z",
+      "slug": "lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems",
+      "status": "published",
+      "title": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "de5be8ecde9f307ab730c193095fbf2566e36fe4",
+        "hash": "3440728129",
+        "path": "outstatic/content/news/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "/images/piotr.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/webinar-A3MT.png",
+      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
+      "lang": "pl",
+      "publishedAt": "2024-08-09T10:56:10.162Z",
+      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
+      "status": "published",
+      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
+    },
+    {
+      "__outstatic": {
+        "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
+        "hash": "290669405",
+        "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/en-gxNT.png",
+      "description": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027",
+      "lang": "en",
+      "publishedAt": "2024-06-21T07:04:37.000Z",
+      "slug": "omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027",
+      "status": "published",
+      "title": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027"
+    },
+    {
+      "__outstatic": {
+        "commit": "c57b03baa68fcf3a4ec6b51b071cc82d16a5c290",
+        "hash": "772551379",
+        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-cxNj.png",
+      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T10:14:26.438Z",
+      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
+      "status": "published",
+      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
+    },
     {
       "__outstatic": {
         "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
@@ -61,22 +137,77 @@
     },
     {
       "__outstatic": {
-        "commit": "3238617c4850544d9e833cb956837cab6137934a",
-        "hash": "3455486355",
-        "path": "outstatic/content/news/lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems.md"
+        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
+        "hash": "3831515894",
+        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems",
-      "lang": "en",
-      "publishedAt": "2024-06-21T06:52:47.000Z",
-      "slug": "lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems",
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-06-15T07:31:17.000Z",
+      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
       "status": "published",
-      "title": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems"
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "d06daf8769b722de5fc0a0bad21086e7fe5baf72",
+        "hash": "20215992",
+        "path": "outstatic/content/posts/data-visualization-the-success-of-analysis-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In today's world, the rapid development of technology and increasing market demands make efficient production management crucial for a company's success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.",
+      "lang": "en",
+      "publishedAt": "2024-06-15T22:02:14.000Z",
+      "slug": "data-visualization-the-success-of-analysis-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Data Visualization",
+          "value": "dataVisualization"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Reports",
+          "value": "reports"
+        }
+      ],
+      "title": "Data Visualization - The Success of Analysis. Redash"
     },
     {
       "__outstatic": {
@@ -137,41 +268,113 @@
     },
     {
       "__outstatic": {
-        "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
-        "hash": "290669405",
-        "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
+        "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
+        "hash": "1072085323",
+        "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/en-gxNT.png",
-      "description": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027",
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
       "lang": "en",
-      "publishedAt": "2024-06-21T07:04:37.000Z",
-      "slug": "omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027",
+      "publishedAt": "2024-06-20T13:47:51.265Z",
+      "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
       "status": "published",
-      "title": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027"
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        }
+      ],
+      "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
     },
     {
       "__outstatic": {
-        "commit": "c57b03baa68fcf3a4ec6b51b071cc82d16a5c290",
-        "hash": "772551379",
-        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
+        "commit": "94a098b7791b83f2097fbce68995879551a0fc8e",
+        "hash": "4112578455",
+        "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/image-cxNj.png",
-      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
       "lang": "pl",
-      "publishedAt": "2024-06-21T10:14:26.438Z",
-      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
+      "publishedAt": "2024-06-20T12:47:51.265Z",
+      "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
       "status": "published",
-      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Ollama",
+          "value": "ollama"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        }
+      ],
+      "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
     },
     {
       "__outstatic": {
@@ -346,77 +549,101 @@
     },
     {
       "__outstatic": {
-        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
-        "hash": "3831515894",
-        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
+        "hash": "2060488888",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
-      "lang": "de",
-      "publishedAt": "2024-06-15T07:31:17.000Z",
-      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "coverImage": "/images/3.png",
+      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+      "lang": "en",
+      "publishedAt": "2024-06-06T08:36:29.000Z",
+      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
       "status": "published",
       "tags": [
         {
-          "label": "redash",
-          "value": "redash"
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
         },
         {
-          "label": "Datenvisualisierung",
-          "value": "datenvisualisierung"
+          "label": "OPC UA",
+          "value": "opcUa"
         },
         {
-          "label": "big data",
-          "value": "bigData"
+          "label": "MQTT",
+          "value": "mqtt"
         },
         {
-          "label": "Berichte",
-          "value": "berichte"
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Client/Server Architecture",
+          "value": "client/serverArchitecture"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "Data Standardization",
+          "value": "dataStandardization"
         }
       ],
-      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
     },
     {
       "__outstatic": {
-        "commit": "d06daf8769b722de5fc0a0bad21086e7fe5baf72",
-        "hash": "20215992",
-        "path": "outstatic/content/posts/data-visualization-the-success-of-analysis-redash.md"
+        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
+        "hash": "4259407744",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In today's world, the rapid development of technology and increasing market demands make efficient production management crucial for a company's success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.",
-      "lang": "en",
-      "publishedAt": "2024-06-15T22:02:14.000Z",
-      "slug": "data-visualization-the-success-of-analysis-redash",
+      "coverImage": "/images/2.png",
+      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "lang": "pl",
+      "publishedAt": "2024-06-10T08:10:14.654Z",
+      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
       "status": "published",
       "tags": [
         {
-          "label": "redash",
-          "value": "redash"
+          "label": "AI",
+          "value": "ai"
         },
         {
-          "label": "Data Visualization",
-          "value": "dataVisualization"
+          "label": "Modele LLM",
+          "value": "modeleLlm"
         },
         {
-          "label": "big data",
-          "value": "bigData"
+          "label": "API GPT-4",
+          "value": "apiGpt4"
         },
         {
-          "label": "Reports",
-          "value": "reports"
+          "label": "analiza danych",
+          "value": "analizaDanych"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
         }
       ],
-      "title": "Data Visualization - The Success of Analysis. Redash"
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
     },
     {
       "__outstatic": {
@@ -555,118 +782,134 @@
     },
     {
       "__outstatic": {
-        "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
-        "hash": "1072085323",
-        "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
+        "commit": "9ae6473dbdd0a69ee581c200e431a1a5fcc21aef",
+        "hash": "2007098296",
+        "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/1.png",
-      "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
-      "lang": "en",
-      "publishedAt": "2024-06-20T13:47:51.265Z",
-      "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "AI local",
-          "value": "aiLocal"
-        },
-        {
-          "label": "llama3",
-          "value": "llama3"
-        },
-        {
-          "label": "Meta",
-          "value": "meta"
-        },
-        {
-          "label": "Gemma",
-          "value": "gemma"
-        },
-        {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
-        }
-      ],
-      "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
-    },
-    {
-      "__outstatic": {
-        "commit": "94a098b7791b83f2097fbce68995879551a0fc8e",
-        "hash": "4112578455",
-        "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1.png",
-      "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
       "lang": "pl",
-      "publishedAt": "2024-06-20T12:47:51.265Z",
-      "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "wykorzystanie-tensorflow-w-systemach-mes",
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "label": "TensorFlow",
+          "value": "tensorFlow"
         },
         {
-          "label": "Ollama",
-          "value": "ollama"
+          "label": "XGBoost",
+          "value": "xgBoost"
         },
         {
-          "label": "llama3",
-          "value": "llama3"
+          "label": "LightGBM",
+          "value": "lightGbm"
         },
         {
-          "label": "Meta",
-          "value": "meta"
+          "label": "CatBoost",
+          "value": "catBoost"
         },
         {
-          "label": "Gemma",
-          "value": "gemma"
+          "label": "MES system",
+          "value": "mesSystem"
         },
         {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
-        },
-        {
-          "label": "AI local",
-          "value": "aiLocal"
+          "label": "wydajność algorytmów",
+          "value": "wydajnośćAlgorytmów"
         }
       ],
-      "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
+      "title": "Wykorzystanie TensorFlow w systemach MES"
     },
     {
       "__outstatic": {
-        "commit": "df9d4a3cef08d436966d3abf65448e01d4e3a666",
-        "hash": "3265698544",
+        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
+        "hash": "1222761488",
+        "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
+      "lang": "pl",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
+      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
+      "status": "published",
+      "tags": [
+        {
+          "label": "XGBoost",
+          "value": "xgboost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightgbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catboost"
+        },
+        {
+          "label": "AI",
+          "value": "ai "
+        },
+        {
+          "label": "MES system",
+          "value": "messystem"
+        },
+        {
+          "label": "wykrywanie awarii",
+          "value": "wykrywanieAwarii"
+        },
+        {
+          "label": "analiza danych w przemyśle",
+          "value": "analizaDanychWPrzemyśle"
+        },
+        {
+          "label": "uczenie maszynowe w MES",
+          "value": "uczenieMaszynoweWMES"
+        },
+        {
+          "label": "klasyfikacja stanów maszyn",
+          "value": "klasyfikacjaStanówMaszyn"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "powiadomienia w czasie rzeczywistym",
+          "value": "powiadomieniaWCzasieRzeczywistym"
+        },
+        {
+          "label": "gradient boosting w przemyśle",
+          "value": "gradientBoostingWPrzemyśle"
+        },
+        {
+          "label": "algorytmy uczenia maszynowego",
+          "value": "algorytmyUczeniaMaszynowego"
+        },
+        {
+          "label": "systemy produkcyjne MES",
+          "value": "systemyProdukcyjneMES"
+        },
+        {
+          "label": "redukcja przestojów produkcyjnych",
+          "value": "redukcjaPrzestojówProdukcyjnych "
+        }
+      ],
+      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
+        "hash": "2813343435",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
       },
       "author": {
@@ -813,187 +1056,6 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
-    },
-    {
-      "__outstatic": {
-        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
-        "hash": "2060488888",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/3.png",
-      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
-      "lang": "en",
-      "publishedAt": "2024-06-06T08:36:29.000Z",
-      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "OPC UA",
-          "value": "opcUa"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Client/Server Architecture",
-          "value": "client/serverArchitecture"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "Data Standardization",
-          "value": "dataStandardization"
-        }
-      ],
-      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
-    },
-    {
-      "__outstatic": {
-        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
-        "hash": "4259407744",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
-      "lang": "pl",
-      "publishedAt": "2024-06-10T08:10:14.654Z",
-      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Modele LLM",
-          "value": "modeleLlm"
-        },
-        {
-          "label": "API GPT-4",
-          "value": "apiGpt4"
-        },
-        {
-          "label": "analiza danych",
-          "value": "analizaDanych"
-        },
-        {
-          "label": "Bezpieczeństwo danych",
-          "value": "bezpieczeństwoDanych"
-        }
-      ],
-      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
-    },
-    {
-      "__outstatic": {
-        "commit": "e4ccc57fb76720b23a0c8cf7a50327adfe492c64",
-        "hash": "3440728129",
-        "path": "outstatic/content/news/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "/images/piotr.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/webinar-A3MT.png",
-      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
-      "lang": "pl",
-      "publishedAt": "2024-08-09T10:56:10.162Z",
-      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
-      "status": "published",
-      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
-    },
-    {
-      "__outstatic": {
-        "commit": "f0d22cf530a28a1b93935716d7346a55165a84e9",
-        "hash": "65289813",
-        "path": "outstatic/content/news/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
-      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
-      "lang": "pl",
-      "publishedAt": "2024-07-15T09:49:23.000Z",
-      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
-      "status": "published",
-      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
-        "hash": "2007098296",
-        "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
-      "lang": "pl",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "wykorzystanie-tensorflow-w-systemach-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "wydajność algorytmów",
-          "value": "wydajnośćAlgorytmów"
-        }
-      ],
-      "title": "Wykorzystanie TensorFlow w systemach MES"
     }
   ]
 }
