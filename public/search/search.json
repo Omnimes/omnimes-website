@@ -1,5 +1,12 @@
 [
   {
+    "title": "Wykorzystanie TensorFlow w systemach MES",
+    "slug": "wykorzystanie-tensorflow-w-systemach-mes",
+    "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
+    "lang": "pl",
+    "tags": "TensorFlow, XGBoost, LightGBM, CatBoost, MES system, wydajność algorytmów"
+  },
+  {
     "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost",
     "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
     "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
