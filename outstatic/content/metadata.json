@@ -1,7 +1,26 @@
 {
-  "commit": "6016dbeb600e69340801de84fa776a7776301381",
-  "generated": "2024-12-09T13:06:33.401Z",
+  "commit": "00ed44f1a18e045cc19e0c8b0837118a3ea2a56d",
+  "generated": "Mon, 09 Dec 2024 13:06:51 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
+        "hash": "1225348516",
+        "path": "outstatic/content/news/neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle",
+      "lang": "de",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle",
+      "status": "published",
+      "title": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle"
+    },
     {
       "__outstatic": {
         "commit": "3238617c4850544d9e833cb956837cab6137934a",
@@ -42,9 +61,9 @@
     },
     {
       "__outstatic": {
-        "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
-        "hash": "290669405",
-        "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
+        "commit": "6472c1701ed0b44315884d373eb35e8cbf2b4bb3",
+        "hash": "588738348",
+        "path": "outstatic/content/news/omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden.md"
       },
       "author": {
         "name": "Omnimes",
@@ -52,12 +71,12 @@
       },
       "collection": "news",
       "coverImage": "/images/en-gxNT.png",
-      "description": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027",
-      "lang": "en",
+      "description": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden",
+      "lang": "de",
       "publishedAt": "2024-06-21T07:04:37.000Z",
-      "slug": "omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027",
+      "slug": "omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden",
       "status": "published",
-      "title": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027"
+      "title": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden"
     },
     {
       "__outstatic": {
@@ -118,59 +137,55 @@
     },
     {
       "__outstatic": {
-        "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
-        "hash": "1225348516",
-        "path": "outstatic/content/news/neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle.md"
+        "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
+        "hash": "290669405",
+        "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
       },
       "author": {
         "name": "Omnimes",
         "picture": "/images/logo.png"
       },
       "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle",
-      "lang": "de",
-      "publishedAt": "2024-07-21T06:59:08.000Z",
-      "slug": "neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle",
+      "coverImage": "/images/en-gxNT.png",
+      "description": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027",
+      "lang": "en",
+      "publishedAt": "2024-06-21T07:04:37.000Z",
+      "slug": "omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027",
       "status": "published",
-      "title": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle"
+      "title": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027"
     },
     {
       "__outstatic": {
-        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
-        "hash": "3831515894",
-        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
+        "hash": "2061075091",
+        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
       "lang": "de",
-      "publishedAt": "2024-06-15T07:31:17.000Z",
-      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
       "status": "published",
       "tags": [
         {
-          "label": "redash",
-          "value": "redash"
+          "label": "industrielle Datenerfassung",
+          "value": "industrielle-datenerfassung"
         },
         {
-          "label": "Datenvisualisierung",
-          "value": "datenvisualisierung"
+          "label": "Maschinendaten",
+          "value": "maschinendaten"
         },
         {
-          "label": "big data",
-          "value": "bigData"
-        },
-        {
-          "label": "Berichte",
-          "value": "berichte"
+          "label": "maschinelles Lernen in der Industrie",
+          "value": "maschinelles-lernen-in-der-industrie"
         }
       ],
-      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
     },
     {
       "__outstatic": {
@@ -208,6 +223,39 @@
         }
       ],
       "title": "Data Visualization - The Success of Analysis. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "4fb00112af2fe9f1d1ac9a3b7ef9f19dcc16714e",
+        "hash": "1289787886",
+        "path": "outstatic/content/posts/collecting-data-from-industrial-machines-methods-and-tools.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "An overview of two approaches for collecting industrial machine data: implementing an MES system such as OMNIMES by Multiprojekt, and using public datasets from platforms like Statista and Kaggle. Practical solutions for building predictive maintenance models.",
+      "lang": "en",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "collecting-data-from-industrial-machines-methods-and-tools",
+      "status": "published",
+      "tags": [
+        {
+          "label": "industrial data collection",
+          "value": "industrial-data-collection"
+        },
+        {
+          "label": "machine data",
+          "value": "machine-data"
+        },
+        {
+          "label": "machine learning in industry",
+          "value": "machine-learning-in-industry"
+        }
+      ],
+      "title": "Collecting Data from Industrial Machines: Methods and Tools"
     },
     {
       "__outstatic": {
@@ -249,75 +297,223 @@
     },
     {
       "__outstatic": {
-        "commit": "6472c1701ed0b44315884d373eb35e8cbf2b4bb3",
-        "hash": "588738348",
-        "path": "outstatic/content/news/omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/en-gxNT.png",
-      "description": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden",
-      "lang": "de",
-      "publishedAt": "2024-06-21T07:04:37.000Z",
-      "slug": "omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden",
-      "status": "published",
-      "title": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden"
-    },
-    {
-      "__outstatic": {
-        "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
-        "hash": "1072085323",
-        "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
+        "commit": "1b6a086b0246f1dda8821bc60ca14bacdb9f4bad",
+        "hash": "1068148324",
+        "path": "outstatic/content/posts/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/1.png",
-      "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
       "lang": "en",
-      "publishedAt": "2024-06-20T13:47:51.265Z",
-      "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
+      "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "label": "XGBoost",
+          "value": "xgboost"
         },
         {
-          "label": "AI local",
-          "value": "aiLocal"
+          "label": "LightGBM",
+          "value": "lightgbm"
         },
         {
-          "label": "llama3",
-          "value": "llama3"
+          "label": "CatBoost",
+          "value": "catboost"
         },
         {
-          "label": "Meta",
-          "value": "meta"
+          "label": "MES Systems",
+          "value": "mes-systems"
         },
         {
-          "label": "Gemma",
-          "value": "gemma"
-        },
-        {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
+          "label": "Fault Detection",
+          "value": "fault-detection"
         }
       ],
-      "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
+      "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "c6b9e3ed74fc7a44d1bfedc12cc0468bc37ccd9d",
+        "hash": "968950399",
+        "path": "outstatic/content/posts/einsatz-von-tensorflow-in-mes-systemen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Vergleich der Algorithmen TensorFlow, XGBoost, LightGBM und CatBoost zur Fehlererkennung in MES-Systemen. Praktische Anwendungen, Analyse von Zeitreihendaten und tabellarischen Daten sowie Leistungsbewertung in Bezug auf Geschwindigkeit und Rechenressourcen.",
+      "lang": "de",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "einsatz-von-tensorflow-in-mes-systemen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES-System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Algorithmusleistung",
+          "value": "algorithmusLeistung"
+        }
+      ],
+      "title": "Einsatz von TensorFlow in MES-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "f5863a530eb4ee58d3ff1a1a757bc068f5cc40df",
+        "hash": "3421056101",
+        "path": "outstatic/content/posts/einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/influxdb-Y5MT.png",
+      "description": "Ein Vergleich von InfluxDB und MongoDB für die industrielle Datensammlung. Dieser Artikel diskutiert den Einsatz von InfluxDB für Zeitreihendatenanalyse, Maschinenüberwachung und IoT sowie MongoDB als universelle Datenbank für MES-Systeme. Praktische Tipps, wann jede dieser Datenbanken gewählt werden sollte.",
+      "lang": "de",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb",
+      "status": "published",
+      "tags": [
+        {
+          "label": "InfluxDB",
+          "value": "influxDb"
+        },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "Zeitreihendaten",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "Zeitreihendatenanalyse",
+          "value": "timeSeriesDataAnalysis"
+        }
+      ],
+      "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB"
+    },
+    {
+      "__outstatic": {
+        "commit": "fb8a558d2bdeafe4ed7dacc605447ece39c9d536",
+        "hash": "962057785",
+        "path": "outstatic/content/posts/der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp",
+      "description": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.",
+      "lang": "de",
+      "publishedAt": "2024-12-09T12:12:36.342Z",
+      "slug": "der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Web3",
+          "value": "web3"
+        },
+        {
+          "label": "Blockchain",
+          "value": "blockchain"
+        },
+        {
+          "label": "RES",
+          "value": "res"
+        },
+        {
+          "label": "Erneuerbare Energiequellen",
+          "value": "renewableEnergySources"
+        },
+        {
+          "label": "Energietokenisierung",
+          "value": "energyTokenization"
+        },
+        {
+          "label": "Smart Contracts",
+          "value": "smartContracts"
+        },
+        {
+          "label": "Energieverbrauchsüberwachung",
+          "value": "energyConsumptionMonitoring"
+        },
+        {
+          "label": "Automatisierte Abrechnungen",
+          "value": "automatedSettlements"
+        },
+        {
+          "label": "P2P-Energiehandel",
+          "value": "p2pEnergyTrading"
+        },
+        {
+          "label": "Nachhaltige Energie",
+          "value": "sustainableEnergy"
+        }
+      ],
+      "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
+        "hash": "3831515894",
+        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-06-15T07:31:17.000Z",
+      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
     },
     {
       "__outstatic": {
@@ -549,60 +745,43 @@
     },
     {
       "__outstatic": {
-        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
-        "hash": "2060488888",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+        "commit": "148fae75ff73e5b20c7ab6654186d08c640d0692",
+        "hash": "1362154581",
+        "path": "outstatic/content/posts/fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/3.png",
-      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
-      "lang": "en",
-      "publishedAt": "2024-06-06T08:36:29.000Z",
-      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
+      "lang": "de",
+      "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
         {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
+          "label": "XGBoost",
+          "value": "xgboost"
         },
         {
-          "label": "OPC UA",
-          "value": "opcUa"
+          "label": "LightGBM",
+          "value": "lightgbm"
         },
         {
-          "label": "MQTT",
-          "value": "mqtt"
+          "label": "CatBoost",
+          "value": "catboost"
         },
         {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
+          "label": "MES-Systeme",
+          "value": "mes-systeme"
         },
         {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Client/Server Architecture",
-          "value": "client/serverArchitecture"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "Data Standardization",
-          "value": "dataStandardization"
+          "label": "Fehlererkennung",
+          "value": "fehlererkennung"
         }
       ],
-      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
+      "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost"
     },
     {
       "__outstatic": {
@@ -782,166 +961,154 @@
     },
     {
       "__outstatic": {
-        "commit": "9ae6473dbdd0a69ee581c200e431a1a5fcc21aef",
-        "hash": "2007098296",
-        "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
+        "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
+        "hash": "1072085323",
+        "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
-      "lang": "pl",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "wykorzystanie-tensorflow-w-systemach-mes",
+      "coverImage": "/images/1.png",
+      "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
+      "lang": "en",
+      "publishedAt": "2024-06-20T13:47:51.265Z",
+      "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
       "status": "published",
       "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "wydajność algorytmów",
-          "value": "wydajnośćAlgorytmów"
-        }
-      ],
-      "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
-        "hash": "1222761488",
-        "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
-      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
-      "lang": "pl",
-      "publishedAt": "2024-07-15T09:49:23.000Z",
-      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
-      "status": "published",
-      "tags": [
-        {
-          "label": "XGBoost",
-          "value": "xgboost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightgbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catboost"
-        },
         {
           "label": "AI",
-          "value": "ai "
+          "value": "ai"
         },
         {
-          "label": "MES system",
-          "value": "messystem"
+          "label": "AI local",
+          "value": "aiLocal"
         },
         {
-          "label": "wykrywanie awarii",
-          "value": "wykrywanieAwarii"
+          "label": "llama3",
+          "value": "llama3"
         },
         {
-          "label": "analiza danych w przemyśle",
-          "value": "analizaDanychWPrzemyśle"
+          "label": "Meta",
+          "value": "meta"
         },
         {
-          "label": "uczenie maszynowe w MES",
-          "value": "uczenieMaszynoweWMES"
+          "label": "Gemma",
+          "value": "gemma"
         },
         {
-          "label": "klasyfikacja stanów maszyn",
-          "value": "klasyfikacjaStanówMaszyn"
+          "label": "Mistral",
+          "value": "mistral"
         },
         {
-          "label": "automatyzacja przemysłowa",
-          "value": "automatyzacjaPrzemysłowa"
+          "label": "GPT-4",
+          "value": "gpt4"
         },
         {
-          "label": "powiadomienia w czasie rzeczywistym",
-          "value": "powiadomieniaWCzasieRzeczywistym"
-        },
-        {
-          "label": "gradient boosting w przemyśle",
-          "value": "gradientBoostingWPrzemyśle"
-        },
-        {
-          "label": "algorytmy uczenia maszynowego",
-          "value": "algorytmyUczeniaMaszynowego"
-        },
-        {
-          "label": "systemy produkcyjne MES",
-          "value": "systemyProdukcyjneMES"
-        },
-        {
-          "label": "redukcja przestojów produkcyjnych",
-          "value": "redukcjaPrzestojówProdukcyjnych "
+          "label": "GPT-3.5",
+          "value": "gpt35"
         }
       ],
-      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+      "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
     },
     {
       "__outstatic": {
-        "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
-        "hash": "2813343435",
-        "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
+        "commit": "ea5466c09195740f733b82a94e1ac3af91f176e6",
+        "hash": "1096981954",
+        "path": "outstatic/content/posts/using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
-      "lang": "pl",
-      "publishedAt": "2024-06-15T21:02:14.000Z",
-      "slug": "wizualizacja-danych-sukcesem-analizy-redash",
+      "coverImage": "/images/influxdb-Y5MT.png",
+      "description": "A comparison of InfluxDB and MongoDB for industrial data collection. This article discusses the use of InfluxDB for time-series data analysis, machine monitoring, and IoT, as well as MongoDB as a universal database for MES systems. Practical tips on when to choose each database.",
+      "lang": "en",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb",
       "status": "published",
       "tags": [
         {
-          "label": "redash",
-          "value": "redash"
+          "label": "InfluxDB",
+          "value": "influxDb"
         },
         {
-          "label": "wizualziacja danych",
-          "value": "wizualziacjaDanych"
+          "label": "MongoDB",
+          "value": "mongoDb"
         },
         {
-          "label": "big data",
-          "value": "bigData"
+          "label": "time-series data",
+          "value": "timeSeriesData"
         },
         {
-          "label": "raporty",
-          "value": "raporty"
+          "label": "time-series data analysis",
+          "value": "timeSeriesDataAnalysis"
         }
       ],
-      "title": "Wizualizacja danych - sukcesem analizy. Redash"
+      "title": "Using InfluxDB for Industrial Data Collection and Comparison with MongoDB"
+    },
+    {
+      "__outstatic": {
+        "commit": "0442db17b255788186871833b3d68dc3e9b01f47",
+        "hash": "3873805983",
+        "path": "outstatic/content/posts/the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp",
+      "description": "The use of Web3 and blockchain technology in managing industrial data and promoting renewable energy sources (RES). This article discusses energy consumption monitoring, automated settlements, energy tokenization, and peer-to-peer trading, emphasizing the benefits of using Web3 in the industry.",
+      "lang": "en",
+      "publishedAt": "2024-12-09T12:12:36.342Z",
+      "slug": "the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Web3",
+          "value": "web3"
+        },
+        {
+          "label": "blockchain",
+          "value": "blockchain"
+        },
+        {
+          "label": "RES",
+          "value": "res"
+        },
+        {
+          "label": "renewable energy sources",
+          "value": "renewableEnergySources"
+        },
+        {
+          "label": "energy tokenization",
+          "value": "energyTokenization"
+        },
+        {
+          "label": "smart contracts",
+          "value": "smartContracts"
+        },
+        {
+          "label": "energy consumption monitoring",
+          "value": "energyConsumptionMonitoring"
+        },
+        {
+          "label": "automated settlements",
+          "value": "automatedSettlements"
+        },
+        {
+          "label": "P2P energy trading",
+          "value": "p2pEnergyTrading"
+        },
+        {
+          "label": "sustainable energy",
+          "value": "sustainableEnergy"
+        }
+      ],
+      "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
     },
     {
       "__outstatic": {
@@ -1059,7 +1226,305 @@
     },
     {
       "__outstatic": {
-        "commit": "b780f30722ee13d52f10b8411633a3a3320d6343",
+        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
+        "hash": "2060488888",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/3.png",
+      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+      "lang": "en",
+      "publishedAt": "2024-06-06T08:36:29.000Z",
+      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "OPC UA",
+          "value": "opcUa"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Client/Server Architecture",
+          "value": "client/serverArchitecture"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "Data Standardization",
+          "value": "dataStandardization"
+        }
+      ],
+      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
+    },
+    {
+      "__outstatic": {
+        "commit": "97c36767cc92769c532bd2de88fdbd3b3a39a90a",
+        "hash": "3253678410",
+        "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
+      "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
+      "lang": "pl",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "dane przemysłowe",
+          "value": "danePrzemysłowe"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "porównanie algorytmów",
+          "value": "porównanieAlgorytmów"
+        }
+      ],
+      "title": "Wykorzystanie PyTorch w danych przemysłowych"
+    },
+    {
+      "__outstatic": {
+        "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
+        "hash": "2813343435",
+        "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
+      "lang": "pl",
+      "publishedAt": "2024-06-15T21:02:14.000Z",
+      "slug": "wizualizacja-danych-sukcesem-analizy-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "wizualziacja danych",
+          "value": "wizualziacjaDanych"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "raporty",
+          "value": "raporty"
+        }
+      ],
+      "title": "Wizualizacja danych - sukcesem analizy. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "1f6f7532569d351720596bd8a19b36579023cf68",
+        "hash": "2364021999",
+        "path": "outstatic/content/posts/verwendung-von-pytorch-in-industriedaten.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pytorch-e1576624094357-IwOD.jpg",
+      "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
+      "lang": "de",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "verwendung-von-pytorch-in-industriedaten",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "Industriedaten",
+          "value": "industriedaten"
+        },
+        {
+          "label": "industrielle Automatisierung",
+          "value": "industrielleAutomatisierung"
+        },
+        {
+          "label": "Algorithmusvergleich",
+          "value": "algorithmusVergleich"
+        }
+      ],
+      "title": "Verwendung von PyTorch in Industriedaten"
+    },
+    {
+      "__outstatic": {
+        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
+        "hash": "3236711354",
+        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
+      "lang": "en",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "using-tensorflow-in-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "algorithm performance",
+          "value": "algorithmPerformance"
+        }
+      ],
+      "title": "Using TensorFlow in MES Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "5b02d05dc2b1d8da1bffee626e6a4b60df21b47a",
+        "hash": "92028719",
+        "path": "outstatic/content/posts/using-pytorch-in-industrial-data.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pytorch-e1576624094357-IwOD.jpg",
+      "description": "Comparison of PyTorch, TensorFlow, XGBoost, LightGBM, and CatBoost in industrial data analysis. The article discusses the use of PyTorch in machine failure prediction, time series data analysis, and compares it with other tools in terms of flexibility, performance, and applications.",
+      "lang": "en",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "using-pytorch-in-industrial-data",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "industrial data",
+          "value": "industrialData"
+        },
+        {
+          "label": "industrial automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "algorithm comparison",
+          "value": "algorithmComparison"
+        }
+      ],
+      "title": "Using PyTorch in Industrial Data"
+    },
+    {
+      "__outstatic": {
+        "commit": "423c81b1243a53dd61945b9077fde1b6b97a10e4",
         "hash": "2180200241",
         "path": "outstatic/content/posts/zbieranie-danych-z-rzeczywistych-maszyn-przemyslowych-metody-i-narzedzia.md"
       },
@@ -1092,44 +1557,7 @@
     },
     {
       "__outstatic": {
-        "commit": "afe7624872b22b5bc782b20b357b6605863c0eb0",
-        "hash": "1548428804",
-        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/influxdb-QxMT.png",
-      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
-      "lang": "pl",
-      "publishedAt": "2024-11-15T12:07:03.000Z",
-      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
-      "status": "published",
-      "tags": [
-        {
-          "label": "InfluxDB",
-          "value": "influxDb"
-        },
-        {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
-          "label": "time-series data",
-          "value": "timeSeriesData"
-        },
-        {
-          "label": "analiza danych czasowych",
-          "value": "analizaDanychCzasowych"
-        }
-      ],
-      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
-    },
-    {
-      "__outstatic": {
-        "commit": "0620b436fa4753c79056ffe1320bb0a67104efe5",
+        "commit": "af62a3d622490c7060cfee2aba1dd6817629b840",
         "hash": "3806788972",
         "path": "outstatic/content/posts/zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze.md"
       },
@@ -1190,26 +1618,140 @@
     },
     {
       "__outstatic": {
-        "commit": "6016dbeb600e69340801de84fa776a7776301381",
-        "hash": "3253678410",
-        "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
+        "commit": "41810cecbc6bc505e9a7f79757d99c87ef16dc9f",
+        "hash": "1548428804",
+        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
-      "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
+      "coverImage": "/images/influxdb-QxMT.png",
+      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
       "lang": "pl",
-      "publishedAt": "2024-10-15T10:50:26.000Z",
-      "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
       "status": "published",
       "tags": [
         {
-          "label": "PyTorch",
-          "value": "pyTorch"
+          "label": "InfluxDB",
+          "value": "influxDb"
         },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "analiza danych czasowych",
+          "value": "analizaDanychCzasowych"
+        }
+      ],
+      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
+    },
+    {
+      "__outstatic": {
+        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
+        "hash": "1222761488",
+        "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
+      "lang": "pl",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
+      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
+      "status": "published",
+      "tags": [
+        {
+          "label": "XGBoost",
+          "value": "xgboost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightgbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catboost"
+        },
+        {
+          "label": "AI",
+          "value": "ai "
+        },
+        {
+          "label": "MES system",
+          "value": "messystem"
+        },
+        {
+          "label": "wykrywanie awarii",
+          "value": "wykrywanieAwarii"
+        },
+        {
+          "label": "analiza danych w przemyśle",
+          "value": "analizaDanychWPrzemyśle"
+        },
+        {
+          "label": "uczenie maszynowe w MES",
+          "value": "uczenieMaszynoweWMES"
+        },
+        {
+          "label": "klasyfikacja stanów maszyn",
+          "value": "klasyfikacjaStanówMaszyn"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "powiadomienia w czasie rzeczywistym",
+          "value": "powiadomieniaWCzasieRzeczywistym"
+        },
+        {
+          "label": "gradient boosting w przemyśle",
+          "value": "gradientBoostingWPrzemyśle"
+        },
+        {
+          "label": "algorytmy uczenia maszynowego",
+          "value": "algorytmyUczeniaMaszynowego"
+        },
+        {
+          "label": "systemy produkcyjne MES",
+          "value": "systemyProdukcyjneMES"
+        },
+        {
+          "label": "redukcja przestojów produkcyjnych",
+          "value": "redukcjaPrzestojówProdukcyjnych "
+        }
+      ],
+      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "9ae6473dbdd0a69ee581c200e431a1a5fcc21aef",
+        "hash": "2007098296",
+        "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
+      "lang": "pl",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "wykorzystanie-tensorflow-w-systemach-mes",
+      "status": "published",
+      "tags": [
         {
           "label": "TensorFlow",
           "value": "tensorFlow"
@@ -1227,19 +1769,15 @@
           "value": "catBoost"
         },
         {
-          "label": "dane przemysłowe",
-          "value": "danePrzemysłowe"
+          "label": "MES system",
+          "value": "mesSystem"
         },
         {
-          "label": "automatyzacja przemysłowa",
-          "value": "automatyzacjaPrzemysłowa"
-        },
-        {
-          "label": "porównanie algorytmów",
-          "value": "porównanieAlgorytmów"
+          "label": "wydajność algorytmów",
+          "value": "wydajnośćAlgorytmów"
         }
       ],
-      "title": "Wykorzystanie PyTorch w danych przemysłowych"
+      "title": "Wykorzystanie TensorFlow w systemach MES"
     }
   ]
 }
