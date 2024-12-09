@@ -1,6 +1,6 @@
 {
   "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
-  "generated": "2024-12-09T11:16:34.965Z",
+  "generated": "2024-12-09T11:19:37.991Z",
   "metadata": [
     {
       "__outstatic": {
@@ -953,7 +953,7 @@
     {
       "__outstatic": {
         "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
-        "hash": "1018066774",
+        "hash": "1084193773",
         "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
       },
       "author": {
@@ -964,7 +964,7 @@
       "coverImage": "/images/pobrane-QzND.png",
       "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
       "lang": "pl",
-      "publishedAt": "2024-12-09T11:11:34.169Z",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
       "slug": "wykorzystanie-tensorflow-w-systemach-mes",
       "status": "published",
       "tags": [
