@@ -1,6 +1,6 @@
 {
   "commit": "00ed44f1a18e045cc19e0c8b0837118a3ea2a56d",
-  "generated": "Mon, 09 Dec 2024 13:06:51 GMT",
+  "generated": "Mon, 09 Dec 2024 13:14:22 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -80,6 +80,25 @@
     },
     {
       "__outstatic": {
+        "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
+        "hash": "290669405",
+        "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/en-gxNT.png",
+      "description": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027",
+      "lang": "en",
+      "publishedAt": "2024-06-21T07:04:37.000Z",
+      "slug": "omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027",
+      "status": "published",
+      "title": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027"
+    },
+    {
+      "__outstatic": {
         "commit": "c57b03baa68fcf3a4ec6b51b071cc82d16a5c290",
         "hash": "772551379",
         "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
@@ -134,25 +153,6 @@
       "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
       "status": "published",
       "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
-    },
-    {
-      "__outstatic": {
-        "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
-        "hash": "290669405",
-        "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/en-gxNT.png",
-      "description": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027",
-      "lang": "en",
-      "publishedAt": "2024-06-21T07:04:37.000Z",
-      "slug": "omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027",
-      "status": "published",
-      "title": "Omnimes from Multiprojekt can be financed from European Funds for the years 2021-2027"
     },
     {
       "__outstatic": {
