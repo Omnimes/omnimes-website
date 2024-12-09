@@ -1,6 +1,6 @@
 {
-  "commit": "00ed44f1a18e045cc19e0c8b0837118a3ea2a56d",
-  "generated": "Mon, 09 Dec 2024 13:14:22 GMT",
+  "commit": "1cbe959e4be330c054ff0e5ec33b4a3da0d20a23",
+  "generated": "Mon, 09 Dec 2024 13:14:35 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -297,8 +297,8 @@
     },
     {
       "__outstatic": {
-        "commit": "1b6a086b0246f1dda8821bc60ca14bacdb9f4bad",
-        "hash": "1068148324",
+        "commit": "0c4db3b4474447ecbe4cec97617d5cdcbdbf09df",
+        "hash": "4125057431",
         "path": "outstatic/content/posts/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost.md"
       },
       "author": {
@@ -309,6 +309,7 @@
       "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
       "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
       "lang": "en",
+      "publishedAt": "2024-12-09T12:12:36.342Z",
       "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
@@ -745,8 +746,8 @@
     },
     {
       "__outstatic": {
-        "commit": "148fae75ff73e5b20c7ab6654186d08c640d0692",
-        "hash": "1362154581",
+        "commit": "d54a4d42905d4054b4923dd2db162326c379d5e0",
+        "hash": "3402449446",
         "path": "outstatic/content/posts/fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost.md"
       },
       "author": {
@@ -757,6 +758,7 @@
       "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
       "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
       "lang": "de",
+      "publishedAt": "2024-12-09T12:12:36.342Z",
       "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
@@ -1283,59 +1285,6 @@
     },
     {
       "__outstatic": {
-        "commit": "97c36767cc92769c532bd2de88fdbd3b3a39a90a",
-        "hash": "3253678410",
-        "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
-      "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
-      "lang": "pl",
-      "publishedAt": "2024-10-15T10:50:26.000Z",
-      "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PyTorch",
-          "value": "pyTorch"
-        },
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "dane przemysłowe",
-          "value": "danePrzemysłowe"
-        },
-        {
-          "label": "automatyzacja przemysłowa",
-          "value": "automatyzacjaPrzemysłowa"
-        },
-        {
-          "label": "porównanie algorytmów",
-          "value": "porównanieAlgorytmów"
-        }
-      ],
-      "title": "Wykorzystanie PyTorch w danych przemysłowych"
-    },
-    {
-      "__outstatic": {
         "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
         "hash": "2813343435",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
@@ -1468,6 +1417,59 @@
         }
       ],
       "title": "Using TensorFlow in MES Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "97c36767cc92769c532bd2de88fdbd3b3a39a90a",
+        "hash": "3253678410",
+        "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
+      "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
+      "lang": "pl",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "dane przemysłowe",
+          "value": "danePrzemysłowe"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "porównanie algorytmów",
+          "value": "porównanieAlgorytmów"
+        }
+      ],
+      "title": "Wykorzystanie PyTorch w danych przemysłowych"
     },
     {
       "__outstatic": {
