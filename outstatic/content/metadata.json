@@ -1,6 +1,6 @@
 {
-  "commit": "836cefec40e6e51dc5f4151008b3363b4dc7be3b",
-  "generated": "2024-12-09T11:49:43.438Z",
+  "commit": "b4b6d8bea880a35847b92397b6084341b3270497",
+  "generated": "2024-12-09T12:04:35.939Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1142,6 +1142,43 @@
         }
       ],
       "title": "Wykorzystanie PyTorch w danych przemysłowych"
+    },
+    {
+      "__outstatic": {
+        "commit": "b4b6d8bea880a35847b92397b6084341b3270497",
+        "hash": "4090273020",
+        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/influxdb-Y5MT.png",
+      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
+      "lang": "pl",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
+      "status": "published",
+      "tags": [
+        {
+          "label": "InfluxDB",
+          "value": "influxDb"
+        },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "analiza danych czasowych",
+          "value": "analizaDanychCzasowych"
+        }
+      ],
+      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
     }
   ]
 }

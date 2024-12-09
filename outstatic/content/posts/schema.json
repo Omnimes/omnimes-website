@@ -276,6 +276,22 @@
         {
           "value": "porównanieAlgorytmów",
           "label": "porównanie algorytmów"
+        },
+        {
+          "value": "influxDb",
+          "label": "InfluxDB"
+        },
+        {
+          "value": "mongoDb",
+          "label": "MongoDB"
+        },
+        {
+          "value": "timeSeriesData",
+          "label": "time-series data"
+        },
+        {
+          "value": "analizaDanychCzasowych",
+          "label": "analiza danych czasowych"
         }
       ]
     },
