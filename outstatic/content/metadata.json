@@ -1,6 +1,6 @@
 {
-  "commit": "c3f47fb7a10064e3b06ef2da08f1e02cd820d82d",
-  "generated": "Mon, 09 Dec 2024 11:23:15 GMT",
+  "commit": "b4a2c96ca1ff2c62589ea3064f9d92949c531a08",
+  "generated": "2024-12-09T11:34:09.209Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1056,6 +1056,39 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
+    },
+    {
+      "__outstatic": {
+        "commit": "b4a2c96ca1ff2c62589ea3064f9d92949c531a08",
+        "hash": "2124463995",
+        "path": "outstatic/content/posts/zbieranie-danych-z-rzeczywistych-maszyn-przemyslowych-metody-i-narzedzia.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "Zbieranie danych z maszyn przemysłowych – omówienie dwóch podejść: wdrożenia systemu MES, takiego jak OMNIMES firmy Multiprojekt, oraz wykorzystania publicznych danych z platform takich jak Statista i Kaggle. Praktyczne rozwiązania dla budowy modeli predykcji awarii",
+      "lang": "pl",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "zbieranie-danych-z-rzeczywistych-maszyn-przemyslowych-metody-i-narzedzia",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "zbieranie danych przemysłowych",
+          "value": "zbieranieDanychPrzemysłowych"
+        },
+        {
+          "label": "dane z maszyn",
+          "value": "daneZMaszyn"
+        },
+        {
+          "label": "uczenie maszynowe w przemyśle",
+          "value": "uczenieMaszynoweWPrzemyśle"
+        }
+      ],
+      "title": "Zbieranie danych z rzeczywistych maszyn przemysłowych: Metody i narzędzia"
     }
   ]
 }

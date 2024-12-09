@@ -248,6 +248,18 @@
         {
           "value": "wydajnośćAlgorytmów",
           "label": "wydajność algorytmów"
+        },
+        {
+          "value": "zbieranieDanychPrzemysłowych",
+          "label": "zbieranie danych przemysłowych"
+        },
+        {
+          "value": "daneZMaszyn",
+          "label": "dane z maszyn"
+        },
+        {
+          "value": "uczenieMaszynoweWPrzemyśle",
+          "label": "uczenie maszynowe w przemyśle"
         }
       ]
     },
