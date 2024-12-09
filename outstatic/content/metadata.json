@@ -1,6 +1,6 @@
 {
-  "commit": "e4ccc57fb76720b23a0c8cf7a50327adfe492c64",
-  "generated": "2024-08-09T11:09:55.940Z",
+  "commit": "f0d22cf530a28a1b93935716d7346a55165a84e9",
+  "generated": "2024-12-09T10:53:49.566Z",
   "metadata": [
     {
       "__outstatic": {
@@ -930,6 +930,25 @@
       "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
       "status": "published",
       "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
+    },
+    {
+      "__outstatic": {
+        "commit": "f0d22cf530a28a1b93935716d7346a55165a84e9",
+        "hash": "65289813",
+        "path": "outstatic/content/news/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
+      "lang": "pl",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
+      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
+      "status": "published",
+      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
     }
   ]
 }
