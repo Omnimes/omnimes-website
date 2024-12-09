@@ -1,6 +1,6 @@
 {
   "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
-  "generated": "2024-12-09T11:19:37.991Z",
+  "generated": "2024-12-09T11:23:01.725Z",
   "metadata": [
     {
       "__outstatic": {
@@ -939,41 +939,21 @@
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
-      "collection": "posts",
+      "collection": "news",
       "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
       "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
       "lang": "pl",
       "publishedAt": "2024-07-15T09:49:23.000Z",
       "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
       "status": "published",
-      "tags": [
-        { "label": "XGBoost", "value": "xgboost" },
-        { "label": "LightGBM", "value": "lightgbm" },
-        { "label": "CatBoost", "value": "catboost" },
-        { "label": "AI", "value": "ai" },
-        { "label": "MES system", "value": "messystem" },
-        { "label": "wykrywanie awarii", "value": "wykrywanieAwarii" },
-        { "label": "analiza danych w przemyśle", "value": "analizaDanychWPrzemyśle" },
-        { "label": "uczenie maszynowe w MES", "value": "uczenieMaszynoweWMES" },
-        { "label": "klasyfikacja stanów maszyn", "value": "klasyfikacjaStanówMaszyn" },
-        { "label": "automatyzacja przemysłowa", "value": "automatyzacjaPrzemysłowa" },
-        {
-          "label": "powiadomienia w czasie rzeczywistym",
-          "value": "powiadomieniaWCzasieRzeczywistym"
-        },
-        { "label": "gradient boosting w przemyśle", "value": "gradientBoostingWPrzemyśle" },
-        { "label": "algorytmy uczenia maszynowego", "value": "algorytmyUczeniaMaszynowego" },
-        { "label": "systemy produkcyjne MES", "value": "systemyProdukcyjneMES" },
-        { "label": "redukcja przestojów produkcyjnych", "value": "redukcjaPrzestojówProdukcyjnych" }
-      ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
     },
     {
       "__outstatic": {
         "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
-        "hash": "1084193773",
+        "hash": "2007098296",
         "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
       },
       "author": {
@@ -981,7 +961,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/pobrane-QzND.png",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
       "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
       "lang": "pl",
       "publishedAt": "2024-08-15T10:11:34.000Z",

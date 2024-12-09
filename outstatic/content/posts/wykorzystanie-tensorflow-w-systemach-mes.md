@@ -2,7 +2,7 @@
 author:
   name: 'Martin Szerment'
   picture: '/images/martin.png'
-coverImage: '/images/pobrane-QzND.png'
+coverImage: '/images/tensorflow-ml-engineer-c2ND.png'
 title: 'Wykorzystanie TensorFlow w systemach MES'
 status: 'published'
 slug: 'wykorzystanie-tensorflow-w-systemach-mes'
