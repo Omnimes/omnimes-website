@@ -292,6 +292,46 @@
         {
           "value": "analizaDanychCzasowych",
           "label": "analiza danych czasowych"
+        },
+        {
+          "value": "web3",
+          "label": "Web3"
+        },
+        {
+          "value": "blockchain",
+          "label": "blockchain"
+        },
+        {
+          "value": "oze",
+          "label": "OZE"
+        },
+        {
+          "value": "odnawialneŹródłaEnergii",
+          "label": "odnawialne źródła energii"
+        },
+        {
+          "value": "tokenizacjaEnergii",
+          "label": "tokenizacja energii"
+        },
+        {
+          "value": "smartKontrakty",
+          "label": "smart kontrakty"
+        },
+        {
+          "value": "monitorowanieZużyciaEnergii",
+          "label": "monitorowanie zużycia energii"
+        },
+        {
+          "value": "automatyzacjaRozliczeń",
+          "label": "automatyzacja rozliczeń"
+        },
+        {
+          "value": "handelEnergiąP2P",
+          "label": " handel energią P2P"
+        },
+        {
+          "value": "zrównoważonaEnergetyka",
+          "label": "zrównoważona energetyka"
         }
       ]
     },
