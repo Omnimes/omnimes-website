@@ -1,6 +1,6 @@
 {
   "commit": "1cbe959e4be330c054ff0e5ec33b4a3da0d20a23",
-  "generated": "Mon, 09 Dec 2024 13:14:35 GMT",
+  "generated": "Mon, 09 Dec 2024 13:22:36 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -1285,6 +1285,59 @@
     },
     {
       "__outstatic": {
+        "commit": "97c36767cc92769c532bd2de88fdbd3b3a39a90a",
+        "hash": "3253678410",
+        "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
+      "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
+      "lang": "pl",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "dane przemysłowe",
+          "value": "danePrzemysłowe"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "porównanie algorytmów",
+          "value": "porównanieAlgorytmów"
+        }
+      ],
+      "title": "Wykorzystanie PyTorch w danych przemysłowych"
+    },
+    {
+      "__outstatic": {
         "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
         "hash": "2813343435",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
@@ -1417,59 +1470,6 @@
         }
       ],
       "title": "Using TensorFlow in MES Systems"
-    },
-    {
-      "__outstatic": {
-        "commit": "97c36767cc92769c532bd2de88fdbd3b3a39a90a",
-        "hash": "3253678410",
-        "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
-      "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
-      "lang": "pl",
-      "publishedAt": "2024-10-15T10:50:26.000Z",
-      "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PyTorch",
-          "value": "pyTorch"
-        },
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "dane przemysłowe",
-          "value": "danePrzemysłowe"
-        },
-        {
-          "label": "automatyzacja przemysłowa",
-          "value": "automatyzacjaPrzemysłowa"
-        },
-        {
-          "label": "porównanie algorytmów",
-          "value": "porównanieAlgorytmów"
-        }
-      ],
-      "title": "Wykorzystanie PyTorch w danych przemysłowych"
     },
     {
       "__outstatic": {
