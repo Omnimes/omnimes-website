@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze'
 description: 'Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu odnawialnych źródeł energii (OZE). Artykuł omawia monitorowanie zużycia energii, automatyczne rozliczenia, tokenizację energii oraz handel peer-to-peer, podkreślając korzyści z zastosowania Web3 w przemyśle'
-coverImage: '/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp'
+coverImage: '/images/web3-A5ND.png'
 lang: 'pl'
 tags: [{"label":"Web3","value":"web3"},{"label":"blockchain","value":"blockchain"},{"label":"OZE","value":"oze"},{"label":"odnawialne źródła energii","value":"odnawialneŹródłaEnergii"},{"label":"tokenizacja energii","value":"tokenizacjaEnergii"},{"label":"smart kontrakty","value":"smartKontrakty"},{"label":"monitorowanie zużycia energii","value":"monitorowanieZużyciaEnergii"},{"label":"automatyzacja rozliczeń","value":"automatyzacjaRozliczeń"},{"label":" handel energią P2P","value":"handelEnergiąP2P"},{"label":"zrównoważona energetyka","value":"zrównoważonaEnergetyka"}]
 publishedAt: '2024-12-09T12:12:36.342Z'

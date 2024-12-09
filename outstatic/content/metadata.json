@@ -1,6 +1,6 @@
 {
-  "commit": "afe7624872b22b5bc782b20b357b6605863c0eb0",
-  "generated": "2024-12-09T12:55:51.674Z",
+  "commit": "0620b436fa4753c79056ffe1320bb0a67104efe5",
+  "generated": "2024-12-09T13:04:14.897Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1145,8 +1145,45 @@
     },
     {
       "__outstatic": {
-        "commit": "5d219240838cd1b2c2ffee11881eb19a2d6af028",
-        "hash": "131366061",
+        "commit": "afe7624872b22b5bc782b20b357b6605863c0eb0",
+        "hash": "1548428804",
+        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/influxdb-QxMT.png",
+      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
+      "lang": "pl",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
+      "status": "published",
+      "tags": [
+        {
+          "label": "InfluxDB",
+          "value": "influxDb"
+        },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "analiza danych czasowych",
+          "value": "analizaDanychCzasowych"
+        }
+      ],
+      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
+    },
+    {
+      "__outstatic": {
+        "commit": "0620b436fa4753c79056ffe1320bb0a67104efe5",
+        "hash": "3806788972",
         "path": "outstatic/content/posts/zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze.md"
       },
       "author": {
@@ -1154,7 +1191,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp",
+      "coverImage": "/images/web3-A5ND.png",
       "description": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu odnawialnych źródeł energii (OZE). Artykuł omawia monitorowanie zużycia energii, automatyczne rozliczenia, tokenizację energii oraz handel peer-to-peer, podkreślając korzyści z zastosowania Web3 w przemyśle",
       "lang": "pl",
       "publishedAt": "2024-12-09T12:12:36.342Z",
@@ -1203,43 +1240,6 @@
         }
       ],
       "title": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu OZE"
-    },
-    {
-      "__outstatic": {
-        "commit": "afe7624872b22b5bc782b20b357b6605863c0eb0",
-        "hash": "1548428804",
-        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/influxdb-QxMT.png",
-      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
-      "lang": "pl",
-      "publishedAt": "2024-11-15T12:07:03.000Z",
-      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
-      "status": "published",
-      "tags": [
-        {
-          "label": "InfluxDB",
-          "value": "influxDb"
-        },
-        {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
-          "label": "time-series data",
-          "value": "timeSeriesData"
-        },
-        {
-          "label": "analiza danych czasowych",
-          "value": "analizaDanychCzasowych"
-        }
-      ],
-      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
     }
   ]
 }
