@@ -8,7 +8,13 @@ slug: 'wizualizacja-danych-sukcesem-analizy-redash'
 description: 'W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.'
 coverImage: '/images/5.png'
 lang: 'pl'
-tags: [{"label":"redash","value":"redash"},{"label":"wizualziacja danych","value":"wizualziacjaDanych"},{"label":"big data","value":"bigData"},{"label":"raporty","value":"raporty"}]
+tags:
+  [
+    { 'label': 'redash', 'value': 'redash' },
+    { 'label': 'wizualziacja danych', 'value': 'wizualziacjaDanych' },
+    { 'label': 'big data', 'value': 'bigData' },
+    { 'label': 'raporty', 'value': 'raporty' },
+  ]
 publishedAt: '2024-06-15T21:02:14.000Z'
 ---
 

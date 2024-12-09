@@ -3,11 +3,28 @@ title: 'Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoos
 status: 'published'
 author:
   name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  picture: '/images/martin.png'
 slug: 'wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost'
 description: 'Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.'
 coverImage: '/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp'
 lang: 'pl'
+tags: [
+  { 'label': 'XGBoost','value': 'xgboost' },
+  { 'label': 'LightGBM','value': 'lightgbm' },
+  { 'label': 'CatBoost','value': 'catboost' },
+  { 'label': 'AI','value': 'ai '},
+  { 'label': 'MES system', 'value': 'messystem' },
+  { 'label': 'wykrywanie awarii', 'value': 'wykrywanieAwarii' },
+  { 'label': 'analiza danych w przemyśle', 'value': 'analizaDanychWPrzemyśle' },
+  { 'label': 'uczenie maszynowe w MES', 'value': 'uczenieMaszynoweWMES' },
+  { 'label': 'klasyfikacja stanów maszyn', 'value': 'klasyfikacjaStanówMaszyn' },
+  { 'label': 'automatyzacja przemysłowa', 'value': 'automatyzacjaPrzemysłowa' },
+  { 'label': 'powiadomienia w czasie rzeczywistym', 'value': 'powiadomieniaWCzasieRzeczywistym' },
+  { 'label': 'gradient boosting w przemyśle', 'value': 'gradientBoostingWPrzemyśle' },
+  { 'label': 'algorytmy uczenia maszynowego', 'value': 'algorytmyUczeniaMaszynowego' },
+  { 'label': 'systemy produkcyjne MES', 'value': 'systemyProdukcyjneMES' },
+  { 'label': 'redukcja przestojów produkcyjnych', 'value': 'redukcjaPrzestojówProdukcyjnych ' }
+]
 publishedAt: '2024-07-15T09:49:23.000Z'
 ---
 
@@ -163,7 +180,7 @@ Wykorzystanie powiadomień w czasie rzeczywistym jest kluczowe dla skutecznego z
 
 - **Przykład powiadomienia SMS:**
 
-  ALERT: Maszyna #123 – Awaria wykryta! Typ: Postój nieplanowany (4) Czas: 10:32 Działanie: Skontaktuj się z technikiem: Jan Kowalski (tel. 555-123-456). 
+  ALERT: Maszyna #123 – Awaria wykryta! Typ: Postój nieplanowany (4) Czas: 10:32 Działanie: Skontaktuj się z technikiem: Jan Kowalski (tel. 555-123-456).
 
 ### **3. Eskalacja problemu**
 

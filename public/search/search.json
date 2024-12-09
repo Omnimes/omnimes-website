@@ -1,5 +1,12 @@
 [
   {
+    "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost",
+    "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
+    "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
+    "lang": "pl",
+    "tags": "XGBoost, LightGBM, CatBoost, AI, MES system, wykrywanie awarii, analiza danych w przemyśle, uczenie maszynowe w MES, klasyfikacja stanów maszyn, automatyzacja przemysłowa, powiadomienia w czasie rzeczywistym, gradient boosting w przemyśle, algorytmy uczenia maszynowego, systemy produkcyjne MES, redukcja przestojów produkcyjnych"
+  },
+  {
     "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System",
     "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
     "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
