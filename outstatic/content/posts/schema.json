@@ -260,6 +260,22 @@
         {
           "value": "uczenieMaszynoweWPrzemyśle",
           "label": "uczenie maszynowe w przemyśle"
+        },
+        {
+          "value": "pyTorch",
+          "label": "PyTorch"
+        },
+        {
+          "value": "danePrzemysłowe",
+          "label": "dane przemysłowe"
+        },
+        {
+          "value": "automatyzacjaPrzemysłowa",
+          "label": "automatyzacja przemysłowa"
+        },
+        {
+          "value": "porównanieAlgorytmów",
+          "label": "porównanie algorytmów"
         }
       ]
     },

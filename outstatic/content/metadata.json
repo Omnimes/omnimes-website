@@ -1,6 +1,6 @@
 {
-  "commit": "b780f30722ee13d52f10b8411633a3a3320d6343",
-  "generated": "2024-12-09T11:36:44.427Z",
+  "commit": "836cefec40e6e51dc5f4151008b3363b4dc7be3b",
+  "generated": "2024-12-09T11:49:43.438Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1089,6 +1089,59 @@
         }
       ],
       "title": "Zbieranie danych z rzeczywistych maszyn przemysłowych: Metody i narzędzia"
+    },
+    {
+      "__outstatic": {
+        "commit": "836cefec40e6e51dc5f4151008b3363b4dc7be3b",
+        "hash": "3237515837",
+        "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pytorch-e1576624094357-IwOD.jpg",
+      "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
+      "lang": "pl",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "dane przemysłowe",
+          "value": "danePrzemysłowe"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "porównanie algorytmów",
+          "value": "porównanieAlgorytmów"
+        }
+      ],
+      "title": "Wykorzystanie PyTorch w danych przemysłowych"
     }
   ]
 }
