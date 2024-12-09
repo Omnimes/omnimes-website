@@ -4,7 +4,7 @@ author:
   picture: '/images/martin.png'
 coverImage: '/images/pobrane-QzND.png'
 title: 'Wykorzystanie TensorFlow w systemach MES'
-status: 'draft'
+status: 'published'
 slug: 'wykorzystanie-tensorflow-w-systemach-mes'
 description: 'Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.'
 lang: 'pl'

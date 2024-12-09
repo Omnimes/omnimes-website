@@ -1,6 +1,6 @@
 {
-  "commit": "b6543f8f4e8426d2fe8b5342eac389704a890523",
-  "generated": "2024-12-09T11:11:37.064Z",
+  "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
+  "generated": "2024-12-09T11:16:34.965Z",
   "metadata": [
     {
       "__outstatic": {
@@ -952,8 +952,8 @@
     },
     {
       "__outstatic": {
-        "commit": "b6543f8f4e8426d2fe8b5342eac389704a890523",
-        "hash": "3770741297",
+        "commit": "c2ed648eb65918b8a569ba81e2772b9ccb2fa55b",
+        "hash": "1018066774",
         "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
       },
       "author": {
@@ -966,7 +966,7 @@
       "lang": "pl",
       "publishedAt": "2024-12-09T11:11:34.169Z",
       "slug": "wykorzystanie-tensorflow-w-systemach-mes",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "TensorFlow",
