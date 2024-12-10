@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'verwendung-von-pytorch-in-industriedaten'
 description: 'Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.'
-coverImage: '/images/pytorch-e1576624094357-IwOD.jpg'
+coverImage: '/images/illu_pytorch-49-Y1Nz.png'
 lang: 'de'
 tags: [{"label":"PyTorch","value":"pyTorch"},{"value":"tensorFlow","label":"TensorFlow"},{"value":"xgBoost","label":"XGBoost"},{"value":"lightGbm","label":"LightGBM"},{"value":"catBoost","label":"CatBoost"},{"label":"Industriedaten","value":"industriedaten"},{"label":"industrielle Automatisierung","value":"industrielleAutomatisierung"},{"label":"Algorithmusvergleich","value":"algorithmusVergleich"}]
 publishedAt: '2024-10-15T10:50:26.000Z'

@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb'
 description: 'Ein Vergleich von InfluxDB und MongoDB für die industrielle Datensammlung. Dieser Artikel diskutiert den Einsatz von InfluxDB für Zeitreihendatenanalyse, Maschinenüberwachung und IoT sowie MongoDB als universelle Datenbank für MES-Systeme. Praktische Tipps, wann jede dieser Datenbanken gewählt werden sollte.'
-coverImage: '/images/influxdb-Y5MT.png'
+coverImage: '/images/influxdb-QxMT.png'
 lang: 'de'
 tags: [{"label":"InfluxDB","value":"influxDb"},{"label":"MongoDB","value":"mongoDb"},{"label":"Zeitreihendaten","value":"timeSeriesData"},{"label":"Zeitreihendatenanalyse","value":"timeSeriesDataAnalysis"}]
 publishedAt: '2024-11-15T12:07:03.000Z'
