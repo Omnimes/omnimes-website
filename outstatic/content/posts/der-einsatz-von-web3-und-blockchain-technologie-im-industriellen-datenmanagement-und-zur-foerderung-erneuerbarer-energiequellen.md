@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen'
 description: 'Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.'
-coverImage: '/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp'
+coverImage: '/images/web3-A5ND.png'
 lang: 'de'
 tags: [{"label":"Web3","value":"web3"},{"label":"Blockchain","value":"blockchain"},{"label":"RES","value":"res"},{"label":"Erneuerbare Energiequellen","value":"renewableEnergySources"},{"label":"Energietokenisierung","value":"energyTokenization"},{"label":"Smart Contracts","value":"smartContracts"},{"label":"Energieverbrauchsüberwachung","value":"energyConsumptionMonitoring"},{"label":"Automatisierte Abrechnungen","value":"automatedSettlements"},{"label":"P2P-Energiehandel","value":"p2pEnergyTrading"},{"label":"Nachhaltige Energie","value":"sustainableEnergy"}]
 publishedAt: '2024-12-09T12:12:36.342Z'

@@ -1,24 +1,10 @@
 [
   {
-    "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost",
-    "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
-    "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
-    "lang": "en",
-    "tags": "XGBoost, LightGBM, CatBoost, MES Systems, Fault Detection"
-  },
-  {
     "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen",
     "slug": "der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen",
     "description": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.",
     "lang": "de",
     "tags": "Web3, Blockchain, RES, Erneuerbare Energiequellen, Energietokenisierung, Smart Contracts, Energieverbrauchsüberwachung, Automatisierte Abrechnungen, P2P-Energiehandel, Nachhaltige Energie"
-  },
-  {
-    "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost",
-    "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
-    "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
-    "lang": "de",
-    "tags": "XGBoost, LightGBM, CatBoost, MES-Systeme, Fehlererkennung"
   },
   {
     "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources",
@@ -56,18 +42,18 @@
     "tags": "InfluxDB, MongoDB, time-series data, analiza danych czasowych"
   },
   {
-    "title": "Verwendung von PyTorch in Industriedaten",
-    "slug": "verwendung-von-pytorch-in-industriedaten",
-    "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
-    "lang": "de",
-    "tags": "PyTorch, TensorFlow, XGBoost, LightGBM, CatBoost, Industriedaten, industrielle Automatisierung, Algorithmusvergleich"
-  },
-  {
     "title": "Wykorzystanie PyTorch w danych przemysłowych",
     "slug": "wykorzystanie-pytorch-w-danych-przemyslowych",
     "description": "Porównanie PyTorch, TensorFlow, XGBoost, LightGBM i CatBoost w analizie danych przemysłowych. Artykuł omawia zastosowanie PyTorch w predykcji awarii maszyn, analizie danych czasowych i porównuje go z innymi narzędziami pod kątem elastyczności, wydajności i zastosowań",
     "lang": "pl",
     "tags": "PyTorch, TensorFlow, XGBoost, LightGBM, CatBoost, dane przemysłowe, automatyzacja przemysłowa, porównanie algorytmów"
+  },
+  {
+    "title": "Verwendung von PyTorch in Industriedaten",
+    "slug": "verwendung-von-pytorch-in-industriedaten",
+    "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
+    "lang": "de",
+    "tags": "PyTorch, TensorFlow, XGBoost, LightGBM, CatBoost, Industriedaten, industrielle Automatisierung, Algorithmusvergleich"
   },
   {
     "title": "Using PyTorch in Industrial Data",
@@ -117,6 +103,20 @@
     "description": "Porównanie algorytmów TensorFlow, XGBoost, LightGBM i CatBoost w wykrywaniu awarii w systemach MES. Praktyczne zastosowania, analiza danych czasowych i tabelarycznych oraz wydajność pod kątem szybkości i zasobów obliczeniowych.",
     "lang": "pl",
     "tags": "TensorFlow, XGBoost, LightGBM, CatBoost, MES system, wydajność algorytmów"
+  },
+  {
+    "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost",
+    "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
+    "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
+    "lang": "en",
+    "tags": "XGBoost, LightGBM, CatBoost, MES Systems, Fault Detection"
+  },
+  {
+    "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost",
+    "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
+    "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
+    "lang": "de",
+    "tags": "XGBoost, LightGBM, CatBoost, MES-Systeme, Fehlererkennung"
   },
   {
     "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost",

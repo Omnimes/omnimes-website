@@ -6,7 +6,7 @@ author:
   picture: '/images/martin.png'
 slug: 'the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources'
 description: 'The use of Web3 and blockchain technology in managing industrial data and promoting renewable energy sources (RES). This article discusses energy consumption monitoring, automated settlements, energy tokenization, and peer-to-peer trading, emphasizing the benefits of using Web3 in the industry.'
-coverImage: '/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp'
+coverImage: '/images/web3-A5ND.png'
 lang: 'en'
 tags: [{"label":"Web3","value":"web3"},{"label":"blockchain","value":"blockchain"},{"label":"RES","value":"res"},{"label":"renewable energy sources","value":"renewableEnergySources"},{"label":"energy tokenization","value":"energyTokenization"},{"label":"smart contracts","value":"smartContracts"},{"label":"energy consumption monitoring","value":"energyConsumptionMonitoring"},{"label":"automated settlements","value":"automatedSettlements"},{"label":"P2P energy trading","value":"p2pEnergyTrading"},{"label":"sustainable energy","value":"sustainableEnergy"}]
 publishedAt: '2024-12-09T12:12:36.342Z'
