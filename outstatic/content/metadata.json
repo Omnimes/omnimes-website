@@ -1,6 +1,6 @@
 {
-  "commit": "b4cbb27f0f82e922ad08bdcea76bc609b67d7b4f",
-  "generated": "Mon, 09 Dec 2024 13:22:51 GMT",
+  "commit": "24150ba41e2494e933ee4a9c69ccdae5d6d29f8a",
+  "generated": "Tue, 10 Dec 2024 07:41:46 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -297,8 +297,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0c4db3b4474447ecbe4cec97617d5cdcbdbf09df",
-        "hash": "4125057431",
+        "commit": "618946b1d03b191753c0843ecce05ba6ff9889e0",
+        "hash": "3310344853",
         "path": "outstatic/content/posts/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost.md"
       },
       "author": {
@@ -309,7 +309,7 @@
       "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
       "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
       "lang": "en",
-      "publishedAt": "2024-12-09T12:12:36.342Z",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
       "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
@@ -335,43 +335,6 @@
         }
       ],
       "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "f5863a530eb4ee58d3ff1a1a757bc068f5cc40df",
-        "hash": "3421056101",
-        "path": "outstatic/content/posts/einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/influxdb-Y5MT.png",
-      "description": "Ein Vergleich von InfluxDB und MongoDB für die industrielle Datensammlung. Dieser Artikel diskutiert den Einsatz von InfluxDB für Zeitreihendatenanalyse, Maschinenüberwachung und IoT sowie MongoDB als universelle Datenbank für MES-Systeme. Praktische Tipps, wann jede dieser Datenbanken gewählt werden sollte.",
-      "lang": "de",
-      "publishedAt": "2024-11-15T12:07:03.000Z",
-      "slug": "einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb",
-      "status": "published",
-      "tags": [
-        {
-          "label": "InfluxDB",
-          "value": "influxDb"
-        },
-        {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
-          "label": "Zeitreihendaten",
-          "value": "timeSeriesData"
-        },
-        {
-          "label": "Zeitreihendatenanalyse",
-          "value": "timeSeriesDataAnalysis"
-        }
-      ],
-      "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB"
     },
     {
       "__outstatic": {
@@ -420,9 +383,8 @@
     },
     {
       "__outstatic": {
-<<<<<<< HEAD
-        "commit": "f5863a530eb4ee58d3ff1a1a757bc068f5cc40df",
-        "hash": "3421056101",
+        "commit": "72a58e199ac10800d01c8f27acd45a4acfa1c4db",
+        "hash": "4215683022",
         "path": "outstatic/content/posts/einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb.md"
       },
       "author": {
@@ -458,8 +420,6 @@
     },
     {
       "__outstatic": {
-=======
->>>>>>> 5373c9ff0c715eb9d350b51a8874fd3ee10f1adb
         "commit": "fb8a558d2bdeafe4ed7dacc605447ece39c9d536",
         "hash": "962057785",
         "path": "outstatic/content/posts/der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen.md"
@@ -615,63 +575,6 @@
     },
     {
       "__outstatic": {
-        "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
-        "hash": "2451523430",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/4.png",
-      "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
-      "lang": "de",
-      "publishedAt": "2024-06-05T05:46:42.000Z",
-      "slug": "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Kommunikationsprotokoll",
-          "value": "kommunikationsprotokoll"
-        },
-        {
-          "label": "IoT-Kommunikation",
-          "value": "ioTKommunikation"
-        },
-        {
-          "label": "Kommunikationsstandards",
-          "value": "kommunikationsstandards"
-        }
-      ],
-      "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
-    },
-    {
-      "__outstatic": {
         "commit": "eff1359193c8c49290730d98f67fae649bef6982",
         "hash": "180187371",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
@@ -786,8 +689,65 @@
     },
     {
       "__outstatic": {
-        "commit": "d54a4d42905d4054b4923dd2db162326c379d5e0",
-        "hash": "3402449446",
+        "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
+        "hash": "2451523430",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/4.png",
+      "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
+      "lang": "de",
+      "publishedAt": "2024-06-05T05:46:42.000Z",
+      "slug": "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "QoS",
+          "value": "qoS"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Kommunikationsprotokoll",
+          "value": "kommunikationsprotokoll"
+        },
+        {
+          "label": "IoT-Kommunikation",
+          "value": "ioTKommunikation"
+        },
+        {
+          "label": "Kommunikationsstandards",
+          "value": "kommunikationsstandards"
+        }
+      ],
+      "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
+    },
+    {
+      "__outstatic": {
+        "commit": "066448c5d59baa287b9229c0aec0d4cf56d96fcd",
+        "hash": "3668030207",
         "path": "outstatic/content/posts/fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost.md"
       },
       "author": {
@@ -798,7 +758,7 @@
       "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
       "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
       "lang": "de",
-      "publishedAt": "2024-12-09T12:12:36.342Z",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
       "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
@@ -865,47 +825,6 @@
         }
       ],
       "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
-    },
-    {
-      "__outstatic": {
-        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
-        "hash": "46414442",
-        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
-      "lang": "en",
-      "publishedAt": "2024-06-10T09:10:14.654Z",
-      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "GPT-4 API",
-          "value": "gpt4Api"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        }
-      ],
-      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
     },
     {
       "__outstatic": {
@@ -1003,6 +922,47 @@
     },
     {
       "__outstatic": {
+        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
+        "hash": "46414442",
+        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+      "lang": "en",
+      "publishedAt": "2024-06-10T09:10:14.654Z",
+      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "GPT-4 API",
+          "value": "gpt4Api"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        }
+      ],
+      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
         "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
         "hash": "1072085323",
         "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
@@ -1056,8 +1016,8 @@
     },
     {
       "__outstatic": {
-        "commit": "ea5466c09195740f733b82a94e1ac3af91f176e6",
-        "hash": "1096981954",
+        "commit": "ad1179a5f3d2cfe808c3db6efff45720976eb294",
+        "hash": "2067683221",
         "path": "outstatic/content/posts/using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb.md"
       },
       "author": {
@@ -1415,8 +1375,53 @@
     },
     {
       "__outstatic": {
-        "commit": "1f6f7532569d351720596bd8a19b36579023cf68",
-        "hash": "2364021999",
+        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
+        "hash": "3236711354",
+        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
+      "lang": "en",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "using-tensorflow-in-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "algorithm performance",
+          "value": "algorithmPerformance"
+        }
+      ],
+      "title": "Using TensorFlow in MES Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "5311808d334dac83cc2ffa58a157091244eee932",
+        "hash": "895657840",
         "path": "outstatic/content/posts/verwendung-von-pytorch-in-industriedaten.md"
       },
       "author": {
@@ -1468,53 +1473,8 @@
     },
     {
       "__outstatic": {
-        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
-        "hash": "3236711354",
-        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
-      "lang": "en",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "using-tensorflow-in-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "algorithm performance",
-          "value": "algorithmPerformance"
-        }
-      ],
-      "title": "Using TensorFlow in MES Systems"
-    },
-    {
-      "__outstatic": {
-        "commit": "5b02d05dc2b1d8da1bffee626e6a4b60df21b47a",
-        "hash": "92028719",
+        "commit": "f520b55ed3d1cf9bd9a0d3e11e675e96c7c40143",
+        "hash": "605878199",
         "path": "outstatic/content/posts/using-pytorch-in-industrial-data.md"
       },
       "author": {
@@ -1599,6 +1559,43 @@
     },
     {
       "__outstatic": {
+        "commit": "41810cecbc6bc505e9a7f79757d99c87ef16dc9f",
+        "hash": "1548428804",
+        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/influxdb-QxMT.png",
+      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
+      "lang": "pl",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
+      "status": "published",
+      "tags": [
+        {
+          "label": "InfluxDB",
+          "value": "influxDb"
+        },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "analiza danych czasowych",
+          "value": "analizaDanychCzasowych"
+        }
+      ],
+      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
+    },
+    {
+      "__outstatic": {
         "commit": "af62a3d622490c7060cfee2aba1dd6817629b840",
         "hash": "3806788972",
         "path": "outstatic/content/posts/zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze.md"
@@ -1657,43 +1654,6 @@
         }
       ],
       "title": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu OZE"
-    },
-    {
-      "__outstatic": {
-        "commit": "41810cecbc6bc505e9a7f79757d99c87ef16dc9f",
-        "hash": "1548428804",
-        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/influxdb-QxMT.png",
-      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
-      "lang": "pl",
-      "publishedAt": "2024-11-15T12:07:03.000Z",
-      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
-      "status": "published",
-      "tags": [
-        {
-          "label": "InfluxDB",
-          "value": "influxDb"
-        },
-        {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
-          "label": "time-series data",
-          "value": "timeSeriesData"
-        },
-        {
-          "label": "analiza danych czasowych",
-          "value": "analizaDanychCzasowych"
-        }
-      ],
-      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
     },
     {
       "__outstatic": {
