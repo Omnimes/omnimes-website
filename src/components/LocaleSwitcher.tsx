@@ -50,7 +50,7 @@ export default function LocaleSwitcher() {
           startContent={
             <Avatar
               alt={t("locale", { locale: cur })}
-              className="size-4"
+              className="h-4 !w-4"
               src={
                 cur == "en" ? `https://flagcdn.com/gb-eng.svg` : `https://flagcdn.com/${cur}.svg`
               }
