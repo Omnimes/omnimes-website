@@ -5,7 +5,7 @@ export const AnchorIcon = () => {
 export const EnergyIcon = () => {
   return (
     <svg
-      className="text-deep-purple-accent-400 h-8 w-8 sm:h-10 sm:w-10"
+      className="text-deep-purple-accent-400 size-8 sm:size-10"
       stroke="currentColor"
       viewBox="0 0 52 52"
     >

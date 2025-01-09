@@ -1,29 +1,20 @@
-import { ReactNode } from "react";
-import SectionContainer from "@/components/SectionContainer";
-import { unstable_setRequestLocale } from "next-intl/server";
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
-import { Footer } from "@/components/Footer";
-import { ComponentSearch } from "@/components/ComponentSearch";
-import Header from "@/components/Header";
+import { ReactNode } from "react"
 
-type Props = {
-  children: ReactNode;
-  params: { locale: string };
-};
+import { ComponentSearch } from "@/components/ComponentSearch"
+import { Footer } from "@/components/Footer"
+import Header from "@/components/Header"
+import ScrollTopAndComment from "@/components/ScrollTopAndComment"
+import SectionContainer from "@/components/SectionContainer"
 
-export default function MarketingLayout({ children, params: { locale } }: Props) {
-    unstable_setRequestLocale(locale);
-
-    return (
-        <>
-            <ComponentSearch>
-                <Header />
-            </ComponentSearch>
-            <SectionContainer> 
-                {children}
-            </SectionContainer> 
-            <ScrollTopAndComment />
-            <Footer />  
-        </>
-    )
+export default function MarketingLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <ComponentSearch>
+        <Header />
+      </ComponentSearch>
+      <SectionContainer>{children}</SectionContainer>
+      <ScrollTopAndComment />
+      <Footer />
+    </>
+  )
 }

@@ -1,11 +1,14 @@
-'use server'
-import { CompanyStatus } from '@/components/forms/become-developer/BecomeDeveloper'
-import { db } from '@/utils/db'
-import { revalidatePath } from 'next/cache'
-import { getAllAdminsOmniMES } from './user'
+"use server"
+
+import { revalidatePath } from "next/cache"
+import { db } from "@/utils/db"
+
+import { CompanyStatus } from "@/components/forms/become-developer/BecomeDeveloper"
+
+import { getAllAdminsOmniMES } from "./user"
 
 /* Prośba o zostanie developerem produktu omnimes */
-export const createPromisesToBecomeDeveloper = async(userId: string) => {
+export const createPromisesToBecomeDeveloper = async (userId: string) => {
   try {
     // Pobierz użytkownika razem z powiązaną firmą
     const user = await db.user.findUnique({
@@ -32,18 +35,18 @@ export const createPromisesToBecomeDeveloper = async(userId: string) => {
     const userNip = companyNip || adminCompanyNip
 
     // Sprawdź, czy użytkownik ma powiązaną firmę
-    if (!userNip) return { success: false, message: 'userNotAssociated' }
+    if (!userNip) return { success: false, message: "userNotAssociated" }
 
     await db.roleRequest.create({
       data: {
-        userId: userId,
+        userId,
         nip: userNip,
       },
     })
 
-    const admins = await getAllAdminsOmniMES();
+    const admins = await getAllAdminsOmniMES()
 
-    admins.forEach(async admin => {
+    admins.forEach(async (admin) => {
       await db.notification.create({
         data: {
           userId: admin.id,
@@ -63,69 +66,71 @@ export const createPromisesToBecomeDeveloper = async(userId: string) => {
   }
 }
 
-export const getCompanyAndRoleRequestStatus = async (userId: string): Promise<CompanyStatus & { haveRoleRequest: boolean }> => {
+export const getCompanyAndRoleRequestStatus = async (
+  userId: string
+): Promise<CompanyStatus & { haveRoleRequest: boolean }> => {
   try {
     // Sprawdź, czy użytkownik ma przypisaną firmę
     const company = await db.company.findFirst({
       where: {
         OR: [
-          { users: { some: { id: userId } } },   // Użytkownik jest użytkownikiem
-          { admins: { some: { id: userId } } },  // Użytkownik jest administratorem
+          { users: { some: { id: userId } } }, // Użytkownik jest użytkownikiem
+          { admins: { some: { id: userId } } }, // Użytkownik jest administratorem
         ],
       },
       select: {
         name: true,
         nip: true,
       },
-    });
+    })
 
     if (company == null) {
       // Sprawdź, czy wysłano request o dołączenie do firmy
       const req = await db.companyRequest.findFirst({
         where: { userId },
-      });
+      })
 
       // Sprawdź, czy użytkownik ma request o rolę
       const roleRequest = await db.roleRequest.findFirst({
         where: { userId },
-      });
+      })
 
       return {
         status: req == null ? "noData" : "sended",
         name: null,
         nip: null,
         haveRoleRequest: roleRequest != null,
-      };
+      }
     }
 
     // Sprawdź, czy użytkownik ma request o rolę
     const roleRequest = await db.roleRequest.findFirst({
       where: { userId },
-    });
+    })
 
     return {
       status: "belongs",
       name: company.name,
       nip: company.nip,
       haveRoleRequest: roleRequest != null,
-    };
+    }
   } catch (error) {
-    console.error('Error checking user\'s company and role request:', error);
+    console.error("Error checking user's company and role request:", error)
     return {
       status: "noData",
       name: null,
       nip: null,
       haveRoleRequest: false,
-    };
+    }
   }
-};
+}
 
 export const sendResetRequestDeveloper = async (userId: string) => {
   try {
     await db.roleRequest.delete({
       where: { userId },
     })
-    revalidatePath('/dashboard/become-developer');
+    revalidatePath("/dashboard/become-developer")
     return { success: true, message: "successSendResetRequestDeveloper" }
   } catch (error) {
     console.log(error)
@@ -134,20 +139,20 @@ export const sendResetRequestDeveloper = async (userId: string) => {
 }
 
 interface User {
-  name: string;
-  email: string;
+  name: string
+  email: string
 }
 
 interface Company {
-  name: string;
+  name: string
 }
 
 export interface RoleRequest {
-  userId: string;
-  createdAt: Date;
-  nip: string;
-  user: User;
-  company: Company;
+  userId: string
+  createdAt: Date
+  nip: string
+  user: User
+  company: Company
 }
 
 export const getAllRequests = async (): Promise<RoleRequest[]> => {
@@ -158,16 +163,16 @@ export const getAllRequests = async (): Promise<RoleRequest[]> => {
           select: {
             name: true,
             email: true,
-          }
+          },
         },
         company: {
           select: {
             name: true,
-          }
+          },
         },
       },
     })
-    return requests.length > 0 ? requests as RoleRequest[] : [] 
+    return requests.length > 0 ? (requests as RoleRequest[]) : []
   } catch (error) {
     console.log(error)
     return []
@@ -175,17 +180,16 @@ export const getAllRequests = async (): Promise<RoleRequest[]> => {
 }
 
 /* usunięcie requestu */
-export const deleteRequest = async(userId: string) => {
+export const deleteRequest = async (userId: string) => {
   try {
     await db.roleRequest.delete({
-      where: { userId }
+      where: { userId },
     })
-    revalidatePath('/admin');
+    revalidatePath("/admin")
     return { success: true, message: "deleteRequestBecameDeveloperSuccess" }
   } catch (error) {
     console.error(error)
     return { error: true, message: "deleteRequestBecameDeveloperError" }
-
   }
 }
 
@@ -195,12 +199,12 @@ export const aproveRequestDeveloper = async (userId: string) => {
     await db.user.update({
       where: { id: userId },
       data: { role: "developer" },
-    });
+    })
     // usun z request
     await db.roleRequest.delete({
-      where: {userId}
+      where: { userId },
     })
-    revalidatePath('/admin');
+    revalidatePath("/admin")
     return { success: true, message: "aproveRequestBecameDeveloperSuccess" }
   } catch (error) {
     console.log(error)

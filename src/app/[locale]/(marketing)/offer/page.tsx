@@ -1,12 +1,14 @@
-import { genPageMetadata } from '@/app/seo'
-import { ComponentOfferTable } from '@/components/ComponentOfferTable'
-import { DescriptionPrimary } from '@/components/ui/Description'
-import { Heading } from '@/components/ui/Heading'
-import { SubtitleNormal } from '@/components/ui/Subtitle'
-import { getLocalePrimaryDialects } from '@/data/locales'
-import { Button, Link } from '@nextui-org/react'
-import Image from 'next/image';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
+import Image from "next/image"
+import { getLocalePrimaryDialects } from "@/data/locales"
+import { Button, Link } from "@nextui-org/react"
+import { getTranslations, setRequestLocale } from "next-intl/server"
+
+import { DescriptionPrimary } from "@/components/ui/Description"
+import { Heading } from "@/components/ui/Heading"
+import { SubtitleNormal } from "@/components/ui/Subtitle"
+import { ComponentOfferTable } from "@/components/ComponentOfferTable"
+import { genPageMetadata } from "@/app/seo"
+
 type Data = {
   count: number
   next: unknown | null
@@ -29,11 +31,12 @@ interface MachineRow {
   period12: string
 }
 export const revalidate = 3600
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'OfferMeta' })
-  const title = t('title')
-  const description = t('desc')
-  const keywords = t('keywords')
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "OfferMeta" })
+  const title = t("title")
+  const description = t("desc")
+  const keywords = t("keywords")
   const localeShort = getLocalePrimaryDialects(locale)
   const obj = {
     title,
@@ -46,10 +49,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 async function getData(): Promise<Data> {
   const res = await fetch(
-    'https://licencje.eomni.pl/package-price/?limit=20&offset=0&ordering=period',
+    "https://licencje.eomni.pl/package-price/?limit=20&offset=0&ordering=period",
     {
-      method: 'GET',
-      cache: 'no-cache',
+      method: "GET",
+      cache: "no-cache",
       headers: {
         Authorization: `Token ${process.env.API_TOKEN}`,
       },
@@ -57,88 +60,89 @@ async function getData(): Promise<Data> {
   )
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error("Failed to fetch data")
   }
 
   return res.json()
 }
 
 async function getSettings() {
-  const res = await fetch('https://licencje.eomni.pl/settings/', {
-    method: 'GET',
-    cache: 'no-cache',
+  const res = await fetch("https://licencje.eomni.pl/settings/", {
+    method: "GET",
+    cache: "no-cache",
     headers: {
       Authorization: `Token ${process.env.API_TOKEN}`,
     },
   })
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error("Failed to fetch data")
   }
 
   return res.json()
 }
 
-export default async function OfferPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale)
-  const t = await getTranslations('Offer')
+export default async function OfferPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+  const t = await getTranslations("Offer")
 
-  const data: Data = await getData();
-  const settings = await getSettings();
+  const data: Data = await getData()
+  const settings = await getSettings()
 
   const price = {
-    base: JSON.parse(settings.results[0].data)['base'] || 100,
-    currency: JSON.parse(settings.results[0].data)['currency'] || "PLN",
-    base_eu: JSON.parse(settings.results[0].data)['base_eu'] || 25,
-    currency_eu: JSON.parse(settings.results[0].data)['currency_eu'] || 'EUR',
-    base_usd: JSON.parse(settings.results[0].data)['base_usd'] || 25,
-    currency_us: JSON.parse(settings.results[0].data)['currency_us'] || 'USD',
+    base: JSON.parse(settings.results[0].data)["base"] || 100,
+    currency: JSON.parse(settings.results[0].data)["currency"] || "PLN",
+    base_eu: JSON.parse(settings.results[0].data)["base_eu"] || 25,
+    currency_eu: JSON.parse(settings.results[0].data)["currency_eu"] || "EUR",
+    base_usd: JSON.parse(settings.results[0].data)["base_usd"] || 25,
+    currency_us: JSON.parse(settings.results[0].data)["currency_us"] || "USD",
   }
 
   const periods = Array.from(new Set(data.results.map((item) => item.period))).sort((a, b) => a - b)
   const columns = periods.map((period) => ({
     key: `period${period}`,
-    label: period + ' ' + t('message', { count: period }),
+    label: period + " " + t("message", { count: period }),
   }))
-  columns.unshift({ key: 'machine', label: t('howMany') })
+  columns.unshift({ key: "machine", label: t("howMany") })
 
   const rows: Record<string, MachineRow> = {}
 
   data.results.forEach((item) => {
     if (!rows[item.machine]) {
-      let startCountMachine: number = item.machine == 30 ? item.machine - 14 : item.machine - 4;
+      const startCountMachine: number = item.machine == 30 ? item.machine - 14 : item.machine - 4
       rows[item.machine] = {
         key: item.machine.toString(),
-        machine: t('machineDesc', { startMachine: startCountMachine, machine: item.machine }),
-        period3: '',
-        period6: '',
-        period9: '',
-        period12: '',
+        machine: t("machineDesc", { startMachine: startCountMachine, machine: item.machine }),
+        period3: "",
+        period6: "",
+        period9: "",
+        period12: "",
       }
     }
 
     const periodKey = `period${item.period}` as keyof MachineRow
-    if (locale == 'pl') {
+    if (locale == "pl") {
       rows[item.machine][periodKey] =
         (item.price * price.base).toFixed(2).toString() +
-        ' ' +
+        " " +
         price.currency +
-        ' ' +
-        t('perMachine')
-    } else if (locale == 'de') {
+        " " +
+        t("perMachine")
+    } else if (locale == "de") {
       rows[item.machine][periodKey] =
         (item.price * price.base_eu).toFixed(2).toString() +
-        ' ' +
+        " " +
         price.currency_eu +
-        ' ' +
-        t('perMachine')
+        " " +
+        t("perMachine")
     } else {
       rows[item.machine][periodKey] =
         (item.price * price.base_usd).toFixed(2).toString() +
-        ' ' +
+        " " +
         price.currency_us +
-        ' ' +
-        t('perMachine')
+        " " +
+        t("perMachine")
     }
   })
 
@@ -147,20 +151,20 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
   return (
     <main className="px-0 py-16 md:text-center">
       <AbstractBackgroundSecond />
-      <SubtitleNormal text={t('subtitle')} />
-      <Heading omnimes={true} text={t('heading')} />
-      <DescriptionPrimary text={t('descript')} />
+      <SubtitleNormal text={t("subtitle")} />
+      <Heading omnimes={true} text={t("heading")} />
+      <DescriptionPrimary text={t("descript")} />
       <section className="text-left">
         <div className="mx-auto max-w-screen-xl items-center gap-8 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16">
           <Image
-            className="w-full dark:hidden z-0"
+            className="z-0 w-full dark:hidden"
             src="/images/offer/monitoring.png"
             alt="omnimes mockup"
             width={992}
             height={715}
           />
           <Image
-            className="hidden w-full dark:block z-0"
+            className="z-0 hidden w-full dark:block"
             src="/images/offer/monitoring-dark.png"
             alt="omnimes mockup"
             width={992}
@@ -168,38 +172,38 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
           />
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
-              {t('head2')}
+              {t("head2")}
             </h2>
-            <p className="mb-6 text-lg font-light leading-8 text-gray-500 dark:text-gray-400 md:text-lg">
-              {t('head2desc')}
+            <p className="mb-6 text-lg font-light leading-8 text-gray-500 md:text-lg dark:text-gray-400">
+              {t("head2desc")}
             </p>
             <Button
               as={Link}
               href="/contact"
-              aria-label={t('buttonAria')}
-              aria-labelledby={t('buttonAria')}
-              title={t('contact')}
+              aria-label={t("buttonAria")}
+              aria-labelledby={t("buttonAria")}
+              title={t("contact")}
               role="button"
               showAnchorIcon
               className="mt-8 bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
             >
-              {t('cta')}
+              {t("cta")}
             </Button>
           </div>
         </div>
       </section>
       <p className="mb-5 font-bold">
-        <small className="text-danger">{t('info')}</small>
+        <small className="text-danger">{t("info")}</small>
       </p>
-      <ComponentOfferTable columns={columns} rows={result} aria={t('aria')} />
+      <ComponentOfferTable columns={columns} rows={result} aria={t("aria")} />
       <section className="text-left">
         <div className="max-w-screen-xl py-8 sm:py-16 lg:px-6">
-          <div className="max-w-screen-sm md:text-center md:mx-auto">
+          <div className="max-w-screen-sm md:mx-auto md:text-center">
             <h2 className="mb-4 mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
-              {t('head3')}
+              {t("head3")}
             </h2>
-            <p className="mb-6 text-lg font-light leading-8 text-gray-500 dark:text-gray-400 md:text-lg">
-              {t('head3desc')}
+            <p className="mb-6 text-lg font-light leading-8 text-gray-500 md:text-lg dark:text-gray-400">
+              {t("head3desc")}
             </p>
             <Button
               as={Link}
@@ -207,7 +211,7 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
               showAnchorIcon
               className="mt-8 bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
             >
-              {t('contact')}
+              {t("contact")}
             </Button>
           </div>
         </div>
@@ -218,9 +222,12 @@ export default async function OfferPage({ params: { locale } }: { params: { loca
 
 const AbstractBackgroundSecond = () => {
   return (
-    <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20 z-[-1]">
-        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-fuchsia-700"></div>
-        <div className="blur-[106px] h-32 bg-gradient-to-r from-fuchsia-700 dark:from-red-300 to-pink-200 dark:to-purple-400 "></div>
+    <div
+      aria-hidden="true"
+      className="absolute inset-0 z-[-1] grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+    >
+      <div className="from-primary h-56 bg-gradient-to-br to-purple-400 blur-[106px] dark:from-fuchsia-700"></div>
+      <div className="h-32 bg-gradient-to-r from-fuchsia-700 to-pink-200 blur-[106px] dark:from-red-300 dark:to-purple-400 "></div>
     </div>
   )
 }

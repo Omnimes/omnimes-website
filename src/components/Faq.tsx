@@ -1,12 +1,14 @@
-'use client'
-import { Accordion, AccordionItem, Chip, Tab, Tabs } from '@nextui-org/react'
-import { useState } from 'react'
-import { LuCommand, LuWrench, LuServerCog } from 'react-icons/lu'
-import { FAQSystem, FAQServices, FAQHardware } from '@/data/faq'
-import { useTranslations } from 'next-intl'
+"use client"
+
+import { useState } from "react"
+import { FAQHardware, FAQServices, FAQSystem } from "@/data/faq"
+import { Accordion, AccordionItem, Chip, Tab, Tabs } from "@nextui-org/react"
+import { useTranslations } from "next-intl"
+import { LuCommand, LuServerCog, LuWrench } from "react-icons/lu"
+
 export const Faq = () => {
-  const [selected, setSelected] = useState('photos')
-  const t = useTranslations("FAQ");
+  const [selected, setSelected] = useState("photos")
+  const t = useTranslations("FAQ")
   const tl = useTranslations("FAQQuestion")
   return (
     <div className="flex w-full flex-col">
@@ -14,8 +16,8 @@ export const Faq = () => {
         aria-label={t("options")}
         color="primary"
         classNames={{
-          base: 'md:mx-auto',
-          tabContent: 'group-data-[selected=true]:text-primary-600',
+          base: "md:mx-auto",
+          tabContent: "group-data-[selected=true]:text-primary-600",
         }}
         selectedKey={selected}
         onSelectionChange={(e) => setSelected(e.toString())}
@@ -24,7 +26,7 @@ export const Faq = () => {
           key="system"
           title={
             <div className="flex items-center space-x-2">
-              <LuCommand className='hidden sm:inline-block' />
+              <LuCommand className="hidden sm:inline-block" />
               <span>OmniMES</span>
               <Chip size="sm" variant="faded">
                 {FAQSystem.length}
@@ -34,13 +36,17 @@ export const Faq = () => {
         >
           <Accordion
             className="text-left"
-            itemClasses={{ content: 'text-small px-2 text-gray-500 dark:text-gray-400' }}
+            itemClasses={{ content: "text-small px-2 text-gray-500 dark:text-gray-400" }}
             selectionMode="multiple"
             keepContentMounted
           >
             {FAQSystem.map((item) => {
               return (
-                <AccordionItem key={tl(item.question)} aria-label={tl(item.question)} title={tl(item.question)}>
+                <AccordionItem
+                  key={tl(item.question)}
+                  aria-label={tl(item.question)}
+                  title={tl(item.question)}
+                >
                   {tl(item.answer)}
                 </AccordionItem>
               )
@@ -51,7 +57,7 @@ export const Faq = () => {
           key="services"
           title={
             <div className="flex items-center space-x-2">
-              <LuWrench className='hidden sm:inline-block' />
+              <LuWrench className="hidden sm:inline-block" />
               <span>{t("service")}</span>
               <Chip size="sm" variant="faded">
                 {FAQServices.length}
@@ -61,13 +67,17 @@ export const Faq = () => {
         >
           <Accordion
             className="text-left"
-            itemClasses={{ content: 'text-small px-2 text-gray-500 dark:text-gray-400' }}
+            itemClasses={{ content: "text-small px-2 text-gray-500 dark:text-gray-400" }}
             selectionMode="multiple"
             keepContentMounted
           >
             {FAQServices.map((item) => {
               return (
-                <AccordionItem key={tl(item.question)} aria-label={tl(item.question)} title={tl(item.question)}>
+                <AccordionItem
+                  key={tl(item.question)}
+                  aria-label={tl(item.question)}
+                  title={tl(item.question)}
+                >
                   {tl(item.answer)}
                 </AccordionItem>
               )
@@ -78,8 +88,8 @@ export const Faq = () => {
           key="hardware"
           title={
             <div className="flex items-center space-x-2">
-              <LuServerCog className='hidden sm:inline-block' />
-                  <span>{t("hardware")}</span>
+              <LuServerCog className="hidden sm:inline-block" />
+              <span>{t("hardware")}</span>
               <Chip size="sm" variant="faded">
                 {FAQHardware.length}
               </Chip>
@@ -88,13 +98,17 @@ export const Faq = () => {
         >
           <Accordion
             className="text-left"
-            itemClasses={{ content: 'text-small px-2 text-gray-500 dark:text-gray-400' }}
+            itemClasses={{ content: "text-small px-2 text-gray-500 dark:text-gray-400" }}
             selectionMode="multiple"
             keepContentMounted
           >
             {FAQHardware.map((item) => {
               return (
-                <AccordionItem key={tl(item.question)} aria-label={tl(item.question)} title={tl(item.question)}>
+                <AccordionItem
+                  key={tl(item.question)}
+                  aria-label={tl(item.question)}
+                  title={tl(item.question)}
+                >
                   {tl(item.answer)}
                 </AccordionItem>
               )

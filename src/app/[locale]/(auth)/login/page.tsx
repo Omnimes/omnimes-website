@@ -1,17 +1,19 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import Logo from '@/data/logo.svg'
-import { LuMoveLeft  } from 'react-icons/lu'
-import { UserAuthForm } from '@/components/auth/UserAuthForm'
-import { genPageMetadata } from '@/app/seo'
-import { useTranslations } from 'next-intl'
-import { getLocalePrimaryDialects } from '@/data/locales'
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'Login' })
-  const title = t('title')
-  const description = t('desc')
-  const keywords = t('keywords')
+import Image from "next/image"
+import Link from "next/link"
+import { getLocalePrimaryDialects } from "@/data/locales"
+import Logo from "@/data/logo.svg"
+import { getTranslations, setRequestLocale } from "next-intl/server"
+import { LuMoveLeft } from "react-icons/lu"
+
+import { UserAuthForm } from "@/components/auth/UserAuthForm"
+import { genPageMetadata } from "@/app/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "Login" })
+  const title = t("title")
+  const description = t("desc")
+  const keywords = t("keywords")
   const localeShort = getLocalePrimaryDialects(locale)
   const obj = {
     title,
@@ -22,36 +24,35 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return genPageMetadata(obj)
 }
 
-export default function LoginPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations("LoginPage");
+export default async function LoginPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+  const t = await getTranslations("LoginPage")
 
   return (
-    <div className="h-screen flex w-full flex-col items-center md:justify-center py-16 md:py-0 px-4">
+    <div className="flex h-screen w-full flex-col items-center px-4 py-16 md:justify-center md:py-0">
       <Link
         href="/"
-        className="hover:bg-accent hover:text-accent-foreground absolute left-4 top-8 md:left-8 flex gap-2 justify-center items-center py-1 px-3 rounded-md"
+        className="hover:bg-accent hover:text-accent-foreground absolute left-4 top-8 flex items-center justify-center gap-2 rounded-md px-3 py-1 md:left-8"
       >
-        <LuMoveLeft className="h-4 w-4" />
+        <LuMoveLeft className="size-4" />
         {t("back")}
       </Link>
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
-        <div className="flex flex-col space-y-2 text-center items-center">
+        <div className="flex flex-col items-center space-y-2 text-center">
           <Image
             src={Logo.src}
-            alt={'OmniMES logo'}
+            alt={"OmniMES logo"}
             width={44}
             height={36}
             priority
             className="mr-2"
-            style={{ width: '44px', height: 'auto' }}
+            style={{ width: "44px", height: "auto" }}
           />
           <h1 className="text-2xl font-semibold tracking-tight">{t("welcome")}</h1>
-          <p className="text-muted-foreground text-sm">
-            {t("info")}
-          </p>
+          <p className="text-muted-foreground text-sm">{t("info")}</p>
         </div>
-        <UserAuthForm location={"login"} />
+        <UserAuthForm />
         <p className="text-muted-foreground px-8 text-center text-sm">
           <Link href="/register" className="hover:text-brand underline underline-offset-4">
             {t("link")}

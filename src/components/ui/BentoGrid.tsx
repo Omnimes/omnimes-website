@@ -1,25 +1,26 @@
-import getFormattedDate from "@/lib/getFormattedDate";
-import { cn } from "@/utils/utils";
-import Link from "next/link";
+import Link from "next/link"
+import { cn } from "@/utils/utils"
+
+import getFormattedDate from "@/lib/getFormattedDate"
 
 export const BentoGrid = ({
   className,
   children,
 }: {
-  className?: string;
-  children?: React.ReactNode;
+  className?: string
+  children?: React.ReactNode
 }) => {
   return (
     <div
       className={cn(
-        "grid md:auto-rows-auto grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-auto md:grid-cols-3 ",
         className
       )}
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
 export const BentoGridItem = ({
   className,
@@ -28,37 +29,39 @@ export const BentoGridItem = ({
   header,
   slug,
   date,
-  locale
+  locale,
 }: {
-  slug: string;
-  className?: string;
-  title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  icon?: React.ReactNode;
-  date?: string;
-  locale?: string;
+  slug: string
+  className?: string
+  title?: string | React.ReactNode
+  description?: string | React.ReactNode
+  header?: React.ReactNode
+  icon?: React.ReactNode
+  date?: string
+  locale?: string
 }) => {
   return (
     <Link
       href={slug}
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border justify-between flex flex-col space-y-4 !border-border",
+        "group/bento shadow-input !border-border row-span-1 flex flex-col justify-between space-y-4 rounded-xl border bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
         className
       )}
     >
       {header}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-        {date && locale && <small>
-            <time dateTime={date}>{getFormattedDate(date, locale)}</time> 
-        </small>}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2 line-clamp-3">
+      <div className="transition duration-200 group-hover/bento:translate-x-2">
+        {date && locale && (
+          <small>
+            <time dateTime={date}>{getFormattedDate(date, locale)}</time>
+          </small>
+        )}
+        <div className="my-2 line-clamp-3 font-sans font-bold text-neutral-600 dark:text-neutral-200">
           {title}
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300 line-clamp-2">
+        <div className="line-clamp-2 font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
           {description}
         </div>
       </div>
     </Link>
-  );
-};
+  )
+}

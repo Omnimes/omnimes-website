@@ -1,42 +1,42 @@
-"use client";
-import Image from "next/image";
-import CustomLink from "./CustomLink";
-import { CustomCode, Pre } from "./CustomCode";
-import { getMDXComponent } from "mdx-bundler/client";
-import { ImgHTMLAttributes, useMemo } from "react";
+"use client"
+
+import { ImgHTMLAttributes, useMemo } from "react"
+import Image from "next/image"
+import { getMDXComponent } from "mdx-bundler/client"
+import type { MDXComponents } from "mdx/types"
+
+import { CustomCode, Pre } from "./CustomCode"
+import CustomLink from "./CustomLink"
 
 const MDXComponentsMap = {
-    a: CustomLink,
-    Image,
-    img: ({ ...props }: ImgHTMLAttributes<HTMLImageElement>) => (
-        // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
-        <img className="rounded-lg border w-100" {...props} />
-    ),
-    pre: Pre,
-    code: CustomCode,
-};
+  a: CustomLink,
+  Image,
+  img: ({ ...props }: ImgHTMLAttributes<HTMLImageElement>) => (
+    // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
+    <img className="w-100 rounded-lg border" {...props} />
+  ),
+  pre: Pre,
+  code: CustomCode,
+}
 
 type MDXComponentProps = {
-    content: string;
-    components?: Record<string, any>;
-};
+  content: string
+  components?: MDXComponents
+}
 
-export const MDXComponent = ({
-    content,
-    components = {},
-}: MDXComponentProps) => {
-    const Component = useMemo(() => getMDXComponent(content), [content]);
+export const MDXComponent = ({ content, components = {} }: MDXComponentProps) => {
+  const Component = useMemo(() => getMDXComponent(content), [content])
 
-    return (
-        <Component
-            components={
-                {
-                    ...MDXComponentsMap,
-                    ...components,
-                } as any
-            }
-        />
-    );
-};
+  return (
+    <Component
+      components={
+        {
+          ...MDXComponentsMap,
+          ...components,
+        } as MDXComponentProps["components"]
+      }
+    />
+  )
+}
 
-export default MDXComponent;
+export default MDXComponent

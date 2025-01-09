@@ -1,7 +1,8 @@
-'use server'
+"use server"
 
-import { db } from '@/utils/db'
-import { getUserByEmail } from './user'
+import { db } from "@/utils/db"
+
+import { getUserByEmail } from "./user"
 
 export const getVerificationTokenByEmail = async (email: string) => {
   try {
@@ -20,7 +21,7 @@ export const getVerificationTokenByToken = async (token: string) => {
   try {
     const verificationToken = await db.verificationToken.findFirst({
       where: {
-        token: token,
+        token,
       },
     })
     return verificationToken
@@ -33,19 +34,19 @@ export const newVerification = async (token: string) => {
   const existingToken = await getVerificationTokenByToken(token)
 
   if (!existingToken) {
-    return { error: 'invalidToken' }
+    return { error: "invalidToken" }
   }
 
   const hasExpired = new Date(existingToken.expires) < new Date()
 
   if (hasExpired) {
-    return { error: 'tokenHasExpired' }
+    return { error: "tokenHasExpired" }
   }
 
   const existingUser = await getUserByEmail(existingToken.identifier)
 
   if (!existingUser) {
-    return { error: 'userNotFound' }
+    return { error: "userNotFound" }
   }
 
   await db.user.update({
@@ -64,5 +65,5 @@ export const newVerification = async (token: string) => {
     },
   })
 
-  return { success: 'emailVerified' }
+  return { success: "emailVerified" }
 }

@@ -1,22 +1,21 @@
 "use client"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { signIn } from "next-auth/react"
-import { useForm } from "react-hook-form"
-import * as z from "zod"
+
+import { HTMLAttributes, useState } from "react"
 import { cn } from "@/utils/utils"
 import { userAuthSchema } from "@/utils/validations/auth"
+import { zodResolver } from "@hookform/resolvers/zod"
 import { Button, Input, Spinner } from "@nextui-org/react"
-import { LuGithub, LuMail } from "react-icons/lu";
-import { useState, HTMLAttributes } from "react"
+import { signIn } from "next-auth/react"
 import { useTranslations } from "next-intl"
+import { useForm } from "react-hook-form"
+import { LuGithub, LuMail } from "react-icons/lu"
+import * as z from "zod"
+
 import { toast } from "../ui/UseToast"
 
-interface UserAuthFormProps extends HTMLAttributes<HTMLDivElement> {
-  location: "login" | "register";
-}
 type FormData = z.infer<typeof userAuthSchema>
 
-export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProps) => {
+export const UserAuthForm = ({ className, ...props }: HTMLAttributes<HTMLDivElement>) => {
   const {
     register,
     handleSubmit,
@@ -26,19 +25,19 @@ export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProp
   })
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [isGitHubLoading, setIsGitHubLoading] = useState<boolean>(false)
-  const t = useTranslations("LoginForm");
+  const t = useTranslations("LoginForm")
 
   async function onSubmit(data: FormData) {
     setIsLoading(true)
     /* Zmieniony callback na /dashboard co spowodowało nie potwierdzeniu adresu email */
     /* bug: prisma adapter zapisuje inny token do bazy danych i inny wysyła w mailu */
-    /* rozwiązanie tymczasowe: w ustawieniach przycisk który spowoduje potwierdzenie adresu email ?? */ 
+    /* rozwiązanie tymczasowe: w ustawieniach przycisk który spowoduje potwierdzenie adresu email ?? */
     const signInResult = await signIn("email", {
       email: data.email.toLowerCase(),
       redirect: false,
       // callbackUrl: location == 'login' ? "/dashboard" : "/verify-email",
       callbackUrl: "/dashboard",
-    }) 
+    })
     setIsLoading(false)
 
     if (!signInResult?.ok) {
@@ -71,12 +70,12 @@ export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProp
           isInvalid={errors?.email ? true : false}
           errorMessage={errors?.email && t(errors.email.message)}
           {...register("email")}
-        /> 
+        />
         <Button
           type="submit"
-          aria-label={t('loginMailAria')}
-          aria-labelledby={t('loginMailAria')}
-          title={t('loginMailAria')}
+          aria-label={t("loginMailAria")}
+          aria-labelledby={t("loginMailAria")}
+          title={t("loginMailAria")}
           variant="bordered"
           spinner={<Spinner size="sm" />}
           spinnerPlacement={"start"}
@@ -92,16 +91,14 @@ export const UserAuthForm = ({ className, location, ...props }: UserAuthFormProp
           <span className="w-full border-t" />
         </div>
         <div className="relative flex justify-center text-xs uppercase">
-          <span className="bg-background px-2 text-muted-foreground">
-            {t("continue")}
-          </span>
+          <span className="bg-background text-muted-foreground px-2">{t("continue")}</span>
         </div>
       </div>
       <Button
         type="button"
-        aria-label={t('loginGithubAria')}
-        aria-labelledby={t('loginGithubAria')}
-        title={t('loginGithubAria')}
+        aria-label={t("loginGithubAria")}
+        aria-labelledby={t("loginGithubAria")}
+        title={t("loginGithubAria")}
         variant="bordered"
         spinner={<Spinner size="sm" />}
         spinnerPlacement={"start"}

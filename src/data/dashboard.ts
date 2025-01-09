@@ -1,41 +1,41 @@
 export const dashboardConfigBasic: DashboardConfig = {
   mainNav: [
-  {
-    title: "home",
-    href: "/",
-  },
-],
-sidebarNav: [
-  {
-    title: "dashboard",
-    href: "/dashboard",
-    icon: "dashboard",
-  },
-  {
-    title: "demo",
-    href: "/dashboard/demo",
-    icon: "demo",
-  },
-  {
-    title: "separator",
-    href: "#",
-    separator: true,
-  },
-  {
-    title: "becomeDeveloper",
-    href: "/dashboard/become-developer",
-    icon: 'developer',
-  },
-  {
-    title: "settings",
-    href: "/dashboard/settings",
-    icon: "settings",
-  },
-],
+    {
+      title: "home",
+      href: "/",
+    },
+  ],
+  sidebarNav: [
+    {
+      title: "dashboard",
+      href: "/dashboard",
+      icon: "dashboard",
+    },
+    {
+      title: "demo",
+      href: "/dashboard/demo",
+      icon: "demo",
+    },
+    {
+      title: "separator",
+      href: "#",
+      separator: true,
+    },
+    {
+      title: "becomeDeveloper",
+      href: "/dashboard/become-developer",
+      icon: "developer",
+    },
+    {
+      title: "settings",
+      href: "/dashboard/settings",
+      icon: "settings",
+    },
+  ],
 }
 
 export const dashboardConfigExtend: DashboardConfig = {
-    mainNav: [
+  mainNav: [
     {
       title: "home",
       href: "/",
@@ -92,7 +92,7 @@ export const dashboardConfigExtend: DashboardConfig = {
           href: "/dashboard/materials/manual",
           icon: "manual",
         },
-      ]
+      ],
     },
     {
       title: "demo",
@@ -148,7 +148,7 @@ export const dashboardConfigAdmin: DashboardConfig = {
     {
       title: "outstatic",
       href: "/outstatic",
-      icon: "outstatic"
-    }
-  ]
+      icon: "outstatic",
+    },
+  ],
 }

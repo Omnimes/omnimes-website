@@ -1,7 +1,11 @@
 "use client"
+
 import Link from "next/link"
 import { User } from "next-auth"
 import { signOut } from "next-auth/react"
+import { useTranslations } from "next-intl"
+
+import { getSubNav } from "@/lib/getSubNav"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,12 +13,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/DropdownMenu"
-import { useTranslations } from "next-intl"
+
 import { UserAvatar } from "../UserAvatar"
-import { getSubNav } from "@/lib/getSubNav"
 
 interface MyUser extends User {
-  role: string;
+  role: string
 }
 
 export interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -27,15 +30,12 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
     return (
       <DropdownMenu>
         <DropdownMenuTrigger
-          aria-label={t('DropDownTriggerUserUndefined')}
-          aria-labelledby={t('DropDownTriggerUserUndefined')}
-          title={t('DropDownTriggerUserUndefined')}
+          aria-label={t("DropDownTriggerUserUndefined")}
+          aria-labelledby={t("DropDownTriggerUserUndefined")}
+          title={t("DropDownTriggerUserUndefined")}
           role="button"
         >
-          <UserAvatar
-            user={{ name: null, image: null }}
-            className="h-7 w-7"
-          />
+          <UserAvatar user={{ name: null, image: null }} className="size-7" />
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
           <DropdownMenuItem asChild>
@@ -51,30 +51,26 @@ export function UserAccountNavServer({ user }: UserAccountNavProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        aria-label={t('DropDownTriggerUser')}
-        aria-labelledby={t('DropDownTriggerUser')}
-        title={t('DropDownTriggerUser')}
+        aria-label={t("DropDownTriggerUser")}
+        aria-labelledby={t("DropDownTriggerUser")}
+        title={t("DropDownTriggerUser")}
         role="button"
       >
         <UserAvatar
           user={{ name: user.name || null, image: user.image || null }}
-          className="h-7 w-7"
+          className="size-7"
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <div className="flex items-center justify-start gap-2 p-2">
           <div className="flex flex-col space-y-1 leading-none">
             {user.name && <p className="font-medium">{user.name}</p>}
-            {user.email && (
-              <p className="w-[200px] truncate text-sm">
-                {user.email}
-              </p>
-            )}
+            {user.email && <p className="w-[200px] truncate text-sm">{user.email}</p>}
           </div>
         </div>
         <DropdownMenuSeparator />
-        {getSubNav(user.role).map(item => {
-          if(item.separator) {
+        {getSubNav(user.role).map((item) => {
+          if (item.separator) {
             return <DropdownMenuSeparator key={item.title} />
           }
           return (

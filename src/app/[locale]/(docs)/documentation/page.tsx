@@ -1,16 +1,17 @@
-import { getTranslations } from 'next-intl/server';
-import { getLocalePrimaryDialects } from '@/data/locales';
-import { genPageMetadata } from '@/app/seo';
-import { unstable_setRequestLocale } from "next-intl/server";
-import { DocsSidebarNav } from '@/components/docs/SidebarNav';
-import { docsConfig } from '@/data/docs';
+import { docsConfig } from "@/data/docs"
+import { getLocalePrimaryDialects } from "@/data/locales"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: "WebinarsPage" });
-  const title = t('title');
-  const description = t('desc');
-  const keywords = t('keywords');
-  const localeShort = getLocalePrimaryDialects(locale);
+import { DocsSidebarNav } from "@/components/docs/SidebarNav"
+import { genPageMetadata } from "@/app/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "WebinarsPage" })
+  const title = t("title")
+  const description = t("desc")
+  const keywords = t("keywords")
+  const localeShort = getLocalePrimaryDialects(locale)
   const obj = {
     title,
     description,
@@ -20,8 +21,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return genPageMetadata(obj)
 }
 
-export default function DocsPage({params: { locale }}: {params: { locale: string }}) {
-  unstable_setRequestLocale(locale);
+export default async function DocsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
 
   return (
     <div className="flex-1 md:grid md:grid-cols-[220px_1fr] md:gap-6 lg:grid-cols-[240px_1fr] lg:gap-10">

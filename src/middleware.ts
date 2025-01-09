@@ -1,33 +1,39 @@
-import { withAuth } from 'next-auth/middleware'
-import createMiddleware from 'next-intl/middleware'
-import { pathnames, locales, localePrefix, localeDetection } from './config'
-import { NextRequest } from 'next/server'
+import { NextRequest } from "next/server"
+import { withAuth } from "next-auth/middleware"
+import createMiddleware from "next-intl/middleware"
 
-const adminPages = ['/admin', '/admin/users'] // dodawać wszystkie admin page
-const LoginAndRegisterPages = ['/login', '/register']
-const protectedPages = ['/dashboard', '/dashboard/settings', '/dashboard/demo', '/dashboard/become-developer'] // dodawać wszystkie protected page
+import { localeDetection, localePrefix, locales, pathnames } from "./config"
+
+const adminPages = ["/admin", "/admin/users"] // dodawać wszystkie admin page
+const LoginAndRegisterPages = ["/login", "/register"]
+const protectedPages = [
+  "/dashboard",
+  "/dashboard/settings",
+  "/dashboard/demo",
+  "/dashboard/become-developer",
+] // dodawać wszystkie protected page
 const developerPages = [
-  '/dashboard/billing',
-  '/dashboard/materials',
-  '/dashboard/materials/advertising',
-  '/dashboard/materials/information',
-  '/dashboard/materials/manual',
-  '/dashboard/support',
-  '/dashboard/webinars',
-  '/docs'
+  "/dashboard/billing",
+  "/dashboard/materials",
+  "/dashboard/materials/advertising",
+  "/dashboard/materials/information",
+  "/dashboard/materials/manual",
+  "/dashboard/support",
+  "/dashboard/webinars",
+  "/docs",
 ] // dodawać wszystkie developer page
 export const excludePaths = [
   ...adminPages,
   ...protectedPages,
   ...developerPages,
-  '/blog/[slug]',
-  '/tags/[tag]',
-  '/verify-email'
+  "/blog/[slug]",
+  "/tags/[tag]",
+  "/verify-email",
 ]
-export const defaultLocale = 'pl' as const
+export const defaultLocale = "pl" as const
 
 export const intlMiddleware = createMiddleware({
-  defaultLocale: defaultLocale,
+  defaultLocale,
   locales,
   pathnames,
   localeDetection,
@@ -60,7 +66,7 @@ const adminMidleware = withAuth(
   {
     callbacks: {
       authorized: ({ token }) => {
-        return token?.role === 'admin'
+        return token?.role === "admin"
       },
     },
     pages: {
@@ -77,7 +83,7 @@ const developerMidleware = withAuth(
   {
     callbacks: {
       authorized: ({ token }) => {
-        return token?.role === 'developer' || token?.role === 'admin'
+        return token?.role === "developer" || token?.role === "admin"
       },
     },
     pages: {
@@ -104,34 +110,34 @@ const LoginAndRegisterMiddleware = withAuth(
 export default function middleware(req: NextRequest) {
   /* Dopasowanie do chronionych tras */
   const ProtectedPathnameRegexp = RegExp(
-    `^(/(${locales.join('|')}))?(${protectedPages
-      .flatMap((p) => (p === '/' ? ['', '/'] : p))
-      .join('|')})/?$`,
-    'i'
+    `^(/(${locales.join("|")}))?(${protectedPages
+      .flatMap((p) => (p === "/" ? ["", "/"] : p))
+      .join("|")})/?$`,
+    "i"
   )
 
   /* Dopasowanie do chronionych tras administracyjnych */
   const AdminPathnameRegexp = RegExp(
-    `^(/(${locales.join('|')}))?(${adminPages
-      .flatMap((p) => (p === '/' ? ['', '/'] : p))
-      .join('|')})/?$`,
-    'i'
+    `^(/(${locales.join("|")}))?(${adminPages
+      .flatMap((p) => (p === "/" ? ["", "/"] : p))
+      .join("|")})/?$`,
+    "i"
   )
 
   /* Dopasowanie do tras logowania i rejestracji */
   const LoginAndRegisterPathnameRegexp = RegExp(
-    `^(/(${locales.join('|')}))?(${LoginAndRegisterPages.flatMap((p) =>
-      p === '/' ? ['', '/'] : p
-    ).join('|')})/?$`,
-    'i'
+    `^(/(${locales.join("|")}))?(${LoginAndRegisterPages.flatMap((p) =>
+      p === "/" ? ["", "/"] : p
+    ).join("|")})/?$`,
+    "i"
   )
 
   /* Dopasowanie do chronionych tras developera */
   const DeveloperPathnameRegexp = RegExp(
-    `^(/(${locales.join('|')}))?(${developerPages
-      .flatMap((p) => (p === '/' ? ['', '/'] : p))
-      .join('|')})/?$`,
-    'i'
+    `^(/(${locales.join("|")}))?(${developerPages
+      .flatMap((p) => (p === "/" ? ["", "/"] : p))
+      .join("|")})/?$`,
+    "i"
   )
 
   /* Sprawdzenie czy trasa jest dostępna tylko dla admina */
@@ -159,6 +165,6 @@ export default function middleware(req: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api/|_next/|_proxy/|_vercel|_static|favicon.ico|sitemap.xml|robots.txt|.*\\..*).*)',
+    "/((?!api/|_next/|_proxy/|_vercel|_static|favicon.ico|sitemap.xml|robots.txt|.*\\..*).*)",
   ],
 }

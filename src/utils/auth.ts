@@ -1,18 +1,21 @@
+import { html, htmlLogin, text, textLogin } from "@/utils/utils"
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
+import { PrismaClient } from "@prisma/client"
 import { NextAuthOptions } from "next-auth"
 import EmailProvider from "next-auth/providers/email"
 import GitHubProvider from "next-auth/providers/github"
-import { db } from "./db"
 import { createTransport } from "nodemailer"
-import { html, htmlLogin, text, textLogin } from "@/utils/utils"
+
+import { db } from "./db"
+
 export const authOptions: NextAuthOptions = {
   // huh any! I know.
   // This is a temporary fix for prisma client.
   // @see https://github.com/prisma/prisma/issues/16117
-  adapter: PrismaAdapter(db),
+  adapter: PrismaAdapter(db as unknown as PrismaClient),
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
-    signIn: '/login',
+    signIn: "/login",
   },
   session: {
     strategy: "jwt",
@@ -25,17 +28,16 @@ export const authOptions: NextAuthOptions = {
     EmailProvider({
       from: process.env.MY_EMAIL,
       server: {
-          service: 'atthost24',
-          host: 'mp1.atthost24.pl',
-          port: 465,
-          secure: true,
-          auth: {
-            user: process.env.MY_EMAIL as string,
-            pass: process.env.MY_PASSWORD as string,
-          },
-      },      
+        service: "atthost24",
+        host: "mp1.atthost24.pl",
+        port: 465,
+        secure: true,
+        auth: {
+          user: process.env.MY_EMAIL as string,
+          pass: process.env.MY_PASSWORD as string,
+        },
+      },
       sendVerificationRequest: async ({ identifier, url, provider }) => {
-
         const user = await db.user.findUnique({
           where: {
             email: identifier,
@@ -44,11 +46,9 @@ export const authOptions: NextAuthOptions = {
             emailVerified: true,
           },
         })
-        
-        const templateId = user?.emailVerified
-          ? "login"
-          : "register"
-        
+
+        const templateId = user?.emailVerified ? "login" : "register"
+
         const transport = createTransport(provider.server)
         const { host } = new URL(url)
         const result = await transport.sendMail({
@@ -73,7 +73,7 @@ export const authOptions: NextAuthOptions = {
         session.user.name = token.name
         session.user.email = token.email
         session.user.image = token.picture
-        session.user.role = token.role as string;
+        session.user.role = token.role as string
       }
 
       return session
@@ -97,7 +97,7 @@ export const authOptions: NextAuthOptions = {
         name: dbUser.name,
         email: dbUser.email,
         picture: dbUser.image,
-        role: dbUser.role
+        role: dbUser.role,
       }
     },
   },

@@ -1,7 +1,7 @@
-'use server'
+"use server"
 
-import { db } from '@/utils/db'
-import { revalidatePath } from 'next/cache'
+import { revalidatePath } from "next/cache"
+import { db } from "@/utils/db"
 
 export const changeName = async (name: string, userId: string) => {
   try {
@@ -10,14 +10,14 @@ export const changeName = async (name: string, userId: string) => {
         id: userId,
       },
       data: {
-        name: name,
+        name,
       },
     })
-    revalidatePath('/dashboard/settings')
-    return { success: true, message: 'toastSuccessDesc' }
+    revalidatePath("/dashboard/settings")
+    return { success: true, message: "toastSuccessDesc" }
   } catch (error) {
     console.log(error)
-    return { error: true, message: 'toastWrongDesc' }
+    return { error: true, message: "toastWrongDesc" }
   }
 }
 
@@ -25,7 +25,7 @@ export const getAllAdminsOmniMES = async () => {
   try {
     const admins = await db.user.findMany({
       where: {
-        role: 'admin',
+        role: "admin",
       },
     })
 
@@ -42,11 +42,11 @@ export const changeRoleUser = async (userId: string, role: string) => {
       where: { id: userId },
       data: { role },
     })
-    revalidatePath('/admin/users')
-    return { success: true, message: 'changeRoleSuccess' }
+    revalidatePath("/admin/users")
+    return { success: true, message: "changeRoleSuccess" }
   } catch (error) {
     console.log(error)
-    return { error: true, message: 'changeRoleError' }
+    return { error: true, message: "changeRoleError" }
   }
 }
 
@@ -55,11 +55,11 @@ export const deleteUserById = async (id: string) => {
     await db.user.delete({
       where: { id },
     })
-    revalidatePath('/admin/users')
-    return { success: true, message: 'deleteUserSuccess' }
+    revalidatePath("/admin/users")
+    return { success: true, message: "deleteUserSuccess" }
   } catch (error) {
     console.log(error)
-    return { error: true, message: 'deleteUserError' }
+    return { error: true, message: "deleteUserError" }
   }
 }
 
@@ -67,7 +67,7 @@ export const getUserCount = async (): Promise<number | null> => {
   try {
     const totalUsers: number = await db.user.count()
     return totalUsers
-  } catch (error) {
+  } catch {
     return null
   }
 }
@@ -93,12 +93,15 @@ export const getUsers = async (
   prevOffset: number | null
 }> => {
   // Build the where clause dynamically based on provided arguments
-  const whereClause: any = {}
+  const whereClause: {
+    email?: { contains: string; mode: "insensitive" }
+    role?: string
+  } = {}
 
   if (search) {
     whereClause.email = {
       contains: search,
-      mode: 'insensitive',
+      mode: "insensitive",
     }
   }
 
@@ -145,7 +148,7 @@ export const getUserByEmail = async (email: string) => {
       },
     })
     return user
-  } catch (error) {
+  } catch {
     return null
   }
 }
@@ -158,7 +161,7 @@ export const getUserById = async (id: string) => {
       },
     })
     return user
-  } catch (error) {
+  } catch {
     return null
   }
 }

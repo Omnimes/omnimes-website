@@ -135,19 +135,19 @@ export const HeroImage = () => {
           <stop
             offset={0.3}
             style={{
-              stopColor: 'var(--g1)',
+              stopColor: "var(--g1)",
             }}
           />
           <stop
             offset={0.5}
             style={{
-              stopColor: 'var(--g2)',
+              stopColor: "var(--g2)",
             }}
           />
           <stop
             offset={0.8}
             style={{
-              stopColor: 'var(--g1)',
+              stopColor: "var(--g1)",
             }}
           />
         </linearGradient>
@@ -162,19 +162,19 @@ export const HeroImage = () => {
           <stop
             offset={0.3}
             style={{
-              stopColor: 'var(--preact)',
+              stopColor: "var(--preact)",
             }}
           />
           <stop
             offset={0.5}
             style={{
-              stopColor: '#BBF0FF',
+              stopColor: "#BBF0FF",
             }}
           />
           <stop
             offset={0.8}
             style={{
-              stopColor: 'var(--preact)',
+              stopColor: "var(--preact)",
             }}
           />
         </linearGradient>
@@ -183,13 +183,7 @@ export const HeroImage = () => {
           <stop offset="1" stopColor="white" />
         </linearGradient>
         <mask id="mask">
-          <rect
-            x="0"
-            y="0"
-            width="200"
-            height="200"
-            fill="url(#mask-gradient)"
-          />
+          <rect x="0" y="0" width="200" height="200" fill="url(#mask-gradient)" />
         </mask>
       </defs>
       <g className="orbits" transform="translate(420, 220)">
@@ -197,8 +191,8 @@ export const HeroImage = () => {
           <circle
             className="orbit"
             style={{
-              stroke: 'url(#gradient-1)',
-              animationDelay: '0',
+              stroke: "url(#gradient-1)",
+              animationDelay: "0",
             }}
             r={53.4}
           />
@@ -207,15 +201,15 @@ export const HeroImage = () => {
           <circle
             className="orbit"
             style={{
-              stroke: 'url(#gradient-2)',
-              animationDelay: '0.03s',
+              stroke: "url(#gradient-2)",
+              animationDelay: "0.03s",
             }}
             r={103.4}
           />
           <circle
             className="gray satellite"
             style={{
-              animationDelay: '0.9s',
+              animationDelay: "0.9s",
             }}
             cx={-69.6}
             cy={-76}
@@ -226,15 +220,15 @@ export const HeroImage = () => {
           <circle
             className="orbit"
             style={{
-              stroke: 'url(#gradient-3)',
-              animationDelay: '0.06s',
+              stroke: "url(#gradient-3)",
+              animationDelay: "0.06s",
             }}
             r={160.4}
           />
           <circle
             className="pink satellite"
             style={{
-              animationDelay: '0.8s',
+              animationDelay: "0.8s",
             }}
             cx={102.4}
             cy={-123}
@@ -245,15 +239,15 @@ export const HeroImage = () => {
           <circle
             className="orbit"
             style={{
-              stroke: 'url(#gradient-4)',
-              animationDelay: '0.09s',
+              stroke: "url(#gradient-4)",
+              animationDelay: "0.09s",
             }}
             r={267.3}
           />
           <circle
             className="pink satellite"
             style={{
-              animationDelay: '0.6s',
+              animationDelay: "0.6s",
             }}
             cx={-243.6}
             cy={111.4}
@@ -262,7 +256,7 @@ export const HeroImage = () => {
           <circle
             className="gray satellite"
             style={{
-              animationDelay: '1s',
+              animationDelay: "1s",
             }}
             cx={250}
             cy={94.4}
@@ -271,7 +265,7 @@ export const HeroImage = () => {
           <circle
             className="pink satellite"
             style={{
-              animationDelay: '0.7s',
+              animationDelay: "0.7s",
             }}
             cx={-236.6}
             cy={-123.6}
@@ -282,13 +276,13 @@ export const HeroImage = () => {
           <circle
             className="orbit"
             style={{
-              stroke: 'url(#gradient-5)',
-              animationDelay: '0.12s',
+              stroke: "url(#gradient-5)",
+              animationDelay: "0.12s",
             }}
             r={388.5}
           />
         </g>
       </g>
     </svg>
-  );
+  )
 }

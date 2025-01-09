@@ -1,9 +1,9 @@
 type Teams = {
-  name: string,
-  avatar: string,
-  occupation: string,
-  github?: string,
-  linkedin?: string,
+  name: string
+  avatar: string
+  occupation: string
+  github?: string
+  linkedin?: string
 }
 
 type BlogPost = {
@@ -15,14 +15,14 @@ type BlogPost = {
 }
 
 type ImageGallery = {
-  src: string;
-  width: number;
-  height: number;
-  title: string;
-  alt: string;
-  caption: string;
-  tags: stirng[];
-  date: string;
+  src: string
+  width: number
+  height: number
+  title: string
+  alt: string
+  caption: string
+  tags: stirng[]
+  date: string
 }
 
 type NavItem = {
@@ -62,7 +62,7 @@ type DocsConfig = {
   sidebarNav: SidebarNavItem[]
 }
 
-declare module 'rehype-citation' {
-  const rehypeCitation: any;
-  export default rehypeCitation;
+declare module "rehype-citation" {
+  const rehypeCitation: any
+  export default rehypeCitation
 }

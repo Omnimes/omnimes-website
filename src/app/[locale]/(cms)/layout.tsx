@@ -1,14 +1,9 @@
 import { ReactNode } from "react"
 
 type Props = {
-  children: ReactNode;
-  params: { locale: string };
-};
+  children: ReactNode
+}
 
-export default function OutstaticLayout({ children, params: { locale } }: Props) {
-  return (
-    <main>
-      {children}
-    </main>
-  )
+export default async function OutstaticLayout({ children }: Props) {
+  return <main>{children}</main>
 }

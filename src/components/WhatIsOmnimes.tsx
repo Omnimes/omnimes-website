@@ -1,24 +1,25 @@
-import { useTranslations } from 'next-intl'
-import { SubtitleNormal } from './ui/Subtitle'
-import { Heading } from './ui/Heading'
-import { DescriptionPrimary } from './ui/Description'
+import { useTranslations } from "next-intl"
+
+import { DescriptionPrimary } from "./ui/Description"
+import { Heading } from "./ui/Heading"
+import { SubtitleNormal } from "./ui/Subtitle"
 
 export const WhatIsOmnimes = () => {
-  const t = useTranslations('OmnimesInformation')
+  const t = useTranslations("OmnimesInformation")
   return (
     <>
       <div id="omnimes" className="mt-8 scroll-mt-20 sm:mt-0 sm:scroll-mt-8 md:text-center">
-        <SubtitleNormal text={t('smallSubtitle')} />
-        <Heading omnimes={true} text={t('heading')} />
-        <DescriptionPrimary text={t('description')} />
+        <SubtitleNormal text={t("smallSubtitle")} />
+        <Heading omnimes={true} text={t("heading")} />
+        <DescriptionPrimary text={t("description")} />
       </div>
-      <div className="mb-8 mt-8 grid grid-cols-1 gap-4 sm:mt-0 md:grid-cols-2 lg:grid-cols-4">
+      <div className="my-8 grid grid-cols-1 gap-4 sm:mt-0 md:grid-cols-2 lg:grid-cols-4">
         <div
-          className="height-auto relative box-border flex flex-col overflow-hidden rounded-large border-transparent bg-white/5 text-foreground shadow-medium outline-none backdrop-blur-lg backdrop-saturate-[1.8] transition-transform-background data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:outline-focus motion-reduce:transition-none dark:bg-default-400/10"
+          className="height-auto rounded-large text-foreground shadow-medium transition-transform-background data-[focus-visible=true]:outline-focus dark:bg-default-400/10 relative box-border flex flex-col overflow-hidden border-transparent bg-white/5 outline-none backdrop-blur-lg backdrop-saturate-[1.8] data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 motion-reduce:transition-none"
           tabIndex={-1}
         >
-          <div className="overflow-inherit color-inherit z-10 flex w-full shrink-0 items-center justify-start gap-2 rounded-t-large p-3 pb-0 subpixel-antialiased">
-            <div className="flex items-center justify-center rounded-full bg-secondary-100/80 p-2 text-pink-500">
+          <div className="overflow-inherit color-inherit rounded-t-large z-10 flex w-full shrink-0 items-center justify-start gap-2 p-3 pb-0 subpixel-antialiased">
+            <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
               <svg
                 aria-hidden="true"
                 fill="none"
@@ -39,18 +40,18 @@ export const WhatIsOmnimes = () => {
                 ></path>
               </svg>
             </div>
-            <p className="text-base font-semibold">{t('title1')}</p>
+            <p className="text-base font-semibold">{t("title1")}</p>
           </div>
           <div className="place-content-inherit align-items-inherit relative flex h-auto w-full flex-auto flex-col overflow-y-auto break-words p-3 text-left subpixel-antialiased">
-            <p className="text-base font-normal text-default-500">{t('descriptionCard1')}</p>
+            <p className="text-default-500 text-base font-normal">{t("descriptionCard1")}</p>
           </div>
         </div>
         <div
-          className="height-auto relative box-border flex flex-col overflow-hidden rounded-large border-transparent bg-white/5 text-foreground shadow-medium outline-none backdrop-blur-lg backdrop-saturate-[1.8] transition-transform-background data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:outline-focus motion-reduce:transition-none dark:bg-default-400/10"
+          className="height-auto rounded-large text-foreground shadow-medium transition-transform-background data-[focus-visible=true]:outline-focus dark:bg-default-400/10 relative box-border flex flex-col overflow-hidden border-transparent bg-white/5 outline-none backdrop-blur-lg backdrop-saturate-[1.8] data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 motion-reduce:transition-none"
           tabIndex={-1}
         >
-          <div className="overflow-inherit color-inherit z-10 flex w-full shrink-0 items-center justify-start gap-2 rounded-t-large p-3 pb-0 subpixel-antialiased">
-            <div className="flex items-center justify-center rounded-full bg-secondary-100/80 p-2 text-pink-500">
+          <div className="overflow-inherit color-inherit rounded-t-large z-10 flex w-full shrink-0 items-center justify-start gap-2 p-3 pb-0 subpixel-antialiased">
+            <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
               <svg
                 aria-hidden="true"
                 fill="none"
@@ -73,18 +74,18 @@ export const WhatIsOmnimes = () => {
                 </g>
               </svg>
             </div>
-            <p className="text-base font-semibold">{t('title2')}</p>
+            <p className="text-base font-semibold">{t("title2")}</p>
           </div>
           <div className="place-content-inherit align-items-inherit relative flex h-auto w-full flex-auto flex-col overflow-y-auto break-words p-3 text-left subpixel-antialiased">
-            <p className="text-base font-normal text-default-500">{t('descriptionCard2')}</p>
+            <p className="text-default-500 text-base font-normal">{t("descriptionCard2")}</p>
           </div>
         </div>
         <div
-          className="height-auto relative box-border flex flex-col overflow-hidden rounded-large border-transparent bg-white/5 text-foreground shadow-medium outline-none backdrop-blur-lg backdrop-saturate-[1.8] transition-transform-background data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:outline-focus motion-reduce:transition-none dark:bg-default-400/10"
+          className="height-auto rounded-large text-foreground shadow-medium transition-transform-background data-[focus-visible=true]:outline-focus dark:bg-default-400/10 relative box-border flex flex-col overflow-hidden border-transparent bg-white/5 outline-none backdrop-blur-lg backdrop-saturate-[1.8] data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 motion-reduce:transition-none"
           tabIndex={-1}
         >
-          <div className="overflow-inherit color-inherit z-10 flex w-full shrink-0 items-center justify-start gap-2 rounded-t-large p-3 pb-0 subpixel-antialiased">
-            <div className="flex items-center justify-center rounded-full bg-secondary-100/80 p-2 text-pink-500">
+          <div className="overflow-inherit color-inherit rounded-t-large z-10 flex w-full shrink-0 items-center justify-start gap-2 p-3 pb-0 subpixel-antialiased">
+            <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
               <svg
                 aria-hidden="true"
                 fill="none"
@@ -110,18 +111,18 @@ export const WhatIsOmnimes = () => {
                 ></path>
               </svg>
             </div>
-            <p className="text-base font-semibold">{t('title3')}</p>
+            <p className="text-base font-semibold">{t("title3")}</p>
           </div>
           <div className="place-content-inherit align-items-inherit relative flex h-auto w-full flex-auto flex-col overflow-y-auto break-words p-3 text-left subpixel-antialiased">
-            <p className="text-base font-normal text-default-500">{t('descriptionCard3')}</p>
+            <p className="text-default-500 text-base font-normal">{t("descriptionCard3")}</p>
           </div>
         </div>
         <div
-          className="height-auto relative box-border flex flex-col overflow-hidden rounded-large border-transparent bg-white/5 text-foreground shadow-medium outline-none backdrop-blur-lg backdrop-saturate-[1.8] transition-transform-background data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:outline-focus motion-reduce:transition-none dark:bg-default-400/10"
+          className="height-auto rounded-large text-foreground shadow-medium transition-transform-background data-[focus-visible=true]:outline-focus dark:bg-default-400/10 relative box-border flex flex-col overflow-hidden border-transparent bg-white/5 outline-none backdrop-blur-lg backdrop-saturate-[1.8] data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 motion-reduce:transition-none"
           tabIndex={-1}
         >
-          <div className="overflow-inherit color-inherit z-10 flex w-full shrink-0 items-center justify-start gap-2 rounded-t-large p-3 pb-0 subpixel-antialiased">
-            <div className="flex items-center justify-center rounded-full bg-secondary-100/80 p-2 text-pink-500">
+          <div className="overflow-inherit color-inherit rounded-t-large z-10 flex w-full shrink-0 items-center justify-start gap-2 p-3 pb-0 subpixel-antialiased">
+            <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
               <svg
                 aria-hidden="true"
                 fill="none"
@@ -155,10 +156,10 @@ export const WhatIsOmnimes = () => {
                 ></path>
               </svg>
             </div>
-            <p className="text-base font-semibold">{t('title4')}</p>
+            <p className="text-base font-semibold">{t("title4")}</p>
           </div>
           <div className="place-content-inherit align-items-inherit relative flex h-auto w-full flex-auto flex-col overflow-y-auto break-words p-3 text-left subpixel-antialiased">
-            <p className="text-base font-normal text-default-500">{t('descriptionCard4')}</p>
+            <p className="text-default-500 text-base font-normal">{t("descriptionCard4")}</p>
           </div>
         </div>
       </div>

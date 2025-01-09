@@ -1,58 +1,82 @@
 "use client"
 
 import * as React from "react"
-import * as z from "zod"
-import { User } from "@prisma/client"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../ui/Card"
-import { Label } from "@/components/ui/Label"
-import { Input } from "../../ui/Input"
-import { Button, buttonVariants } from "../../ui/Button"
-import { useTranslations } from "next-intl"
-import { Loader2 } from "lucide-react"
-import { toast } from "../../ui/UseToast"
+import {
+  createCompany,
+  createPromisesToCompany,
+  getCompany,
+  getCompanyInGUSDatabaseServer,
+  sendResetRequest,
+  updateCompany,
+} from "@/actions/company"
 import { cn, getInputType } from "@/utils/utils"
 import { companySchema } from "@/utils/validations/company"
-import { createCompany, createPromisesToCompany, getCompany, getCompanyInGUSDatabaseServer, sendResetRequest, updateCompany } from "@/actions/company"
-import { useDebouncedCallback } from 'use-debounce';
+import { zodResolver } from "@hookform/resolvers/zod"
+import { User } from "@prisma/client"
+import { useTranslations } from "next-intl"
+import { useForm } from "react-hook-form"
+import { LuLoaderCircle } from "react-icons/lu"
+import { useDebouncedCallback } from "use-debounce"
+import * as z from "zod"
+
+import { Label } from "@/components/ui/Label"
+
+import { Button, buttonVariants } from "../../ui/Button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../../ui/Card"
+import { Input } from "../../ui/Input"
+import { toast } from "../../ui/UseToast"
 
 type FormData = z.infer<typeof companySchema>
 
 interface Props {
-  user: Pick<User, "id">;
-  company: Company | null;
-  belongCompany: boolean;
-  requestCompany: ReqCompany | null;
-  isAdminCompany: boolean;
-  className?: string;
+  user: Pick<User, "id">
+  company: Company | null
+  belongCompany: boolean
+  requestCompany: ReqCompany | null
+  isAdminCompany: boolean
+  className?: string
 }
 
 export type ReqCompany = {
-  id: string;
-  userId: string;
-  companyId: string;
+  id: string
+  userId: string
+  companyId: string
 }
 
 export type Company = {
-  id?: string;
-  name: string;
-  nip: string;
-  streetAddress: string;
-  postalCode: string;
-  city: string;
-  country: string;
-  industry: string;
-  phoneNumber: string;
-  email: string;
-  website: string;
+  id?: string
+  name: string
+  nip: string
+  streetAddress: string
+  postalCode: string
+  city: string
+  country: string
+  industry: string
+  phoneNumber: string
+  email: string
+  website: string
 }
 
-export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAdminCompany, className, ...props }: Props) => {
+export const CompanyForm = ({
+  user,
+  company,
+  belongCompany,
+  requestCompany,
+  isAdminCompany,
+  className,
+  ...props
+}: Props) => {
   const t = useTranslations("CompanyForm")
-  const [isSaving, setIsSaving] = React.useState<boolean>(false);
-  const [isSendPromise, setIsSendPromise] = React.useState<boolean>(false);
-  const [sendPromise, setSendPromise] = React.useState<boolean>(false);
+  const [isSaving, setIsSaving] = React.useState<boolean>(false)
+  const [isSendPromise, setIsSendPromise] = React.useState<boolean>(false)
+  const [sendPromise, setSendPromise] = React.useState<boolean>(false)
 
   const defVal = {
     name: "",
@@ -66,7 +90,10 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
     email: "",
     website: "",
   }
-  let defaultCompanyValues = company == null ? defVal : { ...company, website: company.website == null ? "" : company.website };
+  const defaultCompanyValues =
+    company == null
+      ? defVal
+      : { ...company, website: company.website == null ? "" : company.website }
 
   const {
     handleSubmit,
@@ -79,18 +106,18 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
   } = useForm<FormData>({
     resolver: zodResolver(companySchema),
     defaultValues: defaultCompanyValues,
-  });
+  })
 
   async function onSubmit(data: FormData) {
     setIsSaving(true)
     const response = belongCompany
       ? await updateCompany(company?.id ?? "", data)
-      : await createCompany(data, user.id);
+      : await createCompany(data, user.id)
 
     if (response.success) {
       toast({
         description: t(response.message),
-        variant: "success"
+        variant: "success",
       })
     } else if (response.error && response.message) {
       toast({
@@ -98,18 +125,20 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
         variant: "destructive",
       })
     } else if (response.error && response.errors && response.errors.length > 0) {
-      response.errors.map(error => toast({
-        description: error.message,
-        variant: "destructive",
-      }))
+      response.errors.map((error) =>
+        toast({
+          description: error.message,
+          variant: "destructive",
+        })
+      )
     }
     setIsSaving(false)
   }
 
-  const getCompanyInOwnDatabase = async(nip: string) => {
-    const response = await getCompany(nip);
+  const getCompanyInOwnDatabase = async (nip: string) => {
+    const response = await getCompany(nip)
     if (response.success && response.company) {
-      setIsSendPromise(true);
+      setIsSendPromise(true)
       reset({
         name: response.company.name,
         nip: response.company.nip,
@@ -121,122 +150,122 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
         phoneNumber: response.company.phoneNumber,
         email: response.company.email,
         website: response.company.website ?? "",
-      });
+      })
       return true
-    }
-    else if (response.error) {
+    } else if (response.error) {
       toast({
         description: t(response.message),
         variant: "destructive",
       })
       return false
-    }
-    else { 
-      reset((values) => ({ ...values })); 
+    } else {
+      reset((values) => ({ ...values }))
       return false
     }
   }
 
-  const getCompanyInGUSDatabase = async(nip: string) => {
+  const getCompanyInGUSDatabase = async (nip: string) => {
     const data = await getCompanyInGUSDatabaseServer(nip)
     if (data && data.nip) {
-      setError('nip', { type: 'custom', message: 'Podany nip jest niepoprawny' });
-      reset((values) => ({ ...values })); 
+      setError("nip", { type: "custom", message: "Podany nip jest niepoprawny" })
+      reset((values) => ({ ...values }))
       return
-    } else if(data.error) {
-      setError('nip', { type: 'custom', message: 'Nie znaleziono Nipu w bazie' });
-      reset((values) => ({ ...values })); 
-      return 
-    } else if(JSON.parse(data)) {
-        const company = JSON.parse(data);
-        reset({
-          name: company.Nazwa,
-          nip: company.Nip,
-          streetAddress: `${company.Ulica !== null ? company.Ulica : ""} ${company.NrNieruchomosci !== null ? company.NrNieruchomosci : ""} ${company.NrLokalu !== null ? company.NrLokalu: ""}`.trim(),
-          postalCode: company.KodPocztowy,
-          city: company.Miejscowosc,
-          country: "",
-          industry: "",
-          phoneNumber: "",
-          email: "",
-          website: "",
-        });
-        clearErrors('nip')
+    } else if (data.error) {
+      setError("nip", { type: "custom", message: "Nie znaleziono Nipu w bazie" })
+      reset((values) => ({ ...values }))
+      return
+    } else if (JSON.parse(data)) {
+      const company = JSON.parse(data)
+      reset({
+        name: company.Nazwa,
+        nip: company.Nip,
+        streetAddress:
+          `${company.Ulica !== null ? company.Ulica : ""} ${company.NrNieruchomosci !== null ? company.NrNieruchomosci : ""} ${company.NrLokalu !== null ? company.NrLokalu : ""}`.trim(),
+        postalCode: company.KodPocztowy,
+        city: company.Miejscowosc,
+        country: "",
+        industry: "",
+        phoneNumber: "",
+        email: "",
+        website: "",
+      })
+      clearErrors("nip")
     } else {
-      reset((values) => ({ ...values })); 
+      reset((values) => ({ ...values }))
     }
   }
 
   const checkCompany = useDebouncedCallback(async (nip: string) => {
+    if (nip.length !== 10) {
+      setError("nip", { type: "custom", message: "Podany nip jest niepoprawny" })
+      return
+    }
+    clearErrors("nip")
 
-    if(nip.length !== 10) {
-      setError('nip', { type: 'custom', message: 'Podany nip jest niepoprawny' });
-      return 
-    } 
-    clearErrors('nip')
-
-    const isCompanyData = await getCompanyInOwnDatabase(nip);
-    if(!isCompanyData) await getCompanyInGUSDatabase(nip);
+    const isCompanyData = await getCompanyInOwnDatabase(nip)
+    if (!isCompanyData) await getCompanyInGUSDatabase(nip)
 
     return
   }, 500)
 
-  const handleReset = async(e: React.MouseEvent<HTMLButtonElement>, isRequest: boolean = false) => {
-    e.preventDefault();
-    e.stopPropagation();
+  const handleReset = async (
+    e: React.MouseEvent<HTMLButtonElement>,
+    isRequest: boolean = false
+  ) => {
+    e.preventDefault()
+    e.stopPropagation()
 
     if (isRequest && requestCompany) {
-      const response = await sendResetRequest(requestCompany.id);
-      if(response.success) {
+      const response = await sendResetRequest(requestCompany.id)
+      if (response.success) {
         toast({
           description: t(response.message),
           variant: "success",
-        });
+        })
       } else if (response.error) {
         toast({
           description: t(response.message),
           variant: "destructive",
-        });
+        })
       }
     } else {
-      setIsSendPromise(false);
+      setIsSendPromise(false)
     }
 
-    reset(defVal);
+    reset(defVal)
   }
 
-  const sendPromiseFunc = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, nip: string) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setSendPromise(true);
-    const response = await createPromisesToCompany(user.id, nip);
-    if(response.success) {
+  const sendPromiseFunc = async (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    nip: string
+  ) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setSendPromise(true)
+    const response = await createPromisesToCompany(user.id, nip)
+    if (response.success) {
       toast({
         description: t(response.message),
         variant: "success",
-      });
-    } else if(response.error) {
+      })
+    } else if (response.error) {
       toast({
         description: t(response.message),
         variant: "destructive",
-      });
+      })
     }
-    setSendPromise(false);
-    setIsSendPromise(false);
+    setSendPromise(false)
+    setIsSendPromise(false)
   }
 
   return (
-    <form
-      className={cn(className)}
-      onSubmit={handleSubmit(onSubmit)}
-      {...props}
-    >
+    <form className={cn(className)} onSubmit={handleSubmit(onSubmit)} {...props}>
       <Card className="relative">
         {(requestCompany || isSendPromise) && (
-          <div className="absolute z-10 w-full h-full backdrop-blur-md border flex flex-col justify-center items-center gap-4 p-4">
+          <div className="absolute z-10 flex size-full flex-col items-center justify-center gap-4 border p-4 backdrop-blur-md">
             <h3 className="text-2xl font-medium">
               {requestCompany && t("titleRequestPending")}
-              {isSendPromise && t('ifCompanyExist', { company: getValues("name") })}
+              {isSendPromise && t("ifCompanyExist", { company: getValues("name") })}
             </h3>
             <p className="pb-4">
               {requestCompany && t("descRequestPending")}
@@ -252,7 +281,7 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
               {isSendPromise && (
                 <>
                   <Button variant={"primary"} onClick={(e) => sendPromiseFunc(e, getValues("nip"))}>
-                    {sendPromise && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                    {sendPromise && <LuLoaderCircle className="mr-2 size-4 animate-spin" />}
                     <span>{t("sendRequest")}</span>
                   </Button>
                   <Button variant={"outline"} onClick={(e) => handleReset(e)}>
@@ -267,11 +296,9 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
           <CardTitle>{t("title")}</CardTitle>
           <CardDescription>{t("description")}</CardDescription>
         </CardHeader>
-        <CardContent className="grid md:grid-cols-2 2xl:grid-cols-3 gap-4">
+        <CardContent className="grid gap-4 md:grid-cols-2 2xl:grid-cols-3">
           {Object.keys(companySchema.shape).map((fieldName) => (
-            <div key={fieldName} className={cn(
-              fieldName
-            )}>
+            <div key={fieldName} className={cn(fieldName)}>
               <Label htmlFor={fieldName}>{t(fieldName)}</Label>
               <Input
                 id={fieldName}
@@ -281,10 +308,14 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
                 size={32}
                 disabled={fieldName === "nip" ? belongCompany : isSendPromise}
                 {...register(fieldName as keyof typeof companySchema.shape)}
-                onInput={(e) => fieldName === "nip" && checkCompany((e.target as HTMLInputElement).value)}
+                onInput={(e) =>
+                  fieldName === "nip" && checkCompany((e.target as HTMLInputElement).value)
+                }
               />
               {errors[fieldName as keyof typeof companySchema.shape] && (
-                <p className="px-1 text-xs text-red-600">{errors[fieldName as keyof typeof companySchema.shape]?.message}</p>
+                <p className="px-1 text-xs text-red-600">
+                  {errors[fieldName as keyof typeof companySchema.shape]?.message}
+                </p>
               )}
             </div>
           ))}
@@ -298,11 +329,11 @@ export const CompanyForm = ({ user, company, belongCompany, requestCompany, isAd
             className={cn(buttonVariants({ variant: "primary", size: "sm" }), className)}
             disabled={isAdminCompany ? isSaving : isSaving || belongCompany}
           >
-            {isSaving && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            {isSaving && <LuLoaderCircle className="mr-2 size-4 animate-spin" />}
             <span>{t("save")}</span>
           </Button>
         </CardFooter>
       </Card>
     </form>
   )
-} 
+}

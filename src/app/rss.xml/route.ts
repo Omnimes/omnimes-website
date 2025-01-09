@@ -1,7 +1,10 @@
-import { getDocuments } from 'outstatic/server';
-import { siteMetadata } from '@/data/siteMetadata';
-import RSS from "rss";
-const host = siteMetadata.siteUrl;
+import { siteMetadata } from "@/data/siteMetadata"
+import { getDocuments } from "outstatic/server"
+import RSS from "rss"
+
+const host = siteMetadata.siteUrl
+
+export const dynamic = "force-static"
 
 export async function GET() {
   const feedOptions = {
@@ -13,11 +16,11 @@ export async function GET() {
     feed_url: `${host}/rss.xml`,
     pubDate: new Date(),
     copyright: `All rights reserved ${new Date().getFullYear()}`,
-    generator: 'Feed for Node.js',
-  };
+    generator: "Feed for Node.js",
+  }
 
-  const feed = new RSS(feedOptions);
-  const posts = getDocuments('posts', ['title', 'slug', 'lang', 'description', 'author'])
+  const feed = new RSS(feedOptions)
+  const posts = getDocuments("posts", ["title", "slug", "lang", "description", "author"])
 
   posts.map((post) => {
     feed.item({
@@ -27,12 +30,12 @@ export async function GET() {
       date: new Date(post.publishedAt),
       description: post.description ?? "",
       author: post.author?.name,
-    });
-  });
-   
-   return new Response(feed.xml({ indent: true }), {
+    })
+  })
+
+  return new Response(feed.xml({ indent: true }), {
     headers: {
-      'Content-Type': 'application/rss+xml; charset=utf-8',
+      "Content-Type": "application/rss+xml; charset=utf-8",
     },
-  });
+  })
 }

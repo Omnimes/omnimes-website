@@ -1,22 +1,24 @@
-'use client'
+"use client"
+
+import { FormEvent, useCallback, useMemo, useState } from "react"
+import { sendEmail } from "@/utils/sendEmail"
 import {
+  Avatar,
   Button,
+  cn,
   Input,
   Link,
-  Textarea,
-  Spinner,
-  Switch,
-  cn,
   Select,
   SelectItem,
-  Avatar,
-} from '@nextui-org/react'
-import { useTranslations } from 'next-intl'
-import { useWindowSize } from 'usehooks-ts'
-import { LuMail, LuUser, LuUsers, LuBuilding, LuPhone } from 'react-icons/lu'
-import { FormEvent, useCallback, useMemo, useState } from 'react'
-import { sendEmail } from '@/utils/sendEmail'
-import { DangerAlert, SuccessAlert } from './ui/Alerts'
+  Spinner,
+  Switch,
+  Textarea,
+} from "@nextui-org/react"
+import { useTranslations } from "next-intl"
+import { LuBuilding, LuMail, LuPhone, LuUser, LuUsers } from "react-icons/lu"
+import { useWindowSize } from "usehooks-ts"
+
+import { DangerAlert, SuccessAlert } from "./ui/Alerts"
 
 export type FormData = {
   name: string
@@ -29,123 +31,136 @@ export type FormData = {
 }
 
 export const Form = () => {
-  const t = useTranslations('Form');
-  const { width = 0 } = useWindowSize();
-  const [isPending, setIsPending] = useState<boolean>(false);
-  const [validPrivacy, setValidPrivacy] = useState<boolean>(false);
-  const [privacyConsent, setPrivacyConsent] = useState<boolean>(false);
-  const [alert, setAlert] = useState<boolean>(false);
-  const [responseMessage, setResponseMessage] = useState<{ type: string, message: string }>({message: "", type: ""});
+  const t = useTranslations("Form")
+  const { width = 0 } = useWindowSize()
+  const [isPending, setIsPending] = useState<boolean>(false)
+  const [validPrivacy, setValidPrivacy] = useState<boolean>(false)
+  const [privacyConsent, setPrivacyConsent] = useState<boolean>(false)
+  const [alert, setAlert] = useState<boolean>(false)
+  const [responseMessage, setResponseMessage] = useState<{ type: string; message: string }>({
+    message: "",
+    type: "",
+  })
   const [formValues, setFormValues] = useState<FormData>({
-    name: '',
-    lastName: '',
-    company: '',
-    email: '',
-    phone: '',
-    country: 'poland',
-    message: '',
-  });
+    name: "",
+    lastName: "",
+    company: "",
+    email: "",
+    phone: "",
+    country: "poland",
+    message: "",
+  })
 
-  const onChange = (key: string, value: any) => {
+  const onChange = (key: string, value: string) => {
     setAlert(false)
     setFormValues((prev) => ({ ...prev, ...{ [key]: value } }))
   }
-  
-  const validateEmail = (value: string) => value.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)
-  const validateText = (value: string) => value.length >= 3;
-  const validateNumber = useCallback((value: string) => {
-    let country = formValues.country || "poland"
-    if (country == 'england') return /^\+44\d{10}$/.test('+44'+value);
-    if (country == 'poland') return /^\+48\d{9}$/.test('+48'+value);
-    if (country == 'switzerland') return /^\+41\d{9}$/.test('+41'+value);
-    if (country == 'germany') return /^\+49\d{10}$/.test('+49'+value);
-    if (country == 'spain') return /^\+34\d{9}$/.test('+34'+value);
-    if (country == 'france') return /^\+33\d{9}$/.test('+33'+value);
-    if (country == 'italy') return /^\+39\d{10}$/.test('+39'+value);
-    return false
-  }, [formValues.country])
+
+  const validateEmail = (value: string) =>
+    value.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)
+  const validateText = (value: string) => value.length >= 3
+  const validateNumber = useCallback(
+    (value: string) => {
+      const country = formValues.country || "poland"
+      if (country == "england") return /^\+44\d{10}$/.test("+44" + value)
+      if (country == "poland") return /^\+48\d{9}$/.test("+48" + value)
+      if (country == "switzerland") return /^\+41\d{9}$/.test("+41" + value)
+      if (country == "germany") return /^\+49\d{10}$/.test("+49" + value)
+      if (country == "spain") return /^\+34\d{9}$/.test("+34" + value)
+      if (country == "france") return /^\+33\d{9}$/.test("+33" + value)
+      if (country == "italy") return /^\+39\d{10}$/.test("+39" + value)
+      return false
+    },
+    [formValues.country]
+  )
 
   const isInvalidName = useMemo(() => {
-    if (formValues.name === '') return false
+    if (formValues.name === "") return false
     return validateText(formValues.name) ? false : true
   }, [formValues.name])
 
   const isInvalidLastName = useMemo(() => {
-    if (formValues.lastName === '') return false
+    if (formValues.lastName === "") return false
     return validateText(formValues.lastName) ? false : true
   }, [formValues.lastName])
 
   const isInvalidCompany = useMemo(() => {
-    if (formValues.company === '') return false
+    if (formValues.company === "") return false
     return validateText(formValues.company) ? false : true
   }, [formValues.company])
 
   const isInvalidEmail = useMemo(() => {
-    if (formValues.email === '') return false
+    if (formValues.email === "") return false
     return validateEmail(formValues.email) ? false : true
   }, [formValues.email])
 
-  const isInvalidNumber =  useMemo(() => {
-    if (formValues.phone === '') return false
-    const validate = validateNumber(formValues.phone);
+  const isInvalidNumber = useMemo(() => {
+    if (formValues.phone === "") return false
+    const validate = validateNumber(formValues.phone)
     return validate ? false : true
   }, [formValues.phone, validateNumber])
 
   const isInvalidMessage = useMemo(() => {
-    if (formValues.message === '') return false
+    if (formValues.message === "") return false
     return validateText(formValues.message) ? false : true
   }, [formValues.message])
 
-
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
     if (privacyConsent !== true) {
       setValidPrivacy(true)
       return
     }
-    if (isInvalidName || isInvalidLastName || isInvalidCompany || isInvalidEmail || isInvalidNumber || isInvalidMessage) {
+    if (
+      isInvalidName ||
+      isInvalidLastName ||
+      isInvalidCompany ||
+      isInvalidEmail ||
+      isInvalidNumber ||
+      isInvalidMessage
+    ) {
       setAlert(true)
       return
     }
 
-    setIsPending(true);
+    setIsPending(true)
 
-    const response = await sendEmail(formValues);
+    const response = await sendEmail(formValues)
     if (response) {
       setResponseMessage({
         message: response.message,
-        type: response.type
-      });
+        type: response.type,
+      })
 
-      if (response.type != 'error') {
-          clearForm();
+      if (response.type != "error") {
+        clearForm()
       }
 
       setTimeout(() => {
         setResponseMessage({
-        message: "",
-        type: ""
-      });
+          message: "",
+          type: "",
+        })
       }, 5000)
     }
-    
-    setIsPending(false);
+
+    setIsPending(false)
   }
 
   const clearForm = () => {
     setFormValues({
-      name: '',
-      lastName: '',
-      company: '',
-      email: '',
-      phone: '',
-      country: 'poland',
-      message: '',
+      name: "",
+      lastName: "",
+      company: "",
+      email: "",
+      phone: "",
+      country: "poland",
+      message: "",
     })
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
+    <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-3xl sm:mt-20">
       <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <Input
           type="text"
@@ -158,7 +173,7 @@ export const Form = () => {
           value={formValues.name}
           isInvalid={isInvalidName}
           errorMessage={isInvalidName && t("FirstNameMessage")}
-          onValueChange={(evt) => onChange('name', evt)}
+          onValueChange={(evt) => onChange("name", evt)}
         />
         <Input
           type="text"
@@ -171,7 +186,7 @@ export const Form = () => {
           value={formValues.lastName}
           isInvalid={isInvalidLastName}
           errorMessage={isInvalidLastName && t("LastNameMessage")}
-          onValueChange={(evt) => onChange('lastName', evt)}
+          onValueChange={(evt) => onChange("lastName", evt)}
         />
         <div className="sm:col-span-2">
           <Input
@@ -185,7 +200,7 @@ export const Form = () => {
             value={formValues.company}
             isInvalid={isInvalidCompany}
             errorMessage={isInvalidCompany && t("CompanyMessage")}
-            onValueChange={(evt) => onChange('company', evt)}
+            onValueChange={(evt) => onChange("company", evt)}
           />
         </div>
         <div className="sm:col-span-2">
@@ -200,7 +215,7 @@ export const Form = () => {
             value={formValues.email}
             isInvalid={isInvalidEmail}
             errorMessage={isInvalidEmail && t("EmailMessage")}
-            onValueChange={(evt) => onChange('email', evt)}
+            onValueChange={(evt) => onChange("email", evt)}
           />
         </div>
         <div className="sm:col-span-2">
@@ -215,7 +230,7 @@ export const Form = () => {
               value={formValues.phone}
               isInvalid={isInvalidNumber}
               errorMessage={isInvalidNumber && t("PhoneMessage")}
-              onValueChange={(evt) => onChange('phone', evt)}
+              onValueChange={(evt) => onChange("phone", evt)}
               startContent={
                 <div className="flex items-center justify-center gap-2 align-middle">
                   <LuPhone />
@@ -226,22 +241,26 @@ export const Form = () => {
                     size="sm"
                     placeholder={t("SelectLabel")}
                     selectionMode="single"
-                    defaultSelectedKeys={['poland']}
+                    defaultSelectedKeys={["poland"]}
                     classNames={{
                       base: "w-[90px] sm:w-[200px] shadow-none",
-                      trigger: "shadow-none"
+                      trigger: "shadow-none",
                     }}
                     isRequired
-                    onChange={(evt) => onChange('country', evt.target.value)}
+                    onChange={(evt) => onChange("country", evt.target.value)}
                   >
                     <SelectItem
                       key="poland"
                       textValue={t("Poland")}
                       startContent={
-                        <Avatar alt={t("Poland")} className="h-6 w-6" src="https://flagcdn.com/pl.svg" />
+                        <Avatar
+                          alt={t("Poland")}
+                          className="size-6"
+                          src="https://flagcdn.com/pl.svg"
+                        />
                       }
                     >
-                      {width > 500 ? t("Poland") : ''}
+                      {width > 500 ? t("Poland") : ""}
                     </SelectItem>
                     <SelectItem
                       key="england"
@@ -249,12 +268,12 @@ export const Form = () => {
                       startContent={
                         <Avatar
                           alt={t("England")}
-                          className="h-6 w-6"
+                          className="size-6"
                           src="https://flagcdn.com/gb-eng.svg"
                         />
                       }
                     >
-                      {width > 500 ? t("England") : ''}
+                      {width > 500 ? t("England") : ""}
                     </SelectItem>
                     <SelectItem
                       key="switzerland"
@@ -262,12 +281,12 @@ export const Form = () => {
                       startContent={
                         <Avatar
                           alt={t("Switzerland")}
-                          className="h-6 w-6"
+                          className="size-6"
                           src="https://flagcdn.com/ch.svg"
                         />
                       }
                     >
-                      {width > 500 ? t("Switzerland") : ''}
+                      {width > 500 ? t("Switzerland") : ""}
                     </SelectItem>
                     <SelectItem
                       key="germany"
@@ -275,39 +294,51 @@ export const Form = () => {
                       startContent={
                         <Avatar
                           alt={t("Germany")}
-                          className="h-6 w-6"
+                          className="size-6"
                           src="https://flagcdn.com/de.svg"
                         />
                       }
                     >
-                      {width > 500 ? t("Germany") : ''}
+                      {width > 500 ? t("Germany") : ""}
                     </SelectItem>
                     <SelectItem
                       key="spain"
                       textValue={t("Spain")}
                       startContent={
-                        <Avatar alt={t("Spain")} className="h-6 w-6" src="https://flagcdn.com/es.svg" />
+                        <Avatar
+                          alt={t("Spain")}
+                          className="size-6"
+                          src="https://flagcdn.com/es.svg"
+                        />
                       }
                     >
-                      {width > 500 ? t("Spain") : ''}
+                      {width > 500 ? t("Spain") : ""}
                     </SelectItem>
                     <SelectItem
                       key="france"
                       textValue={t("France")}
                       startContent={
-                        <Avatar alt={t("France")} className="h-6 w-6" src="https://flagcdn.com/fr.svg" />
+                        <Avatar
+                          alt={t("France")}
+                          className="size-6"
+                          src="https://flagcdn.com/fr.svg"
+                        />
                       }
                     >
-                      {width > 500 ? t("France") : ''}
+                      {width > 500 ? t("France") : ""}
                     </SelectItem>
                     <SelectItem
                       key="italy"
                       textValue={t("Italy")}
                       startContent={
-                        <Avatar alt={t("Italy")} className="h-6 w-6" src="https://flagcdn.com/it.svg" />
+                        <Avatar
+                          alt={t("Italy")}
+                          className="size-6"
+                          src="https://flagcdn.com/it.svg"
+                        />
                       }
                     >
-                      {width > 500 ? t("Italy") : ''}
+                      {width > 500 ? t("Italy") : ""}
                     </SelectItem>
                   </Select>
                 </div>
@@ -324,14 +355,14 @@ export const Form = () => {
             disableAnimation
             disableAutosize
             classNames={{
-              base: 'max-w-full',
-              input: 'resize-y min-h-[80px]',
+              base: "max-w-full",
+              input: "resize-y min-h-[80px]",
             }}
             isRequired
             value={formValues.message}
             isInvalid={isInvalidMessage}
             errorMessage={isInvalidMessage && t("TextareaMessage")}
-            onValueChange={(evt) => onChange('message', evt)}
+            onValueChange={(evt) => onChange("message", evt)}
           />
         </div>
 
@@ -340,22 +371,25 @@ export const Form = () => {
             required
             defaultSelected={false}
             isSelected={privacyConsent}
-            onValueChange={() => { setPrivacyConsent(!privacyConsent); setValidPrivacy(false) }}
+            onValueChange={() => {
+              setPrivacyConsent(!privacyConsent)
+              setValidPrivacy(false)
+            }}
             classNames={{
               base: cn(
-                'inline-flex flex-row w-full bg-content2 hover:bg-content3 items-center',
-                'cursor-pointer rounded-lg gap-2 p-4 border-2 border-transparent max-w-full',
-                validPrivacy && 'border-danger'
+                "bg-content2 hover:bg-content3 inline-flex w-full flex-row items-center",
+                "max-w-full cursor-pointer gap-2 rounded-lg border-2 border-transparent p-4",
+                validPrivacy && "border-danger"
               ),
-              wrapper: 'p-0 h-4 overflow-visible bg-default-400 ',
+              wrapper: "p-0 h-4 overflow-visible bg-default-400 ",
               thumb: cn(
-                'w-6 h-6 border-2 shadow-lg',
-                'group-data-[hover=true]:border-primary-500',
+                "size-6 border-2 shadow-lg",
+                "group-data-[hover=true]:border-primary-500",
                 //selected
-                'group-data-[selected=true]:ml-6 group-data-[selected=true]:bg-primary-500 ',
+                "group-data-[selected=true]:bg-primary-500 group-data-[selected=true]:ml-6 ",
                 // pressed
-                'group-data-[pressed=true]:w-7',
-                'group-data-[selected]:group-data-[pressed]:ml-4'
+                "group-data-[pressed=true]:w-7",
+                "group-data-[selected]:group-data-[pressed]:ml-4"
               ),
             }}
           >
@@ -367,7 +401,7 @@ export const Form = () => {
                 <Link
                   isExternal
                   href="/privacy-policy"
-                  className="font-semibold text-primary-600"
+                  className="text-primary-600 font-semibold"
                   size="sm"
                   showAnchorIcon
                 >
@@ -378,22 +412,26 @@ export const Form = () => {
             </div>
           </Switch>
         </div>
-      </div> 
+      </div>
       {alert && <DangerAlert title={t("DangerAlertTitle")} text={t("DangerAlertMessage")} />}
-      {responseMessage.type == "success" && <SuccessAlert title={t("SuccessForm")} text={t("SuccessFormMessage")} />}
-      {responseMessage.type == "error" && <DangerAlert title={t("ErrorForm")} text={t("ErrorFormMessage")} />}
+      {responseMessage.type == "success" && (
+        <SuccessAlert title={t("SuccessForm")} text={t("SuccessFormMessage")} />
+      )}
+      {responseMessage.type == "error" && (
+        <DangerAlert title={t("ErrorForm")} text={t("ErrorFormMessage")} />
+      )}
       <div className="mt-10">
         <Button
           radius="md"
           fullWidth={true}
           variant="shadow"
-          className=" bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className=" bg-primary-600 hover:bg-primary-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           isLoading={isPending}
           spinner={<Spinner size="sm" />}
-          spinnerPlacement={'end'}
-          aria-label={t('AriaButton')}
-          aria-labelledby={t('AriaButton')}
-          title={t('AriaButton')}
+          spinnerPlacement={"end"}
+          aria-label={t("AriaButton")}
+          aria-labelledby={t("AriaButton")}
+          title={t("AriaButton")}
           type="submit"
         >
           {t("Button")}

@@ -1,5 +1,5 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
@@ -9,22 +9,24 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  compress: true,
+  poweredByHeader: false,
+  serverExternalPackages: ["@prisma/client"],
+  productionBrowserSourceMaps: true,
+  experimental: {
+    authInterrupts: true,
+    nextScriptWorkers: true,
+    webVitalsAttribution: ['CLS', 'LCP'],
+    // optimizePackageImports: ['package-name'],
+  },
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: 'raw.githubusercontent.com',
+        hostname: "**.githubusercontent.com",
       },
-      {
-        protocol: "https",
-        hostname: "avatars.githubusercontent.com"
-      }
     ]
-  },
-  experimental: {
-    serverComponentsExternalPackages: ["@prisma/client"],
-    webVitalsAttribution: ['CLS', 'LCP'],
-    nextScriptWorkers: true,
   },
 };
 

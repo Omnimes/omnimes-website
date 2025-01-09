@@ -1,73 +1,74 @@
-import { Hero } from '@/components/Hero'
-import { WhatIsOmnimes } from '@/components/WhatIsOmnimes';
-import { Feature } from '@/components/Feature';
-import { HeroImage } from '@/components/HeroImage'
-import { unstable_setRequestLocale } from 'next-intl/server';
-import { ComponentVideo } from '@/components/ComponentVideo';
-import { Time } from '@/components/Time';
-import { WhatPeopleSay } from '@/components/WhatPeopleSay';
-import { Timeline } from '@/components/Timeline';
-import { Performance } from '@/components/Performance';
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
-import { LastUpdates } from '@/components/LastUpdates';
-import { OstDocument } from "outstatic";
-import { load } from "outstatic/server";
-import { Skeleton } from '@/components/ui/Skeleton';
-import { Suspense } from 'react';
+import { Suspense } from "react"
+import { setRequestLocale } from "next-intl/server"
+import { OstDocument } from "outstatic"
+import { load } from "outstatic/server"
+
+import { Skeleton } from "@/components/ui/Skeleton"
+import { ComponentVideo } from "@/components/ComponentVideo"
+import { Feature } from "@/components/Feature"
+import { Hero } from "@/components/Hero"
+import { HeroImage } from "@/components/HeroImage"
+import { LastUpdates } from "@/components/LastUpdates"
+import { Performance } from "@/components/Performance"
+import ScrollTopAndComment from "@/components/ScrollTopAndComment"
+import { Time } from "@/components/Time"
+import { Timeline } from "@/components/Timeline"
+import { WhatIsOmnimes } from "@/components/WhatIsOmnimes"
+import { WhatPeopleSay } from "@/components/WhatPeopleSay"
 
 async function getData(locale: string) {
-  const db = await load();
+  const db = await load()
   const allNews = await db
-  .find<OstDocument>({ collection: 'news', status: 'published', lang: locale }, [
-      'title',
-      'publishedAt',
-      'slug',
-      'coverImage',
-      'description',
-  ])
-  .sort({ publishedAt: -1 })
-  .limit(3)
-  .toArray();
+    .find<OstDocument>({ collection: "news", status: "published", lang: locale }, [
+      "title",
+      "publishedAt",
+      "slug",
+      "coverImage",
+      "description",
+    ])
+    .sort({ publishedAt: -1 })
+    .limit(3)
+    .toArray()
 
   const allPosts = await db
-  .find<OstDocument>({ collection: 'posts', status: 'published', lang: locale }, [
-      'title',
-      'publishedAt',
-      'slug',
-      'coverImage',
-      'description',
-  ])
-  .sort({ publishedAt: -1 })
-  .limit(5)
-  .toArray();
+    .find<OstDocument>({ collection: "posts", status: "published", lang: locale }, [
+      "title",
+      "publishedAt",
+      "slug",
+      "coverImage",
+      "description",
+    ])
+    .sort({ publishedAt: -1 })
+    .limit(5)
+    .toArray()
 
   return {
     allNews,
-    allPosts
+    allPosts,
   }
 }
 
-export default async function Home({params: { locale }}: {params: { locale: string }}) {
-  unstable_setRequestLocale(locale);
-  const {allNews, allPosts} = await getData(locale);
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+  const { allNews, allPosts } = await getData(locale)
   return (
     <>
-        <HeroImage />
-        <Hero />
-        <Suspense fallback={<Skeleton className="h-8 w-full" />}>
-          <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
-        </Suspense>
-        <WhatIsOmnimes />
-        <Feature />
-        <ComponentVideo />
-        <Time />
-        <Performance /> 
-        <Timeline />
-        <WhatPeopleSay />
-        {/* <SocialProf />   */}
-        {/* <Cooperation /> */}
-        <ScrollTopAndComment />
+      <HeroImage />
+      <Hero />
+      <Suspense fallback={<Skeleton className="h-8 w-full" />}>
+        <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+      </Suspense>
+      <WhatIsOmnimes />
+      <Feature />
+      <ComponentVideo />
+      <Time />
+      <Performance />
+      <Timeline />
+      <WhatPeopleSay />
+      {/* <SocialProf />   */}
+      {/* <Cooperation /> */}
+      <ScrollTopAndComment />
     </>
   )
 }
-

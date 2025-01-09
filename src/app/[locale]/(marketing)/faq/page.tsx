@@ -1,18 +1,19 @@
-import { DescriptionPrimary } from '@/components/ui/Description'
-import { Heading } from '@/components/ui/Heading'
-import { SubtitleNormal } from '@/components/ui/Subtitle'
-import { Faq } from '@/components/Faq'
-import { useTranslations } from 'next-intl'
-import { genPageMetadata } from '@/app/seo';
-import { getLocalePrimaryDialects } from '@/data/locales';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getLocalePrimaryDialects } from "@/data/locales"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: "FaqMeta" });
-  const title = t('title');
-  const description = t('desc');
-  const keywords = t('keywords');
-  const localeShort = getLocalePrimaryDialects(locale);
+import { DescriptionPrimary } from "@/components/ui/Description"
+import { Heading } from "@/components/ui/Heading"
+import { SubtitleNormal } from "@/components/ui/Subtitle"
+import { Faq } from "@/components/Faq"
+import { genPageMetadata } from "@/app/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "FaqMeta" })
+  const title = t("title")
+  const description = t("desc")
+  const keywords = t("keywords")
+  const localeShort = getLocalePrimaryDialects(locale)
   const obj = {
     title,
     description,
@@ -22,26 +23,30 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return genPageMetadata(obj)
 }
 
-export default function FaqPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations("FAQ")
-  
+export default async function FaqPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+  const t = await getTranslations("FAQ")
+
   return (
-      <main className="px-0 py-16 md:text-center">
-        <AbstractBackgroundSecond />
-        <SubtitleNormal text={t("subtitle")} />
-        <Heading text={t("heading")} />
-        <DescriptionPrimary text={t("desc")} />
-        <Faq />
+    <main className="px-0 py-16 md:text-center">
+      <AbstractBackgroundSecond />
+      <SubtitleNormal text={t("subtitle")} />
+      <Heading text={t("heading")} />
+      <DescriptionPrimary text={t("desc")} />
+      <Faq />
     </main>
   )
 }
 
 const AbstractBackgroundSecond = () => {
   return (
-    <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20 z-[-1]">
-        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-fuchsia-700"></div>
-        <div className="blur-[106px] h-32 bg-gradient-to-r from-fuchsia-700 dark:from-red-300 to-pink-200 dark:to-purple-400 "></div>
+    <div
+      aria-hidden="true"
+      className="absolute inset-0 z-[-1] grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+    >
+      <div className="from-primary h-56 bg-gradient-to-br to-purple-400 blur-[106px] dark:from-fuchsia-700"></div>
+      <div className="h-32 bg-gradient-to-r from-fuchsia-700 to-pink-200 blur-[106px] dark:from-red-300 dark:to-purple-400 "></div>
     </div>
   )
 }

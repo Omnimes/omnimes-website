@@ -4,12 +4,12 @@ export const becomeDeveloperSchema = z.object({
   company: z
     .string()
     .min(3, {
-        message: "nameMsg",
+      message: "nameMsg",
     })
     .max(32, {
       message: "nameMsg2",
     }),
-  nip: z.string().refine(value => /^\d+$/.test(value), {
+  nip: z.string().refine((value) => /^\d+$/.test(value), {
     message: "NipMsg",
   }),
   name: z
@@ -18,6 +18,6 @@ export const becomeDeveloperSchema = z.object({
       message: "nameMsg3",
     })
     .max(32, {
-      message: "nameMsg4"
+      message: "nameMsg4",
     }),
 })

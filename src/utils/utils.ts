@@ -12,37 +12,37 @@ export function cn(...inputs: ClassValue[]) {
 export const getInputType = (fieldName: string) => {
   switch (fieldName) {
     case "email":
-      return "email";
+      return "email"
     case "phoneNumber":
-      return "tel";
+      return "tel"
     case "website":
-      return "url";
-    case "nip": 
+      return "url"
+    case "nip":
       return "number"
     default:
-      return "text";
+      return "text"
   }
-};
+}
 
 export const sortImagesByDate = (images: ImageGallery[]) => {
   return images.sort((a, b) => {
-      const dateA = new Date(a.date);
-      const dateB = new Date(b.date);
-      return dateB.getTime() - dateA.getTime();
-  });
-};
-
-export const extractOrientationNumber = (orientation: string): number | null => {
-  if(orientation == undefined) return null
-  const match = orientation.match(/\d+/);
-  return match ? parseInt(match[0], 10) : null;
+    const dateA = new Date(a.date)
+    const dateB = new Date(b.date)
+    return dateB.getTime() - dateA.getTime()
+  })
 }
 
-export function text({ url, host }: { url: string, host: string }) {
+export const extractOrientationNumber = (orientation: string): number | null => {
+  if (orientation == undefined) return null
+  const match = orientation.match(/\d+/)
+  return match ? parseInt(match[0], 10) : null
+}
+
+export function text({ url, host }: { url: string; host: string }) {
   return `Activate your account ${host}\n${url}\n\n`
 }
 
-export function textLogin({ url, host }: { url: string, host: string }) {
+export function textLogin({ url, host }: { url: string; host: string }) {
   return `Sign-in link for ${host}\n${url}\n\n`
 }
 

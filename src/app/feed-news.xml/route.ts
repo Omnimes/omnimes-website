@@ -1,7 +1,10 @@
-import { getDocuments } from 'outstatic/server';
-import { siteMetadata } from '@/data/siteMetadata';
-import { Feed } from "feed";
-const host = siteMetadata.siteUrl;
+import { siteMetadata } from "@/data/siteMetadata"
+import { Feed } from "feed"
+import { getDocuments } from "outstatic/server"
+
+const host = siteMetadata.siteUrl
+
+export const dynamic = "force-static"
 
 export async function GET() {
   const feedOptions = {
@@ -11,31 +14,31 @@ export async function GET() {
     description: "Latest updates and news from OmniMES.",
     link: host,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
-    generator: 'Feed for Node.js',
+    generator: "Feed for Node.js",
     feedLinks: {
       json: `${host}news.json`,
       atom: `${host}feed-news.xml`,
-      rss2: `${host}rss-news.xml`
+      rss2: `${host}rss-news.xml`,
     },
     author: {
       name: "OmniMes",
       email: "kontakt@omnimes.pl",
-      link: host
-    }
-  };
+      link: host,
+    },
+  }
 
-  const feed = new Feed(feedOptions);
-  const news = getDocuments('news', ['title', 'slug', 'lang', 'description', 'author']);
+  const feed = new Feed(feedOptions)
+  const news = getDocuments("news", ["title", "slug", "lang", "description", "author"])
 
   const pathMappingNews: { [key: string]: string } = {
-    en: 'news',
-    de: 'nachrichten',
-    pl: 'aktualności',
-  };
+    en: "news",
+    de: "nachrichten",
+    pl: "aktualności",
+  }
 
-  news.forEach(item => {
-    const lang = (item.lang ?? 'pl') as 'en' | 'de' | 'pl';
-     
+  news.forEach((item) => {
+    const lang = (item.lang ?? "pl") as "en" | "de" | "pl"
+
     feed.addItem({
       title: item.title,
       guid: `${host}${item.lang}/${pathMappingNews[lang]}/${item.slug}`,
@@ -43,15 +46,13 @@ export async function GET() {
       description: item.description,
       date: new Date(item.publishedAt),
       published: new Date(item.publishedAt),
-      author: [
-        item.author ?? {}
-      ]
-    });
-  });
+      author: [item.author ?? {}],
+    })
+  })
 
-   return new Response(feed.atom1(), {
+  return new Response(feed.atom1(), {
     headers: {
-      'Content-Type': 'application/atom+xml; charset=utf-8',
+      "Content-Type": "application/atom+xml; charset=utf-8",
     },
-  });
+  })
 }

@@ -1,8 +1,8 @@
 "use client"
 
-import { cn } from "@/utils/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { cn } from "@/utils/utils"
 
 export interface DocsSidebarNavProps {
   items: SidebarNavItem[]
@@ -14,11 +14,13 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
     <div className="w-full">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-8")}>
-          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">
-            {item.title}
-          </h4>
+          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">{item.title}</h4>
           {item.items ? (
-            <DocsSidebarNavItems key={item.title + index + item.href} items={item.items} pathname={pathname} />
+            <DocsSidebarNavItems
+              key={item.title + index + item.href}
+              items={item.items}
+              pathname={pathname}
+            />
           ) : null}
         </div>
       ))}
@@ -31,10 +33,7 @@ interface DocsSidebarNavItemsProps {
   pathname: string | null
 }
 
-export function DocsSidebarNavItems({
-  items,
-  pathname,
-}: DocsSidebarNavItemsProps) {
+export function DocsSidebarNavItems({ items, pathname }: DocsSidebarNavItemsProps) {
   return items?.length ? (
     <div className="grid grid-flow-row auto-rows-max text-sm">
       {items.map((item, index) =>
@@ -42,19 +41,19 @@ export function DocsSidebarNavItems({
           <Link
             key={index + item.title + item.href}
             href={item.href}
-            className={cn(
-              "flex w-full items-center rounded-md p-2 hover:underline",
-              {
-                "bg-muted": pathname === item.href,
-              }
-            )}
+            className={cn("flex w-full items-center rounded-md p-2 hover:underline", {
+              "bg-muted": pathname === item.href,
+            })}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}
           >
             {item.title}
           </Link>
         ) : (
-          <span key={index + item.title} className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60">
+          <span
+            key={index + item.title}
+            className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60"
+          >
             {item.title}
           </span>
         )

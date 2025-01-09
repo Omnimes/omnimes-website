@@ -1,5 +1,6 @@
-import { Button, Card, CardFooter, Link } from '@nextui-org/react'
 import Image from "next/image"
+import { Button, Card, CardFooter, Link } from "@nextui-org/react"
+
 export const CardAuthor = ({
   image,
   name,
@@ -18,16 +19,16 @@ export const CardAuthor = ({
       <Card isFooterBlurred className="w-90 col-span-12 h-[300px] sm:col-span-7">
         <Image
           alt="Relaxing app background"
-          className="z-0 h-full w-full object-cover"
+          className="z-0 size-full object-cover"
           src={image}
           width={600}
           height={600}
         />
-        <CardFooter className="absolute bottom-0 z-1 border-t-1 border-default-600 bg-black/40 dark:border-default-100">
-          <div className="flex flex-grow items-center gap-2">
+        <CardFooter className="z-1 border-t-1 border-default-600 dark:border-default-100 absolute bottom-0 bg-black/40">
+          <div className="flex grow items-center gap-2">
             <div className="flex flex-col text-left">
               <p className="text-tiny text-white">{name}</p>
-              <p className="text-tiny font-bold uppercase text-primary-500">{occupation}</p>
+              <p className="text-tiny text-primary-500 font-bold uppercase">{occupation}</p>
             </div>
           </div>
           {github && (
@@ -39,8 +40,8 @@ export const CardAuthor = ({
               target="_blank"
               rel="noopener noreferrer"
               aria-label={"github link"}
-              aria-labelledby={'github link'}
-              title={'github link'}
+              aria-labelledby={"github link"}
+              title={"github link"}
               className="bg-transparent p-1 text-white"
             >
               <svg
@@ -69,8 +70,8 @@ export const CardAuthor = ({
               target="_blank"
               rel="noopener noreferrer"
               aria-label={"linkedin link"}
-              aria-labelledby={'linkedin link'}
-              title={'linkedin link'}
+              aria-labelledby={"linkedin link"}
+              title={"linkedin link"}
               className="bg-transparent p-1 text-white"
             >
               <svg
@@ -80,7 +81,7 @@ export const CardAuthor = ({
                 viewBox="0 0 448 512"
                 aria-hidden="true"
                 focusable="false"
-                fill={'white'}
+                fill={"white"}
               >
                 <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
               </svg>

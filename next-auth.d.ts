@@ -5,15 +5,15 @@ type UserId = string
 
 declare module "next-auth/jwt" {
   interface JWT {
-    id: UserId;
+    id: UserId
   }
 }
 
 declare module "next-auth" {
   interface Session {
     user: User & {
-      id: UserId;
-      role: string;
+      id: UserId
+      role: string
     }
   }
 }

@@ -1,20 +1,22 @@
 import { redirect } from "next/navigation"
-import { getCurrentUser } from "@/actions/session";
-import { DashboardShell } from "@/components/dashboard/Shell"
-import { DashboardHeader } from "@/components/dashboard/Header"
-import { UserNameForm } from "@/components/forms/settings/UserNameForm"
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
-import { getLocalePrimaryDialects } from "@/data/locales"
-import { genPageMetadata } from "@/app/seo"
-import { CompanyForm } from "@/components/forms/settings/CompanyForm"
 import { doesUserHaveRequest, getUserCompanyInfo } from "@/actions/company"
+import { getCurrentUser } from "@/actions/session"
+import { getLocalePrimaryDialects } from "@/data/locales"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: "SettingsPage" });
-  const title = t('title');
-  const description = t('desc');
-  const keywords = t('keywords');
-  const localeShort = getLocalePrimaryDialects(locale);
+import { DashboardHeader } from "@/components/dashboard/Header"
+import { DashboardShell } from "@/components/dashboard/Shell"
+import { CompanyForm } from "@/components/forms/settings/CompanyForm"
+import { UserNameForm } from "@/components/forms/settings/UserNameForm"
+import { genPageMetadata } from "@/app/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "SettingsPage" })
+  const title = t("title")
+  const description = t("desc")
+  const keywords = t("keywords")
+  const localeShort = getLocalePrimaryDialects(locale)
   const obj = {
     title,
     description,
@@ -24,15 +26,16 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const meta = genPageMetadata(obj)
   return meta
 }
-export default async function SettingsPage({ params: { locale } }: { params: { locale: string } }) {
-  const user = await getCurrentUser();
+export default async function SettingsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const user = await getCurrentUser()
   if (!user) redirect("/login")
+  const { locale } = await params
 
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations("SettingsPage");
+  setRequestLocale(locale)
+  const t = await getTranslations("SettingsPage")
 
-  const { belongCompany, company, isAdmin } = await getUserCompanyInfo(user.id);
-  const requestCompany = await doesUserHaveRequest(user.id);
+  const { belongCompany, company, isAdmin } = await getUserCompanyInfo(user.id)
+  const requestCompany = await doesUserHaveRequest(user.id)
 
   return (
     <DashboardShell>
