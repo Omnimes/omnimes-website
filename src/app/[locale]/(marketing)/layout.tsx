@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
-
 import { setRequestLocale } from "next-intl/server"
+
 import { ComponentSearch } from "@/components/ComponentSearch"
 import { Footer } from "@/components/Footer"
 import Header from "@/components/Header"

@@ -56,7 +56,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <HeroImage />
       <Hero />
-      <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+      <Suspense fallback={<Skeleton className="h-8 w-full" />}>
+        <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+      </Suspense>
       <WhatIsOmnimes />
       <Feature />
       <ComponentVideo />
