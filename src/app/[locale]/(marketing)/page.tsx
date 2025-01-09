@@ -51,14 +51,14 @@ async function getData(locale: string) {
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   setRequestLocale(locale)
-  const { allNews, allPosts } = await getData(locale)
+  // const { allNews, allPosts } = await getData(locale)
   return (
     <>
       <HeroImage />
       <Hero />
-      <Suspense fallback={<Skeleton className="h-8 w-full" />}>
+      {/* <Suspense fallback={<Skeleton className="h-8 w-full" />}>
         <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
-      </Suspense>
+      </Suspense> */}
       <WhatIsOmnimes />
       <Feature />
       <ComponentVideo />
