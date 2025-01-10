@@ -1,6 +1,7 @@
-const { nextui } = require("@nextui-org/react")
-const { fontFamily } = require("tailwindcss/defaultTheme")
-const colors = require("tailwindcss/colors")
+import { nextui } from "@nextui-org/react"
+import { fontFamily } from "tailwindcss/defaultTheme"
+import colors from "tailwindcss/colors"
+import type { PluginUtils } from "tailwindcss/types/config"
 
 /** @type {import("tailwindcss/types").Config } */
 module.exports = {
@@ -273,7 +274,7 @@ module.exports = {
           "950": "#052e14",
         },
       },
-      typography: ({ theme }: any) => ({
+      typography: ({ theme }: PluginUtils) => ({
         DEFAULT: {
           css: {
             a: {

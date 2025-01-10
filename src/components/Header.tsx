@@ -63,7 +63,18 @@ export default function Header() {
           </li>
         </NavbarContent>
         <NavbarContent justify="center" className="hidden gap-4 min-[690px]:flex">
-          <Dropdown backdrop="blur">
+          <Dropdown 
+            type="menu"
+            backdrop="blur"
+            showArrow
+            classNames={{
+              base: "before:bg-default-200", // change arrow background
+              content:
+                "py-1 px-1 border border-default-200 bg-gradient-to-br from-white to-default-200 dark:from-default-50 dark:to-black",
+            }}
+            shouldBlockScroll={false}
+            closeOnSelect
+            >
             <NavbarItem>
               <DropdownTrigger>
                 <Button
