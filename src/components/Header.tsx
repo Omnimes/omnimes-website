@@ -63,7 +63,7 @@ export default function Header() {
           </li>
         </NavbarContent>
         <NavbarContent justify="center" className="hidden gap-4 min-[690px]:flex">
-          <Dropdown 
+          <Dropdown
             type="menu"
             backdrop="blur"
             showArrow
@@ -74,7 +74,7 @@ export default function Header() {
             }}
             shouldBlockScroll={false}
             closeOnSelect
-            >
+          >
             <NavbarItem>
               <DropdownTrigger>
                 <Button

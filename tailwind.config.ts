@@ -1,6 +1,6 @@
 import { nextui } from "@nextui-org/react"
-import { fontFamily } from "tailwindcss/defaultTheme"
 import colors from "tailwindcss/colors"
+import { fontFamily } from "tailwindcss/defaultTheme"
 import type { PluginUtils } from "tailwindcss/types/config"
 
 /** @type {import("tailwindcss/types").Config } */
