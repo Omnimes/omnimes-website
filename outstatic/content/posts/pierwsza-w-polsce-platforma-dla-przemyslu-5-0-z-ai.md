@@ -18,15 +18,15 @@ Przygotuj się na **nową erę zarządzania produkcją**!
 Z OmniMES wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów.
 
 - uruchomienie w kilka minut
-- Współdzielenie danych w czasie rzeczywistym
 - generowanie raportów dopasowanych do Twojej produkcji
 - cyfrowy monitoring postępów i redukcja papierologii
+- 
 
 Wszystko w jednym miejscu – od analizy przestojów po optymalizację dzięki AI.
 
 Platforma jest dedykowana pod szeroką grupę odbiorców od integratorów, automatyków, dyrektorów czy kierowników zarządzania ruchem.
 
-Nasza platforma oferuje elastyczne plany w ramach subkrybycji - miesięcznej i rocznej.
+Nasza platforma oferuje elastyczne plany w ramach subskrybycji - miesięcznej i rocznej.
 
 **Śledź nas na [www.omnimes.com](https://www.omnimes.com) i bądź gotów na start w czerwcu 2025!**
 

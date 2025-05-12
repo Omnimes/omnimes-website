@@ -1,6 +1,6 @@
 {
-  "commit": "804a5be83ffc32404d481cbdc3b790d557abf21a",
-  "generated": "2025-05-12T08:04:11.980Z",
+  "commit": "29e59bef53a1fcdbed506ae259feab707a33803b",
+  "generated": "2025-05-12T08:05:09.362Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1783,8 +1783,8 @@
     },
     {
       "__outstatic": {
-        "commit": "804a5be83ffc32404d481cbdc3b790d557abf21a",
-        "hash": "1606767282",
+        "commit": "29e59bef53a1fcdbed506ae259feab707a33803b",
+        "hash": "850568430",
         "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
       },
       "author": {
