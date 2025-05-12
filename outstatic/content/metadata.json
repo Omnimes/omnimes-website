@@ -1,7 +1,45 @@
 {
-  "commit": "70bd36ac28a9ea2f90a2994fc23dfac87c119e7e",
-  "generated": "2025-05-12T09:56:50.017Z",
+  "commit": "f38adb274647c0adc573ce81057b788fe2489a67",
+  "generated": "Mon, 12 May 2025 10:12:42 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
+        "hash": "3468461650",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "status": "published",
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "1e98b3a410a871dd245d0bd3d6f35e03ec990e7f",
+        "hash": "40590163",
+        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
+      "lang": "en",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
+      "status": "published",
+      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
+    },
     {
       "__outstatic": {
         "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
@@ -58,6 +96,44 @@
       "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
       "status": "published",
       "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
+    },
+    {
+      "__outstatic": {
+        "commit": "f8f259ab4d4120d2b4f1c225835cde14948bd812",
+        "hash": "898511171",
+        "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen",
+      "lang": "de",
+      "publishedAt": "2024-06-21T06:52:47.000Z",
+      "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
+      "status": "published",
+      "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "84afeb4bfb43e049a1a67ca0fdf3802786ebdeb9",
+        "hash": "305339731",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/blog_omni-A4Mj.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją!\nZ OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T09:53:51.725Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -118,41 +194,40 @@
     },
     {
       "__outstatic": {
-        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
-        "hash": "3468461650",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
+        "hash": "3831515894",
+        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-06-15T07:31:17.000Z",
+      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
       "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
-    },
-    {
-      "__outstatic": {
-        "commit": "1e98b3a410a871dd245d0bd3d6f35e03ec990e7f",
-        "hash": "40590163",
-        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
-      "lang": "en",
-      "publishedAt": "2024-07-21T06:59:08.000Z",
-      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
-      "status": "published",
-      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
     },
     {
       "__outstatic": {
@@ -186,6 +261,39 @@
         }
       ],
       "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
+    },
+    {
+      "__outstatic": {
+        "commit": "4fb00112af2fe9f1d1ac9a3b7ef9f19dcc16714e",
+        "hash": "1289787886",
+        "path": "outstatic/content/posts/collecting-data-from-industrial-machines-methods-and-tools.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "An overview of two approaches for collecting industrial machine data: implementing an MES system such as OMNIMES by Multiprojekt, and using public datasets from platforms like Statista and Kaggle. Practical solutions for building predictive maintenance models.",
+      "lang": "en",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "collecting-data-from-industrial-machines-methods-and-tools",
+      "status": "published",
+      "tags": [
+        {
+          "label": "industrial data collection",
+          "value": "industrial-data-collection"
+        },
+        {
+          "label": "machine data",
+          "value": "machine-data"
+        },
+        {
+          "label": "machine learning in industry",
+          "value": "machine-learning-in-industry"
+        }
+      ],
+      "title": "Collecting Data from Industrial Machines: Methods and Tools"
     },
     {
       "__outstatic": {
@@ -226,39 +334,6 @@
     },
     {
       "__outstatic": {
-        "commit": "4fb00112af2fe9f1d1ac9a3b7ef9f19dcc16714e",
-        "hash": "1289787886",
-        "path": "outstatic/content/posts/collecting-data-from-industrial-machines-methods-and-tools.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/data-QzNj.png",
-      "description": "An overview of two approaches for collecting industrial machine data: implementing an MES system such as OMNIMES by Multiprojekt, and using public datasets from platforms like Statista and Kaggle. Practical solutions for building predictive maintenance models.",
-      "lang": "en",
-      "publishedAt": "2024-09-15T10:29:21.000Z",
-      "slug": "collecting-data-from-industrial-machines-methods-and-tools",
-      "status": "published",
-      "tags": [
-        {
-          "label": "industrial data collection",
-          "value": "industrial-data-collection"
-        },
-        {
-          "label": "machine data",
-          "value": "machine-data"
-        },
-        {
-          "label": "machine learning in industry",
-          "value": "machine-learning-in-industry"
-        }
-      ],
-      "title": "Collecting Data from Industrial Machines: Methods and Tools"
-    },
-    {
-      "__outstatic": {
         "commit": "e6ddc6a83cbcea17119f1aefa8a7bc897b0a70a0",
         "hash": "3564945283",
         "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
@@ -278,28 +353,9 @@
     },
     {
       "__outstatic": {
-        "commit": "f8f259ab4d4120d2b4f1c225835cde14948bd812",
-        "hash": "898511171",
-        "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen",
-      "lang": "de",
-      "publishedAt": "2024-06-21T06:52:47.000Z",
-      "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
-      "status": "published",
-      "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
-    },
-    {
-      "__outstatic": {
-        "commit": "618946b1d03b191753c0843ecce05ba6ff9889e0",
-        "hash": "3310344853",
-        "path": "outstatic/content/posts/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost.md"
+        "commit": "066448c5d59baa287b9229c0aec0d4cf56d96fcd",
+        "hash": "3668030207",
+        "path": "outstatic/content/posts/fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -307,10 +363,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
-      "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
-      "lang": "en",
+      "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
+      "lang": "de",
       "publishedAt": "2024-07-15T09:49:23.000Z",
-      "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
+      "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
         {
@@ -326,15 +382,15 @@
           "value": "catboost"
         },
         {
-          "label": "MES Systems",
-          "value": "mes-systems"
+          "label": "MES-Systeme",
+          "value": "mes-systeme"
         },
         {
-          "label": "Fault Detection",
-          "value": "fault-detection"
+          "label": "Fehlererkennung",
+          "value": "fehlererkennung"
         }
       ],
-      "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
+      "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost"
     },
     {
       "__outstatic": {
@@ -420,8 +476,8 @@
     },
     {
       "__outstatic": {
-        "commit": "fb8a558d2bdeafe4ed7dacc605447ece39c9d536",
-        "hash": "962057785",
+        "commit": "5fb6226c88078255b4d8b207263eaa5b8bfa2c49",
+        "hash": "2594216931",
         "path": "outstatic/content/posts/der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen.md"
       },
       "author": {
@@ -429,7 +485,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp",
+      "coverImage": "/images/web3-A5ND.png",
       "description": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.",
       "lang": "de",
       "publishedAt": "2024-12-09T12:12:36.342Z",
@@ -481,40 +537,97 @@
     },
     {
       "__outstatic": {
-        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
-        "hash": "3831515894",
-        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+        "commit": "618946b1d03b191753c0843ecce05ba6ff9889e0",
+        "hash": "3310344853",
+        "path": "outstatic/content/posts/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
-      "lang": "de",
-      "publishedAt": "2024-06-15T07:31:17.000Z",
-      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
+      "lang": "en",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
+      "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
       "status": "published",
       "tags": [
         {
-          "label": "redash",
-          "value": "redash"
+          "label": "XGBoost",
+          "value": "xgboost"
         },
         {
-          "label": "Datenvisualisierung",
-          "value": "datenvisualisierung"
+          "label": "LightGBM",
+          "value": "lightgbm"
         },
         {
-          "label": "big data",
-          "value": "bigData"
+          "label": "CatBoost",
+          "value": "catboost"
         },
         {
-          "label": "Berichte",
-          "value": "berichte"
+          "label": "MES Systems",
+          "value": "mes-systems"
+        },
+        {
+          "label": "Fault Detection",
+          "value": "fault-detection"
         }
       ],
-      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+      "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
+        "hash": "1072085323",
+        "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
+      "lang": "en",
+      "publishedAt": "2024-06-20T13:47:51.265Z",
+      "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        }
+      ],
+      "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
     },
     {
       "__outstatic": {
@@ -746,47 +859,6 @@
     },
     {
       "__outstatic": {
-        "commit": "066448c5d59baa287b9229c0aec0d4cf56d96fcd",
-        "hash": "3668030207",
-        "path": "outstatic/content/posts/fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
-      "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
-      "lang": "de",
-      "publishedAt": "2024-07-15T09:49:23.000Z",
-      "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
-      "status": "published",
-      "tags": [
-        {
-          "label": "XGBoost",
-          "value": "xgboost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightgbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catboost"
-        },
-        {
-          "label": "MES-Systeme",
-          "value": "mes-systeme"
-        },
-        {
-          "label": "Fehlererkennung",
-          "value": "fehlererkennung"
-        }
-      ],
-      "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost"
-    },
-    {
-      "__outstatic": {
         "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
         "hash": "4259407744",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
@@ -869,6 +941,80 @@
     },
     {
       "__outstatic": {
+        "commit": "9aa60c8edd0582e8f83f5827242010858ce54055",
+        "hash": "1562722786",
+        "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/first-gxMD.png",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T08:10:29.860Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "tags": [
+        {
+          "label": "onimes",
+          "value": "onimes"
+        },
+        {
+          "label": "platforma",
+          "value": "platforma"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        }
+      ],
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
+        "hash": "46414442",
+        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+      "lang": "en",
+      "publishedAt": "2024-06-10T09:10:14.654Z",
+      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "GPT-4 API",
+          "value": "gpt4Api"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        }
+      ],
+      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
         "commit": "5f3c130b2e918adec56d8cea60f2117574c05b8c",
         "hash": "3912465102",
         "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
@@ -922,100 +1068,6 @@
     },
     {
       "__outstatic": {
-        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
-        "hash": "46414442",
-        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
-      "lang": "en",
-      "publishedAt": "2024-06-10T09:10:14.654Z",
-      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "GPT-4 API",
-          "value": "gpt4Api"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        }
-      ],
-      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
-    },
-    {
-      "__outstatic": {
-        "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
-        "hash": "1072085323",
-        "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1.png",
-      "description": "The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.",
-      "lang": "en",
-      "publishedAt": "2024-06-20T13:47:51.265Z",
-      "slug": "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "AI local",
-          "value": "aiLocal"
-        },
-        {
-          "label": "llama3",
-          "value": "llama3"
-        },
-        {
-          "label": "Meta",
-          "value": "meta"
-        },
-        {
-          "label": "Gemma",
-          "value": "gemma"
-        },
-        {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
-        }
-      ],
-      "title": "Ollama - Practical Use of Local AI Models Exemplified by the OMNIMES System"
-    },
-    {
-      "__outstatic": {
         "commit": "ad1179a5f3d2cfe808c3db6efff45720976eb294",
         "hash": "2067683221",
         "path": "outstatic/content/posts/using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb.md"
@@ -1053,8 +1105,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0442db17b255788186871833b3d68dc3e9b01f47",
-        "hash": "3873805983",
+        "commit": "2372894bf273a06771c7dba1c821095a63eca189",
+        "hash": "2922331518",
         "path": "outstatic/content/posts/the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources.md"
       },
       "author": {
@@ -1062,7 +1114,7 @@
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-13.15.32---a-vivid-green-themed-illustration-emphasizing-renewable-energy--oze---web3--and-blockchain-technology.-the-image-includes-clear-and-prominent-text-lab-k5MT.webp",
+      "coverImage": "/images/web3-A5ND.png",
       "description": "The use of Web3 and blockchain technology in managing industrial data and promoting renewable energy sources (RES). This article discusses energy consumption monitoring, automated settlements, energy tokenization, and peer-to-peer trading, emphasizing the benefits of using Web3 in the industry.",
       "lang": "en",
       "publishedAt": "2024-12-09T12:12:36.342Z",
@@ -1375,51 +1427,6 @@
     },
     {
       "__outstatic": {
-        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
-        "hash": "3236711354",
-        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
-      "lang": "en",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "using-tensorflow-in-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "algorithm performance",
-          "value": "algorithmPerformance"
-        }
-      ],
-      "title": "Using TensorFlow in MES Systems"
-    },
-    {
-      "__outstatic": {
         "commit": "5311808d334dac83cc2ffa58a157091244eee932",
         "hash": "895657840",
         "path": "outstatic/content/posts/verwendung-von-pytorch-in-industriedaten.md"
@@ -1470,6 +1477,51 @@
         }
       ],
       "title": "Verwendung von PyTorch in Industriedaten"
+    },
+    {
+      "__outstatic": {
+        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
+        "hash": "3236711354",
+        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
+      "lang": "en",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "using-tensorflow-in-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "algorithm performance",
+          "value": "algorithmPerformance"
+        }
+      ],
+      "title": "Using TensorFlow in MES Systems"
     },
     {
       "__outstatic": {
@@ -1559,43 +1611,6 @@
     },
     {
       "__outstatic": {
-        "commit": "41810cecbc6bc505e9a7f79757d99c87ef16dc9f",
-        "hash": "1548428804",
-        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/influxdb-QxMT.png",
-      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
-      "lang": "pl",
-      "publishedAt": "2024-11-15T12:07:03.000Z",
-      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
-      "status": "published",
-      "tags": [
-        {
-          "label": "InfluxDB",
-          "value": "influxDb"
-        },
-        {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
-          "label": "time-series data",
-          "value": "timeSeriesData"
-        },
-        {
-          "label": "analiza danych czasowych",
-          "value": "analizaDanychCzasowych"
-        }
-      ],
-      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
-    },
-    {
-      "__outstatic": {
         "commit": "af62a3d622490c7060cfee2aba1dd6817629b840",
         "hash": "3806788972",
         "path": "outstatic/content/posts/zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze.md"
@@ -1654,6 +1669,43 @@
         }
       ],
       "title": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu OZE"
+    },
+    {
+      "__outstatic": {
+        "commit": "41810cecbc6bc505e9a7f79757d99c87ef16dc9f",
+        "hash": "1548428804",
+        "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/influxdb-QxMT.png",
+      "description": "Porównanie InfluxDB i MongoDB w kontekście zbierania danych przemysłowych. Artykuł omawia zastosowanie InfluxDB w analizie danych czasowych, monitorowaniu maszyn i IoT oraz MongoDB jako uniwersalnej bazy danych dla systemów MES. Praktyczne wskazówki, kiedy wybrać każdą z tych baz",
+      "lang": "pl",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb",
+      "status": "published",
+      "tags": [
+        {
+          "label": "InfluxDB",
+          "value": "influxDb"
+        },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "analiza danych czasowych",
+          "value": "analizaDanychCzasowych"
+        }
+      ],
+      "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
     },
     {
       "__outstatic": {
@@ -1780,58 +1832,6 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "9f9d13b112ba7cae5623f30cd18614c6bdd8dbb8",
-        "hash": "1562722786",
-        "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/first-gxMD.png",
-      "description": "",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T08:10:29.860Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "tags": [
-        {
-          "label": "onimes",
-          "value": "onimes"
-        },
-        {
-          "label": "platforma",
-          "value": "platforma"
-        },
-        {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
-        }
-      ],
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
-    },
-    {
-      "__outstatic": {
-        "commit": "70bd36ac28a9ea2f90a2994fc23dfac87c119e7e",
-        "hash": "305339731",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją!\nZ OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T09:53:51.725Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     }
   ]
 }
