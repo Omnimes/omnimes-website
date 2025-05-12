@@ -1,6 +1,6 @@
 {
-  "commit": "f7807360c1b8fe4efb353adafd36c6e1823f68b6",
-  "generated": "Mon, 12 May 2025 10:16:57 GMT",
+  "commit": "8e167cac59635ad1ca0024ac8986e26600f20826",
+  "generated": "2025-05-12T10:25:39.722Z",
   "metadata": [
     {
       "__outstatic": {
@@ -96,25 +96,6 @@
       "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
       "status": "published",
       "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
-    },
-    {
-      "__outstatic": {
-        "commit": "84afeb4bfb43e049a1a67ca0fdf3802786ebdeb9",
-        "hash": "305339731",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją!\nZ OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T09:53:51.725Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -979,39 +960,6 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
-    },
-    {
-      "__outstatic": {
-        "commit": "f2c2c374bdba23b6caef19a828758adf65c523da",
-        "hash": "2239605811",
-        "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/first-gxMD.png",
-      "description": "",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T08:10:29.860Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "tags": [
-        {
-          "label": "onimes",
-          "value": "onimes"
-        },
-        {
-          "label": "platforma",
-          "value": "platforma"
-        },
-        {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
-        }
-      ],
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
