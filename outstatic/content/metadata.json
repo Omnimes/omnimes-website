@@ -1,6 +1,6 @@
 {
-  "commit": "f7807360c1b8fe4efb353adafd36c6e1823f68b6",
-  "generated": "Mon, 12 May 2025 10:47:21 GMT",
+  "commit": "b27922c6a61a3e68ffe8878762ced50c2708c4d9",
+  "generated": "2025-05-12T10:47:41.345Z",
   "metadata": [
     {
       "__outstatic": {
@@ -115,25 +115,6 @@
       "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
       "status": "published",
       "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
-    },
-    {
-      "__outstatic": {
-        "commit": "84afeb4bfb43e049a1a67ca0fdf3802786ebdeb9",
-        "hash": "305339731",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją!\nZ OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T09:53:51.725Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -982,39 +963,6 @@
     },
     {
       "__outstatic": {
-        "commit": "f2c2c374bdba23b6caef19a828758adf65c523da",
-        "hash": "2239605811",
-        "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/first-gxMD.png",
-      "description": "",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T08:10:29.860Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "tags": [
-        {
-          "label": "onimes",
-          "value": "onimes"
-        },
-        {
-          "label": "platforma",
-          "value": "platforma"
-        },
-        {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
-        }
-      ],
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
-    },
-    {
-      "__outstatic": {
         "commit": "5f3c130b2e918adec56d8cea60f2117574c05b8c",
         "hash": "3912465102",
         "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
@@ -1832,6 +1780,25 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "b27922c6a61a3e68ffe8878762ced50c2708c4d9",
+        "hash": "583675740",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/blog_omni-A4Mj.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T09:53:51.725Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     }
   ]
 }

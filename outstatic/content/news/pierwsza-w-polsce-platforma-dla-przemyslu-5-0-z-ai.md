@@ -6,7 +6,6 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai'
 description: 'Przygotuj się na nową erę zarządzania produkcją!
-
 Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów'
 coverImage: '/images/blog_omni-A4Mj.png'
 lang: 'pl'
