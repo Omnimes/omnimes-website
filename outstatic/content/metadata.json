@@ -1,6 +1,6 @@
 {
   "commit": "70bd36ac28a9ea2f90a2994fc23dfac87c119e7e",
-  "generated": "2025-05-12T09:53:04.534Z",
+  "generated": "2025-05-12T09:56:50.017Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1817,7 +1817,7 @@
     {
       "__outstatic": {
         "commit": "70bd36ac28a9ea2f90a2994fc23dfac87c119e7e",
-        "hash": "2173946647",
+        "hash": "305339731",
         "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
       },
       "author": {
@@ -1825,7 +1825,7 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "news",
-      "coverImage": "/images/first-Y5NT.png",
+      "coverImage": "/images/blog_omni-A4Mj.png",
       "description": "Przygotuj się na nową erę zarządzania produkcją!\nZ OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
       "lang": "pl",
       "publishedAt": "2025-05-12T09:53:51.725Z",
