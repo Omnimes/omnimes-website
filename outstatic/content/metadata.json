@@ -1,6 +1,6 @@
 {
-  "commit": "24150ba41e2494e933ee4a9c69ccdae5d6d29f8a",
-  "generated": "Tue, 10 Dec 2024 07:41:46 GMT",
+  "commit": "804a5be83ffc32404d481cbdc3b790d557abf21a",
+  "generated": "2025-05-12T08:04:11.980Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1780,6 +1780,39 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "804a5be83ffc32404d481cbdc3b790d557abf21a",
+        "hash": "1606767282",
+        "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/first-gxMD.png",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T08:10:29.860Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "tags": [
+        {
+          "label": "onimes",
+          "value": "onimes"
+        },
+        {
+          "label": "platforma",
+          "value": "platforma"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        }
+      ],
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     }
   ]
 }

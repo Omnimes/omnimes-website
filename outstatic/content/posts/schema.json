@@ -332,6 +332,18 @@
         {
           "value": "zrównoważonaEnergetyka",
           "label": "zrównoważona energetyka"
+        },
+        {
+          "value": "onimes",
+          "label": "onimes"
+        },
+        {
+          "value": "platforma",
+          "label": "platforma"
+        },
+        {
+          "value": "cyfryzajca",
+          "label": "cyfryzajca"
         }
       ]
     },
