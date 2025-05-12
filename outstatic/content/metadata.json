@@ -1,6 +1,6 @@
 {
-  "commit": "9f9d13b112ba7cae5623f30cd18614c6bdd8dbb8",
-  "generated": "2025-05-12T09:29:28.428Z",
+  "commit": "a80a2bb8fc46bf2ccb1f6efa36e3e33a0e69d47e",
+  "generated": "2025-05-12T09:50:33.971Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1812,6 +1812,25 @@
           "value": "cyfryzajca"
         }
       ],
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "a80a2bb8fc46bf2ccb1f6efa36e3e33a0e69d47e",
+        "hash": "1292951652",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/first-Y5NT.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją!\n\nZ OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T09:53:51.725Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
       "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     }
   ]
