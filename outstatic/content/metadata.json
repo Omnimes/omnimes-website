@@ -1,6 +1,6 @@
 {
-  "commit": "f38adb274647c0adc573ce81057b788fe2489a67",
-  "generated": "Mon, 12 May 2025 10:12:42 GMT",
+  "commit": "1c1f01ae30460457248c3d3ac50ffa386759ce92",
+  "generated": "2025-05-12T10:16:08.119Z",
   "metadata": [
     {
       "__outstatic": {
@@ -941,39 +941,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9aa60c8edd0582e8f83f5827242010858ce54055",
-        "hash": "1562722786",
-        "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/first-gxMD.png",
-      "description": "",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T08:10:29.860Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "tags": [
-        {
-          "label": "onimes",
-          "value": "onimes"
-        },
-        {
-          "label": "platforma",
-          "value": "platforma"
-        },
-        {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
-        }
-      ],
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
-    },
-    {
-      "__outstatic": {
         "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
         "hash": "46414442",
         "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
@@ -1832,6 +1799,39 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "1c1f01ae30460457248c3d3ac50ffa386759ce92",
+        "hash": "2239605811",
+        "path": "outstatic/content/posts/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/first-gxMD.png",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T08:10:29.860Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "tags": [
+        {
+          "label": "onimes",
+          "value": "onimes"
+        },
+        {
+          "label": "platforma",
+          "value": "platforma"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        }
+      ],
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     }
   ]
 }
