@@ -348,6 +348,22 @@
         {
           "value": "langchainLlm",
           "label": "langchain llm"
+        },
+        {
+          "value": "langchain",
+          "label": "langchain"
+        },
+        {
+          "value": "faiss",
+          "label": "faiss"
+        },
+        {
+          "value": "chatbot",
+          "label": "chatbot"
+        },
+        {
+          "value": "gpt",
+          "label": "gpt"
         }
       ]
     },
