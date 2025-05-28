@@ -1,6 +1,6 @@
 {
-  "commit": "566f5c029dd47b8228655a27c1c73428438ca16d",
-  "generated": "2025-05-28T20:45:54.041Z",
+  "commit": "77e8e963e5966171a8e2aadf26c013eb2cac782f",
+  "generated": "Wed, 28 May 2025 20:46:07 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -118,25 +118,6 @@
     },
     {
       "__outstatic": {
-        "commit": "0ae5d4696b6cfa7e89424ec5b592e2729fa72093",
-        "hash": "583675740",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T09:53:51.725Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
-    },
-    {
-      "__outstatic": {
         "commit": "6472c1701ed0b44315884d373eb35e8cbf2b4bb3",
         "hash": "588738348",
         "path": "outstatic/content/news/omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden.md"
@@ -153,6 +134,25 @@
       "slug": "omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden",
       "status": "published",
       "title": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden"
+    },
+    {
+      "__outstatic": {
+        "commit": "0ae5d4696b6cfa7e89424ec5b592e2729fa72093",
+        "hash": "583675740",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/blog_omni-A4Mj.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T09:53:51.725Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -803,6 +803,51 @@
         }
       ],
       "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
+    },
+    {
+      "__outstatic": {
+        "commit": "ab43762452327714ddb2dcbe5f469c58db4a0ed4",
+        "hash": "4192475121",
+        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
+      "lang": "pl",
+      "publishedAt": "2025-05-28T17:50:41.167Z",
+      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Modele LLM",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "langchain llm",
+          "value": "langchainLlm"
+        },
+        {
+          "label": "langchain",
+          "value": "langchain"
+        },
+        {
+          "label": "faiss",
+          "value": "faiss"
+        },
+        {
+          "label": "chatbot",
+          "value": "chatbot"
+        },
+        {
+          "label": "gpt",
+          "value": "gpt"
+        }
+      ],
+      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
     },
     {
       "__outstatic": {
@@ -1799,51 +1844,6 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "566f5c029dd47b8228655a27c1c73428438ca16d",
-        "hash": "4192475121",
-        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
-      "lang": "pl",
-      "publishedAt": "2025-05-28T17:50:41.167Z",
-      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Modele LLM",
-          "value": "modeleLlm"
-        },
-        {
-          "label": "langchain llm",
-          "value": "langchainLlm"
-        },
-        {
-          "label": "langchain",
-          "value": "langchain"
-        },
-        {
-          "label": "faiss",
-          "value": "faiss"
-        },
-        {
-          "label": "chatbot",
-          "value": "chatbot"
-        },
-        {
-          "label": "gpt",
-          "value": "gpt"
-        }
-      ],
-      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
     }
   ]
 }
