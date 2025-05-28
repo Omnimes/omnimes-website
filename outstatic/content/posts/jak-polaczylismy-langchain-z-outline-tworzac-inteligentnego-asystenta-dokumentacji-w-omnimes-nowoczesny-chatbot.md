@@ -40,10 +40,11 @@ Stworzyliśmy inteligentnego asystenta dokumentacji technicznej, który:
 
 - Pozwala zadawać pytania językiem naturalnym i otrzymywać odpowiedzi z konkretnych fragmentów dokumentacji
 
-Przykład wykorzystania możesz zobaczyć w praktyce tutaj:\
-[**https://cloud.omnimes/askme**](https://cloud.omnimes.com/askme)\
-Działa w oparciu o dokumentację m.in. tego komponentu:\
+Przykład wykorzystania możesz zobaczyć w praktyce tutaj:  
+[**https://cloud.omnimes.com/askme**](https://cloud.omnimes.com/askme)  
+Działa w oparciu o dokumentację m.in. tego komponentu:  
 [**Dokumentacja Omnimes**](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/profil-mCVVX6AbzS)
+
 
 ---
 
