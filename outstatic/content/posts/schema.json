@@ -344,6 +344,10 @@
         {
           "value": "cyfryzajca",
           "label": "cyfryzajca"
+        },
+        {
+          "value": "#langChain #outline #chatbot #asystentDokumentacji #ai #llm #dokumentacjaTechniczna #mes #omniMes #integracjaAi #automatyzacjaWiedzy #faiss #webhook #gpt",
+          "label": "#LangChain #Outline #Chatbot #AsystentDokumentacji #AI #LLM #DokumentacjaTechniczna #MES #OmniMES #IntegracjaAI #AutomatyzacjaWiedzy #FAISS #Webhook #GPT"
         }
       ]
     },

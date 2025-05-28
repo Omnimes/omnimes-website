@@ -1,6 +1,6 @@
 {
-  "commit": "750a0a7d9199b56273800308410ee9b2f58f52f5",
-  "generated": "Mon, 12 May 2025 10:48:08 GMT",
+  "commit": "45783d7c4b8eb6b51ec855e5d68c245adee5f038",
+  "generated": "2025-05-28T17:54:50.631Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1799,6 +1799,31 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "45783d7c4b8eb6b51ec855e5d68c245adee5f038",
+        "hash": "1043213398",
+        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2025-05-28T17:50:41.167Z",
+      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
+      "status": "published",
+      "tags": [
+        {
+          "label": "#LangChain #Outline #Chatbot #AsystentDokumentacji #AI #LLM #DokumentacjaTechniczna #MES #OmniMES #IntegracjaAI #AutomatyzacjaWiedzy #FAISS #Webhook #GPT",
+          "value": "#langChain #outline #chatbot #asystentDokumentacji #ai #llm #dokumentacjaTechniczna #mes #omniMes #integracjaAi #automatyzacjaWiedzy #faiss #webhook #gpt"
+        }
+      ],
+      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
     }
   ]
 }
