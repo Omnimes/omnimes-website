@@ -1,6 +1,6 @@
 {
-  "commit": "b5c7ac8d48aeffdabebb5883ac7cb37243fcb4f7",
-  "generated": "Wed, 28 May 2025 20:31:45 GMT",
+  "commit": "99b9821357f4ef5a4c3719a3606adf2fccffe4fc",
+  "generated": "Wed, 28 May 2025 20:31:58 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -806,8 +806,8 @@
     },
     {
       "__outstatic": {
-        "commit": "f109b59bf16c1f5b567001b58329bcf02f9b8463",
-        "hash": "3807633505",
+        "commit": "a2e0afa40c1a838eb69b46e3b7d4006b9fe6ccd8",
+        "hash": "1183287022",
         "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
       },
       "author": {
@@ -829,6 +829,22 @@
         {
           "label": "langchain llm",
           "value": "langchainLlm"
+        },
+        {
+          "label": "langchain",
+          "value": "langchain"
+        },
+        {
+          "label": "faiss",
+          "value": "faiss"
+        },
+        {
+          "label": "chatbot",
+          "value": "chatbot"
+        },
+        {
+          "label": "gpt",
+          "value": "gpt"
         }
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
