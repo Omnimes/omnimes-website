@@ -7,7 +7,7 @@ author:
 slug: 'jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot'
 description: 'W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.'
 coverImage: '/images/1_gakvquk6hb-kyzvymupmea-A3NT.png'
-tags: [{"value":"modeleLlm","label":"Modele LLM"},{"label":"langchain llm","value":"langchainLlm"}]
+tags: [{"value":"modeleLlm","label":"Modele LLM"},{"label":"langchain llm","value":"langchainLlm"},{"value":"#langChain #outline #chatbot #asystentDokumentacji #ai #llm #dokumentacjaTechniczna #mes #omniMes #integracjaAi #automatyzacjaWiedzy #faiss #webhook #gpt","label":"#LangChain #Outline #Chatbot #AsystentDokumentacji #AI #LLM #DokumentacjaTechniczna #MES #OmniMES #IntegracjaAI #AutomatyzacjaWiedzy #FAISS #Webhook #GPT"}]
 lang: 'pl'
 publishedAt: '2025-05-28T17:50:41.167Z'
 ---
