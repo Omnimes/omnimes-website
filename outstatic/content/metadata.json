@@ -1,6 +1,6 @@
 {
-  "commit": "6868a29531cce8e9619289b31c7bd8bf0681b1a7",
-  "generated": "2025-05-28T19:57:44.462Z",
+  "commit": "ea9d2c0066014b67bfb5eca7a69759af81e66255",
+  "generated": "Wed, 28 May 2025 20:05:51 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -578,6 +578,35 @@
     },
     {
       "__outstatic": {
+        "commit": "357e2fe4f8576000e401f279b3b56e5c06264144",
+        "hash": "3807633505",
+        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
+      "lang": "pl",
+      "publishedAt": "2025-05-28T17:50:41.167Z",
+      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Modele LLM",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "langchain llm",
+          "value": "langchainLlm"
+        }
+      ],
+      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+    },
+    {
+      "__outstatic": {
         "commit": "94a098b7791b83f2097fbce68995879551a0fc8e",
         "hash": "4112578455",
         "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
@@ -1035,43 +1064,6 @@
     },
     {
       "__outstatic": {
-        "commit": "ad1179a5f3d2cfe808c3db6efff45720976eb294",
-        "hash": "2067683221",
-        "path": "outstatic/content/posts/using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/influxdb-QxMT.png",
-      "description": "A comparison of InfluxDB and MongoDB for industrial data collection. This article discusses the use of InfluxDB for time-series data analysis, machine monitoring, and IoT, as well as MongoDB as a universal database for MES systems. Practical tips on when to choose each database.",
-      "lang": "en",
-      "publishedAt": "2024-11-15T12:07:03.000Z",
-      "slug": "using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb",
-      "status": "published",
-      "tags": [
-        {
-          "label": "InfluxDB",
-          "value": "influxDb"
-        },
-        {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
-          "label": "time-series data",
-          "value": "timeSeriesData"
-        },
-        {
-          "label": "time-series data analysis",
-          "value": "timeSeriesDataAnalysis"
-        }
-      ],
-      "title": "Using InfluxDB for Industrial Data Collection and Comparison with MongoDB"
-    },
-    {
-      "__outstatic": {
         "commit": "2372894bf273a06771c7dba1c821095a63eca189",
         "hash": "2922331518",
         "path": "outstatic/content/posts/the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources.md"
@@ -1130,6 +1122,43 @@
         }
       ],
       "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
+    },
+    {
+      "__outstatic": {
+        "commit": "ad1179a5f3d2cfe808c3db6efff45720976eb294",
+        "hash": "2067683221",
+        "path": "outstatic/content/posts/using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/influxdb-QxMT.png",
+      "description": "A comparison of InfluxDB and MongoDB for industrial data collection. This article discusses the use of InfluxDB for time-series data analysis, machine monitoring, and IoT, as well as MongoDB as a universal database for MES systems. Practical tips on when to choose each database.",
+      "lang": "en",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb",
+      "status": "published",
+      "tags": [
+        {
+          "label": "InfluxDB",
+          "value": "influxDb"
+        },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "time-series data analysis",
+          "value": "timeSeriesDataAnalysis"
+        }
+      ],
+      "title": "Using InfluxDB for Industrial Data Collection and Comparison with MongoDB"
     },
     {
       "__outstatic": {
@@ -1799,39 +1828,6 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "6868a29531cce8e9619289b31c7bd8bf0681b1a7",
-        "hash": "2191841230",
-        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
-      "lang": "pl",
-      "publishedAt": "2025-05-28T17:50:41.167Z",
-      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Modele LLM",
-          "value": "modeleLlm"
-        },
-        {
-          "label": "langchain llm",
-          "value": "langchainLlm"
-        },
-        {
-          "label": "#LangChain #Outline #Chatbot #AsystentDokumentacji #AI #LLM #DokumentacjaTechniczna #MES #OmniMES #IntegracjaAI #AutomatyzacjaWiedzy #FAISS #Webhook #GPT",
-          "value": "#langChain #outline #chatbot #asystentDokumentacji #ai #llm #dokumentacjaTechniczna #mes #omniMes #integracjaAi #automatyzacjaWiedzy #faiss #webhook #gpt"
-        }
-      ],
-      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
     }
   ]
 }
