@@ -1,6 +1,6 @@
 {
-  "commit": "2a0329142029cc399c1abc82251353d75de25985",
-  "generated": "Wed, 28 May 2025 18:29:15 GMT",
+  "commit": "faa20a1ef023b07d0a5d4dc78c8180d47ae37f9e",
+  "generated": "Wed, 28 May 2025 18:29:36 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -194,6 +194,39 @@
     },
     {
       "__outstatic": {
+        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
+        "hash": "2061075091",
+        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
+      "lang": "de",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
+      "status": "published",
+      "tags": [
+        {
+          "label": "industrielle Datenerfassung",
+          "value": "industrielle-datenerfassung"
+        },
+        {
+          "label": "Maschinendaten",
+          "value": "maschinendaten"
+        },
+        {
+          "label": "maschinelles Lernen in der Industrie",
+          "value": "maschinelles-lernen-in-der-industrie"
+        }
+      ],
+      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
+    },
+    {
+      "__outstatic": {
         "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
         "hash": "3831515894",
         "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
@@ -228,39 +261,6 @@
         }
       ],
       "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
-    },
-    {
-      "__outstatic": {
-        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
-        "hash": "2061075091",
-        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/data-QzNj.png",
-      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
-      "lang": "de",
-      "publishedAt": "2024-09-15T10:29:21.000Z",
-      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
-      "status": "published",
-      "tags": [
-        {
-          "label": "industrielle Datenerfassung",
-          "value": "industrielle-datenerfassung"
-        },
-        {
-          "label": "Maschinendaten",
-          "value": "maschinendaten"
-        },
-        {
-          "label": "maschinelles Lernen in der Industrie",
-          "value": "maschinelles-lernen-in-der-industrie"
-        }
-      ],
-      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
     },
     {
       "__outstatic": {
@@ -806,8 +806,8 @@
     },
     {
       "__outstatic": {
-        "commit": "f109b59bf16c1f5b567001b58329bcf02f9b8463",
-        "hash": "1043213398",
+        "commit": "04432a3eccb39273e4ac62909808faa03033d97e",
+        "hash": "2726787044",
         "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
       },
       "author": {
@@ -816,7 +816,7 @@
       },
       "collection": "posts",
       "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "",
+      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
       "lang": "pl",
       "publishedAt": "2025-05-28T17:50:41.167Z",
       "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
