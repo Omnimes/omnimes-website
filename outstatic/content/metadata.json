@@ -1,6 +1,6 @@
 {
-  "commit": "77e8e963e5966171a8e2aadf26c013eb2cac782f",
-  "generated": "Wed, 28 May 2025 20:46:07 GMT",
+  "commit": "fd97b3c4e9bf8db61192e2071a51d565b98478d3",
+  "generated": "2025-05-28T21:24:01.980Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1844,6 +1844,25 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd97b3c4e9bf8db61192e2071a51d565b98478d3",
+        "hash": "869728333",
+        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
+      "description": "",
+      "lang": "en",
+      "publishedAt": "2025-05-28T21:31:34.831Z",
+      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
+      "status": "draft",
+      "title": "Europe's first platform for Industry 5.0 with AI"
     }
   ]
 }
