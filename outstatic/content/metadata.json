@@ -1,6 +1,6 @@
 {
   "commit": "66d953a40dea483e28b2961fd83bbe5704881bb6",
-  "generated": "2025-05-28T21:29:10.749Z",
+  "generated": "2025-05-28T21:32:05.809Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1848,7 +1848,7 @@
     {
       "__outstatic": {
         "commit": "66d953a40dea483e28b2961fd83bbe5704881bb6",
-        "hash": "1190051662",
+        "hash": "1803940300",
         "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
       },
       "author": {
@@ -1861,7 +1861,7 @@
       "lang": "en",
       "publishedAt": "2025-05-28T21:31:34.831Z",
       "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
-      "status": "draft",
+      "status": "published",
       "title": "Europe's first platform for Industry 5.0 with AI"
     }
   ]
