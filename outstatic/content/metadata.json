@@ -1,6 +1,6 @@
 {
   "commit": "66d953a40dea483e28b2961fd83bbe5704881bb6",
-  "generated": "2025-05-28T21:28:44.838Z",
+  "generated": "2025-05-28T21:29:10.749Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1848,7 +1848,7 @@
     {
       "__outstatic": {
         "commit": "66d953a40dea483e28b2961fd83bbe5704881bb6",
-        "hash": "3580160817",
+        "hash": "1190051662",
         "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
       },
       "author": {
@@ -1857,7 +1857,7 @@
       },
       "collection": "news",
       "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
-      "description": "",
+      "description": "The revolution in production digitization is coming.\nDiscover OmniPlatform – a new era of industry 5.0",
       "lang": "en",
       "publishedAt": "2025-05-28T21:31:34.831Z",
       "slug": "europe-s-first-platform-for-industry-5-0-with-ai",

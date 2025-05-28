@@ -5,7 +5,9 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'europe-s-first-platform-for-industry-5-0-with-ai'
-description: ''
+description: 'The revolution in production digitization is coming.
+
+Discover OmniPlatform – a new era of industry 5.0'
 coverImage: '/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png'
 lang: 'en'
 publishedAt: '2025-05-28T21:31:34.831Z'
