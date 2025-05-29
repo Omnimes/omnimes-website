@@ -60,7 +60,11 @@
     "searchSubtitle3": "Check FAQs and find answers to questions.",
     "searchSubtitle4": "Check out OmniMES news.",
     "searchSubtitle5": "See the OmniMES photo gallery",
-    "ariaTriger": "Expand menu and view all options"
+    "ariaTriger": "Expand menu and view all options",
+    "documentation": "Documentation",
+    "documentationPL": "Documentation PL",
+    "documentationEN": "Documentation EN",
+    "chatDocs": "ChatDocs"
   },
   "Blog": {
     "title": "All posts",
