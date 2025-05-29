@@ -40,13 +40,13 @@ export default function Header() {
   const docsLinks = [
     {
       title: t("documentationPL"),
-      href: "https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/konfigurator-statusow-RlsW5hmMWd#h-dodaj-profil",
+      href: "https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/wstep-XMdRkBsh9c",
       icon: LuFileText,
       color: "primary"
     },
     {
       title: t("documentationEN"), 
-      href: "https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/status-configurator-4rNWOyTTbE",
+      href: "https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/introduction-98dAKUj3hP",
       icon: LuBook,
       color: "secondary"
     },
