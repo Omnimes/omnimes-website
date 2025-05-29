@@ -1,7 +1,5 @@
 "use client"
 
-import { useState } from "react"
-import Image from "next/image"
 import { headerNavLinks, headerNavLinksDropDown } from "@/data/headerNavLinks"
 import Logo from "@/data/logo.svg"
 import {
@@ -22,7 +20,9 @@ import {
 } from "@nextui-org/react"
 import { SessionProvider } from "next-auth/react"
 import { useTranslations } from "next-intl"
-import { LuChevronDown } from "react-icons/lu"
+import Image from "next/image"
+import { useState } from "react"
+import { LuBook, LuChevronDown, LuFileText, LuMessageCircle } from "react-icons/lu"
 
 import { Notification } from "@/components/Notification"
 
@@ -36,6 +36,28 @@ export default function Header() {
   const t = useTranslations("HeaderLinks")
 
   const iconClasses = "text-xl text-default-500 pointer-events-none flex-shrink-0"
+  
+  const docsLinks = [
+    {
+      title: t("documentationPL"),
+      href: "https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/konfigurator-statusow-RlsW5hmMWd#h-dodaj-profil",
+      icon: LuFileText,
+      color: "primary"
+    },
+    {
+      title: t("documentationEN"), 
+      href: "https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/status-configurator-4rNWOyTTbE",
+      icon: LuBook,
+      color: "secondary"
+    },
+    {
+      title: t("chatDocs"),
+      href: "https://cloud.omnimes.com/askme",
+      icon: LuMessageCircle,
+      color: "success"
+    }
+  ]
+
   return (
     <SessionProvider>
       <Navbar
@@ -63,12 +85,13 @@ export default function Header() {
           </li>
         </NavbarContent>
         <NavbarContent justify="center" className="hidden gap-4 min-[690px]:flex">
+          {/* Pierwszy dropdown - OmniMES */}
           <Dropdown
             type="menu"
             backdrop="blur"
             showArrow
             classNames={{
-              base: "before:bg-default-200", // change arrow background
+              base: "before:bg-default-200",
               content:
                 "py-1 px-1 border border-default-200 bg-gradient-to-br from-white to-default-200 dark:from-default-50 dark:to-black",
             }}
@@ -161,6 +184,64 @@ export default function Header() {
               </DropdownSection>
             </DropdownMenu>
           </Dropdown>
+
+          {/* Drugi dropdown - Dokumentacja */}
+          <Dropdown
+            type="menu"
+            backdrop="blur"
+            showArrow
+            classNames={{
+              base: "before:bg-default-200",
+              content:
+                "py-1 px-1 border border-default-200 bg-gradient-to-br from-white to-default-200 dark:from-default-50 dark:to-black",
+            }}
+            shouldBlockScroll={false}
+            closeOnSelect
+          >
+            <NavbarItem>
+              <DropdownTrigger>
+                <Button
+                  disableRipple
+                  className="text-medium box-border list-none whitespace-nowrap bg-transparent p-0 data-[hover=true]:bg-transparent data-[active=true]:font-semibold"
+                  endContent={<LuChevronDown />}
+                  aria-label={t("documentation")}
+                  title={t("documentation")}
+                  role="button"
+                >
+                  {t("documentation")}
+                </Button>
+              </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu
+              key={"docsDropDown"}
+              aria-label={t("documentation")}
+              className="w-[300px]"
+              itemClasses={{
+                base: "gap-4",
+              }}
+              variant="faded"
+            >
+              {docsLinks.map((item) => {
+                return (
+                  <DropdownItem
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    startContent={
+                      <item.icon size={25} color={item.color} className={iconClasses} />
+                    }
+                    classNames={{
+                      base: "gap-4",
+                    }}
+                  >
+                    {item.title}
+                  </DropdownItem>
+                )
+              })}
+            </DropdownMenu>
+          </Dropdown>
+
           {headerNavLinks
             .filter((link) => link.href !== "/")
             .map((link) => (
@@ -221,6 +302,21 @@ export default function Header() {
             <NavbarMenuItem key={link.title}>
               <Link href={link.href} color="foreground" size="lg">
                 {t(`${link.title}`)}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+          <Divider />
+          {/* Dodanie linków dokumentacji do menu mobilnego */}
+          {docsLinks.map((link) => (
+            <NavbarMenuItem key={link.title}>
+              <Link 
+                href={link.href} 
+                color="foreground" 
+                size="lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.title}
               </Link>
             </NavbarMenuItem>
           ))}
