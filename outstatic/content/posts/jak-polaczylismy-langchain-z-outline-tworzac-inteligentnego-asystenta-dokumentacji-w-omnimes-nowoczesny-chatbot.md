@@ -7,23 +7,17 @@ author:
 slug: 'jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot'
 description: 'W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.'
 coverImage: '/images/1_gakvquk6hb-kyzvymupmea-A3NT.png'
-tags:
-  - modeleLlm
-  - langchainLlm
-  - langchain
-  - faiss
-  - chatbot
-  - gpt
+tags: ["modeleLlm","langchainLlm","langchain","faiss","chatbot","gpt"]
 lang: 'pl'
-publishedAt: '2025-05-28'
+publishedAt: '2025-05-28T00:00:00.000Z'
 ---
 
 **Wstęp**
 
 W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: **LangChain** i **Outline**, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.
 
-W tym artykule pokażemy **krok po kroku**, jak zrealizowaliśmy to wdrożenie w naszym systemie **OmniMES**. Efekt możesz zobaczyć i przetestować tutaj:  
-[https://cloud.omnimes.com/askme](https://cloud.omnimes.com/askme)
+W tym artykule pokażemy **krok po kroku**, jak zrealizowaliśmy to wdrożenie w naszym systemie **OmniMES**. Efekt możesz zobaczyć i przetestować tutaj:\
+<https://cloud.omnimes.com/askme>
 
 ## Narzędzia, które połączyliśmy
 
@@ -45,9 +39,9 @@ Stworzyliśmy inteligentnego asystenta dokumentacji technicznej, który:
 - Synchronizuje dokumentację automatycznie dzięki webhookom
 - Pozwala zadawać pytania językiem naturalnym i otrzymywać odpowiedzi z konkretnych fragmentów dokumentacji
 
-Przykład wykorzystania możesz zobaczyć w praktyce tutaj:  
-[https://cloud.omnimes.com/askme](https://cloud.omnimes.com/askme)  
-Działa w oparciu o dokumentację m.in. tego komponentu:  
+Przykład wykorzystania możesz zobaczyć w praktyce tutaj:\
+<https://cloud.omnimes.com/askme>\
+Działa w oparciu o dokumentację m.in. tego komponentu:\
 [Dokumentacja Omnimes](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/profil-mCVVX6AbzS)
 
 ---
@@ -66,8 +60,8 @@ Działa w oparciu o dokumentację m.in. tego komponentu:
 
 ## Przykładowy scenariusz
 
-**Pytanie:** *„Jakie dane są wymagane przy uruchamianiu zlecenia produkcyjnego?”*  
-**Odpowiedź AI:**  
+**Pytanie:** *„Jakie dane są wymagane przy uruchamianiu zlecenia produkcyjnego?”*\
+**Odpowiedź AI:**\
 „Zgodnie z dokumentem *Profil systemu OMNIMES*, przy uruchamianiu zlecenia wymagane są: numer zlecenia, produkt, ilość docelowa, operator oraz przypisanie do linii produkcyjnej.”
 
 ---
@@ -93,5 +87,5 @@ Dla każdej firmy, która:
 
 ## Podsumowanie
 
-Połączenie Outline i LangChain daje realne, mierzalne korzyści. Nie jest to tylko futurystyczna zabawka – to narzędzie, które **już teraz** zmienia sposób pracy z dokumentacją techniczną. Jeśli chcesz dowiedzieć się więcej lub wdrożyć podobne rozwiązanie u siebie – zajrzyj do naszego asystenta:  
-[https://cloud.omnimes.com/askme](https://cloud.omnimes.com/askme)
+Połączenie Outline i LangChain daje realne, mierzalne korzyści. Nie jest to tylko futurystyczna zabawka – to narzędzie, które już teraz zmienia sposób pracy z dokumentacją techniczną.\
+Co więcej, **LangChain znajduje zastosowanie nie tylko w obsłudze dokumentacji**, ale również w budowie agentów AI, systemów przetwarzania danych, analizy zapytań SQL, integracji z bazami wiedzy, a nawet automatyzacji procesów biznesowych opartych na języku naturalnym.

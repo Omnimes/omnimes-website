@@ -364,7 +364,8 @@
         {
           "value": "gpt",
           "label": "gpt"
-        }
+        },
+        {}
       ]
     },
     "lang": {
