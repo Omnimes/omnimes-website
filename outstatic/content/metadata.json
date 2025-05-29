@@ -1,6 +1,6 @@
 {
-  "commit": "d5db26fc7f789a5bfca51071df7a81493afaf0c2",
-  "generated": "2025-05-29T04:38:41.009Z",
+  "commit": "c848afca1c36fef161d0e12377c420ec6b5e6afa",
+  "generated": "2025-05-29T04:40:28.480Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1845,6 +1845,32 @@
         "gpt"
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "c848afca1c36fef161d0e12377c420ec6b5e6afa",
+        "hash": "2155405079",
+        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
+      "lang": "en",
+      "publishedAt": "2025-05-28T00:00:00.000Z",
+      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
+      "status": "published",
+      "tags": [
+        "langchain",
+        "faiss",
+        "gpt",
+        "documentation",
+        "ai-assistant"
+      ],
+      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
     }
   ]
 }
