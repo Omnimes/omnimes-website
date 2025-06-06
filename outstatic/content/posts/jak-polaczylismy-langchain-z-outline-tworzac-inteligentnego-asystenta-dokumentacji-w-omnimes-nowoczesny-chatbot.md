@@ -17,7 +17,7 @@ publishedAt: '2025-05-28T00:00:00.000Z'
 W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: **LangChain** i **Outline**, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.
 
 W tym artykule pokażemy **krok po kroku**, jak zrealizowaliśmy to wdrożenie w naszym systemie **OmniMES**. Efekt możesz zobaczyć i przetestować tutaj:\
-[Chatbot Omnimes](https://cloud.omnimes.com/askme>)
+[Chatbot Omnimes](https://cloud.omnimes.com/askme)
 
 ## Narzędzia, które połączyliśmy
 
@@ -40,7 +40,7 @@ Stworzyliśmy inteligentnego asystenta dokumentacji technicznej, który:
 - Pozwala zadawać pytania językiem naturalnym i otrzymywać odpowiedzi z konkretnych fragmentów dokumentacji
 
 Przykład wykorzystania możesz zobaczyć w praktyce tutaj:\
-[Chatbot Omnimes](https://cloud.omnimes.com/askme>)
+[Chatbot Omnimes](https://cloud.omnimes.com/askme)
 Działa w oparciu o dokumentację m.in. tego komponentu:\
 [Dokumentacja Omnimes](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/wstep-XMdRkBsh9c)
 
