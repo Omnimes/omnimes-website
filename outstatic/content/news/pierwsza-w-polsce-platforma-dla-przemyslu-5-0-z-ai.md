@@ -16,7 +16,9 @@ publishedAt: '2025-05-12T09:53:51.725Z'
 
 ### Poznaj **OmniPlatform** – nową erę przemysłu 5.0
 
-W czerwcu 2025 startuje **OmniPlatform** – pierwsza w Polsce gotowa platforma chmurowa do błyskawicznego wdrażania systemu **OmniMES**, stworzonego z myślą o transformacji fabryk w duchu Przemysłu 5.0.
+Premiera OmniPlatform już latem 2025!
+Na przełomie lipca i sierpnia 2025 roku rusza OmniPlatform – pierwsza w Polsce kompleksowa platforma chmurowa do błyskawicznego uruchamiania systemu OmniMES. To nowoczesne rozwiązanie stworzone z myślą o przyspieszeniu cyfrowej transformacji zakładów produkcyjnych zgodnie z ideą Przemysłu 5.0.
+(Start został przesunięty z czerwca ze względu na trwające prace rozwojowe.)
 
 **Uruchomienie w zaledwie kilka minut**
 
