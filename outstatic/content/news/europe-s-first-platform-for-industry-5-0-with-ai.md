@@ -17,8 +17,9 @@ publishedAt: '2025-05-28T21:31:34.831Z'
 
 ### **Discover OmniPlatform – a new era of industry 5.0**
 
-In Jule 2025, OmniPlatform is launching – the first ready-made cloud platform in Poland for rapid implementation of the OmniMES system, created with the transformation of factories in the spirit of Industry 5.0 in mind.
-
+OmniPlatform launching in summer 2025!
+In late July or early August 2025, we’re launching OmniPlatform – the first fully integrated cloud-based solution in Poland for rapid deployment of the OmniMES system. Designed to accelerate the digital transformation of factories in line with Industry 5.0 principles, it marks a new era in smart manufacturing.
+(The launch was rescheduled from June due to ongoing development work.)
 **Launch in just a few minutes**
 
 - automatic reports tailored to your production-
