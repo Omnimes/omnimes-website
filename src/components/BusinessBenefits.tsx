@@ -35,7 +35,7 @@ export const BusinessBenefits = () => {
   ]
 
   return (
-    <section className="mx-auto my-16 max-w-7xl px-6 text-center">
+    <section className="mx-auto my-16 max-w-7xl px-0 text-center">
         <div id="omnimes" className="mt-8 mb-8 scroll-mt-20 sm:mt-0 sm:scroll-mt-8 md:text-center">
             <Heading text={t("title")} />
         </div>
