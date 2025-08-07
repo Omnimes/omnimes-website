@@ -196,7 +196,8 @@
     "ErrorForm": "Leider konnte die Nachricht nicht gesendet werden.",
     "ErrorFormMessage": "Bitte versuchen Sie es erneut oder nehmen Sie direkt Kontakt mit uns auf.",
     "Button": "Lass uns reden",
-    "AriaButton": "Kontaktformular absenden"
+    "AriaButton": "Kontaktformular absenden",
+    "OrContactDirectly": "oder kontaktiere uns direkt"
   },
   "Widget": {
     "title": "Entfesseln Sie das Potenzial mit OmniMES! Holen Sie sich jetzt ein Angebot und optimieren Sie Ihre Produktion noch heute.",
