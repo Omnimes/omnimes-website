@@ -95,13 +95,23 @@
     "backToNews": "Zurück zu den Nachrichten"
   },
   "HeroSection": {
-    "title": "Optimiere deine produktion mit unserem",
+    "title": "Optimieren Sie Ihre Produktion mit unserem",
     "title2": "MES-System",
-    "subTitle": "Steigere die effizienz, reduziere kosten und erziele eine perfekte kontrolle in jedem produktionsstadium mit unserem MES-System",
+    "subTitle": "Steigern Sie die Effizienz, senken Sie die Kosten und erhalten Sie volle Kontrolle über jede Produktionsphase mit unserem MES-System",
+    "subTitle2": "MES-System direkt einsatzbereit – starten Sie ohne unnötigen Aufwand",
     "contact": "Kontakt",
     "more": "Mehr erfahren",
-    "buttonAria": "Kontaktformular absenden",
-    "buttonOmnimes": "Zur Sektion mit detaillierten Informationen über OmniMes gehen"
+    "buttonAria": "Zur Seite mit dem Kontaktformular",
+    "buttonOmnimes": "Zur Sektion mit detaillierten Informationen über OmniMES"
+  },
+  "Benefits": {
+    "title": "Geschäftliche Vorteile für Ihr Unternehmen",
+    "increasedProductivity": "Steigerung der Produktionseffizienz – gleiche Menge in kürzerer Zeit durch Minimierung von Mikrostillständen und Optimierung der Maschinennutzung",
+    "fasterReaction": "Schnellere Reaktion auf Probleme – Maschinenüberwachung in Echtzeit ermöglicht fundiertere Geschäftsentscheidungen",
+    "shorterCycle": "Verkürzung der Produktionszyklen – Planungsmodule zur Beseitigung von Mikrostillständen und Effizienzsteigerung",
+    "betterQuality": "Verbesserte Produktqualität – weniger Ausschuss und Reklamationen, bessere Kundenbeziehungen",
+    "dataAnalysis": "Datenanalyse – Optimierung der Produktionsprozesse auf Basis historischer Daten",
+    "fasterOnboarding": "Schnellere Einarbeitung neuer Mitarbeiter – Standardisierung der Prozessüberwachung im MES-System"
   },
   "OmnimesInformation": {
     "smallSubtitle": "Was ist OmniMES?",
