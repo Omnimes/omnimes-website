@@ -27,7 +27,7 @@ export const DirectContact = () => {
         {/* Dane kontaktowe po prawej */}
         <div className="text-left sm:text-left">
           <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">
-            Szymon Rywalik
+            Szymon Rewilak
           </p>
           <p className="text-lg text-default-500 mt-1 mb-4">
             Project Manager — Specjalista ds. Przemysłu 4.0
