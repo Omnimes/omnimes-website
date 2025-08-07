@@ -1,13 +1,12 @@
-import Image from "next/image"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { Button, Link } from "@nextui-org/react"
 import { getTranslations, setRequestLocale } from "next-intl/server"
+import Image from "next/image"
 
+import { genPageMetadata } from "@/app/seo"
 import { DescriptionPrimary } from "@/components/ui/Description"
 import { Heading } from "@/components/ui/Heading"
 import { SubtitleNormal } from "@/components/ui/Subtitle"
-import { ComponentOfferTable } from "@/components/ComponentOfferTable"
-import { genPageMetadata } from "@/app/seo"
 
 type Data = {
   count: number
@@ -48,39 +47,77 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 async function getData(): Promise<Data> {
+  const token = process.env.API_TOKEN
+
+  if (!token) {
+    console.warn("Brak API_TOKEN – zwracam mockowane dane")
+    return {
+      count: 0,
+      next: null,
+      previous: null,
+      results: [],
+    }
+  }
+
   const res = await fetch(
     "https://licencje.eomni.pl/package-price/?limit=20&offset=0&ordering=period",
     {
       method: "GET",
       cache: "no-cache",
       headers: {
-        Authorization: `Token ${process.env.API_TOKEN}`,
+        Authorization: `Token ${token}`,
       },
     }
   )
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data")
+    const errText = await res.text()
+    console.error("Błąd pobierania package-price:", res.status, errText)
+    throw new Error("Failed to fetch data from package-price")
   }
 
   return res.json()
 }
 
+
 async function getSettings() {
+  const token = process.env.API_TOKEN
+
+  if (!token) {
+    console.warn("Brak API_TOKEN – zwracam mockowane ustawienia")
+    return {
+      results: [
+        {
+          data: JSON.stringify({
+            base: 100,
+            currency: "PLN",
+            base_eu: 25,
+            currency_eu: "EUR",
+            base_usd: 25,
+            currency_us: "USD",
+          }),
+        },
+      ],
+    }
+  }
+
   const res = await fetch("https://licencje.eomni.pl/settings/", {
     method: "GET",
     cache: "no-cache",
     headers: {
-      Authorization: `Token ${process.env.API_TOKEN}`,
+      Authorization: `Token ${token}`,
     },
   })
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data")
+    const errText = await res.text()
+    console.error("Błąd pobierania settings:", res.status, errText)
+    throw new Error("Failed to fetch data from settings")
   }
 
   return res.json()
 }
+
 
 export default async function OfferPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -192,10 +229,10 @@ export default async function OfferPage({ params }: { params: Promise<{ locale: 
           </div>
         </div>
       </section>
-      <p className="mb-5 font-bold">
+      {/* <p className="mb-5 font-bold">
         <small className="text-danger">{t("info")}</small>
-      </p>
-      <ComponentOfferTable columns={columns} rows={result} aria={t("aria")} />
+      </p> */}
+      {/* <ComponentOfferTable columns={columns} rows={result} aria={t("aria")} /> */}
       <section className="text-left">
         <div className="max-w-screen-xl py-8 sm:py-16 lg:px-6">
           <div className="max-w-screen-sm md:mx-auto md:text-center">
