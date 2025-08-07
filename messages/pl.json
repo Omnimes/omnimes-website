@@ -95,13 +95,23 @@
     "backToNews": "Powrót do aktualności"
   },
   "HeroSection": {
-    "title": "Optymalizuj swoją produkcję z naszym",
-    "title2": "systemem MES",
+    "title": "Optymalizuj produkcję z",
+    "title2": "Omnimes",
     "subTitle": "Zwiększ efektywność, redukuj koszty i osiągnij doskonałą kontrolę nad każdym etapem produkcji dzięki naszemu systemowi MES",
+    "subTitle2": "Gotowy system MES z pudełka – uruchom bez zbędnych formalności",
     "contact": "Kontakt",
     "more": "Zobacz więcej",
     "buttonAria": "Przejdź do strony z formularzem kontaktowym",
     "buttonOmnimes": "Przejdź do sekcji ze szczegółowymi informacjami o OmniMes"
+  },
+  "Benefits": {
+    "title": "Korzyści biznesowe dla Twojej firmy",
+    "increasedProductivity": "Zwiększenie wydajności produkcji – produkuj tyle samo w krótszym czasie, poprzez minimalizację mikroprzestojów i optymalizację pracy maszyn",
+    "fasterReaction": "Szybsze reagowanie na problemy – monitoring stanu maszyn w czasie rzeczywistym pozwala na podejmowanie trafniejszych decyzji biznesowych",
+    "shorterCycle": "Skrócenie czasu cyklu produkcyjnego – moduły do harmonogramowania, eliminowania mikroprzestojów i monitoringu efektywności produkcji",
+    "betterQuality": "Zwiększenie jakości produktu – zmniejszona ilość odrzutu produkcyjnego i reklamacji, które również wpływają na jakość relacji z klientem",
+    "dataAnalysis": "Analiza danych – możliwość optymalizacji procesów produkcyjnych na podstawie danych historycznych",
+    "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – standaryzacja monitorowania procesów produkcyjnych w systemie MES"
   },
   "OmnimesInformation": {
     "smallSubtitle": "Czym jest omniMES?",
