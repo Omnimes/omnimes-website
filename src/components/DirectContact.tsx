@@ -30,7 +30,7 @@ export const DirectContact = () => {
             Szymon Rewilak
           </p>
           <p className="text-lg text-default-500 mt-1 mb-4">
-            Project Manager — Specjalista ds. Przemysłu 4.0
+            Project Manager — Specjalista ds. Przemysłu 4.0.
           </p>
           <div className="inline-flex items-center gap-3 text-xl font-medium text-default-700 dark:text-default-500">
             <LuPhone className="text-2xl" />
