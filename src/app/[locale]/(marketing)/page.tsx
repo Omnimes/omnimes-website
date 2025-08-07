@@ -1,9 +1,9 @@
-import { Suspense } from "react"
 import { setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
+import { Suspense } from "react"
 
-import { Skeleton } from "@/components/ui/Skeleton"
+import { BusinessBenefits } from "@/components/BusinessBenefits"
 import { ComponentVideo } from "@/components/ComponentVideo"
 import { Feature } from "@/components/Feature"
 import { Hero } from "@/components/Hero"
@@ -13,6 +13,7 @@ import { Performance } from "@/components/Performance"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import { Time } from "@/components/Time"
 import { Timeline } from "@/components/Timeline"
+import { Skeleton } from "@/components/ui/Skeleton"
 import { WhatIsOmnimes } from "@/components/WhatIsOmnimes"
 import { WhatPeopleSay } from "@/components/WhatPeopleSay"
 
@@ -56,8 +57,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <HeroImage />
       <Hero />
+      <BusinessBenefits />
       <Suspense fallback={<Skeleton className="h-8 w-full" />}>
-        <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+      <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
       </Suspense>
       <WhatIsOmnimes />
       <Feature />
