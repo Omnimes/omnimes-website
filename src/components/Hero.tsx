@@ -134,11 +134,11 @@
 
 "use client"
 
+import { Suspense, useEffect, useRef } from "react"
+import dynamic from "next/dynamic"
 import { Button, Link, Skeleton } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
-import dynamic from "next/dynamic"
-import { Suspense, useEffect, useRef } from "react"
 
 import { AnchorIcon, VideoPlayIcon } from "./ui/Icons"
 import { Subtitle } from "./ui/Subtitle"
