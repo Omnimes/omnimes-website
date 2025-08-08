@@ -9,10 +9,9 @@ export const DirectContact = () => {
 
   return (
     <div className="mx-auto mt-16 max-w-4xl px-6 text-center">
-      <p className="text-xl text-default-500 my-12 font-medium">
+      <p className="text-default-500 my-12 text-xl font-medium">
         {t("OrContactDirectly") || "Lub skontaktuj się bezpośrednio z:"}
       </p>
-
 
       <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:items-center sm:justify-center">
         {/* Avatar po lewej */}
@@ -26,13 +25,13 @@ export const DirectContact = () => {
 
         {/* Dane kontaktowe po prawej */}
         <div className="text-left sm:text-left">
-          <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">
+          <p className="text-primary-600 dark:text-primary-400 text-2xl font-bold">
             Szymon Rewilak
           </p>
-          <p className="text-lg text-default-500 mt-1 mb-4">
+          <p className="text-default-500 mb-4 mt-1 text-lg">
             Project Manager — Specjalista ds. Przemysłu 4.0.
           </p>
-          <div className="inline-flex items-center gap-3 text-xl font-medium text-default-700 dark:text-default-500">
+          <div className="text-default-700 dark:text-default-500 inline-flex items-center gap-3 text-xl font-medium">
             <LuPhone className="text-2xl" />
             <a href="tel:+48730002118" className="hover:underline">
               730 002 118

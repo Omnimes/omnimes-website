@@ -18,7 +18,7 @@ export const Team = () => {
         <Heading text={t("tilte")} />
         <DescriptionPrimary text={t("descriptionTeam")} />
       </div>
-{/*       <div className="flex flex-col items-center gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:gap-16">
+      {/*       <div className="flex flex-col items-center gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:gap-16">
         {TeamsData.map((author: Teams) => {
           const { name, avatar, occupation, github, linkedin } = author
           return (

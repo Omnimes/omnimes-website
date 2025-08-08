@@ -1,5 +1,7 @@
 "use client"
 
+import { useState } from "react"
+import Image from "next/image"
 import { headerNavLinks, headerNavLinksDropDown } from "@/data/headerNavLinks"
 import Logo from "@/data/logo.svg"
 import {
@@ -20,8 +22,6 @@ import {
 } from "@nextui-org/react"
 import { SessionProvider } from "next-auth/react"
 import { useTranslations } from "next-intl"
-import Image from "next/image"
-import { useState } from "react"
 import { LuBook, LuChevronDown, LuFileText, LuMessageCircle } from "react-icons/lu"
 
 import { Notification } from "@/components/Notification"
@@ -36,26 +36,26 @@ export default function Header() {
   const t = useTranslations("HeaderLinks")
 
   const iconClasses = "text-xl text-default-500 pointer-events-none flex-shrink-0"
-  
+
   const docsLinks = [
     {
       title: t("documentationPL"),
       href: "https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/wstep-XMdRkBsh9c",
       icon: LuFileText,
-      color: "primary"
+      color: "primary",
     },
     {
-      title: t("documentationEN"), 
+      title: t("documentationEN"),
       href: "https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/introduction-98dAKUj3hP",
       icon: LuBook,
-      color: "secondary"
+      color: "secondary",
     },
     {
       title: t("chatDocs"),
       href: "https://cloud.omnimes.com/askme",
       icon: LuMessageCircle,
-      color: "success"
-    }
+      color: "success",
+    },
   ]
 
   return (
@@ -309,9 +309,9 @@ export default function Header() {
           {/* Dodanie linków dokumentacji do menu mobilnego */}
           {docsLinks.map((link) => (
             <NavbarMenuItem key={link.title}>
-              <Link 
-                href={link.href} 
-                color="foreground" 
+              <Link
+                href={link.href}
+                color="foreground"
                 size="lg"
                 target="_blank"
                 rel="noopener noreferrer"

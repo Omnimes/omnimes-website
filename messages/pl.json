@@ -95,16 +95,29 @@
     "backToNews": "Powrót do aktualności"
   },
   "HeroSection": {
-    "title": "Optymalizuj swoją produkcję z naszym",
-    "title2": "systemem MES",
+    "title": "Optymalizuj produkcję z",
+    "title2": "Omnimes",
     "subTitle": "Zwiększ efektywność, redukuj koszty i osiągnij doskonałą kontrolę nad każdym etapem produkcji dzięki naszemu systemowi MES",
+    "subTitle2": "Gotowy system MES z pudełka – uruchom bez zbędnych formalności",
+    "SubTitle3": "Zobacz krótki film prezentujący nasz system!",
     "contact": "Kontakt",
     "more": "Zobacz więcej",
     "buttonAria": "Przejdź do strony z formularzem kontaktowym",
-    "buttonOmnimes": "Przejdź do sekcji ze szczegółowymi informacjami o OmniMes"
+    "buttonOmnimes": "Przejdź do sekcji ze szczegółowymi informacjami o OmniMes",
+    "playAria": "Odtwórz wideo"
+  },
+  "Benefits": {
+    "title": "Korzyści biznesowe dla Twojej firmy:",
+    "increasedProductivity": "Zwiększenie wydajności produkcji – produkuj tyle samo w krótszym czasie, dzięki minimalizacji mikroprzestojów i optymalizacji pracy maszyn.",
+    "fasterReaction": "Szybsze reagowanie na problemy – monitoruj stan maszyn w czasie rzeczywistym i podejmuj trafniejsze decyzje biznesowe.",
+    "shorterCycle": "Skrócenie czasu cyklu produkcyjnego – wykorzystaj moduły do harmonogramowania, eliminowania mikroprzestojów i monitoringu efektywności produkcji.",
+    "betterQuality": "Zwiększenie jakości produktu – zmniejsz ilość odrzutu produkcyjnego i reklamacji, które również wpływają na jakość relacji z klientem.",
+    "dataAnalysis": "Analiza danych historycznych – wyciągaj wnioski i optymalizuj procesy produkcyjne na podstawie danych historycznych.",
+    "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – skróć czas onboarding’u dzięki standaryzacji monitorowania procesów produkcyjnych."
   },
   "OmnimesInformation": {
     "smallSubtitle": "Czym jest omniMES?",
+    "subTitle": "Schemat działania systemu OmniMES – od maszyn produkcyjnych, przez inteligentne bramki komunikacyjne, aż po zaawansowaną analizę i optymalizację procesów w czasie rzeczywistym.",
     "heading": "to innowacyjny system realizacji produkcji",
     "description": "Monitoruje procesy w czasie rzeczywistym, umożliwiając bieżącą analizę i eliminację wąskich gardeł. Dzięki rzetelnym informacjom i zwiększeniu efektywności, OmniMES rewolucjonizuje zarządzanie produkcją, otwierając drzwi przed nowymi możliwościami optymalizacji.",
     "title1": "Odblokuj potencjał produkcji",
@@ -244,7 +257,10 @@
     "description5": "Zapewniamy bezpłatne szkolenie dla Twojego zespołu, aby wszyscy pracownicy mogli efektywnie korzystać z nowego systemu. Nasza współpraca się nie kończy - pomagamy i aktualizujemy system przez cały okres Twojego abonamentu, zapewniając Ci stały rozwój i doskonałość produkcyjną.",
     "text": "Z nami to proste",
     "textHeading": "Uruchom swoją produkcję na nowym poziomie już dzisiaj",
-    "textDesc": "MES na wyciągnięcie ręki – z nami przez każdy etap wdrażania"
+    "textDesc": "MES na wyciągnięcie ręki – z nami przez każdy etap wdrażania",
+    "dontKnowWhereToStart":"Nie wiesz od czego zaczać",
+    "contact": "Skontaktuj się",
+    "buttonAria": "Przejdź do strony z formularzem kontaktowym"
   },
   "Footer": {
     "title": "Innowacyjny system realizacji produkcji - Twoje oko w procesie produkcji",

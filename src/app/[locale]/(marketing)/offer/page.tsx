@@ -1,12 +1,12 @@
+import Image from "next/image"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { Button, Link } from "@nextui-org/react"
 import { getTranslations, setRequestLocale } from "next-intl/server"
-import Image from "next/image"
 
-import { genPageMetadata } from "@/app/seo"
 import { DescriptionPrimary } from "@/components/ui/Description"
 import { Heading } from "@/components/ui/Heading"
 import { SubtitleNormal } from "@/components/ui/Subtitle"
+import { genPageMetadata } from "@/app/seo"
 
 type Data = {
   count: number
@@ -79,7 +79,6 @@ async function getData(): Promise<Data> {
   return res.json()
 }
 
-
 async function getSettings() {
   const token = process.env.API_TOKEN
 
@@ -117,7 +116,6 @@ async function getSettings() {
 
   return res.json()
 }
-
 
 export default async function OfferPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params

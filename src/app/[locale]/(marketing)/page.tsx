@@ -4,7 +4,8 @@ import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
 
 import { Skeleton } from "@/components/ui/Skeleton"
-import { ComponentVideo } from "@/components/ComponentVideo"
+import { BusinessBenefits } from "@/components/BusinessBenefits"
+import { ContactTwo } from "@/components/ContactTwo"
 import { Feature } from "@/components/Feature"
 import { Hero } from "@/components/Hero"
 import { HeroImage } from "@/components/HeroImage"
@@ -56,19 +57,21 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <HeroImage />
       <Hero />
-      <Suspense fallback={<Skeleton className="h-8 w-full" />}>
-        <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
-      </Suspense>
+      <BusinessBenefits />
       <WhatIsOmnimes />
       <Feature />
-      <ComponentVideo />
+      {/* <ComponentVideo /> */}
       <Time />
       <Performance />
       <Timeline />
+      <ContactTwo />
       <WhatPeopleSay />
       {/* <SocialProf />   */}
       {/* <Cooperation /> */}
       <ScrollTopAndComment />
+      <Suspense fallback={<Skeleton className="h-8 w-full" />}>
+        <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+      </Suspense>
     </>
   )
 }
