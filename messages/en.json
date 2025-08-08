@@ -99,22 +99,26 @@
     "title2": "MES system",
     "subTitle": "Increase efficiency, reduce costs, and gain full control over every stage of production with our MES system",
     "subTitle2": "Out-of-the-box MES solution – launch without unnecessary formalities",
+    "SubTitle3": "Watch a short video showcasing our system!",
     "contact": "Contact",
     "more": "Learn more",
     "buttonAria": "Go to the contact form page",
-    "buttonOmnimes": "Go to the section with detailed information about OmniMES"
+    "buttonOmnimes": "Go to the section with detailed information about OmniMES",
+    "playAria": "Play video"
   },
   "Benefits": {
-    "title": "Business benefits for your company",
-    "increasedProductivity": "Increased production efficiency – produce the same amount in less time by minimizing micro-downtime and optimizing machine performance",
-    "fasterReaction": "Faster response to issues – real-time machine monitoring allows for better business decision-making",
-    "shorterCycle": "Shorter production cycles – scheduling modules and monitoring to eliminate micro-downtime and improve efficiency",
-    "betterQuality": "Improved product quality – reduced production waste and complaints, improving customer relationships",
-    "dataAnalysis": "Data analysis – enables optimization of production processes based on historical data",
-    "fasterOnboarding": "Faster onboarding of new employees – standardization of process monitoring in the MES system"
+  "title": "Business benefits for your company:",
+  "increasedProductivity": "Increase production efficiency – produce the same amount in less time by minimizing micro-downtime and optimizing machine operations.",
+  "fasterReaction": "Faster problem response – monitor machine status in real time and make more accurate business decisions.",
+  "shorterCycle": "Shorter production cycle – use modules for scheduling, eliminating micro-downtime, and monitoring production efficiency.",
+  "betterQuality": "Improved product quality – reduce production waste and customer complaints, which also improve client relations.",
+  "dataAnalysis": "Historical data analysis – draw conclusions and optimize production processes based on historical data.",
+  "fasterOnboarding": "Faster onboarding of new employees – shorten onboarding time through standardized monitoring of production processes."
   },
+
   "OmnimesInformation": {
     "smallSubtitle": "What is OmniMES?",
+    "subTitle": "OmniMES system workflow – from production machines, through intelligent communication gateways, to advanced real-time process analysis and optimization.",
     "heading": "is an innovative production execution system",
     "description": "Monitors processes in real-time, allowing for continuous analysis and elimination of bottlenecks. With reliable information and increased efficiency, OmniMES revolutionizes production management, opening doors to new optimization possibilities.",
     "title1": "Unlock production potential",
@@ -254,7 +258,10 @@
     "description5": "We provide free training for your team so that all employees can effectively use the new system. Our collaboration does not end there - we assist and update the system throughout your subscription period, ensuring continuous development and production excellence.",
     "text": "With us, it's simple",
     "textHeading": "Take your production to a new level today",
-    "textDesc": "MES at your fingertips - with us through every stage of implementation"
+    "textDesc": "MES at your fingertips - with us through every stage of implementation",
+    "dontKnowWhereToStart": "Don't know where to start",
+    "contact": "Contact us",
+    "buttonAria": "Go to the contact form page"
   },
   "Footer": {
     "title": "Innovative production execution system - Your eye on the production process",
