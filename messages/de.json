@@ -99,22 +99,25 @@
     "title2": "MES-System",
     "subTitle": "Steigern Sie die Effizienz, senken Sie die Kosten und erhalten Sie volle Kontrolle über jede Produktionsphase mit unserem MES-System",
     "subTitle2": "MES-System direkt einsatzbereit – starten Sie ohne unnötigen Aufwand",
+    "SubTitle3": "Sehen Sie sich ein kurzes Video an, das unser System vorstellt!",
     "contact": "Kontakt",
     "more": "Mehr erfahren",
     "buttonAria": "Zur Seite mit dem Kontaktformular",
-    "buttonOmnimes": "Zur Sektion mit detaillierten Informationen über OmniMES"
+    "buttonOmnimes": "Zur Sektion mit detaillierten Informationen über OmniMES",
+    "playAria": "Video abspielen"
   },
   "Benefits": {
-    "title": "Geschäftliche Vorteile für Ihr Unternehmen",
-    "increasedProductivity": "Steigerung der Produktionseffizienz – gleiche Menge in kürzerer Zeit durch Minimierung von Mikrostillständen und Optimierung der Maschinennutzung",
-    "fasterReaction": "Schnellere Reaktion auf Probleme – Maschinenüberwachung in Echtzeit ermöglicht fundiertere Geschäftsentscheidungen",
-    "shorterCycle": "Verkürzung der Produktionszyklen – Planungsmodule zur Beseitigung von Mikrostillständen und Effizienzsteigerung",
-    "betterQuality": "Verbesserte Produktqualität – weniger Ausschuss und Reklamationen, bessere Kundenbeziehungen",
-    "dataAnalysis": "Datenanalyse – Optimierung der Produktionsprozesse auf Basis historischer Daten",
-    "fasterOnboarding": "Schnellere Einarbeitung neuer Mitarbeiter – Standardisierung der Prozessüberwachung im MES-System"
+    "title": "Geschäftsvorteile für Ihr Unternehmen:",
+    "increasedProductivity": "Steigerung der Produktionseffizienz – produzieren Sie die gleiche Menge in kürzerer Zeit durch Minimierung von Mikroausfallzeiten und Optimierung der Maschinenarbeit.",
+    "fasterReaction": "Schnellere Reaktion auf Probleme – überwachen Sie den Maschinenstatus in Echtzeit und treffen Sie präzisere Geschäftsentscheidungen.",
+    "shorterCycle": "Verkürzung des Produktionszyklus – nutzen Sie Module zur Planung, Beseitigung von Mikroausfallzeiten und Überwachung der Produktionseffizienz.",
+    "betterQuality": "Verbesserte Produktqualität – reduzieren Sie Produktionsausschuss und Reklamationen, was auch die Kundenbeziehungen verbessert.",
+    "dataAnalysis": "Analyse historischer Daten – ziehen Sie Schlussfolgerungen und optimieren Sie Produktionsprozesse auf Grundlage historischer Daten.",
+    "fasterOnboarding": "Schnellere Einarbeitung neuer Mitarbeiter – verkürzen Sie die Einarbeitungszeit durch standardisierte Überwachung der Produktionsprozesse."
   },
   "OmnimesInformation": {
     "smallSubtitle": "Was ist OmniMES?",
+    "subTitle": "Funktionsschema des OmniMES-Systems – von Produktionsmaschinen über intelligente Kommunikations-Gateways bis hin zur fortschrittlichen Analyse und Optimierung von Prozessen in Echtzeit.",
     "heading": "ist ein innovatives produktionserfüllungssystem",
     "description": "Überwacht prozesse in echtzeit, ermöglicht eine kontinuierliche analyse und beseitigung von engpässen. Mit zuverlässigen informationen und gesteigerter effizienz revolutioniert OmniMES die produktionsleitung und eröffnet neue möglichkeiten zur optimierung.",
     "title1": "Produktionspotenzial freischalten",
@@ -254,7 +257,10 @@
     "description5": "Wir bieten Ihrem Team kostenlose Schulungen an, damit alle Mitarbeiter das neue System effektiv nutzen können. Unsere Zusammenarbeit endet nicht hier - wir unterstützen und aktualisieren das System während des gesamten Abonnementzeitraums, um kontinuierliche Entwicklung und Produktionsexzellenz zu gewährleisten.",
     "text": "Mit uns ist es einfach",
     "textHeading": "Bringen Sie Ihre Produktion noch heute auf ein neues Niveau",
-    "textDesc": "MES auf Knopfdruck - mit uns durch jede Phase der Implementierung"
+    "textDesc": "MES auf Knopfdruck - mit uns durch jede Phase der Implementierung",
+    "dontKnowWhereToStart": "Sie wissen nicht, wo Sie anfangen sollen",
+    "contact": "Kontaktieren Sie uns",
+    "buttonAria": "Zur Seite mit dem Kontaktformular gehen"
   },
   "Footer": {
     "title": "Innovatives Produktionserfassungssystem - Dein Auge auf dem Produktionsprozess",
