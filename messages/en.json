@@ -115,7 +115,25 @@
   "dataAnalysis": "Historical data analysis – draw conclusions and optimize production processes based on historical data.",
   "fasterOnboarding": "Faster onboarding of new employees – shorten onboarding time through standardized monitoring of production processes."
   },
-
+  "Roi": {
+    "title": "Return on investment in MES – how to calculate?",
+    "intro": "Implementing an MES system is not just a step towards digital transformation – it is an investment that can pay off quickly. To demonstrate this, the ROI (Return on Investment) indicator is used, showing what percentage of the costs incurred you will recover in the form of profits or savings.",
+    "formula": "ROI = ( investment profit – investment costs ) ÷ investment costs × 100%",
+    "exampleTitle": "Example ROI estimation for MES implementation:",
+    "exampleIntro": "A Polish manufacturing company ABC is considering implementing an MES system in its production plant. The investment costs have been estimated as follows:",
+    "exampleList1": "Cloud services",
+    "exampleList2": "Software licenses",
+    "exampleList3": "Communication gateways, HMI panels, PLC controllers",
+    "exampleList4": "System configuration service and implementation costs",
+    "investmentCosts": "Total investment costs: 140,000 PLN + 20,000 PLN for system maintenance in the first year, giving a total of 160,000 PLN.",
+    "effectsIntro": "Thanks to MES, the company estimates:",
+    "effectsList1": "Increase in efficiency by 15% (fewer micro-downtimes, shorter production cycle time)",
+    "effectsList2": "Reduction of rejects by 13% (better quality control)",
+    "annualSavings": "Result: Estimated annual savings: 200,000 PLN.",
+    "calcFormula": "ROI = (200,000 PLN – 160,000 PLN) ÷ 160,000 PLN × 100% = 0.25",
+    "roiExplanation": "An ROI of 0.25 means that the company will save 25% of the invested funds in the first year of using the system.",
+    "conclusion": "MES is an investment that will not only increase the level of digitization of the factory but also bring real savings. Success depends on good plant preparation and the right choice of technology."
+  },
   "OmnimesInformation": {
     "smallSubtitle": "What is OmniMES?",
     "subTitle": "OmniMES system workflow – from production machines, through intelligent communication gateways, to advanced real-time process analysis and optimization.",

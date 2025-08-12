@@ -115,6 +115,25 @@
     "dataAnalysis": "Analiza danych historycznych – wyciągaj wnioski i optymalizuj procesy produkcyjne na podstawie danych historycznych.",
     "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – skróć czas onboarding’u dzięki standaryzacji monitorowania procesów produkcyjnych."
   },
+  "Roi": {
+    "title": "Zwrot z inwestycji w MES – jak obliczyć?",
+    "intro": "Wdrożenie systemu MES to nie tylko krok w stronę cyfrowej transformacji – to inwestycja, która może szybko się zwrócić. Aby to wykazać, stosuje się wskaźnik ROI (Return on Investment), pokazujący, jaki procent poniesionych nakładów odzyskasz w formie zysków lub oszczędności.",
+    "formula": "ROI = ( zysk z inwestycji – koszty inwestycji ) ÷ koszty inwestycji × 100%",
+    "exampleTitle": "Przykładowe oszacowanie ROI dla wdrożenia MES:",
+    "exampleIntro": "Polska firma produkcyjna ABC rozważa wdrożenie systemu MES w swoim zakładzie produkcyjnym. Oszacowane zostały koszty inwestycji:",
+    "exampleList1": "Usługi chmurowe",
+    "exampleList2": "Licencje na oprogramowanie",
+    "exampleList3": "Bramki komunikacyjne, panele HMI, sterowniki PLC",
+    "exampleList4": "Usługa konfiguracji systemu i koszty wdrożenia",
+    "investmentCosts": "Łączne koszty inwestycji: 140 tys. PLN + 20 tys. PLN za utrzymanie systemu w pierwszym roku, co daje 160 tys. PLN.",
+    "effectsIntro": "Dzięki MES firma szacuje:",
+    "effectsList1": "Zwiększenie wydajności o 15% (mniej mikroprzestojów, krótszy czas cyklu produkcji)",
+    "effectsList2": "Redukcję odrzutów o 13% (lepsza kontrola jakości)",
+    "annualSavings": "Efekt: Szacowane roczne oszczędności: 200 tys. PLN.",
+    "calcFormula": "ROI = (200 000 PLN – 160 000 PLN) ÷ 160 000 PLN × 100% = 0,25",
+    "roiExplanation": "Wskaźnik ROI na poziomie 0,25 oznacza, że firma zaoszczędzi 25% wartości zainwestowanych środków w pierwszym roku użytkowania systemu.",
+    "conclusion": "MES to inwestycja, która nie tylko zwiększy poziom cyfryzacji fabryki, ale także przyniesie realne oszczędności. Sukces zależy od dobrego przygotowania zakładu oraz właściwego wyboru technologii."
+  },
   "OmnimesInformation": {
     "smallSubtitle": "Czym jest omniMES?",
     "subTitle": "Schemat działania systemu OmniMES – od maszyn produkcyjnych, przez inteligentne bramki komunikacyjne, aż po zaawansowaną analizę i optymalizację procesów w czasie rzeczywistym.",

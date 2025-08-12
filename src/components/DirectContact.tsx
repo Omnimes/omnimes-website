@@ -1,8 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import { Avatar, Button } from "@nextui-org/react"
 import { useTranslations } from "next-intl"
-import { useState } from "react"
 import { LuPhone, LuUser } from "react-icons/lu"
 
 export const DirectContact = () => {
@@ -42,10 +42,7 @@ export const DirectContact = () => {
           {showPhone ? (
             <div className="text-default-700 dark:text-default-500 inline-flex items-center gap-3 text-xl font-medium">
               <LuPhone className="text-2xl" />
-              <a
-                href={`tel:${"+48" + "730" + "002" + "118"}`}
-                className="hover:underline"
-              >
+              <a href={`tel:${"+48" + "730" + "002" + "118"}`} className="hover:underline">
                 {`${"+48"} 730 002 118`}
               </a>
             </div>

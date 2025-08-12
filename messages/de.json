@@ -115,6 +115,25 @@
     "dataAnalysis": "Analyse historischer Daten – ziehen Sie Schlussfolgerungen und optimieren Sie Produktionsprozesse auf Grundlage historischer Daten.",
     "fasterOnboarding": "Schnellere Einarbeitung neuer Mitarbeiter – verkürzen Sie die Einarbeitungszeit durch standardisierte Überwachung der Produktionsprozesse."
   },
+  "Roi": {
+    "title": "Return on Investment in MES – wie berechnet man ihn?",
+    "intro": "Die Einführung eines MES-Systems ist nicht nur ein Schritt in Richtung digitale Transformation – es ist eine Investition, die sich schnell auszahlen kann. Um dies zu belegen, wird der ROI (Return on Investment) verwendet, der angibt, welcher Prozentsatz der getätigten Ausgaben in Form von Gewinn oder Einsparungen zurückfließt.",
+    "formula": "ROI = ( Gewinn aus der Investition – Investitionskosten ) ÷ Investitionskosten × 100%",
+    "exampleTitle": "Beispielhafte ROI-Berechnung für die Einführung eines MES:",
+    "exampleIntro": "Das polnische Produktionsunternehmen ABC erwägt die Einführung eines MES-Systems in seinem Werk. Die Investitionskosten wurden wie folgt geschätzt:",
+    "exampleList1": "Cloud-Dienste",
+    "exampleList2": "Softwarelizenzen",
+    "exampleList3": "Kommunikations-Gateways, HMI-Panels, SPS-Steuerungen",
+    "exampleList4": "Systemkonfigurationsservice und Implementierungskosten",
+    "investmentCosts": "Gesamtkosten der Investition: 140.000 PLN + 20.000 PLN für die Systemwartung im ersten Jahr, insgesamt also 160.000 PLN.",
+    "effectsIntro": "Dank MES schätzt das Unternehmen:",
+    "effectsList1": "Steigerung der Effizienz um 15% (weniger Mikroausfälle, kürzere Produktionszyklen)",
+    "effectsList2": "Reduzierung von Ausschuss um 13% (bessere Qualitätskontrolle)",
+    "annualSavings": "Ergebnis: Geschätzte jährliche Einsparungen: 200.000 PLN.",
+    "calcFormula": "ROI = (200.000 PLN – 160.000 PLN) ÷ 160.000 PLN × 100% = 0,25",
+    "roiExplanation": "Ein ROI von 0,25 bedeutet, dass das Unternehmen im ersten Jahr der Systemnutzung 25% der investierten Mittel einspart.",
+    "conclusion": "MES ist eine Investition, die nicht nur den Digitalisierungsgrad der Fabrik erhöht, sondern auch echte Einsparungen bringt. Der Erfolg hängt von einer guten Vorbereitung des Betriebs und der richtigen Technologieauswahl ab."
+  },
   "OmnimesInformation": {
     "smallSubtitle": "Was ist OmniMES?",
     "subTitle": "Funktionsschema des OmniMES-Systems – von Produktionsmaschinen über intelligente Kommunikations-Gateways bis hin zur fortschrittlichen Analyse und Optimierung von Prozessen in Echtzeit.",
