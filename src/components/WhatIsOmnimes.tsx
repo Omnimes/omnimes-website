@@ -1,5 +1,5 @@
-import Image from "next/image"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
