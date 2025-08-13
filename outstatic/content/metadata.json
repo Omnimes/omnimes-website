@@ -1,6 +1,6 @@
 {
   "commit": "a4efe106fe842dac0a3c2c50d72f92447a0213b1",
-  "generated": "2025-08-13T08:20:34.227Z",
+  "generated": "2025-08-13T08:21:04.716Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1875,7 +1875,7 @@
     {
       "__outstatic": {
         "commit": "a4efe106fe842dac0a3c2c50d72f92447a0213b1",
-        "hash": "1309738206",
+        "hash": "1517728391",
         "path": "outstatic/content/courses/test.md"
       },
       "author": {
