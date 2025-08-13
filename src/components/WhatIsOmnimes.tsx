@@ -1,7 +1,7 @@
 "use client"
 
-import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
+import Image from "next/image"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
@@ -47,7 +47,7 @@ export const WhatIsOmnimes = () => {
         <div className="order-1 lg:order-none">
           <div className="mb-8 leading-tight md:text-center">
             {/* Duży, responsywny podtytuł */}
-            <Subtitle text={t("subTitle")} />
+            <Subtitle text={t("subTitle")} size="4xl" />
           </div>
 
           <Image

@@ -34,15 +34,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 async function getData(locale: string, page: string) {
   const db = await load()
   const allimplementation = await db
-    .find<ExtendedOstDocument>({ collection: "implementation", status: "published", lang: locale }, [
-      "title",
-      "publishedAt",
-      "slug",
-      "coverImage",
-      "description",
-      "author",
-      "tags",
-    ])
+    .find<ExtendedOstDocument>(
+      { collection: "implementation", status: "published", lang: locale },
+      ["title", "publishedAt", "slug", "coverImage", "description", "author", "tags"]
+    )
     .sort({ publishedAt: -1 })
     .skip((Number(page) - 1) * 20)
     .limit(20)
