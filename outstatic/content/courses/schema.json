@@ -1,0 +1,20 @@
+{
+  "title": "courses",
+  "type": "object",
+  "properties": {
+    "lang": {
+      "required": true,
+      "description": "Dodaj język w którym napisałeś artykuł, podając jego skrót np.  Polska - pl, Anglia - en, Niemcy - de.",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Lang"
+    },
+    "tags": {
+      "required": true,
+      "description": "Add tags to the post",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Tags"
+    }
+  }
+}

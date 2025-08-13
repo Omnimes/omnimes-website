@@ -6,8 +6,18 @@
     "postNotFound": "Artykułu nie znaleziono",
     "blog_title": "OmniMES Blog: Odkrywaj Świat Przemysłu 4.0",
     "blog_desc": "Odkryj świat OmniMES i Przemysłu 4.0 na naszym blogu! Eksploruj innowacyjne treści, zgłębiaj tajniki efektywności produkcyjnej i nowoczesnych technologii.",
-    "blog_keywords": "Przemysł 4.0, Technologie produkcyjne, Oprogramowanie MES, Innowacje w przemyśle, Efektywność produkcji, Automatyzacja procesów, Zarządzanie produkcją, Digitalizacja przedsiębiorstwa, Analiza danych produkcyjnych, Nowoczesne rozwiązania przemysłowe"
+    "blog_keywords": "Przemysł 4.0, Technologie produkcyjne, Oprogramowanie MES, Innowacje w przemyśle, Efektywność produkcji, Automatyzacja procesów, Zarządzanie produkcją, Digitalizacja przedsiębiorstwa, Analiza danych produkcyjnych, Nowoczesne rozwiązania przemysłowe",
+    "courses_title": "OmniMES Kursy – szkolenia i materiały",
+    "courses_desc": "Aktualna lista kursów i szkoleń OmniMES. Poznaj materiały edukacyjne, przewodniki i praktyczne przykłady.",
+    "courses_keywords": "kursy, szkolenia, edukacja, przewodniki, OmniMES",
+    "coursesNotFound": "Nie znaleziono kursów"
   },
+
+  "Courses": {
+    "title": "Wszystkie kursy",
+    "NotFound": "Przepraszamy, brak dostępnych kursów"
+  },
+
   "Error": {
     "title": "Coś poszło nie tak!",
     "description": "<p>Niestety, wystąpił błąd.</p><p>Możesz spróbować <retry>ponownie załadować stronę</retry>, którą odwiedzałeś/odwiedzałaś.</p>"
@@ -64,16 +74,18 @@
     "documentation":"Dokumentacja",
     "documentationPL": "Dokumentacja PL",
     "documentationEN": "Dokumentacja EN",
-    "chatDocs":"ChatDocs"
+    "chatDocs":"ChatDocs",
+    "implementation":"Realziacje",
+    "courses":"Kursy"
   },
   "Blog": {
     "title": "Wszystkie posty",
     "NotFound": "Przepraszamy, brak dostępnych postów"
   },
   "ListLayout": {
-    "search": "Wyszukaj artykuły",
+    "search": "Wyszukaj...",
     "publishedOn": "Opublikowano dnia",
-    "NotFound": "Przepraszamy, nie znaleziono żadnych postów"
+    "NotFound": "Przepraszamy, nic nie znaleziono"
   },
   "Pagination": {
     "next": "Następna",
@@ -92,7 +104,9 @@
     "by": "przez",
     "postNotFound": "Artykułu nie znaleziono",
     "postNotFoundDesc": "Przepraszamy, ale nie udało się odnaleźć tego artykułu lub może on znajdować się pod innym adresem URL. Możesz przeczytać inne dostępne artykuły w tym języku, przechodząc do wszystkich postów.",
-    "backToNews": "Powrót do aktualności"
+    "backToNews": "Powrót do aktualności",
+    "backToCourses": "Powrót do kursów",
+    "allCourses": "Wszystkie kursy"
   },
   "HeroSection": {
     "title": "Optymalizuj produkcję z",

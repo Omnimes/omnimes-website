@@ -1,6 +1,6 @@
-import { NextRequest } from "next/server"
 import { withAuth } from "next-auth/middleware"
 import createMiddleware from "next-intl/middleware"
+import { NextRequest } from "next/server"
 
 import { localeDetection, localePrefix, locales, pathnames } from "./config"
 
@@ -27,6 +27,7 @@ export const excludePaths = [
   ...protectedPages,
   ...developerPages,
   "/blog/[slug]",
+  "/courses/[slug]",
   "/tags/[tag]",
   "/verify-email",
 ]

@@ -64,7 +64,10 @@
     "documentation": "Dokumentation",
     "documentationPL": "Dokumentation PL",
     "documentationEN": "Dokumentation EN",
-    "chatDocs": "ChatDocs"
+    "chatDocs": "ChatDocs",
+    "implementation": "Projekte",
+    "courses": "Kurse"
+
   },
   "Blog": {
     "title": "Alle Artikel",
