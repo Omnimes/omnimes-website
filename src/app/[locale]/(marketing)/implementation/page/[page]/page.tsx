@@ -10,12 +10,12 @@ import { ExtendedOstDocument } from "../../page"
 export const generateStaticParams = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const resolvedParams = await params
   const locale = resolvedParams.locale
-  const courses = getDocuments("courses", ["lang"]) // ⬅ zmiana
-  if (!courses || courses.length === 0) {
+  const implementation = getDocuments("implementation", ["lang"]) // ⬅ zmiana
+  if (!implementation || implementation.length === 0) {
     return []
   }
-  const localeCourses = courses.filter((c) => c.lang === locale)
-  const totalPages = Math.ceil(localeCourses.length / 10)
+  const localeimplementation = implementation.filter((c) => c.lang === locale)
+  const totalPages = Math.ceil(localeimplementation.length / 10)
   return Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
 }
 
@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const resolvedParams = await params
   const locale = resolvedParams.locale
   const t = await getTranslations({ locale, namespace: "Metadata" })
-  const title = t("courses_title") // ⬅ zmiana
-  const description = t("courses_desc") // ⬅ zmiana
-  const keywords = t("courses_keywords") // ⬅ zmiana
+  const title = t("implementation_title") // ⬅ zmiana
+  const description = t("implementation_desc") // ⬅ zmiana
+  const keywords = t("implementation_keywords") // ⬅ zmiana
   const localeShort = getLocalePrimaryDialects(locale)
 
   return genPageMetadata({ title, description, keywords, localeShort })
@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 async function getData(locale: string, page: string) {
   const db = await load()
-  const allCourses = await db
-    .find<ExtendedOstDocument>({ collection: "courses", status: "published", lang: locale }, [
+  const allimplementation = await db
+    .find<ExtendedOstDocument>({ collection: "implementation", status: "published", lang: locale }, [
       "title",
       "publishedAt",
       "slug",
@@ -48,13 +48,13 @@ async function getData(locale: string, page: string) {
     .limit(20)
     .toArray()
 
-  const coursesLength = getDocuments("courses", ["lang"]) // ⬅ zmiana
+  const implementationLength = getDocuments("implementation", ["lang"]) // ⬅ zmiana
     .filter((c) => c.status === "published" && c.lang === locale).length
 
-  return { allCourses, coursesLength }
+  return { allimplementation, implementationLength }
 }
 
-export default async function CoursesPagePage({
+export default async function implementationPagePage({
   params,
 }: {
   params: Promise<{ page: string; locale: string }>
@@ -63,23 +63,23 @@ export default async function CoursesPagePage({
   const { locale, page } = resolvedParams
   setRequestLocale(locale)
 
-  const t = await getTranslations("Courses") // ⬅ zmiana
-  const { allCourses, coursesLength } = await getData(locale, page)
+  const t = await getTranslations("implementation") // ⬅ zmiana
+  const { allimplementation, implementationLength } = await getData(locale, page)
 
-  if (!allCourses || allCourses.length === 0)
+  if (!allimplementation || allimplementation.length === 0)
     return <p className="mt-10 text-center">{t("NotFound")}</p>
 
   const pageNumber = parseInt(page as string)
 
   const pagination = {
     currentPage: pageNumber,
-    totalPages: Math.ceil(coursesLength / 20),
+    totalPages: Math.ceil(implementationLength / 20),
   }
 
   return (
     <ListLayout
-      posts={allCourses}
-      initialDisplayPosts={allCourses}
+      posts={allimplementation}
+      initialDisplayPosts={allimplementation}
       pagination={pagination}
       title={t("title")}
     />

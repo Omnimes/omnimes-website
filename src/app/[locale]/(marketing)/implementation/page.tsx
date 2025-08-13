@@ -4,8 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { getDocuments, load } from "outstatic/server"
 
-import { genPageMetadata } from "@/app/seo"
 import { generateSearchJSON } from "@/lib/generateSearchJSON"
+import { genPageMetadata } from "@/app/seo"
 
 export type ExtendedOstDocument = OstDocument & {
   tags: { value: string; label: string }[]
@@ -29,14 +29,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 async function getData(locale: string) {
   const db = await load()
   const allimplementation = await db
-    .find<ExtendedOstDocument>({ collection: "implementation", status: "published", lang: locale }, [
-      "title",
-      "publishedAt",
-      "slug",
-      "description",
-      "author",
-      "tags",
-    ])
+    .find<ExtendedOstDocument>(
+      { collection: "implementation", status: "published", lang: locale },
+      ["title", "publishedAt", "slug", "description", "author", "tags"]
+    )
     .sort({ publishedAt: -1 })
     .limit(20)
     .toArray()
@@ -72,7 +68,11 @@ async function getDataToSearch() {
 }
 
 /** Strona listy kursów */
-export default async function implementationPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function implementationPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
   const { locale } = await params
   setRequestLocale(locale)
 
