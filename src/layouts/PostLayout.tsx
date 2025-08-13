@@ -1,13 +1,13 @@
-import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
+import Image from "next/image"
 
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import PageTitle from "@/components/PageTitle"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import Tag from "@/components/Tag"
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 
 interface LayoutProps {
   post: ExtendedOstDocument
@@ -78,8 +78,8 @@ export default function PostLayout({ post }: LayoutProps) {
                     {t("tags")}
                   </h2>
                   <div className="flex flex-wrap">
-                    {tags.map((tag: { value: string; label: string }) => {
-                      return <Tag key={tag.value} text={tag.label} />
+                    {Array.isArray(tags) && tags.map((tag: { value: string; label: string }, index: number) => {
+                      return <Tag key={tag?.value || index} text={tag?.label || ''} />
                     })}
                   </div>
                 </div>

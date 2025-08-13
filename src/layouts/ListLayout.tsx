@@ -1,15 +1,15 @@
 "use client"
 
-import { useState } from "react"
-import { usePathname } from "next/navigation"
 import { Input } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
+import { usePathname } from "next/navigation"
+import { useState } from "react"
 import { LuSearch } from "react-icons/lu"
 
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 import { CustomLink } from "@/components/Link"
 import Tag from "@/components/Tag"
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 
 interface PaginationProps {
   totalPages: number
@@ -147,10 +147,14 @@ export default function ListLayout({
                         </CustomLink>
                       </h3>
                       <div className="flex flex-wrap">
-                        {tags.map((tag: { value: string; label: string }) => {
-                          return <Tag key={tag.value} text={tag.label} />
-                        })}
-                      </div>
+  {tags && Array.isArray(tags) ? tags.map((tag: any, index: number) => {
+    // Sprawdź różne formaty tagów
+    const tagValue = tag?.value || tag?.label || tag || index;
+    const tagLabel = tag?.label || tag?.value || tag || '';
+    
+    return tagLabel ? <Tag key={tagValue} text={tagLabel} /> : null;
+  }) : null}
+</div>
                     </div>
                     <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                       {description}

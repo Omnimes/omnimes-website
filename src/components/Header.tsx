@@ -1,5 +1,7 @@
 "use client"
 
+import { useState } from "react"
+import Image from "next/image"
 import { headerNavLinks, headerNavLinksDropDown } from "@/data/headerNavLinks"
 import Logo from "@/data/logo.svg"
 import {
@@ -20,8 +22,6 @@ import {
 } from "@nextui-org/react"
 import { SessionProvider } from "next-auth/react"
 import { useTranslations } from "next-intl"
-import Image from "next/image"
-import { useState } from "react"
 import { LuBook, LuChevronDown, LuFileText, LuMessageCircle } from "react-icons/lu"
 
 import { Notification } from "@/components/Notification"

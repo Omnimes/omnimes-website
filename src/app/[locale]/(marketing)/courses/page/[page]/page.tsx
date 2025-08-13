@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const resolvedParams = await params
   const locale = resolvedParams.locale
   const t = await getTranslations({ locale, namespace: "Metadata" })
-  const title = t("courses_title")        // ⬅ zmiana
-  const description = t("courses_desc")  // ⬅ zmiana
+  const title = t("courses_title") // ⬅ zmiana
+  const description = t("courses_desc") // ⬅ zmiana
   const keywords = t("courses_keywords") // ⬅ zmiana
   const localeShort = getLocalePrimaryDialects(locale)
 
