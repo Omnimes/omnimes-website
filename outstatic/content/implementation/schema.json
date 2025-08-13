@@ -8,6 +8,14 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Lang"
+    },
+    "tags": {
+      "required": true,
+      "description": "Add tags to the post",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Tags",
+      "values": []
     }
   }
 }
