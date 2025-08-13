@@ -1,0 +1,13 @@
+{
+  "title": "implementation",
+  "type": "object",
+  "properties": {
+    "lang": {
+      "required": true,
+      "description": "Dodaj język w którym napisałeś artykuł, podając jego skrót np.  Polska - pl, Anglia - en, Niemcy - de.",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Lang"
+    }
+  }
+}
