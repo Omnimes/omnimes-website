@@ -1,6 +1,6 @@
 {
-  "commit": "8d11c0cb4706c34796c9d129717298f1194037df",
-  "generated": "2025-08-13T09:06:23.639Z",
+  "commit": "56e901ab3585dc9fc21f0112ef23287c5c194767",
+  "generated": "2025-08-13T11:01:05.514Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1891,6 +1891,31 @@
       "status": "published",
       "tags": "test",
       "title": "test"
+    },
+    {
+      "__outstatic": {
+        "commit": "56e901ab3585dc9fc21f0112ef23287c5c194767",
+        "hash": "3768171325",
+        "path": "outstatic/content/implementation/test.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2025-08-13T11:12:39.845Z",
+      "slug": "test",
+      "status": "published",
+      "tags": [
+        {
+          "label": "test",
+          "value": "test"
+        }
+      ],
+      "title": "Test"
     }
   ]
 }
