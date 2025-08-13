@@ -4,8 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { getDocuments, load } from "outstatic/server"
 
-import { genPageMetadata } from "@/app/seo"
 import { generateSearchJSON } from "@/lib/generateSearchJSON"
+import { genPageMetadata } from "@/app/seo"
 
 export type ExtendedOstDocument = OstDocument & {
   tags: { value: string; label: string }[]
@@ -51,21 +51,24 @@ async function getData(locale: string) {
 /** Search JSON (jeśli używasz wewnętrznego searcha) */
 /** Search JSON (jeśli używasz wewnętrznego searcha) */
 async function getDataToSearch() {
-  const db = await load();
+  const db = await load()
   const AllCourses = await db
-    .find<ExtendedOstDocument>(
-      { collection: "courses", status: "published" },
-      ["title", "slug", "description", "lang", "tags"]
-    )
+    .find<ExtendedOstDocument>({ collection: "courses", status: "published" }, [
+      "title",
+      "slug",
+      "description",
+      "lang",
+      "tags",
+    ])
     .sort({ publishedAt: -1 })
-    .toArray();
+    .toArray()
 
   const docs = AllCourses.map((d) => ({
     ...d,
-    tags: "" // Tymczasowo wyłącz tags żeby sprawdzić czy reszta działa
-  }));
+    tags: "", // Tymczasowo wyłącz tags żeby sprawdzić czy reszta działa
+  }))
 
-  await generateSearchJSON(docs);
+  await generateSearchJSON(docs)
 }
 
 /** Strona listy kursów */

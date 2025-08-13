@@ -1,10 +1,10 @@
 import "highlight.js/styles/github-dark.css"
 
-import { Metadata } from "next"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { siteMetadata } from "@/data/siteMetadata"
 import PostLayout from "@/layouts/PostLayout"
 import { Button, Link } from "@nextui-org/react"
+import { Metadata } from "next"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getDocumentSlugs, load } from "outstatic/server"
 import { LuCircleArrowLeft } from "react-icons/lu"
@@ -138,5 +138,9 @@ export default async function CoursePage({
     )
   }
 
-  return <PostLayout post={course} />
+  return <PostLayout 
+    post={course} 
+    backPath="/courses"  // ścieżka do listy kursów
+    showBackLinks={true}  // pokaż linki powrotu
+  />
 }

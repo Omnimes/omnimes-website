@@ -30,7 +30,7 @@
   "NotFoundBlog": {
     "title": "Przepraszamy, nie udało znaleźć się posta.",
     "description": "Spróbuj zmienić język lub przejdź do listy postów.",
-    "action": "Powrót do bloga"
+    "action": "Powrót"
   },
   "LocaleSwitcher": {
     "label": "Zmień język",
@@ -98,7 +98,7 @@
     "name": "Imię",
     "occupation": "Zawód",
     "tags": "Tagi",
-    "back": "Powrót do bloga",
+    "back": "Powrót",
     "allPost": "Wszystkie posty",
     "publish": "Opublikowano dnia",
     "by": "przez",

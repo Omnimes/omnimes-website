@@ -11,12 +11,19 @@ import getFormattedDate from "@/lib/getFormattedDate"
 
 interface LayoutProps {
   post: ExtendedOstDocument
+  backPath?: string  // opcjonalna ścieżka powrotu
+  showBackLinks?: boolean  // czy pokazywać linki powrotu
 }
 
-export default function PostLayout({ post }: LayoutProps) {
+export default function PostLayout({ 
+  post, 
+  backPath = "/blog",  // domyślnie blog
+  showBackLinks = true  // domyślnie pokazuj
+}: LayoutProps) {
   const t = useTranslations("PostLayout")
   const { title, publishedAt, content, tags, author } = post
   const lang = useLocale()
+  
   return (
     <>
       <article>
@@ -62,13 +69,15 @@ export default function PostLayout({ post }: LayoutProps) {
               <div className="prose dark:prose-invert max-w-none pb-8 pt-10">
                 <MDXComponent content={content} />
                 <hr />
-                <CustomLink
-                  href={`/blog`}
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                  aria-label={t("back")}
-                >
-                  &larr; {t("back")}
-                </CustomLink>
+                {showBackLinks && (
+                  <CustomLink
+                    href={backPath}
+                    className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                    aria-label={t("back")}
+                  >
+                    &larr; {t("back")}
+                  </CustomLink>
+                )}
               </div>
             </div>
             <footer>
@@ -78,21 +87,24 @@ export default function PostLayout({ post }: LayoutProps) {
                     {t("tags")}
                   </h2>
                   <div className="flex flex-wrap">
-                    {Array.isArray(tags) && tags.map((tag: { value: string; label: string }, index: number) => {
-                      return <Tag key={tag?.value || index} text={tag?.label || ''} />
-                    })}
+                    {Array.isArray(tags) &&
+                      tags.map((tag: { value: string; label: string }, index: number) => {
+                        return <Tag key={tag?.value || index} text={tag?.label || ""} />
+                      })}
                   </div>
                 </div>
               </div>
-              <div className="pt-4 xl:pt-8">
-                <CustomLink
-                  href={`/blog`}
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                  aria-label={t("back")}
-                >
-                  &larr; {t("back")}
-                </CustomLink>
-              </div>
+              {showBackLinks && (
+                <div className="pt-4 xl:pt-8">
+                  <CustomLink
+                    href={backPath}
+                    className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                    aria-label={t("back")}
+                  >
+                    &larr; {t("back")}
+                  </CustomLink>
+                </div>
+              )}
             </footer>
           </div>
         </div>
