@@ -1,6 +1,6 @@
 {
-  "commit": "8a5192dd0a8c521931b83ac48bad6a41ecf1a472",
-  "generated": "2025-05-29T04:41:06.668Z",
+  "commit": "38954e5101b9d597a1ba52ace45195ffe839880b",
+  "generated": "2025-08-13T08:20:25.550Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1871,6 +1871,24 @@
         "gpt"
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "38954e5101b9d597a1ba52ace45195ffe839880b",
+        "hash": "63412893",
+        "path": "outstatic/content/courses/test.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "courses",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2025-08-13T08:32:16.739Z",
+      "slug": "test",
+      "status": "draft",
+      "title": "Test"
     }
   ]
 }
