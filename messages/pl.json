@@ -10,12 +10,21 @@
     "courses_title": "OmniMES Kursy – szkolenia i materiały",
     "courses_desc": "Aktualna lista kursów i szkoleń OmniMES. Poznaj materiały edukacyjne, przewodniki i praktyczne przykłady.",
     "courses_keywords": "kursy, szkolenia, edukacja, przewodniki, OmniMES",
-    "coursesNotFound": "Nie znaleziono kursów"
+    "coursesNotFound": "Nie znaleziono kursów",
+    "implementation_title": "Wdrożenia Omnimes",
+    "implementation_desc": "Aktualna lista wdrożeń OmniMES. Poznaj nasze praktyczne wdrożenia.",
+    "implementation_keywords": "Wdrożenia, szkolenia, edukacja, przewodniki, OmniMES",
+    "implementationNotFound": "Nie znaleziono wdrożen"
   },
 
   "Courses": {
     "title": "Wszystkie kursy",
-    "NotFound": "Przepraszamy, brak dostępnych kursów"
+    "NotFound": "Już wkrótce"
+  },
+
+  "Implementation":{
+    "title": "Wszystkie realizacje",
+    "NotFound": "Już wkrótce"
   },
 
   "Error": {
@@ -106,7 +115,9 @@
     "postNotFoundDesc": "Przepraszamy, ale nie udało się odnaleźć tego artykułu lub może on znajdować się pod innym adresem URL. Możesz przeczytać inne dostępne artykuły w tym języku, przechodząc do wszystkich postów.",
     "backToNews": "Powrót do aktualności",
     "backToCourses": "Powrót do kursów",
-    "allCourses": "Wszystkie kursy"
+    "allCourses": "Wszystkie kursy",
+    "backToImplementation": "Powrót do wdrożeń",
+    "allImplementation": "Wszystkie wdrożenia"
   },
   "HeroSection": {
     "title": "Optymalizuj produkcję z",

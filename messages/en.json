@@ -6,8 +6,26 @@
     "postNotFound": "Post Not Found",
     "blog_title": "OmniMES Blog: Explore the World of Industry 4.0",
     "blog_desc": "Discover the world of OmniMES and Industry 4.0 on our blog! Explore innovative content, learn the secrets of production efficiency and modern technologies.",
-    "blog_keywords": "Industry 4.0, Manufacturing Technologies, MES Software, Innovations in Industry, Production Efficiency, Process Automation, Production Management, Enterprise Digitalization, Production Data Analysis, Modern Industrial Solutions"
+    "blog_keywords": "Industry 4.0, Manufacturing Technologies, MES Software, Innovations in Industry, Production Efficiency, Process Automation, Production Management, Enterprise Digitalization, Production Data Analysis, Modern Industrial Solutions",
+    "courses_title": "OmniMES Courses – Training and Materials",
+    "courses_desc": "Current list of OmniMES courses and training. Explore educational materials, guides, and practical examples.",
+    "courses_keywords": "courses, training, education, guides, OmniMES",
+    "coursesNotFound": "No courses found",
+    "implementation_title": "OmniMES Implementations",
+    "implementation_desc": "Current list of OmniMES implementations. Discover our practical case studies.",
+    "implementation_keywords": "implementations, training, education, guides, OmniMES",
+    "implementationNotFound": "No implementations found"
   },
+  "Courses": {
+    "title": "All Courses",
+    "NotFound": "Coming soon"
+  },
+
+  "Implementation": {
+    "title": "All Implementations",
+    "NotFound": "Coming soon"
+  },
+
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, pl {Polish} en {English} de {Deutsch} other {Unknown}}"
@@ -95,7 +113,11 @@
     "by": "by",
     "postNotFound": "Article not found",
     "postNotFoundDesc": "Sorry, but we couldn't find this article or it may be located at a different URL. You can read other available articles in this language by going to all posts.",
-    "backToNews": "Back to News"
+    "backToNews": "Back to News",
+    "backToCourses": "Back to courses",
+    "allCourses": "All courses",
+    "backToImplementation": "Back to implementations",
+    "allImplementation": "All implementations"
   },
   "HeroSection": {
     "title": "Optimize your production with our",

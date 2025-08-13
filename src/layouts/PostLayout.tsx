@@ -1,29 +1,29 @@
-import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import { useLocale, useTranslations } from "next-intl"
 
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import PageTitle from "@/components/PageTitle"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import Tag from "@/components/Tag"
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface LayoutProps {
   post: ExtendedOstDocument
-  backPath?: string  // opcjonalna ścieżka powrotu
-  showBackLinks?: boolean  // czy pokazywać linki powrotu
+  backPath?: string // opcjonalna ścieżka powrotu
+  showBackLinks?: boolean // czy pokazywać linki powrotu
 }
 
-export default function PostLayout({ 
-  post, 
-  backPath = "/blog",  // domyślnie blog
-  showBackLinks = true  // domyślnie pokazuj
+export default function PostLayout({
+  post,
+  backPath = "/blog", // domyślnie blog
+  showBackLinks = true, // domyślnie pokazuj
 }: LayoutProps) {
   const t = useTranslations("PostLayout")
   const { title, publishedAt, content, tags, author } = post
   const lang = useLocale()
-  
+
   return (
     <>
       <article>

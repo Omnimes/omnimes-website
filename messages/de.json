@@ -6,7 +6,24 @@
     "postNotFound": "Beitrag nicht gefunden",
     "blog_title": "OmniMES Blog: Entdecken Sie die Welt der Industrie 4.0",
     "blog_desc": "Entdecken Sie die Welt von OmniMES und Industrie 4.0 auf unserem Blog! Entdecken Sie innovative Inhalte, lernen Sie die Geheimnisse der Produktionseffizienz und moderner Technologien kennen.",
-    "blog_keywords": "Industrie 4.0, Fertigungstechnologien, MES-Software, Innovationen in der Industrie, Produktionswirkungsgrad, Prozessautomatisierung, Produktionsmanagement, Unternehmensdigitalisierung, Analyse von Produktionsdaten, Moderne industrielle Lösungen"
+    "blog_keywords": "Industrie 4.0, Fertigungstechnologien, MES-Software, Innovationen in der Industrie, Produktionswirkungsgrad, Prozessautomatisierung, Produktionsmanagement, Unternehmensdigitalisierung, Analyse von Produktionsdaten, Moderne industrielle Lösungen",
+    "courses_title": "OmniMES Kurse – Schulungen und Materialien",
+    "courses_desc": "Aktuelle Liste der OmniMES-Kurse und -Schulungen. Entdecken Sie Lehrmaterialien, Leitfäden und praktische Beispiele.",
+    "courses_keywords": "Kurse, Schulungen, Ausbildung, Leitfäden, OmniMES",
+    "coursesNotFound": "Keine Kurse gefunden",
+    "implementation_title": "OmniMES Implementierungen",
+    "implementation_desc": "Aktuelle Liste der OmniMES-Implementierungen. Entdecken Sie unsere praktischen Fallstudien.",
+    "implementation_keywords": "Implementierungen, Schulungen, Ausbildung, Leitfäden, OmniMES",
+    "implementationNotFound": "Keine Implementierungen gefunden"
+  },
+  "Courses": {
+    "title": "Alle Kurse",
+    "NotFound": "Demnächst verfügbar"
+  },
+
+  "Implementation": {
+    "title": "Alle Implementierungen",
+    "NotFound": "Demnächst verfügbar"
   },
   "LocaleSwitcher": {
     "label": "Sprache ändern",
@@ -95,7 +112,11 @@
     "by": "von",
     "postNotFound": "Artikel nicht gefunden",
     "postNotFoundDesc": "Entschuldigung, aber wir konnten diesen Artikel nicht finden oder er befindet sich möglicherweise an einer anderen URL. Sie können andere verfügbare Artikel in dieser Sprache lesen, indem Sie zu allen Beiträgen gehen.",
-    "backToNews": "Zurück zu den Nachrichten"
+    "backToNews": "Zurück zu den Nachrichten",
+    "backToCourses": "Zurück zu den Kursen",
+    "allCourses": "Alle Kurse",
+    "backToImplementation": "Zurück zu den Implementierungen",
+    "allImplementation": "Alle Implementierungen"
   },
   "HeroSection": {
     "title": "Optimieren Sie Ihre Produktion mit unserem",

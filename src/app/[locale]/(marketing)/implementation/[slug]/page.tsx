@@ -1,10 +1,10 @@
 import "highlight.js/styles/github-dark.css"
 
-import { Metadata } from "next"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { siteMetadata } from "@/data/siteMetadata"
 import PostLayout from "@/layouts/PostLayout"
 import { Button, Link } from "@nextui-org/react"
+import { Metadata } from "next"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getDocumentSlugs, load } from "outstatic/server"
 import { LuCircleArrowLeft } from "react-icons/lu"
@@ -15,15 +15,15 @@ import MDXServer from "@/lib/mdxServer"
 import { ExtendedOstDocument } from "../page"
 
 export async function generateStaticParams() {
-  const courses = getDocumentSlugs("courses") // ⬅ tu zmiana
-  return courses.map((slug) => ({ slug }))
+  const implementation = getDocumentSlugs("implementation") // ⬅ tu zmiana
+  return implementation.map((slug) => ({ slug }))
 }
 
 async function getData({ params }: { params: { slug: string; locale: string } }) {
   const db = await load()
   const course = await db
     .find<ExtendedOstDocument>(
-      { collection: "courses", slug: params.slug, lang: params.locale }, // ⬅ tu zmiana
+      { collection: "implementation", slug: params.slug, lang: params.locale }, // ⬅ tu zmiana
       [
         "title",
         "publishedAt",
@@ -61,7 +61,7 @@ export async function generateMetadata({
 
   if (!course) {
     return {
-      title: t("coursesNotFound"),
+      title: t("implementationNotFound"),
     }
   }
 
@@ -69,7 +69,7 @@ export async function generateMetadata({
     title: course.title,
     description: course.description,
     alternates: {
-      canonical: siteMetadata.siteUrl + "/" + locale + "/courses",
+      canonical: siteMetadata.siteUrl + "/" + locale + "/implementation",
     },
     openGraph: {
       title: course.title,
@@ -78,7 +78,7 @@ export async function generateMetadata({
       locale: getLocalePrimaryDialects(locale),
       type: "article",
       publishedTime: new Date(course.publishedAt).toISOString(),
-      url: siteMetadata.siteUrl + "/" + locale + "/courses/" + course.slug,
+      url: siteMetadata.siteUrl + "/" + locale + "/implementation/" + course.slug,
       images: [siteMetadata.socialBanner],
       authors: course.author?.name || "",
     },
@@ -117,13 +117,13 @@ export default async function CoursePage({
     return (
       <article className="mx-auto mt-32 max-w-screen-lg px-4 text-center md:px-0">
         <h1 className="font-heading my-2 inline-block text-4xl leading-tight lg:text-5xl">
-          {t("coursesNotFound")}
+          {t("implementationNotFound")}
         </h1>
-        <p>{t("coursesNotFoundDesc")}</p>
+        <p>{t("implementationNotFoundDesc")}</p>
         <div className="flex justify-center py-6 lg:py-10">
           <Button
             as={Link}
-            href="/courses"
+            href="/implementation"
             aria-label={t("back")}
             aria-labelledby={t("back")}
             title={t("back")}
@@ -131,7 +131,7 @@ export default async function CoursePage({
             className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
           >
             <LuCircleArrowLeft className="mr-2 size-4" />
-            {t("allCourses")}
+            {t("allimplementation")}
           </Button>
         </div>
       </article>
@@ -141,7 +141,7 @@ export default async function CoursePage({
   return (
     <PostLayout
       post={course}
-      backPath="/courses" // ścieżka do listy kursów
+      backPath="/implementation" // ścieżka do listy kursów
       showBackLinks={true} // pokaż linki powrotu
     />
   )
