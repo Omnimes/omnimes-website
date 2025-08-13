@@ -1,6 +1,6 @@
 ---
 title: 'Test'
-status: 'draft'
+status: 'published'
 author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
