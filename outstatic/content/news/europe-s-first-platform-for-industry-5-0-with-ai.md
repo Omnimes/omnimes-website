@@ -6,20 +6,22 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'europe-s-first-platform-for-industry-5-0-with-ai'
 description: 'The revolution in production digitization is coming.
-
 Discover OmniPlatform – a new era of industry 5.0'
 coverImage: '/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png'
 lang: 'en'
-publishedAt: '2025-05-28T21:31:34.831Z'
+publishedAt: '2025-08-19T21:31:34.000Z'
 ---
 
 ### **The revolution in production digitization is coming.**
 
 ### **Discover OmniPlatform – a new era of industry 5.0**
 
-OmniPlatform launching in summer 2025!
-In late July or early August 2025, we’re launching OmniPlatform – the first fully integrated cloud-based solution in Poland for rapid deployment of the OmniMES system. Designed to accelerate the digital transformation of factories in line with Industry 5.0 principles, it marks a new era in smart manufacturing.
-(The launch was rescheduled from June due to ongoing development work.)
+**OmniPlatform launch in November 2025!**
+
+Due to technical reasons and ongoing feature development, the launch of OmniPlatform has been postponed to **November 2025**. OmniPlatform is the first comprehensive cloud platform in Poland for instantly deploying the OmniMES system. It has been designed to accelerate the digital transformation of manufacturing plants in line with the concept of Industry 5.0.
+
+We appreciate your patience — the additional time will allow us to deliver an even more refined and innovative product.
+
 **Launch in just a few minutes**
 
 - automatic reports tailored to your production-

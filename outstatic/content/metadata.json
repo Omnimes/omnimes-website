@@ -1,6 +1,6 @@
 {
-  "commit": "4fae8b7ba5a9427e873ea070e22cb581a2ab019c",
-  "generated": "2025-08-13T11:14:40.071Z",
+  "commit": "97c3220332164c81c169d686b62642f211016224",
+  "generated": "2025-08-19T10:20:47.527Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1802,25 +1802,6 @@
     },
     {
       "__outstatic": {
-        "commit": "66d953a40dea483e28b2961fd83bbe5704881bb6",
-        "hash": "1803940300",
-        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
-      "description": "The revolution in production digitization is coming.\nDiscover OmniPlatform – a new era of industry 5.0",
-      "lang": "en",
-      "publishedAt": "2025-05-28T21:31:34.831Z",
-      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
-      "status": "published",
-      "title": "Europe's first platform for Industry 5.0 with AI"
-    },
-    {
-      "__outstatic": {
         "commit": "c848afca1c36fef161d0e12377c420ec6b5e6afa",
         "hash": "2155405079",
         "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
@@ -1871,6 +1852,25 @@
         "gpt"
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "97c3220332164c81c169d686b62642f211016224",
+        "hash": "2379090653",
+        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
+      "description": "The revolution in production digitization is coming. Discover OmniPlatform – a new era of industry 5.0",
+      "lang": "en",
+      "publishedAt": "2025-08-19T21:31:34.000Z",
+      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
+      "status": "published",
+      "title": "Europe's first platform for Industry 5.0 with AI"
     }
   ]
 }
