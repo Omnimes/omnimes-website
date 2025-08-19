@@ -4,9 +4,13 @@ type HeadingProps = {
   children?: React.ReactNode
   partTwo?: string
   colors?: boolean
+  /** Nazwa marki wstawiana zamiast "OmniMES" (opcjonalna). Domyślnie: "OmniMES". */
+  brand?: string
 }
 
-export const Heading = ({ omnimes, text, children, partTwo, colors }: HeadingProps) => {
+export const Heading = ({ omnimes, text, children, partTwo, colors, brand }: HeadingProps) => {
+  const brandLabel = (brand && brand.trim()) ? brand.trim() : "OmniMES"
+
   if (colors) {
     return (
       <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
@@ -16,20 +20,22 @@ export const Heading = ({ omnimes, text, children, partTwo, colors }: HeadingPro
       </h2>
     )
   }
+
   if (partTwo) {
-    // np. słowo omnimes kolorowe w srodku
+    // np. słowo brand (domyślnie OmniMES) kolorowe w środku
     return (
       <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
         {text}
         <span className="inline bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text font-semibold tracking-tight text-transparent">
-          &nbsp;OmniMES&nbsp;
+          &nbsp;{brandLabel}&nbsp;
         </span>
         {partTwo}
       </h2>
     )
   }
+
   if (children) {
-    // np z kropkami
+    // np. z kropkami/ikonami przed tekstem
     return (
       <h2 className="mx-auto mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
         {children}
@@ -37,11 +43,12 @@ export const Heading = ({ omnimes, text, children, partTwo, colors }: HeadingPro
       </h2>
     )
   }
+
   return (
     <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
       {omnimes && (
         <span className="inline bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text font-semibold tracking-tight text-transparent">
-          OmniMES&nbsp;
+          {brandLabel}&nbsp;
         </span>
       )}
       {text}

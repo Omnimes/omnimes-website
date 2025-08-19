@@ -197,9 +197,9 @@
     }
   },
   "CloudInfo": {
-    "smallSubtitle": "Zarządzanie serwerami OmniMES w chmurze",
-    "heading": "Pełna kontrola nad serwerami w chmurze w kilka minut",
-    "tagline": "OmniPlatforma – Twoje miejsce do zarządzania serwerami OmniMES.",
+    "smallSubtitle": "Zarządzanie OmniMES w chmurze",
+    "heading": "Pełna kontrola nad Omnimes w parę minut",
+    "tagline": "OmniPlatform – Twoje miejsce do zarządzania OmniMES.",
     "subTitle": "Szybki start i prosta konfiguracja",
     "blockTitle": "Uruchom, skonfiguruj, działaj",
     "p1": "OmniPlatforma to intuicyjna platforma WWW, która umożliwia łatwe uruchomienie i skonfigurowanie instancji OmniMES. Cały proces – łącznie z wyborem planu – zajmuje zwykle 5–10 minut.",

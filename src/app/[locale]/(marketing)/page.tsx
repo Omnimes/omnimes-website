@@ -1,8 +1,9 @@
+import { Suspense } from "react"
 import { setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
-import { Suspense } from "react"
 
+import { Skeleton } from "@/components/ui/Skeleton"
 import { BusinessBenefits } from "@/components/BusinessBenefits"
 import { ContactTwo } from "@/components/ContactTwo"
 import { Feature } from "@/components/Feature"
@@ -16,7 +17,6 @@ import { Roi } from "@/components/Roi"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import { Time } from "@/components/Time"
 import { Timeline } from "@/components/Timeline"
-import { Skeleton } from "@/components/ui/Skeleton"
 import { WhatIsOmnimes } from "@/components/WhatIsOmnimes"
 import { WhatPeopleSay } from "@/components/WhatPeopleSay"
 

@@ -47,18 +47,18 @@ export const InfoEnergyData = () => {
           <div className="mb-8 leading-tight md:text-center">
             <Subtitle text={t("collectionTitle")} size="3xl" />
           </div>
-          <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="overflow-hidden rounded-xl shadow-lg">
             <Image
-                src="/images/chartsEnergy.png"
-                alt={imgAlt}
-                width={1200}
-                height={800}
-                priority
-                className="h-auto w-full object-cover"
-                // to ucina wypaloną ramkę w pliku
-                style={{ clipPath: "inset(14px round 12px)" }} // ewentualnie 10–18px dopasuj
+              src="/images/chartsEnergy.png"
+              alt={imgAlt}
+              width={1200}
+              height={800}
+              priority
+              className="h-auto w-full object-cover"
+              // to ucina wypaloną ramkę w pliku
+              style={{ clipPath: "inset(14px round 12px)" }} // ewentualnie 10–18px dopasuj
             />
-            </div>
+          </div>
         </div>
 
         {/* Prawa kolumna – kafelki + ISO */}

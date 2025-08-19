@@ -23,7 +23,7 @@ export const InfoOmniCloud = () => {
     <>
       <div id="cloud" className="mt-12 scroll-mt-20 sm:mt-8 md:text-center">
         <SubtitleNormal text={t("smallSubtitle")} />
-        <Heading omnimes text={t("heading")} />
+        <Heading omnimes brand="OmniPlatform" text={t("heading")} />
         <DescriptionPrimary text={t("tagline")} />
       </div>
 
@@ -35,7 +35,7 @@ export const InfoOmniCloud = () => {
             <Subtitle text={t("subTitle")} size="3xl" />
           </div>
 
-          <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="overflow-hidden rounded-xl shadow-lg">
             <Image
               src={imgSrc}
               alt={imgAlt}
@@ -93,8 +93,8 @@ export const InfoOmniCloud = () => {
 
             <div className="relative flex w-full flex-col break-words p-3 text-left subpixel-antialiased">
               <p className="text-default-500 text-base font-normal">{t("p1")}</p>
-              <p className="mt-3 text-default-500 text-base font-normal">{t("p2")}</p>
-              <p className="mt-3 text-default-500 text-base font-normal">{t("p3")}</p>
+              <p className="text-default-500 mt-3 text-base font-normal">{t("p2")}</p>
+              <p className="text-default-500 mt-3 text-base font-normal">{t("p3")}</p>
             </div>
           </div>
         </div>
