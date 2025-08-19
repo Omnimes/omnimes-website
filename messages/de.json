@@ -173,6 +173,28 @@
     "descriptionCard4": "Ein expertenteam wird die effektive implementierung des systems durchführen, das auf den ergebnissen der analyse basiert. Gemeinsam werden wir das potenzial ihrer produktion freischalten, indem wir innovative technologische lösungen einführen.",
     "gateways": "Entdecken Sie unsere Kommunikations-Gateways"
   },
+  "EnergyInfo": {
+    "smallSubtitle": "Erfassung von Energiedaten",
+    "heading": "Kosten senken und Energieeffizienz steigern!",
+    "description": "OmniMES ermöglicht die präzise Überwachung des Strom- und Medienverbrauchs im Produktionsprozess.",
+    "collectionTitle": "Datenerfassung aus Energieträgern",
+    "card1": {
+      "title": "Produktkosten optimieren",
+      "body": "Analysieren Sie den Energieverbrauch je Linie und Artikel, senken Sie die Stückkosten und planen Sie gegen Tarife und Last."
+    },
+    "card2": {
+      "title": "Energieverluste identifizieren",
+      "body": "Erkennen Sie Ursachen für Mehrverbrauch: Stillstände, Anfahrprozesse, Leerlauf sowie Fehleinstellungen."
+    },
+    "card3": {
+      "title": "Prozesseffizienz erhöhen",
+      "body": "Verknüpfen Sie Energiedaten mit Produktionskennzahlen (OEE, Taktzeiten, Aufträge) für faktenbasierte Entscheidungen."
+    },
+    "iso": {
+      "badge": "Compliance & Nachhaltigkeit",
+      "text": "OmniMES unterstützt die Anforderungen von ISO 50001 (Energiemanagement) und ISO 14001 (Umweltmanagement)."
+    }
+  },
   "Feature": {
     "Monitoring": "Echtzeitüberwachung des maschinenstatus",
     "Monitoring_desc": "Absolute kontrolle über den maschinenstatus, ermöglicht sofortige reaktion auf mögliche ausfälle und effektive verfolgung der produktionsleistung in echtzeit.",

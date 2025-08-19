@@ -174,6 +174,28 @@
     "descriptionCard4": "Zespół ekspertów przeprowadzi skuteczne wdrożenie systemu, dostosowanego do wyników analizy. Razem odblokujemy potencjał Twojej produkcji, wprowadzając innowacyjne rozwiązania technologiczne.",
     "gateways":"Poznaj nasze bramki komunikacyjne"
   },
+  "EnergyInfo": {
+    "smallSubtitle": "Zbieranie danych z mediów energetycznych",
+    "heading": "Obniżaj koszty i zwiększaj efektywność energetyczną!",
+    "description": "System OmniMES umożliwia precyzyjne monitorowanie zużycia prądu i innych mediów w procesie produkcyjnym.",
+    "collectionTitle": "Zbieranie danych z mediów energetycznych",
+    "card1": {
+      "title": "Optymalizacja kosztów wytworzenia",
+      "body": "Analizuj zużycie energii na poziomie linii i produktu, aby obniżać koszt jednostkowy oraz planować produkcję pod kątem taryf i obciążeń."
+    },
+    "card2": {
+      "title": "Identyfikacja strat energetycznych",
+      "body": "Wykrywaj punkty poboru i zdarzenia powodujące nadmierne zużycie: postoje, rozruchy, tryby jałowe, błędy ustawień."
+    },
+    "card3": {
+      "title": "Wyższa efektywność procesów",
+      "body": "Łącz dane energii z danymi produkcyjnymi (OEE, czasy cykli, zlecenia), aby podejmować decyzje oparte na faktach."
+    },
+    "iso": {
+      "badge": "Zgodność i zrównoważony rozwój",
+      "text": "OmniMES wspiera spełnianie wymagań ISO 50001 (zarządzanie energią) i ISO 14001 (zarządzanie środowiskowe), pomagając osiągać cele oszczędności i sustainability."
+    }
+  },
   "Feature": {
     "Monitoring": "Monitoring statusu maszyn w czasie rzeczywistym",
     "Monitoring_desc": "Bezwzględna kontrola nad stanem maszyn, umożliwiająca natychmiastową reakcję na ewentualne awarie oraz skuteczne śledzenie efektywności produkcji w czasie rzeczywistym.",

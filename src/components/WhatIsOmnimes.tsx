@@ -1,7 +1,7 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import { useLocale, useTranslations } from "next-intl"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
@@ -59,16 +59,15 @@ export const WhatIsOmnimes = () => {
             priority
           />
           <div className="mt-6 flex justify-center">
-              <a
-                href="https://www.multiprojekt.pl/komunikacja-przemyslowa/bramki-protokolow/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 text-lg font-semibold text-white shadow-lg hover:scale-105 hover:shadow-xl transition"
-              >
-                {t("gateways")}
-              </a>
-            </div>
-
+            <a
+              href="https://www.multiprojekt.pl/komunikacja-przemyslowa/bramki-protokolow/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 text-lg font-semibold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
+            >
+              {t("gateways")}
+            </a>
+          </div>
         </div>
 
         {/* Prawa kolumna – 4 kafelki w układzie 2×2 */}
