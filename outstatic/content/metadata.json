@@ -1,7 +1,64 @@
 {
-  "commit": "97c3220332164c81c169d686b62642f211016224",
-  "generated": "2025-08-19T10:20:47.527Z",
+  "commit": "9d6a0e7c4080ae0171728b1828053b5493f52853",
+  "generated": "Tue, 19 Aug 2025 10:41:10 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "de5be8ecde9f307ab730c193095fbf2566e36fe4",
+        "hash": "3440728129",
+        "path": "outstatic/content/news/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "/images/piotr.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/webinar-A3MT.png",
+      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
+      "lang": "pl",
+      "publishedAt": "2024-08-09T10:56:10.162Z",
+      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
+      "status": "published",
+      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
+    },
+    {
+      "__outstatic": {
+        "commit": "8f6f4aaf74ce3fd11e8d183234d4b29ba0174f02",
+        "hash": "2379090653",
+        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
+      "description": "The revolution in production digitization is coming. Discover OmniPlatform – a new era of industry 5.0",
+      "lang": "en",
+      "publishedAt": "2025-08-19T21:31:34.000Z",
+      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
+      "status": "published",
+      "title": "Europe's first platform for Industry 5.0 with AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "c57b03baa68fcf3a4ec6b51b071cc82d16a5c290",
+        "hash": "772551379",
+        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-cxNj.png",
+      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T10:14:26.438Z",
+      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
+      "status": "published",
+      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
+    },
     {
       "__outstatic": {
         "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
@@ -80,22 +137,41 @@
     },
     {
       "__outstatic": {
-        "commit": "de5be8ecde9f307ab730c193095fbf2566e36fe4",
-        "hash": "3440728129",
-        "path": "outstatic/content/news/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
+        "commit": "e6ddc6a83cbcea17119f1aefa8a7bc897b0a70a0",
+        "hash": "3564945283",
+        "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
       },
       "author": {
-        "name": "Piotr Sierant",
-        "picture": "/images/piotr.png"
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
       },
       "collection": "news",
-      "coverImage": "/images/webinar-A3MT.png",
-      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji",
       "lang": "pl",
-      "publishedAt": "2024-08-09T10:56:10.162Z",
-      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
+      "publishedAt": "2024-06-21T06:10:18.344Z",
+      "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
       "status": "published",
-      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
+      "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "12d1efb81e7de51aaea5c4136525a1ccbc53419f",
+        "hash": "431708842",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/blog_omni-A4Mj.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:53:51.000Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -137,25 +213,6 @@
     },
     {
       "__outstatic": {
-        "commit": "0ae5d4696b6cfa7e89424ec5b592e2729fa72093",
-        "hash": "583675740",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T09:53:51.725Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
-    },
-    {
-      "__outstatic": {
         "commit": "de94f7c39e04317ea2e34d112b8d8b8750f9bd98",
         "hash": "290669405",
         "path": "outstatic/content/news/omnimes-from-multiprojekt-can-be-financed-from-european-funds-for-the-years-2021-2027.md"
@@ -175,22 +232,64 @@
     },
     {
       "__outstatic": {
-        "commit": "c57b03baa68fcf3a4ec6b51b071cc82d16a5c290",
-        "hash": "772551379",
-        "path": "outstatic/content/news/omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027.md"
+        "commit": "5fb6226c88078255b4d8b207263eaa5b8bfa2c49",
+        "hash": "2594216931",
+        "path": "outstatic/content/posts/der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/image-cxNj.png",
-      "description": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T10:14:26.438Z",
-      "slug": "omnimes-firmy-multiprojekt-moze-byc-sfinansowany-z-funduszy-europejskich-na-lata-2021-2027",
+      "collection": "posts",
+      "coverImage": "/images/web3-A5ND.png",
+      "description": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.",
+      "lang": "de",
+      "publishedAt": "2024-12-09T12:12:36.342Z",
+      "slug": "der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen",
       "status": "published",
-      "title": "Omnimes firmy Multiprojekt może być sfinansowany z Funduszy Europejskich na lata 2021-2027"
+      "tags": [
+        {
+          "label": "Web3",
+          "value": "web3"
+        },
+        {
+          "label": "Blockchain",
+          "value": "blockchain"
+        },
+        {
+          "label": "RES",
+          "value": "res"
+        },
+        {
+          "label": "Erneuerbare Energiequellen",
+          "value": "renewableEnergySources"
+        },
+        {
+          "label": "Energietokenisierung",
+          "value": "energyTokenization"
+        },
+        {
+          "label": "Smart Contracts",
+          "value": "smartContracts"
+        },
+        {
+          "label": "Energieverbrauchsüberwachung",
+          "value": "energyConsumptionMonitoring"
+        },
+        {
+          "label": "Automatisierte Abrechnungen",
+          "value": "automatedSettlements"
+        },
+        {
+          "label": "P2P-Energiehandel",
+          "value": "p2pEnergyTrading"
+        },
+        {
+          "label": "Nachhaltige Energie",
+          "value": "sustainableEnergy"
+        }
+      ],
+      "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen"
     },
     {
       "__outstatic": {
@@ -231,39 +330,6 @@
     },
     {
       "__outstatic": {
-        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
-        "hash": "2061075091",
-        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/data-QzNj.png",
-      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
-      "lang": "de",
-      "publishedAt": "2024-09-15T10:29:21.000Z",
-      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
-      "status": "published",
-      "tags": [
-        {
-          "label": "industrielle Datenerfassung",
-          "value": "industrielle-datenerfassung"
-        },
-        {
-          "label": "Maschinendaten",
-          "value": "maschinendaten"
-        },
-        {
-          "label": "maschinelles Lernen in der Industrie",
-          "value": "maschinelles-lernen-in-der-industrie"
-        }
-      ],
-      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
-    },
-    {
-      "__outstatic": {
         "commit": "d06daf8769b722de5fc0a0bad21086e7fe5baf72",
         "hash": "20215992",
         "path": "outstatic/content/posts/data-visualization-the-success-of-analysis-redash.md"
@@ -301,6 +367,39 @@
     },
     {
       "__outstatic": {
+        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
+        "hash": "2061075091",
+        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
+      "lang": "de",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
+      "status": "published",
+      "tags": [
+        {
+          "label": "industrielle Datenerfassung",
+          "value": "industrielle-datenerfassung"
+        },
+        {
+          "label": "Maschinendaten",
+          "value": "maschinendaten"
+        },
+        {
+          "label": "maschinelles Lernen in der Industrie",
+          "value": "maschinelles-lernen-in-der-industrie"
+        }
+      ],
+      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
+    },
+    {
+      "__outstatic": {
         "commit": "4fb00112af2fe9f1d1ac9a3b7ef9f19dcc16714e",
         "hash": "1289787886",
         "path": "outstatic/content/posts/collecting-data-from-industrial-machines-methods-and-tools.md"
@@ -334,22 +433,29 @@
     },
     {
       "__outstatic": {
-        "commit": "e6ddc6a83cbcea17119f1aefa8a7bc897b0a70a0",
-        "hash": "3564945283",
-        "path": "outstatic/content/news/wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji.md"
+        "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
+        "hash": "4201941181",
+        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:10:18.344Z",
-      "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
+      "lang": "en",
+      "publishedAt": "2025-05-28T00:00:00.000Z",
+      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
       "status": "published",
-      "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
+      "tags": [
+        "langchain",
+        "faiss",
+        "gpt",
+        "documentation",
+        "ai-assistant"
+      ],
+      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
     },
     {
       "__outstatic": {
@@ -517,124 +623,6 @@
     },
     {
       "__outstatic": {
-        "commit": "5fb6226c88078255b4d8b207263eaa5b8bfa2c49",
-        "hash": "2594216931",
-        "path": "outstatic/content/posts/der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/web3-A5ND.png",
-      "description": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.",
-      "lang": "de",
-      "publishedAt": "2024-12-09T12:12:36.342Z",
-      "slug": "der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Web3",
-          "value": "web3"
-        },
-        {
-          "label": "Blockchain",
-          "value": "blockchain"
-        },
-        {
-          "label": "RES",
-          "value": "res"
-        },
-        {
-          "label": "Erneuerbare Energiequellen",
-          "value": "renewableEnergySources"
-        },
-        {
-          "label": "Energietokenisierung",
-          "value": "energyTokenization"
-        },
-        {
-          "label": "Smart Contracts",
-          "value": "smartContracts"
-        },
-        {
-          "label": "Energieverbrauchsüberwachung",
-          "value": "energyConsumptionMonitoring"
-        },
-        {
-          "label": "Automatisierte Abrechnungen",
-          "value": "automatedSettlements"
-        },
-        {
-          "label": "P2P-Energiehandel",
-          "value": "p2pEnergyTrading"
-        },
-        {
-          "label": "Nachhaltige Energie",
-          "value": "sustainableEnergy"
-        }
-      ],
-      "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen"
-    },
-    {
-      "__outstatic": {
-        "commit": "94a098b7791b83f2097fbce68995879551a0fc8e",
-        "hash": "4112578455",
-        "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1.png",
-      "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
-      "lang": "pl",
-      "publishedAt": "2024-06-20T12:47:51.265Z",
-      "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Ollama",
-          "value": "ollama"
-        },
-        {
-          "label": "llama3",
-          "value": "llama3"
-        },
-        {
-          "label": "Meta",
-          "value": "meta"
-        },
-        {
-          "label": "Gemma",
-          "value": "gemma"
-        },
-        {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
-        },
-        {
-          "label": "AI local",
-          "value": "aiLocal"
-        }
-      ],
-      "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
-    },
-    {
-      "__outstatic": {
         "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
         "hash": "2451523430",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
@@ -749,6 +737,63 @@
     },
     {
       "__outstatic": {
+        "commit": "94a098b7791b83f2097fbce68995879551a0fc8e",
+        "hash": "4112578455",
+        "path": "outstatic/content/posts/ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "Projekt Ollama to otwarte, bezpłatne oprogramowanie umożliwiające uruchamianie lokalnych modeli AI typu LLM (duże modele językowe) na własnym komputerze lub serwerze. Dzięki niskim wymaganiom sprzętowym, oprogramowanie to jest dostępne dla średnich i małych firm, oferując dostęp do 93 modeli AI bez większych ograniczeń.",
+      "lang": "pl",
+      "publishedAt": "2024-06-20T12:47:51.265Z",
+      "slug": "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Ollama",
+          "value": "ollama"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        }
+      ],
+      "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
+    },
+    {
+      "__outstatic": {
         "commit": "5755fbb0c9bebd63a54a2f061caa781338c82d76",
         "hash": "3421174015",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
@@ -803,6 +848,33 @@
         }
       ],
       "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
+    },
+    {
+      "__outstatic": {
+        "commit": "c442f09866d15cc343a5ef9f4fbf99152d0db499",
+        "hash": "1398399191",
+        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
+      "lang": "pl",
+      "publishedAt": "2025-05-28T00:00:00.000Z",
+      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
+      "status": "published",
+      "tags": [
+        "modeleLlm",
+        "langchainLlm",
+        "langchain",
+        "faiss",
+        "chatbot",
+        "gpt"
+      ],
+      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
     },
     {
       "__outstatic": {
@@ -1799,78 +1871,6 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "c848afca1c36fef161d0e12377c420ec6b5e6afa",
-        "hash": "2155405079",
-        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
-      "lang": "en",
-      "publishedAt": "2025-05-28T00:00:00.000Z",
-      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
-      "status": "published",
-      "tags": [
-        "langchain",
-        "faiss",
-        "gpt",
-        "documentation",
-        "ai-assistant"
-      ],
-      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
-    },
-    {
-      "__outstatic": {
-        "commit": "8a5192dd0a8c521931b83ac48bad6a41ecf1a472",
-        "hash": "3739054018",
-        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
-      "lang": "pl",
-      "publishedAt": "2025-05-28T00:00:00.000Z",
-      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
-      "status": "published",
-      "tags": [
-        "modeleLlm",
-        "langchainLlm",
-        "langchain",
-        "faiss",
-        "chatbot",
-        "gpt"
-      ],
-      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
-    },
-    {
-      "__outstatic": {
-        "commit": "97c3220332164c81c169d686b62642f211016224",
-        "hash": "2379090653",
-        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
-      "description": "The revolution in production digitization is coming. Discover OmniPlatform – a new era of industry 5.0",
-      "lang": "en",
-      "publishedAt": "2025-08-19T21:31:34.000Z",
-      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
-      "status": "published",
-      "title": "Europe's first platform for Industry 5.0 with AI"
     }
   ]
 }
