@@ -5,20 +5,21 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai'
-description: 'Przygotuj się na nową erę zarządzania produkcją!
-Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów'
+description: 'Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów'
 coverImage: '/images/blog_omni-A4Mj.png'
 lang: 'pl'
-publishedAt: '2025-05-12T09:53:51.725Z'
+publishedAt: '2025-08-19T09:53:51.000Z'
 ---
 
 ### Nadchodzi rewolucja w cyfryzacji produkcji.
 
 ### Poznaj **OmniPlatform** – nową erę przemysłu 5.0
 
-Premiera OmniPlatform już latem 2025!
-Na przełomie lipca i sierpnia 2025 roku rusza OmniPlatform – pierwsza w Polsce kompleksowa platforma chmurowa do błyskawicznego uruchamiania systemu OmniMES. To nowoczesne rozwiązanie stworzone z myślą o przyspieszeniu cyfrowej transformacji zakładów produkcyjnych zgodnie z ideą Przemysłu 5.0.
-(Start został przesunięty z czerwca ze względu na trwające prace rozwojowe.)
+**Premiera OmniPlatform w listopadzie 2025!**
+
+Z przyczyn technicznych i związanych z dalszym rozwojem funkcjonalności premiera OmniPlatform została przesunięta na listopad 2025 roku. OmniPlatform to pierwsza w Polsce kompleksowa platforma chmurowa do błyskawicznego uruchamiania systemu OmniMES. Rozwiązanie zostało stworzone z myślą o przyspieszeniu cyfrowej transformacji zakładów produkcyjnych zgodnie z ideą Przemysłu 5.0.
+
+Dziękujemy za cierpliwość – dodatkowy czas pozwoli nam dostarczyć jeszcze bardziej dopracowany i innowacyjny produkt.
 
 **Uruchomienie w zaledwie kilka minut**
 

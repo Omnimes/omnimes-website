@@ -1,6 +1,6 @@
 {
-  "commit": "4fae8b7ba5a9427e873ea070e22cb581a2ab019c",
-  "generated": "2025-08-13T11:14:40.071Z",
+  "commit": "97c3220332164c81c169d686b62642f211016224",
+  "generated": "2025-08-19T10:19:35.753Z",
   "metadata": [
     {
       "__outstatic": {
@@ -134,25 +134,6 @@
       "slug": "omnimes-von-multiprojekt-kann-von-eu-fonds-fuer-die-jahre-2021-2027-finanziert-werden",
       "status": "published",
       "title": "Omnimes von Multiprojekt kann von EU-Fonds für die Jahre 2021-2027 finanziert werden"
-    },
-    {
-      "__outstatic": {
-        "commit": "0ae5d4696b6cfa7e89424ec5b592e2729fa72093",
-        "hash": "583675740",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-05-12T09:53:51.725Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
-      "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -1871,6 +1852,25 @@
         "gpt"
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "97c3220332164c81c169d686b62642f211016224",
+        "hash": "431708842",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/blog_omni-A4Mj.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:53:51.000Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "status": "published",
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     }
   ]
 }
