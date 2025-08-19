@@ -9,7 +9,7 @@ type HeadingProps = {
 }
 
 export const Heading = ({ omnimes, text, children, partTwo, colors, brand }: HeadingProps) => {
-  const brandLabel = (brand && brand.trim()) ? brand.trim() : "OmniMES"
+  const brandLabel = brand && brand.trim() ? brand.trim() : "OmniMES"
 
   if (colors) {
     return (

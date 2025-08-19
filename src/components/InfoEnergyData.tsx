@@ -11,7 +11,6 @@ export const InfoEnergyData = () => {
   const t = useTranslations("EnergyInfo")
   const locale = useLocale()
 
-  const imgSrc = "/images/chartsEnergy.png"
   const imgAlt =
     locale === "pl"
       ? "Wykresy zużycia energii w OmniMES"
@@ -19,7 +18,6 @@ export const InfoEnergyData = () => {
         ? "Energieverbrauchs-Diagramme in OmniMES"
         : "Energy consumption charts in OmniMES"
 
-  // Spójne klasy kart jak w WhatIsOmnimes
   const cardCls =
     "relative box-border flex flex-col overflow-hidden rounded-large shadow-medium " +
     "bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8] " +
@@ -34,13 +32,14 @@ export const InfoEnergyData = () => {
 
   return (
     <>
+      {/* Nagłówek sekcji */}
       <div id="energy" className="mt-12 scroll-mt-20 sm:mt-8 md:text-center">
         <SubtitleNormal text={t("smallSubtitle")} />
         <Heading omnimes text={t("heading")} />
         <DescriptionPrimary text={t("description")} />
       </div>
 
-      {/* LEWA/PRAWA – obraz + treść */}
+      {/* Layout: obraz + kafelki */}
       <div className="my-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
         {/* Lewa kolumna – obraz */}
         <div className="order-1 lg:order-none">
@@ -51,17 +50,16 @@ export const InfoEnergyData = () => {
             <Image
               src="/images/chartsEnergy.png"
               alt={imgAlt}
-              width={1200}
-              height={800}
+              width={1600}
+              height={900}
               priority
-              className="h-auto w-full object-cover"
-              // to ucina wypaloną ramkę w pliku
-              style={{ clipPath: "inset(14px round 12px)" }} // ewentualnie 10–18px dopasuj
+              className="w-full h-auto object-cover"
+              style={{ clipPath: "inset(14px round 12px)" }}
             />
           </div>
         </div>
 
-        {/* Prawa kolumna – kafelki + ISO */}
+        {/* Prawa kolumna – kafelki */}
         <div className="grid grid-cols-1 gap-4">
           {/* Kafelek 1 */}
           <div className={cardCls} tabIndex={-1}>
@@ -87,7 +85,9 @@ export const InfoEnergyData = () => {
               <p className="text-base font-semibold">{t("card1.title")}</p>
             </div>
             <div className={cardBody}>
-              <p className="text-default-500 text-base font-normal">{t("card1.body")}</p>
+              <p className="text-default-500 text-base font-normal">
+                {t("card1.body")}
+              </p>
             </div>
           </div>
 
@@ -116,7 +116,9 @@ export const InfoEnergyData = () => {
               <p className="text-base font-semibold">{t("card2.title")}</p>
             </div>
             <div className={cardBody}>
-              <p className="text-default-500 text-base font-normal">{t("card2.body")}</p>
+              <p className="text-default-500 text-base font-normal">
+                {t("card2.body")}
+              </p>
             </div>
           </div>
 
@@ -145,47 +147,43 @@ export const InfoEnergyData = () => {
               <p className="text-base font-semibold">{t("card3.title")}</p>
             </div>
             <div className={cardBody}>
-              <p className="text-default-500 text-base font-normal">{t("card3.body")}</p>
-            </div>
-          </div>
-
-          {/* Kafelek 4 – ISO */}
-          <div className={cardCls} tabIndex={-1}>
-            <div className={cardHeader}>
-              <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
-                {/* Ikona – liść/eko */}
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  className="text-pink-500"
-                >
-                  <path
-                    d="M12 3c4.97 0 9 4.03 9 9 0 4.24-2.95 7.78-6.9 8.77-2.42.61-5.09-.26-6.68-2.27C5.82 16.31 5 14.24 5 12c0-4.97 4.03-9 9-9Z"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M9.5 14.5c1-2 2.5-3 5-3"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <p className="text-base font-semibold">{t("iso.badge")}</p>
-            </div>
-            <div className={cardBody}>
-              <p className="text-default-500 text-base font-normal">{t("iso.text")}</p>
+              <p className="text-default-500 text-base font-normal">
+                {t("card3.body")}
+              </p>
             </div>
           </div>
         </div>
       </div>
+        {/* ISO / Info box */}
+        <div className="flex w-full items-start gap-3 rounded-xl border-l-4 border-pink-500 bg-pink-50 p-4 dark:bg-pink-950/40">
+        <div className="flex-shrink-0 text-pink-500">
+            {/* Ikona info */}
+            <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            className="text-pink-500"
+            >
+            <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20Zm.75 15h-1.5v-6h1.5v6Zm0-8h-1.5V7h1.5v2Z"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            </svg>
+        </div>
+        <div>
+            <p className="text-sm font-semibold text-pink-700 dark:text-pink-300">
+            {t("iso.badge")}
+            </p>
+            <p className="mt-1 text-base text-default-600 dark:text-default-200">
+            {t("iso.text")}
+            </p>
+        </div>
+        </div>
     </>
   )
 }
