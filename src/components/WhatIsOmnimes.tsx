@@ -49,7 +49,6 @@ export const WhatIsOmnimes = () => {
             {/* Duży, responsywny podtytuł */}
             <Subtitle text={t("subTitle")} size="4xl" />
           </div>
-
           <Image
             key={imgSrc} // wymusza podmianę po zmianie języka
             src={imgSrc}
@@ -59,6 +58,17 @@ export const WhatIsOmnimes = () => {
             className="h-auto w-full rounded-xl shadow-md"
             priority
           />
+          <div className="mt-6 flex justify-center">
+              <a
+                href="https://www.multiprojekt.pl/komunikacja-przemyslowa/bramki-protokolow/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 text-lg font-semibold text-white shadow-lg hover:scale-105 hover:shadow-xl transition"
+              >
+                {t("gateways")}
+              </a>
+            </div>
+
         </div>
 
         {/* Prawa kolumna – 4 kafelki w układzie 2×2 */}

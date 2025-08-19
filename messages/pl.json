@@ -84,7 +84,7 @@
     "documentationPL": "Dokumentacja PL",
     "documentationEN": "Dokumentacja EN",
     "chatDocs":"ChatDocs",
-    "implementation":"Realziacje",
+    "implementation":"Realizacje",
     "courses":"Kursy"
   },
   "Blog": {
@@ -171,7 +171,8 @@
     "title3": "Przygotowanie infrastruktury fabryki",
     "descriptionCard3": "Przystąpimy do kompleksowego przygotowania infrastruktury fabryki, zapewniając niezbędne środki do efektywnego wdrożenia rozwiązań cyfrowych. Naszym celem jest stworzenie solidnej podstawy dla nowoczesnej produkcji.",
     "title4": "Wdrożenie systemu",
-    "descriptionCard4": "Zespół ekspertów przeprowadzi skuteczne wdrożenie systemu, dostosowanego do wyników analizy. Razem odblokujemy potencjał Twojej produkcji, wprowadzając innowacyjne rozwiązania technologiczne."
+    "descriptionCard4": "Zespół ekspertów przeprowadzi skuteczne wdrożenie systemu, dostosowanego do wyników analizy. Razem odblokujemy potencjał Twojej produkcji, wprowadzając innowacyjne rozwiązania technologiczne.",
+    "gateways":"Poznaj nasze bramki komunikacyjne"
   },
   "Feature": {
     "Monitoring": "Monitoring statusu maszyn w czasie rzeczywistym",

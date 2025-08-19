@@ -9,26 +9,28 @@ interface SubtitleProps {
 }
 
 // Uniwersalny komponent Subtitle
-export const Subtitle: React.FC<SubtitleProps> = ({ 
-  text, 
-  size = "lg", 
+export const Subtitle: React.FC<SubtitleProps> = ({
+  text,
+  size = "lg",
   className = "",
-  showUnderline = true 
+  showUnderline = true,
 }) => {
   // Mapowanie rozmiarów
   const sizeClasses = {
     sm: "text-sm",
-    base: "text-base", 
+    base: "text-base",
     lg: "text-lg",
     xl: "text-xl",
     "2xl": "text-2xl",
     "3xl": "text-3xl",
-    "4xl": "text-4xl"
+    "4xl": "text-4xl",
   }
 
   return (
     <small className={`relative inline-flex ${className}`}>
-      <span className={`font-caveat text-primary-500 mb-1 font-medium sm:mb-0 ${sizeClasses[size]}`}>
+      <span
+        className={`font-caveat text-primary-500 mb-1 font-medium sm:mb-0 ${sizeClasses[size]}`}
+      >
         {text}
       </span>
       {showUnderline && (
@@ -50,9 +52,9 @@ export const Subtitle: React.FC<SubtitleProps> = ({
 }
 
 // Komponent SubtitleNormal pozostaje bez zmian
-export const SubtitleNormal: React.FC<{ text: string; className?: string }> = ({ 
-  text, 
-  className = "" 
+export const SubtitleNormal: React.FC<{ text: string; className?: string }> = ({
+  text,
+  className = "",
 }) => {
   return (
     <small className={`text-primary-500 text-base font-semibold leading-7 ${className}`}>
