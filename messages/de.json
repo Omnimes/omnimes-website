@@ -195,6 +195,17 @@
       "text": "OmniMES unterstützt die Anforderungen von ISO 50001 (Energiemanagement) und ISO 14001 (Umweltmanagement)."
     }
   },
+  "CloudInfo": {
+    "smallSubtitle": "Verwaltung von OmniMES-Servern in der Cloud",
+    "heading": "Volle Kontrolle über Cloud-Server in wenigen Minuten",
+    "tagline": "OmniPlatform – Ihre zentrale Stelle zur Verwaltung von OmniMES-Servern.",
+    "subTitle": "Schneller Start & einfache Konfiguration",
+    "blockTitle": "Starten, konfigurieren, loslegen",
+    "p1": "OmniPlatform ist eine intuitive Web-Plattform, mit der Sie OmniMES-Instanzen mühelos starten und konfigurieren. Der gesamte Ablauf – inklusive Tarifwahl – dauert in der Regel 5–10 Minuten.",
+    "p2": "Aufgrund des großen Interesses haben wir die Plattform für alle geöffnet. Mit einem Abonnement erhalten Sie sofortigen Zugriff auf OmniMES und können direkt loslegen.",
+    "p3": "Gewinnen Sie Freiheit und Komfort in der Infrastrukturverwaltung: Automatisierung, schnelle Bereitstellungen und volle Kontrolle – damit Sie sich auf die Produktion statt auf Server konzentrieren.",
+    "cta": "Zur OmniPlatform"
+  },
   "Feature": {
     "Monitoring": "Echtzeitüberwachung des maschinenstatus",
     "Monitoring_desc": "Absolute kontrolle über den maschinenstatus, ermöglicht sofortige reaktion auf mögliche ausfälle und effektive verfolgung der produktionsleistung in echtzeit.",

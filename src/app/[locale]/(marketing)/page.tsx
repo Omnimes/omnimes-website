@@ -9,6 +9,7 @@ import { Feature } from "@/components/Feature"
 import { Hero } from "@/components/Hero"
 import { HeroImage } from "@/components/HeroImage"
 import { InfoEnergyData } from "@/components/InfoEnergyData"
+import { InfoOmniCloud } from "@/components/InfoOmniCloud"
 import { LastUpdates } from "@/components/LastUpdates"
 import { Performance } from "@/components/Performance"
 import { Roi } from "@/components/Roi"
@@ -66,6 +67,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <InfoEnergyData />
       {/* <ComponentVideo /> */}
       <Time />
+      <InfoOmniCloud />
       <Performance />
       <Timeline />
       <ContactTwo />

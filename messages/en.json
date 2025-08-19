@@ -183,6 +183,17 @@
       "title": "Optimize product cost",
       "body": "Analyze energy usage per line and SKU to lower unit cost and plan production against tariffs and load."
     },
+    "CloudInfo": {
+      "smallSubtitle": "Manage OmniMES servers in the cloud",
+      "heading": "Full control over cloud servers in minutes",
+      "tagline": "OmniPlatform – your place to manage OmniMES servers.",
+      "subTitle": "Fast start & simple setup",
+      "blockTitle": "Launch, configure, go",
+      "p1": "OmniPlatform is an intuitive web platform that lets you launch and configure OmniMES instances with ease. The entire process — including plan selection — typically takes 5–10 minutes.",
+      "p2": "Responding to strong interest in the system, we opened the platform to everyone. With a subscription you can get instant access to OmniMES and get started right away.",
+      "p3": "Gain freedom and convenience in infrastructure management: automation, fast deployments and full control — so you can focus on production, not servers.",
+      "cta": "Go to OmniPlatform"
+    },
     "card2": {
       "title": "Identify energy losses",
       "body": "Detect sources and events driving overconsumption: downtimes, startups, idle modes, and setup errors."

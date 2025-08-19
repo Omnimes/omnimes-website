@@ -47,14 +47,18 @@ export const InfoEnergyData = () => {
           <div className="mb-8 leading-tight md:text-center">
             <Subtitle text={t("collectionTitle")} size="3xl" />
           </div>
-          <Image
-            src={imgSrc}
-            alt={imgAlt}
-            width={1200}
-            height={800}
-            className="h-auto w-full rounded-xl"  // usunięto shadow-md
-            priority
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <Image
+                src="/images/chartsEnergy.png"
+                alt={imgAlt}
+                width={1200}
+                height={800}
+                priority
+                className="h-auto w-full object-cover"
+                // to ucina wypaloną ramkę w pliku
+                style={{ clipPath: "inset(14px round 12px)" }} // ewentualnie 10–18px dopasuj
             />
+            </div>
         </div>
 
         {/* Prawa kolumna – kafelki + ISO */}
@@ -64,8 +68,20 @@ export const InfoEnergyData = () => {
             <div className={cardHeader}>
               <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
                 {/* Ikona oszczędności */}
-                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" className="text-pink-500">
-                  <path d="M4 12h16M4 16h10M4 8h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  className="text-pink-500"
+                >
+                  <path
+                    d="M4 12h16M4 16h10M4 8h14"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </div>
               <p className="text-base font-semibold">{t("card1.title")}</p>
@@ -80,8 +96,21 @@ export const InfoEnergyData = () => {
             <div className={cardHeader}>
               <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
                 {/* Ikona strat */}
-                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" className="text-pink-500">
-                  <path d="M6 18L18 6M14 6h4v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  className="text-pink-500"
+                >
+                  <path
+                    d="M6 18L18 6M14 6h4v4"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </div>
               <p className="text-base font-semibold">{t("card2.title")}</p>
@@ -96,8 +125,21 @@ export const InfoEnergyData = () => {
             <div className={cardHeader}>
               <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
                 {/* Ikona procesu */}
-                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" className="text-pink-500">
-                  <path d="M4 7h6v6H4zM14 11h6v6h-6zM10 10l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  className="text-pink-500"
+                >
+                  <path
+                    d="M4 7h6v6H4zM14 11h6v6h-6zM10 10l4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </div>
               <p className="text-base font-semibold">{t("card3.title")}</p>
@@ -108,41 +150,40 @@ export const InfoEnergyData = () => {
           </div>
 
           {/* Kafelek 4 – ISO */}
-        <div className={cardCls} tabIndex={-1}>
-        <div className={cardHeader}>
-            <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
-            {/* Ikona – liść/eko */}
-            <svg
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                fill="none"
-                className="text-pink-500"
-            >
-                <path
-                d="M12 3c4.97 0 9 4.03 9 9 0 4.24-2.95 7.78-6.9 8.77-2.42.61-5.09-.26-6.68-2.27C5.82 16.31 5 14.24 5 12c0-4.97 4.03-9 9-9Z"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                />
-                <path
-                d="M9.5 14.5c1-2 2.5-3 5-3"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                />
-            </svg>
+          <div className={cardCls} tabIndex={-1}>
+            <div className={cardHeader}>
+              <div className="bg-secondary-100/80 flex items-center justify-center rounded-full p-2 text-pink-500">
+                {/* Ikona – liść/eko */}
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  className="text-pink-500"
+                >
+                  <path
+                    d="M12 3c4.97 0 9 4.03 9 9 0 4.24-2.95 7.78-6.9 8.77-2.42.61-5.09-.26-6.68-2.27C5.82 16.31 5 14.24 5 12c0-4.97 4.03-9 9-9Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M9.5 14.5c1-2 2.5-3 5-3"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <p className="text-base font-semibold">{t("iso.badge")}</p>
             </div>
-            <p className="text-base font-semibold">{t("iso.badge")}</p>
-        </div>
-        <div className={cardBody}>
-            <p className="text-default-500 text-base font-normal">{t("iso.text")}</p>
-        </div>
-        </div>
-
+            <div className={cardBody}>
+              <p className="text-default-500 text-base font-normal">{t("iso.text")}</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
