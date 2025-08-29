@@ -12,7 +12,9 @@
 // export default function RootLayout({ children }: Props) {
 //   return children
 // }
-// app/layout.tsx
+
+
+
 // app/layout.tsx
 import Script from "next/script";
 import { ReactNode } from "react";
@@ -20,15 +22,12 @@ import { ReactNode } from "react";
 import "@/css/tailwind.css";
 import "pliny/search/algolia.css";
 
-type Props = {
-  children: ReactNode;
-};
+type Props = { children: ReactNode };
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="pl">
+    <html lang="pl" suppressHydrationWarning>
       <head>
-        {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -36,10 +35,11 @@ export default function RootLayout({ children }: Props) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-W8PM5ZPM');`}
         </Script>
-        {/* End Google Tag Manager */}
       </head>
-      <body>
-        {/* Google Tag Manager (noscript) */}
+      <body
+        className="relative h-full min-h-screen overflow-x-hidden"
+        suppressHydrationWarning
+      >
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-W8PM5ZPM"
@@ -49,9 +49,9 @@ export default function RootLayout({ children }: Props) {
             title="Google Tag Manager"
           />
         </noscript>
-        {/* End Google Tag Manager */}
         {children}
       </body>
     </html>
   );
 }
+
