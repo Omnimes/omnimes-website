@@ -1,7 +1,7 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import { useLocale, useTranslations } from "next-intl"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
@@ -53,7 +53,7 @@ export const InfoEnergyData = () => {
               width={1600}
               height={900}
               priority
-              className="w-full h-auto object-cover"
+              className="h-auto w-full object-cover"
               style={{ clipPath: "inset(14px round 12px)" }}
             />
           </div>
@@ -85,9 +85,7 @@ export const InfoEnergyData = () => {
               <p className="text-base font-semibold">{t("card1.title")}</p>
             </div>
             <div className={cardBody}>
-              <p className="text-default-500 text-base font-normal">
-                {t("card1.body")}
-              </p>
+              <p className="text-default-500 text-base font-normal">{t("card1.body")}</p>
             </div>
           </div>
 
@@ -116,9 +114,7 @@ export const InfoEnergyData = () => {
               <p className="text-base font-semibold">{t("card2.title")}</p>
             </div>
             <div className={cardBody}>
-              <p className="text-default-500 text-base font-normal">
-                {t("card2.body")}
-              </p>
+              <p className="text-default-500 text-base font-normal">{t("card2.body")}</p>
             </div>
           </div>
 
@@ -147,43 +143,37 @@ export const InfoEnergyData = () => {
               <p className="text-base font-semibold">{t("card3.title")}</p>
             </div>
             <div className={cardBody}>
-              <p className="text-default-500 text-base font-normal">
-                {t("card3.body")}
-              </p>
+              <p className="text-default-500 text-base font-normal">{t("card3.body")}</p>
             </div>
           </div>
         </div>
       </div>
-        {/* ISO / Info box */}
-        <div className="flex w-full items-start gap-3 rounded-xl border-l-4 border-pink-500 bg-pink-50 p-4 dark:bg-pink-950/40">
-        <div className="flex-shrink-0 text-pink-500">
-            {/* Ikona info */}
-            <svg
+      {/* ISO / Info box */}
+      <div className="flex w-full items-start gap-3 rounded-xl border-l-4 border-pink-500 bg-pink-50 p-4 dark:bg-pink-950/40">
+        <div className="shrink-0 text-pink-500">
+          {/* Ikona info */}
+          <svg
             aria-hidden="true"
             viewBox="0 0 24 24"
             width="24"
             height="24"
             fill="none"
             className="text-pink-500"
-            >
+          >
             <path
-                d="M12 2a10 10 0 100 20 10 10 0 000-20Zm.75 15h-1.5v-6h1.5v6Zm0-8h-1.5V7h1.5v2Z"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+              d="M12 2a10 10 0 100 20 10 10 0 000-20Zm.75 15h-1.5v-6h1.5v6Zm0-8h-1.5V7h1.5v2Z"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
-            </svg>
+          </svg>
         </div>
         <div>
-            <p className="text-sm font-semibold text-pink-700 dark:text-pink-300">
-            {t("iso.badge")}
-            </p>
-            <p className="mt-1 text-base text-default-600 dark:text-default-200">
-            {t("iso.text")}
-            </p>
+          <p className="text-sm font-semibold text-pink-700 dark:text-pink-300">{t("iso.badge")}</p>
+          <p className="text-default-600 dark:text-default-200 mt-1 text-base">{t("iso.text")}</p>
         </div>
-        </div>
+      </div>
     </>
   )
 }
