@@ -17,6 +17,24 @@
     "implementationNotFound": "Nie znaleziono wdrożen"
   },
 
+  "cookie": {
+    "message": "Używamy plików cookie do analityki i personalizacji reklam. Możesz zaakceptować wszystkie, odrzucić lub wybrać kategorie. Szczegóły w Polityce prywatności.",
+    "details": {
+      "functional": "Funkcjonalne (wymagane)",
+      "security": "Bezpieczeństwo (wymagane)",
+      "analytics": "Analityczne (Google Analytics)",
+      "ads": "Marketingowe (Ads/remarketing)",
+      "personalization": "Personalizacja treści"
+    },
+    "buttons": {
+      "settings": "Ustawienia",
+      "hideSettings": "Ukryj ustawienia",
+      "reject": "Odrzuć",
+      "save": "Zapisz wybór",
+      "accept": "Akceptuj wszystkie"
+    }
+  },
+
   "Courses": {
     "title": "Wszystkie kursy",
     "NotFound": "Już wkrótce"

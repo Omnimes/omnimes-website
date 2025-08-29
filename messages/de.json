@@ -21,6 +21,24 @@
     "NotFound": "Demnächst verfügbar"
   },
 
+  "cookie": {
+    "message": "Wir verwenden Cookies für Analysen und zur Personalisierung von Werbung. Sie können alle akzeptieren, ablehnen oder Kategorien auswählen. Details finden Sie in der Datenschutzerklärung.",
+    "details": {
+      "functional": "Funktional (erforderlich)",
+      "security": "Sicherheit (erforderlich)",
+      "analytics": "Analytisch (Google Analytics)",
+      "ads": "Marketing (Ads/Remarketing)",
+      "personalization": "Inhaltspersonalisierung"
+    },
+    "buttons": {
+      "settings": "Einstellungen",
+      "hideSettings": "Einstellungen ausblenden",
+      "reject": "Ablehnen",
+      "save": "Auswahl speichern",
+      "accept": "Alle akzeptieren"
+    }
+  },
+
   "Implementation": {
     "title": "Alle Implementierungen",
     "NotFound": "Demnächst verfügbar"

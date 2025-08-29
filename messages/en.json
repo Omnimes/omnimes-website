@@ -21,6 +21,24 @@
     "NotFound": "Coming soon"
   },
 
+  "cookie": {
+    "message": "We use cookies for analytics and advertising personalization. You can accept all, reject, or choose categories. See details in the Privacy Policy.",
+    "details": {
+      "functional": "Functional (required)",
+      "security": "Security (required)",
+      "analytics": "Analytics (Google Analytics)",
+      "ads": "Marketing (Ads/remarketing)",
+      "personalization": "Content personalization"
+    },
+    "buttons": {
+      "settings": "Settings",
+      "hideSettings": "Hide settings",
+      "reject": "Reject",
+      "save": "Save choices",
+      "accept": "Accept all"
+    }
+  },
+
   "Implementation": {
     "title": "All Implementations",
     "NotFound": "Coming soon"

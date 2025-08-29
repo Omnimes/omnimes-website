@@ -1,7 +1,8 @@
-import { ReactNode } from "react"
 import { setRequestLocale } from "next-intl/server"
+import { ReactNode } from "react"
 
 import { ComponentSearch } from "@/components/ComponentSearch"
+import CookieConsent from "@/components/CookieConsent"
 import { Footer } from "@/components/Footer"
 import Header from "@/components/Header"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
@@ -22,6 +23,7 @@ export default async function MarketingLayout({ children, params }: Props) {
       </ComponentSearch>
       <SectionContainer>{children}</SectionContainer>
       <ScrollTopAndComment />
+      <CookieConsent />
       <Footer />
     </>
   )
