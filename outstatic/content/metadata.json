@@ -1,6 +1,6 @@
 {
   "commit": "6f8c85df5f31f50501b9ddf70f0ac1a93f4712eb",
-  "generated": "2025-09-01T21:22:12.407Z",
+  "generated": "2025-09-01T21:22:23.836Z",
   "metadata": [
     {
       "__outstatic": {
@@ -553,6 +553,44 @@
         }
       ],
       "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "dc5c73b7e7046e351da8c7a410c7e4c76611067c",
+        "hash": "1251378573",
+        "path": "outstatic/content/posts/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
+      "description": "Przegląd tematu: Jak wdrożenie OmniMES przekłada się na ROI i przewagę konkurencyjną w przemyśle",
+      "groupId": "f081ef51-bea9-478b-ab0c-a63efcf8dc48",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00Z",
+      "slug": "jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "IoT",
+          "value": "iot"
+        }
+      ],
+      "title": "Jak wdrożenie OmniMES przekłada się na ROI i przewagę konkurencyjną w przemyśle"
     },
     {
       "__outstatic": {
