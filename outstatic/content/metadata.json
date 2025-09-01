@@ -1,6 +1,6 @@
 {
   "commit": "6f8c85df5f31f50501b9ddf70f0ac1a93f4712eb",
-  "generated": "2025-09-01T21:22:23.836Z",
+  "generated": "2025-09-01T21:22:28.628Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1502,40 +1502,6 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
-    },
-    {
-      "__outstatic": {
-        "commit": "624df281fdf0ce57bcfabf228400e439ddf80671",
-        "hash": "3313303207",
-        "path": "outstatic/content/posts/wie-die-implementierung-von-omnimes-roi-und-wettbewerbsvorteil-steigert.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
-      "description": "Erfahren Sie, wie OmniMES Ihre Wettbewerbsfähigkeit und ROI in der Industrie verbessert.",
-      "groupId": "f081ef51-bea9-478b-ab0c-a63efcf8dc48",
-      "lang": "de",
-      "publishedAt": "2025-09-01T09:00:00Z",
-      "slug": "wie-die-implementierung-von-omnimes-roi-und-wettbewerbsvorteil-steigert",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industrie 4.0",
-          "value": "Technologie"
-        },
-        {
-          "label": "MES-Systeme",
-          "value": "Software"
-        },
-        {
-          "label": "ROI",
-          "value": "Finanzen"
-        }
-      ],
-      "title": "Wie die Implementierung von OmniMES ROI und Wettbewerbsvorteil steigert"
     },
     {
       "__outstatic": {
