@@ -1,6 +1,6 @@
 {
   "commit": "6f8c85df5f31f50501b9ddf70f0ac1a93f4712eb",
-  "generated": "2025-09-01T21:22:08.296Z",
+  "generated": "2025-09-01T21:22:12.407Z",
   "metadata": [
     {
       "__outstatic": {
@@ -556,9 +556,9 @@
     },
     {
       "__outstatic": {
-        "commit": "dc5c73b7e7046e351da8c7a410c7e4c76611067c",
-        "hash": "1251378573",
-        "path": "outstatic/content/posts/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.md"
+        "commit": "5ec3aedaeb9c444d0a09d5d63e39428e2a4bbb25",
+        "hash": "3746780230",
+        "path": "outstatic/content/posts/how-the-implementation-of-omnimes-translates-to-roi-and-competitive-advantage-in-the-industry.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -566,11 +566,11 @@
       },
       "collection": "posts",
       "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
-      "description": "Przegląd tematu: Jak wdrożenie OmniMES przekłada się na ROI i przewagę konkurencyjną w przemyśle",
+      "description": "Przegląd tematu: How the implementation of OmniMES translates to ROI and competitive advantage in the industry",
       "groupId": "f081ef51-bea9-478b-ab0c-a63efcf8dc48",
-      "lang": "pl",
+      "lang": "en",
       "publishedAt": "2025-09-01T09:00:00Z",
-      "slug": "jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle",
+      "slug": "how-the-implementation-of-omnimes-translates-to-roi-and-competitive-advantage-in-the-industry",
       "status": "published",
       "tags": [
         {
@@ -590,7 +590,7 @@
           "value": "iot"
         }
       ],
-      "title": "Jak wdrożenie OmniMES przekłada się na ROI i przewagę konkurencyjną w przemyśle"
+      "title": "How the implementation of OmniMES translates to ROI and competitive advantage in the industry"
     },
     {
       "__outstatic": {
