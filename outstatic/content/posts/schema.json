@@ -381,6 +381,22 @@
         {
           "value": "iot",
           "label": "IoT"
+        },
+        {
+          "value": "Przemysł 4.0",
+          "label": "Przemysł 4.0"
+        },
+        {
+          "value": "MES",
+          "label": "MES"
+        },
+        {
+          "value": "IoT",
+          "label": "IoT"
+        },
+        {
+          "value": "Automatyzacja",
+          "label": "Automatyzacja"
         }
       ]
     },
