@@ -1,6 +1,6 @@
 {
   "commit": "d1a1600d0cbfaec5e2446b9802931410d7ace51c",
-  "generated": "2025-09-01T19:31:42.490Z",
+  "generated": "2025-09-01T19:31:46.299Z",
   "metadata": [
     {
       "__outstatic": {
@@ -553,6 +553,36 @@
         }
       ],
       "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "22901f621520252d1fca029faa40a08ed7a584f4",
+        "hash": "768686539",
+        "path": "outstatic/content/posts/jak-wdrozenie-omnimes-zwieksza-roi-i-konkurencyjnosc-w-przemysle.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
+      "description": "Dowiedz się, jak system OmniMES przekłada się na wyższe ROI i przewagę konkurencyjną w przemyśle 4.0 i 5.0.",
+      "groupId": "27161334-6505-4016-a984-6722dfc681e2",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00Z",
+      "slug": "jak-wdrozenie-omnimes-zwieksza-roi-i-konkurencyjnosc-w-przemysle",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 4.0",
+          "value": "Przemysł 4.0"
+        },
+        {
+          "label": "Automatyzacja",
+          "value": "Automatyzacja"
+        }
+      ],
+      "title": "Jak wdrożenie OmniMES zwiększa ROI i konkurencyjność w przemyśle"
     },
     {
       "__outstatic": {
@@ -1546,44 +1576,6 @@
         }
       ],
       "title": "Wizualizacja danych - sukcesem analizy. Redash"
-    },
-    {
-      "__outstatic": {
-        "commit": "ea14d929db3c23b8da7bc0a411ef2d6cbd987746",
-        "hash": "3473344132",
-        "path": "outstatic/content/posts/wie-die-implementierung-von-omnimes-roi-und-wettbewerbsvorteil-steigert.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
-      "description": "Erfahren Sie, wie OmniMES die Rentabilität und Wettbewerbsfähigkeit in der Industrie verbessert.",
-      "groupId": "27161334-6505-4016-a984-6722dfc681e2",
-      "lang": "de",
-      "publishedAt": "2025-09-01T09:00:00Z",
-      "slug": "wie-die-implementierung-von-omnimes-roi-und-wettbewerbsvorteil-steigert",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industrie 4.0",
-          "value": "Technologie"
-        },
-        {
-          "label": "MES-Systeme",
-          "value": "Software"
-        },
-        {
-          "label": "ROI",
-          "value": "Finanzen"
-        },
-        {
-          "label": "Wettbewerbsvorteil",
-          "value": "Strategie"
-        }
-      ],
-      "title": "Wie die Implementierung von OmniMES ROI und Wettbewerbsvorteil steigert"
     },
     {
       "__outstatic": {
