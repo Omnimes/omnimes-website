@@ -1,6 +1,6 @@
 {
-  "commit": "0e23c22ad0ae38cfb688fca4689e132ec5c218bb",
-  "generated": "Mon, 01 Sep 2025 22:16:45 GMT",
+  "commit": "fb5b029df0d5d37aff3be9138ab48f22ef0e2537",
+  "generated": "2025-09-01T22:41:56.336Z",
   "metadata": [
     {
       "__outstatic": {
@@ -640,32 +640,6 @@
         "ai-assistant"
       ],
       "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
-    },
-    {
-      "__outstatic": {
-        "commit": "3e553939274bc2be4ac2b94f86409dab78438e71",
-        "hash": "337109494",
-        "path": "outstatic/content/posts/how-omnimes-implementation-drives-roi-and-competitive-advantage.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
-      "description": "Discover how OmniMES enhances ROI and competitive edge in the manufacturing sector.",
-      "groupId": "d07fd15f-e56c-4167-b2da-d35aa472d170",
-      "lang": "en",
-      "publishedAt": "2025-09-01T09:00:00Z",
-      "slug": "how-omnimes-implementation-drives-roi-and-competitive-advantage",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "OmniMES"
-        }
-      ],
-      "title": "How OmniMES Implementation Drives ROI and Competitive Advantage"
     },
     {
       "__outstatic": {
