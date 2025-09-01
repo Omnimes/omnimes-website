@@ -1,6 +1,6 @@
 {
-  "commit": "9d6a0e7c4080ae0171728b1828053b5493f52853",
-  "generated": "Tue, 19 Aug 2025 10:41:10 GMT",
+  "commit": "fc04d1e30235eedf5be4d5334fa60bfd15d3b522",
+  "generated": "2025-09-01T09:58:57.392Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1871,6 +1871,44 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "fc04d1e30235eedf5be4d5334fa60bfd15d3b522",
+        "hash": "1238436916",
+        "path": "outstatic/content/posts/w-jaki-sposob-omnimes-poprawia-wydajnosc-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/4.png",
+      "description": "Dowiedz się, jak OmniMES zwiększa wydajność produkcji dzięki nowoczesnym technologiom MES i IoT.",
+      "groupId": "9e11b36e-a67f-435b-81ff-f0352868b070",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T08:00:00.000Z",
+      "slug": "w-jaki-sposob-omnimes-poprawia-wydajnosc-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omnimess"
+        },
+        {
+          "label": "technologie MES",
+          "value": "mes-technologies"
+        },
+        {
+          "label": "wydajność produkcji",
+          "value": "production-efficiency"
+        },
+        {
+          "label": "IoT",
+          "value": "iot"
+        }
+      ],
+      "title": "W jaki sposób OmniMES poprawia wydajność produkcji"
     }
   ]
 }

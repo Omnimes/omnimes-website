@@ -365,7 +365,23 @@
           "value": "gpt",
           "label": "gpt"
         },
-        {}
+        {},
+        {
+          "value": "omnimess",
+          "label": "OmniMES"
+        },
+        {
+          "value": "mes-technologies",
+          "label": "technologie MES"
+        },
+        {
+          "value": "production-efficiency",
+          "label": "wydajność produkcji"
+        },
+        {
+          "value": "iot",
+          "label": "IoT"
+        }
       ]
     },
     "lang": {
