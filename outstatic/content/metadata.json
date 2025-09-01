@@ -1,6 +1,6 @@
 {
   "commit": "fb5b029df0d5d37aff3be9138ab48f22ef0e2537",
-  "generated": "2025-09-01T22:42:01.099Z",
+  "generated": "2025-09-01T22:42:04.889Z",
   "metadata": [
     {
       "__outstatic": {
@@ -553,6 +553,40 @@
         }
       ],
       "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "23d1914789bcf7d3b2870ee62d06b2709ab8e4da",
+        "hash": "1238531601",
+        "path": "outstatic/content/posts/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
+      "description": "Dowiedz się, jak system OmniMES wpływa na ROI i przewagę konkurencyjną w przemyśle 4.0.",
+      "groupId": "d07fd15f-e56c-4167-b2da-d35aa472d170",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00Z",
+      "slug": "jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 4.0",
+          "value": "przemysł 4.0"
+        },
+        {
+          "label": "Automatyzacja",
+          "value": "automatyzacja"
+        },
+        {
+          "label": "MES",
+          "value": "MES"
+        }
+      ],
+      "title": "Jak wdrożenie OmniMES przekłada się na ROI i przewagę konkurencyjną w przemyśle"
     },
     {
       "__outstatic": {
@@ -1452,44 +1486,6 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Porównanie Protokółów Komunikacyjnych cz II"
-    },
-    {
-      "__outstatic": {
-        "commit": "eb1e7df4fc09ffd44be1d22a4e44e65afd9d06e9",
-        "hash": "2918128315",
-        "path": "outstatic/content/posts/wie-die-implementierung-von-omnimes-sich-auf-roi-und-wettbewerbsvorteil-in-der-industrie-auswirkt.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jak-wdrozenie-omnimes-przekada-sie-na-roi-i-przewage-konkurencyjna-w-przemysle.png",
-      "description": "Erfahren Sie, wie OmniMES ROI steigert und Wettbewerbsvorteile in der Industrie schafft.",
-      "groupId": "d07fd15f-e56c-4167-b2da-d35aa472d170",
-      "lang": "de",
-      "publishedAt": "2025-09-01T09:00:00Z",
-      "slug": "wie-die-implementierung-von-omnimes-sich-auf-roi-und-wettbewerbsvorteil-in-der-industrie-auswirkt",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industrie 4.0",
-          "value": "Industrie 4.0"
-        },
-        {
-          "label": "MES-Systeme",
-          "value": "MES-Systeme"
-        },
-        {
-          "label": "ROI",
-          "value": "ROI"
-        },
-        {
-          "label": "Wettbewerbsvorteil",
-          "value": "Wettbewerbsvorteil"
-        }
-      ],
-      "title": "Wie die Implementierung von OmniMES sich auf ROI und Wettbewerbsvorteil in der Industrie auswirkt"
     },
     {
       "__outstatic": {
