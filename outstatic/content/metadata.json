@@ -1,6 +1,6 @@
 {
-  "commit": "0ed88367897193f9cb5ae6d4f3b57682c690d4e9",
-  "generated": "2025-09-01T13:33:35.372Z",
+  "commit": "79214be6b1473485eaf59c5048b1b009803116e6",
+  "generated": "2025-09-01T13:47:05.465Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1871,44 +1871,6 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "0ed88367897193f9cb5ae6d4f3b57682c690d4e9",
-        "hash": "1713056896",
-        "path": "outstatic/content/posts/cyfrowa-fabryka-w-praktyce-omnimes-jako-narzedzie-do-zwiekszania-wydajnosci.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/4.png",
-      "description": "Odkryj, jak OmniMES może zrewolucjonizować Twoją fabrykę, zwiększając wydajność i integrację z nowoczesnymi technologiami.",
-      "groupId": "2c1e96ec-6bfe-4596-b2ff-d2484990ade8",
-      "lang": "pl",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "cyfrowa-fabryka-w-praktyce-omnimes-jako-narzedzie-do-zwiekszania-wydajnosci",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 4.0",
-          "value": "Przemysł 4.0"
-        },
-        {
-          "label": "MES",
-          "value": "MES"
-        },
-        {
-          "label": "IoT",
-          "value": "IoT"
-        },
-        {
-          "label": "Automatyzacja",
-          "value": "Automatyzacja"
-        }
-      ],
-      "title": "Cyfrowa fabryka w praktyce: OmniMES jako narzędzie do zwiększania wydajności"
     }
   ]
 }
