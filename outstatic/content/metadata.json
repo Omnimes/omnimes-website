@@ -1,6 +1,6 @@
 {
-  "commit": "6885329b2b45a45d3b94feac35a0c7c4c11f342d",
-  "generated": "2025-09-02T06:10:41.081Z",
+  "commit": "501795474c142a5a87d199e7a4f6869ee77aab40",
+  "generated": "Tue, 02 Sep 2025 06:18:34 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -433,6 +433,32 @@
     },
     {
       "__outstatic": {
+        "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
+        "hash": "4201941181",
+        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
+      "lang": "en",
+      "publishedAt": "2025-05-28T00:00:00.000Z",
+      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
+      "status": "published",
+      "tags": [
+        "langchain",
+        "faiss",
+        "gpt",
+        "documentation",
+        "ai-assistant"
+      ],
+      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
+    },
+    {
+      "__outstatic": {
         "commit": "066448c5d59baa287b9229c0aec0d4cf56d96fcd",
         "hash": "3668030207",
         "path": "outstatic/content/posts/fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost.md"
@@ -471,32 +497,6 @@
         }
       ],
       "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
-        "hash": "4201941181",
-        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
-      "lang": "en",
-      "publishedAt": "2025-05-28T00:00:00.000Z",
-      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
-      "status": "published",
-      "tags": [
-        "langchain",
-        "faiss",
-        "gpt",
-        "documentation",
-        "ai-assistant"
-      ],
-      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
     },
     {
       "__outstatic": {
@@ -1519,51 +1519,6 @@
     },
     {
       "__outstatic": {
-        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
-        "hash": "3236711354",
-        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
-      "lang": "en",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "using-tensorflow-in-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "algorithm performance",
-          "value": "algorithmPerformance"
-        }
-      ],
-      "title": "Using TensorFlow in MES Systems"
-    },
-    {
-      "__outstatic": {
         "commit": "f520b55ed3d1cf9bd9a0d3e11e675e96c7c40143",
         "hash": "605878199",
         "path": "outstatic/content/posts/using-pytorch-in-industrial-data.md"
@@ -1614,6 +1569,51 @@
         }
       ],
       "title": "Using PyTorch in Industrial Data"
+    },
+    {
+      "__outstatic": {
+        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
+        "hash": "3236711354",
+        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
+      "lang": "en",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "using-tensorflow-in-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "algorithm performance",
+          "value": "algorithmPerformance"
+        }
+      ],
+      "title": "Using TensorFlow in MES Systems"
     },
     {
       "__outstatic": {
