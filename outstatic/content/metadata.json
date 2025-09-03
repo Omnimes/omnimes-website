@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:16:48.894Z",
+  "generated": "2025-09-03T15:17:03.187Z",
   "metadata": [
     {
       "__outstatic": {
@@ -369,40 +369,6 @@
       "slug": "wyklad-na-politechnice-krakowskiej-na-temat-wykorzystania-ai-i-big-data-w-systemach-realizacji-produkcji",
       "status": "published",
       "title": "Wykład na Politechnice Krakowskiej na temat wykorzystania AI i Big Data w systemach realizacji produkcji"
-    },
-    {
-      "__outstatic": {
-        "commit": "57e7017aae854cb9a5c15c234acbda4b6129bc82",
-        "hash": "4266971752",
-        "path": "outstatic/content/posts/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.png",
-      "description": "Explore how Machine Learning and OEE can improve quality control in circular economy practices for sustainable growth.",
-      "groupId": "2da4fb7c-bd1a-491e-a506-424083adf864",
-      "lang": "en",
-      "publishedAt": "2025-01-19T09:00:00Z",
-      "slug": "enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "Quality Control"
-        },
-        {
-          "label": "Circular Economy",
-          "value": "Sustainability"
-        },
-        {
-          "label": "Machine Learning",
-          "value": "Innovation"
-        }
-      ],
-      "title": "Enhancing Quality Control in Circular Economy Practices: Leveraging Machine Learning and OEE for Scalable Solutions"
     },
     {
       "__outstatic": {
@@ -1458,6 +1424,32 @@
         }
       ],
       "title": "Nutzen von Computer Vision zur Verbesserung der OEE: Strategien zur Erlangung eines Wettbewerbsvorteils"
+    },
+    {
+      "__outstatic": {
+        "commit": "213f1393db2bc92c177b89fed840ada2e5d4430c",
+        "hash": "3158504214",
+        "path": "outstatic/content/posts/nutzen-von-business-intelligence-fur-effektive-nachfrageprognosen-ein-fahrplan-fur-erfolgreiche-technologieeinfuhrung.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
+      "description": "Erfahren Sie, wie Business Intelligence Ihre Nachfrageprognosen optimieren kann und welche Schritte für eine erfolgreiche Einführung notwendig sind.",
+      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
+      "lang": "de",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "nutzen-von-business-intelligence-fur-effektive-nachfrageprognosen-ein-fahrplan-fur-erfolgreiche-technologieeinfuhrung",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategorie",
+          "value": "Business Intelligence"
+        }
+      ],
+      "title": "Nutzen von Business Intelligence für effektive Nachfrageprognosen: Ein Fahrplan für erfolgreiche Technologieeinführung"
     },
     {
       "__outstatic": {
