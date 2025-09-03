@@ -1,0 +1,278 @@
+{
+  "version": "3.1",
+  "prompts": {
+    "system_prompts": {
+      "pl": [
+        "Jesteś ekspertem Industry 4.0/5.0 (MES, IoT, AI, Big Data, automatyzacja). Piszesz merytoryczne, lecz przystępne artykuły po polsku dla menedżerów, inżynierów i decydentów.",
+        "Na początku artykułu dodaj 1–2 zdania z deklaracją PERSPEKTYWY (np. „Perspektywa: OT/produkcja z użyciem narzędzi IT/AI”).",
+        "W pierwszym akapicie naturalnie wpleć 4–6 słów kluczowych związanych z tematem (np. Industry 4.0, MES, OEE, machine learning, IoT, real-time monitoring, circular economy).",
+        "Zachowuj SEO-strukturę: H2/H3, krótkie akapity (2–4 zdania), listy punktowane, **pogrubiaj kluczowe frazy**.",
+        "W tekście biznesowym podaj prosty przykład obliczeń (np. ROI w PLN) powiązany z realnymi źródłami strat (Availability/Performance/Quality). Wynik pokaż krok po kroku i podaj założenia.",
+        "W tekście technicznym dołącz 1–2 linki do neutralnych źródeł (np. Wikipedia, oficjalne dokumentacje) – tylko źródła centralne i bez lokowania marek.",
+        "Dodaj JEDNO zdanie o OmniMES wyłącznie na podstawie faktów z: https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/wstep-XMdRkBsh9c lub https://www.omnimes.com/pl/projekt. Jeśli nie masz pewności co do faktów – użyj neutralnego zdania: „Więcej o OmniMES znajdziesz na stronie projektu (link)”. Nie wymyślaj funkcji ani zastosowań.",
+        "Nie wymyślaj klientów ani nazw firm. Zero case studies zmyślonych.",
+        "Zakończ krótkim podsumowaniem i CTA bez przesady: zachęć do przeczytania powiązanych wpisów / kontaktu / zapoznania się z OmniMES – bez naginania faktów.",
+        "Styl: profesjonalny, konkretny, bez żargonu sprzedażowego. Bilans: technika ↔ biznes.",
+        "Format wyjścia: TYLKO treść artykułu z H2/H3; bez meta-danych JSON. Liczby podawaj w PLN (zł), spacje jako separatory tysięcy."
+      ],
+      "en": [
+        "You are an Industry 4.0/5.0 expert (MES, IoT, AI, Big Data, automation). Write professional yet accessible articles in English for managers, engineers, and decision-makers.",
+        "Open with a 1–2 sentence CONTEXT note (e.g., “Perspective: OT/production with IT/AI analytics”).",
+        "Naturally include 4–6 relevant keywords in the first paragraph.",
+        "Use SEO structure: H2/H3, short paragraphs (2–4 sentences), bullet lists, and **bold key phrases**.",
+        "For business pieces, include a simple ROI example with assumptions and step-by-step math (use USD or EUR).",
+        "For technical pieces, add 1–2 links to neutral, central sources (e.g., Wikipedia, official docs).",
+        "Add ONE factual sentence about OmniMES based ONLY on: https://docs.omnimes.com/... or https://www.omnimes.com/pl/projekt. If unsure, use a neutral mention: “Learn more about OmniMES on the project page (link).” Do NOT invent features or use cases.",
+        "Do not invent clients or company names.",
+        "Conclude with a brief summary and a modest CTA.",
+        "Style: precise, business-friendly, avoid sales hype. Keep a good tech ↔ business balance.",
+        "Output format: ARTICLE BODY ONLY with H2/H3; no JSON/meta. Use USD ($) or EUR (€) for calculations."
+      ],
+      "de": [
+        "Du bist Experte für Industrie 4.0/5.0 (MES, IoT, KI, Big Data, Automatisierung). Schreibe professionelle, gut verständliche Artikel auf Deutsch für Manager, Ingenieure und Entscheider.",
+        "Beginne mit 1–2 Sätzen KONTEXT (z. B. „Perspektive: OT/Produktion mit IT/KI-Analytik“).",
+        "Binde 4–6 relevante Keywords bereits im ersten Absatz natürlich ein.",
+        "SEO-Struktur: H2/H3, kurze Absätze (2–4 Sätze), Aufzählungen, **wichtige Begriffe fett**.",
+        "Für Business-Texte: einfaches ROI-Beispiel mit Annahmen und Rechenschritten (in EUR).",
+        "Für technische Texte: 1–2 Links zu neutralen, zentralen Quellen (z. B. Wikipedia, offizielle Dokus).",
+        "Füge genau einen sachlichen Satz zu OmniMES ein – ausschließlich basierend auf https://docs.omnimes.com/... oder https://www.omnimes.com/pl/projekt. Bei Unsicherheit nutze eine neutrale Erwähnung ohne Funktionsversprechen.",
+        "Keine erfundenen Kunden oder Firmennamen.",
+        "Schließe mit kurzer Zusammenfassung und zurückhaltendem CTA.",
+        "Stil: sachlich-präzise, business-tauglich, ohne Marketing-Floskeln. Gute Balance Technik ↔ Geschäft.",
+        "Ausgabeformat: NUR Fließtext mit H2/H3; keine JSON-Meta. Rechenbeispiele in EUR (€)."
+      ]
+    },
+    "image_prompts": {
+      "technical": "Minimalist flat illustration of industrial automation. One clear symbolic element (e.g., robotic arm, conveyor, or gear). Clean abstract background with very subtle geometric shapes in muted blue/gray tones. Sharp, modern Industry 4.0 aesthetic. Absolutely no text, logos, or branding. Square 1024x1024 image.",
+      "business": "Minimalist corporate flat illustration. One strong symbolic element of decision-making (e.g., chart, meeting table, or simple graph). Clean abstract background with soft geometric details in elegant blue/gray palette. Clear, upscale business style. Absolutely no text, logos, or branding. Square 1024x1024 image.",
+      "iot": "Minimalist flat illustration of the Internet of Things. One clear symbolic element (e.g., smart sensor, network node, or connected device). Clean abstract background with subtle gradient and geometric accents in muted blue/green palette. Modern, sharp connected-devices aesthetic. No text, logos, or branding. Square 1024x1024 image.",
+      "ai": "Minimalist flat illustration of artificial intelligence. One strong symbolic element (e.g., neural network nodes, algorithmic pattern, or brain-like shape). Clean abstract background with smooth gradients and subtle geometric details in futuristic blue/purple tones. Elegant, modern minimalism. No text, logos, or branding. Square 1024x1024 image.",
+      "mes": "Minimalist flat illustration of MES system. One clear symbolic element (e.g., monitor with graphs, dashboard widget, or data icon). Clean abstract background with subtle geometric details in light blue/white palette. Professional corporate minimalism. No text, logos, or branding. Square 1024x1024 image."
+    },
+
+    "topic_generation_prompt": "You are a creative topic generator for industrial and technology content. Based on the provided keywords, generate ONE unique, engaging topic that would make for an excellent blog article. The topic should be specific, actionable, and appeal to industry professionals. Return ONLY the topic title, nothing else."
+  },
+
+  "content": {
+    "tags_base": [
+      {"label": "MES", "value": "mes"},
+      {"label": "Industry 4.0", "value": "industry40"},
+      {"label": "Industry 5.0", "value": "industry50"},
+      {"label": "IoT", "value": "iot"},
+      {"label": "AI", "value": "ai"},
+      {"label": "Automatyzacja", "value": "automation"},
+      {"label": "Predykcja awarii", "value": "predictive-maintenance"},
+      {"label": "OEE", "value": "oee"},
+      {"label": "Cyfrowa transformacja", "value": "digital-transformation"},
+      {"label": "Smart Manufacturing", "value": "smart-manufacturing"},
+      {"label": "Edge Computing", "value": "edge-computing"},
+      {"label": "MQTT", "value": "mqtt"},
+      {"label": "Sparkplug B", "value": "sparkplug-b"},
+      {"label": "Big Data", "value": "big-data"},
+      {"label": "Machine Learning", "value": "machine-learning"},
+      {"label": "Cyberbezpieczeństwo", "value": "cybersecurity"},
+      {"label": "Digital Twin", "value": "digital-twin"},
+      {"label": "Computer Vision", "value": "computer-vision"},
+      {"label": "Blockchain", "value": "blockchain"},
+      {"label": "5G", "value": "5g"},
+      {"label": "Cloud Computing", "value": "cloud-computing"},
+      {"label": "Sustainability", "value": "sustainability"},
+      {"label": "Supply Chain", "value": "supply-chain"},
+      {"label": "Quality Control", "value": "quality-control"}
+    ],
+
+    "topic_generation": {
+      "method_weights": {
+        "predefined": 0,
+        "gpt_generated": 1
+      },
+      "gpt_keywords": [
+        "automation", "manufacturing", "industry 4.0", "industry 5.0",  "IoT", 
+        "MES", "ERP", "ASP", "SCADA", "HMI", "Green energy",
+        "predictive maintenance", "smart factory", "digital twin", 
+        "quality control", "supply chain", "process optimization", "OEE",
+        "AI", "machine learning", "computer vision", "data analytics", 
+        "edge computing", "real-time monitoring", "big data", 
+        "neural networks", "deep learning", "algorithmic optimization",
+        "5G", "blockchain", "quantum computing", "augmented reality",
+        "virtual reality", "digital transformation", "cloud computing", 
+        "edge AI",
+        "ROI analysis", "digital strategy", "business intelligence", 
+        "competitive advantage", "market disruption", "scalability", 
+        "operational excellence", "cost optimization",
+        "cybersecurity", "data governance", "regulatory compliance",
+        "risk management", "security protocols", "privacy protection",
+        "sustainability", "green technology", "circular economy",
+        "carbon footprint", "renewable energy", "environmental impact",
+        "innovation management", "change leadership", "digital culture",
+        "agile methodology", "continuous improvement", "technology adoption",
+        "customer experience", "market intelligence", "demand forecasting",
+        "personalization"
+      ]
+    },
+
+    "topic_buckets": {
+      "weights": {
+        "technical": 0.4,
+        "business": 0.35,
+        "mixed": 0.25
+      },
+      "topics": {
+        "technical": [
+          "Implementacja MQTT Sparkplug B w środowisku produkcyjnym",
+          "Edge AI w przemyśle - kompresja modeli i optymalizacja",
+          "Integracja systemów MES z protokołami IoT",
+          "RAG (Retrieval Augmented Generation) dla dokumentacji technicznej",
+          "Predykcja awarii maszyn z wykorzystaniem ML",
+          "OEE w czasie rzeczywistym - eliminacja mikroprzestojów", 
+          "Wektorowe bazy danych w przemyśle (Qdrant, Pinecone)",
+          "Cyberbezpieczeństwo w Industry 4.0 - praktyczne podejście",
+          "API-first architecture w systemach MES",
+          "Streaming danych produkcyjnych - Apache Kafka vs MQTT",
+          "Computer Vision w kontroli jakości produkcji",
+          "Digital Twin w monitoringu procesów produkcyjnych",
+          "Blockchain w supply chain management",
+          "5G w zastosowaniach przemysłowych",
+          "Edge Computing w czasie rzeczywistym na linii produkcyjnej",
+          "Mikrousługi w architekturze systemów przemysłowych",
+          "Containeryzacja aplikacji przemysłowych (Docker/Kubernetes)",
+          "Time Series Database dla danych IoT",
+          "Machine Learning na urządzeniach brzegowych",
+          "Protokoły komunikacyjne: OPC-UA vs MQTT vs Modbus",
+          "Integracja ERP z systemami produkcyjnymi",
+          "Monitoring infrastruktury IT w fabrykach",
+          "Backup i disaster recovery dla systemów krytycznych",
+          "Load balancing w aplikacjach przemysłowych",
+          "GraphQL w systemach MES - zalety i implementacja",
+          "WebRTC dla zdalnego monitoringu maszyn",
+          "Elasticsearch dla logów produkcyjnych",
+          "Redis jako cache w aplikacjach real-time"
+        ],
+        "business": [
+          "ROI z wdrożenia systemów Industry 4.0 - studium przypadku",
+          "Cyfrowa transformacja w produkcji - od czego zacząć?",
+          "KPI i dashboardy dla kadry zarządzającej",
+          "Koszty wdrożenia vs korzyści z automatyzacji",
+          "Zarządzanie zmianą podczas cyfryzacji zakładu",
+          "Compliance i regulacje w Industry 4.0",
+          "Szkolenie personelu - przygotowanie na przemysł 5.0",
+          "Analiza ryzyka projektów automatyzacji",
+          "Budżetowanie projektów cyfrowej transformacji", 
+          "Wybór dostawcy systemów MES - kryteria decyzyjne",
+          "Bezpieczeństwo danych w środowisku przemysłowym",
+          "Sustainability i zielona transformacja w przemyśle",
+          "Remote monitoring - korzyści dla managementu",
+          "Predykcyjna konserwacja - wpływ na budżet zakładu",
+          "Lean Manufacturing w erze cyfryzacji",
+          "Change management w projektach Industry 4.0",
+          "Finansowanie projektów cyfrowej transformacji",
+          "Outsourcing vs insourcing IT w przemyśle",
+          "Benchmarking wydajności produkcji",
+          "Strategia vendor management w projektach IT",
+          "Total Cost of Ownership (TCO) systemów MES",
+          "Agile w projektach przemysłowych",
+          "Stakeholder management w cyfryzacji",
+          "Risk assessment dla projektów automatyzacji",
+          "Governance modeli danych w organizacji",
+          "SLA i KPI dla systemów krytycznych",
+          "Business continuity planning w przemyśle",
+          "Vendor lock-in - jak tego unikać",
+          "Scalability planning dla rosnących firm",
+          "Digital strategy dla SME w przemyśle"
+        ],
+        "mixed": [
+          "Smart Factory - technologia vs biznes",
+          "Przemysł 5.0 - człowiek i maszyna w harmonii",
+          "Zrównoważony rozwój przez automatyzację",
+          "Kokpity zarządcze w erze Big Data",
+          "Elastyczność produkcji w niepewnych czasach",
+          "Innowacje w przemyśle - jak nie zostać w tyle",
+          "Łańcuch dostaw 4.0 - wyzwania i możliwości",
+          "Personalizacja masowej produkcji",
+          "Zarządzanie energią w smart factory",
+          "Workforce 4.0 - nowe kompetencje w przemyśle",
+          "Circular economy w manufacturing",
+          "Resilience vs efficiency w łańcuchu dostaw",
+          "Quality 4.0 - jakość w erze cyfrowej",
+          "Customer centricity w B2B manufacturing",
+          "Predictive analytics vs traditional planning",
+          "Hybrid work w przemyśle - wyzwania i szanse",
+          "Data governance w organizacjach produkcyjnych",
+          "Innovation labs w tradycyjnych firmach",
+          "Partnership ecosystem w Industry 4.0",
+          "Digital twins w strategii biznesowej",
+          "Platform economy w B2B",
+          "Ecosystem thinking w manufacturing",
+          "Value stream mapping w erze cyfrowej",
+          "Customer journey w B2B manufacturing"
+        ]
+      },
+      "suffixes": {
+        "technical": [
+          "- implementacja krok po kroku",
+          "- najlepsze praktyki",
+          "- case study", 
+          "- porównanie rozwiązań",
+          "- optymalizacja wydajności",
+          "- analiza architektury",
+          "- przewodnik wdrożeniowy",
+          "- troubleshooting i diagnostyka",
+          "- bezpieczeństwo w praktyce",
+          "- integracja z istniejącymi systemami"
+        ],
+        "business": [
+          "- analiza kosztów i korzyści",
+          "- przewodnik dla managementu", 
+          "- strategie wdrożenia",
+          "- analiza ROI",
+          "- zarządzanie ryzykiem",
+          "- jak przekonać zarząd",
+          "- budowanie business case",
+          "- planowanie budżetu",
+          "- wybór dostawcy",
+          "- mierzenie sukcesu"
+        ],
+        "mixed": [
+          "- spojrzenie 360°",
+          "- wyzwania i możliwości",
+          "- przyszłość branży",
+          "- trendy 2025",
+          "- praktyczne zastosowania",
+          "- perspektywa globalna",
+          "- innowacje w praktyce",
+          "- transformacja cyfrowa",
+          "- zrównoważony rozwój",
+          "- competitive advantage"
+        ]
+      }
+    }
+  },
+
+  "settings": {
+    "default_words": 900,
+    "weekly_day": "MON", 
+    "weekly_time": "09:00",
+    "author": {
+      "name": "Martin Szerment",
+      "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+    },
+    "cover_fallbacks": [
+      "/images/omnimes-image.png"
+    ],
+    "retry_settings": {
+      "max_article_retries": 3,
+      "max_image_retries": 2,
+      "retry_delay_seconds": 2
+    },
+    "validation": {
+      "min_title_length": 10,
+      "max_title_length": 90,
+      "min_description_length": 120,
+      "max_description_length": 160,
+      "min_article_words": 200,
+      "max_article_words": 2000,
+      "require_omnimes_mention": true,
+      "require_markdown_headers": true
+    }
+  }
+}

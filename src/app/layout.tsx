@@ -51,15 +51,15 @@
 // }
 
 // app/layout.tsx
-import Script from "next/script";
-import { ReactNode } from "react";
+import { ReactNode } from "react"
+import Script from "next/script"
 
-import "@/css/tailwind.css";
-import "pliny/search/algolia.css";
+import "@/css/tailwind.css"
+import "pliny/search/algolia.css"
 
-const GTM_ID = "GTM-W8PM5ZPM"; // lub process.env.NEXT_PUBLIC_GTM_ID
+const GTM_ID = "GTM-W8PM5ZPM" // lub process.env.NEXT_PUBLIC_GTM_ID
 
-type Props = { children: ReactNode };
+type Props = { children: ReactNode }
 
 export default function RootLayout({ children }: Props) {
   return (
@@ -119,5 +119,5 @@ export default function RootLayout({ children }: Props) {
         {children}
       </body>
     </html>
-  );
+  )
 }

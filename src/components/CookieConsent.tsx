@@ -1,41 +1,41 @@
 // app/components/CookieConsent.tsx
-"use client";
+"use client"
 
-import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import { useTranslations } from "next-intl"
 
 type ConsentState = {
-  functional: boolean;        
-  security: boolean;          
-  analytics: boolean;
-  ad: boolean;
-  personalization: boolean;   
-};
+  functional: boolean
+  security: boolean
+  analytics: boolean
+  ad: boolean
+  personalization: boolean
+}
 
-const LS_KEY = "cookie-consent";
+const LS_KEY = "cookie-consent"
 
 export default function CookieConsent() {
-  const t = useTranslations("cookie");
+  const t = useTranslations("cookie")
 
-  const [open, setOpen] = useState(false);
-  const [showDetails, setShowDetails] = useState(false);
+  const [open, setOpen] = useState(false)
+  const [showDetails, setShowDetails] = useState(false)
   const [state, setState] = useState<ConsentState>({
     functional: true,
     security: true,
     analytics: false,
     ad: false,
     personalization: false,
-  });
+  })
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem(LS_KEY);
+      const saved = localStorage.getItem(LS_KEY)
       if (!saved) {
-        setOpen(true);
-        return;
+        setOpen(true)
+        return
       }
     } catch {}
-  }, []);
+  }, [])
 
   const applyConsent = (s: ConsentState) => {
     localStorage.setItem(
@@ -44,19 +44,19 @@ export default function CookieConsent() {
         analytics: s.analytics,
         ad: s.ad,
         personalization: s.personalization,
-        functional: s.functional
+        functional: s.functional,
       })
-    );
+    )
 
     if (typeof window !== "undefined") {
-      (window as any).gtag?.("consent", "update", {
+      ;(window as any).gtag?.("consent", "update", {
         ad_storage: s.ad ? "granted" : "denied",
         analytics_storage: s.analytics ? "granted" : "denied",
         personalization_storage: s.personalization ? "granted" : "denied",
         functionality_storage: s.functional ? "granted" : "denied",
-      });
+      })
     }
-  };
+  }
 
   const acceptAll = () => {
     const s: ConsentState = {
@@ -65,11 +65,11 @@ export default function CookieConsent() {
       analytics: true,
       ad: true,
       personalization: true,
-    };
-    setState(s);
-    applyConsent(s);
-    setOpen(false);
-  };
+    }
+    setState(s)
+    applyConsent(s)
+    setOpen(false)
+  }
 
   const rejectAll = () => {
     const s: ConsentState = {
@@ -78,24 +78,22 @@ export default function CookieConsent() {
       analytics: false,
       ad: false,
       personalization: false,
-    };
-    setState(s);
-    applyConsent(s);
-    setOpen(false);
-  };
+    }
+    setState(s)
+    applyConsent(s)
+    setOpen(false)
+  }
 
   const saveChoices = () => {
-    applyConsent(state);
-    setOpen(false);
-  };
+    applyConsent(state)
+    setOpen(false)
+  }
 
-  if (!open) return null;
+  if (!open) return null
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-3xl rounded-t-2xl bg-white p-4 shadow-lg ring-1 ring-black/10 md:rounded-2xl md:bottom-6 md:p-6">
-      <div className="mb-3 text-sm text-gray-700">
-        {t("message")}
-      </div>
+    <div className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-3xl rounded-t-2xl bg-white p-4 shadow-lg ring-1 ring-black/10 md:bottom-6 md:rounded-2xl md:p-6">
+      <div className="mb-3 text-sm text-gray-700">{t("message")}</div>
 
       {showDetails && (
         <div className="mb-4 grid grid-cols-1 gap-3 text-sm">
@@ -165,5 +163,5 @@ export default function CookieConsent() {
         </div>
       </div>
     </div>
-  );
+  )
 }

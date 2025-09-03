@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "timezone": "UTC",
+  "slots": [
+    {"date":"2025-01-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-01-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-01-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-01-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-02-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-02-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-02-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-02-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-03-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-03-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-03-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-03-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-04-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-04-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-04-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-04-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-05-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-05-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-05-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-05-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-06-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-06-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-06-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-06-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-07-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-07-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-07-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-07-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-08-05T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-08-12T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-08-19T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-08-26T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-09-01T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-09-08T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-09-15T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-09-22T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-09-29T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-10-06T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-10-13T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-10-20T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-10-27T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-11-03T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-11-10T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-11-17T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-11-24T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+
+    {"date":"2025-12-01T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-12-08T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-12-15T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-12-22T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null},
+    {"date":"2025-12-29T09:00:00Z","topic":null,"status":"scheduled","lang_policy":"triple-original","slug":null}
+  ]
+}

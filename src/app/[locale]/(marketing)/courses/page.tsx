@@ -4,8 +4,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { getDocuments, load } from "outstatic/server"
 
-import { generateSearchJSON } from "@/lib/generateSearchJSON"
 import { genPageMetadata } from "@/app/seo"
+import { DirectContact } from "@/components/DirectContact"
+import { generateSearchJSON } from "@/lib/generateSearchJSON"
 
 export type ExtendedOstDocument = OstDocument & {
   tags: { value: string; label: string }[]
@@ -86,11 +87,17 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
   }
 
   return (
-    <ListLayout
-      posts={allCourses} // ListLayout może używać nazwy "posts" – struktura ta sama
-      initialDisplayPosts={allCourses}
-      pagination={pagination}
-      title={t("title")} // np. "Kursy" / "Courses"
-    />
+    <>
+      {allCourses.length === 0 ? (
+        <DirectContact />  
+      ) : (
+        <ListLayout
+          posts={allCourses}
+          initialDisplayPosts={allCourses}
+          pagination={pagination}
+          title={t("title")}
+        />
+      )}
+    </>
   )
 }

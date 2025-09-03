@@ -1,5 +1,5 @@
-import { setRequestLocale } from "next-intl/server"
 import { ReactNode } from "react"
+import { setRequestLocale } from "next-intl/server"
 
 import { ComponentSearch } from "@/components/ComponentSearch"
 import CookieConsent from "@/components/CookieConsent"

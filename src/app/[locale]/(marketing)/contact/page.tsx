@@ -1,10 +1,10 @@
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
+import { genPageMetadata } from "@/app/seo"
 import { DirectContact } from "@/components/DirectContact"
 import { FormContact } from "@/components/FormContact"
 import { HeadingContact } from "@/components/HeadingContact"
-import { genPageMetadata } from "@/app/seo"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -27,9 +27,9 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   setRequestLocale(locale)
   return (
     <main>
+      <DirectContact />
       <HeadingContact />
       <FormContact />
-      <DirectContact />
     </main>
   )
 }
