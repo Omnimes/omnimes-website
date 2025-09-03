@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:38.645Z",
+  "generated": "2025-09-03T15:15:44.962Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1744,6 +1744,40 @@
     },
     {
       "__outstatic": {
+        "commit": "2e42b52872199fef8828da51ad49dc187178601b",
+        "hash": "2790684729",
+        "path": "outstatic/content/posts/nutzung-von-5g-und-iot-fur-kontinuierliche-verbesserung-in-der-industrie.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-5g-and-iot-for-continuous-improvement-a-comprehensive-guide-to-innovation-management-and-automation-in-indust.png",
+      "description": "Entdecken Sie, wie 5G und IoT Innovationsmanagement und Automatisierung in der Industrie revolutionieren können.",
+      "groupId": "4c20b078-a1de-4c6c-bae8-a88358419cde",
+      "lang": "de",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "nutzung-von-5g-und-iot-fur-kontinuierliche-verbesserung-in-der-industrie",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "5G"
+        },
+        {
+          "label": "Industrie",
+          "value": "IoT"
+        },
+        {
+          "label": "Automatisierung",
+          "value": "Industrie 4.0"
+        }
+      ],
+      "title": "Nutzung von 5G und IoT für kontinuierliche Verbesserung in der Industrie"
+    },
+    {
+      "__outstatic": {
         "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
         "hash": "2060488888",
         "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
@@ -2441,32 +2475,6 @@
         }
       ],
       "title": "Wykorzystanie Business Intelligence do Skutecznego Prognozowania Popytu"
-    },
-    {
-      "__outstatic": {
-        "commit": "e8409c200454df743bf90f15e186ac1fdc659759",
-        "hash": "3176427514",
-        "path": "outstatic/content/posts/wykorzystanie-5g-i-iot-w-ciagym-doskonaleniu-przewodnik-po-zarzadzaniu-innowacjami-i-automatyzacja-w-przemysach.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-5g-and-iot-for-continuous-improvement-a-comprehensive-guide-to-innovation-management-and-automation-in-indust.png",
-      "description": "Dowiedz się, jak 5G i IoT mogą wspierać ciągłe doskonalenie w przemyśle, zwiększając efektywność i innowacyjność.",
-      "groupId": "4c20b078-a1de-4c6c-bae8-a88358419cde",
-      "lang": "pl",
-      "publishedAt": "2025-02-26T09:00:00Z",
-      "slug": "wykorzystanie-5g-i-iot-w-ciagym-doskonaleniu-przewodnik-po-zarzadzaniu-innowacjami-i-automatyzacja-w-przemysach",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 4.0",
-          "value": "5G, IoT, automatyzacja"
-        }
-      ],
-      "title": "Wykorzystanie 5G i IoT w Ciągłym Doskonaleniu: Przewodnik po Zarządzaniu Innowacjami i Automatyzacją w Przemysłach"
     },
     {
       "__outstatic": {
