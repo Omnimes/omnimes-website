@@ -1,6 +1,6 @@
 {
-  "commit": "75352928b57bd4edb2057eda8025d04c993bdc5e",
-  "generated": "2025-09-03T15:19:23.241Z",
+  "commit": "344ce4297b916f3c82748bd455fa1b7e4d2dffa3",
+  "generated": "2025-09-03T15:19:36.546Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1874,8 +1874,8 @@
     },
     {
       "__outstatic": {
-        "commit": "75352928b57bd4edb2057eda8025d04c993bdc5e",
-        "hash": "3189545036",
+        "commit": "344ce4297b916f3c82748bd455fa1b7e4d2dffa3",
+        "hash": "4000387266",
         "path": "outstatic/content/posts/test.md"
       },
       "author": {
@@ -1888,7 +1888,7 @@
       "lang": "pl",
       "publishedAt": "2025-09-03T15:30:54.084Z",
       "slug": "test",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "MQTT",
