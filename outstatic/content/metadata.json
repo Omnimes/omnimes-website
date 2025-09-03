@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:16:08.492Z",
+  "generated": "2025-09-03T15:16:12.892Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1266,32 +1266,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1065e7aa8572dbfe113e76d644039885a4dd477c",
-        "hash": "1521765147",
-        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
-      "description": "Jak wykorzystać kulturę cyfrową do zdobycia przewagi konkurencyjnej w obliczu zakłóceń rynkowych.",
-      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
-      "lang": "pl",
-      "publishedAt": "2025-02-05T09:00:00Z",
-      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "zakłócenia rynkowe"
-        }
-      ],
-      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
-    },
-    {
-      "__outstatic": {
         "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
         "hash": "3377793085",
         "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
@@ -1315,6 +1289,32 @@
         }
       ],
       "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
+    },
+    {
+      "__outstatic": {
+        "commit": "84e0d87c280d43cc38a86b824e5ef766f7410a52",
+        "hash": "1326459670",
+        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-2.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
+      "description": "Explore how digital culture can drive competitive advantage while ensuring compliance and fostering continuous improvement.",
+      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
+      "lang": "en",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-2",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Digital Transformation"
+        }
+      ],
+      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
     },
     {
       "__outstatic": {
