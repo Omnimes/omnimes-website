@@ -1,6 +1,6 @@
 {
-  "commit": "27889543d9753074cba7b2cac048aa0a2d420bc3",
-  "generated": "Wed, 03 Sep 2025 11:54:25 GMT",
+  "commit": "9e82a2229d5662fa90eeeb3e7a8a3bf00039eb14",
+  "generated": "Wed, 03 Sep 2025 15:13:17 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -61,25 +61,6 @@
     },
     {
       "__outstatic": {
-        "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
-        "hash": "1225348516",
-        "path": "outstatic/content/news/neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle",
-      "lang": "de",
-      "publishedAt": "2024-07-21T06:59:08.000Z",
-      "slug": "neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle",
-      "status": "published",
-      "title": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle"
-    },
-    {
-      "__outstatic": {
         "commit": "3238617c4850544d9e833cb956837cab6137934a",
         "hash": "3455486355",
         "path": "outstatic/content/news/lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems.md"
@@ -96,6 +77,25 @@
       "slug": "lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems",
       "status": "published",
       "title": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
+        "hash": "1225348516",
+        "path": "outstatic/content/news/neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle",
+      "lang": "de",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle",
+      "status": "published",
+      "title": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle"
     },
     {
       "__outstatic": {
@@ -1266,32 +1266,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
-        "hash": "3377793085",
-        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
-      "description": "Explore strategies for privacy protection through algorithmic optimization in the digital age.",
-      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
-      "lang": "en",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation-2",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry",
-          "value": "Compliance"
-        }
-      ],
-      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
-    },
-    {
-      "__outstatic": {
         "commit": "1065e7aa8572dbfe113e76d644039885a4dd477c",
         "hash": "1521765147",
         "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage.md"
@@ -1315,6 +1289,32 @@
         }
       ],
       "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
+    },
+    {
+      "__outstatic": {
+        "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
+        "hash": "3377793085",
+        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
+      "description": "Explore strategies for privacy protection through algorithmic optimization in the digital age.",
+      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "lang": "en",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation-2",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry",
+          "value": "Compliance"
+        }
+      ],
+      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
     },
     {
       "__outstatic": {
@@ -1547,59 +1547,6 @@
     },
     {
       "__outstatic": {
-        "commit": "5f3c130b2e918adec56d8cea60f2117574c05b8c",
-        "hash": "3912465102",
-        "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1.png",
-      "description": "Das Ollama-Projekt ist eine offene und kostenlose Software, die es ermöglicht, lokale KI-Modelle, insbesondere große Sprachmodelle (LLMs), auf Ihrem eigenen Computer oder Server auszuführen. Aufgrund seiner geringen Hardware-Anforderungen ist diese Software für mittlere und kleine Unternehmen zugänglich und bietet Zugang zu 93 KI-Modellen ohne signifikante Einschränkungen.",
-      "lang": "de",
-      "publishedAt": "2024-06-20T08:28:30.000Z",
-      "slug": "ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "AI local",
-          "value": "aiLocal"
-        },
-        {
-          "label": "llama3",
-          "value": "llama3"
-        },
-        {
-          "label": "Meta",
-          "value": "meta"
-        },
-        {
-          "label": "Gemma",
-          "value": "gemma"
-        },
-        {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
-        }
-      ],
-      "title": "Ollama - Praktische Anwendung lokaler KI-Modelle am Beispiel des OMNIMES-Systems"
-    },
-    {
-      "__outstatic": {
         "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
         "hash": "1072085323",
         "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
@@ -1741,6 +1688,59 @@
         }
       ],
       "title": "Nutzung von Cloud-Computing und Sicherheitsprotokollen zur Personalisierung von SCADA-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "5f3c130b2e918adec56d8cea60f2117574c05b8c",
+        "hash": "3912465102",
+        "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "Das Ollama-Projekt ist eine offene und kostenlose Software, die es ermöglicht, lokale KI-Modelle, insbesondere große Sprachmodelle (LLMs), auf Ihrem eigenen Computer oder Server auszuführen. Aufgrund seiner geringen Hardware-Anforderungen ist diese Software für mittlere und kleine Unternehmen zugänglich und bietet Zugang zu 93 KI-Modellen ohne signifikante Einschränkungen.",
+      "lang": "de",
+      "publishedAt": "2024-06-20T08:28:30.000Z",
+      "slug": "ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        }
+      ],
+      "title": "Ollama - Praktische Anwendung lokaler KI-Modelle am Beispiel des OMNIMES-Systems"
     },
     {
       "__outstatic": {
@@ -2196,6 +2196,32 @@
     },
     {
       "__outstatic": {
+        "commit": "393b357abb448f44350db8d0fb1bdc34f100fd4e",
+        "hash": "1997644882",
+        "path": "outstatic/content/posts/verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
+      "description": "Erfahren Sie, wie Fachleute den Datenschutz in IoT-fähigen VR-Umgebungen verbessern können.",
+      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
+      "lang": "de",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategorie",
+          "value": "Technologie"
+        }
+      ],
+      "title": "Verbesserung des Datenschutzes in IoT-fähigen Virtual-Reality-Umgebungen: Strategien für Fachleute der Branche"
+    },
+    {
+      "__outstatic": {
         "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
         "hash": "3236711354",
         "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
@@ -2392,32 +2418,6 @@
     },
     {
       "__outstatic": {
-        "commit": "393b357abb448f44350db8d0fb1bdc34f100fd4e",
-        "hash": "1997644882",
-        "path": "outstatic/content/posts/verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
-      "description": "Erfahren Sie, wie Fachleute den Datenschutz in IoT-fähigen VR-Umgebungen verbessern können.",
-      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
-      "lang": "de",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategorie",
-          "value": "Technologie"
-        }
-      ],
-      "title": "Verbesserung des Datenschutzes in IoT-fähigen Virtual-Reality-Umgebungen: Strategien für Fachleute der Branche"
-    },
-    {
-      "__outstatic": {
         "commit": "9a0a54c32f0bdfe59a7e62254993fe6b60ba7045",
         "hash": "3737295090",
         "path": "outstatic/content/posts/wykorzystanie-chmury-obliczeniowej-i-zaawansowanych-protokoow-bezpieczenstwa-w-systemach-scada.md"
@@ -2594,6 +2594,87 @@
     },
     {
       "__outstatic": {
+        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
+        "hash": "1222761488",
+        "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
+      "lang": "pl",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
+      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
+      "status": "published",
+      "tags": [
+        {
+          "label": "XGBoost",
+          "value": "xgboost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightgbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catboost"
+        },
+        {
+          "label": "AI",
+          "value": "ai "
+        },
+        {
+          "label": "MES system",
+          "value": "messystem"
+        },
+        {
+          "label": "wykrywanie awarii",
+          "value": "wykrywanieAwarii"
+        },
+        {
+          "label": "analiza danych w przemyśle",
+          "value": "analizaDanychWPrzemyśle"
+        },
+        {
+          "label": "uczenie maszynowe w MES",
+          "value": "uczenieMaszynoweWMES"
+        },
+        {
+          "label": "klasyfikacja stanów maszyn",
+          "value": "klasyfikacjaStanówMaszyn"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "powiadomienia w czasie rzeczywistym",
+          "value": "powiadomieniaWCzasieRzeczywistym"
+        },
+        {
+          "label": "gradient boosting w przemyśle",
+          "value": "gradientBoostingWPrzemyśle"
+        },
+        {
+          "label": "algorytmy uczenia maszynowego",
+          "value": "algorytmyUczeniaMaszynowego"
+        },
+        {
+          "label": "systemy produkcyjne MES",
+          "value": "systemyProdukcyjneMES"
+        },
+        {
+          "label": "redukcja przestojów produkcyjnych",
+          "value": "redukcjaPrzestojówProdukcyjnych "
+        }
+      ],
+      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
         "commit": "a493bd62d731a96c4bd3adc865e6ce8338903044",
         "hash": "1397539050",
         "path": "outstatic/content/posts/wykorzystanie-wizji-komputerowej-do-zwiekszenia-oee-strategie-optymalizacji-procesow.md"
@@ -2741,87 +2822,6 @@
         }
       ],
       "title": "Wykorzystanie IoT w zarządzaniu ryzykiem w praktykach gospodarki o obiegu zamkniętym"
-    },
-    {
-      "__outstatic": {
-        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
-        "hash": "1222761488",
-        "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
-      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
-      "lang": "pl",
-      "publishedAt": "2024-07-15T09:49:23.000Z",
-      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
-      "status": "published",
-      "tags": [
-        {
-          "label": "XGBoost",
-          "value": "xgboost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightgbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catboost"
-        },
-        {
-          "label": "AI",
-          "value": "ai "
-        },
-        {
-          "label": "MES system",
-          "value": "messystem"
-        },
-        {
-          "label": "wykrywanie awarii",
-          "value": "wykrywanieAwarii"
-        },
-        {
-          "label": "analiza danych w przemyśle",
-          "value": "analizaDanychWPrzemyśle"
-        },
-        {
-          "label": "uczenie maszynowe w MES",
-          "value": "uczenieMaszynoweWMES"
-        },
-        {
-          "label": "klasyfikacja stanów maszyn",
-          "value": "klasyfikacjaStanówMaszyn"
-        },
-        {
-          "label": "automatyzacja przemysłowa",
-          "value": "automatyzacjaPrzemysłowa"
-        },
-        {
-          "label": "powiadomienia w czasie rzeczywistym",
-          "value": "powiadomieniaWCzasieRzeczywistym"
-        },
-        {
-          "label": "gradient boosting w przemyśle",
-          "value": "gradientBoostingWPrzemyśle"
-        },
-        {
-          "label": "algorytmy uczenia maszynowego",
-          "value": "algorytmyUczeniaMaszynowego"
-        },
-        {
-          "label": "systemy produkcyjne MES",
-          "value": "systemyProdukcyjneMES"
-        },
-        {
-          "label": "redukcja przestojów produkcyjnych",
-          "value": "redukcjaPrzestojówProdukcyjnych "
-        }
-      ],
-      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
     },
     {
       "__outstatic": {
