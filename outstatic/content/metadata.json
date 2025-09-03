@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:24.525Z",
+  "generated": "2025-09-03T15:14:28.758Z",
   "metadata": [
     {
       "__outstatic": {
@@ -583,6 +583,36 @@
     },
     {
       "__outstatic": {
+        "commit": "2e3fb42cf3f69f6f1c9f0d1440178688f1d27d5d",
+        "hash": "2638583661",
+        "path": "outstatic/content/posts/integracja-cyberbezpieczenstwa-w-predykcyjnym-utrzymaniu-ruchu.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
+      "description": "Jak zintegrować cyberbezpieczeństwo z predykcyjnym utrzymaniem ruchu w systemach HMI i ERP.",
+      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
+      "lang": "pl",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "integracja-cyberbezpieczenstwa-w-predykcyjnym-utrzymaniu-ruchu",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        },
+        {
+          "label": "Temat",
+          "value": "Cyberbezpieczeństwo"
+        }
+      ],
+      "title": "Integracja cyberbezpieczeństwa w predykcyjnym utrzymaniu ruchu"
+    },
+    {
+      "__outstatic": {
         "commit": "57650206fc0ae44f244c0e7912c4acc69df1d956",
         "hash": "83103068",
         "path": "outstatic/content/posts/integracja-5g-i-chmury-jak-cyfrowe-blizniaki-i-ar-rewolucjonizuja-przemys-5-0.md"
@@ -778,36 +808,6 @@
         }
       ],
       "title": "Integrating Green Energy into OEE Metrics: Enhancing Cybersecurity and Quality Control"
-    },
-    {
-      "__outstatic": {
-        "commit": "251a994c27d508fcb9148fcb01c1557a803044da",
-        "hash": "654964426",
-        "path": "outstatic/content/posts/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
-      "description": "Explore how to integrate cybersecurity into predictive maintenance for HMI and ERP systems, enhancing risk management.",
-      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
-      "lang": "en",
-      "publishedAt": "2025-04-05T09:00:00Z",
-      "slug": "integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "Cybersecurity"
-        },
-        {
-          "label": "Predictive Maintenance",
-          "value": "Risk Management"
-        }
-      ],
-      "title": "Integrating Cybersecurity into Predictive Maintenance: A Risk Management Framework"
     },
     {
       "__outstatic": {
