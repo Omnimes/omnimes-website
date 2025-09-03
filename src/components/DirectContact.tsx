@@ -1,8 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import { Avatar, Button } from "@nextui-org/react"
 import { useTranslations } from "next-intl"
-import { useState } from "react"
 import { LuPhone, LuUser } from "react-icons/lu"
 
 export const DirectContact = () => {
@@ -15,9 +15,7 @@ export const DirectContact = () => {
 
   return (
     <div className="mx-auto mt-16 max-w-4xl px-6 text-center">
-      <p className="text-default-500 my-12 text-xl font-medium">
-        {t("OrContactDirectly")}
-      </p>
+      <p className="text-default-500 my-12 text-xl font-medium">{t("OrContactDirectly")}</p>
 
       <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:items-center sm:justify-center">
         {/* Avatar po lewej */}

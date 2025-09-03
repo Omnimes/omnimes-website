@@ -8,6 +8,12 @@ from uuid import uuid4
 from pathlib import Path
 
 try:
+    import yaml
+except ImportError:
+    yaml = None
+    print("WARNING: PyYAML not installed. Install with: pip install pyyaml")
+
+try:
     from dotenv import load_dotenv
     # 1) wczytaj .env z bieżącego katalogu
     load_dotenv(dotenv_path=Path(".env"), override=False)
@@ -57,287 +63,39 @@ def load_config():
 
 def create_default_config(config_path):
     """Tworzy domyślny plik konfiguracyjny"""
-    default_config = {
-        "version": "3.1",
-        "prompts": {
-            "system_prompts": {
-                "pl": [
-                    "Jesteś ekspertem w dziedzinie przemysłu 4.0 i 5.0, specjalizującym się w systemach klasy MES, IoT, AI, BigData i automatyzacji.",
-                    "Piszesz profesjonalne, ale przystępne artykuły blogowe w języku polskim, skierowane do menedżerów, inżynierów oraz osób decyzyjnych.",
-                    "Każdy artykuł powinien mieć jasno określony cel: edukacja, budowanie thought leadership lub generowanie leadów.",
-                    "Stosuj SEO-friendly strukturę: nagłówki H2/H3, krótkie akapity, listy punktowane, pogrubienia najważniejszych fraz.",
-                    "Już w pierwszym akapicie umieść naturalnie słowa kluczowe związane z tematem artykułu.",
-                    "Wpleć jedno zdanie o systemie OmniMES i jego możliwościach.",
-                    "Nie wymyślaj klientów ani konkretnych firm.",
-                    "Na końcu dodaj krótkie podsumowanie z CTA (np. sprawdź inne artykuły, skontaktuj się, poznaj rozwiązania OmniMES).",
-                    "Zachowuj balans między szczegółami technicznymi a przystępnym językiem biznesowym.",
-                    "W artykułach biznesowych dodaj proste przykłady obliczeń opartych na faktach (np. ROI z wdrożenia systemu) i przedstaw je w przystępnej formie.",
-                    "W artykułach technicznych dołącz 1-2 linki do neutralnych i centralnych źródeł (np. Wikipedia, oficjalne dokumentacje), aby zwiększyć wiarygodność treści."
-                ],
-                "en": [
-                    "You are an expert in Industry 4.0 and 5.0, specializing in MES-class systems, IoT, AI, BigData, and industrial automation.",
-                    "Write professional yet accessible blog articles in English, aimed at managers, engineers, and decision-makers.",
-                    "Each article should have a clearly defined purpose: education, thought leadership, or lead generation.",
-                    "Use an SEO-friendly structure: H2/H3 headings, concise paragraphs, bullet points, and bold for key phrases.",
-                    "Include relevant keywords naturally in the introduction.",
-                    "Add one sentence about the OmniMES system and its capabilities.",
-                    "Do not invent clients or specific companies.",
-                    "Conclude with a short summary and CTA (e.g., explore other articles, get in touch, discover OmniMES solutions).",
-                    "Maintain a balance between technical depth and business readability.",
-                    "In business-oriented articles, include simple fact-based calculations (e.g., ROI from system implementation) and present them in an easy-to-understand way.",
-                    "In technical articles, add 1-2 links to neutral, central sources (e.g., Wikipedia, official documentation) to increase credibility."
-                ],
-                "de": [
-                    "Du bist ein Experte für Industrie 4.0 und 5.0, spezialisiert auf MES-Systeme, IoT, KI, BigData und Industrieautomatisierung.",
-                    "Schreibe professionelle, aber leicht verständliche Blogartikel auf Deutsch, die sich an Manager, Ingenieure und Entscheidungsträger richten.",
-                    "Jeder Artikel sollte ein klares Ziel haben: Bildung, Thought Leadership oder Lead-Generierung.",
-                    "Verwende eine SEO-freundliche Struktur: H2/H3-Überschriften, kurze Absätze, Aufzählungen und Fettdruck für Schlüsselbegriffe.",
-                    "Platziere relevante Keywords bereits im ersten Absatz auf natürliche Weise.",
-                    "Füge einen Satz über das OmniMES-System und seine Funktionen ein.",
-                    "Erfinde keine Kunden oder spezifische Unternehmen.",
-                    "Beende den Artikel mit einer kurzen Zusammenfassung und einem CTA (z. B. weitere Artikel lesen, Kontakt aufnehmen, OmniMES-Lösungen entdecken).",
-                    "Halte die Balance zwischen technischen Details und geschäftlicher Verständlichkeit.",
-                    "Füge in geschäftsorientierten Artikeln einfache, faktenbasierte Rechenbeispiele ein (z. B. ROI einer Systemeinführung) und stelle sie verständlich dar.",
-                    "Füge in technischen Artikeln 1-2 Links zu neutralen, zentralen Quellen hinzu (z. B. Wikipedia, offizielle Dokumentationen), um die Glaubwürdigkeit zu erhöhen."
-                ]
-            },
-            "image_prompts": {
-                "technical": "Minimalist illustration of industrial automation. One symbolic element, such as a robotic arm or conveyor. Simple, abstract background with subtle geometric details. Elegant, modern Industry 4.0 aesthetic. Square image 1024x1024.",
-                "business": "Minimalist corporate illustration. One symbolic element of the decision-making process, such as a simple chart or conference table. Simple, abstract background with subtle shadows. Elegant, upscale business style. Square image 1024x1024.",
-                "iot": "Minimalist illustration of the Internet of Things. One symbolic element, such as a smart sensor or connected node. Simple, abstract background with a subtle gradient. Elegant, modern aesthetic of connected devices. Square image 1024x1024.",
-                "ai": "Minimalist illustration of artificial intelligence. A single symbolic element, such as a neural network pattern or algorithmic nodes. A simple, abstract background with smooth gradients. Elegant, futuristic minimalism. Square image 1024x1024.",
-                "mes": "Minimalist illustration of a monitor screen with graphs. Modern, elegant corporate minimalism. A simple, abstract background with a subtle gradient. No text, logo, or branding. Square image 1024x1024."
-            },
-            "topic_generation_prompt": "You are a creative topic generator for industrial and technology content. Based on the provided keywords, generate ONE unique, engaging topic that would make for an excellent blog article. The topic should be specific, actionable, and appeal to industry professionals. Return ONLY the topic title, nothing else."
-        },
-
-        "content": {
-            "tags_base": [
-                {"label": "MES", "value": "mes"},
-                {"label": "Industry 4.0", "value": "industry40"},
-                {"label": "Industry 5.0", "value": "industry50"},
-                {"label": "IoT", "value": "iot"},
-                {"label": "AI", "value": "ai"},
-                {"label": "Automatyzacja", "value": "automation"},
-                {"label": "Predykcja awarii", "value": "predictive-maintenance"},
-                {"label": "OEE", "value": "oee"},
-                {"label": "Cyfrowa transformacja", "value": "digital-transformation"},
-                {"label": "Smart Manufacturing", "value": "smart-manufacturing"},
-                {"label": "Edge Computing", "value": "edge-computing"},
-                {"label": "MQTT", "value": "mqtt"},
-                {"label": "Sparkplug B", "value": "sparkplug-b"},
-                {"label": "Big Data", "value": "big-data"},
-                {"label": "Machine Learning", "value": "machine-learning"},
-                {"label": "Cyberbezpieczeństwo", "value": "cybersecurity"},
-                {"label": "Digital Twin", "value": "digital-twin"},
-                {"label": "Computer Vision", "value": "computer-vision"},
-                {"label": "Blockchain", "value": "blockchain"},
-                {"label": "5G", "value": "5g"},
-                {"label": "Cloud Computing", "value": "cloud-computing"},
-                {"label": "Sustainability", "value": "sustainability"},
-                {"label": "Supply Chain", "value": "supply-chain"},
-                {"label": "Quality Control", "value": "quality-control"}
-            ],
-
-            "topic_generation": {
-                "method_weights": {
-                    "predefined": 0.5,
-                    "gpt_generated": 0.5
-                },
-                "gpt_keywords": [
-                    "automation", "manufacturing", "industry 4.0", "IoT", "AI", "MES", 
-                    "predictive maintenance", "digital transformation", "smart factory",
-                    "edge computing", "machine learning", "computer vision", "blockchain",
-                    "sustainability", "quality control", "supply chain", "cybersecurity",
-                    "digital twin", "cloud computing", "5G", "robotics", "sensor networks",
-                    "data analytics", "real-time monitoring", "process optimization"
-                ]
-            },
-
-            "topic_buckets": {
-                "weights": {
-                    "technical": 0.4,
-                    "business": 0.35,
-                    "mixed": 0.25
-                },
-                "topics": {
-                    "technical": [
-                        "Implementacja MQTT Sparkplug B w środowisku produkcyjnym",
-                        "Edge AI w przemyśle - kompresja modeli i optymalizacja",
-                        "Integracja systemów MES z protokołami IoT",
-                        "RAG (Retrieval Augmented Generation) dla dokumentacji technicznej",
-                        "Predykcja awarii maszyn z wykorzystaniem ML",
-                        "OEE w czasie rzeczywistym - eliminacja mikroprzestojów", 
-                        "Wektorowe bazy danych w przemyśle (Qdrant, Pinecone)",
-                        "Cyberbezpieczeństwo w Industry 4.0 - praktyczne podejście",
-                        "API-first architecture w systemach MES",
-                        "Streaming danych produkcyjnych - Apache Kafka vs MQTT",
-                        "Computer Vision w kontroli jakości produkcji",
-                        "Digital Twin w monitoringu procesów produkcyjnych",
-                        "Blockchain w supply chain management",
-                        "5G w zastosowaniach przemysłowych",
-                        "Edge Computing w czasie rzeczywistym na linii produkcyjnej",
-                        "Mikrousługi w architekturze systemów przemysłowych",
-                        "Containeryzacja aplikacji przemysłowych (Docker/Kubernetes)",
-                        "Time Series Database dla danych IoT",
-                        "Machine Learning na urządzeniach brzegowych",
-                        "Protokoły komunikacyjne: OPC-UA vs MQTT vs Modbus",
-                        "Integracja ERP z systemami produkcyjnymi",
-                        "Monitoring infrastruktury IT w fabrykach",
-                        "Backup i disaster recovery dla systemów krytycznych",
-                        "Load balancing w aplikacjach przemysłowych",
-                        "GraphQL w systemach MES - zalety i implementacja",
-                        "WebRTC dla zdalnego monitoringu maszyn",
-                        "Elasticsearch dla logów produkcyjnych",
-                        "Redis jako cache w aplikacjach real-time"
-                    ],
-                    "business": [
-                        "ROI z wdrożenia systemów Industry 4.0 - studium przypadku",
-                        "Cyfrowa transformacja w produkcji - od czego zacząć?",
-                        "KPI i dashboardy dla kadry zarządzającej",
-                        "Koszty wdrożenia vs korzyści z automatyzacji",
-                        "Zarządzanie zmianą podczas cyfryzacji zakładu",
-                        "Compliance i regulacje w Industry 4.0",
-                        "Szkolenie personelu - przygotowanie na przemysł 5.0",
-                        "Analiza ryzyka projektów automatyzacji",
-                        "Budżetowanie projektów cyfrowej transformacji", 
-                        "Wybór dostawcy systemów MES - kryteria decyzyjne",
-                        "Bezpieczeństwo danych w środowisku przemysłowym",
-                        "Sustainability i zielona transformacja w przemyśle",
-                        "Remote monitoring - korzyści dla managementu",
-                        "Predykcyjna konserwacja - wpływ na budżet zakładu",
-                        "Lean Manufacturing w erze cyfryzacji",
-                        "Change management w projektach Industry 4.0",
-                        "Finansowanie projektów cyfrowej transformacji",
-                        "Outsourcing vs insourcing IT w przemyśle",
-                        "Benchmarking wydajności produkcji",
-                        "Strategia vendor management w projektach IT",
-                        "Total Cost of Ownership (TCO) systemów MES",
-                        "Agile w projektach przemysłowych",
-                        "Stakeholder management w cyfryzacji",
-                        "Risk assessment dla projektów automatyzacji",
-                        "Governance modeli danych w organizacji",
-                        "SLA i KPI dla systemów krytycznych",
-                        "Business continuity planning w przemyśle",
-                        "Vendor lock-in - jak tego unikać",
-                        "Scalability planning dla rosnących firm",
-                        "Digital strategy dla SME w przemyśle"
-                    ],
-                    "mixed": [
-                        "Smart Factory - technologia vs biznes",
-                        "Przemysł 5.0 - człowiek i maszyna w harmonii",
-                        "Zrównoważony rozwój przez automatyzację",
-                        "Kokpity zarządcze w erze Big Data",
-                        "Elastyczność produkcji w niepewnych czasach",
-                        "Innowacje w przemyśle - jak nie zostać w tyle",
-                        "Łańcuch dostaw 4.0 - wyzwania i możliwości",
-                        "Personalizacja masowej produkcji",
-                        "Zarządzanie energią w smart factory",
-                        "Workforce 4.0 - nowe kompetencje w przemyśle",
-                        "Circular economy w manufacturing",
-                        "Resilience vs efficiency w łańcuchu dostaw",
-                        "Quality 4.0 - jakość w erze cyfrowej",
-                        "Customer centricity w B2B manufacturing",
-                        "Predictive analytics vs traditional planning",
-                        "Hybrid work w przemyśle - wyzwania i szanse",
-                        "Data governance w organizacjach produkcyjnych",
-                        "Innovation labs w tradycyjnych firmach",
-                        "Partnership ecosystem w Industry 4.0",
-                        "Digital twins w strategii biznesowej",
-                        "Platform economy w B2B",
-                        "Ecosystem thinking w manufacturing",
-                        "Value stream mapping w erze cyfrowej",
-                        "Customer journey w B2B manufacturing"
-                    ]
-                },
-                "suffixes": {
-                    "technical": [
-                        "- implementacja krok po kroku",
-                        "- najlepsze praktyki",
-                        "- case study", 
-                        "- porównanie rozwiązań",
-                        "- optymalizacja wydajności",
-                        "- analiza architektury",
-                        "- przewodnik wdrożeniowy",
-                        "- troubleshooting i diagnostyka",
-                        "- bezpieczeństwo w praktyce",
-                        "- integracja z istniejącymi systemami"
-                    ],
-                    "business": [
-                        "- analiza kosztów i korzyści",
-                        "- przewodnik dla managementu", 
-                        "- strategie wdrożenia",
-                        "- analiza ROI",
-                        "- zarządzanie ryzykiem",
-                        "- jak przekonać zarząd",
-                        "- budowanie business case",
-                        "- planowanie budżetu",
-                        "- wybór dostawcy",
-                        "- mierzenie sukcesu"
-                    ],
-                    "mixed": [
-                        "- spojrzenie 360°",
-                        "- wyzwania i możliwości",
-                        "- przyszłość branży",
-                        "- trendy 2025",
-                        "- praktyczne zastosowania",
-                        "- perspektywa globalna",
-                        "- innowacje w praktyce",
-                        "- transformacja cyfrowa",
-                        "- zrównoważony rozwój",
-                        "- competitive advantage"
-                    ]
-                }
-            }
-        },
-
-        "settings": {
-            "default_words": 900,
-            "weekly_day": "MON", 
-            "weekly_time": "09:00",
-            "author": {
-                "name": "Martin Szerment",
-                "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-            },
-            "cover_fallbacks": [
-                "/images/omnimes-image.png"
-            ],
-            "retry_settings": {
-                "max_article_retries": 3,
-                "max_image_retries": 2,
-                "retry_delay_seconds": 2
-            },
-            "validation": {
-                "min_title_length": 10,
-                "max_title_length": 90,
-                "min_description_length": 120,
-                "max_description_length": 160,
-                "min_article_words": 200,
-                "max_article_words": 2000,
-                "require_omnimes_mention": True,
-                "require_markdown_headers": True
-            }
-        }
-    }
+    default_config = {}
     
     with open(config_path, 'w', encoding='utf-8') as f:
         json.dump(default_config, f, ensure_ascii=False, indent=2)
     
     logger.info(f"Utworzono domyślny plik konfiguracyjny: {config_path}")
 
+def validate_language_config():
+    """Sprawdza czy konfiguracja języków nie ma duplikatów"""
+    enabled = config["languages"]["enabled"]
+    if len(enabled) != len(set(enabled)):
+        duplicates = [lang for lang in enabled if enabled.count(lang) > 1]
+        logger.error(f"DUPLIKATY W ENABLED_LANGUAGES: {duplicates}")
+        raise ValueError(f"Duplikaty w enabled languages: {duplicates}")
+    
+    logger.info(f"Konfiguracja języków OK: {enabled}")
+    return enabled
+
 # Globalne zmienne
 logger = setup_logging()
 config = load_config()
 
-# ===================== USTAWIENIA Z ENV =====================
-DEFAULT_WEEKLY_DAY = "MON"
-DEFAULT_WEEKLY_TIME = "09:00"
+# Waliduj konfigurację języków przy starcie
+validate_language_config()
+
+# ===================== USTAWIENIA Z ENV + CONFIG =====================
 DEFAULT_WORDS = config["settings"]["default_words"]
 
 # Katalogi/ścieżki
 POSTS_DIR_REL = os.getenv("POSTS_DIR_REL", "outstatic/content/posts")
 CONTENT_PLAN_PATH = Path(os.getenv("CONTENT_PLAN_PATH", "content_plan.json"))
 COVERS_DIR_REL = os.getenv("COVERS_DIR_REL", "public/images")
+CHECKPOINT_PATH = Path("checkpoint.json")
 
 # pliki w repo
 COVER_FALLBACKS = config["settings"]["cover_fallbacks"]
@@ -349,13 +107,60 @@ AUTHOR = config["settings"]["author"]
 GH_OWNER = os.getenv("GH_OWNER", "Omnimes")
 GH_REPO = os.getenv("GH_REPO", "omnimes-website")
 GH_BRANCH = os.getenv("GH_BRANCH", "main")
-GIT_PAT = os.getenv("GIT_PAT")  # wymagany przy PUBLISH_MODE=github_api
+GIT_PAT = os.getenv("GIT_PAT")
 
 # Tryb publikacji
-PUBLISH_MODE = os.getenv("PUBLISH_MODE", "github_api")  # 'github_api' lub 'git'
+PUBLISH_MODE = os.getenv("PUBLISH_MODE", "github_api")
 
 # Kategorie/tematy z konfiguracji
 TAGS_BASE = config["content"]["tags_base"]
+
+# Języki z konfiguracji
+PRIMARY_LANG = config["languages"]["primary"]
+ENABLED_LANGUAGES = config["languages"]["enabled"]
+
+# ===================== CHECKPOINT SYSTEM =====================
+def save_checkpoint(current_slot_index, total_slots, published_slots, failed_slots):
+    """Zapisuje checkpoint z aktualnym stanem publikacji"""
+    checkpoint = {
+        "timestamp": datetime.utcnow().isoformat(),
+        "current_slot_index": current_slot_index,
+        "total_slots": total_slots,
+        "published_count": len(published_slots),
+        "failed_count": len(failed_slots),
+        "published_slots": published_slots,
+        "failed_slots": failed_slots
+    }
+    
+    try:
+        with open(CHECKPOINT_PATH, 'w', encoding='utf-8') as f:
+            json.dump(checkpoint, f, ensure_ascii=False, indent=2)
+        logger.info(f"Checkpoint zapisany: slot {current_slot_index}/{total_slots}")
+    except Exception as e:
+        logger.error(f"Błąd zapisywania checkpoint: {e}")
+
+def load_checkpoint():
+    """Wczytuje ostatni checkpoint"""
+    if not CHECKPOINT_PATH.exists():
+        return None
+    
+    try:
+        with open(CHECKPOINT_PATH, 'r', encoding='utf-8') as f:
+            checkpoint = json.load(f)
+        logger.info(f"Wczytano checkpoint: slot {checkpoint['current_slot_index']}/{checkpoint['total_slots']}")
+        return checkpoint
+    except Exception as e:
+        logger.error(f"Błąd wczytywania checkpoint: {e}")
+        return None
+
+def clear_checkpoint():
+    """Usuwa checkpoint po zakończeniu publikacji"""
+    try:
+        if CHECKPOINT_PATH.exists():
+            CHECKPOINT_PATH.unlink()
+            logger.info("Checkpoint wyczyszczony")
+    except Exception as e:
+        logger.error(f"Błąd czyszczenia checkpoint: {e}")
 
 # ===================== UTILS =====================
 def env(name, default=None, required=False):
@@ -379,13 +184,11 @@ def api_put_file(rel_path: str, content_bytes: bytes, message: str):
         token = env("GIT_PAT", required=True)
         url = f"https://api.github.com/repos/{GH_OWNER}/{GH_REPO}/contents/{rel_path}"
         
-        # Najpierw sprawdź czy plik już istnieje
         headers = {
             "Authorization": f"token {token}", 
             "Accept": "application/vnd.github+json"
         }
         
-        # Pobierz informacje o pliku (jeśli istnieje)
         get_response = requests.get(url, headers=headers, timeout=30)
         
         payload = {
@@ -398,7 +201,6 @@ def api_put_file(rel_path: str, content_bytes: bytes, message: str):
             }
         }
         
-        # Jeśli plik istnieje (status 200), dodaj SHA
         if get_response.status_code == 200:
             file_data = get_response.json()
             payload["sha"] = file_data["sha"]
@@ -408,7 +210,6 @@ def api_put_file(rel_path: str, content_bytes: bytes, message: str):
         else:
             logger.warning(f"Nieoczekiwany status przy sprawdzaniu pliku: {get_response.status_code}")
         
-        # Wyślij żądanie PUT
         r = requests.put(url, headers=headers, json=payload, timeout=60)
         
         if r.status_code not in (200, 201):
@@ -431,7 +232,6 @@ def is_json_string(text: str) -> bool:
     if not text:
         return False
     
-    # Szybkie sprawdzenie - czy zaczyna się od { i kończy na }
     if text.startswith('{') and text.endswith('}'):
         try:
             json.loads(text)
@@ -439,7 +239,6 @@ def is_json_string(text: str) -> bool:
         except:
             pass
     
-    # Sprawdź czy zawiera typowe struktury JSON
     json_indicators = ['"title":', '"body":', '"description":', '"tags":']
     return any(indicator in text for indicator in json_indicators)
 
@@ -450,7 +249,6 @@ def clean_article_body(body: str) -> str:
     
     body = body.strip()
     
-    # Jeśli body to JSON, spróbuj wyciągnąć tylko treść
     if is_json_string(body):
         logger.warning("Wykryto JSON w treści artykułu, próbuję wyczyścić")
         try:
@@ -482,7 +280,7 @@ def clean_article_body(body: str) -> str:
     return body
 
 def extract_json(block: str):
-    """Znacznie ulepszona funkcja do wyciągania JSON z odpowiedzi OpenAI"""
+    """Ulepszona funkcja do wyciągania JSON z odpowiedzi OpenAI"""
     logger.info(f"Rozpoczynam parsowanie JSON. Długość bloku: {len(block)} znaków")
     
     # Usuń markdown code blocks
@@ -492,7 +290,6 @@ def extract_json(block: str):
     cleaned = cleaned.strip()
     
     # Usuń tekst przed i po JSON
-    # Znajdź pierwszy { i ostatni }
     first_brace = cleaned.find('{')
     last_brace = cleaned.rfind('}')
     
@@ -503,13 +300,8 @@ def extract_json(block: str):
     
     # Spróbuj różne metody wydobycia JSON
     extraction_methods = [
-        # Metoda 1: Użyj wyciętego fragmentu
         lambda x: json_candidate,
-        
-        # Metoda 2: Znajdź JSON regex
         lambda x: re.search(r'\{.*\}', x, re.DOTALL).group(0) if re.search(r'\{.*\}', x, re.DOTALL) else None,
-        
-        # Metoda 3: Znajdź wieloliniowy JSON
         lambda x: re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', x, re.DOTALL).group(0) if re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', x, re.DOTALL) else None,
     ]
     
@@ -522,13 +314,10 @@ def extract_json(block: str):
             json_text = json_text.strip()
             logger.info(f"Metoda {i}: Próbuję sparsować JSON ({len(json_text)} znaków)")
             
-            # Spróbuj sparsować
             parsed = json.loads(json_text)
             
-            # Sprawdź czy to rzeczywiście nasz JSON
             required_keys = ['title', 'body']
             if all(key in parsed for key in required_keys):
-                # Dodatkowa walidacja - sprawdź czy body nie jest JSON-em
                 body = parsed.get('body', '')
                 if isinstance(body, str) and not is_json_string(body):
                     logger.info(f"Metoda {i}: Sukces! JSON poprawnie sparsowany")
@@ -565,15 +354,10 @@ def determine_topic_category(topic):
     """Określa kategorię tematu na podstawie słów kluczowych"""
     topic_lower = topic.lower()
     
-    # Słowa kluczowe dla kategorii technicznych
     tech_keywords = ['mqtt', 'api', 'ml', 'ai', 'algorithm', 'protocol', 'integration', 'rag', 'vector', 'edge']
-    # Słowa kluczowe dla kategorii biznesowych  
     business_keywords = ['roi', 'cost', 'budget', 'manager', 'compliance', 'training', 'risk', 'kpi']
-    # Słowa kluczowe dla IoT
     iot_keywords = ['iot', 'sensor', 'device', 'connectivity', 'sparkplug']
-    # Słowa kluczowe dla AI
     ai_keywords = ['ai', 'machine learning', 'neural', 'prediction', 'computer vision']
-    # Słowa kluczowe dla MES
     mes_keywords = ['mes', 'manufacturing', 'production', 'oee', 'monitoring']
     
     if any(keyword in topic_lower for keyword in ai_keywords):
@@ -587,14 +371,13 @@ def determine_topic_category(topic):
     elif any(keyword in topic_lower for keyword in business_keywords):
         return 'business'
     else:
-        return 'technical'  # domyślnie
+        return 'technical'
 
 def validate_article_quality(data, lang):
     """Walidacja z ustawieniami z config.json"""
     issues = []
     validation_config = config["settings"]["validation"]
     
-    # Sprawdź długość tytułu
     title = data.get('title', '')
     min_title = validation_config["min_title_length"]
     max_title = validation_config["max_title_length"]
@@ -604,12 +387,10 @@ def validate_article_quality(data, lang):
     if len(title) < min_title:
         issues.append(f"Tytuł za krótki: {len(title)} znaków (min {min_title})")
     
-    # Sprawdź treść artykułu
     body = data.get('body', '')
     if is_json_string(body):
         issues.append("Treść zawiera JSON")
     
-    # Sprawdź długość treści
     word_count = len(body.split())
     min_words = validation_config["min_article_words"]
     max_words = validation_config["max_article_words"]
@@ -619,15 +400,12 @@ def validate_article_quality(data, lang):
     if word_count > max_words:
         issues.append(f"Artykuł za długi: {word_count} słów (max {max_words})")
     
-    # Sprawdź nagłówki markdown
     if validation_config["require_markdown_headers"] and not re.search(r'^#+\s', body, re.MULTILINE):
         issues.append("Brak nagłówków markdown w treści")
     
-    # Sprawdź wzmiankę o OmniMES
     if validation_config["require_omnimes_mention"] and 'omnimes' not in body.lower():
         issues.append("Brak wzmianki o OmniMES")
     
-    # Sprawdź opis SEO
     description = data.get('description', '')
     min_desc = validation_config["min_description_length"]
     max_desc = validation_config["max_description_length"]
@@ -637,7 +415,6 @@ def validate_article_quality(data, lang):
     if len(description) < min_desc:
         issues.append(f"Opis SEO za krótki: {len(description)} znaków (min {min_desc})")
     
-    # Loguj wyniki
     if issues:
         logger.warning(f"Problemy z jakością artykułu ({lang}): {', '.join(issues)}")
         return False, issues
@@ -645,24 +422,36 @@ def validate_article_quality(data, lang):
         logger.info(f"Artykuł przeszedł walidację jakości ({lang})")
         return True, []
 
-def gen_article_lang(topic, lang="pl", target_words=DEFAULT_WORDS):
-    """Poprawiona funkcja generowania artykułu z lepszym debugowaniem i walidacją"""
+def gen_article_lang(topic, lang=None, target_words=None):
+    """Poprawiona funkcja generowania artykułu z konfiguracją z config.json"""
+    if lang is None:
+        lang = PRIMARY_LANG
+    if target_words is None:
+        target_words = DEFAULT_WORDS
+    
     logger.info(f"Generowanie artykułu: '{topic}' w języku {lang} (~{target_words} słów)")
     
     try:
         cli = openai_client()
+        
+        # Pobierz ustawienia OpenAI z konfiguracji
+        openai_config = config["openai"]
+        model = openai_config["model"]
+        temperature = openai_config["temperature"]["article_generation"]
+        max_tokens = openai_config["max_tokens"]["article_generation"]
         
         # Pobierz prompt systemowy z konfiguracji
         system_prompts = config["prompts"]["system_prompts"][lang]
         sys = " ".join(system_prompts)
         
         # Jeśli język nie jest polski, najpierw przetłumacz temat
-        if lang != "pl":
+        if lang != PRIMARY_LANG:
             logger.info(f"Tłumaczenie tematu na język: {lang}")
             topic = translate_topic(topic, lang)
             logger.info(f"Przetłumaczony temat: {topic}")
+            # Użyj niższej temperatury dla tłumaczeń
+            temperature = openai_config["temperature"]["translation"]
         
-        # Ulepszona instrukcja dla OpenAI - bardziej precyzyjna
         user = f"""
 Napisz kompletny artykuł (~{target_words} słów) na temat: "{topic}"
 
@@ -682,13 +471,10 @@ Pole "body" musi zawierać TYLKO czyste formatowanie Markdown (nagłówki, tekst
 Zwróć TYLKO ten obiekt JSON, nic więcej!
         """
         
-        # Użyj niższej temperatury dla bardziej przewidywalnych wyników
-        temperature = 0.3 if lang != "pl" else 0.5
-        
         r = cli.chat.completions.create(
-            model="gpt-5-mini",
+            model=model,
             temperature=temperature,
-            max_tokens=5000,  # Zwiększ limit tokenów
+            max_tokens=max_tokens,
             messages=[
                 {"role": "system", "content": sys},
                 {"role": "user", "content": user}
@@ -699,19 +485,16 @@ Zwróć TYLKO ten obiekt JSON, nic więcej!
         logger.info(f"Otrzymano odpowiedź OpenAI dla języka {lang}")
         logger.info(f"Długość odpowiedzi: {len(content)} znaków")
         
-        # Wyciągnij JSON
         data = extract_json(content)
         
         if not data:
             logger.error(f"Nie udało się wyodrębnić JSON z odpowiedzi OpenAI dla języka {lang}")
-            # Zapisz do pliku do debugowania
             with open(f"debug_response_{lang}_{datetime.now().strftime('%H%M%S')}.txt", "w", encoding="utf-8") as f:
                 f.write(f"TOPIC: {topic}\n")
                 f.write(f"LANG: {lang}\n")
                 f.write("=" * 50 + "\n")
                 f.write(content)
             
-            # Bezpieczny fallback - NIE używaj całej odpowiedzi jako body
             raise RuntimeError(f"Nie udało się sparsować odpowiedzi OpenAI dla języka {lang}")
         
         # Waliduj i oczyść treść artykułu
@@ -752,8 +535,10 @@ Zwróć TYLKO ten obiekt JSON, nic więcej!
         logger.error(f"Traceback: {traceback.format_exc()}")
         raise
 
-def retry_article_generation(topic, lang="pl", target_words=None):
+def retry_article_generation(topic, lang=None, target_words=None):
     """Generuj artykuł z retry settings z config.json"""
+    if lang is None:
+        lang = PRIMARY_LANG
     if target_words is None:
         target_words = config["settings"]["default_words"]
         
@@ -785,18 +570,18 @@ def retry_article_generation(topic, lang="pl", target_words=None):
     
     raise RuntimeError(f"Nie udało się wygenerować artykułu po {max_retries} próbach")
 
-def gen_article_pl(topic, target_words=DEFAULT_WORDS):
-    # tryb 'translate': najpierw PL
-    return retry_article_generation(topic, lang="pl", target_words=target_words)
-
 def translate_topic(topic, target_lang):
     """Tłumaczy temat na język docelowy"""
     try:
         cli = openai_client()
-        ln = {"en": "English", "de": "German"}[target_lang]
+        openai_config = config["openai"]
+        lang_names = config["languages"]["names"]
+        
+        ln = lang_names[target_lang]
+        
         r = cli.chat.completions.create(
-            model="gpt-5-mini",
-            temperature=0.3,
+            model=openai_config["model"],
+            temperature=openai_config["temperature"]["translation"],
             messages=[
                 {"role": "system", "content": f"Translate the following topic/title to {ln}. Return only the translation, nothing else."},
                 {"role": "user", "content": topic}
@@ -805,18 +590,23 @@ def translate_topic(topic, target_lang):
         return r.choices[0].message.content.strip()
     except Exception as e:
         logger.error(f"Błąd tłumaczenia tematu na {target_lang}: {e}")
-        return topic  # fallback - zwróć oryginalny temat
+        return topic
 
 def translate_md(md_text, target_lang):
     logger.info(f"Tłumaczenie tekstu na język: {target_lang}")
     try:
         cli = openai_client()
-        ln = {"en": "English", "de": "German"}[target_lang]
+        openai_config = config["openai"]
+        lang_names = config["languages"]["names"]
+        
+        ln = lang_names[target_lang]
         sys = ("Tłumacz poniższy Markdown zachowując nagłówki/linki/formatowanie. "
                "Zachowaj ton SEO; dostosuj gramatykę do języka docelowego; bez halucynacji.")
+               
         r = cli.chat.completions.create(
-            model="gpt-5-mini",
-            temperature=0.4,
+            model=openai_config["model"],
+            temperature=openai_config["temperature"]["translation"],
+            max_tokens=openai_config["max_tokens"]["translation"],
             messages=[
                 {"role": "system", "content": sys},
                 {"role": "user", "content": f"Przetłumacz na {ln}. Zwróć tylko Markdown."},
@@ -832,24 +622,23 @@ def translate_md(md_text, target_lang):
         raise
 
 # ===================== NOWE FUNKCJE TOPIC GENERATION =====================
-
 def generate_topic_from_keywords(keywords_list):
     """Generuje temat używając GPT na podstawie słów kluczowych"""
     logger.info("Generowanie tematu przez GPT na podstawie słów kluczowych")
     
     try:
         cli = openai_client()
+        openai_config = config["openai"]
         
-        # Wybierz 3-5 losowych słów kluczowych
         selected_keywords = random.sample(keywords_list, min(random.randint(3, 5), len(keywords_list)))
         keywords_str = ", ".join(selected_keywords)
         
         prompt = config["prompts"]["topic_generation_prompt"]
         
         r = cli.chat.completions.create(
-            model="gpt-5-mini",
-            temperature=0.8,  # Wyższa temperatura dla kreatywności
-            max_tokens=100,
+            model=openai_config["model"],
+            temperature=openai_config["temperature"]["topic_generation"],
+            max_tokens=openai_config["max_tokens"]["topic_generation"],
             messages=[
                 {"role": "system", "content": prompt},
                 {"role": "user", "content": f"Keywords: {keywords_str}"}
@@ -862,26 +651,21 @@ def generate_topic_from_keywords(keywords_list):
         
     except Exception as e:
         logger.error(f"Błąd generowania tematu przez GPT: {e}")
-        # Fallback - użyj standardowej metody
         return propose_topic_predefined()
 
 def propose_topic_predefined():
     """Generuje temat na podstawie predefined topics + sufiksy z config.json"""
     logger.info("Generowanie tematu z predefined topics")
     
-    # Pobierz wagi i kategorie z config
     weights_config = config["content"]["topic_buckets"]["weights"]
     categories = list(weights_config.keys())
     weights = [weights_config[cat] for cat in categories]
     
-    # Losuj kategorię
     category = random.choices(categories, weights=weights)[0]
     
-    # Pobierz tematy i sufiksy dla kategorii
     topics = config["content"]["topic_buckets"]["topics"][category]
     suffixes = config["content"]["topic_buckets"]["suffixes"][category]
     
-    # Wybierz temat bazowy i sufiks
     base_topic = random.choice(topics)
     suffix = random.choice(suffixes)
     
@@ -919,16 +703,15 @@ def gen_cover_png_bytes(topic: str) -> bytes:
     
     retry_config = config["settings"]["retry_settings"]
     max_retries = retry_config["max_image_retries"]
+    openai_config = config["openai"]
     
     for attempt in range(max_retries):
         try:
             cli = openai_client()
             
-            # Określ kategorię tematu i wybierz odpowiedni prompt
             category = determine_topic_category(topic)
             image_prompt_template = config["prompts"]["image_prompts"][category]
             
-            # Wstaw temat do promptu i skróć jeśli za długi
             prompt = image_prompt_template.format(topic=topic[:100])
             
             if len(prompt) > 400:
@@ -937,12 +720,12 @@ def gen_cover_png_bytes(topic: str) -> bytes:
             logger.info(f"Próba {attempt + 1}: Używam promptu dla kategorii '{category}'")
             
             img = cli.images.generate(
-                model="dall-e-3",
+                model=openai_config["image_model"],
                 prompt=prompt,
-                size="1024x1024",
-                quality="standard",
+                size=openai_config["image_size"],
+                quality=openai_config["image_quality"],
                 response_format="b64_json",
-                style="natural"
+                style=openai_config["image_style"]
             )
             
             if not img.data or not img.data[0].b64_json:
@@ -958,7 +741,7 @@ def gen_cover_png_bytes(topic: str) -> bytes:
                 logger.error("Wszystkie próby generowania okładki nieudane")
                 raise
             else:
-                time.sleep(2)  # Krótka przerwa między próbami
+                time.sleep(2)
 
 def pick_fallback_cover() -> str:
     cover = random.choice(COVER_FALLBACKS)
@@ -966,7 +749,6 @@ def pick_fallback_cover() -> str:
     return cover
 
 def upload_cover_png(slug: str, png_bytes: bytes, force_unique=False) -> str:
-    # Opcjonalnie dodaj timestamp dla unikalności
     if force_unique:
         timestamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
         filename = f"{slug}-{timestamp}.png"
@@ -979,7 +761,6 @@ def upload_cover_png(slug: str, png_bytes: bytes, force_unique=False) -> str:
     try:
         api_put_file(rel_path, png_bytes, f"feat(content): cover for {slug}")
         
-        # web path: jeśli katalog w repo zaczyna się od public/, serwujemy od /
         if COVERS_DIR_REL.startswith("public/"):
             web_path = "/" + COVERS_DIR_REL[len("public/"):] + f"/{filename}"
         else:
@@ -992,42 +773,138 @@ def upload_cover_png(slug: str, png_bytes: bytes, force_unique=False) -> str:
         raise
 
 # ===================== RENDER .MD =====================
+def yaml_escape(value):
+    """Escapuje wartość dla YAML z proper handling"""
+    if not isinstance(value, str):
+        return str(value)
+    
+    # Usuń potencjalne problematyczne cudzysłowy z początku i końca (z JSON)
+    if value.startswith('"') and value.endswith('"') and len(value) > 2:
+        value = value[1:-1]
+        logger.info("Usunięto cudzysłowy z wartości podczas YAML escape")
+    
+    # Jeśli zawiera specjalne znaki YAML, użyj double quotes z escapowaniem
+    if any(char in value for char in ['"', "'", '\n', '\r', ':', '[', ']', '{', '}', '|', '>', '#', '@', '`']):
+        # Escapuj double quotes i backslashes
+        escaped = value.replace('\\', '\\\\').replace('"', '\\"')
+        return f'"{escaped}"'
+    else:
+        return f'"{value}"'  # Zawsze używaj double quotes dla bezpieczeństwa
+
 def render_frontmatter(post, lang, published_iso, cover_image, group_id=None):
+    """Poprawiona funkcja z proper YAML formatting"""
     tags = post.get("tags") or TAGS_BASE
+    
+    if yaml:
+        # Użyj PyYAML jeśli dostępne
+        try:
+            # Przygotuj dane do YAML
+            tags_list = []
+            for t in tags:
+                tags_list.append({
+                    'label': str(t.get("label", "")),
+                    'value': str(t.get("value", ""))
+                })
+            
+            frontmatter_data = {
+                'title': str(post['title']),
+                'status': 'published',
+                'author': {
+                    'name': str(AUTHOR['name']),
+                    'picture': str(AUTHOR['picture'])
+                },
+                'slug': str(post['slug']),
+                'description': str(post.get('description', '')),
+                'coverImage': str(cover_image),
+                'tags': tags_list,
+                'lang': str(lang),
+                'publishedAt': str(published_iso)
+            }
+            
+            if group_id:
+                frontmatter_data['groupId'] = str(group_id)
+            
+            # Użyj yaml.dump do proper formatowania
+            yaml_content = yaml.dump(frontmatter_data, 
+                                    default_flow_style=False, 
+                                    allow_unicode=True,
+                                    sort_keys=False,
+                                    width=1000)  # Zapobiega łamaniu długich linii
+            
+            return "---\n" + yaml_content + "---\n"
+            
+        except Exception as e:
+            logger.error(f"Błąd generowania YAML frontmatter: {e}")
+            # Fallback do prostego formatowania
+            pass
+    
+    # Fallback bez PyYAML lub gdy PyYAML zawiedzie
     tags_str = ", ".join([
-        "{ 'label': '%s', 'value': '%s' }" % (t["label"], t["value"])
+        "{ 'label': %s, 'value': %s }" % (yaml_escape(t["label"]), yaml_escape(t["value"]))
         for t in tags
     ])
     
     fm = [
         "---",
-        f"title: '{post['title']}'",
-        "status: 'published'",
-        f"author:\n name: '{AUTHOR['name']}'\n picture: '{AUTHOR['picture']}'",
-        f"slug: '{post['slug']}'",
-        f"description: '{post['description']}'",
-        f"coverImage: '{cover_image}'",
+        f"title: {yaml_escape(post['title'])}",
+        f"status: 'published'",
+        f"author:",
+        f"  name: {yaml_escape(AUTHOR['name'])}",
+        f"  picture: {yaml_escape(AUTHOR['picture'])}",
+        f"slug: {yaml_escape(post['slug'])}",
+        f"description: {yaml_escape(post.get('description', ''))}",
+        f"coverImage: {yaml_escape(cover_image)}",
         f"tags: [ {tags_str} ]",
         f"lang: '{lang}'",
         f"publishedAt: '{published_iso}'",
     ]
     
     if group_id:
-        fm.append(f"groupId: '{group_id}'")
+        fm.append(f"groupId: {yaml_escape(group_id)}")
     
     fm.extend(["---", ""])
     return "\n".join(fm)
 
+def validate_article_before_render(post, lang):
+    """Sprawdza artykuł przed renderowaniem i czyści problematyczne znaki"""
+    
+    # Sprawdź tytuł
+    title = post.get('title', '')
+    if not title:
+        raise ValueError("Brak tytułu artykułu")
+    
+    # Wyczyść niepotrzebne cudzysłowy z tytułu (może pochodzić z JSON)
+    if title.startswith('"') and title.endswith('"') and len(title) > 2:
+        title = title[1:-1]  # Usuń cudzysłowy z początku i końca
+        post['title'] = title
+        logger.info(f"Usunięto cudzysłowy z tytułu: {title}")
+    
+    # Sprawdź inne pola
+    description = post.get('description', '')
+    if description.startswith('"') and description.endswith('"') and len(description) > 2:
+        description = description[1:-1]
+        post['description'] = description
+        logger.info("Usunięto cudzysłowy z opisu")
+    
+    # Sprawdź body na obecność JSON
+    body = post.get('body', '')
+    if is_json_string(body):
+        logger.error("Wykryto JSON w body podczas walidacji przed renderowaniem!")
+        raise ValueError("Body zawiera JSON zamiast Markdown")
+    
+    return post
+
 def render_md(post, lang, published_iso, cover_image, group_id=None):
     """Poprawiona funkcja renderowania z dodatkową walidacją"""
     
-    # Dodatkowa walidacja treści
+    # Waliduj i wyczyść artykuł
+    post = validate_article_before_render(post, lang)
+    
     body = post.get("body", "")
     if is_json_string(body):
         logger.error("KRYTYCZNY BŁĄD: Wykryto JSON w treści artykułu podczas renderowania!")
         logger.error(f"Treść: {body[:200]}...")
         
-        # Spróbuj oczyścić
         cleaned_body = clean_article_body(body)
         if cleaned_body and len(cleaned_body.strip()) > 100:
             logger.warning("Udało się wyczyścić treść z JSON")
@@ -1052,36 +929,6 @@ def render_md(post, lang, published_iso, cover_image, group_id=None):
     
     logger.info(f"Wygenerowano plik .md o długości {len(result)} znaków")
     return result
-
-def test_article_generation(topic="Test generowania artykułu"):
-    """Funkcja testowa do debugowania generowania artykułów"""
-    logger.info(f"=== TEST GENEROWANIA ARTYKUŁU: {topic} ===")
-    
-    try:
-        data = retry_article_generation(topic, lang="pl")
-        
-        logger.info("=== WYNIKI TESTU ===")
-        logger.info(f"Title: {data['title']}")
-        logger.info(f"Description: {data['description']}")
-        logger.info(f"Tags: {data['tags']}")
-        logger.info(f"Body length: {len(data['body'])} chars")
-        logger.info(f"Body preview: {data['body'][:200]}...")
-        
-        # Test renderowania
-        test_md = render_md(data, "pl", "2025-09-01T10:00:00Z", "/images/test.png")
-        
-        # Zapisz do pliku testowego
-        test_file = Path("test_article.md")
-        test_file.write_text(test_md, encoding="utf-8")
-        
-        logger.info(f"Plik testowy zapisany jako: {test_file}")
-        logger.info("=== KONIEC TESTU ===")
-        
-        print(f"Test zakończony! Sprawdź plik: {test_file}")
-        
-    except Exception as e:
-        logger.error(f"Błąd testu: {e}")
-        logger.error(f"Traceback: {traceback.format_exc()}")
 
 # ===================== PLANER =====================
 def load_plan():
@@ -1122,12 +969,10 @@ def due_slots(plan):
         status = s.get("status", "scheduled")
         
         if status == "published":
-            # Status "published" = publikuj NATYCHMIAST bez względu na datę
             out.append(s)
             logger.info(f"Slot z statusem 'published' dodany do publikacji: {s.get('topic', 'brak tematu')}")
             
         elif status == "scheduled":
-            # Status "scheduled" = publikuj TYLKO gdy nadejdzie zaplanowana data
             dt = datetime.fromisoformat(s["date"].replace("Z", ""))
             if dt <= now:
                 out.append(s)
@@ -1136,7 +981,6 @@ def due_slots(plan):
                 logger.info(f"Slot zaplanowany na {s['date']} jeszcze czeka: {s.get('topic', 'brak tematu')}")
                 
         elif status == "completed":
-            # Status "completed" = już opublikowany, pomijamy
             logger.info(f"Slot już opublikowany (completed), pomijam: {s.get('topic', 'brak tematu')}")
             continue
     
@@ -1160,7 +1004,6 @@ def backup_and_validate_before_publish(slot):
     backup_dir = Path("backups") / datetime.now().strftime("%Y-%m-%d")
     backup_dir.mkdir(parents=True, exist_ok=True)
     
-    # Zapisz backup slotu
     backup_file = backup_dir / f"slot_{datetime.now().strftime('%H%M%S')}.json"
     backup_file.write_text(json.dumps(slot, ensure_ascii=False, indent=2), encoding="utf-8")
     
@@ -1174,7 +1017,7 @@ def put_post(slug: str, body_md: str, message: str):
     logger.info(f"Post {slug} opublikowany pomyślnie")
 
 def publish_one(slot):
-    """Ulepszona wersja publish_one z lepszym error handling"""
+    """Ulepszona wersja publish_one z lepszym error handling i debugowaniem"""
     logger.info("=" * 30)
     logger.info(f"ROZPOCZĘCIE PUBLIKACJI SLOTU")
     logger.info(f"Data: {slot['date']}")
@@ -1182,7 +1025,6 @@ def publish_one(slot):
     logger.info("=" * 30)
     
     try:
-        # Backup przed publikacją
         backup_and_validate_before_publish(slot)
         
         topic = slot["topic"] or propose_topic()
@@ -1192,8 +1034,12 @@ def publish_one(slot):
         msg = f"feat(content): post '{topic}' {when_dt.date()}"
         
         logger.info(f"Tryb językowy: {lang_policy}")
+        
+        # DEBUG: Pokazuj dokładnie które języki będą przetwarzane
+        logger.info(f"ENABLED_LANGUAGES: {ENABLED_LANGUAGES}")
+        logger.info(f"PRIMARY_LANG: {PRIMARY_LANG}")
 
-        # ======== okładka wspólna dla zestawu PL/EN/DE ========
+        # Okładka wspólna dla zestawu
         try:
             cover_slug_seed = slugify(topic) or f"post-{when_dt.date()}"
             logger.info(f"Generowanie okładki dla slug: {cover_slug_seed}")
@@ -1207,63 +1053,65 @@ def publish_one(slot):
             logger.info("Tryb triple-original: generowanie 3 niezależnych artykułów")
             group_id = str(uuid4())
 
-            # Użyj retry_article_generation zamiast gen_article_lang
-            data_pl = retry_article_generation(topic, lang="pl")
-            data_pl["slug"] = ensure_unique_slug(data_pl["slug"])
-            pl_md = render_md(data_pl, "pl", when_iso, cover_path, group_id)
-            put_post(data_pl["slug"], pl_md, msg + " [PL]")
+            # Generuj dla wszystkich włączonych języków
+            for lang in ENABLED_LANGUAGES:
+                logger.info(f"Generowanie artykułu dla języka: {lang}")
+                
+                try:
+                    # Dla języka podstawowego - standardowa walidacja, dla innych - tłumaczenie
+                    is_translation = (lang != PRIMARY_LANG)
+                    data = retry_article_generation(topic, lang=lang, is_translation=is_translation)
+                    data["slug"] = ensure_unique_slug(data["slug"])
+                    lang_md = render_md(data, lang, when_iso, cover_path, group_id)
+                    put_post(data["slug"], lang_md, msg + f" [{lang.upper()}]")
+                    logger.info(f"Artykuł dla języka {lang} opublikowany: {data['slug']}")
+                    
+                except Exception as e:
+                    logger.error(f"Błąd generowania artykułu dla języka {lang}: {e}")
+                    logger.warning(f"Pomijam język {lang} i kontynuuję z pozostałymi")
+                    continue
 
-            data_en = retry_article_generation(topic, lang="en")
-            data_en["slug"] = ensure_unique_slug(data_en["slug"])
-            en_md = render_md(data_en, "en", when_iso, cover_path, group_id)
-            put_post(data_en["slug"], en_md, msg + " [EN]")
-
-            data_de = retry_article_generation(topic, lang="de")
-            data_de["slug"] = ensure_unique_slug(data_de["slug"])
-            de_md = render_md(data_de, "de", when_iso, cover_path, group_id)
-            put_post(data_de["slug"], de_md, msg + " [DE]")
-
-            slot["slug"] = data_pl["slug"]
+            # Ustaw slug główny na język podstawowy
+            slot["slug"] = slugify(topic)
 
         else:
-            # tryb 'translate'
+            # Tryb 'translate' - język polski główny
             logger.info("Tryb translate: generowanie PL + tłumaczenia")
             
-            # Użyj retry_article_generation
-            data_pl = retry_article_generation(topic, lang="pl")
+            # DEBUG: Sprawdź listę języków do tłumaczenia
+            languages_to_translate = [lang for lang in ENABLED_LANGUAGES if lang != PRIMARY_LANG]
+            logger.info(f"Języki do tłumaczenia: {languages_to_translate}")
+            
+            # Główny artykuł w języku polskim
+            logger.info(f"Generowanie głównego artykułu w języku: {PRIMARY_LANG}")
+            data_pl = retry_article_generation(topic, lang=PRIMARY_LANG)
             data_pl["slug"] = ensure_unique_slug(data_pl["slug"])
-            pl_md = render_md(data_pl, "pl", when_iso, cover_path)
-            put_post(data_pl["slug"], pl_md, msg + " (PL/EN/DE via translate)")
+            pl_md = render_md(data_pl, PRIMARY_LANG, when_iso, cover_path)
+            put_post(data_pl["slug"], pl_md, msg + f" ({'/'.join(ENABLED_LANGUAGES).upper()} via translate)")
+            logger.info(f"Główny artykuł ({PRIMARY_LANG}) opublikowany: {data_pl['slug']}")
 
-            logger.info("Tłumaczenie na EN i DE...")
-            
-            topic_en = translate_topic(topic, "en")
-            topic_de = translate_topic(topic, "de")
-            
-            en_md_body = translate_md(data_pl["body"], "en")
-            de_md_body = translate_md(data_pl["body"], "de")
+            # Tłumacz na inne języki
+            for lang in languages_to_translate:
+                logger.info(f"=== Rozpoczynam tłumaczenie na język: {lang} ===")
+                
+                topic_translated = translate_topic(topic, lang)
+                logger.info(f"Temat przetłumaczony na {lang}: {topic_translated}")
+                
+                translated_body = translate_md(data_pl["body"], lang)
+                logger.info(f"Treść przetłumaczona na {lang}: {len(translated_body)} znaków")
 
-            data_en = {
-                "title": topic_en,
-                "description": data_pl["description"],
-                "tags": data_pl.get("tags", TAGS_BASE),
-                "body": en_md_body,
-                "slug": ensure_unique_slug(slugify(topic_en))
-            }
-            
-            data_de = {
-                "title": topic_de,
-                "description": data_pl["description"],
-                "tags": data_pl.get("tags", TAGS_BASE),
-                "body": de_md_body,
-                "slug": ensure_unique_slug(slugify(topic_de))
-            }
+                data_lang = {
+                    "title": topic_translated,
+                    "description": data_pl["description"],
+                    "tags": data_pl.get("tags", TAGS_BASE),
+                    "body": translated_body,
+                    "slug": ensure_unique_slug(slugify(topic_translated))
+                }
 
-            en_md = render_md(data_en, "en", when_iso, cover_path)
-            de_md = render_md(data_de, "de", when_iso, cover_path)
-            
-            put_post(data_en["slug"], en_md, msg + " [EN]")
-            put_post(data_de["slug"], de_md, msg + " [DE]")
+                lang_md = render_md(data_lang, lang, when_iso, cover_path)
+                put_post(data_lang["slug"], lang_md, msg + f" [{lang.upper()}]")
+                
+                logger.info(f"=== Tłumaczenie na język {lang} zakończone: {data_lang['slug']} ===")
 
             slot["slug"] = data_pl["slug"]
 
@@ -1304,6 +1152,10 @@ def main():
                         help="wymuś metodę generowania tematu")
 
         sp3 = sub.add_parser("run-due", help="publikuje wszystkie sloty, których data <= teraz")
+        sp3.add_argument("--auto", action="store_true", 
+                        help="automatyczne wykonanie bez pytania o potwierdzenie")
+        sp3.add_argument("--continue", dest="continue_from_checkpoint", action="store_true",
+                        help="kontynuuj od ostatniego checkpointu")
         
         sp4 = sub.add_parser("propose-topic", help="proponuje losowy temat")
         sp4.add_argument("--method", default=None, choices=["predefined", "gpt_generated"],
@@ -1317,12 +1169,15 @@ def main():
         
         sp7 = sub.add_parser("test-article", help="testuje generowanie artykułu bez publikacji")
         sp7.add_argument("--topic", default=None, help="temat do testu (opcjonalnie)")
+        sp7.add_argument("--lang", default=None, choices=ENABLED_LANGUAGES, help="język artykułu")
         sp7.add_argument("--method", default=None, choices=["predefined", "gpt_generated"])
 
         sp8 = sub.add_parser("validate-articles", help="testuje i waliduje generowanie artykułów")
         sp8.add_argument("--count", type=int, default=3, help="liczba testów do wykonania")
         
         sp9 = sub.add_parser("show-config", help="wyświetla aktualne ustawienia generacji tematów")
+        
+        sp10 = sub.add_parser("check-published", help="sprawdza które sloty zostały opublikowane")
 
         args = ap.parse_args()
         logger.info(f"Wykonywanie komendy: {args.cmd}")
@@ -1330,7 +1185,6 @@ def main():
         plan = load_plan()
 
         if args.cmd == "add-slot":
-            # Ustal temat - własny lub wygenerowany
             if args.topic:
                 topic = args.topic
                 logger.info(f"Używam własnego tematu: {topic}")
@@ -1348,7 +1202,7 @@ def main():
                 "date": args.date,
                 "topic": topic,
                 "status": args.status,
-                "lang_policy": args.lang_policy or "triple-original",
+                "lang_policy": args.lang_policy or "translate",
                 "slug": None
             }
             plan["slots"].append(slot)
@@ -1377,6 +1231,8 @@ def main():
 
         elif args.cmd == "test-article":
             test_topic = args.topic if args.topic else propose_topic()
+            test_lang = args.lang if args.lang else PRIMARY_LANG
+            
             if args.method:
                 if args.method == "gpt_generated":
                     keywords = config["content"]["topic_generation"]["gpt_keywords"]
@@ -1384,13 +1240,47 @@ def main():
                 elif args.method == "predefined":
                     test_topic = propose_topic_predefined()
             
-            test_article_generation(test_topic)
+            try:
+                logger.info(f"=== TEST GENEROWANIA ARTYKUŁU: {test_topic} ({test_lang}) ===")
+                
+                data = retry_article_generation(test_topic, lang=test_lang)
+                
+                logger.info("=== WYNIKI TESTU ===")
+                logger.info(f"Title: {data['title']}")
+                logger.info(f"Description: {data['description']}")
+                logger.info(f"Tags: {data['tags']}")
+                logger.info(f"Body length: {len(data['body'])} chars")
+                logger.info(f"Body preview: {data['body'][:200]}...")
+                
+                # Test renderowania
+                test_md = render_md(data, test_lang, "2025-09-01T10:00:00Z", "/images/test.png")
+                
+                # Zapisz do pliku testowego
+                test_file = Path(f"test_article_{test_lang}.md")
+                test_file.write_text(test_md, encoding="utf-8")
+                
+                logger.info(f"Plik testowy zapisany jako: {test_file}")
+                logger.info("=== KONIEC TESTU ===")
+                
+                print(f"Test zakończony! Sprawdź plik: {test_file}")
+                
+            except Exception as e:
+                logger.error(f"Błąd testu: {e}")
+                logger.error(f"Traceback: {traceback.format_exc()}")
 
         elif args.cmd == "show-config":
-            print("=== AKTUALNE USTAWIENIA GENERACJI TEMATÓW ===")
+            print("=== AKTUALNE USTAWIENIA ===")
+            
+            print(f"Język główny: {PRIMARY_LANG}")
+            print(f"Włączone języki: {', '.join(ENABLED_LANGUAGES)}")
+            
+            print(f"\nModel OpenAI: {config['openai']['model']}")
+            print(f"Temperatury: Artykuły={config['openai']['temperature']['article_generation']}, "
+                  f"Tematy={config['openai']['temperature']['topic_generation']}, "
+                  f"Tłumaczenia={config['openai']['temperature']['translation']}")
             
             method_weights = config["content"]["topic_generation"]["method_weights"]
-            print(f"Metody generacji tematów:")
+            print(f"\nMetody generacji tematów:")
             for method, weight in method_weights.items():
                 print(f"  {method}: {weight*100:.0f}%")
             
@@ -1400,10 +1290,39 @@ def main():
                 topic_count = len(config["content"]["topic_buckets"]["topics"][category])
                 suffix_count = len(config["content"]["topic_buckets"]["suffixes"][category])
                 print(f"  {category}: {weight*100:.0f}% ({topic_count} tematów, {suffix_count} sufiksów)")
+
+        elif args.cmd == "check-published":
+            published_actual = 0
+            scheduled_past = 0
             
-            gpt_keywords = config["content"]["topic_generation"]["gpt_keywords"]
-            print(f"\nSłowa kluczowe dla GPT ({len(gpt_keywords)} słów):")
-            print(f"  {', '.join(gpt_keywords[:10])}{'...' if len(gpt_keywords) > 10 else ''}")
+            now = datetime.utcnow().replace(microsecond=0)
+            
+            print("=== SPRAWDZANIE STATUSU SLOTÓW ===")
+            
+            for slot in plan.get("slots", []):
+                date = slot["date"]
+                status = slot.get("status", "scheduled")
+                slug = slot.get("slug")
+                
+                slot_date = datetime.fromisoformat(date.replace("Z", ""))
+                is_past = slot_date <= now
+                
+                if status == "completed":
+                    published_actual += 1
+                    print(f"✅ {date[:10]} - COMPLETED ({slug or 'brak slug'})")
+                elif is_past and status == "scheduled":
+                    scheduled_past += 1
+                    print(f"⚠️ {date[:10]} - SCHEDULED ale data minęła")
+                else:
+                    print(f"⏳ {date[:10]} - SCHEDULED (przyszłość)")
+            
+            print(f"\n=== PODSUMOWANIE ===")
+            print(f"Sloty oznaczone jako COMPLETED: {published_actual}")
+            print(f"Sloty SCHEDULED z przeszłą datą: {scheduled_past}")
+            print(f"Razem slotów: {len(plan.get('slots', []))}")
+            
+            if scheduled_past > 0:
+                print(f"\n⚠️ {scheduled_past} slotów może być już opublikowanych ale nie oznaczonych!")
 
         elif args.cmd == "run-due":
             due = due_slots(plan)
@@ -1412,20 +1331,107 @@ def main():
                 print("Brak slotów do publikacji.")
                 return
 
-            logger.info(f"Rozpoczynanie publikacji {len(due)} slotów")
-            published_count = 0
+            # Sprawdź checkpoint
+            checkpoint = None
+            start_index = 0
+            published_slots = []
+            failed_slots = []
             
-            for slot in due:
+            if args.continue_from_checkpoint:
+                checkpoint = load_checkpoint()
+                if checkpoint:
+                    start_index = checkpoint["current_slot_index"]
+                    published_slots = checkpoint.get("published_slots", [])
+                    failed_slots = checkpoint.get("failed_slots", [])
+                    print(f"📄 Kontynuowanie od slotu {start_index + 1}/{len(due)}")
+                    print(f"Dotychczas opublikowanych: {len(published_slots)}, nieudanych: {len(failed_slots)}")
+                else:
+                    print("Brak checkpointu do kontynuowania.")
+
+            # Pokazuj sloty do publikacji
+            if start_index == 0:
+                print(f"Znaleziono {len(due)} slotów do publikacji:")
+                for i, slot in enumerate(due, 1):
+                    date = slot["date"][:10]
+                    topic = slot.get("topic") or "temat zostanie wygenerowany"
+                    print(f"  {i}. {date} - {topic}")
+            else:
+                remaining = len(due) - start_index
+                print(f"Pozostało {remaining} slotów do publikacji (kontynuacja):")
+                for i, slot in enumerate(due[start_index:], start_index + 1):
+                    date = slot["date"][:10]
+                    topic = slot.get("topic") or "temat zostanie wygenerowany"
+                    print(f"  {i}. {date} - {topic}")
+            
+            # Auto mode lub pytanie
+            if not args.auto:
+                remaining_count = len(due) - start_index
+                response = input(f"\nCzy chcesz opublikować {remaining_count} slotów? (y/N): ")
+                if response.lower() not in ['y', 'yes', 'tak']:
+                    print("Anulowano.")
+                    return
+            else:
+                remaining_count = len(due) - start_index
+                print(f"Tryb automatyczny: publikuję {remaining_count} slotów...")
+
+            logger.info(f"Rozpoczynanie publikacji {len(due) - start_index} slotów (od indeksu {start_index})")
+            published_count = len(published_slots)
+            
+            for i, slot in enumerate(due[start_index:], start_index):
                 try:
+                    print(f"\n[{i+1}/{len(due)}] Publikuję slot {slot['date'][:10]}...")
+                    
+                    # Zapisz checkpoint przed publikacją
+                    save_checkpoint(i, len(due), published_slots, failed_slots)
+                    
                     publish_one(slot)
                     published_count += 1
+                    published_slots.append({
+                        "date": slot.get("date"),
+                        "topic": slot.get("topic"),
+                        "slug": slot.get("slug")
+                    })
+                    
+                    # Zapisz plan natychmiast po udanym slocie
+                    save_plan(plan)
+                    logger.info(f"Plan zapisany po slocie {slot.get('date', 'unknown')}")
+                    
+                    print(f"✅ Slot {i+1} opublikowany pomyślnie")
+                    
+                except KeyboardInterrupt:
+                    print(f"\n⚠️ Przerwano przez użytkownika po {published_count} opublikowanych slotach")
+                    save_plan(plan)
+                    save_checkpoint(i, len(due), published_slots, failed_slots)
+                    logger.warning(f"Publikacja przerwana przez użytkownika. Opublikowano: {published_count}")
+                    print("💡 Użyj --continue aby kontynuować od tego miejsca")
+                    break
+                    
                 except Exception as e:
-                    logger.error(f"Błąd publikacji slotu: {e}")
+                    logger.error(f"Błąd publikacji slotu {slot.get('date', 'unknown')}: {e}")
+                    failed_slots.append({
+                        "date": slot.get("date"),
+                        "topic": slot.get("topic"),
+                        "error": str(e)
+                    })
+                    print(f"❌ Slot {i+1} nieudany: {str(e)[:100]}...")
                     continue
             
-            save_plan(plan)
-            logger.info(f"Ukończono publikację. Opublikowano: {published_count}/{len(due)}")
-            print(f"Opublikowano {published_count} z {len(due)} slot/ów.")
+            # Podsumowanie
+            print(f"\n=== PODSUMOWANIE ===")
+            print(f"✅ Opublikowane: {published_count}/{len(due)}")
+            
+            if failed_slots:
+                print(f"❌ Nieudane: {len(failed_slots)}")
+                for failed in failed_slots:
+                    print(f"   - {failed['date'][:10]}: {failed['error'][:50]}...")
+            
+            # Wyczyść checkpoint jeśli wszystko ukończone
+            if published_count + len(failed_slots) == len(due):
+                clear_checkpoint()
+                print("🎉 Wszystkie sloty przetworzone - checkpoint wyczyszczony")
+            
+            logger.info(f"Ukończono publikację. Opublikowano: {published_count}/{len(due)}, nieudane: {len(failed_slots)}")
+            print(f"\n📄 Sprawdź szczegóły w log.txt")
 
         elif args.cmd == "test-image":
             try:
@@ -1449,8 +1455,8 @@ def main():
                 topic = propose_topic()
                 try:
                     print(f"Test {i+1}: Generuję '{topic[:50]}...'")
-                    data = retry_article_generation(topic, "pl")
-                    is_valid, issues = validate_article_quality(data, "pl")
+                    data = retry_article_generation(topic, PRIMARY_LANG)
+                    is_valid, issues = validate_article_quality(data, PRIMARY_LANG)
                     
                     if is_valid:
                         print(f"Test {i+1}: ✅ OK - {data['title'][:50]}...")
@@ -1476,9 +1482,8 @@ def main():
                 create_default_config(Path("config.json"))
                 print("Config.json został zaktualizowany!")
                 print("Nowe funkcje:")
-                print("✅ Inteligentna generacja tematów przez GPT")
-                print("✅ Konfigurowalne wagi metod i kategorii")
-                print("✅ Rozszerzone ustawienia walidacji")
+                print("✅ Pełna konfiguracja OpenAI (model, temperatury, tokeny)")
+                print("✅ Konfigurowalne języki i język główny")
                 print("✅ Wszystkie ustawienia w JSON")
             except Exception as e:
                 logger.error(f"Błąd aktualizacji config: {e}")

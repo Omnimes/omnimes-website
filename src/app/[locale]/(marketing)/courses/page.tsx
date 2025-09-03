@@ -4,9 +4,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { getDocuments, load } from "outstatic/server"
 
-import { genPageMetadata } from "@/app/seo"
-import { DirectContact } from "@/components/DirectContact"
 import { generateSearchJSON } from "@/lib/generateSearchJSON"
+import { DirectContact } from "@/components/DirectContact"
+import { genPageMetadata } from "@/app/seo"
 
 export type ExtendedOstDocument = OstDocument & {
   tags: { value: string; label: string }[]
@@ -89,7 +89,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
   return (
     <>
       {allCourses.length === 0 ? (
-        <DirectContact />  
+        <DirectContact />
       ) : (
         <ListLayout
           posts={allCourses}

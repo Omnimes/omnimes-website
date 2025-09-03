@@ -1,0 +1,886 @@
+2025-09-03 15:49:42,093 - INFO - ==================================================
+2025-09-03 15:49:42,102 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 15:49:42,108 - INFO - ==================================================
+2025-09-03 15:49:42,135 - INFO - Wczytano konfigurację z config.json
+2025-09-03 15:49:42,141 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 15:49:42,172 - INFO - Wykonywanie komendy: run-due
+2025-09-03 15:49:42,180 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 15:49:42,200 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 15:49:42,214 - INFO - Slot już opublikowany (completed), pomijam: 
+2025-09-03 15:49:42,215 - INFO - Znaleziono 0 slotów do publikacji
+2025-09-03 15:49:42,295 - INFO - Brak slotów do publikacji
+2025-09-03 15:49:42,295 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 15:50:00,213 - INFO - ==================================================
+2025-09-03 15:50:00,214 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 15:50:00,214 - INFO - ==================================================
+2025-09-03 15:50:00,215 - INFO - Wczytano konfigurację z config.json
+2025-09-03 15:50:00,215 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 15:50:00,219 - INFO - Wykonywanie komendy: run-due
+2025-09-03 15:50:00,219 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 15:50:00,236 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 15:50:00,237 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 15:50:00,237 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 15:50:31,723 - INFO - Rozpoczynanie publikacji 1 slotów
+2025-09-03 15:50:31,723 - INFO - ==============================
+2025-09-03 15:50:31,723 - INFO - ROZPOCZĘCIE PUBLIKACJI SLOTU
+2025-09-03 15:50:31,723 - INFO - Data: 2025-09-01T10:00:00Z
+2025-09-03 15:50:31,723 - INFO - Temat: 
+2025-09-03 15:50:31,723 - INFO - ==============================
+2025-09-03 15:50:31,729 - INFO - Backup slotu zapisany: backups\2025-09-03\slot_155031.json
+2025-09-03 15:50:31,730 - INFO - Wybrana metoda generowania tematu: gpt_generated
+2025-09-03 15:50:31,730 - INFO - Generowanie tematu przez GPT na podstawie słów kluczowych
+2025-09-03 15:50:34,637 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 15:50:37,080 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:37,081 - INFO - Retrying request to /chat/completions in 0.486542 seconds
+2025-09-03 15:50:38,614 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:38,614 - INFO - Retrying request to /chat/completions in 0.985528 seconds
+2025-09-03 15:50:39,813 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:39,814 - ERROR - Błąd generowania tematu przez GPT: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:39,814 - INFO - Generowanie tematu z predefined topics
+2025-09-03 15:50:39,814 - INFO - Wygenerowany temat (technical): OEE w czasie rzeczywistym - eliminacja mikroprzestojów - najlepsze praktyki
+2025-09-03 15:50:39,815 - INFO - Tryb językowy: translate
+2025-09-03 15:50:39,815 - INFO - Generowanie okładki dla slug: oee-w-czasie-rzeczywistym-eliminacja-mikroprzestojow-najlepsze-praktyki
+2025-09-03 15:50:39,815 - INFO - Generowanie okładki dla tematu: 'OEE w czasie rzeczywistym - eliminacja mikroprzestojów - najlepsze praktyki'
+2025-09-03 15:50:39,991 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 15:50:39,991 - INFO - Próba 1: Używam promptu dla kategorii 'mes'
+2025-09-03 15:50:41,065 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-09-03 15:50:41,066 - ERROR - Próba 1 generowania okładki nieudana: Error code: 400 - {'error': {'message': 'Billing hard limit has been reached', 'type': 'image_generation_user_error', 'param': None, 'code': 'billing_hard_limit_reached'}}
+2025-09-03 15:50:43,230 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 15:50:43,231 - INFO - Próba 2: Używam promptu dla kategorii 'mes'
+2025-09-03 15:50:44,610 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-09-03 15:50:44,612 - ERROR - Próba 2 generowania okładki nieudana: Error code: 400 - {'error': {'message': 'Billing hard limit has been reached', 'type': 'image_generation_user_error', 'param': None, 'code': 'billing_hard_limit_reached'}}
+2025-09-03 15:50:44,612 - ERROR - Wszystkie próby generowania okładki nieudane
+2025-09-03 15:50:44,613 - WARNING - Błąd generowania okładki, używam fallback: Error code: 400 - {'error': {'message': 'Billing hard limit has been reached', 'type': 'image_generation_user_error', 'param': None, 'code': 'billing_hard_limit_reached'}}
+2025-09-03 15:50:44,614 - INFO - Użyto fallback okładki: /images/omnimes-image.png
+2025-09-03 15:50:44,614 - INFO - Tryb translate: generowanie PL + tłumaczenia
+2025-09-03 15:50:44,615 - INFO - Próba generowania artykułu 1/3 (pl)
+2025-09-03 15:50:44,616 - INFO - Generowanie artykułu: 'OEE w czasie rzeczywistym - eliminacja mikroprzestojów - najlepsze praktyki' w języku pl (~900 słów)
+2025-09-03 15:50:44,819 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 15:50:45,089 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:45,089 - INFO - Retrying request to /chat/completions in 0.401851 seconds
+2025-09-03 15:50:45,793 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:45,794 - INFO - Retrying request to /chat/completions in 0.948872 seconds
+2025-09-03 15:50:46,958 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:46,959 - ERROR - Błąd generowania artykułu (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:47,011 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 15:50:47,012 - ERROR - Próba 1 nieudana (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:47,012 - INFO - Czekam 2 sekund przed kolejną próbą...
+2025-09-03 15:50:49,013 - INFO - Próba generowania artykułu 2/3 (pl)
+2025-09-03 15:50:49,013 - INFO - Generowanie artykułu: 'OEE w czasie rzeczywistym - eliminacja mikroprzestojów - najlepsze praktyki' w języku pl (~900 słów)
+2025-09-03 15:50:49,274 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 15:50:49,560 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:49,561 - INFO - Retrying request to /chat/completions in 0.400809 seconds
+2025-09-03 15:50:50,205 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:50,207 - INFO - Retrying request to /chat/completions in 0.818743 seconds
+2025-09-03 15:50:51,874 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:51,875 - ERROR - Błąd generowania artykułu (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:51,877 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 15:50:51,883 - ERROR - Próba 2 nieudana (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:51,884 - INFO - Czekam 2 sekund przed kolejną próbą...
+2025-09-03 15:50:53,884 - INFO - Próba generowania artykułu 3/3 (pl)
+2025-09-03 15:50:53,884 - INFO - Generowanie artykułu: 'OEE w czasie rzeczywistym - eliminacja mikroprzestojów - najlepsze praktyki' w języku pl (~900 słów)
+2025-09-03 15:50:54,219 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 15:50:54,481 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:54,486 - INFO - Retrying request to /chat/completions in 0.488165 seconds
+2025-09-03 15:50:55,214 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:55,215 - INFO - Retrying request to /chat/completions in 0.799362 seconds
+2025-09-03 15:50:56,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 15:50:56,381 - ERROR - Błąd generowania artykułu (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:56,385 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 15:50:56,386 - ERROR - Próba 3 nieudana (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:56,387 - ERROR - ==============================
+2025-09-03 15:50:56,388 - ERROR - BŁĄD PUBLIKACJI SLOTU
+2025-09-03 15:50:56,388 - ERROR - Temat: 
+2025-09-03 15:50:56,389 - ERROR - Błąd: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:56,393 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 905, in publish_one
+    data_pl = retry_article_generation(topic, lang=PRIMARY_LANG)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 489, in retry_article_generation
+    data = gen_article_lang(topic, lang, target_words)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 15:50:56,396 - ERROR - ==============================
+2025-09-03 15:50:56,397 - ERROR - Błąd publikacji slotu 2025-09-01T10:00:00Z: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 15:50:56,399 - INFO - Ukończono publikację. Opublikowano: 0/1, nieudane: 1
+2025-09-03 15:50:56,401 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:01:35,301 - INFO - ==================================================
+2025-09-03 16:01:35,301 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:01:35,302 - INFO - ==================================================
+2025-09-03 16:01:35,323 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:01:35,324 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:01:35,331 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:01:35,332 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:01:35,347 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:01:35,347 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 16:01:35,347 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 16:01:36,840 - INFO - Rozpoczynanie publikacji 1 slotów
+2025-09-03 16:01:36,841 - INFO - ==============================
+2025-09-03 16:01:36,841 - INFO - ROZPOCZĘCIE PUBLIKACJI SLOTU
+2025-09-03 16:01:36,841 - INFO - Data: 2025-09-01T10:00:00Z
+2025-09-03 16:01:36,841 - INFO - Temat: 
+2025-09-03 16:01:36,842 - INFO - ==============================
+2025-09-03 16:01:36,843 - INFO - Backup slotu zapisany: backups\2025-09-03\slot_160136.json
+2025-09-03 16:01:36,844 - INFO - Wybrana metoda generowania tematu: gpt_generated
+2025-09-03 16:01:36,844 - INFO - Generowanie tematu przez GPT na podstawie słów kluczowych
+2025-09-03 16:01:39,071 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:01:39,678 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:39,679 - INFO - Retrying request to /chat/completions in 0.423700 seconds
+2025-09-03 16:01:40,307 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:40,307 - INFO - Retrying request to /chat/completions in 0.858401 seconds
+2025-09-03 16:01:41,482 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:41,485 - ERROR - Błąd generowania tematu przez GPT: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:41,486 - INFO - Generowanie tematu z predefined topics
+2025-09-03 16:01:41,486 - INFO - Wygenerowany temat (technical): Machine Learning na urządzeniach brzegowych - implementacja krok po kroku
+2025-09-03 16:01:41,487 - INFO - Tryb językowy: translate
+2025-09-03 16:01:41,487 - INFO - Generowanie okładki dla slug: machine-learning-na-urzadzeniach-brzegowych-implementacja-krok-po-kroku
+2025-09-03 16:01:41,487 - INFO - Generowanie okładki dla tematu: 'Machine Learning na urządzeniach brzegowych - implementacja krok po kroku'
+2025-09-03 16:01:41,700 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:01:41,700 - INFO - Próba 1: Używam promptu dla kategorii 'ai'
+2025-09-03 16:01:42,155 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-09-03 16:01:42,156 - ERROR - Próba 1 generowania okładki nieudana: Error code: 400 - {'error': {'message': 'Billing hard limit has been reached', 'type': 'image_generation_user_error', 'param': None, 'code': 'billing_hard_limit_reached'}}
+2025-09-03 16:01:44,315 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:01:44,316 - INFO - Próba 2: Używam promptu dla kategorii 'ai'
+2025-09-03 16:01:44,787 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-09-03 16:01:44,790 - ERROR - Próba 2 generowania okładki nieudana: Error code: 400 - {'error': {'message': 'Billing hard limit has been reached', 'type': 'image_generation_user_error', 'param': None, 'code': 'billing_hard_limit_reached'}}
+2025-09-03 16:01:44,790 - ERROR - Wszystkie próby generowania okładki nieudane
+2025-09-03 16:01:44,791 - WARNING - Błąd generowania okładki, używam fallback: Error code: 400 - {'error': {'message': 'Billing hard limit has been reached', 'type': 'image_generation_user_error', 'param': None, 'code': 'billing_hard_limit_reached'}}
+2025-09-03 16:01:44,792 - INFO - Użyto fallback okładki: /images/omnimes-image.png
+2025-09-03 16:01:44,793 - INFO - Tryb translate: generowanie PL + tłumaczenia
+2025-09-03 16:01:44,794 - INFO - Próba generowania artykułu 1/3 (pl)
+2025-09-03 16:01:44,795 - INFO - Generowanie artykułu: 'Machine Learning na urządzeniach brzegowych - implementacja krok po kroku' w języku pl (~900 słów)
+2025-09-03 16:01:45,005 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:01:45,271 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:45,273 - INFO - Retrying request to /chat/completions in 0.413479 seconds
+2025-09-03 16:01:45,940 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:45,942 - INFO - Retrying request to /chat/completions in 0.850299 seconds
+2025-09-03 16:01:47,010 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:47,013 - ERROR - Błąd generowania artykułu (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:47,124 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 16:01:47,125 - ERROR - Próba 1 nieudana (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:47,125 - INFO - Czekam 2 sekund przed kolejną próbą...
+2025-09-03 16:01:49,126 - INFO - Próba generowania artykułu 2/3 (pl)
+2025-09-03 16:01:49,126 - INFO - Generowanie artykułu: 'Machine Learning na urządzeniach brzegowych - implementacja krok po kroku' w języku pl (~900 słów)
+2025-09-03 16:01:49,384 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:01:50,627 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:50,628 - INFO - Retrying request to /chat/completions in 0.496505 seconds
+2025-09-03 16:01:51,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:51,379 - INFO - Retrying request to /chat/completions in 0.841035 seconds
+2025-09-03 16:01:52,465 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:52,467 - ERROR - Błąd generowania artykułu (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:52,469 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 16:01:52,470 - ERROR - Próba 2 nieudana (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:52,470 - INFO - Czekam 2 sekund przed kolejną próbą...
+2025-09-03 16:01:54,471 - INFO - Próba generowania artykułu 3/3 (pl)
+2025-09-03 16:01:54,472 - INFO - Generowanie artykułu: 'Machine Learning na urządzeniach brzegowych - implementacja krok po kroku' w języku pl (~900 słów)
+2025-09-03 16:01:54,668 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:01:54,954 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:54,955 - INFO - Retrying request to /chat/completions in 0.477652 seconds
+2025-09-03 16:01:55,671 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:55,672 - INFO - Retrying request to /chat/completions in 0.789531 seconds
+2025-09-03 16:01:56,682 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-03 16:01:56,684 - ERROR - Błąd generowania artykułu (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:56,687 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 16:01:56,688 - ERROR - Próba 3 nieudana (pl): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:56,689 - ERROR - ==============================
+2025-09-03 16:01:56,689 - ERROR - BŁĄD PUBLIKACJI SLOTU
+2025-09-03 16:01:56,690 - ERROR - Temat: 
+2025-09-03 16:01:56,690 - ERROR - Błąd: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:56,691 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 905, in publish_one
+    data_pl = retry_article_generation(topic, lang=PRIMARY_LANG)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 489, in retry_article_generation
+    data = gen_article_lang(topic, lang, target_words)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 410, in gen_article_lang
+    r = cli.chat.completions.create(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\szerm\.conda\envs\mpai\Lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2025-09-03 16:01:56,691 - ERROR - ==============================
+2025-09-03 16:01:56,692 - ERROR - Błąd publikacji slotu 2025-09-01T10:00:00Z: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-03 16:01:56,692 - INFO - Ukończono publikację. Opublikowano: 0/1, nieudane: 1
+2025-09-03 16:01:56,693 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:03:21,651 - INFO - ==================================================
+2025-09-03 16:03:21,652 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:03:21,652 - INFO - ==================================================
+2025-09-03 16:03:21,653 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:03:21,653 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:03:21,657 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:03:21,665 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:03:21,666 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:03:21,666 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 16:03:21,666 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 16:03:23,995 - INFO - Rozpoczynanie publikacji 1 slotów
+2025-09-03 16:03:23,996 - INFO - ==============================
+2025-09-03 16:03:23,996 - INFO - ROZPOCZĘCIE PUBLIKACJI SLOTU
+2025-09-03 16:03:23,996 - INFO - Data: 2025-09-01T10:00:00Z
+2025-09-03 16:03:23,997 - INFO - Temat: 
+2025-09-03 16:03:23,997 - INFO - ==============================
+2025-09-03 16:03:23,998 - INFO - Backup slotu zapisany: backups\2025-09-03\slot_160323.json
+2025-09-03 16:03:23,998 - INFO - Wybrana metoda generowania tematu: gpt_generated
+2025-09-03 16:03:23,999 - INFO - Generowanie tematu przez GPT na podstawie słów kluczowych
+2025-09-03 16:03:24,749 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:03:25,903 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:03:25,917 - INFO - GPT wygenerował temat: '"Navigating Market Disruption: Leveraging Agile Methodology to Enhance Cybersecurity Strategies"' na podstawie słów: market disruption, agile methodology, cybersecurity
+2025-09-03 16:03:25,918 - INFO - Tryb językowy: translate
+2025-09-03 16:03:25,918 - INFO - Generowanie okładki dla slug: navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies
+2025-09-03 16:03:25,918 - INFO - Generowanie okładki dla tematu: '"Navigating Market Disruption: Leveraging Agile Methodology to Enhance Cybersecurity Strategies"'
+2025-09-03 16:03:26,065 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:03:26,066 - INFO - Próba 1: Używam promptu dla kategorii 'technical'
+2025-09-03 16:03:45,729 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-09-03 16:03:46,622 - INFO - Okładka wygenerowana pomyślnie (445057 bajtów)
+2025-09-03 16:03:46,623 - INFO - Przesyłanie okładki: public/images/navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies.png
+2025-09-03 16:03:46,623 - INFO - Przesyłanie pliku: public/images/navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies.png
+2025-09-03 16:03:46,961 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:03:48,233 - INFO - Plik public/images/navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies.png utworzony pomyślnie
+2025-09-03 16:03:48,234 - INFO - Okładka dostępna pod: /images/navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies.png
+2025-09-03 16:03:48,235 - INFO - Tryb translate: generowanie PL + tłumaczenia
+2025-09-03 16:03:48,235 - INFO - Próba generowania artykułu 1/3 (pl)
+2025-09-03 16:03:48,236 - INFO - Generowanie artykułu: '"Navigating Market Disruption: Leveraging Agile Methodology to Enhance Cybersecurity Strategies"' w języku pl (~900 słów)
+2025-09-03 16:03:48,492 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:04:15,567 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:04:15,569 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:04:15,569 - INFO - Długość odpowiedzi: 3357 znaków
+2025-09-03 16:04:15,569 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 3357 znaków
+2025-09-03 16:04:15,570 - INFO - Metoda 1: Próbuję sparsować JSON (3357 znaków)
+2025-09-03 16:04:15,570 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:04:15,571 - INFO - Treść artykułu oczyszczona (pl): 2864 znaków
+2025-09-03 16:04:15,571 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Navigating Market Disruption: Agile Methodology in Cybersecurity'
+2025-09-03 16:04:15,571 - INFO - Długość treści artykułu (pl): 2864 znaków
+2025-09-03 16:04:15,572 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 103 znaków (min 120)
+2025-09-03 16:04:15,572 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Opis SEO za krótki: 103 znaków (min 120)']
+2025-09-03 16:04:15,573 - INFO - Próba generowania artykułu 2/3 (pl)
+2025-09-03 16:04:15,573 - INFO - Generowanie artykułu: '"Navigating Market Disruption: Leveraging Agile Methodology to Enhance Cybersecurity Strategies"' w języku pl (~900 słów)
+2025-09-03 16:04:15,846 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:04:33,879 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:04:33,979 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:04:33,988 - INFO - Długość odpowiedzi: 3108 znaków
+2025-09-03 16:04:33,989 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 3108 znaków
+2025-09-03 16:04:33,989 - INFO - Metoda 1: Próbuję sparsować JSON (3108 znaków)
+2025-09-03 16:04:33,990 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:04:33,990 - INFO - Treść artykułu oczyszczona (pl): 2625 znaków
+2025-09-03 16:04:33,991 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Navigating Market Disruption: Agile Methodology in Cybersecurity'
+2025-09-03 16:04:33,991 - INFO - Długość treści artykułu (pl): 2625 znaków
+2025-09-03 16:04:33,992 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 103 znaków (min 120)
+2025-09-03 16:04:33,992 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Opis SEO za krótki: 103 znaków (min 120)']
+2025-09-03 16:04:33,994 - INFO - Próba generowania artykułu 3/3 (pl)
+2025-09-03 16:04:34,001 - INFO - Generowanie artykułu: '"Navigating Market Disruption: Leveraging Agile Methodology to Enhance Cybersecurity Strategies"' w języku pl (~900 słów)
+2025-09-03 16:04:34,285 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:04:55,078 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:04:55,123 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:04:55,124 - INFO - Długość odpowiedzi: 3349 znaków
+2025-09-03 16:04:55,124 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 3349 znaków
+2025-09-03 16:04:55,124 - INFO - Metoda 1: Próbuję sparsować JSON (3349 znaków)
+2025-09-03 16:04:55,125 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:04:55,125 - INFO - Treść artykułu oczyszczona (pl): 2913 znaków
+2025-09-03 16:04:55,134 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Navigating Market Disruption: Enhancing Cybersecurity with Agile'
+2025-09-03 16:04:55,135 - INFO - Długość treści artykułu (pl): 2913 znaków
+2025-09-03 16:04:55,136 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 87 znaków (min 120)
+2025-09-03 16:04:55,137 - INFO - Wygenerowano plik .md o długości 3545 znaków
+2025-09-03 16:04:55,137 - INFO - Publikowanie posta: navigating-market-disruption-enhancing-cybersecurity-with-agile
+2025-09-03 16:04:55,138 - INFO - Przesyłanie pliku: outstatic/content/posts/navigating-market-disruption-enhancing-cybersecurity-with-agile.md
+2025-09-03 16:04:55,459 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:04:56,325 - INFO - Plik outstatic/content/posts/navigating-market-disruption-enhancing-cybersecurity-with-agile.md utworzony pomyślnie
+2025-09-03 16:04:56,326 - INFO - Post navigating-market-disruption-enhancing-cybersecurity-with-agile opublikowany pomyślnie
+2025-09-03 16:04:56,326 - INFO - Tłumaczenie na en...
+2025-09-03 16:04:56,617 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:04:57,412 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:04:57,415 - INFO - Tłumaczenie tekstu na język: en
+2025-09-03 16:04:57,682 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:05:02,463 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:05:02,470 - INFO - Tłumaczenie na en ukończone
+2025-09-03 16:05:02,473 - INFO - Wygenerowano plik .md o długości 3477 znaków
+2025-09-03 16:05:02,474 - INFO - Publikowanie posta: navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies
+2025-09-03 16:05:02,474 - INFO - Przesyłanie pliku: outstatic/content/posts/navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies.md
+2025-09-03 16:05:02,820 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:05:03,831 - INFO - Plik outstatic/content/posts/navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies.md utworzony pomyślnie
+2025-09-03 16:05:03,833 - INFO - Post navigating-market-disruption-leveraging-agile-methodology-to-enhance-cybersecurity-strategies opublikowany pomyślnie
+2025-09-03 16:05:03,834 - INFO - Tłumaczenie na de...
+2025-09-03 16:05:04,121 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:05:05,662 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:05:05,663 - INFO - Tłumaczenie tekstu na język: de
+2025-09-03 16:05:05,960 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:05:15,454 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:05:15,465 - INFO - Tłumaczenie na de ukończone
+2025-09-03 16:05:15,467 - INFO - Wygenerowano plik .md o długości 3894 znaków
+2025-09-03 16:05:15,470 - INFO - Publikowanie posta: marktstorungen-navigieren-agile-methodik-nutzen-um-cybersicherheitsstrategien-zu-verbessern
+2025-09-03 16:05:15,470 - INFO - Przesyłanie pliku: outstatic/content/posts/marktstorungen-navigieren-agile-methodik-nutzen-um-cybersicherheitsstrategien-zu-verbessern.md
+2025-09-03 16:05:15,824 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:05:16,588 - INFO - Plik outstatic/content/posts/marktstorungen-navigieren-agile-methodik-nutzen-um-cybersicherheitsstrategien-zu-verbessern.md utworzony pomyślnie
+2025-09-03 16:05:16,589 - INFO - Post marktstorungen-navigieren-agile-methodik-nutzen-um-cybersicherheitsstrategien-zu-verbessern opublikowany pomyślnie
+2025-09-03 16:05:16,590 - INFO - ==============================
+2025-09-03 16:05:16,590 - INFO - SLOT OPUBLIKOWANY POMYŚLNIE
+2025-09-03 16:05:16,590 - INFO - Temat: "Navigating Market Disruption: Leveraging Agile Methodology to Enhance Cybersecurity Strategies"
+2025-09-03 16:05:16,590 - INFO - Slug główny: navigating-market-disruption-enhancing-cybersecurity-with-agile
+2025-09-03 16:05:16,591 - INFO - Status zmieniony na: completed
+2025-09-03 16:05:16,591 - INFO - ==============================
+2025-09-03 16:05:16,592 - INFO - Zapisywanie planu do: content_plan.json
+2025-09-03 16:05:16,593 - INFO - Plan zapisany pomyślnie
+2025-09-03 16:05:16,593 - INFO - Plan zapisany po slocie 2025-09-01T10:00:00Z
+2025-09-03 16:05:16,595 - INFO - Ukończono publikację. Opublikowano: 1/1, nieudane: 0
+2025-09-03 16:05:16,596 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:22:21,593 - INFO - ==================================================
+2025-09-03 16:22:21,593 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:22:21,593 - INFO - ==================================================
+2025-09-03 16:22:21,600 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:22:21,600 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:22:21,604 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:22:21,604 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:22:21,604 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:22:21,604 - INFO - Slot już opublikowany (completed), pomijam: "Navigating Market Disruption: Leveraging Agile Methodology to Enhance Cybersecurity Strategies"
+2025-09-03 16:22:21,604 - INFO - Znaleziono 0 slotów do publikacji
+2025-09-03 16:22:21,604 - INFO - Brak slotów do publikacji
+2025-09-03 16:22:21,605 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:22:43,379 - INFO - ==================================================
+2025-09-03 16:22:43,380 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:22:43,380 - INFO - ==================================================
+2025-09-03 16:22:43,380 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:22:43,381 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:22:43,386 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:22:43,386 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:22:43,387 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:22:43,387 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 16:22:43,388 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 16:22:46,549 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:22:53,151 - INFO - ==================================================
+2025-09-03 16:22:53,152 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:22:53,152 - INFO - ==================================================
+2025-09-03 16:22:53,152 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:22:53,152 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:22:53,157 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:22:53,158 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:22:53,158 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:22:53,158 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 16:22:53,158 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 16:22:53,159 - INFO - Rozpoczynanie publikacji 1 slotów (od indeksu 0)
+2025-09-03 16:22:53,159 - INFO - Checkpoint zapisany: slot 0/1
+2025-09-03 16:22:53,159 - INFO - ==============================
+2025-09-03 16:22:53,159 - INFO - ROZPOCZĘCIE PUBLIKACJI SLOTU
+2025-09-03 16:22:53,160 - INFO - Data: 2025-09-01T10:00:00Z
+2025-09-03 16:22:53,160 - INFO - Temat: 
+2025-09-03 16:22:53,161 - INFO - ==============================
+2025-09-03 16:22:53,162 - INFO - Backup slotu zapisany: backups\2025-09-03\slot_162253.json
+2025-09-03 16:22:53,162 - INFO - Wybrana metoda generowania tematu: predefined
+2025-09-03 16:22:53,163 - INFO - Generowanie tematu z predefined topics
+2025-09-03 16:22:53,164 - INFO - Wygenerowany temat (technical): Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia
+2025-09-03 16:22:53,164 - INFO - Tryb językowy: translate
+2025-09-03 16:22:53,165 - INFO - Generowanie okładki dla slug: wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia
+2025-09-03 16:22:53,165 - INFO - Generowanie okładki dla tematu: 'Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia'
+2025-09-03 16:22:54,125 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:22:54,126 - INFO - Próba 1: Używam promptu dla kategorii 'technical'
+2025-09-03 16:23:12,596 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-09-03 16:23:13,512 - INFO - Okładka wygenerowana pomyślnie (614540 bajtów)
+2025-09-03 16:23:13,513 - INFO - Przesyłanie okładki: public/images/wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia.png
+2025-09-03 16:23:13,513 - INFO - Przesyłanie pliku: public/images/wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia.png
+2025-09-03 16:23:13,845 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:23:15,079 - INFO - Plik public/images/wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia.png utworzony pomyślnie
+2025-09-03 16:23:15,080 - INFO - Okładka dostępna pod: /images/wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia.png
+2025-09-03 16:23:15,080 - INFO - Tryb translate: generowanie PL + tłumaczenia
+2025-09-03 16:23:15,081 - INFO - Próba generowania artykułu 1/3 (pl)
+2025-09-03 16:23:15,081 - INFO - Generowanie artykułu: 'Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia' w języku pl (~900 słów)
+2025-09-03 16:23:15,265 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:23:37,344 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:23:37,371 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:23:37,372 - INFO - Długość odpowiedzi: 4794 znaków
+2025-09-03 16:23:37,373 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4794 znaków
+2025-09-03 16:23:37,374 - INFO - Metoda 1: Próbuję sparsować JSON (4794 znaków)
+2025-09-03 16:23:37,375 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:23:37,376 - INFO - Treść artykułu oczyszczona (pl): 4311 znaków
+2025-09-03 16:23:37,377 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia'
+2025-09-03 16:23:37,378 - INFO - Długość treści artykułu (pl): 4311 znaków
+2025-09-03 16:23:37,380 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 117 znaków (min 120)
+2025-09-03 16:23:37,380 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Opis SEO za krótki: 117 znaków (min 120)']
+2025-09-03 16:23:37,381 - INFO - Próba generowania artykułu 2/3 (pl)
+2025-09-03 16:23:37,381 - INFO - Generowanie artykułu: 'Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia' w języku pl (~900 słów)
+2025-09-03 16:23:37,599 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:24:02,193 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:24:02,194 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:24:02,194 - INFO - Długość odpowiedzi: 5067 znaków
+2025-09-03 16:24:02,194 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 5067 znaków
+2025-09-03 16:24:02,195 - INFO - Metoda 1: Próbuję sparsować JSON (5067 znaków)
+2025-09-03 16:24:02,195 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:24:02,195 - INFO - Treść artykułu oczyszczona (pl): 4585 znaków
+2025-09-03 16:24:02,195 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia'
+2025-09-03 16:24:02,195 - INFO - Długość treści artykułu (pl): 4585 znaków
+2025-09-03 16:24:02,196 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 117 znaków (min 120)
+2025-09-03 16:24:02,196 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Opis SEO za krótki: 117 znaków (min 120)']
+2025-09-03 16:24:02,196 - INFO - Próba generowania artykułu 3/3 (pl)
+2025-09-03 16:24:02,196 - INFO - Generowanie artykułu: 'Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia' w języku pl (~900 słów)
+2025-09-03 16:24:02,375 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:24:24,997 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:24:25,003 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:24:25,003 - INFO - Długość odpowiedzi: 4169 znaków
+2025-09-03 16:24:25,004 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4169 znaków
+2025-09-03 16:24:25,005 - INFO - Metoda 1: Próbuję sparsować JSON (4169 znaków)
+2025-09-03 16:24:25,005 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:24:25,006 - INFO - Treść artykułu oczyszczona (pl): 3688 znaków
+2025-09-03 16:24:25,006 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia'
+2025-09-03 16:24:25,006 - INFO - Długość treści artykułu (pl): 3688 znaków
+2025-09-03 16:24:25,007 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 118 znaków (min 120)
+2025-09-03 16:24:25,007 - INFO - Wygenerowano plik .md o długości 4287 znaków
+2025-09-03 16:24:25,007 - INFO - Publikowanie posta: wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia
+2025-09-03 16:24:25,008 - INFO - Przesyłanie pliku: outstatic/content/posts/wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia.md
+2025-09-03 16:24:25,353 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:24:26,106 - INFO - Plik outstatic/content/posts/wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia.md utworzony pomyślnie
+2025-09-03 16:24:26,107 - INFO - Post wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia opublikowany pomyślnie
+2025-09-03 16:24:26,108 - INFO - Tłumaczenie na en...
+2025-09-03 16:24:26,301 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:24:27,181 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:24:27,182 - INFO - Tłumaczenie tekstu na język: en
+2025-09-03 16:24:27,405 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:24:45,533 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:24:45,538 - INFO - Tłumaczenie na en ukończone
+2025-09-03 16:24:45,538 - INFO - Wygenerowano plik .md o długości 4306 znaków
+2025-09-03 16:24:45,539 - INFO - Publikowanie posta: implementation-of-opc-ua-in-the-plant-best-implementation-practices
+2025-09-03 16:24:45,539 - INFO - Przesyłanie pliku: outstatic/content/posts/implementation-of-opc-ua-in-the-plant-best-implementation-practices.md
+2025-09-03 16:24:45,909 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:24:46,658 - INFO - Plik outstatic/content/posts/implementation-of-opc-ua-in-the-plant-best-implementation-practices.md utworzony pomyślnie
+2025-09-03 16:24:46,658 - INFO - Post implementation-of-opc-ua-in-the-plant-best-implementation-practices opublikowany pomyślnie
+2025-09-03 16:24:46,659 - INFO - Tłumaczenie na de...
+2025-09-03 16:24:46,813 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:24:48,064 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:24:48,072 - INFO - Tłumaczenie tekstu na język: de
+2025-09-03 16:24:48,248 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:25:14,288 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:25:14,298 - INFO - Tłumaczenie na de ukończone
+2025-09-03 16:25:14,298 - INFO - Wygenerowano plik .md o długości 5036 znaków
+2025-09-03 16:25:14,299 - INFO - Publikowanie posta: implementierung-von-opc-ua-im-betrieb-beste-praktiken-fur-die-implementierung
+2025-09-03 16:25:14,299 - INFO - Przesyłanie pliku: outstatic/content/posts/implementierung-von-opc-ua-im-betrieb-beste-praktiken-fur-die-implementierung.md
+2025-09-03 16:25:14,614 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:25:15,393 - INFO - Plik outstatic/content/posts/implementierung-von-opc-ua-im-betrieb-beste-praktiken-fur-die-implementierung.md utworzony pomyślnie
+2025-09-03 16:25:15,394 - INFO - Post implementierung-von-opc-ua-im-betrieb-beste-praktiken-fur-die-implementierung opublikowany pomyślnie
+2025-09-03 16:25:15,395 - INFO - ==============================
+2025-09-03 16:25:15,396 - INFO - SLOT OPUBLIKOWANY POMYŚLNIE
+2025-09-03 16:25:15,396 - INFO - Temat: Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia
+2025-09-03 16:25:15,397 - INFO - Slug główny: wdrozenie-opc-ua-w-zakadzie-najlepsze-praktyki-wdrozenia
+2025-09-03 16:25:15,398 - INFO - Status zmieniony na: completed
+2025-09-03 16:25:15,398 - INFO - ==============================
+2025-09-03 16:25:15,399 - INFO - Zapisywanie planu do: content_plan.json
+2025-09-03 16:25:15,399 - INFO - Plan zapisany pomyślnie
+2025-09-03 16:25:15,400 - INFO - Plan zapisany po slocie 2025-09-01T10:00:00Z
+2025-09-03 16:25:15,400 - INFO - Checkpoint wyczyszczony
+2025-09-03 16:25:15,400 - INFO - Ukończono publikację. Opublikowano: 1/1, nieudane: 0
+2025-09-03 16:25:15,401 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:25:22,763 - INFO - ==================================================
+2025-09-03 16:25:22,763 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:25:22,763 - INFO - ==================================================
+2025-09-03 16:25:22,770 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:25:22,771 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:25:22,777 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:25:22,777 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:25:22,777 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:25:22,778 - INFO - Slot już opublikowany (completed), pomijam: Wdrożenie OPC-UA w zakładzie - najlepsze praktyki wdrożenia
+2025-09-03 16:25:22,778 - INFO - Znaleziono 0 slotów do publikacji
+2025-09-03 16:25:22,778 - INFO - Brak slotów do publikacji
+2025-09-03 16:25:22,778 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:25:47,674 - INFO - ==================================================
+2025-09-03 16:25:47,675 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:25:47,675 - INFO - ==================================================
+2025-09-03 16:25:47,676 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:25:47,676 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:25:47,680 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:25:47,680 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:25:47,681 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:25:47,681 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 16:25:47,682 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 16:25:47,682 - INFO - Rozpoczynanie publikacji 1 slotów (od indeksu 0)
+2025-09-03 16:25:47,683 - INFO - Checkpoint zapisany: slot 0/1
+2025-09-03 16:25:47,683 - INFO - ==============================
+2025-09-03 16:25:47,683 - INFO - ROZPOCZĘCIE PUBLIKACJI SLOTU
+2025-09-03 16:25:47,684 - INFO - Data: 2025-09-01T10:00:00Z
+2025-09-03 16:25:47,684 - INFO - Temat: 
+2025-09-03 16:25:47,684 - INFO - ==============================
+2025-09-03 16:25:47,685 - INFO - Backup slotu zapisany: backups\2025-09-03\slot_162547.json
+2025-09-03 16:25:47,685 - INFO - Wybrana metoda generowania tematu: gpt_generated
+2025-09-03 16:25:47,685 - INFO - Generowanie tematu przez GPT na podstawie słów kluczowych
+2025-09-03 16:25:48,479 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:25:50,109 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:25:50,122 - INFO - GPT wygenerował temat: '"Leveraging MES Systems for Real-Time Monitoring of Production KPIs through Advanced Simulation Techniques"' na podstawie słów: MES system, real-time monitoring, production KPIs, simulation production
+2025-09-03 16:25:50,122 - INFO - Tryb językowy: translate
+2025-09-03 16:25:50,122 - INFO - Generowanie okładki dla slug: leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques
+2025-09-03 16:25:50,122 - INFO - Generowanie okładki dla tematu: '"Leveraging MES Systems for Real-Time Monitoring of Production KPIs through Advanced Simulation Techniques"'
+2025-09-03 16:25:50,286 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:25:50,287 - INFO - Próba 1: Używam promptu dla kategorii 'mes'
+2025-09-03 16:26:12,582 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-09-03 16:26:13,448 - INFO - Okładka wygenerowana pomyślnie (411060 bajtów)
+2025-09-03 16:26:13,449 - INFO - Przesyłanie okładki: public/images/leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques.png
+2025-09-03 16:26:13,449 - INFO - Przesyłanie pliku: public/images/leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques.png
+2025-09-03 16:26:13,793 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:26:15,119 - INFO - Plik public/images/leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques.png utworzony pomyślnie
+2025-09-03 16:26:15,124 - INFO - Okładka dostępna pod: /images/leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques.png
+2025-09-03 16:26:15,125 - INFO - Tryb translate: generowanie PL + tłumaczenia
+2025-09-03 16:26:15,125 - INFO - Próba generowania artykułu 1/3 (pl)
+2025-09-03 16:26:15,126 - INFO - Generowanie artykułu: '"Leveraging MES Systems for Real-Time Monitoring of Production KPIs through Advanced Simulation Techniques"' w języku pl (~900 słów)
+2025-09-03 16:26:15,406 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:26:45,148 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:26:45,181 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:26:45,186 - INFO - Długość odpowiedzi: 4735 znaków
+2025-09-03 16:26:45,186 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4735 znaków
+2025-09-03 16:26:45,187 - INFO - Metoda 1: Próbuję sparsować JSON (4735 znaków)
+2025-09-03 16:26:45,187 - WARNING - Metoda 1: Błąd parsowania JSON: Invalid \escape: line 6 column 2934 (char 3324)
+2025-09-03 16:26:45,188 - INFO - Metoda 2: Próbuję sparsować JSON (4735 znaków)
+2025-09-03 16:26:45,188 - WARNING - Metoda 2: Błąd parsowania JSON: Invalid \escape: line 6 column 2934 (char 3324)
+2025-09-03 16:26:45,189 - INFO - Metoda 3: Próbuję sparsować JSON (42 znaków)
+2025-09-03 16:26:45,189 - WARNING - Metoda 3: JSON sparsowany ale brak wymaganych kluczy: ['label', 'value']
+2025-09-03 16:26:45,189 - ERROR - Wszystkie metody ekstrakcji JSON zawiodły
+2025-09-03 16:26:45,189 - ERROR - Nie udało się wyodrębnić JSON z odpowiedzi OpenAI dla języka pl
+2025-09-03 16:26:45,190 - ERROR - Błąd generowania artykułu (pl): Nie udało się sparsować odpowiedzi OpenAI dla języka pl
+2025-09-03 16:26:45,194 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 478, in gen_article_lang
+    raise RuntimeError(f"Nie udało się sparsować odpowiedzi OpenAI dla języka {lang}")
+RuntimeError: Nie udało się sparsować odpowiedzi OpenAI dla języka pl
+
+2025-09-03 16:26:45,194 - ERROR - Próba 1 nieudana (pl): Nie udało się sparsować odpowiedzi OpenAI dla języka pl
+2025-09-03 16:26:45,195 - INFO - Czekam 2 sekund przed kolejną próbą...
+2025-09-03 16:26:47,196 - INFO - Próba generowania artykułu 2/3 (pl)
+2025-09-03 16:26:47,197 - INFO - Generowanie artykułu: '"Leveraging MES Systems for Real-Time Monitoring of Production KPIs through Advanced Simulation Techniques"' w języku pl (~900 słów)
+2025-09-03 16:26:47,483 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:27:11,855 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:27:11,858 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:27:11,859 - INFO - Długość odpowiedzi: 4665 znaków
+2025-09-03 16:27:11,860 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4665 znaków
+2025-09-03 16:27:11,861 - INFO - Metoda 1: Próbuję sparsować JSON (4665 znaków)
+2025-09-03 16:27:11,861 - WARNING - Metoda 1: Błąd parsowania JSON: Invalid \escape: line 6 column 3328 (char 3755)
+2025-09-03 16:27:11,862 - INFO - Metoda 2: Próbuję sparsować JSON (4665 znaków)
+2025-09-03 16:27:11,862 - WARNING - Metoda 2: Błąd parsowania JSON: Invalid \escape: line 6 column 3328 (char 3755)
+2025-09-03 16:27:11,863 - INFO - Metoda 3: Próbuję sparsować JSON (4665 znaków)
+2025-09-03 16:27:11,863 - WARNING - Metoda 3: Błąd parsowania JSON: Invalid \escape: line 6 column 3328 (char 3755)
+2025-09-03 16:27:11,863 - ERROR - Wszystkie metody ekstrakcji JSON zawiodły
+2025-09-03 16:27:11,864 - ERROR - Nie udało się wyodrębnić JSON z odpowiedzi OpenAI dla języka pl
+2025-09-03 16:27:11,864 - ERROR - Błąd generowania artykułu (pl): Nie udało się sparsować odpowiedzi OpenAI dla języka pl
+2025-09-03 16:27:11,865 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3.py", line 478, in gen_article_lang
+    raise RuntimeError(f"Nie udało się sparsować odpowiedzi OpenAI dla języka {lang}")
+RuntimeError: Nie udało się sparsować odpowiedzi OpenAI dla języka pl
+
+2025-09-03 16:27:11,865 - ERROR - Próba 2 nieudana (pl): Nie udało się sparsować odpowiedzi OpenAI dla języka pl
+2025-09-03 16:27:11,865 - INFO - Czekam 2 sekund przed kolejną próbą...
+2025-09-03 16:27:13,866 - INFO - Próba generowania artykułu 3/3 (pl)
+2025-09-03 16:27:13,867 - INFO - Generowanie artykułu: '"Leveraging MES Systems for Real-Time Monitoring of Production KPIs through Advanced Simulation Techniques"' w języku pl (~900 słów)
+2025-09-03 16:27:14,023 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:27:37,329 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:27:37,336 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:27:37,336 - INFO - Długość odpowiedzi: 4163 znaków
+2025-09-03 16:27:37,336 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4163 znaków
+2025-09-03 16:27:37,337 - INFO - Metoda 1: Próbuję sparsować JSON (4163 znaków)
+2025-09-03 16:27:37,337 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:27:37,338 - INFO - Treść artykułu oczyszczona (pl): 3678 znaków
+2025-09-03 16:27:37,338 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Wykorzystanie systemów MES do monitorowania KPI produkcji w czasie rzeczywistym'
+2025-09-03 16:27:37,343 - INFO - Długość treści artykułu (pl): 3678 znaków
+2025-09-03 16:27:37,344 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 108 znaków (min 120)
+2025-09-03 16:27:37,345 - INFO - Wygenerowano plik .md o długości 4343 znaków
+2025-09-03 16:27:37,345 - INFO - Publikowanie posta: wykorzystanie-systemow-mes-do-monitorowania-kpi-produkcji-w-czasie-rzeczywistym
+2025-09-03 16:27:37,345 - INFO - Przesyłanie pliku: outstatic/content/posts/wykorzystanie-systemow-mes-do-monitorowania-kpi-produkcji-w-czasie-rzeczywistym.md
+2025-09-03 16:27:37,683 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:27:38,385 - INFO - Plik outstatic/content/posts/wykorzystanie-systemow-mes-do-monitorowania-kpi-produkcji-w-czasie-rzeczywistym.md utworzony pomyślnie
+2025-09-03 16:27:38,386 - INFO - Post wykorzystanie-systemow-mes-do-monitorowania-kpi-produkcji-w-czasie-rzeczywistym opublikowany pomyślnie
+2025-09-03 16:27:38,387 - INFO - Tłumaczenie na en...
+2025-09-03 16:27:38,757 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:27:39,733 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:27:39,741 - INFO - Tłumaczenie tekstu na język: en
+2025-09-03 16:27:40,027 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:27:55,487 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:27:55,489 - INFO - Tłumaczenie na en ukończone
+2025-09-03 16:27:55,489 - INFO - Wygenerowano plik .md o długości 4226 znaków
+2025-09-03 16:27:55,490 - INFO - Publikowanie posta: leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques
+2025-09-03 16:27:55,490 - INFO - Przesyłanie pliku: outstatic/content/posts/leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques.md
+2025-09-03 16:27:55,793 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:27:56,534 - INFO - Plik outstatic/content/posts/leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques.md utworzony pomyślnie
+2025-09-03 16:27:56,535 - INFO - Post leveraging-mes-systems-for-real-time-monitoring-of-production-kpis-through-advanced-simulation-techniques opublikowany pomyślnie
+2025-09-03 16:27:56,536 - INFO - Tłumaczenie na de...
+2025-09-03 16:27:56,840 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:27:59,348 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:27:59,359 - INFO - Tłumaczenie tekstu na język: de
+2025-09-03 16:27:59,635 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:28:22,132 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:28:22,161 - INFO - Tłumaczenie na de ukończone
+2025-09-03 16:28:22,163 - INFO - Wygenerowano plik .md o długości 4783 znaków
+2025-09-03 16:28:22,163 - INFO - Publikowanie posta: nutzung-von-mes-systemen-zur-echtzeituberwachung-von-produktions-kpis-durch-fortgeschrittene-simulationstechniken
+2025-09-03 16:28:22,163 - INFO - Przesyłanie pliku: outstatic/content/posts/nutzung-von-mes-systemen-zur-echtzeituberwachung-von-produktions-kpis-durch-fortgeschrittene-simulationstechniken.md
+2025-09-03 16:28:22,484 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:28:23,293 - INFO - Plik outstatic/content/posts/nutzung-von-mes-systemen-zur-echtzeituberwachung-von-produktions-kpis-durch-fortgeschrittene-simulationstechniken.md utworzony pomyślnie
+2025-09-03 16:28:23,293 - INFO - Post nutzung-von-mes-systemen-zur-echtzeituberwachung-von-produktions-kpis-durch-fortgeschrittene-simulationstechniken opublikowany pomyślnie
+2025-09-03 16:28:23,294 - INFO - ==============================
+2025-09-03 16:28:23,294 - INFO - SLOT OPUBLIKOWANY POMYŚLNIE
+2025-09-03 16:28:23,294 - INFO - Temat: "Leveraging MES Systems for Real-Time Monitoring of Production KPIs through Advanced Simulation Techniques"
+2025-09-03 16:28:23,295 - INFO - Slug główny: wykorzystanie-systemow-mes-do-monitorowania-kpi-produkcji-w-czasie-rzeczywistym
+2025-09-03 16:28:23,295 - INFO - Status zmieniony na: completed
+2025-09-03 16:28:23,295 - INFO - ==============================
+2025-09-03 16:28:23,296 - INFO - Zapisywanie planu do: content_plan.json
+2025-09-03 16:28:23,297 - INFO - Plan zapisany pomyślnie
+2025-09-03 16:28:23,298 - INFO - Plan zapisany po slocie 2025-09-01T10:00:00Z
+2025-09-03 16:28:23,302 - INFO - Checkpoint wyczyszczony
+2025-09-03 16:28:23,302 - INFO - Ukończono publikację. Opublikowano: 1/1, nieudane: 0
+2025-09-03 16:28:23,303 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:44:21,454 - INFO - ==================================================
+2025-09-03 16:44:21,455 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:44:21,455 - INFO - ==================================================
+2025-09-03 16:44:21,456 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:44:21,456 - INFO - Konfiguracja języków OK: ['pl', 'en', 'de']
+2025-09-03 16:44:21,457 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:44:21,461 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:44:21,461 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:44:21,463 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:44:21,463 - INFO - Slot już opublikowany (completed), pomijam: "Leveraging MES Systems for Real-Time Monitoring of Production KPIs through Advanced Simulation Techniques"
+2025-09-03 16:44:21,463 - INFO - Znaleziono 0 slotów do publikacji
+2025-09-03 16:44:21,463 - INFO - Brak slotów do publikacji
+2025-09-03 16:44:21,464 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced
+2025-09-03 16:45:44,156 - INFO - ==================================================
+2025-09-03 16:45:44,156 - INFO - OmniBlog v3.1 Enhanced - Start sesji
+2025-09-03 16:45:44,156 - INFO - ==================================================
+2025-09-03 16:45:44,157 - INFO - Wczytano konfigurację z config.json
+2025-09-03 16:45:44,157 - INFO - Konfiguracja języków OK: ['pl', 'en', 'de']
+2025-09-03 16:45:44,157 - INFO - Uruchomienie OmniBlog v3.1 Enhanced
+2025-09-03 16:45:44,163 - INFO - Wykonywanie komendy: run-due
+2025-09-03 16:45:44,163 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 16:45:44,164 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 16:45:44,164 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 16:45:44,165 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 16:45:44,165 - INFO - Rozpoczynanie publikacji 1 slotów (od indeksu 0)
+2025-09-03 16:45:44,166 - INFO - Checkpoint zapisany: slot 0/1
+2025-09-03 16:45:44,166 - INFO - ==============================
+2025-09-03 16:45:44,166 - INFO - ROZPOCZĘCIE PUBLIKACJI SLOTU
+2025-09-03 16:45:44,166 - INFO - Data: 2025-09-01T10:00:00Z
+2025-09-03 16:45:44,167 - INFO - Temat: 
+2025-09-03 16:45:44,167 - INFO - ==============================
+2025-09-03 16:45:44,178 - INFO - Backup slotu zapisany: backups\2025-09-03\slot_164544.json
+2025-09-03 16:45:44,179 - INFO - Wybrana metoda generowania tematu: gpt_generated
+2025-09-03 16:45:44,179 - INFO - Generowanie tematu przez GPT na podstawie słów kluczowych
+2025-09-03 16:45:44,873 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:45:46,481 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:45:46,494 - INFO - GPT wygenerował temat: '"Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems"' na podstawie słów: connected factory, OEE monitoring, resource planning, factory digitalization, SCADA systems
+2025-09-03 16:45:46,494 - INFO - Tryb językowy: translate
+2025-09-03 16:45:46,494 - INFO - ENABLED_LANGUAGES: ['pl', 'en', 'de']
+2025-09-03 16:45:46,494 - INFO - PRIMARY_LANG: pl
+2025-09-03 16:45:46,495 - INFO - Generowanie okładki dla slug: enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems
+2025-09-03 16:45:46,495 - INFO - Generowanie okładki dla tematu: '"Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems"'
+2025-09-03 16:45:46,675 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:45:46,676 - INFO - Próba 1: Używam promptu dla kategorii 'mes'
+2025-09-03 16:46:06,663 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-09-03 16:46:07,586 - INFO - Okładka wygenerowana pomyślnie (420162 bajtów)
+2025-09-03 16:46:07,587 - INFO - Przesyłanie okładki: public/images/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems.png
+2025-09-03 16:46:07,587 - INFO - Przesyłanie pliku: public/images/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems.png
+2025-09-03 16:46:07,898 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:46:09,031 - INFO - Plik public/images/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems.png utworzony pomyślnie
+2025-09-03 16:46:09,049 - INFO - Okładka dostępna pod: /images/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems.png
+2025-09-03 16:46:09,049 - INFO - Tryb translate: generowanie PL + tłumaczenia
+2025-09-03 16:46:09,050 - INFO - Języki do tłumaczenia: ['en', 'de']
+2025-09-03 16:46:09,050 - INFO - Generowanie głównego artykułu w języku: pl
+2025-09-03 16:46:09,050 - INFO - Próba generowania artykułu 1/3 (pl)
+2025-09-03 16:46:09,051 - INFO - Generowanie artykułu: '"Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems"' w języku pl (~900 słów)
+2025-09-03 16:46:09,368 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:46:33,345 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:46:33,366 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:46:33,366 - INFO - Długość odpowiedzi: 4229 znaków
+2025-09-03 16:46:33,367 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4229 znaków
+2025-09-03 16:46:33,367 - INFO - Metoda 1: Próbuję sparsować JSON (4229 znaków)
+2025-09-03 16:46:33,368 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:46:33,369 - INFO - Treść artykułu oczyszczona (pl): 3696 znaków
+2025-09-03 16:46:33,369 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems'
+2025-09-03 16:46:33,369 - INFO - Długość treści artykułu (pl): 3696 znaków
+2025-09-03 16:46:33,370 - WARNING - Problemy z jakością artykułu (pl): Tytuł za długi: 100 znaków (max 90), Opis SEO za krótki: 113 znaków (min 120)
+2025-09-03 16:46:33,370 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Tytuł za długi: 100 znaków (max 90)', 'Opis SEO za krótki: 113 znaków (min 120)']
+2025-09-03 16:46:33,371 - INFO - Próba generowania artykułu 2/3 (pl)
+2025-09-03 16:46:33,371 - INFO - Generowanie artykułu: '"Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems"' w języku pl (~900 słów)
+2025-09-03 16:46:33,667 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:47:08,426 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:47:08,435 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:47:08,438 - INFO - Długość odpowiedzi: 4919 znaków
+2025-09-03 16:47:08,439 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4919 znaków
+2025-09-03 16:47:08,439 - INFO - Metoda 1: Próbuję sparsować JSON (4919 znaków)
+2025-09-03 16:47:08,440 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:47:08,440 - INFO - Treść artykułu oczyszczona (pl): 4383 znaków
+2025-09-03 16:47:08,440 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems'
+2025-09-03 16:47:08,441 - INFO - Długość treści artykułu (pl): 4383 znaków
+2025-09-03 16:47:08,441 - WARNING - Problemy z jakością artykułu (pl): Tytuł za długi: 100 znaków (max 90), Opis SEO za krótki: 102 znaków (min 120)
+2025-09-03 16:47:08,442 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Tytuł za długi: 100 znaków (max 90)', 'Opis SEO za krótki: 102 znaków (min 120)']
+2025-09-03 16:47:08,442 - INFO - Próba generowania artykułu 3/3 (pl)
+2025-09-03 16:47:08,442 - INFO - Generowanie artykułu: '"Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems"' w języku pl (~900 słów)
+2025-09-03 16:47:08,722 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:47:35,648 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:47:35,652 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 16:47:35,653 - INFO - Długość odpowiedzi: 4641 znaków
+2025-09-03 16:47:35,654 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4641 znaków
+2025-09-03 16:47:35,655 - INFO - Metoda 1: Próbuję sparsować JSON (4641 znaków)
+2025-09-03 16:47:35,656 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 16:47:35,657 - INFO - Treść artykułu oczyszczona (pl): 4101 znaków
+2025-09-03 16:47:35,658 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems'
+2025-09-03 16:47:35,659 - INFO - Długość treści artykułu (pl): 4101 znaków
+2025-09-03 16:47:35,660 - WARNING - Problemy z jakością artykułu (pl): Tytuł za długi: 100 znaków (max 90), Opis SEO za krótki: 104 znaków (min 120)
+2025-09-03 16:47:35,663 - INFO - Wygenerowano plik .md o długości 4810 znaków
+2025-09-03 16:47:35,663 - INFO - Publikowanie posta: enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems
+2025-09-03 16:47:35,664 - INFO - Przesyłanie pliku: outstatic/content/posts/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems.md
+2025-09-03 16:47:35,981 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:47:36,781 - INFO - Plik outstatic/content/posts/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems.md utworzony pomyślnie
+2025-09-03 16:47:36,783 - INFO - Post enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems opublikowany pomyślnie
+2025-09-03 16:47:36,784 - INFO - Główny artykuł (pl) opublikowany: enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems
+2025-09-03 16:47:36,785 - INFO - === Rozpoczynam tłumaczenie na język: en ===
+2025-09-03 16:47:37,096 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:47:40,895 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:47:40,896 - INFO - Temat przetłumaczony na en: "Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems"
+2025-09-03 16:47:40,897 - INFO - Tłumaczenie tekstu na język: en
+2025-09-03 16:47:41,180 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:48:01,460 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:48:01,483 - INFO - Tłumaczenie na en ukończone
+2025-09-03 16:48:01,483 - INFO - Treść przetłumaczona na en: 3934 znaków
+2025-09-03 16:48:01,484 - INFO - Usunięto cudzysłowy z tytułu: Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems
+2025-09-03 16:48:01,491 - INFO - Wygenerowano plik .md o długości 4645 znaków
+2025-09-03 16:48:01,493 - INFO - Publikowanie posta: enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems-2
+2025-09-03 16:48:01,494 - INFO - Przesyłanie pliku: outstatic/content/posts/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems-2.md
+2025-09-03 16:48:01,816 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:48:02,572 - INFO - Plik outstatic/content/posts/enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems-2.md utworzony pomyślnie
+2025-09-03 16:48:02,575 - INFO - Post enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems-2 opublikowany pomyślnie
+2025-09-03 16:48:02,576 - INFO - === Tłumaczenie na język en zakończone: enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems-2 ===
+2025-09-03 16:48:02,577 - INFO - === Rozpoczynam tłumaczenie na język: de ===
+2025-09-03 16:48:02,925 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:48:04,225 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:48:04,244 - INFO - Temat przetłumaczony na de: "Verbesserung der OEE-Überwachung und Ressourcenplanung in einer vernetzten Fabrik durch fortschrittliche SCADA-Systeme"
+2025-09-03 16:48:04,246 - INFO - Tłumaczenie tekstu na język: de
+2025-09-03 16:48:04,556 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 16:48:41,305 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 16:48:41,307 - INFO - Tłumaczenie na de ukończone
+2025-09-03 16:48:41,308 - INFO - Treść przetłumaczona na de: 4549 znaków
+2025-09-03 16:48:41,308 - INFO - Usunięto cudzysłowy z tytułu: Verbesserung der OEE-Überwachung und Ressourcenplanung in einer vernetzten Fabrik durch fortschrittliche SCADA-Systeme
+2025-09-03 16:48:41,311 - INFO - Wygenerowano plik .md o długości 5294 znaków
+2025-09-03 16:48:41,311 - INFO - Publikowanie posta: verbesserung-der-oee-uberwachung-und-ressourcenplanung-in-einer-vernetzten-fabrik-durch-fortschrittliche-scada-systeme
+2025-09-03 16:48:41,311 - INFO - Przesyłanie pliku: outstatic/content/posts/verbesserung-der-oee-uberwachung-und-ressourcenplanung-in-einer-vernetzten-fabrik-durch-fortschrittliche-scada-systeme.md
+2025-09-03 16:48:41,655 - INFO - Plik nie istnieje, tworzę nowy...
+2025-09-03 16:48:42,392 - INFO - Plik outstatic/content/posts/verbesserung-der-oee-uberwachung-und-ressourcenplanung-in-einer-vernetzten-fabrik-durch-fortschrittliche-scada-systeme.md utworzony pomyślnie
+2025-09-03 16:48:42,393 - INFO - Post verbesserung-der-oee-uberwachung-und-ressourcenplanung-in-einer-vernetzten-fabrik-durch-fortschrittliche-scada-systeme opublikowany pomyślnie
+2025-09-03 16:48:42,393 - INFO - === Tłumaczenie na język de zakończone: verbesserung-der-oee-uberwachung-und-ressourcenplanung-in-einer-vernetzten-fabrik-durch-fortschrittliche-scada-systeme ===
+2025-09-03 16:48:42,393 - INFO - ==============================
+2025-09-03 16:48:42,394 - INFO - SLOT OPUBLIKOWANY POMYŚLNIE
+2025-09-03 16:48:42,394 - INFO - Temat: "Enhancing OEE Monitoring and Resource Planning in a Connected Factory through Advanced SCADA Systems"
+2025-09-03 16:48:42,394 - INFO - Slug główny: enhancing-oee-monitoring-and-resource-planning-in-a-connected-factory-through-advanced-scada-systems
+2025-09-03 16:48:42,395 - INFO - Status zmieniony na: completed
+2025-09-03 16:48:42,395 - INFO - ==============================
+2025-09-03 16:48:42,396 - INFO - Zapisywanie planu do: content_plan.json
+2025-09-03 16:48:42,397 - INFO - Plan zapisany pomyślnie
+2025-09-03 16:48:42,397 - INFO - Plan zapisany po slocie 2025-09-01T10:00:00Z
+2025-09-03 16:48:42,398 - INFO - Checkpoint wyczyszczony
+2025-09-03 16:48:42,398 - INFO - Ukończono publikację. Opublikowano: 1/1, nieudane: 0
+2025-09-03 16:48:42,399 - INFO - Zakończenie sesji OmniBlog v3.1 Enhanced

@@ -1,15 +1,15 @@
 "use client"
 
+import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Input } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
-import { usePathname } from "next/navigation"
-import { useState } from "react"
 import { LuSearch } from "react-icons/lu"
 
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
 import Tag from "@/components/Tag"
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface PaginationProps {
   totalPages: number
