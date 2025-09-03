@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:56.565Z",
+  "generated": "2025-09-03T15:15:01.642Z",
   "metadata": [
     {
       "__outstatic": {
@@ -972,6 +972,32 @@
     },
     {
       "__outstatic": {
+        "commit": "3207f3a001e331c418fa162ff51b5fb651202e81",
+        "hash": "2555076342",
+        "path": "outstatic/content/posts/integration-von-gruner-energie-in-oee-kennzahlen-verbesserung-der-cybersicherheit-und-qualitatskontrolle-in-einer-digita.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control-in-a-digital-culture.png",
+      "description": "Erfahren Sie, wie die Integration von grüner Energie in OEE-Kennzahlen Cybersicherheit und Qualitätskontrolle verbessert.",
+      "groupId": "df589232-b52e-4c57-ba5f-0b670563810b",
+      "lang": "de",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "integration-von-gruner-energie-in-oee-kennzahlen-verbesserung-der-cybersicherheit-und-qualitatskontrolle-in-einer-digita",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Industrie 4.0"
+        }
+      ],
+      "title": "Integration von grüner Energie in OEE-Kennzahlen: Verbesserung der Cybersicherheit und Qualitätskontrolle in einer digitalen Kultur"
+    },
+    {
+      "__outstatic": {
         "commit": "03884ea0f699c4c979cdfb5d557db44663225a5c",
         "hash": "2615026240",
         "path": "outstatic/content/posts/integration-von-cybersicherheit-in-die-vorausschauende-wartung-ein-risikomanagementrahmen.md"
@@ -1113,40 +1139,6 @@
         }
       ],
       "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
-    },
-    {
-      "__outstatic": {
-        "commit": "a56b15486c2e66868e17d1a3d0741454367cef38",
-        "hash": "3135860101",
-        "path": "outstatic/content/posts/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
-      "description": "Explore how IoT can minimize environmental impact in circular economy practices through effective risk management strategies.",
-      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
-      "lang": "en",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry",
-          "value": "Circular Economy"
-        },
-        {
-          "label": "Technology",
-          "value": "IoT"
-        },
-        {
-          "label": "Management",
-          "value": "Risk Management"
-        }
-      ],
-      "title": "Leveraging IoT for Enhanced Risk Management in Circular Economy Practices"
     },
     {
       "__outstatic": {
