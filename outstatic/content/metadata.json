@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:59.514Z",
+  "generated": "2025-09-03T15:16:08.492Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1318,32 +1318,6 @@
     },
     {
       "__outstatic": {
-        "commit": "84e0d87c280d43cc38a86b824e5ef766f7410a52",
-        "hash": "1326459670",
-        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-2.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
-      "description": "Explore how digital culture can drive competitive advantage while ensuring compliance and fostering continuous improvement.",
-      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
-      "lang": "en",
-      "publishedAt": "2025-02-05T09:00:00Z",
-      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-2",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "Digital Transformation"
-        }
-      ],
-      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
-    },
-    {
-      "__outstatic": {
         "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
         "hash": "2451523430",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
@@ -2445,6 +2419,36 @@
         }
       ],
       "title": "Wykorzystanie chmury obliczeniowej i zaawansowanych protokołów bezpieczeństwa w systemach SCADA"
+    },
+    {
+      "__outstatic": {
+        "commit": "c251097bb37a54415715be118180a51c8b5fdbf8",
+        "hash": "2099324959",
+        "path": "outstatic/content/posts/wykorzystanie-business-intelligence-do-skutecznego-prognozowania-popytu.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
+      "description": "Dowiedz się, jak wdrożyć Business Intelligence w prognozowaniu popytu, aby zwiększyć efektywność operacyjną.",
+      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
+      "lang": "pl",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "wykorzystanie-business-intelligence-do-skutecznego-prognozowania-popytu",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Technologia"
+        },
+        {
+          "label": "Temat",
+          "value": "Prognozowanie Popytu"
+        }
+      ],
+      "title": "Wykorzystanie Business Intelligence do Skutecznego Prognozowania Popytu"
     },
     {
       "__outstatic": {
