@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:28.758Z",
+  "generated": "2025-09-03T15:14:34.356Z",
   "metadata": [
     {
       "__outstatic": {
@@ -811,6 +811,36 @@
     },
     {
       "__outstatic": {
+        "commit": "251a994c27d508fcb9148fcb01c1557a803044da",
+        "hash": "654964426",
+        "path": "outstatic/content/posts/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
+      "description": "Explore how to integrate cybersecurity into predictive maintenance for HMI and ERP systems, enhancing risk management.",
+      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
+      "lang": "en",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Cybersecurity"
+        },
+        {
+          "label": "Predictive Maintenance",
+          "value": "Risk Management"
+        }
+      ],
+      "title": "Integrating Cybersecurity into Predictive Maintenance: A Risk Management Framework"
+    },
+    {
+      "__outstatic": {
         "commit": "cd38f5e5c6133f01bcd89217bcec6af628ebfff5",
         "hash": "319250443",
         "path": "outstatic/content/posts/integrating-5g-and-cloud-computing-revolutionizing-industry-5-0-with-digital-twins-and-ar.md"
@@ -1173,40 +1203,6 @@
         }
       ],
       "title": "Leveraging Computer Vision to Enhance OEE: Strategies for Competitive Advantage"
-    },
-    {
-      "__outstatic": {
-        "commit": "e242bd6c0684cc63dac9ef3adb3ad4c829b0bf0e",
-        "hash": "3101475243",
-        "path": "outstatic/content/posts/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
-      "description": "Explore how cloud computing and security protocols can enhance SCADA systems personalization during market disruptions.",
-      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
-      "lang": "en",
-      "publishedAt": "2025-03-26T09:00:00Z",
-      "slug": "leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "Cloud Computing"
-        },
-        {
-          "label": "Security",
-          "value": "Protocols"
-        },
-        {
-          "label": "Automation",
-          "value": "SCADA"
-        }
-      ],
-      "title": "Leveraging Cloud Computing and Advanced Security Protocols to Personalize SCADA Systems Amid Market Disruption"
     },
     {
       "__outstatic": {
