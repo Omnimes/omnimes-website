@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:30.124Z",
+  "generated": "2025-09-03T15:15:34.680Z",
   "metadata": [
     {
       "__outstatic": {
@@ -916,32 +916,6 @@
         }
       ],
       "title": "Leveraging Business Intelligence for Effective Demand Forecasting"
-    },
-    {
-      "__outstatic": {
-        "commit": "5d97b7b5bd3a9e2cdb24d796f773a6c58f15c56c",
-        "hash": "1479154050",
-        "path": "outstatic/content/posts/leveraging-5g-and-iot-for-continuous-improvement-in-industry.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-5g-and-iot-for-continuous-improvement-a-comprehensive-guide-to-innovation-management-and-automation-in-indust.png",
-      "description": "Explore how 5G and IoT drive innovation management and automation in modern industries.",
-      "groupId": "4c20b078-a1de-4c6c-bae8-a88358419cde",
-      "lang": "en",
-      "publishedAt": "2025-02-26T09:00:00Z",
-      "slug": "leveraging-5g-and-iot-for-continuous-improvement-in-industry",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Category",
-          "value": "Industry 4.0"
-        }
-      ],
-      "title": "Leveraging 5G and IoT for Continuous Improvement in Industry"
     },
     {
       "__outstatic": {
@@ -2672,6 +2646,32 @@
         }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "a493bd62d731a96c4bd3adc865e6ce8338903044",
+        "hash": "1397539050",
+        "path": "outstatic/content/posts/wykorzystanie-wizji-komputerowej-do-zwiekszenia-oee-strategie-optymalizacji-procesow.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
+      "description": "Dowiedz się, jak wizja komputerowa może poprawić OEE i dać przewagę konkurencyjną w produkcji.",
+      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
+      "lang": "pl",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "wykorzystanie-wizji-komputerowej-do-zwiekszenia-oee-strategie-optymalizacji-procesow",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Wykorzystanie wizji komputerowej do zwiększenia OEE: strategie optymalizacji procesów"
     },
     {
       "__outstatic": {
