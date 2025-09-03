@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:16:30.037Z",
+  "generated": "2025-09-03T15:16:43.502Z",
   "metadata": [
     {
       "__outstatic": {
@@ -755,6 +755,32 @@
     },
     {
       "__outstatic": {
+        "commit": "17d0fd5cdc35a6f80de088096c5b77aed67ff5fc",
+        "hash": "1885129976",
+        "path": "outstatic/content/posts/integration-von-5g-und-cloud-computing-revolution-durch-digitale-zwillinge-und-ar.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-5g-and-cloud-computing-how-digital-twins-and-augmented-reality-are-revolutionizing-industry-5-0.png",
+      "description": "Entdecken Sie, wie 5G und Cloud-Computing die Industrie 5.0 durch digitale Zwillinge und Augmented Reality transformieren.",
+      "groupId": "109324e4-242f-41ed-95cc-b7596626ba38",
+      "lang": "de",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "integration-von-5g-und-cloud-computing-revolution-durch-digitale-zwillinge-und-ar",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Industrie 5.0"
+        }
+      ],
+      "title": "Integration von 5G und Cloud-Computing: Revolution durch digitale Zwillinge und AR"
+    },
+    {
+      "__outstatic": {
         "commit": "c83f47bc8445ffb05121fd63480cd63d35cea448",
         "hash": "78422718",
         "path": "outstatic/content/posts/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control.md"
@@ -969,36 +995,6 @@
         }
       ],
       "title": "Integration von grüner Energie in OEE-Kennzahlen: Verbesserung der Cybersicherheit und Qualitätskontrolle in einer digitalen Kultur"
-    },
-    {
-      "__outstatic": {
-        "commit": "03884ea0f699c4c979cdfb5d557db44663225a5c",
-        "hash": "2615026240",
-        "path": "outstatic/content/posts/integration-von-cybersicherheit-in-die-vorausschauende-wartung-ein-risikomanagementrahmen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
-      "description": "Erfahren Sie, wie Cybersicherheit in die vorausschauende Wartung integriert werden kann, um HMI- und ERP-Systeme zu schützen.",
-      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
-      "lang": "de",
-      "publishedAt": "2025-04-05T09:00:00Z",
-      "slug": "integration-von-cybersicherheit-in-die-vorausschauende-wartung-ein-risikomanagementrahmen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologie",
-          "value": "Cybersicherheit"
-        },
-        {
-          "label": "Industrie 4.0",
-          "value": "Wartung"
-        }
-      ],
-      "title": "Integration von Cybersicherheit in die vorausschauende Wartung: Ein Risikomanagementrahmen"
     },
     {
       "__outstatic": {
