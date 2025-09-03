@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:01.642Z",
+  "generated": "2025-09-03T15:15:09.386Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1142,6 +1142,40 @@
     },
     {
       "__outstatic": {
+        "commit": "a56b15486c2e66868e17d1a3d0741454367cef38",
+        "hash": "3135860101",
+        "path": "outstatic/content/posts/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
+      "description": "Explore how IoT can minimize environmental impact in circular economy practices through effective risk management strategies.",
+      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
+      "lang": "en",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry",
+          "value": "Circular Economy"
+        },
+        {
+          "label": "Technology",
+          "value": "IoT"
+        },
+        {
+          "label": "Management",
+          "value": "Risk Management"
+        }
+      ],
+      "title": "Leveraging IoT for Enhanced Risk Management in Circular Economy Practices"
+    },
+    {
+      "__outstatic": {
         "commit": "b6c966fa19875936f9d48ad7ef352c173f45ea73",
         "hash": "3821010936",
         "path": "outstatic/content/posts/leveraging-computer-vision-to-enhance-oee-strategies-for-competitive-advantage.md"
@@ -1364,32 +1398,6 @@
         }
       ],
       "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
-    },
-    {
-      "__outstatic": {
-        "commit": "5cd6f6e43dd51fc6123f4f836d86e01c05f3f68d",
-        "hash": "2991294234",
-        "path": "outstatic/content/posts/nutzung-des-iot-zur-verbesserung-des-risikomanagements-in-der-kreislaufwirtschaft.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
-      "description": "Erfahren Sie, wie IoT-Technologien das Risikomanagement in der Kreislaufwirtschaft optimieren und die Umweltbelastung minimieren können.",
-      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
-      "lang": "de",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "nutzung-des-iot-zur-verbesserung-des-risikomanagements-in-der-kreislaufwirtschaft",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Thema",
-          "value": "Kreislaufwirtschaft"
-        }
-      ],
-      "title": "Nutzung des IoT zur Verbesserung des Risikomanagements in der Kreislaufwirtschaft"
     },
     {
       "__outstatic": {
