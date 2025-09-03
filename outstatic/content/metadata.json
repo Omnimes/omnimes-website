@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:16:16.881Z",
+  "generated": "2025-09-03T15:16:22.063Z",
   "metadata": [
     {
       "__outstatic": {
@@ -610,40 +610,6 @@
         }
       ],
       "title": "Integracja cyberbezpieczeństwa w predykcyjnym utrzymaniu ruchu"
-    },
-    {
-      "__outstatic": {
-        "commit": "57650206fc0ae44f244c0e7912c4acc69df1d956",
-        "hash": "83103068",
-        "path": "outstatic/content/posts/integracja-5g-i-chmury-jak-cyfrowe-blizniaki-i-ar-rewolucjonizuja-przemys-5-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/integrating-5g-and-cloud-computing-how-digital-twins-and-augmented-reality-are-revolutionizing-industry-5-0.png",
-      "description": "Odkryj, jak 5G i chmura zmieniają przemysł 5.0 dzięki cyfrowym bliźniakom i rozszerzonej rzeczywistości.",
-      "groupId": "109324e4-242f-41ed-95cc-b7596626ba38",
-      "lang": "pl",
-      "publishedAt": "2025-01-26T09:00:00Z",
-      "slug": "integracja-5g-i-chmury-jak-cyfrowe-blizniaki-i-ar-rewolucjonizuja-przemys-5-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "5G"
-        },
-        {
-          "label": "Innowacje",
-          "value": "chmura"
-        },
-        {
-          "label": "Przemysł",
-          "value": "5.0"
-        }
-      ],
-      "title": "Integracja 5G i Chmury: Jak Cyfrowe Bliźniaki i AR Rewolucjonizują Przemysł 5.0"
     },
     {
       "__outstatic": {
@@ -1484,6 +1450,32 @@
         }
       ],
       "title": "Nutzen von Business Intelligence für effektive Nachfrageprognosen: Ein Fahrplan für erfolgreiche Technologieeinführung"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a0a880d7a5da4858ba38db589f2f6b8d2455d80",
+        "hash": "4135961218",
+        "path": "outstatic/content/posts/navigieren-durch-marktstorungen-digitale-kultur-fur-wettbewerbsvorteile-nutzen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
+      "description": "Erfahren Sie, wie Unternehmen digitale Kultur nutzen, um Wettbewerbsvorteile zu erzielen und gleichzeitig Vorschriften einzuhalten.",
+      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
+      "lang": "de",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "navigieren-durch-marktstorungen-digitale-kultur-fur-wettbewerbsvorteile-nutzen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Thema",
+          "value": "Industrie 4.0"
+        }
+      ],
+      "title": "Navigieren durch Marktstörungen: Digitale Kultur für Wettbewerbsvorteile nutzen"
     },
     {
       "__outstatic": {
