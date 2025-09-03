@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:19.643Z",
+  "generated": "2025-09-03T15:15:25.814Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1176,6 +1176,36 @@
     },
     {
       "__outstatic": {
+        "commit": "b6c966fa19875936f9d48ad7ef352c173f45ea73",
+        "hash": "3821010936",
+        "path": "outstatic/content/posts/leveraging-computer-vision-to-enhance-oee-strategies-for-competitive-advantage.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
+      "description": "Discover how computer vision can optimize OEE and provide a competitive edge through process improvements.",
+      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
+      "lang": "en",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "leveraging-computer-vision-to-enhance-oee-strategies-for-competitive-advantage",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry",
+          "value": "Manufacturing"
+        },
+        {
+          "label": "Technology",
+          "value": "Computer Vision"
+        }
+      ],
+      "title": "Leveraging Computer Vision to Enhance OEE: Strategies for Competitive Advantage"
+    },
+    {
+      "__outstatic": {
         "commit": "e242bd6c0684cc63dac9ef3adb3ad4c829b0bf0e",
         "hash": "3101475243",
         "path": "outstatic/content/posts/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.md"
@@ -1394,40 +1424,6 @@
         }
       ],
       "title": "Nutzung des IoT zur Verbesserung des Risikomanagements in der Kreislaufwirtschaft"
-    },
-    {
-      "__outstatic": {
-        "commit": "e1490c813c5d963882869bedad53cd13075a556d",
-        "hash": "2191279383",
-        "path": "outstatic/content/posts/nutzen-von-computer-vision-zur-verbesserung-der-oee-strategien-zur-erlangung-eines-wettbewerbsvorteils.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
-      "description": "Erfahren Sie, wie Computer Vision die OEE steigern kann und welche Strategien Unternehmen nutzen können, um Wettbewerbsvorteile zu erzielen.",
-      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
-      "lang": "de",
-      "publishedAt": "2025-03-05T09:00:00Z",
-      "slug": "nutzen-von-computer-vision-zur-verbesserung-der-oee-strategien-zur-erlangung-eines-wettbewerbsvorteils",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologie",
-          "value": "Computer Vision"
-        },
-        {
-          "label": "Industrie",
-          "value": "OEE"
-        },
-        {
-          "label": "Optimierung",
-          "value": "Prozessoptimierung"
-        }
-      ],
-      "title": "Nutzen von Computer Vision zur Verbesserung der OEE: Strategien zur Erlangung eines Wettbewerbsvorteils"
     },
     {
       "__outstatic": {
