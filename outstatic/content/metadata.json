@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:20.124Z",
+  "generated": "2025-09-03T15:14:24.525Z",
   "metadata": [
     {
       "__outstatic": {
@@ -580,36 +580,6 @@
         }
       ],
       "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen"
-    },
-    {
-      "__outstatic": {
-        "commit": "2e3fb42cf3f69f6f1c9f0d1440178688f1d27d5d",
-        "hash": "2638583661",
-        "path": "outstatic/content/posts/integracja-cyberbezpieczenstwa-w-predykcyjnym-utrzymaniu-ruchu.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
-      "description": "Jak zintegrować cyberbezpieczeństwo z predykcyjnym utrzymaniem ruchu w systemach HMI i ERP.",
-      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
-      "lang": "pl",
-      "publishedAt": "2025-04-05T09:00:00Z",
-      "slug": "integracja-cyberbezpieczenstwa-w-predykcyjnym-utrzymaniu-ruchu",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        },
-        {
-          "label": "Temat",
-          "value": "Cyberbezpieczeństwo"
-        }
-      ],
-      "title": "Integracja cyberbezpieczeństwa w predykcyjnym utrzymaniu ruchu"
     },
     {
       "__outstatic": {
@@ -2822,6 +2792,36 @@
         }
       ],
       "title": "Wykorzystanie IoT w zarządzaniu ryzykiem w praktykach gospodarki o obiegu zamkniętym"
+    },
+    {
+      "__outstatic": {
+        "commit": "d3ae051133c5173798844bd02a77f5489c969a11",
+        "hash": "3428054422",
+        "path": "outstatic/content/posts/zwiekszanie-ochrony-prywatnosci-w-srodowiskach-wirtualnej-rzeczywistosci-iot.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
+      "description": "Poznaj strategie ochrony prywatności w środowiskach VR z wykorzystaniem IoT. Kluczowe wskazówki dla profesjonalistów z branży.",
+      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
+      "lang": "pl",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "zwiekszanie-ochrony-prywatnosci-w-srodowiskach-wirtualnej-rzeczywistosci-iot",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Technologia"
+        },
+        {
+          "label": "Temat",
+          "value": "Prywatność"
+        }
+      ],
+      "title": "Zwiększanie Ochrony Prywatności w Środowiskach Wirtualnej Rzeczywistości IoT"
     },
     {
       "__outstatic": {
