@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:25.814Z",
+  "generated": "2025-09-03T15:15:30.124Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1427,6 +1427,40 @@
     },
     {
       "__outstatic": {
+        "commit": "e1490c813c5d963882869bedad53cd13075a556d",
+        "hash": "2191279383",
+        "path": "outstatic/content/posts/nutzen-von-computer-vision-zur-verbesserung-der-oee-strategien-zur-erlangung-eines-wettbewerbsvorteils.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
+      "description": "Erfahren Sie, wie Computer Vision die OEE steigern kann und welche Strategien Unternehmen nutzen können, um Wettbewerbsvorteile zu erzielen.",
+      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
+      "lang": "de",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "nutzen-von-computer-vision-zur-verbesserung-der-oee-strategien-zur-erlangung-eines-wettbewerbsvorteils",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Computer Vision"
+        },
+        {
+          "label": "Industrie",
+          "value": "OEE"
+        },
+        {
+          "label": "Optimierung",
+          "value": "Prozessoptimierung"
+        }
+      ],
+      "title": "Nutzen von Computer Vision zur Verbesserung der OEE: Strategien zur Erlangung eines Wettbewerbsvorteils"
+    },
+    {
+      "__outstatic": {
         "commit": "213f1393db2bc92c177b89fed840ada2e5d4430c",
         "hash": "3158504214",
         "path": "outstatic/content/posts/nutzen-von-business-intelligence-fur-effektive-nachfrageprognosen-ein-fahrplan-fur-erfolgreiche-technologieeinfuhrung.md"
@@ -2638,32 +2672,6 @@
         }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "a493bd62d731a96c4bd3adc865e6ce8338903044",
-        "hash": "1397539050",
-        "path": "outstatic/content/posts/wykorzystanie-wizji-komputerowej-do-zwiekszenia-oee-strategie-optymalizacji-procesow.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
-      "description": "Dowiedz się, jak wizja komputerowa może poprawić OEE i dać przewagę konkurencyjną w produkcji.",
-      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
-      "lang": "pl",
-      "publishedAt": "2025-03-05T09:00:00Z",
-      "slug": "wykorzystanie-wizji-komputerowej-do-zwiekszenia-oee-strategie-optymalizacji-procesow",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Wykorzystanie wizji komputerowej do zwiększenia OEE: strategie optymalizacji procesów"
     },
     {
       "__outstatic": {
