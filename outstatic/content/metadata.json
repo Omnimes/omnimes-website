@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:17:07.471Z",
+  "generated": "2025-09-03T15:17:11.620Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1835,6 +1835,36 @@
     },
     {
       "__outstatic": {
+        "commit": "a48113befcfb7e8e5f47eb105563db474c57f8c9",
+        "hash": "645457829",
+        "path": "outstatic/content/posts/qualitatskontrolle-in-der-kreislaufwirtschaft-verbessern-nutzung-von-maschinellem-lernen-und-oee-fur-skalierbare-losunge.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.png",
+      "description": "Erfahren Sie, wie maschinelles Lernen und OEE die Qualitätskontrolle in der Kreislaufwirtschaft optimieren können.",
+      "groupId": "2da4fb7c-bd1a-491e-a506-424083adf864",
+      "lang": "de",
+      "publishedAt": "2025-01-19T09:00:00Z",
+      "slug": "qualitatskontrolle-in-der-kreislaufwirtschaft-verbessern-nutzung-von-maschinellem-lernen-und-oee-fur-skalierbare-losunge",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industrie 4.0",
+          "value": "Qualitätskontrolle"
+        },
+        {
+          "label": "Kreislaufwirtschaft",
+          "value": "Nachhaltigkeit"
+        }
+      ],
+      "title": "Qualitätskontrolle in der Kreislaufwirtschaft verbessern: Nutzung von maschinellem Lernen und OEE für skalierbare Lösungen"
+    },
+    {
+      "__outstatic": {
         "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
         "hash": "4259407744",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
@@ -2822,36 +2852,6 @@
         }
       ],
       "title": "Zwiększanie Ochrony Prywatności w Środowiskach Wirtualnej Rzeczywistości IoT"
-    },
-    {
-      "__outstatic": {
-        "commit": "61da04b502e974d8af37e77fc89aea3201e91614",
-        "hash": "3987064905",
-        "path": "outstatic/content/posts/zwiekszanie-kontroli-jakosci-w-praktykach-gospodarki-cyklicznej-wykorzystanie-ml-i-oee.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.png",
-      "description": "Odkryj, jak Machine Learning i OEE mogą poprawić kontrolę jakości w gospodarce cyklicznej.",
-      "groupId": "2da4fb7c-bd1a-491e-a506-424083adf864",
-      "lang": "pl",
-      "publishedAt": "2025-01-19T09:00:00Z",
-      "slug": "zwiekszanie-kontroli-jakosci-w-praktykach-gospodarki-cyklicznej-wykorzystanie-ml-i-oee",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Gospodarka Cykliczna",
-          "value": "gospodarka_cykliczna"
-        },
-        {
-          "label": "Kontrola Jakości",
-          "value": "kontrola_jakosci"
-        }
-      ],
-      "title": "Zwiększanie Kontroli Jakości w Praktykach Gospodarki Cyklicznej: Wykorzystanie ML i OEE"
     },
     {
       "__outstatic": {
