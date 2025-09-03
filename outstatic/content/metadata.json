@@ -1,6 +1,6 @@
 {
-  "commit": "9e82a2229d5662fa90eeeb3e7a8a3bf00039eb14",
-  "generated": "Wed, 03 Sep 2025 15:13:17 GMT",
+  "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
+  "generated": "2025-09-03T15:14:09.248Z",
   "metadata": [
     {
       "__outstatic": {
@@ -403,40 +403,6 @@
         }
       ],
       "title": "Enhancing Quality Control in Circular Economy Practices: Leveraging Machine Learning and OEE for Scalable Solutions"
-    },
-    {
-      "__outstatic": {
-        "commit": "43168ba2c23233eed3924f6886ac19d33bc0ed87",
-        "hash": "3761851301",
-        "path": "outstatic/content/posts/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
-      "description": "Explore effective strategies for enhancing privacy protection in IoT-enabled virtual reality environments for industry professionals.",
-      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
-      "lang": "en",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technology",
-          "value": "IoT"
-        },
-        {
-          "label": "Privacy",
-          "value": "Protection"
-        },
-        {
-          "label": "Virtual Reality",
-          "value": "VR"
-        }
-      ],
-      "title": "Enhancing Privacy Protection in IoT-Enabled Virtual Reality Environments: Strategies for Industry Professionals"
     },
     {
       "__outstatic": {
