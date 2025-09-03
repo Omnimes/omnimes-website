@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:16:43.502Z",
+  "generated": "2025-09-03T15:16:48.894Z",
   "metadata": [
     {
       "__outstatic": {
@@ -998,6 +998,36 @@
     },
     {
       "__outstatic": {
+        "commit": "03884ea0f699c4c979cdfb5d557db44663225a5c",
+        "hash": "2615026240",
+        "path": "outstatic/content/posts/integration-von-cybersicherheit-in-die-vorausschauende-wartung-ein-risikomanagementrahmen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
+      "description": "Erfahren Sie, wie Cybersicherheit in die vorausschauende Wartung integriert werden kann, um HMI- und ERP-Systeme zu schützen.",
+      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
+      "lang": "de",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "integration-von-cybersicherheit-in-die-vorausschauende-wartung-ein-risikomanagementrahmen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Cybersicherheit"
+        },
+        {
+          "label": "Industrie 4.0",
+          "value": "Wartung"
+        }
+      ],
+      "title": "Integration von Cybersicherheit in die vorausschauende Wartung: Ein Risikomanagementrahmen"
+    },
+    {
+      "__outstatic": {
         "commit": "eff1359193c8c49290730d98f67fae649bef6982",
         "hash": "180187371",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
@@ -1428,32 +1458,6 @@
         }
       ],
       "title": "Nutzen von Computer Vision zur Verbesserung der OEE: Strategien zur Erlangung eines Wettbewerbsvorteils"
-    },
-    {
-      "__outstatic": {
-        "commit": "213f1393db2bc92c177b89fed840ada2e5d4430c",
-        "hash": "3158504214",
-        "path": "outstatic/content/posts/nutzen-von-business-intelligence-fur-effektive-nachfrageprognosen-ein-fahrplan-fur-erfolgreiche-technologieeinfuhrung.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
-      "description": "Erfahren Sie, wie Business Intelligence Ihre Nachfrageprognosen optimieren kann und welche Schritte für eine erfolgreiche Einführung notwendig sind.",
-      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
-      "lang": "de",
-      "publishedAt": "2025-02-19T09:00:00Z",
-      "slug": "nutzen-von-business-intelligence-fur-effektive-nachfrageprognosen-ein-fahrplan-fur-erfolgreiche-technologieeinfuhrung",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategorie",
-          "value": "Business Intelligence"
-        }
-      ],
-      "title": "Nutzen von Business Intelligence für effektive Nachfrageprognosen: Ein Fahrplan für erfolgreiche Technologieeinführung"
     },
     {
       "__outstatic": {
