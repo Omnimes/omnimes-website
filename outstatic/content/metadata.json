@@ -1,6 +1,6 @@
 {
-  "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:17:43.165Z",
+  "commit": "9e82a2229d5662fa90eeeb3e7a8a3bf00039eb14",
+  "generated": "Wed, 03 Sep 2025 15:17:57 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -61,25 +61,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3238617c4850544d9e833cb956837cab6137934a",
-        "hash": "3455486355",
-        "path": "outstatic/content/news/lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems",
-      "lang": "en",
-      "publishedAt": "2024-06-21T06:52:47.000Z",
-      "slug": "lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems",
-      "status": "published",
-      "title": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems"
-    },
-    {
-      "__outstatic": {
         "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
         "hash": "1225348516",
         "path": "outstatic/content/news/neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle.md"
@@ -96,6 +77,25 @@
       "slug": "neue-ki-loesung-im-omnimes-system-ollama-lokale-ki-modelle",
       "status": "published",
       "title": "Neue KI-Lösung im Omnimes-System – Ollama, lokale KI-Modelle"
+    },
+    {
+      "__outstatic": {
+        "commit": "3238617c4850544d9e833cb956837cab6137934a",
+        "hash": "3455486355",
+        "path": "outstatic/content/news/lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems",
+      "lang": "en",
+      "publishedAt": "2024-06-21T06:52:47.000Z",
+      "slug": "lecture-at-the-cracow-university-of-technology-on-the-use-of-ai-and-big-data-in-production-execution-systems",
+      "status": "published",
+      "title": "Lecture at the Cracow University of Technology on the Use of AI and Big Data in Production Execution Systems"
     },
     {
       "__outstatic": {
@@ -1266,32 +1266,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1065e7aa8572dbfe113e76d644039885a4dd477c",
-        "hash": "1521765147",
-        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
-      "description": "Jak wykorzystać kulturę cyfrową do zdobycia przewagi konkurencyjnej w obliczu zakłóceń rynkowych.",
-      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
-      "lang": "pl",
-      "publishedAt": "2025-02-05T09:00:00Z",
-      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "zakłócenia rynkowe"
-        }
-      ],
-      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
-    },
-    {
-      "__outstatic": {
         "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
         "hash": "3377793085",
         "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
@@ -1315,6 +1289,32 @@
         }
       ],
       "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
+    },
+    {
+      "__outstatic": {
+        "commit": "1065e7aa8572dbfe113e76d644039885a4dd477c",
+        "hash": "1521765147",
+        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
+      "description": "Jak wykorzystać kulturę cyfrową do zdobycia przewagi konkurencyjnej w obliczu zakłóceń rynkowych.",
+      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
+      "lang": "pl",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "zakłócenia rynkowe"
+        }
+      ],
+      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
     },
     {
       "__outstatic": {
@@ -1513,6 +1513,93 @@
     },
     {
       "__outstatic": {
+        "commit": "728fe681d3ff54263fe87c842e20658b8eee3e0d",
+        "hash": "678402465",
+        "path": "outstatic/content/posts/navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
+      "description": "Strategien zum Datenschutz durch algorithmische Optimierung in der digitalen Transformation.",
+      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "lang": "de",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Thema",
+          "value": "Compliance"
+        },
+        {
+          "label": "Technologie",
+          "value": "Datenschutz"
+        },
+        {
+          "label": "Strategie",
+          "value": "digitale Transformation"
+        }
+      ],
+      "title": "Navigieren durch die regulatorische Compliance im Zeitalter der digitalen Transformation"
+    },
+    {
+      "__outstatic": {
+        "commit": "5f3c130b2e918adec56d8cea60f2117574c05b8c",
+        "hash": "3912465102",
+        "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1.png",
+      "description": "Das Ollama-Projekt ist eine offene und kostenlose Software, die es ermöglicht, lokale KI-Modelle, insbesondere große Sprachmodelle (LLMs), auf Ihrem eigenen Computer oder Server auszuführen. Aufgrund seiner geringen Hardware-Anforderungen ist diese Software für mittlere und kleine Unternehmen zugänglich und bietet Zugang zu 93 KI-Modellen ohne signifikante Einschränkungen.",
+      "lang": "de",
+      "publishedAt": "2024-06-20T08:28:30.000Z",
+      "slug": "ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "llama3",
+          "value": "llama3"
+        },
+        {
+          "label": "Meta",
+          "value": "meta"
+        },
+        {
+          "label": "Gemma",
+          "value": "gemma"
+        },
+        {
+          "label": "Mistral",
+          "value": "mistral"
+        },
+        {
+          "label": "GPT-4",
+          "value": "gpt4"
+        },
+        {
+          "label": "GPT-3.5",
+          "value": "gpt35"
+        }
+      ],
+      "title": "Ollama - Praktische Anwendung lokaler KI-Modelle am Beispiel des OMNIMES-Systems"
+    },
+    {
+      "__outstatic": {
         "commit": "f6ab81f13209bd9d0c85aa89e4d0b4f54edb9919",
         "hash": "1072085323",
         "path": "outstatic/content/posts/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system.md"
@@ -1654,59 +1741,6 @@
         }
       ],
       "title": "Nutzung von Cloud-Computing und Sicherheitsprotokollen zur Personalisierung von SCADA-Systemen"
-    },
-    {
-      "__outstatic": {
-        "commit": "5f3c130b2e918adec56d8cea60f2117574c05b8c",
-        "hash": "3912465102",
-        "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1.png",
-      "description": "Das Ollama-Projekt ist eine offene und kostenlose Software, die es ermöglicht, lokale KI-Modelle, insbesondere große Sprachmodelle (LLMs), auf Ihrem eigenen Computer oder Server auszuführen. Aufgrund seiner geringen Hardware-Anforderungen ist diese Software für mittlere und kleine Unternehmen zugänglich und bietet Zugang zu 93 KI-Modellen ohne signifikante Einschränkungen.",
-      "lang": "de",
-      "publishedAt": "2024-06-20T08:28:30.000Z",
-      "slug": "ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "AI local",
-          "value": "aiLocal"
-        },
-        {
-          "label": "llama3",
-          "value": "llama3"
-        },
-        {
-          "label": "Meta",
-          "value": "meta"
-        },
-        {
-          "label": "Gemma",
-          "value": "gemma"
-        },
-        {
-          "label": "Mistral",
-          "value": "mistral"
-        },
-        {
-          "label": "GPT-4",
-          "value": "gpt4"
-        },
-        {
-          "label": "GPT-3.5",
-          "value": "gpt35"
-        }
-      ],
-      "title": "Ollama - Praktische Anwendung lokaler KI-Modelle am Beispiel des OMNIMES-Systems"
     },
     {
       "__outstatic": {
