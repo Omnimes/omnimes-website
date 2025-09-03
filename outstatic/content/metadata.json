@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:15.394Z",
+  "generated": "2025-09-03T15:15:19.643Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1173,36 +1173,6 @@
         }
       ],
       "title": "Leveraging IoT for Enhanced Risk Management in Circular Economy Practices"
-    },
-    {
-      "__outstatic": {
-        "commit": "b6c966fa19875936f9d48ad7ef352c173f45ea73",
-        "hash": "3821010936",
-        "path": "outstatic/content/posts/leveraging-computer-vision-to-enhance-oee-strategies-for-competitive-advantage.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
-      "description": "Discover how computer vision can optimize OEE and provide a competitive edge through process improvements.",
-      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
-      "lang": "en",
-      "publishedAt": "2025-03-05T09:00:00Z",
-      "slug": "leveraging-computer-vision-to-enhance-oee-strategies-for-competitive-advantage",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry",
-          "value": "Manufacturing"
-        },
-        {
-          "label": "Technology",
-          "value": "Computer Vision"
-        }
-      ],
-      "title": "Leveraging Computer Vision to Enhance OEE: Strategies for Competitive Advantage"
     },
     {
       "__outstatic": {
@@ -2796,6 +2766,32 @@
         }
       ],
       "title": "Wykorzystanie PyTorch w danych przemysłowych"
+    },
+    {
+      "__outstatic": {
+        "commit": "991fe20e1bf5f0257055a774300af1615c8d7b61",
+        "hash": "4130983320",
+        "path": "outstatic/content/posts/wykorzystanie-iot-w-zarzadzaniu-ryzykiem-w-praktykach-gospodarki-o-obiegu-zamknietym.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
+      "description": "Odkryj, jak IoT wspiera zarządzanie ryzykiem w gospodarce o obiegu zamkniętym, minimalizując wpływ na środowisko.",
+      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
+      "lang": "pl",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "wykorzystanie-iot-w-zarzadzaniu-ryzykiem-w-praktykach-gospodarki-o-obiegu-zamknietym",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Zarządzanie ryzykiem"
+        }
+      ],
+      "title": "Wykorzystanie IoT w zarządzaniu ryzykiem w praktykach gospodarki o obiegu zamkniętym"
     },
     {
       "__outstatic": {
