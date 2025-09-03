@@ -1,6 +1,6 @@
 {
-  "commit": "344ce4297b916f3c82748bd455fa1b7e4d2dffa3",
-  "generated": "2025-09-03T15:19:36.546Z",
+  "commit": "43c992aad48f06b95789afb2dc473204b9ece57c",
+  "generated": "2025-09-03T15:20:38.771Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1871,31 +1871,6 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "344ce4297b916f3c82748bd455fa1b7e4d2dffa3",
-        "hash": "4000387266",
-        "path": "outstatic/content/posts/test.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "",
-      "lang": "pl",
-      "publishedAt": "2025-09-03T15:30:54.084Z",
-      "slug": "test",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        }
-      ],
-      "title": "test"
     }
   ]
 }
