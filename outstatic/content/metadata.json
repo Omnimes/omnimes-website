@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:17:24.037Z",
+  "generated": "2025-09-03T15:17:28.440Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1292,32 +1292,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
-        "hash": "3377793085",
-        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
-      "description": "Explore strategies for privacy protection through algorithmic optimization in the digital age.",
-      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
-      "lang": "en",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation-2",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry",
-          "value": "Compliance"
-        }
-      ],
-      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
-    },
-    {
-      "__outstatic": {
         "commit": "84e0d87c280d43cc38a86b824e5ef766f7410a52",
         "hash": "1326459670",
         "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-2.md"
@@ -1985,6 +1959,40 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "8cfdf3f3cf05e758f916b3eba0fa0e81e600c385",
+        "hash": "3951333408",
+        "path": "outstatic/content/posts/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.png",
+      "description": "Discover effective strategies for cost optimization in manufacturing while reducing carbon footprint through innovative supply chain practices.",
+      "groupId": "663620ef-518e-4c57-87a1-4be70d3730ea",
+      "lang": "en",
+      "publishedAt": "2025-01-12T09:00:00Z",
+      "slug": "strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Cost Optimization"
+        },
+        {
+          "label": "Sustainability",
+          "value": "Carbon Footprint"
+        },
+        {
+          "label": "Supply Chain",
+          "value": "Innovations"
+        }
+      ],
+      "title": "Strategies for Cost Optimization in Manufacturing: Reducing Carbon Footprint Through Supply Chain Innovations"
     },
     {
       "__outstatic": {
