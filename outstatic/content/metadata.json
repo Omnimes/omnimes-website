@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:54.251Z",
+  "generated": "2025-09-03T15:15:59.514Z",
   "metadata": [
     {
       "__outstatic": {
@@ -890,6 +890,32 @@
         }
       ],
       "title": "Integracja zielonej energii w metrykach OEE: Cyberbezpieczeństwo i kontrola jakości"
+    },
+    {
+      "__outstatic": {
+        "commit": "c9c82538e11b6b28aa054cb29e904fb6e22cea07",
+        "hash": "2048809798",
+        "path": "outstatic/content/posts/leveraging-business-intelligence-for-effective-demand-forecasting.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
+      "description": "Discover how to adopt Business Intelligence for accurate demand forecasting and enhance decision-making.",
+      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
+      "lang": "en",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "leveraging-business-intelligence-for-effective-demand-forecasting",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Category",
+          "value": "Business Intelligence"
+        }
+      ],
+      "title": "Leveraging Business Intelligence for Effective Demand Forecasting"
     },
     {
       "__outstatic": {
@@ -2419,36 +2445,6 @@
         }
       ],
       "title": "Wykorzystanie chmury obliczeniowej i zaawansowanych protokołów bezpieczeństwa w systemach SCADA"
-    },
-    {
-      "__outstatic": {
-        "commit": "c251097bb37a54415715be118180a51c8b5fdbf8",
-        "hash": "2099324959",
-        "path": "outstatic/content/posts/wykorzystanie-business-intelligence-do-skutecznego-prognozowania-popytu.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
-      "description": "Dowiedz się, jak wdrożyć Business Intelligence w prognozowaniu popytu, aby zwiększyć efektywność operacyjną.",
-      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
-      "lang": "pl",
-      "publishedAt": "2025-02-19T09:00:00Z",
-      "slug": "wykorzystanie-business-intelligence-do-skutecznego-prognozowania-popytu",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Technologia"
-        },
-        {
-          "label": "Temat",
-          "value": "Prognozowanie Popytu"
-        }
-      ],
-      "title": "Wykorzystanie Business Intelligence do Skutecznego Prognozowania Popytu"
     },
     {
       "__outstatic": {
