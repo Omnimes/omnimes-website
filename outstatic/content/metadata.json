@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:14.122Z",
+  "generated": "2025-09-03T15:14:20.124Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2196,6 +2196,32 @@
     },
     {
       "__outstatic": {
+        "commit": "393b357abb448f44350db8d0fb1bdc34f100fd4e",
+        "hash": "1997644882",
+        "path": "outstatic/content/posts/verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
+      "description": "Erfahren Sie, wie Fachleute den Datenschutz in IoT-fähigen VR-Umgebungen verbessern können.",
+      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
+      "lang": "de",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategorie",
+          "value": "Technologie"
+        }
+      ],
+      "title": "Verbesserung des Datenschutzes in IoT-fähigen Virtual-Reality-Umgebungen: Strategien für Fachleute der Branche"
+    },
+    {
+      "__outstatic": {
         "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
         "hash": "3236711354",
         "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
@@ -2796,36 +2822,6 @@
         }
       ],
       "title": "Wykorzystanie IoT w zarządzaniu ryzykiem w praktykach gospodarki o obiegu zamkniętym"
-    },
-    {
-      "__outstatic": {
-        "commit": "d3ae051133c5173798844bd02a77f5489c969a11",
-        "hash": "3428054422",
-        "path": "outstatic/content/posts/zwiekszanie-ochrony-prywatnosci-w-srodowiskach-wirtualnej-rzeczywistosci-iot.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
-      "description": "Poznaj strategie ochrony prywatności w środowiskach VR z wykorzystaniem IoT. Kluczowe wskazówki dla profesjonalistów z branży.",
-      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
-      "lang": "pl",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "zwiekszanie-ochrony-prywatnosci-w-srodowiskach-wirtualnej-rzeczywistosci-iot",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Technologia"
-        },
-        {
-          "label": "Temat",
-          "value": "Prywatność"
-        }
-      ],
-      "title": "Zwiększanie Ochrony Prywatności w Środowiskach Wirtualnej Rzeczywistości IoT"
     },
     {
       "__outstatic": {
