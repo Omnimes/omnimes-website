@@ -1,7 +1,64 @@
 {
-  "commit": "fa8bf4e58120bb04affa8241b103895313159c54",
-  "generated": "Wed, 03 Sep 2025 11:13:18 GMT",
+  "commit": "27889543d9753074cba7b2cac048aa0a2d420bc3",
+  "generated": "Wed, 03 Sep 2025 11:54:25 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "8f6f4aaf74ce3fd11e8d183234d4b29ba0174f02",
+        "hash": "2379090653",
+        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
+      "description": "The revolution in production digitization is coming. Discover OmniPlatform – a new era of industry 5.0",
+      "lang": "en",
+      "publishedAt": "2025-08-19T21:31:34.000Z",
+      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
+      "status": "published",
+      "title": "Europe's first platform for Industry 5.0 with AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
+        "hash": "3468461650",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "status": "published",
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "1e98b3a410a871dd245d0bd3d6f35e03ec990e7f",
+        "hash": "40590163",
+        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
+      "lang": "en",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
+      "status": "published",
+      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
+    },
     {
       "__outstatic": {
         "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
@@ -61,22 +118,41 @@
     },
     {
       "__outstatic": {
-        "commit": "8f6f4aaf74ce3fd11e8d183234d4b29ba0174f02",
-        "hash": "2379090653",
-        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
+        "commit": "f8f259ab4d4120d2b4f1c225835cde14948bd812",
+        "hash": "898511171",
+        "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
+      },
+      "author": {
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
+      },
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen",
+      "lang": "de",
+      "publishedAt": "2024-06-21T06:52:47.000Z",
+      "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
+      "status": "published",
+      "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "12d1efb81e7de51aaea5c4136525a1ccbc53419f",
+        "hash": "431708842",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
       },
       "author": {
         "name": "OmniMES",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "news",
-      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
-      "description": "The revolution in production digitization is coming. Discover OmniPlatform – a new era of industry 5.0",
-      "lang": "en",
-      "publishedAt": "2025-08-19T21:31:34.000Z",
-      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
+      "coverImage": "/images/blog_omni-A4Mj.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:53:51.000Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
       "status": "published",
-      "title": "Europe's first platform for Industry 5.0 with AI"
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -137,41 +213,73 @@
     },
     {
       "__outstatic": {
-        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
-        "hash": "3468461650",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
+        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
+        "hash": "3831515894",
+        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-06-15T07:31:17.000Z",
+      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
       "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
     },
     {
       "__outstatic": {
-        "commit": "1e98b3a410a871dd245d0bd3d6f35e03ec990e7f",
-        "hash": "40590163",
-        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
+        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
+        "hash": "2061075091",
+        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
-      "lang": "en",
-      "publishedAt": "2024-07-21T06:59:08.000Z",
-      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
+      "collection": "posts",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
+      "lang": "de",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
       "status": "published",
-      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
+      "tags": [
+        {
+          "label": "industrielle Datenerfassung",
+          "value": "industrielle-datenerfassung"
+        },
+        {
+          "label": "Maschinendaten",
+          "value": "maschinendaten"
+        },
+        {
+          "label": "maschinelles Lernen in der Industrie",
+          "value": "maschinelles-lernen-in-der-industrie"
+        }
+      ],
+      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
     },
     {
       "__outstatic": {
@@ -264,41 +372,71 @@
     },
     {
       "__outstatic": {
-        "commit": "f8f259ab4d4120d2b4f1c225835cde14948bd812",
-        "hash": "898511171",
-        "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
+        "commit": "57e7017aae854cb9a5c15c234acbda4b6129bc82",
+        "hash": "4266971752",
+        "path": "outstatic/content/posts/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.md"
       },
       "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen",
-      "lang": "de",
-      "publishedAt": "2024-06-21T06:52:47.000Z",
-      "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
+      "collection": "posts",
+      "coverImage": "/images/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.png",
+      "description": "Explore how Machine Learning and OEE can improve quality control in circular economy practices for sustainable growth.",
+      "groupId": "2da4fb7c-bd1a-491e-a506-424083adf864",
+      "lang": "en",
+      "publishedAt": "2025-01-19T09:00:00Z",
+      "slug": "enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions",
       "status": "published",
-      "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Quality Control"
+        },
+        {
+          "label": "Circular Economy",
+          "value": "Sustainability"
+        },
+        {
+          "label": "Machine Learning",
+          "value": "Innovation"
+        }
+      ],
+      "title": "Enhancing Quality Control in Circular Economy Practices: Leveraging Machine Learning and OEE for Scalable Solutions"
     },
     {
       "__outstatic": {
-        "commit": "12d1efb81e7de51aaea5c4136525a1ccbc53419f",
-        "hash": "431708842",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+        "commit": "43168ba2c23233eed3924f6886ac19d33bc0ed87",
+        "hash": "3761851301",
+        "path": "outstatic/content/posts/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.md"
       },
       "author": {
-        "name": "OmniMES",
+        "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
-      "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-08-19T09:53:51.000Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "collection": "posts",
+      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
+      "description": "Explore effective strategies for enhancing privacy protection in IoT-enabled virtual reality environments for industry professionals.",
+      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
+      "lang": "en",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals",
       "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
+      "tags": [
+        {
+          "label": "Technology",
+          "value": "IoT"
+        },
+        {
+          "label": "Privacy",
+          "value": "Protection"
+        },
+        {
+          "label": "Virtual Reality",
+          "value": "VR"
+        }
+      ],
+      "title": "Enhancing Privacy Protection in IoT-Enabled Virtual Reality Environments: Strategies for Industry Professionals"
     },
     {
       "__outstatic": {
@@ -344,6 +482,43 @@
         }
       ],
       "title": "Einsatz von TensorFlow in MES-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "72a58e199ac10800d01c8f27acd45a4acfa1c4db",
+        "hash": "4215683022",
+        "path": "outstatic/content/posts/einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/influxdb-QxMT.png",
+      "description": "Ein Vergleich von InfluxDB und MongoDB für die industrielle Datensammlung. Dieser Artikel diskutiert den Einsatz von InfluxDB für Zeitreihendatenanalyse, Maschinenüberwachung und IoT sowie MongoDB als universelle Datenbank für MES-Systeme. Praktische Tipps, wann jede dieser Datenbanken gewählt werden sollte.",
+      "lang": "de",
+      "publishedAt": "2024-11-15T12:07:03.000Z",
+      "slug": "einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb",
+      "status": "published",
+      "tags": [
+        {
+          "label": "InfluxDB",
+          "value": "influxDb"
+        },
+        {
+          "label": "MongoDB",
+          "value": "mongoDb"
+        },
+        {
+          "label": "Zeitreihendaten",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "Zeitreihendatenanalyse",
+          "value": "timeSeriesDataAnalysis"
+        }
+      ],
+      "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB"
     },
     {
       "__outstatic": {
@@ -408,194 +583,67 @@
     },
     {
       "__outstatic": {
-        "commit": "72a58e199ac10800d01c8f27acd45a4acfa1c4db",
-        "hash": "4215683022",
-        "path": "outstatic/content/posts/einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb.md"
+        "commit": "2e3fb42cf3f69f6f1c9f0d1440178688f1d27d5d",
+        "hash": "2638583661",
+        "path": "outstatic/content/posts/integracja-cyberbezpieczenstwa-w-predykcyjnym-utrzymaniu-ruchu.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/influxdb-QxMT.png",
-      "description": "Ein Vergleich von InfluxDB und MongoDB für die industrielle Datensammlung. Dieser Artikel diskutiert den Einsatz von InfluxDB für Zeitreihendatenanalyse, Maschinenüberwachung und IoT sowie MongoDB als universelle Datenbank für MES-Systeme. Praktische Tipps, wann jede dieser Datenbanken gewählt werden sollte.",
-      "lang": "de",
-      "publishedAt": "2024-11-15T12:07:03.000Z",
-      "slug": "einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb",
-      "status": "published",
-      "tags": [
-        {
-          "label": "InfluxDB",
-          "value": "influxDb"
-        },
-        {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
-          "label": "Zeitreihendaten",
-          "value": "timeSeriesData"
-        },
-        {
-          "label": "Zeitreihendatenanalyse",
-          "value": "timeSeriesDataAnalysis"
-        }
-      ],
-      "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB"
-    },
-    {
-      "__outstatic": {
-        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
-        "hash": "3831515894",
-        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
-      "lang": "de",
-      "publishedAt": "2024-06-15T07:31:17.000Z",
-      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
-      "status": "published",
-      "tags": [
-        {
-          "label": "redash",
-          "value": "redash"
-        },
-        {
-          "label": "Datenvisualisierung",
-          "value": "datenvisualisierung"
-        },
-        {
-          "label": "big data",
-          "value": "bigData"
-        },
-        {
-          "label": "Berichte",
-          "value": "berichte"
-        }
-      ],
-      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
-    },
-    {
-      "__outstatic": {
-        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
-        "hash": "2061075091",
-        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/data-QzNj.png",
-      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
-      "lang": "de",
-      "publishedAt": "2024-09-15T10:29:21.000Z",
-      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
-      "status": "published",
-      "tags": [
-        {
-          "label": "industrielle Datenerfassung",
-          "value": "industrielle-datenerfassung"
-        },
-        {
-          "label": "Maschinendaten",
-          "value": "maschinendaten"
-        },
-        {
-          "label": "maschinelles Lernen in der Industrie",
-          "value": "maschinelles-lernen-in-der-industrie"
-        }
-      ],
-      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
-    },
-    {
-      "__outstatic": {
-        "commit": "5755fbb0c9bebd63a54a2f061caa781338c82d76",
-        "hash": "3421174015",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/4.png",
-      "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
-      "lang": "en",
-      "publishedAt": "2024-06-05T09:20:51.000Z",
-      "slug": "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "IoT Communication",
-          "value": "ioTCommunication"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Communication Standards",
-          "value": "communicationStandards"
-        }
-      ],
-      "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
-    },
-    {
-      "__outstatic": {
-        "commit": "c442f09866d15cc343a5ef9f4fbf99152d0db499",
-        "hash": "1398399191",
-        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
-      },
-      "author": {
-        "name": "OmniMES",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
+      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
+      "description": "Jak zintegrować cyberbezpieczeństwo z predykcyjnym utrzymaniem ruchu w systemach HMI i ERP.",
+      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
       "lang": "pl",
-      "publishedAt": "2025-05-28T00:00:00.000Z",
-      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "integracja-cyberbezpieczenstwa-w-predykcyjnym-utrzymaniu-ruchu",
       "status": "published",
       "tags": [
-        "modeleLlm",
-        "langchainLlm",
-        "langchain",
-        "faiss",
-        "chatbot",
-        "gpt"
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        },
+        {
+          "label": "Temat",
+          "value": "Cyberbezpieczeństwo"
+        }
       ],
-      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+      "title": "Integracja cyberbezpieczeństwa w predykcyjnym utrzymaniu ruchu"
+    },
+    {
+      "__outstatic": {
+        "commit": "57650206fc0ae44f244c0e7912c4acc69df1d956",
+        "hash": "83103068",
+        "path": "outstatic/content/posts/integracja-5g-i-chmury-jak-cyfrowe-blizniaki-i-ar-rewolucjonizuja-przemys-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-5g-and-cloud-computing-how-digital-twins-and-augmented-reality-are-revolutionizing-industry-5-0.png",
+      "description": "Odkryj, jak 5G i chmura zmieniają przemysł 5.0 dzięki cyfrowym bliźniakom i rozszerzonej rzeczywistości.",
+      "groupId": "109324e4-242f-41ed-95cc-b7596626ba38",
+      "lang": "pl",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "integracja-5g-i-chmury-jak-cyfrowe-blizniaki-i-ar-rewolucjonizuja-przemys-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "5G"
+        },
+        {
+          "label": "Innowacje",
+          "value": "chmura"
+        },
+        {
+          "label": "Przemysł",
+          "value": "5.0"
+        }
+      ],
+      "title": "Integracja 5G i Chmury: Jak Cyfrowe Bliźniaki i AR Rewolucjonizują Przemysł 5.0"
     },
     {
       "__outstatic": {
@@ -707,146 +755,276 @@
     },
     {
       "__outstatic": {
-        "commit": "728fe681d3ff54263fe87c842e20658b8eee3e0d",
-        "hash": "678402465",
-        "path": "outstatic/content/posts/navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation.md"
+        "commit": "17d0fd5cdc35a6f80de088096c5b77aed67ff5fc",
+        "hash": "1885129976",
+        "path": "outstatic/content/posts/integration-von-5g-und-cloud-computing-revolution-durch-digitale-zwillinge-und-ar.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
-      "description": "Strategien zum Datenschutz durch algorithmische Optimierung in der digitalen Transformation.",
-      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "coverImage": "/images/integrating-5g-and-cloud-computing-how-digital-twins-and-augmented-reality-are-revolutionizing-industry-5-0.png",
+      "description": "Entdecken Sie, wie 5G und Cloud-Computing die Industrie 5.0 durch digitale Zwillinge und Augmented Reality transformieren.",
+      "groupId": "109324e4-242f-41ed-95cc-b7596626ba38",
       "lang": "de",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "integration-von-5g-und-cloud-computing-revolution-durch-digitale-zwillinge-und-ar",
       "status": "published",
       "tags": [
-        {
-          "label": "Thema",
-          "value": "Compliance"
-        },
         {
           "label": "Technologie",
-          "value": "Datenschutz"
-        },
-        {
-          "label": "Strategie",
-          "value": "digitale Transformation"
+          "value": "Industrie 5.0"
         }
       ],
-      "title": "Navigieren durch die regulatorische Compliance im Zeitalter der digitalen Transformation"
+      "title": "Integration von 5G und Cloud-Computing: Revolution durch digitale Zwillinge und AR"
     },
     {
       "__outstatic": {
-        "commit": "008f381052c5a27c0480bb0a2b188de88c0236e1",
-        "hash": "1883351664",
-        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation.md"
+        "commit": "c83f47bc8445ffb05121fd63480cd63d35cea448",
+        "hash": "78422718",
+        "path": "outstatic/content/posts/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
-      "description": "Jak skutecznie chronić prywatność w erze transformacji cyfrowej? Sprawdź strategie optymalizacji algorytmów.",
-      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
-      "lang": "pl",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Zgodność regulacyjna"
-        }
-      ],
-      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
-    },
-    {
-      "__outstatic": {
-        "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
-        "hash": "3377793085",
-        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
-      "description": "Explore strategies for privacy protection through algorithmic optimization in the digital age.",
-      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "coverImage": "/images/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control-in-a-digital-culture.png",
+      "description": "Discover how integrating green energy into OEE metrics can improve cybersecurity and quality control in a digital culture.",
+      "groupId": "df589232-b52e-4c57-ba5f-0b670563810b",
       "lang": "en",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation-2",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control",
       "status": "published",
       "tags": [
-        {
-          "label": "Industry",
-          "value": "Compliance"
-        }
-      ],
-      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
-    },
-    {
-      "__outstatic": {
-        "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
-        "hash": "2451523430",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/4.png",
-      "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
-      "lang": "de",
-      "publishedAt": "2024-06-05T05:46:42.000Z",
-      "slug": "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
         {
           "label": "Industry 4.0",
-          "value": "industry40"
+          "value": "Green Energy"
         },
         {
-          "label": "Kommunikationsprotokoll",
-          "value": "kommunikationsprotokoll"
-        },
-        {
-          "label": "IoT-Kommunikation",
-          "value": "ioTKommunikation"
-        },
-        {
-          "label": "Kommunikationsstandards",
-          "value": "kommunikationsstandards"
+          "label": "Cybersecurity",
+          "value": "Quality Control"
         }
       ],
-      "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
+      "title": "Integrating Green Energy into OEE Metrics: Enhancing Cybersecurity and Quality Control"
+    },
+    {
+      "__outstatic": {
+        "commit": "251a994c27d508fcb9148fcb01c1557a803044da",
+        "hash": "654964426",
+        "path": "outstatic/content/posts/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
+      "description": "Explore how to integrate cybersecurity into predictive maintenance for HMI and ERP systems, enhancing risk management.",
+      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
+      "lang": "en",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Cybersecurity"
+        },
+        {
+          "label": "Predictive Maintenance",
+          "value": "Risk Management"
+        }
+      ],
+      "title": "Integrating Cybersecurity into Predictive Maintenance: A Risk Management Framework"
+    },
+    {
+      "__outstatic": {
+        "commit": "cd38f5e5c6133f01bcd89217bcec6af628ebfff5",
+        "hash": "319250443",
+        "path": "outstatic/content/posts/integrating-5g-and-cloud-computing-revolutionizing-industry-5-0-with-digital-twins-and-ar.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-5g-and-cloud-computing-how-digital-twins-and-augmented-reality-are-revolutionizing-industry-5-0.png",
+      "description": "Discover how 5G and cloud computing, along with digital twins and AR, are transforming Industry 5.0.",
+      "groupId": "109324e4-242f-41ed-95cc-b7596626ba38",
+      "lang": "en",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "integrating-5g-and-cloud-computing-revolutionizing-industry-5-0-with-digital-twins-and-ar",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 5.0",
+          "value": "5G and Cloud Computing"
+        }
+      ],
+      "title": "Integrating 5G and Cloud Computing: Revolutionizing Industry 5.0 with Digital Twins and AR"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a489f397dd95e9f645b4633ab042855ba391901",
+        "hash": "2742932",
+        "path": "outstatic/content/posts/integracja-zielonej-energii-w-metrykach-oee-cyberbezpieczenstwo-i-kontrola-jakosci.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control-in-a-digital-culture.png",
+      "description": "Dowiedz się, jak integracja zielonej energii w metrykach OEE może poprawić cyberbezpieczeństwo i kontrolę jakości w cyfrowej kulturze.",
+      "groupId": "df589232-b52e-4c57-ba5f-0b670563810b",
+      "lang": "pl",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "integracja-zielonej-energii-w-metrykach-oee-cyberbezpieczenstwo-i-kontrola-jakosci",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Integracja zielonej energii w metrykach OEE: Cyberbezpieczeństwo i kontrola jakości"
+    },
+    {
+      "__outstatic": {
+        "commit": "c9c82538e11b6b28aa054cb29e904fb6e22cea07",
+        "hash": "2048809798",
+        "path": "outstatic/content/posts/leveraging-business-intelligence-for-effective-demand-forecasting.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
+      "description": "Discover how to adopt Business Intelligence for accurate demand forecasting and enhance decision-making.",
+      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
+      "lang": "en",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "leveraging-business-intelligence-for-effective-demand-forecasting",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Category",
+          "value": "Business Intelligence"
+        }
+      ],
+      "title": "Leveraging Business Intelligence for Effective Demand Forecasting"
+    },
+    {
+      "__outstatic": {
+        "commit": "5d97b7b5bd3a9e2cdb24d796f773a6c58f15c56c",
+        "hash": "1479154050",
+        "path": "outstatic/content/posts/leveraging-5g-and-iot-for-continuous-improvement-in-industry.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-5g-and-iot-for-continuous-improvement-a-comprehensive-guide-to-innovation-management-and-automation-in-indust.png",
+      "description": "Explore how 5G and IoT drive innovation management and automation in modern industries.",
+      "groupId": "4c20b078-a1de-4c6c-bae8-a88358419cde",
+      "lang": "en",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "leveraging-5g-and-iot-for-continuous-improvement-in-industry",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Category",
+          "value": "Industry 4.0"
+        }
+      ],
+      "title": "Leveraging 5G and IoT for Continuous Improvement in Industry"
+    },
+    {
+      "__outstatic": {
+        "commit": "c442f09866d15cc343a5ef9f4fbf99152d0db499",
+        "hash": "1398399191",
+        "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
+      "lang": "pl",
+      "publishedAt": "2025-05-28T00:00:00.000Z",
+      "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
+      "status": "published",
+      "tags": [
+        "modeleLlm",
+        "langchainLlm",
+        "langchain",
+        "faiss",
+        "chatbot",
+        "gpt"
+      ],
+      "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "3207f3a001e331c418fa162ff51b5fb651202e81",
+        "hash": "2555076342",
+        "path": "outstatic/content/posts/integration-von-gruner-energie-in-oee-kennzahlen-verbesserung-der-cybersicherheit-und-qualitatskontrolle-in-einer-digita.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control-in-a-digital-culture.png",
+      "description": "Erfahren Sie, wie die Integration von grüner Energie in OEE-Kennzahlen Cybersicherheit und Qualitätskontrolle verbessert.",
+      "groupId": "df589232-b52e-4c57-ba5f-0b670563810b",
+      "lang": "de",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "integration-von-gruner-energie-in-oee-kennzahlen-verbesserung-der-cybersicherheit-und-qualitatskontrolle-in-einer-digita",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Industrie 4.0"
+        }
+      ],
+      "title": "Integration von grüner Energie in OEE-Kennzahlen: Verbesserung der Cybersicherheit und Qualitätskontrolle in einer digitalen Kultur"
+    },
+    {
+      "__outstatic": {
+        "commit": "03884ea0f699c4c979cdfb5d557db44663225a5c",
+        "hash": "2615026240",
+        "path": "outstatic/content/posts/integration-von-cybersicherheit-in-die-vorausschauende-wartung-ein-risikomanagementrahmen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework-for-hmi-and-erp-systems.png",
+      "description": "Erfahren Sie, wie Cybersicherheit in die vorausschauende Wartung integriert werden kann, um HMI- und ERP-Systeme zu schützen.",
+      "groupId": "73251687-032c-4f1b-93fc-1d4efd04ef1d",
+      "lang": "de",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "integration-von-cybersicherheit-in-die-vorausschauende-wartung-ein-risikomanagementrahmen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Cybersicherheit"
+        },
+        {
+          "label": "Industrie 4.0",
+          "value": "Wartung"
+        }
+      ],
+      "title": "Integration von Cybersicherheit in die vorausschauende Wartung: Ein Risikomanagementrahmen"
     },
     {
       "__outstatic": {
@@ -907,85 +1085,465 @@
     },
     {
       "__outstatic": {
-        "commit": "18bfccb577a407447eabdf3028a9a9f6311c70e9",
-        "hash": "2367280137",
-        "path": "outstatic/content/posts/praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse.md"
+        "commit": "5755fbb0c9bebd63a54a2f061caa781338c82d76",
+        "hash": "3421174015",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
-      "lang": "de",
-      "publishedAt": "2024-06-10T07:08:06.000Z",
-      "slug": "praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse",
+      "coverImage": "/images/4.png",
+      "description": "Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.",
+      "lang": "en",
+      "publishedAt": "2024-06-05T09:20:51.000Z",
+      "slug": "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "label": "MQTT",
+          "value": "mqtt"
         },
         {
-          "label": "Datenanalyse",
-          "value": "datenanalyse"
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
         },
         {
-          "label": "Datensicherheit",
-          "value": "datensicherheit"
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
         },
         {
-          "label": "API GPT-4",
-          "value": "apiGpt4"
+          "label": "QoS",
+          "value": "qoS"
         },
         {
-          "label": "LLM-Modelle",
-          "value": "llmModelle"
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "IoT Communication",
+          "value": "ioTCommunication"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Communication Standards",
+          "value": "communicationStandards"
         }
       ],
-      "title": "Praktische Anwendung eines KI-Assistenten: Integration der OpenAI GPT-API in eine Webanwendung für Datenanalyse"
+      "title": "MQTT vs Sparkplug B: Comparison of Communication Protocols Part I"
     },
     {
       "__outstatic": {
-        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
-        "hash": "46414442",
-        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
+        "commit": "a56b15486c2e66868e17d1a3d0741454367cef38",
+        "hash": "3135860101",
+        "path": "outstatic/content/posts/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
+      "description": "Explore how IoT can minimize environmental impact in circular economy practices through effective risk management strategies.",
+      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
+      "lang": "en",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry",
+          "value": "Circular Economy"
+        },
+        {
+          "label": "Technology",
+          "value": "IoT"
+        },
+        {
+          "label": "Management",
+          "value": "Risk Management"
+        }
+      ],
+      "title": "Leveraging IoT for Enhanced Risk Management in Circular Economy Practices"
+    },
+    {
+      "__outstatic": {
+        "commit": "b6c966fa19875936f9d48ad7ef352c173f45ea73",
+        "hash": "3821010936",
+        "path": "outstatic/content/posts/leveraging-computer-vision-to-enhance-oee-strategies-for-competitive-advantage.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
+      "description": "Discover how computer vision can optimize OEE and provide a competitive edge through process improvements.",
+      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
+      "lang": "en",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "leveraging-computer-vision-to-enhance-oee-strategies-for-competitive-advantage",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry",
+          "value": "Manufacturing"
+        },
+        {
+          "label": "Technology",
+          "value": "Computer Vision"
+        }
+      ],
+      "title": "Leveraging Computer Vision to Enhance OEE: Strategies for Competitive Advantage"
+    },
+    {
+      "__outstatic": {
+        "commit": "e242bd6c0684cc63dac9ef3adb3ad4c829b0bf0e",
+        "hash": "3101475243",
+        "path": "outstatic/content/posts/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
+      "description": "Explore how cloud computing and security protocols can enhance SCADA systems personalization during market disruptions.",
+      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
+      "lang": "en",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Cloud Computing"
+        },
+        {
+          "label": "Security",
+          "value": "Protocols"
+        },
+        {
+          "label": "Automation",
+          "value": "SCADA"
+        }
+      ],
+      "title": "Leveraging Cloud Computing and Advanced Security Protocols to Personalize SCADA Systems Amid Market Disruption"
+    },
+    {
+      "__outstatic": {
+        "commit": "008f381052c5a27c0480bb0a2b188de88c0236e1",
+        "hash": "1883351664",
+        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
+      "description": "Jak skutecznie chronić prywatność w erze transformacji cyfrowej? Sprawdź strategie optymalizacji algorytmów.",
+      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "lang": "pl",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Zgodność regulacyjna"
+        }
+      ],
+      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
+    },
+    {
+      "__outstatic": {
+        "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
+        "hash": "3377793085",
+        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
+      "description": "Explore strategies for privacy protection through algorithmic optimization in the digital age.",
+      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "lang": "en",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation-2",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry",
+          "value": "Compliance"
+        }
+      ],
+      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
+    },
+    {
+      "__outstatic": {
+        "commit": "1065e7aa8572dbfe113e76d644039885a4dd477c",
+        "hash": "1521765147",
+        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
+      "description": "Jak wykorzystać kulturę cyfrową do zdobycia przewagi konkurencyjnej w obliczu zakłóceń rynkowych.",
+      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
+      "lang": "pl",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "zakłócenia rynkowe"
+        }
+      ],
+      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
+    },
+    {
+      "__outstatic": {
+        "commit": "84e0d87c280d43cc38a86b824e5ef766f7410a52",
+        "hash": "1326459670",
+        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-2.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
+      "description": "Explore how digital culture can drive competitive advantage while ensuring compliance and fostering continuous improvement.",
+      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
+      "lang": "en",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-2",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Digital Transformation"
+        }
+      ],
+      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
+    },
+    {
+      "__outstatic": {
+        "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
+        "hash": "2451523430",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
-      "lang": "en",
-      "publishedAt": "2024-06-10T09:10:14.654Z",
-      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+      "coverImage": "/images/4.png",
+      "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
+      "lang": "de",
+      "publishedAt": "2024-06-05T05:46:42.000Z",
+      "slug": "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "label": "MQTT",
+          "value": "mqtt"
         },
         {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
         },
         {
-          "label": "Data Security",
-          "value": "dataSecurity"
+          "label": "QoS",
+          "value": "qoS"
         },
         {
-          "label": "GPT-4 API",
-          "value": "gpt4Api"
+          "label": "IIoT",
+          "value": "iIoT"
         },
         {
-          "label": "LLM Models",
-          "value": "llmModels"
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Kommunikationsprotokoll",
+          "value": "kommunikationsprotokoll"
+        },
+        {
+          "label": "IoT-Kommunikation",
+          "value": "ioTKommunikation"
+        },
+        {
+          "label": "Kommunikationsstandards",
+          "value": "kommunikationsstandards"
         }
       ],
-      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+      "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
+    },
+    {
+      "__outstatic": {
+        "commit": "5cd6f6e43dd51fc6123f4f836d86e01c05f3f68d",
+        "hash": "2991294234",
+        "path": "outstatic/content/posts/nutzung-des-iot-zur-verbesserung-des-risikomanagements-in-der-kreislaufwirtschaft.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
+      "description": "Erfahren Sie, wie IoT-Technologien das Risikomanagement in der Kreislaufwirtschaft optimieren und die Umweltbelastung minimieren können.",
+      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
+      "lang": "de",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "nutzung-des-iot-zur-verbesserung-des-risikomanagements-in-der-kreislaufwirtschaft",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Thema",
+          "value": "Kreislaufwirtschaft"
+        }
+      ],
+      "title": "Nutzung des IoT zur Verbesserung des Risikomanagements in der Kreislaufwirtschaft"
+    },
+    {
+      "__outstatic": {
+        "commit": "e1490c813c5d963882869bedad53cd13075a556d",
+        "hash": "2191279383",
+        "path": "outstatic/content/posts/nutzen-von-computer-vision-zur-verbesserung-der-oee-strategien-zur-erlangung-eines-wettbewerbsvorteils.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
+      "description": "Erfahren Sie, wie Computer Vision die OEE steigern kann und welche Strategien Unternehmen nutzen können, um Wettbewerbsvorteile zu erzielen.",
+      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
+      "lang": "de",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "nutzen-von-computer-vision-zur-verbesserung-der-oee-strategien-zur-erlangung-eines-wettbewerbsvorteils",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Computer Vision"
+        },
+        {
+          "label": "Industrie",
+          "value": "OEE"
+        },
+        {
+          "label": "Optimierung",
+          "value": "Prozessoptimierung"
+        }
+      ],
+      "title": "Nutzen von Computer Vision zur Verbesserung der OEE: Strategien zur Erlangung eines Wettbewerbsvorteils"
+    },
+    {
+      "__outstatic": {
+        "commit": "213f1393db2bc92c177b89fed840ada2e5d4430c",
+        "hash": "3158504214",
+        "path": "outstatic/content/posts/nutzen-von-business-intelligence-fur-effektive-nachfrageprognosen-ein-fahrplan-fur-erfolgreiche-technologieeinfuhrung.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
+      "description": "Erfahren Sie, wie Business Intelligence Ihre Nachfrageprognosen optimieren kann und welche Schritte für eine erfolgreiche Einführung notwendig sind.",
+      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
+      "lang": "de",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "nutzen-von-business-intelligence-fur-effektive-nachfrageprognosen-ein-fahrplan-fur-erfolgreiche-technologieeinfuhrung",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategorie",
+          "value": "Business Intelligence"
+        }
+      ],
+      "title": "Nutzen von Business Intelligence für effektive Nachfrageprognosen: Ein Fahrplan für erfolgreiche Technologieeinführung"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a0a880d7a5da4858ba38db589f2f6b8d2455d80",
+        "hash": "4135961218",
+        "path": "outstatic/content/posts/navigieren-durch-marktstorungen-digitale-kultur-fur-wettbewerbsvorteile-nutzen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
+      "description": "Erfahren Sie, wie Unternehmen digitale Kultur nutzen, um Wettbewerbsvorteile zu erzielen und gleichzeitig Vorschriften einzuhalten.",
+      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
+      "lang": "de",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "navigieren-durch-marktstorungen-digitale-kultur-fur-wettbewerbsvorteile-nutzen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Thema",
+          "value": "Industrie 4.0"
+        }
+      ],
+      "title": "Navigieren durch Marktstörungen: Digitale Kultur für Wettbewerbsvorteile nutzen"
+    },
+    {
+      "__outstatic": {
+        "commit": "728fe681d3ff54263fe87c842e20658b8eee3e0d",
+        "hash": "678402465",
+        "path": "outstatic/content/posts/navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
+      "description": "Strategien zum Datenschutz durch algorithmische Optimierung in der digitalen Transformation.",
+      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "lang": "de",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Thema",
+          "value": "Compliance"
+        },
+        {
+          "label": "Technologie",
+          "value": "Datenschutz"
+        },
+        {
+          "label": "Strategie",
+          "value": "digitale Transformation"
+        }
+      ],
+      "title": "Navigieren durch die regulatorische Compliance im Zeitalter der digitalen Transformation"
     },
     {
       "__outstatic": {
@@ -1152,6 +1710,348 @@
     },
     {
       "__outstatic": {
+        "commit": "e0f32ef85a7776dc893d41f43fb264eebe2b3ea8",
+        "hash": "1378391862",
+        "path": "outstatic/content/posts/nutzung-von-cloud-computing-und-sicherheitsprotokollen-zur-personalisierung-von-scada-systemen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
+      "description": "Erfahren Sie, wie Cloud-Computing und Sicherheitsprotokolle SCADA-Systeme in disruptiven Märkten personalisieren können.",
+      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
+      "lang": "de",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "nutzung-von-cloud-computing-und-sicherheitsprotokollen-zur-personalisierung-von-scada-systemen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Cloud-Computing"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Sicherheitsprotokolle"
+        },
+        {
+          "label": "Industrie",
+          "value": "SCADA"
+        }
+      ],
+      "title": "Nutzung von Cloud-Computing und Sicherheitsprotokollen zur Personalisierung von SCADA-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "2e42b52872199fef8828da51ad49dc187178601b",
+        "hash": "2790684729",
+        "path": "outstatic/content/posts/nutzung-von-5g-und-iot-fur-kontinuierliche-verbesserung-in-der-industrie.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-5g-and-iot-for-continuous-improvement-a-comprehensive-guide-to-innovation-management-and-automation-in-indust.png",
+      "description": "Entdecken Sie, wie 5G und IoT Innovationsmanagement und Automatisierung in der Industrie revolutionieren können.",
+      "groupId": "4c20b078-a1de-4c6c-bae8-a88358419cde",
+      "lang": "de",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "nutzung-von-5g-und-iot-fur-kontinuierliche-verbesserung-in-der-industrie",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "5G"
+        },
+        {
+          "label": "Industrie",
+          "value": "IoT"
+        },
+        {
+          "label": "Automatisierung",
+          "value": "Industrie 4.0"
+        }
+      ],
+      "title": "Nutzung von 5G und IoT für kontinuierliche Verbesserung in der Industrie"
+    },
+    {
+      "__outstatic": {
+        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
+        "hash": "2060488888",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/3.png",
+      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+      "lang": "en",
+      "publishedAt": "2024-06-06T08:36:29.000Z",
+      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "OPC UA",
+          "value": "opcUa"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Client/Server Architecture",
+          "value": "client/serverArchitecture"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "Data Standardization",
+          "value": "dataStandardization"
+        }
+      ],
+      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
+    },
+    {
+      "__outstatic": {
+        "commit": "a48113befcfb7e8e5f47eb105563db474c57f8c9",
+        "hash": "645457829",
+        "path": "outstatic/content/posts/qualitatskontrolle-in-der-kreislaufwirtschaft-verbessern-nutzung-von-maschinellem-lernen-und-oee-fur-skalierbare-losunge.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.png",
+      "description": "Erfahren Sie, wie maschinelles Lernen und OEE die Qualitätskontrolle in der Kreislaufwirtschaft optimieren können.",
+      "groupId": "2da4fb7c-bd1a-491e-a506-424083adf864",
+      "lang": "de",
+      "publishedAt": "2025-01-19T09:00:00Z",
+      "slug": "qualitatskontrolle-in-der-kreislaufwirtschaft-verbessern-nutzung-von-maschinellem-lernen-und-oee-fur-skalierbare-losunge",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industrie 4.0",
+          "value": "Qualitätskontrolle"
+        },
+        {
+          "label": "Kreislaufwirtschaft",
+          "value": "Nachhaltigkeit"
+        }
+      ],
+      "title": "Qualitätskontrolle in der Kreislaufwirtschaft verbessern: Nutzung von maschinellem Lernen und OEE für skalierbare Lösungen"
+    },
+    {
+      "__outstatic": {
+        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
+        "hash": "4259407744",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "lang": "pl",
+      "publishedAt": "2024-06-10T08:10:14.654Z",
+      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Modele LLM",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "API GPT-4",
+          "value": "apiGpt4"
+        },
+        {
+          "label": "analiza danych",
+          "value": "analizaDanych"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
+        }
+      ],
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+    },
+    {
+      "__outstatic": {
+        "commit": "18bfccb577a407447eabdf3028a9a9f6311c70e9",
+        "hash": "2367280137",
+        "path": "outstatic/content/posts/praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+      "lang": "de",
+      "publishedAt": "2024-06-10T07:08:06.000Z",
+      "slug": "praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Datenanalyse",
+          "value": "datenanalyse"
+        },
+        {
+          "label": "Datensicherheit",
+          "value": "datensicherheit"
+        },
+        {
+          "label": "API GPT-4",
+          "value": "apiGpt4"
+        },
+        {
+          "label": "LLM-Modelle",
+          "value": "llmModelle"
+        }
+      ],
+      "title": "Praktische Anwendung eines KI-Assistenten: Integration der OpenAI GPT-API in eine Webanwendung für Datenanalyse"
+    },
+    {
+      "__outstatic": {
+        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
+        "hash": "46414442",
+        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+      "lang": "en",
+      "publishedAt": "2024-06-10T09:10:14.654Z",
+      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "GPT-4 API",
+          "value": "gpt4Api"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        }
+      ],
+      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "8cfdf3f3cf05e758f916b3eba0fa0e81e600c385",
+        "hash": "3951333408",
+        "path": "outstatic/content/posts/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.png",
+      "description": "Discover effective strategies for cost optimization in manufacturing while reducing carbon footprint through innovative supply chain practices.",
+      "groupId": "663620ef-518e-4c57-87a1-4be70d3730ea",
+      "lang": "en",
+      "publishedAt": "2025-01-12T09:00:00Z",
+      "slug": "strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Cost Optimization"
+        },
+        {
+          "label": "Sustainability",
+          "value": "Carbon Footprint"
+        },
+        {
+          "label": "Supply Chain",
+          "value": "Innovations"
+        }
+      ],
+      "title": "Strategies for Cost Optimization in Manufacturing: Reducing Carbon Footprint Through Supply Chain Innovations"
+    },
+    {
+      "__outstatic": {
+        "commit": "a1ddf1c4c9e4e6ac0f3a08097986f0fe0aa31472",
+        "hash": "78546417",
+        "path": "outstatic/content/posts/strategien-zur-kostenoptimierung-in-der-fertigung-co2-fuabdruck-reduzieren.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.png",
+      "description": "Erfahren Sie, wie innovative Lieferkettenstrategien zur Kostenoptimierung und CO2-Reduzierung in der Fertigung beitragen können.",
+      "groupId": "663620ef-518e-4c57-87a1-4be70d3730ea",
+      "lang": "de",
+      "publishedAt": "2025-01-12T09:00:00Z",
+      "slug": "strategien-zur-kostenoptimierung-in-der-fertigung-co2-fuabdruck-reduzieren",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategorie",
+          "value": "Fertigung"
+        },
+        {
+          "label": "Thema",
+          "value": "Nachhaltigkeit"
+        }
+      ],
+      "title": "Strategien zur Kostenoptimierung in der Fertigung: CO2-Fußabdruck reduzieren"
+    },
+    {
+      "__outstatic": {
         "commit": "3fd46c752ad1509a6b76e27607dc7c2f4700cb87",
         "hash": "3886303354",
         "path": "outstatic/content/posts/strategie-optymalizacji-kosztow-w-produkcji-redukcja-sladu-weglowego-przez-innowacje-w-ancuchu-dostaw.md"
@@ -1296,101 +2196,48 @@
     },
     {
       "__outstatic": {
-        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
-        "hash": "2060488888",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
+        "hash": "3236711354",
+        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/3.png",
-      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
       "lang": "en",
-      "publishedAt": "2024-06-06T08:36:29.000Z",
-      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "using-tensorflow-in-mes-systems",
       "status": "published",
       "tags": [
         {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
+          "label": "TensorFlow",
+          "value": "tensorFlow"
         },
         {
-          "label": "OPC UA",
-          "value": "opcUa"
+          "label": "XGBoost",
+          "value": "xgBoost"
         },
         {
-          "label": "MQTT",
-          "value": "mqtt"
+          "label": "LightGBM",
+          "value": "lightGbm"
         },
         {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
+          "label": "CatBoost",
+          "value": "catBoost"
         },
         {
-          "label": "IIoT",
-          "value": "iIoT"
+          "label": "MES system",
+          "value": "mesSystem"
         },
         {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Client/Server Architecture",
-          "value": "client/serverArchitecture"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "Data Standardization",
-          "value": "dataStandardization"
+          "label": "algorithm performance",
+          "value": "algorithmPerformance"
         }
       ],
-      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
-    },
-    {
-      "__outstatic": {
-        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
-        "hash": "4259407744",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
-      "lang": "pl",
-      "publishedAt": "2024-06-10T08:10:14.654Z",
-      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Modele LLM",
-          "value": "modeleLlm"
-        },
-        {
-          "label": "API GPT-4",
-          "value": "apiGpt4"
-        },
-        {
-          "label": "analiza danych",
-          "value": "analizaDanych"
-        },
-        {
-          "label": "Bezpieczeństwo danych",
-          "value": "bezpieczeństwoDanych"
-        }
-      ],
-      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+      "title": "Using TensorFlow in MES Systems"
     },
     {
       "__outstatic": {
@@ -1545,67 +2392,231 @@
     },
     {
       "__outstatic": {
-        "commit": "8cfdf3f3cf05e758f916b3eba0fa0e81e600c385",
-        "hash": "3951333408",
-        "path": "outstatic/content/posts/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.md"
+        "commit": "393b357abb448f44350db8d0fb1bdc34f100fd4e",
+        "hash": "1997644882",
+        "path": "outstatic/content/posts/verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.png",
-      "description": "Discover effective strategies for cost optimization in manufacturing while reducing carbon footprint through innovative supply chain practices.",
-      "groupId": "663620ef-518e-4c57-87a1-4be70d3730ea",
-      "lang": "en",
-      "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "Cost Optimization"
-        },
-        {
-          "label": "Sustainability",
-          "value": "Carbon Footprint"
-        },
-        {
-          "label": "Supply Chain",
-          "value": "Innovations"
-        }
-      ],
-      "title": "Strategies for Cost Optimization in Manufacturing: Reducing Carbon Footprint Through Supply Chain Innovations"
-    },
-    {
-      "__outstatic": {
-        "commit": "a1ddf1c4c9e4e6ac0f3a08097986f0fe0aa31472",
-        "hash": "78546417",
-        "path": "outstatic/content/posts/strategien-zur-kostenoptimierung-in-der-fertigung-co2-fuabdruck-reduzieren.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.png",
-      "description": "Erfahren Sie, wie innovative Lieferkettenstrategien zur Kostenoptimierung und CO2-Reduzierung in der Fertigung beitragen können.",
-      "groupId": "663620ef-518e-4c57-87a1-4be70d3730ea",
+      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
+      "description": "Erfahren Sie, wie Fachleute den Datenschutz in IoT-fähigen VR-Umgebungen verbessern können.",
+      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
       "lang": "de",
-      "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "strategien-zur-kostenoptimierung-in-der-fertigung-co2-fuabdruck-reduzieren",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "verbesserung-des-datenschutzes-in-iot-fahigen-virtual-reality-umgebungen-strategien-fur-fachleute-der-branche",
       "status": "published",
       "tags": [
         {
           "label": "Kategorie",
-          "value": "Fertigung"
-        },
-        {
-          "label": "Thema",
-          "value": "Nachhaltigkeit"
+          "value": "Technologie"
         }
       ],
-      "title": "Strategien zur Kostenoptimierung in der Fertigung: CO2-Fußabdruck reduzieren"
+      "title": "Verbesserung des Datenschutzes in IoT-fähigen Virtual-Reality-Umgebungen: Strategien für Fachleute der Branche"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a0a54c32f0bdfe59a7e62254993fe6b60ba7045",
+        "hash": "3737295090",
+        "path": "outstatic/content/posts/wykorzystanie-chmury-obliczeniowej-i-zaawansowanych-protokoow-bezpieczenstwa-w-systemach-scada.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
+      "description": "Dowiedz się, jak chmura i bezpieczeństwo mogą zindywidualizować systemy SCADA w czasach zakłóceń rynkowych.",
+      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
+      "lang": "pl",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "wykorzystanie-chmury-obliczeniowej-i-zaawansowanych-protokoow-bezpieczenstwa-w-systemach-scada",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 4.0",
+          "value": "technologia"
+        },
+        {
+          "label": "Bezpieczeństwo",
+          "value": "IT"
+        }
+      ],
+      "title": "Wykorzystanie chmury obliczeniowej i zaawansowanych protokołów bezpieczeństwa w systemach SCADA"
+    },
+    {
+      "__outstatic": {
+        "commit": "c251097bb37a54415715be118180a51c8b5fdbf8",
+        "hash": "2099324959",
+        "path": "outstatic/content/posts/wykorzystanie-business-intelligence-do-skutecznego-prognozowania-popytu.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-business-intelligence-for-effective-demand-forecasting-a-roadmap-for-successful-technology-adoption.png",
+      "description": "Dowiedz się, jak wdrożyć Business Intelligence w prognozowaniu popytu, aby zwiększyć efektywność operacyjną.",
+      "groupId": "f5f1ed6d-46af-4af6-9c21-82483faf9584",
+      "lang": "pl",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "wykorzystanie-business-intelligence-do-skutecznego-prognozowania-popytu",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Technologia"
+        },
+        {
+          "label": "Temat",
+          "value": "Prognozowanie Popytu"
+        }
+      ],
+      "title": "Wykorzystanie Business Intelligence do Skutecznego Prognozowania Popytu"
+    },
+    {
+      "__outstatic": {
+        "commit": "e8409c200454df743bf90f15e186ac1fdc659759",
+        "hash": "3176427514",
+        "path": "outstatic/content/posts/wykorzystanie-5g-i-iot-w-ciagym-doskonaleniu-przewodnik-po-zarzadzaniu-innowacjami-i-automatyzacja-w-przemysach.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-5g-and-iot-for-continuous-improvement-a-comprehensive-guide-to-innovation-management-and-automation-in-indust.png",
+      "description": "Dowiedz się, jak 5G i IoT mogą wspierać ciągłe doskonalenie w przemyśle, zwiększając efektywność i innowacyjność.",
+      "groupId": "4c20b078-a1de-4c6c-bae8-a88358419cde",
+      "lang": "pl",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "wykorzystanie-5g-i-iot-w-ciagym-doskonaleniu-przewodnik-po-zarzadzaniu-innowacjami-i-automatyzacja-w-przemysach",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 4.0",
+          "value": "5G, IoT, automatyzacja"
+        }
+      ],
+      "title": "Wykorzystanie 5G i IoT w Ciągłym Doskonaleniu: Przewodnik po Zarządzaniu Innowacjami i Automatyzacją w Przemysłach"
+    },
+    {
+      "__outstatic": {
+        "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
+        "hash": "2813343435",
+        "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
+      "lang": "pl",
+      "publishedAt": "2024-06-15T21:02:14.000Z",
+      "slug": "wizualizacja-danych-sukcesem-analizy-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "wizualziacja danych",
+          "value": "wizualziacjaDanych"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "raporty",
+          "value": "raporty"
+        }
+      ],
+      "title": "Wizualizacja danych - sukcesem analizy. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "5311808d334dac83cc2ffa58a157091244eee932",
+        "hash": "895657840",
+        "path": "outstatic/content/posts/verwendung-von-pytorch-in-industriedaten.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
+      "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
+      "lang": "de",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "verwendung-von-pytorch-in-industriedaten",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "Industriedaten",
+          "value": "industriedaten"
+        },
+        {
+          "label": "industrielle Automatisierung",
+          "value": "industrielleAutomatisierung"
+        },
+        {
+          "label": "Algorithmusvergleich",
+          "value": "algorithmusVergleich"
+        }
+      ],
+      "title": "Verwendung von PyTorch in Industriedaten"
+    },
+    {
+      "__outstatic": {
+        "commit": "a493bd62d731a96c4bd3adc865e6ce8338903044",
+        "hash": "1397539050",
+        "path": "outstatic/content/posts/wykorzystanie-wizji-komputerowej-do-zwiekszenia-oee-strategie-optymalizacji-procesow.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-computer-vision-to-enhance-oee-strategies-for-gaining-a-competitive-advantage-through-process-optimization.png",
+      "description": "Dowiedz się, jak wizja komputerowa może poprawić OEE i dać przewagę konkurencyjną w produkcji.",
+      "groupId": "c6576215-c9ea-4ff7-822b-aa7a4315acfd",
+      "lang": "pl",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "wykorzystanie-wizji-komputerowej-do-zwiekszenia-oee-strategie-optymalizacji-procesow",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Wykorzystanie wizji komputerowej do zwiększenia OEE: strategie optymalizacji procesów"
     },
     {
       "__outstatic": {
@@ -1707,138 +2718,140 @@
     },
     {
       "__outstatic": {
-        "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
-        "hash": "2813343435",
-        "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
+        "commit": "991fe20e1bf5f0257055a774300af1615c8d7b61",
+        "hash": "4130983320",
+        "path": "outstatic/content/posts/wykorzystanie-iot-w-zarzadzaniu-ryzykiem-w-praktykach-gospodarki-o-obiegu-zamknietym.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynkowe sprawiają, że efektywne zarządzanie produkcją jest kluczowe dla sukcesu firm. Systemy takie jak Omnimes oferują zaawansowane narzędzia do optymalizacji procesów, w tym wizualizację danych, która wspomaga analizę i podejmowanie decyzji.",
+      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
+      "description": "Odkryj, jak IoT wspiera zarządzanie ryzykiem w gospodarce o obiegu zamkniętym, minimalizując wpływ na środowisko.",
+      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
       "lang": "pl",
-      "publishedAt": "2024-06-15T21:02:14.000Z",
-      "slug": "wizualizacja-danych-sukcesem-analizy-redash",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "wykorzystanie-iot-w-zarzadzaniu-ryzykiem-w-praktykach-gospodarki-o-obiegu-zamknietym",
       "status": "published",
       "tags": [
         {
-          "label": "redash",
-          "value": "redash"
-        },
-        {
-          "label": "wizualziacja danych",
-          "value": "wizualziacjaDanych"
-        },
-        {
-          "label": "big data",
-          "value": "bigData"
-        },
-        {
-          "label": "raporty",
-          "value": "raporty"
+          "label": "Kategoria",
+          "value": "Zarządzanie ryzykiem"
         }
       ],
-      "title": "Wizualizacja danych - sukcesem analizy. Redash"
+      "title": "Wykorzystanie IoT w zarządzaniu ryzykiem w praktykach gospodarki o obiegu zamkniętym"
     },
     {
       "__outstatic": {
-        "commit": "5311808d334dac83cc2ffa58a157091244eee932",
-        "hash": "895657840",
-        "path": "outstatic/content/posts/verwendung-von-pytorch-in-industriedaten.md"
+        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
+        "hash": "1222761488",
+        "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
-      "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
-      "lang": "de",
-      "publishedAt": "2024-10-15T10:50:26.000Z",
-      "slug": "verwendung-von-pytorch-in-industriedaten",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
+      "lang": "pl",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
+      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
       "status": "published",
       "tags": [
         {
-          "label": "PyTorch",
-          "value": "pyTorch"
-        },
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
           "label": "XGBoost",
-          "value": "xgBoost"
+          "value": "xgboost"
         },
         {
           "label": "LightGBM",
-          "value": "lightGbm"
+          "value": "lightgbm"
         },
         {
           "label": "CatBoost",
-          "value": "catBoost"
+          "value": "catboost"
         },
         {
-          "label": "Industriedaten",
-          "value": "industriedaten"
-        },
-        {
-          "label": "industrielle Automatisierung",
-          "value": "industrielleAutomatisierung"
-        },
-        {
-          "label": "Algorithmusvergleich",
-          "value": "algorithmusVergleich"
-        }
-      ],
-      "title": "Verwendung von PyTorch in Industriedaten"
-    },
-    {
-      "__outstatic": {
-        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
-        "hash": "3236711354",
-        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
-      "lang": "en",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "using-tensorflow-in-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
+          "label": "AI",
+          "value": "ai "
         },
         {
           "label": "MES system",
-          "value": "mesSystem"
+          "value": "messystem"
         },
         {
-          "label": "algorithm performance",
-          "value": "algorithmPerformance"
+          "label": "wykrywanie awarii",
+          "value": "wykrywanieAwarii"
+        },
+        {
+          "label": "analiza danych w przemyśle",
+          "value": "analizaDanychWPrzemyśle"
+        },
+        {
+          "label": "uczenie maszynowe w MES",
+          "value": "uczenieMaszynoweWMES"
+        },
+        {
+          "label": "klasyfikacja stanów maszyn",
+          "value": "klasyfikacjaStanówMaszyn"
+        },
+        {
+          "label": "automatyzacja przemysłowa",
+          "value": "automatyzacjaPrzemysłowa"
+        },
+        {
+          "label": "powiadomienia w czasie rzeczywistym",
+          "value": "powiadomieniaWCzasieRzeczywistym"
+        },
+        {
+          "label": "gradient boosting w przemyśle",
+          "value": "gradientBoostingWPrzemyśle"
+        },
+        {
+          "label": "algorytmy uczenia maszynowego",
+          "value": "algorytmyUczeniaMaszynowego"
+        },
+        {
+          "label": "systemy produkcyjne MES",
+          "value": "systemyProdukcyjneMES"
+        },
+        {
+          "label": "redukcja przestojów produkcyjnych",
+          "value": "redukcjaPrzestojówProdukcyjnych "
         }
       ],
-      "title": "Using TensorFlow in MES Systems"
+      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "d3ae051133c5173798844bd02a77f5489c969a11",
+        "hash": "3428054422",
+        "path": "outstatic/content/posts/zwiekszanie-ochrony-prywatnosci-w-srodowiskach-wirtualnej-rzeczywistosci-iot.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-privacy-protection-in-iot-enabled-virtual-reality-environments-strategies-for-industry-professionals.png",
+      "description": "Poznaj strategie ochrony prywatności w środowiskach VR z wykorzystaniem IoT. Kluczowe wskazówki dla profesjonalistów z branży.",
+      "groupId": "88f2295b-9270-43c3-a5d5-357f068b8820",
+      "lang": "pl",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "zwiekszanie-ochrony-prywatnosci-w-srodowiskach-wirtualnej-rzeczywistosci-iot",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Technologia"
+        },
+        {
+          "label": "Temat",
+          "value": "Prywatność"
+        }
+      ],
+      "title": "Zwiększanie Ochrony Prywatności w Środowiskach Wirtualnej Rzeczywistości IoT"
     },
     {
       "__outstatic": {
@@ -2000,87 +3013,6 @@
         }
       ],
       "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
-    },
-    {
-      "__outstatic": {
-        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
-        "hash": "1222761488",
-        "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
-      "description": "Praktyczne wykorzystanie algorytmów XGBoost, LightGBM i CatBoost w systemach MES do wykrywania awarii. Opis metod analizy danych, klasyfikacji stanów maszyn (produkcja, awaria, postój planowany i nieplanowany) oraz implementacji powiadomień w czasie rzeczywistym, minimalizujących przestoje.",
-      "lang": "pl",
-      "publishedAt": "2024-07-15T09:49:23.000Z",
-      "slug": "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost",
-      "status": "published",
-      "tags": [
-        {
-          "label": "XGBoost",
-          "value": "xgboost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightgbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catboost"
-        },
-        {
-          "label": "AI",
-          "value": "ai "
-        },
-        {
-          "label": "MES system",
-          "value": "messystem"
-        },
-        {
-          "label": "wykrywanie awarii",
-          "value": "wykrywanieAwarii"
-        },
-        {
-          "label": "analiza danych w przemyśle",
-          "value": "analizaDanychWPrzemyśle"
-        },
-        {
-          "label": "uczenie maszynowe w MES",
-          "value": "uczenieMaszynoweWMES"
-        },
-        {
-          "label": "klasyfikacja stanów maszyn",
-          "value": "klasyfikacjaStanówMaszyn"
-        },
-        {
-          "label": "automatyzacja przemysłowa",
-          "value": "automatyzacjaPrzemysłowa"
-        },
-        {
-          "label": "powiadomienia w czasie rzeczywistym",
-          "value": "powiadomieniaWCzasieRzeczywistym"
-        },
-        {
-          "label": "gradient boosting w przemyśle",
-          "value": "gradientBoostingWPrzemyśle"
-        },
-        {
-          "label": "algorytmy uczenia maszynowego",
-          "value": "algorytmyUczeniaMaszynowego"
-        },
-        {
-          "label": "systemy produkcyjne MES",
-          "value": "systemyProdukcyjneMES"
-        },
-        {
-          "label": "redukcja przestojów produkcyjnych",
-          "value": "redukcjaPrzestojówProdukcyjnych "
-        }
-      ],
-      "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
     }
   ]
 }
