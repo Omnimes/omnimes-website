@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:16:25.857Z",
+  "generated": "2025-09-03T15:16:30.037Z",
   "metadata": [
     {
       "__outstatic": {
@@ -755,32 +755,6 @@
     },
     {
       "__outstatic": {
-        "commit": "17d0fd5cdc35a6f80de088096c5b77aed67ff5fc",
-        "hash": "1885129976",
-        "path": "outstatic/content/posts/integration-von-5g-und-cloud-computing-revolution-durch-digitale-zwillinge-und-ar.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/integrating-5g-and-cloud-computing-how-digital-twins-and-augmented-reality-are-revolutionizing-industry-5-0.png",
-      "description": "Entdecken Sie, wie 5G und Cloud-Computing die Industrie 5.0 durch digitale Zwillinge und Augmented Reality transformieren.",
-      "groupId": "109324e4-242f-41ed-95cc-b7596626ba38",
-      "lang": "de",
-      "publishedAt": "2025-01-26T09:00:00Z",
-      "slug": "integration-von-5g-und-cloud-computing-revolution-durch-digitale-zwillinge-und-ar",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologie",
-          "value": "Industrie 5.0"
-        }
-      ],
-      "title": "Integration von 5G und Cloud-Computing: Revolution durch digitale Zwillinge und AR"
-    },
-    {
-      "__outstatic": {
         "commit": "c83f47bc8445ffb05121fd63480cd63d35cea448",
         "hash": "78422718",
         "path": "outstatic/content/posts/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control.md"
@@ -838,6 +812,32 @@
         }
       ],
       "title": "Integrating Cybersecurity into Predictive Maintenance: A Risk Management Framework"
+    },
+    {
+      "__outstatic": {
+        "commit": "cd38f5e5c6133f01bcd89217bcec6af628ebfff5",
+        "hash": "319250443",
+        "path": "outstatic/content/posts/integrating-5g-and-cloud-computing-revolutionizing-industry-5-0-with-digital-twins-and-ar.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-5g-and-cloud-computing-how-digital-twins-and-augmented-reality-are-revolutionizing-industry-5-0.png",
+      "description": "Discover how 5G and cloud computing, along with digital twins and AR, are transforming Industry 5.0.",
+      "groupId": "109324e4-242f-41ed-95cc-b7596626ba38",
+      "lang": "en",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "integrating-5g-and-cloud-computing-revolutionizing-industry-5-0-with-digital-twins-and-ar",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 5.0",
+          "value": "5G and Cloud Computing"
+        }
+      ],
+      "title": "Integrating 5G and Cloud Computing: Revolutionizing Industry 5.0 with Digital Twins and AR"
     },
     {
       "__outstatic": {
