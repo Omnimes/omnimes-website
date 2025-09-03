@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:17:20.258Z",
+  "generated": "2025-09-03T15:17:24.037Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1988,9 +1988,9 @@
     },
     {
       "__outstatic": {
-        "commit": "8cfdf3f3cf05e758f916b3eba0fa0e81e600c385",
-        "hash": "3951333408",
-        "path": "outstatic/content/posts/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.md"
+        "commit": "a1ddf1c4c9e4e6ac0f3a08097986f0fe0aa31472",
+        "hash": "78546417",
+        "path": "outstatic/content/posts/strategien-zur-kostenoptimierung-in-der-fertigung-co2-fuabdruck-reduzieren.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -1998,27 +1998,23 @@
       },
       "collection": "posts",
       "coverImage": "/images/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.png",
-      "description": "Discover effective strategies for cost optimization in manufacturing while reducing carbon footprint through innovative supply chain practices.",
+      "description": "Erfahren Sie, wie innovative Lieferkettenstrategien zur Kostenoptimierung und CO2-Reduzierung in der Fertigung beitragen können.",
       "groupId": "663620ef-518e-4c57-87a1-4be70d3730ea",
-      "lang": "en",
+      "lang": "de",
       "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations",
+      "slug": "strategien-zur-kostenoptimierung-in-der-fertigung-co2-fuabdruck-reduzieren",
       "status": "published",
       "tags": [
         {
-          "label": "Industry 4.0",
-          "value": "Cost Optimization"
+          "label": "Kategorie",
+          "value": "Fertigung"
         },
         {
-          "label": "Sustainability",
-          "value": "Carbon Footprint"
-        },
-        {
-          "label": "Supply Chain",
-          "value": "Innovations"
+          "label": "Thema",
+          "value": "Nachhaltigkeit"
         }
       ],
-      "title": "Strategies for Cost Optimization in Manufacturing: Reducing Carbon Footprint Through Supply Chain Innovations"
+      "title": "Strategien zur Kostenoptimierung in der Fertigung: CO2-Fußabdruck reduzieren"
     },
     {
       "__outstatic": {
