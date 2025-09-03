@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:34.356Z",
+  "generated": "2025-09-03T15:14:38.656Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1206,6 +1206,40 @@
     },
     {
       "__outstatic": {
+        "commit": "e242bd6c0684cc63dac9ef3adb3ad4c829b0bf0e",
+        "hash": "3101475243",
+        "path": "outstatic/content/posts/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
+      "description": "Explore how cloud computing and security protocols can enhance SCADA systems personalization during market disruptions.",
+      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
+      "lang": "en",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Cloud Computing"
+        },
+        {
+          "label": "Security",
+          "value": "Protocols"
+        },
+        {
+          "label": "Automation",
+          "value": "SCADA"
+        }
+      ],
+      "title": "Leveraging Cloud Computing and Advanced Security Protocols to Personalize SCADA Systems Amid Market Disruption"
+    },
+    {
+      "__outstatic": {
         "commit": "008f381052c5a27c0480bb0a2b188de88c0236e1",
         "hash": "1883351664",
         "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation.md"
@@ -1620,40 +1654,6 @@
         }
       ],
       "title": "Ollama - czyli praktyczne wykorzystanie lokalnych modeli AI na przykładzie systemu OMNIMES"
-    },
-    {
-      "__outstatic": {
-        "commit": "e0f32ef85a7776dc893d41f43fb264eebe2b3ea8",
-        "hash": "1378391862",
-        "path": "outstatic/content/posts/nutzung-von-cloud-computing-und-sicherheitsprotokollen-zur-personalisierung-von-scada-systemen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
-      "description": "Erfahren Sie, wie Cloud-Computing und Sicherheitsprotokolle SCADA-Systeme in disruptiven Märkten personalisieren können.",
-      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
-      "lang": "de",
-      "publishedAt": "2025-03-26T09:00:00Z",
-      "slug": "nutzung-von-cloud-computing-und-sicherheitsprotokollen-zur-personalisierung-von-scada-systemen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologie",
-          "value": "Cloud-Computing"
-        },
-        {
-          "label": "Sicherheit",
-          "value": "Sicherheitsprotokolle"
-        },
-        {
-          "label": "Industrie",
-          "value": "SCADA"
-        }
-      ],
-      "title": "Nutzung von Cloud-Computing und Sicherheitsprotokollen zur Personalisierung von SCADA-Systemen"
     },
     {
       "__outstatic": {
