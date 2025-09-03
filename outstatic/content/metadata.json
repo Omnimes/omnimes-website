@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:51.870Z",
+  "generated": "2025-09-03T15:14:56.565Z",
   "metadata": [
     {
       "__outstatic": {
@@ -781,6 +781,36 @@
     },
     {
       "__outstatic": {
+        "commit": "c83f47bc8445ffb05121fd63480cd63d35cea448",
+        "hash": "78422718",
+        "path": "outstatic/content/posts/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control-in-a-digital-culture.png",
+      "description": "Discover how integrating green energy into OEE metrics can improve cybersecurity and quality control in a digital culture.",
+      "groupId": "df589232-b52e-4c57-ba5f-0b670563810b",
+      "lang": "en",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "Green Energy"
+        },
+        {
+          "label": "Cybersecurity",
+          "value": "Quality Control"
+        }
+      ],
+      "title": "Integrating Green Energy into OEE Metrics: Enhancing Cybersecurity and Quality Control"
+    },
+    {
+      "__outstatic": {
         "commit": "251a994c27d508fcb9148fcb01c1557a803044da",
         "hash": "654964426",
         "path": "outstatic/content/posts/integrating-cybersecurity-into-predictive-maintenance-a-risk-management-framework.md"
@@ -939,32 +969,6 @@
         "gpt"
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
-    },
-    {
-      "__outstatic": {
-        "commit": "3207f3a001e331c418fa162ff51b5fb651202e81",
-        "hash": "2555076342",
-        "path": "outstatic/content/posts/integration-von-gruner-energie-in-oee-kennzahlen-verbesserung-der-cybersicherheit-und-qualitatskontrolle-in-einer-digita.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control-in-a-digital-culture.png",
-      "description": "Erfahren Sie, wie die Integration von grüner Energie in OEE-Kennzahlen Cybersicherheit und Qualitätskontrolle verbessert.",
-      "groupId": "df589232-b52e-4c57-ba5f-0b670563810b",
-      "lang": "de",
-      "publishedAt": "2025-03-19T09:00:00Z",
-      "slug": "integration-von-gruner-energie-in-oee-kennzahlen-verbesserung-der-cybersicherheit-und-qualitatskontrolle-in-einer-digita",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologie",
-          "value": "Industrie 4.0"
-        }
-      ],
-      "title": "Integration von grüner Energie in OEE-Kennzahlen: Verbesserung der Cybersicherheit und Qualitätskontrolle in einer digitalen Kultur"
     },
     {
       "__outstatic": {
