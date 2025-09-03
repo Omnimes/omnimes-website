@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:38.656Z",
+  "generated": "2025-09-03T15:14:43.235Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1657,6 +1657,40 @@
     },
     {
       "__outstatic": {
+        "commit": "e0f32ef85a7776dc893d41f43fb264eebe2b3ea8",
+        "hash": "1378391862",
+        "path": "outstatic/content/posts/nutzung-von-cloud-computing-und-sicherheitsprotokollen-zur-personalisierung-von-scada-systemen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
+      "description": "Erfahren Sie, wie Cloud-Computing und Sicherheitsprotokolle SCADA-Systeme in disruptiven Märkten personalisieren können.",
+      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
+      "lang": "de",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "nutzung-von-cloud-computing-und-sicherheitsprotokollen-zur-personalisierung-von-scada-systemen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologie",
+          "value": "Cloud-Computing"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Sicherheitsprotokolle"
+        },
+        {
+          "label": "Industrie",
+          "value": "SCADA"
+        }
+      ],
+      "title": "Nutzung von Cloud-Computing und Sicherheitsprotokollen zur Personalisierung von SCADA-Systemen"
+    },
+    {
+      "__outstatic": {
         "commit": "5f3c130b2e918adec56d8cea60f2117574c05b8c",
         "hash": "3912465102",
         "path": "outstatic/content/posts/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems.md"
@@ -2381,36 +2415,6 @@
         }
       ],
       "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
-    },
-    {
-      "__outstatic": {
-        "commit": "9a0a54c32f0bdfe59a7e62254993fe6b60ba7045",
-        "hash": "3737295090",
-        "path": "outstatic/content/posts/wykorzystanie-chmury-obliczeniowej-i-zaawansowanych-protokoow-bezpieczenstwa-w-systemach-scada.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
-      "description": "Dowiedz się, jak chmura i bezpieczeństwo mogą zindywidualizować systemy SCADA w czasach zakłóceń rynkowych.",
-      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
-      "lang": "pl",
-      "publishedAt": "2025-03-26T09:00:00Z",
-      "slug": "wykorzystanie-chmury-obliczeniowej-i-zaawansowanych-protokoow-bezpieczenstwa-w-systemach-scada",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 4.0",
-          "value": "technologia"
-        },
-        {
-          "label": "Bezpieczeństwo",
-          "value": "IT"
-        }
-      ],
-      "title": "Wykorzystanie chmury obliczeniowej i zaawansowanych protokołów bezpieczeństwa w systemach SCADA"
     },
     {
       "__outstatic": {
