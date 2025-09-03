@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:16:12.892Z",
+  "generated": "2025-09-03T15:16:16.881Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1266,6 +1266,32 @@
     },
     {
       "__outstatic": {
+        "commit": "1065e7aa8572dbfe113e76d644039885a4dd477c",
+        "hash": "1521765147",
+        "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
+      "description": "Jak wykorzystać kulturę cyfrową do zdobycia przewagi konkurencyjnej w obliczu zakłóceń rynkowych.",
+      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
+      "lang": "pl",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "zakłócenia rynkowe"
+        }
+      ],
+      "title": "Navigating Market Disruption: Leveraging Digital Culture for Competitive Advantage"
+    },
+    {
+      "__outstatic": {
         "commit": "d77657c3300584a5efe8a6eb6dee0be898a324ca",
         "hash": "3377793085",
         "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation-2.md"
@@ -1458,32 +1484,6 @@
         }
       ],
       "title": "Nutzen von Business Intelligence für effektive Nachfrageprognosen: Ein Fahrplan für erfolgreiche Technologieeinführung"
-    },
-    {
-      "__outstatic": {
-        "commit": "9a0a880d7a5da4858ba38db589f2f6b8d2455d80",
-        "hash": "4135961218",
-        "path": "outstatic/content/posts/navigieren-durch-marktstorungen-digitale-kultur-fur-wettbewerbsvorteile-nutzen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage-while-ensuring-regulatory-compliance-a.png",
-      "description": "Erfahren Sie, wie Unternehmen digitale Kultur nutzen, um Wettbewerbsvorteile zu erzielen und gleichzeitig Vorschriften einzuhalten.",
-      "groupId": "a053a0a5-50e5-48cd-a508-157259d7985e",
-      "lang": "de",
-      "publishedAt": "2025-02-05T09:00:00Z",
-      "slug": "navigieren-durch-marktstorungen-digitale-kultur-fur-wettbewerbsvorteile-nutzen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Thema",
-          "value": "Industrie 4.0"
-        }
-      ],
-      "title": "Navigieren durch Marktstörungen: Digitale Kultur für Wettbewerbsvorteile nutzen"
     },
     {
       "__outstatic": {
