@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:17:11.620Z",
+  "generated": "2025-09-03T15:17:15.605Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2052,36 +2052,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3fd46c752ad1509a6b76e27607dc7c2f4700cb87",
-        "hash": "3886303354",
-        "path": "outstatic/content/posts/strategie-optymalizacji-kosztow-w-produkcji-redukcja-sladu-weglowego-przez-innowacje-w-ancuchu-dostaw.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/strategies-for-cost-optimization-in-manufacturing-reducing-carbon-footprint-through-supply-chain-innovations.png",
-      "description": "Odkryj, jak innowacje w łańcuchu dostaw mogą pomóc w redukcji kosztów i śladu węglowego w produkcji.",
-      "groupId": "663620ef-518e-4c57-87a1-4be70d3730ea",
-      "lang": "pl",
-      "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "strategie-optymalizacji-kosztow-w-produkcji-redukcja-sladu-weglowego-przez-innowacje-w-ancuchu-dostaw",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Temat",
-          "value": "Optymalizacja kosztów"
-        }
-      ],
-      "title": "Strategie optymalizacji kosztów w produkcji: redukcja śladu węglowego przez innowacje w łańcuchu dostaw"
-    },
-    {
-      "__outstatic": {
         "commit": "e8919d5823515b7e7c5c103bf516517f02c54b14",
         "hash": "3642213370",
         "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-vergleich-der-kommunikationsprotokolle-teil-ii.md"
@@ -2852,6 +2822,36 @@
         }
       ],
       "title": "Zwiększanie Ochrony Prywatności w Środowiskach Wirtualnej Rzeczywistości IoT"
+    },
+    {
+      "__outstatic": {
+        "commit": "61da04b502e974d8af37e77fc89aea3201e91614",
+        "hash": "3987064905",
+        "path": "outstatic/content/posts/zwiekszanie-kontroli-jakosci-w-praktykach-gospodarki-cyklicznej-wykorzystanie-ml-i-oee.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-quality-control-in-circular-economy-practices-leveraging-machine-learning-and-oee-for-scalable-solutions.png",
+      "description": "Odkryj, jak Machine Learning i OEE mogą poprawić kontrolę jakości w gospodarce cyklicznej.",
+      "groupId": "2da4fb7c-bd1a-491e-a506-424083adf864",
+      "lang": "pl",
+      "publishedAt": "2025-01-19T09:00:00Z",
+      "slug": "zwiekszanie-kontroli-jakosci-w-praktykach-gospodarki-cyklicznej-wykorzystanie-ml-i-oee",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Gospodarka Cykliczna",
+          "value": "gospodarka_cykliczna"
+        },
+        {
+          "label": "Kontrola Jakości",
+          "value": "kontrola_jakosci"
+        }
+      ],
+      "title": "Zwiększanie Kontroli Jakości w Praktykach Gospodarki Cyklicznej: Wykorzystanie ML i OEE"
     },
     {
       "__outstatic": {
