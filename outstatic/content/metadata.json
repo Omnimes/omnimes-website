@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:15:09.386Z",
+  "generated": "2025-09-03T15:15:15.394Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1401,6 +1401,32 @@
     },
     {
       "__outstatic": {
+        "commit": "5cd6f6e43dd51fc6123f4f836d86e01c05f3f68d",
+        "hash": "2991294234",
+        "path": "outstatic/content/posts/nutzung-des-iot-zur-verbesserung-des-risikomanagements-in-der-kreislaufwirtschaft.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
+      "description": "Erfahren Sie, wie IoT-Technologien das Risikomanagement in der Kreislaufwirtschaft optimieren und die Umweltbelastung minimieren können.",
+      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
+      "lang": "de",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "nutzung-des-iot-zur-verbesserung-des-risikomanagements-in-der-kreislaufwirtschaft",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Thema",
+          "value": "Kreislaufwirtschaft"
+        }
+      ],
+      "title": "Nutzung des IoT zur Verbesserung des Risikomanagements in der Kreislaufwirtschaft"
+    },
+    {
+      "__outstatic": {
         "commit": "e1490c813c5d963882869bedad53cd13075a556d",
         "hash": "2191279383",
         "path": "outstatic/content/posts/nutzen-von-computer-vision-zur-verbesserung-der-oee-strategien-zur-erlangung-eines-wettbewerbsvorteils.md"
@@ -2770,32 +2796,6 @@
         }
       ],
       "title": "Wykorzystanie PyTorch w danych przemysłowych"
-    },
-    {
-      "__outstatic": {
-        "commit": "991fe20e1bf5f0257055a774300af1615c8d7b61",
-        "hash": "4130983320",
-        "path": "outstatic/content/posts/wykorzystanie-iot-w-zarzadzaniu-ryzykiem-w-praktykach-gospodarki-o-obiegu-zamknietym.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-iot-for-enhanced-risk-management-in-circular-economy-practices-strategies-for-minimizing-environmental-impact.png",
-      "description": "Odkryj, jak IoT wspiera zarządzanie ryzykiem w gospodarce o obiegu zamkniętym, minimalizując wpływ na środowisko.",
-      "groupId": "ce920232-a059-456a-87af-7f365c1d64c6",
-      "lang": "pl",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "wykorzystanie-iot-w-zarzadzaniu-ryzykiem-w-praktykach-gospodarki-o-obiegu-zamknietym",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Zarządzanie ryzykiem"
-        }
-      ],
-      "title": "Wykorzystanie IoT w zarządzaniu ryzykiem w praktykach gospodarki o obiegu zamkniętym"
     },
     {
       "__outstatic": {
