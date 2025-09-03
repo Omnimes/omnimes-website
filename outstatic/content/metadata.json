@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:14:43.235Z",
+  "generated": "2025-09-03T15:14:47.929Z",
   "metadata": [
     {
       "__outstatic": {
@@ -864,32 +864,6 @@
         }
       ],
       "title": "Integrating 5G and Cloud Computing: Revolutionizing Industry 5.0 with Digital Twins and AR"
-    },
-    {
-      "__outstatic": {
-        "commit": "9a489f397dd95e9f645b4633ab042855ba391901",
-        "hash": "2742932",
-        "path": "outstatic/content/posts/integracja-zielonej-energii-w-metrykach-oee-cyberbezpieczenstwo-i-kontrola-jakosci.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/integrating-green-energy-into-oee-metrics-enhancing-cybersecurity-and-quality-control-in-a-digital-culture.png",
-      "description": "Dowiedz się, jak integracja zielonej energii w metrykach OEE może poprawić cyberbezpieczeństwo i kontrolę jakości w cyfrowej kulturze.",
-      "groupId": "df589232-b52e-4c57-ba5f-0b670563810b",
-      "lang": "pl",
-      "publishedAt": "2025-03-19T09:00:00Z",
-      "slug": "integracja-zielonej-energii-w-metrykach-oee-cyberbezpieczenstwo-i-kontrola-jakosci",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Integracja zielonej energii w metrykach OEE: Cyberbezpieczeństwo i kontrola jakości"
     },
     {
       "__outstatic": {
@@ -2415,6 +2389,36 @@
         }
       ],
       "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a0a54c32f0bdfe59a7e62254993fe6b60ba7045",
+        "hash": "3737295090",
+        "path": "outstatic/content/posts/wykorzystanie-chmury-obliczeniowej-i-zaawansowanych-protokoow-bezpieczenstwa-w-systemach-scada.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-cloud-computing-and-advanced-security-protocols-to-personalize-scada-systems-amid-market-disruption.png",
+      "description": "Dowiedz się, jak chmura i bezpieczeństwo mogą zindywidualizować systemy SCADA w czasach zakłóceń rynkowych.",
+      "groupId": "8a676f33-8cf8-42de-8f79-eeb74d727d0a",
+      "lang": "pl",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "wykorzystanie-chmury-obliczeniowej-i-zaawansowanych-protokoow-bezpieczenstwa-w-systemach-scada",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 4.0",
+          "value": "technologia"
+        },
+        {
+          "label": "Bezpieczeństwo",
+          "value": "IT"
+        }
+      ],
+      "title": "Wykorzystanie chmury obliczeniowej i zaawansowanych protokołów bezpieczeństwa w systemach SCADA"
     },
     {
       "__outstatic": {
