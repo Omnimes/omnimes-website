@@ -1,6 +1,6 @@
 {
   "commit": "e52af99e117dab1b33d70c9acc1aac73db59858d",
-  "generated": "2025-09-03T15:17:32.915Z",
+  "generated": "2025-09-03T15:17:43.165Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1240,6 +1240,32 @@
     },
     {
       "__outstatic": {
+        "commit": "008f381052c5a27c0480bb0a2b188de88c0236e1",
+        "hash": "1883351664",
+        "path": "outstatic/content/posts/navigating-regulatory-compliance-in-the-age-of-digital-transformation.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
+      "description": "Jak skutecznie chronić prywatność w erze transformacji cyfrowej? Sprawdź strategie optymalizacji algorytmów.",
+      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
+      "lang": "pl",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "navigating-regulatory-compliance-in-the-age-of-digital-transformation",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Zgodność regulacyjna"
+        }
+      ],
+      "title": "Navigating Regulatory Compliance in the Age of Digital Transformation"
+    },
+    {
+      "__outstatic": {
         "commit": "1065e7aa8572dbfe113e76d644039885a4dd477c",
         "hash": "1521765147",
         "path": "outstatic/content/posts/navigating-market-disruption-leveraging-digital-culture-for-competitive-advantage.md"
@@ -1484,40 +1510,6 @@
         }
       ],
       "title": "Navigieren durch Marktstörungen: Digitale Kultur für Wettbewerbsvorteile nutzen"
-    },
-    {
-      "__outstatic": {
-        "commit": "728fe681d3ff54263fe87c842e20658b8eee3e0d",
-        "hash": "678402465",
-        "path": "outstatic/content/posts/navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/navigating-regulatory-compliance-in-the-age-of-digital-transformation-strategies-for-privacy-protection-through-algorith.png",
-      "description": "Strategien zum Datenschutz durch algorithmische Optimierung in der digitalen Transformation.",
-      "groupId": "4d67c2ec-5754-4f2c-912b-3857f1936f1d",
-      "lang": "de",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "navigieren-durch-die-regulatorische-compliance-im-zeitalter-der-digitalen-transformation",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Thema",
-          "value": "Compliance"
-        },
-        {
-          "label": "Technologie",
-          "value": "Datenschutz"
-        },
-        {
-          "label": "Strategie",
-          "value": "digitale Transformation"
-        }
-      ],
-      "title": "Navigieren durch die regulatorische Compliance im Zeitalter der digitalen Transformation"
     },
     {
       "__outstatic": {
