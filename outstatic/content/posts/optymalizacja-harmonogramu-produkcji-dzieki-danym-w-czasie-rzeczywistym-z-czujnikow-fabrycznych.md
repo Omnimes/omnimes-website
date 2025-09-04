@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych'
 description: 'Dowiedz się, jak czujniki fabryczne w czasie rzeczywistym mogą poprawić harmonogramowanie produkcji i zwiększyć efektywność.'
-coverImage: '/images/emerson-products-EwNz.webp'
+coverImage: '/images/17041843-c5Mz.png'
 tags: [{"label":"PLC","value":"plc"},{"value":"omnimes","label":"Omnimes"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'pl'
 publishedAt: '2025-08-12T09:00:00.000Z'

@@ -1,6 +1,6 @@
 {
-  "commit": "5cb9bb22d21beb09fab4ba6424ddb8a75c5b9080",
-  "generated": "Thu, 04 Sep 2025 12:22:55 GMT",
+  "commit": "4c4e2682d391c47d2d1b720a19613eef41380e6b",
+  "generated": "2025-09-04T12:39:06.446Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2284,43 +2284,6 @@
         }
       ],
       "title": "Effective Batch Management in the Context of Advanced Production Planning and Industry 4.0"
-    },
-    {
-      "__outstatic": {
-        "commit": "29800f83b43cafbdf88f2ac213c91b464a6f3465",
-        "hash": "3338108140",
-        "path": "outstatic/content/posts/optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/emerson-products-EwNz.webp",
-      "description": "Dowiedz się, jak czujniki fabryczne w czasie rzeczywistym mogą poprawić harmonogramowanie produkcji i zwiększyć efektywność.",
-      "lang": "pl",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Optymalizacja harmonogramu produkcji dzięki danym w czasie rzeczywistym z PLC"
     },
     {
       "__outstatic": {
@@ -4662,6 +4625,43 @@
         }
       ],
       "title": "Zwiększenie efektywności zarządzania partiami dzięki zaawansowanym interfejsom HMI"
+    },
+    {
+      "__outstatic": {
+        "commit": "4c4e2682d391c47d2d1b720a19613eef41380e6b",
+        "hash": "2654529105",
+        "path": "outstatic/content/posts/optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/17041843-c5Mz.png",
+      "description": "Dowiedz się, jak czujniki fabryczne w czasie rzeczywistym mogą poprawić harmonogramowanie produkcji i zwiększyć efektywność.",
+      "lang": "pl",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Optymalizacja harmonogramu produkcji dzięki danym w czasie rzeczywistym z PLC"
     }
   ]
 }
