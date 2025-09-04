@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren'
 description: 'Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.'
-coverImage: '/images/emerson-products-MwMT.webp'
+coverImage: '/images/17041843-kwMj.png'
 tags: [{"label":"PLC","value":"plc"},{"value":"industry40","label":"Industry 4.0"},{"value":"industrialAutomation","label":"Industrial Automation"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'de'
 publishedAt: '2025-08-12T09:00:00.000Z'

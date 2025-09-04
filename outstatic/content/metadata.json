@@ -1,6 +1,6 @@
 {
   "commit": "4c4e2682d391c47d2d1b720a19613eef41380e6b",
-  "generated": "2025-09-04T12:39:15.066Z",
+  "generated": "2025-09-04T12:39:23.035Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2221,43 +2221,6 @@
     },
     {
       "__outstatic": {
-        "commit": "91e781f320768aa903cc9e0054bf88f02c0f23fd",
-        "hash": "72574539",
-        "path": "outstatic/content/posts/optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/emerson-products-MwMT.webp",
-      "description": "Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.",
-      "lang": "de",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Optimierung des Produktionsplans durch Echtzeitdaten von PLC"
-    },
-    {
-      "__outstatic": {
         "commit": "f04d443abd66d18691c865e245bcd8bcd0f1b51f",
         "hash": "1892138189",
         "path": "outstatic/content/posts/optimization-of-batch-management-through-advanced-production-planning-in-industry-4-0.md"
@@ -2412,6 +2375,43 @@
         }
       ],
       "title": "Optimization of Resource Planning in MES Systems through Sparkplug B Protocol Integration"
+    },
+    {
+      "__outstatic": {
+        "commit": "aa6cf88e1da959661f621a33e68ba6a6e6634a3d",
+        "hash": "3526455991",
+        "path": "outstatic/content/posts/optimization-of-production-scheduling-using-real-time-data-from-factory-sensors.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/emerson-products-k2Nz.webp",
+      "description": "Discover how real-time factory sensors can enhance production scheduling and boost efficiency.",
+      "lang": "en",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "optimization-of-production-scheduling-using-real-time-data-from-factory-sensors",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        }
+      ],
+      "title": "Optimization of Production Scheduling Using Real-Time Data from PLC"
     },
     {
       "__outstatic": {
@@ -4629,19 +4629,19 @@
     {
       "__outstatic": {
         "commit": "4c4e2682d391c47d2d1b720a19613eef41380e6b",
-        "hash": "684269891",
-        "path": "outstatic/content/posts/optimization-of-production-scheduling-using-real-time-data-from-factory-sensors.md"
+        "hash": "4226407120",
+        "path": "outstatic/content/posts/optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/17041843-UxOT.png",
-      "description": "Discover how real-time factory sensors can enhance production scheduling and boost efficiency.",
-      "lang": "en",
+      "coverImage": "/images/17041843-kwMj.png",
+      "description": "Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.",
+      "lang": "de",
       "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optimization-of-production-scheduling-using-real-time-data-from-factory-sensors",
+      "slug": "optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren",
       "status": "published",
       "tags": [
         {
@@ -4653,15 +4653,15 @@
           "value": "industry40"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
           "label": "Industrial Automation",
           "value": "industrialAutomation"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
-      "title": "Optimization of Production Scheduling Using Real-Time Data from PLC"
+      "title": "Optimierung des Produktionsplans durch Echtzeitdaten von PLC"
     }
   ]
 }
