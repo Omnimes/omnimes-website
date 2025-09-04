@@ -1,6 +1,6 @@
 {
   "commit": "3fe4cacc1c17c3605d18231b274df66b2991b23b",
-  "generated": "2025-09-04T10:40:54.514Z",
+  "generated": "2025-09-04T10:42:04.743Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2069,31 +2069,6 @@
     },
     {
       "__outstatic": {
-        "commit": "6c75a2e9bcb507c3e458f3c5b96c405e4d01af37",
-        "hash": "2943368470",
-        "path": "outstatic/content/posts/optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-smart-factories-leveraging-hmi-interfaces-and-simulation-for-enhanced-production-k.png",
-      "description": "Wie man HMI und Simulationen zur Optimierung der Ressourcenplanung in intelligenten Fabriken und zur Verbesserung der Produktions-KPIs nutzt.",
-      "lang": "de",
-      "publishedAt": "2025-09-01T09:00:00Z",
-      "slug": "optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Inteligentne fabryki"
-        }
-      ],
-      "title": "Optimierung der Ressourcenplanung in intelligenten Fabriken: HMI und Simulation"
-    },
-    {
-      "__outstatic": {
         "commit": "880bbaa2a1074faad84fa995bc9dbfbda1727aa7",
         "hash": "4066240606",
         "path": "outstatic/content/posts/optimization-of-production-efficiency-utilizing-industrial-connectivity-in-mes-systems.md"
@@ -2282,6 +2257,31 @@
         }
       ],
       "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "a8c755f5fe4cb8ee67968db9a7709566a35e7aba",
+        "hash": "1101872456",
+        "path": "outstatic/content/posts/optimization-of-resource-planning-in-smart-factories-hmi-and-simulation.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-optimizing-resource-planning-in-smart-factories-leveraging-hmi-interfaces-and-simulation-for-enhanced-production-k.png",
+      "description": "How to use HMI and simulations to optimize resource planning in smart factories and improve production KPIs.",
+      "lang": "en",
+      "publishedAt": "2025-09-01T09:00:00Z",
+      "slug": "optimization-of-resource-planning-in-smart-factories-hmi-and-simulation",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Inteligentne fabryki"
+        }
+      ],
+      "title": "Optimization of Resource Planning in Smart Factories: HMI and Simulation"
     },
     {
       "__outstatic": {
@@ -4481,24 +4481,32 @@
     {
       "__outstatic": {
         "commit": "3fe4cacc1c17c3605d18231b274df66b2991b23b",
-        "hash": "2919125184",
-        "path": "outstatic/content/posts/optimization-of-resource-planning-in-smart-factories-hmi-and-simulation.md"
+        "hash": "2147186348",
+        "path": "outstatic/content/posts/optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-g1OT.jpg",
-      "description": "How to use HMI and simulations to optimize resource planning in smart factories and improve production KPIs.",
-      "lang": "en",
+      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-g5MT.jpg",
+      "description": "Wie man HMI und Simulationen zur Optimierung der Ressourcenplanung in intelligenten Fabriken und zur Verbesserung der Produktions-KPIs nutzt.",
+      "lang": "de",
       "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "optimization-of-resource-planning-in-smart-factories-hmi-and-simulation",
+      "slug": "optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation",
       "status": "published",
       "tags": [
         {
           "label": "HMI",
           "value": "hmi"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
         },
         {
           "label": "Industry 4.0",
@@ -4509,7 +4517,7 @@
           "value": "Industry 5.0"
         }
       ],
-      "title": "Optimization of Resource Planning in Smart Factories: HMI and Simulation"
+      "title": "Optimierung der Ressourcenplanung in intelligenten Fabriken: HMI und Simulation"
     }
   ]
 }
