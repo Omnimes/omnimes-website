@@ -444,6 +444,10 @@
         {
           "value": "hmi",
           "label": "HMI"
+        },
+        {
+          "value": "plc",
+          "label": "PLC"
         }
       ]
     },
