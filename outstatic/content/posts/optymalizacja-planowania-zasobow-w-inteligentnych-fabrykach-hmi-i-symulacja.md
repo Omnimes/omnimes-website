@@ -6,8 +6,8 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja'
 description: 'Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.'
-coverImage: '/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-QyNT.jpg'
-tags: [{"label":"HMI","value":"hmi"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"}]
+coverImage: '/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-Y5OD.jpg'
+tags: [{"label":"HMI","value":"hmi"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"}]
 lang: 'pl'
 publishedAt: '2025-09-01T09:00:00.000Z'
 ---
