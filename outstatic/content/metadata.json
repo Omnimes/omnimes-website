@@ -1,6 +1,6 @@
 {
   "commit": "29bc5245c994d608f26faf9a4901d4c0385ed5c0",
-  "generated": "2025-09-04T11:29:19.904Z",
+  "generated": "2025-09-04T11:30:42.728Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3236,31 +3236,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1f555e2d2e80ed123c62e3c3b0517d0c404fad13",
-        "hash": "3754749957",
-        "path": "outstatic/content/posts/utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-mes-systems-for-seamless-integration-in-a-connected-factory-strategies-for-effective-digitalization-thi.png",
-      "description": "Practical strategies for implementing MES systems for factory digitization and IoT integration.",
-      "lang": "en",
-      "publishedAt": "2025-08-19T09:00:00Z",
-      "slug": "utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Utilization of MES Systems for Seamless Integration in Connected Manufacturing"
-    },
-    {
-      "__outstatic": {
         "commit": "92a4ee6ef5cd1870bd07d3576aa615a020de238a",
         "hash": "2608186323",
         "path": "outstatic/content/posts/utilization-of-machine-learning-in-mes-for-continuous-improvement-in-renewable-energy-production.md"
@@ -3809,6 +3784,31 @@
         }
       ],
       "title": "Wykorzystanie technologii Computer Vision i Digital Twin w kontroli jakości w produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "c084541c44d66a53ec89d8be7e72e4fbf8167f10",
+        "hash": "2117688483",
+        "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-mes-systems-for-seamless-integration-in-a-connected-factory-strategies-for-effective-digitalization-thi.png",
+      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:00:00Z",
+      "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Wykorzystanie systemów MES dla płynnej integracji w połączonej fabryce"
     },
     {
       "__outstatic": {
@@ -4509,32 +4509,28 @@
     {
       "__outstatic": {
         "commit": "29bc5245c994d608f26faf9a4901d4c0385ed5c0",
-        "hash": "3902380990",
-        "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
+        "hash": "3317497213",
+        "path": "outstatic/content/posts/utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/mes-c0MD.webp",
-      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
-      "lang": "pl",
+      "coverImage": "/images/mes-AyMD.webp",
+      "description": "Practical strategies for implementing MES systems for factory digitization and IoT integration.",
+      "lang": "en",
       "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
+      "slug": "utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing",
       "status": "published",
       "tags": [
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
         {
           "label": "Omnimes",
           "value": "omnimes"
         },
         {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
+          "label": "MES system",
+          "value": "mesSystem"
         },
         {
           "label": "Industry 4.0",
@@ -4545,7 +4541,7 @@
           "value": "Industry 5.0"
         }
       ],
-      "title": "Wykorzystanie systemów MES dla płynnej integracji w połączonej fabryce"
+      "title": "Utilization of MES Systems for Seamless Integration in Connected Manufacturing"
     }
   ]
 }
