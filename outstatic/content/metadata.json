@@ -1,6 +1,6 @@
 {
   "commit": "8a0b9adc4d2b911744b5c3fa285495d30205ff67",
-  "generated": "2025-09-04T12:13:53.494Z",
+  "generated": "2025-09-04T12:16:02.677Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2010,35 +2010,6 @@
     },
     {
       "__outstatic": {
-        "commit": "692d6ea00e3e5d459273c75f703ba269a4ba923d",
-        "hash": "3561668802",
-        "path": "outstatic/content/posts/optimierung-des-batch-managements-durch-fortgeschrittene-produktionsplanung-in-der-industrie-4-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-batch-management-through-advanced-production-scheduling-in-industry-4-0-enhancing-manufacturing-efficie.png",
-      "description": "Wie fortschrittliche Produktionsplanung das Batch-Management in modernen Produktionssystemen verbessern kann.",
-      "lang": "de",
-      "publishedAt": "2025-08-05T09:00:00Z",
-      "slug": "optimierung-des-batch-managements-durch-fortgeschrittene-produktionsplanung-in-der-industrie-4-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Temat",
-          "value": "Zarządzanie"
-        }
-      ],
-      "title": "Optimierung des Batch-Managements durch fortgeschrittene Produktionsplanung in der Industrie 4.0"
-    },
-    {
-      "__outstatic": {
         "commit": "d6be58fa6dbc56a82115daa9ebac4561070614a0",
         "hash": "3697003574",
         "path": "outstatic/content/posts/optimierung-des-batch-managements-durch-echtzeit-kpi-indikatoren.md"
@@ -2218,6 +2189,35 @@
         }
       ],
       "title": "Optimization of Batch Management through Real-Time KPI Metrics"
+    },
+    {
+      "__outstatic": {
+        "commit": "6e242230ef370a82dad8083564ea744b1430c248",
+        "hash": "3276883455",
+        "path": "outstatic/content/posts/optimization-of-batch-management-through-advanced-production-planning-in-industry-4-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-optimizing-batch-management-through-advanced-production-scheduling-in-industry-4-0-enhancing-manufacturing-efficie.png",
+      "description": "How advanced production planning can enhance batch management in modern manufacturing systems.",
+      "lang": "en",
+      "publishedAt": "2025-08-05T09:00:00Z",
+      "slug": "optimization-of-batch-management-through-advanced-production-planning-in-industry-4-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Temat",
+          "value": "Zarządzanie"
+        }
+      ],
+      "title": "Optimization of Batch Management through Advanced Production Planning in Industry 4.0"
     },
     {
       "__outstatic": {
@@ -4613,19 +4613,19 @@
     {
       "__outstatic": {
         "commit": "8a0b9adc4d2b911744b5c3fa285495d30205ff67",
-        "hash": "1892138189",
-        "path": "outstatic/content/posts/optimization-of-batch-management-through-advanced-production-planning-in-industry-4-0.md"
+        "hash": "3791636383",
+        "path": "outstatic/content/posts/optimierung-des-batch-managements-durch-fortgeschrittene-produktionsplanung-in-der-industrie-4-0.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp",
-      "description": "How advanced production planning can enhance batch management in modern manufacturing systems.",
-      "lang": "en",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp",
+      "description": "Wie fortschrittliche Produktionsplanung das Batch-Management in modernen Produktionssystemen verbessern kann.",
+      "lang": "de",
       "publishedAt": "2025-08-05T09:00:00.000Z",
-      "slug": "optimization-of-batch-management-through-advanced-production-planning-in-industry-4-0",
+      "slug": "optimierung-des-batch-managements-durch-fortgeschrittene-produktionsplanung-in-der-industrie-4-0",
       "status": "published",
       "tags": [
         {
@@ -4637,7 +4637,7 @@
           "value": "dataAnalysis"
         }
       ],
-      "title": "Effective Batch Management in the Context of Advanced Production Planning and Industry 4.0"
+      "title": "Effizientes Chargenmanagement im Kontext der fortgeschrittenen Produktionsplanung und Industrie 4.0"
     }
   ]
 }
