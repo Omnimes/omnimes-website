@@ -1,6 +1,6 @@
 {
   "commit": "f1193373f279a905e9f47e1b79444edd7784ffeb",
-  "generated": "2025-09-04T10:58:40.674Z",
+  "generated": "2025-09-04T11:00:05.386Z",
   "metadata": [
     {
       "__outstatic": {
@@ -575,31 +575,6 @@
         }
       ],
       "title": "Einsatz von MES-Systemen für eine nahtlose Integration in der vernetzten Fabrik"
-    },
-    {
-      "__outstatic": {
-        "commit": "17385c92560459d31baccd185f8608347f758831",
-        "hash": "2020635133",
-        "path": "outstatic/content/posts/einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-smart-manufacturing-and-predictive-maintenance-through-mes-implementing-sparkplug-b-protocol-for-energy.png",
-      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme verbessert die Energieeffizienz und Zuverlässigkeit in der Produktion.",
-      "lang": "de",
-      "publishedAt": "2025-08-26T09:00:00Z",
-      "slug": "einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Einsatz von intelligenter Produktion und Fehlervorhersage in MES mit Sparkplug B-Protokoll"
     },
     {
       "__outstatic": {
@@ -3398,6 +3373,31 @@
     },
     {
       "__outstatic": {
+        "commit": "21759a823267f61b1b1b532d6aa30d55e3d44059",
+        "hash": "1086089837",
+        "path": "outstatic/content/posts/utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-smart-manufacturing-and-predictive-maintenance-through-mes-implementing-sparkplug-b-protocol-for-energy.png",
+      "description": "The integration of the Sparkplug B protocol in MES systems enhances energy efficiency and reliability in production.",
+      "lang": "en",
+      "publishedAt": "2025-08-26T09:00:00Z",
+      "slug": "utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Utilization of Smart Manufacturing and Failure Prediction in MES with Sparkplug B Protocol"
+    },
+    {
+      "__outstatic": {
         "commit": "79fb06dbfdf21ac76123431d5b795bab98c62513",
         "hash": "3149521546",
         "path": "outstatic/content/posts/utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control.md"
@@ -4497,29 +4497,21 @@
     {
       "__outstatic": {
         "commit": "f1193373f279a905e9f47e1b79444edd7784ffeb",
-        "hash": "1879963199",
-        "path": "outstatic/content/posts/utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol.md"
+        "hash": "1161125837",
+        "path": "outstatic/content/posts/einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/sprb_omni-MyNT.png",
-      "description": "The integration of the Sparkplug B protocol in MES systems enhances energy efficiency and reliability in production.",
-      "lang": "en",
+      "coverImage": "/images/sprb_omni-QxOD.png",
+      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme verbessert die Energieeffizienz und Zuverlässigkeit in der Produktion.",
+      "lang": "de",
       "publishedAt": "2025-08-26T09:00:00.000Z",
-      "slug": "utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol",
+      "slug": "einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll",
       "status": "published",
       "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
         {
           "label": "Omnimes",
           "value": "omnimes"
@@ -4527,9 +4519,17 @@
         {
           "label": "MES system",
           "value": "mesSystem"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
         }
       ],
-      "title": "Utilization of Smart Manufacturing and Failure Prediction in MES with Sparkplug B Protocol"
+      "title": "Einsatz von intelligenter Produktion und Fehlervorhersage in MES mit Sparkplug B-Protokoll"
     }
   ]
 }
