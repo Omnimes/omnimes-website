@@ -1,6 +1,6 @@
 {
-  "commit": "3fe4cacc1c17c3605d18231b274df66b2991b23b",
-  "generated": "2025-09-04T10:42:40.638Z",
+  "commit": "f1193373f279a905e9f47e1b79444edd7784ffeb",
+  "generated": "2025-09-04T10:56:16.735Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3692,31 +3692,6 @@
     },
     {
       "__outstatic": {
-        "commit": "6e8b785e2ab0835fc1587519aec61d6a76c706ea",
-        "hash": "858724473",
-        "path": "outstatic/content/posts/wykorzystanie-inteligentnej-produkcji-i-predykcji-awarii-w-mes-z-protokoem-sparkplug-b.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-smart-manufacturing-and-predictive-maintenance-through-mes-implementing-sparkplug-b-protocol-for-energy.png",
-      "description": "Integracja protokołu Sparkplug B w systemach MES poprawia efektywność energetyczną i niezawodność w produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-08-26T09:00:00Z",
-      "slug": "wykorzystanie-inteligentnej-produkcji-i-predykcji-awarii-w-mes-z-protokoem-sparkplug-b",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Wykorzystanie inteligentnej produkcji i predykcji awarii w MES z protokołem Sparkplug B"
-    },
-    {
-      "__outstatic": {
         "commit": "5038bc999af09b50d7eb72136d6f97e6be3c31f9",
         "hash": "918830034",
         "path": "outstatic/content/posts/wykorzystanie-edge-computing-i-czujnikow-fabrycznych-w-zarzadzaniu-partiami-produkcji.md"
@@ -4518,6 +4493,43 @@
         }
       ],
       "title": "Optymalizacja planowania zasobów w inteligentnych fabrykach: HMI i symulacja"
+    },
+    {
+      "__outstatic": {
+        "commit": "f1193373f279a905e9f47e1b79444edd7784ffeb",
+        "hash": "3552845505",
+        "path": "outstatic/content/posts/wykorzystanie-inteligentnej-produkcji-i-predykcji-awarii-w-mes-z-protokoem-sparkplug-b.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/sprb_omni-EyMT.png",
+      "description": "Integracja protokołu Sparkplug B w systemach MES poprawia efektywność energetyczną i niezawodność w produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-08-26T09:00:00.000Z",
+      "slug": "wykorzystanie-inteligentnej-produkcji-i-predykcji-awarii-w-mes-z-protokoem-sparkplug-b",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        }
+      ],
+      "title": "Wykorzystanie inteligentnej produkcji i predykcji awarii w MES z protokołem Sparkplug B"
     }
   ]
 }
