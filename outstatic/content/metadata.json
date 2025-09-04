@@ -1,6 +1,6 @@
 {
-  "commit": "29bc5245c994d608f26faf9a4901d4c0385ed5c0",
-  "generated": "2025-09-04T11:35:44.264Z",
+  "commit": "935600658fe07513ad5bc2a75455a6525a593a6d",
+  "generated": "Thu, 04 Sep 2025 11:40:26 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -553,6 +553,43 @@
     },
     {
       "__outstatic": {
+        "commit": "fd9556daec919790762563c88f90e44ad5b024ee",
+        "hash": "3559943977",
+        "path": "outstatic/content/posts/einsatz-von-mes-systemen-fur-eine-nahtlose-integration-in-der-vernetzten-fabrik.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/mes-U0Nj.webp",
+      "description": "Praktische Strategien zur Implementierung von MES-Systemen für die Digitalisierung von Fabriken und die Integration mit IoT.",
+      "lang": "de",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
+      "slug": "einsatz-von-mes-systemen-fur-eine-nahtlose-integration-in-der-vernetzten-fabrik",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Einsatz von MES-Systemen für eine nahtlose Integration in der vernetzten Fabrik"
+    },
+    {
+      "__outstatic": {
         "commit": "c7eaec48269522c05e87514777b3db1a0849754c",
         "hash": "2241988714",
         "path": "outstatic/content/posts/einsatz-von-maschinellem-lernen-in-mes-zur-kontinuierlichen-verbesserung-in-der-erneuerbaren-energieproduktion.md"
@@ -575,6 +612,43 @@
         }
       ],
       "title": "Einsatz von maschinellem Lernen in MES zur kontinuierlichen Verbesserung in der erneuerbaren Energieproduktion"
+    },
+    {
+      "__outstatic": {
+        "commit": "f9cc41699718dcca45b265b6da11d045551c0d0f",
+        "hash": "1161125837",
+        "path": "outstatic/content/posts/einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/sprb_omni-QxOD.png",
+      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme verbessert die Energieeffizienz und Zuverlässigkeit in der Produktion.",
+      "lang": "de",
+      "publishedAt": "2025-08-26T09:00:00.000Z",
+      "slug": "einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        }
+      ],
+      "title": "Einsatz von intelligenter Produktion und Fehlervorhersage in MES mit Sparkplug B-Protokoll"
     },
     {
       "__outstatic": {
@@ -719,31 +793,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1240054adbc258159e493cf24ee7dd12066522fc",
-        "hash": "723773427",
-        "path": "outstatic/content/posts/einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
-      "description": "Wie KPI und Computer Vision die Qualitätskontrolle in intelligenten Fabriken verbessern können.",
-      "lang": "de",
-      "publishedAt": "2025-02-26T09:00:00Z",
-      "slug": "einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Kontrola jakości"
-        }
-      ],
-      "title": "Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitätskontrolle"
-    },
-    {
-      "__outstatic": {
         "commit": "c6b9e3ed74fc7a44d1bfedc12cc0468bc37ccd9d",
         "hash": "968950399",
         "path": "outstatic/content/posts/einsatz-von-tensorflow-in-mes-systemen.md"
@@ -786,6 +835,31 @@
         }
       ],
       "title": "Einsatz von TensorFlow in MES-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "1240054adbc258159e493cf24ee7dd12066522fc",
+        "hash": "723773427",
+        "path": "outstatic/content/posts/einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
+      "description": "Wie KPI und Computer Vision die Qualitätskontrolle in intelligenten Fabriken verbessern können.",
+      "lang": "de",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Kontrola jakości"
+        }
+      ],
+      "title": "Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitätskontrolle"
     },
     {
       "__outstatic": {
@@ -1221,31 +1295,6 @@
     },
     {
       "__outstatic": {
-        "commit": "f2368aaef6e1875efc416c23f3a93b5dec547883",
-        "hash": "208356452",
-        "path": "outstatic/content/posts/integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
-      "description": "Zintegruj MES z IoT, aby poprawić kontrolę jakości i zredukować przestoje w produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-04-26T09:00:00Z",
-      "slug": "integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Integracja MES z IoT w celu poprawy kontroli jakości i redukcji przestojów"
-    },
-    {
-      "__outstatic": {
         "commit": "60163502c83a47ca690bb98365d98b76bb2f33e4",
         "hash": "3681113375",
         "path": "outstatic/content/posts/increasing-production-efficiency-through-connected-factories-resource-planning-strategies.md"
@@ -1335,6 +1384,31 @@
         }
       ],
       "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "f2368aaef6e1875efc416c23f3a93b5dec547883",
+        "hash": "208356452",
+        "path": "outstatic/content/posts/integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
+      "description": "Zintegruj MES z IoT, aby poprawić kontrolę jakości i zredukować przestoje w produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-04-26T09:00:00Z",
+      "slug": "integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Integracja MES z IoT w celu poprawy kontroli jakości i redukcji przestojów"
     },
     {
       "__outstatic": {
@@ -1515,63 +1589,6 @@
     },
     {
       "__outstatic": {
-        "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
-        "hash": "2451523430",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/4.png",
-      "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
-      "lang": "de",
-      "publishedAt": "2024-06-05T05:46:42.000Z",
-      "slug": "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Kommunikationsprotokoll",
-          "value": "kommunikationsprotokoll"
-        },
-        {
-          "label": "IoT-Kommunikation",
-          "value": "ioTKommunikation"
-        },
-        {
-          "label": "Kommunikationsstandards",
-          "value": "kommunikationsstandards"
-        }
-      ],
-      "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
-    },
-    {
-      "__outstatic": {
         "commit": "eff1359193c8c49290730d98f67fae649bef6982",
         "hash": "180187371",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
@@ -1626,6 +1643,63 @@
         }
       ],
       "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
+    },
+    {
+      "__outstatic": {
+        "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
+        "hash": "2451523430",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/4.png",
+      "description": "Vergleich der Kommunikationsprotokolle MQTT und Sparkplug B im Kontext des industriellen Internets der Dinge (IIoT). Erfahren Sie mehr über ihre Vorteile, Unterschiede, die Dienstgüte (QoS) und die Nachrichtenaufbewahrung. Entdecken Sie, welches Protokoll die Anforderungen Ihres IoT-Projekts besser erfüllt.",
+      "lang": "de",
+      "publishedAt": "2024-06-05T05:46:42.000Z",
+      "slug": "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "QoS",
+          "value": "qoS"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Kommunikationsprotokoll",
+          "value": "kommunikationsprotokoll"
+        },
+        {
+          "label": "IoT-Kommunikation",
+          "value": "ioTKommunikation"
+        },
+        {
+          "label": "Kommunikationsstandards",
+          "value": "kommunikationsstandards"
+        }
+      ],
+      "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
     },
     {
       "__outstatic": {
@@ -2019,8 +2093,8 @@
     },
     {
       "__outstatic": {
-        "commit": "6c75a2e9bcb507c3e458f3c5b96c405e4d01af37",
-        "hash": "2943368470",
+        "commit": "71d0a2c98c3a91655fbb591c7351cf7763141bda",
+        "hash": "2147186348",
         "path": "outstatic/content/posts/optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation.md"
       },
       "author": {
@@ -2028,16 +2102,32 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-smart-factories-leveraging-hmi-interfaces-and-simulation-for-enhanced-production-k.png",
+      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-g5MT.jpg",
       "description": "Wie man HMI und Simulationen zur Optimierung der Ressourcenplanung in intelligenten Fabriken und zur Verbesserung der Produktions-KPIs nutzt.",
       "lang": "de",
-      "publishedAt": "2025-09-01T09:00:00Z",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
       "slug": "optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation",
       "status": "published",
       "tags": [
         {
-          "label": "Temat",
-          "value": "Inteligentne fabryki"
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
       "title": "Optimierung der Ressourcenplanung in intelligenten Fabriken: HMI und Simulation"
@@ -2235,8 +2325,8 @@
     },
     {
       "__outstatic": {
-        "commit": "a8c755f5fe4cb8ee67968db9a7709566a35e7aba",
-        "hash": "1101872456",
+        "commit": "136879ef43caaebbe4a1bdc5d127ea2df6339d42",
+        "hash": "1216708349",
         "path": "outstatic/content/posts/optimization-of-resource-planning-in-smart-factories-hmi-and-simulation.md"
       },
       "author": {
@@ -2244,16 +2334,32 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-smart-factories-leveraging-hmi-interfaces-and-simulation-for-enhanced-production-k.png",
+      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-gxMj.jpg",
       "description": "How to use HMI and simulations to optimize resource planning in smart factories and improve production KPIs.",
       "lang": "en",
-      "publishedAt": "2025-09-01T09:00:00Z",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
       "slug": "optimization-of-resource-planning-in-smart-factories-hmi-and-simulation",
       "status": "published",
       "tags": [
         {
-          "label": "Temat",
-          "value": "Inteligentne fabryki"
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
         }
       ],
       "title": "Optimization of Resource Planning in Smart Factories: HMI and Simulation"
@@ -2365,6 +2471,47 @@
         }
       ],
       "title": "Optymalizacja zarządzania partiami poprzez wskaźniki KPI w czasie rzeczywistym"
+    },
+    {
+      "__outstatic": {
+        "commit": "f54b5d1e2f0cdcf59adda952c3268afd54006717",
+        "hash": "2374040125",
+        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-Y5OD.jpg",
+      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Optymalizacja planowania zasobów w inteligentnych fabrykach: HMI i symulacja"
     },
     {
       "__outstatic": {
@@ -2914,31 +3061,6 @@
     },
     {
       "__outstatic": {
-        "commit": "79ba1bfcbc26b1cda56dc4d09b70c5c25d3e7be3",
-        "hash": "4115610436",
-        "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
-      "description": "Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.",
-      "lang": "de",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien"
-    },
-    {
-      "__outstatic": {
         "commit": "4dfb6ff7674b48c5311139fa2a2743c859fb881f",
         "hash": "3939662858",
         "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-ki-basierte-mes-systeme.md"
@@ -2986,6 +3108,31 @@
         }
       ],
       "title": "Steigerung der Produktionseffizienz durch integrierte HMI-Schnittstellen in MES-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "79ba1bfcbc26b1cda56dc4d09b70c5c25d3e7be3",
+        "hash": "4115610436",
+        "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
+      "description": "Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.",
+      "lang": "de",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien"
     },
     {
       "__outstatic": {
@@ -3051,51 +3198,6 @@
     },
     {
       "__outstatic": {
-        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
-        "hash": "3236711354",
-        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
-      "lang": "en",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "using-tensorflow-in-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "algorithm performance",
-          "value": "algorithmPerformance"
-        }
-      ],
-      "title": "Using TensorFlow in MES Systems"
-    },
-    {
-      "__outstatic": {
         "commit": "f520b55ed3d1cf9bd9a0d3e11e675e96c7c40143",
         "hash": "605878199",
         "path": "outstatic/content/posts/using-pytorch-in-industrial-data.md"
@@ -3146,6 +3248,51 @@
         }
       ],
       "title": "Using PyTorch in Industrial Data"
+    },
+    {
+      "__outstatic": {
+        "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
+        "hash": "3236711354",
+        "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Comparison of TensorFlow, XGBoost, LightGBM, and CatBoost algorithms in fault detection in MES systems. Practical applications, time-series and tabular data analysis, and performance evaluation in terms of speed and computational resources.",
+      "lang": "en",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "using-tensorflow-in-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "algorithm performance",
+          "value": "algorithmPerformance"
+        }
+      ],
+      "title": "Using TensorFlow in MES Systems"
     },
     {
       "__outstatic": {
@@ -3211,8 +3358,8 @@
     },
     {
       "__outstatic": {
-        "commit": "1f555e2d2e80ed123c62e3c3b0517d0c404fad13",
-        "hash": "3754749957",
+        "commit": "8043ac284cd55f10a3ea2d3e077f5c3c89a013a6",
+        "hash": "3317497213",
         "path": "outstatic/content/posts/utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing.md"
       },
       "author": {
@@ -3220,16 +3367,28 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-leveraging-mes-systems-for-seamless-integration-in-a-connected-factory-strategies-for-effective-digitalization-thi.png",
+      "coverImage": "/images/mes-AyMD.webp",
       "description": "Practical strategies for implementing MES systems for factory digitization and IoT integration.",
       "lang": "en",
-      "publishedAt": "2025-08-19T09:00:00Z",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
       "slug": "utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Produkcja"
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
       "title": "Utilization of MES Systems for Seamless Integration in Connected Manufacturing"
@@ -3348,8 +3507,8 @@
     },
     {
       "__outstatic": {
-        "commit": "21759a823267f61b1b1b532d6aa30d55e3d44059",
-        "hash": "1086089837",
+        "commit": "bc36c0b06564a4b6d3f0aee64cb8a96a1eb7ce9a",
+        "hash": "1879963199",
         "path": "outstatic/content/posts/utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol.md"
       },
       "author": {
@@ -3357,16 +3516,28 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-leveraging-smart-manufacturing-and-predictive-maintenance-through-mes-implementing-sparkplug-b-protocol-for-energy.png",
+      "coverImage": "/images/sprb_omni-MyNT.png",
       "description": "The integration of the Sparkplug B protocol in MES systems enhances energy efficiency and reliability in production.",
       "lang": "en",
-      "publishedAt": "2025-08-26T09:00:00Z",
+      "publishedAt": "2025-08-26T09:00:00.000Z",
       "slug": "utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Produkcja"
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
         }
       ],
       "title": "Utilization of Smart Manufacturing and Failure Prediction in MES with Sparkplug B Protocol"
@@ -3642,8 +3813,8 @@
     },
     {
       "__outstatic": {
-        "commit": "6e8b785e2ab0835fc1587519aec61d6a76c706ea",
-        "hash": "858724473",
+        "commit": "0f7e5a15497bd2829a4aa5015793cf809c60e2c5",
+        "hash": "3552845505",
         "path": "outstatic/content/posts/wykorzystanie-inteligentnej-produkcji-i-predykcji-awarii-w-mes-z-protokoem-sparkplug-b.md"
       },
       "author": {
@@ -3651,16 +3822,28 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-leveraging-smart-manufacturing-and-predictive-maintenance-through-mes-implementing-sparkplug-b-protocol-for-energy.png",
+      "coverImage": "/images/sprb_omni-EyMT.png",
       "description": "Integracja protokołu Sparkplug B w systemach MES poprawia efektywność energetyczną i niezawodność w produkcji.",
       "lang": "pl",
-      "publishedAt": "2025-08-26T09:00:00Z",
+      "publishedAt": "2025-08-26T09:00:00.000Z",
       "slug": "wykorzystanie-inteligentnej-produkcji-i-predykcji-awarii-w-mes-z-protokoem-sparkplug-b",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Produkcja"
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
         }
       ],
       "title": "Wykorzystanie inteligentnej produkcji i predykcji awarii w MES z protokołem Sparkplug B"
@@ -3787,8 +3970,8 @@
     },
     {
       "__outstatic": {
-        "commit": "c084541c44d66a53ec89d8be7e72e4fbf8167f10",
-        "hash": "2117688483",
+        "commit": "67da74f9ef6cd940881692193c512295bd7a5498",
+        "hash": "3902380990",
         "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
       },
       "author": {
@@ -3796,16 +3979,32 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-leveraging-mes-systems-for-seamless-integration-in-a-connected-factory-strategies-for-effective-digitalization-thi.png",
+      "coverImage": "/images/mes-c0MD.webp",
       "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
       "lang": "pl",
-      "publishedAt": "2025-08-19T09:00:00Z",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
       "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Produkcja"
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
       "title": "Wykorzystanie systemów MES dla płynnej integracji w połączonej fabryce"
@@ -4427,121 +4626,6 @@
         }
       ],
       "title": "Zwiększenie efektywności Lean Manufacturing dzięki integracji MQTT w MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "3fe4cacc1c17c3605d18231b274df66b2991b23b",
-        "hash": "2374040125",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-Y5OD.jpg",
-      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        }
-      ],
-      "title": "Optymalizacja planowania zasobów w inteligentnych fabrykach: HMI i symulacja"
-    },
-    {
-      "__outstatic": {
-        "commit": "f1193373f279a905e9f47e1b79444edd7784ffeb",
-        "hash": "1161125837",
-        "path": "outstatic/content/posts/einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/sprb_omni-QxOD.png",
-      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme verbessert die Energieeffizienz und Zuverlässigkeit in der Produktion.",
-      "lang": "de",
-      "publishedAt": "2025-08-26T09:00:00.000Z",
-      "slug": "einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        }
-      ],
-      "title": "Einsatz von intelligenter Produktion und Fehlervorhersage in MES mit Sparkplug B-Protokoll"
-    },
-    {
-      "__outstatic": {
-        "commit": "29bc5245c994d608f26faf9a4901d4c0385ed5c0",
-        "hash": "3559943977",
-        "path": "outstatic/content/posts/einsatz-von-mes-systemen-fur-eine-nahtlose-integration-in-der-vernetzten-fabrik.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/mes-U0Nj.webp",
-      "description": "Praktische Strategien zur Implementierung von MES-Systemen für die Digitalisierung von Fabriken und die Integration mit IoT.",
-      "lang": "de",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "einsatz-von-mes-systemen-fur-eine-nahtlose-integration-in-der-vernetzten-fabrik",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Einsatz von MES-Systemen für eine nahtlose Integration in der vernetzten Fabrik"
     }
   ]
 }
