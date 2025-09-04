@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing'
 description: 'Practical strategies for implementing MES systems for factory digitization and IoT integration.'
-coverImage: '/images/mes-AyMD.webp'
+coverImage: '/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-YxND.webp'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'en'
 publishedAt: '2025-08-19T09:00:00.000Z'
