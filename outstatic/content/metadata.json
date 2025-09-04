@@ -1,6 +1,6 @@
 {
-  "commit": "038bd230ca6cf900d84a2c5b88375142b43b17bd",
-  "generated": "2025-09-04T12:02:12.386Z",
+  "commit": "8a0b9adc4d2b911744b5c3fa285495d30205ff67",
+  "generated": "2025-09-04T12:12:19.182Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2391,35 +2391,6 @@
     },
     {
       "__outstatic": {
-        "commit": "c304108cd55f88237bb10404984e54e1e9e2bb54",
-        "hash": "1368500565",
-        "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-batch-management-through-advanced-production-scheduling-in-industry-4-0-enhancing-manufacturing-efficie.png",
-      "description": "Jak zaawansowane planowanie produkcji może poprawić zarządzanie partiami w nowoczesnych systemach produkcyjnych.",
-      "lang": "pl",
-      "publishedAt": "2025-08-05T09:00:00Z",
-      "slug": "optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Temat",
-          "value": "Zarządzanie"
-        }
-      ],
-      "title": "Optymalizacja zarządzania partiami poprzez zaawansowane planowanie produkcji w Industry 4.0"
-    },
-    {
-      "__outstatic": {
         "commit": "e211163fd5b90a42ecb025e427fb031b38b44361",
         "hash": "4125244934",
         "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-wskazniki-kpi-w-czasie-rzeczywistym.md"
@@ -4638,6 +4609,35 @@
         }
       ],
       "title": "Optimization of Production Scheduling Using Real-Time Data from PLC"
+    },
+    {
+      "__outstatic": {
+        "commit": "8a0b9adc4d2b911744b5c3fa285495d30205ff67",
+        "hash": "696138512",
+        "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
+      "description": "Jak zaawansowane planowanie produkcji może poprawić zarządzanie partiami w nowoczesnych systemach produkcyjnych.",
+      "lang": "pl",
+      "publishedAt": "2025-08-05T09:00:00.000Z",
+      "slug": "optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Efektywne zarządzanie partiami w kontekście zaawansowanego planowania produkcji i Industry 4.0"
     }
   ]
 }
