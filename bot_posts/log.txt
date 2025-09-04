@@ -1,0 +1,191 @@
+2025-09-03 23:41:22,261 - INFO - ==================================================
+2025-09-03 23:41:22,261 - INFO - OmniBlog v3.1 Local Fixed - Start sesji
+2025-09-03 23:41:22,262 - INFO - ==================================================
+2025-09-03 23:41:22,262 - INFO - Bot uruchomiony z podfolderu bot_posts, używam root: D:\projekty\omnimes_www3
+2025-09-03 23:41:22,269 - INFO - Wczytano konfigurację z config.json
+2025-09-03 23:41:22,269 - INFO - Konfiguracja języków OK: ['pl', 'en', 'de']
+2025-09-03 23:41:22,270 - INFO - Uruchomienie OmniBlog v3.1 Local Fixed
+2025-09-03 23:41:22,273 - INFO - Wykonywanie komendy: run-due
+2025-09-03 23:41:22,273 - INFO - Ładowanie planu z: D:\projekty\omnimes_www3\content_plan.json
+2025-09-03 23:41:22,327 - INFO - Plan nie istnieje. Tworzę nowy.
+2025-09-03 23:41:22,327 - INFO - Znaleziono 0 slotów do publikacji
+2025-09-03 23:41:22,328 - INFO - Brak slotów do publikacji
+2025-09-03 23:41:22,328 - INFO - Zakończenie sesji OmniBlog v3.1 Local Fixed
+2025-09-03 23:42:19,286 - INFO - ==================================================
+2025-09-03 23:42:19,286 - INFO - OmniBlog v3.1 Local Fixed - Start sesji
+2025-09-03 23:42:19,286 - INFO - ==================================================
+2025-09-03 23:42:19,287 - INFO - Bot uruchomiony z podfolderu bot_posts, używam root: D:\projekty\omnimes_www3
+2025-09-03 23:42:19,287 - INFO - Wczytano konfigurację z config.json
+2025-09-03 23:42:19,288 - INFO - Konfiguracja języków OK: ['pl', 'en', 'de']
+2025-09-03 23:42:19,288 - INFO - Uruchomienie OmniBlog v3.1 Local Fixed
+2025-09-03 23:42:19,291 - INFO - Wykonywanie komendy: run-due
+2025-09-03 23:42:19,291 - INFO - Ładowanie planu z: D:\projekty\omnimes_www3\content_plan.json
+2025-09-03 23:42:19,292 - INFO - Plan nie istnieje. Tworzę nowy.
+2025-09-03 23:42:19,292 - INFO - Znaleziono 0 slotów do publikacji
+2025-09-03 23:42:19,292 - INFO - Brak slotów do publikacji
+2025-09-03 23:42:19,292 - INFO - Zakończenie sesji OmniBlog v3.1 Local Fixed
+2025-09-03 23:46:27,576 - INFO - ==================================================
+2025-09-03 23:46:27,577 - INFO - OmniBlog v3.1 Local Fixed - Start sesji
+2025-09-03 23:46:27,577 - INFO - ==================================================
+2025-09-03 23:46:27,577 - INFO - Bot uruchomiony z podfolderu bot_posts, używam root: D:\projekty\omnimes_www3
+2025-09-03 23:46:27,578 - INFO - Wczytano konfigurację z config.json
+2025-09-03 23:46:27,578 - INFO - Konfiguracja języków OK: ['pl', 'en', 'de']
+2025-09-03 23:46:27,578 - INFO - Uruchomienie OmniBlog v3.1 Local Fixed
+2025-09-03 23:46:27,581 - INFO - Wykonywanie komendy: run-due
+2025-09-03 23:46:27,581 - INFO - Ładowanie planu z: D:\projekty\omnimes_www3\content_plan.json
+2025-09-03 23:46:27,581 - INFO - Plan nie istnieje. Tworzę nowy.
+2025-09-03 23:46:27,581 - INFO - Znaleziono 0 slotów do publikacji
+2025-09-03 23:46:27,581 - INFO - Brak slotów do publikacji
+2025-09-03 23:46:27,581 - INFO - Zakończenie sesji OmniBlog v3.1 Local Fixed
+2025-09-03 23:52:22,269 - INFO - ==================================================
+2025-09-03 23:52:22,269 - INFO - OmniBlog v3.1 Local - Start sesji
+2025-09-03 23:52:22,270 - INFO - ==================================================
+2025-09-03 23:52:22,270 - INFO - Wczytano konfigurację z config.json
+2025-09-03 23:52:22,270 - INFO - Konfiguracja języków OK: ['pl', 'en', 'de']
+2025-09-03 23:52:22,271 - INFO - Uruchomienie OmniBlog v3.1 Local
+2025-09-03 23:52:22,276 - INFO - Wykonywanie komendy: run-due
+2025-09-03 23:52:22,276 - INFO - Ładowanie planu z: content_plan.json
+2025-09-03 23:52:22,277 - INFO - Plan wczytany pomyślnie. Slotów: 1
+2025-09-03 23:52:22,277 - INFO - Slot z statusem 'published' dodany do publikacji: 
+2025-09-03 23:52:22,278 - INFO - Znaleziono 1 slotów do publikacji
+2025-09-03 23:52:22,278 - INFO - Rozpoczynanie lokalnej publikacji 1 slotów (od indeksu 0)
+2025-09-03 23:52:22,279 - INFO - Checkpoint zapisany: slot 0/1, artykuły utworzone: 0
+2025-09-03 23:52:22,279 - INFO - ==============================
+2025-09-03 23:52:22,279 - INFO - ROZPOCZĘCIE PUBLIKACJI SLOTU
+2025-09-03 23:52:22,279 - INFO - Data: 2025-09-01T10:00:00Z
+2025-09-03 23:52:22,279 - INFO - Temat: 
+2025-09-03 23:52:22,279 - INFO - Artykuły utworzone dotychczas: 0
+2025-09-03 23:52:22,279 - INFO - ==============================
+2025-09-03 23:52:22,280 - INFO - Backup slotu zapisany: backups\2025-09-03\slot_235222.json
+2025-09-03 23:52:22,280 - INFO - Wybrana metoda generowania tematu: gpt_generated
+2025-09-03 23:52:22,280 - INFO - Generowanie tematu przez GPT na podstawie słów kluczowych
+2025-09-03 23:52:23,008 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:52:24,294 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:52:24,317 - INFO - GPT wygenerował temat: '"Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories"' na podstawie słów: production analytics, manufacturing data, AI production, OEE monitoring
+2025-09-03 23:52:24,318 - INFO - Tryb językowy: translate
+2025-09-03 23:52:24,319 - INFO - ENABLED_LANGUAGES: ['pl', 'en', 'de']
+2025-09-03 23:52:24,319 - INFO - PRIMARY_LANG: pl
+2025-09-03 23:52:24,319 - INFO - Generowanie okładki dla slug: leveraging-ai-driven-production-analytics-for-enhanced-oee-monitoring-in-smart-factories
+2025-09-03 23:52:24,319 - INFO - Generowanie okładki dla tematu: '"Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories"'
+2025-09-03 23:52:24,478 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:52:24,479 - INFO - Próba 1: Używam promptu dla kategorii 'ai'
+2025-09-03 23:52:48,533 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-09-03 23:52:49,267 - INFO - Okładka wygenerowana pomyślnie (544476 bajtów)
+2025-09-03 23:52:49,270 - INFO - Utworzono katalog: outstatic\content\posts
+2025-09-03 23:52:49,272 - INFO - Utworzono katalog: public\images
+2025-09-03 23:52:49,273 - INFO - Okładka zapisana lokalnie: public\images\leveraging-ai-driven-production-analytics-for-enhanced-oee-monitoring-in-smart-factories.png -> /images/leveraging-ai-driven-production-analytics-for-enhanced-oee-monitoring-in-smart-factories.png
+2025-09-03 23:52:49,273 - INFO - Tryb translate: generowanie PL + tłumaczenia
+2025-09-03 23:52:49,274 - INFO - Języki do tłumaczenia: ['en', 'de']
+2025-09-03 23:52:49,274 - INFO - Generowanie głównego artykułu w języku: pl
+2025-09-03 23:52:49,274 - INFO - Próba generowania artykułu 1/3 (pl)
+2025-09-03 23:52:49,274 - INFO - Generowanie artykułu: '"Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories"' w języku pl (~900 słów)
+2025-09-03 23:52:49,446 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:53:20,557 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:53:20,560 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 23:53:20,561 - INFO - Długość odpowiedzi: 5083 znaków
+2025-09-03 23:53:20,562 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 5083 znaków
+2025-09-03 23:53:20,563 - INFO - Metoda 1: Próbuję sparsować JSON (5083 znaków)
+2025-09-03 23:53:20,564 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 23:53:20,566 - INFO - Treść artykułu oczyszczona (pl): 4587 znaków
+2025-09-03 23:53:20,567 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Wykorzystanie analityki opartej na AI do monitorowania OEE w inteligentnych fabrykach'
+2025-09-03 23:53:20,568 - INFO - Długość treści artykułu (pl): 4587 znaków
+2025-09-03 23:53:20,569 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 97 znaków (min 120)
+2025-09-03 23:53:20,570 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Opis SEO za krótki: 97 znaków (min 120)']
+2025-09-03 23:53:20,571 - INFO - Próba generowania artykułu 2/3 (pl)
+2025-09-03 23:53:20,572 - INFO - Generowanie artykułu: '"Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories"' w języku pl (~900 słów)
+2025-09-03 23:53:20,767 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:53:39,958 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:53:39,961 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 23:53:39,962 - INFO - Długość odpowiedzi: 3909 znaków
+2025-09-03 23:53:39,963 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 3909 znaków
+2025-09-03 23:53:39,964 - INFO - Metoda 1: Próbuję sparsować JSON (3909 znaków)
+2025-09-03 23:53:39,964 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 23:53:39,965 - INFO - Treść artykułu oczyszczona (pl): 3470 znaków
+2025-09-03 23:53:39,966 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Wykorzystanie analityki produkcji opartej na AI do monitorowania OEE w smart factory'
+2025-09-03 23:53:39,967 - INFO - Długość treści artykułu (pl): 3470 znaków
+2025-09-03 23:53:39,968 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 80 znaków (min 120)
+2025-09-03 23:53:39,968 - WARNING - Artykuł nie przeszedł walidacji, próbuję ponownie. Problemy: ['Opis SEO za krótki: 80 znaków (min 120)']
+2025-09-03 23:53:39,969 - INFO - Próba generowania artykułu 3/3 (pl)
+2025-09-03 23:53:39,970 - INFO - Generowanie artykułu: '"Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories"' w języku pl (~900 słów)
+2025-09-03 23:53:40,144 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:54:06,101 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:54:06,105 - INFO - Otrzymano odpowiedź OpenAI dla języka pl
+2025-09-03 23:54:06,106 - INFO - Długość odpowiedzi: 4466 znaków
+2025-09-03 23:54:06,106 - INFO - Rozpoczynam parsowanie JSON. Długość bloku: 4466 znaków
+2025-09-03 23:54:06,106 - INFO - Metoda 1: Próbuję sparsować JSON (4466 znaków)
+2025-09-03 23:54:06,107 - INFO - Metoda 1: Sukces! JSON poprawnie sparsowany
+2025-09-03 23:54:06,107 - INFO - Treść artykułu oczyszczona (pl): 3941 znaków
+2025-09-03 23:54:06,107 - INFO - Artykuł wygenerowany pomyślnie (pl): 'Wykorzystanie analityki opartej na AI do monitorowania OEE w inteligentnych fabrykach'
+2025-09-03 23:54:06,107 - INFO - Długość treści artykułu (pl): 3941 znaków
+2025-09-03 23:54:06,108 - WARNING - Problemy z jakością artykułu (pl): Opis SEO za krótki: 105 znaków (min 120)
+2025-09-03 23:54:06,109 - INFO - Wygenerowano plik .md o długości 4604 znaków
+2025-09-03 23:54:06,109 - INFO - Zapisywanie posta lokalnie: outstatic\content\posts\wykorzystanie-analityki-opartej-na-ai-do-monitorowania-oee-w-inteligentnych-fabrykach.md
+2025-09-03 23:54:06,110 - INFO - schema.json nie istnieje, tworzę nowy
+2025-09-03 23:54:06,110 - INFO - Dodano tag do schema.json: Kategoria (Produkcja)
+2025-09-03 23:54:06,110 - INFO - Dodano tag do schema.json: Technologia (AI)
+2025-09-03 23:54:06,111 - INFO - Zapisano schema.json
+2025-09-03 23:54:06,111 - INFO - Dodano 2 nowych tagów do schema.json
+2025-09-03 23:54:06,111 - INFO - metadata.json nie istnieje, tworzę nowy
+2025-09-03 23:54:06,111 - WARNING - Nie udało się pobrać commit hash: name 'PROJECT_ROOT' is not defined
+2025-09-03 23:54:06,111 - INFO - Zapisano metadata.json (1 wpisów)
+2025-09-03 23:54:06,112 - INFO - Dodano wykorzystanie-analityki-opartej-na-ai-do-monitorowania-oee-w-inteligentnych-fabrykach do metadata.json
+2025-09-03 23:54:06,112 - INFO - Post wykorzystanie-analityki-opartej-na-ai-do-monitorowania-oee-w-inteligentnych-fabrykach zapisany lokalnie pomyślnie
+2025-09-03 23:54:06,112 - INFO - Główny artykuł (pl) zapisany lokalnie: wykorzystanie-analityki-opartej-na-ai-do-monitorowania-oee-w-inteligentnych-fabrykach
+2025-09-03 23:54:06,112 - INFO - === Rozpoczynam tłumaczenie na język: en ===
+2025-09-03 23:54:06,260 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:54:07,181 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:54:07,184 - INFO - Temat przetłumaczony na en: "Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories"
+2025-09-03 23:54:07,185 - INFO - Tłumaczenie tekstu na język: en
+2025-09-03 23:54:07,385 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:54:14,815 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:54:14,818 - INFO - Tłumaczenie na en ukończone
+2025-09-03 23:54:14,819 - INFO - Treść przetłumaczona na en: 3772 znaków
+2025-09-03 23:54:14,820 - INFO - Usunięto cudzysłowy z tytułu: Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories
+2025-09-03 23:54:14,823 - INFO - Wygenerowano plik .md o długości 4441 znaków
+2025-09-03 23:54:14,826 - INFO - Zapisywanie posta lokalnie: outstatic\content\posts\leveraging-ai-driven-production-analytics-for-enhanced-oee-monitoring-in-smart-factories.md
+2025-09-03 23:54:14,841 - INFO - Wczytano schema.json
+2025-09-03 23:54:14,842 - INFO - Wszystkie tagi już istnieją w schema.json
+2025-09-03 23:54:14,854 - INFO - Wczytano metadata.json (1 wpisów)
+2025-09-03 23:54:14,854 - WARNING - Nie udało się pobrać commit hash: name 'PROJECT_ROOT' is not defined
+2025-09-03 23:54:14,855 - INFO - Zapisano metadata.json (2 wpisów)
+2025-09-03 23:54:14,855 - INFO - Dodano leveraging-ai-driven-production-analytics-for-enhanced-oee-monitoring-in-smart-factories do metadata.json
+2025-09-03 23:54:14,855 - INFO - Post leveraging-ai-driven-production-analytics-for-enhanced-oee-monitoring-in-smart-factories zapisany lokalnie pomyślnie
+2025-09-03 23:54:14,856 - INFO - === Tłumaczenie na język en zakończone: leveraging-ai-driven-production-analytics-for-enhanced-oee-monitoring-in-smart-factories ===
+2025-09-03 23:54:14,856 - INFO - === Rozpoczynam tłumaczenie na język: de ===
+2025-09-03 23:54:15,039 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:54:16,010 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:54:16,015 - INFO - Temat przetłumaczony na de: "Nutzung von KI-gesteuerten Produktionsanalysen zur Verbesserung der OEE-Überwachung in Smart Factories"
+2025-09-03 23:54:16,015 - INFO - Tłumaczenie tekstu na język: de
+2025-09-03 23:54:16,209 - INFO - Klient OpenAI zainicjalizowany pomyślnie
+2025-09-03 23:54:25,097 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 23:54:25,110 - INFO - Tłumaczenie na de ukończone
+2025-09-03 23:54:25,110 - INFO - Treść przetłumaczona na de: 4281 znaków
+2025-09-03 23:54:25,110 - INFO - Usunięto cudzysłowy z tytułu: Nutzung von KI-gesteuerten Produktionsanalysen zur Verbesserung der OEE-Überwachung in Smart Factories
+2025-09-03 23:54:25,111 - INFO - Wygenerowano plik .md o długości 4978 znaków
+2025-09-03 23:54:25,112 - INFO - Zapisywanie posta lokalnie: outstatic\content\posts\nutzung-von-ki-gesteuerten-produktionsanalysen-zur-verbesserung-der-oee-uberwachung-in-smart-factories.md
+2025-09-03 23:54:25,124 - INFO - Wczytano schema.json
+2025-09-03 23:54:25,125 - INFO - Wszystkie tagi już istnieją w schema.json
+2025-09-03 23:54:25,133 - INFO - Wczytano metadata.json (2 wpisów)
+2025-09-03 23:54:25,133 - WARNING - Nie udało się pobrać commit hash: name 'PROJECT_ROOT' is not defined
+2025-09-03 23:54:25,134 - INFO - Zapisano metadata.json (3 wpisów)
+2025-09-03 23:54:25,134 - INFO - Dodano nutzung-von-ki-gesteuerten-produktionsanalysen-zur-verbesserung-der-oee-uberwachung-in-smart-factories do metadata.json
+2025-09-03 23:54:25,135 - INFO - Post nutzung-von-ki-gesteuerten-produktionsanalysen-zur-verbesserung-der-oee-uberwachung-in-smart-factories zapisany lokalnie pomyślnie
+2025-09-03 23:54:25,135 - INFO - === Tłumaczenie na język de zakończone: nutzung-von-ki-gesteuerten-produktionsanalysen-zur-verbesserung-der-oee-uberwachung-in-smart-factories ===
+2025-09-03 23:54:25,135 - INFO - ==============================
+2025-09-03 23:54:25,135 - INFO - SLOT OPUBLIKOWANY POMYŚLNIE (LOKALNIE)
+2025-09-03 23:54:25,135 - INFO - Temat: "Leveraging AI-Driven Production Analytics for Enhanced OEE Monitoring in Smart Factories"
+2025-09-03 23:54:25,135 - INFO - Slug główny: wykorzystanie-analityki-opartej-na-ai-do-monitorowania-oee-w-inteligentnych-fabrykach
+2025-09-03 23:54:25,135 - INFO - Artykuły utworzone w tym slocie: 3
+2025-09-03 23:54:25,135 - INFO - Status zmieniony na: completed
+2025-09-03 23:54:25,135 - INFO - ==============================
+2025-09-03 23:54:25,136 - INFO - Zapisywanie planu do: content_plan.json
+2025-09-03 23:54:25,136 - INFO - Plan zapisany pomyślnie
+2025-09-03 23:54:25,136 - INFO - Plan zapisany po slocie 2025-09-01T10:00:00Z
+2025-09-03 23:54:25,137 - ERROR - Błąd głównej funkcji: name 'should_push' is not defined
+2025-09-03 23:54:25,138 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\projekty\omnimes_www3\bot_posts\omniblog_v3_local.py", line 1681, in main
+    if should_push and total_articles_created > 0:
+       ^^^^^^^^^^^
+NameError: name 'should_push' is not defined
+
+2025-09-03 23:54:25,138 - INFO - Zakończenie sesji OmniBlog v3.1 Local

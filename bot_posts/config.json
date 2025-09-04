@@ -43,6 +43,7 @@
         "NIE WYMYŚLAJ: klientów, firm, case studies. Używaj tylko ogólnych przykładów branżowych.",
         "Zakończ krótkim podsumowaniem fokusującym na korzyściach dla produkcji i CTA: zachęć do zapoznania się z systemami MES/automatyzacją lub kontaktu ws. wdrożeń.",
         "Styl: techniczny ale zrozumiały, fokus na praktyczne zastosowania w zakładach produkcyjnych.",
+        "FAKTYCZNOŚĆ: Treść artykułu musi być oparta WYŁĄCZNIE na zweryfikowanych faktach, realnych rozwiązaniach i ogólnodostępnej wiedzy technicznej. Nie wolno tworzyć zmyślonych przykładów, firm ani funkcjonalności.",
         "Format wyjścia: TYLKO treść artykułu z H2/H3; bez JSON. Liczby w PLN (zł), spacje jako separatory tysięcy."
       ],
       "en": [
@@ -57,6 +58,7 @@
         "DO NOT INVENT: clients, companies, case studies. Use only general industry examples.",
         "Conclude with brief summary focusing on production benefits and CTA: encourage exploring MES/automation systems or contact regarding implementations.",
         "Style: technical but accessible, focus on practical applications in manufacturing facilities.",
+        "FACTUALITY: The article content must be based ONLY on verified facts, real-world solutions, and widely available technical knowledge. Do not invent examples, companies, or functionalities.",
         "Output format: ARTICLE BODY ONLY with H2/H3; no JSON. Use USD ($) or EUR (€) for calculations."
       ],
       "de": [
@@ -71,6 +73,7 @@
         "NICHT ERFINDEN: Kunden, Unternehmen, Fallstudien. Nur allgemeine Industriebeispiele verwenden.",
         "Schließe mit kurzer Zusammenfassung mit Fokus auf Produktionsvorteile und CTA: ermutige zur Erkundung von MES/Automatisierungssystemen oder Kontakt bezüglich Implementierungen.",
         "Stil: technisch aber zugänglich, Fokus auf praktische Anwendungen in Fertigungsstätten.",
+        "FAKTUALITÄT: Der Artikelinhalt muss AUSSCHLIESSLICH auf überprüften Fakten, realen Lösungen und allgemein zugänglichem technischen Wissen basieren. Es dürfen keine erfundenen Beispiele, Unternehmen oder Funktionalitäten erstellt werden.",
         "Ausgabeformat: NUR Artikeltext mit H2/H3; kein JSON. Berechnungen in EUR (€)."
       ]
     },
@@ -83,7 +86,7 @@
       "mes": "Minimalist flat MES system illustration on a pure white background. One symbolic element (monitor with graphs, dashboard widget, or data icon). Accent with a crisp gradient in slate blue and aqua (saturated, no pastel). Clean corporate minimalism, sharp edges. No text, no logos, no branding. Square 1024x1024 image."
     },
     
-    "topic_generation_prompt": "You are a topic generator for INDUSTRIAL MANUFACTURING content only. Based on the provided keywords, generate ONE specific topic about MES systems, Industry 4.0, industrial IoT, production automation, or factory digitalization. The topic must be practical and appeal to production engineers and manufacturing managers. Focus ONLY on manufacturing, production systems, industrial automation. Return ONLY the topic title, nothing else."
+    "topic_generation_prompt": "You are a topic generator exclusively for content related to the digitalization of industrial production. Based on the keywords provided, generate ONE specific topic related to MES systems (Manufacturing Execution Systems), Industry 4.0/5.0, the industrial Internet of Things (IoT), production automation, or factory digitalization. The topic must be practical and appealing to production engineers and production managers. Focus EXCLUSIVELY on production, production systems, and industrial automation."
   },
 
   "content": {
@@ -122,7 +125,7 @@
         "computer vision quality", "AI production", "machine learning manufacturing",
         "real-time monitoring", "production analytics", "manufacturing data",
         "edge computing factory", "industrial connectivity", "MQTT manufacturing",
-        "Sparkplug B protocol", "industrial networks", "OPC-UA systems",
+        "Sparkplug B protocol", "industrial networks", "MES systems",
         "production scheduling", "workflow management", "resource planning",
         "lean manufacturing", "continuous improvement", "production KPIs",
         "factory digitalization", "smart manufacturing", "connected factory",
@@ -151,7 +154,7 @@
           "HMI w nowoczesnych systemach MES",
           "Time Series Database dla danych IoT",
           "Edge Computing na linii produkcyjnej",
-          "Wdrożenie OPC-UA w zakładzie",
+          "Wdrożenie MES w zakładzie",
           "Monitoring OEE przez IoT",
           "AI w optymalizacji produkcji",
           "Systemy wizyjne w przemyśle",
@@ -232,6 +235,7 @@
   },
 
   "settings": {
+    "auto_push": false,
     "default_words": 900,
     "weekly_day": "MON", 
     "weekly_time": "09:00",
