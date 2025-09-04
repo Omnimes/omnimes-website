@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'einsatz-von-mes-systemen-fur-eine-nahtlose-integration-in-der-vernetzten-fabrik'
 description: 'Praktische Strategien zur Implementierung von MES-Systemen für die Digitalisierung von Fabriken und die Integration mit IoT.'
-coverImage: '/images/mes-U0Nj.webp'
+coverImage: '/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-QwMD.webp'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'de'
 publishedAt: '2025-08-19T09:00:00.000Z'
