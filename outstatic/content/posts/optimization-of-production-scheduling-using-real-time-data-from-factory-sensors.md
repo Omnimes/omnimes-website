@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optimization-of-production-scheduling-using-real-time-data-from-factory-sensors'
 description: 'Discover how real-time factory sensors can enhance production scheduling and boost efficiency.'
-coverImage: '/images/emerson-products-k2Nz.webp'
+coverImage: '/images/17041843-UxOT.png'
 tags: [{"label":"PLC","value":"plc"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"industrialAutomation","label":"Industrial Automation"}]
 lang: 'en'
 publishedAt: '2025-08-12T09:00:00.000Z'
