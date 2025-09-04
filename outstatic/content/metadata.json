@@ -1,6 +1,6 @@
 {
-  "commit": "4c4e2682d391c47d2d1b720a19613eef41380e6b",
-  "generated": "2025-09-04T12:39:23.035Z",
+  "commit": "68dcd6e4e5a460b281ffea9bb78483ea069b5a96",
+  "generated": "2025-09-04T12:41:12.303Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3969,47 +3969,6 @@
     },
     {
       "__outstatic": {
-        "commit": "67da74f9ef6cd940881692193c512295bd7a5498",
-        "hash": "3902380990",
-        "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/mes-c0MD.webp",
-      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
-      "lang": "pl",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Wykorzystanie systemów MES dla płynnej integracji w połączonej fabryce"
-    },
-    {
-      "__outstatic": {
         "commit": "97c36767cc92769c532bd2de88fdbd3b3a39a90a",
         "hash": "3253678410",
         "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
@@ -4662,6 +4621,47 @@
         }
       ],
       "title": "Optimierung des Produktionsplans durch Echtzeitdaten von PLC"
+    },
+    {
+      "__outstatic": {
+        "commit": "68dcd6e4e5a460b281ffea9bb78483ea069b5a96",
+        "hash": "3566394723",
+        "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
+      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
+      "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Wykorzystanie systemów MES dla płynnej integracji w fabryce"
     }
   ]
 }

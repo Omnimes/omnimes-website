@@ -1,12 +1,12 @@
 ---
-title: 'Wykorzystanie systemów MES dla płynnej integracji w połączonej fabryce'
+title: 'Wykorzystanie systemów MES dla płynnej integracji w fabryce'
 status: 'published'
 author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce'
 description: 'Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.'
-coverImage: '/images/mes-c0MD.webp'
+coverImage: '/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp'
 tags: [{"value":"mesSystem","label":"MES system"},{"value":"omnimes","label":"Omnimes"},{"value":"cyfryzajca","label":"cyfryzajca"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'pl'
 publishedAt: '2025-08-19T09:00:00.000Z'
