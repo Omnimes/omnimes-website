@@ -1,6 +1,6 @@
 {
-  "commit": "969b7e3f7c93b85745f1447bf802d917b6a9276d",
-  "generated": "Thu, 04 Sep 2025 10:19:29 GMT",
+  "commit": "3fe4cacc1c17c3605d18231b274df66b2991b23b",
+  "generated": "2025-09-04T10:39:51.637Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2443,31 +2443,6 @@
     },
     {
       "__outstatic": {
-        "commit": "899515ab70142bc9e7d95cd909c35633f13481fa",
-        "hash": "1302253875",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-smart-factories-leveraging-hmi-interfaces-and-simulation-for-enhanced-production-k.png",
-      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-09-01T09:00:00Z",
-      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Inteligentne fabryki"
-        }
-      ],
-      "title": "Optymalizacja planowania zasobów w inteligentnych fabrykach: HMI i symulacja"
-    },
-    {
-      "__outstatic": {
         "commit": "11c056d8529849145d766c4860655e45b7fc8b34",
         "hash": "1089257552",
         "path": "outstatic/content/posts/optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes.md"
@@ -4502,6 +4477,39 @@
         }
       ],
       "title": "Zwiększenie efektywności Lean Manufacturing dzięki integracji MQTT w MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "3fe4cacc1c17c3605d18231b274df66b2991b23b",
+        "hash": "3728013530",
+        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-QyNT.jpg",
+      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Optymalizacja planowania zasobów w inteligentnych fabrykach: HMI i symulacja"
     }
   ]
 }

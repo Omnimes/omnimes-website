@@ -9,114 +9,442 @@
       "dataType": "array",
       "title": "tags",
       "values": [
-        { "value": "mqtt", "label": "MQTT" },
-        { "value": "sparkplugB", "label": "Sparkplug B" },
-        { "value": "protokółKomunikacyjny", "label": "Protokół komunikacyjny" },
-        { "value": "qoS", "label": "QoS" },
-        { "value": "iIoT", "label": "IIoT" },
-        { "value": "komunikacjaIoT", "label": "Komunikacja IoT" },
-        { "value": "omnimes", "label": "Omnimes" },
-        { "value": "przemysł40", "label": "Przemysł 4.0" },
-        { "value": "standardyKomunikacyjne", "label": "Standardy komunikacyjne" },
-        { "value": "opcUa", "label": "OPC UA" },
-        { "value": "automatykaPrzemysłowa", "label": "Automatyka przemysłowa" },
-        { "value": "architekturaKlient/serwer", "label": "Architektura klient/serwer" },
-        { "value": "bezpieczeństwoDanych", "label": "Bezpieczeństwo danych" },
-        { "value": "standaryzacjaDanych", "label": "Standaryzacja danych" },
-        { "value": "ai", "label": "AI" },
-        { "value": "modeleLlm", "label": "Modele LLM" },
-        { "value": "apiGpt4", "label": "API GPT-4" },
-        { "value": "analizaDanych", "label": "analiza danych" },
-        { "value": "communicationProtocol", "label": "Communication Protocol" },
-        { "value": "ioTCommunication", "label": "IoT Communication" },
-        { "value": "industry40", "label": "Industry 4.0" },
-        { "value": "communicationStandards", "label": "Communication Standards" },
-        { "value": "industrialAutomation", "label": "Industrial Automation" },
-        { "value": "client/serverArchitecture", "label": "Client/Server Architecture" },
-        { "value": "dataSecurity", "label": "Data Security" },
-        { "value": "dataStandardization", "label": "Data Standardization" },
-        { "value": "dataAnalysis", "label": "Data Analysis" },
-        { "value": "gpt4Api", "label": "GPT-4 API" },
-        { "value": "llmModels", "label": "LLM Models" },
-        { "value": "ollama", "label": "Ollama" },
-        { "value": "llama3", "label": "llama3" },
-        { "value": "meta", "label": "Meta" },
-        { "value": "gemma", "label": "Gemma" },
-        { "value": "mistral", "label": "Mistral" },
-        { "value": "gpt4", "label": "GPT-4" },
-        { "value": "gpt35", "label": "GPT-3.5" },
-        { "value": "aiLocal", "label": "AI local" },
-        { "value": "redash", "label": "redash" },
-        { "value": "wizualziacjaDanych", "label": "wizualziacja danych" },
-        { "value": "bigData", "label": "big data" },
-        { "value": "raporty", "label": "raporty" },
-        { "value": "dataVisualization", "label": "Data Visualization" },
-        { "value": "reports", "label": "Reports" },
-        { "value": "kommunikationsprotokoll", "label": "Kommunikationsprotokoll" },
-        { "value": "ioTKommunikation", "label": "IoT-Kommunikation" },
-        { "value": "kommunikationsstandards", "label": "Kommunikationsstandards" },
-        { "value": "industrielleAutomatisierung", "label": "Industrielle Automatisierung" },
-        { "value": "client/serverArchitektur", "label": "Client/Server-Architektur" },
-        { "value": "datensicherheit", "label": "Datensicherheit" },
-        { "value": "datenstandardisierung", "label": "Datenstandardisierung" },
-        { "value": "datenanalyse", "label": "Datenanalyse" },
-        { "value": "llmModelle", "label": "LLM-Modelle" },
-        { "value": "datenvisualisierung", "label": "Datenvisualisierung" },
-        { "value": "berichte", "label": "Berichte" },
-        { "value": "tensorFlow", "label": "TensorFlow" },
-        { "value": "xgBoost", "label": "XGBoost" },
-        { "value": "lightGbm", "label": "LightGBM" },
-        { "value": "catBoost", "label": "CatBoost" },
-        { "value": "mesSystem", "label": "MES system" },
-        { "value": "wydajnośćAlgorytmów", "label": "wydajność algorytmów" },
-        { "value": "zbieranieDanychPrzemysłowych", "label": "zbieranie danych przemysłowych" },
-        { "value": "daneZMaszyn", "label": "dane z maszyn" },
-        { "value": "uczenieMaszynoweWPrzemyśle", "label": "uczenie maszynowe w przemyśle" },
-        { "value": "pyTorch", "label": "PyTorch" },
-        { "value": "danePrzemysłowe", "label": "dane przemysłowe" },
-        { "value": "porównanieAlgorytmów", "label": "porównanie algorytmów" },
-        { "value": "influxDb", "label": "InfluxDB" },
-        { "value": "mongoDb", "label": "MongoDB" },
-        { "value": "timeSeriesData", "label": "time-series data" },
-        { "value": "analizaDanychCzasowych", "label": "analiza danych czasowych" },
-        { "value": "web3", "label": "Web3" },
-        { "value": "blockchain", "label": "blockchain" },
-        { "value": "oze", "label": "OZE" },
-        { "value": "odnawialneŹródłaEnergii", "label": "odnawialne źródła energii" },
-        { "value": "tokenizacjaEnergii", "label": "tokenizacja energii" },
-        { "value": "smartKontrakty", "label": "smart kontrakty" },
-        { "value": "monitorowanieZużyciaEnergii", "label": "monitorowanie zużycia energii" },
-        { "value": "automatyzacjaRozliczeń", "label": "automatyzacja rozliczeń" },
-        { "value": "handelEnergiąP2P", "label": "handel energią P2P" },
-        { "value": "zrównoważonaEnergetyka", "label": "zrównoważona energetyka" },
-        { "value": "onimes", "label": "onimes" },
-        { "value": "platforma", "label": "platforma" },
-        { "value": "cyfryzajca", "label": "cyfryzajca" },
-        { "value": "langchainLlm", "label": "langchain llm" },
-        { "value": "langchain", "label": "langchain" },
-        { "value": "faiss", "label": "faiss" },
-        { "value": "chatbot", "label": "chatbot" },
-        { "value": "gpt", "label": "gpt" },
-        { "value": "omnimess", "label": "OmniMES" },
-        { "value": "mes-technologies", "label": "technologie MES" },
-        { "value": "production-efficiency", "label": "wydajność produkcji" },
-        { "value": "iot", "label": "IoT" },
-        { "value": "Automatyzacja", "label": "Automatyzacja" },
-        { "value": "analityka produkcji", "label": "analityka produkcji" },
-        { "value": "Produkcja", "label": "Produkcja" },
-        { "value": "Analityka", "label": "Analityka" },
-        { "value": "Kontrola jakości", "label": "Kontrola jakości" },
-        { "value": "Computer Vision", "label": "Computer Vision" },
-        { "value": "Digital Twin", "label": "Digital Twin" },
-        { "value": "Industry 5.0", "label": "Industry 5.0" },
-        { "value": "OEE", "label": "OEE" },
-        { "value": "IoT przemysłowy", "label": "IoT przemysłowy" },
-        { "value": "redukcja przestojów", "label": "redukcja przestojów" },
-        { "value": "Cyfrowe bliźniaki", "label": "Cyfrowe bliźniaki" },
-        { "value": "Utrzymanie predykcyjne", "label": "Utrzymanie predykcyjne" },
-        { "value": "Lean Manufacturing", "label": "Lean Manufacturing" },
-        { "value": "Zarządzanie", "label": "Zarządzanie" },
-        { "value": "Inteligentne fabryki", "label": "Inteligentne fabryki" }
+        {
+          "value": "mqtt",
+          "label": "MQTT"
+        },
+        {
+          "value": "sparkplugB",
+          "label": "Sparkplug B"
+        },
+        {
+          "value": "protokółKomunikacyjny",
+          "label": "Protokół komunikacyjny"
+        },
+        {
+          "value": "qoS",
+          "label": "QoS"
+        },
+        {
+          "value": "iIoT",
+          "label": "IIoT"
+        },
+        {
+          "value": "komunikacjaIoT",
+          "label": "Komunikacja IoT"
+        },
+        {
+          "value": "omnimes",
+          "label": "Omnimes"
+        },
+        {
+          "value": "przemysł40",
+          "label": "Przemysł 4.0"
+        },
+        {
+          "value": "standardyKomunikacyjne",
+          "label": "Standardy komunikacyjne"
+        },
+        {
+          "value": "opcUa",
+          "label": "OPC UA"
+        },
+        {
+          "value": "automatykaPrzemysłowa",
+          "label": "Automatyka przemysłowa"
+        },
+        {
+          "value": "architekturaKlient/serwer",
+          "label": "Architektura klient/serwer"
+        },
+        {
+          "value": "bezpieczeństwoDanych",
+          "label": "Bezpieczeństwo danych"
+        },
+        {
+          "value": "standaryzacjaDanych",
+          "label": "Standaryzacja danych"
+        },
+        {
+          "value": "ai",
+          "label": "AI"
+        },
+        {
+          "value": "modeleLlm",
+          "label": "Modele LLM"
+        },
+        {
+          "value": "apiGpt4",
+          "label": "API GPT-4"
+        },
+        {
+          "value": "analizaDanych",
+          "label": "analiza danych"
+        },
+        {
+          "value": "communicationProtocol",
+          "label": "Communication Protocol"
+        },
+        {
+          "value": "ioTCommunication",
+          "label": "IoT Communication"
+        },
+        {
+          "value": "industry40",
+          "label": "Industry 4.0"
+        },
+        {
+          "value": "communicationStandards",
+          "label": "Communication Standards"
+        },
+        {
+          "value": "industrialAutomation",
+          "label": "Industrial Automation"
+        },
+        {
+          "value": "client/serverArchitecture",
+          "label": "Client/Server Architecture"
+        },
+        {
+          "value": "dataSecurity",
+          "label": "Data Security"
+        },
+        {
+          "value": "dataStandardization",
+          "label": "Data Standardization"
+        },
+        {
+          "value": "dataAnalysis",
+          "label": "Data Analysis"
+        },
+        {
+          "value": "gpt4Api",
+          "label": "GPT-4 API"
+        },
+        {
+          "value": "llmModels",
+          "label": "LLM Models"
+        },
+        {
+          "value": "ollama",
+          "label": "Ollama"
+        },
+        {
+          "value": "llama3",
+          "label": "llama3"
+        },
+        {
+          "value": "meta",
+          "label": "Meta"
+        },
+        {
+          "value": "gemma",
+          "label": "Gemma"
+        },
+        {
+          "value": "mistral",
+          "label": "Mistral"
+        },
+        {
+          "value": "gpt4",
+          "label": "GPT-4"
+        },
+        {
+          "value": "gpt35",
+          "label": "GPT-3.5"
+        },
+        {
+          "value": "aiLocal",
+          "label": "AI local"
+        },
+        {
+          "value": "redash",
+          "label": "redash"
+        },
+        {
+          "value": "wizualziacjaDanych",
+          "label": "wizualziacja danych"
+        },
+        {
+          "value": "bigData",
+          "label": "big data"
+        },
+        {
+          "value": "raporty",
+          "label": "raporty"
+        },
+        {
+          "value": "dataVisualization",
+          "label": "Data Visualization"
+        },
+        {
+          "value": "reports",
+          "label": "Reports"
+        },
+        {
+          "value": "kommunikationsprotokoll",
+          "label": "Kommunikationsprotokoll"
+        },
+        {
+          "value": "ioTKommunikation",
+          "label": "IoT-Kommunikation"
+        },
+        {
+          "value": "kommunikationsstandards",
+          "label": "Kommunikationsstandards"
+        },
+        {
+          "value": "industrielleAutomatisierung",
+          "label": "Industrielle Automatisierung"
+        },
+        {
+          "value": "client/serverArchitektur",
+          "label": "Client/Server-Architektur"
+        },
+        {
+          "value": "datensicherheit",
+          "label": "Datensicherheit"
+        },
+        {
+          "value": "datenstandardisierung",
+          "label": "Datenstandardisierung"
+        },
+        {
+          "value": "datenanalyse",
+          "label": "Datenanalyse"
+        },
+        {
+          "value": "llmModelle",
+          "label": "LLM-Modelle"
+        },
+        {
+          "value": "datenvisualisierung",
+          "label": "Datenvisualisierung"
+        },
+        {
+          "value": "berichte",
+          "label": "Berichte"
+        },
+        {
+          "value": "tensorFlow",
+          "label": "TensorFlow"
+        },
+        {
+          "value": "xgBoost",
+          "label": "XGBoost"
+        },
+        {
+          "value": "lightGbm",
+          "label": "LightGBM"
+        },
+        {
+          "value": "catBoost",
+          "label": "CatBoost"
+        },
+        {
+          "value": "mesSystem",
+          "label": "MES system"
+        },
+        {
+          "value": "wydajnośćAlgorytmów",
+          "label": "wydajność algorytmów"
+        },
+        {
+          "value": "zbieranieDanychPrzemysłowych",
+          "label": "zbieranie danych przemysłowych"
+        },
+        {
+          "value": "daneZMaszyn",
+          "label": "dane z maszyn"
+        },
+        {
+          "value": "uczenieMaszynoweWPrzemyśle",
+          "label": "uczenie maszynowe w przemyśle"
+        },
+        {
+          "value": "pyTorch",
+          "label": "PyTorch"
+        },
+        {
+          "value": "danePrzemysłowe",
+          "label": "dane przemysłowe"
+        },
+        {
+          "value": "porównanieAlgorytmów",
+          "label": "porównanie algorytmów"
+        },
+        {
+          "value": "influxDb",
+          "label": "InfluxDB"
+        },
+        {
+          "value": "mongoDb",
+          "label": "MongoDB"
+        },
+        {
+          "value": "timeSeriesData",
+          "label": "time-series data"
+        },
+        {
+          "value": "analizaDanychCzasowych",
+          "label": "analiza danych czasowych"
+        },
+        {
+          "value": "web3",
+          "label": "Web3"
+        },
+        {
+          "value": "blockchain",
+          "label": "blockchain"
+        },
+        {
+          "value": "oze",
+          "label": "OZE"
+        },
+        {
+          "value": "odnawialneŹródłaEnergii",
+          "label": "odnawialne źródła energii"
+        },
+        {
+          "value": "tokenizacjaEnergii",
+          "label": "tokenizacja energii"
+        },
+        {
+          "value": "smartKontrakty",
+          "label": "smart kontrakty"
+        },
+        {
+          "value": "monitorowanieZużyciaEnergii",
+          "label": "monitorowanie zużycia energii"
+        },
+        {
+          "value": "automatyzacjaRozliczeń",
+          "label": "automatyzacja rozliczeń"
+        },
+        {
+          "value": "handelEnergiąP2P",
+          "label": "handel energią P2P"
+        },
+        {
+          "value": "zrównoważonaEnergetyka",
+          "label": "zrównoważona energetyka"
+        },
+        {
+          "value": "onimes",
+          "label": "onimes"
+        },
+        {
+          "value": "platforma",
+          "label": "platforma"
+        },
+        {
+          "value": "cyfryzajca",
+          "label": "cyfryzajca"
+        },
+        {
+          "value": "langchainLlm",
+          "label": "langchain llm"
+        },
+        {
+          "value": "langchain",
+          "label": "langchain"
+        },
+        {
+          "value": "faiss",
+          "label": "faiss"
+        },
+        {
+          "value": "chatbot",
+          "label": "chatbot"
+        },
+        {
+          "value": "gpt",
+          "label": "gpt"
+        },
+        {
+          "value": "omnimess",
+          "label": "OmniMES"
+        },
+        {
+          "value": "mes-technologies",
+          "label": "technologie MES"
+        },
+        {
+          "value": "production-efficiency",
+          "label": "wydajność produkcji"
+        },
+        {
+          "value": "iot",
+          "label": "IoT"
+        },
+        {
+          "value": "Automatyzacja",
+          "label": "Automatyzacja"
+        },
+        {
+          "value": "analityka produkcji",
+          "label": "analityka produkcji"
+        },
+        {
+          "value": "Produkcja",
+          "label": "Produkcja"
+        },
+        {
+          "value": "Analityka",
+          "label": "Analityka"
+        },
+        {
+          "value": "Kontrola jakości",
+          "label": "Kontrola jakości"
+        },
+        {
+          "value": "Computer Vision",
+          "label": "Computer Vision"
+        },
+        {
+          "value": "Digital Twin",
+          "label": "Digital Twin"
+        },
+        {
+          "value": "Industry 5.0",
+          "label": "Industry 5.0"
+        },
+        {
+          "value": "OEE",
+          "label": "OEE"
+        },
+        {
+          "value": "IoT przemysłowy",
+          "label": "IoT przemysłowy"
+        },
+        {
+          "value": "redukcja przestojów",
+          "label": "redukcja przestojów"
+        },
+        {
+          "value": "Cyfrowe bliźniaki",
+          "label": "Cyfrowe bliźniaki"
+        },
+        {
+          "value": "Utrzymanie predykcyjne",
+          "label": "Utrzymanie predykcyjne"
+        },
+        {
+          "value": "Lean Manufacturing",
+          "label": "Lean Manufacturing"
+        },
+        {
+          "value": "Zarządzanie",
+          "label": "Zarządzanie"
+        },
+        {
+          "value": "Inteligentne fabryki",
+          "label": "Inteligentne fabryki"
+        },
+        {
+          "value": "hmi",
+          "label": "HMI"
+        }
       ]
     },
     "lang": {
