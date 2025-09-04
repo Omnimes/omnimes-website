@@ -6,8 +6,8 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optimization-of-resource-planning-in-smart-factories-hmi-and-simulation'
 description: 'How to use HMI and simulations to optimize resource planning in smart factories and improve production KPIs.'
-coverImage: '/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-g1OT.jpg'
-tags: [{"label":"HMI","value":"hmi"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"}]
+coverImage: '/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-gxMj.jpg'
+tags: [{"label":"HMI","value":"hmi"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"mesSystem","label":"MES system"},{"value":"omnimes","label":"Omnimes"}]
 lang: 'en'
 publishedAt: '2025-09-01T09:00:00.000Z'
 ---
