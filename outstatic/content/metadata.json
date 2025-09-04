@@ -1,6 +1,6 @@
 {
   "commit": "038bd230ca6cf900d84a2c5b88375142b43b17bd",
-  "generated": "2025-09-04T11:57:18.728Z",
+  "generated": "2025-09-04T11:59:54.445Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2250,9 +2250,9 @@
     },
     {
       "__outstatic": {
-        "commit": "4addd6ecc594cebe5f4dde07af778fb3c1c19b9b",
-        "hash": "2507874342",
-        "path": "outstatic/content/posts/optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren.md"
+        "commit": "2355dbfb3e464fd0fa382d47166e490fbdc6022f",
+        "hash": "196036578",
+        "path": "outstatic/content/posts/optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -2260,10 +2260,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/topic-optimizing-production-scheduling-through-real-time-data-from-factory-sensors-in-a-virtual-factory-environment-this.png",
-      "description": "Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.",
-      "lang": "de",
+      "description": "Dowiedz się, jak czujniki fabryczne w czasie rzeczywistym mogą poprawić harmonogramowanie produkcji i zwiększyć efektywność.",
+      "lang": "pl",
       "publishedAt": "2025-08-12T09:00:00Z",
-      "slug": "optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren",
+      "slug": "optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych",
       "status": "published",
       "tags": [
         {
@@ -2271,7 +2271,7 @@
           "value": "Produkcja"
         }
       ],
-      "title": "Optimierung des Produktionsplans durch Echtzeitdaten von Fabriksensoren"
+      "title": "Optymalizacja harmonogramu produkcji dzięki danym w czasie rzeczywistym z czujników fabrycznych"
     },
     {
       "__outstatic": {
@@ -4605,19 +4605,19 @@
     {
       "__outstatic": {
         "commit": "038bd230ca6cf900d84a2c5b88375142b43b17bd",
-        "hash": "3338108140",
-        "path": "outstatic/content/posts/optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych.md"
+        "hash": "72574539",
+        "path": "outstatic/content/posts/optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/emerson-products-EwNz.webp",
-      "description": "Dowiedz się, jak czujniki fabryczne w czasie rzeczywistym mogą poprawić harmonogramowanie produkcji i zwiększyć efektywność.",
-      "lang": "pl",
+      "coverImage": "/images/emerson-products-MwMT.webp",
+      "description": "Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.",
+      "lang": "de",
       "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych",
+      "slug": "optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren",
       "status": "published",
       "tags": [
         {
@@ -4625,19 +4625,19 @@
           "value": "plc"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
           "label": "Industry 4.0",
           "value": "industry40"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
         },
         {
           "label": "Industry 5.0",
           "value": "Industry 5.0"
         }
       ],
-      "title": "Optymalizacja harmonogramu produkcji dzięki danym w czasie rzeczywistym z PLC"
+      "title": "Optimierung des Produktionsplans durch Echtzeitdaten von PLC"
     }
   ]
 }
