@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:43:31.765Z",
+  "generated": "2025-09-09T17:43:36.506Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3233,6 +3233,39 @@
     },
     {
       "__outstatic": {
+        "commit": "41eebf676e13eb7dfecfd59a5deb75268e230d5f",
+        "hash": "1901069639",
+        "path": "outstatic/content/posts/utilization-of-computer-vision-and-digital-twin-technology-in-quality-control-in-manufacturing.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-computer-vision-and-digital-twin-technology-for-enhanced-quality-control-in-manufacturing-processes-exp.png",
+      "description": "How the integration of computer vision systems with digital twin technology can revolutionize quality control in manufacturing.",
+      "lang": "en",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "utilization-of-computer-vision-and-digital-twin-technology-in-quality-control-in-manufacturing",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "Computer Vision"
+        },
+        {
+          "label": "Przemysł",
+          "value": "Digital Twin"
+        },
+        {
+          "label": "Kontrola jakości",
+          "value": "produkcja"
+        }
+      ],
+      "title": "Utilization of Computer Vision and Digital Twin Technology in Quality Control in Manufacturing"
+    },
+    {
+      "__outstatic": {
         "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
         "hash": "3236711354",
         "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
@@ -3994,39 +4027,6 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "65dbd40941b34e141e94ff8130d1a7630f6f705b",
-        "hash": "3471039577",
-        "path": "outstatic/content/posts/wykorzystanie-technologii-computer-vision-i-digital-twin-w-kontroli-jakosci-w-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-computer-vision-and-digital-twin-technology-for-enhanced-quality-control-in-manufacturing-processes-exp.png",
-      "description": "Jak integracja systemów wizji komputerowej z technologią cyfrowego bliźniaka może zrewolucjonizować kontrolę jakości w produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-03-26T09:00:00Z",
-      "slug": "wykorzystanie-technologii-computer-vision-i-digital-twin-w-kontroli-jakosci-w-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Computer Vision"
-        },
-        {
-          "label": "Przemysł",
-          "value": "Digital Twin"
-        },
-        {
-          "label": "Kontrola jakości",
-          "value": "produkcja"
-        }
-      ],
-      "title": "Wykorzystanie technologii Computer Vision i Digital Twin w kontroli jakości w produkcji"
     },
     {
       "__outstatic": {
