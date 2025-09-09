@@ -1,6 +1,6 @@
 {
-  "commit": "94ec94a8de4320720119abbd52738b81497554cd",
-  "generated": "Tue, 09 Sep 2025 09:16:58 GMT",
+  "commit": "4a85b300b033ddbf97e39ec8e78c7fd4db871e85",
+  "generated": "2025-09-09T09:34:47.178Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2407,39 +2407,6 @@
     },
     {
       "__outstatic": {
-        "commit": "c93707139041c4419d8ef6fff22b148124cb4908",
-        "hash": "779790609",
-        "path": "outstatic/content/posts/plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/plc-U3OD.png",
-      "description": "In the era of Industry 5.0, production efficiency increasingly depends on an enterprise’s ability to process and use data in real time. Integrating Programmable Logic Controllers (PLCs) with Manufacturing Execution Systems (MES) is now a key pillar of digital transformation in industrial plants. Solutions such as Multiprojekt’s Omnimes enable companies to fully realize the potential of this integration.",
-      "lang": "en",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        }
-      ],
-      "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
-    },
-    {
-      "__outstatic": {
         "commit": "e211163fd5b90a42ecb025e427fb031b38b44361",
         "hash": "4125244934",
         "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-wskazniki-kpi-w-czasie-rzeczywistym.md"
@@ -4729,6 +4696,39 @@
         }
       ],
       "title": "Zwiększenie efektywności Lean Manufacturing dzięki integracji MQTT w MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "4a85b300b033ddbf97e39ec8e78c7fd4db871e85",
+        "hash": "2914838934",
+        "path": "outstatic/content/posts/plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/plc-c2MT.png",
+      "description": "In the era of Industry 5.0, production efficiency increasingly depends on an enterprise’s ability to process and use data in real time. Integrating Programmable Logic Controllers (PLCs) with Manufacturing Execution Systems (MES) is now a key pillar of digital transformation in industrial plants. Solutions such as Multiprojekt’s Omnimes enable companies to fully realize the potential of this integration.",
+      "lang": "en",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        }
+      ],
+      "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
     }
   ]
 }

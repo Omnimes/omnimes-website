@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry'
 description: 'In the era of Industry 5.0, production efficiency increasingly depends on an enterprise’s ability to process and use data in real time. Integrating Programmable Logic Controllers (PLCs) with Manufacturing Execution Systems (MES) is now a key pillar of digital transformation in industrial plants. Solutions such as Multiprojekt’s Omnimes enable companies to fully realize the potential of this integration.'
-coverImage: '/images/plc-U3OD.png'
+coverImage: '/images/plc-c2MT.png'
 tags: [{"label":"PLC","value":"plc"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"industrialAutomation","label":"Industrial Automation"}]
 lang: 'en'
 publishedAt: '2025-08-12T09:00:00.000Z'
