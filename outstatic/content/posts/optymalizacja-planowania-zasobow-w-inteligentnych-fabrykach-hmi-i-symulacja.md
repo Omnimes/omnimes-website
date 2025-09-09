@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja'
-description: 'Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.'
+description: 'Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0'
 coverImage: '/images/2-Y3Mj.png'
 tags: [{"label":"HMI","value":"hmi"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"}]
 lang: 'pl'

@@ -1,6 +1,6 @@
 {
-  "commit": "0d74dae5231eb497e6aeac4da3edba2823039b61",
-  "generated": "2025-09-09T07:49:29.436Z",
+  "commit": "5704a0cd24bfcb820a1388f80370984638e5e0b3",
+  "generated": "2025-09-09T07:50:24.776Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4686,43 +4686,6 @@
     },
     {
       "__outstatic": {
-        "commit": "84f021817d544f42b802ea4d21bdc82e9dd1e538",
-        "hash": "1556838618",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2-Y3Mj.png",
-      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        }
-      ],
-      "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
-    },
-    {
-      "__outstatic": {
         "commit": "0d74dae5231eb497e6aeac4da3edba2823039b61",
         "hash": "366337345",
         "path": "outstatic/content/posts/optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation.md"
@@ -4757,6 +4720,43 @@
         }
       ],
       "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "5704a0cd24bfcb820a1388f80370984638e5e0b3",
+        "hash": "769577208",
+        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2-Y3Mj.png",
+      "description": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
     }
   ]
 }
