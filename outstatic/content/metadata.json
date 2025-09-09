@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:42:25.561Z",
+  "generated": "2025-09-09T17:42:30.582Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3451,6 +3451,31 @@
     },
     {
       "__outstatic": {
+        "commit": "73b9fe8e14599e428143b2122b08c45ef54dec1c",
+        "hash": "3259559806",
+        "path": "outstatic/content/posts/utilization-of-industry-5-0-principles-for-optimizing-production-scheduling.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-industry-5-0-principles-for-optimized-production-scheduling-in-automated-manufacturing-environments-thi.png",
+      "description": "Discover how Industry 5.0 can enhance scheduling processes in automated manufacturing.",
+      "lang": "en",
+      "publishedAt": "2025-04-19T09:00:00Z",
+      "slug": "utilization-of-industry-5-0-principles-for-optimizing-production-scheduling",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Utilization of Industry 5.0 Principles for Optimizing Production Scheduling"
+    },
+    {
+      "__outstatic": {
         "commit": "426d7dee267bc0e22180defd1ca83ca34755f5f3",
         "hash": "3443679597",
         "path": "outstatic/content/posts/utilization-of-edge-computing-and-factory-sensors-in-batch-production-management.md"
@@ -4264,31 +4289,6 @@
         }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "5fd3f27168ac4fb21d98da504b3d866814c84a16",
-        "hash": "1172148768",
-        "path": "outstatic/content/posts/wykorzystanie-zasad-industry-5-0-do-optymalizacji-harmonogramowania-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-industry-5-0-principles-for-optimized-production-scheduling-in-automated-manufacturing-environments-thi.png",
-      "description": "Odkryj, jak Industry 5.0 może poprawić procesy harmonogramowania w zautomatyzowanej produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-04-19T09:00:00Z",
-      "slug": "wykorzystanie-zasad-industry-5-0-do-optymalizacji-harmonogramowania-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Wykorzystanie zasad Industry 5.0 do optymalizacji harmonogramowania produkcji"
     },
     {
       "__outstatic": {
