@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'sterowniki-plc-i-systemem-mes-jako-fundament-cyfrowej-transformacji-przemyslu'
 description: 'W erze przemysłu 5.0 efektywność produkcji zależy w coraz większym stopniu od zdolności przedsiębiorstw do przetwarzania i wykorzystywania danych w czasie rzeczywistym. Integracja sterowników programowalnych PLC (Programmable Logic Controllers) z systemami wykonawczymi produkcji MES (Manufacturing Execution Systems) stanowi obecnie kluczowy element cyfrowej transformacji zakładów przemysłowych. Rozwiązania takie jak system Omnimes firmy Multiprojekt umożliwiają przedsiębiorstwom pełne wykorzystanie potencjału tej integracji.'
-coverImage: '/images/plc-I2NT.png'
+coverImage: '/images/plc-czMj.png'
 tags: [{"label":"PLC","value":"plc"},{"value":"omnimes","label":"Omnimes"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'pl'
 publishedAt: '2025-08-12T09:00:00.000Z'
