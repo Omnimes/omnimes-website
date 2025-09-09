@@ -1,6 +1,6 @@
 {
-  "commit": "78218d17c2fe632b24211e5dcbc1b5a4a520dca8",
-  "generated": "2025-09-09T07:35:02.152Z",
+  "commit": "91acc348574c1dd6c3e521b3a53ab6aaee61e91e",
+  "generated": "2025-09-09T07:35:39.043Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4698,39 +4698,6 @@
     },
     {
       "__outstatic": {
-        "commit": "6498b739bac65022af446b48fe25aaf15aa63090",
-        "hash": "2948964814",
-        "path": "outstatic/content/posts/industry-4-0-and-ai-vector-databases-as-the-knowledge-layer-for-time-series-data.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database_vector-kyMj.png",
-      "description": "Industry 4.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.",
-      "lang": "en",
-      "publishedAt": "2025-09-09T06:56:07.720Z",
-      "slug": "industry-4-0-and-ai-vector-databases-as-the-knowledge-layer-for-time-series-data",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Database Vector",
-          "value": "databaseVector"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Industry 5.0 and AI: Vector Databases as the Knowledge Layer for Time Series Data"
-    },
-    {
-      "__outstatic": {
         "commit": "78218d17c2fe632b24211e5dcbc1b5a4a520dca8",
         "hash": "495063793",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
@@ -4765,6 +4732,39 @@
         }
       ],
       "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
+    },
+    {
+      "__outstatic": {
+        "commit": "91acc348574c1dd6c3e521b3a53ab6aaee61e91e",
+        "hash": "1802100117",
+        "path": "outstatic/content/posts/industry-4-0-and-ai-vector-databases-as-the-knowledge-layer-for-time-series-data.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database_vector-kyMj.png",
+      "description": "Industry 4.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.",
+      "lang": "en",
+      "publishedAt": "2025-09-09T06:56:07.720Z",
+      "slug": "industry-4-0-and-ai-vector-databases-as-the-knowledge-layer-for-time-series-data",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Database Vector",
+          "value": "databaseVector"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Practical Applications of AI in the Era of Factory Digitalization: How Can Vector Databases Support Time Series Analysis?"
     }
   ]
 }

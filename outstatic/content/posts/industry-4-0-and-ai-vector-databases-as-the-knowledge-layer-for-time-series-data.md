@@ -1,5 +1,5 @@
 ---
-title: 'Industry 5.0 and AI: Vector Databases as the Knowledge Layer for Time Series Data'
+title: 'Practical Applications of AI in the Era of Factory Digitalization: How Can Vector Databases Support Time Series Analysis?'
 status: 'published'
 author:
   name: 'Martin Szerment'
