@@ -1,6 +1,6 @@
 {
   "commit": "b00152a1b956ac87209031208ac329977a8e0217",
-  "generated": "Tue, 09 Sep 2025 17:51:46 GMT",
+  "generated": "Tue, 09 Sep 2025 18:01:04 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -1353,63 +1353,6 @@
     },
     {
       "__outstatic": {
-        "commit": "eff1359193c8c49290730d98f67fae649bef6982",
-        "hash": "180187371",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/4.png",
-      "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
-      "lang": "pl",
-      "publishedAt": "2024-06-05T07:21:12.000Z",
-      "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "Protokół komunikacyjny",
-          "value": "protokółKomunikacyjny"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Komunikacja IoT",
-          "value": "komunikacjaIoT"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Przemysł 4.0",
-          "value": "przemysł40"
-        },
-        {
-          "label": "Standardy komunikacyjne",
-          "value": "standardyKomunikacyjne"
-        }
-      ],
-      "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
-    },
-    {
-      "__outstatic": {
         "commit": "327b468c156ea952f508cf7438285440ad2fea8a",
         "hash": "2451523430",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i.md"
@@ -1464,6 +1407,63 @@
         }
       ],
       "title": "MQTT vs. Sparkplug B: Vergleich der Kommunikationsprotokolle Teil I"
+    },
+    {
+      "__outstatic": {
+        "commit": "eff1359193c8c49290730d98f67fae649bef6982",
+        "hash": "180187371",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/4.png",
+      "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
+      "lang": "pl",
+      "publishedAt": "2024-06-05T07:21:12.000Z",
+      "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "Protokół komunikacyjny",
+          "value": "protokółKomunikacyjny"
+        },
+        {
+          "label": "QoS",
+          "value": "qoS"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Komunikacja IoT",
+          "value": "komunikacjaIoT"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Przemysł 4.0",
+          "value": "przemysł40"
+        },
+        {
+          "label": "Standardy komunikacyjne",
+          "value": "standardyKomunikacyjne"
+        }
+      ],
+      "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
     },
     {
       "__outstatic": {
@@ -1767,39 +1767,6 @@
     },
     {
       "__outstatic": {
-        "commit": "11c056d8529849145d766c4860655e45b7fc8b34",
-        "hash": "1089257552",
-        "path": "outstatic/content/posts/optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/optimizing-overall-equipment-effectiveness-oee-through-energy-saving-strategies-in-mes-leveraging-industrial-iot-for-enh.png",
-      "description": "Dowiedz się, jak zastosowanie IoT przemysłowego w systemach MES może zwiększyć efektywność produkcji i obniżyć zużycie energii.",
-      "lang": "pl",
-      "publishedAt": "2025-05-05T09:00:00Z",
-      "slug": "optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Tematyka",
-          "value": "OEE"
-        },
-        {
-          "label": "Tematyka",
-          "value": "IoT przemysłowy"
-        },
-        {
-          "label": "Tematyka",
-          "value": "MES"
-        }
-      ],
-      "title": "Optymalizacja OEE poprzez strategie oszczędzania energii w MES"
-    },
-    {
-      "__outstatic": {
         "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
         "hash": "46414442",
         "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
@@ -1838,6 +1805,39 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "11c056d8529849145d766c4860655e45b7fc8b34",
+        "hash": "1089257552",
+        "path": "outstatic/content/posts/optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/optimizing-overall-equipment-effectiveness-oee-through-energy-saving-strategies-in-mes-leveraging-industrial-iot-for-enh.png",
+      "description": "Dowiedz się, jak zastosowanie IoT przemysłowego w systemach MES może zwiększyć efektywność produkcji i obniżyć zużycie energii.",
+      "lang": "pl",
+      "publishedAt": "2025-05-05T09:00:00Z",
+      "slug": "optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Tematyka",
+          "value": "OEE"
+        },
+        {
+          "label": "Tematyka",
+          "value": "IoT przemysłowy"
+        },
+        {
+          "label": "Tematyka",
+          "value": "MES"
+        }
+      ],
+      "title": "Optymalizacja OEE poprzez strategie oszczędzania energii w MES"
     },
     {
       "__outstatic": {
@@ -3223,35 +3223,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d763634fccc2dca867be930bceaf8bd339cf98b1",
-        "hash": "2589521220",
-        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
-      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
-      "lang": "pl",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        }
-      ],
-      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
-    },
-    {
-      "__outstatic": {
         "commit": "41810cecbc6bc505e9a7f79757d99c87ef16dc9f",
         "hash": "1548428804",
         "path": "outstatic/content/posts/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb.md"
@@ -3286,6 +3257,35 @@
         }
       ],
       "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
+    },
+    {
+      "__outstatic": {
+        "commit": "d763634fccc2dca867be930bceaf8bd339cf98b1",
+        "hash": "2589521220",
+        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
+      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
+      "lang": "pl",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
     },
     {
       "__outstatic": {
