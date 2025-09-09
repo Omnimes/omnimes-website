@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:37:25.904Z",
+  "generated": "2025-09-09T17:39:08.231Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2162,31 +2162,6 @@
     },
     {
       "__outstatic": {
-        "commit": "fdbce6ac7549e61deb212b85d34d7729f4a5f239",
-        "hash": "1005537009",
-        "path": "outstatic/content/posts/optimierung-der-ressourcenplanung-in-mes-systemen-durch-integration-des-sparkplug-b-protokolls.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
-      "description": "Wie das Sparkplug B-Protokoll die Ressourcenplanung in MES-Systemen unterstützt und die Produktionseffizienz sowie die Echtzeitkommunikation verbessert.",
-      "lang": "de",
-      "publishedAt": "2025-05-19T09:00:00Z",
-      "slug": "optimierung-der-ressourcenplanung-in-mes-systemen-durch-integration-des-sparkplug-b-protokolls",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Optimierung der Ressourcenplanung in MES-Systemen durch Integration des Sparkplug B-Protokolls"
-    },
-    {
-      "__outstatic": {
         "commit": "9e66039fcc16c3e3135ace0209c223204d0f6fbd",
         "hash": "2961237834",
         "path": "outstatic/content/posts/optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen.md"
@@ -3845,6 +3820,35 @@
         }
       ],
       "title": "Verbesserung der Qualitätskontrolle in MES durch den Sparkplug B-Protokoll"
+    },
+    {
+      "__outstatic": {
+        "commit": "5038bc999af09b50d7eb72136d6f97e6be3c31f9",
+        "hash": "918830034",
+        "path": "outstatic/content/posts/wykorzystanie-edge-computing-i-czujnikow-fabrycznych-w-zarzadzaniu-partiami-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-edge-computing-and-factory-sensors-for-enhanced-batch-management-in-digital-twin-manufacturing-this-top.png",
+      "description": "Jak integracja edge computing i czujników fabrycznych optymalizuje zarządzanie partiami w produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-07-05T09:00:00Z",
+      "slug": "wykorzystanie-edge-computing-i-czujnikow-fabrycznych-w-zarzadzaniu-partiami-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Technologia",
+          "value": "IoT"
+        }
+      ],
+      "title": "Wykorzystanie Edge Computing i czujników fabrycznych w zarządzaniu partiami produkcji"
     },
     {
       "__outstatic": {
