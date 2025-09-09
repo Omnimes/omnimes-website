@@ -181,4 +181,4 @@ Die Integration von **SPS** und **MES** ist das Fundament der digitalen Transfor
 
 Unternehmen, die ihre Produktion digital transformieren wollen, sollten eine **SPS–MES-Lösung** als prioritäres Element der **Industrie-5.0-Strategie** betrachten. **Omnimes** ist ein bewährtes Werkzeug für diese Transformation – skalierbar, zuverlässig und vollständig integrierbar in bestehende IT-Infrastrukturen.
 
-Für Detailinformationen zur Einführung von **Omnimes** in Ihrem Unternehmen steht das Expertenteam von Multiprojekt bereit – von der Bedarfsanalyse über das Systemdesign bis zur technischen Unterstützung in allen Implementierungsphasen. **Kontakt**
+Für Detailinformationen zur Einführung von **Omnimes** in Ihrem Unternehmen steht das Expertenteam von Multiprojekt bereit – von der Bedarfsanalyse über das Systemdesign bis zur technischen Unterstützung in allen Implementierungsphasen. [**Kontakt**](https://www.omnimes.com/de/kontakt)
