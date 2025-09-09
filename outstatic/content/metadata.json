@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:45:01.541Z",
+  "generated": "2025-09-09T17:45:59.630Z",
   "metadata": [
     {
       "__outstatic": {
@@ -955,31 +955,6 @@
     },
     {
       "__outstatic": {
-        "commit": "fdf6aa01cf66f19bc07aaa057ea070b4c8b3b381",
-        "hash": "3308973723",
-        "path": "outstatic/content/posts/enhancing-resource-planning-in-mes-systems-through-real-time-monitoring.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-resource-planning-in-mes-systems-through-real-time-monitoring-strategies-for-creating-a-virtual-factory-.png",
-      "description": "How real-time monitoring integration in MES systems optimizes resource planning in production.",
-      "lang": "en",
-      "publishedAt": "2025-01-19T09:00:00Z",
-      "slug": "enhancing-resource-planning-in-mes-systems-through-real-time-monitoring",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Enhancing Resource Planning in MES Systems Through Real-Time Monitoring"
-    },
-    {
-      "__outstatic": {
         "commit": "41060cd9037362966545f6238ae8a22120bf54e0",
         "hash": "805527656",
         "path": "outstatic/content/posts/enhancing-quality-control-in-mes-with-sparkplug-b-protocol.md"
@@ -1409,6 +1384,31 @@
         }
       ],
       "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "5c15c12b922882ceab8912e7970d04c06b2c8633",
+        "hash": "1047651328",
+        "path": "outstatic/content/posts/integration-of-sparkplug-b-protocol-in-mes-systems-for-efficient-production-in-smart-factories.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-integrating-sparkplug-b-protocol-into-mes-systems-for-enhancing-lean-manufacturing-in-smart-factories-this-topic-e.png",
+      "description": "How the Sparkplug B protocol can optimize processes in MES systems within smart factories, supporting lean manufacturing.",
+      "lang": "en",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "integration-of-sparkplug-b-protocol-in-mes-systems-for-efficient-production-in-smart-factories",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Integration of Sparkplug B Protocol in MES Systems for Efficient Production in Smart Factories"
     },
     {
       "__outstatic": {
