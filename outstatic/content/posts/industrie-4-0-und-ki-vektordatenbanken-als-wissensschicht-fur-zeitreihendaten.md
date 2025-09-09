@@ -1,5 +1,5 @@
 ---
-title: 'Industrie 5.0 und KI: Vektordatenbanken als Wissensschicht für Zeitreihendaten'
+title: 'Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?'
 status: 'published'
 author:
   name: 'Martin Szerment'
