@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:44:38.944Z",
+  "generated": "2025-09-09T17:44:44.313Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3679,6 +3679,35 @@
     },
     {
       "__outstatic": {
+        "commit": "979360fe91cc10aed5856e8affbea486dcbd1b17",
+        "hash": "656341024",
+        "path": "outstatic/content/posts/utilization-of-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-efficiency.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-harnessing-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-through-intelligent-automation-this-t.png",
+      "description": "Discover how production analytics can support lean manufacturing in the era of Industry 5.0.",
+      "lang": "en",
+      "publishedAt": "2025-02-12T09:00:00Z",
+      "slug": "utilization-of-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-efficiency",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Temat",
+          "value": "Analityka"
+        }
+      ],
+      "title": "Utilization of Production Analytics in Industry 5.0: Enhancing Lean Manufacturing Efficiency"
+    },
+    {
+      "__outstatic": {
         "commit": "b044ad593e3e0f77b252fdc027660d1038c7247c",
         "hash": "2813343435",
         "path": "outstatic/content/posts/wizualizacja-danych-sukcesem-analizy-redash.md"
@@ -3899,35 +3928,6 @@
         }
       ],
       "title": "Wykorzystanie cyfrowych bliźniaków i uczenia maszynowego w utrzymaniu predykcyjnym"
-    },
-    {
-      "__outstatic": {
-        "commit": "a08b9aa72d6c881fd87662807782a7741ffa522a",
-        "hash": "1586998651",
-        "path": "outstatic/content/posts/wykorzystanie-analityki-produkcji-w-przemysle-5-0-zwiekszanie-efektywnosci-lean-manufacturing.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-harnessing-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-through-intelligent-automation-this-t.png",
-      "description": "Dowiedz się, jak analityka produkcji może wspierać lean manufacturing w erze przemysłu 5.0.",
-      "lang": "pl",
-      "publishedAt": "2025-02-12T09:00:00Z",
-      "slug": "wykorzystanie-analityki-produkcji-w-przemysle-5-0-zwiekszanie-efektywnosci-lean-manufacturing",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Temat",
-          "value": "Analityka"
-        }
-      ],
-      "title": "Wykorzystanie analityki produkcji w przemyśle 5.0: Zwiększanie efektywności lean manufacturing"
     },
     {
       "__outstatic": {
