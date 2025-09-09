@@ -1,64 +1,7 @@
 {
-  "commit": "3a4c34ce7575c6c3205617c67d95a684178d4f9b",
-  "generated": "2025-09-09T08:29:32.089Z",
+  "commit": "5fc72d01c1c4502df721621c5c34ac6e62843b0b",
+  "generated": "Tue, 09 Sep 2025 08:31:18 GMT",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "8f6f4aaf74ce3fd11e8d183234d4b29ba0174f02",
-        "hash": "2379090653",
-        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
-      "description": "The revolution in production digitization is coming. Discover OmniPlatform – a new era of industry 5.0",
-      "lang": "en",
-      "publishedAt": "2025-08-19T21:31:34.000Z",
-      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
-      "status": "published",
-      "title": "Europe's first platform for Industry 5.0 with AI"
-    },
-    {
-      "__outstatic": {
-        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
-        "hash": "3468461650",
-        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
-      "lang": "pl",
-      "publishedAt": "2024-06-21T06:19:30.177Z",
-      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
-      "status": "published",
-      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
-    },
-    {
-      "__outstatic": {
-        "commit": "1e98b3a410a871dd245d0bd3d6f35e03ec990e7f",
-        "hash": "40590163",
-        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/image-E3MT.png",
-      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
-      "lang": "en",
-      "publishedAt": "2024-07-21T06:59:08.000Z",
-      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
-      "status": "published",
-      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
-    },
     {
       "__outstatic": {
         "commit": "19c3abb0286b2b7f44cab5b5bff9dbd3bac275d4",
@@ -118,41 +61,22 @@
     },
     {
       "__outstatic": {
-        "commit": "f8f259ab4d4120d2b4f1c225835cde14948bd812",
-        "hash": "898511171",
-        "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
-      },
-      "author": {
-        "name": "Omnimes",
-        "picture": "/images/logo.png"
-      },
-      "collection": "news",
-      "coverImage": "/images/22-k0Mj.jpg",
-      "description": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen",
-      "lang": "de",
-      "publishedAt": "2024-06-21T06:52:47.000Z",
-      "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
-      "status": "published",
-      "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
-    },
-    {
-      "__outstatic": {
-        "commit": "12d1efb81e7de51aaea5c4136525a1ccbc53419f",
-        "hash": "431708842",
-        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
+        "commit": "8f6f4aaf74ce3fd11e8d183234d4b29ba0174f02",
+        "hash": "2379090653",
+        "path": "outstatic/content/news/europe-s-first-platform-for-industry-5-0-with-ai.md"
       },
       "author": {
         "name": "OmniMES",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "news",
-      "coverImage": "/images/blog_omni-A4Mj.png",
-      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
-      "lang": "pl",
-      "publishedAt": "2025-08-19T09:53:51.000Z",
-      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
+      "coverImage": "/images/zrzut-ekranu-2025-05-28-232120-A0Mj.png",
+      "description": "The revolution in production digitization is coming. Discover OmniPlatform – a new era of industry 5.0",
+      "lang": "en",
+      "publishedAt": "2025-08-19T21:31:34.000Z",
+      "slug": "europe-s-first-platform-for-industry-5-0-with-ai",
       "status": "published",
-      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
+      "title": "Europe's first platform for Industry 5.0 with AI"
     },
     {
       "__outstatic": {
@@ -213,73 +137,41 @@
     },
     {
       "__outstatic": {
-        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
-        "hash": "3831515894",
-        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+        "commit": "912cda2b67eb6dbfe4adbf7243b08b4b325e6e5f",
+        "hash": "3468461650",
+        "path": "outstatic/content/news/nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai.md"
       },
       "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
       },
-      "collection": "posts",
-      "coverImage": "/images/5.png",
-      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
-      "lang": "de",
-      "publishedAt": "2024-06-15T07:31:17.000Z",
-      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI",
+      "lang": "pl",
+      "publishedAt": "2024-06-21T06:19:30.177Z",
+      "slug": "nowe-rozwiazanie-ai-w-systemie-omnimes-ollama-lokalne-modele-ai",
       "status": "published",
-      "tags": [
-        {
-          "label": "redash",
-          "value": "redash"
-        },
-        {
-          "label": "Datenvisualisierung",
-          "value": "datenvisualisierung"
-        },
-        {
-          "label": "big data",
-          "value": "bigData"
-        },
-        {
-          "label": "Berichte",
-          "value": "berichte"
-        }
-      ],
-      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+      "title": "Nowe rozwiązanie AI w systemie Omnimes – Ollama, lokalne modele AI"
     },
     {
       "__outstatic": {
-        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
-        "hash": "2061075091",
-        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
+        "commit": "1e98b3a410a871dd245d0bd3d6f35e03ec990e7f",
+        "hash": "40590163",
+        "path": "outstatic/content/news/new-ai-solution-in-the-omnimes-system-ollama-local-ai-models.md"
       },
       "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
       },
-      "collection": "posts",
-      "coverImage": "/images/data-QzNj.png",
-      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
-      "lang": "de",
-      "publishedAt": "2024-09-15T10:29:21.000Z",
-      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
+      "collection": "news",
+      "coverImage": "/images/image-E3MT.png",
+      "description": "New AI Solution in the Omnimes System – Ollama, Local AI Models",
+      "lang": "en",
+      "publishedAt": "2024-07-21T06:59:08.000Z",
+      "slug": "new-ai-solution-in-the-omnimes-system-ollama-local-ai-models",
       "status": "published",
-      "tags": [
-        {
-          "label": "industrielle Datenerfassung",
-          "value": "industrielle-datenerfassung"
-        },
-        {
-          "label": "Maschinendaten",
-          "value": "maschinendaten"
-        },
-        {
-          "label": "maschinelles Lernen in der Industrie",
-          "value": "maschinelles-lernen-in-der-industrie"
-        }
-      ],
-      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
+      "title": "New AI Solution in the Omnimes System – Ollama, Local AI Models"
     },
     {
       "__outstatic": {
@@ -372,65 +264,41 @@
     },
     {
       "__outstatic": {
-        "commit": "f0df426a3c0c1cb4b96a23062b8967ab2b112677",
-        "hash": "3270351282",
-        "path": "outstatic/content/posts/einsatz-von-digitalen-zwillingen-und-maschinellem-lernen-in-der-pradiktiven-wartung.md"
+        "commit": "f8f259ab4d4120d2b4f1c225835cde14948bd812",
+        "hash": "898511171",
+        "path": "outstatic/content/news/vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen.md"
       },
       "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "name": "Omnimes",
+        "picture": "/images/logo.png"
       },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
-      "description": "Integration digitaler Zwillinge mit maschinellem Lernen zur Optimierung der prädiktiven Wartung in modernen Produktionssystemen.",
+      "collection": "news",
+      "coverImage": "/images/22-k0Mj.jpg",
+      "description": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen",
       "lang": "de",
-      "publishedAt": "2025-06-19T09:00:00Z",
-      "slug": "einsatz-von-digitalen-zwillingen-und-maschinellem-lernen-in-der-pradiktiven-wartung",
+      "publishedAt": "2024-06-21T06:52:47.000Z",
+      "slug": "vorlesung-an-der-technischen-universitaet-krakau-ueber-den-einsatz-von-ki-und-big-data-in-produktionssystemen",
       "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Cyfrowe bliźniaki"
-        },
-        {
-          "label": "Utrzymanie",
-          "value": "Utrzymanie predykcyjne"
-        }
-      ],
-      "title": "Einsatz von digitalen Zwillingen und maschinellem Lernen in der prädiktiven Wartung"
+      "title": "Vorlesung an der Technischen Universität Krakau über den Einsatz von KI und Big Data in Produktionssystemen"
     },
     {
       "__outstatic": {
-        "commit": "8522be850b05e5f799411a9772be531c97c9c2f4",
-        "hash": "3926241630",
-        "path": "outstatic/content/posts/einsatz-von-computer-vision-und-digital-twin-in-der-qualitatskontrolle-in-der-produktion.md"
+        "commit": "12d1efb81e7de51aaea5c4136525a1ccbc53419f",
+        "hash": "431708842",
+        "path": "outstatic/content/news/pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai.md"
       },
       "author": {
-        "name": "Martin Szerment",
+        "name": "OmniMES",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-computer-vision-and-digital-twin-technology-for-enhanced-quality-control-in-manufacturing-processes-exp.png",
-      "description": "Wie die Integration von Computer Vision-Systemen mit der Digital Twin-Technologie die Qualitätskontrolle in der Produktion revolutionieren kann.",
-      "lang": "de",
-      "publishedAt": "2025-03-26T09:00:00Z",
-      "slug": "einsatz-von-computer-vision-und-digital-twin-in-der-qualitatskontrolle-in-der-produktion",
+      "collection": "news",
+      "coverImage": "/images/blog_omni-A4Mj.png",
+      "description": "Przygotuj się na nową erę zarządzania produkcją! Z OmniPlatform wdrożysz gotowy system MES bez skomplikowanej instalacji i bez potrzeby stawiania własnych serwerów",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:53:51.000Z",
+      "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
       "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Computer Vision"
-        },
-        {
-          "label": "Przemysł",
-          "value": "Digital Twin"
-        },
-        {
-          "label": "Kontrola jakości",
-          "value": "produkcja"
-        }
-      ],
-      "title": "Einsatz von Computer Vision und Digital Twin in der Qualitätskontrolle in der Produktion"
+      "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
     },
     {
       "__outstatic": {
@@ -464,31 +332,6 @@
         }
       ],
       "title": "Einsatz des Sparkplug B-Protokolls in MES zur Reduzierung von Ausfallzeiten und Energieeinsparung"
-    },
-    {
-      "__outstatic": {
-        "commit": "ebfddfc461223ced94856de37225360bb8c96790",
-        "hash": "3863204481",
-        "path": "outstatic/content/posts/einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
-      "description": "Praktischer Leitfaden zur Nutzung des MQTT-Protokolls in MES- und IoT-Systemen zur Optimierung von Produktionsprozessen.",
-      "lang": "de",
-      "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Einsatz des MQTT-Protokolls zur Verbesserung der Kommunikation zwischen MES-Systemen und IoT-Geräten"
     },
     {
       "__outstatic": {
@@ -553,20 +396,57 @@
     },
     {
       "__outstatic": {
-        "commit": "c7eaec48269522c05e87514777b3db1a0849754c",
-        "hash": "2241988714",
-        "path": "outstatic/content/posts/einsatz-von-maschinellem-lernen-in-mes-zur-kontinuierlichen-verbesserung-in-der-erneuerbaren-energieproduktion.md"
+        "commit": "fd55a31d1c9058fd623143070a18c18097e133b5",
+        "hash": "3831515894",
+        "path": "outstatic/content/posts/datenvisualisierung-der-erfolg-der-analyse-redash.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/5.png",
+      "description": "In der heutigen Welt ist die rasante Entwicklung der Technologie und die zunehmenden Marktbedürfnisse machen effizientes Produktionsmanagement für den Erfolg eines Unternehmens entscheidend. Systeme wie Omnimes bieten fortschrittliche Werkzeuge zur Prozessoptimierung, einschließlich Datenvisualisierung, die Analyse und Entscheidungsfindung unterstützt.",
+      "lang": "de",
+      "publishedAt": "2024-06-15T07:31:17.000Z",
+      "slug": "datenvisualisierung-der-erfolg-der-analyse-redash",
+      "status": "published",
+      "tags": [
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "Datenvisualisierung",
+          "value": "datenvisualisierung"
+        },
+        {
+          "label": "big data",
+          "value": "bigData"
+        },
+        {
+          "label": "Berichte",
+          "value": "berichte"
+        }
+      ],
+      "title": "Datenvisualisierung – Der Erfolg der Analyse. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "ebfddfc461223ced94856de37225360bb8c96790",
+        "hash": "3863204481",
+        "path": "outstatic/content/posts/einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-leveraging-machine-learning-in-mes-for-continuous-improvement-in-green-energy-manufacturing-this-topic-explores-ho.png",
-      "description": "Wie MES-Systeme mit maschinellem Lernen die Effizienz der erneuerbaren Energieproduktion steigern können.",
+      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
+      "description": "Praktischer Leitfaden zur Nutzung des MQTT-Protokolls in MES- und IoT-Systemen zur Optimierung von Produktionsprozessen.",
       "lang": "de",
-      "publishedAt": "2025-06-26T09:00:00Z",
-      "slug": "einsatz-von-maschinellem-lernen-in-mes-zur-kontinuierlichen-verbesserung-in-der-erneuerbaren-energieproduktion",
+      "publishedAt": "2025-01-12T09:00:00Z",
+      "slug": "einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten",
       "status": "published",
       "tags": [
         {
@@ -574,7 +454,40 @@
           "value": "Przemysł 4.0"
         }
       ],
-      "title": "Einsatz von maschinellem Lernen in MES zur kontinuierlichen Verbesserung in der erneuerbaren Energieproduktion"
+      "title": "Einsatz des MQTT-Protokolls zur Verbesserung der Kommunikation zwischen MES-Systemen und IoT-Geräten"
+    },
+    {
+      "__outstatic": {
+        "commit": "83f56d9daf4901c1504e6a1e235e8218db783cf7",
+        "hash": "2061075091",
+        "path": "outstatic/content/posts/datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-QzNj.png",
+      "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
+      "lang": "de",
+      "publishedAt": "2024-09-15T10:29:21.000Z",
+      "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
+      "status": "published",
+      "tags": [
+        {
+          "label": "industrielle Datenerfassung",
+          "value": "industrielle-datenerfassung"
+        },
+        {
+          "label": "Maschinendaten",
+          "value": "maschinendaten"
+        },
+        {
+          "label": "maschinelles Lernen in der Industrie",
+          "value": "maschinelles-lernen-in-der-industrie"
+        }
+      ],
+      "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge"
     },
     {
       "__outstatic": {
@@ -681,28 +594,65 @@
     },
     {
       "__outstatic": {
-        "commit": "0ca8f9c9115a151af05d8378d007177c38221d10",
-        "hash": "3661510178",
-        "path": "outstatic/content/posts/enhancing-lean-manufacturing-efficiency-through-mqtt-integration-in-mes.md"
+        "commit": "f0df426a3c0c1cb4b96a23062b8967ab2b112677",
+        "hash": "3270351282",
+        "path": "outstatic/content/posts/einsatz-von-digitalen-zwillingen-und-maschinellem-lernen-in-der-pradiktiven-wartung.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-enhancing-lean-manufacturing-through-mqtt-integration-in-mes-for-energy-efficiency-in-connected-factories-this-top.png",
-      "description": "MQTT integration with MES enhances communication in factories, optimizing energy consumption and reducing waste in Lean Manufacturing.",
-      "lang": "en",
-      "publishedAt": "2025-05-12T09:00:00Z",
-      "slug": "enhancing-lean-manufacturing-efficiency-through-mqtt-integration-in-mes",
+      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
+      "description": "Integration digitaler Zwillinge mit maschinellem Lernen zur Optimierung der prädiktiven Wartung in modernen Produktionssystemen.",
+      "lang": "de",
+      "publishedAt": "2025-06-19T09:00:00Z",
+      "slug": "einsatz-von-digitalen-zwillingen-und-maschinellem-lernen-in-der-pradiktiven-wartung",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
+          "label": "Technologia",
+          "value": "Cyfrowe bliźniaki"
+        },
+        {
+          "label": "Utrzymanie",
+          "value": "Utrzymanie predykcyjne"
         }
       ],
-      "title": "Enhancing Lean Manufacturing Efficiency through MQTT Integration in MES"
+      "title": "Einsatz von digitalen Zwillingen und maschinellem Lernen in der prädiktiven Wartung"
+    },
+    {
+      "__outstatic": {
+        "commit": "8522be850b05e5f799411a9772be531c97c9c2f4",
+        "hash": "3926241630",
+        "path": "outstatic/content/posts/einsatz-von-computer-vision-und-digital-twin-in-der-qualitatskontrolle-in-der-produktion.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-computer-vision-and-digital-twin-technology-for-enhanced-quality-control-in-manufacturing-processes-exp.png",
+      "description": "Wie die Integration von Computer Vision-Systemen mit der Digital Twin-Technologie die Qualitätskontrolle in der Produktion revolutionieren kann.",
+      "lang": "de",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "einsatz-von-computer-vision-und-digital-twin-in-der-qualitatskontrolle-in-der-produktion",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "Computer Vision"
+        },
+        {
+          "label": "Przemysł",
+          "value": "Digital Twin"
+        },
+        {
+          "label": "Kontrola jakości",
+          "value": "produkcja"
+        }
+      ],
+      "title": "Einsatz von Computer Vision und Digital Twin in der Qualitätskontrolle in der Produktion"
     },
     {
       "__outstatic": {
@@ -728,6 +678,31 @@
         }
       ],
       "title": "Enhancing Batch Management Efficiency through Advanced HMI Interfaces"
+    },
+    {
+      "__outstatic": {
+        "commit": "0b9ac00def86335fb86b48ad6f4f00236596e1f3",
+        "hash": "1069452840",
+        "path": "outstatic/content/posts/enhanced-device-monitoring-through-ai-and-industrial-connectivity.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-equipment-monitoring-through-ai-driven-industrial-connectivity-a-practical-approach-for-production-engineers-t.png",
+      "description": "How AI and industrial connectivity can enhance machine efficiency and reduce downtime.",
+      "lang": "en",
+      "publishedAt": "2025-06-12T09:00:00Z",
+      "slug": "enhanced-device-monitoring-through-ai-and-industrial-connectivity",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Enhanced Device Monitoring through AI and Industrial Connectivity"
     },
     {
       "__outstatic": {
@@ -776,31 +751,6 @@
     },
     {
       "__outstatic": {
-        "commit": "0b9ac00def86335fb86b48ad6f4f00236596e1f3",
-        "hash": "1069452840",
-        "path": "outstatic/content/posts/enhanced-device-monitoring-through-ai-and-industrial-connectivity.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-equipment-monitoring-through-ai-driven-industrial-connectivity-a-practical-approach-for-production-engineers-t.png",
-      "description": "How AI and industrial connectivity can enhance machine efficiency and reduce downtime.",
-      "lang": "en",
-      "publishedAt": "2025-06-12T09:00:00Z",
-      "slug": "enhanced-device-monitoring-through-ai-and-industrial-connectivity",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Enhanced Device Monitoring through AI and Industrial Connectivity"
-    },
-    {
-      "__outstatic": {
         "commit": "1240054adbc258159e493cf24ee7dd12066522fc",
         "hash": "723773427",
         "path": "outstatic/content/posts/einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle.md"
@@ -826,36 +776,28 @@
     },
     {
       "__outstatic": {
-        "commit": "0e92ab9894e392aec85280d77dc5bf85d83d391b",
-        "hash": "3018620463",
-        "path": "outstatic/content/posts/enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b.md"
+        "commit": "c7eaec48269522c05e87514777b3db1a0849754c",
+        "hash": "2241988714",
+        "path": "outstatic/content/posts/einsatz-von-maschinellem-lernen-in-mes-zur-kontinuierlichen-verbesserung-in-der-erneuerbaren-energieproduktion.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-automated-manufacturing-leveraging-mqtt-and-sparkplug-b-protocol-for-real-time-resour.png",
-      "description": "Jak MQTT i protokół Sparkplug B mogą poprawić kontrolę jakości w zautomatyzowanej produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-03-05T09:00:00Z",
-      "slug": "enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b",
+      "coverImage": "/images/topic-leveraging-machine-learning-in-mes-for-continuous-improvement-in-green-energy-manufacturing-this-topic-explores-ho.png",
+      "description": "Wie MES-Systeme mit maschinellem Lernen die Effizienz der erneuerbaren Energieproduktion steigern können.",
+      "lang": "de",
+      "publishedAt": "2025-06-26T09:00:00Z",
+      "slug": "einsatz-von-maschinellem-lernen-in-mes-zur-kontinuierlichen-verbesserung-in-der-erneuerbaren-energieproduktion",
       "status": "published",
       "tags": [
         {
-          "label": "Technologia",
-          "value": "MQTT"
-        },
-        {
-          "label": "Protokół",
-          "value": "Sparkplug B"
-        },
-        {
-          "label": "Produkcja",
-          "value": "automatyzacja"
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
         }
       ],
-      "title": "Enhancing Quality Control in Automated Manufacturing with MQTT and Sparkplug B"
+      "title": "Einsatz von maschinellem Lernen in MES zur kontinuierlichen Verbesserung in der erneuerbaren Energieproduktion"
     },
     {
       "__outstatic": {
@@ -967,28 +909,28 @@
     },
     {
       "__outstatic": {
-        "commit": "3ffe6fed9709ebd1cbb8406101d3071d31322c55",
-        "hash": "3899080159",
-        "path": "outstatic/content/posts/enhancing-quality-control-via-real-time-data-analytics-in-mes.md"
+        "commit": "0ca8f9c9115a151af05d8378d007177c38221d10",
+        "hash": "3661510178",
+        "path": "outstatic/content/posts/enhancing-lean-manufacturing-efficiency-through-mqtt-integration-in-mes.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-through-real-time-data-analytics-in-manufacturing-execution-systems-for-continuous-impro.png",
-      "description": "How real-time data analytics in MES enhances quality control in production.",
+      "coverImage": "/images/topic-enhancing-lean-manufacturing-through-mqtt-integration-in-mes-for-energy-efficiency-in-connected-factories-this-top.png",
+      "description": "MQTT integration with MES enhances communication in factories, optimizing energy consumption and reducing waste in Lean Manufacturing.",
       "lang": "en",
-      "publishedAt": "2025-07-26T09:00:00Z",
-      "slug": "enhancing-quality-control-via-real-time-data-analytics-in-mes",
+      "publishedAt": "2025-05-12T09:00:00Z",
+      "slug": "enhancing-lean-manufacturing-efficiency-through-mqtt-integration-in-mes",
       "status": "published",
       "tags": [
         {
           "label": "Kategoria",
-          "value": "Produkcja"
+          "value": "Automatyzacja przemysłowa"
         }
       ],
-      "title": "Enhancing Quality Control via Real-Time Data Analytics in MES"
+      "title": "Enhancing Lean Manufacturing Efficiency through MQTT Integration in MES"
     },
     {
       "__outstatic": {
@@ -1092,44 +1034,36 @@
     },
     {
       "__outstatic": {
-        "commit": "618946b1d03b191753c0843ecce05ba6ff9889e0",
-        "hash": "3310344853",
-        "path": "outstatic/content/posts/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost.md"
+        "commit": "0e92ab9894e392aec85280d77dc5bf85d83d391b",
+        "hash": "3018620463",
+        "path": "outstatic/content/posts/enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
-      "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
-      "lang": "en",
-      "publishedAt": "2024-07-15T09:49:23.000Z",
-      "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
+      "coverImage": "/images/topic-enhancing-quality-control-in-automated-manufacturing-leveraging-mqtt-and-sparkplug-b-protocol-for-real-time-resour.png",
+      "description": "Jak MQTT i protokół Sparkplug B mogą poprawić kontrolę jakości w zautomatyzowanej produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b",
       "status": "published",
       "tags": [
         {
-          "label": "XGBoost",
-          "value": "xgboost"
+          "label": "Technologia",
+          "value": "MQTT"
         },
         {
-          "label": "LightGBM",
-          "value": "lightgbm"
+          "label": "Protokół",
+          "value": "Sparkplug B"
         },
         {
-          "label": "CatBoost",
-          "value": "catboost"
-        },
-        {
-          "label": "MES Systems",
-          "value": "mes-systems"
-        },
-        {
-          "label": "Fault Detection",
-          "value": "fault-detection"
+          "label": "Produkcja",
+          "value": "automatyzacja"
         }
       ],
-      "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
+      "title": "Enhancing Quality Control in Automated Manufacturing with MQTT and Sparkplug B"
     },
     {
       "__outstatic": {
@@ -1233,28 +1167,28 @@
     },
     {
       "__outstatic": {
-        "commit": "3bb333edca81268d3260661bf1708342771fbe4a",
-        "hash": "694743363",
-        "path": "outstatic/content/posts/integracja-protokou-sparkplug-b-w-systemach-mes-dla-efektywnej-produkcji-w-smart-factory.md"
+        "commit": "3ffe6fed9709ebd1cbb8406101d3071d31322c55",
+        "hash": "3899080159",
+        "path": "outstatic/content/posts/enhancing-quality-control-via-real-time-data-analytics-in-mes.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-integrating-sparkplug-b-protocol-into-mes-systems-for-enhancing-lean-manufacturing-in-smart-factories-this-topic-e.png",
-      "description": "Jak protokół Sparkplug B może zoptymalizować procesy w systemach MES w smart factory, wspierając lean manufacturing.",
-      "lang": "pl",
-      "publishedAt": "2025-02-05T09:00:00Z",
-      "slug": "integracja-protokou-sparkplug-b-w-systemach-mes-dla-efektywnej-produkcji-w-smart-factory",
+      "coverImage": "/images/topic-enhancing-quality-control-through-real-time-data-analytics-in-manufacturing-execution-systems-for-continuous-impro.png",
+      "description": "How real-time data analytics in MES enhances quality control in production.",
+      "lang": "en",
+      "publishedAt": "2025-07-26T09:00:00Z",
+      "slug": "enhancing-quality-control-via-real-time-data-analytics-in-mes",
       "status": "published",
       "tags": [
         {
           "label": "Kategoria",
-          "value": "Przemysł 4.0"
+          "value": "Produkcja"
         }
       ],
-      "title": "Integracja protokołu Sparkplug B w systemach MES dla efektywnej produkcji w smart factory"
+      "title": "Enhancing Quality Control via Real-Time Data Analytics in MES"
     },
     {
       "__outstatic": {
@@ -1308,32 +1242,6 @@
     },
     {
       "__outstatic": {
-        "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
-        "hash": "4201941181",
-        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
-      "lang": "en",
-      "publishedAt": "2025-05-28T00:00:00.000Z",
-      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
-      "status": "published",
-      "tags": [
-        "langchain",
-        "faiss",
-        "gpt",
-        "documentation",
-        "ai-assistant"
-      ],
-      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
-    },
-    {
-      "__outstatic": {
         "commit": "066448c5d59baa287b9229c0aec0d4cf56d96fcd",
         "hash": "3668030207",
         "path": "outstatic/content/posts/fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost.md"
@@ -1372,6 +1280,255 @@
         }
       ],
       "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
+        "hash": "4201941181",
+        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
+      "lang": "en",
+      "publishedAt": "2025-05-28T00:00:00.000Z",
+      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
+      "status": "published",
+      "tags": [
+        "langchain",
+        "faiss",
+        "gpt",
+        "documentation",
+        "ai-assistant"
+      ],
+      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "618946b1d03b191753c0843ecce05ba6ff9889e0",
+        "hash": "3310344853",
+        "path": "outstatic/content/posts/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/dall-e-2024-12-09-11.49.53---a-visually-engaging-image-illustrating-the-use-of-machine-learning-models-xgboost--lightgbm--and-catboost-in-industrial-systems.-the-image-features-a--A1MD.webp",
+      "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
+      "lang": "en",
+      "publishedAt": "2024-07-15T09:49:23.000Z",
+      "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
+      "status": "published",
+      "tags": [
+        {
+          "label": "XGBoost",
+          "value": "xgboost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightgbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catboost"
+        },
+        {
+          "label": "MES Systems",
+          "value": "mes-systems"
+        },
+        {
+          "label": "Fault Detection",
+          "value": "fault-detection"
+        }
+      ],
+      "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "01eaf2c639061100db298c9a99984855c61df36f",
+        "hash": "629970680",
+        "path": "outstatic/content/posts/integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
+      "description": "Integrate MES with IoT to enhance quality control and reduce production downtime.",
+      "lang": "en",
+      "publishedAt": "2025-04-26T09:00:00Z",
+      "slug": "integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Integration of MES with IoT to Enhance Quality Control and Reduce Downtime"
+    },
+    {
+      "__outstatic": {
+        "commit": "1b6af723c0b557b236bdb526af7c53aa70b76589",
+        "hash": "2421815258",
+        "path": "outstatic/content/posts/integration-of-hmi-systems-with-simulation-a-strategic-foundation-for-resource-optimization-in-industry-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2-AzOD.png",
+      "description": "In the era of industrial digital transformation, the global human-machine interface (HMI) market reached USD 24.5 billion in 2024 and is projected to grow to USD 55.2 billion by 2033, with a compound annual growth rate (CAGR) of 9.7%. At the same time, the simulation software market expanded from USD 19.95 billion in 2024 to an expected USD 36.22 billion by 2030 at a CAGR of 10.4%. These dynamic trends reflect a fundamental shift in the approach to optimizing production resources.",
+      "lang": "en",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "integration-of-hmi-systems-with-simulation-a-strategic-foundation-for-resource-optimization-in-industry-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        }
+      ],
+      "title": "Integration of HMI Systems with Simulation: A Strategic Foundation for Resource Optimization in Industry 5.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "890dc6ad3b4283239f582329b67e183cb11a82a2",
+        "hash": "2898932637",
+        "path": "outstatic/content/posts/integration-des-sparkplug-b-protokolls-in-mes-systemen-fur-effiziente-produktion-in-smart-factories.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-integrating-sparkplug-b-protocol-into-mes-systems-for-enhancing-lean-manufacturing-in-smart-factories-this-topic-e.png",
+      "description": "Wie das Sparkplug B-Protokoll Prozesse in MES-Systemen in Smart Factories optimieren und Lean Manufacturing unterstützen kann.",
+      "lang": "de",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "integration-des-sparkplug-b-protokolls-in-mes-systemen-fur-effiziente-produktion-in-smart-factories",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Integration des Sparkplug B-Protokolls in MES-Systemen für effiziente Produktion in Smart Factories"
+    },
+    {
+      "__outstatic": {
+        "commit": "0613c8664a7b89196345ccd3d46a9f2b980fced4",
+        "hash": "2667900618",
+        "path": "outstatic/content/posts/integracja-systemow-hmi-z-symulacja-strategiczny-fundament-optymalizacji-zasobow-w-przemysle-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2-Y3Mj.png",
+      "description": "W erze przemysłowej transformacji cyfrowej, globalny rynek interfejsów człowiek-maszyna (HMI) osiągnął wartość 24,5 miliarda USD w 2024 roku i przewiduje się jego wzrost do 55,2 miliarda USD do 2033 roku, przy złożonej rocznej stopie wzrostu (CAGR) 9,7%. Jednocześnie rynek oprogramowania symulacyjnego wzrósł z 19,95 miliarda USD w 2024 roku do przewidywanych 36,22 miliarda USD do 2030 roku przy CAGR 10,4%. Te dynamiczne trendy odzwierciedlają fundamentalną zmianę w podejściu do optymalizacji zasobów produkcyjnych.",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "integracja-systemow-hmi-z-symulacja-strategiczny-fundament-optymalizacji-zasobow-w-przemysle-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "3bb333edca81268d3260661bf1708342771fbe4a",
+        "hash": "694743363",
+        "path": "outstatic/content/posts/integracja-protokou-sparkplug-b-w-systemach-mes-dla-efektywnej-produkcji-w-smart-factory.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-integrating-sparkplug-b-protocol-into-mes-systems-for-enhancing-lean-manufacturing-in-smart-factories-this-topic-e.png",
+      "description": "Jak protokół Sparkplug B może zoptymalizować procesy w systemach MES w smart factory, wspierając lean manufacturing.",
+      "lang": "pl",
+      "publishedAt": "2025-02-05T09:00:00Z",
+      "slug": "integracja-protokou-sparkplug-b-w-systemach-mes-dla-efektywnej-produkcji-w-smart-factory",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Integracja protokołu Sparkplug B w systemach MES dla efektywnej produkcji w smart factory"
+    },
+    {
+      "__outstatic": {
+        "commit": "631ca9d03845eea3d87220893ce5143fa867d94b",
+        "hash": "3613524106",
+        "path": "outstatic/content/posts/mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-QwMD.webp",
+      "description": "Der weltweite Markt für Manufacturing Execution Systems (MES) wächst rasant. 2025 erreicht er 15,95 Mrd. USD und wird bis 2030 auf 25,78 Mrd. USD steigen – mit einer jährlichen Wachstumsrate (CAGR) von 10,1 %. Treiber sind die zunehmende Digitalisierung der Industrie, die Integration moderner IT-Technologien und die Entwicklung von Industrie 4.0. Im Zentrum dieser Transformation stehen Lösungen wie OmniMES, entwickelt von der polnischen Firma Multiprojekt, die Produktionsprozesse in Echtzeit optimieren.",
+      "lang": "de",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
+      "slug": "mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "MES-Systeme als Grundlage der digitalen Transformation: Wie IT-Technologien die moderne Fertigung revolutionieren"
     },
     {
       "__outstatic": {
@@ -1427,6 +1584,43 @@
     },
     {
       "__outstatic": {
+        "commit": "63daa959f11753095674b841ebe2f3acf6523812",
+        "hash": "3768857817",
+        "path": "outstatic/content/posts/integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2-U2MT.png",
+      "description": "Im Zeitalter der digitalen Transformation erreichte der globale Markt für Human-Machine-Interfaces (HMI) im Jahr 2024 einen Wert von 24,5 Milliarden USD. Bis 2033 wird ein Wachstum auf 55,2 Milliarden USD bei einer CAGR von 9,7 % erwartet. Gleichzeitig wuchs der Markt für Simulationssoftware von 19,95 Milliarden USD im Jahr 2024 auf prognostizierte 36,22 Milliarden USD bis 2030 mit einer CAGR von 10,4 %. Diese Trends verdeutlichen einen grundlegenden Wandel im Ansatz zur Optimierung von Produktionsressourcen.",
+      "lang": "de",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
+    },
+    {
+      "__outstatic": {
         "commit": "5c15c12b922882ceab8912e7970d04c06b2c8633",
         "hash": "1047651328",
         "path": "outstatic/content/posts/integration-of-sparkplug-b-protocol-in-mes-systems-for-efficient-production-in-smart-factories.md"
@@ -1449,81 +1643,6 @@
         }
       ],
       "title": "Integration of Sparkplug B Protocol in MES Systems for Efficient Production in Smart Factories"
-    },
-    {
-      "__outstatic": {
-        "commit": "01eaf2c639061100db298c9a99984855c61df36f",
-        "hash": "629970680",
-        "path": "outstatic/content/posts/integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
-      "description": "Integrate MES with IoT to enhance quality control and reduce production downtime.",
-      "lang": "en",
-      "publishedAt": "2025-04-26T09:00:00Z",
-      "slug": "integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Integration of MES with IoT to Enhance Quality Control and Reduce Downtime"
-    },
-    {
-      "__outstatic": {
-        "commit": "890dc6ad3b4283239f582329b67e183cb11a82a2",
-        "hash": "2898932637",
-        "path": "outstatic/content/posts/integration-des-sparkplug-b-protokolls-in-mes-systemen-fur-effiziente-produktion-in-smart-factories.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-integrating-sparkplug-b-protocol-into-mes-systems-for-enhancing-lean-manufacturing-in-smart-factories-this-topic-e.png",
-      "description": "Wie das Sparkplug B-Protokoll Prozesse in MES-Systemen in Smart Factories optimieren und Lean Manufacturing unterstützen kann.",
-      "lang": "de",
-      "publishedAt": "2025-02-05T09:00:00Z",
-      "slug": "integration-des-sparkplug-b-protokolls-in-mes-systemen-fur-effiziente-produktion-in-smart-factories",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Integration des Sparkplug B-Protokolls in MES-Systemen für effiziente Produktion in Smart Factories"
-    },
-    {
-      "__outstatic": {
-        "commit": "9dfa669a8dec2d795e92e0718587f44fc78b7e4f",
-        "hash": "1898589866",
-        "path": "outstatic/content/posts/nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
-      "description": "Wie Produktionsanalytik die Ressourcenplanung im Kontext von Industrie 5.0 unterstützt und Produktionsabläufe optimiert.",
-      "lang": "de",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 5.0",
-          "value": "analityka produkcji"
-        }
-      ],
-      "title": "Nutzung von Produktionsanalytik in der Ressourcenplanung der Industrie 5.0"
     },
     {
       "__outstatic": {
@@ -1609,63 +1728,6 @@
     },
     {
       "__outstatic": {
-        "commit": "eff1359193c8c49290730d98f67fae649bef6982",
-        "hash": "180187371",
-        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/4.png",
-      "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
-      "lang": "pl",
-      "publishedAt": "2024-06-05T07:21:12.000Z",
-      "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "Protokół komunikacyjny",
-          "value": "protokółKomunikacyjny"
-        },
-        {
-          "label": "QoS",
-          "value": "qoS"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Komunikacja IoT",
-          "value": "komunikacjaIoT"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Przemysł 4.0",
-          "value": "przemysł40"
-        },
-        {
-          "label": "Standardy komunikacyjne",
-          "value": "standardyKomunikacyjne"
-        }
-      ],
-      "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
-    },
-    {
-      "__outstatic": {
         "commit": "5755fbb0c9bebd63a54a2f061caa781338c82d76",
         "hash": "3421174015",
         "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i.md"
@@ -1723,28 +1785,93 @@
     },
     {
       "__outstatic": {
-        "commit": "9e66039fcc16c3e3135ace0209c223204d0f6fbd",
-        "hash": "2961237834",
-        "path": "outstatic/content/posts/optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen.md"
+        "commit": "eff1359193c8c49290730d98f67fae649bef6982",
+        "hash": "180187371",
+        "path": "outstatic/content/posts/mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/4.png",
+      "description": "Porównanie protokołów komunikacyjnych MQTT i Sparkplug B w kontekście przemysłowego Internetu Rzeczy (IIoT). Dowiedz się o ich zaletach, różnicach, jakości usług (QoS) oraz retencyjności wiadomości. Odkryj, który protokół lepiej spełnia wymagania Twojego projektu IoT.",
+      "lang": "pl",
+      "publishedAt": "2024-06-05T07:21:12.000Z",
+      "slug": "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "Protokół komunikacyjny",
+          "value": "protokółKomunikacyjny"
+        },
+        {
+          "label": "QoS",
+          "value": "qoS"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Komunikacja IoT",
+          "value": "komunikacjaIoT"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Przemysł 4.0",
+          "value": "przemysł40"
+        },
+        {
+          "label": "Standardy komunikacyjne",
+          "value": "standardyKomunikacyjne"
+        }
+      ],
+      "title": "MQTT vs Sparkplug B: Porównanie Protokółów Komunikacyjnych cz I"
+    },
+    {
+      "__outstatic": {
+        "commit": "bb8db0e7cf404cefec5034e7c4998bf8b1bf497d",
+        "hash": "3292264659",
+        "path": "outstatic/content/posts/mes-systems-as-the-foundation-for-digital-transformation-how-it-technologies-are-revolutionizing-modern-manufacturing.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
-      "description": "Wie industrielle Kommunikation die Integration von MES-Systemen in der Industrie 4.0 unterstützt.",
-      "lang": "de",
-      "publishedAt": "2025-03-19T09:00:00Z",
-      "slug": "optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-YxND.webp",
+      "description": "The global market for Manufacturing Execution Systems (MES) is experiencing unprecedented growth, reaching USD 15.95 billion in 2025 and projected to expand to USD 25.78 billion by 2030 at a CAGR of 10.1%. This dynamic development is driven by industrial digitalization, integration of IT technologies, and the rise of Industry 4.0. At the forefront of this transformation are advanced solutions such as OmniMES, developed by the Polish company Multiprojekt, enabling real-time optimization of production processes.",
+      "lang": "en",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
+      "slug": "mes-systems-as-the-foundation-for-digital-transformation-how-it-technologies-are-revolutionizing-modern-manufacturing",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
-      "title": "Optimierung der Produktionseffizienz: Nutzung industrieller Konnektivität in MES-Systemen"
+      "title": "MES Systems as the Foundation for Digital Transformation: How IT Technologies Are Revolutionizing Modern Manufacturing"
     },
     {
       "__outstatic": {
@@ -1940,6 +2067,31 @@
     },
     {
       "__outstatic": {
+        "commit": "9dfa669a8dec2d795e92e0718587f44fc78b7e4f",
+        "hash": "1898589866",
+        "path": "outstatic/content/posts/nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
+      "description": "Wie Produktionsanalytik die Ressourcenplanung im Kontext von Industrie 5.0 unterstützt und Produktionsabläufe optimiert.",
+      "lang": "de",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 5.0",
+          "value": "analityka produkcji"
+        }
+      ],
+      "title": "Nutzung von Produktionsanalytik in der Ressourcenplanung der Industrie 5.0"
+    },
+    {
+      "__outstatic": {
         "commit": "e003e1dec998091f907359b2e6e50257b7b4e091",
         "hash": "3197901687",
         "path": "outstatic/content/posts/optimierung-des-oee-durch-energiesparstrategien-im-mes.md"
@@ -2053,6 +2205,56 @@
         }
       ],
       "title": "Optimierung der Ressourcenplanung in MES-Systemen durch Integration des Sparkplug B-Protokolls"
+    },
+    {
+      "__outstatic": {
+        "commit": "9e66039fcc16c3e3135ace0209c223204d0f6fbd",
+        "hash": "2961237834",
+        "path": "outstatic/content/posts/optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
+      "description": "Wie industrielle Kommunikation die Integration von MES-Systemen in der Industrie 4.0 unterstützt.",
+      "lang": "de",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Optimierung der Produktionseffizienz: Nutzung industrieller Konnektivität in MES-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "eec84a110c1165e10d66c02430f1e65198a64446",
+        "hash": "2174829431",
+        "path": "outstatic/content/posts/optimization-of-resource-planning-in-mes-systems-through-sparkplug-b-protocol-integration.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
+      "description": "How the Sparkplug B protocol supports resource planning in MES systems, enhancing production efficiency and real-time communication.",
+      "lang": "en",
+      "publishedAt": "2025-05-19T09:00:00Z",
+      "slug": "optimization-of-resource-planning-in-mes-systems-through-sparkplug-b-protocol-integration",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Optimization of Resource Planning in MES Systems through Sparkplug B Protocol Integration"
     },
     {
       "__outstatic": {
@@ -2172,237 +2374,6 @@
     },
     {
       "__outstatic": {
-        "commit": "4505698fc891de2a00b58a434bd14eec32e66d3b",
-        "hash": "4226407120",
-        "path": "outstatic/content/posts/optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/17041843-kwMj.png",
-      "description": "Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.",
-      "lang": "de",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Optimierung des Produktionsplans durch Echtzeitdaten von PLC"
-    },
-    {
-      "__outstatic": {
-        "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
-        "hash": "4265613164",
-        "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
-      "description": "Jak łączność przemysłowa wspiera integrację systemów MES w środowisku Przemysłu 4.0.",
-      "lang": "pl",
-      "publishedAt": "2025-03-19T09:00:00Z",
-      "slug": "optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "30afce7e172bd6ee07c138140f382634e7cdc7f8",
-        "hash": "2654529105",
-        "path": "outstatic/content/posts/optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/17041843-c5Mz.png",
-      "description": "Dowiedz się, jak czujniki fabryczne w czasie rzeczywistym mogą poprawić harmonogramowanie produkcji i zwiększyć efektywność.",
-      "lang": "pl",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Optymalizacja harmonogramu produkcji dzięki danym w czasie rzeczywistym z PLC"
-    },
-    {
-      "__outstatic": {
-        "commit": "136879ef43caaebbe4a1bdc5d127ea2df6339d42",
-        "hash": "1216708349",
-        "path": "outstatic/content/posts/optimization-of-resource-planning-in-smart-factories-hmi-and-simulation.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-gxMj.jpg",
-      "description": "How to use HMI and simulations to optimize resource planning in smart factories and improve production KPIs.",
-      "lang": "en",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "optimization-of-resource-planning-in-smart-factories-hmi-and-simulation",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        }
-      ],
-      "title": "Optimization of Resource Planning in Smart Factories: HMI and Simulation"
-    },
-    {
-      "__outstatic": {
-        "commit": "eec84a110c1165e10d66c02430f1e65198a64446",
-        "hash": "2174829431",
-        "path": "outstatic/content/posts/optimization-of-resource-planning-in-mes-systems-through-sparkplug-b-protocol-integration.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
-      "description": "How the Sparkplug B protocol supports resource planning in MES systems, enhancing production efficiency and real-time communication.",
-      "lang": "en",
-      "publishedAt": "2025-05-19T09:00:00Z",
-      "slug": "optimization-of-resource-planning-in-mes-systems-through-sparkplug-b-protocol-integration",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Optimization of Resource Planning in MES Systems through Sparkplug B Protocol Integration"
-    },
-    {
-      "__outstatic": {
-        "commit": "91fecd651f4e3b367224e3bb45e3b2ccda31b84e",
-        "hash": "684269891",
-        "path": "outstatic/content/posts/optimization-of-production-scheduling-using-real-time-data-from-factory-sensors.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/17041843-UxOT.png",
-      "description": "Discover how real-time factory sensors can enhance production scheduling and boost efficiency.",
-      "lang": "en",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optimization-of-production-scheduling-using-real-time-data-from-factory-sensors",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        }
-      ],
-      "title": "Optimization of Production Scheduling Using Real-Time Data from PLC"
-    },
-    {
-      "__outstatic": {
-        "commit": "5f4ea73a6544d2c586aa9c677b128e2821d4d96c",
-        "hash": "696138512",
-        "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
-      "description": "Jak zaawansowane planowanie produkcji może poprawić zarządzanie partiami w nowoczesnych systemach produkcyjnych.",
-      "lang": "pl",
-      "publishedAt": "2025-08-05T09:00:00.000Z",
-      "slug": "optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        }
-      ],
-      "title": "Efektywne zarządzanie partiami w kontekście zaawansowanego planowania produkcji i Industry 4.0"
-    },
-    {
-      "__outstatic": {
         "commit": "e211163fd5b90a42ecb025e427fb031b38b44361",
         "hash": "4125244934",
         "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-wskazniki-kpi-w-czasie-rzeczywistym.md"
@@ -2432,28 +2403,32 @@
     },
     {
       "__outstatic": {
-        "commit": "9bf7bfd55eaf85b1cbabf2775606bd120e287e75",
-        "hash": "2202212108",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b.md"
+        "commit": "5f4ea73a6544d2c586aa9c677b128e2821d4d96c",
+        "hash": "696138512",
+        "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
-      "description": "Jak protokół Sparkplug B wspiera planowanie zasobów w systemach MES, poprawiając efektywność produkcji i komunikację w czasie rzeczywistym.",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
+      "description": "Jak zaawansowane planowanie produkcji może poprawić zarządzanie partiami w nowoczesnych systemach produkcyjnych.",
       "lang": "pl",
-      "publishedAt": "2025-05-19T09:00:00Z",
-      "slug": "optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b",
+      "publishedAt": "2025-08-05T09:00:00.000Z",
+      "slug": "optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
         }
       ],
-      "title": "Optymalizacja planowania zasobów w systemach MES dzięki integracji protokołu Sparkplug B"
+      "title": "Efektywne zarządzanie partiami w kontekście zaawansowanego planowania produkcji i Industry 4.0"
     },
     {
       "__outstatic": {
@@ -2490,102 +2465,53 @@
     },
     {
       "__outstatic": {
-        "commit": "1cb15563dd5f228b0f351193cccb5a0c257d8728",
-        "hash": "143276349",
-        "path": "outstatic/content/posts/qualitatskontrolle-in-der-automatisierten-fertigung-mit-mqtt-und-sparkplug-b-verbessern.md"
+        "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
+        "hash": "4265613164",
+        "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-automated-manufacturing-leveraging-mqtt-and-sparkplug-b-protocol-for-real-time-resour.png",
-      "description": "Wie MQTT und das Sparkplug B-Protokoll die Qualitätskontrolle in der automatisierten Produktion verbessern können.",
-      "lang": "de",
-      "publishedAt": "2025-03-05T09:00:00Z",
-      "slug": "qualitatskontrolle-in-der-automatisierten-fertigung-mit-mqtt-und-sparkplug-b-verbessern",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "MQTT"
-        },
-        {
-          "label": "Protokół",
-          "value": "Sparkplug B"
-        },
-        {
-          "label": "Produkcja",
-          "value": "automatyzacja"
-        }
-      ],
-      "title": "Qualitätskontrolle in der automatisierten Fertigung mit MQTT und Sparkplug B verbessern"
-    },
-    {
-      "__outstatic": {
-        "commit": "90f467fb4a87b73d3bc593e8592d9db66037b7ee",
-        "hash": "4179447462",
-        "path": "outstatic/content/posts/qualitatskontrolle-durch-echtzeit-datenanalyse-im-mes-verbessern.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-through-real-time-data-analytics-in-manufacturing-execution-systems-for-continuous-impro.png",
-      "description": "Wie Echtzeitanalytik in MES die Qualitätskontrolle in der Produktion verbessert.",
-      "lang": "de",
-      "publishedAt": "2025-07-26T09:00:00Z",
-      "slug": "qualitatskontrolle-durch-echtzeit-datenanalyse-im-mes-verbessern",
+      "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
+      "description": "Jak łączność przemysłowa wspiera integrację systemów MES w środowisku Przemysłu 4.0.",
+      "lang": "pl",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes",
       "status": "published",
       "tags": [
         {
           "label": "Kategoria",
-          "value": "Produkcja"
+          "value": "Przemysł 4.0"
         }
       ],
-      "title": "Qualitätskontrolle durch Echtzeit-Datenanalyse im MES verbessern"
+      "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES"
     },
     {
       "__outstatic": {
-        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
-        "hash": "4259407744",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
+        "commit": "9bf7bfd55eaf85b1cbabf2775606bd120e287e75",
+        "hash": "2202212108",
+        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
+      "description": "Jak protokół Sparkplug B wspiera planowanie zasobów w systemach MES, poprawiając efektywność produkcji i komunikację w czasie rzeczywistym.",
       "lang": "pl",
-      "publishedAt": "2024-06-10T08:10:14.654Z",
-      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+      "publishedAt": "2025-05-19T09:00:00Z",
+      "slug": "optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b",
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Modele LLM",
-          "value": "modeleLlm"
-        },
-        {
-          "label": "API GPT-4",
-          "value": "apiGpt4"
-        },
-        {
-          "label": "analiza danych",
-          "value": "analizaDanych"
-        },
-        {
-          "label": "Bezpieczeństwo danych",
-          "value": "bezpieczeństwoDanych"
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
         }
       ],
-      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+      "title": "Optymalizacja planowania zasobów w systemach MES dzięki integracji protokołu Sparkplug B"
     },
     {
       "__outstatic": {
@@ -2630,6 +2556,39 @@
     },
     {
       "__outstatic": {
+        "commit": "3d262178be746b3a100e6bc2d61f333601fd19b7",
+        "hash": "3906025233",
+        "path": "outstatic/content/posts/practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database_vector-kyMj.png",
+      "description": "Industry 4.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.",
+      "lang": "en",
+      "publishedAt": "2025-09-09T06:56:07.720Z",
+      "slug": "practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Database Vector",
+          "value": "databaseVector"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Practical Applications of AI in the Era of Factory Digitalization: How Can Vector Databases Support Time Series Analysis?"
+    },
+    {
+      "__outstatic": {
         "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
         "hash": "46414442",
         "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
@@ -2668,6 +2627,241 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "1a51ddfa004995dbd688d085416751684b73df4b",
+        "hash": "1836003293",
+        "path": "outstatic/content/posts/plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/plc-I5OD.png",
+      "description": "Im Zeitalter von Industrie 5.0 hängt die Produktionseffizienz immer stärker von der Fähigkeit der Unternehmen ab, Daten in Echtzeit zu verarbeiten und zu nutzen. Die Integration von Speicherprogrammierbaren Steuerungen (SPS/PLC) mit Manufacturing Execution Systems (MES) ist heute ein zentrales Element der digitalen Transformation in Industriebetrieben. Lösungen wie Omnimes von Multiprojekt ermöglichen es Unternehmen, das Potenzial dieser Integration voll auszuschöpfen.",
+      "lang": "de",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "PLC Steuerungen und MES-Systeme als Grundlage für die digitale Transformation der Industrie"
+    },
+    {
+      "__outstatic": {
+        "commit": "c93707139041c4419d8ef6fff22b148124cb4908",
+        "hash": "779790609",
+        "path": "outstatic/content/posts/plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/plc-U3OD.png",
+      "description": "In the era of Industry 5.0, production efficiency increasingly depends on an enterprise’s ability to process and use data in real time. Integrating Programmable Logic Controllers (PLCs) with Manufacturing Execution Systems (MES) is now a key pillar of digital transformation in industrial plants. Solutions such as Multiprojekt’s Omnimes enable companies to fully realize the potential of this integration.",
+      "lang": "en",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        }
+      ],
+      "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
+    },
+    {
+      "__outstatic": {
+        "commit": "90f467fb4a87b73d3bc593e8592d9db66037b7ee",
+        "hash": "4179447462",
+        "path": "outstatic/content/posts/qualitatskontrolle-durch-echtzeit-datenanalyse-im-mes-verbessern.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-through-real-time-data-analytics-in-manufacturing-execution-systems-for-continuous-impro.png",
+      "description": "Wie Echtzeitanalytik in MES die Qualitätskontrolle in der Produktion verbessert.",
+      "lang": "de",
+      "publishedAt": "2025-07-26T09:00:00Z",
+      "slug": "qualitatskontrolle-durch-echtzeit-datenanalyse-im-mes-verbessern",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Qualitätskontrolle durch Echtzeit-Datenanalyse im MES verbessern"
+    },
+    {
+      "__outstatic": {
+        "commit": "1cb15563dd5f228b0f351193cccb5a0c257d8728",
+        "hash": "143276349",
+        "path": "outstatic/content/posts/qualitatskontrolle-in-der-automatisierten-fertigung-mit-mqtt-und-sparkplug-b-verbessern.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-in-automated-manufacturing-leveraging-mqtt-and-sparkplug-b-protocol-for-real-time-resour.png",
+      "description": "Wie MQTT und das Sparkplug B-Protokoll die Qualitätskontrolle in der automatisierten Produktion verbessern können.",
+      "lang": "de",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "qualitatskontrolle-in-der-automatisierten-fertigung-mit-mqtt-und-sparkplug-b-verbessern",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "MQTT"
+        },
+        {
+          "label": "Protokół",
+          "value": "Sparkplug B"
+        },
+        {
+          "label": "Produkcja",
+          "value": "automatyzacja"
+        }
+      ],
+      "title": "Qualitätskontrolle in der automatisierten Fertigung mit MQTT und Sparkplug B verbessern"
+    },
+    {
+      "__outstatic": {
+        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
+        "hash": "4259407744",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "lang": "pl",
+      "publishedAt": "2024-06-10T08:10:14.654Z",
+      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Modele LLM",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "API GPT-4",
+          "value": "apiGpt4"
+        },
+        {
+          "label": "analiza danych",
+          "value": "analizaDanych"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
+        }
+      ],
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
+    },
+    {
+      "__outstatic": {
+        "commit": "59b0191aef388a357f48f9f089a57ab013ff2803",
+        "hash": "495063793",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database_vector-Y4MD.png",
+      "description": "Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
+      "lang": "pl",
+      "publishedAt": "2025-09-09T06:25:59.088Z",
+      "slug": "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Dane czasowe",
+          "value": "daneCzasowe"
+        },
+        {
+          "label": "Baza wektorowa",
+          "value": "bazaWektorowa"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
+    },
+    {
+      "__outstatic": {
+        "commit": "fcc18fdb30c217e8d83aad285e9c53f2ef8d3a6a",
+        "hash": "907775159",
+        "path": "outstatic/content/posts/praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database_vector-IyNT.png",
+      "description": "Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
+      "lang": "de",
+      "publishedAt": "2025-09-09T07:07:00.286Z",
+      "slug": "praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Database Vector",
+          "value": "databaseVector"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?"
     },
     {
       "__outstatic": {
@@ -2892,89 +3086,40 @@
     },
     {
       "__outstatic": {
-        "commit": "e2a52599bd96922394871bf830378a310c37db29",
-        "hash": "538307948",
-        "path": "outstatic/content/posts/udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot.md"
+        "commit": "e999f34a06e5fa091a051948eec7a23bed7d1c40",
+        "hash": "3655601770",
+        "path": "outstatic/content/posts/systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
-      "description": "Jak integracja czujników i technologii IoT poprawia harmonogramowanie produkcji w inteligentnych fabrykach.",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
+      "description": "Globalny rynek systemów realizacji produkcji (MES – Manufacturing Execution Systems) przeżywa dynamiczny rozwój. W 2025 roku osiągnie wartość 15,95 mld USD, a do 2030 roku wzrośnie do 25,78 mld USD przy średniorocznym tempie wzrostu 10,1%. Ten trend jest napędzany przez cyfryzację przemysłu, integrację technologii informatycznych oraz rosnące znaczenie koncepcji Przemysłu 4.0. W centrum tej transformacji znajdują się nowoczesne rozwiązania, takie jak OmniMES opracowany przez polską firmę Multiprojekt, który umożliwia optymalizację procesów produkcyjnych w czasie rzeczywistym.",
       "lang": "pl",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
+      "slug": "systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
-      "title": "Udoskonalenie harmonogramowania produkcji dzięki symulacji i integracji IoT"
-    },
-    {
-      "__outstatic": {
-        "commit": "2372894bf273a06771c7dba1c821095a63eca189",
-        "hash": "2922331518",
-        "path": "outstatic/content/posts/the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/web3-A5ND.png",
-      "description": "The use of Web3 and blockchain technology in managing industrial data and promoting renewable energy sources (RES). This article discusses energy consumption monitoring, automated settlements, energy tokenization, and peer-to-peer trading, emphasizing the benefits of using Web3 in the industry.",
-      "lang": "en",
-      "publishedAt": "2024-12-09T12:12:36.342Z",
-      "slug": "the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Web3",
-          "value": "web3"
-        },
-        {
-          "label": "blockchain",
-          "value": "blockchain"
-        },
-        {
-          "label": "RES",
-          "value": "res"
-        },
-        {
-          "label": "renewable energy sources",
-          "value": "renewableEnergySources"
-        },
-        {
-          "label": "energy tokenization",
-          "value": "energyTokenization"
-        },
-        {
-          "label": "smart contracts",
-          "value": "smartContracts"
-        },
-        {
-          "label": "energy consumption monitoring",
-          "value": "energyConsumptionMonitoring"
-        },
-        {
-          "label": "automated settlements",
-          "value": "automatedSettlements"
-        },
-        {
-          "label": "P2P energy trading",
-          "value": "p2pEnergyTrading"
-        },
-        {
-          "label": "sustainable energy",
-          "value": "sustainableEnergy"
-        }
-      ],
-      "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
+      "title": "Systemy MES jako fundament cyfrowej transformacji: Jak technologie IT rewolucjonizują nowoczesną produkcję"
     },
     {
       "__outstatic": {
@@ -3000,6 +3145,39 @@
         }
       ],
       "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien"
+    },
+    {
+      "__outstatic": {
+        "commit": "c8b6f7e0752817116ba3e81277a1c8747dc766c3",
+        "hash": "2345988781",
+        "path": "outstatic/content/posts/sterowniki-plc-i-systemem-mes-jako-fundament-cyfrowej-transformacji-przemyslu.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/plc-I2NT.png",
+      "description": "W erze przemysłu 5.0 efektywność produkcji zależy w coraz większym stopniu od zdolności przedsiębiorstw do przetwarzania i wykorzystywania danych w czasie rzeczywistym. Integracja sterowników programowalnych PLC (Programmable Logic Controllers) z systemami wykonawczymi produkcji MES (Manufacturing Execution Systems) stanowi obecnie kluczowy element cyfrowej transformacji zakładów przemysłowych. Rozwiązania takie jak system Omnimes firmy Multiprojekt umożliwiają przedsiębiorstwom pełne wykorzystanie potencjału tej integracji.",
+      "lang": "pl",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "sterowniki-plc-i-systemem-mes-jako-fundament-cyfrowej-transformacji-przemyslu",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Sterowniki PLC i systemem MES jako fundament cyfrowej transformacji przemysłu"
     },
     {
       "__outstatic": {
@@ -3050,68 +3228,6 @@
         }
       ],
       "title": "Steigerung der Produktionseffizienz durch integrierte HMI-Schnittstellen in MES-Systemen"
-    },
-    {
-      "__outstatic": {
-        "commit": "f5aa81930627f8aa231d3e3ee5b0712c9a285353",
-        "hash": "97278789",
-        "path": "outstatic/content/posts/utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
-      "description": "Integration of digital twins with machine learning to optimize predictive maintenance in modern production systems.",
-      "lang": "en",
-      "publishedAt": "2025-06-19T09:00:00Z",
-      "slug": "utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Cyfrowe bliźniaki"
-        },
-        {
-          "label": "Utrzymanie",
-          "value": "Utrzymanie predykcyjne"
-        }
-      ],
-      "title": "Utilization of Digital Twins and Machine Learning in Predictive Maintenance"
-    },
-    {
-      "__outstatic": {
-        "commit": "41eebf676e13eb7dfecfd59a5deb75268e230d5f",
-        "hash": "1901069639",
-        "path": "outstatic/content/posts/utilization-of-computer-vision-and-digital-twin-technology-in-quality-control-in-manufacturing.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-computer-vision-and-digital-twin-technology-for-enhanced-quality-control-in-manufacturing-processes-exp.png",
-      "description": "How the integration of computer vision systems with digital twin technology can revolutionize quality control in manufacturing.",
-      "lang": "en",
-      "publishedAt": "2025-03-26T09:00:00Z",
-      "slug": "utilization-of-computer-vision-and-digital-twin-technology-in-quality-control-in-manufacturing",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Computer Vision"
-        },
-        {
-          "label": "Przemysł",
-          "value": "Digital Twin"
-        },
-        {
-          "label": "Kontrola jakości",
-          "value": "produkcja"
-        }
-      ],
-      "title": "Utilization of Computer Vision and Digital Twin Technology in Quality Control in Manufacturing"
     },
     {
       "__outstatic": {
@@ -3250,65 +3366,89 @@
     },
     {
       "__outstatic": {
-        "commit": "9cfc94fcec4e8fddfe75fb350b572f31a7fd52bb",
-        "hash": "2188697738",
-        "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
+        "commit": "e2a52599bd96922394871bf830378a310c37db29",
+        "hash": "538307948",
+        "path": "outstatic/content/posts/udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
-      "description": "A practical guide to using the MQTT protocol in MES and IoT systems to enhance production processes.",
-      "lang": "en",
-      "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices",
+      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
+      "description": "Jak integracja czujników i technologii IoT poprawia harmonogramowanie produkcji w inteligentnych fabrykach.",
+      "lang": "pl",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot",
       "status": "published",
       "tags": [
         {
           "label": "Kategoria",
-          "value": "Przemysł 4.0"
+          "value": "Automatyzacja przemysłowa"
         }
       ],
-      "title": "Utilization of MQTT Protocol to Enhance Connectivity Between MES Systems and IoT Devices"
+      "title": "Udoskonalenie harmonogramowania produkcji dzięki symulacji i integracji IoT"
     },
     {
       "__outstatic": {
-        "commit": "65c6ca67d6fadc31c0066a0da4e8a61404c1ed06",
-        "hash": "2712066582",
-        "path": "outstatic/content/posts/utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing.md"
+        "commit": "2372894bf273a06771c7dba1c821095a63eca189",
+        "hash": "2922331518",
+        "path": "outstatic/content/posts/the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-YxND.webp",
-      "description": "Practical strategies for implementing MES systems for factory digitization and IoT integration.",
+      "coverImage": "/images/web3-A5ND.png",
+      "description": "The use of Web3 and blockchain technology in managing industrial data and promoting renewable energy sources (RES). This article discusses energy consumption monitoring, automated settlements, energy tokenization, and peer-to-peer trading, emphasizing the benefits of using Web3 in the industry.",
       "lang": "en",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing",
+      "publishedAt": "2024-12-09T12:12:36.342Z",
+      "slug": "the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources",
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "label": "Web3",
+          "value": "web3"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "label": "blockchain",
+          "value": "blockchain"
         },
         {
-          "label": "Industry 4.0",
-          "value": "industry40"
+          "label": "RES",
+          "value": "res"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "label": "renewable energy sources",
+          "value": "renewableEnergySources"
+        },
+        {
+          "label": "energy tokenization",
+          "value": "energyTokenization"
+        },
+        {
+          "label": "smart contracts",
+          "value": "smartContracts"
+        },
+        {
+          "label": "energy consumption monitoring",
+          "value": "energyConsumptionMonitoring"
+        },
+        {
+          "label": "automated settlements",
+          "value": "automatedSettlements"
+        },
+        {
+          "label": "P2P energy trading",
+          "value": "p2pEnergyTrading"
+        },
+        {
+          "label": "sustainable energy",
+          "value": "sustainableEnergy"
         }
       ],
-      "title": "Utilization of MES Systems for Seamless Integration in Connected Manufacturing"
+      "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
     },
     {
       "__outstatic": {
@@ -3391,61 +3531,65 @@
     },
     {
       "__outstatic": {
-        "commit": "71f23845a70ff9f7dc41752c45bd303e39bb1a80",
-        "hash": "3711810427",
-        "path": "outstatic/content/posts/utilization-of-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings.md"
+        "commit": "f5aa81930627f8aa231d3e3ee5b0712c9a285353",
+        "hash": "97278789",
+        "path": "outstatic/content/posts/utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-leveraging-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings-in-industrial-automation-this-top.png",
-      "description": "The integration of the Sparkplug B protocol in MES systems supports downtime reduction and energy savings in industrial automation.",
+      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
+      "description": "Integration of digital twins with machine learning to optimize predictive maintenance in modern production systems.",
       "lang": "en",
-      "publishedAt": "2025-06-05T09:00:00Z",
-      "slug": "utilization-of-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings",
+      "publishedAt": "2025-06-19T09:00:00Z",
+      "slug": "utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance",
       "status": "published",
       "tags": [
         {
           "label": "Technologia",
-          "value": "Sparkplug B"
+          "value": "Cyfrowe bliźniaki"
         },
         {
-          "label": "Przemysł",
-          "value": "MES"
-        },
-        {
-          "label": "Efektywność",
-          "value": "redukcja przestojów"
+          "label": "Utrzymanie",
+          "value": "Utrzymanie predykcyjne"
         }
       ],
-      "title": "Utilization of Sparkplug B Protocol in MES for Downtime Reduction and Energy Savings"
+      "title": "Utilization of Digital Twins and Machine Learning in Predictive Maintenance"
     },
     {
       "__outstatic": {
-        "commit": "79fb06dbfdf21ac76123431d5b795bab98c62513",
-        "hash": "3149521546",
-        "path": "outstatic/content/posts/utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control.md"
+        "commit": "41eebf676e13eb7dfecfd59a5deb75268e230d5f",
+        "hash": "1901069639",
+        "path": "outstatic/content/posts/utilization-of-computer-vision-and-digital-twin-technology-in-quality-control-in-manufacturing.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
-      "description": "How KPIs and computer vision can enhance quality control in smart factories.",
+      "coverImage": "/images/topic-leveraging-computer-vision-and-digital-twin-technology-for-enhanced-quality-control-in-manufacturing-processes-exp.png",
+      "description": "How the integration of computer vision systems with digital twin technology can revolutionize quality control in manufacturing.",
       "lang": "en",
-      "publishedAt": "2025-02-26T09:00:00Z",
-      "slug": "utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "utilization-of-computer-vision-and-digital-twin-technology-in-quality-control-in-manufacturing",
       "status": "published",
       "tags": [
         {
-          "label": "Temat",
-          "value": "Kontrola jakości"
+          "label": "Technologia",
+          "value": "Computer Vision"
+        },
+        {
+          "label": "Przemysł",
+          "value": "Digital Twin"
+        },
+        {
+          "label": "Kontrola jakości",
+          "value": "produkcja"
         }
       ],
-      "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control"
+      "title": "Utilization of Computer Vision and Digital Twin Technology in Quality Control in Manufacturing"
     },
     {
       "__outstatic": {
@@ -3483,6 +3627,31 @@
         }
       ],
       "title": "Utilization of Smart Manufacturing and Failure Prediction in MES with Sparkplug B Protocol"
+    },
+    {
+      "__outstatic": {
+        "commit": "79fb06dbfdf21ac76123431d5b795bab98c62513",
+        "hash": "3149521546",
+        "path": "outstatic/content/posts/utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
+      "description": "How KPIs and computer vision can enhance quality control in smart factories.",
+      "lang": "en",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Kontrola jakości"
+        }
+      ],
+      "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control"
     },
     {
       "__outstatic": {
@@ -3540,28 +3709,28 @@
     },
     {
       "__outstatic": {
-        "commit": "2edd5c5704ce55a43a13dbce6b04fd55e16a33ec",
-        "hash": "1648449106",
-        "path": "outstatic/content/posts/wykorzystanie-analityki-produkcji-w-planowaniu-zasobow-w-przemysle-5-0.md"
+        "commit": "9cfc94fcec4e8fddfe75fb350b572f31a7fd52bb",
+        "hash": "2188697738",
+        "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
-      "description": "Jak analityka produkcji wspiera planowanie zasobów w kontekście przemysłu 5.0, optymalizując operacje produkcyjne.",
-      "lang": "pl",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "wykorzystanie-analityki-produkcji-w-planowaniu-zasobow-w-przemysle-5-0",
+      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
+      "description": "A practical guide to using the MQTT protocol in MES and IoT systems to enhance production processes.",
+      "lang": "en",
+      "publishedAt": "2025-01-12T09:00:00Z",
+      "slug": "utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices",
       "status": "published",
       "tags": [
         {
-          "label": "Przemysł 5.0",
-          "value": "analityka produkcji"
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
         }
       ],
-      "title": "Wykorzystanie analityki produkcji w planowaniu zasobów w przemyśle 5.0"
+      "title": "Utilization of MQTT Protocol to Enhance Connectivity Between MES Systems and IoT Devices"
     },
     {
       "__outstatic": {
@@ -3599,6 +3768,56 @@
         }
       ],
       "title": "Wizualizacja danych - sukcesem analizy. Redash"
+    },
+    {
+      "__outstatic": {
+        "commit": "ed3a23af7c8a416e001a2dd9edd89c9cb54503e6",
+        "hash": "3034406937",
+        "path": "outstatic/content/posts/verbesserung-der-qualitatskontrolle-in-mes-durch-den-sparkplug-b-protokoll.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-in-manufacturing-execution-systems-using-sparkplug-b-protocol-for-real-time-data-integra.png",
+      "description": "Wie das Sparkplug B-Protokoll die Qualitätskontrolle in MES-Systemen durch die Integration von Echtzeitdaten verbessern kann.",
+      "lang": "de",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "verbesserung-der-qualitatskontrolle-in-mes-durch-den-sparkplug-b-protokoll",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Verbesserung der Qualitätskontrolle in MES durch den Sparkplug B-Protokoll"
+    },
+    {
+      "__outstatic": {
+        "commit": "b6210a41e8b547a347e3bafa1cd3599dfb591297",
+        "hash": "42620471",
+        "path": "outstatic/content/posts/verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
+      "description": "Wie die Integration von Sensoren und IoT-Technologie die Produktionsplanung in intelligenten Fabriken verbessert.",
+      "lang": "de",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Verbesserung der Produktionsplanung durch Simulation und IoT-Integration"
     },
     {
       "__outstatic": {
@@ -3655,78 +3874,36 @@
     },
     {
       "__outstatic": {
-        "commit": "ed3a23af7c8a416e001a2dd9edd89c9cb54503e6",
-        "hash": "3034406937",
-        "path": "outstatic/content/posts/verbesserung-der-qualitatskontrolle-in-mes-durch-den-sparkplug-b-protokoll.md"
+        "commit": "71f23845a70ff9f7dc41752c45bd303e39bb1a80",
+        "hash": "3711810427",
+        "path": "outstatic/content/posts/utilization-of-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-manufacturing-execution-systems-using-sparkplug-b-protocol-for-real-time-data-integra.png",
-      "description": "Wie das Sparkplug B-Protokoll die Qualitätskontrolle in MES-Systemen durch die Integration von Echtzeitdaten verbessern kann.",
-      "lang": "de",
-      "publishedAt": "2025-04-05T09:00:00Z",
-      "slug": "verbesserung-der-qualitatskontrolle-in-mes-durch-den-sparkplug-b-protokoll",
+      "coverImage": "/images/topic-leveraging-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings-in-industrial-automation-this-top.png",
+      "description": "The integration of the Sparkplug B protocol in MES systems supports downtime reduction and energy savings in industrial automation.",
+      "lang": "en",
+      "publishedAt": "2025-06-05T09:00:00Z",
+      "slug": "utilization-of-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Verbesserung der Qualitätskontrolle in MES durch den Sparkplug B-Protokoll"
-    },
-    {
-      "__outstatic": {
-        "commit": "b6210a41e8b547a347e3bafa1cd3599dfb591297",
-        "hash": "42620471",
-        "path": "outstatic/content/posts/verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
-      "description": "Wie die Integration von Sensoren und IoT-Technologie die Produktionsplanung in intelligenten Fabriken verbessert.",
-      "lang": "de",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration",
-      "status": "published",
-      "tags": [
+          "label": "Technologia",
+          "value": "Sparkplug B"
+        },
         {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Verbesserung der Produktionsplanung durch Simulation und IoT-Integration"
-    },
-    {
-      "__outstatic": {
-        "commit": "dce4e3224ffff6104b8e0150ac7316650bd65d39",
-        "hash": "323311496",
-        "path": "outstatic/content/posts/wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
-      "description": "Jak KPI i wizja komputerowa mogą poprawić kontrolę jakości w inteligentnych fabrykach.",
-      "lang": "pl",
-      "publishedAt": "2025-02-26T09:00:00Z",
-      "slug": "wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci",
-      "status": "published",
-      "tags": [
+          "label": "Przemysł",
+          "value": "MES"
+        },
         {
-          "label": "Temat",
-          "value": "Kontrola jakości"
+          "label": "Efektywność",
+          "value": "redukcja przestojów"
         }
       ],
-      "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości"
+      "title": "Utilization of Sparkplug B Protocol in MES for Downtime Reduction and Energy Savings"
     },
     {
       "__outstatic": {
@@ -3854,6 +4031,31 @@
     },
     {
       "__outstatic": {
+        "commit": "2edd5c5704ce55a43a13dbce6b04fd55e16a33ec",
+        "hash": "1648449106",
+        "path": "outstatic/content/posts/wykorzystanie-analityki-produkcji-w-planowaniu-zasobow-w-przemysle-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
+      "description": "Jak analityka produkcji wspiera planowanie zasobów w kontekście przemysłu 5.0, optymalizując operacje produkcyjne.",
+      "lang": "pl",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "wykorzystanie-analityki-produkcji-w-planowaniu-zasobow-w-przemysle-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 5.0",
+          "value": "analityka produkcji"
+        }
+      ],
+      "title": "Wykorzystanie analityki produkcji w planowaniu zasobów w przemyśle 5.0"
+    },
+    {
+      "__outstatic": {
         "commit": "65dbd40941b34e141e94ff8130d1a7630f6f705b",
         "hash": "3471039577",
         "path": "outstatic/content/posts/wykorzystanie-technologii-computer-vision-i-digital-twin-w-kontroli-jakosci-w-produkcji.md"
@@ -3884,47 +4086,6 @@
         }
       ],
       "title": "Wykorzystanie technologii Computer Vision i Digital Twin w kontroli jakości w produkcji"
-    },
-    {
-      "__outstatic": {
-        "commit": "ff564995d8ad735113ba31eb893a279fb2bf478f",
-        "hash": "3566394723",
-        "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
-      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
-      "lang": "pl",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Wykorzystanie systemów MES dla płynnej integracji w fabryce"
     },
     {
       "__outstatic": {
@@ -4036,6 +4197,31 @@
         }
       ],
       "title": "Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami IoT"
+    },
+    {
+      "__outstatic": {
+        "commit": "dce4e3224ffff6104b8e0150ac7316650bd65d39",
+        "hash": "323311496",
+        "path": "outstatic/content/posts/wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
+      "description": "Jak KPI i wizja komputerowa mogą poprawić kontrolę jakości w inteligentnych fabrykach.",
+      "lang": "pl",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Kontrola jakości"
+        }
+      ],
+      "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości"
     },
     {
       "__outstatic": {
@@ -4277,31 +4463,6 @@
     },
     {
       "__outstatic": {
-        "commit": "dd63e1d8923fbebe83234180b6f6856fe90224d8",
-        "hash": "596416091",
-        "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
-      "description": "Integracja zaawansowanych interfejsów HMI w systemach MES poprawia efektywność operacyjną w połączonej fabryce.",
-      "lang": "pl",
-      "publishedAt": "2025-01-26T09:00:00Z",
-      "slug": "zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Zwiększanie efektywności produkcji dzięki zintegrowanym interfejsom HMI w systemach MES"
-    },
-    {
-      "__outstatic": {
         "commit": "bb9bfc83c4b3c7dca974932167abf64b03ce9754",
         "hash": "609914239",
         "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-dzieki-systemom-mes-opartym-na-ai.md"
@@ -4357,6 +4518,31 @@
         }
       ],
       "title": "Zbieranie danych z rzeczywistych maszyn przemysłowych: Metody i narzędzia"
+    },
+    {
+      "__outstatic": {
+        "commit": "dd63e1d8923fbebe83234180b6f6856fe90224d8",
+        "hash": "596416091",
+        "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
+      "description": "Integracja zaawansowanych interfejsów HMI w systemach MES poprawia efektywność operacyjną w połączonej fabryce.",
+      "lang": "pl",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Zwiększanie efektywności produkcji dzięki zintegrowanym interfejsom HMI w systemach MES"
     },
     {
       "__outstatic": {
@@ -4471,31 +4657,6 @@
     },
     {
       "__outstatic": {
-        "commit": "c87d5578b1af1639ae27ae7319c8adf7373a9305",
-        "hash": "2975314560",
-        "path": "outstatic/content/posts/zwiekszenie-kontroli-jakosci-w-lean-manufacturing-dzieki-ai-w-systemach-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-lean-manufacturing-through-ai-driven-real-time-monitoring-in-mes-systems-this-topic-e.png",
-      "description": "Odkryj, jak AI w systemach MES poprawia kontrolę jakości w Lean Manufacturing poprzez monitorowanie w czasie rzeczywistym.",
-      "lang": "pl",
-      "publishedAt": "2025-05-26T09:00:00Z",
-      "slug": "zwiekszenie-kontroli-jakosci-w-lean-manufacturing-dzieki-ai-w-systemach-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Zwiększenie kontroli jakości w Lean Manufacturing dzięki AI w systemach MES"
-    },
-    {
-      "__outstatic": {
         "commit": "9e21730dbf55a535ec1c2e81cddcdc0e2660ad20",
         "hash": "1148782306",
         "path": "outstatic/content/posts/zwiekszenie-efektywnosci-zarzadzania-partiami-dzieki-zaawansowanym-interfejsom-hmi.md"
@@ -4521,6 +4682,31 @@
     },
     {
       "__outstatic": {
+        "commit": "c87d5578b1af1639ae27ae7319c8adf7373a9305",
+        "hash": "2975314560",
+        "path": "outstatic/content/posts/zwiekszenie-kontroli-jakosci-w-lean-manufacturing-dzieki-ai-w-systemach-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-in-lean-manufacturing-through-ai-driven-real-time-monitoring-in-mes-systems-this-topic-e.png",
+      "description": "Odkryj, jak AI w systemach MES poprawia kontrolę jakości w Lean Manufacturing poprzez monitorowanie w czasie rzeczywistym.",
+      "lang": "pl",
+      "publishedAt": "2025-05-26T09:00:00Z",
+      "slug": "zwiekszenie-kontroli-jakosci-w-lean-manufacturing-dzieki-ai-w-systemach-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Zwiększenie kontroli jakości w Lean Manufacturing dzięki AI w systemach MES"
+    },
+    {
+      "__outstatic": {
         "commit": "4f60df7314e209b938ef28caaf8345ae33b8cdb7",
         "hash": "956142578",
         "path": "outstatic/content/posts/zwiekszenie-efektywnosci-lean-manufacturing-dzieki-integracji-mqtt-w-mes.md"
@@ -4543,249 +4729,6 @@
         }
       ],
       "title": "Zwiększenie efektywności Lean Manufacturing dzięki integracji MQTT w MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "78218d17c2fe632b24211e5dcbc1b5a4a520dca8",
-        "hash": "495063793",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database_vector-Y4MD.png",
-      "description": "Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
-      "lang": "pl",
-      "publishedAt": "2025-09-09T06:25:59.088Z",
-      "slug": "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Dane czasowe",
-          "value": "daneCzasowe"
-        },
-        {
-          "label": "Baza wektorowa",
-          "value": "bazaWektorowa"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
-    },
-    {
-      "__outstatic": {
-        "commit": "82fbdcb75809fb0a741c06bff9e5fb9dbf599609",
-        "hash": "1598002604",
-        "path": "outstatic/content/posts/industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database_vector-IyNT.png",
-      "description": "Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
-      "lang": "de",
-      "publishedAt": "2025-09-09T07:07:00.286Z",
-      "slug": "industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Database Vector",
-          "value": "databaseVector"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?"
-    },
-    {
-      "__outstatic": {
-        "commit": "0d74dae5231eb497e6aeac4da3edba2823039b61",
-        "hash": "3768857817",
-        "path": "outstatic/content/posts/integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2-U2MT.png",
-      "description": "Im Zeitalter der digitalen Transformation erreichte der globale Markt für Human-Machine-Interfaces (HMI) im Jahr 2024 einen Wert von 24,5 Milliarden USD. Bis 2033 wird ein Wachstum auf 55,2 Milliarden USD bei einer CAGR von 9,7 % erwartet. Gleichzeitig wuchs der Markt für Simulationssoftware von 19,95 Milliarden USD im Jahr 2024 auf prognostizierte 36,22 Milliarden USD bis 2030 mit einer CAGR von 10,4 %. Diese Trends verdeutlichen einen grundlegenden Wandel im Ansatz zur Optimierung von Produktionsressourcen.",
-      "lang": "de",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
-    },
-    {
-      "__outstatic": {
-        "commit": "57a3ccca6da2b05a6362fdd8af90b1541666238f",
-        "hash": "3906025233",
-        "path": "outstatic/content/posts/practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database_vector-kyMj.png",
-      "description": "Industry 4.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.",
-      "lang": "en",
-      "publishedAt": "2025-09-09T06:56:07.720Z",
-      "slug": "practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Database Vector",
-          "value": "databaseVector"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Practical Applications of AI in the Era of Factory Digitalization: How Can Vector Databases Support Time Series Analysis?"
-    },
-    {
-      "__outstatic": {
-        "commit": "64d0217f66712c217381ff5ef6ad522cdb4efac6",
-        "hash": "2667900618",
-        "path": "outstatic/content/posts/integracja-systemow-hmi-z-symulacja-strategiczny-fundament-optymalizacji-zasobow-w-przemysle-5-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2-Y3Mj.png",
-      "description": "W erze przemysłowej transformacji cyfrowej, globalny rynek interfejsów człowiek-maszyna (HMI) osiągnął wartość 24,5 miliarda USD w 2024 roku i przewiduje się jego wzrost do 55,2 miliarda USD do 2033 roku, przy złożonej rocznej stopie wzrostu (CAGR) 9,7%. Jednocześnie rynek oprogramowania symulacyjnego wzrósł z 19,95 miliarda USD w 2024 roku do przewidywanych 36,22 miliarda USD do 2030 roku przy CAGR 10,4%. Te dynamiczne trendy odzwierciedlają fundamentalną zmianę w podejściu do optymalizacji zasobów produkcyjnych.",
-      "lang": "pl",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "integracja-systemow-hmi-z-symulacja-strategiczny-fundament-optymalizacji-zasobow-w-przemysle-5-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        }
-      ],
-      "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
-    },
-    {
-      "__outstatic": {
-        "commit": "395803a7e93cebd14eb9f017c2028c9acdf0ea42",
-        "hash": "3613524106",
-        "path": "outstatic/content/posts/mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-QwMD.webp",
-      "description": "Der weltweite Markt für Manufacturing Execution Systems (MES) wächst rasant. 2025 erreicht er 15,95 Mrd. USD und wird bis 2030 auf 25,78 Mrd. USD steigen – mit einer jährlichen Wachstumsrate (CAGR) von 10,1 %. Treiber sind die zunehmende Digitalisierung der Industrie, die Integration moderner IT-Technologien und die Entwicklung von Industrie 4.0. Im Zentrum dieser Transformation stehen Lösungen wie OmniMES, entwickelt von der polnischen Firma Multiprojekt, die Produktionsprozesse in Echtzeit optimieren.",
-      "lang": "de",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "MES-Systeme als Grundlage der digitalen Transformation: Wie IT-Technologien die moderne Fertigung revolutionieren"
-    },
-    {
-      "__outstatic": {
-        "commit": "3a4c34ce7575c6c3205617c67d95a684178d4f9b",
-        "hash": "1836003293",
-        "path": "outstatic/content/posts/plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/plc-I5OD.png",
-      "description": "Im Zeitalter von Industrie 5.0 hängt die Produktionseffizienz immer stärker von der Fähigkeit der Unternehmen ab, Daten in Echtzeit zu verarbeiten und zu nutzen. Die Integration von Speicherprogrammierbaren Steuerungen (SPS/PLC) mit Manufacturing Execution Systems (MES) ist heute ein zentrales Element der digitalen Transformation in Industriebetrieben. Lösungen wie Omnimes von Multiprojekt ermöglichen es Unternehmen, das Potenzial dieser Integration voll auszuschöpfen.",
-      "lang": "de",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "PLC Steuerungen und MES-Systeme als Grundlage für die digitale Transformation der Industrie"
     }
   ]
 }
