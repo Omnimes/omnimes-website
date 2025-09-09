@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:37:04.108Z",
+  "generated": "2025-09-09T17:37:15.277Z",
   "metadata": [
     {
       "__outstatic": {
@@ -550,35 +550,6 @@
         }
       ],
       "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB"
-    },
-    {
-      "__outstatic": {
-        "commit": "9b412d04c8fe48dfd886225c484c426a45e7c19d",
-        "hash": "20458699",
-        "path": "outstatic/content/posts/einsatz-von-edge-computing-und-fabriksensoren-im-produktionspartiemanagement.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-edge-computing-and-factory-sensors-for-enhanced-batch-management-in-digital-twin-manufacturing-this-top.png",
-      "description": "Wie die Integration von Edge Computing und Fabriksensoren das Batch-Management in der Produktion optimiert.",
-      "lang": "de",
-      "publishedAt": "2025-07-05T09:00:00Z",
-      "slug": "einsatz-von-edge-computing-und-fabriksensoren-im-produktionspartiemanagement",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Technologia",
-          "value": "IoT"
-        }
-      ],
-      "title": "Einsatz von Edge Computing und Fabriksensoren im Produktionspartiemanagement"
     },
     {
       "__outstatic": {
@@ -2457,6 +2428,35 @@
         }
       ],
       "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
+    },
+    {
+      "__outstatic": {
+        "commit": "e211163fd5b90a42ecb025e427fb031b38b44361",
+        "hash": "4125244934",
+        "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-wskazniki-kpi-w-czasie-rzeczywistym.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-optimizing-batch-management-through-real-time-production-kpis-in-lean-manufacturing-environments-explore-how-integ.png",
+      "description": "Integracja wskaźników KPI w czasie rzeczywistym w zarządzaniu partiami zwiększa efektywność operacyjną w środowiskach lean manufacturing.",
+      "lang": "pl",
+      "publishedAt": "2025-07-19T09:00:00Z",
+      "slug": "optymalizacja-zarzadzania-partiami-poprzez-wskazniki-kpi-w-czasie-rzeczywistym",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Temat",
+          "value": "Lean Manufacturing"
+        }
+      ],
+      "title": "Optymalizacja zarządzania partiami poprzez wskaźniki KPI w czasie rzeczywistym"
     },
     {
       "__outstatic": {
