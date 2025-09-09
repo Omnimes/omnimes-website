@@ -1,6 +1,6 @@
 {
   "commit": "df871349955737fb393cd566c7306f5773ecb841",
-  "generated": "2025-09-09T17:33:31.979Z",
+  "generated": "2025-09-09T17:33:38.040Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2423,20 +2423,20 @@
     },
     {
       "__outstatic": {
-        "commit": "44ae9ad8f37510705bbff2d976f5d6dfbc9bee0e",
-        "hash": "818428523",
-        "path": "outstatic/content/posts/plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie.md"
+        "commit": "823aabb2d8088cc1c0705a69680fc46f8753527a",
+        "hash": "2914838934",
+        "path": "outstatic/content/posts/plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/plc-E1Mj.png",
-      "description": "Im Zeitalter von Industrie 5.0 hängt die Produktionseffizienz immer stärker von der Fähigkeit der Unternehmen ab, Daten in Echtzeit zu verarbeiten und zu nutzen. Die Integration von Speicherprogrammierbaren Steuerungen (SPS/PLC) mit Manufacturing Execution Systems (MES) ist heute ein zentrales Element der digitalen Transformation in Industriebetrieben. Lösungen wie Omnimes von Multiprojekt ermöglichen es Unternehmen, das Potenzial dieser Integration voll auszuschöpfen.",
-      "lang": "de",
+      "coverImage": "/images/plc-c2MT.png",
+      "description": "In the era of Industry 5.0, production efficiency increasingly depends on an enterprise’s ability to process and use data in real time. Integrating Programmable Logic Controllers (PLCs) with Manufacturing Execution Systems (MES) is now a key pillar of digital transformation in industrial plants. Solutions such as Multiprojekt’s Omnimes enable companies to fully realize the potential of this integration.",
+      "lang": "en",
       "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie",
+      "slug": "plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry",
       "status": "published",
       "tags": [
         {
@@ -2444,15 +2444,15 @@
           "value": "plc"
         },
         {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
           "label": "Industry 5.0",
           "value": "Industry 5.0"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
         }
       ],
-      "title": "PLC Steuerungen und MES-Systeme als Grundlage für die digitale Transformation der Industrie"
+      "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
     },
     {
       "__outstatic": {
