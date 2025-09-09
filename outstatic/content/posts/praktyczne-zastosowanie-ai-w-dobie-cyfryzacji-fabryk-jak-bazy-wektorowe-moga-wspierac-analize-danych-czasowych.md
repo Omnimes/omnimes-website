@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych'
-description: 'Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.'
+description: 'Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.'
 coverImage: '/images/database_vector-Y4MD.png'
 tags: [{"value":"ai","label":"AI"},{"label":"Dane czasowe","value":"daneCzasowe"},{"label":"Baza wektorowa","value":"bazaWektorowa"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'pl'
@@ -14,7 +14,7 @@ publishedAt: '2025-09-09T06:25:59.088Z'
 
 ### Wprowadzenie
 
-Industry 4.0 to już nie tylko automatyzacja, ale przede wszystkim **inteligentne wykorzystanie danych**. W erze IoT i MES każda maszyna generuje strumienie sygnałów. Problemem nie jest samo ich zbieranie, ale **analiza i wykorzystanie w czasie rzeczywistym**. Coraz większą rolę w tym procesie odgrywają **bazy wektorowe** i sztuczna inteligencja.
+Industry 5.0 to już nie tylko automatyzacja, ale przede wszystkim **inteligentne wykorzystanie danych**. W erze IoT i MES każda maszyna generuje strumienie sygnałów. Problemem nie jest samo ich zbieranie, ale **analiza i wykorzystanie w czasie rzeczywistym**. Coraz większą rolę w tym procesie odgrywają **bazy wektorowe** i sztuczna inteligencja.
 
 ### Dane czasowe — dlaczego są trudne?
 
