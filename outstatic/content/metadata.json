@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:44:34.146Z",
+  "generated": "2025-09-09T17:44:38.944Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2017,6 +2017,35 @@
     },
     {
       "__outstatic": {
+        "commit": "014a3cba3ac617c0a08b59a42ab401b78fb8f5aa",
+        "hash": "3701215484",
+        "path": "outstatic/content/posts/nutzung-von-produktionsanalytik-in-industrie-5-0-effizienzsteigerung-im-lean-manufacturing.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-harnessing-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-through-intelligent-automation-this-t.png",
+      "description": "Erfahren Sie, wie Produktionsanalytik Lean Manufacturing im Zeitalter von Industrie 5.0 unterstützen kann.",
+      "lang": "de",
+      "publishedAt": "2025-02-12T09:00:00Z",
+      "slug": "nutzung-von-produktionsanalytik-in-industrie-5-0-effizienzsteigerung-im-lean-manufacturing",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Temat",
+          "value": "Analityka"
+        }
+      ],
+      "title": "Nutzung von Produktionsanalytik in Industrie 5.0: Effizienzsteigerung im Lean Manufacturing"
+    },
+    {
+      "__outstatic": {
         "commit": "9dfa669a8dec2d795e92e0718587f44fc78b7e4f",
         "hash": "1898589866",
         "path": "outstatic/content/posts/nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0.md"
@@ -3647,35 +3676,6 @@
         }
       ],
       "title": "Utilization of Production Analytics in Resource Planning in Industry 5.0"
-    },
-    {
-      "__outstatic": {
-        "commit": "979360fe91cc10aed5856e8affbea486dcbd1b17",
-        "hash": "656341024",
-        "path": "outstatic/content/posts/utilization-of-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-efficiency.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-harnessing-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-through-intelligent-automation-this-t.png",
-      "description": "Discover how production analytics can support lean manufacturing in the era of Industry 5.0.",
-      "lang": "en",
-      "publishedAt": "2025-02-12T09:00:00Z",
-      "slug": "utilization-of-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-efficiency",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Temat",
-          "value": "Analityka"
-        }
-      ],
-      "title": "Utilization of Production Analytics in Industry 5.0: Enhancing Lean Manufacturing Efficiency"
     },
     {
       "__outstatic": {
