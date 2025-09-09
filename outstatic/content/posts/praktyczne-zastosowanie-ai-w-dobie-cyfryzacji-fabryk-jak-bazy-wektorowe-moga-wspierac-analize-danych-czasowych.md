@@ -7,7 +7,7 @@ author:
 slug: 'praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych'
 description: 'Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.'
 coverImage: '/images/database_vector-Y4MD.png'
-tags: [{"value":"przemysł40","label":"Przemysł 4.0"},{"value":"ai","label":"AI"},{"label":"Dane czasowe","value":"daneCzasowe"},{"label":"timeline","value":"timeline"},{"label":"Baza wektorowa","value":"bazaWektorowa"},{"value":"Utrzymanie predykcyjne","label":"Utrzymanie predykcyjne"}]
+tags: [{"value":"ai","label":"AI"},{"label":"Dane czasowe","value":"daneCzasowe"},{"label":"Baza wektorowa","value":"bazaWektorowa"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'pl'
 publishedAt: '2025-09-09T06:25:59.088Z'
 ---
@@ -60,4 +60,4 @@ To inne wykorzystanie AI niż klasyczna predykcja — bardziej przypomina **inte
 
 ### Wnioski
 
-Bazy wektorowe zmieniają sposób, w jaki patrzymy na dane w Industry 4.0. To nie tylko **predykcja usterek**, ale też **nowy interfejs wiedzy** — inżynierowie mogą korzystać z LLM, aby zadawać pytania o stan fabryki i otrzymywać natychmiastowe, kontekstowe odpowiedzi. To realny krok w stronę **inteligentnej fabryki przyszłości**.
+Bazy wektorowe zmieniają sposób, w jaki patrzymy na dane w Industry 5.0. To nie tylko **predykcja usterek**, ale też **nowy interfejs wiedzy** — inżynierowie mogą korzystać z LLM, aby zadawać pytania o stan fabryki i otrzymywać natychmiastowe, kontekstowe odpowiedzi. To realny krok w stronę **inteligentnej fabryki przyszłości**.

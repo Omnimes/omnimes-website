@@ -1,6 +1,6 @@
 {
-  "commit": "6498b739bac65022af446b48fe25aaf15aa63090",
-  "generated": "2025-09-09T07:34:10.389Z",
+  "commit": "78218d17c2fe632b24211e5dcbc1b5a4a520dca8",
+  "generated": "2025-09-09T07:35:02.152Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4665,51 +4665,6 @@
     },
     {
       "__outstatic": {
-        "commit": "a7b96c5b8cbab92db0d6784c4587269d9688c290",
-        "hash": "1348581456",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database_vector-Y4MD.png",
-      "description": "Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
-      "lang": "pl",
-      "publishedAt": "2025-09-09T06:25:59.088Z",
-      "slug": "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 4.0",
-          "value": "przemysł40"
-        },
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Dane czasowe",
-          "value": "daneCzasowe"
-        },
-        {
-          "label": "timeline",
-          "value": "timeline"
-        },
-        {
-          "label": "Baza wektorowa",
-          "value": "bazaWektorowa"
-        },
-        {
-          "label": "Utrzymanie predykcyjne",
-          "value": "Utrzymanie predykcyjne"
-        }
-      ],
-      "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
-    },
-    {
-      "__outstatic": {
         "commit": "1e8fe7d58511b3d9f84e77bd063d392c0ef300f1",
         "hash": "2966310487",
         "path": "outstatic/content/posts/industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten.md"
@@ -4773,6 +4728,43 @@
         }
       ],
       "title": "Industry 5.0 and AI: Vector Databases as the Knowledge Layer for Time Series Data"
+    },
+    {
+      "__outstatic": {
+        "commit": "78218d17c2fe632b24211e5dcbc1b5a4a520dca8",
+        "hash": "495063793",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database_vector-Y4MD.png",
+      "description": "Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
+      "lang": "pl",
+      "publishedAt": "2025-09-09T06:25:59.088Z",
+      "slug": "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Dane czasowe",
+          "value": "daneCzasowe"
+        },
+        {
+          "label": "Baza wektorowa",
+          "value": "bazaWektorowa"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
     }
   ]
 }
