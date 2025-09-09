@@ -1,6 +1,6 @@
 {
-  "commit": "64d0217f66712c217381ff5ef6ad522cdb4efac6",
-  "generated": "2025-09-09T07:59:48.580Z",
+  "commit": "395803a7e93cebd14eb9f017c2028c9acdf0ea42",
+  "generated": "2025-09-09T08:07:32.352Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3924,47 +3924,6 @@
     },
     {
       "__outstatic": {
-        "commit": "ff564995d8ad735113ba31eb893a279fb2bf478f",
-        "hash": "3566394723",
-        "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
-      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
-      "lang": "pl",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Wykorzystanie systemów MES dla płynnej integracji w fabryce"
-    },
-    {
-      "__outstatic": {
         "commit": "97c36767cc92769c532bd2de88fdbd3b3a39a90a",
         "hash": "3253678410",
         "path": "outstatic/content/posts/wykorzystanie-pytorch-w-danych-przemyslowych.md"
@@ -4757,6 +4716,43 @@
         }
       ],
       "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "395803a7e93cebd14eb9f017c2028c9acdf0ea42",
+        "hash": "3169522055",
+        "path": "outstatic/content/posts/systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
+      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
+      "slug": "systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Systemy MES jako fundament cyfrowej transformacji: Jak technologie IT rewolucjonizują nowoczesną produkcję"
     }
   ]
 }
