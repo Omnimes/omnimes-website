@@ -5,8 +5,8 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation'
-description: 'Wie man HMI und Simulationen zur Optimierung der Ressourcenplanung in intelligenten Fabriken und zur Verbesserung der Produktions-KPIs nutzt.'
-coverImage: '/images/2-A2MT.png'
+description: 'Im Zeitalter der digitalen Transformation erreichte der globale Markt für Human-Machine-Interfaces (HMI) im Jahr 2024 einen Wert von 24,5 Milliarden USD. Bis 2033 wird ein Wachstum auf 55,2 Milliarden USD bei einer CAGR von 9,7 % erwartet. Gleichzeitig wuchs der Markt für Simulationssoftware von 19,95 Milliarden USD im Jahr 2024 auf prognostizierte 36,22 Milliarden USD bis 2030 mit einer CAGR von 10,4 %. Diese Trends verdeutlichen einen grundlegenden Wandel im Ansatz zur Optimierung von Produktionsressourcen.'
+coverImage: '/images/2-gwMT.png'
 tags: [{"label":"HMI","value":"hmi"},{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'de'
 publishedAt: '2025-09-01T09:00:00.000Z'
