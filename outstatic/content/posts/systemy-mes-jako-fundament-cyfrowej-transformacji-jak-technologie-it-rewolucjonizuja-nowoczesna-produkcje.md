@@ -5,7 +5,8 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje'
-description: 'Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.'
+description: 'Globalny rynek systemów realizacji produkcji (MES – Manufacturing Execution Systems) przeżywa dynamiczny rozwój. W 2025 roku osiągnie wartość 15,95 mld USD, a do 2030 roku wzrośnie do 25,78 mld USD przy średniorocznym tempie wzrostu 10,1%. Ten trend jest napędzany przez cyfryzację przemysłu, integrację technologii informatycznych oraz rosnące znaczenie koncepcji Przemysłu 4.0.
+W centrum tej transformacji znajdują się nowoczesne rozwiązania, takie jak OmniMES opracowany przez polską firmę Multiprojekt, który umożliwia optymalizację procesów produkcyjnych w czasie rzeczywistym.'
 coverImage: '/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp'
 tags: [{"value":"mesSystem","label":"MES system"},{"value":"omnimes","label":"Omnimes"},{"value":"cyfryzajca","label":"cyfryzajca"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'pl'
