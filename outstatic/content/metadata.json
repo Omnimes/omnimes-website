@@ -1,6 +1,6 @@
 {
-  "commit": "82fbdcb75809fb0a741c06bff9e5fb9dbf599609",
-  "generated": "2025-09-09T07:35:54.973Z",
+  "commit": "84f021817d544f42b802ea4d21bdc82e9dd1e538",
+  "generated": "2025-09-09T07:47:05.998Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2510,47 +2510,6 @@
     },
     {
       "__outstatic": {
-        "commit": "f54b5d1e2f0cdcf59adda952c3268afd54006717",
-        "hash": "2374040125",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-Y5OD.jpg",
-      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        }
-      ],
-      "title": "Optymalizacja planowania zasobów w inteligentnych fabrykach: HMI i symulacja"
-    },
-    {
-      "__outstatic": {
         "commit": "9bf7bfd55eaf85b1cbabf2775606bd120e287e75",
         "hash": "2202212108",
         "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b.md"
@@ -4765,6 +4724,43 @@
         }
       ],
       "title": "Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?"
+    },
+    {
+      "__outstatic": {
+        "commit": "84f021817d544f42b802ea4d21bdc82e9dd1e538",
+        "hash": "1556838618",
+        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2-Y3Mj.png",
+      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
     }
   ]
 }
