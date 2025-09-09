@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:40:48.483Z",
+  "generated": "2025-09-09T17:40:53.194Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1030,6 +1030,31 @@
     },
     {
       "__outstatic": {
+        "commit": "98422fa2976e689702f25c2478aa28fcd90951f2",
+        "hash": "242509867",
+        "path": "outstatic/content/posts/enhancing-quality-control-in-lean-manufacturing-through-ai-in-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-in-lean-manufacturing-through-ai-driven-real-time-monitoring-in-mes-systems-this-topic-e.png",
+      "description": "Discover how AI in MES systems enhances quality control in Lean Manufacturing through real-time monitoring.",
+      "lang": "en",
+      "publishedAt": "2025-05-26T09:00:00Z",
+      "slug": "enhancing-quality-control-in-lean-manufacturing-through-ai-in-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Enhancing Quality Control in Lean Manufacturing through AI in MES Systems"
+    },
+    {
+      "__outstatic": {
         "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
         "hash": "4201941181",
         "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
@@ -1160,31 +1185,6 @@
         }
       ],
       "title": "Erhöhung der Ressourcenplanung in MES-Systemen durch Echtzeitüberwachung"
-    },
-    {
-      "__outstatic": {
-        "commit": "a27602a1f7195c74c2f9114f8485a201176b7888",
-        "hash": "2633803151",
-        "path": "outstatic/content/posts/erhohung-der-qualitatskontrolle-in-lean-manufacturing-durch-ki-in-mes-systemen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-lean-manufacturing-through-ai-driven-real-time-monitoring-in-mes-systems-this-topic-e.png",
-      "description": "Entdecken Sie, wie KI in MES-Systemen die Qualitätskontrolle in der Lean-Produktion durch Echtzeitüberwachung verbessert.",
-      "lang": "de",
-      "publishedAt": "2025-05-26T09:00:00Z",
-      "slug": "erhohung-der-qualitatskontrolle-in-lean-manufacturing-durch-ki-in-mes-systemen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Erhöhung der Qualitätskontrolle in Lean Manufacturing durch KI in MES-Systemen"
     },
     {
       "__outstatic": {
