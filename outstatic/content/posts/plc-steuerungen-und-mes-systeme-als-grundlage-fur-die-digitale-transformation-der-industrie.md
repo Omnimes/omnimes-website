@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie'
 description: 'Im Zeitalter von Industrie 5.0 hängt die Produktionseffizienz immer stärker von der Fähigkeit der Unternehmen ab, Daten in Echtzeit zu verarbeiten und zu nutzen. Die Integration von Speicherprogrammierbaren Steuerungen (SPS/PLC) mit Manufacturing Execution Systems (MES) ist heute ein zentrales Element der digitalen Transformation in Industriebetrieben. Lösungen wie Omnimes von Multiprojekt ermöglichen es Unternehmen, das Potenzial dieser Integration voll auszuschöpfen.'
-coverImage: '/images/plc-I5OD.png'
+coverImage: '/images/plc-E1Mj.png'
 tags: [{"label":"PLC","value":"plc"},{"value":"industrialAutomation","label":"Industrial Automation"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 lang: 'de'
 publishedAt: '2025-08-12T09:00:00.000Z'
