@@ -468,6 +468,10 @@
         {
           "value": "quality",
           "label": "Quality"
+        },
+        {
+          "value": "kpi",
+          "label": "KPI"
         }
       ]
     },
