@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:40:58.299Z",
+  "generated": "2025-09-09T17:42:20.063Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1622,31 +1622,6 @@
         "gpt"
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
-    },
-    {
-      "__outstatic": {
-        "commit": "f39d5a411fbae35075fc5056ee98ba3370420195",
-        "hash": "3179198558",
-        "path": "outstatic/content/posts/nutzung-der-prinzipien-von-industry-5-0-zur-optimierung-der-produktionsplanung.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-industry-5-0-principles-for-optimized-production-scheduling-in-automated-manufacturing-environments-thi.png",
-      "description": "Entdecken Sie, wie Industry 5.0 die Planungsprozesse in der automatisierten Produktion verbessern kann.",
-      "lang": "de",
-      "publishedAt": "2025-04-19T09:00:00Z",
-      "slug": "nutzung-der-prinzipien-von-industry-5-0-zur-optimierung-der-produktionsplanung",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Nutzung der Prinzipien von Industry 5.0 zur Optimierung der Produktionsplanung"
     },
     {
       "__outstatic": {
@@ -4558,6 +4533,31 @@
         }
       ],
       "title": "Zwiększenie monitorowania urządzeń dzięki AI i łączności przemysłowej"
+    },
+    {
+      "__outstatic": {
+        "commit": "c87d5578b1af1639ae27ae7319c8adf7373a9305",
+        "hash": "2975314560",
+        "path": "outstatic/content/posts/zwiekszenie-kontroli-jakosci-w-lean-manufacturing-dzieki-ai-w-systemach-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-in-lean-manufacturing-through-ai-driven-real-time-monitoring-in-mes-systems-this-topic-e.png",
+      "description": "Odkryj, jak AI w systemach MES poprawia kontrolę jakości w Lean Manufacturing poprzez monitorowanie w czasie rzeczywistym.",
+      "lang": "pl",
+      "publishedAt": "2025-05-26T09:00:00Z",
+      "slug": "zwiekszenie-kontroli-jakosci-w-lean-manufacturing-dzieki-ai-w-systemach-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Zwiększenie kontroli jakości w Lean Manufacturing dzięki AI w systemach MES"
     },
     {
       "__outstatic": {
