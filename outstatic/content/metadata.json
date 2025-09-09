@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:42:43.147Z",
+  "generated": "2025-09-09T17:42:47.825Z",
   "metadata": [
     {
       "__outstatic": {
@@ -977,6 +977,31 @@
         }
       ],
       "title": "Enhancing Resource Planning in MES Systems Through Real-Time Monitoring"
+    },
+    {
+      "__outstatic": {
+        "commit": "41060cd9037362966545f6238ae8a22120bf54e0",
+        "hash": "805527656",
+        "path": "outstatic/content/posts/enhancing-quality-control-in-mes-with-sparkplug-b-protocol.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-in-manufacturing-execution-systems-using-sparkplug-b-protocol-for-real-time-data-integra.png",
+      "description": "How the Sparkplug B protocol can enhance quality control in MES systems through real-time data integration.",
+      "lang": "en",
+      "publishedAt": "2025-04-05T09:00:00Z",
+      "slug": "enhancing-quality-control-in-mes-with-sparkplug-b-protocol",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Enhancing Quality Control in MES with Sparkplug B Protocol"
     },
     {
       "__outstatic": {
@@ -3795,31 +3820,6 @@
         }
       ],
       "title": "Verbesserung der Produktionsplanung durch Simulation und IoT-Integration"
-    },
-    {
-      "__outstatic": {
-        "commit": "ed3a23af7c8a416e001a2dd9edd89c9cb54503e6",
-        "hash": "3034406937",
-        "path": "outstatic/content/posts/verbesserung-der-qualitatskontrolle-in-mes-durch-den-sparkplug-b-protokoll.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-manufacturing-execution-systems-using-sparkplug-b-protocol-for-real-time-data-integra.png",
-      "description": "Wie das Sparkplug B-Protokoll die Qualitätskontrolle in MES-Systemen durch die Integration von Echtzeitdaten verbessern kann.",
-      "lang": "de",
-      "publishedAt": "2025-04-05T09:00:00Z",
-      "slug": "verbesserung-der-qualitatskontrolle-in-mes-durch-den-sparkplug-b-protokoll",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Verbesserung der Qualitätskontrolle in MES durch den Sparkplug B-Protokoll"
     },
     {
       "__outstatic": {
