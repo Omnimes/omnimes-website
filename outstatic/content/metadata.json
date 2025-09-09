@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:36:53.271Z",
+  "generated": "2025-09-09T17:36:59.318Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2071,9 +2071,9 @@
     },
     {
       "__outstatic": {
-        "commit": "8bdfd79e36136ae1497c332eb49c3ea21b6ad8d5",
-        "hash": "3893076691",
-        "path": "outstatic/content/posts/optimization-of-batch-management-through-real-time-kpi-metrics.md"
+        "commit": "d6be58fa6dbc56a82115daa9ebac4561070614a0",
+        "hash": "3697003574",
+        "path": "outstatic/content/posts/optimierung-des-batch-managements-durch-echtzeit-kpi-indikatoren.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -2081,10 +2081,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/topic-optimizing-batch-management-through-real-time-production-kpis-in-lean-manufacturing-environments-explore-how-integ.png",
-      "description": "Real-time KPI integration in batch management enhances operational efficiency in lean manufacturing environments.",
-      "lang": "en",
+      "description": "Die Integration von KPI-Indikatoren in Echtzeit im Batch-Management steigert die operative Effizienz in Lean-Manufacturing-Umgebungen.",
+      "lang": "de",
       "publishedAt": "2025-07-19T09:00:00Z",
-      "slug": "optimization-of-batch-management-through-real-time-kpi-metrics",
+      "slug": "optimierung-des-batch-managements-durch-echtzeit-kpi-indikatoren",
       "status": "published",
       "tags": [
         {
@@ -2096,7 +2096,7 @@
           "value": "Lean Manufacturing"
         }
       ],
-      "title": "Optimization of Batch Management through Real-Time KPI Metrics"
+      "title": "Optimierung des Batch-Managements durch Echtzeit-KPI-Indikatoren"
     },
     {
       "__outstatic": {
