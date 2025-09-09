@@ -1,5 +1,5 @@
 ---
-title: 'Industry 4.0 and AI: Vector Databases as the Knowledge Layer for Time Series Data'
+title: 'Industry 5.0 and AI: Vector Databases as the Knowledge Layer for Time Series Data'
 status: 'published'
 author:
   name: 'Martin Szerment'
@@ -8,7 +8,7 @@ slug: 'industry-4-0-and-ai-vector-databases-as-the-knowledge-layer-for-time-seri
 description: 'Industry 4.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.'
 coverImage: '/images/database_vector-kyMj.png'
 lang: 'en'
-tags: [{"label":"Database Vector","value":"databaseVector"},{"value":"industry40","label":"Industry 4.0"},{"value":"llmModels","label":"LLM Models"}]
+tags: [{"label":"Database Vector","value":"databaseVector"},{"value":"llmModels","label":"LLM Models"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 publishedAt: '2025-09-09T06:56:07.720Z'
 ---
 
@@ -60,4 +60,4 @@ This goes beyond predictive maintenance. It is a **knowledge interface** for eng
 
 ### Conclusion
 
-Vector databases are not only tools for **prediction**, but also for **making industrial knowledge accessible**. Combined with LLMs, they allow anyone on the shop floor to query time series data as easily as asking a question in plain language. This marks a fundamental shift in how Industry 4.0 systems deliver value.
+Vector databases are not only tools for **prediction**, but also for **making industrial knowledge accessible**. Combined with LLMs, they allow anyone on the shop floor to query time series data as easily as asking a question in plain language. This marks a fundamental shift in how Industry 5.0 systems deliver value.
