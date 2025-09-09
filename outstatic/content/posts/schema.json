@@ -448,6 +448,18 @@
         {
           "value": "plc",
           "label": "PLC"
+        },
+        {
+          "value": "daneCzasowe",
+          "label": "Dane czasowe"
+        },
+        {
+          "value": "timeline",
+          "label": "timeline"
+        },
+        {
+          "value": "bazaWektorowa",
+          "label": "Baza wektorowa"
         }
       ]
     },

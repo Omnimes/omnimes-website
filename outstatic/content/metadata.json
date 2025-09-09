@@ -1,6 +1,6 @@
 {
-  "commit": "92f6a9c5a23502fc5fdb4c7255b115ea5aae1550",
-  "generated": "Tue, 09 Sep 2025 06:10:19 GMT",
+  "commit": "e03e4ac5ddaad40daf47c230c6132b015739d28a",
+  "generated": "2025-09-09T06:43:47.310Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4662,6 +4662,51 @@
         }
       ],
       "title": "Zwiększenie efektywności Lean Manufacturing dzięki integracji MQTT w MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "e03e4ac5ddaad40daf47c230c6132b015739d28a",
+        "hash": "2004836116",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database-vector-U3OD.png",
+      "description": "Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
+      "lang": "pl",
+      "publishedAt": "2025-09-09T06:25:59.088Z",
+      "slug": "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 4.0",
+          "value": "przemysł40"
+        },
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Dane czasowe",
+          "value": "daneCzasowe"
+        },
+        {
+          "label": "timeline",
+          "value": "timeline"
+        },
+        {
+          "label": "Baza wektorowa",
+          "value": "bazaWektorowa"
+        },
+        {
+          "label": "Utrzymanie predykcyjne",
+          "value": "Utrzymanie predykcyjne"
+        }
+      ],
+      "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
     }
   ]
 }
