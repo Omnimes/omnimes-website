@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:46:18.108Z",
+  "generated": "2025-09-09T17:46:22.974Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2046,6 +2046,31 @@
     },
     {
       "__outstatic": {
+        "commit": "9dfa669a8dec2d795e92e0718587f44fc78b7e4f",
+        "hash": "1898589866",
+        "path": "outstatic/content/posts/nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
+      "description": "Wie Produktionsanalytik die Ressourcenplanung im Kontext von Industrie 5.0 unterstützt und Produktionsabläufe optimiert.",
+      "lang": "de",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 5.0",
+          "value": "analityka produkcji"
+        }
+      ],
+      "title": "Nutzung von Produktionsanalytik in der Ressourcenplanung der Industrie 5.0"
+    },
+    {
+      "__outstatic": {
         "commit": "8bdfd79e36136ae1497c332eb49c3ea21b6ad8d5",
         "hash": "3893076691",
         "path": "outstatic/content/posts/optimization-of-batch-management-through-real-time-kpi-metrics.md"
@@ -3626,31 +3651,6 @@
         }
       ],
       "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control"
-    },
-    {
-      "__outstatic": {
-        "commit": "71b9087bad04fdd9ac2cc5eaf82b49b4fed62ae9",
-        "hash": "1124359049",
-        "path": "outstatic/content/posts/utilization-of-production-analytics-in-resource-planning-in-industry-5-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
-      "description": "How production analytics supports resource planning in the context of Industry 5.0, optimizing production operations.",
-      "lang": "en",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "utilization-of-production-analytics-in-resource-planning-in-industry-5-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 5.0",
-          "value": "analityka produkcji"
-        }
-      ],
-      "title": "Utilization of Production Analytics in Resource Planning in Industry 5.0"
     },
     {
       "__outstatic": {
