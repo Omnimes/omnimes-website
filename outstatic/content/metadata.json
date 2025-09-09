@@ -1,6 +1,6 @@
 {
   "commit": "93e18c68445ffa40c7b21f42909b56d0d734f713",
-  "generated": "2025-09-09T09:35:38.866Z",
+  "generated": "2025-09-09T09:35:48.050Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2605,39 +2605,6 @@
     },
     {
       "__outstatic": {
-        "commit": "fcc18fdb30c217e8d83aad285e9c53f2ef8d3a6a",
-        "hash": "907775159",
-        "path": "outstatic/content/posts/praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database_vector-IyNT.png",
-      "description": "Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
-      "lang": "de",
-      "publishedAt": "2025-09-09T07:07:00.286Z",
-      "slug": "praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Database Vector",
-          "value": "databaseVector"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?"
-    },
-    {
-      "__outstatic": {
         "commit": "18bfccb577a407447eabdf3028a9a9f6311c70e9",
         "hash": "2367280137",
         "path": "outstatic/content/posts/praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse.md"
@@ -2676,6 +2643,39 @@
         }
       ],
       "title": "Praktische Anwendung eines KI-Assistenten: Integration der OpenAI GPT-API in eine Webanwendung für Datenanalyse"
+    },
+    {
+      "__outstatic": {
+        "commit": "3d262178be746b3a100e6bc2d61f333601fd19b7",
+        "hash": "3906025233",
+        "path": "outstatic/content/posts/practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database_vector-kyMj.png",
+      "description": "Industry 4.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.",
+      "lang": "en",
+      "publishedAt": "2025-09-09T06:56:07.720Z",
+      "slug": "practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Database Vector",
+          "value": "databaseVector"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Practical Applications of AI in the Era of Factory Digitalization: How Can Vector Databases Support Time Series Analysis?"
     },
     {
       "__outstatic": {
@@ -4700,19 +4700,19 @@
     {
       "__outstatic": {
         "commit": "93e18c68445ffa40c7b21f42909b56d0d734f713",
-        "hash": "2635995213",
-        "path": "outstatic/content/posts/practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis.md"
+        "hash": "576849723",
+        "path": "outstatic/content/posts/praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/database_vector-kyMj.png",
-      "description": "Industry 5.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.",
-      "lang": "en",
-      "publishedAt": "2025-09-09T06:56:07.720Z",
-      "slug": "practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis",
+      "coverImage": "/images/database_vector-IyNT.png",
+      "description": "Industrie 5.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
+      "lang": "de",
+      "publishedAt": "2025-09-09T07:07:00.286Z",
+      "slug": "praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen",
       "status": "published",
       "tags": [
         {
@@ -4728,7 +4728,7 @@
           "value": "Industry 5.0"
         }
       ],
-      "title": "Practical Applications of AI in the Era of Factory Digitalization: How Can Vector Databases Support Time Series Analysis?"
+      "title": "Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?"
     }
   ]
 }
