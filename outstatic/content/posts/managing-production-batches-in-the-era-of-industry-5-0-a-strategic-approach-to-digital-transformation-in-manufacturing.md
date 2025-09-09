@@ -9,7 +9,7 @@ description: 'The digital transformation of manufacturing requires a strategic a
 coverImage: '/images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"dataAnalysis","label":"Data Analysis"}]
 lang: 'en'
-publishedAt: '2025-08-05T09:00:00.000Z'
+publishedAt: '2025-08-12T09:00:00.000Z'
 ---
 
 ## The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.
