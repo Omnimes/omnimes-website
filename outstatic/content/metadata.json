@@ -1,6 +1,6 @@
 {
   "commit": "df871349955737fb393cd566c7306f5773ecb841",
-  "generated": "2025-09-09T17:33:38.040Z",
+  "generated": "2025-09-09T17:33:43.704Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2423,6 +2423,39 @@
     },
     {
       "__outstatic": {
+        "commit": "44ae9ad8f37510705bbff2d976f5d6dfbc9bee0e",
+        "hash": "818428523",
+        "path": "outstatic/content/posts/plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/plc-E1Mj.png",
+      "description": "Im Zeitalter von Industrie 5.0 hängt die Produktionseffizienz immer stärker von der Fähigkeit der Unternehmen ab, Daten in Echtzeit zu verarbeiten und zu nutzen. Die Integration von Speicherprogrammierbaren Steuerungen (SPS/PLC) mit Manufacturing Execution Systems (MES) ist heute ein zentrales Element der digitalen Transformation in Industriebetrieben. Lösungen wie Omnimes von Multiprojekt ermöglichen es Unternehmen, das Potenzial dieser Integration voll auszuschöpfen.",
+      "lang": "de",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "PLC Steuerungen und MES-Systeme als Grundlage für die digitale Transformation der Industrie"
+    },
+    {
+      "__outstatic": {
         "commit": "823aabb2d8088cc1c0705a69680fc46f8753527a",
         "hash": "2914838934",
         "path": "outstatic/content/posts/plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry.md"
@@ -3201,39 +3234,6 @@
         }
       ],
       "title": "Systemy MES jako fundament cyfrowej transformacji: Jak technologie IT rewolucjonizują nowoczesną produkcję"
-    },
-    {
-      "__outstatic": {
-        "commit": "2e39265fdbf43a6f5b19d52158398df65af4ccaf",
-        "hash": "3394430063",
-        "path": "outstatic/content/posts/sterowniki-plc-i-systemem-mes-jako-fundament-cyfrowej-transformacji-przemyslu.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/plc-czMj.png",
-      "description": "W erze przemysłu 5.0 efektywność produkcji zależy w coraz większym stopniu od zdolności przedsiębiorstw do przetwarzania i wykorzystywania danych w czasie rzeczywistym. Integracja sterowników programowalnych PLC (Programmable Logic Controllers) z systemami wykonawczymi produkcji MES (Manufacturing Execution Systems) stanowi obecnie kluczowy element cyfrowej transformacji zakładów przemysłowych. Rozwiązania takie jak system Omnimes firmy Multiprojekt umożliwiają przedsiębiorstwom pełne wykorzystanie potencjału tej integracji.",
-      "lang": "pl",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "sterowniki-plc-i-systemem-mes-jako-fundament-cyfrowej-transformacji-przemyslu",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Sterowniki PLC i systemem MES jako fundament cyfrowej transformacji przemysłu"
     },
     {
       "__outstatic": {
