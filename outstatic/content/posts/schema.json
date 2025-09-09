@@ -460,6 +460,10 @@
         {
           "value": "bazaWektorowa",
           "label": "Baza wektorowa"
+        },
+        {
+          "value": "databaseVector",
+          "label": "Database Vector"
         }
       ]
     },
