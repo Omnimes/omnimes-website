@@ -1,6 +1,6 @@
 {
   "commit": "1e8fe7d58511b3d9f84e77bd063d392c0ef300f1",
-  "generated": "2025-09-09T07:20:04.267Z",
+  "generated": "2025-09-09T07:33:29.531Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4744,7 +4744,7 @@
     {
       "__outstatic": {
         "commit": "1e8fe7d58511b3d9f84e77bd063d392c0ef300f1",
-        "hash": "3839876664",
+        "hash": "2966310487",
         "path": "outstatic/content/posts/industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten.md"
       },
       "author": {
@@ -4752,7 +4752,7 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/database_vector-c1ND.png",
+      "coverImage": "/images/database_vector-IyNT.png",
       "description": "Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
       "lang": "de",
       "publishedAt": "2025-09-09T07:07:00.286Z",
@@ -4768,11 +4768,11 @@
           "value": "llmModels"
         },
         {
-          "label": "Industry 4.0",
-          "value": "industry40"
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
-      "title": "Industrie 4.0 und KI: Vektordatenbanken als Wissensschicht für Zeitreihendaten"
+      "title": "Industrie 5.0 und KI: Vektordatenbanken als Wissensschicht für Zeitreihendaten"
     }
   ]
 }
