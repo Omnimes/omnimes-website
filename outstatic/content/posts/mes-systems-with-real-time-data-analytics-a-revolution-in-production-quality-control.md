@@ -12,7 +12,6 @@ lang: 'en'
 publishedAt: '2025-07-26T09:00:00.000Z'
 ---
 
-## Introduction
 
 Modern industry is at the heart of digital transformation, where **Manufacturing Execution Systems (MES)** with **real-time data analytics** form a cornerstone of **Industry 5.0**. According to a 2023 McKinsey Global Institute report, companies that deploy advanced analytics in production achieve, on average, a 15–20% productivity increase and a 25% reduction in defects.
 
