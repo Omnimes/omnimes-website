@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:36:59.318Z",
+  "generated": "2025-09-09T17:37:04.108Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2071,6 +2071,35 @@
     },
     {
       "__outstatic": {
+        "commit": "8bdfd79e36136ae1497c332eb49c3ea21b6ad8d5",
+        "hash": "3893076691",
+        "path": "outstatic/content/posts/optimization-of-batch-management-through-real-time-kpi-metrics.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-optimizing-batch-management-through-real-time-production-kpis-in-lean-manufacturing-environments-explore-how-integ.png",
+      "description": "Real-time KPI integration in batch management enhances operational efficiency in lean manufacturing environments.",
+      "lang": "en",
+      "publishedAt": "2025-07-19T09:00:00Z",
+      "slug": "optimization-of-batch-management-through-real-time-kpi-metrics",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Temat",
+          "value": "Lean Manufacturing"
+        }
+      ],
+      "title": "Optimization of Batch Management through Real-Time KPI Metrics"
+    },
+    {
+      "__outstatic": {
         "commit": "d6be58fa6dbc56a82115daa9ebac4561070614a0",
         "hash": "3697003574",
         "path": "outstatic/content/posts/optimierung-des-batch-managements-durch-echtzeit-kpi-indikatoren.md"
@@ -2428,35 +2457,6 @@
         }
       ],
       "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
-    },
-    {
-      "__outstatic": {
-        "commit": "e211163fd5b90a42ecb025e427fb031b38b44361",
-        "hash": "4125244934",
-        "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-wskazniki-kpi-w-czasie-rzeczywistym.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-batch-management-through-real-time-production-kpis-in-lean-manufacturing-environments-explore-how-integ.png",
-      "description": "Integracja wskaźników KPI w czasie rzeczywistym w zarządzaniu partiami zwiększa efektywność operacyjną w środowiskach lean manufacturing.",
-      "lang": "pl",
-      "publishedAt": "2025-07-19T09:00:00Z",
-      "slug": "optymalizacja-zarzadzania-partiami-poprzez-wskazniki-kpi-w-czasie-rzeczywistym",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Temat",
-          "value": "Lean Manufacturing"
-        }
-      ],
-      "title": "Optymalizacja zarządzania partiami poprzez wskaźniki KPI w czasie rzeczywistym"
     },
     {
       "__outstatic": {
