@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:37:15.277Z",
+  "generated": "2025-09-09T17:37:21.090Z",
   "metadata": [
     {
       "__outstatic": {
@@ -550,6 +550,35 @@
         }
       ],
       "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB"
+    },
+    {
+      "__outstatic": {
+        "commit": "9b412d04c8fe48dfd886225c484c426a45e7c19d",
+        "hash": "20458699",
+        "path": "outstatic/content/posts/einsatz-von-edge-computing-und-fabriksensoren-im-produktionspartiemanagement.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-edge-computing-and-factory-sensors-for-enhanced-batch-management-in-digital-twin-manufacturing-this-top.png",
+      "description": "Wie die Integration von Edge Computing und Fabriksensoren das Batch-Management in der Produktion optimiert.",
+      "lang": "de",
+      "publishedAt": "2025-07-05T09:00:00Z",
+      "slug": "einsatz-von-edge-computing-und-fabriksensoren-im-produktionspartiemanagement",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Technologia",
+          "value": "IoT"
+        }
+      ],
+      "title": "Einsatz von Edge Computing und Fabriksensoren im Produktionspartiemanagement"
     },
     {
       "__outstatic": {
@@ -3444,35 +3473,6 @@
         }
       ],
       "title": "Utilization of Industry 5.0 Principles for Optimizing Production Scheduling"
-    },
-    {
-      "__outstatic": {
-        "commit": "426d7dee267bc0e22180defd1ca83ca34755f5f3",
-        "hash": "3443679597",
-        "path": "outstatic/content/posts/utilization-of-edge-computing-and-factory-sensors-in-batch-production-management.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-edge-computing-and-factory-sensors-for-enhanced-batch-management-in-digital-twin-manufacturing-this-top.png",
-      "description": "How the integration of edge computing and factory sensors optimizes batch management in production.",
-      "lang": "en",
-      "publishedAt": "2025-07-05T09:00:00Z",
-      "slug": "utilization-of-edge-computing-and-factory-sensors-in-batch-production-management",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Technologia",
-          "value": "IoT"
-        }
-      ],
-      "title": "Utilization of Edge Computing and Factory Sensors in Batch Production Management"
     },
     {
       "__outstatic": {
