@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych'
 description: 'Przemysł 4.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.'
-coverImage: '/images/database-vector-U3OD.png'
+coverImage: '/images/database-vector-M1OT.png'
 tags: [{"value":"przemysł40","label":"Przemysł 4.0"},{"value":"ai","label":"AI"},{"label":"Dane czasowe","value":"daneCzasowe"},{"label":"timeline","value":"timeline"},{"label":"Baza wektorowa","value":"bazaWektorowa"},{"value":"Utrzymanie predykcyjne","label":"Utrzymanie predykcyjne"}]
 lang: 'pl'
 publishedAt: '2025-09-09T06:25:59.088Z'
