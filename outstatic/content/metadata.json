@@ -1,6 +1,6 @@
 {
   "commit": "5a14e18142344d75443aa7d3e4a40296d2a7898d",
-  "generated": "2025-09-09T16:15:34.600Z",
+  "generated": "2025-09-09T16:15:40.916Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4732,8 +4732,8 @@
     },
     {
       "__outstatic": {
-        "commit": "5a14e18142344d75443aa7d3e4a40296d2a7898d",
-        "hash": "415274787",
+        "commit": "060ef818a448c4182fa82fe9493411d130d9f59f",
+        "hash": "1424323949",
         "path": "outstatic/content/posts/mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control.md"
       },
       "author": {
@@ -4753,6 +4753,39 @@
           "value": "Industry 5.0"
         },
         {
+          "label": "Quality",
+          "value": "quality"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        }
+      ],
+      "title": "MES Systems with Real-Time Data Analytics: A Revolution in Production Quality Control"
+    },
+    {
+      "__outstatic": {
+        "commit": "5a14e18142344d75443aa7d3e4a40296d2a7898d",
+        "hash": "1864387110",
+        "path": "outstatic/content/posts/mes-systeme-mit-echtzeit-datenanalytik-eine-revolution-in-der-qualitatskontrolle-der-produktion.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/best_quality-QyMT.png",
+      "description": "Die Industrie befindet sich im Zentrum der digitalen Transformation, in der MES-Systeme (Manufacturing Execution Systems) mit Echtzeit-Datenanalytik ein Fundament der Industrie 5.0 bilden. Laut einem Bericht des McKinsey Global Institute (2023) erzielen Unternehmen mit fortgeschrittener Analytik in der Produktion im Durchschnitt eine Produktivitätssteigerung von 15–20% und eine Defektreduktion von 25%.",
+      "lang": "de",
+      "publishedAt": "2025-07-26T09:00:00.000Z",
+      "slug": "mes-systeme-mit-echtzeit-datenanalytik-eine-revolution-in-der-qualitatskontrolle-der-produktion",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
           "label": "Omnimes",
           "value": "omnimes"
         },
@@ -4761,7 +4794,7 @@
           "value": "quality"
         }
       ],
-      "title": "MES Systems with Real-Time Data Analytics: A Revolution in Production Quality Control"
+      "title": "MES-Systeme mit Echtzeit-Datenanalytik: Eine Revolution in der Qualitätskontrolle der Produktion"
     }
   ]
 }
