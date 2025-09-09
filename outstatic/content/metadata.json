@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:39:48.090Z",
+  "generated": "2025-09-09T17:39:53.022Z",
   "metadata": [
     {
       "__outstatic": {
@@ -641,6 +641,31 @@
         }
       ],
       "title": "Einsatz von Computer Vision und Digital Twin in der Qualitätskontrolle in der Produktion"
+    },
+    {
+      "__outstatic": {
+        "commit": "0ca8f9c9115a151af05d8378d007177c38221d10",
+        "hash": "3661510178",
+        "path": "outstatic/content/posts/enhancing-lean-manufacturing-efficiency-through-mqtt-integration-in-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-lean-manufacturing-through-mqtt-integration-in-mes-for-energy-efficiency-in-connected-factories-this-top.png",
+      "description": "MQTT integration with MES enhances communication in factories, optimizing energy consumption and reducing waste in Lean Manufacturing.",
+      "lang": "en",
+      "publishedAt": "2025-05-12T09:00:00Z",
+      "slug": "enhancing-lean-manufacturing-efficiency-through-mqtt-integration-in-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Enhancing Lean Manufacturing Efficiency through MQTT Integration in MES"
     },
     {
       "__outstatic": {
@@ -2942,31 +2967,6 @@
         }
       ],
       "title": "Steigerung der Produktionseffizienz durch integrierte HMI-Schnittstellen in MES-Systemen"
-    },
-    {
-      "__outstatic": {
-        "commit": "f0915eadb08ee8a0aa157dcb8479443dee4fa639",
-        "hash": "3222327582",
-        "path": "outstatic/content/posts/steigerung-der-effizienz-von-lean-manufacturing-durch-integration-von-mqtt-in-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-lean-manufacturing-through-mqtt-integration-in-mes-for-energy-efficiency-in-connected-factories-this-top.png",
-      "description": "Die Integration von MQTT mit MES verbessert die Kommunikation in Fabriken, optimiert den Energieverbrauch und reduziert Abfälle im Lean Manufacturing.",
-      "lang": "de",
-      "publishedAt": "2025-05-12T09:00:00Z",
-      "slug": "steigerung-der-effizienz-von-lean-manufacturing-durch-integration-von-mqtt-in-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Steigerung der Effizienz von Lean Manufacturing durch Integration von MQTT in MES"
     },
     {
       "__outstatic": {
