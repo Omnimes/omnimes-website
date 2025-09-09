@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol'
 description: 'The integration of the Sparkplug B protocol in MES systems enhances energy efficiency and reliability in production.'
-coverImage: '/images/sprb_omni-MyNT.png'
+coverImage: '/images/sparkplugb_omnimes-I5OT.png'
 tags: [{"value":"mqtt","label":"MQTT"},{"value":"sparkplugB","label":"Sparkplug B"},{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"}]
 lang: 'en'
 publishedAt: '2025-08-26T09:00:00.000Z'
