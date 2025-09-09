@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:46:22.974Z",
+  "generated": "2025-09-09T17:46:27.937Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3654,6 +3654,31 @@
     },
     {
       "__outstatic": {
+        "commit": "71b9087bad04fdd9ac2cc5eaf82b49b4fed62ae9",
+        "hash": "1124359049",
+        "path": "outstatic/content/posts/utilization-of-production-analytics-in-resource-planning-in-industry-5-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
+      "description": "How production analytics supports resource planning in the context of Industry 5.0, optimizing production operations.",
+      "lang": "en",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "utilization-of-production-analytics-in-resource-planning-in-industry-5-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Przemysł 5.0",
+          "value": "analityka produkcji"
+        }
+      ],
+      "title": "Utilization of Production Analytics in Resource Planning in Industry 5.0"
+    },
+    {
+      "__outstatic": {
         "commit": "979360fe91cc10aed5856e8affbea486dcbd1b17",
         "hash": "656341024",
         "path": "outstatic/content/posts/utilization-of-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-efficiency.md"
@@ -3932,31 +3957,6 @@
         }
       ],
       "title": "Wykorzystanie analityki produkcji w przemyśle 5.0: Zwiększanie efektywności lean manufacturing"
-    },
-    {
-      "__outstatic": {
-        "commit": "2edd5c5704ce55a43a13dbce6b04fd55e16a33ec",
-        "hash": "1648449106",
-        "path": "outstatic/content/posts/wykorzystanie-analityki-produkcji-w-planowaniu-zasobow-w-przemysle-5-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
-      "description": "Jak analityka produkcji wspiera planowanie zasobów w kontekście przemysłu 5.0, optymalizując operacje produkcyjne.",
-      "lang": "pl",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "wykorzystanie-analityki-produkcji-w-planowaniu-zasobow-w-przemysle-5-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 5.0",
-          "value": "analityka produkcji"
-        }
-      ],
-      "title": "Wykorzystanie analityki produkcji w planowaniu zasobów w przemyśle 5.0"
     },
     {
       "__outstatic": {
