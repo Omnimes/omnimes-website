@@ -4,7 +4,7 @@ status: 'published'
 author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten'
+slug: 'praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen'
 description: 'Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.'
 coverImage: '/images/database_vector-IyNT.png'
 lang: 'de'
