@@ -1,6 +1,6 @@
 {
   "commit": "3a4c34ce7575c6c3205617c67d95a684178d4f9b",
-  "generated": "2025-09-09T08:22:30.446Z",
+  "generated": "2025-09-09T08:25:01.345Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2172,43 +2172,6 @@
     },
     {
       "__outstatic": {
-        "commit": "4505698fc891de2a00b58a434bd14eec32e66d3b",
-        "hash": "4226407120",
-        "path": "outstatic/content/posts/optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/17041843-kwMj.png",
-      "description": "Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.",
-      "lang": "de",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren",
-      "status": "published",
-      "tags": [
-        {
-          "label": "PLC",
-          "value": "plc"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Optimierung des Produktionsplans durch Echtzeitdaten von PLC"
-    },
-    {
-      "__outstatic": {
         "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
         "hash": "4265613164",
         "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
@@ -2231,6 +2194,43 @@
         }
       ],
       "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "30afce7e172bd6ee07c138140f382634e7cdc7f8",
+        "hash": "2654529105",
+        "path": "outstatic/content/posts/optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/17041843-c5Mz.png",
+      "description": "Dowiedz się, jak czujniki fabryczne w czasie rzeczywistym mogą poprawić harmonogramowanie produkcji i zwiększyć efektywność.",
+      "lang": "pl",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Optymalizacja harmonogramu produkcji dzięki danym w czasie rzeczywistym z PLC"
     },
     {
       "__outstatic": {
@@ -4720,19 +4720,19 @@
     {
       "__outstatic": {
         "commit": "3a4c34ce7575c6c3205617c67d95a684178d4f9b",
-        "hash": "2345988781",
-        "path": "outstatic/content/posts/sterowniki-plc-i-systemem-mes-jako-fundament-cyfrowej-transformacji-przemyslu.md"
+        "hash": "653424034",
+        "path": "outstatic/content/posts/plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/plc-I2NT.png",
-      "description": "W erze przemysłu 5.0 efektywność produkcji zależy w coraz większym stopniu od zdolności przedsiębiorstw do przetwarzania i wykorzystywania danych w czasie rzeczywistym. Integracja sterowników programowalnych PLC (Programmable Logic Controllers) z systemami wykonawczymi produkcji MES (Manufacturing Execution Systems) stanowi obecnie kluczowy element cyfrowej transformacji zakładów przemysłowych. Rozwiązania takie jak system Omnimes firmy Multiprojekt umożliwiają przedsiębiorstwom pełne wykorzystanie potencjału tej integracji.",
-      "lang": "pl",
+      "coverImage": "/images/plc-I5OD.png",
+      "description": "In the era of Industry 5.0, production efficiency increasingly depends on an enterprise’s ability to process and use data in real time. Integrating Programmable Logic Controllers (PLCs) with Manufacturing Execution Systems (MES) is now a key pillar of digital transformation in industrial plants. Solutions such as Multiprojekt’s Omnimes enable companies to fully realize the potential of this integration.",
+      "lang": "de",
       "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "sterowniki-plc-i-systemem-mes-jako-fundament-cyfrowej-transformacji-przemyslu",
+      "slug": "plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry",
       "status": "published",
       "tags": [
         {
@@ -4740,15 +4740,15 @@
           "value": "plc"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
         },
         {
           "label": "Industry 5.0",
           "value": "Industry 5.0"
         }
       ],
-      "title": "Sterowniki PLC i systemem MES jako fundament cyfrowej transformacji przemysłu"
+      "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
     }
   ]
 }
