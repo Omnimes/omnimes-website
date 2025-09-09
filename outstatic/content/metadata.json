@@ -1,6 +1,6 @@
 {
   "commit": "060ef818a448c4182fa82fe9493411d130d9f59f",
-  "generated": "2025-09-09T15:31:25.136Z",
+  "generated": "2025-09-09T15:32:02.214Z",
   "metadata": [
     {
       "__outstatic": {
@@ -952,6 +952,31 @@
         }
       ],
       "title": "Enhancing Quality Control via Real-Time Data Analytics in MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "2d021bc860bb1bde6fa7aab926d2f320cf391522",
+        "hash": "1456261603",
+        "path": "outstatic/content/posts/enhancing-quality-control-through-real-time-data-analytics-in-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-through-real-time-data-analytics-in-manufacturing-execution-systems-for-continuous-impro.png",
+      "description": "Jak analityka danych w czasie rzeczywistym w MES poprawia kontrolę jakości w produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-07-26T09:00:00Z",
+      "slug": "enhancing-quality-control-through-real-time-data-analytics-in-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Enhancing Quality Control through Real-Time Data Analytics in MES"
     },
     {
       "__outstatic": {
@@ -4708,7 +4733,7 @@
     {
       "__outstatic": {
         "commit": "060ef818a448c4182fa82fe9493411d130d9f59f",
-        "hash": "2725736425",
+        "hash": "2133501726",
         "path": "outstatic/content/posts/systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji.md"
       },
       "author": {
