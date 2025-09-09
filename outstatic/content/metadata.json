@@ -1,6 +1,6 @@
 {
-  "commit": "0d74dae5231eb497e6aeac4da3edba2823039b61",
-  "generated": "2025-09-09T07:51:06.332Z",
+  "commit": "5704a0cd24bfcb820a1388f80370984638e5e0b3",
+  "generated": "2025-09-09T07:51:18.790Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4686,45 +4686,8 @@
     },
     {
       "__outstatic": {
-        "commit": "84f021817d544f42b802ea4d21bdc82e9dd1e538",
-        "hash": "1556838618",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2-Y3Mj.png",
-      "description": "Jak wykorzystać HMI i symulacje do optymalizacji planowania zasobów w inteligentnych fabrykach i poprawy KPI produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-09-01T09:00:00.000Z",
-      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        }
-      ],
-      "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
-    },
-    {
-      "__outstatic": {
         "commit": "0d74dae5231eb497e6aeac4da3edba2823039b61",
-        "hash": "3700246666",
+        "hash": "366337345",
         "path": "outstatic/content/posts/optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation.md"
       },
       "author": {
@@ -4732,8 +4695,8 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/2-gwMT.png",
-      "description": "Im Zeitalter der digitalen Transformation erreichte der globale Markt für Human-Machine-Interfaces (HMI) im Jahr 2024 einen Wert von 24,5 Milliarden USD. Bis 2033 wird ein Wachstum auf 55,2 Milliarden USD bei einer CAGR von 9,7 % erwartet. Gleichzeitig wuchs der Markt für Simulationssoftware von 19,95 Milliarden USD im Jahr 2024 auf prognostizierte 36,22 Milliarden USD bis 2030 mit einer CAGR von 10,4 %. Diese Trends verdeutlichen einen grundlegenden Wandel im Ansatz zur Optimierung von Produktionsressourcen.",
+      "coverImage": "/images/2-A2MT.png",
+      "description": "Wie man HMI und Simulationen zur Optimierung der Ressourcenplanung in intelligenten Fabriken und zur Verbesserung der Produktions-KPIs nutzt.",
       "lang": "de",
       "publishedAt": "2025-09-01T09:00:00.000Z",
       "slug": "optimierung-der-ressourcenplanung-in-intelligenten-fabriken-hmi-und-simulation",
@@ -4757,6 +4720,43 @@
         }
       ],
       "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "5704a0cd24bfcb820a1388f80370984638e5e0b3",
+        "hash": "1272911731",
+        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2-Y3Mj.png",
+      "description": "W erze przemysłowej transformacji cyfrowej, globalny rynek interfejsów człowiek-maszyna (HMI) osiągnął wartość 24,5 miliarda USD w 2024 roku i przewiduje się jego wzrost do 55,2 miliarda USD do 2033 roku, przy złożonej rocznej stopie wzrostu (CAGR) 9,7%. Jednocześnie rynek oprogramowania symulacyjnego wzrósł z 19,95 miliarda USD w 2024 roku do przewidywanych 36,22 miliarda USD do 2030 roku przy CAGR 10,4%. Te dynamiczne trendy odzwierciedlają fundamentalną zmianę w podejściu do optymalizacji zasobów produkcyjnych.",
+      "lang": "pl",
+      "publishedAt": "2025-09-01T09:00:00.000Z",
+      "slug": "optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
     }
   ]
 }

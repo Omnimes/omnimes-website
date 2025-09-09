@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja'
-description: 'Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0'
+description: 'W erze przemysłowej transformacji cyfrowej, globalny rynek interfejsów człowiek-maszyna (HMI) osiągnął wartość 24,5 miliarda USD w 2024 roku i przewiduje się jego wzrost do 55,2 miliarda USD do 2033 roku, przy złożonej rocznej stopie wzrostu (CAGR) 9,7%. Jednocześnie rynek oprogramowania symulacyjnego wzrósł z 19,95 miliarda USD w 2024 roku do przewidywanych 36,22 miliarda USD do 2030 roku przy CAGR 10,4%. Te dynamiczne trendy odzwierciedlają fundamentalną zmianę w podejściu do optymalizacji zasobów produkcyjnych.'
 coverImage: '/images/2-Y3Mj.png'
 tags: [{"label":"HMI","value":"hmi"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"}]
 lang: 'pl'
