@@ -464,6 +464,14 @@
         {
           "value": "databaseVector",
           "label": "Database Vector"
+        },
+        {
+          "value": "quality",
+          "label": "quality"
+        },
+        {
+          "value": "kpi",
+          "label": "KPI"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
-  "commit": "94ec94a8de4320720119abbd52738b81497554cd",
-  "generated": "Tue, 09 Sep 2025 09:36:25 GMT",
+  "commit": "060ef818a448c4182fa82fe9493411d130d9f59f",
+  "generated": "2025-09-09T15:31:25.136Z",
   "metadata": [
     {
       "__outstatic": {
@@ -952,31 +952,6 @@
         }
       ],
       "title": "Enhancing Quality Control via Real-Time Data Analytics in MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "2d021bc860bb1bde6fa7aab926d2f320cf391522",
-        "hash": "1456261603",
-        "path": "outstatic/content/posts/enhancing-quality-control-through-real-time-data-analytics-in-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-through-real-time-data-analytics-in-manufacturing-execution-systems-for-continuous-impro.png",
-      "description": "Jak analityka danych w czasie rzeczywistym w MES poprawia kontrolę jakości w produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-07-26T09:00:00Z",
-      "slug": "enhancing-quality-control-through-real-time-data-analytics-in-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Enhancing Quality Control through Real-Time Data Analytics in MES"
     },
     {
       "__outstatic": {
@@ -4729,6 +4704,47 @@
         }
       ],
       "title": "Zwiększenie efektywności Lean Manufacturing dzięki integracji MQTT w MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "060ef818a448c4182fa82fe9493411d130d9f59f",
+        "hash": "2725736425",
+        "path": "outstatic/content/posts/systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/best_quality-U5OT.png",
+      "description": "Współczesny przemysł znajduje się w centrum cyfrowej transformacji, gdzie systemy MES (Manufacturing Execution Systems) z analityką danych w czasie rzeczywistym stanowią fundament Przemysłu 5.0. Według raportu McKinsey Global Institute z 2023 roku, przedsiębiorstwa wdrażające zaawansowaną analitykę w procesach produkcyjnych osiągają średnio 15-20% wzrost wydajności i 25% redukcję defektów.",
+      "lang": "pl",
+      "publishedAt": "2025-07-26T09:00:00.000Z",
+      "slug": "systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omnimess"
+        },
+        {
+          "label": "OEE",
+          "value": "OEE"
+        },
+        {
+          "label": "quality",
+          "value": "quality"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "KPI",
+          "value": "kpi"
+        }
+      ],
+      "title": "Systemy MES z analityką danych w czasie rzeczywistym: Rewolucja w kontroli jakości produkcji"
     }
   ]
 }
