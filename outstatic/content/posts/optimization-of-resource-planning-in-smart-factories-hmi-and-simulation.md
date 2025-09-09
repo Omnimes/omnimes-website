@@ -1,89 +1,158 @@
 ---
-title: 'Optimization of Resource Planning in Smart Factories: HMI and Simulation'
+title: 'Integration of HMI Systems with Simulation: A Strategic Foundation for Resource Optimization in Industry 5.0'
 status: 'published'
 author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'optimization-of-resource-planning-in-smart-factories-hmi-and-simulation'
 description: 'How to use HMI and simulations to optimize resource planning in smart factories and improve production KPIs.'
-coverImage: '/images/51a34c25-610d-4a1e-a0ad-79c0f26cbe82-gxMj.jpg'
-tags: [{"label":"HMI","value":"hmi"},{"value":"industry40","label":"Industry 4.0"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"mesSystem","label":"MES system"},{"value":"omnimes","label":"Omnimes"}]
+coverImage: '/images/2-c4MT.png'
+tags: [{"label":"HMI","value":"hmi"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"mesSystem","label":"MES system"},{"value":"omnimes","label":"Omnimes"}]
 lang: 'en'
 publishedAt: '2025-09-01T09:00:00.000Z'
 ---
 
-## Perspective: Optimizing Resource Planning through HMI and Simulation
-
 ### Introduction
 
-In the era of Industry 4.0, one of the main challenges for engineers and production managers is optimizing resource planning. Human-Machine Interfaces (HMI) combined with simulation tools provide opportunities to monitor and improve key performance indicators (KPIs) in manufacturing processes. This article outlines practical strategies for integrating these technologies to enhance efficiency and stability in production.
+In the era of industrial digital transformation, the global human-machine interface (HMI) market reached USD 24.5 billion in 2024 and is projected to grow to USD 55.2 billion by 2033, with a compound annual growth rate (CAGR) of 9.7%. At the same time, the simulation software market expanded from USD 19.95 billion in 2024 to an expected USD 36.22 billion by 2030 at a CAGR of 10.4%. These dynamic trends reflect a fundamental shift in the approach to optimizing production resources.
 
-### The role of HMI in smart factories
+The integration of advanced HMI systems with simulation tools is now a key component of Industry 5.0 strategies, enabling enterprises to achieve measurable financial and operational benefits. According to McKinsey, 70% of investments in digital manufacturing solutions fail to meet their intended goals, representing global losses of approximately USD 1.6 trillion annually.
 
-HMI acts as the communication layer between humans and machines. In smart factories, it plays a central role in:
+---
 
-- **Data collection** – capturing machine and system information for real-time monitoring.
+### Transformation of HMI Systems in Smart Factories
 
-- **Data analysis** – enabling real-time processing through integrated analytics.
+#### Technological Evolution
 
-- **Operator interaction** – providing intuitive interfaces for quick adjustments and process management.
+Modern HMI systems have evolved from simple control interfaces into advanced production command centers. According to Mordor Intelligence, the global HMI market value was USD 3.71 billion in 2020 and is expected to grow to USD 7.24 billion by 2026 at a CAGR of 10.3%.
 
-### Simulation as a resource planning tool
+HMI platforms designed under Industry 5.0 principles ensure IoT compatibility and play a crucial role in data management for predictive maintenance and optimization.
 
-Simulation allows for the modeling of production processes in order to analyze and optimize performance:
+#### Key Functionalities
 
-- **Testing scenarios** – evaluating different production variants to identify the most efficient ones.
+- **Real-time data collection and analysis**:\
+  Industry 5.0 HMIs handle far higher data volumes than traditional DCS, SCADA, or PLC systems.\
+  Integration with IoT enables monitoring of temperature, vibration, and pressure for predictive maintenance.
 
-- **Forecasting outcomes** – predicting production results and supporting resource planning.
+- **Advanced user interfaces**:\
+  Touchscreens accounted for 71% of the HMI market in 2024 due to glove-friendly capacitive layers and chemically strengthened glass.\
+  AR/VR interfaces are growing fastest, with an 18.7% CAGR, reshaping operator interaction paradigms.
 
-- **Reducing risks** – minimizing downtime and errors through virtual analysis.
+---
 
-### Integration of HMI and simulation
+### Simulation as a Strategic Optimization Tool
 
-Bringing HMI and simulation together creates measurable benefits:
+#### Market and Applications
 
-1. **Real-time data collection** feeding simulation models.
+Manufacturing was the largest segment of the simulation software market in 2024, applying tools to optimize machining, welding, casting, and assembly processes.
 
-2. **Process modeling** based on actual production conditions.
+#### Key Benefits
 
-3. **Analysis of simulation results** aligned with KPI targets.
+- **Cost reduction**:\
+  Virtual testing and validation of designs before physical prototyping reduces R&D costs related to prototyping, testing, and rework.
 
-4. **Implementation of improvements** directly into production.
+- **Resource planning optimization**:\
+  Simulation Optimization (SO) provides methodologies to significantly enhance industrial efficiency.\
+  Simulation-based optimization models (SBOM) combined with hybrid particle swarm algorithms and digital twin technologies deliver actionable real-time solutions.
 
-### Example: Reducing downtime
+---
 
-- **Industry**: electronic component manufacturing.
+### Integration of HMI with Simulation: A Synergistic Model
 
-- **Problem**: frequent downtimes caused by poor resource planning.
+#### System Architecture
 
-- **Intervention**: deployment of HMI for machine monitoring and simulation tools for process modeling.
+Effective integration requires a hierarchical computational model:
 
-- **Effect**: downtime reduced by 25%, efficiency increased by 15%.
+- Local controllers handle resource allocation decisions and send results to a central controller.
 
-### Key performance indicators (KPIs)
+- The central controller runs high-level simulations.
 
-When optimizing resource planning, particular attention should be given to:
+- HMI systems provide operators with interfaces and simulation data visualization.
 
-- **OEE (Overall Equipment Effectiveness)**,
+#### Implementation Process
 
-- **Downtime**,
+- **Phase 1: Data Collection** – HMI delivers real-time data, integrated with MES, ERP, and SCADA.
 
-- **Production throughput**.
+- **Phase 2: Modeling** – Building simulation models and digital twins of production processes.
 
-### OmniMES in the context of HMI and simulation
+- **Phase 3: Optimization** – Running simulation scenarios and analyzing KPI-based outcomes.
 
-The **OmniMES** system provides Industry 4.0 solutions that support the integration of HMI and simulation. Its modular and flexible architecture allows for customization to individual plant needs, improving resource management and reducing costs.
+- **Phase 4: Implementation** – Feeding recommendations into production control systems and monitoring results via HMI.
 
-In the context of operator interfaces, [Multiprojekt’s HMI panels](https://www.multiprojekt.pl/sterowanie/panele-operatorskie-hmi/?utm_source=chatgpt.com) are worth noting as a natural complement to MES systems in production monitoring and control.
+---
+
+### Key Performance Indicators (KPIs) and ROI
+
+- **Overall Equipment Effectiveness (OEE)**:\
+  The global average OEE is estimated at 40–60%. World-class factories aim for 85%.
+
+  - Availability
+
+  - Performance
+
+  - Quality
+
+- **Financial Impact**:\
+  Median ROI of 140% for off-the-shelf analytics tools compared to 104% for custom-built ones.
+
+**Case Studies:**
+
+- Automotive Tier One factory saved USD 90.5M via condition-based and predictive maintenance (1.2% of TCO).
+
+- Improved asset tracking saved USD 60.1M over 5 years (0.8% of TCO).
+
+- Pharmaceutical case: Raising OEE from 37% to 60% boosted throughput by 20–60% and delivered annual returns of USD 14–16M.
+
+---
+
+### Technology Trends and Outlook
+
+- **AI & ML**: Smarter decision-making, predictive maintenance, and efficiency optimization.
+
+- **AR/VR**: From 8M enterprise devices in 2024 to 21M in 2030. Remote expert engagement reduces downtime and training costs significantly.
+
+- **Cybersecurity**: Migration toward Zero Trust to mitigate cloud and remote-connection vulnerabilities.
+
+**Regional Outlook:**
+
+- Asia-Pacific leads with 38% share in 2024.
+
+- Middle East & Africa grow fastest (9.8% CAGR), driven by Vision 2030 and Operation 300bn programs.
+
+---
+
+### Implementation Challenges
+
+- **Costs**: 63% of manufacturing executives cite budget constraints.
+
+- **Legacy system integration**: Aligning old systems with new technologies remains a barrier.
+
+**Strategies:**
+
+- Pilot projects → Scale with proven ROI.
+
+- Workforce training (35% lack digital skills).
+
+---
+
+### Strategic Recommendations
+
+- **SMEs**: Start small, adopt scalable HMI, use cloud-based OEE tools, focus on quick ROI.
+
+- **Corporations**: Holistic HMI-simulation integration, Zero Trust security, and strategic tech partnerships.
+
+---
 
 ### Conclusion
 
-Optimizing resource planning with HMI and simulation is a cornerstone of digital transformation. It enables factories to:
+Integrating HMI systems with simulation tools is a cornerstone of Industry 5.0 transformation. Market data highlights their rising importance, but success requires careful planning, measurable KPIs, phased implementation, and workforce training.
 
-- react faster to changes,
+Firms that execute integration effectively can expect:
 
-- use resources more effectively,
+- 20–60% throughput increase,
 
-- plan production and maintenance with higher accuracy.
+- 25–50% downtime reduction,
 
-MES systems such as OmniMES, combined with modern HMI panels and simulation tools, form a strong foundation for the ongoing evolution of smart factories in the spirit of Industry 4.0.
+- ROI between 140–245%.
+
+The future of smart factories belongs to enterprises that synergize advanced HMI technologies with simulation to maximize efficiency and resource optimization.
