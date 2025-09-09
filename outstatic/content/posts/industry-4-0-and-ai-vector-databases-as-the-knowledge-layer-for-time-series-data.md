@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'industry-4-0-and-ai-vector-databases-as-the-knowledge-layer-for-time-series-data'
 description: 'Industry 4.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.'
-coverImage: '/images/database-vector-A4Nj.png'
+coverImage: '/images/database-vector-Y1ND.png'
 lang: 'en'
 tags: [{"label":"Database Vector","value":"databaseVector"},{"value":"industry40","label":"Industry 4.0"},{"value":"llmModels","label":"LLM Models"}]
 publishedAt: '2025-09-09T06:56:07.720Z'
