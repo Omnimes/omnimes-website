@@ -1,6 +1,6 @@
 {
   "commit": "df871349955737fb393cd566c7306f5773ecb841",
-  "generated": "2025-09-09T17:32:52.427Z",
+  "generated": "2025-09-09T17:32:56.930Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1499,20 +1499,20 @@
     },
     {
       "__outstatic": {
-        "commit": "bb8db0e7cf404cefec5034e7c4998bf8b1bf497d",
-        "hash": "3292264659",
-        "path": "outstatic/content/posts/mes-systems-as-the-foundation-for-digital-transformation-how-it-technologies-are-revolutionizing-modern-manufacturing.md"
+        "commit": "631ca9d03845eea3d87220893ce5143fa867d94b",
+        "hash": "3613524106",
+        "path": "outstatic/content/posts/mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-YxND.webp",
-      "description": "The global market for Manufacturing Execution Systems (MES) is experiencing unprecedented growth, reaching USD 15.95 billion in 2025 and projected to expand to USD 25.78 billion by 2030 at a CAGR of 10.1%. This dynamic development is driven by industrial digitalization, integration of IT technologies, and the rise of Industry 4.0. At the forefront of this transformation are advanced solutions such as OmniMES, developed by the Polish company Multiprojekt, enabling real-time optimization of production processes.",
-      "lang": "en",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-QwMD.webp",
+      "description": "Der weltweite Markt für Manufacturing Execution Systems (MES) wächst rasant. 2025 erreicht er 15,95 Mrd. USD und wird bis 2030 auf 25,78 Mrd. USD steigen – mit einer jährlichen Wachstumsrate (CAGR) von 10,1 %. Treiber sind die zunehmende Digitalisierung der Industrie, die Integration moderner IT-Technologien und die Entwicklung von Industrie 4.0. Im Zentrum dieser Transformation stehen Lösungen wie OmniMES, entwickelt von der polnischen Firma Multiprojekt, die Produktionsprozesse in Echtzeit optimieren.",
+      "lang": "de",
       "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "mes-systems-as-the-foundation-for-digital-transformation-how-it-technologies-are-revolutionizing-modern-manufacturing",
+      "slug": "mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren",
       "status": "published",
       "tags": [
         {
@@ -1528,7 +1528,7 @@
           "value": "Industry 5.0"
         }
       ],
-      "title": "MES Systems as the Foundation for Digital Transformation: How IT Technologies Are Revolutionizing Modern Manufacturing"
+      "title": "MES-Systeme als Grundlage der digitalen Transformation: Wie IT-Technologien die moderne Fertigung revolutionieren"
     },
     {
       "__outstatic": {
