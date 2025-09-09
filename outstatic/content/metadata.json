@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:39:15.258Z",
+  "generated": "2025-09-09T17:39:21.546Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2270,6 +2270,31 @@
     },
     {
       "__outstatic": {
+        "commit": "eec84a110c1165e10d66c02430f1e65198a64446",
+        "hash": "2174829431",
+        "path": "outstatic/content/posts/optimization-of-resource-planning-in-mes-systems-through-sparkplug-b-protocol-integration.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
+      "description": "How the Sparkplug B protocol supports resource planning in MES systems, enhancing production efficiency and real-time communication.",
+      "lang": "en",
+      "publishedAt": "2025-05-19T09:00:00Z",
+      "slug": "optimization-of-resource-planning-in-mes-systems-through-sparkplug-b-protocol-integration",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Optimization of Resource Planning in MES Systems through Sparkplug B Protocol Integration"
+    },
+    {
+      "__outstatic": {
         "commit": "880bbaa2a1074faad84fa995bc9dbfbda1727aa7",
         "hash": "4066240606",
         "path": "outstatic/content/posts/optimization-of-production-efficiency-utilizing-industrial-connectivity-in-mes-systems.md"
@@ -2461,31 +2486,6 @@
         }
       ],
       "title": "Optymalizacja zarządzania partiami poprzez wskaźniki KPI w czasie rzeczywistym"
-    },
-    {
-      "__outstatic": {
-        "commit": "9bf7bfd55eaf85b1cbabf2775606bd120e287e75",
-        "hash": "2202212108",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
-      "description": "Jak protokół Sparkplug B wspiera planowanie zasobów w systemach MES, poprawiając efektywność produkcji i komunikację w czasie rzeczywistym.",
-      "lang": "pl",
-      "publishedAt": "2025-05-19T09:00:00Z",
-      "slug": "optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Optymalizacja planowania zasobów w systemach MES dzięki integracji protokołu Sparkplug B"
     },
     {
       "__outstatic": {
