@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:42:20.063Z",
+  "generated": "2025-09-09T17:42:25.561Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1622,6 +1622,31 @@
         "gpt"
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "f39d5a411fbae35075fc5056ee98ba3370420195",
+        "hash": "3179198558",
+        "path": "outstatic/content/posts/nutzung-der-prinzipien-von-industry-5-0-zur-optimierung-der-produktionsplanung.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-industry-5-0-principles-for-optimized-production-scheduling-in-automated-manufacturing-environments-thi.png",
+      "description": "Entdecken Sie, wie Industry 5.0 die Planungsprozesse in der automatisierten Produktion verbessern kann.",
+      "lang": "de",
+      "publishedAt": "2025-04-19T09:00:00Z",
+      "slug": "nutzung-der-prinzipien-von-industry-5-0-zur-optimierung-der-produktionsplanung",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Nutzung der Prinzipien von Industry 5.0 zur Optimierung der Produktionsplanung"
     },
     {
       "__outstatic": {
@@ -3423,31 +3448,6 @@
         }
       ],
       "title": "Utilization of Machine Learning in MES for Continuous Improvement in Renewable Energy Production"
-    },
-    {
-      "__outstatic": {
-        "commit": "73b9fe8e14599e428143b2122b08c45ef54dec1c",
-        "hash": "3259559806",
-        "path": "outstatic/content/posts/utilization-of-industry-5-0-principles-for-optimizing-production-scheduling.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-industry-5-0-principles-for-optimized-production-scheduling-in-automated-manufacturing-environments-thi.png",
-      "description": "Discover how Industry 5.0 can enhance scheduling processes in automated manufacturing.",
-      "lang": "en",
-      "publishedAt": "2025-04-19T09:00:00Z",
-      "slug": "utilization-of-industry-5-0-principles-for-optimizing-production-scheduling",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Utilization of Industry 5.0 Principles for Optimizing Production Scheduling"
     },
     {
       "__outstatic": {
