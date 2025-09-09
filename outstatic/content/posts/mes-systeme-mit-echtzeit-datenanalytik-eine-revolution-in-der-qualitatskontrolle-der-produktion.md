@@ -12,8 +12,6 @@ lang: 'de'
 publishedAt: '2025-07-26T09:00:00.000Z'
 ---
 
-## Einleitung
-
 Die Industrie befindet sich im Zentrum der digitalen Transformation, in der **MES-Systeme (Manufacturing Execution Systems)** mit **Echtzeit-Datenanalytik** ein Fundament der **Industrie 5.0** bilden. Laut einem Bericht des McKinsey Global Institute (2023) erzielen Unternehmen mit fortgeschrittener Analytik in der Produktion im Durchschnitt eine Produktivitätssteigerung von 15–20% und eine Defektreduktion von 25%.
 
 ## Was sind MES-Systeme im Kontext von Industrie 5.0?
