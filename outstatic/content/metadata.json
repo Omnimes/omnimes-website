@@ -1,6 +1,6 @@
 {
   "commit": "395803a7e93cebd14eb9f017c2028c9acdf0ea42",
-  "generated": "2025-09-09T08:08:53.121Z",
+  "generated": "2025-09-09T08:09:47.578Z",
   "metadata": [
     {
       "__outstatic": {
@@ -550,43 +550,6 @@
         }
       ],
       "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen"
-    },
-    {
-      "__outstatic": {
-        "commit": "8670d1f73e2f8974423257122042225d9ba3e974",
-        "hash": "3791195595",
-        "path": "outstatic/content/posts/einsatz-von-mes-systemen-fur-eine-nahtlose-integration-in-der-vernetzten-fabrik.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-QwMD.webp",
-      "description": "Praktische Strategien zur Implementierung von MES-Systemen für die Digitalisierung von Fabriken und die Integration mit IoT.",
-      "lang": "de",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "einsatz-von-mes-systemen-fur-eine-nahtlose-integration-in-der-vernetzten-fabrik",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Einsatz von MES-Systemen für eine nahtlose Integration in der vernetzten Fabrik"
     },
     {
       "__outstatic": {
@@ -4761,39 +4724,35 @@
     {
       "__outstatic": {
         "commit": "395803a7e93cebd14eb9f017c2028c9acdf0ea42",
-        "hash": "3655601770",
-        "path": "outstatic/content/posts/systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje.md"
+        "hash": "3613524106",
+        "path": "outstatic/content/posts/mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
-      "description": "Globalny rynek systemów realizacji produkcji (MES – Manufacturing Execution Systems) przeżywa dynamiczny rozwój. W 2025 roku osiągnie wartość 15,95 mld USD, a do 2030 roku wzrośnie do 25,78 mld USD przy średniorocznym tempie wzrostu 10,1%. Ten trend jest napędzany przez cyfryzację przemysłu, integrację technologii informatycznych oraz rosnące znaczenie koncepcji Przemysłu 4.0. W centrum tej transformacji znajdują się nowoczesne rozwiązania, takie jak OmniMES opracowany przez polską firmę Multiprojekt, który umożliwia optymalizację procesów produkcyjnych w czasie rzeczywistym.",
-      "lang": "pl",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-QwMD.webp",
+      "description": "Der weltweite Markt für Manufacturing Execution Systems (MES) wächst rasant. 2025 erreicht er 15,95 Mrd. USD und wird bis 2030 auf 25,78 Mrd. USD steigen – mit einer jährlichen Wachstumsrate (CAGR) von 10,1 %. Treiber sind die zunehmende Digitalisierung der Industrie, die Integration moderner IT-Technologien und die Entwicklung von Industrie 4.0. Im Zentrum dieser Transformation stehen Lösungen wie OmniMES, entwickelt von der polnischen Firma Multiprojekt, die Produktionsprozesse in Echtzeit optimieren.",
+      "lang": "de",
       "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje",
+      "slug": "mes-systeme-als-grundlage-der-digitalen-transformation-wie-it-technologien-die-moderne-fertigung-revolutionieren",
       "status": "published",
       "tags": [
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
         {
           "label": "Omnimes",
           "value": "omnimes"
         },
         {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
+          "label": "MES system",
+          "value": "mesSystem"
         },
         {
           "label": "Industry 5.0",
           "value": "Industry 5.0"
         }
       ],
-      "title": "Systemy MES jako fundament cyfrowej transformacji: Jak technologie IT rewolucjonizują nowoczesną produkcję"
+      "title": "MES-Systeme als Grundlage der digitalen Transformation: Wie IT-Technologien die moderne Fertigung revolutionieren"
     }
   ]
 }
