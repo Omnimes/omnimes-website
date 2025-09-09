@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:37:21.090Z",
+  "generated": "2025-09-09T17:37:25.904Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3476,6 +3476,35 @@
     },
     {
       "__outstatic": {
+        "commit": "426d7dee267bc0e22180defd1ca83ca34755f5f3",
+        "hash": "3443679597",
+        "path": "outstatic/content/posts/utilization-of-edge-computing-and-factory-sensors-in-batch-production-management.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-edge-computing-and-factory-sensors-for-enhanced-batch-management-in-digital-twin-manufacturing-this-top.png",
+      "description": "How the integration of edge computing and factory sensors optimizes batch management in production.",
+      "lang": "en",
+      "publishedAt": "2025-07-05T09:00:00Z",
+      "slug": "utilization-of-edge-computing-and-factory-sensors-in-batch-production-management",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        },
+        {
+          "label": "Technologia",
+          "value": "IoT"
+        }
+      ],
+      "title": "Utilization of Edge Computing and Factory Sensors in Batch Production Management"
+    },
+    {
+      "__outstatic": {
         "commit": "9cfc94fcec4e8fddfe75fb350b572f31a7fd52bb",
         "hash": "2188697738",
         "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
@@ -3816,35 +3845,6 @@
         }
       ],
       "title": "Verbesserung der Qualitätskontrolle in MES durch den Sparkplug B-Protokoll"
-    },
-    {
-      "__outstatic": {
-        "commit": "5038bc999af09b50d7eb72136d6f97e6be3c31f9",
-        "hash": "918830034",
-        "path": "outstatic/content/posts/wykorzystanie-edge-computing-i-czujnikow-fabrycznych-w-zarzadzaniu-partiami-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-edge-computing-and-factory-sensors-for-enhanced-batch-management-in-digital-twin-manufacturing-this-top.png",
-      "description": "Jak integracja edge computing i czujników fabrycznych optymalizuje zarządzanie partiami w produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-07-05T09:00:00Z",
-      "slug": "wykorzystanie-edge-computing-i-czujnikow-fabrycznych-w-zarzadzaniu-partiami-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Technologia",
-          "value": "IoT"
-        }
-      ],
-      "title": "Wykorzystanie Edge Computing i czujników fabrycznych w zarządzaniu partiami produkcji"
     },
     {
       "__outstatic": {
