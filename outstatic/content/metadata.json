@@ -1,6 +1,6 @@
 {
-  "commit": "ed507a6c6c97761cc088b5ce943ce1853fba27a2",
-  "generated": "2025-09-09T09:03:52.934Z",
+  "commit": "185575ec386eb9344cb180d253f8f12457dc76ee",
+  "generated": "2025-09-09T09:10:18.965Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2403,35 +2403,6 @@
     },
     {
       "__outstatic": {
-        "commit": "5f4ea73a6544d2c586aa9c677b128e2821d4d96c",
-        "hash": "696138512",
-        "path": "outstatic/content/posts/optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
-      "description": "Jak zaawansowane planowanie produkcji może poprawić zarządzanie partiami w nowoczesnych systemach produkcyjnych.",
-      "lang": "pl",
-      "publishedAt": "2025-08-05T09:00:00.000Z",
-      "slug": "optymalizacja-zarzadzania-partiami-poprzez-zaawansowane-planowanie-produkcji-w-industry-4-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        }
-      ],
-      "title": "Efektywne zarządzanie partiami w kontekście zaawansowanego planowania produkcji i Industry 4.0"
-    },
-    {
-      "__outstatic": {
         "commit": "11c056d8529849145d766c4860655e45b7fc8b34",
         "hash": "1089257552",
         "path": "outstatic/content/posts/optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes.md"
@@ -4766,6 +4737,35 @@
         }
       ],
       "title": "Protokół Sparkplug B z systemami klasy MES: nowoczesne podejście do predykcji awarii i optymalizacji energetycznej w przemyśle"
+    },
+    {
+      "__outstatic": {
+        "commit": "185575ec386eb9344cb180d253f8f12457dc76ee",
+        "hash": "714758421",
+        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
+      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
+      "lang": "pl",
+      "publishedAt": "2025-08-05T09:00:00.000Z",
+      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
     }
   ]
 }
