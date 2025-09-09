@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:45:59.630Z",
+  "generated": "2025-09-09T17:46:05.308Z",
   "metadata": [
     {
       "__outstatic": {
@@ -955,6 +955,31 @@
     },
     {
       "__outstatic": {
+        "commit": "fdf6aa01cf66f19bc07aaa057ea070b4c8b3b381",
+        "hash": "3308973723",
+        "path": "outstatic/content/posts/enhancing-resource-planning-in-mes-systems-through-real-time-monitoring.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-resource-planning-in-mes-systems-through-real-time-monitoring-strategies-for-creating-a-virtual-factory-.png",
+      "description": "How real-time monitoring integration in MES systems optimizes resource planning in production.",
+      "lang": "en",
+      "publishedAt": "2025-01-19T09:00:00Z",
+      "slug": "enhancing-resource-planning-in-mes-systems-through-real-time-monitoring",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Enhancing Resource Planning in MES Systems Through Real-Time Monitoring"
+    },
+    {
+      "__outstatic": {
         "commit": "41060cd9037362966545f6238ae8a22120bf54e0",
         "hash": "805527656",
         "path": "outstatic/content/posts/enhancing-quality-control-in-mes-with-sparkplug-b-protocol.md"
@@ -1135,31 +1160,6 @@
         }
       ],
       "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "bc74348c582451a79ee7b264cbccd39d425cc778",
-        "hash": "3454032814",
-        "path": "outstatic/content/posts/erhohung-der-ressourcenplanung-in-mes-systemen-durch-echtzeituberwachung.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-resource-planning-in-mes-systems-through-real-time-monitoring-strategies-for-creating-a-virtual-factory-.png",
-      "description": "Wie die Integration von Echtzeitüberwachung in MES-Systeme die Ressourcenplanung in der Produktion optimiert.",
-      "lang": "de",
-      "publishedAt": "2025-01-19T09:00:00Z",
-      "slug": "erhohung-der-ressourcenplanung-in-mes-systemen-durch-echtzeituberwachung",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Erhöhung der Ressourcenplanung in MES-Systemen durch Echtzeitüberwachung"
     },
     {
       "__outstatic": {
