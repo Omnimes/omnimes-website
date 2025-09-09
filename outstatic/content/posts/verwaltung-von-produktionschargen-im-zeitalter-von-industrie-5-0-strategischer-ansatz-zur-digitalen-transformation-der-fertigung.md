@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung'
-description: 'Wie fortschrittliche Produktionsplanung das Batch-Management in modernen Produktionssystemen verbessern kann.'
+description: 'Die digitale Transformation der Fertigung erfordert einen strategischen Ansatz für das Management von Produktionschargen. Der Einsatz von Manufacturing Execution Systems (MES) in Verbindung mit Industrie-5.0-Technologien kann laut einer aktuellen Deloitte-Studie die Stillstandszeiten um 50 % und die Instandhaltungskosten um 40 % senken.'
 coverImage: '/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"dataAnalysis","label":"Data Analysis"}]
 lang: 'de'

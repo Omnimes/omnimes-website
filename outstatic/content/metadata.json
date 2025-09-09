@@ -1,6 +1,6 @@
 {
   "commit": "185575ec386eb9344cb180d253f8f12457dc76ee",
-  "generated": "2025-09-09T09:14:16.516Z",
+  "generated": "2025-09-09T09:14:30.462Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2122,6 +2122,35 @@
         }
       ],
       "title": "Optimierung des OEE durch Energiesparstrategien im MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "2bdf301a587ba6c32a73b7989a83cc265e3fe9ea",
+        "hash": "3791636383",
+        "path": "outstatic/content/posts/optimierung-des-batch-managements-durch-fortgeschrittene-produktionsplanung-in-der-industrie-4-0.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp",
+      "description": "Wie fortschrittliche Produktionsplanung das Batch-Management in modernen Produktionssystemen verbessern kann.",
+      "lang": "de",
+      "publishedAt": "2025-08-05T09:00:00.000Z",
+      "slug": "optimierung-des-batch-managements-durch-fortgeschrittene-produktionsplanung-in-der-industrie-4-0",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Effizientes Chargenmanagement im Kontext der fortgeschrittenen Produktionsplanung und Industrie 4.0"
     },
     {
       "__outstatic": {
@@ -4741,7 +4770,7 @@
     {
       "__outstatic": {
         "commit": "185575ec386eb9344cb180d253f8f12457dc76ee",
-        "hash": "3853314168",
+        "hash": "3854894452",
         "path": "outstatic/content/posts/verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung.md"
       },
       "author": {
@@ -4750,7 +4779,7 @@
       },
       "collection": "posts",
       "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp",
-      "description": "Wie fortschrittliche Produktionsplanung das Batch-Management in modernen Produktionssystemen verbessern kann.",
+      "description": "Die digitale Transformation der Fertigung erfordert einen strategischen Ansatz für das Management von Produktionschargen. Der Einsatz von Manufacturing Execution Systems (MES) in Verbindung mit Industrie-5.0-Technologien kann laut einer aktuellen Deloitte-Studie die Stillstandszeiten um 50 % und die Instandhaltungskosten um 40 % senken.",
       "lang": "de",
       "publishedAt": "2025-08-05T09:00:00.000Z",
       "slug": "verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung",
