@@ -12,8 +12,7 @@ lang: 'en'
 publishedAt: '2025-08-05T09:00:00.000Z'
 ---
 
-## \
-The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.
+## The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.
 
 **Market Context and Economic Significance**\
 The Industry 5.0 technology market reached USD 114.3 billion in 2023 and is expected to grow at a CAGR exceeding 20% by 2032. The manufacturing sector, responsible for 20% of this market, lies at the center of this transformation.

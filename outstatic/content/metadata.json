@@ -1,6 +1,6 @@
 {
   "commit": "185575ec386eb9344cb180d253f8f12457dc76ee",
-  "generated": "2025-09-09T09:12:46.038Z",
+  "generated": "2025-09-09T09:13:06.014Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4770,19 +4770,19 @@
     {
       "__outstatic": {
         "commit": "185575ec386eb9344cb180d253f8f12457dc76ee",
-        "hash": "1012255613",
-        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
+        "hash": "3034173534",
+        "path": "outstatic/content/posts/managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
-      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
-      "lang": "pl",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp",
+      "description": "The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.",
+      "lang": "en",
       "publishedAt": "2025-08-05T09:00:00.000Z",
-      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
+      "slug": "managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing",
       "status": "published",
       "tags": [
         {
@@ -4794,7 +4794,7 @@
           "value": "dataAnalysis"
         }
       ],
-      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
+      "title": "Managing Production Batches in the Era of Industry 5.0: A Strategic Approach to Digital Transformation in Manufacturing"
     }
   ]
 }
