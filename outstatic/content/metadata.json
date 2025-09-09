@@ -1,6 +1,6 @@
 {
-  "commit": "4c1dc0063ad07cf30484ee877864413f1c24fdb0",
-  "generated": "Thu, 04 Sep 2025 12:55:44 GMT",
+  "commit": "92f6a9c5a23502fc5fdb4c7255b115ea5aae1550",
+  "generated": "Tue, 09 Sep 2025 06:10:19 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -615,6 +615,43 @@
     },
     {
       "__outstatic": {
+        "commit": "f9cc41699718dcca45b265b6da11d045551c0d0f",
+        "hash": "1161125837",
+        "path": "outstatic/content/posts/einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/sprb_omni-QxOD.png",
+      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme verbessert die Energieeffizienz und Zuverlässigkeit in der Produktion.",
+      "lang": "de",
+      "publishedAt": "2025-08-26T09:00:00.000Z",
+      "slug": "einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        }
+      ],
+      "title": "Einsatz von intelligenter Produktion und Fehlervorhersage in MES mit Sparkplug B-Protokoll"
+    },
+    {
+      "__outstatic": {
         "commit": "72a58e199ac10800d01c8f27acd45a4acfa1c4db",
         "hash": "4215683022",
         "path": "outstatic/content/posts/einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb.md"
@@ -681,43 +718,6 @@
     },
     {
       "__outstatic": {
-        "commit": "f9cc41699718dcca45b265b6da11d045551c0d0f",
-        "hash": "1161125837",
-        "path": "outstatic/content/posts/einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/sprb_omni-QxOD.png",
-      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme verbessert die Energieeffizienz und Zuverlässigkeit in der Produktion.",
-      "lang": "de",
-      "publishedAt": "2025-08-26T09:00:00.000Z",
-      "slug": "einsatz-von-intelligenter-produktion-und-fehlervorhersage-in-mes-mit-sparkplug-b-protokoll",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        }
-      ],
-      "title": "Einsatz von intelligenter Produktion und Fehlervorhersage in MES mit Sparkplug B-Protokoll"
-    },
-    {
-      "__outstatic": {
         "commit": "0ca8f9c9115a151af05d8378d007177c38221d10",
         "hash": "3661510178",
         "path": "outstatic/content/posts/enhancing-lean-manufacturing-efficiency-through-mqtt-integration-in-mes.md"
@@ -768,6 +768,51 @@
     },
     {
       "__outstatic": {
+        "commit": "c6b9e3ed74fc7a44d1bfedc12cc0468bc37ccd9d",
+        "hash": "968950399",
+        "path": "outstatic/content/posts/einsatz-von-tensorflow-in-mes-systemen.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
+      "description": "Vergleich der Algorithmen TensorFlow, XGBoost, LightGBM und CatBoost zur Fehlererkennung in MES-Systemen. Praktische Anwendungen, Analyse von Zeitreihendaten und tabellarischen Daten sowie Leistungsbewertung in Bezug auf Geschwindigkeit und Rechenressourcen.",
+      "lang": "de",
+      "publishedAt": "2024-08-15T10:11:34.000Z",
+      "slug": "einsatz-von-tensorflow-in-mes-systemen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "MES-System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Algorithmusleistung",
+          "value": "algorithmusLeistung"
+        }
+      ],
+      "title": "Einsatz von TensorFlow in MES-Systemen"
+    },
+    {
+      "__outstatic": {
         "commit": "0b9ac00def86335fb86b48ad6f4f00236596e1f3",
         "hash": "1069452840",
         "path": "outstatic/content/posts/enhanced-device-monitoring-through-ai-and-industrial-connectivity.md"
@@ -815,51 +860,6 @@
         }
       ],
       "title": "Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitätskontrolle"
-    },
-    {
-      "__outstatic": {
-        "commit": "c6b9e3ed74fc7a44d1bfedc12cc0468bc37ccd9d",
-        "hash": "968950399",
-        "path": "outstatic/content/posts/einsatz-von-tensorflow-in-mes-systemen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/tensorflow-ml-engineer-c2ND.png",
-      "description": "Vergleich der Algorithmen TensorFlow, XGBoost, LightGBM und CatBoost zur Fehlererkennung in MES-Systemen. Praktische Anwendungen, Analyse von Zeitreihendaten und tabellarischen Daten sowie Leistungsbewertung in Bezug auf Geschwindigkeit und Rechenressourcen.",
-      "lang": "de",
-      "publishedAt": "2024-08-15T10:11:34.000Z",
-      "slug": "einsatz-von-tensorflow-in-mes-systemen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
-        },
-        {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "MES-System",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Algorithmusleistung",
-          "value": "algorithmusLeistung"
-        }
-      ],
-      "title": "Einsatz von TensorFlow in MES-Systemen"
     },
     {
       "__outstatic": {
@@ -2287,6 +2287,31 @@
     },
     {
       "__outstatic": {
+        "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
+        "hash": "4265613164",
+        "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
+      "description": "Jak łączność przemysłowa wspiera integrację systemów MES w środowisku Przemysłu 4.0.",
+      "lang": "pl",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES"
+    },
+    {
+      "__outstatic": {
         "commit": "30afce7e172bd6ee07c138140f382634e7cdc7f8",
         "hash": "2654529105",
         "path": "outstatic/content/posts/optymalizacja-harmonogramu-produkcji-dzieki-danym-w-czasie-rzeczywistym-z-czujnikow-fabrycznych.md"
@@ -2321,31 +2346,6 @@
         }
       ],
       "title": "Optymalizacja harmonogramu produkcji dzięki danym w czasie rzeczywistym z PLC"
-    },
-    {
-      "__outstatic": {
-        "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
-        "hash": "4265613164",
-        "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
-      "description": "Jak łączność przemysłowa wspiera integrację systemów MES w środowisku Przemysłu 4.0.",
-      "lang": "pl",
-      "publishedAt": "2025-03-19T09:00:00Z",
-      "slug": "optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES"
     },
     {
       "__outstatic": {
@@ -2510,31 +2510,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9bf7bfd55eaf85b1cbabf2775606bd120e287e75",
-        "hash": "2202212108",
-        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
-      "description": "Jak protokół Sparkplug B wspiera planowanie zasobów w systemach MES, poprawiając efektywność produkcji i komunikację w czasie rzeczywistym.",
-      "lang": "pl",
-      "publishedAt": "2025-05-19T09:00:00Z",
-      "slug": "optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Optymalizacja planowania zasobów w systemach MES dzięki integracji protokołu Sparkplug B"
-    },
-    {
-      "__outstatic": {
         "commit": "f54b5d1e2f0cdcf59adda952c3268afd54006717",
         "hash": "2374040125",
         "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-inteligentnych-fabrykach-hmi-i-symulacja.md"
@@ -2573,6 +2548,31 @@
         }
       ],
       "title": "Optymalizacja planowania zasobów w inteligentnych fabrykach: HMI i symulacja"
+    },
+    {
+      "__outstatic": {
+        "commit": "9bf7bfd55eaf85b1cbabf2775606bd120e287e75",
+        "hash": "2202212108",
+        "path": "outstatic/content/posts/optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-optimizing-resource-planning-in-mes-systems-through-the-integration-of-sparkplug-b-protocol-for-real-time-data-com.png",
+      "description": "Jak protokół Sparkplug B wspiera planowanie zasobów w systemach MES, poprawiając efektywność produkcji i komunikację w czasie rzeczywistym.",
+      "lang": "pl",
+      "publishedAt": "2025-05-19T09:00:00Z",
+      "slug": "optymalizacja-planowania-zasobow-w-systemach-mes-dzieki-integracji-protokou-sparkplug-b",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Optymalizacja planowania zasobów w systemach MES dzięki integracji protokołu Sparkplug B"
     },
     {
       "__outstatic": {
@@ -3543,6 +3543,31 @@
     },
     {
       "__outstatic": {
+        "commit": "79fb06dbfdf21ac76123431d5b795bab98c62513",
+        "hash": "3149521546",
+        "path": "outstatic/content/posts/utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
+      "description": "How KPIs and computer vision can enhance quality control in smart factories.",
+      "lang": "en",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Kontrola jakości"
+        }
+      ],
+      "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control"
+    },
+    {
+      "__outstatic": {
         "commit": "bc36c0b06564a4b6d3f0aee64cb8a96a1eb7ce9a",
         "hash": "1879963199",
         "path": "outstatic/content/posts/utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol.md"
@@ -3580,28 +3605,28 @@
     },
     {
       "__outstatic": {
-        "commit": "79fb06dbfdf21ac76123431d5b795bab98c62513",
-        "hash": "3149521546",
-        "path": "outstatic/content/posts/utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control.md"
+        "commit": "71b9087bad04fdd9ac2cc5eaf82b49b4fed62ae9",
+        "hash": "1124359049",
+        "path": "outstatic/content/posts/utilization-of-production-analytics-in-resource-planning-in-industry-5-0.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
-      "description": "How KPIs and computer vision can enhance quality control in smart factories.",
+      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
+      "description": "How production analytics supports resource planning in the context of Industry 5.0, optimizing production operations.",
       "lang": "en",
-      "publishedAt": "2025-02-26T09:00:00Z",
-      "slug": "utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control",
+      "publishedAt": "2025-01-05T09:00:00Z",
+      "slug": "utilization-of-production-analytics-in-resource-planning-in-industry-5-0",
       "status": "published",
       "tags": [
         {
-          "label": "Temat",
-          "value": "Kontrola jakości"
+          "label": "Przemysł 5.0",
+          "value": "analityka produkcji"
         }
       ],
-      "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control"
+      "title": "Utilization of Production Analytics in Resource Planning in Industry 5.0"
     },
     {
       "__outstatic": {
@@ -3631,31 +3656,6 @@
         }
       ],
       "title": "Utilization of Production Analytics in Industry 5.0: Enhancing Lean Manufacturing Efficiency"
-    },
-    {
-      "__outstatic": {
-        "commit": "71b9087bad04fdd9ac2cc5eaf82b49b4fed62ae9",
-        "hash": "1124359049",
-        "path": "outstatic/content/posts/utilization-of-production-analytics-in-resource-planning-in-industry-5-0.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-production-analytics-for-resource-planning-in-industry-5-0-strategies-for-modernizing-manufacturing-ope.png",
-      "description": "How production analytics supports resource planning in the context of Industry 5.0, optimizing production operations.",
-      "lang": "en",
-      "publishedAt": "2025-01-05T09:00:00Z",
-      "slug": "utilization-of-production-analytics-in-resource-planning-in-industry-5-0",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Przemysł 5.0",
-          "value": "analityka produkcji"
-        }
-      ],
-      "title": "Utilization of Production Analytics in Resource Planning in Industry 5.0"
     },
     {
       "__outstatic": {
@@ -4195,31 +4195,6 @@
     },
     {
       "__outstatic": {
-        "commit": "5fd3f27168ac4fb21d98da504b3d866814c84a16",
-        "hash": "1172148768",
-        "path": "outstatic/content/posts/wykorzystanie-zasad-industry-5-0-do-optymalizacji-harmonogramowania-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-industry-5-0-principles-for-optimized-production-scheduling-in-automated-manufacturing-environments-thi.png",
-      "description": "Odkryj, jak Industry 5.0 może poprawić procesy harmonogramowania w zautomatyzowanej produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-04-19T09:00:00Z",
-      "slug": "wykorzystanie-zasad-industry-5-0-do-optymalizacji-harmonogramowania-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Wykorzystanie zasad Industry 5.0 do optymalizacji harmonogramowania produkcji"
-    },
-    {
-      "__outstatic": {
         "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
         "hash": "1222761488",
         "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
@@ -4298,6 +4273,31 @@
         }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "5fd3f27168ac4fb21d98da504b3d866814c84a16",
+        "hash": "1172148768",
+        "path": "outstatic/content/posts/wykorzystanie-zasad-industry-5-0-do-optymalizacji-harmonogramowania-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-industry-5-0-principles-for-optimized-production-scheduling-in-automated-manufacturing-environments-thi.png",
+      "description": "Odkryj, jak Industry 5.0 może poprawić procesy harmonogramowania w zautomatyzowanej produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-04-19T09:00:00Z",
+      "slug": "wykorzystanie-zasad-industry-5-0-do-optymalizacji-harmonogramowania-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Wykorzystanie zasad Industry 5.0 do optymalizacji harmonogramowania produkcji"
     },
     {
       "__outstatic": {
