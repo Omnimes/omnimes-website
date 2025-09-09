@@ -1,6 +1,6 @@
 {
   "commit": "3a4c34ce7575c6c3205617c67d95a684178d4f9b",
-  "generated": "2025-09-09T08:25:01.345Z",
+  "generated": "2025-09-09T08:27:58.635Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2169,6 +2169,43 @@
         }
       ],
       "title": "Effective Batch Management in the Context of Advanced Production Planning and Industry 4.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "4505698fc891de2a00b58a434bd14eec32e66d3b",
+        "hash": "4226407120",
+        "path": "outstatic/content/posts/optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/17041843-kwMj.png",
+      "description": "Erfahren Sie, wie Echtzeit-Fabriksensoren die Produktionsplanung verbessern und die Effizienz steigern können.",
+      "lang": "de",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "optimierung-des-produktionsplans-durch-echtzeitdaten-von-fabriksensoren",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PLC",
+          "value": "plc"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Optimierung des Produktionsplans durch Echtzeitdaten von PLC"
     },
     {
       "__outstatic": {
@@ -4720,8 +4757,8 @@
     {
       "__outstatic": {
         "commit": "3a4c34ce7575c6c3205617c67d95a684178d4f9b",
-        "hash": "653424034",
-        "path": "outstatic/content/posts/plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry.md"
+        "hash": "356464246",
+        "path": "outstatic/content/posts/plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -4729,10 +4766,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/plc-I5OD.png",
-      "description": "In the era of Industry 5.0, production efficiency increasingly depends on an enterprise’s ability to process and use data in real time. Integrating Programmable Logic Controllers (PLCs) with Manufacturing Execution Systems (MES) is now a key pillar of digital transformation in industrial plants. Solutions such as Multiprojekt’s Omnimes enable companies to fully realize the potential of this integration.",
+      "description": "Im Zeitalter von Industrie 5.0 hängt die Produktionseffizienz immer stärker von der Fähigkeit der Unternehmen ab, Daten in Echtzeit zu verarbeiten und zu nutzen. Die Integration von Speicherprogrammierbaren Steuerungen (SPS/PLC) mit Manufacturing Execution Systems (MES) ist heute ein zentrales Element der digitalen Transformation in Industriebetrieben. Lösungen wie Omnimes von Multiprojekt ermöglichen es Unternehmen, das Potenzial dieser Integration voll auszuschöpfen.",
       "lang": "de",
       "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "plc-controllers-and-mes-systems-as-the-foundation-for-the-digital-transformation-of-industry",
+      "slug": "plc-steuerungen-und-mes-systeme-als-grundlage-fur-die-digitale-transformation-der-industrie",
       "status": "published",
       "tags": [
         {
@@ -4748,7 +4785,7 @@
           "value": "Industry 5.0"
         }
       ],
-      "title": "PLC controllers and MES systems as the foundation for the digital transformation of industry"
+      "title": "PLC Steuerungen und MES-Systeme als Grundlage für die digitale Transformation der Industrie"
     }
   ]
 }
