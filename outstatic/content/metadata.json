@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:43:36.506Z",
+  "generated": "2025-09-09T17:43:42.814Z",
   "metadata": [
     {
       "__outstatic": {
@@ -786,39 +786,6 @@
         }
       ],
       "title": "Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitätskontrolle"
-    },
-    {
-      "__outstatic": {
-        "commit": "0e92ab9894e392aec85280d77dc5bf85d83d391b",
-        "hash": "3018620463",
-        "path": "outstatic/content/posts/enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-automated-manufacturing-leveraging-mqtt-and-sparkplug-b-protocol-for-real-time-resour.png",
-      "description": "Jak MQTT i protokół Sparkplug B mogą poprawić kontrolę jakości w zautomatyzowanej produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-03-05T09:00:00Z",
-      "slug": "enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "MQTT"
-        },
-        {
-          "label": "Protokół",
-          "value": "Sparkplug B"
-        },
-        {
-          "label": "Produkcja",
-          "value": "automatyzacja"
-        }
-      ],
-      "title": "Enhancing Quality Control in Automated Manufacturing with MQTT and Sparkplug B"
     },
     {
       "__outstatic": {
@@ -4027,6 +3994,39 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "65dbd40941b34e141e94ff8130d1a7630f6f705b",
+        "hash": "3471039577",
+        "path": "outstatic/content/posts/wykorzystanie-technologii-computer-vision-i-digital-twin-w-kontroli-jakosci-w-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-computer-vision-and-digital-twin-technology-for-enhanced-quality-control-in-manufacturing-processes-exp.png",
+      "description": "Jak integracja systemów wizji komputerowej z technologią cyfrowego bliźniaka może zrewolucjonizować kontrolę jakości w produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-03-26T09:00:00Z",
+      "slug": "wykorzystanie-technologii-computer-vision-i-digital-twin-w-kontroli-jakosci-w-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "Computer Vision"
+        },
+        {
+          "label": "Przemysł",
+          "value": "Digital Twin"
+        },
+        {
+          "label": "Kontrola jakości",
+          "value": "produkcja"
+        }
+      ],
+      "title": "Wykorzystanie technologii Computer Vision i Digital Twin w kontroli jakości w produkcji"
     },
     {
       "__outstatic": {
