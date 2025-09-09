@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:43:52.783Z",
+  "generated": "2025-09-09T17:44:34.146Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2017,35 +2017,6 @@
     },
     {
       "__outstatic": {
-        "commit": "014a3cba3ac617c0a08b59a42ab401b78fb8f5aa",
-        "hash": "3701215484",
-        "path": "outstatic/content/posts/nutzung-von-produktionsanalytik-in-industrie-5-0-effizienzsteigerung-im-lean-manufacturing.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-harnessing-production-analytics-in-industry-5-0-enhancing-lean-manufacturing-through-intelligent-automation-this-t.png",
-      "description": "Erfahren Sie, wie Produktionsanalytik Lean Manufacturing im Zeitalter von Industrie 5.0 unterstützen kann.",
-      "lang": "de",
-      "publishedAt": "2025-02-12T09:00:00Z",
-      "slug": "nutzung-von-produktionsanalytik-in-industrie-5-0-effizienzsteigerung-im-lean-manufacturing",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        },
-        {
-          "label": "Temat",
-          "value": "Analityka"
-        }
-      ],
-      "title": "Nutzung von Produktionsanalytik in Industrie 5.0: Effizienzsteigerung im Lean Manufacturing"
-    },
-    {
-      "__outstatic": {
         "commit": "9dfa669a8dec2d795e92e0718587f44fc78b7e4f",
         "hash": "1898589866",
         "path": "outstatic/content/posts/nutzung-von-produktionsanalytik-in-der-ressourcenplanung-der-industrie-5-0.md"
@@ -2847,6 +2818,39 @@
         }
       ],
       "title": "Sparkplug B Protokoll mit MES-Systemen: Ein moderner Ansatz zur Ausfallvorhersage und Energieoptimierung in der Industrie"
+    },
+    {
+      "__outstatic": {
+        "commit": "1cb15563dd5f228b0f351193cccb5a0c257d8728",
+        "hash": "143276349",
+        "path": "outstatic/content/posts/qualitatskontrolle-in-der-automatisierten-fertigung-mit-mqtt-und-sparkplug-b-verbessern.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-quality-control-in-automated-manufacturing-leveraging-mqtt-and-sparkplug-b-protocol-for-real-time-resour.png",
+      "description": "Wie MQTT und das Sparkplug B-Protokoll die Qualitätskontrolle in der automatisierten Produktion verbessern können.",
+      "lang": "de",
+      "publishedAt": "2025-03-05T09:00:00Z",
+      "slug": "qualitatskontrolle-in-der-automatisierten-fertigung-mit-mqtt-und-sparkplug-b-verbessern",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "MQTT"
+        },
+        {
+          "label": "Protokół",
+          "value": "Sparkplug B"
+        },
+        {
+          "label": "Produkcja",
+          "value": "automatyzacja"
+        }
+      ],
+      "title": "Qualitätskontrolle in der automatisierten Fertigung mit MQTT und Sparkplug B verbessern"
     },
     {
       "__outstatic": {
