@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:46:05.308Z",
+  "generated": "2025-09-09T17:46:10.071Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1160,6 +1160,31 @@
         }
       ],
       "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "bc74348c582451a79ee7b264cbccd39d425cc778",
+        "hash": "3454032814",
+        "path": "outstatic/content/posts/erhohung-der-ressourcenplanung-in-mes-systemen-durch-echtzeituberwachung.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-resource-planning-in-mes-systems-through-real-time-monitoring-strategies-for-creating-a-virtual-factory-.png",
+      "description": "Wie die Integration von Echtzeitüberwachung in MES-Systeme die Ressourcenplanung in der Produktion optimiert.",
+      "lang": "de",
+      "publishedAt": "2025-01-19T09:00:00Z",
+      "slug": "erhohung-der-ressourcenplanung-in-mes-systemen-durch-echtzeituberwachung",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Erhöhung der Ressourcenplanung in MES-Systemen durch Echtzeitüberwachung"
     },
     {
       "__outstatic": {
@@ -4483,31 +4508,6 @@
         }
       ],
       "title": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu OZE"
-    },
-    {
-      "__outstatic": {
-        "commit": "30109191244acd79ed40330ad0d810330b9890fa",
-        "hash": "1675233754",
-        "path": "outstatic/content/posts/zwiekszenie-planowania-zasobow-w-systemach-mes-dzieki-monitorowaniu-w-czasie-rzeczywistym.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-resource-planning-in-mes-systems-through-real-time-monitoring-strategies-for-creating-a-virtual-factory-.png",
-      "description": "Jak integracja monitorowania w czasie rzeczywistym w systemach MES optymalizuje planowanie zasobów w produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-01-19T09:00:00Z",
-      "slug": "zwiekszenie-planowania-zasobow-w-systemach-mes-dzieki-monitorowaniu-w-czasie-rzeczywistym",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Zwiększenie planowania zasobów w systemach MES dzięki monitorowaniu w czasie rzeczywistym"
     },
     {
       "__outstatic": {
