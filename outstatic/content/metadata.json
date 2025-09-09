@@ -1,6 +1,6 @@
 {
   "commit": "395803a7e93cebd14eb9f017c2028c9acdf0ea42",
-  "generated": "2025-09-09T08:07:32.352Z",
+  "generated": "2025-09-09T08:08:39.337Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3312,43 +3312,6 @@
     },
     {
       "__outstatic": {
-        "commit": "65c6ca67d6fadc31c0066a0da4e8a61404c1ed06",
-        "hash": "2712066582",
-        "path": "outstatic/content/posts/utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-YxND.webp",
-      "description": "Practical strategies for implementing MES systems for factory digitization and IoT integration.",
-      "lang": "en",
-      "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "utilization-of-mes-systems-for-seamless-integration-in-connected-manufacturing",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Utilization of MES Systems for Seamless Integration in Connected Manufacturing"
-    },
-    {
-      "__outstatic": {
         "commit": "92a4ee6ef5cd1870bd07d3576aa615a020de238a",
         "hash": "2608186323",
         "path": "outstatic/content/posts/utilization-of-machine-learning-in-mes-for-continuous-improvement-in-renewable-energy-production.md"
@@ -3921,6 +3884,47 @@
         }
       ],
       "title": "Wykorzystanie technologii Computer Vision i Digital Twin w kontroli jakości w produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "ff564995d8ad735113ba31eb893a279fb2bf478f",
+        "hash": "3566394723",
+        "path": "outstatic/content/posts/wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
+      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
+      "lang": "pl",
+      "publishedAt": "2025-08-19T09:00:00.000Z",
+      "slug": "wykorzystanie-systemow-mes-dla-pynnej-integracji-w-poaczonej-fabryce",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "cyfryzajca",
+          "value": "cyfryzajca"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        }
+      ],
+      "title": "Wykorzystanie systemów MES dla płynnej integracji w fabryce"
     },
     {
       "__outstatic": {
@@ -4720,39 +4724,35 @@
     {
       "__outstatic": {
         "commit": "395803a7e93cebd14eb9f017c2028c9acdf0ea42",
-        "hash": "3169522055",
-        "path": "outstatic/content/posts/systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje.md"
+        "hash": "3292264659",
+        "path": "outstatic/content/posts/mes-systems-as-the-foundation-for-digital-transformation-how-it-technologies-are-revolutionizing-modern-manufacturing.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-MzNz.webp",
-      "description": "Praktyczne strategie wdrożenia systemów MES dla cyfryzacji fabryk i integracji z IoT.",
-      "lang": "pl",
+      "coverImage": "/images/manufacturing-execution-systems-the-key-to-optimizing-production-processes-YxND.webp",
+      "description": "The global market for Manufacturing Execution Systems (MES) is experiencing unprecedented growth, reaching USD 15.95 billion in 2025 and projected to expand to USD 25.78 billion by 2030 at a CAGR of 10.1%. This dynamic development is driven by industrial digitalization, integration of IT technologies, and the rise of Industry 4.0. At the forefront of this transformation are advanced solutions such as OmniMES, developed by the Polish company Multiprojekt, enabling real-time optimization of production processes.",
+      "lang": "en",
       "publishedAt": "2025-08-19T09:00:00.000Z",
-      "slug": "systemy-mes-jako-fundament-cyfrowej-transformacji-jak-technologie-it-rewolucjonizuja-nowoczesna-produkcje",
+      "slug": "mes-systems-as-the-foundation-for-digital-transformation-how-it-technologies-are-revolutionizing-modern-manufacturing",
       "status": "published",
       "tags": [
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
         {
           "label": "Omnimes",
           "value": "omnimes"
         },
         {
-          "label": "cyfryzajca",
-          "value": "cyfryzajca"
+          "label": "MES system",
+          "value": "mesSystem"
         },
         {
           "label": "Industry 5.0",
           "value": "Industry 5.0"
         }
       ],
-      "title": "Systemy MES jako fundament cyfrowej transformacji: Jak technologie IT rewolucjonizują nowoczesną produkcję"
+      "title": "MES Systems as the Foundation for Digital Transformation: How IT Technologies Are Revolutionizing Modern Manufacturing"
     }
   ]
 }
