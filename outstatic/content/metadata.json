@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:39:58.221Z",
+  "generated": "2025-09-09T17:40:48.483Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1027,31 +1027,6 @@
         }
       ],
       "title": "Enhancing Quality Control in MES Using Sparkplug B Protocol"
-    },
-    {
-      "__outstatic": {
-        "commit": "98422fa2976e689702f25c2478aa28fcd90951f2",
-        "hash": "242509867",
-        "path": "outstatic/content/posts/enhancing-quality-control-in-lean-manufacturing-through-ai-in-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-in-lean-manufacturing-through-ai-driven-real-time-monitoring-in-mes-systems-this-topic-e.png",
-      "description": "Discover how AI in MES systems enhances quality control in Lean Manufacturing through real-time monitoring.",
-      "lang": "en",
-      "publishedAt": "2025-05-26T09:00:00Z",
-      "slug": "enhancing-quality-control-in-lean-manufacturing-through-ai-in-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Enhancing Quality Control in Lean Manufacturing through AI in MES Systems"
     },
     {
       "__outstatic": {
@@ -4608,6 +4583,31 @@
         }
       ],
       "title": "Zwiększenie efektywności zarządzania partiami dzięki zaawansowanym interfejsom HMI"
+    },
+    {
+      "__outstatic": {
+        "commit": "4f60df7314e209b938ef28caaf8345ae33b8cdb7",
+        "hash": "956142578",
+        "path": "outstatic/content/posts/zwiekszenie-efektywnosci-lean-manufacturing-dzieki-integracji-mqtt-w-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-lean-manufacturing-through-mqtt-integration-in-mes-for-energy-efficiency-in-connected-factories-this-top.png",
+      "description": "Integracja MQTT z MES poprawia komunikację w fabrykach, optymalizując zużycie energii i redukując odpady w Lean Manufacturing.",
+      "lang": "pl",
+      "publishedAt": "2025-05-12T09:00:00Z",
+      "slug": "zwiekszenie-efektywnosci-lean-manufacturing-dzieki-integracji-mqtt-w-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Zwiększenie efektywności Lean Manufacturing dzięki integracji MQTT w MES"
     },
     {
       "__outstatic": {
