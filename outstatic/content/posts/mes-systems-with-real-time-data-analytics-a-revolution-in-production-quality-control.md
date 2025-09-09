@@ -321,4 +321,4 @@ Implementing an MES with real-time analytics in the engine plant delivered:
 
 5. Monitor KPIs and continuously optimize processes
 
-For more information on MES implementations, visit [**OmniMES contact**](link-placeholder).
+For more information on MES implementations, visit [**OmniMES contact**](www.omnimes.com/en/contact)
