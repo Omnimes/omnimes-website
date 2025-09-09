@@ -1,6 +1,6 @@
 {
-  "commit": "546cdedb3bfafd750c02d12157bd0dfee22b369f",
-  "generated": "2025-09-09T06:56:22.359Z",
+  "commit": "9732a4d068d9b4ed4268b0775eb666a6c9a49868",
+  "generated": "2025-09-09T07:00:38.654Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4743,8 +4743,8 @@
     },
     {
       "__outstatic": {
-        "commit": "546cdedb3bfafd750c02d12157bd0dfee22b369f",
-        "hash": "4028907022",
+        "commit": "9732a4d068d9b4ed4268b0775eb666a6c9a49868",
+        "hash": "3477415695",
         "path": "outstatic/content/posts/industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten.md"
       },
       "author": {
@@ -4752,7 +4752,7 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/database-vector-EzMz.png",
+      "coverImage": "/images/database_vector-kwMD.png",
       "description": "Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
       "lang": "de",
       "publishedAt": "2025-09-09T07:07:00.286Z",
