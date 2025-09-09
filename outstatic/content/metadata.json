@@ -1,6 +1,6 @@
 {
-  "commit": "212237f4880495934ab40802ed47da14ab6a21c7",
-  "generated": "2025-09-09T07:17:59.330Z",
+  "commit": "1e8fe7d58511b3d9f84e77bd063d392c0ef300f1",
+  "generated": "2025-09-09T07:20:04.267Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4665,39 +4665,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9732a4d068d9b4ed4268b0775eb666a6c9a49868",
-        "hash": "3477415695",
-        "path": "outstatic/content/posts/industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database_vector-kwMD.png",
-      "description": "Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
-      "lang": "de",
-      "publishedAt": "2025-09-09T07:07:00.286Z",
-      "slug": "industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Database Vector",
-          "value": "databaseVector"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        },
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        }
-      ],
-      "title": "Industrie 4.0 und KI: Vektordatenbanken als Wissensschicht für Zeitreihendaten"
-    },
-    {
-      "__outstatic": {
         "commit": "a7b96c5b8cbab92db0d6784c4587269d9688c290",
         "hash": "1348581456",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
@@ -4773,6 +4740,39 @@
         }
       ],
       "title": "Industry 4.0 and AI: Vector Databases as the Knowledge Layer for Time Series Data"
+    },
+    {
+      "__outstatic": {
+        "commit": "1e8fe7d58511b3d9f84e77bd063d392c0ef300f1",
+        "hash": "3839876664",
+        "path": "outstatic/content/posts/industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/database_vector-c1ND.png",
+      "description": "Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.",
+      "lang": "de",
+      "publishedAt": "2025-09-09T07:07:00.286Z",
+      "slug": "industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Database Vector",
+          "value": "databaseVector"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        },
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        }
+      ],
+      "title": "Industrie 4.0 und KI: Vektordatenbanken als Wissensschicht für Zeitreihendaten"
     }
   ]
 }

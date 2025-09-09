@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'industrie-4-0-und-ki-vektordatenbanken-als-wissensschicht-fur-zeitreihendaten'
 description: 'Industrie 4.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.'
-coverImage: '/images/database_vector-kwMD.png'
+coverImage: '/images/database_vector-c1ND.png'
 lang: 'de'
 tags: [{"value":"databaseVector","label":"Database Vector"},{"value":"llmModels","label":"LLM Models"},{"value":"industry40","label":"Industry 4.0"}]
 publishedAt: '2025-09-09T07:07:00.286Z'
