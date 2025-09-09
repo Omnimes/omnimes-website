@@ -9,7 +9,7 @@ description: 'Cyfrowa transformacja produkcji wymaga strategicznego podejścia d
 coverImage: '/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"dataAnalysis","label":"Data Analysis"}]
 lang: 'pl'
-publishedAt: '2025-08-05T09:00:00.000Z'
+publishedAt: '2025-08-12T09:00:00.000Z'
 ---
 
 ## Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.

@@ -1,6 +1,6 @@
 {
-  "commit": "c5a8b67f3814380185a823bcc9b5a825184c4e6a",
-  "generated": "2025-09-09T17:35:02.036Z",
+  "commit": "ef576098ca4df85778f3ebd50b79dd92bbf7fb3c",
+  "generated": "2025-09-09T17:35:21.494Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4211,35 +4211,6 @@
     },
     {
       "__outstatic": {
-        "commit": "50bcf1d97208be9c43768e4599cd375501c5c886",
-        "hash": "1012255613",
-        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
-      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
-      "lang": "pl",
-      "publishedAt": "2025-08-05T09:00:00.000Z",
-      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        }
-      ],
-      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
-    },
-    {
-      "__outstatic": {
         "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
         "hash": "1222761488",
         "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
@@ -4720,6 +4691,35 @@
         }
       ],
       "title": "Verwaltung von Produktionschargen im Zeitalter von Industrie 5.0: Strategischer Ansatz zur digitalen Transformation der Fertigung"
+    },
+    {
+      "__outstatic": {
+        "commit": "ef576098ca4df85778f3ebd50b79dd92bbf7fb3c",
+        "hash": "2589521220",
+        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
+      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
+      "lang": "pl",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
     }
   ]
 }
