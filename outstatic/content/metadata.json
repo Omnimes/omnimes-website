@@ -1,6 +1,6 @@
 {
-  "commit": "1c8949704b83d715772b0620a76c2893273151a9",
-  "generated": "2025-09-09T17:34:39.252Z",
+  "commit": "c5a8b67f3814380185a823bcc9b5a825184c4e6a",
+  "generated": "2025-09-09T17:35:02.036Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3798,35 +3798,6 @@
     },
     {
       "__outstatic": {
-        "commit": "c7def98a183aa6274ba60e9341419e28fda99ad6",
-        "hash": "3854894452",
-        "path": "outstatic/content/posts/verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp",
-      "description": "Die digitale Transformation der Fertigung erfordert einen strategischen Ansatz für das Management von Produktionschargen. Der Einsatz von Manufacturing Execution Systems (MES) in Verbindung mit Industrie-5.0-Technologien kann laut einer aktuellen Deloitte-Studie die Stillstandszeiten um 50 % und die Instandhaltungskosten um 40 % senken.",
-      "lang": "de",
-      "publishedAt": "2025-08-05T09:00:00.000Z",
-      "slug": "verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        }
-      ],
-      "title": "Verwaltung von Produktionschargen im Zeitalter von Industrie 5.0: Strategischer Ansatz zur digitalen Transformation der Fertigung"
-    },
-    {
-      "__outstatic": {
         "commit": "b6210a41e8b547a347e3bafa1cd3599dfb591297",
         "hash": "42620471",
         "path": "outstatic/content/posts/verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration.md"
@@ -4720,6 +4691,35 @@
         }
       ],
       "title": "Managing Production Batches in the Era of Industry 5.0: A Strategic Approach to Digital Transformation in Manufacturing"
+    },
+    {
+      "__outstatic": {
+        "commit": "c5a8b67f3814380185a823bcc9b5a825184c4e6a",
+        "hash": "2810228359",
+        "path": "outstatic/content/posts/verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp",
+      "description": "Die digitale Transformation der Fertigung erfordert einen strategischen Ansatz für das Management von Produktionschargen. Der Einsatz von Manufacturing Execution Systems (MES) in Verbindung mit Industrie-5.0-Technologien kann laut einer aktuellen Deloitte-Studie die Stillstandszeiten um 50 % und die Instandhaltungskosten um 40 % senken.",
+      "lang": "de",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Verwaltung von Produktionschargen im Zeitalter von Industrie 5.0: Strategischer Ansatz zur digitalen Transformation der Fertigung"
     }
   ]
 }

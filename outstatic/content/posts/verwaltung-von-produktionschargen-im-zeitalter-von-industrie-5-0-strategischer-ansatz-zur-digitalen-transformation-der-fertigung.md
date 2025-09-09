@@ -9,7 +9,7 @@ description: 'Die digitale Transformation der Fertigung erfordert einen strategi
 coverImage: '/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"dataAnalysis","label":"Data Analysis"}]
 lang: 'de'
-publishedAt: '2025-08-05T09:00:00.000Z'
+publishedAt: '2025-08-12T09:00:00.000Z'
 ---
 
 ## Die digitale Transformation der Fertigung erfordert einen strategischen Ansatz für das Management von Produktionschargen. Der Einsatz von Manufacturing Execution Systems (MES) in Verbindung mit Industrie-5.0-Technologien kann laut einer aktuellen Deloitte-Studie die Stillstandszeiten um 50 % und die Instandhaltungskosten um 40 % senken.
