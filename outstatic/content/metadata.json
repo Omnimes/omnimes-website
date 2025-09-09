@@ -1,6 +1,6 @@
 {
   "commit": "d6723a6b1319aa1ebfdc84d6b307102cb0860ec4",
-  "generated": "2025-09-09T17:43:42.814Z",
+  "generated": "2025-09-09T17:43:47.581Z",
   "metadata": [
     {
       "__outstatic": {
@@ -789,9 +789,9 @@
     },
     {
       "__outstatic": {
-        "commit": "1f055c92a851f0f630e2a12c32c388de51944528",
-        "hash": "1027615489",
-        "path": "outstatic/content/posts/enhancing-quality-control-in-automated-manufacturing-using-mqtt-and-sparkplug-b.md"
+        "commit": "0e92ab9894e392aec85280d77dc5bf85d83d391b",
+        "hash": "3018620463",
+        "path": "outstatic/content/posts/enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -799,10 +799,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/topic-enhancing-quality-control-in-automated-manufacturing-leveraging-mqtt-and-sparkplug-b-protocol-for-real-time-resour.png",
-      "description": "How MQTT and the Sparkplug B protocol can enhance quality control in automated manufacturing.",
-      "lang": "en",
+      "description": "Jak MQTT i protokół Sparkplug B mogą poprawić kontrolę jakości w zautomatyzowanej produkcji.",
+      "lang": "pl",
       "publishedAt": "2025-03-05T09:00:00Z",
-      "slug": "enhancing-quality-control-in-automated-manufacturing-using-mqtt-and-sparkplug-b",
+      "slug": "enhancing-quality-control-in-automated-manufacturing-with-mqtt-and-sparkplug-b",
       "status": "published",
       "tags": [
         {
@@ -818,7 +818,7 @@
           "value": "automatyzacja"
         }
       ],
-      "title": "Enhancing Quality Control in Automated Manufacturing Using MQTT and Sparkplug B"
+      "title": "Enhancing Quality Control in Automated Manufacturing with MQTT and Sparkplug B"
     },
     {
       "__outstatic": {
