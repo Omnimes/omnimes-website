@@ -467,11 +467,7 @@
         },
         {
           "value": "quality",
-          "label": "quality"
-        },
-        {
-          "value": "kpi",
-          "label": "KPI"
+          "label": "Quality"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "commit": "060ef818a448c4182fa82fe9493411d130d9f59f",
-  "generated": "2025-09-09T15:32:02.214Z",
+  "generated": "2025-09-09T15:37:12.395Z",
   "metadata": [
     {
       "__outstatic": {
@@ -927,31 +927,6 @@
         }
       ],
       "title": "Enhancing Production Efficiency through AI-Based MES Systems"
-    },
-    {
-      "__outstatic": {
-        "commit": "3ffe6fed9709ebd1cbb8406101d3071d31322c55",
-        "hash": "3899080159",
-        "path": "outstatic/content/posts/enhancing-quality-control-via-real-time-data-analytics-in-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-quality-control-through-real-time-data-analytics-in-manufacturing-execution-systems-for-continuous-impro.png",
-      "description": "How real-time data analytics in MES enhances quality control in production.",
-      "lang": "en",
-      "publishedAt": "2025-07-26T09:00:00Z",
-      "slug": "enhancing-quality-control-via-real-time-data-analytics-in-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Enhancing Quality Control via Real-Time Data Analytics in MES"
     },
     {
       "__outstatic": {
@@ -4733,43 +4708,35 @@
     {
       "__outstatic": {
         "commit": "060ef818a448c4182fa82fe9493411d130d9f59f",
-        "hash": "2133501726",
-        "path": "outstatic/content/posts/systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji.md"
+        "hash": "3976431010",
+        "path": "outstatic/content/posts/mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/best_quality-U5OT.png",
-      "description": "Współczesny przemysł znajduje się w centrum cyfrowej transformacji, gdzie systemy MES (Manufacturing Execution Systems) z analityką danych w czasie rzeczywistym stanowią fundament Przemysłu 5.0. Według raportu McKinsey Global Institute z 2023 roku, przedsiębiorstwa wdrażające zaawansowaną analitykę w procesach produkcyjnych osiągają średnio 15-20% wzrost wydajności i 25% redukcję defektów.",
-      "lang": "pl",
+      "coverImage": "/images/best_quality-EzOT.png",
+      "description": "Modern industry is at the heart of digital transformation, where Manufacturing Execution Systems (MES) with real-time data analytics form a cornerstone of Industry 5.0. According to a 2023 McKinsey Global Institute report, companies that deploy advanced analytics in production achieve, on average, a 15–20% productivity increase and a 25% reduction in defects.",
+      "lang": "en",
       "publishedAt": "2025-07-26T09:00:00.000Z",
-      "slug": "systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji",
+      "slug": "mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control",
       "status": "published",
       "tags": [
-        {
-          "label": "OmniMES",
-          "value": "omnimess"
-        },
-        {
-          "label": "OEE",
-          "value": "OEE"
-        },
-        {
-          "label": "quality",
-          "value": "quality"
-        },
         {
           "label": "Industry 5.0",
           "value": "Industry 5.0"
         },
         {
-          "label": "KPI",
-          "value": "kpi"
+          "label": "Quality",
+          "value": "quality"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
         }
       ],
-      "title": "Systemy MES z analityką danych w czasie rzeczywistym: Rewolucja w kontroli jakości produkcji"
+      "title": "MES Systems with Real-Time Data Analytics: A Revolution in Production Quality Control"
     }
   ]
 }
