@@ -1,6 +1,6 @@
 {
   "commit": "c44c3073bc7cb190035896763e41172f762fb74f",
-  "generated": "2025-09-10T14:38:41.550Z",
+  "generated": "2025-09-10T15:35:27.151Z",
   "metadata": [
     {
       "__outstatic": {
@@ -550,31 +550,6 @@
         }
       ],
       "title": "Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitätskontrolle"
-    },
-    {
-      "__outstatic": {
-        "commit": "c7eaec48269522c05e87514777b3db1a0849754c",
-        "hash": "2241988714",
-        "path": "outstatic/content/posts/einsatz-von-maschinellem-lernen-in-mes-zur-kontinuierlichen-verbesserung-in-der-erneuerbaren-energieproduktion.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-machine-learning-in-mes-for-continuous-improvement-in-green-energy-manufacturing-this-topic-explores-ho.png",
-      "description": "Wie MES-Systeme mit maschinellem Lernen die Effizienz der erneuerbaren Energieproduktion steigern können.",
-      "lang": "de",
-      "publishedAt": "2025-06-26T09:00:00Z",
-      "slug": "einsatz-von-maschinellem-lernen-in-mes-zur-kontinuierlichen-verbesserung-in-der-erneuerbaren-energieproduktion",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Einsatz von maschinellem Lernen in MES zur kontinuierlichen Verbesserung in der erneuerbaren Energieproduktion"
     },
     {
       "__outstatic": {
@@ -2441,6 +2416,31 @@
     },
     {
       "__outstatic": {
+        "commit": "92a4ee6ef5cd1870bd07d3576aa615a020de238a",
+        "hash": "2608186323",
+        "path": "outstatic/content/posts/utilization-of-machine-learning-in-mes-for-continuous-improvement-in-renewable-energy-production.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-machine-learning-in-mes-for-continuous-improvement-in-green-energy-manufacturing-this-topic-explores-ho.png",
+      "description": "How MES systems with machine learning can enhance the efficiency of renewable energy production.",
+      "lang": "en",
+      "publishedAt": "2025-06-26T09:00:00Z",
+      "slug": "utilization-of-machine-learning-in-mes-for-continuous-improvement-in-renewable-energy-production",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Utilization of Machine Learning in MES for Continuous Improvement in Renewable Energy Production"
+    },
+    {
+      "__outstatic": {
         "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
         "hash": "3236711354",
         "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
@@ -3301,19 +3301,19 @@
     {
       "__outstatic": {
         "commit": "c44c3073bc7cb190035896763e41172f762fb74f",
-        "hash": "4235018839",
-        "path": "outstatic/content/posts/smart-mes-in-industry-5-0-how-machine-learning-revolutionizes-continuous-improvement-in-renewable-energy.md"
+        "hash": "721787239",
+        "path": "outstatic/content/posts/intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/green_energy-M4ND.png",
-      "description": "How MES systems with machine learning can enhance the efficiency of renewable energy production.",
-      "lang": "en",
+      "coverImage": "/images/green_energy-U0Mj.png",
+      "description": "ROI: bis zu 15% höhere Effizienz und 10–20% bessere Energiespeicherung – das ist die reale Kraft von KI in der modernen Energiebranche.\nIm Zeitalter der Industrie 5.0, in dem Technologie mit einem menschzentrierten Ansatz verschmilzt, erlebt der Sektor der erneuerbaren Energien ein beispielloses Wachstum – mit 18,6 GW zusätzlicher Solarkapazität allein in den ersten neun Monaten 2024. Manufacturing Execution Systems (MES), unterstützt durch Machine Learning, werden zu einem Eckpfeiler dieser Transformation und bieten klare geschäftliche und technische Vorteile.",
+      "lang": "de",
       "publishedAt": "2025-06-26T09:00:00.000Z",
-      "slug": "smart-mes-in-industry-5-0-how-machine-learning-revolutionizes-continuous-improvement-in-renewable-energy",
+      "slug": "intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert",
       "status": "published",
       "tags": [
         {
@@ -3321,19 +3321,15 @@
           "value": "ai"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
           "label": "Industry 5.0",
           "value": "Industry 5.0"
         },
         {
-          "label": "OmniMES",
-          "value": "omnimess"
+          "label": "Omnimes",
+          "value": "omnimes"
         }
       ],
-      "title": "Smart MES in Industry 5.0: How Machine Learning Revolutionizes Continuous Improvement in Renewable Energy"
+      "title": "Intelligente MES in Industrie 5.0: Wie Machine Learning das kontinuierliche Verbesserungsmanagement in der erneuerbaren Energie revolutioniert"
     }
   ]
 }
