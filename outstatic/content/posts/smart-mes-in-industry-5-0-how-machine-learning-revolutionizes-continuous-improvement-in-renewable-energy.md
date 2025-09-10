@@ -5,7 +5,10 @@ author:
   name: 'Martin Szerment'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'smart-mes-in-industry-5-0-how-machine-learning-revolutionizes-continuous-improvement-in-renewable-energy'
-description: 'How MES systems with machine learning can enhance the efficiency of renewable energy production.'
+description: 'ROI: up to 15% efficiency gains and 10–20% better energy storage performance – this is the real power of AI in modern energy.
+
+In the era of Industry 5.0, where technology merges with a human-centric approach, the renewable energy sector is growing at an unprecedented pace – with 18.6 GW of additional solar capacity installed in the first nine months of 2024.
+Manufacturing Execution Systems (MES) enhanced with machine learning are becoming a cornerstone of this transformation, delivering both business and technical benefits.'
 coverImage: '/images/green_energy-M4ND.png'
 tags: [{"value":"ai","label":"AI"},{"value":"omnimes","label":"Omnimes"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"omnimess","label":"OmniMES"}]
 lang: 'en'
