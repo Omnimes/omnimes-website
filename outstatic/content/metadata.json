@@ -1,6 +1,6 @@
 {
   "commit": "02c8798747807918da9a4d693e74c2aebeff4060",
-  "generated": "2025-09-10T17:47:07.129Z",
+  "generated": "2025-09-10T17:52:53.451Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1507,39 +1507,6 @@
     },
     {
       "__outstatic": {
-        "commit": "e003e1dec998091f907359b2e6e50257b7b4e091",
-        "hash": "3197901687",
-        "path": "outstatic/content/posts/optimierung-des-oee-durch-energiesparstrategien-im-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/optimizing-overall-equipment-effectiveness-oee-through-energy-saving-strategies-in-mes-leveraging-industrial-iot-for-enh.png",
-      "description": "Erfahren Sie, wie der Einsatz von industriellem IoT in MES-Systemen die Produktionseffizienz steigern und den Energieverbrauch senken kann.",
-      "lang": "de",
-      "publishedAt": "2025-05-05T09:00:00Z",
-      "slug": "optimierung-des-oee-durch-energiesparstrategien-im-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Tematyka",
-          "value": "OEE"
-        },
-        {
-          "label": "Tematyka",
-          "value": "IoT przemysłowy"
-        },
-        {
-          "label": "Tematyka",
-          "value": "MES"
-        }
-      ],
-      "title": "Optimierung des OEE durch Energiesparstrategien im MES"
-    },
-    {
-      "__outstatic": {
         "commit": "9e66039fcc16c3e3135ace0209c223204d0f6fbd",
         "hash": "2961237834",
         "path": "outstatic/content/posts/optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen.md"
@@ -1742,6 +1709,39 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "11c056d8529849145d766c4860655e45b7fc8b34",
+        "hash": "1089257552",
+        "path": "outstatic/content/posts/optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/optimizing-overall-equipment-effectiveness-oee-through-energy-saving-strategies-in-mes-leveraging-industrial-iot-for-enh.png",
+      "description": "Dowiedz się, jak zastosowanie IoT przemysłowego w systemach MES może zwiększyć efektywność produkcji i obniżyć zużycie energii.",
+      "lang": "pl",
+      "publishedAt": "2025-05-05T09:00:00Z",
+      "slug": "optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Tematyka",
+          "value": "OEE"
+        },
+        {
+          "label": "Tematyka",
+          "value": "IoT przemysłowy"
+        },
+        {
+          "label": "Tematyka",
+          "value": "MES"
+        }
+      ],
+      "title": "Optymalizacja OEE poprzez strategie oszczędzania energii w MES"
     },
     {
       "__outstatic": {
@@ -3357,19 +3357,19 @@
     {
       "__outstatic": {
         "commit": "02c8798747807918da9a4d693e74c2aebeff4060",
-        "hash": "3588502715",
-        "path": "outstatic/content/posts/maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems.md"
+        "hash": "2755997994",
+        "path": "outstatic/content/posts/maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/oee_energy_mes-A3MT.png",
-      "description": "W dobie Industry 5.0, gdzie efektywność energetyczna staje się kluczowym wyróżnikiem, przedsiębiorstwa produkcyjne stoją przed bezprecedensowym wyzwaniem. Zgodnie z nową dyrektywą UE 2023/1791 w sprawie efektywności energetycznej, kraje członkowskie muszą osiągnąć średni roczny wskaźnik oszczędności energii w wysokości 1,49% w latach 2024-2030, co oznacza, że firmy muszą radykalnie przemyśleć swoje podejście do zarządzania energią.",
-      "lang": "pl",
+      "coverImage": "/images/oee_energy_mes-M5Nz.png",
+      "description": "Im Zeitalter von Industry 5.0, in dem Energieeffizienz zum entscheidenden Unterscheidungsmerkmal wird, stehen produzierende Unternehmen vor beispiellosen Herausforderungen. Die neue EU-Richtlinie 2023/1791 zur Energieeffizienz verpflichtet die Mitgliedsstaaten, zwischen 2024–2030 eine durchschnittliche jährliche Energieeinsparung von 1,49 % zu erreichen. Unternehmen müssen daher ihr Energiemanagement grundlegend neu denken.",
+      "lang": "de",
       "publishedAt": "2025-05-05T09:00:00.000Z",
-      "slug": "maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems",
+      "slug": "maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen",
       "status": "published",
       "tags": [
         {
@@ -3381,15 +3381,15 @@
           "value": "omnimes"
         },
         {
-          "label": "Green Energy",
-          "value": "greenEnergy"
-        },
-        {
           "label": "OmniEnergy",
           "value": "omniEnergy"
+        },
+        {
+          "label": "Green Energy",
+          "value": "greenEnergy"
         }
       ],
-      "title": "Maksymalizacja poprzez optymalizację OEE i zarządzanie energią w systemach MES/EMS"
+      "title": "Maximierung des ROI durch OEE-Optimierung und Energiemanagement in MES/EMS-Systemen"
     }
   ]
 }
