@@ -1,6 +1,6 @@
 {
   "commit": "3dbbf13e3fda0075189ed97f541f1960915fee33",
-  "generated": "2025-09-10T13:56:27.880Z",
+  "generated": "2025-09-10T13:56:31.830Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2466,6 +2466,35 @@
     },
     {
       "__outstatic": {
+        "commit": "f5aa81930627f8aa231d3e3ee5b0712c9a285353",
+        "hash": "97278789",
+        "path": "outstatic/content/posts/utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
+      "description": "Integration of digital twins with machine learning to optimize predictive maintenance in modern production systems.",
+      "lang": "en",
+      "publishedAt": "2025-06-19T09:00:00Z",
+      "slug": "utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "Cyfrowe bliźniaki"
+        },
+        {
+          "label": "Utrzymanie",
+          "value": "Utrzymanie predykcyjne"
+        }
+      ],
+      "title": "Utilization of Digital Twins and Machine Learning in Predictive Maintenance"
+    },
+    {
+      "__outstatic": {
         "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
         "hash": "3236711354",
         "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
@@ -2768,35 +2797,6 @@
         }
       ],
       "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości"
-    },
-    {
-      "__outstatic": {
-        "commit": "697f4fb7c9437ac78f4f3a8c6c315964f4f85289",
-        "hash": "3294082554",
-        "path": "outstatic/content/posts/wykorzystanie-cyfrowych-blizniakow-i-uczenia-maszynowego-w-utrzymaniu-predykcyjnym.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
-      "description": "Integracja cyfrowych bliźniaków z uczeniem maszynowym w celu optymalizacji utrzymania predykcyjnego w nowoczesnych systemach produkcyjnych.",
-      "lang": "pl",
-      "publishedAt": "2025-06-19T09:00:00Z",
-      "slug": "wykorzystanie-cyfrowych-blizniakow-i-uczenia-maszynowego-w-utrzymaniu-predykcyjnym",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Cyfrowe bliźniaki"
-        },
-        {
-          "label": "Utrzymanie",
-          "value": "Utrzymanie predykcyjne"
-        }
-      ],
-      "title": "Wykorzystanie cyfrowych bliźniaków i uczenia maszynowego w utrzymaniu predykcyjnym"
     },
     {
       "__outstatic": {
