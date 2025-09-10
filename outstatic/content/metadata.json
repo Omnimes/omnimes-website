@@ -1,6 +1,6 @@
 {
   "commit": "863b94bc8dc0022dff8e5017d4a84dfe1a32e7cf",
-  "generated": "2025-09-10T14:24:37.754Z",
+  "generated": "2025-09-10T14:25:16.007Z",
   "metadata": [
     {
       "__outstatic": {
@@ -712,6 +712,31 @@
         }
       ],
       "title": "Enhancing Production Efficiency through AI-Based MES Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "7e944cb1c397f4946b58c1d223d063ac79dc168b",
+        "hash": "3460663184",
+        "path": "outstatic/content/posts/enhancing-batch-management-efficiency-through-advanced-hmi-interfaces.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-batch-management-efficiency-through-advanced-hmi-interfaces-and-robust-industrial-networks-in-smart-manu.png",
+      "description": "How the integration of advanced HMI systems with batch management optimizes production in smart factories.",
+      "lang": "en",
+      "publishedAt": "2025-07-12T09:00:00Z",
+      "slug": "enhancing-batch-management-efficiency-through-advanced-hmi-interfaces",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Enhancing Batch Management Efficiency through Advanced HMI Interfaces"
     },
     {
       "__outstatic": {
@@ -2071,31 +2096,6 @@
     },
     {
       "__outstatic": {
-        "commit": "2d2f3a0bdba832614d28b7e3ece622e6f2e0eb41",
-        "hash": "3446899890",
-        "path": "outstatic/content/posts/steigerung-der-effizienz-des-batch-managements-durch-fortschrittliche-hmi-schnittstellen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-batch-management-efficiency-through-advanced-hmi-interfaces-and-robust-industrial-networks-in-smart-manu.png",
-      "description": "Wie die Integration fortschrittlicher HMI-Systeme mit dem Batch-Management die Produktion in intelligenten Fabriken optimiert.",
-      "lang": "de",
-      "publishedAt": "2025-07-12T09:00:00Z",
-      "slug": "steigerung-der-effizienz-des-batch-managements-durch-fortschrittliche-hmi-schnittstellen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Steigerung der Effizienz des Batch-Managements durch fortschrittliche HMI-Schnittstellen"
-    },
-    {
-      "__outstatic": {
         "commit": "53965b5050bb639ee0c4c3f334f68202a1d32810",
         "hash": "3217791798",
         "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii.md"
@@ -3293,19 +3293,19 @@
     {
       "__outstatic": {
         "commit": "863b94bc8dc0022dff8e5017d4a84dfe1a32e7cf",
-        "hash": "2529703539",
-        "path": "outstatic/content/posts/how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30.md"
+        "hash": "2749119947",
+        "path": "outstatic/content/posts/wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/hmi2-QzNj.png",
-      "description": "The Polish market for operator panels and HMI systems is worth ~PLN 120 million annually. Yet, only 15% of factories in Poland are fully automated, highlighting vast potential for companies ready to invest in modern batch management technologies.",
-      "lang": "en",
+      "coverImage": "/images/hmi2-M4NT.png",
+      "description": "Der polnische Markt für Bedienpanels und HMI-Systeme hat ein Volumen von ca. 120 Millionen PLN pro Jahr. Nur 15% der Fabriken sind jedoch vollständig automatisiert – ein enormes Potenzial für Unternehmen, die bereit sind, in moderne Technologien für das Chargenmanagement zu investieren.",
+      "lang": "de",
       "publishedAt": "2025-07-12T09:00:00.000Z",
-      "slug": "how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30",
+      "slug": "wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern",
       "status": "published",
       "tags": [
         {
@@ -3321,7 +3321,7 @@
           "value": "roi"
         }
       ],
-      "title": "How Advanced HMI Interfaces Increase ROI in Batch Management by 30%"
+      "title": "Wie fortschrittliche HMI-Schnittstellen den ROI im Chargenmanagement um 30% steigern"
     }
   ]
 }
