@@ -1,6 +1,6 @@
 {
-  "commit": "7d5d8d75cd7636611779af21c08d0be337b73f3b",
-  "generated": "2025-09-10T17:09:25.526Z",
+  "commit": "bfe7a7bf0452ab033cc5d59fd8ff7863a4fb6d25",
+  "generated": "2025-09-10T17:09:30.322Z",
   "metadata": [
     {
       "__outstatic": {
@@ -525,6 +525,31 @@
         }
       ],
       "title": "Einsatz von TensorFlow in MES-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "0b9ac00def86335fb86b48ad6f4f00236596e1f3",
+        "hash": "1069452840",
+        "path": "outstatic/content/posts/enhanced-device-monitoring-through-ai-and-industrial-connectivity.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-equipment-monitoring-through-ai-driven-industrial-connectivity-a-practical-approach-for-production-engineers-t.png",
+      "description": "How AI and industrial connectivity can enhance machine efficiency and reduce downtime.",
+      "lang": "en",
+      "publishedAt": "2025-06-12T09:00:00Z",
+      "slug": "enhanced-device-monitoring-through-ai-and-industrial-connectivity",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Enhanced Device Monitoring through AI and Industrial Connectivity"
     },
     {
       "__outstatic": {
@@ -3211,6 +3236,31 @@
     },
     {
       "__outstatic": {
+        "commit": "f3435444a38c8607bf2c0df6362939f3b463bd37",
+        "hash": "99120953",
+        "path": "outstatic/content/posts/zwiekszenie-monitorowania-urzadzen-dzieki-ai-i-acznosci-przemysowej.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-equipment-monitoring-through-ai-driven-industrial-connectivity-a-practical-approach-for-production-engineers-t.png",
+      "description": "Jak AI i łączność przemysłowa mogą poprawić wydajność maszyn i zredukować przestoje.",
+      "lang": "pl",
+      "publishedAt": "2025-06-12T09:00:00Z",
+      "slug": "zwiekszenie-monitorowania-urzadzen-dzieki-ai-i-acznosci-przemysowej",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Zwiększenie monitorowania urządzeń dzięki AI i łączności przemysłowej"
+    },
+    {
+      "__outstatic": {
         "commit": "b1cf2ab5c19eec6c40e7666b021fbf629d051695",
         "hash": "4058421130",
         "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow.md"
@@ -3320,7 +3370,7 @@
     {
       "__outstatic": {
         "commit": "bfe7a7bf0452ab033cc5d59fd8ff7863a4fb6d25",
-        "hash": "1060842154",
+        "hash": "1210810321",
         "path": "outstatic/content/posts/industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe.md"
       },
       "author": {
@@ -3346,46 +3396,9 @@
         {
           "label": "5G",
           "value": "5G"
-        },
-        {
-          "label": "ROI",
-          "value": "roi"
         }
       ],
       "title": "Industry 5.0: Jak AI i zaawansowana łączność rewolucjonizują monitorowanie przemysłowe"
-    },
-    {
-      "__outstatic": {
-        "commit": "7d5d8d75cd7636611779af21c08d0be337b73f3b",
-        "hash": "4067196614",
-        "path": "outstatic/content/posts/industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/industry_5_0_5g-M4ND.png",
-      "description": "Industry is on the brink of a new revolution. Industry 5.0 marks an era of human–machine collaboration that prioritizes sustainability, where AI is not merely a tool but a strategic enabler of transformation. Unlike Industry 4.0, which focused on automation and digitalization, Industry 5.0 emphasizes human–machine collaboration, sustainable development, and the integration of ESG (Environmental, Social, Governance) principles with advanced technologies.",
-      "lang": "en",
-      "publishedAt": "2025-06-12T09:00:00.000Z",
-      "slug": "industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "5G",
-          "value": "5G"
-        }
-      ],
-      "title": "Industry 5.0: How AI and Advanced Connectivity Are Revolutionizing Industrial Monitoring"
     }
   ]
 }

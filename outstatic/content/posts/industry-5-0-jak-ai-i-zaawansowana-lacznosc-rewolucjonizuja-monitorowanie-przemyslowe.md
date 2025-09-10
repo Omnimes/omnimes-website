@@ -7,7 +7,7 @@ author:
 slug: 'industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe'
 description: 'Przemysł stoi u progu nowej rewolucji. Industry 5.0 marks an era of human-machine collaboration that prioritizes sustainability, where AI is not merely a tool but a strategic enabler for transformation. W przeciwieństwie do Industry 4.0, które koncentrowało się na automatyzacji i cyfryzacji, Industry 5.0 kładzie nacisk na współpracę człowiek-maszyna, zrównoważony rozwój oraz integrację zasad ESG (Environmental, Social, Governance) z zaawansowanymi technologiami.'
 coverImage: '/images/industry_5_0_5g-QzOD.png'
-tags: [{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"ai","label":"AI"},{"label":"5G","value":"5G"},{"value":"roi","label":"ROI"}]
+tags: [{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"ai","label":"AI"},{"label":"5G","value":"5G"}]
 lang: 'pl'
 publishedAt: '2025-06-12T09:00:00.000Z'
 ---
