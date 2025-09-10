@@ -1,6 +1,6 @@
 {
-  "commit": "2828f2de54a2213fae75a0da80bbaa47fac4a8af",
-  "generated": "2025-09-10T14:21:30.298Z",
+  "commit": "863b94bc8dc0022dff8e5017d4a84dfe1a32e7cf",
+  "generated": "2025-09-10T14:24:37.754Z",
   "metadata": [
     {
       "__outstatic": {
@@ -712,31 +712,6 @@
         }
       ],
       "title": "Enhancing Production Efficiency through AI-Based MES Systems"
-    },
-    {
-      "__outstatic": {
-        "commit": "7e944cb1c397f4946b58c1d223d063ac79dc168b",
-        "hash": "3460663184",
-        "path": "outstatic/content/posts/enhancing-batch-management-efficiency-through-advanced-hmi-interfaces.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-batch-management-efficiency-through-advanced-hmi-interfaces-and-robust-industrial-networks-in-smart-manu.png",
-      "description": "How the integration of advanced HMI systems with batch management optimizes production in smart factories.",
-      "lang": "en",
-      "publishedAt": "2025-07-12T09:00:00Z",
-      "slug": "enhancing-batch-management-efficiency-through-advanced-hmi-interfaces",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Enhancing Batch Management Efficiency through Advanced HMI Interfaces"
     },
     {
       "__outstatic": {
@@ -3314,6 +3289,39 @@
         }
       ],
       "title": "Jak zaawansowane interfejsy HMI zwiększają ROI w zarządzaniu partiami o 30%"
+    },
+    {
+      "__outstatic": {
+        "commit": "863b94bc8dc0022dff8e5017d4a84dfe1a32e7cf",
+        "hash": "2529703539",
+        "path": "outstatic/content/posts/how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/hmi2-QzNj.png",
+      "description": "The Polish market for operator panels and HMI systems is worth ~PLN 120 million annually. Yet, only 15% of factories in Poland are fully automated, highlighting vast potential for companies ready to invest in modern batch management technologies.",
+      "lang": "en",
+      "publishedAt": "2025-07-12T09:00:00.000Z",
+      "slug": "how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "ROI",
+          "value": "roi"
+        }
+      ],
+      "title": "How Advanced HMI Interfaces Increase ROI in Batch Management by 30%"
     }
   ]
 }
