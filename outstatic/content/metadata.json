@@ -1,6 +1,6 @@
 {
   "commit": "02c8798747807918da9a4d693e74c2aebeff4060",
-  "generated": "2025-09-10T17:52:53.451Z",
+  "generated": "2025-09-10T17:53:05.141Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1474,9 +1474,9 @@
     },
     {
       "__outstatic": {
-        "commit": "392b9944b41e26399358155bef03950d5addfec0",
-        "hash": "4077880120",
-        "path": "outstatic/content/posts/optimization-of-oee-through-energy-saving-strategies-in-mes.md"
+        "commit": "e003e1dec998091f907359b2e6e50257b7b4e091",
+        "hash": "3197901687",
+        "path": "outstatic/content/posts/optimierung-des-oee-durch-energiesparstrategien-im-mes.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -1484,10 +1484,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/optimizing-overall-equipment-effectiveness-oee-through-energy-saving-strategies-in-mes-leveraging-industrial-iot-for-enh.png",
-      "description": "Discover how the application of industrial IoT in MES systems can enhance production efficiency and reduce energy consumption.",
-      "lang": "en",
+      "description": "Erfahren Sie, wie der Einsatz von industriellem IoT in MES-Systemen die Produktionseffizienz steigern und den Energieverbrauch senken kann.",
+      "lang": "de",
       "publishedAt": "2025-05-05T09:00:00Z",
-      "slug": "optimization-of-oee-through-energy-saving-strategies-in-mes",
+      "slug": "optimierung-des-oee-durch-energiesparstrategien-im-mes",
       "status": "published",
       "tags": [
         {
@@ -1503,7 +1503,7 @@
           "value": "MES"
         }
       ],
-      "title": "Optimization of OEE through Energy Saving Strategies in MES"
+      "title": "Optimierung des OEE durch Energiesparstrategien im MES"
     },
     {
       "__outstatic": {
@@ -3357,19 +3357,19 @@
     {
       "__outstatic": {
         "commit": "02c8798747807918da9a4d693e74c2aebeff4060",
-        "hash": "2755997994",
-        "path": "outstatic/content/posts/maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen.md"
+        "hash": "60529286",
+        "path": "outstatic/content/posts/maximize-roi-through-oee-optimization-and-energy-management-in-mes-ems-systems.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/oee_energy_mes-M5Nz.png",
-      "description": "Im Zeitalter von Industry 5.0, in dem Energieeffizienz zum entscheidenden Unterscheidungsmerkmal wird, stehen produzierende Unternehmen vor beispiellosen Herausforderungen. Die neue EU-Richtlinie 2023/1791 zur Energieeffizienz verpflichtet die Mitgliedsstaaten, zwischen 2024–2030 eine durchschnittliche jährliche Energieeinsparung von 1,49 % zu erreichen. Unternehmen müssen daher ihr Energiemanagement grundlegend neu denken.",
-      "lang": "de",
+      "coverImage": "/images/oee_energy_mes-g1NT.png",
+      "description": "In the age of Industry 5.0, where energy efficiency becomes a key differentiator, manufacturing enterprises face unprecedented challenges. According to the new EU Directive 2023/1791 on energy efficiency, member states must achieve an average annual energy savings rate of 1.49% between 2024–2030. This means that companies must radically rethink their approach to energy management.\nA crucial tool in this transformation is the optimization of the OEE (Overall Equipment Effectiveness) index through intelligent energy management in MES-class systems. In both Industry 4.0 and 5.0, OEE plays a key role in ROI planning, reliability, and production stability.",
+      "lang": "en",
       "publishedAt": "2025-05-05T09:00:00.000Z",
-      "slug": "maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen",
+      "slug": "maximize-roi-through-oee-optimization-and-energy-management-in-mes-ems-systems",
       "status": "published",
       "tags": [
         {
@@ -3381,15 +3381,15 @@
           "value": "omnimes"
         },
         {
-          "label": "OmniEnergy",
-          "value": "omniEnergy"
-        },
-        {
           "label": "Green Energy",
           "value": "greenEnergy"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
         }
       ],
-      "title": "Maximierung des ROI durch OEE-Optimierung und Energiemanagement in MES/EMS-Systemen"
+      "title": "Maximize ROI through OEE Optimization and Energy Management in MES/EMS Systems"
     }
   ]
 }
