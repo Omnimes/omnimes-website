@@ -1,6 +1,6 @@
 {
-  "commit": "7d5d8d75cd7636611779af21c08d0be337b73f3b",
-  "generated": "2025-09-10T17:10:29.346Z",
+  "commit": "02c8798747807918da9a4d693e74c2aebeff4060",
+  "generated": "2025-09-10T17:47:07.129Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1745,39 +1745,6 @@
     },
     {
       "__outstatic": {
-        "commit": "11c056d8529849145d766c4860655e45b7fc8b34",
-        "hash": "1089257552",
-        "path": "outstatic/content/posts/optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/optimizing-overall-equipment-effectiveness-oee-through-energy-saving-strategies-in-mes-leveraging-industrial-iot-for-enh.png",
-      "description": "Dowiedz się, jak zastosowanie IoT przemysłowego w systemach MES może zwiększyć efektywność produkcji i obniżyć zużycie energii.",
-      "lang": "pl",
-      "publishedAt": "2025-05-05T09:00:00Z",
-      "slug": "optymalizacja-oee-poprzez-strategie-oszczedzania-energii-w-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Tematyka",
-          "value": "OEE"
-        },
-        {
-          "label": "Tematyka",
-          "value": "IoT przemysłowy"
-        },
-        {
-          "label": "Tematyka",
-          "value": "MES"
-        }
-      ],
-      "title": "Optymalizacja OEE poprzez strategie oszczędzania energii w MES"
-    },
-    {
-      "__outstatic": {
         "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
         "hash": "4265613164",
         "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
@@ -3386,6 +3353,43 @@
         }
       ],
       "title": "Industrie 5.0: Wie KI und fortschrittliche Konnektivität die industrielle Überwachung revolutionieren"
+    },
+    {
+      "__outstatic": {
+        "commit": "02c8798747807918da9a4d693e74c2aebeff4060",
+        "hash": "3588502715",
+        "path": "outstatic/content/posts/maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/oee_energy_mes-A3MT.png",
+      "description": "W dobie Industry 5.0, gdzie efektywność energetyczna staje się kluczowym wyróżnikiem, przedsiębiorstwa produkcyjne stoją przed bezprecedensowym wyzwaniem. Zgodnie z nową dyrektywą UE 2023/1791 w sprawie efektywności energetycznej, kraje członkowskie muszą osiągnąć średni roczny wskaźnik oszczędności energii w wysokości 1,49% w latach 2024-2030, co oznacza, że firmy muszą radykalnie przemyśleć swoje podejście do zarządzania energią.",
+      "lang": "pl",
+      "publishedAt": "2025-05-05T09:00:00.000Z",
+      "slug": "maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OEE",
+          "value": "OEE"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Green Energy",
+          "value": "greenEnergy"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        }
+      ],
+      "title": "Maksymalizacja poprzez optymalizację OEE i zarządzanie energią w systemach MES/EMS"
     }
   ]
 }

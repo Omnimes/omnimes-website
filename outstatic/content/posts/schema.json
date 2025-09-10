@@ -484,6 +484,10 @@
         {
           "value": "5G",
           "label": "5G"
+        },
+        {
+          "value": "omniEnergy",
+          "label": "OmniEnergy"
         }
       ]
     },
