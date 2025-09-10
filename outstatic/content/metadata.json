@@ -1,6 +1,6 @@
 {
-  "commit": "863b94bc8dc0022dff8e5017d4a84dfe1a32e7cf",
-  "generated": "2025-09-10T14:25:16.007Z",
+  "commit": "c44c3073bc7cb190035896763e41172f762fb74f",
+  "generated": "2025-09-10T14:36:44.247Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2745,31 +2745,6 @@
     },
     {
       "__outstatic": {
-        "commit": "06bc8ff9304bb115db024660b633b0a16cf5d0c1",
-        "hash": "2906856138",
-        "path": "outstatic/content/posts/wykorzystanie-uczenia-maszynowego-w-mes-dla-ciagego-doskonalenia-w-produkcji-energii-odnawialnej.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-machine-learning-in-mes-for-continuous-improvement-in-green-energy-manufacturing-this-topic-explores-ho.png",
-      "description": "Jak systemy MES z uczeniem maszynowym mogą poprawić efektywność produkcji energii odnawialnej.",
-      "lang": "pl",
-      "publishedAt": "2025-06-26T09:00:00Z",
-      "slug": "wykorzystanie-uczenia-maszynowego-w-mes-dla-ciagego-doskonalenia-w-produkcji-energii-odnawialnej",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Wykorzystanie uczenia maszynowego w MES dla ciągłego doskonalenia w produkcji energii odnawialnej"
-    },
-    {
-      "__outstatic": {
         "commit": "9ae6473dbdd0a69ee581c200e431a1a5fcc21aef",
         "hash": "2007098296",
         "path": "outstatic/content/posts/wykorzystanie-tensorflow-w-systemach-mes.md"
@@ -3322,6 +3297,43 @@
         }
       ],
       "title": "Wie fortschrittliche HMI-Schnittstellen den ROI im Chargenmanagement um 30% steigern"
+    },
+    {
+      "__outstatic": {
+        "commit": "c44c3073bc7cb190035896763e41172f762fb74f",
+        "hash": "3244325246",
+        "path": "outstatic/content/posts/inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/green_energy-M2NT.png",
+      "description": "W erze Industry 5.0, gdzie technologia łączy się z humanistycznym podejściem do produkcji, sektor energii odnawialnej doświadcza bezprecedensowego wzrostu – z rekordowymi 18.6 GW dodatkowej mocy solarnej tylko w pierwszych dziewięciu miesiącach 2024 roku. Manufacturing Execution Systems (MES) wspomagane uczeniem maszynowym stają się kluczowym elementem tej transformacji, oferując konkretne korzyści biznesowe i techniczne.",
+      "lang": "pl",
+      "publishedAt": "2025-06-26T09:00:00.000Z",
+      "slug": "inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Green Energy",
+          "value": "greenEnergy"
+        }
+      ],
+      "title": "Inteligentne MES w Industry 5.0: Jak uczenie maszynowe rewolucjonizuje ciągłe doskonalenie w produkcji energii odnawialnej"
     }
   ]
 }

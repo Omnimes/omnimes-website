@@ -476,6 +476,10 @@
         {
           "value": "roi",
           "label": "ROI"
+        },
+        {
+          "value": "greenEnergy",
+          "label": "Green Energy"
         }
       ]
     },
