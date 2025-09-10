@@ -1,6 +1,6 @@
 {
-  "commit": "bfe7a7bf0452ab033cc5d59fd8ff7863a4fb6d25",
-  "generated": "2025-09-10T17:09:30.322Z",
+  "commit": "7d5d8d75cd7636611779af21c08d0be337b73f3b",
+  "generated": "2025-09-10T17:10:29.346Z",
   "metadata": [
     {
       "__outstatic": {
@@ -694,31 +694,6 @@
         }
       ],
       "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "d62f513ab7edb17de79bd2551d532f66dc47d12f",
-        "hash": "1188082477",
-        "path": "outstatic/content/posts/erhohung-der-gerateuberwachung-durch-ki-und-industrielle-konnektivitat.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-equipment-monitoring-through-ai-driven-industrial-connectivity-a-practical-approach-for-production-engineers-t.png",
-      "description": "Wie KI und industrielle Konnektivität die Maschinenleistung verbessern und Ausfallzeiten reduzieren können.",
-      "lang": "de",
-      "publishedAt": "2025-06-12T09:00:00Z",
-      "slug": "erhohung-der-gerateuberwachung-durch-ki-und-industrielle-konnektivitat",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Erhöhung der Geräteüberwachung durch KI und industrielle Konnektivität"
     },
     {
       "__outstatic": {
@@ -3236,31 +3211,6 @@
     },
     {
       "__outstatic": {
-        "commit": "f3435444a38c8607bf2c0df6362939f3b463bd37",
-        "hash": "99120953",
-        "path": "outstatic/content/posts/zwiekszenie-monitorowania-urzadzen-dzieki-ai-i-acznosci-przemysowej.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-equipment-monitoring-through-ai-driven-industrial-connectivity-a-practical-approach-for-production-engineers-t.png",
-      "description": "Jak AI i łączność przemysłowa mogą poprawić wydajność maszyn i zredukować przestoje.",
-      "lang": "pl",
-      "publishedAt": "2025-06-12T09:00:00Z",
-      "slug": "zwiekszenie-monitorowania-urzadzen-dzieki-ai-i-acznosci-przemysowej",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Zwiększenie monitorowania urządzeń dzięki AI i łączności przemysłowej"
-    },
-    {
-      "__outstatic": {
         "commit": "b1cf2ab5c19eec6c40e7666b021fbf629d051695",
         "hash": "4058421130",
         "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow.md"
@@ -3370,7 +3320,7 @@
     {
       "__outstatic": {
         "commit": "bfe7a7bf0452ab033cc5d59fd8ff7863a4fb6d25",
-        "hash": "1210810321",
+        "hash": "1060842154",
         "path": "outstatic/content/posts/industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe.md"
       },
       "author": {
@@ -3396,9 +3346,46 @@
         {
           "label": "5G",
           "value": "5G"
+        },
+        {
+          "label": "ROI",
+          "value": "roi"
         }
       ],
       "title": "Industry 5.0: Jak AI i zaawansowana łączność rewolucjonizują monitorowanie przemysłowe"
+    },
+    {
+      "__outstatic": {
+        "commit": "7d5d8d75cd7636611779af21c08d0be337b73f3b",
+        "hash": "1886017005",
+        "path": "outstatic/content/posts/industrie-5-0-wie-ki-und-fortschrittliche-konnektivitat-die-industrielle-uberwachung-revolutionieren.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/industry_5_0_5g-Q0Mj.png",
+      "description": "Die Industrie steht an der Schwelle zu einer neuen Revolution. Industrie 5.0 markiert eine Ära der Mensch-Maschine-Zusammenarbeit, die Nachhaltigkeit in den Mittelpunkt stellt, wobei KI nicht nur ein Werkzeug, sondern ein strategischer Enabler der Transformation ist. Im Gegensatz zu Industrie 4.0, das sich auf Automatisierung und Digitalisierung konzentrierte, betont Industrie 5.0 nachhaltige Entwicklung und die Integration von ESG-Prinzipien (Environmental, Social, Governance) mit modernsten Technologien.",
+      "lang": "de",
+      "publishedAt": "2025-06-12T09:00:00.000Z",
+      "slug": "industrie-5-0-wie-ki-und-fortschrittliche-konnektivitat-die-industrielle-uberwachung-revolutionieren",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "5G",
+          "value": "5G"
+        }
+      ],
+      "title": "Industrie 5.0: Wie KI und fortschrittliche Konnektivität die industrielle Überwachung revolutionieren"
     }
   ]
 }
