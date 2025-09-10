@@ -480,6 +480,10 @@
         {
           "value": "greenEnergy",
           "label": "Green Energy"
+        },
+        {
+          "value": "5G",
+          "label": "5G"
         }
       ]
     },
