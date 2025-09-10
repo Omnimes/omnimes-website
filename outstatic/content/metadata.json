@@ -1,6 +1,6 @@
 {
-  "commit": "351af8da564a352c4a9718d0c6ac9d5ef57835df",
-  "generated": "Wed, 10 Sep 2025 13:59:36 GMT",
+  "commit": "2828f2de54a2213fae75a0da80bbaa47fac4a8af",
+  "generated": "2025-09-10T14:21:30.298Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3209,31 +3209,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9e21730dbf55a535ec1c2e81cddcdc0e2660ad20",
-        "hash": "1148782306",
-        "path": "outstatic/content/posts/zwiekszenie-efektywnosci-zarzadzania-partiami-dzieki-zaawansowanym-interfejsom-hmi.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-batch-management-efficiency-through-advanced-hmi-interfaces-and-robust-industrial-networks-in-smart-manu.png",
-      "description": "Jak integracja zaawansowanych systemów HMI z zarządzaniem partiami optymalizuje produkcję w inteligentnych fabrykach.",
-      "lang": "pl",
-      "publishedAt": "2025-07-12T09:00:00Z",
-      "slug": "zwiekszenie-efektywnosci-zarzadzania-partiami-dzieki-zaawansowanym-interfejsom-hmi",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Zwiększenie efektywności zarządzania partiami dzięki zaawansowanym interfejsom HMI"
-    },
-    {
-      "__outstatic": {
         "commit": "b1cf2ab5c19eec6c40e7666b021fbf629d051695",
         "hash": "4058421130",
         "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow.md"
@@ -3306,6 +3281,39 @@
         }
       ],
       "title": "Zwiększanie efektywności produkcji dzięki systemom MES opartym na AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "2828f2de54a2213fae75a0da80bbaa47fac4a8af",
+        "hash": "189098591",
+        "path": "outstatic/content/posts/jak-zaawansowane-interfejsy-hmi-zwiekszaja-roi-w-zarzadzaniu-partiami-o-30.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/hmi2-Y3OT.png",
+      "description": "Polski rynek paneli operatorskich i systemów HMI osiąga wartość ~120 milionów złotych rocznie, jednak tylko 15% polskich fabryk jest w pełni zautomatyzowanych. To pokazuje ogromny potencjał dla firm gotowych na inwestycje w nowoczesne technologie zarządzania partiami.",
+      "lang": "pl",
+      "publishedAt": "2025-07-12T09:00:00.000Z",
+      "slug": "jak-zaawansowane-interfejsy-hmi-zwiekszaja-roi-w-zarzadzaniu-partiami-o-30",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "ROI",
+          "value": "roi"
+        }
+      ],
+      "title": "Jak zaawansowane interfejsy HMI zwiększają ROI w zarządzaniu partiami o 30%"
     }
   ]
 }

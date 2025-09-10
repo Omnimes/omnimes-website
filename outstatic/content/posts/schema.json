@@ -472,6 +472,10 @@
         {
           "value": "kpi",
           "label": "KPI"
+        },
+        {
+          "value": "roi",
+          "label": "ROI"
         }
       ]
     },
