@@ -1,6 +1,6 @@
 {
   "commit": "3dbbf13e3fda0075189ed97f541f1960915fee33",
-  "generated": "2025-09-10T13:56:31.830Z",
+  "generated": "2025-09-10T13:56:49.389Z",
   "metadata": [
     {
       "__outstatic": {
@@ -324,39 +324,6 @@
         }
       ],
       "title": "Einsatz des MQTT-Protokolls zur Verbesserung der Kommunikation zwischen MES-Systemen und IoT-Geräten"
-    },
-    {
-      "__outstatic": {
-        "commit": "c9afc55f37ab1144fac82d98c621d4eef383457b",
-        "hash": "4244894439",
-        "path": "outstatic/content/posts/einsatz-des-sparkplug-b-protokolls-in-mes-zur-reduzierung-von-ausfallzeiten-und-energieeinsparung.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings-in-industrial-automation-this-top.png",
-      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme unterstützt die Reduzierung von Ausfallzeiten und Energieeinsparungen in der industriellen Automatisierung.",
-      "lang": "de",
-      "publishedAt": "2025-06-05T09:00:00Z",
-      "slug": "einsatz-des-sparkplug-b-protokolls-in-mes-zur-reduzierung-von-ausfallzeiten-und-energieeinsparung",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Sparkplug B"
-        },
-        {
-          "label": "Przemysł",
-          "value": "MES"
-        },
-        {
-          "label": "Efektywność",
-          "value": "redukcja przestojów"
-        }
-      ],
-      "title": "Einsatz des Sparkplug B-Protokolls in MES zur Reduzierung von Ausfallzeiten und Energieeinsparung"
     },
     {
       "__outstatic": {
@@ -2797,6 +2764,35 @@
         }
       ],
       "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości"
+    },
+    {
+      "__outstatic": {
+        "commit": "697f4fb7c9437ac78f4f3a8c6c315964f4f85289",
+        "hash": "3294082554",
+        "path": "outstatic/content/posts/wykorzystanie-cyfrowych-blizniakow-i-uczenia-maszynowego-w-utrzymaniu-predykcyjnym.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
+      "description": "Integracja cyfrowych bliźniaków z uczeniem maszynowym w celu optymalizacji utrzymania predykcyjnego w nowoczesnych systemach produkcyjnych.",
+      "lang": "pl",
+      "publishedAt": "2025-06-19T09:00:00Z",
+      "slug": "wykorzystanie-cyfrowych-blizniakow-i-uczenia-maszynowego-w-utrzymaniu-predykcyjnym",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "Cyfrowe bliźniaki"
+        },
+        {
+          "label": "Utrzymanie",
+          "value": "Utrzymanie predykcyjne"
+        }
+      ],
+      "title": "Wykorzystanie cyfrowych bliźniaków i uczenia maszynowego w utrzymaniu predykcyjnym"
     },
     {
       "__outstatic": {
