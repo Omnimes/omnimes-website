@@ -1,6 +1,6 @@
 {
   "commit": "3dbbf13e3fda0075189ed97f541f1960915fee33",
-  "generated": "2025-09-10T13:56:23.187Z",
+  "generated": "2025-09-10T13:56:27.880Z",
   "metadata": [
     {
       "__outstatic": {
@@ -583,6 +583,35 @@
         }
       ],
       "title": "Einsatz von maschinellem Lernen in MES zur kontinuierlichen Verbesserung in der erneuerbaren Energieproduktion"
+    },
+    {
+      "__outstatic": {
+        "commit": "f0df426a3c0c1cb4b96a23062b8967ab2b112677",
+        "hash": "3270351282",
+        "path": "outstatic/content/posts/einsatz-von-digitalen-zwillingen-und-maschinellem-lernen-in-der-pradiktiven-wartung.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
+      "description": "Integration digitaler Zwillinge mit maschinellem Lernen zur Optimierung der prädiktiven Wartung in modernen Produktionssystemen.",
+      "lang": "de",
+      "publishedAt": "2025-06-19T09:00:00Z",
+      "slug": "einsatz-von-digitalen-zwillingen-und-maschinellem-lernen-in-der-pradiktiven-wartung",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "Cyfrowe bliźniaki"
+        },
+        {
+          "label": "Utrzymanie",
+          "value": "Utrzymanie predykcyjne"
+        }
+      ],
+      "title": "Einsatz von digitalen Zwillingen und maschinellem Lernen in der prädiktiven Wartung"
     },
     {
       "__outstatic": {
@@ -2434,35 +2463,6 @@
         }
       ],
       "title": "Utilization of Machine Learning in MES for Continuous Improvement in Renewable Energy Production"
-    },
-    {
-      "__outstatic": {
-        "commit": "f5aa81930627f8aa231d3e3ee5b0712c9a285353",
-        "hash": "97278789",
-        "path": "outstatic/content/posts/utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-digital-twins-and-machine-learning-for-predictive-maintenance-in-modernized-manufacturing-systems-explo.png",
-      "description": "Integration of digital twins with machine learning to optimize predictive maintenance in modern production systems.",
-      "lang": "en",
-      "publishedAt": "2025-06-19T09:00:00Z",
-      "slug": "utilization-of-digital-twins-and-machine-learning-in-predictive-maintenance",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Cyfrowe bliźniaki"
-        },
-        {
-          "label": "Utrzymanie",
-          "value": "Utrzymanie predykcyjne"
-        }
-      ],
-      "title": "Utilization of Digital Twins and Machine Learning in Predictive Maintenance"
     },
     {
       "__outstatic": {
