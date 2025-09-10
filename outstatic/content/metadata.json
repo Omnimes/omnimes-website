@@ -1,6 +1,6 @@
 {
   "commit": "3dbbf13e3fda0075189ed97f541f1960915fee33",
-  "generated": "2025-09-10T13:56:49.389Z",
+  "generated": "2025-09-10T13:56:53.312Z",
   "metadata": [
     {
       "__outstatic": {
@@ -324,6 +324,39 @@
         }
       ],
       "title": "Einsatz des MQTT-Protokolls zur Verbesserung der Kommunikation zwischen MES-Systemen und IoT-Geräten"
+    },
+    {
+      "__outstatic": {
+        "commit": "c9afc55f37ab1144fac82d98c621d4eef383457b",
+        "hash": "4244894439",
+        "path": "outstatic/content/posts/einsatz-des-sparkplug-b-protokolls-in-mes-zur-reduzierung-von-ausfallzeiten-und-energieeinsparung.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-leveraging-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings-in-industrial-automation-this-top.png",
+      "description": "Die Integration des Sparkplug B-Protokolls in MES-Systeme unterstützt die Reduzierung von Ausfallzeiten und Energieeinsparungen in der industriellen Automatisierung.",
+      "lang": "de",
+      "publishedAt": "2025-06-05T09:00:00Z",
+      "slug": "einsatz-des-sparkplug-b-protokolls-in-mes-zur-reduzierung-von-ausfallzeiten-und-energieeinsparung",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Technologia",
+          "value": "Sparkplug B"
+        },
+        {
+          "label": "Przemysł",
+          "value": "MES"
+        },
+        {
+          "label": "Efektywność",
+          "value": "redukcja przestojów"
+        }
+      ],
+      "title": "Einsatz des Sparkplug B-Protokolls in MES zur Reduzierung von Ausfallzeiten und Energieeinsparung"
     },
     {
       "__outstatic": {
@@ -2619,39 +2652,6 @@
         }
       ],
       "title": "Verbesserung der Produktionsplanung durch Simulation und IoT-Integration"
-    },
-    {
-      "__outstatic": {
-        "commit": "71f23845a70ff9f7dc41752c45bd303e39bb1a80",
-        "hash": "3711810427",
-        "path": "outstatic/content/posts/utilization-of-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-leveraging-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings-in-industrial-automation-this-top.png",
-      "description": "The integration of the Sparkplug B protocol in MES systems supports downtime reduction and energy savings in industrial automation.",
-      "lang": "en",
-      "publishedAt": "2025-06-05T09:00:00Z",
-      "slug": "utilization-of-sparkplug-b-protocol-in-mes-for-downtime-reduction-and-energy-savings",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Technologia",
-          "value": "Sparkplug B"
-        },
-        {
-          "label": "Przemysł",
-          "value": "MES"
-        },
-        {
-          "label": "Efektywność",
-          "value": "redukcja przestojów"
-        }
-      ],
-      "title": "Utilization of Sparkplug B Protocol in MES for Downtime Reduction and Energy Savings"
     },
     {
       "__outstatic": {
