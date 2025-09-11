@@ -476,6 +476,14 @@
         {
           "value": "omnimes",
           "label": "Omnimes"
+        },
+        {
+          "value": "ai",
+          "label": "AI"
+        },
+        {
+          "value": "Industry 5.0",
+          "label": "Industry 5.0"
         }
       ]
     },
