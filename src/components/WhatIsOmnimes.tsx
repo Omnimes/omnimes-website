@@ -1,7 +1,7 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import { useLocale, useTranslations } from "next-intl"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"

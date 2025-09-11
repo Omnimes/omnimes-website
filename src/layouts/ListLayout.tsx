@@ -1,15 +1,15 @@
 "use client"
 
-import { useState } from "react"
-import { usePathname } from "next/navigation"
 import { Input } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
+import { usePathname } from "next/navigation"
+import { useState } from "react"
 import { LuCalendar, LuSearch } from "react-icons/lu"
 
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 import { CustomLink } from "@/components/Link"
 import Tag from "@/components/Tag"
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 
 interface PaginationProps {
   totalPages: number
@@ -89,9 +89,9 @@ export default function ListLayout({
       {/* Hero Header */}
       <div className="-mx-4 mb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16 text-center sm:-mx-6 lg:-mx-8 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="mx-auto max-w-4xl px-4">
-          <h1 className="mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-5xl font-black leading-tight text-transparent md:text-6xl lg:text-7xl dark:from-white dark:via-blue-200 dark:to-purple-200">
+          {/* <h1 className="mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-5xl font-black leading-tight text-transparent md:text-6xl lg:text-7xl dark:from-white dark:via-blue-200 dark:to-purple-200">
             {title}
-          </h1>
+          </h1> */}
 
           {/* Modern Search */}
           <div className="mx-auto max-w-2xl">

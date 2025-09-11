@@ -203,46 +203,46 @@
     "tags": "OEE, Omnimes, OmniEnergy, Green Energy"
   },
   {
-    "title": "Integracja MES z IoT w celu poprawy kontroli jakości i redukcji przestojów",
-    "slug": "integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow",
-    "description": "Zintegruj MES z IoT, aby poprawić kontrolę jakości i zredukować przestoje w produkcji.",
-    "lang": "pl",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Integration von MES mit IoT zur Verbesserung der Qualitätskontrolle und Reduzierung von Ausfallzeiten",
-    "slug": "integration-von-mes-mit-iot-zur-verbesserung-der-qualitatskontrolle-und-reduzierung-von-ausfallzeiten",
-    "description": "Integrieren Sie MES mit IoT, um die Qualitätskontrolle zu verbessern und Produktionsausfälle zu reduzieren.",
-    "lang": "de",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Integration of MES with IoT to Enhance Quality Control and Reduce Downtime",
-    "slug": "integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime",
+    "title": "How MES-IoT Integration Revolutionizes Production Quality and Eliminates Downtime",
+    "slug": "how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime",
     "description": "Integrate MES with IoT to enhance quality control and reduce production downtime.",
     "lang": "en",
-    "tags": "Kategoria"
+    "tags": "Omnimes, IoT, Industry 5.0"
   },
   {
-    "title": "Enhancing Production Scheduling through Simulation and IoT Integration",
-    "slug": "enhancing-production-scheduling-through-simulation-and-iot-integration",
-    "description": "How the integration of sensors and IoT technology enhances production scheduling in smart factories.",
-    "lang": "en",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Udoskonalenie harmonogramowania produkcji dzięki symulacji i integracji IoT",
-    "slug": "udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot",
-    "description": "Jak integracja czujników i technologii IoT poprawia harmonogramowanie produkcji w inteligentnych fabrykach.",
+    "title": "Jak Integracja MES z IoT Rewolucjonizuje Jakość Produkcji i Eliminuje Przestoje",
+    "slug": "jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje",
+    "description": "Podczas gdy przemysł wciąż implementuje rozwiązania Industry 4.0, Industry 5.0 wprowadza nowy paradygmat oparty na trzech filarach: zrównoważoności, odporności i podejściu zorientowanym na człowieka. W tym kontekście integracja Manufacturing Execution Systems (MES) z Internet of Things (IoT) staje się kluczowym elementem transformacji cyfrowej, który nie tylko automatyzuje procesy, ale czyni je bardziej humanitarnymi i ekologicznymi.",
     "lang": "pl",
-    "tags": "Kategoria"
+    "tags": "Omnimes, IoT, Industry 5.0"
   },
   {
-    "title": "Verbesserung der Produktionsplanung durch Simulation und IoT-Integration",
-    "slug": "verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration",
-    "description": "Wie die Integration von Sensoren und IoT-Technologie die Produktionsplanung in intelligenten Fabriken verbessert.",
+    "title": "Wie die Integration von MES und IoT die Produktionsqualität revolutioniert und Ausfallzeiten eliminiert",
+    "slug": "wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert",
+    "description": "Während viele Unternehmen noch Industry 4.0-Lösungen umsetzen, bringt Industry 5.0 ein neues Paradigma mit drei Säulen: Nachhaltigkeit, Resilienz und Menschzentrierung. In diesem Kontext wird die Integration von Manufacturing Execution Systems (MES) mit dem Internet of Things (IoT) zum Schlüssel der digitalen Transformation – sie automatisiert nicht nur Prozesse, sondern macht sie auch menschlicher und ökologischer.\nDer globale MES-Markt wächst von 16,57 Mrd. USD im Jahr 2025 auf 41,78 Mrd. USD im Jahr 2032, getrieben durch die steigende Nachfrage nach integrierten IoT- und KI-Lösungen.",
     "lang": "de",
-    "tags": "Kategoria"
+    "tags": "IoT, Omnimes, Industry 5.0"
+  },
+  {
+    "title": "How the Integration of MES with IoT Transforms Modern Manufacturing and Delivers ROI Above 25%",
+    "slug": "how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25",
+    "description": "The global Internet of Things (IoT) market reached USD 714.48 billion in 2024 and is projected to grow to USD 4,062.34 billion by 2032, representing a CAGR of 24.3%. At the same time, the Industrial IoT (IIoT), valued at USD 289 billion in 2024, is expected to reach USD 847 billion by 2033 with a CAGR of 12.7%. These impressive figures reflect a fundamental shift in modern industry toward Industry 5.0.",
+    "lang": "en",
+    "tags": "IoT, Industry 5.0"
+  },
+  {
+    "title": "Jak integracja systemów MES z IoT transformuje współczesną produkcję i zapewnia ROI powyżej 25%",
+    "slug": "jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25",
+    "description": "Globalny rynek Internet of Things osiągnął wartość 714,48 miliardów USD w 2024 roku i według prognoz wzrośnie do 4,062.34 miliardów USD do 2032 roku, co oznacza roczną stopę wzrostu (CAGR) na poziomie 24,3%. Jednocześnie przemysłowy IoT (IIoT) wyceniany na 289 miliardów USD w 2024 roku ma osiągnąć 847 miliardów USD do 2033 roku przy CAGR 12,7%. Te imponujące liczby odzwierciedlają fundamentalną zmianę, jaką przechodzi współczesny przemysł w kierunku Industry 5.0.",
+    "lang": "pl",
+    "tags": "IoT, Industry 5.0"
+  },
+  {
+    "title": "Wie die Integration von MES mit IoT die moderne Produktion transformiert und eine ROI von über 25 % liefert",
+    "slug": "wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert",
+    "description": "Der weltweite IoT-Markt erreichte 2024 ein Volumen von 714,48 Milliarden USD und soll bis 2032 auf 4.062,34 Milliarden USD anwachsen (CAGR 24,3 %). Gleichzeitig wird der industrielle IoT-Markt (IIoT), bewertet mit 289 Milliarden USD im Jahr 2024, bis 2033 auf 847 Milliarden USD steigen (CAGR 12,7 %). Diese Zahlen zeigen den Übergang zur Ära Industry 5.0.",
+    "lang": "de",
+    "tags": "IoT, Industry 5.0"
   },
   {
     "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES",

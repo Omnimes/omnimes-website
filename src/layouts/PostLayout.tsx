@@ -1,14 +1,14 @@
 "use client"
 
-import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
+import Image from "next/image"
 
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import Tag from "@/components/Tag"
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 
 interface LayoutProps {
   post: ExtendedOstDocument
@@ -44,23 +44,23 @@ export default function PostLayout({
       <div className="relative">
         {/* Cover Image */}
         {coverImage && (
-          <div className="relative h-[50vh] overflow-hidden md:h-[60vh] lg:h-[70vh]">
+          <div className="relative h-[40vh] overflow-hidden md:h-[50vh] lg:h-[55vh]">
             <Image src={coverImage} alt={title} fill className="object-cover" priority />
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
             {/* Hero Content */}
             <div className="absolute inset-0 flex items-end">
-              <div className="mx-auto w-full max-w-5xl px-4 pb-16 sm:px-6 lg:px-8">
+              <div className="mx-auto w-full max-w-5xl px-2 pb-16 sm:px-4 lg:px-6">
                 {/* Back Link */}
                 {showBackLinks && (
                   <div className="mb-6">
                     <CustomLink
                       href={backPath}
-                      className="group inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-white backdrop-blur-sm transition-all duration-300 hover:bg-black/60"
+                      className="group inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-3 py-2 text-white backdrop-blur-sm transition-all duration-300 hover:bg-black/60 sm:px-4"
                     >
                       <svg
-                        className="size-5 transition-transform duration-300 group-hover:-translate-x-1"
+                        className="size-4 transition-transform duration-300 group-hover:-translate-x-1 sm:size-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -72,15 +72,15 @@ export default function PostLayout({
                           d="M15 19l-7-7 7-7"
                         />
                       </svg>
-                      <span className="font-medium">{t("back")}</span>
+                      <span className="text-sm font-medium sm:text-base">{t("back")}</span>
                     </CustomLink>
                   </div>
                 )}
 
                 {/* Date Badge */}
                 <div className="mb-4">
-                  <div className="inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-white backdrop-blur-sm">
-                    <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-3 py-2 text-white backdrop-blur-sm sm:px-4">
+                    <svg className="size-3 sm:size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -88,23 +88,16 @@ export default function PostLayout({
                         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                       />
                     </svg>
-                    <time dateTime={publishedAt} className="text-sm font-medium">
+                    <time dateTime={publishedAt} className="text-xs font-medium sm:text-sm">
                       {getFormattedDate(publishedAt, lang)}
                     </time>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h1 className="mb-4 text-3xl font-black leading-tight text-white md:text-4xl lg:text-5xl xl:text-6xl">
+                <h1 className="mb-4 text-2xl font-black leading-tight text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                   {title}
                 </h1>
-
-                {/* Description */}
-                {description && (
-                  <p className="max-w-3xl text-lg leading-relaxed text-white/90 md:text-xl">
-                    {description}
-                  </p>
-                )}
               </div>
             </div>
           </div>
@@ -112,17 +105,17 @@ export default function PostLayout({
 
         {/* Fallback Hero (bez obrazka) */}
         {!coverImage && (
-          <div className="relative bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 py-24">
+          <div className="relative bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 py-16 sm:py-20 lg:py-24">
             <div className="absolute inset-0 bg-black/20" />
-            <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+            <div className="relative mx-auto max-w-5xl px-2 text-center sm:px-4 lg:px-6">
               {showBackLinks && (
-                <div className="mb-8">
+                <div className="mb-6 sm:mb-8">
                   <CustomLink
                     href={backPath}
-                    className="group inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-white backdrop-blur-sm transition-all duration-300 hover:bg-black/60"
+                    className="group inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-3 py-2 text-white backdrop-blur-sm transition-all duration-300 hover:bg-black/60 sm:px-4"
                   >
                     <svg
-                      className="size-5 transition-transform duration-300 group-hover:-translate-x-1"
+                      className="size-4 transition-transform duration-300 group-hover:-translate-x-1 sm:size-5"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -134,14 +127,14 @@ export default function PostLayout({
                         d="M15 19l-7-7 7-7"
                       />
                     </svg>
-                    <span className="font-medium">{t("back")}</span>
+                    <span className="text-sm font-medium sm:text-base">{t("back")}</span>
                   </CustomLink>
                 </div>
               )}
 
-              <div className="mb-6">
-                <div className="inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-white backdrop-blur-sm">
-                  <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-4 sm:mb-6">
+                <div className="inline-flex items-center space-x-2 rounded-full border border-white/20 bg-black/40 px-3 py-2 text-white backdrop-blur-sm sm:px-4">
+                  <svg className="size-3 sm:size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -149,147 +142,112 @@ export default function PostLayout({
                       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
-                  <time dateTime={publishedAt} className="text-sm font-medium">
+                  <time dateTime={publishedAt} className="text-xs font-medium sm:text-sm">
                     {getFormattedDate(publishedAt, lang)}
                   </time>
                 </div>
               </div>
 
-              <h1 className="mb-6 text-3xl font-black leading-tight text-white md:text-4xl lg:text-5xl xl:text-6xl">
+              <h1 className="text-2xl font-black leading-tight text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 {title}
               </h1>
-
-              {description && (
-                <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/90 md:text-xl">
-                  {description}
-                </p>
-              )}
             </div>
           </div>
         )}
       </div>
 
       {/* Main Content */}
-      <article className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <article className="mx-auto max-w-5xl px-2 sm:px-4 lg:px-6">
         {/* Author Card */}
-        <div className="relative -mt-12 mb-16">
-          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-xl dark:border-gray-700 dark:bg-gray-800">
-            <div className="flex items-center space-x-4">
+        <div className="relative -mt-8 mb-12 sm:-mt-12 sm:mb-16">
+          <div className="rounded-xl border border-gray-100 bg-white p-4 shadow-xl dark:border-gray-700 dark:bg-gray-800 sm:rounded-2xl sm:p-6">
+            <div className="flex items-center space-x-3 sm:space-x-4">
               <div className="relative">
                 <Image
                   src={author?.picture || "/images/avatars/default.png"}
-                  width={60}
-                  height={60}
+                  width={50}
+                  height={50}
                   alt="avatar"
-                  className="w-15 h-15 rounded-full ring-4 ring-white dark:ring-gray-800"
+                  className="h-12 w-12 rounded-full ring-2 ring-white dark:ring-gray-800 sm:h-15 sm:w-15 sm:ring-4"
                 />
-                <div className="absolute -bottom-1 -right-1 size-5 rounded-full border-2 border-white bg-green-400 dark:border-gray-800"></div>
+                <div className="absolute -bottom-1 -right-1 size-4 rounded-full border-2 border-white bg-green-400 dark:border-gray-800 sm:size-5"></div>
               </div>
               <div className="flex-1">
-                <div className="flex items-center space-x-2">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                <div className="flex flex-col space-y-1 sm:flex-row sm:items-center sm:space-x-2 sm:space-y-0">
+                  <h3 className="text-base font-semibold text-gray-900 dark:text-white sm:text-lg">
                     {author?.name}
                   </h3>
-                  <span className="inline-flex items-center rounded-full bg-blue-100 px-2 py-1 text-xs font-medium text-blue-800 dark:bg-blue-900/30 dark:text-blue-200">
+                  <span className="inline-flex w-fit items-center rounded-full bg-blue-100 px-2 py-1 text-xs font-medium text-blue-800 dark:bg-blue-900/30 dark:text-blue-200">
                     Autor
                   </span>
                 </div>
-                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                  Opublikowano {getFormattedDate(publishedAt, lang)}
+                <p className="mt-1 text-xs text-gray-500 dark:text-gray-400 sm:text-sm">
+                  {t('publishedOn')} {getFormattedDate(publishedAt, lang)}
                 </p>
+                
+                {/* Tags under publication date */}
+                {Array.isArray(tags) && tags.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {tags.map((tag: { value: string; label: string }, index: number) => {
+                      return (
+                        <div
+                          key={tag?.value || index}
+                          className="transition-transform duration-200 hover:scale-105"
+                        >
+                          <Tag text={tag?.label || ""} />
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Tags and Share Row */}
-        <div className="mb-8 grid gap-6 md:grid-cols-2">
-          {/* Tags */}
-          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-lg dark:border-gray-700 dark:bg-gray-800">
-            <h3 className="mb-4 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-              <svg
-                className="mr-2 size-5 text-blue-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
-                />
-              </svg>
-              {t("tags")}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {Array.isArray(tags) &&
-                tags.map((tag: { value: string; label: string }, index: number) => {
-                  return (
-                    <div
-                      key={tag?.value || index}
-                      className="transition-transform duration-200 hover:scale-105"
-                    >
-                      <Tag text={tag?.label || ""} />
-                    </div>
-                  )
-                })}
+        {/* Main Content with Share */}
+        <div className="mb-6 rounded-xl border border-gray-100 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800 sm:mb-8 sm:rounded-2xl">
+          {/* Share Section at the top */}
+          <div className="border-b border-gray-100 bg-gradient-to-r from-blue-50 to-purple-50 p-4 dark:border-gray-700 dark:from-blue-900/20 dark:to-purple-900/20 sm:p-6">
+            <div className="flex flex-col items-start justify-between space-y-3 sm:flex-row sm:items-center sm:space-y-0">
+              <div className="flex-1">
+                <p className="text-sm text-gray-600 dark:text-gray-400 sm:text-base">
+                  Podobał Ci się ten artykuł? Podziel się nim!
+                </p>
+              </div>
+              <div className="flex w-full flex-col space-y-2 sm:w-auto sm:flex-row sm:space-x-3 sm:space-y-0">
+                <button
+                  onClick={shareOnTwitter}
+                  className="w-full rounded-lg bg-blue-500 px-3 py-2 text-xs font-medium text-white transition-colors duration-200 hover:bg-blue-600 sm:w-auto sm:px-4 sm:py-2 sm:text-sm"
+                >
+                  Udostępnij na Twitter
+                </button>
+                <button
+                  onClick={shareOnLinkedIn}
+                  className="w-full rounded-lg bg-blue-700 px-3 py-2 text-xs font-medium text-white transition-colors duration-200 hover:bg-blue-800 sm:w-auto sm:px-4 sm:py-2 sm:text-sm"
+                >
+                  Udostępnij na LinkedIn
+                </button>
+              </div>
             </div>
           </div>
 
-          {/* Share Card */}
-          <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 to-purple-50 p-6 dark:border-blue-800 dark:from-blue-900/20 dark:to-purple-900/20">
-            <h3 className="mb-4 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-              <svg
-                className="mr-2 size-5 text-blue-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"
-                />
-              </svg>
-              Udostępnij
-            </h3>
-            <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-              Podobał Ci się ten artykuł? Podziel się nim!
-            </p>
-            <div className="grid grid-cols-1 gap-3">
-              <button
-                onClick={shareOnTwitter}
-                className="w-full rounded-lg bg-blue-500 px-4 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-blue-600"
-              >
-                Udostępnij na Twitter
-              </button>
-              <button
-                onClick={shareOnLinkedIn}
-                className="w-full rounded-lg bg-blue-700 px-4 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-blue-800"
-              >
-                Udostępnij na LinkedIn
-              </button>
+          {/* Article Content */}
+          <div className="p-4 sm:p-6 lg:p-8">
+            <div className="prose prose-sm dark:prose-invert max-w-none sm:prose-base lg:prose-lg">
+              <MDXComponent content={content} />
             </div>
-          </div>
-        </div>
-
-        {/* Main Content */}
-        <div className="mb-8 rounded-2xl border border-gray-100 bg-white p-8 shadow-lg dark:border-gray-700 dark:bg-gray-800">
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <MDXComponent content={content} />
           </div>
         </div>
 
         {/* Back to Blog */}
         {showBackLinks && (
-          <div className="mb-16 text-center">
+          <div className="mb-12 text-center sm:mb-16">
             <CustomLink
               href={backPath}
-              className="inline-flex items-center space-x-2 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700"
+              className="inline-flex items-center space-x-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700 sm:rounded-xl sm:px-8 sm:py-4 sm:text-base"
             >
-              <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="size-4 sm:size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -304,7 +262,7 @@ export default function PostLayout({
       </article>
 
       {/* Bottom Spacing */}
-      <div className="h-16"></div>
+      <div className="h-12 sm:h-16"></div>
     </>
   )
 }
