@@ -4,8 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { getDocuments, load } from "outstatic/server"
 
-import { generateSearchJSON } from "@/lib/generateSearchJSON"
 import { genPageMetadata } from "@/app/seo"
+import { generateSearchJSON } from "@/lib/generateSearchJSON"
 
 export type ExtendedOstDocument = OstDocument & { tags: { value: string; label: string }[] }
 export const revalidate = 3600
@@ -37,6 +37,7 @@ async function getData(locale: string) {
       "description",
       "author",
       "tags",
+      "coverImage"
     ])
     .sort({ publishedAt: -1 })
     .limit(20)

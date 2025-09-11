@@ -18,7 +18,7 @@
           "label": "Sparkplug B"
         },
         {
-          "value": "protokółKomunikacyjny",
+          "value": "protocolKomunikacyjny",
           "label": "Protokół komunikacyjny"
         },
         {
@@ -34,11 +34,11 @@
           "label": "Komunikacja IoT"
         },
         {
-          "value": "omnimes",
-          "label": "Omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "value": "przemysł40",
+          "value": "przemysl40",
           "label": "Przemysł 4.0"
         },
         {
@@ -50,7 +50,7 @@
           "label": "OPC UA"
         },
         {
-          "value": "automatykaPrzemysłowa",
+          "value": "automatykaPrzemyslowa",
           "label": "Automatyka przemysłowa"
         },
         {
@@ -58,7 +58,7 @@
           "label": "Architektura klient/serwer"
         },
         {
-          "value": "bezpieczeństwoDanych",
+          "value": "bezpieczenstwoDanych",
           "label": "Bezpieczeństwo danych"
         },
         {
@@ -66,7 +66,7 @@
           "label": "Standaryzacja danych"
         },
         {
-          "value": "ai",
+          "value": "AI",
           "label": "AI"
         },
         {
@@ -79,7 +79,7 @@
         },
         {
           "value": "analizaDanych",
-          "label": "analiza danych"
+          "label": "Analiza danych"
         },
         {
           "value": "communicationProtocol",
@@ -131,7 +131,7 @@
         },
         {
           "value": "llama3",
-          "label": "llama3"
+          "label": "Llama 3"
         },
         {
           "value": "meta",
@@ -150,28 +150,24 @@
           "label": "GPT-4"
         },
         {
-          "value": "gpt35",
-          "label": "GPT-3.5"
-        },
-        {
           "value": "aiLocal",
-          "label": "AI local"
+          "label": "AI Local"
         },
         {
           "value": "redash",
-          "label": "redash"
+          "label": "Redash"
         },
         {
-          "value": "wizualziacjaDanych",
-          "label": "wizualziacja danych"
+          "value": "wizualizacjaDanych",
+          "label": "Wizualizacja danych"
         },
         {
           "value": "bigData",
-          "label": "big data"
+          "label": "Big Data"
         },
         {
           "value": "raporty",
-          "label": "raporty"
+          "label": "Raporty"
         },
         {
           "value": "dataVisualization",
@@ -243,35 +239,35 @@
         },
         {
           "value": "mesSystem",
-          "label": "MES system"
+          "label": "MES System"
         },
         {
-          "value": "wydajnośćAlgorytmów",
-          "label": "wydajność algorytmów"
+          "value": "wydajnoscAlgorytmow",
+          "label": "Wydajność algorytmów"
         },
         {
-          "value": "zbieranieDanychPrzemysłowych",
-          "label": "zbieranie danych przemysłowych"
+          "value": "zbieranieDanychPrzemyslowych",
+          "label": "Zbieranie danych przemysłowych"
         },
         {
           "value": "daneZMaszyn",
-          "label": "dane z maszyn"
+          "label": "Dane z maszyn"
         },
         {
-          "value": "uczenieMaszynoweWPrzemyśle",
-          "label": "uczenie maszynowe w przemyśle"
+          "value": "uczenieMaszynoweWPrzemysle",
+          "label": "Uczenie maszynowe w przemyśle"
         },
         {
           "value": "pyTorch",
           "label": "PyTorch"
         },
         {
-          "value": "danePrzemysłowe",
-          "label": "dane przemysłowe"
+          "value": "danePrzemyslowe",
+          "label": "Dane przemysłowe"
         },
         {
-          "value": "porównanieAlgorytmów",
-          "label": "porównanie algorytmów"
+          "value": "porownanieAlgorytmow",
+          "label": "Porównanie algorytmów"
         },
         {
           "value": "influxDb",
@@ -283,11 +279,11 @@
         },
         {
           "value": "timeSeriesData",
-          "label": "time-series data"
+          "label": "Time-Series Data"
         },
         {
           "value": "analizaDanychCzasowych",
-          "label": "analiza danych czasowych"
+          "label": "Analiza danych czasowych"
         },
         {
           "value": "web3",
@@ -295,150 +291,138 @@
         },
         {
           "value": "blockchain",
-          "label": "blockchain"
+          "label": "Blockchain"
         },
         {
           "value": "oze",
           "label": "OZE"
         },
         {
-          "value": "odnawialneŹródłaEnergii",
-          "label": "odnawialne źródła energii"
+          "value": "odnawialneZrodlaEnergii",
+          "label": "Odnawialne źródła energii"
         },
         {
           "value": "tokenizacjaEnergii",
-          "label": "tokenizacja energii"
+          "label": "Tokenizacja energii"
         },
         {
           "value": "smartKontrakty",
-          "label": "smart kontrakty"
+          "label": "Smart kontrakty"
         },
         {
-          "value": "monitorowanieZużyciaEnergii",
-          "label": "monitorowanie zużycia energii"
+          "value": "monitorowanieZuzyciaEnergii",
+          "label": "Monitorowanie zużycia energii"
         },
         {
-          "value": "automatyzacjaRozliczeń",
-          "label": "automatyzacja rozliczeń"
+          "value": "automatyzacjaRozliczen",
+          "label": "Automatyzacja rozliczeń"
         },
         {
-          "value": "handelEnergiąP2P",
-          "label": "handel energią P2P"
+          "value": "handelEnergiaP2P",
+          "label": "Handel energią P2P"
         },
         {
-          "value": "zrównoważonaEnergetyka",
-          "label": "zrównoważona energetyka"
-        },
-        {
-          "value": "onimes",
-          "label": "onimes"
+          "value": "zrownowazonaEnergetyka",
+          "label": "Zrównoważona energetyka"
         },
         {
           "value": "platforma",
-          "label": "platforma"
+          "label": "Platforma"
         },
         {
-          "value": "cyfryzajca",
-          "label": "cyfryzajca"
-        },
-        {
-          "value": "langchainLlm",
-          "label": "langchain llm"
+          "value": "cyfryzacja",
+          "label": "Cyfryzacja"
         },
         {
           "value": "langchain",
-          "label": "langchain"
+          "label": "LangChain"
         },
         {
           "value": "faiss",
-          "label": "faiss"
+          "label": "FAISS"
         },
         {
           "value": "chatbot",
-          "label": "chatbot"
+          "label": "Chatbot"
         },
         {
           "value": "gpt",
-          "label": "gpt"
-        },
-        {
-          "value": "omnimess",
-          "label": "OmniMES"
+          "label": "GPT"
         },
         {
           "value": "mes-technologies",
-          "label": "technologie MES"
+          "label": "Technologie MES"
         },
         {
           "value": "production-efficiency",
-          "label": "wydajność produkcji"
+          "label": "Wydajność produkcji"
         },
         {
           "value": "iot",
           "label": "IoT"
         },
         {
-          "value": "Automatyzacja",
+          "value": "automatyzacja",
           "label": "Automatyzacja"
         },
         {
-          "value": "analityka produkcji",
-          "label": "analityka produkcji"
+          "value": "analitykaProdukcji",
+          "label": "Analityka produkcji"
         },
         {
-          "value": "Produkcja",
+          "value": "produkcja",
           "label": "Produkcja"
         },
         {
-          "value": "Analityka",
+          "value": "analityka",
           "label": "Analityka"
         },
         {
-          "value": "Kontrola jakości",
+          "value": "kontrolaJakosci",
           "label": "Kontrola jakości"
         },
         {
-          "value": "Computer Vision",
+          "value": "computerVision",
           "label": "Computer Vision"
         },
         {
-          "value": "Digital Twin",
+          "value": "digitalTwin",
           "label": "Digital Twin"
         },
         {
-          "value": "Industry 5.0",
+          "value": "industry50",
           "label": "Industry 5.0"
         },
         {
-          "value": "OEE",
+          "value": "oee",
           "label": "OEE"
         },
         {
-          "value": "IoT przemysłowy",
+          "value": "iotPrzemyslowy",
           "label": "IoT przemysłowy"
         },
         {
-          "value": "redukcja przestojów",
-          "label": "redukcja przestojów"
+          "value": "redukcjaPrzestojow",
+          "label": "Redukcja przestojów"
         },
         {
-          "value": "Cyfrowe bliźniaki",
+          "value": "cyfroweBlizniaski",
           "label": "Cyfrowe bliźniaki"
         },
         {
-          "value": "Utrzymanie predykcyjne",
+          "value": "utrzymaniePredykcyjne",
           "label": "Utrzymanie predykcyjne"
         },
         {
-          "value": "Lean Manufacturing",
+          "value": "leanManufacturing",
           "label": "Lean Manufacturing"
         },
         {
-          "value": "Zarządzanie",
+          "value": "zarzadzanie",
           "label": "Zarządzanie"
         },
         {
-          "value": "Inteligentne fabryki",
+          "value": "inteligentneFabryki",
           "label": "Inteligentne fabryki"
         },
         {
@@ -455,7 +439,7 @@
         },
         {
           "value": "timeline",
-          "label": "timeline"
+          "label": "Timeline"
         },
         {
           "value": "bazaWektorowa",
@@ -482,7 +466,7 @@
           "label": "Green Energy"
         },
         {
-          "value": "5G",
+          "value": "5g",
           "label": "5G"
         },
         {
@@ -493,7 +477,7 @@
     },
     "lang": {
       "required": true,
-      "description": "Dodaj język w którym napisałeś artykuł, podając jego skrót np.  Polska - pl, Anglia - en, Niemcy - de.",
+      "description": "Dodaj język w którym napisałeś artykuł, podając jego skrót np. Polska - pl, Anglia - en, Niemcy - de.",
       "fieldType": "String",
       "dataType": "string",
       "title": "lang"
