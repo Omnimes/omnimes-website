@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis'
 description: 'Industry 5.0 is no longer just about automation but about smart use of data. With IoT and MES, every machine produces endless streams of signals. The challenge is not in collecting them, but in analyzing and using them in real time. Vector databases and AI are increasingly at the heart of this process.'
-coverImage: '/images/database_vector-kyMj.png'
+coverImage: '/images/database-vector-A5Mz.png'
 lang: 'en'
 tags: [{"label":"Database Vector","value":"databaseVector"},{"value":"llmModels","label":"LLM Models"},{"value":"Industry 5.0","label":"Industry 5.0"}]
 publishedAt: '2025-09-09T06:56:07.720Z'
