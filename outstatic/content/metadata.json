@@ -1,6 +1,6 @@
 {
   "commit": "150a02dfe7c6d811fa41bc3ae9e4c173b32fb957",
-  "generated": "2025-09-11T18:00:12.593Z",
+  "generated": "2025-09-11T18:17:26.191Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3405,7 +3405,7 @@
     {
       "__outstatic": {
         "commit": "150a02dfe7c6d811fa41bc3ae9e4c173b32fb957",
-        "hash": "2381140728",
+        "hash": "2985606032",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
       },
       "author": {
@@ -3413,7 +3413,7 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/database_vector-Y4MD.png",
+      "coverImage": "/images/database-vector-c3MD.png",
       "description": "Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
       "lang": "pl",
       "publishedAt": "2025-09-09T06:25:59.088Z",
