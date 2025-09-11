@@ -1,15 +1,15 @@
 "use client"
 
+import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Input } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
-import { usePathname } from "next/navigation"
-import { useState } from "react"
 import { LuCalendar, LuSearch } from "react-icons/lu"
 
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
 import Tag from "@/components/Tag"
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface PaginationProps {
   totalPages: number
@@ -30,23 +30,21 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
   const nextPage = currentPage + 1 <= totalPages
 
   return (
-    <div className="flex justify-center items-center space-x-4 py-12">
+    <div className="flex items-center justify-center space-x-4 py-12">
       <nav className="flex items-center space-x-6">
         {prevPage ? (
           <CustomLink
             href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
             rel="prev"
-            className="px-6 py-3 bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-gray-700 dark:text-gray-200 hover:scale-105"
+            className="rounded-xl bg-white px-6 py-3 text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:bg-gray-800 dark:text-gray-200"
           >
             ← {t("prev")}
           </CustomLink>
         ) : (
-          <div className="px-6 py-3 rounded-xl text-gray-400 cursor-not-allowed">
-            ← {t("prev")}
-          </div>
+          <div className="cursor-not-allowed rounded-xl px-6 py-3 text-gray-400">← {t("prev")}</div>
         )}
-        
-        <div className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg text-sm font-medium">
+
+        <div className="flex items-center space-x-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 text-sm font-medium text-white">
           <span>{currentPage}</span>
           <span className="text-blue-100">{t("of")}</span>
           <span>{totalPages}</span>
@@ -56,14 +54,12 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
           <CustomLink
             href={`/${basePath}/page/${currentPage + 1}`}
             rel="next"
-            className="px-6 py-3 bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-gray-700 dark:text-gray-200 hover:scale-105"
+            className="rounded-xl bg-white px-6 py-3 text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:bg-gray-800 dark:text-gray-200"
           >
             {t("next")} →
           </CustomLink>
         ) : (
-          <div className="px-6 py-3 rounded-xl text-gray-400 cursor-not-allowed">
-            {t("next")} →
-          </div>
+          <div className="cursor-not-allowed rounded-xl px-6 py-3 text-gray-400">{t("next")} →</div>
         )}
       </nav>
     </div>
@@ -89,18 +85,18 @@ export default function ListLayout({
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       {/* Hero Header */}
-      <div className="text-center py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 -mx-4 sm:-mx-6 lg:-mx-8 mb-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight mb-6">
+      <div className="-mx-4 mb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16 text-center sm:-mx-6 lg:-mx-8 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div className="mx-auto max-w-4xl px-4">
+          <h1 className="mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-5xl font-black leading-tight text-transparent md:text-6xl lg:text-7xl dark:from-white dark:via-blue-200 dark:to-purple-200">
             {title}
           </h1>
-          
+
           {/* Modern Search */}
-          <div className="max-w-2xl mx-auto">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+          <div className="mx-auto max-w-2xl">
+            <div className="group relative">
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 opacity-25 blur transition duration-1000 group-hover:opacity-40"></div>
               <div className="relative">
                 <Input
                   aria-label={t("search")}
@@ -112,7 +108,8 @@ export default function ListLayout({
                   classNames={{
                     input: "text-lg pl-4",
                     innerWrapper: "bg-white dark:bg-gray-800",
-                    inputWrapper: "h-14 bg-white dark:bg-gray-800 shadow-xl border-0 rounded-2xl hover:shadow-2xl transition-all duration-300"
+                    inputWrapper:
+                      "h-14 bg-white dark:bg-gray-800 shadow-xl border-0 rounded-2xl hover:shadow-2xl transition-all duration-300",
                   }}
                 />
               </div>
@@ -123,53 +120,56 @@ export default function ListLayout({
 
       {/* Posts Grid */}
       {!filteredBlogPosts.length ? (
-        <div className="text-center py-20">
-          <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-full flex items-center justify-center">
-            <LuSearch className="w-10 h-10 text-gray-400" />
+        <div className="py-20 text-center">
+          <div className="mx-auto mb-6 flex size-24 items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800">
+            <LuSearch className="size-10 text-gray-400" />
           </div>
           <p className="text-xl text-gray-500 dark:text-gray-400">{t("NotFound")}</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+        <div className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {displayPosts.map((post, index) => {
             const { title, description, tags, publishedAt, slug, coverImage } = post
-            
+
             return (
-              <article 
-                key={slug} 
-                className="group bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
+              <article
+                key={slug}
+                className="group overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-gray-700 dark:bg-gray-800"
                 style={{
-                  animationDelay: `${index * 100}ms`
+                  animationDelay: `${index * 100}ms`,
                 }}
               >
                 {/* Cover Image */}
-                <div className="relative overflow-hidden h-56 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600">
+                <div className="relative h-56 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600">
                   {coverImage ? (
                     <CustomLink href={`/${basePath}/${slug}`} className="block h-full">
                       <div className="relative h-full">
                         <img
                           src={coverImage}
                           alt={`Okładka: ${title}`}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          className="size-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                       </div>
                     </CustomLink>
                   ) : (
-                    <div className="h-full flex items-center justify-center">
-                      <div className="w-20 h-20 bg-gradient-to-br from-blue-200 to-purple-200 dark:from-gray-600 dark:to-gray-500 rounded-2xl flex items-center justify-center">
-                        <LuSearch className="w-8 h-8 text-gray-400" />
+                    <div className="flex h-full items-center justify-center">
+                      <div className="flex size-20 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-200 to-purple-200 dark:from-gray-600 dark:to-gray-500">
+                        <LuSearch className="size-8 text-gray-400" />
                       </div>
                     </div>
                   )}
-                  
+
                   {/* Date Badge */}
-                  <div className="absolute top-4 left-4">
-                    <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl px-3 py-2 shadow-lg">
+                  <div className="absolute left-4 top-4">
+                    <div className="rounded-xl bg-white/90 px-3 py-2 shadow-lg backdrop-blur-sm dark:bg-gray-800/90">
                       <div className="flex items-center space-x-2 text-sm">
-                        <LuCalendar className="w-4 h-4 text-blue-500" />
-                        <time dateTime={publishedAt} className="font-medium text-gray-700 dark:text-gray-200">
+                        <LuCalendar className="size-4 text-blue-500" />
+                        <time
+                          dateTime={publishedAt}
+                          className="font-medium text-gray-700 dark:text-gray-200"
+                        >
                           {getFormattedDate(publishedAt, lang)}
                         </time>
                       </div>
@@ -178,7 +178,7 @@ export default function ListLayout({
                 </div>
 
                 {/* Content */}
-                <div className="p-6 space-y-4">
+                <div className="space-y-4 p-6">
                   {/* Tags */}
                   {tags && Array.isArray(tags) && (
                     <div className="flex flex-wrap gap-2">
@@ -186,17 +186,20 @@ export default function ListLayout({
                         const tagValue = tag?.value || tag?.label || tag || tagIndex
                         const tagLabel = tag?.label || tag?.value || tag || ""
                         const uniqueKey = `${slug}-tag-${tagValue}-${tagIndex}` // Unikatowy klucz
-                        
+
                         return tagLabel ? (
-                          <div key={uniqueKey} className="transform hover:scale-105 transition-transform duration-200">
+                          <div
+                            key={uniqueKey}
+                            className="transition-transform duration-200 hover:scale-105"
+                          >
                             <Tag text={tagLabel} />
                           </div>
                         ) : null
                       })}
                       {tags.length > 3 && (
-                        <span 
+                        <span
                           key={`${slug}-more-tags`}
-                          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 cursor-pointer"
+                          className="inline-flex cursor-pointer items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
                         >
                           +{tags.length - 3}
                         </span>
@@ -205,17 +208,17 @@ export default function ListLayout({
                   )}
 
                   {/* Title */}
-                  <h2 className="text-xl font-bold leading-tight text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                  <h2 className="text-xl font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
                     <CustomLink
                       href={`/${basePath}/${slug}`}
-                      className="hover:underline decoration-2 underline-offset-4"
+                      className="decoration-2 underline-offset-4 hover:underline"
                     >
                       {title}
                     </CustomLink>
                   </h2>
 
                   {/* Description */}
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3">
+                  <p className="line-clamp-3 leading-relaxed text-gray-600 dark:text-gray-300">
                     {description}
                   </p>
 
@@ -223,16 +226,21 @@ export default function ListLayout({
                   <div className="pt-2">
                     <CustomLink
                       href={`/${basePath}/${slug}`}
-                      className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors duration-300 group/link"
+                      className="group/link inline-flex items-center space-x-2 font-medium text-blue-600 transition-colors duration-300 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
                     >
                       <span>Czytaj więcej</span>
-                      <svg 
-                        className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" 
-                        fill="none" 
-                        stroke="currentColor" 
+                      <svg
+                        className="size-4 transition-transform duration-300 group-hover/link:translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
                         viewBox="0 0 24 24"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
                       </svg>
                     </CustomLink>
                   </div>

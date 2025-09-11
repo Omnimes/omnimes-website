@@ -157,6 +157,48 @@
     "dataAnalysis": "Analyse historischer Daten – ziehen Sie Schlussfolgerungen und optimieren Sie Produktionsprozesse auf Grundlage historischer Daten.",
     "fasterOnboarding": "Schnellere Einarbeitung neuer Mitarbeiter – verkürzen Sie die Einarbeitungszeit durch standardisierte Überwachung der Produktionsprozesse."
   },
+  "OmniProducts": {
+    "title": "Optimieren Sie die Produktion mit OmniMES-Systemen",
+    "subtitle": "Umfassende Lösungen für moderne Produktion und Energiemanagement",
+    "omnimes": {
+      "subtitle": "Produktion (MES)",
+      "statistic": "Steigern Sie die Produktionseffizienz um 30%!",
+      "description": "Echtzeit-Maschinenüberwachung, Effizienzanalyse (OEE), Produktionsplanung und KI-unterstütztes Produktionsmanagement.",
+      "features": {
+        "monitoring": "Echtzeit-Überwachung der Maschinenarbeit",
+        "efficiency": "Effizienzanalyse (OEE)",
+        "production": "Produktionsplanung",
+        "reporting": "KI-unterstützte Produktionsberichterstattung und -analyse"
+      }
+    },
+    "omnienergy": {
+      "subtitle": "Energiemanagementsystem nach ISO 50001(EMS)",
+      "statistic": "Reduzieren Sie Energie- und Medienverbrauch um 20%!",
+      "description": "System unterstützt ISO50001-Implementierung, Optimierung des Energie- und Medienverbrauchs, Energiedatenanalyse sowie Alarmierung und Berichterstattung.",
+      "features": {
+        "iso": "System unterstützt ISO50001-Standard-Implementierung",
+        "optimization": "Optimierung des Energie- und Medienverbrauchs",
+        "analysis": "Energiedatenanalyse",
+        "reporting": "Alarmierung und Berichterstattung"
+      }
+    },
+    "deployment": {
+      "title": "Systeme angepasst an Ihre Infrastruktur",
+      "subtitle": "Wählen Sie das perfekte Bereitstellungsmodell für Ihre Organisation",
+      "cloud": {
+        "management": "Cloud für Produktionsmanagement",
+        "saas": "SaaS-Software",
+        "installation": "Schnelle Systeminstallation (5 bis 10 Min)",
+        "system": "Einfaches und schnelles Systemmanagement"
+      },
+      "premise": {
+        "infrastructure": "Installation auf Ihrer Infrastruktur",
+        "storage": "Daten auf Ihrem Server gespeichert",
+        "control": "Vollständige Kontrolle über Server und System",
+        "integration": "Einfache Integration mit Systemen"
+      }
+    }
+  },
   "Roi": {
     "title": "Return on Investment in MES – wie berechnet man ihn?",
     "intro": "Die Einführung eines MES-Systems ist nicht nur ein Schritt in Richtung digitale Transformation – es ist eine Investition, die sich schnell auszahlen kann. Um dies zu belegen, wird der ROI (Return on Investment) verwendet, der angibt, welcher Prozentsatz der getätigten Ausgaben in Form von Gewinn oder Einsparungen zurückfließt.",

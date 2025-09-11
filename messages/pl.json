@@ -158,6 +158,48 @@
     "dataAnalysis": "Analiza danych historycznych – wyciągaj wnioski i optymalizuj procesy produkcyjne na podstawie danych historycznych.",
     "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – skróć czas onboarding’u dzięki standaryzacji monitorowania procesów produkcyjnych."
   },
+"OmniProducts": {
+    "title": "Optymalizuj produkcję z systemami OmniMES",
+    "subtitle": "Kompleksowe rozwiązania dla nowoczesnej produkcji i zarządzania energią",
+    "omnimes": {
+      "subtitle": "Production (MES)",
+      "statistic": "Zwiększ efektywność produkcji o 30%!",
+      "description": "Monitoring pracy maszyn w czasie rzeczywistym, analiza wydajności (OEE), harmonogramowanie produkcji oraz zarządzanie produkcją wspierane przez AI.",
+      "features": {
+        "monitoring": "Monitoring pracy maszyn w czasie rzeczywistym",
+        "efficiency": "Analiza wydajności (OEE)",
+        "production": "Harmonogramowanie produkcji",
+        "reporting": "Raportowanie i analiza produkcji wspierana przez AI"
+      }
+    },
+    "omnienergy": {
+      "subtitle": "System zarządzania energią zgodny z ISO 50001(EMS)",
+      "statistic": "Zmniejsz zużycie energii i innych mediów o 20%!",
+      "description": "System wspiera wdrożenie normy ISO50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
+      "features": {
+        "iso": "System wspiera wdrożenie normy ISO50001",
+        "optimization": "Optymalizacja zużycia energii i innych mediów",
+        "analysis": "Analiza danych energetycznych",
+        "reporting": "Alarmowanie i raportowanie"
+      }
+    },
+    "deployment": {
+      "title": "Systemy dopasowane do Twojej infrastruktury",
+      "subtitle": "Wybierz model wdrożenia idealny dla Twojej organizacji",
+      "cloud": {
+        "management": "Chmura do zarządzania produkcją",
+        "saas": "Oprogramowanie SaaS",
+        "installation": "Szybka instalacja systemu (od 5 do 10 min)",
+        "system": "Prosta i szybka zarządzanie systemem"
+      },
+      "premise": {
+        "infrastructure": "Instalacja na Twojej infrastrukturze",
+        "storage": "Dane przechowywane na Twoim serwerze",
+        "control": "Pełna kontrola nad serwerami i systemem",
+        "integration": "Łatwa integracja z systemami"
+      }
+    }
+  },
   "Roi": {
     "title": "Zwrot z inwestycji w MES – jak obliczyć?",
     "intro": "Wdrożenie systemu MES to nie tylko krok w stronę cyfrowej transformacji – to inwestycja, która może szybko się zwrócić. Aby to wykazać, stosuje się wskaźnik ROI (Return on Investment), pokazujący, jaki procent poniesionych nakładów odzyskasz w formie zysków lub oszczędności.",

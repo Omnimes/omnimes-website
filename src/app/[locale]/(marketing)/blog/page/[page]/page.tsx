@@ -15,7 +15,7 @@ export const generateStaticParams = async ({ params }: { params: Promise<{ local
     return []
   }
   const localePosts = posts.filter((post) => post.lang == locale)
-  const totalPages = Math.ceil(localePosts.length / 10)
+  const totalPages = Math.ceil(localePosts.length / 21)
   const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
   return paths
 }
@@ -50,8 +50,8 @@ async function getData(locale: string, page: string) {
       "tags",
     ])
     .sort({ publishedAt: -1 })
-    .skip((Number(page) - 1) * 20)
-    .limit(20)
+    .skip((Number(page) - 1) * 21)
+    .limit(21)
     .toArray()
 
   const postsLength = getDocuments("posts", ["lang"])
@@ -83,7 +83,7 @@ export default async function BlogPagePage({
 
   const pagination = {
     currentPage: pageNumber,
-    totalPages: Math.ceil(postsLength / 20),
+    totalPages: Math.ceil(postsLength / 21),
   }
 
   return (

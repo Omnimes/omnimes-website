@@ -37,10 +37,10 @@ async function getData(locale: string) {
       "description",
       "author",
       "tags",
-      "coverImage"
+      "coverImage",
     ])
     .sort({ publishedAt: -1 })
-    .limit(20)
+    .limit(21)
     .toArray()
 
   const postsLength = getDocuments("posts", ["lang"])
@@ -84,7 +84,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
   const pageNumber = 1
   const pagination = {
     currentPage: pageNumber,
-    totalPages: Math.ceil(postsLength / 20),
+    totalPages: Math.ceil(postsLength / 21),
   }
   return (
     <ListLayout

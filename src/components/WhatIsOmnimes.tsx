@@ -1,7 +1,7 @@
 "use client"
 
-import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
+import Image from "next/image"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
@@ -35,7 +35,7 @@ export const WhatIsOmnimes = () => {
 
   return (
     <>
-      <div id="omnimes" className="mt-8 scroll-mt-20 sm:mt-0 sm:scroll-mt-8 md:text-center">
+      <div id="whatIsOmnimes" className="mt-8 scroll-mt-20 sm:mt-0 sm:scroll-mt-8 md:text-center">
         <SubtitleNormal text={t("smallSubtitle")} />
         <Heading omnimes text={t("heading")} />
         <DescriptionPrimary text={t("description")} />

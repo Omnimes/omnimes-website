@@ -157,6 +157,48 @@
   "betterQuality": "Improved product quality – reduce production waste and customer complaints, which also improve client relations.",
   "dataAnalysis": "Historical data analysis – draw conclusions and optimize production processes based on historical data.",
   "fasterOnboarding": "Faster onboarding of new employees – shorten onboarding time through standardized monitoring of production processes."
+  },  
+  "OmniProducts": {
+    "title": "Optimize Production with OmniMES Systems",
+    "subtitle": "Comprehensive solutions for modern production and energy management",
+    "omnimes": {
+      "subtitle": "Production (MES)",
+      "statistic": "Increase production efficiency by 30%!",
+      "description": "Real-time machine monitoring, efficiency analysis (OEE), production scheduling, and AI-supported production management.",
+      "features": {
+        "monitoring": "Real-time machine work monitoring",
+        "efficiency": "Efficiency analysis (OEE)",
+        "production": "Production scheduling",
+        "reporting": "AI-supported production reporting and analysis"
+      }
+    },
+    "omnienergy": {
+      "subtitle": "Energy management system compliant with ISO 50001(EMS)",
+      "statistic": "Reduce energy and media consumption by 20%!",
+      "description": "System supports ISO50001 implementation, optimization of energy and media consumption, energy data analysis, and alerting with reporting.",
+      "features": {
+        "iso": "System supports ISO50001 standard implementation",
+        "optimization": "Energy and media consumption optimization",
+        "analysis": "Energy data analysis",
+        "reporting": "Alerting and reporting"
+      }
+    },
+    "deployment": {
+      "title": "Systems Tailored to Your Infrastructure",
+      "subtitle": "Choose the deployment model perfect for your organization",
+      "cloud": {
+        "management": "Cloud for production management",
+        "saas": "SaaS Software",
+        "installation": "Quick system installation (5 to 10 min)",
+        "system": "Simple and fast system management"
+      },
+      "premise": {
+        "infrastructure": "Installation on your infrastructure",
+        "storage": "Data stored on your server",
+        "control": "Full control over servers and system",
+        "integration": "Easy integration with systems"
+      }
+    }
   },
   "Roi": {
     "title": "Return on investment in MES – how to calculate?",
@@ -201,17 +243,6 @@
       "title": "Optimize product cost",
       "body": "Analyze energy usage per line and SKU to lower unit cost and plan production against tariffs and load."
     },
-    "CloudInfo": {
-      "smallSubtitle": "Manage OmniMES in the cloud",
-      "heading": "Full control over OmniMES in just a few minutes",
-      "tagline": "OmniPlatform – your place to manage OmniMES.",
-      "subTitle": "Fast start & simple setup",
-      "blockTitle": "Launch, configure, go",
-      "p1": "OmniPlatform is an intuitive web platform that lets you launch and configure OmniMES instances with ease. The entire process — including plan selection — typically takes 5–10 minutes.",
-      "p2": "Responding to strong interest in the system, we opened the platform to everyone. With a subscription you can get instant access to OmniMES and get started right away.",
-      "p3": "Gain freedom and convenience in infrastructure management: automation, fast deployments and full control — so you can focus on production, not servers.",
-      "cta": "Go to OmniPlatform"
-    },
     "card2": {
       "title": "Identify energy losses",
       "body": "Detect sources and events driving overconsumption: downtimes, startups, idle modes, and setup errors."
@@ -224,6 +255,17 @@
       "badge": "Compliance & sustainability",
       "text": "OmniMES helps meet ISO 50001 (energy management) and ISO 14001 (environmental management) goals."
     }
+  },
+  "CloudInfo": {
+    "smallSubtitle": "Manage OmniMES in the cloud",
+    "heading": "Full control over OmniMES in just a few minutes",
+    "tagline": "OmniPlatform – your place to manage OmniMES.",
+    "subTitle": "Fast start & simple setup",
+    "blockTitle": "Launch, configure, go",
+    "p1": "OmniPlatform is an intuitive web platform that lets you launch and configure OmniMES instances with ease. The entire process — including plan selection — typically takes 5–10 minutes.",
+    "p2": "Responding to strong interest in the system, we opened the platform to everyone. With a subscription you can get instant access to OmniMES and get started right away.",
+    "p3": "Gain freedom and convenience in infrastructure management: automation, fast deployments and full control — so you can focus on production, not servers.",
+    "cta": "Go to OmniPlatform"
   },
   "Feature": {
     "Monitoring": "Real-time machine status monitoring",
