@@ -1,6 +1,6 @@
 {
-  "commit": "cb967f7b3b322448178c7b149886c3a0bbc51d4c",
-  "generated": "2025-09-11T13:37:30.093Z",
+  "commit": "5f9b39811055720eb51ecf9b9a5832f59291595d",
+  "generated": "2025-09-11T13:45:44.259Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2591,31 +2591,6 @@
     },
     {
       "__outstatic": {
-        "commit": "e2a52599bd96922394871bf830378a310c37db29",
-        "hash": "538307948",
-        "path": "outstatic/content/posts/udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
-      "description": "Jak integracja czujników i technologii IoT poprawia harmonogramowanie produkcji w inteligentnych fabrykach.",
-      "lang": "pl",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Udoskonalenie harmonogramowania produkcji dzięki symulacji i integracji IoT"
-    },
-    {
-      "__outstatic": {
         "commit": "2372894bf273a06771c7dba1c821095a63eca189",
         "hash": "2922331518",
         "path": "outstatic/content/posts/the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources.md"
@@ -3435,6 +3410,35 @@
         }
       ],
       "title": "Jak Integracja MES z IoT Rewolucjonizuje Jakość Produkcji i Eliminuje Przestoje"
+    },
+    {
+      "__outstatic": {
+        "commit": "5f9b39811055720eb51ecf9b9a5832f59291595d",
+        "hash": "3625904018",
+        "path": "outstatic/content/posts/jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/iot_roi_indsutry-MzNj.png",
+      "description": "Globalny rynek Internet of Things osiągnął wartość 714,48 miliardów USD w 2024 roku i według prognoz wzrośnie do 4,062.34 miliardów USD do 2032 roku, co oznacza roczną stopę wzrostu (CAGR) na poziomie 24,3%. Jednocześnie przemysłowy IoT (IIoT) wyceniany na 289 miliardów USD w 2024 roku ma osiągnąć 847 miliardów USD do 2033 roku przy CAGR 12,7%. Te imponujące liczby odzwierciedlają fundamentalną zmianę, jaką przechodzi współczesny przemysł w kierunku Industry 5.0.",
+      "lang": "pl",
+      "publishedAt": "2025-04-12T09:00:00.000Z",
+      "slug": "jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25",
+      "status": "published",
+      "tags": [
+        {
+          "label": "IoT",
+          "value": "iot"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        }
+      ],
+      "title": "Jak integracja systemów MES z IoT transformuje współczesną produkcję i zapewnia ROI powyżej 25%"
     }
   ]
 }
