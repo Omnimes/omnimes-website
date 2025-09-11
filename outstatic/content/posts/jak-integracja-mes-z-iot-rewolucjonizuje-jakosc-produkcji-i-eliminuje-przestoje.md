@@ -12,7 +12,7 @@ lang: 'pl'
 publishedAt: '2025-04-26T09:00:00.000Z'
 ---
 
-### Rynek systemów MES rośnie w tempie 14,1% rocznie, osiągając wartość 41,78 mld USD do 2032 roku, a Industry 5.0 stawia człowieka w centrum produkcji, łącząc zrównoważoność z zaawansowanymi technologiami. Integracja MES z IoT w erze Industry 5.0 to nie tylko trend – to konieczność dla firm chcących zachować konkurencyjność.
+Rynek systemów MES rośnie w tempie 14,1% rocznie, osiągając wartość 41,78 mld USD do 2032 roku, a Industry 5.0 stawia człowieka w centrum produkcji, łącząc zrównoważoność z zaawansowanymi technologiami. Integracja MES z IoT w erze Industry 5.0 to nie tylko trend – to konieczność dla firm chcących zachować konkurencyjność.
 
 ## Wprowadzenie: Era Industry 5.0 w Produkcji
 
