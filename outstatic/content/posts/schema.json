@@ -472,6 +472,10 @@
         {
           "value": "omniEnergy",
           "label": "OmniEnergy"
+        },
+        {
+          "value": "omnimes",
+          "label": "Omnimes"
         }
       ]
     },
