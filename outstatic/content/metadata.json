@@ -1,6 +1,6 @@
 {
   "commit": "5f9b39811055720eb51ecf9b9a5832f59291595d",
-  "generated": "2025-09-11T13:48:19.834Z",
+  "generated": "2025-09-11T13:50:15.455Z",
   "metadata": [
     {
       "__outstatic": {
@@ -753,6 +753,31 @@
         }
       ],
       "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "c1bf3caa1f4a277b3fb12528539e1f32d93d4310",
+        "hash": "3668685647",
+        "path": "outstatic/content/posts/enhancing-production-scheduling-through-simulation-and-iot-integration.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
+      "description": "How the integration of sensors and IoT technology enhances production scheduling in smart factories.",
+      "lang": "en",
+      "publishedAt": "2025-04-12T09:00:00Z",
+      "slug": "enhancing-production-scheduling-through-simulation-and-iot-integration",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Enhancing Production Scheduling through Simulation and IoT Integration"
     },
     {
       "__outstatic": {
@@ -2681,31 +2706,6 @@
     },
     {
       "__outstatic": {
-        "commit": "b6210a41e8b547a347e3bafa1cd3599dfb591297",
-        "hash": "42620471",
-        "path": "outstatic/content/posts/verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
-      "description": "Wie die Integration von Sensoren und IoT-Technologie die Produktionsplanung in intelligenten Fabriken verbessert.",
-      "lang": "de",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "verbesserung-der-produktionsplanung-durch-simulation-und-iot-integration",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Verbesserung der Produktionsplanung durch Simulation und IoT-Integration"
-    },
-    {
-      "__outstatic": {
         "commit": "e601ff766ed567b750c84904d7e384d38b3dba68",
         "hash": "563552681",
         "path": "outstatic/content/posts/utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol.md"
@@ -3414,19 +3414,19 @@
     {
       "__outstatic": {
         "commit": "5f9b39811055720eb51ecf9b9a5832f59291595d",
-        "hash": "3955028184",
-        "path": "outstatic/content/posts/how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25.md"
+        "hash": "1928730509",
+        "path": "outstatic/content/posts/wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/iot_roi_indsutry-g1NT.png",
-      "description": "The global Internet of Things (IoT) market reached USD 714.48 billion in 2024 and is projected to grow to USD 4,062.34 billion by 2032, representing a CAGR of 24.3%. At the same time, the Industrial IoT (IIoT), valued at USD 289 billion in 2024, is expected to reach USD 847 billion by 2033 with a CAGR of 12.7%. These impressive figures reflect a fundamental shift in modern industry toward Industry 5.0.",
-      "lang": "en",
+      "coverImage": "/images/iot_roi_indsutry-Q1Nz.png",
+      "description": "Der weltweite IoT-Markt erreichte 2024 ein Volumen von 714,48 Milliarden USD und soll bis 2032 auf 4.062,34 Milliarden USD anwachsen (CAGR 24,3 %). Gleichzeitig wird der industrielle IoT-Markt (IIoT), bewertet mit 289 Milliarden USD im Jahr 2024, bis 2033 auf 847 Milliarden USD steigen (CAGR 12,7 %). Diese Zahlen zeigen den Übergang zur Ära Industry 5.0.",
+      "lang": "de",
       "publishedAt": "2025-04-12T09:00:00.000Z",
-      "slug": "how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25",
+      "slug": "wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert",
       "status": "published",
       "tags": [
         {
@@ -3438,7 +3438,7 @@
           "value": "industry50"
         }
       ],
-      "title": "How the Integration of MES with IoT Transforms Modern Manufacturing and Delivers ROI Above 25%"
+      "title": "Wie die Integration von MES mit IoT die moderne Produktion transformiert und eine ROI von über 25 % liefert"
     }
   ]
 }
