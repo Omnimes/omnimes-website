@@ -1,6 +1,6 @@
 {
   "commit": "cb967f7b3b322448178c7b149886c3a0bbc51d4c",
-  "generated": "2025-09-11T13:29:32.218Z",
+  "generated": "2025-09-11T13:33:59.397Z",
   "metadata": [
     {
       "__outstatic": {
@@ -781,6 +781,31 @@
     },
     {
       "__outstatic": {
+        "commit": "f2368aaef6e1875efc416c23f3a93b5dec547883",
+        "hash": "208356452",
+        "path": "outstatic/content/posts/integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
+      "description": "Zintegruj MES z IoT, aby poprawić kontrolę jakości i zredukować przestoje w produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-04-26T09:00:00Z",
+      "slug": "integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Integracja MES z IoT w celu poprawy kontroli jakości i redukcji przestojów"
+    },
+    {
+      "__outstatic": {
         "commit": "afc94d0f88a883fb0e00264912b6265cc210ab42",
         "hash": "1210810321",
         "path": "outstatic/content/posts/industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe.md"
@@ -964,31 +989,6 @@
         }
       ],
       "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
-    },
-    {
-      "__outstatic": {
-        "commit": "01eaf2c639061100db298c9a99984855c61df36f",
-        "hash": "629970680",
-        "path": "outstatic/content/posts/integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
-      "description": "Integrate MES with IoT to enhance quality control and reduce production downtime.",
-      "lang": "en",
-      "publishedAt": "2025-04-26T09:00:00Z",
-      "slug": "integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Integration of MES with IoT to Enhance Quality Control and Reduce Downtime"
     },
     {
       "__outstatic": {
@@ -3381,19 +3381,19 @@
     {
       "__outstatic": {
         "commit": "cb967f7b3b322448178c7b149886c3a0bbc51d4c",
-        "hash": "320299727",
-        "path": "outstatic/content/posts/jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje.md"
+        "hash": "2666126253",
+        "path": "outstatic/content/posts/how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/iot_industry-c3ND.png",
-      "description": "Podczas gdy przemysł wciąż implementuje rozwiązania Industry 4.0, Industry 5.0 wprowadza nowy paradygmat oparty na trzech filarach: zrównoważoności, odporności i podejściu zorientowanym na człowieka. W tym kontekście integracja Manufacturing Execution Systems (MES) z Internet of Things (IoT) staje się kluczowym elementem transformacji cyfrowej, który nie tylko automatyzuje procesy, ale czyni je bardziej humanitarnymi i ekologicznymi.",
-      "lang": "pl",
+      "coverImage": "/images/iot_industry-EyOT.png",
+      "description": "Integrate MES with IoT to enhance quality control and reduce production downtime.",
+      "lang": "en",
       "publishedAt": "2025-04-26T09:00:00.000Z",
-      "slug": "jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje",
+      "slug": "how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime",
       "status": "published",
       "tags": [
         {
@@ -3409,7 +3409,7 @@
           "value": "industry50"
         }
       ],
-      "title": "Jak Integracja MES z IoT Rewolucjonizuje Jakość Produkcji i Eliminuje Przestoje"
+      "title": "How MES-IoT Integration Revolutionizes Production Quality and Eliminates Downtime"
     }
   ]
 }
