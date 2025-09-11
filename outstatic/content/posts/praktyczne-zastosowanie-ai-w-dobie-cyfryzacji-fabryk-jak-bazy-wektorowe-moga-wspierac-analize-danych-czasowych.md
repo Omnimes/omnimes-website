@@ -14,7 +14,7 @@ publishedAt: '2025-09-09T06:25:59.088Z'
 
 ### Wprowadzenie
 
-Industry 5.0 to już nie tylko automatyzacja, ale przede wszystkim **inteligentne wykorzystanie danych**. W erze IoT i MES każda maszyna generuje strumienie sygnałów. Problemem nie jest samo ich zbieranie, ale **analiza i wykorzystanie w czasie rzeczywistym**. Coraz większą rolę w tym procesie odgrywają **bazy wektorowe** i sztuczna inteligencja.
+Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.
 
 ### Dane czasowe — dlaczego są trudne?
 
