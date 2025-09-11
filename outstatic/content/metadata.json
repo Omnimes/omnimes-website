@@ -1,6 +1,6 @@
 {
-  "commit": "5f9b39811055720eb51ecf9b9a5832f59291595d",
-  "generated": "2025-09-11T13:50:15.455Z",
+  "commit": "c7ab419fd1cc20cfc78b5f5e4b2de4fa2859ce11",
+  "generated": "Thu, 11 Sep 2025 13:51:03 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -615,29 +615,65 @@
     },
     {
       "__outstatic": {
-        "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
-        "hash": "4201941181",
-        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
+        "commit": "f3b8db0bc5a359f885bc177ee51a0d21eb446d8a",
+        "hash": "3955028184",
+        "path": "outstatic/content/posts/how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25.md"
       },
       "author": {
-        "name": "OmniMES",
+        "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
-      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
+      "coverImage": "/images/iot_roi_indsutry-g1NT.png",
+      "description": "The global Internet of Things (IoT) market reached USD 714.48 billion in 2024 and is projected to grow to USD 4,062.34 billion by 2032, representing a CAGR of 24.3%. At the same time, the Industrial IoT (IIoT), valued at USD 289 billion in 2024, is expected to reach USD 847 billion by 2033 with a CAGR of 12.7%. These impressive figures reflect a fundamental shift in modern industry toward Industry 5.0.",
       "lang": "en",
-      "publishedAt": "2025-05-28T00:00:00.000Z",
-      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
+      "publishedAt": "2025-04-12T09:00:00.000Z",
+      "slug": "how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25",
       "status": "published",
       "tags": [
-        "langchain",
-        "faiss",
-        "gpt",
-        "documentation",
-        "ai-assistant"
+        {
+          "label": "IoT",
+          "value": "iot"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        }
       ],
-      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
+      "title": "How the Integration of MES with IoT Transforms Modern Manufacturing and Delivers ROI Above 25%"
+    },
+    {
+      "__outstatic": {
+        "commit": "54bad31ea6276dcea04737c0e477098994e9e1ef",
+        "hash": "2666126253",
+        "path": "outstatic/content/posts/how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/iot_industry-EyOT.png",
+      "description": "Integrate MES with IoT to enhance quality control and reduce production downtime.",
+      "lang": "en",
+      "publishedAt": "2025-04-26T09:00:00.000Z",
+      "slug": "how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "IoT",
+          "value": "iot"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        }
+      ],
+      "title": "How MES-IoT Integration Revolutionizes Production Quality and Eliminates Downtime"
     },
     {
       "__outstatic": {
@@ -753,56 +789,6 @@
         }
       ],
       "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost"
-    },
-    {
-      "__outstatic": {
-        "commit": "c1bf3caa1f4a277b3fb12528539e1f32d93d4310",
-        "hash": "3668685647",
-        "path": "outstatic/content/posts/enhancing-production-scheduling-through-simulation-and-iot-integration.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
-      "description": "How the integration of sensors and IoT technology enhances production scheduling in smart factories.",
-      "lang": "en",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "enhancing-production-scheduling-through-simulation-and-iot-integration",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Enhancing Production Scheduling through Simulation and IoT Integration"
-    },
-    {
-      "__outstatic": {
-        "commit": "f2368aaef6e1875efc416c23f3a93b5dec547883",
-        "hash": "208356452",
-        "path": "outstatic/content/posts/integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
-      "description": "Zintegruj MES z IoT, aby poprawić kontrolę jakości i zredukować przestoje w produkcji.",
-      "lang": "pl",
-      "publishedAt": "2025-04-26T09:00:00Z",
-      "slug": "integracja-mes-z-iot-w-celu-poprawy-kontroli-jakosci-i-redukcji-przestojow",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Integracja MES z IoT w celu poprawy kontroli jakości i redukcji przestojów"
     },
     {
       "__outstatic": {
@@ -930,28 +916,103 @@
     },
     {
       "__outstatic": {
-        "commit": "fda59473174c9533903a990502cd8fc58d3f1c5f",
-        "hash": "2815231697",
-        "path": "outstatic/content/posts/integration-von-mes-mit-iot-zur-verbesserung-der-qualitatskontrolle-und-reduzierung-von-ausfallzeiten.md"
+        "commit": "5e3860d33c1a85660092bfc0cff6f59afd81c104",
+        "hash": "4201941181",
+        "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1_gakvquk6hb-kyzvymupmea-A3NT.png",
+      "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
+      "lang": "en",
+      "publishedAt": "2025-05-28T00:00:00.000Z",
+      "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
+      "status": "published",
+      "tags": [
+        "langchain",
+        "faiss",
+        "gpt",
+        "documentation",
+        "ai-assistant"
+      ],
+      "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
+    },
+    {
+      "__outstatic": {
+        "commit": "4f0d622f9cec602c17533ac20d37997c5793f984",
+        "hash": "4000097113",
+        "path": "outstatic/content/posts/intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
-      "description": "Integrieren Sie MES mit IoT, um die Qualitätskontrolle zu verbessern und Produktionsausfälle zu reduzieren.",
+      "coverImage": "/images/green_energy-U0Mj.png",
+      "description": "ROI: bis zu 15% höhere Effizienz und 10–20% bessere Energiespeicherung – das ist die reale Kraft von KI in der modernen Energiebranche. Im Zeitalter der Industrie 5.0, in dem Technologie mit einem menschzentrierten Ansatz verschmilzt, erlebt der Sektor der erneuerbaren Energien ein beispielloses Wachstum – mit 18,6 GW zusätzlicher Solarkapazität allein in den ersten neun Monaten 2024. Manufacturing Execution Systems (MES), unterstützt durch Machine Learning, werden zu einem Eckpfeiler dieser Transformation und bieten klare geschäftliche und technische Vorteile.",
       "lang": "de",
-      "publishedAt": "2025-04-26T09:00:00Z",
-      "slug": "integration-von-mes-mit-iot-zur-verbesserung-der-qualitatskontrolle-und-reduzierung-von-ausfallzeiten",
+      "publishedAt": "2025-06-26T09:00:00.000Z",
+      "slug": "intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Green Energy",
+          "value": "greenEnergy"
         }
       ],
-      "title": "Integration von MES mit IoT zur Verbesserung der Qualitätskontrolle und Reduzierung von Ausfallzeiten"
+      "title": "Intelligente MES in Industrie 5.0: Wie Machine Learning das kontinuierliche Verbesserungsmanagement in der erneuerbaren Energie revolutioniert"
+    },
+    {
+      "__outstatic": {
+        "commit": "75ffa7ea0a72390aa0668d3c41f84325657f19d8",
+        "hash": "3244325246",
+        "path": "outstatic/content/posts/inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/green_energy-M2NT.png",
+      "description": "W erze Industry 5.0, gdzie technologia łączy się z humanistycznym podejściem do produkcji, sektor energii odnawialnej doświadcza bezprecedensowego wzrostu – z rekordowymi 18.6 GW dodatkowej mocy solarnej tylko w pierwszych dziewięciu miesiącach 2024 roku. Manufacturing Execution Systems (MES) wspomagane uczeniem maszynowym stają się kluczowym elementem tej transformacji, oferując konkretne korzyści biznesowe i techniczne.",
+      "lang": "pl",
+      "publishedAt": "2025-06-26T09:00:00.000Z",
+      "slug": "inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "Green Energy",
+          "value": "greenEnergy"
+        }
+      ],
+      "title": "Inteligentne MES w Industry 5.0: Jak uczenie maszynowe rewolucjonizuje ciągłe doskonalenie w produkcji energii odnawialnej"
     },
     {
       "__outstatic": {
@@ -989,31 +1050,6 @@
         }
       ],
       "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
-    },
-    {
-      "__outstatic": {
-        "commit": "01eaf2c639061100db298c9a99984855c61df36f",
-        "hash": "629970680",
-        "path": "outstatic/content/posts/integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-integrating-mes-with-industrial-iot-for-enhanced-quality-control-and-downtime-reduction-in-industry-4-0-this-topic.png",
-      "description": "Integrate MES with IoT to enhance quality control and reduce production downtime.",
-      "lang": "en",
-      "publishedAt": "2025-04-26T09:00:00Z",
-      "slug": "integration-of-mes-with-iot-to-enhance-quality-control-and-reduce-downtime",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Integration of MES with IoT to Enhance Quality Control and Reduce Downtime"
     },
     {
       "__outstatic": {
@@ -1188,94 +1224,49 @@
     },
     {
       "__outstatic": {
-        "commit": "4f0d622f9cec602c17533ac20d37997c5793f984",
-        "hash": "4000097113",
-        "path": "outstatic/content/posts/intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert.md"
+        "commit": "bc2c4339efe48a167078aec2d607cce36a08d242",
+        "hash": "3625904018",
+        "path": "outstatic/content/posts/jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/green_energy-U0Mj.png",
-      "description": "ROI: bis zu 15% höhere Effizienz und 10–20% bessere Energiespeicherung – das ist die reale Kraft von KI in der modernen Energiebranche. Im Zeitalter der Industrie 5.0, in dem Technologie mit einem menschzentrierten Ansatz verschmilzt, erlebt der Sektor der erneuerbaren Energien ein beispielloses Wachstum – mit 18,6 GW zusätzlicher Solarkapazität allein in den ersten neun Monaten 2024. Manufacturing Execution Systems (MES), unterstützt durch Machine Learning, werden zu einem Eckpfeiler dieser Transformation und bieten klare geschäftliche und technische Vorteile.",
-      "lang": "de",
-      "publishedAt": "2025-06-26T09:00:00.000Z",
-      "slug": "intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Green Energy",
-          "value": "greenEnergy"
-        }
-      ],
-      "title": "Intelligente MES in Industrie 5.0: Wie Machine Learning das kontinuierliche Verbesserungsmanagement in der erneuerbaren Energie revolutioniert"
-    },
-    {
-      "__outstatic": {
-        "commit": "75ffa7ea0a72390aa0668d3c41f84325657f19d8",
-        "hash": "3244325246",
-        "path": "outstatic/content/posts/inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/green_energy-M2NT.png",
-      "description": "W erze Industry 5.0, gdzie technologia łączy się z humanistycznym podejściem do produkcji, sektor energii odnawialnej doświadcza bezprecedensowego wzrostu – z rekordowymi 18.6 GW dodatkowej mocy solarnej tylko w pierwszych dziewięciu miesiącach 2024 roku. Manufacturing Execution Systems (MES) wspomagane uczeniem maszynowym stają się kluczowym elementem tej transformacji, oferując konkretne korzyści biznesowe i techniczne.",
+      "coverImage": "/images/iot_roi_indsutry-MzNj.png",
+      "description": "Globalny rynek Internet of Things osiągnął wartość 714,48 miliardów USD w 2024 roku i według prognoz wzrośnie do 4,062.34 miliardów USD do 2032 roku, co oznacza roczną stopę wzrostu (CAGR) na poziomie 24,3%. Jednocześnie przemysłowy IoT (IIoT) wyceniany na 289 miliardów USD w 2024 roku ma osiągnąć 847 miliardów USD do 2033 roku przy CAGR 12,7%. Te imponujące liczby odzwierciedlają fundamentalną zmianę, jaką przechodzi współczesny przemysł w kierunku Industry 5.0.",
       "lang": "pl",
-      "publishedAt": "2025-06-26T09:00:00.000Z",
-      "slug": "inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej",
+      "publishedAt": "2025-04-12T09:00:00.000Z",
+      "slug": "jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25",
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "label": "IoT",
+          "value": "iot"
         },
         {
           "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "Green Energy",
-          "value": "greenEnergy"
+          "value": "industry50"
         }
       ],
-      "title": "Inteligentne MES w Industry 5.0: Jak uczenie maszynowe rewolucjonizuje ciągłe doskonalenie w produkcji energii odnawialnej"
+      "title": "Jak integracja systemów MES z IoT transformuje współczesną produkcję i zapewnia ROI powyżej 25%"
     },
     {
       "__outstatic": {
-        "commit": "e79fc730206c9fd765ad9023cdf69f7ed7404202",
-        "hash": "550742649",
-        "path": "outstatic/content/posts/managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing.md"
+        "commit": "ce758992686fda8d3b58927b71dfaacb32b9bd38",
+        "hash": "1457247774",
+        "path": "outstatic/content/posts/jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp",
-      "description": "The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.",
-      "lang": "en",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing",
+      "coverImage": "/images/iot_industry-c3ND.png",
+      "description": "Podczas gdy przemysł wciąż implementuje rozwiązania Industry 4.0, Industry 5.0 wprowadza nowy paradygmat oparty na trzech filarach: zrównoważoności, odporności i podejściu zorientowanym na człowieka. W tym kontekście integracja Manufacturing Execution Systems (MES) z Internet of Things (IoT) staje się kluczowym elementem transformacji cyfrowej, który nie tylko automatyzuje procesy, ale czyni je bardziej humanitarnymi i ekologicznymi.",
+      "lang": "pl",
+      "publishedAt": "2025-04-26T09:00:00.000Z",
+      "slug": "jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje",
       "status": "published",
       "tags": [
         {
@@ -1283,11 +1274,15 @@
           "value": "omnimes"
         },
         {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
+          "label": "IoT",
+          "value": "iot"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
         }
       ],
-      "title": "Managing Production Batches in the Era of Industry 5.0: A Strategic Approach to Digital Transformation in Manufacturing"
+      "title": "Jak Integracja MES z IoT Rewolucjonizuje Jakość Produkcji i Eliminuje Przestoje"
     },
     {
       "__outstatic": {
@@ -1428,6 +1423,35 @@
         }
       ],
       "title": "Maximierung des ROI durch OEE-Optimierung und Energiemanagement in MES/EMS-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "e79fc730206c9fd765ad9023cdf69f7ed7404202",
+        "hash": "550742649",
+        "path": "outstatic/content/posts/managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp",
+      "description": "The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.",
+      "lang": "en",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Managing Production Batches in the Era of Industry 5.0: A Strategic Approach to Digital Transformation in Manufacturing"
     },
     {
       "__outstatic": {
@@ -1712,6 +1736,47 @@
     },
     {
       "__outstatic": {
+        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
+        "hash": "46414442",
+        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
+      "lang": "en",
+      "publishedAt": "2024-06-10T09:10:14.654Z",
+      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "GPT-4 API",
+          "value": "gpt4Api"
+        },
+        {
+          "label": "LLM Models",
+          "value": "llmModels"
+        }
+      ],
+      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
         "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
         "hash": "4265613164",
         "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
@@ -1840,88 +1905,6 @@
     },
     {
       "__outstatic": {
-        "commit": "a67fb51fe2891f74d72e7d37d28ed5d02c0a7545",
-        "hash": "46414442",
-        "path": "outstatic/content/posts/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.",
-      "lang": "en",
-      "publishedAt": "2024-06-10T09:10:14.654Z",
-      "slug": "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "GPT-4 API",
-          "value": "gpt4Api"
-        },
-        {
-          "label": "LLM Models",
-          "value": "llmModels"
-        }
-      ],
-      "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
-    },
-    {
-      "__outstatic": {
-        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
-        "hash": "4259407744",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/2.png",
-      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
-      "lang": "pl",
-      "publishedAt": "2024-06-10T08:10:14.654Z",
-      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Modele LLM",
-          "value": "modeleLlm"
-        },
-        {
-          "label": "API GPT-4",
-          "value": "apiGpt4"
-        },
-        {
-          "label": "analiza danych",
-          "value": "analizaDanych"
-        },
-        {
-          "label": "Bezpieczeństwo danych",
-          "value": "bezpieczeństwoDanych"
-        }
-      ],
-      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
-    },
-    {
-      "__outstatic": {
         "commit": "30734c16b5e49f9ed6f58fcb9f4f7def805cb4ef",
         "hash": "3879525934",
         "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
@@ -2030,6 +2013,47 @@
         }
       ],
       "title": "Praktische Anwendung eines KI-Assistenten: Integration der OpenAI GPT-API in eine Webanwendung für Datenanalyse"
+    },
+    {
+      "__outstatic": {
+        "commit": "5f4c4e8e43005c159e80cf0592eafdc23cafca1f",
+        "hash": "4259407744",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/2.png",
+      "description": "Dowiedz się, jak krok po kroku zintegrować API GPT-4 z aplikacją webową, aby wykorzystać zaawansowane funkcje analizy danych. Przykład w Pythonie i Flasku, oraz ustawienia i bezpieczeństwo danych.",
+      "lang": "pl",
+      "publishedAt": "2024-06-10T08:10:14.654Z",
+      "slug": "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "ai"
+        },
+        {
+          "label": "Modele LLM",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "API GPT-4",
+          "value": "apiGpt4"
+        },
+        {
+          "label": "analiza danych",
+          "value": "analizaDanych"
+        },
+        {
+          "label": "Bezpieczeństwo danych",
+          "value": "bezpieczeństwoDanych"
+        }
+      ],
+      "title": "Praktyczne zastosowanie aystenta AI. Integracja API GPT od OpenAI z aplikacją webową do analizy danych"
     },
     {
       "__outstatic": {
@@ -2456,6 +2480,31 @@
     },
     {
       "__outstatic": {
+        "commit": "9cfc94fcec4e8fddfe75fb350b572f31a7fd52bb",
+        "hash": "2188697738",
+        "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
+      "description": "A practical guide to using the MQTT protocol in MES and IoT systems to enhance production processes.",
+      "lang": "en",
+      "publishedAt": "2025-01-12T09:00:00Z",
+      "slug": "utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Utilization of MQTT Protocol to Enhance Connectivity Between MES Systems and IoT Devices"
+    },
+    {
+      "__outstatic": {
         "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
         "hash": "3236711354",
         "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
@@ -2591,31 +2640,6 @@
     },
     {
       "__outstatic": {
-        "commit": "e2a52599bd96922394871bf830378a310c37db29",
-        "hash": "538307948",
-        "path": "outstatic/content/posts/udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-scheduling-through-simulation-and-industrial-iot-integration-in-smart-factories-this-topic-wi.png",
-      "description": "Jak integracja czujników i technologii IoT poprawia harmonogramowanie produkcji w inteligentnych fabrykach.",
-      "lang": "pl",
-      "publishedAt": "2025-04-12T09:00:00Z",
-      "slug": "udoskonalenie-harmonogramowania-produkcji-dzieki-symulacji-i-integracji-iot",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Udoskonalenie harmonogramowania produkcji dzięki symulacji i integracji IoT"
-    },
-    {
-      "__outstatic": {
         "commit": "2372894bf273a06771c7dba1c821095a63eca189",
         "hash": "2922331518",
         "path": "outstatic/content/posts/the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources.md"
@@ -2674,6 +2698,88 @@
         }
       ],
       "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
+    },
+    {
+      "__outstatic": {
+        "commit": "b62eab066b7596dae13bbf6a2c76d32e57de0e10",
+        "hash": "1928730509",
+        "path": "outstatic/content/posts/wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/iot_roi_indsutry-Q1Nz.png",
+      "description": "Der weltweite IoT-Markt erreichte 2024 ein Volumen von 714,48 Milliarden USD und soll bis 2032 auf 4.062,34 Milliarden USD anwachsen (CAGR 24,3 %). Gleichzeitig wird der industrielle IoT-Markt (IIoT), bewertet mit 289 Milliarden USD im Jahr 2024, bis 2033 auf 847 Milliarden USD steigen (CAGR 12,7 %). Diese Zahlen zeigen den Übergang zur Ära Industry 5.0.",
+      "lang": "de",
+      "publishedAt": "2025-04-12T09:00:00.000Z",
+      "slug": "wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert",
+      "status": "published",
+      "tags": [
+        {
+          "label": "IoT",
+          "value": "iot"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        }
+      ],
+      "title": "Wie die Integration von MES mit IoT die moderne Produktion transformiert und eine ROI von über 25 % liefert"
+    },
+    {
+      "__outstatic": {
+        "commit": "5311808d334dac83cc2ffa58a157091244eee932",
+        "hash": "895657840",
+        "path": "outstatic/content/posts/verwendung-von-pytorch-in-industriedaten.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
+      "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
+      "lang": "de",
+      "publishedAt": "2024-10-15T10:50:26.000Z",
+      "slug": "verwendung-von-pytorch-in-industriedaten",
+      "status": "published",
+      "tags": [
+        {
+          "label": "PyTorch",
+          "value": "pyTorch"
+        },
+        {
+          "label": "TensorFlow",
+          "value": "tensorFlow"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "LightGBM",
+          "value": "lightGbm"
+        },
+        {
+          "label": "CatBoost",
+          "value": "catBoost"
+        },
+        {
+          "label": "Industriedaten",
+          "value": "industriedaten"
+        },
+        {
+          "label": "industrielle Automatisierung",
+          "value": "industrielleAutomatisierung"
+        },
+        {
+          "label": "Algorithmusvergleich",
+          "value": "algorithmusVergleich"
+        }
+      ],
+      "title": "Verwendung von PyTorch in Industriedaten"
     },
     {
       "__outstatic": {
@@ -2768,9 +2874,9 @@
     },
     {
       "__outstatic": {
-        "commit": "9cfc94fcec4e8fddfe75fb350b572f31a7fd52bb",
-        "hash": "2188697738",
-        "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
+        "commit": "247d1bdbb80cef23a4c801f44691992b0113a4cd",
+        "hash": "3461456509",
+        "path": "outstatic/content/posts/wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -2778,10 +2884,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
-      "description": "A practical guide to using the MQTT protocol in MES and IoT systems to enhance production processes.",
-      "lang": "en",
+      "description": "Praktyczny przewodnik po wykorzystaniu protokołu MQTT w systemach MES i IoT dla usprawnienia procesów produkcyjnych.",
+      "lang": "pl",
       "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices",
+      "slug": "wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot",
       "status": "published",
       "tags": [
         {
@@ -2789,7 +2895,7 @@
           "value": "Przemysł 4.0"
         }
       ],
-      "title": "Utilization of MQTT Protocol to Enhance Connectivity Between MES Systems and IoT Devices"
+      "title": "Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami IoT"
     },
     {
       "__outstatic": {
@@ -2815,31 +2921,6 @@
         }
       ],
       "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości"
-    },
-    {
-      "__outstatic": {
-        "commit": "247d1bdbb80cef23a4c801f44691992b0113a4cd",
-        "hash": "3461456509",
-        "path": "outstatic/content/posts/wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
-      "description": "Praktyczny przewodnik po wykorzystaniu protokołu MQTT w systemach MES i IoT dla usprawnienia procesów produkcyjnych.",
-      "lang": "pl",
-      "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami IoT"
     },
     {
       "__outstatic": {
@@ -2913,56 +2994,36 @@
     },
     {
       "__outstatic": {
-        "commit": "5311808d334dac83cc2ffa58a157091244eee932",
-        "hash": "895657840",
-        "path": "outstatic/content/posts/verwendung-von-pytorch-in-industriedaten.md"
+        "commit": "0b4f26d61e5682bb7e7117db92bdc9dc99e7e211",
+        "hash": "3447936307",
+        "path": "outstatic/content/posts/wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "/images/martin.png"
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/illu_pytorch-49-Y1Nz.png",
-      "description": "Vergleich von PyTorch, TensorFlow, XGBoost, LightGBM und CatBoost in der Analyse von Industriedaten. Der Artikel behandelt den Einsatz von PyTorch zur Vorhersage von Maschinenausfällen, zur Analyse von Zeitreihendaten und vergleicht es mit anderen Tools hinsichtlich Flexibilität, Leistung und Anwendungsbereichen.",
+      "coverImage": "/images/iot_industry-Q2Mz.png",
+      "description": "Während viele Unternehmen noch Industry 4.0-Lösungen umsetzen, bringt Industry 5.0 ein neues Paradigma mit drei Säulen: Nachhaltigkeit, Resilienz und Menschzentrierung. In diesem Kontext wird die Integration von Manufacturing Execution Systems (MES) mit dem Internet of Things (IoT) zum Schlüssel der digitalen Transformation – sie automatisiert nicht nur Prozesse, sondern macht sie auch menschlicher und ökologischer.\nDer globale MES-Markt wächst von 16,57 Mrd. USD im Jahr 2025 auf 41,78 Mrd. USD im Jahr 2032, getrieben durch die steigende Nachfrage nach integrierten IoT- und KI-Lösungen.",
       "lang": "de",
-      "publishedAt": "2024-10-15T10:50:26.000Z",
-      "slug": "verwendung-von-pytorch-in-industriedaten",
+      "publishedAt": "2025-04-26T09:00:00.000Z",
+      "slug": "wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert",
       "status": "published",
       "tags": [
         {
-          "label": "PyTorch",
-          "value": "pyTorch"
+          "label": "IoT",
+          "value": "iot"
         },
         {
-          "label": "TensorFlow",
-          "value": "tensorFlow"
+          "label": "Omnimes",
+          "value": "omnimes"
         },
         {
-          "label": "XGBoost",
-          "value": "xgBoost"
-        },
-        {
-          "label": "LightGBM",
-          "value": "lightGbm"
-        },
-        {
-          "label": "CatBoost",
-          "value": "catBoost"
-        },
-        {
-          "label": "Industriedaten",
-          "value": "industriedaten"
-        },
-        {
-          "label": "industrielle Automatisierung",
-          "value": "industrielleAutomatisierung"
-        },
-        {
-          "label": "Algorithmusvergleich",
-          "value": "algorithmusVergleich"
+          "label": "Industry 5.0",
+          "value": "industry50"
         }
       ],
-      "title": "Verwendung von PyTorch in Industriedaten"
+      "title": "Wie die Integration von MES und IoT die Produktionsqualität revolutioniert und Ausfallzeiten eliminiert"
     },
     {
       "__outstatic": {
@@ -3000,6 +3061,35 @@
         }
       ],
       "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
+    },
+    {
+      "__outstatic": {
+        "commit": "23fae367c5dd14937fd292010c54ed67d8817a0c",
+        "hash": "2367025541",
+        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
+      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
+      "lang": "pl",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
     },
     {
       "__outstatic": {
@@ -3348,97 +3438,6 @@
         }
       ],
       "title": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu OZE"
-    },
-    {
-      "__outstatic": {
-        "commit": "e905771687d7e9e6f71b669a89d8ef8edd86e16b",
-        "hash": "2367025541",
-        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
-      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
-      "lang": "pl",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        }
-      ],
-      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
-    },
-    {
-      "__outstatic": {
-        "commit": "cb967f7b3b322448178c7b149886c3a0bbc51d4c",
-        "hash": "1457247774",
-        "path": "outstatic/content/posts/jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/iot_industry-c3ND.png",
-      "description": "Podczas gdy przemysł wciąż implementuje rozwiązania Industry 4.0, Industry 5.0 wprowadza nowy paradygmat oparty na trzech filarach: zrównoważoności, odporności i podejściu zorientowanym na człowieka. W tym kontekście integracja Manufacturing Execution Systems (MES) z Internet of Things (IoT) staje się kluczowym elementem transformacji cyfrowej, który nie tylko automatyzuje procesy, ale czyni je bardziej humanitarnymi i ekologicznymi.",
-      "lang": "pl",
-      "publishedAt": "2025-04-26T09:00:00.000Z",
-      "slug": "jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "IoT",
-          "value": "iot"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "industry50"
-        }
-      ],
-      "title": "Jak Integracja MES z IoT Rewolucjonizuje Jakość Produkcji i Eliminuje Przestoje"
-    },
-    {
-      "__outstatic": {
-        "commit": "5f9b39811055720eb51ecf9b9a5832f59291595d",
-        "hash": "1928730509",
-        "path": "outstatic/content/posts/wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/iot_roi_indsutry-Q1Nz.png",
-      "description": "Der weltweite IoT-Markt erreichte 2024 ein Volumen von 714,48 Milliarden USD und soll bis 2032 auf 4.062,34 Milliarden USD anwachsen (CAGR 24,3 %). Gleichzeitig wird der industrielle IoT-Markt (IIoT), bewertet mit 289 Milliarden USD im Jahr 2024, bis 2033 auf 847 Milliarden USD steigen (CAGR 12,7 %). Diese Zahlen zeigen den Übergang zur Ära Industry 5.0.",
-      "lang": "de",
-      "publishedAt": "2025-04-12T09:00:00.000Z",
-      "slug": "wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert",
-      "status": "published",
-      "tags": [
-        {
-          "label": "IoT",
-          "value": "iot"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "industry50"
-        }
-      ],
-      "title": "Wie die Integration von MES mit IoT die moderne Produktion transformiert und eine ROI von über 25 % liefert"
     }
   ]
 }
