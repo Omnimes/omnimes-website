@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes'
 description: 'In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.'
-coverImage: '/images/1_gakvquk6hb-kyzvymupmea-A3NT.png'
+coverImage: '/images/langchain_openai-M3OD.png'
 tags: ["langchain","faiss","gpt","documentation","ai-assistant"]
 lang: 'en'
 publishedAt: '2025-05-28T00:00:00.000Z'
@@ -40,8 +40,7 @@ We created a smart technical documentation assistant that:
 - Lets users ask natural language questions and receive answers from relevant document snippets
 
 See a real-world example here:\
-[Chatbot Omnimes](https://cloud.omnimes.com/askme)
-It’s powered by documentation like this one:\
+[Chatbot Omnimes](https://cloud.omnimes.com/askme) It’s powered by documentation like this one:\
 [OmniMES Documentation](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/introduction-98dAKUj3hP)
 
 ---
