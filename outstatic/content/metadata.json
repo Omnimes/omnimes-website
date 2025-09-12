@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:45:55.164Z",
+  "generated": "2025-09-12T09:46:00.488Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1835,9 +1835,9 @@
     },
     {
       "__outstatic": {
-        "commit": "ec724bd25e58e40ae2867cb3f854aff7852419d2",
-        "hash": "753716768",
-        "path": "outstatic/content/posts/optimization-of-production-efficiency-utilizing-industrial-connectivity-in-mes-systems.md"
+        "commit": "66db8453eae2f7eb64ff0184e9165bd3e9911acf",
+        "hash": "3947145922",
+        "path": "outstatic/content/posts/optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -1845,10 +1845,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
-      "description": "How industrial connectivity supports the integration of MES systems in the Industry 4.0 environment.",
-      "lang": "en",
+      "description": "Wie industrielle Kommunikation die Integration von MES-Systemen in der Industrie 4.0 unterstützt.",
+      "lang": "de",
       "publishedAt": "2025-03-19T09:00:00Z",
-      "slug": "optimization-of-production-efficiency-utilizing-industrial-connectivity-in-mes-systems",
+      "slug": "optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen",
       "status": "published",
       "tags": [
         {
@@ -1856,7 +1856,7 @@
           "value": "Przemysł 4.0"
         }
       ],
-      "title": "Optimization of Production Efficiency: Utilizing Industrial Connectivity in MES Systems"
+      "title": "Optimierung der Produktionseffizienz: Nutzung industrieller Konnektivität in MES-Systemen"
     },
     {
       "__outstatic": {
