@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:46:05.031Z",
+  "generated": "2025-09-12T09:46:08.896Z",
   "metadata": [
     {
       "__outstatic": {
@@ -888,31 +888,6 @@
         }
       ],
       "title": "Industrie 5.0: Wie KI und fortschrittliche Konnektivität die industrielle Überwachung revolutionieren"
-    },
-    {
-      "__outstatic": {
-        "commit": "b94d219ed4094dc4cd5c0db08bfdac93cccf1d96",
-        "hash": "1458161326",
-        "path": "outstatic/content/posts/increasing-production-efficiency-through-connected-factories-resource-planning-strategies.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
-      "description": "Practical approaches to optimizing resource planning in connected factories, leveraging IoT and data analytics.",
-      "lang": "en",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "increasing-production-efficiency-through-connected-factories-resource-planning-strategies",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Increasing Production Efficiency through Connected Factories: Resource Planning Strategies"
     },
     {
       "__outstatic": {
@@ -1807,6 +1782,31 @@
         }
       ],
       "title": "Practical Application of AI Assistant: Integration of OpenAI's GPT API with a Web Application for Data Analysis"
+    },
+    {
+      "__outstatic": {
+        "commit": "6c878b53eef960da989138c527874fbf0db47d23",
+        "hash": "3831170318",
+        "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
+      "description": "Jak łączność przemysłowa wspiera integrację systemów MES w środowisku Przemysłu 4.0.",
+      "lang": "pl",
+      "publishedAt": "2025-03-19T09:00:00Z",
+      "slug": "optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES"
     },
     {
       "__outstatic": {
