@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:46:19.830Z",
+  "generated": "2025-09-12T09:46:23.416Z",
   "metadata": [
     {
       "__outstatic": {
@@ -550,6 +550,31 @@
         }
       ],
       "title": "Enhancing Production Efficiency through Integrated HMI Interfaces in MES Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "ed740483956835241b5ace632fd65f1002d73d6a",
+        "hash": "2713317266",
+        "path": "outstatic/content/posts/einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
+      "description": "Wie KPI und Computer Vision die Qualitätskontrolle in intelligenten Fabriken verbessern können.",
+      "lang": "de",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Kontrola jakości"
+        }
+      ],
+      "title": "Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitätskontrolle"
     },
     {
       "__outstatic": {
@@ -2854,31 +2879,6 @@
         }
       ],
       "title": "Sparkplug B protocol with MES systems: a modern approach to failure prediction and energy optimization in industry"
-    },
-    {
-      "__outstatic": {
-        "commit": "ceb327ee5b9776abff89c2e047551c3d820b7b46",
-        "hash": "2969681877",
-        "path": "outstatic/content/posts/utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
-      "description": "How KPIs and computer vision can enhance quality control in smart factories.",
-      "lang": "en",
-      "publishedAt": "2025-02-26T09:00:00Z",
-      "slug": "utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Kontrola jakości"
-        }
-      ],
-      "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control"
     },
     {
       "__outstatic": {
