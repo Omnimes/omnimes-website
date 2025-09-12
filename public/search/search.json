@@ -21,13 +21,6 @@
     "tags": "AI, Dane czasowe, Baza wektorowa, Industry 5.0"
   },
   {
-    "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0",
-    "slug": "integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0",
-    "description": "Im Zeitalter der digitalen Transformation erreichte der globale Markt für Human-Machine-Interfaces (HMI) im Jahr 2024 einen Wert von 24,5 Milliarden USD. Bis 2033 wird ein Wachstum auf 55,2 Milliarden USD bei einer CAGR von 9,7 % erwartet. Gleichzeitig wuchs der Markt für Simulationssoftware von 19,95 Milliarden USD im Jahr 2024 auf prognostizierte 36,22 Milliarden USD bis 2030 mit einer CAGR von 10,4 %. Diese Trends verdeutlichen einen grundlegenden Wandel im Ansatz zur Optimierung von Produktionsressourcen.",
-    "lang": "de",
-    "tags": "HMI, Omnimes, MES system, Industry 5.0"
-  },
-  {
     "title": "Integration of HMI Systems with Simulation: A Strategic Foundation for Resource Optimization in Industry 5.0",
     "slug": "integration-of-hmi-systems-with-simulation-a-strategic-foundation-for-resource-optimization-in-industry-5-0",
     "description": "In the era of industrial digital transformation, the global human-machine interface (HMI) market reached USD 24.5 billion in 2024 and is projected to grow to USD 55.2 billion by 2033, with a compound annual growth rate (CAGR) of 9.7%. At the same time, the simulation software market expanded from USD 19.95 billion in 2024 to an expected USD 36.22 billion by 2030 at a CAGR of 10.4%. These dynamic trends reflect a fundamental shift in the approach to optimizing production resources.",
@@ -40,6 +33,13 @@
     "description": "W erze przemysłowej transformacji cyfrowej, globalny rynek interfejsów człowiek-maszyna (HMI) osiągnął wartość 24,5 miliarda USD w 2024 roku i przewiduje się jego wzrost do 55,2 miliarda USD do 2033 roku, przy złożonej rocznej stopie wzrostu (CAGR) 9,7%. Jednocześnie rynek oprogramowania symulacyjnego wzrósł z 19,95 miliarda USD w 2024 roku do przewidywanych 36,22 miliarda USD do 2030 roku przy CAGR 10,4%. Te dynamiczne trendy odzwierciedlają fundamentalną zmianę w podejściu do optymalizacji zasobów produkcyjnych.",
     "lang": "pl",
     "tags": "HMI, Industry 5.0, Omnimes, MES system"
+  },
+  {
+    "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0",
+    "slug": "integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0",
+    "description": "Im Zeitalter der digitalen Transformation erreichte der globale Markt für Human-Machine-Interfaces (HMI) im Jahr 2024 einen Wert von 24,5 Milliarden USD. Bis 2033 wird ein Wachstum auf 55,2 Milliarden USD bei einer CAGR von 9,7 % erwartet. Gleichzeitig wuchs der Markt für Simulationssoftware von 19,95 Milliarden USD im Jahr 2024 auf prognostizierte 36,22 Milliarden USD bis 2030 mit einer CAGR von 10,4 %. Diese Trends verdeutlichen einen grundlegenden Wandel im Ansatz zur Optimierung von Produktionsressourcen.",
+    "lang": "de",
+    "tags": "HMI, Omnimes, MES system, Industry 5.0"
   },
   {
     "title": "Sparkplug B Protokoll mit MES-Systemen: Ein moderner Ansatz zur Ausfallvorhersage und Energieoptimierung in der Industrie",
@@ -147,17 +147,17 @@
     "tags": "AI, Omnimes, Industry 5.0, OmniMES"
   },
   {
-    "title": "Industry 5.0: Jak AI i zaawansowana łączność rewolucjonizują monitorowanie przemysłowe",
-    "slug": "industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe",
-    "description": "Przemysł stoi u progu nowej rewolucji. Industry 5.0 marks an era of human-machine collaboration that prioritizes sustainability, where AI is not merely a tool but a strategic enabler for transformation. W przeciwieństwie do Industry 4.0, które koncentrowało się na automatyzacji i cyfryzacji, Industry 5.0 kładzie nacisk na współpracę człowiek-maszyna, zrównoważony rozwój oraz integrację zasad ESG (Environmental, Social, Governance) z zaawansowanymi technologiami.",
-    "lang": "pl",
-    "tags": "Industry 5.0, AI, 5G"
-  },
-  {
     "title": "Industry 5.0: How AI and Advanced Connectivity Are Revolutionizing Industrial Monitoring",
     "slug": "industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring",
     "description": "Industry is on the brink of a new revolution. Industry 5.0 marks an era of human–machine collaboration that prioritizes sustainability, where AI is not merely a tool but a strategic enabler of transformation. Unlike Industry 4.0, which focused on automation and digitalization, Industry 5.0 emphasizes human–machine collaboration, sustainable development, and the integration of ESG (Environmental, Social, Governance) principles with advanced technologies.",
     "lang": "en",
+    "tags": "Industry 5.0, AI, 5G"
+  },
+  {
+    "title": "Industry 5.0: Jak AI i zaawansowana łączność rewolucjonizują monitorowanie przemysłowe",
+    "slug": "industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe",
+    "description": "Przemysł stoi u progu nowej rewolucji. Industry 5.0 marks an era of human-machine collaboration that prioritizes sustainability, where AI is not merely a tool but a strategic enabler for transformation. W przeciwieństwie do Industry 4.0, które koncentrowało się na automatyzacji i cyfryzacji, Industry 5.0 kładzie nacisk na współpracę człowiek-maszyna, zrównoważony rozwój oraz integrację zasad ESG (Environmental, Social, Governance) z zaawansowanymi technologiami.",
+    "lang": "pl",
     "tags": "Industry 5.0, AI, 5G"
   },
   {
@@ -172,14 +172,21 @@
     "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
     "description": "In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.",
     "lang": "en",
-    "tags": ", , , , "
+    "tags": "langchain, faiss, gpt, documentation, ai-assistant"
   },
   {
     "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot",
     "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
     "description": "W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.",
     "lang": "pl",
-    "tags": ", , , , , "
+    "tags": "modeleLlm, langchainLlm, langchain, faiss, chatbot, gpt"
+  },
+  {
+    "title": "Maximierung des ROI durch OEE-Optimierung und Energiemanagement in MES/EMS-Systemen",
+    "slug": "maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen",
+    "description": "Im Zeitalter von Industry 5.0, in dem Energieeffizienz zum entscheidenden Unterscheidungsmerkmal wird, stehen produzierende Unternehmen vor beispiellosen Herausforderungen. Die neue EU-Richtlinie 2023/1791 zur Energieeffizienz verpflichtet die Mitgliedsstaaten, zwischen 2024–2030 eine durchschnittliche jährliche Energieeinsparung von 1,49 % zu erreichen. Unternehmen müssen daher ihr Energiemanagement grundlegend neu denken.",
+    "lang": "de",
+    "tags": "OEE, Omnimes, OmniEnergy, Green Energy"
   },
   {
     "title": "Maksymalizacja poprzez optymalizację OEE i zarządzanie energią w systemach MES/EMS",
@@ -194,13 +201,6 @@
     "description": "In the age of Industry 5.0, where energy efficiency becomes a key differentiator, manufacturing enterprises face unprecedented challenges. According to the new EU Directive 2023/1791 on energy efficiency, member states must achieve an average annual energy savings rate of 1.49% between 2024–2030. This means that companies must radically rethink their approach to energy management.\nA crucial tool in this transformation is the optimization of the OEE (Overall Equipment Effectiveness) index through intelligent energy management in MES-class systems. In both Industry 4.0 and 5.0, OEE plays a key role in ROI planning, reliability, and production stability.",
     "lang": "en",
     "tags": "OEE, Omnimes, Green Energy, OmniEnergy"
-  },
-  {
-    "title": "Maximierung des ROI durch OEE-Optimierung und Energiemanagement in MES/EMS-Systemen",
-    "slug": "maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen",
-    "description": "Im Zeitalter von Industry 5.0, in dem Energieeffizienz zum entscheidenden Unterscheidungsmerkmal wird, stehen produzierende Unternehmen vor beispiellosen Herausforderungen. Die neue EU-Richtlinie 2023/1791 zur Energieeffizienz verpflichtet die Mitgliedsstaaten, zwischen 2024–2030 eine durchschnittliche jährliche Energieeinsparung von 1,49 % zu erreichen. Unternehmen müssen daher ihr Energiemanagement grundlegend neu denken.",
-    "lang": "de",
-    "tags": "OEE, Omnimes, OmniEnergy, Green Energy"
   },
   {
     "title": "How MES-IoT Integration Revolutionizes Production Quality and Eliminates Downtime",
@@ -245,132 +245,6 @@
     "tags": "IoT, Industry 5.0"
   },
   {
-    "title": "Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES",
-    "slug": "optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes",
-    "description": "Jak łączność przemysłowa wspiera integrację systemów MES w środowisku Przemysłu 4.0.",
-    "lang": "pl",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Optimization of Production Efficiency: Utilizing Industrial Connectivity in MES Systems",
-    "slug": "optimization-of-production-efficiency-utilizing-industrial-connectivity-in-mes-systems",
-    "description": "How industrial connectivity supports the integration of MES systems in the Industry 4.0 environment.",
-    "lang": "en",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Optimierung der Produktionseffizienz: Nutzung industrieller Konnektivität in MES-Systemen",
-    "slug": "optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen",
-    "description": "Wie industrielle Kommunikation die Integration von MES-Systemen in der Industrie 4.0 unterstützt.",
-    "lang": "de",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Increasing Production Efficiency through Connected Factories: Resource Planning Strategies",
-    "slug": "increasing-production-efficiency-through-connected-factories-resource-planning-strategies",
-    "description": "Practical approaches to optimizing resource planning in connected factories, leveraging IoT and data analytics.",
-    "lang": "en",
-    "tags": "Temat"
-  },
-  {
-    "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien",
-    "slug": "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien",
-    "description": "Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.",
-    "lang": "de",
-    "tags": "Temat"
-  },
-  {
-    "title": "Zwiększanie efektywności produkcji poprzez połączone fabryki: strategie planowania zasobów",
-    "slug": "zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow",
-    "description": "Praktyczne podejścia do optymalizacji planowania zasobów w połączonych fabrykach, wykorzystujące IoT i analitykę danych.",
-    "lang": "pl",
-    "tags": "Temat"
-  },
-  {
-    "title": "Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitätskontrolle",
-    "slug": "einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle",
-    "description": "Wie KPI und Computer Vision die Qualitätskontrolle in intelligenten Fabriken verbessern können.",
-    "lang": "de",
-    "tags": "Temat"
-  },
-  {
-    "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control",
-    "slug": "utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control",
-    "description": "How KPIs and computer vision can enhance quality control in smart factories.",
-    "lang": "en",
-    "tags": "Temat"
-  },
-  {
-    "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości",
-    "slug": "wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci",
-    "description": "Jak KPI i wizja komputerowa mogą poprawić kontrolę jakości w inteligentnych fabrykach.",
-    "lang": "pl",
-    "tags": "Temat"
-  },
-  {
-    "title": "Enhancing Production Efficiency through AI-Based MES Systems",
-    "slug": "enhancing-production-efficiency-through-ai-based-mes-systems",
-    "description": "A practical guide to monitoring OEE in factory digitization using MES systems.",
-    "lang": "en",
-    "tags": "kategoria"
-  },
-  {
-    "title": "Steigerung der Produktionseffizienz durch KI-basierte MES-Systeme",
-    "slug": "steigerung-der-produktionseffizienz-durch-ki-basierte-mes-systeme",
-    "description": "Praktischer Leitfaden zur Überwachung von OEE in der Digitalisierung von Fabriken unter Verwendung von MES-Systemen.",
-    "lang": "de",
-    "tags": "kategoria"
-  },
-  {
-    "title": "Zwiększanie efektywności produkcji dzięki systemom MES opartym na AI",
-    "slug": "zwiekszanie-efektywnosci-produkcji-dzieki-systemom-mes-opartym-na-ai",
-    "description": "Praktyczny przewodnik po monitorowaniu OEE w cyfryzacji fabryk z wykorzystaniem systemów MES.",
-    "lang": "pl",
-    "tags": "kategoria"
-  },
-  {
-    "title": "Enhancing Production Efficiency through Integrated HMI Interfaces in MES Systems",
-    "slug": "enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems",
-    "description": "The integration of advanced HMI interfaces in MES systems enhances operational efficiency in the connected factory.",
-    "lang": "en",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Steigerung der Produktionseffizienz durch integrierte HMI-Schnittstellen in MES-Systemen",
-    "slug": "steigerung-der-produktionseffizienz-durch-integrierte-hmi-schnittstellen-in-mes-systemen",
-    "description": "Die Integration fortschrittlicher HMI-Schnittstellen in MES-Systeme verbessert die Betriebseffizienz in der vernetzten Fabrik.",
-    "lang": "de",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Zwiększanie efektywności produkcji dzięki zintegrowanym interfejsom HMI w systemach MES",
-    "slug": "zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes",
-    "description": "Integracja zaawansowanych interfejsów HMI w systemach MES poprawia efektywność operacyjną w połączonej fabryce.",
-    "lang": "pl",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Einsatz des MQTT-Protokolls zur Verbesserung der Kommunikation zwischen MES-Systemen und IoT-Geräten",
-    "slug": "einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten",
-    "description": "Praktischer Leitfaden zur Nutzung des MQTT-Protokolls in MES- und IoT-Systemen zur Optimierung von Produktionsprozessen.",
-    "lang": "de",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Utilization of MQTT Protocol to Enhance Connectivity Between MES Systems and IoT Devices",
-    "slug": "utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices",
-    "description": "A practical guide to using the MQTT protocol in MES and IoT systems to enhance production processes.",
-    "lang": "en",
-    "tags": "Kategoria"
-  },
-  {
-    "title": "Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami IoT",
-    "slug": "wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot",
-    "description": "Praktyczny przewodnik po wykorzystaniu protokołu MQTT w systemach MES i IoT dla usprawnienia procesów produkcyjnych.",
-    "lang": "pl",
-    "tags": "Kategoria"
-  },
-  {
     "title": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen",
     "slug": "der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen",
     "description": "Der Einsatz von Web3 und Blockchain-Technologie im industriellen Datenmanagement und zur Förderung erneuerbarer Energiequellen (RES). Dieser Artikel befasst sich mit der Überwachung des Energieverbrauchs, automatisierten Abrechnungen, der Tokenisierung von Energie und dem Peer-to-Peer-Handel, mit dem Schwerpunkt auf den Vorteilen von Web3 in der Industrie.",
@@ -389,7 +263,7 @@
     "slug": "zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze",
     "description": "Zastosowanie technologii Web3 i blockchain w zarządzaniu danymi przemysłowymi oraz promowaniu odnawialnych źródeł energii (OZE). Artykuł omawia monitorowanie zużycia energii, automatyczne rozliczenia, tokenizację energii oraz handel peer-to-peer, podkreślając korzyści z zastosowania Web3 w przemyśle",
     "lang": "pl",
-    "tags": "Web3, blockchain, OZE, odnawialne źródła energii, tokenizacja energii, smart kontrakty, monitorowanie zużycia energii, automatyzacja rozliczeń,  handel energią P2P, zrównoważona energetyka"
+    "tags": "Web3, blockchain, OZE, odnawialne źródła energii, tokenizacja energii, smart kontrakty, monitorowanie zużycia energii, automatyzacja rozliczeń, handel energią P2P, zrównoważona energetyka"
   },
   {
     "title": "Einsatz von InfluxDB zur industriellen Datensammlung und Vergleich mit MongoDB",
@@ -434,18 +308,18 @@
     "tags": "PyTorch, TensorFlow, XGBoost, LightGBM, CatBoost, dane przemysłowe, automatyzacja przemysłowa, porównanie algorytmów"
   },
   {
-    "title": "Collecting Data from Industrial Machines: Methods and Tools",
-    "slug": "collecting-data-from-industrial-machines-methods-and-tools",
-    "description": "An overview of two approaches for collecting industrial machine data: implementing an MES system such as OMNIMES by Multiprojekt, and using public datasets from platforms like Statista and Kaggle. Practical solutions for building predictive maintenance models.",
-    "lang": "en",
-    "tags": "industrial data collection, machine data, machine learning in industry"
-  },
-  {
     "title": "Datenerfassung aus industriellen Maschinen: Methoden und Werkzeuge",
     "slug": "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge",
     "description": "Ein Überblick über zwei Ansätze zur Datenerfassung aus industriellen Maschinen: Implementierung eines MES-Systems wie OMNIMES von Multiprojekt und Nutzung öffentlicher Datensätze von Plattformen wie Statista und Kaggle. Praktische Lösungen für den Aufbau von prädiktiven Wartungsmodellen.",
     "lang": "de",
     "tags": "industrielle Datenerfassung, Maschinendaten, maschinelles Lernen in der Industrie"
+  },
+  {
+    "title": "Collecting Data from Industrial Machines: Methods and Tools",
+    "slug": "collecting-data-from-industrial-machines-methods-and-tools",
+    "description": "An overview of two approaches for collecting industrial machine data: implementing an MES system such as OMNIMES by Multiprojekt, and using public datasets from platforms like Statista and Kaggle. Practical solutions for building predictive maintenance models.",
+    "lang": "en",
+    "tags": "industrial data collection, machine data, machine learning in industry"
   },
   {
     "title": "Zbieranie danych z rzeczywistych maszyn przemysłowych: Metody i narzędzia",
@@ -476,18 +350,18 @@
     "tags": "TensorFlow, XGBoost, LightGBM, CatBoost, MES system, wydajność algorytmów"
   },
   {
-    "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost",
-    "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
-    "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
-    "lang": "de",
-    "tags": "XGBoost, LightGBM, CatBoost, MES-Systeme, Fehlererkennung"
-  },
-  {
     "title": "Fault Detection in MES Systems Using XGBoost, LightGBM, and CatBoost",
     "slug": "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost",
     "description": "Practical application of XGBoost, LightGBM, and CatBoost algorithms in MES systems for fault detection. A description of data analysis methods, machine state classification (production, failure, planned, and unplanned downtime), and real-time notifications implementation to minimize downtime.",
     "lang": "en",
     "tags": "XGBoost, LightGBM, CatBoost, MES Systems, Fault Detection"
+  },
+  {
+    "title": "Fehlererkennung in MES-Systemen mit XGBoost, LightGBM und CatBoost",
+    "slug": "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost",
+    "description": "Praktische Anwendung der Algorithmen XGBoost, LightGBM und CatBoost in MES-Systemen zur Fehlererkennung. Beschreibung von Datenanalysemethoden, Klassifikation von Maschinenzuständen (Produktion, Ausfall, geplante und ungeplante Ausfallzeiten) und Implementierung von Echtzeitbenachrichtigungen zur Minimierung von Ausfallzeiten.",
+    "lang": "de",
+    "tags": "XGBoost, LightGBM, CatBoost, MES-Systeme, Fehlererkennung"
   },
   {
     "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost",
