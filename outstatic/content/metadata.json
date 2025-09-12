@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:47:19.321Z",
+  "generated": "2025-09-12T09:47:23.150Z",
   "metadata": [
     {
       "__outstatic": {
@@ -525,6 +525,31 @@
         }
       ],
       "title": "Einsatz von TensorFlow in MES-Systemen"
+    },
+    {
+      "__outstatic": {
+        "commit": "91854669aa1b09018ecba35c4767aabf82c29ea6",
+        "hash": "1892244825",
+        "path": "outstatic/content/posts/enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
+      "description": "The integration of advanced HMI interfaces in MES systems enhances operational efficiency in the connected factory.",
+      "lang": "en",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Enhancing Production Efficiency through Integrated HMI Interfaces in MES Systems"
     },
     {
       "__outstatic": {
@@ -2378,31 +2403,6 @@
         }
       ],
       "title": "Steigerung der Produktionseffizienz durch KI-basierte MES-Systeme"
-    },
-    {
-      "__outstatic": {
-        "commit": "2b8078c9a671b721a2f4a6bdc7b918c774215ddf",
-        "hash": "1810681863",
-        "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-integrierte-hmi-schnittstellen-in-mes-systemen.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
-      "description": "Die Integration fortschrittlicher HMI-Schnittstellen in MES-Systeme verbessert die Betriebseffizienz in der vernetzten Fabrik.",
-      "lang": "de",
-      "publishedAt": "2025-01-26T09:00:00Z",
-      "slug": "steigerung-der-produktionseffizienz-durch-integrierte-hmi-schnittstellen-in-mes-systemen",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Steigerung der Produktionseffizienz durch integrierte HMI-Schnittstellen in MES-Systemen"
     },
     {
       "__outstatic": {
