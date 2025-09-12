@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:46:50.409Z",
+  "generated": "2025-09-12T09:47:03.105Z",
   "metadata": [
     {
       "__outstatic": {
@@ -455,31 +455,6 @@
         }
       ],
       "title": "Data Visualization - The Success of Analysis. Redash"
-    },
-    {
-      "__outstatic": {
-        "commit": "05985578f300fee8e62abc648ff60a272aef7f78",
-        "hash": "1959148675",
-        "path": "outstatic/content/posts/enhancing-production-efficiency-through-ai-based-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png",
-      "description": "A practical guide to monitoring OEE in factory digitization using MES systems.",
-      "lang": "en",
-      "publishedAt": "2025-02-19T09:00:00Z",
-      "slug": "enhancing-production-efficiency-through-ai-based-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "kategoria",
-          "value": "automatyzacja przemysłowa"
-        }
-      ],
-      "title": "Enhancing Production Efficiency through AI-Based MES Systems"
     },
     {
       "__outstatic": {
@@ -2929,6 +2904,31 @@
         }
       ],
       "title": "Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami IoT"
+    },
+    {
+      "__outstatic": {
+        "commit": "de618f89f1c03ac3143715b7235ef3a1fb9b9866",
+        "hash": "3825087592",
+        "path": "outstatic/content/posts/wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
+      "description": "Jak KPI i wizja komputerowa mogą poprawić kontrolę jakości w inteligentnych fabrykach.",
+      "lang": "pl",
+      "publishedAt": "2025-02-26T09:00:00Z",
+      "slug": "wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Kontrola jakości"
+        }
+      ],
+      "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości"
     },
     {
       "__outstatic": {
