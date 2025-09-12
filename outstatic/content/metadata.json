@@ -1,6 +1,6 @@
 {
-  "commit": "3911af38f5f3ebcc9f8ba034756e248c6e5c11ba",
-  "generated": "Thu, 11 Sep 2025 18:22:55 GMT",
+  "commit": "d014635d8c1da18030846a34a9587c6badb95ca7",
+  "generated": "Fri, 12 Sep 2025 09:25:36 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -265,13 +265,13 @@
     },
     {
       "__outstatic": {
-        "commit": "ebfddfc461223ced94856de37225360bb8c96790",
-        "hash": "3863204481",
+        "commit": "cbc865cefa70012006eb473e1e1b3d9db7c0d084",
+        "hash": "1204907848",
         "path": "outstatic/content/posts/einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
@@ -458,28 +458,28 @@
     },
     {
       "__outstatic": {
-        "commit": "70a4c2be8857055d5d24c9933d2ba4bfd203f337",
-        "hash": "4087791371",
-        "path": "outstatic/content/posts/enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems.md"
+        "commit": "05985578f300fee8e62abc648ff60a272aef7f78",
+        "hash": "1959148675",
+        "path": "outstatic/content/posts/enhancing-production-efficiency-through-ai-based-mes-systems.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
-      "description": "The integration of advanced HMI interfaces in MES systems enhances operational efficiency in the connected factory.",
+      "coverImage": "/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png",
+      "description": "A practical guide to monitoring OEE in factory digitization using MES systems.",
       "lang": "en",
-      "publishedAt": "2025-01-26T09:00:00Z",
-      "slug": "enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "enhancing-production-efficiency-through-ai-based-mes-systems",
       "status": "published",
       "tags": [
         {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
+          "label": "kategoria",
+          "value": "automatyzacja przemysłowa"
         }
       ],
-      "title": "Enhancing Production Efficiency through Integrated HMI Interfaces in MES Systems"
+      "title": "Enhancing Production Efficiency through AI-Based MES Systems"
     },
     {
       "__outstatic": {
@@ -528,38 +528,38 @@
     },
     {
       "__outstatic": {
-        "commit": "dceb99ecdc739dd05c1378859a131c122758fce2",
-        "hash": "4166180674",
-        "path": "outstatic/content/posts/enhancing-production-efficiency-through-ai-based-mes-systems.md"
+        "commit": "91854669aa1b09018ecba35c4767aabf82c29ea6",
+        "hash": "1892244825",
+        "path": "outstatic/content/posts/enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png",
-      "description": "A practical guide to monitoring OEE in factory digitization using MES systems.",
+      "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
+      "description": "The integration of advanced HMI interfaces in MES systems enhances operational efficiency in the connected factory.",
       "lang": "en",
-      "publishedAt": "2025-02-19T09:00:00Z",
-      "slug": "enhancing-production-efficiency-through-ai-based-mes-systems",
+      "publishedAt": "2025-01-26T09:00:00Z",
+      "slug": "enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems",
       "status": "published",
       "tags": [
         {
-          "label": "kategoria",
-          "value": "automatyzacja przemysłowa"
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
         }
       ],
-      "title": "Enhancing Production Efficiency through AI-Based MES Systems"
+      "title": "Enhancing Production Efficiency through Integrated HMI Interfaces in MES Systems"
     },
     {
       "__outstatic": {
-        "commit": "1240054adbc258159e493cf24ee7dd12066522fc",
-        "hash": "723773427",
+        "commit": "ed740483956835241b5ace632fd65f1002d73d6a",
+        "hash": "2713317266",
         "path": "outstatic/content/posts/einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
@@ -615,13 +615,13 @@
     },
     {
       "__outstatic": {
-        "commit": "f3b8db0bc5a359f885bc177ee51a0d21eb446d8a",
-        "hash": "3955028184",
+        "commit": "ed46909ba95d85ef222b86551d24535a92a1c00b",
+        "hash": "2048811696",
         "path": "outstatic/content/posts/how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/iot_roi_indsutry-g1NT.png",
@@ -644,13 +644,13 @@
     },
     {
       "__outstatic": {
-        "commit": "54bad31ea6276dcea04737c0e477098994e9e1ef",
-        "hash": "2666126253",
+        "commit": "e7ceb95fe66069d5a691e3c683adebd5a474a6ca",
+        "hash": "1449092750",
         "path": "outstatic/content/posts/how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/iot_industry-EyOT.png",
@@ -677,13 +677,13 @@
     },
     {
       "__outstatic": {
-        "commit": "c79ebae400f040bd66ef668b940b708d33887e4b",
-        "hash": "2529703539",
+        "commit": "f1e07b64af4a7e3131e702b63f171550f151dd37",
+        "hash": "3675904413",
         "path": "outstatic/content/posts/how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/hmi2-QzNj.png",
@@ -792,13 +792,13 @@
     },
     {
       "__outstatic": {
-        "commit": "afc94d0f88a883fb0e00264912b6265cc210ab42",
-        "hash": "1210810321",
+        "commit": "ab9eed5daabc2b9cfa864327daed877df4c2918f",
+        "hash": "3537702140",
         "path": "outstatic/content/posts/industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/industry_5_0_5g-QzOD.png",
@@ -825,13 +825,13 @@
     },
     {
       "__outstatic": {
-        "commit": "47d22ff72784a3e06850293d076faa152eeefdc2",
-        "hash": "4067196614",
+        "commit": "8be5a6fd581837cce048c709ba7dcf291f433753",
+        "hash": "3244002486",
         "path": "outstatic/content/posts/industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/industry_5_0_5g-M4ND.png",
@@ -858,13 +858,13 @@
     },
     {
       "__outstatic": {
-        "commit": "1382bd246e572810ec3c630805d3065526967d12",
-        "hash": "1886017005",
+        "commit": "a6d4e284acdae69824227f8ac29d721da1e2cb66",
+        "hash": "2656634876",
         "path": "outstatic/content/posts/industrie-5-0-wie-ki-und-fortschrittliche-konnektivitat-die-industrielle-uberwachung-revolutionieren.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/industry_5_0_5g-Q0Mj.png",
@@ -891,13 +891,13 @@
     },
     {
       "__outstatic": {
-        "commit": "60163502c83a47ca690bb98365d98b76bb2f33e4",
-        "hash": "3681113375",
+        "commit": "b94d219ed4094dc4cd5c0db08bfdac93cccf1d96",
+        "hash": "1458161326",
         "path": "outstatic/content/posts/increasing-production-efficiency-through-connected-factories-resource-planning-strategies.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
@@ -916,13 +916,13 @@
     },
     {
       "__outstatic": {
-        "commit": "a617c33dbf4b79a8cd9a34e2728211b9cc4d1095",
-        "hash": "628976429",
+        "commit": "c94f95aca118e9df1c217e9b907068778ebb54ca",
+        "hash": "1869008641",
         "path": "outstatic/content/posts/how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes.md"
       },
       "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/langchain_openai-M3OD.png",
@@ -932,23 +932,38 @@
       "slug": "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes",
       "status": "published",
       "tags": [
-        "langchain",
-        "faiss",
-        "gpt",
-        "documentation",
-        "ai-assistant"
+        {
+          "label": "langchain",
+          "value": "langchain"
+        },
+        {
+          "label": "faiss",
+          "value": "faiss"
+        },
+        {
+          "label": "gpt",
+          "value": "gpt"
+        },
+        {
+          "label": "documentation",
+          "value": "documentation"
+        },
+        {
+          "label": "ai-assistant",
+          "value": "ai-assistant"
+        }
       ],
       "title": "How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot"
     },
     {
       "__outstatic": {
-        "commit": "4f0d622f9cec602c17533ac20d37997c5793f984",
-        "hash": "4000097113",
+        "commit": "e48f3dba42e57f90c36101ca2d3d83167157fb53",
+        "hash": "2648926642",
         "path": "outstatic/content/posts/intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/green_energy-U0Mj.png",
@@ -979,13 +994,13 @@
     },
     {
       "__outstatic": {
-        "commit": "75ffa7ea0a72390aa0668d3c41f84325657f19d8",
-        "hash": "3244325246",
+        "commit": "337958235a79dd0254db61d257014a740665672c",
+        "hash": "1475008716",
         "path": "outstatic/content/posts/inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/green_energy-M2NT.png",
@@ -1016,13 +1031,13 @@
     },
     {
       "__outstatic": {
-        "commit": "63daa959f11753095674b841ebe2f3acf6523812",
-        "hash": "3768857817",
+        "commit": "c49a4eeba9e46137c605cf45d356132c249a6438",
+        "hash": "3160453686",
         "path": "outstatic/content/posts/integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/2-U2MT.png",
@@ -1053,13 +1068,13 @@
     },
     {
       "__outstatic": {
-        "commit": "1b6af723c0b557b236bdb526af7c53aa70b76589",
-        "hash": "2421815258",
+        "commit": "f3adfa677b1d522052730a589a8af8fc4d162bed",
+        "hash": "3071241942",
         "path": "outstatic/content/posts/integration-of-hmi-systems-with-simulation-a-strategic-foundation-for-resource-optimization-in-industry-5-0.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/2-AzOD.png",
@@ -1090,13 +1105,13 @@
     },
     {
       "__outstatic": {
-        "commit": "0613c8664a7b89196345ccd3d46a9f2b980fced4",
-        "hash": "2667900618",
+        "commit": "fc96e10f3693c5b1855c0502531b32bbc60a96c3",
+        "hash": "1281526771",
         "path": "outstatic/content/posts/integracja-systemow-hmi-z-symulacja-strategiczny-fundament-optymalizacji-zasobow-w-przemysle-5-0.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/2-Y3Mj.png",
@@ -1127,13 +1142,13 @@
     },
     {
       "__outstatic": {
-        "commit": "63725a6c114ffb926430a2af35ecfff06bb20fe8",
-        "hash": "3588502715",
+        "commit": "1ec46bff592f6039fce81b1d9057d027e307b22c",
+        "hash": "2845986017",
         "path": "outstatic/content/posts/maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/oee_energy_mes-A3MT.png",
@@ -1164,13 +1179,13 @@
     },
     {
       "__outstatic": {
-        "commit": "f9757039ebf8d4010ada9334c3f7deaee07e2d66",
-        "hash": "189098591",
+        "commit": "3663a7ee457e73c427baf9628f0212922102c1c5",
+        "hash": "502543697",
         "path": "outstatic/content/posts/jak-zaawansowane-interfejsy-hmi-zwiekszaja-roi-w-zarzadzaniu-partiami-o-30.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/hmi2-Y3OT.png",
@@ -1197,13 +1212,13 @@
     },
     {
       "__outstatic": {
-        "commit": "12f117636abbd837f3c5c0ba1582984a758f1a8f",
-        "hash": "260438456",
+        "commit": "c7c1dd6a0e568825b5721768d62029724a13b387",
+        "hash": "2607172318",
         "path": "outstatic/content/posts/jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot.md"
       },
       "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/langchain_openai-QwND.png",
@@ -1213,24 +1228,42 @@
       "slug": "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot",
       "status": "published",
       "tags": [
-        "modeleLlm",
-        "langchainLlm",
-        "langchain",
-        "faiss",
-        "chatbot",
-        "gpt"
+        {
+          "label": "modeleLlm",
+          "value": "modeleLlm"
+        },
+        {
+          "label": "langchainLlm",
+          "value": "langchainLlm"
+        },
+        {
+          "label": "langchain",
+          "value": "langchain"
+        },
+        {
+          "label": "faiss",
+          "value": "faiss"
+        },
+        {
+          "label": "chatbot",
+          "value": "chatbot"
+        },
+        {
+          "label": "gpt",
+          "value": "gpt"
+        }
       ],
       "title": "Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot"
     },
     {
       "__outstatic": {
-        "commit": "bc2c4339efe48a167078aec2d607cce36a08d242",
-        "hash": "3625904018",
+        "commit": "f03c03cc6306cf7279066d05ce76164570ac9bed",
+        "hash": "742411173",
         "path": "outstatic/content/posts/jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/iot_roi_indsutry-MzNj.png",
@@ -1253,13 +1286,13 @@
     },
     {
       "__outstatic": {
-        "commit": "ce758992686fda8d3b58927b71dfaacb32b9bd38",
-        "hash": "1457247774",
+        "commit": "bb6baf3c35c89c71d5350eb113e868fd89d96a24",
+        "hash": "2212569325",
         "path": "outstatic/content/posts/jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/iot_industry-c3ND.png",
@@ -1286,13 +1319,13 @@
     },
     {
       "__outstatic": {
-        "commit": "13aab1d05e826546a77d62187a4d2c2ebc4ff2d1",
-        "hash": "415274787",
+        "commit": "fd2aea7e21dd625d4496dfe4116af27f8d499279",
+        "hash": "1622224187",
         "path": "outstatic/content/posts/mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/best_quality-EzOT.png",
@@ -1319,13 +1352,13 @@
     },
     {
       "__outstatic": {
-        "commit": "8b21f19c83cd95d96126e0b577ff7df701b868fa",
-        "hash": "1864387110",
+        "commit": "a43aee0888531fd909b5c65129a955c043f240af",
+        "hash": "4003993697",
         "path": "outstatic/content/posts/mes-systeme-mit-echtzeit-datenanalytik-eine-revolution-in-der-qualitatskontrolle-der-produktion.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/best_quality-QyMT.png",
@@ -1352,13 +1385,13 @@
     },
     {
       "__outstatic": {
-        "commit": "8f7835a72af0e79e8878eeddb9ce45b5dbcfe948",
-        "hash": "60529286",
+        "commit": "427d0f6adabb0a5e18ead224e0cbdf0001db51c8",
+        "hash": "164592001",
         "path": "outstatic/content/posts/maximize-roi-through-oee-optimization-and-energy-management-in-mes-ems-systems.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/oee_energy_mes-g1NT.png",
@@ -1389,13 +1422,13 @@
     },
     {
       "__outstatic": {
-        "commit": "4b826fac3c10938e3bb11378e7cde93263b5ae63",
-        "hash": "2755997994",
+        "commit": "a3df4485600437fa22d26b8b8d32b00abe6ce81d",
+        "hash": "1459652958",
         "path": "outstatic/content/posts/maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/oee_energy_mes-M5Nz.png",
@@ -1426,13 +1459,13 @@
     },
     {
       "__outstatic": {
-        "commit": "e79fc730206c9fd765ad9023cdf69f7ed7404202",
-        "hash": "550742649",
+        "commit": "9aab1fbc0911e52ac522b454245509d8967978fb",
+        "hash": "2145789598",
         "path": "outstatic/content/posts/managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp",
@@ -1777,13 +1810,13 @@
     },
     {
       "__outstatic": {
-        "commit": "99a23cf91d17a7d0af2e249e402d8d8fa91ddd5f",
-        "hash": "4265613164",
+        "commit": "6c878b53eef960da989138c527874fbf0db47d23",
+        "hash": "3831170318",
         "path": "outstatic/content/posts/optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
@@ -1802,13 +1835,13 @@
     },
     {
       "__outstatic": {
-        "commit": "880bbaa2a1074faad84fa995bc9dbfbda1727aa7",
-        "hash": "4066240606",
+        "commit": "ec724bd25e58e40ae2867cb3f854aff7852419d2",
+        "hash": "753716768",
         "path": "outstatic/content/posts/optimization-of-production-efficiency-utilizing-industrial-connectivity-in-mes-systems.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
@@ -1827,13 +1860,13 @@
     },
     {
       "__outstatic": {
-        "commit": "9e66039fcc16c3e3135ace0209c223204d0f6fbd",
-        "hash": "2961237834",
+        "commit": "66db8453eae2f7eb64ff0184e9165bd3e9911acf",
+        "hash": "3947145922",
         "path": "outstatic/content/posts/optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png",
@@ -1946,50 +1979,13 @@
     },
     {
       "__outstatic": {
-        "commit": "be62f5035bd68e6399fbdb289ad886b677650f50",
-        "hash": "2985606032",
-        "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/database-vector-c3MD.png",
-      "description": "Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
-      "lang": "pl",
-      "publishedAt": "2025-09-09T06:25:59.088Z",
-      "slug": "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "ai"
-        },
-        {
-          "label": "Dane czasowe",
-          "value": "daneCzasowe"
-        },
-        {
-          "label": "Baza wektorowa",
-          "value": "bazaWektorowa"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        }
-      ],
-      "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
-    },
-    {
-      "__outstatic": {
-        "commit": "3fedd230a5f97acb7624c92e1470b9234c5d1360",
-        "hash": "973249808",
+        "commit": "4fb5182cd7eddf9ccee21869e59876ec3915638c",
+        "hash": "961622986",
         "path": "outstatic/content/posts/praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/database-vector-UwOT.png",
@@ -2057,13 +2053,13 @@
     },
     {
       "__outstatic": {
-        "commit": "26b9bf9bf193a34325dab7681b9d9c0df97c37cc",
-        "hash": "1451375905",
+        "commit": "d3ab58d07300a69b6e0bec1fbd949f7d1e9cc778",
+        "hash": "3302366347",
         "path": "outstatic/content/posts/practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/database-vector-A5Mz.png",
@@ -2090,97 +2086,40 @@
     },
     {
       "__outstatic": {
-        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
-        "hash": "2060488888",
-        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+        "commit": "e90474a97debab487daea086316a91b839a0ebb8",
+        "hash": "2669298841",
+        "path": "outstatic/content/posts/praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych.md"
       },
       "author": {
         "name": "Martin Szerment",
         "picture": "/images/martin.png"
       },
       "collection": "posts",
-      "coverImage": "/images/3.png",
-      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
-      "lang": "en",
-      "publishedAt": "2024-06-06T08:36:29.000Z",
-      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "coverImage": "/images/database-vector-c3MD.png",
+      "description": "Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.",
+      "lang": "pl",
+      "publishedAt": "2025-09-09T06:25:59.088Z",
+      "slug": "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych",
       "status": "published",
       "tags": [
         {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
+          "label": "AI",
+          "value": "ai"
         },
         {
-          "label": "OPC UA",
-          "value": "opcUa"
+          "label": "Dane czasowe",
+          "value": "daneCzasowe"
         },
         {
-          "label": "MQTT",
-          "value": "mqtt"
+          "label": "Baza wektorowa",
+          "value": "bazaWektorowa"
         },
         {
-          "label": "Communication Protocol",
-          "value": "communicationProtocol"
-        },
-        {
-          "label": "IIoT",
-          "value": "iIoT"
-        },
-        {
-          "label": "Industrial Automation",
-          "value": "industrialAutomation"
-        },
-        {
-          "label": "Client/Server Architecture",
-          "value": "client/serverArchitecture"
-        },
-        {
-          "label": "Data Security",
-          "value": "dataSecurity"
-        },
-        {
-          "label": "Data Standardization",
-          "value": "dataStandardization"
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
         }
       ],
-      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
-    },
-    {
-      "__outstatic": {
-        "commit": "8db7dc32869f6e0aa544f7b06ab61955f3449e62",
-        "hash": "1288430160",
-        "path": "outstatic/content/posts/sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/sparkplugb_omnimes-M4Nj.png",
-      "description": "Die digitale Transformation in der Industrie erfordert fortschrittliche Kommunikationslösungen, die Interoperabilität gewährleisten und eine effiziente Nutzung von Betriebsdaten ermöglichen. Das Sparkplug-B-Protokoll, eine Erweiterung des MQTT-Standards für industrielle Anwendungen, bietet einen strukturierten Ansatz für die Kommunikation im Industrial Internet of Things (IIoT). Die Integration mit Manufacturing Execution Systems (MES) eröffnet neue Möglichkeiten für prädiktive Instandhaltung und Energieoptimierung in Produktionsprozessen.",
-      "lang": "de",
-      "publishedAt": "2025-08-26T09:00:00.000Z",
-      "slug": "sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "MES system",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Sparkplug B",
-          "value": "sparkplugB"
-        },
-        {
-          "label": "MQTT",
-          "value": "mqtt"
-        }
-      ],
-      "title": "Sparkplug B Protokoll mit MES-Systemen: Ein moderner Ansatz zur Ausfallvorhersage und Energieoptimierung in der Industrie"
+      "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
     },
     {
       "__outstatic": {
@@ -2241,13 +2180,107 @@
     },
     {
       "__outstatic": {
-        "commit": "30aecef08e118f9c05864824428fed6b52ce260c",
-        "hash": "2811654073",
+        "commit": "24dcbaafabf9074463f39bd4ecb44f786f8d577e",
+        "hash": "2060488888",
+        "path": "outstatic/content/posts/sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/3.png",
+      "description": "Comparison of Sparkplug B and OPC UA Communication Protocols in the Context of Industrial Internet of Things (IIoT) Learn about their architectures, data formats, security, and applications. Discover which protocol better meets the requirements of your industrial automation project.",
+      "lang": "en",
+      "publishedAt": "2024-06-06T08:36:29.000Z",
+      "slug": "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "OPC UA",
+          "value": "opcUa"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Communication Protocol",
+          "value": "communicationProtocol"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Industrial Automation",
+          "value": "industrialAutomation"
+        },
+        {
+          "label": "Client/Server Architecture",
+          "value": "client/serverArchitecture"
+        },
+        {
+          "label": "Data Security",
+          "value": "dataSecurity"
+        },
+        {
+          "label": "Data Standardization",
+          "value": "dataStandardization"
+        }
+      ],
+      "title": "SPARKPLUG B vs OPC UA: Comparison of Communication Protocols Part II"
+    },
+    {
+      "__outstatic": {
+        "commit": "b2aa63e17443a359820b289e8340ece4946a140e",
+        "hash": "978978080",
+        "path": "outstatic/content/posts/sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/sparkplugb_omnimes-M4Nj.png",
+      "description": "Die digitale Transformation in der Industrie erfordert fortschrittliche Kommunikationslösungen, die Interoperabilität gewährleisten und eine effiziente Nutzung von Betriebsdaten ermöglichen. Das Sparkplug-B-Protokoll, eine Erweiterung des MQTT-Standards für industrielle Anwendungen, bietet einen strukturierten Ansatz für die Kommunikation im Industrial Internet of Things (IIoT). Die Integration mit Manufacturing Execution Systems (MES) eröffnet neue Möglichkeiten für prädiktive Instandhaltung und Energieoptimierung in Produktionsprozessen.",
+      "lang": "de",
+      "publishedAt": "2025-08-26T09:00:00.000Z",
+      "slug": "sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "MES system",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        }
+      ],
+      "title": "Sparkplug B Protokoll mit MES-Systemen: Ein moderner Ansatz zur Ausfallvorhersage und Energieoptimierung in der Industrie"
+    },
+    {
+      "__outstatic": {
+        "commit": "fc498618e6a0d6dfdf7ebbdc210bad94086e7cfb",
+        "hash": "2514531143",
         "path": "outstatic/content/posts/smart-mes-in-industry-5-0-how-machine-learning-revolutionizes-continuous-improvement-in-renewable-energy.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/green_energy-M4ND.png",
@@ -2278,13 +2311,13 @@
     },
     {
       "__outstatic": {
-        "commit": "6f77661ca22e9ecd6e31c03a0cad62a2ffdcc355",
-        "hash": "2130944983",
+        "commit": "236e6373fd67c64245a7aee48a042617bf20b934",
+        "hash": "2771049789",
         "path": "outstatic/content/posts/protokol-sparkplug-b-z-systemami-klasy-mes-nowoczesne-podejscie-do-predykcji-awarii-i-optymalizacji-energetycznej-w-przemysle.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/sparkplugb_omnimes-IyOD.png",
@@ -2315,13 +2348,13 @@
     },
     {
       "__outstatic": {
-        "commit": "5fabf11976a7bff88b2f6fd276d8e9eb0bd9bde7",
-        "hash": "3225953856",
+        "commit": "ebd8b64b2681590682c4bde6f723d73cdb428a13",
+        "hash": "753328107",
         "path": "outstatic/content/posts/systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/best_quality-U5OT.png",
@@ -2348,38 +2381,13 @@
     },
     {
       "__outstatic": {
-        "commit": "79ba1bfcbc26b1cda56dc4d09b70c5c25d3e7be3",
-        "hash": "4115610436",
-        "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
-      "description": "Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.",
-      "lang": "de",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien"
-    },
-    {
-      "__outstatic": {
-        "commit": "4dfb6ff7674b48c5311139fa2a2743c859fb881f",
-        "hash": "3939662858",
+        "commit": "f51cd598953d90a41fb6217d8741a66499e3a73e",
+        "hash": "102705879",
         "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-ki-basierte-mes-systeme.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png",
@@ -2398,13 +2406,13 @@
     },
     {
       "__outstatic": {
-        "commit": "c1db8aba60ea84f93e6d0c18fff4a0fa84ab98a1",
-        "hash": "1866067156",
+        "commit": "2b8078c9a671b721a2f4a6bdc7b918c774215ddf",
+        "hash": "1810681863",
         "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-integrierte-hmi-schnittstellen-in-mes-systemen.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
@@ -2480,13 +2488,38 @@
     },
     {
       "__outstatic": {
-        "commit": "9cfc94fcec4e8fddfe75fb350b572f31a7fd52bb",
-        "hash": "2188697738",
+        "commit": "a6bc41a9a1d24152b0ec9d9272ddf23f4648f32d",
+        "hash": "2176834050",
+        "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
+      "description": "Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.",
+      "lang": "de",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien"
+    },
+    {
+      "__outstatic": {
+        "commit": "06f16787d65da4b2a43b32c43ed5f7a36134d31f",
+        "hash": "3963201739",
         "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
@@ -2701,13 +2734,13 @@
     },
     {
       "__outstatic": {
-        "commit": "b62eab066b7596dae13bbf6a2c76d32e57de0e10",
-        "hash": "1928730509",
+        "commit": "91d7a4c7a3a5a84c84960ae15a95223802879bea",
+        "hash": "1751217236",
         "path": "outstatic/content/posts/wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/iot_roi_indsutry-Q1Nz.png",
@@ -2783,13 +2816,13 @@
     },
     {
       "__outstatic": {
-        "commit": "4bf9ba41f375867efe9bfce88ae260b829b3e516",
-        "hash": "2810228359",
+        "commit": "2b5b76eca7d9169fb93b3c4125dec3128392d0cf",
+        "hash": "2281589953",
         "path": "outstatic/content/posts/verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Q3Mz.webp",
@@ -2812,13 +2845,13 @@
     },
     {
       "__outstatic": {
-        "commit": "e601ff766ed567b750c84904d7e384d38b3dba68",
-        "hash": "563552681",
+        "commit": "6aa889ff2773c61bab32996c8c722d0af721d49b",
+        "hash": "3458377506",
         "path": "outstatic/content/posts/utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/sparkplugb_omnimes-I5OT.png",
@@ -2849,13 +2882,13 @@
     },
     {
       "__outstatic": {
-        "commit": "79fb06dbfdf21ac76123431d5b795bab98c62513",
-        "hash": "3149521546",
+        "commit": "ceb327ee5b9776abff89c2e047551c3d820b7b46",
+        "hash": "2969681877",
         "path": "outstatic/content/posts/utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
@@ -2874,13 +2907,13 @@
     },
     {
       "__outstatic": {
-        "commit": "247d1bdbb80cef23a4c801f44691992b0113a4cd",
-        "hash": "3461456509",
+        "commit": "b2c59edd71c9a6e43c290d87b7028a8f539bac8f",
+        "hash": "3103567154",
         "path": "outstatic/content/posts/wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
@@ -2899,13 +2932,13 @@
     },
     {
       "__outstatic": {
-        "commit": "dce4e3224ffff6104b8e0150ac7316650bd65d39",
-        "hash": "323311496",
+        "commit": "de618f89f1c03ac3143715b7235ef3a1fb9b9866",
+        "hash": "3825087592",
         "path": "outstatic/content/posts/wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png",
@@ -2921,6 +2954,39 @@
         }
       ],
       "title": "Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jakości"
+    },
+    {
+      "__outstatic": {
+        "commit": "eb0c307a14241596a08fd999a53d1b5e6db8c437",
+        "hash": "8482045",
+        "path": "outstatic/content/posts/wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/hmi2-M4NT.png",
+      "description": "Der polnische Markt für Bedienpanels und HMI-Systeme hat ein Volumen von ca. 120 Millionen PLN pro Jahr. Nur 15% der Fabriken sind jedoch vollständig automatisiert – ein enormes Potenzial für Unternehmen, die bereit sind, in moderne Technologien für das Chargenmanagement zu investieren.",
+      "lang": "de",
+      "publishedAt": "2025-07-12T09:00:00.000Z",
+      "slug": "wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern",
+      "status": "published",
+      "tags": [
+        {
+          "label": "HMI",
+          "value": "hmi"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "ROI",
+          "value": "roi"
+        }
+      ],
+      "title": "Wie fortschrittliche HMI-Schnittstellen den ROI im Chargenmanagement um 30% steigern"
     },
     {
       "__outstatic": {
@@ -2961,46 +3027,13 @@
     },
     {
       "__outstatic": {
-        "commit": "920825452372a0a315460e422a731d566c842bbb",
-        "hash": "2749119947",
-        "path": "outstatic/content/posts/wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/hmi2-M4NT.png",
-      "description": "Der polnische Markt für Bedienpanels und HMI-Systeme hat ein Volumen von ca. 120 Millionen PLN pro Jahr. Nur 15% der Fabriken sind jedoch vollständig automatisiert – ein enormes Potenzial für Unternehmen, die bereit sind, in moderne Technologien für das Chargenmanagement zu investieren.",
-      "lang": "de",
-      "publishedAt": "2025-07-12T09:00:00.000Z",
-      "slug": "wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern",
-      "status": "published",
-      "tags": [
-        {
-          "label": "HMI",
-          "value": "hmi"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "ROI",
-          "value": "roi"
-        }
-      ],
-      "title": "Wie fortschrittliche HMI-Schnittstellen den ROI im Chargenmanagement um 30% steigern"
-    },
-    {
-      "__outstatic": {
-        "commit": "0b4f26d61e5682bb7e7117db92bdc9dc99e7e211",
-        "hash": "3447936307",
+        "commit": "f283ab17bbdc3d1bdda899e5ec10615181079518",
+        "hash": "3124707744",
         "path": "outstatic/content/posts/wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/iot_industry-Q2Mz.png",
@@ -3064,37 +3097,8 @@
     },
     {
       "__outstatic": {
-        "commit": "23fae367c5dd14937fd292010c54ed67d8817a0c",
-        "hash": "2367025541",
-        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
-      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
-      "lang": "pl",
-      "publishedAt": "2025-08-12T09:00:00.000Z",
-      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        },
-        {
-          "label": "Data Analysis",
-          "value": "dataAnalysis"
-        }
-      ],
-      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
-    },
-    {
-      "__outstatic": {
-        "commit": "9d5a4a53a6d9efecea3e30b6b43895989ac4b062",
-        "hash": "1222761488",
+        "commit": "6197e29c52101bb0d753d5a479301ab03f518599",
+        "hash": "2940249498",
         "path": "outstatic/content/posts/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost.md"
       },
       "author": {
@@ -3123,7 +3127,7 @@
         },
         {
           "label": "AI",
-          "value": "ai "
+          "value": "ai"
         },
         {
           "label": "MES system",
@@ -3167,7 +3171,7 @@
         },
         {
           "label": "redukcja przestojów produkcyjnych",
-          "value": "redukcjaPrzestojówProdukcyjnych "
+          "value": "redukcjaPrzestojówProdukcyjnych"
         }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
@@ -3216,6 +3220,35 @@
         }
       ],
       "title": "Wykorzystanie TensorFlow w systemach MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "2f574ba37f247b0db36a53e2303e5890a901667c",
+        "hash": "3793897641",
+        "path": "outstatic/content/posts/zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp",
+      "description": "Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.",
+      "lang": "pl",
+      "publishedAt": "2025-08-12T09:00:00.000Z",
+      "slug": "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Data Analysis",
+          "value": "dataAnalysis"
+        }
+      ],
+      "title": "Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji"
     },
     {
       "__outstatic": {
@@ -3272,38 +3305,13 @@
     },
     {
       "__outstatic": {
-        "commit": "b1cf2ab5c19eec6c40e7666b021fbf629d051695",
-        "hash": "4058421130",
-        "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
-      "description": "Praktyczne podejścia do optymalizacji planowania zasobów w połączonych fabrykach, wykorzystujące IoT i analitykę danych.",
-      "lang": "pl",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Zwiększanie efektywności produkcji poprzez połączone fabryki: strategie planowania zasobów"
-    },
-    {
-      "__outstatic": {
-        "commit": "dd63e1d8923fbebe83234180b6f6856fe90224d8",
-        "hash": "596416091",
+        "commit": "db004b1dc841b98b7065d91f46704ef9d971bb64",
+        "hash": "120786754",
         "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
@@ -3322,13 +3330,38 @@
     },
     {
       "__outstatic": {
-        "commit": "bb9bfc83c4b3c7dca974932167abf64b03ce9754",
-        "hash": "609914239",
+        "commit": "ce739ebbb30777da5171160e1034aa322720b26b",
+        "hash": "1697095780",
+        "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
+      "description": "Praktyczne podejścia do optymalizacji planowania zasobów w połączonych fabrykach, wykorzystujące IoT i analitykę danych.",
+      "lang": "pl",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Zwiększanie efektywności produkcji poprzez połączone fabryki: strategie planowania zasobów"
+    },
+    {
+      "__outstatic": {
+        "commit": "5db359c8b61db8d6f4edf13b5e9229dcd0a8ace0",
+        "hash": "3144303349",
         "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-dzieki-systemom-mes-opartym-na-ai.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "picture": "/images/martin.png"
       },
       "collection": "posts",
       "coverImage": "/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png",
@@ -3380,8 +3413,8 @@
     },
     {
       "__outstatic": {
-        "commit": "af62a3d622490c7060cfee2aba1dd6817629b840",
-        "hash": "3806788972",
+        "commit": "fd7394774727a74f7cab60d53794e086fc344bcc",
+        "hash": "2046359693",
         "path": "outstatic/content/posts/zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze.md"
       },
       "author": {
@@ -3429,7 +3462,7 @@
           "value": "automatyzacjaRozliczeń"
         },
         {
-          "label": " handel energią P2P",
+          "label": "handel energią P2P",
           "value": "handelEnergiąP2P"
         },
         {
