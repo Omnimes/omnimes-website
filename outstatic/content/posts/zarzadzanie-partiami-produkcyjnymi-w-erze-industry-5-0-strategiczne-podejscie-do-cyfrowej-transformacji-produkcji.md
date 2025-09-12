@@ -1,17 +1,24 @@
 ---
-title: 'Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście do cyfrowej transformacji produkcji'
-status: 'published'
+title: 'Zarządzanie partiami produkcyjnymi w erze Industry 5.0: Strategiczne podejście
+  do cyfrowej transformacji produkcji'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji'
-description: 'Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.'
-coverImage: '/images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp'
-tags: [{"value":"omnimes","label":"Omnimes"},{"value":"dataAnalysis","label":"Data Analysis"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji
+description: Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania
+  partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System)
+  w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50%
+  i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.
+coverImage: /images/chatgpt-image-may-9-2025-04_06_02-pm-Y1Mj.webp
+tags:
+- value: omnimes
+  label: Omnimes
+- value: dataAnalysis
+  label: Data Analysis
+lang: pl
 publishedAt: '2025-08-12T09:00:00.000Z'
 ---
-
 Cyfrowa transformacja produkcji wymaga strategicznego podejścia do zarządzania partiami produkcyjnymi. Wykorzystanie systemów MES (Manufacturing Execution System) w połączeniu z technologiami Industry 5.0 może przynieść redukcję przestojów o 50% i obniżenie kosztów utrzymania o 40%, zgodnie z najnowszymi badaniami Deloitte.
 
 ## Kontekst rynkowy i znaczenie ekonomiczne

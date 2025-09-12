@@ -3,9 +3,10 @@ title: Zwiększanie efektywności produkcji dzięki systemom MES opartym na AI
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: zwiekszanie-efektywnosci-produkcji-dzieki-systemom-mes-opartym-na-ai
-description: Praktyczny przewodnik po monitorowaniu OEE w cyfryzacji fabryk z wykorzystaniem systemów MES.
+description: Praktyczny przewodnik po monitorowaniu OEE w cyfryzacji fabryk z wykorzystaniem
+  systemów MES.
 coverImage: /images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png
 tags:
 - label: kategoria

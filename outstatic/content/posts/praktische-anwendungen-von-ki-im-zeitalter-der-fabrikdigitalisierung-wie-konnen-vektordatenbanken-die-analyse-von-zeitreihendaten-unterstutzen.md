@@ -1,17 +1,26 @@
 ---
-title: 'Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?'
-status: 'published'
+title: 'Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie
+  können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen'
-description: 'Industrie 5.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.'
-coverImage: '/images/database-vector-UwOT.png'
-lang: 'de'
-tags: [{"value":"databaseVector","label":"Database Vector"},{"value":"llmModels","label":"LLM Models"},{"value":"Industry 5.0","label":"Industry 5.0"}]
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen
+description: Industrie 5.0 bedeutet nicht nur Automatisierung, sondern vor allem intelligente
+  Datennutzung. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die
+  Herausforderung liegt nicht im Sammeln, sondern in der Echtzeitanalyse und Nutzung.
+  Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.
+coverImage: /images/database-vector-UwOT.png
+lang: de
+tags:
+- value: databaseVector
+  label: Database Vector
+- value: llmModels
+  label: LLM Models
+- value: Industry 5.0
+  label: Industry 5.0
 publishedAt: '2025-09-09T07:07:00.286Z'
 ---
-
 ### Einführung
 
 Industrie 5.0 bedeutet nicht nur Automatisierung, sondern vor allem **intelligente Datennutzung**. Mit IoT und MES erzeugt jede Maschine kontinuierlich Signale. Die Herausforderung liegt nicht im Sammeln, sondern in der **Echtzeitanalyse und Nutzung**. Vektordatenbanken und KI spielen dabei eine Schlüsselrolle.

@@ -1,17 +1,30 @@
 ---
-title: 'Maksymalizacja poprzez optymalizację OEE i zarządzanie energią w systemach MES/EMS'
-status: 'published'
+title: Maksymalizacja poprzez optymalizację OEE i zarządzanie energią w systemach
+  MES/EMS
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems'
-description: 'W dobie Industry 5.0, gdzie efektywność energetyczna staje się kluczowym wyróżnikiem, przedsiębiorstwa produkcyjne stoją przed bezprecedensowym wyzwaniem. Zgodnie z nową dyrektywą UE 2023/1791 w sprawie efektywności energetycznej, kraje członkowskie muszą osiągnąć średni roczny wskaźnik oszczędności energii w wysokości 1,49% w latach 2024-2030, co oznacza, że firmy muszą radykalnie przemyśleć swoje podejście do zarządzania energią.'
-coverImage: '/images/oee_energy_mes-A3MT.png'
-tags: [{"value":"OEE","label":"OEE"},{"value":"omnimes","label":"Omnimes"},{"value":"greenEnergy","label":"Green Energy"},{"label":"OmniEnergy","value":"omniEnergy"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems
+description: W dobie Industry 5.0, gdzie efektywność energetyczna staje się kluczowym
+  wyróżnikiem, przedsiębiorstwa produkcyjne stoją przed bezprecedensowym wyzwaniem.
+  Zgodnie z nową dyrektywą UE 2023/1791 w sprawie efektywności energetycznej, kraje
+  członkowskie muszą osiągnąć średni roczny wskaźnik oszczędności energii w wysokości
+  1,49% w latach 2024-2030, co oznacza, że firmy muszą radykalnie przemyśleć swoje
+  podejście do zarządzania energią.
+coverImage: /images/oee_energy_mes-A3MT.png
+tags:
+- value: OEE
+  label: OEE
+- value: omnimes
+  label: Omnimes
+- value: greenEnergy
+  label: Green Energy
+- label: OmniEnergy
+  value: omniEnergy
+lang: pl
 publishedAt: '2025-05-05T09:00:00.000Z'
 ---
-
 ## Wprowadzenie: Era inteligentnego zarządzania energią
 
 W dobie Industry 5.0, gdzie efektywność energetyczna staje się kluczowym wyróżnikiem, przedsiębiorstwa produkcyjne stoją przed bezprecedensowym wyzwaniem. Zgodnie z nową dyrektywą UE 2023/1791 w sprawie efektywności energetycznej, kraje członkowskie muszą osiągnąć średni roczny wskaźnik oszczędności energii w wysokości 1,49% w latach 2024-2030, co oznacza, że firmy muszą radykalnie przemyśleć swoje podejście do zarządzania energią.

@@ -1,11 +1,13 @@
 ---
-title: 'Optimierung der Produktionseffizienz: Nutzung industrieller Konnektivität in MES-Systemen'
+title: 'Optimierung der Produktionseffizienz: Nutzung industrieller Konnektivität
+  in MES-Systemen'
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen
-description: Wie industrielle Kommunikation die Integration von MES-Systemen in der Industrie 4.0 unterstützt.
+description: Wie industrielle Kommunikation die Integration von MES-Systemen in der
+  Industrie 4.0 unterstützt.
 coverImage: /images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png
 tags:
 - label: Kategoria

@@ -1,17 +1,26 @@
 ---
-title: 'How the Integration of MES with IoT Transforms Modern Manufacturing and Delivers ROI Above 25%'
-status: 'published'
+title: How the Integration of MES with IoT Transforms Modern Manufacturing and Delivers
+  ROI Above 25%
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25'
-description: 'The global Internet of Things (IoT) market reached USD 714.48 billion in 2024 and is projected to grow to USD 4,062.34 billion by 2032, representing a CAGR of 24.3%. At the same time, the Industrial IoT (IIoT), valued at USD 289 billion in 2024, is expected to reach USD 847 billion by 2033 with a CAGR of 12.7%. These impressive figures reflect a fundamental shift in modern industry toward Industry 5.0.'
-coverImage: '/images/iot_roi_indsutry-g1NT.png'
-tags: [{"value":"iot","label":"IoT"},{"value":"industry50","label":"Industry 5.0"}]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25
+description: The global Internet of Things (IoT) market reached USD 714.48 billion
+  in 2024 and is projected to grow to USD 4,062.34 billion by 2032, representing a
+  CAGR of 24.3%. At the same time, the Industrial IoT (IIoT), valued at USD 289 billion
+  in 2024, is expected to reach USD 847 billion by 2033 with a CAGR of 12.7%. These
+  impressive figures reflect a fundamental shift in modern industry toward Industry
+  5.0.
+coverImage: /images/iot_roi_indsutry-g1NT.png
+tags:
+- value: iot
+  label: IoT
+- value: industry50
+  label: Industry 5.0
+lang: en
 publishedAt: '2025-04-12T09:00:00.000Z'
 ---
-
 ### Introduction: The Era of Human-Machine Collaboration in Industry
 
 The global Internet of Things (IoT) market reached USD 714.48 billion in 2024 and is projected to grow to USD 4,062.34 billion by 2032, representing a CAGR of 24.3%. At the same time, the Industrial IoT (IIoT), valued at USD 289 billion in 2024, is expected to reach USD 847 billion by 2033 with a CAGR of 12.7%. These impressive figures reflect a fundamental shift in modern industry toward Industry 5.0.

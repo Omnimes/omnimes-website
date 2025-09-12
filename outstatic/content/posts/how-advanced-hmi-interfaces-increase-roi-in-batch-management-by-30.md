@@ -1,17 +1,24 @@
 ---
-title: 'How Advanced HMI Interfaces Increase ROI in Batch Management by 30%'
-status: 'published'
+title: How Advanced HMI Interfaces Increase ROI in Batch Management by 30%
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30'
-description: 'The Polish market for operator panels and HMI systems is worth ~PLN 120 million annually. Yet, only 15% of factories in Poland are fully automated, highlighting vast potential for companies ready to invest in modern batch management technologies.'
-coverImage: '/images/hmi2-QzNj.png'
-tags: [{"value":"hmi","label":"HMI"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"roi","label":"ROI"}]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30
+description: The Polish market for operator panels and HMI systems is worth ~PLN 120
+  million annually. Yet, only 15% of factories in Poland are fully automated, highlighting
+  vast potential for companies ready to invest in modern batch management technologies.
+coverImage: /images/hmi2-QzNj.png
+tags:
+- value: hmi
+  label: HMI
+- value: Industry 5.0
+  label: Industry 5.0
+- value: roi
+  label: ROI
+lang: en
 publishedAt: '2025-07-12T09:00:00.000Z'
 ---
-
 ### Key Benefits in Numbers
 
 - 88% of Polish companies confirm that adopting Industry 5.0 technologies boosts market competitiveness.

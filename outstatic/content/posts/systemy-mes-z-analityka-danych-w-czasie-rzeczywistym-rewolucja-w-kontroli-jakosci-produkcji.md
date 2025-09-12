@@ -1,17 +1,27 @@
 ---
-title: 'Systemy MES z analityką danych w czasie rzeczywistym: Rewolucja w kontroli jakości produkcji'
-status: 'published'
+title: 'Systemy MES z analityką danych w czasie rzeczywistym: Rewolucja w kontroli
+  jakości produkcji'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji'
-description: 'Współczesny przemysł znajduje się w centrum cyfrowej transformacji, gdzie systemy MES (Manufacturing Execution Systems) z analityką danych w czasie rzeczywistym stanowią fundament Przemysłu 5.0. Według raportu McKinsey Global Institute z 2023 roku, przedsiębiorstwa wdrażające zaawansowaną analitykę w procesach produkcyjnych osiągają średnio 15-20% wzrost wydajności i 25% redukcję defektów.'
-coverImage: '/images/best_quality-U5OT.png'
-tags: [{"value":"omnimess","label":"OmniMES"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"quality","label":"Quality"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji
+description: Współczesny przemysł znajduje się w centrum cyfrowej transformacji, gdzie
+  systemy MES (Manufacturing Execution Systems) z analityką danych w czasie rzeczywistym
+  stanowią fundament Przemysłu 5.0. Według raportu McKinsey Global Institute z 2023
+  roku, przedsiębiorstwa wdrażające zaawansowaną analitykę w procesach produkcyjnych
+  osiągają średnio 15-20% wzrost wydajności i 25% redukcję defektów.
+coverImage: /images/best_quality-U5OT.png
+tags:
+- value: omnimess
+  label: OmniMES
+- value: Industry 5.0
+  label: Industry 5.0
+- value: quality
+  label: Quality
+lang: pl
 publishedAt: '2025-07-26T09:00:00.000Z'
 ---
-
 Współczesny przemysł znajduje się w centrum cyfrowej transformacji, gdzie **systemy MES** (Manufacturing Execution Systems) z **analityką danych w czasie rzeczywistym** stanowią fundament **Przemysłu 5.0**. Według raportu McKinsey Global Institute z 2023 roku, przedsiębiorstwa wdrażające zaawansowaną analitykę w procesach produkcyjnych osiągają średnio 15-20% wzrost wydajności i 25% redukcję defektów.
 
 ## Czym są systemy MES w kontekście Industry 5.0?

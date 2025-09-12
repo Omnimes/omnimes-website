@@ -3,9 +3,10 @@ title: Enhancing Production Efficiency through AI-Based MES Systems
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: enhancing-production-efficiency-through-ai-based-mes-systems
-description: A practical guide to monitoring OEE in factory digitization using MES systems.
+description: A practical guide to monitoring OEE in factory digitization using MES
+  systems.
 coverImage: /images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png
 tags:
 - label: kategoria

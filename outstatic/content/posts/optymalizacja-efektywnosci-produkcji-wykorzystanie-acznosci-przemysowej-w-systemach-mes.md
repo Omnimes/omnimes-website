@@ -1,11 +1,13 @@
 ---
-title: 'Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej w systemach MES'
+title: 'Optymalizacja efektywności produkcji: Wykorzystanie łączności przemysłowej
+  w systemach MES'
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes
-description: Jak łączność przemysłowa wspiera integrację systemów MES w środowisku Przemysłu 4.0.
+description: Jak łączność przemysłowa wspiera integrację systemów MES w środowisku
+  Przemysłu 4.0.
 coverImage: /images/optimizing-production-efficiency-leveraging-industrial-connectivity-for-seamless-integration-of-mes-systems-in-industry-.png
 tags:
 - label: Kategoria

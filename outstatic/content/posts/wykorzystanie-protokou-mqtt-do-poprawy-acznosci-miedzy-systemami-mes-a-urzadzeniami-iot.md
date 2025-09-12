@@ -1,11 +1,13 @@
 ---
-title: Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami IoT
+title: Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami
+  IoT
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot
-description: Praktyczny przewodnik po wykorzystaniu protokołu MQTT w systemach MES i IoT dla usprawnienia procesów produkcyjnych.
+description: Praktyczny przewodnik po wykorzystaniu protokołu MQTT w systemach MES
+  i IoT dla usprawnienia procesów produkcyjnych.
 coverImage: /images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png
 tags:
 - label: Kategoria

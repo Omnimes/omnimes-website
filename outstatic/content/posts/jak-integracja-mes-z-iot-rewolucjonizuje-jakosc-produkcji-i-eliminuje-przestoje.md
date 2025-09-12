@@ -1,17 +1,27 @@
 ---
-title: 'Jak Integracja MES z IoT Rewolucjonizuje Jakość Produkcji i Eliminuje Przestoje'
-status: 'published'
+title: Jak Integracja MES z IoT Rewolucjonizuje Jakość Produkcji i Eliminuje Przestoje
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje'
-description: 'Podczas gdy przemysł wciąż implementuje rozwiązania Industry 4.0, Industry 5.0 wprowadza nowy paradygmat oparty na trzech filarach: zrównoważoności, odporności i podejściu zorientowanym na człowieka. W tym kontekście integracja Manufacturing Execution Systems (MES) z Internet of Things (IoT) staje się kluczowym elementem transformacji cyfrowej, który nie tylko automatyzuje procesy, ale czyni je bardziej humanitarnymi i ekologicznymi.'
-coverImage: '/images/iot_industry-c3ND.png'
-tags: [{"value":"omnimes","label":"Omnimes"},{"value":"iot","label":"IoT"},{"value":"industry50","label":"Industry 5.0"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje
+description: 'Podczas gdy przemysł wciąż implementuje rozwiązania Industry 4.0, Industry
+  5.0 wprowadza nowy paradygmat oparty na trzech filarach: zrównoważoności, odporności
+  i podejściu zorientowanym na człowieka. W tym kontekście integracja Manufacturing
+  Execution Systems (MES) z Internet of Things (IoT) staje się kluczowym elementem
+  transformacji cyfrowej, który nie tylko automatyzuje procesy, ale czyni je bardziej
+  humanitarnymi i ekologicznymi.'
+coverImage: /images/iot_industry-c3ND.png
+tags:
+- value: omnimes
+  label: Omnimes
+- value: iot
+  label: IoT
+- value: industry50
+  label: Industry 5.0
+lang: pl
 publishedAt: '2025-04-26T09:00:00.000Z'
 ---
-
 Rynek systemów MES rośnie w tempie 14,1% rocznie, osiągając wartość 41,78 mld USD do 2032 roku, a Industry 5.0 stawia człowieka w centrum produkcji, łącząc zrównoważoność z zaawansowanymi technologiami. Integracja MES z IoT w erze Industry 5.0 to nie tylko trend – to konieczność dla firm chcących zachować konkurencyjność.
 
 ## Wprowadzenie: Era Industry 5.0 w Produkcji

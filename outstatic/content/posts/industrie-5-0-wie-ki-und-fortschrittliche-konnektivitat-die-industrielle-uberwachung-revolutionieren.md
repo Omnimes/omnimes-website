@@ -1,17 +1,29 @@
 ---
-title: 'Industrie 5.0: Wie KI und fortschrittliche Konnektivität die industrielle Überwachung revolutionieren'
-status: 'published'
+title: 'Industrie 5.0: Wie KI und fortschrittliche Konnektivität die industrielle
+  Überwachung revolutionieren'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'industrie-5-0-wie-ki-und-fortschrittliche-konnektivitat-die-industrielle-uberwachung-revolutionieren'
-description: 'Die Industrie steht an der Schwelle zu einer neuen Revolution. Industrie 5.0 markiert eine Ära der Mensch-Maschine-Zusammenarbeit, die Nachhaltigkeit in den Mittelpunkt stellt, wobei KI nicht nur ein Werkzeug, sondern ein strategischer Enabler der Transformation ist. Im Gegensatz zu Industrie 4.0, das sich auf Automatisierung und Digitalisierung konzentrierte, betont Industrie 5.0 nachhaltige Entwicklung und die Integration von ESG-Prinzipien (Environmental, Social, Governance) mit modernsten Technologien.'
-coverImage: '/images/industry_5_0_5g-Q0Mj.png'
-tags: [{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"ai","label":"AI"},{"value":"5G","label":"5G"}]
-lang: 'de'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: industrie-5-0-wie-ki-und-fortschrittliche-konnektivitat-die-industrielle-uberwachung-revolutionieren
+description: Die Industrie steht an der Schwelle zu einer neuen Revolution. Industrie
+  5.0 markiert eine Ära der Mensch-Maschine-Zusammenarbeit, die Nachhaltigkeit in
+  den Mittelpunkt stellt, wobei KI nicht nur ein Werkzeug, sondern ein strategischer
+  Enabler der Transformation ist. Im Gegensatz zu Industrie 4.0, das sich auf Automatisierung
+  und Digitalisierung konzentrierte, betont Industrie 5.0 nachhaltige Entwicklung
+  und die Integration von ESG-Prinzipien (Environmental, Social, Governance) mit modernsten
+  Technologien.
+coverImage: /images/industry_5_0_5g-Q0Mj.png
+tags:
+- value: Industry 5.0
+  label: Industry 5.0
+- value: ai
+  label: AI
+- value: 5G
+  label: 5G
+lang: de
 publishedAt: '2025-06-12T09:00:00.000Z'
 ---
-
 ### Einführung in das Zeitalter der Industrie 5.0
 
 Die Industrie steht an der Schwelle zu einer neuen Revolution. **Industrie 5.0** markiert eine Ära der **Mensch-Maschine-Zusammenarbeit**, die Nachhaltigkeit in den Mittelpunkt stellt, wobei KI nicht nur ein Werkzeug, sondern ein **strategischer Enabler der Transformation** ist. Im Gegensatz zu **Industrie 4.0**, das sich auf Automatisierung und Digitalisierung konzentrierte, betont Industrie 5.0 nachhaltige Entwicklung und die Integration von **ESG-Prinzipien (Environmental, Social, Governance)** mit modernsten Technologien.

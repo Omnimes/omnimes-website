@@ -1,0 +1,1610 @@
+{
+  "collecting-data-from-industrial-machines-methods-and-tools": [
+    {
+      "label": "industrial data collection",
+      "value": "industrial-data-collection"
+    },
+    {
+      "label": "machine data",
+      "value": "machine-data"
+    },
+    {
+      "label": "machine learning in industry",
+      "value": "machine-learning-in-industry"
+    }
+  ],
+  "data-visualization-the-success-of-analysis-redash": [
+    {
+      "label": "redash",
+      "value": "redash"
+    },
+    {
+      "label": "Data Visualization",
+      "value": "dataVisualization"
+    },
+    {
+      "label": "big data",
+      "value": "bigData"
+    },
+    {
+      "label": "Reports",
+      "value": "reports"
+    }
+  ],
+  "datenerfassung-aus-industriellen-maschinen-methoden-und-werkzeuge": [
+    {
+      "label": "industrielle Datenerfassung",
+      "value": "industrielle-datenerfassung"
+    },
+    {
+      "label": "Maschinendaten",
+      "value": "maschinendaten"
+    },
+    {
+      "label": "maschinelles Lernen in der Industrie",
+      "value": "maschinelles-lernen-in-der-industrie"
+    }
+  ],
+  "datenvisualisierung-der-erfolg-der-analyse-redash": [
+    {
+      "label": "redash",
+      "value": "redash"
+    },
+    {
+      "label": "Datenvisualisierung",
+      "value": "datenvisualisierung"
+    },
+    {
+      "label": "big data",
+      "value": "bigData"
+    },
+    {
+      "label": "Berichte",
+      "value": "berichte"
+    }
+  ],
+  "der-einsatz-von-web3-und-blockchain-technologie-im-industriellen-datenmanagement-und-zur-foerderung-erneuerbarer-energiequellen": [
+    {
+      "label": "Web3",
+      "value": "web3"
+    },
+    {
+      "label": "Blockchain",
+      "value": "blockchain"
+    },
+    {
+      "label": "RES",
+      "value": "res"
+    },
+    {
+      "label": "Erneuerbare Energiequellen",
+      "value": "renewableEnergySources"
+    },
+    {
+      "label": "Energietokenisierung",
+      "value": "energyTokenization"
+    },
+    {
+      "label": "Smart Contracts",
+      "value": "smartContracts"
+    },
+    {
+      "label": "Energieverbrauchsüberwachung",
+      "value": "energyConsumptionMonitoring"
+    },
+    {
+      "label": "Automatisierte Abrechnungen",
+      "value": "automatedSettlements"
+    },
+    {
+      "label": "P2P-Energiehandel",
+      "value": "p2pEnergyTrading"
+    },
+    {
+      "label": "Nachhaltige Energie",
+      "value": "sustainableEnergy"
+    }
+  ],
+  "einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "einsatz-von-influxdb-zur-industriellen-datensammlung-und-vergleich-mit-mongodb": [
+    {
+      "label": "InfluxDB",
+      "value": "influxDb"
+    },
+    {
+      "label": "MongoDB",
+      "value": "mongoDb"
+    },
+    {
+      "label": "Zeitreihendaten",
+      "value": "timeSeriesData"
+    },
+    {
+      "label": "Zeitreihendatenanalyse",
+      "value": "timeSeriesDataAnalysis"
+    }
+  ],
+  "einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle": [
+    {
+      "label": "Temat",
+      "value": "Kontrola jakości"
+    }
+  ],
+  "einsatz-von-tensorflow-in-mes-systemen": [
+    {
+      "label": "TensorFlow",
+      "value": "tensorFlow"
+    },
+    {
+      "label": "XGBoost",
+      "value": "xgBoost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightGbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catBoost"
+    },
+    {
+      "label": "MES-System",
+      "value": "mesSystem"
+    },
+    {
+      "label": "Algorithmusleistung",
+      "value": "algorithmusLeistung"
+    }
+  ],
+  "enhancing-production-efficiency-through-ai-based-mes-systems": [
+    {
+      "label": "kategoria",
+      "value": "automatyzacja przemysłowa"
+    }
+  ],
+  "enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost": [
+    {
+      "label": "XGBoost",
+      "value": "xgboost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightgbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catboost"
+    },
+    {
+      "label": "MES Systems",
+      "value": "mes-systems"
+    },
+    {
+      "label": "Fault Detection",
+      "value": "fault-detection"
+    }
+  ],
+  "fehlererkennung-in-mes-systemen-mit-xgboost-lightgbm-catboost": [
+    {
+      "label": "XGBoost",
+      "value": "xgboost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightgbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catboost"
+    },
+    {
+      "label": "MES-Systeme",
+      "value": "mes-systeme"
+    },
+    {
+      "label": "Fehlererkennung",
+      "value": "fehlererkennung"
+    }
+  ],
+  "how-advanced-hmi-interfaces-increase-roi-in-batch-management-by-30": [
+    {
+      "label": "HMI",
+      "value": "hmi"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "ROI",
+      "value": "roi"
+    }
+  ],
+  "how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime": [
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "IoT",
+      "value": "iot"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "industry50"
+    }
+  ],
+  "how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25": [
+    {
+      "label": "IoT",
+      "value": "iot"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "industry50"
+    }
+  ],
+  "how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes": [
+    {
+      "label": "langchain",
+      "value": "langchain"
+    },
+    {
+      "label": "faiss",
+      "value": "faiss"
+    },
+    {
+      "label": "gpt",
+      "value": "gpt"
+    },
+    {
+      "label": "documentation",
+      "value": "documentation"
+    },
+    {
+      "label": "ai-assistant",
+      "value": "ai-assistant"
+    }
+  ],
+  "increasing-production-efficiency-through-connected-factories-resource-planning-strategies": [
+    {
+      "label": "Temat",
+      "value": "Produkcja"
+    }
+  ],
+  "industrie-5-0-wie-ki-und-fortschrittliche-konnektivitat-die-industrielle-uberwachung-revolutionieren": [
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "5G",
+      "value": "5G"
+    }
+  ],
+  "industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring": [
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "5G",
+      "value": "5G"
+    }
+  ],
+  "industry-5-0-jak-ai-i-zaawansowana-lacznosc-rewolucjonizuja-monitorowanie-przemyslowe": [
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "5G",
+      "value": "5G"
+    }
+  ],
+  "integracja-systemow-hmi-z-symulacja-strategiczny-fundament-optymalizacji-zasobow-w-przemysle-5-0": [
+    {
+      "label": "HMI",
+      "value": "hmi"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    }
+  ],
+  "integration-of-hmi-systems-with-simulation-a-strategic-foundation-for-resource-optimization-in-industry-5-0": [
+    {
+      "label": "HMI",
+      "value": "hmi"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    }
+  ],
+  "integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0": [
+    {
+      "label": "HMI",
+      "value": "hmi"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    }
+  ],
+  "inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "Green Energy",
+      "value": "greenEnergy"
+    }
+  ],
+  "intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Green Energy",
+      "value": "greenEnergy"
+    }
+  ],
+  "jak-integracja-mes-z-iot-rewolucjonizuje-jakosc-produkcji-i-eliminuje-przestoje": [
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "IoT",
+      "value": "iot"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "industry50"
+    }
+  ],
+  "jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25": [
+    {
+      "label": "IoT",
+      "value": "iot"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "industry50"
+    }
+  ],
+  "jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot": [
+    {
+      "label": "modeleLlm",
+      "value": "modeleLlm"
+    },
+    {
+      "label": "langchainLlm",
+      "value": "langchainLlm"
+    },
+    {
+      "label": "langchain",
+      "value": "langchain"
+    },
+    {
+      "label": "faiss",
+      "value": "faiss"
+    },
+    {
+      "label": "chatbot",
+      "value": "chatbot"
+    },
+    {
+      "label": "gpt",
+      "value": "gpt"
+    }
+  ],
+  "jak-zaawansowane-interfejsy-hmi-zwiekszaja-roi-w-zarzadzaniu-partiami-o-30": [
+    {
+      "label": "HMI",
+      "value": "hmi"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "ROI",
+      "value": "roi"
+    }
+  ],
+  "maksymalizacja-poprzez-optymalizacje-oee-i-zarzadzanie-energia-w-systemach-mes-ems": [
+    {
+      "label": "OEE",
+      "value": "OEE"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Green Energy",
+      "value": "greenEnergy"
+    },
+    {
+      "label": "OmniEnergy",
+      "value": "omniEnergy"
+    }
+  ],
+  "managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing": [
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Data Analysis",
+      "value": "dataAnalysis"
+    }
+  ],
+  "maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen": [
+    {
+      "label": "OEE",
+      "value": "OEE"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "OmniEnergy",
+      "value": "omniEnergy"
+    },
+    {
+      "label": "Green Energy",
+      "value": "greenEnergy"
+    }
+  ],
+  "maximize-roi-through-oee-optimization-and-energy-management-in-mes-ems-systems": [
+    {
+      "label": "OEE",
+      "value": "OEE"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Green Energy",
+      "value": "greenEnergy"
+    },
+    {
+      "label": "OmniEnergy",
+      "value": "omniEnergy"
+    }
+  ],
+  "mes-systeme-mit-echtzeit-datenanalytik-eine-revolution-in-der-qualitatskontrolle-der-produktion": [
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Quality",
+      "value": "quality"
+    }
+  ],
+  "mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control": [
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Quality",
+      "value": "quality"
+    }
+  ],
+  "mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i": [
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    },
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "Communication Protocol",
+      "value": "communicationProtocol"
+    },
+    {
+      "label": "QoS",
+      "value": "qoS"
+    },
+    {
+      "label": "IIoT",
+      "value": "iIoT"
+    },
+    {
+      "label": "IoT Communication",
+      "value": "ioTCommunication"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Industry 4.0",
+      "value": "industry40"
+    },
+    {
+      "label": "Communication Standards",
+      "value": "communicationStandards"
+    }
+  ],
+  "mqtt-vs-sparkplug-b-porownanie-protokolow-komunikacyjnych-cz-i": [
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    },
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "Protokół komunikacyjny",
+      "value": "protokółKomunikacyjny"
+    },
+    {
+      "label": "QoS",
+      "value": "qoS"
+    },
+    {
+      "label": "IIoT",
+      "value": "iIoT"
+    },
+    {
+      "label": "Komunikacja IoT",
+      "value": "komunikacjaIoT"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Przemysł 4.0",
+      "value": "przemysł40"
+    },
+    {
+      "label": "Standardy komunikacyjne",
+      "value": "standardyKomunikacyjne"
+    }
+  ],
+  "mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i": [
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    },
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "QoS",
+      "value": "qoS"
+    },
+    {
+      "label": "IIoT",
+      "value": "iIoT"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Industry 4.0",
+      "value": "industry40"
+    },
+    {
+      "label": "Kommunikationsprotokoll",
+      "value": "kommunikationsprotokoll"
+    },
+    {
+      "label": "IoT-Kommunikation",
+      "value": "ioTKommunikation"
+    },
+    {
+      "label": "Kommunikationsstandards",
+      "value": "kommunikationsstandards"
+    }
+  ],
+  "ollama-czyli-praktyczne-wykorzystanie-lokalnych-modeli-ai-na-przykladzie-systemu-omnimes": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Ollama",
+      "value": "ollama"
+    },
+    {
+      "label": "llama3",
+      "value": "llama3"
+    },
+    {
+      "label": "Meta",
+      "value": "meta"
+    },
+    {
+      "label": "Gemma",
+      "value": "gemma"
+    },
+    {
+      "label": "Mistral",
+      "value": "mistral"
+    },
+    {
+      "label": "GPT-4",
+      "value": "gpt4"
+    },
+    {
+      "label": "GPT-3.5",
+      "value": "gpt35"
+    },
+    {
+      "label": "AI local",
+      "value": "aiLocal"
+    }
+  ],
+  "ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "AI local",
+      "value": "aiLocal"
+    },
+    {
+      "label": "llama3",
+      "value": "llama3"
+    },
+    {
+      "label": "Meta",
+      "value": "meta"
+    },
+    {
+      "label": "Gemma",
+      "value": "gemma"
+    },
+    {
+      "label": "Mistral",
+      "value": "mistral"
+    },
+    {
+      "label": "GPT-4",
+      "value": "gpt4"
+    },
+    {
+      "label": "GPT-3.5",
+      "value": "gpt35"
+    }
+  ],
+  "ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "AI local",
+      "value": "aiLocal"
+    },
+    {
+      "label": "llama3",
+      "value": "llama3"
+    },
+    {
+      "label": "Meta",
+      "value": "meta"
+    },
+    {
+      "label": "Gemma",
+      "value": "gemma"
+    },
+    {
+      "label": "Mistral",
+      "value": "mistral"
+    },
+    {
+      "label": "GPT-4",
+      "value": "gpt4"
+    },
+    {
+      "label": "GPT-3.5",
+      "value": "gpt35"
+    }
+  ],
+  "optimierung-der-produktionseffizienz-nutzung-industrieller-konnektivitat-in-mes-systemen": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "optimization-of-production-efficiency-utilizing-industrial-connectivity-in-mes-systems": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "optymalizacja-efektywnosci-produkcji-wykorzystanie-acznosci-przemysowej-w-systemach-mes": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Data Analysis",
+      "value": "dataAnalysis"
+    },
+    {
+      "label": "Data Security",
+      "value": "dataSecurity"
+    },
+    {
+      "label": "GPT-4 API",
+      "value": "gpt4Api"
+    },
+    {
+      "label": "LLM Models",
+      "value": "llmModels"
+    }
+  ],
+  "practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis": [
+    {
+      "label": "Database Vector",
+      "value": "databaseVector"
+    },
+    {
+      "label": "LLM Models",
+      "value": "llmModels"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    }
+  ],
+  "praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Datenanalyse",
+      "value": "datenanalyse"
+    },
+    {
+      "label": "Datensicherheit",
+      "value": "datensicherheit"
+    },
+    {
+      "label": "API GPT-4",
+      "value": "apiGpt4"
+    },
+    {
+      "label": "LLM-Modelle",
+      "value": "llmModelle"
+    }
+  ],
+  "praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen": [
+    {
+      "label": "Database Vector",
+      "value": "databaseVector"
+    },
+    {
+      "label": "LLM Models",
+      "value": "llmModels"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    }
+  ],
+  "praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Dane czasowe",
+      "value": "daneCzasowe"
+    },
+    {
+      "label": "Baza wektorowa",
+      "value": "bazaWektorowa"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    }
+  ],
+  "praktyczne-zastosowanie-aystenta-ai-integracja-api-gpt-4-z-aplikacja-webowa-do-analizy-danych": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Modele LLM",
+      "value": "modeleLlm"
+    },
+    {
+      "label": "API GPT-4",
+      "value": "apiGpt4"
+    },
+    {
+      "label": "analiza danych",
+      "value": "analizaDanych"
+    },
+    {
+      "label": "Bezpieczeństwo danych",
+      "value": "bezpieczeństwoDanych"
+    }
+  ],
+  "protokol-sparkplug-b-z-systemami-klasy-mes-nowoczesne-podejscie-do-predykcji-awarii-i-optymalizacji-energetycznej-w-przemysle": [
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    },
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    }
+  ],
+  "smart-mes-in-industry-5-0-how-machine-learning-revolutionizes-continuous-improvement-in-renewable-energy": [
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "OmniMES",
+      "value": "omnimess"
+    }
+  ],
+  "sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie": [
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    },
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    }
+  ],
+  "sparkplug-b-vs-opc-ua-comparison-of-communication-protocols-part-ii": [
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "OPC UA",
+      "value": "opcUa"
+    },
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    },
+    {
+      "label": "Communication Protocol",
+      "value": "communicationProtocol"
+    },
+    {
+      "label": "IIoT",
+      "value": "iIoT"
+    },
+    {
+      "label": "Industrial Automation",
+      "value": "industrialAutomation"
+    },
+    {
+      "label": "Client/Server Architecture",
+      "value": "client/serverArchitecture"
+    },
+    {
+      "label": "Data Security",
+      "value": "dataSecurity"
+    },
+    {
+      "label": "Data Standardization",
+      "value": "dataStandardization"
+    }
+  ],
+  "sparkplug-b-vs-opc-ua-porownanie-protokolow-komunikacyjnych-cz-ii": [
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "OPC UA",
+      "value": "opcUa"
+    },
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    },
+    {
+      "label": "Protokół komunikacyjny",
+      "value": "protokółKomunikacyjny"
+    },
+    {
+      "label": "IIoT",
+      "value": "iIoT"
+    },
+    {
+      "label": "Automatyka przemysłowa",
+      "value": "automatykaPrzemysłowa"
+    },
+    {
+      "label": "Architektura klient/serwer",
+      "value": "architekturaKlient/serwer"
+    },
+    {
+      "label": "Bezpieczeństwo danych",
+      "value": "bezpieczeństwoDanych"
+    },
+    {
+      "label": "Standaryzacja danych",
+      "value": "standaryzacjaDanych"
+    }
+  ],
+  "sparkplug-b-vs-opc-ua-vergleich-der-kommunikationsprotokolle-teil-ii": [
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "OPC UA",
+      "value": "opcUa"
+    },
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    },
+    {
+      "label": "Kommunikationsprotokoll",
+      "value": "kommunikationsprotokoll"
+    },
+    {
+      "label": "IIoT",
+      "value": "iIoT"
+    },
+    {
+      "label": "Industrielle Automatisierung",
+      "value": "industrielleAutomatisierung"
+    },
+    {
+      "label": "Client/Server-Architektur",
+      "value": "client/serverArchitektur"
+    },
+    {
+      "label": "Datensicherheit",
+      "value": "datensicherheit"
+    },
+    {
+      "label": "Datenstandardisierung",
+      "value": "datenstandardisierung"
+    }
+  ],
+  "steigerung-der-produktionseffizienz-durch-integrierte-hmi-schnittstellen-in-mes-systemen": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "steigerung-der-produktionseffizienz-durch-ki-basierte-mes-systeme": [
+    {
+      "label": "kategoria",
+      "value": "automatyzacja przemysłowa"
+    }
+  ],
+  "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien": [
+    {
+      "label": "Temat",
+      "value": "Produkcja"
+    }
+  ],
+  "systemy-mes-z-analityka-danych-w-czasie-rzeczywistym-rewolucja-w-kontroli-jakosci-produkcji": [
+    {
+      "label": "OmniMES",
+      "value": "omnimess"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "Quality",
+      "value": "quality"
+    }
+  ],
+  "the-use-of-web3-and-blockchain-technology-in-industrial-data-management-and-promoting-renewable-energy-sources": [
+    {
+      "label": "Web3",
+      "value": "web3"
+    },
+    {
+      "label": "blockchain",
+      "value": "blockchain"
+    },
+    {
+      "label": "RES",
+      "value": "res"
+    },
+    {
+      "label": "renewable energy sources",
+      "value": "renewableEnergySources"
+    },
+    {
+      "label": "energy tokenization",
+      "value": "energyTokenization"
+    },
+    {
+      "label": "smart contracts",
+      "value": "smartContracts"
+    },
+    {
+      "label": "energy consumption monitoring",
+      "value": "energyConsumptionMonitoring"
+    },
+    {
+      "label": "automated settlements",
+      "value": "automatedSettlements"
+    },
+    {
+      "label": "P2P energy trading",
+      "value": "p2pEnergyTrading"
+    },
+    {
+      "label": "sustainable energy",
+      "value": "sustainableEnergy"
+    }
+  ],
+  "using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb": [
+    {
+      "label": "InfluxDB",
+      "value": "influxDb"
+    },
+    {
+      "label": "MongoDB",
+      "value": "mongoDb"
+    },
+    {
+      "label": "time-series data",
+      "value": "timeSeriesData"
+    },
+    {
+      "label": "time-series data analysis",
+      "value": "timeSeriesDataAnalysis"
+    }
+  ],
+  "using-pytorch-in-industrial-data": [
+    {
+      "label": "PyTorch",
+      "value": "pyTorch"
+    },
+    {
+      "label": "TensorFlow",
+      "value": "tensorFlow"
+    },
+    {
+      "label": "XGBoost",
+      "value": "xgBoost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightGbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catBoost"
+    },
+    {
+      "label": "industrial data",
+      "value": "industrialData"
+    },
+    {
+      "label": "industrial automation",
+      "value": "industrialAutomation"
+    },
+    {
+      "label": "algorithm comparison",
+      "value": "algorithmComparison"
+    }
+  ],
+  "using-tensorflow-in-mes-systems": [
+    {
+      "label": "TensorFlow",
+      "value": "tensorFlow"
+    },
+    {
+      "label": "XGBoost",
+      "value": "xgBoost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightGbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catBoost"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    },
+    {
+      "label": "algorithm performance",
+      "value": "algorithmPerformance"
+    }
+  ],
+  "utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "utilization-of-production-kpis-and-computer-vision-analytics-in-quality-control": [
+    {
+      "label": "Temat",
+      "value": "Kontrola jakości"
+    }
+  ],
+  "utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol": [
+    {
+      "label": "MQTT",
+      "value": "mqtt"
+    },
+    {
+      "label": "Sparkplug B",
+      "value": "sparkplugB"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    }
+  ],
+  "verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung": [
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Data Analysis",
+      "value": "dataAnalysis"
+    }
+  ],
+  "verwendung-von-pytorch-in-industriedaten": [
+    {
+      "label": "PyTorch",
+      "value": "pyTorch"
+    },
+    {
+      "label": "TensorFlow",
+      "value": "tensorFlow"
+    },
+    {
+      "label": "XGBoost",
+      "value": "xgBoost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightGbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catBoost"
+    },
+    {
+      "label": "Industriedaten",
+      "value": "industriedaten"
+    },
+    {
+      "label": "industrielle Automatisierung",
+      "value": "industrielleAutomatisierung"
+    },
+    {
+      "label": "Algorithmusvergleich",
+      "value": "algorithmusVergleich"
+    }
+  ],
+  "wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert": [
+    {
+      "label": "IoT",
+      "value": "iot"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "industry50"
+    }
+  ],
+  "wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert": [
+    {
+      "label": "IoT",
+      "value": "iot"
+    },
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "industry50"
+    }
+  ],
+  "wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern": [
+    {
+      "label": "HMI",
+      "value": "hmi"
+    },
+    {
+      "label": "Industry 5.0",
+      "value": "Industry 5.0"
+    },
+    {
+      "label": "ROI",
+      "value": "roi"
+    }
+  ],
+  "wizualizacja-danych-sukcesem-analizy-redash": [
+    {
+      "label": "redash",
+      "value": "redash"
+    },
+    {
+      "label": "wizualziacja danych",
+      "value": "wizualziacjaDanych"
+    },
+    {
+      "label": "big data",
+      "value": "bigData"
+    },
+    {
+      "label": "raporty",
+      "value": "raporty"
+    }
+  ],
+  "wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci": [
+    {
+      "label": "Temat",
+      "value": "Kontrola jakości"
+    }
+  ],
+  "wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "wykorzystanie-pytorch-w-danych-przemyslowych": [
+    {
+      "label": "PyTorch",
+      "value": "pyTorch"
+    },
+    {
+      "label": "TensorFlow",
+      "value": "tensorFlow"
+    },
+    {
+      "label": "XGBoost",
+      "value": "xgBoost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightGbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catBoost"
+    },
+    {
+      "label": "dane przemysłowe",
+      "value": "danePrzemysłowe"
+    },
+    {
+      "label": "automatyzacja przemysłowa",
+      "value": "automatyzacjaPrzemysłowa"
+    },
+    {
+      "label": "porównanie algorytmów",
+      "value": "porównanieAlgorytmów"
+    }
+  ],
+  "wykorzystanie-tensorflow-w-systemach-mes": [
+    {
+      "label": "TensorFlow",
+      "value": "tensorFlow"
+    },
+    {
+      "label": "XGBoost",
+      "value": "xgBoost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightGbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catBoost"
+    },
+    {
+      "label": "MES system",
+      "value": "mesSystem"
+    },
+    {
+      "label": "wydajność algorytmów",
+      "value": "wydajnośćAlgorytmów"
+    }
+  ],
+  "wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost": [
+    {
+      "label": "XGBoost",
+      "value": "xgboost"
+    },
+    {
+      "label": "LightGBM",
+      "value": "lightgbm"
+    },
+    {
+      "label": "CatBoost",
+      "value": "catboost"
+    },
+    {
+      "label": "AI",
+      "value": "ai"
+    },
+    {
+      "label": "MES system",
+      "value": "messystem"
+    },
+    {
+      "label": "wykrywanie awarii",
+      "value": "wykrywanieAwarii"
+    },
+    {
+      "label": "analiza danych w przemyśle",
+      "value": "analizaDanychWPrzemyśle"
+    },
+    {
+      "label": "uczenie maszynowe w MES",
+      "value": "uczenieMaszynoweWMES"
+    },
+    {
+      "label": "klasyfikacja stanów maszyn",
+      "value": "klasyfikacjaStanówMaszyn"
+    },
+    {
+      "label": "automatyzacja przemysłowa",
+      "value": "automatyzacjaPrzemysłowa"
+    },
+    {
+      "label": "powiadomienia w czasie rzeczywistym",
+      "value": "powiadomieniaWCzasieRzeczywistym"
+    },
+    {
+      "label": "gradient boosting w przemyśle",
+      "value": "gradientBoostingWPrzemyśle"
+    },
+    {
+      "label": "algorytmy uczenia maszynowego",
+      "value": "algorytmyUczeniaMaszynowego"
+    },
+    {
+      "label": "systemy produkcyjne MES",
+      "value": "systemyProdukcyjneMES"
+    },
+    {
+      "label": "redukcja przestojów produkcyjnych",
+      "value": "redukcjaPrzestojówProdukcyjnych"
+    }
+  ],
+  "zarzadzanie-partiami-produkcyjnymi-w-erze-industry-5-0-strategiczne-podejscie-do-cyfrowej-transformacji-produkcji": [
+    {
+      "label": "Omnimes",
+      "value": "omnimes"
+    },
+    {
+      "label": "Data Analysis",
+      "value": "dataAnalysis"
+    }
+  ],
+  "zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb": [
+    {
+      "label": "InfluxDB",
+      "value": "influxDb"
+    },
+    {
+      "label": "MongoDB",
+      "value": "mongoDb"
+    },
+    {
+      "label": "time-series data",
+      "value": "timeSeriesData"
+    },
+    {
+      "label": "analiza danych czasowych",
+      "value": "analizaDanychCzasowych"
+    }
+  ],
+  "zastosowanie-technologii-web3-i-blockchain-w-zarzadzaniu-danymi-przemyslowymi-oraz-promowaniu-oze": [
+    {
+      "label": "Web3",
+      "value": "web3"
+    },
+    {
+      "label": "blockchain",
+      "value": "blockchain"
+    },
+    {
+      "label": "OZE",
+      "value": "oze"
+    },
+    {
+      "label": "odnawialne źródła energii",
+      "value": "odnawialneŹródłaEnergii"
+    },
+    {
+      "label": "tokenizacja energii",
+      "value": "tokenizacjaEnergii"
+    },
+    {
+      "label": "smart kontrakty",
+      "value": "smartKontrakty"
+    },
+    {
+      "label": "monitorowanie zużycia energii",
+      "value": "monitorowanieZużyciaEnergii"
+    },
+    {
+      "label": "automatyzacja rozliczeń",
+      "value": "automatyzacjaRozliczeń"
+    },
+    {
+      "label": "handel energią P2P",
+      "value": "handelEnergiąP2P"
+    },
+    {
+      "label": "zrównoważona energetyka",
+      "value": "zrównoważonaEnergetyka"
+    }
+  ],
+  "zbieranie-danych-z-rzeczywistych-maszyn-przemyslowych-metody-i-narzedzia": [
+    {
+      "label": "zbieranie danych przemysłowych",
+      "value": "zbieranieDanychPrzemysłowych"
+    },
+    {
+      "label": "dane z maszyn",
+      "value": "daneZMaszyn"
+    },
+    {
+      "label": "uczenie maszynowe w przemyśle",
+      "value": "uczenieMaszynoweWPrzemyśle"
+    }
+  ],
+  "zwiekszanie-efektywnosci-produkcji-dzieki-systemom-mes-opartym-na-ai": [
+    {
+      "label": "kategoria",
+      "value": "automatyzacja przemysłowa"
+    }
+  ],
+  "zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes": [
+    {
+      "label": "Kategoria",
+      "value": "Przemysł 4.0"
+    }
+  ],
+  "zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow": [
+    {
+      "label": "Temat",
+      "value": "Produkcja"
+    }
+  ]
+}

@@ -1,17 +1,25 @@
 ---
-title: 'Wie die Integration von MES mit IoT die moderne Produktion transformiert und eine ROI von über 25 % liefert'
-status: 'published'
+title: Wie die Integration von MES mit IoT die moderne Produktion transformiert und
+  eine ROI von über 25 % liefert
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert'
-description: 'Der weltweite IoT-Markt erreichte 2024 ein Volumen von 714,48 Milliarden USD und soll bis 2032 auf 4.062,34 Milliarden USD anwachsen (CAGR 24,3 %). Gleichzeitig wird der industrielle IoT-Markt (IIoT), bewertet mit 289 Milliarden USD im Jahr 2024, bis 2033 auf 847 Milliarden USD steigen (CAGR 12,7 %). Diese Zahlen zeigen den Übergang zur Ära Industry 5.0.'
-coverImage: '/images/iot_roi_indsutry-Q1Nz.png'
-tags: [{"value":"iot","label":"IoT"},{"value":"industry50","label":"Industry 5.0"}]
-lang: 'de'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert
+description: Der weltweite IoT-Markt erreichte 2024 ein Volumen von 714,48 Milliarden
+  USD und soll bis 2032 auf 4.062,34 Milliarden USD anwachsen (CAGR 24,3 %). Gleichzeitig
+  wird der industrielle IoT-Markt (IIoT), bewertet mit 289 Milliarden USD im Jahr
+  2024, bis 2033 auf 847 Milliarden USD steigen (CAGR 12,7 %). Diese Zahlen zeigen
+  den Übergang zur Ära Industry 5.0.
+coverImage: /images/iot_roi_indsutry-Q1Nz.png
+tags:
+- value: iot
+  label: IoT
+- value: industry50
+  label: Industry 5.0
+lang: de
 publishedAt: '2025-04-12T09:00:00.000Z'
 ---
-
 ### Einführung: Das Zeitalter der Mensch-Maschine-Zusammenarbeit in der Industrie
 
 Der weltweite IoT-Markt erreichte 2024 ein Volumen von 714,48 Milliarden USD und soll bis 2032 auf 4.062,34 Milliarden USD anwachsen (CAGR 24,3 %). Gleichzeitig wird der industrielle IoT-Markt (IIoT), bewertet mit 289 Milliarden USD im Jahr 2024, bis 2033 auf 847 Milliarden USD steigen (CAGR 12,7 %). Diese Zahlen zeigen den Übergang zur Ära Industry 5.0.

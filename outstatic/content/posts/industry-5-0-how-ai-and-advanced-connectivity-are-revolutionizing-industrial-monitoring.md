@@ -1,17 +1,28 @@
 ---
-title: 'Industry 5.0: How AI and Advanced Connectivity Are Revolutionizing Industrial Monitoring'
-status: 'published'
+title: 'Industry 5.0: How AI and Advanced Connectivity Are Revolutionizing Industrial
+  Monitoring'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring'
-description: 'Industry is on the brink of a new revolution. Industry 5.0 marks an era of human–machine collaboration that prioritizes sustainability, where AI is not merely a tool but a strategic enabler of transformation. Unlike Industry 4.0, which focused on automation and digitalization, Industry 5.0 emphasizes human–machine collaboration, sustainable development, and the integration of ESG (Environmental, Social, Governance) principles with advanced technologies.'
-coverImage: '/images/industry_5_0_5g-M4ND.png'
-tags: [{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"ai","label":"AI"},{"value":"5G","label":"5G"}]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring
+description: Industry is on the brink of a new revolution. Industry 5.0 marks an era
+  of human–machine collaboration that prioritizes sustainability, where AI is not
+  merely a tool but a strategic enabler of transformation. Unlike Industry 4.0, which
+  focused on automation and digitalization, Industry 5.0 emphasizes human–machine
+  collaboration, sustainable development, and the integration of ESG (Environmental,
+  Social, Governance) principles with advanced technologies.
+coverImage: /images/industry_5_0_5g-M4ND.png
+tags:
+- value: Industry 5.0
+  label: Industry 5.0
+- value: ai
+  label: AI
+- value: 5G
+  label: 5G
+lang: en
 publishedAt: '2025-06-12T09:00:00.000Z'
 ---
-
 ### Introduction to the Era of Industry 5.0
 
 Industry is on the brink of a new revolution. **Industry 5.0** marks an era of human–machine collaboration that prioritizes sustainability, where AI is not merely a tool but a strategic enabler of transformation. Unlike **Industry 4.0**, which focused on automation and digitalization, Industry 5.0 emphasizes human–machine collaboration, sustainable development, and the integration of **ESG (Environmental, Social, Governance)** principles with advanced technologies.

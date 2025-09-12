@@ -1,11 +1,13 @@
 ---
-title: Einsatz des MQTT-Protokolls zur Verbesserung der Kommunikation zwischen MES-Systemen und IoT-Geräten
+title: Einsatz des MQTT-Protokolls zur Verbesserung der Kommunikation zwischen MES-Systemen
+  und IoT-Geräten
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: einsatz-des-mqtt-protokolls-zur-verbesserung-der-kommunikation-zwischen-mes-systemen-und-iot-geraten
-description: Praktischer Leitfaden zur Nutzung des MQTT-Protokolls in MES- und IoT-Systemen zur Optimierung von Produktionsprozessen.
+description: Praktischer Leitfaden zur Nutzung des MQTT-Protokolls in MES- und IoT-Systemen
+  zur Optimierung von Produktionsprozessen.
 coverImage: /images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png
 tags:
 - label: Kategoria

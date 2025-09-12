@@ -1,19 +1,32 @@
 ---
-title: 'Wie die Integration von MES und IoT die Produktionsqualität revolutioniert und Ausfallzeiten eliminiert'
-status: 'published'
+title: Wie die Integration von MES und IoT die Produktionsqualität revolutioniert
+  und Ausfallzeiten eliminiert
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert'
-description: 'Während viele Unternehmen noch Industry 4.0-Lösungen umsetzen, bringt Industry 5.0 ein neues Paradigma mit drei Säulen: Nachhaltigkeit, Resilienz und Menschzentrierung. In diesem Kontext wird die Integration von Manufacturing Execution Systems (MES) mit dem Internet of Things (IoT) zum Schlüssel der digitalen Transformation – sie automatisiert nicht nur Prozesse, sondern macht sie auch menschlicher und ökologischer.
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert
+description: 'Während viele Unternehmen noch Industry 4.0-Lösungen umsetzen, bringt
+  Industry 5.0 ein neues Paradigma mit drei Säulen: Nachhaltigkeit, Resilienz und
+  Menschzentrierung. In diesem Kontext wird die Integration von Manufacturing Execution
+  Systems (MES) mit dem Internet of Things (IoT) zum Schlüssel der digitalen Transformation
+  – sie automatisiert nicht nur Prozesse, sondern macht sie auch menschlicher und
+  ökologischer.
 
-Der globale MES-Markt wächst von 16,57 Mrd. USD im Jahr 2025 auf 41,78 Mrd. USD im Jahr 2032, getrieben durch die steigende Nachfrage nach integrierten IoT- und KI-Lösungen.'
-coverImage: '/images/iot_industry-Q2Mz.png'
-tags: [{"value":"iot","label":"IoT"},{"value":"omnimes","label":"Omnimes"},{"value":"industry50","label":"Industry 5.0"}]
-lang: 'de'
+  Der globale MES-Markt wächst von 16,57 Mrd. USD im Jahr 2025 auf 41,78 Mrd. USD
+  im Jahr 2032, getrieben durch die steigende Nachfrage nach integrierten IoT- und
+  KI-Lösungen.'
+coverImage: /images/iot_industry-Q2Mz.png
+tags:
+- value: iot
+  label: IoT
+- value: omnimes
+  label: Omnimes
+- value: industry50
+  label: Industry 5.0
+lang: de
 publishedAt: '2025-04-26T09:00:00.000Z'
 ---
-
 Der MES-Markt wächst jährlich um 14,1 % und erreicht bis 2032 einen Wert von 41,78 Mrd. USD. Industry 5.0 stellt den Menschen ins Zentrum der Produktion und verbindet Nachhaltigkeit mit modernsten Technologien. Die Integration von MES und IoT in der Ära von Industry 5.0 ist nicht nur ein Trend – sie ist eine Notwendigkeit für Unternehmen, die wettbewerbsfähig bleiben wollen.
 
 ### Einführung: Die Ära von Industry 5.0 in der Fertigung

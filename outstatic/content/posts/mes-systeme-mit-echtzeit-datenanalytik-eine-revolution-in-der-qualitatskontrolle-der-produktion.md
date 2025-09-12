@@ -1,17 +1,28 @@
 ---
-title: 'MES-Systeme mit Echtzeit-Datenanalytik: Eine Revolution in der Qualitätskontrolle der Produktion'
-status: 'published'
+title: 'MES-Systeme mit Echtzeit-Datenanalytik: Eine Revolution in der Qualitätskontrolle
+  der Produktion'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'mes-systeme-mit-echtzeit-datenanalytik-eine-revolution-in-der-qualitatskontrolle-der-produktion'
-description: 'Die Industrie befindet sich im Zentrum der digitalen Transformation, in der MES-Systeme (Manufacturing Execution Systems) mit Echtzeit-Datenanalytik ein Fundament der Industrie 5.0 bilden. Laut einem Bericht des McKinsey Global Institute (2023) erzielen Unternehmen mit fortgeschrittener Analytik in der Produktion im Durchschnitt eine Produktivitätssteigerung von 15–20% und eine Defektreduktion von 25%.'
-coverImage: '/images/best_quality-QyMT.png'
-tags: [{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"value":"quality","label":"Quality"}]
-lang: 'de'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: mes-systeme-mit-echtzeit-datenanalytik-eine-revolution-in-der-qualitatskontrolle-der-produktion
+description: Die Industrie befindet sich im Zentrum der digitalen Transformation,
+  in der MES-Systeme (Manufacturing Execution Systems) mit Echtzeit-Datenanalytik
+  ein Fundament der Industrie 5.0 bilden. Laut einem Bericht des McKinsey Global Institute
+  (2023) erzielen Unternehmen mit fortgeschrittener Analytik in der Produktion im
+  Durchschnitt eine Produktivitätssteigerung von 15–20% und eine Defektreduktion von
+  25%.
+coverImage: /images/best_quality-QyMT.png
+tags:
+- value: Industry 5.0
+  label: Industry 5.0
+- value: omnimes
+  label: Omnimes
+- value: quality
+  label: Quality
+lang: de
 publishedAt: '2025-07-26T09:00:00.000Z'
 ---
-
 Die Industrie befindet sich im Zentrum der digitalen Transformation, in der **MES-Systeme (Manufacturing Execution Systems)** mit **Echtzeit-Datenanalytik** ein Fundament der **Industrie 5.0** bilden. Laut einem Bericht des McKinsey Global Institute (2023) erzielen Unternehmen mit fortgeschrittener Analytik in der Produktion im Durchschnitt eine Produktivitätssteigerung von 15–20% und eine Defektreduktion von 25%.
 
 ## Was sind MES-Systeme im Kontext von Industrie 5.0?

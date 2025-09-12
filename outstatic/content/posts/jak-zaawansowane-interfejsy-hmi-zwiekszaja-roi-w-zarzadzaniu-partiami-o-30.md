@@ -1,17 +1,25 @@
 ---
-title: 'Jak zaawansowane interfejsy HMI zwiększają ROI w zarządzaniu partiami o 30%'
-status: 'published'
+title: Jak zaawansowane interfejsy HMI zwiększają ROI w zarządzaniu partiami o 30%
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'jak-zaawansowane-interfejsy-hmi-zwiekszaja-roi-w-zarzadzaniu-partiami-o-30'
-description: 'Polski rynek paneli operatorskich i systemów HMI osiąga wartość ~120 milionów złotych rocznie, jednak tylko 15% polskich fabryk jest w pełni zautomatyzowanych. To pokazuje ogromny potencjał dla firm gotowych na inwestycje w nowoczesne technologie zarządzania partiami.'
-coverImage: '/images/hmi2-Y3OT.png'
-tags: [{"value":"hmi","label":"HMI"},{"value":"Industry 5.0","label":"Industry 5.0"},{"label":"ROI","value":"roi"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: jak-zaawansowane-interfejsy-hmi-zwiekszaja-roi-w-zarzadzaniu-partiami-o-30
+description: Polski rynek paneli operatorskich i systemów HMI osiąga wartość ~120
+  milionów złotych rocznie, jednak tylko 15% polskich fabryk jest w pełni zautomatyzowanych.
+  To pokazuje ogromny potencjał dla firm gotowych na inwestycje w nowoczesne technologie
+  zarządzania partiami.
+coverImage: /images/hmi2-Y3OT.png
+tags:
+- value: hmi
+  label: HMI
+- value: Industry 5.0
+  label: Industry 5.0
+- label: ROI
+  value: roi
+lang: pl
 publishedAt: '2025-07-12T09:00:00.000Z'
 ---
-
 ## Kluczowe korzyści w liczbach
 
 - **88% polskich firm** potwierdza, że wdrożenie technologii Przemysłu 5.0 zwiększa konkurencyjność na rynku.

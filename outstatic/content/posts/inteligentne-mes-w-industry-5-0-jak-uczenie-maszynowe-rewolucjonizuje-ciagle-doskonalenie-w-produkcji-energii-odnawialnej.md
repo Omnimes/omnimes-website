@@ -1,18 +1,30 @@
 ---
-title: 'Inteligentne MES w Industry 5.0: Jak uczenie maszynowe rewolucjonizuje ciągłe doskonalenie w produkcji energii odnawialnej'
-status: 'published'
+title: 'Inteligentne MES w Industry 5.0: Jak uczenie maszynowe rewolucjonizuje ciągłe
+  doskonalenie w produkcji energii odnawialnej'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej'
-description: 'W erze Industry 5.0, gdzie technologia łączy się z humanistycznym podejściem do produkcji, sektor energii odnawialnej doświadcza bezprecedensowego wzrostu – z rekordowymi 18.6 GW dodatkowej mocy solarnej tylko w pierwszych dziewięciu miesiącach 2024 roku.
- Manufacturing Execution Systems (MES) wspomagane uczeniem maszynowym stają się kluczowym elementem tej transformacji, oferując konkretne korzyści biznesowe i techniczne.'
-coverImage: '/images/green_energy-M2NT.png'
-tags: [{"value":"ai","label":"AI"},{"value":"omnimes","label":"Omnimes"},{"value":"Industry 5.0","label":"Industry 5.0"},{"label":"Green Energy","value":"greenEnergy"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: inteligentne-mes-w-industry-5-0-jak-uczenie-maszynowe-rewolucjonizuje-ciagle-doskonalenie-w-produkcji-energii-odnawialnej
+description: W erze Industry 5.0, gdzie technologia łączy się z humanistycznym podejściem
+  do produkcji, sektor energii odnawialnej doświadcza bezprecedensowego wzrostu –
+  z rekordowymi 18.6 GW dodatkowej mocy solarnej tylko w pierwszych dziewięciu miesiącach
+  2024 roku. Manufacturing Execution Systems (MES) wspomagane uczeniem maszynowym
+  stają się kluczowym elementem tej transformacji, oferując konkretne korzyści biznesowe
+  i techniczne.
+coverImage: /images/green_energy-M2NT.png
+tags:
+- value: ai
+  label: AI
+- value: omnimes
+  label: Omnimes
+- value: Industry 5.0
+  label: Industry 5.0
+- label: Green Energy
+  value: greenEnergy
+lang: pl
 publishedAt: '2025-06-26T09:00:00.000Z'
 ---
-
 # Inteligentne MES w Industry 5.0: Jak uczenie maszynowe rewolucjonizuje ciągłe doskonalenie w produkcji energii odnawialnej
 
  

@@ -1,11 +1,13 @@
 ---
-title: Zwiększanie efektywności produkcji dzięki zintegrowanym interfejsom HMI w systemach MES
+title: Zwiększanie efektywności produkcji dzięki zintegrowanym interfejsom HMI w systemach
+  MES
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: zwiekszanie-efektywnosci-produkcji-dzieki-zintegrowanym-interfejsom-hmi-w-systemach-mes
-description: Integracja zaawansowanych interfejsów HMI w systemach MES poprawia efektywność operacyjną w połączonej fabryce.
+description: Integracja zaawansowanych interfejsów HMI w systemach MES poprawia efektywność
+  operacyjną w połączonej fabryce.
 coverImage: /images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png
 tags:
 - label: Kategoria

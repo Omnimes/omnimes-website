@@ -1,17 +1,29 @@
 ---
-title: 'Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?'
-status: 'published'
+title: 'Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą
+  wspierać analizę danych czasowych?'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych'
-description: 'Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.'
-coverImage: '/images/database-vector-c3MD.png'
-tags: [{"value":"ai","label":"AI"},{"label":"Dane czasowe","value":"daneCzasowe"},{"label":"Baza wektorowa","value":"bazaWektorowa"},{"value":"Industry 5.0","label":"Industry 5.0"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: praktyczne-zastosowanie-ai-w-dobie-cyfryzacji-fabryk-jak-bazy-wektorowe-moga-wspierac-analize-danych-czasowych
+description: Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim
+  inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje
+  strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się
+  nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry
+  wchodzą bazy wektorowe i sztuczna inteligencja.
+coverImage: /images/database-vector-c3MD.png
+tags:
+- value: ai
+  label: AI
+- label: Dane czasowe
+  value: daneCzasowe
+- label: Baza wektorowa
+  value: bazaWektorowa
+- value: Industry 5.0
+  label: Industry 5.0
+lang: pl
 publishedAt: '2025-09-09T06:25:59.088Z'
 ---
-
 ### Wprowadzenie
 
 Przemysł 5.0 to nie tylko automatyzacja produkcji, ale przede wszystkim inteligentne wykorzystanie danych. W dobie IoT i systemów MES każda maszyna generuje strumienie sygnałów, a ich ilość rośnie wykładniczo. Kluczowym wyzwaniem staje się nie samo zbieranie danych, lecz ich analiza w czasie rzeczywistym. Tutaj do gry wchodzą bazy wektorowe i sztuczna inteligencja.

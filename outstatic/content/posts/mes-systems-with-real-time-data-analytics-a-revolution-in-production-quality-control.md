@@ -1,18 +1,27 @@
 ---
-title: 'MES Systems with Real-Time Data Analytics: A Revolution in Production Quality Control'
-status: 'published'
+title: 'MES Systems with Real-Time Data Analytics: A Revolution in Production Quality
+  Control'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control'
-description: 'Modern industry is at the heart of digital transformation, where Manufacturing Execution Systems (MES) with real-time data analytics form a cornerstone of Industry 5.0. According to a 2023 McKinsey Global Institute report, companies that deploy advanced analytics in production achieve, on average, a 15–20% productivity increase and a 25% reduction in defects.'
-coverImage: '/images/best_quality-EzOT.png'
-tags: [{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"value":"quality","label":"Quality"}]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control
+description: Modern industry is at the heart of digital transformation, where Manufacturing
+  Execution Systems (MES) with real-time data analytics form a cornerstone of Industry
+  5.0. According to a 2023 McKinsey Global Institute report, companies that deploy
+  advanced analytics in production achieve, on average, a 15–20% productivity increase
+  and a 25% reduction in defects.
+coverImage: /images/best_quality-EzOT.png
+tags:
+- value: Industry 5.0
+  label: Industry 5.0
+- value: omnimes
+  label: Omnimes
+- value: quality
+  label: Quality
+lang: en
 publishedAt: '2025-07-26T09:00:00.000Z'
 ---
-
-
 Modern industry is at the heart of digital transformation, where **Manufacturing Execution Systems (MES)** with **real-time data analytics** form a cornerstone of **Industry 5.0**. According to a 2023 McKinsey Global Institute report, companies that deploy advanced analytics in production achieve, on average, a 15–20% productivity increase and a 25% reduction in defects.
 
 ## What are MES systems in the context of Industry 5.0?

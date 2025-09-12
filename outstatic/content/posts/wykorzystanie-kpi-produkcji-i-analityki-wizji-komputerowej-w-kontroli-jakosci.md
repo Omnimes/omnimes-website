@@ -3,9 +3,10 @@ title: Wykorzystanie KPI produkcji i analityki wizji komputerowej w kontroli jak
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: wykorzystanie-kpi-produkcji-i-analityki-wizji-komputerowej-w-kontroli-jakosci
-description: Jak KPI i wizja komputerowa mogą poprawić kontrolę jakości w inteligentnych fabrykach.
+description: Jak KPI i wizja komputerowa mogą poprawić kontrolę jakości w inteligentnych
+  fabrykach.
 coverImage: /images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png
 tags:
 - label: Temat

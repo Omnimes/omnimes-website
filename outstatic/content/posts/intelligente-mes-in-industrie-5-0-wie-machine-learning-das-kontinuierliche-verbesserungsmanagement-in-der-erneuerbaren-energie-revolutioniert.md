@@ -1,18 +1,31 @@
 ---
-title: 'Intelligente MES in Industrie 5.0: Wie Machine Learning das kontinuierliche Verbesserungsmanagement in der erneuerbaren Energie revolutioniert'
-status: 'published'
+title: 'Intelligente MES in Industrie 5.0: Wie Machine Learning das kontinuierliche
+  Verbesserungsmanagement in der erneuerbaren Energie revolutioniert'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert'
-description: 'ROI: bis zu 15% höhere Effizienz und 10–20% bessere Energiespeicherung – das ist die reale Kraft von KI in der modernen Energiebranche.
-Im Zeitalter der Industrie 5.0, in dem Technologie mit einem menschzentrierten Ansatz verschmilzt, erlebt der Sektor der erneuerbaren Energien ein beispielloses Wachstum – mit 18,6 GW zusätzlicher Solarkapazität allein in den ersten neun Monaten 2024. Manufacturing Execution Systems (MES), unterstützt durch Machine Learning, werden zu einem Eckpfeiler dieser Transformation und bieten klare geschäftliche und technische Vorteile.'
-coverImage: '/images/green_energy-U0Mj.png'
-tags: [{"value":"ai","label":"AI"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"value":"greenEnergy","label":"Green Energy"}]
-lang: 'de'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: intelligente-mes-in-industrie-5-0-wie-machine-learning-das-kontinuierliche-verbesserungsmanagement-in-der-erneuerbaren-energie-revolutioniert
+description: 'ROI: bis zu 15% höhere Effizienz und 10–20% bessere Energiespeicherung
+  – das ist die reale Kraft von KI in der modernen Energiebranche. Im Zeitalter der
+  Industrie 5.0, in dem Technologie mit einem menschzentrierten Ansatz verschmilzt,
+  erlebt der Sektor der erneuerbaren Energien ein beispielloses Wachstum – mit 18,6
+  GW zusätzlicher Solarkapazität allein in den ersten neun Monaten 2024. Manufacturing
+  Execution Systems (MES), unterstützt durch Machine Learning, werden zu einem Eckpfeiler
+  dieser Transformation und bieten klare geschäftliche und technische Vorteile.'
+coverImage: /images/green_energy-U0Mj.png
+tags:
+- value: ai
+  label: AI
+- value: Industry 5.0
+  label: Industry 5.0
+- value: omnimes
+  label: Omnimes
+- value: greenEnergy
+  label: Green Energy
+lang: de
 publishedAt: '2025-06-26T09:00:00.000Z'
 ---
-
 ## **ROI: bis zu 15% höhere Effizienz und 10–20% bessere Energiespeicherung – das ist die reale Kraft von KI in der modernen Energiebranche.**
 
 Im Zeitalter der **Industrie 5.0**, in dem Technologie mit einem menschzentrierten Ansatz verschmilzt, erlebt der Sektor der erneuerbaren Energien ein beispielloses Wachstum – mit **18,6 GW** zusätzlicher Solarkapazität allein in den ersten neun Monaten 2024.\

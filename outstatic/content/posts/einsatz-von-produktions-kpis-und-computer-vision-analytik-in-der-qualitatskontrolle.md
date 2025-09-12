@@ -3,9 +3,10 @@ title: Einsatz von Produktions-KPIs und Computer Vision-Analytik in der Qualitä
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: einsatz-von-produktions-kpis-und-computer-vision-analytik-in-der-qualitatskontrolle
-description: Wie KPI und Computer Vision die Qualitätskontrolle in intelligenten Fabriken verbessern können.
+description: Wie KPI und Computer Vision die Qualitätskontrolle in intelligenten Fabriken
+  verbessern können.
 coverImage: /images/leveraging-production-kpis-and-computer-vision-analytics-to-enhance-quality-control-through-smart-factory-sensors.png
 tags:
 - label: Temat

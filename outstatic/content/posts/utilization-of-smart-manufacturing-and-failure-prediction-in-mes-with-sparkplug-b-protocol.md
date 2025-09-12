@@ -1,17 +1,26 @@
 ---
-title: 'Sparkplug B protocol with MES systems: a modern approach to failure prediction and energy optimization in industry'
-status: 'published'
+title: 'Sparkplug B protocol with MES systems: a modern approach to failure prediction
+  and energy optimization in industry'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol'
-description: 'The integration of the Sparkplug B protocol in MES systems enhances energy efficiency and reliability in production.'
-coverImage: '/images/sparkplugb_omnimes-I5OT.png'
-tags: [{"value":"mqtt","label":"MQTT"},{"value":"sparkplugB","label":"Sparkplug B"},{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"}]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol
+description: The integration of the Sparkplug B protocol in MES systems enhances energy
+  efficiency and reliability in production.
+coverImage: /images/sparkplugb_omnimes-I5OT.png
+tags:
+- value: mqtt
+  label: MQTT
+- value: sparkplugB
+  label: Sparkplug B
+- value: omnimes
+  label: Omnimes
+- value: mesSystem
+  label: MES system
+lang: en
 publishedAt: '2025-08-26T09:00:00.000Z'
 ---
-
 ### Sparkplug B Protocol with MES Systems: A Modern Approach to Failure Prediction and Energy Optimization in Industry
 
 #### Introduction

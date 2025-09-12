@@ -1,17 +1,31 @@
 ---
-title: 'Protokół Sparkplug B z systemami klasy MES: nowoczesne podejście do predykcji awarii i optymalizacji energetycznej w przemyśle'
-status: 'published'
+title: 'Protokół Sparkplug B z systemami klasy MES: nowoczesne podejście do predykcji
+  awarii i optymalizacji energetycznej w przemyśle'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'protokol-sparkplug-b-z-systemami-klasy-mes-nowoczesne-podejscie-do-predykcji-awarii-i-optymalizacji-energetycznej-w-przemysle'
-description: 'Współczesna transformacja cyfrowa w przemyśle wymaga implementacji zaawansowanych rozwiązań komunikacyjnych, które zapewnią interoperacyjność systemów oraz umożliwią efektywne wykorzystanie danych operacyjnych. Protokół Sparkplug B, stanowiący rozwinięcie standardu MQTT dla zastosowań przemysłowych, oferuje ustrukturyzowane podejście do komunikacji w ramach Industrial Internet of Things (IIoT). Integracja tego protokołu z systemami Manufacturing Execution Systems (MES) otwiera nowe możliwości w zakresie predykcyjnego utrzymania ruchu oraz optymalizacji zużycia energii w procesach produkcyjnych.'
-coverImage: '/images/sparkplugb_omnimes-IyOD.png'
-tags: [{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"},{"value":"sparkplugB","label":"Sparkplug B"},{"value":"mqtt","label":"MQTT"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: protokol-sparkplug-b-z-systemami-klasy-mes-nowoczesne-podejscie-do-predykcji-awarii-i-optymalizacji-energetycznej-w-przemysle
+description: Współczesna transformacja cyfrowa w przemyśle wymaga implementacji zaawansowanych
+  rozwiązań komunikacyjnych, które zapewnią interoperacyjność systemów oraz umożliwią
+  efektywne wykorzystanie danych operacyjnych. Protokół Sparkplug B, stanowiący rozwinięcie
+  standardu MQTT dla zastosowań przemysłowych, oferuje ustrukturyzowane podejście
+  do komunikacji w ramach Industrial Internet of Things (IIoT). Integracja tego protokołu
+  z systemami Manufacturing Execution Systems (MES) otwiera nowe możliwości w zakresie
+  predykcyjnego utrzymania ruchu oraz optymalizacji zużycia energii w procesach produkcyjnych.
+coverImage: /images/sparkplugb_omnimes-IyOD.png
+tags:
+- value: omnimes
+  label: Omnimes
+- value: mesSystem
+  label: MES system
+- value: sparkplugB
+  label: Sparkplug B
+- value: mqtt
+  label: MQTT
+lang: pl
 publishedAt: '2025-08-26T09:00:00.000Z'
 ---
-
 ## Wprowadzenie
 
 Współczesna transformacja cyfrowa w przemyśle wymaga implementacji zaawansowanych rozwiązań komunikacyjnych, które zapewnią interoperacyjność systemów oraz umożliwią efektywne wykorzystanie danych operacyjnych. Protokół Sparkplug B, stanowiący rozwinięcie standardu MQTT dla zastosowań przemysłowych, oferuje ustrukturyzowane podejście do komunikacji w ramach Industrial Internet of Things (IIoT). Integracja tego protokołu z systemami Manufacturing Execution Systems (MES) otwiera nowe możliwości w zakresie predykcyjnego utrzymania ruchu oraz optymalizacji zużycia energii w procesach produkcyjnych.

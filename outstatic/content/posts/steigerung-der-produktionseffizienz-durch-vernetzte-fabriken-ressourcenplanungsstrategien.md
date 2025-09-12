@@ -3,9 +3,10 @@ title: 'Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcen
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien
-description: Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.
+description: Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten
+  Fabriken unter Nutzung von IoT und Datenanalyse.
 coverImage: /images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png
 tags:
 - label: Temat

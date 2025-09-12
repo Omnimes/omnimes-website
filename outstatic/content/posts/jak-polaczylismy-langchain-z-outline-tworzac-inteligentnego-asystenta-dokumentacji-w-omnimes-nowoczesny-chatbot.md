@@ -1,17 +1,33 @@
 ---
-title: 'Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji w OmniMES - nowoczesny chatbot'
-status: 'published'
+title: Jak połączyliśmy LangChain z Outline, tworząc inteligentnego asystenta dokumentacji
+  w OmniMES - nowoczesny chatbot
+status: published
 author:
-  name: 'OmniMES'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot'
-description: 'W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.'
-coverImage: '/images/langchain_openai-QwND.png'
-tags: ["modeleLlm","langchainLlm","langchain","faiss","chatbot","gpt"]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: jak-polaczylismy-langchain-z-outline-tworzac-inteligentnego-asystenta-dokumentacji-w-omnimes-nowoczesny-chatbot
+description: 'W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej
+  niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem.
+  Dlatego postanowiliśmy połączyć dwa potężne narzędzia: LangChain i Outline, tworząc
+  inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada
+  na nie na podstawie aktualnej bazy wiedzy.'
+coverImage: /images/langchain_openai-QwND.png
+tags:
+- label: modeleLlm
+  value: modeleLlm
+- label: langchainLlm
+  value: langchainLlm
+- label: langchain
+  value: langchain
+- label: faiss
+  value: faiss
+- label: chatbot
+  value: chatbot
+- label: gpt
+  value: gpt
+lang: pl
 publishedAt: '2025-05-28T00:00:00.000Z'
 ---
-
 **Wstęp**
 
 W świecie przemysłowego IT, gdzie dokumentacja techniczna rośnie szybciej niż produkcja w szczycie sezonu, znalezienie konkretnej informacji staje się wyzwaniem. Dlatego postanowiliśmy połączyć dwa potężne narzędzia: **LangChain** i **Outline**, tworząc inteligentnego asystenta dokumentacji, który rozumie pytania użytkowników i odpowiada na nie na podstawie aktualnej bazy wiedzy.

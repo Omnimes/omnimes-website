@@ -1,11 +1,13 @@
 ---
-title: 'Increasing Production Efficiency through Connected Factories: Resource Planning Strategies'
+title: 'Increasing Production Efficiency through Connected Factories: Resource Planning
+  Strategies'
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: increasing-production-efficiency-through-connected-factories-resource-planning-strategies
-description: Practical approaches to optimizing resource planning in connected factories, leveraging IoT and data analytics.
+description: Practical approaches to optimizing resource planning in connected factories,
+  leveraging IoT and data analytics.
 coverImage: /images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png
 tags:
 - label: Temat

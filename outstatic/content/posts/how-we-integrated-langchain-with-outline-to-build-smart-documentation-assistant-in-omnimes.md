@@ -1,17 +1,31 @@
 ---
-title: 'How We Integrated LangChain with Outline to Build a Smart Documentation Assistant in OmniMES – a Modern Chatbot'
-status: 'published'
+title: How We Integrated LangChain with Outline to Build a Smart Documentation Assistant
+  in OmniMES – a Modern Chatbot
+status: published
 author:
-  name: 'OmniMES'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes'
-description: 'In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: LangChain and Outline, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.'
-coverImage: '/images/langchain_openai-M3OD.png'
-tags: ["langchain","faiss","gpt","documentation","ai-assistant"]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: how-we-integrated-langchain-with-outline-to-build-smart-documentation-assistant-in-omnimes
+description: 'In the world of industrial IT, where technical documentation grows faster
+  than peak-season production, finding specific information becomes a challenge. That’s
+  why we decided to combine two powerful tools: LangChain and Outline, creating a
+  smart documentation assistant that understands user queries and responds based on
+  the current knowledge base.'
+coverImage: /images/langchain_openai-M3OD.png
+tags:
+- label: langchain
+  value: langchain
+- label: faiss
+  value: faiss
+- label: gpt
+  value: gpt
+- label: documentation
+  value: documentation
+- label: ai-assistant
+  value: ai-assistant
+lang: en
 publishedAt: '2025-05-28T00:00:00.000Z'
 ---
-
 **Introduction**
 
 In the world of industrial IT, where technical documentation grows faster than peak-season production, finding specific information becomes a challenge. That’s why we decided to combine two powerful tools: **LangChain** and **Outline**, creating a smart documentation assistant that understands user queries and responds based on the current knowledge base.

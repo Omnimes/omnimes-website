@@ -3,9 +3,10 @@ title: Steigerung der Produktionseffizienz durch KI-basierte MES-Systeme
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: steigerung-der-produktionseffizienz-durch-ki-basierte-mes-systeme
-description: Praktischer Leitfaden zur Überwachung von OEE in der Digitalisierung von Fabriken unter Verwendung von MES-Systemen.
+description: Praktischer Leitfaden zur Überwachung von OEE in der Digitalisierung
+  von Fabriken unter Verwendung von MES-Systemen.
 coverImage: /images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png
 tags:
 - label: kategoria

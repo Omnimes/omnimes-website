@@ -1,17 +1,23 @@
 ---
-title: 'How MES-IoT Integration Revolutionizes Production Quality and Eliminates Downtime'
-status: 'published'
+title: How MES-IoT Integration Revolutionizes Production Quality and Eliminates Downtime
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime'
-description: 'Integrate MES with IoT to enhance quality control and reduce production downtime.'
-coverImage: '/images/iot_industry-EyOT.png'
-tags: [{"value":"omnimes","label":"Omnimes"},{"value":"iot","label":"IoT"},{"value":"industry50","label":"Industry 5.0"}]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime
+description: Integrate MES with IoT to enhance quality control and reduce production
+  downtime.
+coverImage: /images/iot_industry-EyOT.png
+tags:
+- value: omnimes
+  label: Omnimes
+- value: iot
+  label: IoT
+- value: industry50
+  label: Industry 5.0
+lang: en
 publishedAt: '2025-04-26T09:00:00.000Z'
 ---
-
 The MES market is growing at a rate of 14.1% annually, reaching USD 41.78 billion by 2032, while Industry 5.0 puts humans at the center of production, combining sustainability with advanced technologies. Integrating MES with IoT in the Industry 5.0 era is not just a trend—it is a necessity for companies aiming to remain competitive.
 
 ### Introduction: The Era of Industry 5.0 in Manufacturing

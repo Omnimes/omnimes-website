@@ -1,17 +1,24 @@
 ---
-title: 'Managing Production Batches in the Era of Industry 5.0: A Strategic Approach to Digital Transformation in Manufacturing'
-status: 'published'
+title: 'Managing Production Batches in the Era of Industry 5.0: A Strategic Approach
+  to Digital Transformation in Manufacturing'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing'
-description: 'The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.'
-coverImage: '/images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp'
-tags: [{"value":"omnimes","label":"Omnimes"},{"value":"dataAnalysis","label":"Data Analysis"}]
-lang: 'en'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing
+description: The digital transformation of manufacturing requires a strategic approach
+  to managing production batches. The use of Manufacturing Execution Systems (MES)
+  combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance
+  costs by 40%, according to the latest Deloitte research.
+coverImage: /images/chatgpt-image-may-9-2025-04_06_02-pm-E0OD.webp
+tags:
+- value: omnimes
+  label: Omnimes
+- value: dataAnalysis
+  label: Data Analysis
+lang: en
 publishedAt: '2025-08-12T09:00:00.000Z'
 ---
-
 ## The digital transformation of manufacturing requires a strategic approach to managing production batches. The use of Manufacturing Execution Systems (MES) combined with Industry 5.0 technologies can reduce downtime by 50% and cut maintenance costs by 40%, according to the latest Deloitte research.
 
 **Market Context and Economic Significance**\

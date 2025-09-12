@@ -3,9 +3,10 @@ title: Enhancing Production Efficiency through Integrated HMI Interfaces in MES 
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems
-description: The integration of advanced HMI interfaces in MES systems enhances operational efficiency in the connected factory.
+description: The integration of advanced HMI interfaces in MES systems enhances operational
+  efficiency in the connected factory.
 coverImage: /images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png
 tags:
 - label: Kategoria

@@ -1,11 +1,13 @@
 ---
-title: Steigerung der Produktionseffizienz durch integrierte HMI-Schnittstellen in MES-Systemen
+title: Steigerung der Produktionseffizienz durch integrierte HMI-Schnittstellen in
+  MES-Systemen
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: steigerung-der-produktionseffizienz-durch-integrierte-hmi-schnittstellen-in-mes-systemen
-description: Die Integration fortschrittlicher HMI-Schnittstellen in MES-Systeme verbessert die Betriebseffizienz in der vernetzten Fabrik.
+description: Die Integration fortschrittlicher HMI-Schnittstellen in MES-Systeme verbessert
+  die Betriebseffizienz in der vernetzten Fabrik.
 coverImage: /images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png
 tags:
 - label: Kategoria

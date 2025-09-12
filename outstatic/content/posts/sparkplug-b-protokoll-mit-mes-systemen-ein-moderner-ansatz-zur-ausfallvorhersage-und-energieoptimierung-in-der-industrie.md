@@ -1,17 +1,31 @@
 ---
-title: 'Sparkplug B Protokoll mit MES-Systemen: Ein moderner Ansatz zur Ausfallvorhersage und Energieoptimierung in der Industrie'
-status: 'published'
+title: 'Sparkplug B Protokoll mit MES-Systemen: Ein moderner Ansatz zur Ausfallvorhersage
+  und Energieoptimierung in der Industrie'
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie'
-description: 'Die digitale Transformation in der Industrie erfordert fortschrittliche Kommunikationslösungen, die Interoperabilität gewährleisten und eine effiziente Nutzung von Betriebsdaten ermöglichen. Das Sparkplug-B-Protokoll, eine Erweiterung des MQTT-Standards für industrielle Anwendungen, bietet einen strukturierten Ansatz für die Kommunikation im Industrial Internet of Things (IIoT). Die Integration mit Manufacturing Execution Systems (MES) eröffnet neue Möglichkeiten für prädiktive Instandhaltung und Energieoptimierung in Produktionsprozessen.'
-coverImage: '/images/sparkplugb_omnimes-M4Nj.png'
-tags: [{"value":"omnimes","label":"Omnimes"},{"value":"mesSystem","label":"MES system"},{"value":"sparkplugB","label":"Sparkplug B"},{"value":"mqtt","label":"MQTT"}]
-lang: 'de'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie
+description: Die digitale Transformation in der Industrie erfordert fortschrittliche
+  Kommunikationslösungen, die Interoperabilität gewährleisten und eine effiziente
+  Nutzung von Betriebsdaten ermöglichen. Das Sparkplug-B-Protokoll, eine Erweiterung
+  des MQTT-Standards für industrielle Anwendungen, bietet einen strukturierten Ansatz
+  für die Kommunikation im Industrial Internet of Things (IIoT). Die Integration mit
+  Manufacturing Execution Systems (MES) eröffnet neue Möglichkeiten für prädiktive
+  Instandhaltung und Energieoptimierung in Produktionsprozessen.
+coverImage: /images/sparkplugb_omnimes-M4Nj.png
+tags:
+- value: omnimes
+  label: Omnimes
+- value: mesSystem
+  label: MES system
+- value: sparkplugB
+  label: Sparkplug B
+- value: mqtt
+  label: MQTT
+lang: de
 publishedAt: '2025-08-26T09:00:00.000Z'
 ---
-
 ### Sparkplug-B-Protokoll mit MES-Systemen: Moderner Ansatz zur Ausfallprognose und Energieoptimierung in der Industrie
 
 #### Einführung

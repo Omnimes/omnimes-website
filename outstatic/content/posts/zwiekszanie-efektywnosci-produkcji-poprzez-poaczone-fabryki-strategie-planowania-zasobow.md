@@ -1,11 +1,13 @@
 ---
-title: 'Zwiększanie efektywności produkcji poprzez połączone fabryki: strategie planowania zasobów'
+title: 'Zwiększanie efektywności produkcji poprzez połączone fabryki: strategie planowania
+  zasobów'
 status: published
 author:
   name: Martin Szerment
-  picture: https://avatars.githubusercontent.com/u/166378457?v=4
+  picture: /images/martin.png
 slug: zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow
-description: Praktyczne podejścia do optymalizacji planowania zasobów w połączonych fabrykach, wykorzystujące IoT i analitykę danych.
+description: Praktyczne podejścia do optymalizacji planowania zasobów w połączonych
+  fabrykach, wykorzystujące IoT i analitykę danych.
 coverImage: /images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png
 tags:
 - label: Temat

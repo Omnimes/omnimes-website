@@ -1,19 +1,33 @@
 ---
-title: 'Maximize ROI through OEE Optimization and Energy Management in MES/EMS Systems'
-status: 'published'
+title: Maximize ROI through OEE Optimization and Energy Management in MES/EMS Systems
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'maximize-roi-through-oee-optimization-and-energy-management-in-mes-ems-systems'
-description: 'In the age of Industry 5.0, where energy efficiency becomes a key differentiator, manufacturing enterprises face unprecedented challenges. According to the new EU Directive 2023/1791 on energy efficiency, member states must achieve an average annual energy savings rate of 1.49% between 2024–2030. This means that companies must radically rethink their approach to energy management.
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: maximize-roi-through-oee-optimization-and-energy-management-in-mes-ems-systems
+description: 'In the age of Industry 5.0, where energy efficiency becomes a key differentiator,
+  manufacturing enterprises face unprecedented challenges. According to the new EU
+  Directive 2023/1791 on energy efficiency, member states must achieve an average
+  annual energy savings rate of 1.49% between 2024–2030. This means that companies
+  must radically rethink their approach to energy management.
 
-A crucial tool in this transformation is the optimization of the OEE (Overall Equipment Effectiveness) index through intelligent energy management in MES-class systems. In both Industry 4.0 and 5.0, OEE plays a key role in ROI planning, reliability, and production stability.'
-coverImage: '/images/oee_energy_mes-g1NT.png'
-tags: [{"value":"OEE","label":"OEE"},{"value":"omnimes","label":"Omnimes"},{"value":"greenEnergy","label":"Green Energy"},{"label":"OmniEnergy","value":"omniEnergy"}]
-lang: 'en'
+  A crucial tool in this transformation is the optimization of the OEE (Overall Equipment
+  Effectiveness) index through intelligent energy management in MES-class systems.
+  In both Industry 4.0 and 5.0, OEE plays a key role in ROI planning, reliability,
+  and production stability.'
+coverImage: /images/oee_energy_mes-g1NT.png
+tags:
+- value: OEE
+  label: OEE
+- value: omnimes
+  label: Omnimes
+- value: greenEnergy
+  label: Green Energy
+- label: OmniEnergy
+  value: omniEnergy
+lang: en
 publishedAt: '2025-05-05T09:00:00.000Z'
 ---
-
 ### Introduction: The Era of Smart Energy Management
 
 In the age of Industry 5.0, where energy efficiency becomes a key differentiator, manufacturing enterprises face unprecedented challenges. According to the new EU Directive 2023/1791 on energy efficiency, member states must achieve an average annual energy savings rate of 1.49% between 2024–2030. This means that companies must radically rethink their approach to energy management.

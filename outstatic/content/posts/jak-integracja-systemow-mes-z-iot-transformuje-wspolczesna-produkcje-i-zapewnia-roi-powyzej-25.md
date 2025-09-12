@@ -1,17 +1,26 @@
 ---
-title: 'Jak integracja systemów MES z IoT transformuje współczesną produkcję i zapewnia ROI powyżej 25%'
-status: 'published'
+title: Jak integracja systemów MES z IoT transformuje współczesną produkcję i zapewnia
+  ROI powyżej 25%
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25'
-description: 'Globalny rynek Internet of Things osiągnął wartość 714,48 miliardów USD w 2024 roku i według prognoz wzrośnie do 4,062.34 miliardów USD do 2032 roku, co oznacza roczną stopę wzrostu (CAGR) na poziomie 24,3%. Jednocześnie przemysłowy IoT (IIoT) wyceniany na 289 miliardów USD w 2024 roku ma osiągnąć 847 miliardów USD do 2033 roku przy CAGR 12,7%. Te imponujące liczby odzwierciedlają fundamentalną zmianę, jaką przechodzi współczesny przemysł w kierunku Industry 5.0.'
-coverImage: '/images/iot_roi_indsutry-MzNj.png'
-tags: [{"value":"iot","label":"IoT"},{"value":"industry50","label":"Industry 5.0"}]
-lang: 'pl'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: jak-integracja-systemow-mes-z-iot-transformuje-wspolczesna-produkcje-i-zapewnia-roi-powyzej-25
+description: Globalny rynek Internet of Things osiągnął wartość 714,48 miliardów USD
+  w 2024 roku i według prognoz wzrośnie do 4,062.34 miliardów USD do 2032 roku, co
+  oznacza roczną stopę wzrostu (CAGR) na poziomie 24,3%. Jednocześnie przemysłowy
+  IoT (IIoT) wyceniany na 289 miliardów USD w 2024 roku ma osiągnąć 847 miliardów
+  USD do 2033 roku przy CAGR 12,7%. Te imponujące liczby odzwierciedlają fundamentalną
+  zmianę, jaką przechodzi współczesny przemysł w kierunku Industry 5.0.
+coverImage: /images/iot_roi_indsutry-MzNj.png
+tags:
+- value: iot
+  label: IoT
+- value: industry50
+  label: Industry 5.0
+lang: pl
 publishedAt: '2025-04-12T09:00:00.000Z'
 ---
-
 ## Wstęp: Era współpracy człowiek-maszyna w przemyśle
 
 Globalny rynek Internet of Things osiągnął wartość 714,48 miliardów USD w 2024 roku i według prognoz wzrośnie do 4,062.34 miliardów USD do 2032 roku, co oznacza roczną stopę wzrostu (CAGR) na poziomie 24,3%. Jednocześnie przemysłowy IoT (IIoT) wyceniany na 289 miliardów USD w 2024 roku ma osiągnąć 847 miliardów USD do 2033 roku przy CAGR 12,7%. Te imponujące liczby odzwierciedlają fundamentalną zmianę, jaką przechodzi współczesny przemysł w kierunku Industry 5.0.

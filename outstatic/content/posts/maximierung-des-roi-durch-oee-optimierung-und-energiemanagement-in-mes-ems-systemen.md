@@ -1,17 +1,29 @@
 ---
-title: 'Maximierung des ROI durch OEE-Optimierung und Energiemanagement in MES/EMS-Systemen'
-status: 'published'
+title: Maximierung des ROI durch OEE-Optimierung und Energiemanagement in MES/EMS-Systemen
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen'
-description: 'Im Zeitalter von Industry 5.0, in dem Energieeffizienz zum entscheidenden Unterscheidungsmerkmal wird, stehen produzierende Unternehmen vor beispiellosen Herausforderungen. Die neue EU-Richtlinie 2023/1791 zur Energieeffizienz verpflichtet die Mitgliedsstaaten, zwischen 2024–2030 eine durchschnittliche jährliche Energieeinsparung von 1,49 % zu erreichen. Unternehmen müssen daher ihr Energiemanagement grundlegend neu denken.'
-coverImage: '/images/oee_energy_mes-M5Nz.png'
-tags: [{"value":"OEE","label":"OEE"},{"value":"omnimes","label":"Omnimes"},{"label":"OmniEnergy","value":"omniEnergy"},{"value":"greenEnergy","label":"Green Energy"}]
-lang: 'de'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: maximierung-des-roi-durch-oee-optimierung-und-energiemanagement-in-mes-ems-systemen
+description: Im Zeitalter von Industry 5.0, in dem Energieeffizienz zum entscheidenden
+  Unterscheidungsmerkmal wird, stehen produzierende Unternehmen vor beispiellosen
+  Herausforderungen. Die neue EU-Richtlinie 2023/1791 zur Energieeffizienz verpflichtet
+  die Mitgliedsstaaten, zwischen 2024–2030 eine durchschnittliche jährliche Energieeinsparung
+  von 1,49 % zu erreichen. Unternehmen müssen daher ihr Energiemanagement grundlegend
+  neu denken.
+coverImage: /images/oee_energy_mes-M5Nz.png
+tags:
+- value: OEE
+  label: OEE
+- value: omnimes
+  label: Omnimes
+- label: OmniEnergy
+  value: omniEnergy
+- value: greenEnergy
+  label: Green Energy
+lang: de
 publishedAt: '2025-05-05T09:00:00.000Z'
 ---
-
 ### Einführung: Das Zeitalter des intelligenten Energiemanagements
 
 Im Zeitalter von **Industry 5.0**, in dem Energieeffizienz zum entscheidenden Unterscheidungsmerkmal wird, stehen produzierende Unternehmen vor beispiellosen Herausforderungen. Die neue **EU-Richtlinie 2023/1791** zur Energieeffizienz verpflichtet die Mitgliedsstaaten, zwischen 2024–2030 eine durchschnittliche jährliche Energieeinsparung von 1,49 % zu erreichen. Unternehmen müssen daher ihr Energiemanagement grundlegend neu denken.

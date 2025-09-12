@@ -1,17 +1,26 @@
 ---
-title: 'Wie fortschrittliche HMI-Schnittstellen den ROI im Chargenmanagement um 30% steigern'
-status: 'published'
+title: Wie fortschrittliche HMI-Schnittstellen den ROI im Chargenmanagement um 30%
+  steigern
+status: published
 author:
-  name: 'Martin Szerment'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern'
-description: 'Der polnische Markt für Bedienpanels und HMI-Systeme hat ein Volumen von ca. 120 Millionen PLN pro Jahr. Nur 15% der Fabriken sind jedoch vollständig automatisiert – ein enormes Potenzial für Unternehmen, die bereit sind, in moderne Technologien für das Chargenmanagement zu investieren.'
-coverImage: '/images/hmi2-M4NT.png'
-tags: [{"value":"hmi","label":"HMI"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"roi","label":"ROI"}]
-lang: 'de'
+  name: Martin Szerment
+  picture: /images/martin.png
+slug: wie-fortschrittliche-hmi-schnittstellen-den-roi-im-chargenmanagement-um-30-steigern
+description: Der polnische Markt für Bedienpanels und HMI-Systeme hat ein Volumen
+  von ca. 120 Millionen PLN pro Jahr. Nur 15% der Fabriken sind jedoch vollständig
+  automatisiert – ein enormes Potenzial für Unternehmen, die bereit sind, in moderne
+  Technologien für das Chargenmanagement zu investieren.
+coverImage: /images/hmi2-M4NT.png
+tags:
+- value: hmi
+  label: HMI
+- value: Industry 5.0
+  label: Industry 5.0
+- value: roi
+  label: ROI
+lang: de
 publishedAt: '2025-07-12T09:00:00.000Z'
 ---
-
 ### Zentrale Vorteile in Zahlen
 
 - 88% der polnischen Unternehmen bestätigen, dass die Einführung von Industrie-5.0-Technologien die Wettbewerbsfähigkeit erhöht.
