@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:46:12.642Z",
+  "generated": "2025-09-12T09:46:16.308Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2488,6 +2488,31 @@
     },
     {
       "__outstatic": {
+        "commit": "a6bc41a9a1d24152b0ec9d9272ddf23f4648f32d",
+        "hash": "2176834050",
+        "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
+      "description": "Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.",
+      "lang": "de",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien"
+    },
+    {
+      "__outstatic": {
         "commit": "06f16787d65da4b2a43b32c43ed5f7a36134d31f",
         "hash": "3963201739",
         "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
@@ -3302,31 +3327,6 @@
         }
       ],
       "title": "Zwiększanie efektywności produkcji dzięki zintegrowanym interfejsom HMI w systemach MES"
-    },
-    {
-      "__outstatic": {
-        "commit": "ce739ebbb30777da5171160e1034aa322720b26b",
-        "hash": "1697095780",
-        "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
-      "description": "Praktyczne podejścia do optymalizacji planowania zasobów w połączonych fabrykach, wykorzystujące IoT i analitykę danych.",
-      "lang": "pl",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "zwiekszanie-efektywnosci-produkcji-poprzez-poaczone-fabryki-strategie-planowania-zasobow",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Zwiększanie efektywności produkcji poprzez połączone fabryki: strategie planowania zasobów"
     },
     {
       "__outstatic": {
