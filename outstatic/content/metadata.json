@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:46:08.896Z",
+  "generated": "2025-09-12T09:46:12.642Z",
   "metadata": [
     {
       "__outstatic": {
@@ -888,6 +888,31 @@
         }
       ],
       "title": "Industrie 5.0: Wie KI und fortschrittliche Konnektivität die industrielle Überwachung revolutionieren"
+    },
+    {
+      "__outstatic": {
+        "commit": "b94d219ed4094dc4cd5c0db08bfdac93cccf1d96",
+        "hash": "1458161326",
+        "path": "outstatic/content/posts/increasing-production-efficiency-through-connected-factories-resource-planning-strategies.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
+      "description": "Practical approaches to optimizing resource planning in connected factories, leveraging IoT and data analytics.",
+      "lang": "en",
+      "publishedAt": "2025-03-12T09:00:00Z",
+      "slug": "increasing-production-efficiency-through-connected-factories-resource-planning-strategies",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Temat",
+          "value": "Produkcja"
+        }
+      ],
+      "title": "Increasing Production Efficiency through Connected Factories: Resource Planning Strategies"
     },
     {
       "__outstatic": {
@@ -2460,31 +2485,6 @@
         }
       ],
       "title": "SPARKPLUG B vs OPC UA: Vergleich der Kommunikationsprotokolle Teil II"
-    },
-    {
-      "__outstatic": {
-        "commit": "a6bc41a9a1d24152b0ec9d9272ddf23f4648f32d",
-        "hash": "2176834050",
-        "path": "outstatic/content/posts/steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-manufacturing-efficiency-through-connected-factories-strategies-for-resource-planning-and-industrial-con.png",
-      "description": "Praktische Ansätze zur Optimierung der Ressourcenplanung in vernetzten Fabriken unter Nutzung von IoT und Datenanalyse.",
-      "lang": "de",
-      "publishedAt": "2025-03-12T09:00:00Z",
-      "slug": "steigerung-der-produktionseffizienz-durch-vernetzte-fabriken-ressourcenplanungsstrategien",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Temat",
-          "value": "Produkcja"
-        }
-      ],
-      "title": "Steigerung der Produktionseffizienz durch vernetzte Fabriken: Ressourcenplanungsstrategien"
     },
     {
       "__outstatic": {
