@@ -134,7 +134,12 @@
     "backToCourses": "Zurück zu den Kursen",
     "allCourses": "Alle Kurse",
     "backToImplementation": "Zurück zu den Implementierungen",
-    "allImplementation": "Alle Implementierungen"
+    "allImplementation": "Alle Implementierungen",
+    "author": "Autor",
+    "shareMessage": "Hat Ihnen dieser Artikel gefallen? Teilen Sie ihn!",
+    "shareOnTwitter": "Twitter",
+    "shareOnLinkedIn": "LinkedIn",
+    "backToBlog": "Zurück zum Blog"
   },
   "HeroSection": {
     "title": "Optimieren Sie Ihre Produktion mit unserem",

@@ -135,7 +135,12 @@
     "backToCourses": "Back to courses",
     "allCourses": "All courses",
     "backToImplementation": "Back to implementations",
-    "allImplementation": "All implementations"
+    "allImplementation": "All implementations",
+     "author": "Author",
+    "shareMessage": "Did you like this article? Share it!",
+    "shareOnTwitter": "Twitter",
+    "shareOnLinkedIn": "LinkedIn",
+    "backToBlog": "Back to blog"
   },
   "HeroSection": {
     "title": "Optimize your production with our",

@@ -135,7 +135,12 @@
     "backToCourses": "Powrót do kursów",
     "allCourses": "Wszystkie kursy",
     "backToImplementation": "Powrót do wdrożeń",
-    "allImplementation": "Wszystkie wdrożenia"
+    "allImplementation": "Wszystkie wdrożenia",
+    "author": "Autor",
+    "shareMessage": "Podobał Ci się ten artykuł? Podziel się nim!",
+    "shareOnTwitter": "Twitter",
+    "shareOnLinkedIn": "LinkedIn",
+    "backToBlog": "Powrót do bloga"
   },
   "HeroSection": {
     "title": "Optymalizuj produkcję z",
