@@ -1,15 +1,15 @@
 "use client"
 
+import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Input } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
-import { usePathname } from "next/navigation"
-import { useState } from "react"
 import { LuCalendar, LuSearch } from "react-icons/lu"
 
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
 import Tag from "@/components/Tag"
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface PaginationProps {
   totalPages: number
@@ -30,21 +30,23 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
   const nextPage = currentPage + 1 <= totalPages
 
   return (
-    <div className="flex items-center justify-center space-x-2 sm:space-x-4 py-6 sm:py-8">
+    <div className="flex items-center justify-center space-x-2 py-6 sm:space-x-4 sm:py-8">
       <nav className="flex items-center space-x-2 sm:space-x-6">
         {prevPage ? (
           <CustomLink
             href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
             rel="prev"
-            className="rounded-lg sm:rounded-xl bg-white px-3 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:bg-gray-800 dark:text-gray-200"
+            className="rounded-lg bg-white px-3 py-2 text-sm text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg sm:rounded-xl sm:px-6 sm:py-3 sm:text-base dark:bg-gray-800 dark:text-gray-200"
           >
             ← {t("prev")}
           </CustomLink>
         ) : (
-          <div className="cursor-not-allowed rounded-lg sm:rounded-xl px-3 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-gray-400">← {t("prev")}</div>
+          <div className="cursor-not-allowed rounded-lg px-3 py-2 text-sm text-gray-400 sm:rounded-xl sm:px-6 sm:py-3 sm:text-base">
+            ← {t("prev")}
+          </div>
         )}
 
-        <div className="flex items-center space-x-1 sm:space-x-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-2 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-medium text-white">
+        <div className="flex items-center space-x-1 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-2 py-1 text-xs font-medium text-white sm:space-x-2 sm:px-4 sm:py-2 sm:text-sm">
           <span>{currentPage}</span>
           <span className="text-blue-100">{t("of")}</span>
           <span>{totalPages}</span>
@@ -54,12 +56,14 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
           <CustomLink
             href={`/${basePath}/page/${currentPage + 1}`}
             rel="next"
-            className="rounded-lg sm:rounded-xl bg-white px-3 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:bg-gray-800 dark:text-gray-200"
+            className="rounded-lg bg-white px-3 py-2 text-sm text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg sm:rounded-xl sm:px-6 sm:py-3 sm:text-base dark:bg-gray-800 dark:text-gray-200"
           >
             {t("next")} →
           </CustomLink>
         ) : (
-          <div className="cursor-not-allowed rounded-lg sm:rounded-xl px-3 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-gray-400">{t("next")} →</div>
+          <div className="cursor-not-allowed rounded-lg px-3 py-2 text-sm text-gray-400 sm:rounded-xl sm:px-6 sm:py-3 sm:text-base">
+            {t("next")} →
+          </div>
         )}
       </nav>
     </div>
@@ -88,7 +92,7 @@ export default function ListLayout({
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       {/* Simple Search Bar - bez tła */}
       <div className="mb-6 sm:mb-8">
-        <div className="mx-auto max-w-2xl mt-3">
+        <div className="mx-auto mt-3 max-w-2xl">
           <Input
             aria-label={t("search")}
             type="text"
@@ -108,34 +112,34 @@ export default function ListLayout({
 
       {/* Posts Grid */}
       {!filteredBlogPosts.length ? (
-        <div className="py-12 sm:py-16 text-center">
-          <div className="mx-auto mb-4 sm:mb-6 flex size-16 sm:size-20 items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800">
-            <LuSearch className="size-6 sm:size-8 text-gray-400" />
+        <div className="py-12 text-center sm:py-16">
+          <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-gray-200 sm:mb-6 sm:size-20 dark:from-gray-700 dark:to-gray-800">
+            <LuSearch className="size-6 text-gray-400 sm:size-8" />
           </div>
-          <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-400">{t("NotFound")}</p>
+          <p className="text-lg text-gray-500 sm:text-xl dark:text-gray-400">{t("NotFound")}</p>
         </div>
       ) : (
-        <div className="mb-8 sm:mb-12 grid grid-cols-1 gap-5 sm:gap-6 lg:gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mb-8 grid grid-cols-1 gap-5 sm:mb-12 sm:gap-6 md:grid-cols-2 lg:gap-8 xl:grid-cols-3">
           {displayPosts.map((post, index) => {
             const { title, description, tags, publishedAt, slug, coverImage } = post
 
             return (
               <article
                 key={slug}
-                className="group overflow-hidden rounded-2xl sm:rounded-3xl border border-gray-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-gray-700 dark:bg-gray-800"
+                className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:rounded-3xl dark:border-gray-700 dark:bg-gray-800"
                 style={{
                   animationDelay: `${index * 100}ms`,
                 }}
               >
                 {/* Cover Image */}
-                <div className="relative h-44 sm:h-48 lg:h-56 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600">
+                <div className="relative h-44 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 sm:h-48 lg:h-56 dark:from-gray-700 dark:to-gray-600">
                   {coverImage ? (
                     <CustomLink href={`/${basePath}/${slug}`} className="block h-full">
                       <div className="relative h-full">
                         <img
                           src={coverImage}
                           alt={`Okładka: ${title}`}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          className="size-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
@@ -143,17 +147,17 @@ export default function ListLayout({
                     </CustomLink>
                   ) : (
                     <div className="flex h-full items-center justify-center">
-                      <div className="flex size-14 sm:size-16 lg:size-20 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-br from-blue-200 to-purple-200 dark:from-gray-600 dark:to-gray-500">
-                        <LuSearch className="size-6 sm:size-7 lg:size-8 text-gray-400" />
+                      <div className="flex size-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-200 to-purple-200 sm:size-16 sm:rounded-2xl lg:size-20 dark:from-gray-600 dark:to-gray-500">
+                        <LuSearch className="size-6 text-gray-400 sm:size-7 lg:size-8" />
                       </div>
                     </div>
                   )}
 
                   {/* Date Badge */}
-                  <div className="absolute left-3 sm:left-4 top-3 sm:top-4">
-                    <div className="rounded-lg sm:rounded-xl bg-white/90 px-2 sm:px-3 py-1 sm:py-2 shadow-lg backdrop-blur-sm dark:bg-gray-800/90">
-                      <div className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm">
-                        <LuCalendar className="size-3 sm:size-4 text-blue-500" />
+                  <div className="absolute left-3 top-3 sm:left-4 sm:top-4">
+                    <div className="rounded-lg bg-white/90 px-2 py-1 shadow-lg backdrop-blur-sm sm:rounded-xl sm:px-3 sm:py-2 dark:bg-gray-800/90">
+                      <div className="flex items-center space-x-1 text-xs sm:space-x-2 sm:text-sm">
+                        <LuCalendar className="size-3 text-blue-500 sm:size-4" />
                         <time
                           dateTime={publishedAt}
                           className="font-medium text-gray-700 dark:text-gray-200"
@@ -166,7 +170,7 @@ export default function ListLayout({
                 </div>
 
                 {/* Content */}
-                <div className="space-y-3 sm:space-y-4 p-4 sm:p-5 lg:p-6">
+                <div className="space-y-3 p-4 sm:space-y-4 sm:p-5 lg:p-6">
                   {/* Tags */}
                   {tags && Array.isArray(tags) && (
                     <div className="flex flex-wrap gap-1 sm:gap-2">
@@ -187,7 +191,7 @@ export default function ListLayout({
                       {tags.length > 3 && (
                         <span
                           key={`${slug}-more-tags`}
-                          className="inline-flex cursor-pointer items-center rounded-full bg-gray-100 px-2 sm:px-3 py-1 text-xs font-medium text-gray-600 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+                          className="inline-flex cursor-pointer items-center rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 transition-colors duration-200 hover:bg-gray-200 sm:px-3 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
                         >
                           +{tags.length - 3}
                         </span>
@@ -196,7 +200,7 @@ export default function ListLayout({
                   )}
 
                   {/* Title */}
-                  <h2 className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
+                  <h2 className="text-lg font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-blue-600 sm:text-xl lg:text-2xl dark:text-white dark:group-hover:text-blue-400">
                     <CustomLink
                       href={`/${basePath}/${slug}`}
                       className="decoration-2 underline-offset-4 hover:underline"
@@ -206,7 +210,7 @@ export default function ListLayout({
                   </h2>
 
                   {/* Description */}
-                  <p className="line-clamp-3 text-sm sm:text-base lg:text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                  <p className="line-clamp-3 text-sm leading-relaxed text-gray-600 sm:text-base lg:text-lg dark:text-gray-300">
                     {description}
                   </p>
 
@@ -214,11 +218,11 @@ export default function ListLayout({
                   <div className="pt-2">
                     <CustomLink
                       href={`/${basePath}/${slug}`}
-                      className="group/link inline-flex items-center space-x-2 text-sm sm:text-base font-medium text-blue-600 transition-colors duration-300 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+                      className="group/link inline-flex items-center space-x-2 text-sm font-medium text-blue-600 transition-colors duration-300 hover:text-blue-700 sm:text-base dark:text-blue-400 dark:hover:text-blue-300"
                     >
                       <span>Czytaj więcej</span>
                       <svg
-                        className="size-3 sm:size-4 transition-transform duration-300 group-hover/link:translate-x-1"
+                        className="size-3 transition-transform duration-300 group-hover/link:translate-x-1 sm:size-4"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
