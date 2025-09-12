@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:47:12.040Z",
+  "generated": "2025-09-12T09:47:19.321Z",
   "metadata": [
     {
       "__outstatic": {
@@ -525,31 +525,6 @@
         }
       ],
       "title": "Einsatz von TensorFlow in MES-Systemen"
-    },
-    {
-      "__outstatic": {
-        "commit": "91854669aa1b09018ecba35c4767aabf82c29ea6",
-        "hash": "1892244825",
-        "path": "outstatic/content/posts/enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/topic-enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems-for-a-connected-factory-this-topi.png",
-      "description": "The integration of advanced HMI interfaces in MES systems enhances operational efficiency in the connected factory.",
-      "lang": "en",
-      "publishedAt": "2025-01-26T09:00:00Z",
-      "slug": "enhancing-production-efficiency-through-integrated-hmi-interfaces-in-mes-systems",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Enhancing Production Efficiency through Integrated HMI Interfaces in MES Systems"
     },
     {
       "__outstatic": {
@@ -3352,6 +3327,31 @@
         }
       ],
       "title": "Zwiększanie efektywności produkcji poprzez połączone fabryki: strategie planowania zasobów"
+    },
+    {
+      "__outstatic": {
+        "commit": "5db359c8b61db8d6f4edf13b5e9229dcd0a8ace0",
+        "hash": "3144303349",
+        "path": "outstatic/content/posts/zwiekszanie-efektywnosci-produkcji-dzieki-systemom-mes-opartym-na-ai.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png",
+      "description": "Praktyczny przewodnik po monitorowaniu OEE w cyfryzacji fabryk z wykorzystaniem systemów MES.",
+      "lang": "pl",
+      "publishedAt": "2025-02-19T09:00:00Z",
+      "slug": "zwiekszanie-efektywnosci-produkcji-dzieki-systemom-mes-opartym-na-ai",
+      "status": "published",
+      "tags": [
+        {
+          "label": "kategoria",
+          "value": "automatyzacja przemysłowa"
+        }
+      ],
+      "title": "Zwiększanie efektywności produkcji dzięki systemom MES opartym na AI"
     },
     {
       "__outstatic": {
