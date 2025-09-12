@@ -7,6 +7,7 @@ import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
+import Tag from "@/components/Tag"
 import getFormattedDate from "@/lib/getFormattedDate"
 
 interface LayoutProps {
@@ -24,22 +25,27 @@ export default function PostLayout({
   const { title, publishedAt, content, tags, author, coverImage, description } = post
   const lang = useLocale()
 
-  const shareOnTwitter = () => {
+  const handleTwitterShare = () => {
     const url = encodeURIComponent(window.location.href)
     const text = encodeURIComponent(`${title} - sprawdź ten artykuł!`)
-    // Używamy x.com (nowa domena Twitter)
-    window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank")
+    const shareUrl = `https://x.com/intent/tweet?text=${text}&url=${url}`
+    window.open(shareUrl, "_blank", "noopener,noreferrer")
   }
 
-  const shareOnLinkedIn = () => {
+  const handleLinkedInShare = () => {
     const url = encodeURIComponent(window.location.href)
-    const title_encoded = encodeURIComponent(title)
-    const summary = encodeURIComponent(description || `Sprawdź ten interesujący artykuł: ${title}`)
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title_encoded}&summary=${summary}`, "_blank")
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`
+    window.open(shareUrl, "_blank", "noopener,noreferrer")
+  }
+
+  const handleFacebookShare = () => {
+    const url = encodeURIComponent(window.location.href)
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`
+    window.open(shareUrl, "_blank", "noopener,noreferrer")
   }
 
   return (
-    <>
+    <div className="w-full">
       <ScrollTopAndComment />
 
       {/* Hero Section with Cover Image */}
@@ -53,54 +59,53 @@ export default function PostLayout({
               src={coverImage} 
               alt={title} 
               fill 
-              className="object-cover object-center w-full h-full" 
+              className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-105" 
               priority 
-              sizes="(max-width: 390px) 390px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1920px"
+              sizes="(max-width: 390px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 100vw"
               style={{
                 objectFit: 'cover',
                 objectPosition: 'center',
-                width: '100%',
-                height: '100%'
               }}
             />
             {/* Gradient Overlay - dostosowany do małych ekranów */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20 
                             sm:from-black/80 sm:via-black/40 sm:to-transparent" />
 
+            {/* Back Link - na górze obrazka */}
+            {showBackLinks && (
+              <div className="absolute top-4 left-4 xs:top-6 xs:left-6 sm:top-8 sm:left-8 z-10">
+                <CustomLink
+                  href={backPath}
+                  className="group inline-flex items-center space-x-1.5 xs:space-x-2 
+                            rounded-lg xs:rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 
+                            hover:from-blue-600 hover:to-purple-700
+                            px-3 py-2 xs:px-4 xs:py-2.5 sm:px-6 sm:py-3
+                            text-xs xs:text-sm sm:text-base font-medium text-white 
+                            shadow-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm"
+                >
+                  <svg
+                    className="size-3.5 xs:size-4 sm:size-5 
+                              transition-transform duration-300 group-hover:-translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                    />
+                  </svg>
+                  <span>{t("back")}</span>
+                </CustomLink>
+              </div>
+            )}
+
             {/* Hero Content */}
             <div className="absolute inset-0 flex items-end">
               <div className="mx-auto w-full max-w-5xl px-3 pb-8 xs:px-4 sm:px-4 lg:px-6 
                               xs:pb-10 sm:pb-12 md:pb-16">
-                {/* Back Link - mniejszy na mobilnych */}
-                {showBackLinks && (
-                  <div className="mb-4 xs:mb-5 sm:mb-6">
-                    <CustomLink
-                      href={backPath}
-                      className="group inline-flex items-center space-x-1.5 xs:space-x-2 
-                                rounded-full border border-white/20 bg-black/50 backdrop-blur-sm
-                                px-2.5 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-2
-                                text-white transition-all duration-300 hover:bg-black/70"
-                    >
-                      <svg
-                        className="size-3.5 xs:size-4 sm:size-5 
-                                  transition-transform duration-300 group-hover:-translate-x-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 19l-7-7 7-7"
-                        />
-                      </svg>
-                      <span className="text-xs xs:text-sm sm:text-base font-medium">{t("back")}</span>
-                    </CustomLink>
-                  </div>
-                )}
-
-
                 {/* Title - lepsze skalowanie na małych ekranach */}
                 <h1 className="mb-4 font-black leading-tight text-white
                               text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
@@ -119,34 +124,36 @@ export default function PostLayout({
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative mx-auto max-w-5xl px-3 xs:px-4 sm:px-4 lg:px-6 text-center">
               {showBackLinks && (
-                <div className="mb-4 xs:mb-6 sm:mb-8">
+                <div className="absolute top-4 left-4 xs:top-6 xs:left-6 sm:top-8 sm:left-8 z-10">
                   <CustomLink
                     href={backPath}
                     className="group inline-flex items-center space-x-1.5 xs:space-x-2 
-                              rounded-full border border-white/20 bg-black/50 backdrop-blur-sm
-                              px-2.5 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-2
-                              text-white transition-all duration-300 hover:bg-black/70"
-                  >
-                    <svg
-                      className="size-3.5 xs:size-4 sm:size-5 
-                                transition-transform duration-300 group-hover:-translate-x-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                              rounded-lg xs:rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 
+                              hover:from-blue-600 hover:to-purple-700
+                              px-3 py-2 xs:px-4 xs:py-2.5 sm:px-6 sm:py-3
+                              text-xs xs:text-sm sm:text-base font-medium text-white 
+                              shadow-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M15 19l-7-7 7-7"
-                      />
-                    </svg>
-                    <span className="text-xs xs:text-sm sm:text-base font-medium">{t("back")}</span>
-                  </CustomLink>
+                      <svg
+                        className="size-3.5 xs:size-4 sm:size-5 
+                                  transition-transform duration-300 group-hover:-translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 19l-7-7 7-7"
+                        />
+                      </svg>
+                      <span>{t("back")}</span>
+                    </CustomLink>
                 </div>
               )}
 
-              <div className="mb-3 xs:mb-4 sm:mb-6">
+              <div className="mb-3 xs:mb-4 sm:mb-6 pt-16 xs:pt-20 sm:pt-24">
                 <div className="inline-flex items-center space-x-1.5 xs:space-x-2 
                               rounded-full border border-white/20 bg-black/50 backdrop-blur-sm
                               px-2.5 py-1.5 xs:px-3 xs:py-2 sm:px-4 sm:py-2 text-white">
@@ -222,6 +229,21 @@ export default function PostLayout({
                   {t("publishedOn")} {getFormattedDate(publishedAt, lang)}
                 </p>
 
+                {/* Tags - ukryte na małych urządzeniach */}
+                {Array.isArray(tags) && tags.length > 0 && (
+                  <div className="mt-2 xs:mt-3 hidden sm:flex flex-wrap gap-1.5 xs:gap-2">
+                    {tags.map((tag: { value: string; label: string }, index: number) => {
+                      return (
+                        <div
+                          key={tag?.value || index}
+                          className="transition-transform duration-200 hover:scale-105"
+                        >
+                          <Tag text={tag?.label || ""} />
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -244,7 +266,8 @@ export default function PostLayout({
               </div>
               <div className="flex space-x-3">
                 <button
-                  onClick={shareOnTwitter}
+                  type="button"
+                  onClick={handleTwitterShare}
                   className="flex items-center justify-center rounded-lg
                             bg-blue-500 hover:bg-blue-600
                             w-10 h-10 xs:w-11 xs:h-11 sm:w-12 sm:h-12
@@ -258,7 +281,8 @@ export default function PostLayout({
                   </svg>
                 </button>
                 <button
-                  onClick={shareOnLinkedIn}
+                  type="button"
+                  onClick={handleLinkedInShare}
                   className="flex items-center justify-center rounded-lg
                             bg-blue-700 hover:bg-blue-800
                             w-10 h-10 xs:w-11 xs:h-11 sm:w-12 sm:h-12
@@ -269,6 +293,21 @@ export default function PostLayout({
                 >
                   <svg className="size-5 xs:size-5 sm:size-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleFacebookShare}
+                  className="flex items-center justify-center rounded-lg
+                            bg-blue-600 hover:bg-blue-700
+                            w-10 h-10 xs:w-11 xs:h-11 sm:w-12 sm:h-12
+                            text-white transition-colors duration-200
+                            shadow-md hover:shadow-lg"
+                  title="Share on Facebook"
+                  aria-label="Share on Facebook"
+                >
+                  <svg className="size-5 xs:size-5 sm:size-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
                 </button>
               </div>
@@ -320,6 +359,6 @@ export default function PostLayout({
 
       {/* Bottom Spacing */}
       <div className="h-8 xs:h-10 sm:h-12 md:h-16"></div>
-    </>
+    </div>
   )
 }
