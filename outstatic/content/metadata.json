@@ -1,6 +1,6 @@
 {
   "commit": "1ad5bcb9b9f405ad1d7152700faa938eb3227953",
-  "generated": "2025-09-12T09:47:37.795Z",
+  "generated": "2025-09-12T09:47:42.642Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2513,6 +2513,31 @@
     },
     {
       "__outstatic": {
+        "commit": "06f16787d65da4b2a43b32c43ed5f7a36134d31f",
+        "hash": "3963201739",
+        "path": "outstatic/content/posts/utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/martin.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
+      "description": "A practical guide to using the MQTT protocol in MES and IoT systems to enhance production processes.",
+      "lang": "en",
+      "publishedAt": "2025-01-12T09:00:00Z",
+      "slug": "utilization-of-mqtt-protocol-to-enhance-connectivity-between-mes-systems-and-iot-devices",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Kategoria",
+          "value": "Przemysł 4.0"
+        }
+      ],
+      "title": "Utilization of MQTT Protocol to Enhance Connectivity Between MES Systems and IoT Devices"
+    },
+    {
+      "__outstatic": {
         "commit": "40d46ec83c059ba5a915f28d99e12934a16b0a9f",
         "hash": "3236711354",
         "path": "outstatic/content/posts/using-tensorflow-in-mes-systems.md"
@@ -2879,31 +2904,6 @@
         }
       ],
       "title": "Utilization of Production KPIs and Computer Vision Analytics in Quality Control"
-    },
-    {
-      "__outstatic": {
-        "commit": "b2c59edd71c9a6e43c290d87b7028a8f539bac8f",
-        "hash": "3103567154",
-        "path": "outstatic/content/posts/wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/martin.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/leveraging-mqtt-protocol-for-enhanced-connectivity-between-mes-systems-and-industrial-iot-devices-a-practical-guide-for-.png",
-      "description": "Praktyczny przewodnik po wykorzystaniu protokołu MQTT w systemach MES i IoT dla usprawnienia procesów produkcyjnych.",
-      "lang": "pl",
-      "publishedAt": "2025-01-12T09:00:00Z",
-      "slug": "wykorzystanie-protokou-mqtt-do-poprawy-acznosci-miedzy-systemami-mes-a-urzadzeniami-iot",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Kategoria",
-          "value": "Przemysł 4.0"
-        }
-      ],
-      "title": "Wykorzystanie protokołu MQTT do poprawy łączności między systemami MES a urządzeniami IoT"
     },
     {
       "__outstatic": {
