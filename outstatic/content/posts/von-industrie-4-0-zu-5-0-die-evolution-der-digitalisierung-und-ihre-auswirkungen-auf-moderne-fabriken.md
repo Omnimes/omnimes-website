@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-M1Nj.jpeg'
 slug: 'von-industrie-4-0-zu-5-0-die-evolution-der-digitalisierung-und-ihre-auswirkungen-auf-moderne-fabriken'
 description: ''
-coverImage: '/images/indystry_5_0_vs_4_0-IyMT.png'
+coverImage: '/images/indystry_5_0_vs_4_0-A0ND.png'
 tags: [{"value":"industry50","label":"Industry 5.0"},{"value":"Industry 5.0","label":"Industry 5.0"},{"value":"AI","label":"AI"}]
 lang: 'de'
 publishedAt: '2025-09-15T15:34:35.000Z'

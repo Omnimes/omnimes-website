@@ -1,6 +1,6 @@
 {
-  "commit": "cd44b92f021b4ae589510420ca1e8131775cf5cd",
-  "generated": "2025-09-16T15:30:34.934Z",
+  "commit": "1174e908a714a488600d40a4a3f6c7cb6deee2d0",
+  "generated": "2025-09-16T15:30:51.465Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3057,39 +3057,6 @@
     },
     {
       "__outstatic": {
-        "commit": "62845286c1e03910b05db87c4badbbb2bd3dd377",
-        "hash": "381880115",
-        "path": "outstatic/content/posts/von-industrie-4-0-zu-5-0-die-evolution-der-digitalisierung-und-ihre-auswirkungen-auf-moderne-fabriken.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-M1Nj.jpeg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/indystry_5_0_vs_4_0-IyMT.png",
-      "description": "",
-      "lang": "de",
-      "publishedAt": "2025-09-15T15:34:35.000Z",
-      "slug": "von-industrie-4-0-zu-5-0-die-evolution-der-digitalisierung-und-ihre-auswirkungen-auf-moderne-fabriken",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 5.0",
-          "value": "industry50"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
-        },
-        {
-          "label": "AI",
-          "value": "AI"
-        }
-      ],
-      "title": "Von Industrie 4.0 zu 5.0 – Die Evolution der Digitalisierung und ihre Auswirkungen auf moderne Fabriken"
-    },
-    {
-      "__outstatic": {
         "commit": "cd44b92f021b4ae589510420ca1e8131775cf5cd",
         "hash": "3576812426",
         "path": "outstatic/content/posts/od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki.md"
@@ -3120,6 +3087,39 @@
         }
       ],
       "title": "Od Przemysłu 4.0 do 5.0 – ewolucja cyfryzacji i jej wpływ na współczesne fabryki"
+    },
+    {
+      "__outstatic": {
+        "commit": "1174e908a714a488600d40a4a3f6c7cb6deee2d0",
+        "hash": "1682734866",
+        "path": "outstatic/content/posts/von-industrie-4-0-zu-5-0-die-evolution-der-digitalisierung-und-ihre-auswirkungen-auf-moderne-fabriken.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-M1Nj.jpeg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/indystry_5_0_vs_4_0-A0ND.png",
+      "description": "",
+      "lang": "de",
+      "publishedAt": "2025-09-15T15:34:35.000Z",
+      "slug": "von-industrie-4-0-zu-5-0-die-evolution-der-digitalisierung-und-ihre-auswirkungen-auf-moderne-fabriken",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "Industry 5.0"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        }
+      ],
+      "title": "Von Industrie 4.0 zu 5.0 – Die Evolution der Digitalisierung und ihre Auswirkungen auf moderne Fabriken"
     }
   ]
 }
