@@ -1,6 +1,6 @@
 {
-  "commit": "62845286c1e03910b05db87c4badbbb2bd3dd377",
-  "generated": "2025-09-16T15:24:02.223Z",
+  "commit": "201c92b39cce01a8a26d0643b99b3554cceab572",
+  "generated": "2025-09-16T15:24:32.195Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3024,39 +3024,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9e5a2fcc40b0b352a985b98a54531cbd7567eb63",
-        "hash": "1965368814",
-        "path": "outstatic/content/posts/od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "/images/1645307189660-k1NT.jpeg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/indystry_5_0_vs_4_0-Y5MT.png",
-      "description": "Cyfryzacja przemysłu od ponad dekady wyznacza nowe kierunki w produkcji. Hasło Przemysł 4.0 stało się symbolem czwartej rewolucji przemysłowej – ery automatyzacji, robotyzacji i Internetu Rzeczy (IoT). Dziś coraz częściej mówi się o Przemyśle 5.0, który nie zastępuje 4.0, lecz rozwija go, wprowadzając nowy wymiar: integrację człowieka i technologii w sposób zrównoważony i odpowiedzialny.",
-      "lang": "pl",
-      "publishedAt": "2025-09-15T15:16:27.000Z",
-      "slug": "od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "industry50"
-        },
-        {
-          "label": "AI",
-          "value": "AI"
-        }
-      ],
-      "title": "Od Przemysłu 4.0 do 5.0 – ewolucja cyfryzacji i jej wpływ na współczesne fabryki"
-    },
-    {
-      "__outstatic": {
         "commit": "18a89ecd2a4e582708a7b9099bfbd05d78c1bfbc",
         "hash": "706124667",
         "path": "outstatic/content/posts/from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories.md"
@@ -3120,6 +3087,39 @@
         }
       ],
       "title": "Von Industrie 4.0 zu 5.0 – Die Evolution der Digitalisierung und ihre Auswirkungen auf moderne Fabriken"
+    },
+    {
+      "__outstatic": {
+        "commit": "201c92b39cce01a8a26d0643b99b3554cceab572",
+        "hash": "458845766",
+        "path": "outstatic/content/posts/od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-k1NT.jpeg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/indystry_5_0_vs_4_0-Y5MT.png",
+      "description": "Cyfryzacja przemysłu od ponad dekady wyznacza nowe kierunki w produkcji. Hasło Przemysł 4.0 stało się symbolem czwartej rewolucji przemysłowej – ery automatyzacji, robotyzacji i Internetu Rzeczy (IoT). Dziś coraz częściej mówi się o Przemyśle 5.0, który nie zastępuje 4.0, lecz rozwija go, wprowadzając nowy wymiar: integrację człowieka i technologii w sposób zrównoważony i odpowiedzialny.",
+      "lang": "pl",
+      "publishedAt": "2025-09-15T15:16:27.000Z",
+      "slug": "od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        }
+      ],
+      "title": "Od Przemysłu 4.0 do 5.0 – ewolucja cyfryzacji i jej wpływ na współczesne fabryki"
     }
   ]
 }
