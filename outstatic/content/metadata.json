@@ -1,6 +1,6 @@
 {
-  "commit": "1174e908a714a488600d40a4a3f6c7cb6deee2d0",
-  "generated": "2025-09-16T15:30:51.465Z",
+  "commit": "b7a219bc280b0f87ec40f54283c44652ff3ca106",
+  "generated": "2025-09-16T15:31:13.033Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3024,39 +3024,6 @@
     },
     {
       "__outstatic": {
-        "commit": "18a89ecd2a4e582708a7b9099bfbd05d78c1bfbc",
-        "hash": "706124667",
-        "path": "outstatic/content/posts/from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-E0Mz.jpeg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/indystry_5_0_vs_4_0-Y0MT.png",
-      "description": "For more than a decade, industrial digitalization has set new directions in manufacturing. The term Industry 4.0 became a symbol of the Fourth Industrial Revolution – the era of automation, robotics, and the Internet of Things (IoT). Today, Industry 5.0 is gaining traction. It does not replace 4.0 but builds on it, adding a new dimension: the integration of humans and technology in a sustainable and responsible way.",
-      "lang": "en",
-      "publishedAt": "2025-09-15T15:32:24.000Z",
-      "slug": "from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "Industry 5.0",
-          "value": "industry50"
-        },
-        {
-          "label": "AI",
-          "value": "AI"
-        }
-      ],
-      "title": "From Industry 4.0 to 5.0 – The Evolution of Digitalization and Its Impact on Modern Factories"
-    },
-    {
-      "__outstatic": {
         "commit": "cd44b92f021b4ae589510420ca1e8131775cf5cd",
         "hash": "3576812426",
         "path": "outstatic/content/posts/od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki.md"
@@ -3120,6 +3087,39 @@
         }
       ],
       "title": "Von Industrie 4.0 zu 5.0 – Die Evolution der Digitalisierung und ihre Auswirkungen auf moderne Fabriken"
+    },
+    {
+      "__outstatic": {
+        "commit": "b7a219bc280b0f87ec40f54283c44652ff3ca106",
+        "hash": "1122629753",
+        "path": "outstatic/content/posts/from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-E0Mz.jpeg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/indystry_5_0_vs_4_0-k0OD.png",
+      "description": "For more than a decade, industrial digitalization has set new directions in manufacturing. The term Industry 4.0 became a symbol of the Fourth Industrial Revolution – the era of automation, robotics, and the Internet of Things (IoT). Today, Industry 5.0 is gaining traction. It does not replace 4.0 but builds on it, adding a new dimension: the integration of humans and technology in a sustainable and responsible way.",
+      "lang": "en",
+      "publishedAt": "2025-09-15T15:32:24.000Z",
+      "slug": "from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        }
+      ],
+      "title": "From Industry 4.0 to 5.0 – The Evolution of Digitalization and Its Impact on Modern Factories"
     }
   ]
 }

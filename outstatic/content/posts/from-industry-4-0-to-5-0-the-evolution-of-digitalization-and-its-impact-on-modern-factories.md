@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-E0Mz.jpeg'
 slug: 'from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories'
 description: 'For more than a decade, industrial digitalization has set new directions in manufacturing. The term Industry 4.0 became a symbol of the Fourth Industrial Revolution – the era of automation, robotics, and the Internet of Things (IoT). Today, Industry 5.0 is gaining traction. It does not replace 4.0 but builds on it, adding a new dimension: the integration of humans and technology in a sustainable and responsible way.'
-coverImage: '/images/indystry_5_0_vs_4_0-Y0MT.png'
+coverImage: '/images/indystry_5_0_vs_4_0-k0OD.png'
 lang: 'en'
 tags: [{"value":"industry40","label":"Industry 4.0"},{"value":"industry50","label":"Industry 5.0"},{"value":"AI","label":"AI"}]
 publishedAt: '2025-09-15T15:32:24.000Z'
@@ -90,4 +90,4 @@ For business, the difference is fundamental: from a *“cost factory”* to a *�
 
 Companies aiming to implement Industry 4.0 and 5.0 concepts need systems that not only collect data but also support decision-making and ensure full process integration.
 
-One such solution is **OmniMES** – a proprietary MES-class system that combines production digitalization with modern Industry 5.0 trends. More information can be found here:  [www.omnimes.com](https://www.omnimes.com)
+One such solution is **OmniMES** – a proprietary MES-class system that combines production digitalization with modern Industry 5.0 trends. More information can be found here: [www.omnimes.com](https://www.omnimes.com)
