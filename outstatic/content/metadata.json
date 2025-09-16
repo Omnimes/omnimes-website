@@ -1,6 +1,6 @@
 {
-  "commit": "201c92b39cce01a8a26d0643b99b3554cceab572",
-  "generated": "2025-09-16T15:24:32.195Z",
+  "commit": "cd44b92f021b4ae589510420ca1e8131775cf5cd",
+  "generated": "2025-09-16T15:30:34.934Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3090,8 +3090,8 @@
     },
     {
       "__outstatic": {
-        "commit": "201c92b39cce01a8a26d0643b99b3554cceab572",
-        "hash": "458845766",
+        "commit": "cd44b92f021b4ae589510420ca1e8131775cf5cd",
+        "hash": "3576812426",
         "path": "outstatic/content/posts/od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki.md"
       },
       "author": {
@@ -3099,7 +3099,7 @@
         "picture": "/images/1645307189660-k1NT.jpeg"
       },
       "collection": "posts",
-      "coverImage": "/images/indystry_5_0_vs_4_0-Y5MT.png",
+      "coverImage": "/images/indystry_5_0_vs_4_0-g3MD.png",
       "description": "Cyfryzacja przemysłu od ponad dekady wyznacza nowe kierunki w produkcji. Hasło Przemysł 4.0 stało się symbolem czwartej rewolucji przemysłowej – ery automatyzacji, robotyzacji i Internetu Rzeczy (IoT). Dziś coraz częściej mówi się o Przemyśle 5.0, który nie zastępuje 4.0, lecz rozwija go, wprowadzając nowy wymiar: integrację człowieka i technologii w sposób zrównoważony i odpowiedzialny.",
       "lang": "pl",
       "publishedAt": "2025-09-15T15:16:27.000Z",

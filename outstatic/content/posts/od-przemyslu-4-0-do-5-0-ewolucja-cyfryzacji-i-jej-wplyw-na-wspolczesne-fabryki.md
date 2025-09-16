@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-k1NT.jpeg'
 slug: 'od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki'
 description: 'Cyfryzacja przemysłu od ponad dekady wyznacza nowe kierunki w produkcji. Hasło Przemysł 4.0 stało się symbolem czwartej rewolucji przemysłowej – ery automatyzacji, robotyzacji i Internetu Rzeczy (IoT). Dziś coraz częściej mówi się o Przemyśle 5.0, który nie zastępuje 4.0, lecz rozwija go, wprowadzając nowy wymiar: integrację człowieka i technologii w sposób zrównoważony i odpowiedzialny.'
-coverImage: '/images/indystry_5_0_vs_4_0-Y5MT.png'
+coverImage: '/images/indystry_5_0_vs_4_0-g3MD.png'
 lang: 'pl'
 tags: [{"value":"industry40","label":"Industry 4.0"},{"value":"industry50","label":"Industry 5.0"},{"value":"AI","label":"AI"}]
 publishedAt: '2025-09-15T15:16:27.000Z'
