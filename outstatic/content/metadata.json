@@ -1,6 +1,6 @@
 {
-  "commit": "05c56f1f7146977f1a2540c5c4efbc19bfbe15c4",
-  "generated": "Fri, 12 Sep 2025 09:52:47 GMT",
+  "commit": "9e5a2fcc40b0b352a985b98a54531cbd7567eb63",
+  "generated": "2025-09-16T15:20:08.125Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3021,6 +3021,39 @@
         }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "9e5a2fcc40b0b352a985b98a54531cbd7567eb63",
+        "hash": "1965368814",
+        "path": "outstatic/content/posts/od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "/images/1645307189660-k1NT.jpeg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/indystry_5_0_vs_4_0-Y5MT.png",
+      "description": "Cyfryzacja przemysłu od ponad dekady wyznacza nowe kierunki w produkcji. Hasło Przemysł 4.0 stało się symbolem czwartej rewolucji przemysłowej – ery automatyzacji, robotyzacji i Internetu Rzeczy (IoT). Dziś coraz częściej mówi się o Przemyśle 5.0, który nie zastępuje 4.0, lecz rozwija go, wprowadzając nowy wymiar: integrację człowieka i technologii w sposób zrównoważony i odpowiedzialny.",
+      "lang": "pl",
+      "publishedAt": "2025-09-15T15:16:27.000Z",
+      "slug": "od-przemyslu-4-0-do-5-0-ewolucja-cyfryzacji-i-jej-wplyw-na-wspolczesne-fabryki",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        }
+      ],
+      "title": "Od Przemysłu 4.0 do 5.0 – ewolucja cyfryzacji i jej wpływ na współczesne fabryki"
     }
   ]
 }
