@@ -1,6 +1,6 @@
 {
-  "commit": "c2493137d9625d8f717ca062a9f56a56f8ac4174",
-  "generated": "2025-09-18T14:25:06.281Z",
+  "commit": "6883070b2117626d7d746c3cdda91e4a45e0822e",
+  "generated": "2025-09-18T14:31:37.188Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3139,6 +3139,25 @@
       "slug": "wersja-demo-omnimes-sprawdz-system-produkcji-na-zywo",
       "status": "published",
       "title": "Wersja Demo Omnimes – sprawdź system produkcji na żywo!"
+    },
+    {
+      "__outstatic": {
+        "commit": "6883070b2117626d7d746c3cdda91e4a45e0822e",
+        "hash": "2868482388",
+        "path": "outstatic/content/news/omnimes-demo-now-available-try-the-production-system-live.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omnimes-UyNz.png",
+      "description": "Curious how OmniMES works in real settings? Now you can see for yourself! We’re offering a fully functional demo version of our system — just fill in a short form and get instant access.",
+      "lang": "en",
+      "publishedAt": "2025-09-18T14:37:13.211Z",
+      "slug": "omnimes-demo-now-available-try-the-production-system-live",
+      "status": "published",
+      "title": "OmniMES Demo Now Available – Try the Production System Live!"
     }
   ]
 }
