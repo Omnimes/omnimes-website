@@ -4,7 +4,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 coverImage: '/images/omnimes-kyNT.png'
 title: 'OmniMES-Demo Jetzt Verfügbar – Testen Sie das Produktionssystem Live!'
-status: 'draft'
+status: 'published'
 slug: 'omnimes-demo-jetzt-verfugbar-testen-sie-das-produktionssystem-live'
 description: 'Möchten Sie sehen, wie OmniMES in der Praxis arbeitet? Jetzt haben Sie die Möglichkeit! Wir bieten eine voll funktionsfähige Demoversion unseres Systems an — Formular ausfüllen, Zugangsdaten erhalten und loslegen.'
 lang: 'de'

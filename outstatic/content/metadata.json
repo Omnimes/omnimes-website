@@ -1,6 +1,6 @@
 {
-  "commit": "5d0b3ffe1e24ca83533b90659422a1c5c4663c90",
-  "generated": "2025-09-18T14:32:55.693Z",
+  "commit": "bcc8978c8aa6ba131aa63fe0a16554491a3a00d8",
+  "generated": "2025-09-18T14:34:13.164Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3161,8 +3161,8 @@
     },
     {
       "__outstatic": {
-        "commit": "5d0b3ffe1e24ca83533b90659422a1c5c4663c90",
-        "hash": "856897517",
+        "commit": "bcc8978c8aa6ba131aa63fe0a16554491a3a00d8",
+        "hash": "1160903596",
         "path": "outstatic/content/news/omnimes-demo-jetzt-verfugbar-testen-sie-das-produktionssystem-live.md"
       },
       "author": {
@@ -3175,7 +3175,7 @@
       "lang": "de",
       "publishedAt": "2025-09-18T14:43:47.323Z",
       "slug": "omnimes-demo-jetzt-verfugbar-testen-sie-das-produktionssystem-live",
-      "status": "draft",
+      "status": "published",
       "title": "OmniMES-Demo Jetzt Verfügbar – Testen Sie das Produktionssystem Live!"
     }
   ]
