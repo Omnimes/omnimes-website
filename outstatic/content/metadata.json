@@ -1,6 +1,6 @@
 {
-  "commit": "b7a219bc280b0f87ec40f54283c44652ff3ca106",
-  "generated": "2025-09-16T15:31:13.033Z",
+  "commit": "c2493137d9625d8f717ca062a9f56a56f8ac4174",
+  "generated": "2025-09-18T14:25:06.281Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3120,6 +3120,25 @@
         }
       ],
       "title": "From Industry 4.0 to 5.0 – The Evolution of Digitalization and Its Impact on Modern Factories"
+    },
+    {
+      "__outstatic": {
+        "commit": "c2493137d9625d8f717ca062a9f56a56f8ac4174",
+        "hash": "4151386715",
+        "path": "outstatic/content/news/wersja-demo-omnimes-sprawdz-system-produkcji-na-zywo.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omnimes-g4Mj.png",
+      "description": "Chcesz zobaczyć, jak OmniMES działa w praktyce? Teraz możesz! Udostępniliśmy w pełni funkcjonalną wersję demonstracyjną naszego systemu — po prostu wypełnij krótki formularz, a otrzymasz dostęp.",
+      "lang": "pl",
+      "publishedAt": "2025-09-18T14:32:45.465Z",
+      "slug": "wersja-demo-omnimes-sprawdz-system-produkcji-na-zywo",
+      "status": "published",
+      "title": "Wersja Demo Omnimes – sprawdź system produkcji na żywo!"
     }
   ]
 }
