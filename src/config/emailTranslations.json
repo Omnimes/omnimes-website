@@ -1,0 +1,140 @@
+{
+  "pl": {
+    "userEmail": {
+      "subject": "Dostęp do wersji demonstracyjnej OmniMES",
+      "greeting": "Dzień dobry",
+      "thanks": "Dziękujemy za zainteresowanie naszym systemem OmniMES!",
+      "credentialsTitle": "Oto dane dostępowe do wersji demonstracyjnej:",
+      "url": "Adres URL:",
+      "login": "Login:",
+      "password": "Hasło:",
+      "instructionsTitle": "Instrukcje:",
+      "instruction1": "1. Wejdź na stronę demonstracyjną używając powyższego linku",
+      "instruction2": "2. Zaloguj się używając podanych danych dostępowych", 
+      "instruction3": "3. Poznaj funkcjonalności systemu OmniMES",
+      "featuresTitle": "Co możesz przetestować w wersji demo:",
+      "feature1": "• Zarządzanie produkcją w czasie rzeczywistym",
+      "feature2": "• Monitorowanie maszyn i linii produkcyjnych",
+      "feature3": "• Raporty i analityki produkcyjne",
+      "feature4": "• Planowanie i harmonogramowanie",
+      "feature5": "• Zarządzanie jakością i brakami",
+      "contactTitle": "W przypadku pytań lub chęci umówienia prezentacji na żywo, prosimy o kontakt:",
+      "email": "Email:",
+      "phone": "Telefon:",
+      "note": "Uwaga: Dostęp do wersji demonstracyjnej posiada ograniczenia co do niektórych funkcjonalności.",
+      "footer": "Zespół OmniMES<br>Technologie Przemysłowe"
+    },
+    "teamEmail": {
+      "subject": "NOWE ZAPYTANIE DEMO od",
+      "title": "🚀 NOWE ZAPYTANIE O DOSTĘP DO DEMO",
+      "contactData": "Dane kontaktowe:",
+      "name": "Imię i nazwisko:",
+      "company": "Firma:",
+      "position": "Stanowisko:",
+      "email": "Email:",
+      "phone": "Telefon:",
+      "country": "Kraj:",
+      "companyInfo": "Informacje o firmie:",
+      "industry": "Branża:",
+      "employees": "Liczba pracowników:",
+      "message": "Wiadomość:",
+      "credentials": "Użytkownik otrzymał automatycznie dane dostępowe do demo:"
+    },
+    "common": {
+      "successMessage": "Dane dostępowe zostały wysłane na podany adres e-mail",
+      "errorMessage": "Wystąpił błąd podczas wysyłania e-maila"
+    }
+  },
+  "en": {
+    "userEmail": {
+      "subject": "Access to OmniMES Demo Version",
+      "greeting": "Dear",
+      "thanks": "Thank you for your interest in our OmniMES system!",
+      "credentialsTitle": "Here are the access credentials for the demo version:",
+      "url": "URL:",
+      "login": "Login:",
+      "password": "Password:",
+      "instructionsTitle": "Instructions:",
+      "instruction1": "1. Go to the demo page using the link above",
+      "instruction2": "2. Log in using the provided credentials",
+      "instruction3": "3. Explore OmniMES system features",
+      "featuresTitle": "What you can test in the demo version:",
+      "feature1": "• Real-time production management",
+      "feature2": "• Machine and production line monitoring",
+      "feature3": "• Production reports and analytics",
+      "feature4": "• Planning and scheduling",
+      "feature5": "• Quality management and defect tracking",
+      "contactTitle": "If you have any questions or would like to schedule a live presentation, please contact us:",
+      "email": "Email:",
+      "phone": "Phone:",
+      "note": "Note: Demo version access has limitations regarding some functionalities.",
+      "footer": "OmniMES Team<br>Industrial Technologies"
+    },
+    "teamEmail": {
+      "subject": "NEW DEMO REQUEST from",
+      "title": "🚀 NEW DEMO ACCESS REQUEST",
+      "contactData": "Contact information:",
+      "name": "Name:",
+      "company": "Company:",
+      "position": "Position:",
+      "email": "Email:",
+      "phone": "Phone:",
+      "country": "Country:",
+      "companyInfo": "Company information:",
+      "industry": "Industry:",
+      "employees": "Number of employees:",
+      "message": "Message:",
+      "credentials": "User received demo access credentials automatically:"
+    },
+    "common": {
+      "successMessage": "Access credentials have been sent to the provided email address",
+      "errorMessage": "An error occurred while sending the email"
+    }
+  },
+  "de": {
+    "userEmail": {
+      "subject": "Zugang zur OmniMES Demo-Version",
+      "greeting": "Sehr geehrte/r",
+      "thanks": "Vielen Dank für Ihr Interesse an unserem OmniMES-System!",
+      "credentialsTitle": "Hier sind die Zugangsdaten für die Demo-Version:",
+      "url": "URL:",
+      "login": "Login:",
+      "password": "Passwort:",
+      "instructionsTitle": "Anweisungen:",
+      "instruction1": "1. Gehen Sie über den obigen Link zur Demo-Seite",
+      "instruction2": "2. Melden Sie sich mit den angegebenen Zugangsdaten an",
+      "instruction3": "3. Erkunden Sie die Funktionen des OmniMES-Systems",
+      "featuresTitle": "Was Sie in der Demo-Version testen können:",
+      "feature1": "• Echtzeit-Produktionsmanagement",
+      "feature2": "• Maschinen- und Produktionslinienüberwachung",
+      "feature3": "• Produktionsberichte und Analysen",
+      "feature4": "• Planung und Terminierung",
+      "feature5": "• Qualitätsmanagement und Fehlerverfolgung",
+      "contactTitle": "Bei Fragen oder dem Wunsch nach einer Live-Präsentation kontaktieren Sie uns bitte:",
+      "email": "E-Mail:",
+      "phone": "Telefon:",
+      "note": "Hinweis: Der Zugang zur Demo-Version hat Einschränkungen bezüglich einiger Funktionalitäten.",
+      "footer": "OmniMES Team<br>Industrietechnologien"
+    },
+    "teamEmail": {
+      "subject": "NEUE DEMO-ANFRAGE von",
+      "title": "🚀 NEUE DEMO-ZUGANGSANFRAGE",
+      "contactData": "Kontaktdaten:",
+      "name": "Name:",
+      "company": "Unternehmen:",
+      "position": "Position:",
+      "email": "E-Mail:",
+      "phone": "Telefon:",
+      "country": "Land:",
+      "companyInfo": "Unternehmensinformationen:",
+      "industry": "Branche:",
+      "employees": "Anzahl der Mitarbeiter:",
+      "message": "Nachricht:",
+      "credentials": "Benutzer hat Demo-Zugangsdaten automatisch erhalten:"
+    },
+    "common": {
+      "successMessage": "Die Zugangsdaten wurden an die angegebene E-Mail-Adresse gesendet",
+      "errorMessage": "Beim Versenden der E-Mail ist ein Fehler aufgetreten"
+    }
+  }
+}

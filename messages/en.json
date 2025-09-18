@@ -15,6 +15,81 @@
     "implementation_keywords": "implementations, training, education, guides, OmniMES",
     "implementationNotFound": "No implementations found"
   },
+
+  "DemoOmniMeta": {
+    "title": "Demo Access - OmniMES System",
+    "desc": "Get free access to the OmniMES system demo version. Test the most advanced MES solution for Industry 4.0.",
+    "keywords": "OmniMES demo, MES system, trial version, Industry 4.0, production management"
+  },
+  "DemoSection": {
+    "title": "Test",
+    "titleHighlight": "OmniMES",
+    "description": "See for yourself how the OmniMES system can revolutionize your production. Fill out the form and get instant access to a fully functional demo version.",
+    "steps": "How it works:",
+    "step1": "Fill out the form",
+    "step2": "Receive access credentials",
+    "step3": "Test the system"
+  },
+  "DemoForm": {
+    "formTitle": "Get Access to OmniMES Demo Version",
+    "formSubtitle": "Fill out the form below to obtain access credentials",
+    "submitting": "Submitting...",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "firstNameMessage": "First name must be at least 3 characters",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "lastNameMessage": "Last name must be at least 3 characters",
+    "email": "Email Address",
+    "emailPlaceholder": "your.email@company.com",
+    "emailMessage": "Enter a valid email address",
+    "company": "Company Name",
+    "companyPlaceholder": "Enter your company name",
+    "companyMessage": "Company name must be at least 3 characters",
+    "position": "Position",
+    "positionPlaceholder": "Your position in the company",
+    "positionMessage": "Position must be at least 3 characters",
+    "phone": "Phone",
+    "phonePlaceholder": "123456789",
+    "phoneMessage": "Enter a valid phone number",
+    "selectLabel": "Country",
+    "industry": "Industry",
+    "industryPlaceholder": "Select industry",
+    "employeeCount": "Number of Employees",
+    "employeeCountPlaceholder": "Select range",
+    "message": "Additional Information",
+    "messagePlaceholder": "Describe your needs and expectations regarding the MES system...",
+    "messageMessage": "Message must be at least 3 characters",
+    "privacyConsent": "I agree to the processing of personal data",
+    "privacyMessage": "Your data will be used solely for providing demo access and sales contact",
+    "privacyPolicy": "Privacy Policy",
+    "submitButton": "Submit and Get Access",
+    "alertTitle": "Validation Error",
+    "alertMessage": "Check the correctness of the entered data and try again.",
+    "success": "Success!",
+    "successMessage": "Access credentials have been sent to the provided email address.",
+    "error": "Error",
+    "errorMessage": "An error occurred while submitting the form. Please try again.",
+    "freeDemoAccess": "Free demo access",
+    "personalData": "Personal Data",
+    "companyInfo": "Company Information",
+    "contactSection": "Contact",
+    "dataProtection": "Data Protection",
+    "dataProtectionInfo": "Your data will be used solely for providing demo access and sales contact. We do not share personal data with third parties.",
+    "industries": {
+      "manufacturing": "Industrial Manufacturing",
+      "automotive": "Automotive",
+      "electronics": "Electronics",
+      "food": "Food & Beverage",
+      "pharmaceutical": "Pharmaceutical",
+      "textile": "Textile",
+      "chemical": "Chemical",
+      "other": "Other"
+    }
+  },
+
+
+
   "Courses": {
     "title": "All Courses",
     "NotFound": "Coming soon"
@@ -65,7 +140,7 @@
     "home": "Home",
     "blog": "Blog",
     "about": "About",
-    "project": "Project",
+    "project": "function",
     "contact": "Contact",
     "main": "Main",
     "page": "page",
@@ -151,7 +226,9 @@
     "more": "Learn more",
     "buttonAria": "Go to the contact form page",
     "buttonOmnimes": "Go to the section with detailed information about OmniMES",
-    "playAria": "Play video"
+    "playAria": "Play video",
+    "demoAria": "Demo Omnimes",
+    "demo": "Try the demo"
   },
   "Benefits": {
   "title": "Business benefits for your company:",
@@ -352,7 +429,8 @@
     "ErrorFormMessage": "Please try again or contact us directly.",
     "Button": "Let's talk",
     "AriaButton": "Submit contact form",
-    "OrContactDirectly": "Contact directly"
+    "OrContactDirectly": "Contact directly",
+    "showPhone": "Show number"
   },
   "Widget": {
     "title": "Unleash the potential with OmniMES! Get a quote now and optimize your production today.",

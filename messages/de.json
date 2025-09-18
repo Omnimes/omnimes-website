@@ -21,6 +21,78 @@
     "NotFound": "Demnächst verfügbar"
   },
 
+  "DemoOmniMeta": {
+    "title": "Demo-Zugang - OmniMES System",
+    "desc": "Erhalten Sie kostenlosen Zugang zur Demo-Version des OmniMES-Systems. Testen Sie die fortschrittlichste MES-Lösung für Industrie 4.0.",
+    "keywords": "OmniMES Demo, MES System, Testversion, Industrie 4.0, Produktionsmanagement"
+  },
+  "DemoSection": {
+    "title": "Testen Sie",
+    "titleHighlight": "OmniMES",
+    "description": "Überzeugen Sie sich selbst davon, wie das OmniMES-System Ihre Produktion revolutionieren kann. Füllen Sie das Formular aus und erhalten Sie sofortigen Zugang zur voll funktionsfähigen Demo-Version.",
+    "steps": "So funktioniert es:",
+    "step1": "Formular ausfüllen",
+    "step2": "Zugangsdaten erhalten",
+    "step3": "System testen"
+  },
+  "DemoForm": {
+    "formTitle": "Zugang zur OmniMES Demo-Version erhalten",
+    "formSubtitle": "Füllen Sie das untenstehende Formular aus, um Zugangsdaten zu erhalten",
+    "submitting": "Wird gesendet...",
+    "firstName": "Vorname",
+    "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+    "firstNameMessage": "Vorname muss mindestens 3 Zeichen lang sein",
+    "lastName": "Nachname",
+    "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+    "lastNameMessage": "Nachname muss mindestens 3 Zeichen lang sein",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "ihre.email@firma.de",
+    "emailMessage": "Geben Sie eine gültige E-Mail-Adresse ein",
+    "company": "Firmenname",
+    "companyPlaceholder": "Geben Sie Ihren Firmennamen ein",
+    "companyMessage": "Firmenname muss mindestens 3 Zeichen lang sein",
+    "position": "Position",
+    "positionPlaceholder": "Ihre Position im Unternehmen",
+    "positionMessage": "Position muss mindestens 3 Zeichen lang sein",
+    "phone": "Telefon",
+    "phonePlaceholder": "123456789",
+    "phoneMessage": "Geben Sie eine gültige Telefonnummer ein",
+    "selectLabel": "Land",
+    "industry": "Branche",
+    "industryPlaceholder": "Branche wählen",
+    "employeeCount": "Anzahl der Mitarbeiter",
+    "employeeCountPlaceholder": "Bereich wählen",
+    "message": "Zusätzliche Informationen",
+    "messagePlaceholder": "Beschreiben Sie Ihre Bedürfnisse und Erwartungen bezüglich des MES-Systems...",
+    "messageMessage": "Nachricht muss mindestens 3 Zeichen lang sein",
+    "privacyConsent": "Ich stimme der Verarbeitung personenbezogener Daten zu",
+    "privacyMessage": "Ihre Daten werden ausschließlich für die Bereitstellung des Demo-Zugangs und den Vertriebskontakt verwendet",
+    "privacyPolicy": "Datenschutzerklärung",
+    "submitButton": "Absenden und Zugang erhalten",
+    "alertTitle": "Validierungsfehler",
+    "alertMessage": "Überprüfen Sie die Richtigkeit der eingegebenen Daten und versuchen Sie es erneut.",
+    "success": "Erfolg!",
+    "successMessage": "Zugangsdaten wurden an die angegebene E-Mail-Adresse gesendet.",
+    "error": "Fehler",
+    "errorMessage": "Beim Senden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "freeDemoAccess": "Kostenloser Demo-Zugang",
+    "personalData": "Persönliche Daten",
+    "companyInfo": "Unternehmensinformationen",
+    "contactSection": "Kontakt",
+    "dataProtection": "Datenschutz",
+    "dataProtectionInfo": "Ihre Daten werden ausschließlich für die Bereitstellung des Demo-Zugangs und den Vertriebskontakt verwendet. Wir geben keine persönlichen Daten an Dritte weiter.",
+    "industries": {
+      "manufacturing": "Industrielle Fertigung",
+      "automotive": "Automobilindustrie",
+      "electronics": "Elektronik",
+      "food": "Lebensmittel",
+      "pharmaceutical": "Pharmazeutisch",
+      "textile": "Textil",
+      "chemical": "Chemisch",
+      "other": "Andere"
+    }
+},
+
   "cookie": {
     "message": "Wir verwenden Cookies für Analysen und zur Personalisierung von Werbung. Sie können alle akzeptieren, ablehnen oder Kategorien auswählen. Details finden Sie in der Datenschutzerklärung.",
     "details": {
@@ -65,7 +137,7 @@
     "home": "Startseite",
     "blog": "Blog",
     "about": "Über uns",
-    "project": "Projekt",
+    "project": "Funktionen",
     "contact": "Kontakt",
     "main": "Menu",
     "page": "seite",
@@ -151,7 +223,9 @@
     "more": "Mehr erfahren",
     "buttonAria": "Zur Seite mit dem Kontaktformular",
     "buttonOmnimes": "Zur Sektion mit detaillierten Informationen über OmniMES",
-    "playAria": "Video abspielen"
+    "playAria": "Video abspielen",
+    "demoAria": "Demo Omnimes",
+    "demo": "Testen Sie die Demo"
   },
   "Benefits": {
     "title": "Geschäftsvorteile für Ihr Unternehmen:",
@@ -352,7 +426,8 @@
     "ErrorFormMessage": "Bitte versuchen Sie es erneut oder nehmen Sie direkt Kontakt mit uns auf.",
     "Button": "Lass uns reden",
     "AriaButton": "Kontaktformular absenden",
-    "OrContactDirectly": "Kontaktiere uns direkt"
+    "OrContactDirectly": "Kontaktiere uns direkt",
+    "showPhone": "Nummer anzeigen"
   },
   "Widget": {
     "title": "Entfesseln Sie das Potenzial mit OmniMES! Holen Sie sich jetzt ein Angebot und optimieren Sie Ihre Produktion noch heute.",

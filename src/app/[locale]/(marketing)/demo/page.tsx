@@ -2,13 +2,12 @@ import { getLocalePrimaryDialects } from "@/data/locales"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import { genPageMetadata } from "@/app/seo"
-import { DirectContact } from "@/components/DirectContact"
-import { FormContact } from "@/components/FormContact"
-import { HeadingContact } from "@/components/HeadingContact"
+import { FormDemo } from "@/components/FormDemo"
+import { HeadingDemo } from "@/components/HeadingDemo"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "ContactMeta" })
+  const t = await getTranslations({ locale, namespace: "DemoOmniMeta" })
   const title = t("title")
   const description = t("desc")
   const keywords = t("keywords")
@@ -22,15 +21,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return genPageMetadata(obj)
 }
 
-export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function DemoPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   setRequestLocale(locale)
   return (
     <main>
-      
-      <HeadingContact />
-      <DirectContact />
-      <FormContact />
+        <HeadingDemo />
+        <FormDemo />
     </main>
   )
 }

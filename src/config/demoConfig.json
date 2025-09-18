@@ -1,0 +1,14 @@
+{
+  "demo": {
+    "url": "https://demo2.omnimes.com",
+    "login": "omnimes",
+    "password": "#demoomni20",
+    "validityDays": 30
+  },
+  "email": {
+    "cc": ["mszerment@multiprojekt.pl"],
+    "contact": {
+      "phone": "+48 730 002 118"
+    }
+  }
+}
