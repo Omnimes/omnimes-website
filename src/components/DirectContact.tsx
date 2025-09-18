@@ -1,19 +1,17 @@
-"use client";
+"use client"
 
-import { Avatar, Button } from "@nextui-org/react";
-import { useTranslations } from "next-intl";
-import { useState } from "react";
-import { LuPhone, LuUser } from "react-icons/lu";
+import { useState } from "react"
+import { Avatar, Button } from "@nextui-org/react"
+import { useTranslations } from "next-intl"
+import { LuPhone, LuUser } from "react-icons/lu"
 
 export const DirectContact = () => {
-  const t = useTranslations("Form");
-  const [showPhone, setShowPhone] = useState(false);
+  const t = useTranslations("Form")
+  const [showPhone, setShowPhone] = useState(false)
 
   return (
-    <div className="mx-auto mt-2 max-w-4xl px-6 text-center mb-10">
-      <p className="text-default-500 my-12 text-xl font-medium">
-        {t("OrContactDirectly")}
-      </p>
+    <div className="mx-auto mb-10 mt-2 max-w-4xl px-6 text-center">
+      <p className="text-default-500 my-12 text-xl font-medium">{t("OrContactDirectly")}</p>
 
       <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:items-center sm:justify-center">
         {/* Avatar */}
@@ -47,11 +45,11 @@ export const DirectContact = () => {
               variant="bordered"
               size="sm"
               startContent={<LuPhone />}
-              className="transition-all duration-200 hover:bg-primary-50"
+              className="hover:bg-primary-50 transition-all duration-200"
               onClick={(e) => {
-                e.preventDefault();
-                console.log("Button clicked → pokazuję numer telefonu");
-                setShowPhone(true);
+                e.preventDefault()
+                console.log("Button clicked → pokazuję numer telefonu")
+                setShowPhone(true)
               }}
             >
               {t("showPhone") || "Pokaż numer"}
@@ -60,5 +58,5 @@ export const DirectContact = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

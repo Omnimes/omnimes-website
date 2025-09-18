@@ -1,10 +1,10 @@
 "use client"
 
+import { Suspense, useEffect, useRef } from "react"
+import dynamic from "next/dynamic"
 import { Button, Link, Skeleton } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
-import dynamic from "next/dynamic"
-import { Suspense, useEffect, useRef } from "react"
 
 import { AnchorIcon, VideoPlayIcon } from "./ui/Icons"
 import { Subtitle } from "./ui/Subtitle"
@@ -107,7 +107,7 @@ export const Hero = () => {
               >
                 {t("contact")}
               </Button>
-              
+
               <Button
                 as={Link}
                 href="/demo"
@@ -117,12 +117,12 @@ export const Hero = () => {
                 aria-labelledby={t("demoAria")}
                 title={t("demo")}
                 role="button"
-                className="border-2 border-gradient-to-tr border-[#FF1CF7] bg-transparent text-[#FF1CF7] hover:bg-gradient-to-tr hover:from-[#FF1CF7] hover:to-[#b249f8] hover:text-white transition-all duration-300 dark:text-[#b249f8] dark:border-[#b249f8]"
+                className="border-gradient-to-tr border-2 border-[#FF1CF7] bg-transparent text-[#FF1CF7] transition-all duration-300 hover:bg-gradient-to-tr hover:from-[#FF1CF7] hover:to-[#b249f8] hover:text-white dark:border-[#b249f8] dark:text-[#b249f8]"
               >
                 {t("demo")}
               </Button>
             </div>
-            
+
             {/* Trzeci przycisk wyśrodkowany poniżej */}
             <div className="mt-4 flex justify-center sm:justify-start">
               <Button

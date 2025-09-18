@@ -1,8 +1,9 @@
-import demoConfig from "@/config/demoConfig.json";
-import emailTranslations from "@/config/emailTranslations.json"; // <<< WAŻNE: import JSON
-import { NextResponse, type NextRequest } from "next/server";
-import nodemailer from "nodemailer";
-import Mail from "nodemailer/lib/mailer";
+import { NextResponse, type NextRequest } from "next/server"
+import nodemailer from "nodemailer"
+import Mail from "nodemailer/lib/mailer"
+
+import demoConfig from "@/config/demoConfig.json"
+import emailTranslations from "@/config/emailTranslations.json" // <<< WAŻNE: import JSON
 
 type SupportedLocale = "pl" | "en" | "de"
 
@@ -36,7 +37,9 @@ export async function POST(request: NextRequest) {
     request.headers.get("accept-language")?.split(",")[0]?.split("-")[0]
 
   const rawLocale = (urlLocale || bodyLocale || headerLocale || "pl").toString().toLowerCase()
-  const locale: SupportedLocale = (["pl", "en", "de"].includes(rawLocale) ? rawLocale : "pl") as SupportedLocale
+  const locale: SupportedLocale = (
+    ["pl", "en", "de"].includes(rawLocale) ? rawLocale : "pl"
+  ) as SupportedLocale
 
   console.log("=== DEBUG API DEMO ===")
   console.log("Received data:", {

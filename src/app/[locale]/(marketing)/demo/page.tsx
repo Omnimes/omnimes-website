@@ -1,9 +1,9 @@
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
-import { genPageMetadata } from "@/app/seo"
 import { FormDemo } from "@/components/FormDemo"
 import { HeadingDemo } from "@/components/HeadingDemo"
+import { genPageMetadata } from "@/app/seo"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -26,8 +26,8 @@ export default async function DemoPage({ params }: { params: Promise<{ locale: s
   setRequestLocale(locale)
   return (
     <main>
-        <HeadingDemo />
-        <FormDemo />
+      <HeadingDemo />
+      <FormDemo />
     </main>
   )
 }

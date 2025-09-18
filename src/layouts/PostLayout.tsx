@@ -1,14 +1,14 @@
 "use client"
 
-import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
+import Image from "next/image"
 
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import Tag from "@/components/Tag"
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 
 interface LayoutProps {
   post: ExtendedOstDocument
@@ -301,10 +301,10 @@ export default function PostLayout({
                   onClick={handleTwitterShare}
                   className="xs:size-11 flex size-10 items-center
                             justify-center rounded-lg
-                            bg-blue-500 text-white shadow-md transition-colors duration-200 hover:bg-blue-600
+                            bg-black text-white shadow-md transition-colors duration-200 hover:bg-gray-800
                             hover:shadow-lg sm:size-12"
-                  title="Share on Twitter/X"
-                  aria-label="Share on Twitter"
+                  title="Udostępnij na Twitter/X"
+                  aria-label="Udostępnij na Twitter"
                 >
                   <svg
                     className="xs:size-5 size-5 sm:size-6"
@@ -314,6 +314,7 @@ export default function PostLayout({
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                 </button>
+
                 <button
                   type="button"
                   onClick={handleLinkedInShare}

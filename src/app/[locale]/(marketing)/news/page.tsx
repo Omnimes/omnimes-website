@@ -1,11 +1,11 @@
-import Image from "next/image"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { getTranslations, setRequestLocale } from "next-intl/server"
+import Image from "next/image"
 import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
 
-import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid"
 import { genPageMetadata } from "@/app/seo"
+import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params

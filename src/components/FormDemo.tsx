@@ -1,22 +1,22 @@
 "use client"
 
+import { FormEvent, useCallback, useMemo, useState } from "react"
 import { sendDemoEmail } from "@/utils/sendDemoEmail"
 import {
-    Avatar,
-    Button,
-    Card,
-    CardBody,
-    cn,
-    Input,
-    Link,
-    Select,
-    SelectItem,
-    Spinner,
-    Switch,
-    Textarea,
+  Avatar,
+  Button,
+  Card,
+  CardBody,
+  cn,
+  Input,
+  Link,
+  Select,
+  SelectItem,
+  Spinner,
+  Switch,
+  Textarea,
 } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
-import { FormEvent, useCallback, useMemo, useState } from "react"
 import { LuBuilding, LuMail, LuPhone, LuUser, LuUsers } from "react-icons/lu"
 import { useWindowSize } from "usehooks-ts"
 
@@ -198,7 +198,7 @@ export const FormDemo = () => {
     { key: "51-200", label: "51-200" },
     { key: "201-1000", label: "201-1000" },
     { key: "1000+", label: "1000+" },
-  ]; // ← Dodany średnik tutaj
+  ] // ← Dodany średnik tutaj
 
   return (
     <section className="relative isolate mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-20">
@@ -227,12 +227,13 @@ export const FormDemo = () => {
           {t("formTitle") || "Przetestuj OmniMES"}
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
-          {t("formSubtitle") || "Wypełnij formularz i otrzymaj natychmiastowy dostęp do w pełni funkcjonalnej wersji demonstracyjnej"}
+          {t("formSubtitle") ||
+            "Wypełnij formularz i otrzymaj natychmiastowy dostęp do w pełni funkcjonalnej wersji demonstracyjnej"}
         </p>
       </div>
 
       {/* Form Card */}
-      <Card className="border-0 bg-white/80 backdrop-blur-sm shadow-2xl shadow-black/10 dark:bg-gray-900/80">
+      <Card className="border-0 bg-white/80 shadow-2xl shadow-black/10 backdrop-blur-sm dark:bg-gray-900/80">
         <CardBody className="p-8 sm:p-12">
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Personal Info Section */}
@@ -256,8 +257,10 @@ export const FormDemo = () => {
                   variant="bordered"
                   classNames={{
                     base: "group",
-                    input: "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                    inputWrapper: "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                    input:
+                      "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                    inputWrapper:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
                     label: "text-gray-700 dark:text-gray-300 font-medium",
                   }}
                 />
@@ -271,18 +274,22 @@ export const FormDemo = () => {
                   startContent={<LuUser className="text-gray-400" />}
                   value={formValues.lastName}
                   isInvalid={isInvalidLastName}
-                  errorMessage={isInvalidLastName && (t("lastNameMessage") || "Nazwisko jest wymagane")}
+                  errorMessage={
+                    isInvalidLastName && (t("lastNameMessage") || "Nazwisko jest wymagane")
+                  }
                   onValueChange={(evt) => onChange("lastName", evt)}
                   variant="bordered"
                   classNames={{
                     base: "group",
-                    input: "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                    inputWrapper: "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                    input:
+                      "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                    inputWrapper:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
                     label: "text-gray-700 dark:text-gray-300 font-medium",
                   }}
                 />
               </div>
-              
+
               <Input
                 type="email"
                 label={t("email") || "E-mail"}
@@ -293,13 +300,17 @@ export const FormDemo = () => {
                 startContent={<LuMail className="text-gray-400" />}
                 value={formValues.email}
                 isInvalid={isInvalidEmail}
-                errorMessage={isInvalidEmail && (t("emailMessage") || "Wprowadź poprawny adres e-mail")}
+                errorMessage={
+                  isInvalidEmail && (t("emailMessage") || "Wprowadź poprawny adres e-mail")
+                }
                 onValueChange={(evt) => onChange("email", evt)}
                 variant="bordered"
                 classNames={{
                   base: "group",
-                  input: "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                  inputWrapper: "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                  input:
+                    "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                  inputWrapper:
+                    "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
                   label: "text-gray-700 dark:text-gray-300 font-medium",
                 }}
               />
@@ -321,13 +332,17 @@ export const FormDemo = () => {
                   startContent={<LuBuilding className="text-gray-400" />}
                   value={formValues.company}
                   isInvalid={isInvalidCompany}
-                  errorMessage={isInvalidCompany && (t("companyMessage") || "Nazwa firmy jest wymagana")}
+                  errorMessage={
+                    isInvalidCompany && (t("companyMessage") || "Nazwa firmy jest wymagana")
+                  }
                   onValueChange={(evt) => onChange("company", evt)}
                   variant="bordered"
                   classNames={{
                     base: "group",
-                    input: "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                    inputWrapper: "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                    input:
+                      "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                    inputWrapper:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
                     label: "text-gray-700 dark:text-gray-300 font-medium",
                   }}
                 />
@@ -341,13 +356,17 @@ export const FormDemo = () => {
                   startContent={<LuUsers className="text-gray-400" />}
                   value={formValues.position}
                   isInvalid={isInvalidPosition}
-                  errorMessage={isInvalidPosition && (t("positionMessage") || "Stanowisko jest wymagane")}
+                  errorMessage={
+                    isInvalidPosition && (t("positionMessage") || "Stanowisko jest wymagane")
+                  }
                   onValueChange={(evt) => onChange("position", evt)}
                   variant="bordered"
                   classNames={{
                     base: "group",
-                    input: "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                    inputWrapper: "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                    input:
+                      "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                    inputWrapper:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
                     label: "text-gray-700 dark:text-gray-300 font-medium",
                   }}
                 />
@@ -368,7 +387,8 @@ export const FormDemo = () => {
                   variant="bordered"
                   classNames={{
                     base: "group",
-                    trigger: "border-gray-200 hover:border-[#FF1CF7]/30 focus:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus:border-[#b249f8]",
+                    trigger:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus:border-[#b249f8]",
                     label: "text-gray-700 dark:text-gray-300 font-medium",
                     value: "text-gray-900 dark:text-white",
                   }}
@@ -379,7 +399,7 @@ export const FormDemo = () => {
                     </SelectItem>
                   ))}
                 </Select>
-                
+
                 <Select
                   label={t("employeeCount") || "Liczba pracowników"}
                   placeholder={t("employeeCountPlaceholder") || "Wybierz zakres"}
@@ -394,7 +414,8 @@ export const FormDemo = () => {
                   variant="bordered"
                   classNames={{
                     base: "group",
-                    trigger: "border-gray-200 hover:border-[#FF1CF7]/30 focus:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus:border-[#b249f8]",
+                    trigger:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus:border-[#b249f8]",
                     label: "text-gray-700 dark:text-gray-300 font-medium",
                     value: "text-gray-900 dark:text-white",
                   }}
@@ -428,8 +449,10 @@ export const FormDemo = () => {
                   variant="bordered"
                   classNames={{
                     base: "group",
-                    input: "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                    inputWrapper: "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                    input:
+                      "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                    inputWrapper:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
                     label: "text-gray-700 dark:text-gray-300 font-medium",
                   }}
                   startContent={
@@ -442,7 +465,8 @@ export const FormDemo = () => {
                         defaultSelectedKeys={["poland"]}
                         classNames={{
                           base: "w-[90px] sm:w-[140px]",
-                          trigger: "border-0 shadow-none bg-transparent hover:bg-gray-50/50 dark:hover:bg-gray-800/50",
+                          trigger:
+                            "border-0 shadow-none bg-transparent hover:bg-gray-50/50 dark:hover:bg-gray-800/50",
                         }}
                         onChange={(evt) => onChange("country", evt.target.value)}
                       >
@@ -542,7 +566,7 @@ export const FormDemo = () => {
                   }
                 />
               </div>
-              
+
               <Textarea
                 label={t("message") || "Dodatkowe informacje"}
                 placeholder={t("messagePlaceholder") || "Opisz swoje potrzeby..."}
@@ -550,14 +574,18 @@ export const FormDemo = () => {
                 isRequired
                 value={formValues.message}
                 isInvalid={isInvalidMessage}
-                errorMessage={isInvalidMessage && (t("messageMessage") || "Wiadomość jest wymagana")}
+                errorMessage={
+                  isInvalidMessage && (t("messageMessage") || "Wiadomość jest wymagana")
+                }
                 onValueChange={(evt) => onChange("message", evt)}
                 variant="bordered"
                 minRows={4}
                 classNames={{
                   base: "group",
-                  input: "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                  inputWrapper: "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                  input:
+                    "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                  inputWrapper:
+                    "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
                   label: "text-gray-700 dark:text-gray-300 font-medium",
                 }}
               />
@@ -576,9 +604,10 @@ export const FormDemo = () => {
                   base: cn(
                     "inline-flex w-full cursor-pointer items-center gap-4 rounded-lg p-4 transition-all",
                     "hover:bg-gray-100/50 dark:hover:bg-gray-700/30",
-                    validPrivacy && "ring-2 ring-red-500/20 bg-red-50/50 dark:bg-red-900/10"
+                    validPrivacy && "bg-red-50/50 ring-2 ring-red-500/20 dark:bg-red-900/10"
                   ),
-                  wrapper: "group-data-[selected=true]:bg-gradient-to-r group-data-[selected=true]:from-[#FF1CF7] group-data-[selected=true]:to-[#b249f8]",
+                  wrapper:
+                    "group-data-[selected=true]:bg-gradient-to-r group-data-[selected=true]:from-[#FF1CF7] group-data-[selected=true]:to-[#b249f8]",
                   thumb: "group-data-[selected=true]:bg-white",
                 }}
               >
@@ -587,11 +616,13 @@ export const FormDemo = () => {
                     {t("privacyConsent") || "Wyrażam zgodę na przetwarzanie danych osobowych"}
                   </p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">
-                    {t("privacyMessage") || "Twoje dane będą wykorzystane wyłącznie w celu udostępnienia demo"}&nbsp;
+                    {t("privacyMessage") ||
+                      "Twoje dane będą wykorzystane wyłącznie w celu udostępnienia demo"}
+                    &nbsp;
                     <Link
                       isExternal
                       href="/privacy-policy"
-                      className="text-[#FF1CF7] font-medium hover:text-[#b249f8] dark:text-[#b249f8] dark:hover:text-[#FF1CF7]"
+                      className="font-medium text-[#FF1CF7] hover:text-[#b249f8] dark:text-[#b249f8] dark:hover:text-[#FF1CF7]"
                       size="sm"
                     >
                       {t("privacyPolicy") || "Polityka prywatności"}
@@ -617,7 +648,7 @@ export const FormDemo = () => {
                 type="submit"
                 isLoading={isPending}
                 disabled={isPending}
-                className="w-full bg-gradient-to-r from-[#FF1CF7] to-[#b249f8] text-white font-semibold text-lg py-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                className="w-full bg-gradient-to-r from-[#FF1CF7] to-[#b249f8] py-6 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl disabled:transform-none disabled:cursor-not-allowed disabled:opacity-50"
                 size="lg"
               >
                 {isPending ? (
@@ -626,9 +657,7 @@ export const FormDemo = () => {
                     {t("submitting") || "Wysyłanie..."}
                   </>
                 ) : (
-                  <>
-                    🚀 {t("submitButton") || "Wyślij i otrzymaj dostęp"}
-                  </>
+                  <>🚀 {t("submitButton") || "Wyślij i otrzymaj dostęp"}</>
                 )}
               </Button>
             </div>
@@ -636,9 +665,17 @@ export const FormDemo = () => {
             {/* Info Box */}
             <div className="rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 p-6 dark:from-blue-900/20 dark:to-indigo-900/20">
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 rounded-full bg-blue-100 p-2 dark:bg-blue-800/50">
-                  <svg className="h-5 w-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                <div className="shrink-0 rounded-full bg-blue-100 p-2 dark:bg-blue-800/50">
+                  <svg
+                    className="size-5 text-blue-600 dark:text-blue-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div className="flex-1">
