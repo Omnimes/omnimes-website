@@ -485,7 +485,15 @@
           "value": "Industry 5.0",
           "label": "Industry 5.0"
         },
-        {}
+        {},
+        {
+          "value": "bigqueryAi",
+          "label": "Bigquery AI"
+        },
+        {
+          "value": "googleCloud",
+          "label": "Google Cloud"
+        }
       ]
     },
     "lang": {
