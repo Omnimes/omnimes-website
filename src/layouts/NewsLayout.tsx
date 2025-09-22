@@ -1,14 +1,14 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import { useLocale, useTranslations } from "next-intl"
 import { OstDocument } from "outstatic"
 
+import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import Tag from "@/components/Tag"
-import getFormattedDate from "@/lib/getFormattedDate"
 
 interface LayoutProps {
   post: OstDocument
@@ -112,7 +112,6 @@ export default function NewsLayout({
                 className="xs:px-4 xs:pb-10 mx-auto w-full max-w-5xl px-3 pb-8 sm:px-4 
                               sm:pb-12 md:pb-16 lg:px-6"
               >
-
                 {/* Title - lepsze skalowanie na małych ekranach */}
                 <h1
                   className="xs:text-2xl mb-4 max-w-4xl text-xl

@@ -1,14 +1,14 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import { useLocale, useTranslations } from "next-intl"
 
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
+import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import Tag from "@/components/Tag"
-import getFormattedDate from "@/lib/getFormattedDate"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface LayoutProps {
   post: ExtendedOstDocument
