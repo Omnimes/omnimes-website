@@ -1,6 +1,6 @@
 {
-  "commit": "373800f098b6d9903a97e9f8bd644041a97a0c9a",
-  "generated": "2025-09-22T21:35:48.117Z",
+  "commit": "55a300f93d3701f8ae4be20a35043ff0c91becb2",
+  "generated": "2025-09-22T21:37:50.335Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3210,6 +3210,39 @@
         }
       ],
       "title": "BigQuery AI w Przemyśle 5.0: Rewolucja Analityczna dla Inteligentnych Fabryk"
+    },
+    {
+      "__outstatic": {
+        "commit": "55a300f93d3701f8ae4be20a35043ff0c91becb2",
+        "hash": "1480793249",
+        "path": "outstatic/content/posts/bigquery-ai-in-industry-5-0-analytical-revolution-for-smart-factories.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-YyNT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/bigquery-ai-A5OT.png",
+      "description": "Industry 5.0 is not just another stage of digital transformation – it's a fundamental shift in approach to manufacturing that places humans and sustainable development at the center of advanced technologies. In this new reality, analytical platforms like BigQuery AI become a key component of intelligent production systems, enabling the transformation of vast amounts of data into concrete business insights.",
+      "lang": "en",
+      "publishedAt": "2025-09-22T21:47:55.163Z",
+      "slug": "bigquery-ai-in-industry-5-0-analytical-revolution-for-smart-factories",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Bigquery AI",
+          "value": "bigqueryAi"
+        },
+        {
+          "label": "Google Cloud",
+          "value": "googleCloud"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        }
+      ],
+      "title": "BigQuery AI in Industry 5.0: Analytical Revolution for Smart Factories"
     }
   ]
 }
