@@ -256,9 +256,9 @@
     "omnienergy": {
       "subtitle": "Energy management system compliant with ISO 50001(EMS)",
       "statistic": "Reduce energy and media consumption by 20%!",
-      "description": "System supports ISO50001 implementation, optimization of energy and media consumption, energy data analysis, and alerting with reporting.",
+      "description": "System supports iso-50001 implementation, optimization of energy and media consumption, energy data analysis, and alerting with reporting.",
       "features": {
-        "iso": "System supports ISO50001 standard implementation",
+        "iso": "System supports iso-50001 standard implementation",
         "optimization": "Energy and media consumption optimization",
         "analysis": "Energy data analysis",
         "reporting": "Alerting and reporting"

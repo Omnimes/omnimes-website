@@ -253,9 +253,9 @@
     "omnienergy": {
       "subtitle": "Energiemanagementsystem nach ISO 50001(EMS)",
       "statistic": "Reduzieren Sie Energie- und Medienverbrauch um 20%!",
-      "description": "System unterstützt ISO50001-Implementierung, Optimierung des Energie- und Medienverbrauchs, Energiedatenanalyse sowie Alarmierung und Berichterstattung.",
+      "description": "System unterstützt iso-50001-Implementierung, Optimierung des Energie- und Medienverbrauchs, Energiedatenanalyse sowie Alarmierung und Berichterstattung.",
       "features": {
-        "iso": "System unterstützt ISO50001-Standard-Implementierung",
+        "iso": "System unterstützt iso-50001-Standard-Implementierung",
         "optimization": "Optimierung des Energie- und Medienverbrauchs",
         "analysis": "Energiedatenanalyse",
         "reporting": "Alarmierung und Berichterstattung"
