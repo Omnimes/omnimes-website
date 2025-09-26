@@ -1,6 +1,6 @@
 {
-  "commit": "55a300f93d3701f8ae4be20a35043ff0c91becb2",
-  "generated": "2025-09-22T21:37:50.335Z",
+  "commit": "77f309897b1032cb50d4073a3619feee07d5d227",
+  "generated": "2025-09-26T09:31:54.596Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3243,6 +3243,39 @@
         }
       ],
       "title": "BigQuery AI in Industry 5.0: Analytical Revolution for Smart Factories"
+    },
+    {
+      "__outstatic": {
+        "commit": "77f309897b1032cb50d4073a3619feee07d5d227",
+        "hash": "3730966352",
+        "path": "outstatic/content/implementation/eldrew-producent-opakowan-drewnianych.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "/images/logo2-c0MD.png",
+      "description": "W 2022 roku w Eldrew wdrożyliśmy system OmniMES, obejmujący wybrane procesy produkcyjne związane z wytwarzaniem palet. Projekt pozwolił na integrację systemu z maszynami wykorzystywanymi w procesie produkcji oraz dopasowanie funkcjonalności OmniMES do specyfiki branży opakowań drewnianych.",
+      "lang": "pl",
+      "publishedAt": "2025-09-26T09:35:33.654Z",
+      "slug": "eldrew-producent-opakowan-drewnianych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Eldrew",
+          "value": "eldrew"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Wdrożenie",
+          "value": "wdrożenie"
+        }
+      ],
+      "title": "Eldrew - producent opakowań drewnianych"
     }
   ]
 }

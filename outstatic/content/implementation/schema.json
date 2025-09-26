@@ -19,6 +19,18 @@
         {
           "value": "test",
           "label": "test"
+        },
+        {
+          "value": "eldrew",
+          "label": "Eldrew"
+        },
+        {
+          "value": "omnimes",
+          "label": "Omnimes"
+        },
+        {
+          "value": "wdrożenie",
+          "label": "Wdrożenie"
         }
       ]
     }
