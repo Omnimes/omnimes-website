@@ -1,6 +1,6 @@
 {
-  "commit": "a83a510c0fe4a4ddb96239b80a31d2e0032c185c",
-  "generated": "2025-09-26T11:13:10.102Z",
+  "commit": "5d9b7f3e8870dab0dcdce61910610b0383b5b721",
+  "generated": "2025-09-26T11:14:11.236Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3309,6 +3309,35 @@
         }
       ],
       "title": "Eldrew - producent opakowań drewnianych"
+    },
+    {
+      "__outstatic": {
+        "commit": "5d9b7f3e8870dab0dcdce61910610b0383b5b721",
+        "hash": "1806210130",
+        "path": "outstatic/content/implementation/eldrew-hersteller-von-holzverpackungen.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "/images/logo2-UyND.png",
+      "description": "Im Jahr 2023 haben wir bei Eldrew das System OmniMES eingeführt, das ausgewählte Produktionsprozesse im Zusammenhang mit der Palettenherstellung abdeckt. Das Projekt ermöglichte die Integration des Systems mit den in der Produktion eingesetzten Maschinen sowie die Anpassung der OmniMES-Funktionalitäten an die Besonderheiten der Holzverpackungsbranche.",
+      "lang": "de",
+      "publishedAt": "2025-09-26T11:25:14.528Z",
+      "slug": "eldrew-hersteller-von-holzverpackungen",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Eldrew",
+          "value": "eldrew"
+        }
+      ],
+      "title": "Eldrew – Hersteller von Holzverpackungen"
     }
   ]
 }
