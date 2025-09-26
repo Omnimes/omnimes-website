@@ -12,20 +12,7 @@
     "tags": {
       "required": true,
       "description": "Add tags to the post",
-      "values": [
-        {
-          "value": "eldrew",
-          "label": "Eldrew"
-        },
-        {
-          "value": "omnimes",
-          "label": "Omnimes"
-        },
-        {
-          "value": "wdrożenie",
-          "label": "Wdrożenie"
-        }
-      ],
+      "values": [],
       "fieldType": "Tags",
       "dataType": "array",
       "title": "Tags"
