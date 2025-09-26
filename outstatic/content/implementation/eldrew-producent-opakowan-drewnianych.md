@@ -5,7 +5,7 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'eldrew-producent-opakowan-drewnianych'
-description: 'W 2022 roku w Eldrew wdrożyliśmy system OmniMES, obejmujący wybrane procesy produkcyjne związane z wytwarzaniem palet. Projekt pozwolił na integrację systemu z maszynami wykorzystywanymi w procesie produkcji oraz dopasowanie funkcjonalności OmniMES do specyfiki branży opakowań drewnianych.'
+description: 'W 2023 roku w Eldrew wdrożyliśmy system OmniMES, obejmujący wybrane procesy produkcyjne związane z wytwarzaniem palet. Projekt pozwolił na integrację systemu z maszynami wykorzystywanymi w procesie produkcji oraz dopasowanie funkcjonalności OmniMES do specyfiki branży opakowań drewnianych.'
 coverImage: '/images/logo2-c0MD.png'
 lang: 'pl'
 tags: [{"label":"Eldrew","value":"eldrew"},{"label":"Omnimes","value":"omnimes"},{"label":"Wdrożenie","value":"wdrożenie"}]
