@@ -1,6 +1,6 @@
 {
-  "commit": "e203c136f5eeb06daa27424dfde83919fc0a57ab",
-  "generated": "2025-09-26T11:23:12.216Z",
+  "commit": "26f3d1a39937e4ab8a3059c3f3da469bb5ececb1",
+  "generated": "2025-09-26T11:23:43.514Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3276,6 +3276,39 @@
         }
       ],
       "title": "Eldrew - producent opakowań drewnianych"
+    },
+    {
+      "__outstatic": {
+        "commit": "26f3d1a39937e4ab8a3059c3f3da469bb5ececb1",
+        "hash": "1300256740",
+        "path": "outstatic/content/implementation/eldrew-manufacturer-of-wooden-packaging.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "/images/logo2-M2Nz.png",
+      "description": "In 2023, we implemented the OmniMES system at Eldrew, covering selected production processes related to pallet manufacturing. The project enabled the integration of the system with the machines used in the production process and the customization of OmniMES functionalities to the specific requirements of the wooden packaging industry.",
+      "lang": "en",
+      "publishedAt": "2025-09-26T11:23:03.683Z",
+      "slug": "eldrew-manufacturer-of-wooden-packaging",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Eldrew",
+          "value": "eldrew"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Integration",
+          "value": "integration"
+        }
+      ],
+      "title": "Eldrew – manufacturer of wooden packaging"
     }
   ]
 }

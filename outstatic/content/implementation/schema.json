@@ -24,6 +24,10 @@
         {
           "value": "wdrożenie",
           "label": "Wdrożenie"
+        },
+        {
+          "value": "integration",
+          "label": "Integration"
         }
       ],
       "fieldType": "Tags",
