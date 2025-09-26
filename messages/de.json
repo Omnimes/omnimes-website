@@ -112,8 +112,9 @@
   },
 
   "Implementation": {
-    "title": "Alle Implementierungen",
-    "NotFound": "Demnächst verfügbar"
+    "title": "Implementierungen",
+    "NotFound": "Demnächst verfügbar",
+    "search": "Suchen..."
   },
   "LocaleSwitcher": {
     "label": "Sprache ändern",

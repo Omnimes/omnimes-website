@@ -1,11 +1,11 @@
 import { getLocalePrimaryDialects } from "@/data/locales"
-import ListLayout from "@/layouts/ListLayout"
+import ListImplementation from "@/layouts/ListImplementation"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { getDocuments, load } from "outstatic/server"
 
-import { generateSearchJSON } from "@/lib/generateSearchJSON"
 import { genPageMetadata } from "@/app/seo"
+import { generateSearchJSON } from "@/lib/generateSearchJSON"
 
 export type ExtendedOstDocument = OstDocument & {
   tags: { value: string; label: string }[]
@@ -31,7 +31,7 @@ async function getData(locale: string) {
   const allimplementation = await db
     .find<ExtendedOstDocument>(
       { collection: "implementation", status: "published", lang: locale },
-      ["title", "publishedAt", "slug", "description", "author", "tags"]
+      ["title", "publishedAt", "slug", "description", "author", "tags", "coverImage"]
     )
     .sort({ publishedAt: -1 })
     .limit(20)
@@ -55,6 +55,7 @@ async function getDataToSearch() {
       "description",
       "lang",
       "tags",
+      "coverImage"
     ])
     .sort({ publishedAt: -1 })
     .toArray()
@@ -86,8 +87,8 @@ export default async function implementationPage({
   }
 
   return (
-    <ListLayout
-      posts={allimplementation} // ListLayout może używać nazwy "posts" – struktura ta sama
+    <ListImplementation
+      posts={allimplementation} // ListImplementation może używać nazwy "posts" – struktura ta sama
       initialDisplayPosts={allimplementation}
       pagination={pagination}
       title={t("title")} // np. "Kursy" / "implementation"

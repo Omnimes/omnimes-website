@@ -114,8 +114,9 @@
   },
 
   "Implementation":{
-    "title": "Wszystkie realizacje",
-    "NotFound": "Już wkrótce"
+    "title": "Realizacje",
+    "NotFound": "Już wkrótce",
+    "search":"Wyszukaj..."
   },
 
   "Error": {
@@ -213,7 +214,7 @@
     "shareMessage": "Podobał Ci się ten artykuł? Podziel się nim!",
     "shareOnTwitter": "Twitter",
     "shareOnLinkedIn": "LinkedIn",
-    "backToBlog": "Powrót do bloga"
+    "backToBlog": "Powrót"
   },
   "HeroSection": {
     "title": "Optymalizuj produkcję z",

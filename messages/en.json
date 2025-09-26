@@ -114,8 +114,9 @@
   },
 
   "Implementation": {
-    "title": "All Implementations",
-    "NotFound": "Coming soon"
+    "title": "Implementations",
+    "NotFound": "Coming soon",
+    "search":"Search..."
   },
 
   "LocaleSwitcher": {

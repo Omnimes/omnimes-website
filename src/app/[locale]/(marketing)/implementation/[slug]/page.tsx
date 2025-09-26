@@ -1,10 +1,10 @@
 import "highlight.js/styles/github-dark.css"
 
-import { Metadata } from "next"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { siteMetadata } from "@/data/siteMetadata"
-import PostLayout from "@/layouts/PostLayout"
+import ImplementationLayout from "@/layouts/ImplementationLayout"
 import { Button, Link } from "@nextui-org/react"
+import { Metadata } from "next"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getDocumentSlugs, load } from "outstatic/server"
 import { LuCircleArrowLeft } from "react-icons/lu"
@@ -117,7 +117,7 @@ export default async function CoursePage({
     return (
       <article className="mx-auto mt-32 max-w-screen-lg px-4 text-center md:px-0">
         <h1 className="font-heading my-2 inline-block text-4xl leading-tight lg:text-5xl">
-          {t("implementationNotFound")}
+          {t("implementationNotFound")}fff
         </h1>
         <p>{t("implementationNotFoundDesc")}</p>
         <div className="flex justify-center py-6 lg:py-10">
@@ -139,7 +139,7 @@ export default async function CoursePage({
   }
 
   return (
-    <PostLayout
+    <ImplementationLayout
       post={course}
       backPath="/implementation" // ścieżka do listy kursów
       showBackLinks={true} // pokaż linki powrotu
