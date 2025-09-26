@@ -1,12 +1,12 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import { useLocale, useTranslations } from "next-intl"
 
-import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
+import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface LayoutProps {
   post: ExtendedOstDocument
@@ -60,7 +60,7 @@ export default function PostLayout({
               </CustomLink>
             </div>
           )}
-          
+
           <h1
             className="xs:text-2xl mb-6 text-xl
                         font-black leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl
@@ -79,8 +79,8 @@ export default function PostLayout({
           <div className="flex flex-col md:flex-row">
             {/* Cover Image - responsywny */}
             {coverImage && (
-              <div className="relative mx-auto mb-6 h-48 w-48 flex-shrink-0 md:mx-0 md:mb-0 md:mr-6 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80">
-                <div className="relative h-full m-4 overflow-hidden rounded-xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600">
+              <div className="relative mx-auto mb-6 size-48 shrink-0 md:mx-0 md:mb-0 md:mr-6 md:size-64 lg:size-72 xl:size-80">
+                <div className="relative m-4 h-full overflow-hidden rounded-xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600">
                   <Image
                     src={coverImage}
                     alt={title}
@@ -98,7 +98,9 @@ export default function PostLayout({
             )}
 
             {/* Article Content */}
-            <div className={`flex-1 ${coverImage ? 'xs:p-4 p-3 sm:p-6 lg:p-8' : 'xs:p-4 p-3 sm:p-6 lg:p-8'}`}>
+            <div
+              className={`flex-1 ${coverImage ? "xs:p-4 p-3 sm:p-6 lg:p-8" : "xs:p-4 p-3 sm:p-6 lg:p-8"}`}
+            >
               <div
                 className="prose prose-sm dark:prose-invert 
                               xs:prose-sm sm:prose-base lg:prose-lg 

@@ -1,6 +1,6 @@
 // app/layout.tsx
-import Script from "next/script"
 import { ReactNode } from "react"
+import Script from "next/script"
 
 import "@/css/tailwind.css"
 import "pliny/search/algolia.css"
