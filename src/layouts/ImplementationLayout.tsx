@@ -76,11 +76,11 @@ export default function PostLayout({
                         bg-white shadow-lg sm:mb-8 sm:rounded-2xl 
                         dark:border-gray-700 dark:bg-gray-800"
         >
-          <div className="flex flex-col sm:flex-row">
+          <div className="flex flex-col md:flex-row">
             {/* Cover Image - responsywny */}
             {coverImage && (
-              <div className="relative mx-auto mb-4 h-48 w-48 flex-shrink-0 sm:mx-0 sm:mb-0 sm:mr-6 sm:h-64 sm:w-64 md:h-72 md:w-72 lg:h-80 lg:w-80">
-                <div className="relative h-full overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600">
+              <div className="relative mx-auto mb-6 h-48 w-48 flex-shrink-0 md:mx-0 md:mb-0 md:mr-6 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80">
+                <div className="relative h-full m-4 overflow-hidden rounded-xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600">
                   <Image
                     src={coverImage}
                     alt={title}

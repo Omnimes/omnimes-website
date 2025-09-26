@@ -88,9 +88,8 @@ export default function ListLayout({
 
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
       {/* Title */}
-      <div className="mb-6 sm:mb-8 mt-5">
+      <div className="mb-6 mt-5 sm:mb-8">
         <h1 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl dark:text-white">
           {title}
         </h1>
@@ -160,7 +159,6 @@ export default function ListLayout({
                           </div>
                         </div>
                       )}
-
                     </div>
                   </div>
 
