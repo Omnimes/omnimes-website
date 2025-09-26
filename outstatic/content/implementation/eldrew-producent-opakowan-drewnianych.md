@@ -16,6 +16,6 @@ publishedAt: '2025-09-26T09:35:33.654Z'
 
 [https://eldrewpalety.pl](https://eldrewpalety.pl/)
 
-W 2022 roku w Eldrew wdrożyliśmy system **OmniMES**, obejmujący wybrane procesy produkcyjne związane z wytwarzaniem palet. Projekt pozwolił na integrację systemu z maszynami wykorzystywanymi w procesie produkcji oraz dopasowanie funkcjonalności OmniMES do specyfiki branży opakowań drewnianych.
+W 2023 roku w Eldrew wdrożyliśmy system **Omnimes**, obejmujący wybrane procesy produkcyjne związane z wytwarzaniem palet. Projekt pozwolił na integrację systemu z maszynami wykorzystywanymi w procesie produkcji oraz dopasowanie funkcjonalności OmniMES do specyfiki branży opakowań drewnianych.
 
 To wdrożenie stanowi przykład elastycznego dostosowania systemu do potrzeb firm produkcyjnych, niezależnie od skali czy rodzaju procesu.
