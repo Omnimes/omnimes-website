@@ -22,10 +22,6 @@
           "label": "Omnimes"
         },
         {
-          "value": "integration",
-          "label": "Integration"
-        },
-        {
           "value": "wdrożenie",
           "label": "Wdrożenie"
         }
