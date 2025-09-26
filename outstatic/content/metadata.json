@@ -1,6 +1,6 @@
 {
-  "commit": "5d9b7f3e8870dab0dcdce61910610b0383b5b721",
-  "generated": "2025-09-26T11:14:11.236Z",
+  "commit": "6787a304de997a2e6913fb962d1326f0c8eceeb2",
+  "generated": "2025-09-26T11:22:54.521Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3312,7 +3312,7 @@
     },
     {
       "__outstatic": {
-        "commit": "5d9b7f3e8870dab0dcdce61910610b0383b5b721",
+        "commit": "6787a304de997a2e6913fb962d1326f0c8eceeb2",
         "hash": "1806210130",
         "path": "outstatic/content/implementation/eldrew-hersteller-von-holzverpackungen.md"
       },
