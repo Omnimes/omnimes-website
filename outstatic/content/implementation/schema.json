@@ -12,14 +12,7 @@
     "tags": {
       "required": true,
       "description": "Add tags to the post",
-      "fieldType": "Tags",
-      "dataType": "array",
-      "title": "Tags",
       "values": [
-        {
-          "value": "test",
-          "label": "test"
-        },
         {
           "value": "eldrew",
           "label": "Eldrew"
@@ -32,7 +25,10 @@
           "value": "wdrożenie",
           "label": "Wdrożenie"
         }
-      ]
+      ],
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Tags"
     }
   }
 }
