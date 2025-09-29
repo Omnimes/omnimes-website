@@ -252,11 +252,11 @@
       }
     },
     "omnienergy": {
-      "subtitle": "Energiemanagementsystem nach ISO 50001(EMS)",
+      "subtitle": "Energiemanagementsystem nach ISO-50001(EMS)",
       "statistic": "Reduzieren Sie Energie- und Medienverbrauch um 20%!",
-      "description": "System unterstützt iso-50001-Implementierung, Optimierung des Energie- und Medienverbrauchs, Energiedatenanalyse sowie Alarmierung und Berichterstattung.",
+      "description": "System unterstützt ISO-50001-Implementierung, Optimierung des Energie- und Medienverbrauchs, Energiedatenanalyse sowie Alarmierung und Berichterstattung.",
       "features": {
-        "iso": "System unterstützt iso-50001-Standard-Implementierung",
+        "iso": "System unterstützt ISO-50001-Standard-Implementierung",
         "optimization": "Optimierung des Energie- und Medienverbrauchs",
         "analysis": "Energiedatenanalyse",
         "reporting": "Alarmierung und Berichterstattung"
@@ -332,7 +332,7 @@
     },
     "iso": {
       "badge": "Compliance & Nachhaltigkeit",
-      "text": "OmniMES unterstützt die Anforderungen von ISO 50001 (Energiemanagement) und ISO 14001 (Umweltmanagement)."
+      "text": "OmniMES unterstützt die Anforderungen von ISO-50001 (Energiemanagement) und ISO-14001 (Umweltmanagement)."
     }
   },
   "CloudInfo": {
