@@ -1,6 +1,6 @@
 {
-  "commit": "867048449fe223a78d6684f819afd054b6b26ca5",
-  "generated": "2025-10-01T07:15:29.804Z",
+  "commit": "45426635fe15b6a2997e19f9c0dc7bca9b754021",
+  "generated": "2025-10-01T07:16:40.540Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3353,8 +3353,8 @@
     },
     {
       "__outstatic": {
-        "commit": "867048449fe223a78d6684f819afd054b6b26ca5",
-        "hash": "866636840",
+        "commit": "45426635fe15b6a2997e19f9c0dc7bca9b754021",
+        "hash": "4219818003",
         "path": "outstatic/content/posts/effective-maintenance-how-an-mes-system-helps-minimize-micro-downtimes-in-production.md"
       },
       "author": {
