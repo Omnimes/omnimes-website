@@ -1,6 +1,6 @@
 {
-  "commit": "ed8a5adcc7cfc085005a67f3d13f9df5c43f44c6",
-  "generated": "2025-10-01T07:07:52.529Z",
+  "commit": "867048449fe223a78d6684f819afd054b6b26ca5",
+  "generated": "2025-10-01T07:15:29.804Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3350,6 +3350,47 @@
         }
       ],
       "title": "Efektywne utrzymanie ruchu: jak system MES pomaga w minimalizacji mikroprzestojów w produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "867048449fe223a78d6684f819afd054b6b26ca5",
+        "hash": "866636840",
+        "path": "outstatic/content/posts/effective-maintenance-how-an-mes-system-helps-minimize-micro-downtimes-in-production.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-YwNj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/projekt-bez-nazwy--3--M2Nz.jpg",
+      "description": "In modern manufacturing plants, every second of machine operation matters. Even short, seemingly insignificant interruptions – so-called micro-downtimes – can generate substantial losses on a production line. Research (Aberdeen Research) shows that unplanned downtime can cost manufacturing companies from hundreds to even thousands of dollars per minute. This is one of the reasons why more and more enterprises implement MES (Manufacturing Execution Systems). They support maintenance, enable real-time machine performance analysis, and help minimize the negative impact of micro-downtimes.",
+      "lang": "en",
+      "publishedAt": "2025-10-01T07:21:06.196Z",
+      "slug": "effective-maintenance-how-an-mes-system-helps-minimize-micro-downtimes-in-production",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        },
+        {
+          "label": "Maintenance",
+          "value": "maintenance"
+        },
+        {
+          "label": "Micro-downtime",
+          "value": "microDowntime"
+        }
+      ],
+      "title": "Effective Maintenance: How an MES System Helps Minimize Micro-Downtimes in Production"
     }
   ]
 }

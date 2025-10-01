@@ -501,6 +501,14 @@
         {
           "value": "mikroprzestoje",
           "label": "Mikroprzestoje"
+        },
+        {
+          "value": "maintenance",
+          "label": "Maintenance"
+        },
+        {
+          "value": "microDowntime",
+          "label": "Micro-downtime"
         }
       ]
     },
