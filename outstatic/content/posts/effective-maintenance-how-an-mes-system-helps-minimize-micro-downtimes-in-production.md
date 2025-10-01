@@ -6,7 +6,7 @@ author:
   picture: '/images/photo-YwNj.jpg'
 slug: 'effective-maintenance-how-an-mes-system-helps-minimize-micro-downtimes-in-production'
 description: 'In modern manufacturing plants, every second of machine operation matters. Even short, seemingly insignificant interruptions – so-called micro-downtimes – can generate substantial losses on a production line. Research (Aberdeen Research) shows that unplanned downtime can cost manufacturing companies from hundreds to even thousands of dollars per minute. This is one of the reasons why more and more enterprises implement MES (Manufacturing Execution Systems). They support maintenance, enable real-time machine performance analysis, and help minimize the negative impact of micro-downtimes.'
-coverImage: '/images/projekt-bez-nazwy--3--M2Nz.jpg'
+coverImage: '/images/projekt-bez-nazwy--4--IyOD.jpg'
 lang: 'en'
 tags: [{"value":"industry50","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"value":"sparkplugB","label":"Sparkplug B"},{"label":"Maintenance","value":"maintenance"},{"label":"Micro-downtime","value":"microDowntime"}]
 publishedAt: '2025-10-01T07:21:06.196Z'
