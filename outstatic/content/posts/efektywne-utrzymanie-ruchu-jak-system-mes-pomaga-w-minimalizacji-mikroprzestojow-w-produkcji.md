@@ -6,7 +6,7 @@ author:
   picture: '/images/photo-Q3MD.jpg'
 slug: 'efektywne-utrzymanie-ruchu-jak-system-mes-pomaga-w-minimalizacji-mikroprzestojow-w-produkcji'
 description: 'W nowoczesnych zakładach produkcyjnych każda sekunda pracy maszyn ma znaczenie. Nawet krótkie, pozornie nieistotne przerwy – tzw. mikroprzestoje – w skali całej linii mogą generować znaczne straty. Badania (Aberdeen Research) wskazują, że nieplanowane przestoje mogą kosztować firmy produkcyjne od kilkuset do nawet kilku tysięcy dolarów na minutę. To jeden z powodów, dla których coraz więcej przedsiębiorstw wdraża systemy klasy MES (Manufacturing Execution System). Wspierają one utrzymanie ruchu, umożliwiają analizę pracy maszyn w czasie rzeczywistym i pozwalają zminimalizować negatywny wpływ mikroprzestojów.'
-coverImage: '/images/projekt-bez-nazwy--3--AyMz.jpg'
+coverImage: '/images/projekt-bez-nazwy--4--Q4MD.jpg'
 lang: 'pl'
 tags: [{"value":"industry50","label":"Industry 5.0"},{"value":"omnimes","label":"Omnimes"},{"label":"Utrzymanie ruchu","value":"utrzymanieRuchu"},{"label":"Mikroprzestoje","value":"mikroprzestoje"},{"value":"sparkplugB","label":"Sparkplug B"}]
 publishedAt: '2025-10-01T06:49:45.914Z'
