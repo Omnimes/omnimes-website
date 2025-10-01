@@ -493,6 +493,14 @@
         {
           "value": "googleCloud",
           "label": "Google Cloud"
+        },
+        {
+          "value": "utrzymanieRuchu",
+          "label": "Utrzymanie ruchu"
+        },
+        {
+          "value": "mikroprzestoje",
+          "label": "Mikroprzestoje"
         }
       ]
     },
