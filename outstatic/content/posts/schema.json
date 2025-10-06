@@ -509,6 +509,14 @@
         {
           "value": "microDowntime",
           "label": "Micro-downtime"
+        },
+        {
+          "value": "docker",
+          "label": "docker"
+        },
+        {
+          "value": "microServices",
+          "label": "Micro Services"
         }
       ]
     },
