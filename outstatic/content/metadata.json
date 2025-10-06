@@ -1,6 +1,6 @@
 {
-  "commit": "b812341b7e30da149b03627d566bb6f8b7f87246",
-  "generated": "2025-10-06T20:12:22.160Z",
+  "commit": "7e19ca7a415b943fdb6856acdc367d8b5d36c56f",
+  "generated": "2025-10-06T20:14:58.998Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3424,6 +3424,39 @@
         }
       ],
       "title": "OmniMES i architektura mikrousług – fundament elastycznego systemu klasy MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "7e19ca7a415b943fdb6856acdc367d8b5d36c56f",
+        "hash": "3759032697",
+        "path": "outstatic/content/posts/omnimes-and-microservice-architecture-the-foundation-of-a-flexible-mes-system.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-E3Nj.jpeg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/microservices-vs-monolit-M5NT.png",
+      "description": "OmniMES is a modern Manufacturing Execution System (MES) designed on a microservice architecture. This model ensures scalability, flexibility, and independent development of individual modules — from machine communication to data analytics and production management.",
+      "lang": "en",
+      "publishedAt": "2025-10-06T20:24:44.323Z",
+      "slug": "omnimes-and-microservice-architecture-the-foundation-of-a-flexible-mes-system",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "docker",
+          "value": "docker"
+        },
+        {
+          "label": "Micro Services",
+          "value": "microServices"
+        }
+      ],
+      "title": "OmniMES and Microservice Architecture – The Foundation of a Flexible MES System"
     }
   ]
 }
