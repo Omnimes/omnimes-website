@@ -110,7 +110,25 @@
 
   "Courses": {
     "title": "Wszystkie kursy",
-    "NotFound": "Już wkrótce"
+    "NotFound": "Już wkrótce",
+    "intro_title": "Szkolenia OmniMES dla integratorów i producentów",
+    "intro_description": "Jesteś integratorem automatyki lub producentem maszyn? Chcesz poznać system i razem z nami unowocześniać przemysł? Świetnie trafiłeś! Zapisz się na bezpłatne, otwarte szkolenie z konfiguracji oprogramowania OmniMES.",
+    "upcoming_dates": "Najbliższe terminy",
+    "date_1": "26.11.2025 (Kraków, ul. Siwka 11)",
+    "date_2": "28.11.2025 (Kraków, ul. Siwka 11)",
+    "duration_label": "Czas trwania",
+    "duration_value": "6h (godz. 9:00-15:00)",
+    "registration_link": "Link do zapisów",
+    "scope_title": "Zakres szkolenia obejmuje",
+    "scope_1": "instalację oprogramowania",
+    "scope_2": "konfigurację brokera MQTT",
+    "scope_3": "konfigurację sygnałów w systemie",
+    "scope_4": "tworzenie struktury zakładu produkcyjnego",
+    "scope_5": "tworzenie raportów, dashboardów oraz planogramu",
+    "scope_6": "konfigurację użytkowników i nadawanie uprawnień",
+    "scope_7": "konfigurację agenta AI",
+    "no_date_title": "Nie pasuje Ci termin?",
+    "no_date_description": "Skontaktuj się z nami, aby dowiedzieć się o kolejnych planowanych szkoleniach."
   },
 
   "Implementation":{

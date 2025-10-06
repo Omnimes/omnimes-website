@@ -16,10 +16,31 @@
     "implementation_keywords": "Implementierungen, Schulungen, Ausbildung, Leitfäden, OmniMES",
     "implementationNotFound": "Keine Implementierungen gefunden"
   },
+
+
   "Courses": {
-    "title": "Alle Kurse",
-    "NotFound": "Demnächst verfügbar"
+    "title": "Alle Schulungen",
+    "NotFound": "Demnächst verfügbar",
+    "intro_title": "OmniMES-Schulungen für Integratoren und Maschinenhersteller",
+    "intro_description": "Sind Sie Automatisierungsintegrator oder Maschinenhersteller? Möchten Sie das System kennenlernen und gemeinsam mit uns die Industrie modernisieren? Perfekt! Melden Sie sich für ein kostenloses, offenes Training zur Konfiguration der OmniMES-Software an.",
+    "upcoming_dates": "Nächste Termine",
+    "date_1": "26.11.2025 (Krakau, Siwka 11)",
+    "date_2": "28.11.2025 (Krakau, Siwka 11)",
+    "duration_label": "Dauer",
+    "duration_value": "6 Stunden (9:00 – 15:00 Uhr)",
+    "registration_link": "Anmeldelink",
+    "scope_title": "Der Schulungsinhalt umfasst",
+    "scope_1": "Installation der Software",
+    "scope_2": "Konfiguration des MQTT-Brokers",
+    "scope_3": "Signal-Konfiguration im System",
+    "scope_4": "Erstellung der Produktionsanlagenstruktur",
+    "scope_5": "Erstellung von Berichten, Dashboards und Planogrammen",
+    "scope_6": "Benutzerkonfiguration und Vergabe von Berechtigungen",
+    "scope_7": "Konfiguration des KI-Agenten",
+    "no_date_title": "Kein passender Termin?",
+    "no_date_description": "Kontaktieren Sie uns, um mehr über zukünftige Schulungstermine zu erfahren."
   },
+
 
   "DemoOmniMeta": {
     "title": "Demo-Zugang - OmniMES System",

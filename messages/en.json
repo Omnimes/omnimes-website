@@ -89,11 +89,29 @@
   },
 
 
-
   "Courses": {
     "title": "All Courses",
-    "NotFound": "Coming soon"
+    "NotFound": "Coming soon",
+    "intro_title": "OmniMES Training for Integrators and Manufacturers",
+    "intro_description": "Are you an automation integrator or a machine manufacturer? Would you like to learn about the system and modernize the industry with us? Perfect! Join our free, open training on configuring the OmniMES software.",
+    "upcoming_dates": "Upcoming Dates",
+    "date_1": "26.11.2025 (Kraków, Siwka 11)",
+    "date_2": "28.11.2025 (Kraków, Siwka 11)",
+    "duration_label": "Duration",
+    "duration_value": "6 hours (9:00 AM – 3:00 PM)",
+    "registration_link": "Registration Link",
+    "scope_title": "The training covers",
+    "scope_1": "Software installation",
+    "scope_2": "MQTT broker configuration",
+    "scope_3": "Signal configuration in the system",
+    "scope_4": "Creating a production plant structure",
+    "scope_5": "Creating reports, dashboards, and the planogram",
+    "scope_6": "User configuration and access management",
+    "scope_7": "AI agent configuration",
+    "no_date_title": "Can't make it on these dates?",
+    "no_date_description": "Contact us to learn about upcoming training sessions."
   },
+
 
   "cookie": {
     "message": "We use cookies for analytics and advertising personalization. You can accept all, reject, or choose categories. See details in the Privacy Policy.",
