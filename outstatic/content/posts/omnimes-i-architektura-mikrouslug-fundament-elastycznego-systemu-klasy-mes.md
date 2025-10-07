@@ -44,6 +44,7 @@ Przykładowa struktura mikrousług w OmniMES:
 | **simulate** | Symulacja pracy maszyn i generowanie testowych danych produkcyjnych | Node.js / Python |
 | **redash** | Analiza i wizualizacja danych produkcyjnych | Python / Flask |
 | **mqtt-broker (EMQX)** | Centralny broker komunikacyjny dla urządzeń IIoT | Erlang |
+| **nginx** | Serwer webowy  | Server nginx |
 | **nginx-proxy** | Reverse proxy i load balancer dla usług HTTPS | Nginx |
 | **certbot / ssl** | Automatyczne zarządzanie certyfikatami Let's Encrypt | Python |
 | **faiss-index** | Wektoryzacja dokumentacji i obsługa zapytań AI (RAG) | Python / LangChain |
@@ -77,9 +78,9 @@ Poszczególne mikrousługi mogą być rozwijane przez różne zespoły programis
 
 2. Mikrousługa `stream` dekoduje wiadomości, analizuje częstotliwość i zapisuje dane do MongoDB lub PostgreSQL.
 
-3. `api` udostępnia dane w postaci REST API dla paneli operatorskich i aplikacji webowych.
+3. `api` udostępnia dane w postaci REST API dla aplikacji webowych.
 
-4. `redash` i `grafana` prezentują dane w postaci raportów i wykresów.
+4. `redash`  prezentuje dane w postaci raportów i wykresów.
 
 5. `faiss-index` pozwala botowi AI odpowiadać na pytania użytkowników na podstawie dokumentacji systemu (moduł RAG).
 

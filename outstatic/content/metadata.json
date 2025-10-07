@@ -1,6 +1,6 @@
 {
-  "commit": "7e19ca7a415b943fdb6856acdc367d8b5d36c56f",
-  "generated": "2025-10-06T20:14:58.998Z",
+  "commit": "9a4488537c726d114f80d5da00690e332a6bb6bb",
+  "generated": "2025-10-07T06:14:00.751Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3394,39 +3394,6 @@
     },
     {
       "__outstatic": {
-        "commit": "b812341b7e30da149b03627d566bb6f8b7f87246",
-        "hash": "751428522",
-        "path": "outstatic/content/posts/omnimes-i-architektura-mikrouslug-fundament-elastycznego-systemu-klasy-mes.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-U0NT.jpeg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/microservices-vs-monolit-AwNz.png",
-      "description": "OmniMES to nowoczesny system klasy MES (Manufacturing Execution System) zaprojektowany w oparciu o architekturę mikrousługową. Taki model zapewnia skalowalność, elastyczność oraz możliwość niezależnego rozwoju i wdrażania poszczególnych modułów systemu – od komunikacji z maszynami po analitykę danych i zarządzanie produkcją.",
-      "lang": "pl",
-      "publishedAt": "2025-10-06T19:45:59.559Z",
-      "slug": "omnimes-i-architektura-mikrouslug-fundament-elastycznego-systemu-klasy-mes",
-      "status": "published",
-      "tags": [
-        {
-          "label": "OmniMES",
-          "value": "omniMES"
-        },
-        {
-          "label": "docker",
-          "value": "docker"
-        },
-        {
-          "label": "Micro Services",
-          "value": "microServices"
-        }
-      ],
-      "title": "OmniMES i architektura mikrousług – fundament elastycznego systemu klasy MES"
-    },
-    {
-      "__outstatic": {
         "commit": "7e19ca7a415b943fdb6856acdc367d8b5d36c56f",
         "hash": "3759032697",
         "path": "outstatic/content/posts/omnimes-and-microservice-architecture-the-foundation-of-a-flexible-mes-system.md"
@@ -3457,6 +3424,39 @@
         }
       ],
       "title": "OmniMES and Microservice Architecture – The Foundation of a Flexible MES System"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a4488537c726d114f80d5da00690e332a6bb6bb",
+        "hash": "1737331364",
+        "path": "outstatic/content/posts/omnimes-i-architektura-mikrouslug-fundament-elastycznego-systemu-klasy-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-U0NT.jpeg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/microservices-vs-monolit-AwNz.png",
+      "description": "OmniMES to nowoczesny system klasy MES (Manufacturing Execution System) zaprojektowany w oparciu o architekturę mikrousługową. Taki model zapewnia skalowalność, elastyczność oraz możliwość niezależnego rozwoju i wdrażania poszczególnych modułów systemu – od komunikacji z maszynami po analitykę danych i zarządzanie produkcją.",
+      "lang": "pl",
+      "publishedAt": "2025-10-06T19:45:59.559Z",
+      "slug": "omnimes-i-architektura-mikrouslug-fundament-elastycznego-systemu-klasy-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "docker",
+          "value": "docker"
+        },
+        {
+          "label": "Micro Services",
+          "value": "microServices"
+        }
+      ],
+      "title": "OmniMES i architektura mikrousług – fundament elastycznego systemu klasy MES"
     }
   ]
 }
