@@ -1,6 +1,6 @@
 {
   "commit": "9a4488537c726d114f80d5da00690e332a6bb6bb",
-  "generated": "2025-10-07T06:14:00.751Z",
+  "generated": "2025-10-07T06:23:21.884Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3428,7 +3428,7 @@
     {
       "__outstatic": {
         "commit": "9a4488537c726d114f80d5da00690e332a6bb6bb",
-        "hash": "1737331364",
+        "hash": "3524741891",
         "path": "outstatic/content/posts/omnimes-i-architektura-mikrouslug-fundament-elastycznego-systemu-klasy-mes.md"
       },
       "author": {

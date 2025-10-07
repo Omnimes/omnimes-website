@@ -62,7 +62,7 @@ Każda usługa może być uruchomiona w wielu instancjach – np. zwiększenie m
 Aktualizacja `api` lub `simulate` nie wymaga restartu całego systemu – minimalizuje to przestoje.
 
 **3. Odporność na awarie**\
-Awaria jednej mikrousługi (np. `grafana`) nie zatrzymuje pracy pozostałych.
+Awaria jednej mikrousługi (np. `redash`) nie zatrzymuje pracy pozostałych.
 
 **4. Łatwość wdrażania i automatyzacji**\
 Dzięki Dockerowi i integracji z systemami CI/CD, wdrożenie nowej wersji usługi jest szybkie i powtarzalne.
