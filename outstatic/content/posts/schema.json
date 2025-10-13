@@ -529,6 +529,10 @@
         {
           "value": "iso50001",
           "label": "ISO 50001"
+        },
+        {
+          "value": "energyEfficiency",
+          "label": "energy efficiency"
         }
       ]
     },

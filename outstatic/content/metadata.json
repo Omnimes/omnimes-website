@@ -1,6 +1,6 @@
 {
-  "commit": "d193e156de7758db033de85e648dbc237f2f5787",
-  "generated": "2025-10-13T13:42:03.777Z",
+  "commit": "e7be1d4f57a4dc9407f9da654c48bdc8734a5e41",
+  "generated": "2025-10-13T13:48:59.952Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3494,6 +3494,43 @@
         }
       ],
       "title": "Dyrektywa o efektywności energetycznej (EED) – co oznacza dla polskich zakładów produkcyjnych i dlaczego warto wdrożyć system EMS"
+    },
+    {
+      "__outstatic": {
+        "commit": "e7be1d4f57a4dc9407f9da654c48bdc8734a5e41",
+        "hash": "836726576",
+        "path": "outstatic/content/posts/energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-I0Nj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/miniatura-ExNz.png",
+      "description": "",
+      "lang": "en",
+      "publishedAt": "2025-10-13T13:54:44.634Z",
+      "slug": "energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system",
+      "status": "published",
+      "tags": [
+        {
+          "label": "energy efficiency",
+          "value": "energyEfficiency"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "EMS",
+          "value": "ems"
+        },
+        {
+          "label": "ISO 50001",
+          "value": "iso50001"
+        }
+      ],
+      "title": "Energy Efficiency Directive (EED) – what does it mean for Polish production plants and why it is worth implementing an EMS system"
     }
   ]
 }
