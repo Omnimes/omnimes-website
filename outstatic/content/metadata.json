@@ -1,6 +1,6 @@
 {
-  "commit": "e7be1d4f57a4dc9407f9da654c48bdc8734a5e41",
-  "generated": "2025-10-13T13:48:59.952Z",
+  "commit": "ca4375def3e929f83ecd75f219591113e6794840",
+  "generated": "2025-10-13T13:49:13.435Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3497,8 +3497,8 @@
     },
     {
       "__outstatic": {
-        "commit": "e7be1d4f57a4dc9407f9da654c48bdc8734a5e41",
-        "hash": "836726576",
+        "commit": "ca4375def3e929f83ecd75f219591113e6794840",
+        "hash": "2354940899",
         "path": "outstatic/content/posts/energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system.md"
       },
       "author": {
@@ -3507,7 +3507,7 @@
       },
       "collection": "posts",
       "coverImage": "/images/miniatura-ExNz.png",
-      "description": "",
+      "description": "The revised Energy Efficiency Directive (EED) – Directive (EU) 2023/1791 – sets out the framework and obligations designed to help the European Union achieve ambitious energy-saving targets. Among other things, the EED aims to reduce final energy consumption in the EU by 11.7% by 2030 compared to reference projections. It replaces the previous Directive 2012/27/EU and entered into force on 10 October 2023. Member States are required to transpose its key provisions into national law – the deadline for transposition was 11 October 2025.",
       "lang": "en",
       "publishedAt": "2025-10-13T13:54:44.634Z",
       "slug": "energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system",

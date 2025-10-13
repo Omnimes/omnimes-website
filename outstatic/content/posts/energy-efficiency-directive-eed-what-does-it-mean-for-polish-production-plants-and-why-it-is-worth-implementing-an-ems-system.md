@@ -5,7 +5,10 @@ author:
   name: 'Szymon Rewilak'
   picture: '/images/photo-I0Nj.jpg'
 slug: 'energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system'
-description: ''
+description: 'The revised Energy Efficiency Directive (EED) – Directive (EU) 2023/1791 – sets out the framework and obligations designed to help the European Union achieve ambitious energy-saving targets.
+Among other things, the EED aims to reduce final energy consumption in the EU by 11.7% by 2030 compared to reference projections.
+It replaces the previous Directive 2012/27/EU and entered into force on 10 October 2023.
+Member States are required to transpose its key provisions into national law – the deadline for transposition was 11 October 2025.'
 coverImage: '/images/miniatura-ExNz.png'
 lang: 'en'
 tags: [{"label":"energy efficiency","value":"energyEfficiency"},{"value":"industry50","label":"Industry 5.0"},{"value":"ems","label":"EMS"},{"value":"iso50001","label":"ISO 50001"}]
