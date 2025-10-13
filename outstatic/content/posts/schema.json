@@ -517,6 +517,18 @@
         {
           "value": "microServices",
           "label": "Micro Services"
+        },
+        {
+          "value": "efektywnośćEnergetyczna",
+          "label": "efektywność energetyczna"
+        },
+        {
+          "value": "ems",
+          "label": "EMS"
+        },
+        {
+          "value": "iso50001",
+          "label": "ISO 50001"
         }
       ]
     },

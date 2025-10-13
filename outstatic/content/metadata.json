@@ -1,6 +1,6 @@
 {
-  "commit": "9a4488537c726d114f80d5da00690e332a6bb6bb",
-  "generated": "2025-10-07T06:23:21.884Z",
+  "commit": "d193e156de7758db033de85e648dbc237f2f5787",
+  "generated": "2025-10-13T13:42:03.777Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3457,6 +3457,43 @@
         }
       ],
       "title": "OmniMES i architektura mikrousług – fundament elastycznego systemu klasy MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "d193e156de7758db033de85e648dbc237f2f5787",
+        "hash": "449114094",
+        "path": "outstatic/content/posts/dyrektywa-o-efektywnosci-energetycznej-eed-co-oznacza-dla-polskich-zakladow-produkcyjnych-i-dlaczego-warto-wdrozyc-system-ems.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-I3Nj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/miniatura-Y2MD.png",
+      "description": "Zrewidowana Dyrektywa o efektywności energetycznej (EED) – Dyrektywa (UE) 2023/1791 – wyznacza ramy i obowiązki, które mają pomóc UE osiągnąć ambitne cele w zakresie oszczędności energii. EED przewiduje m.in. zmniejszenie zużycia energii finalnej w UE o 11,7% do 2030 r. w stosunku do prognoz referencyjnych. Zastępuje wcześniejszą dyrektywę 2012/27/UE i weszła w życie 10 października 2023 r. Państwa członkowskie mają obowiązek wdrożyć jej kluczowe przepisy do prawa krajowego – termin transpozycji upłynął 11 października 2025 r.",
+      "lang": "pl",
+      "publishedAt": "2025-10-13T13:42:55.423Z",
+      "slug": "dyrektywa-o-efektywnosci-energetycznej-eed-co-oznacza-dla-polskich-zakladow-produkcyjnych-i-dlaczego-warto-wdrozyc-system-ems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "efektywność energetyczna",
+          "value": "efektywnośćEnergetyczna"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        },
+        {
+          "label": "EMS",
+          "value": "ems"
+        },
+        {
+          "label": "ISO 50001",
+          "value": "iso50001"
+        }
+      ],
+      "title": "Dyrektywa o efektywności energetycznej (EED) – co oznacza dla polskich zakładów produkcyjnych i dlaczego warto wdrożyć system EMS"
     }
   ]
 }
