@@ -5,7 +5,7 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'omnimes-is-ready'
-description: ''
+description: 'OmniCloud is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system - a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.'
 coverImage: '/images/omncloud-E0ND.png'
 lang: 'en'
 publishedAt: '2025-10-16T21:29:44.669Z'
@@ -37,4 +37,4 @@ From November 4th to 6th, we invite you to visit our Multiprojekt booth (F2.34) 
 
 **OmniCloud – the cloud-based MES system you can launch in just 10 minutes.**
 
-Do you have any questions? [Contact us](https://www.omnimes.com/en/contact)  and our experts will guide you through the entire implementation process.
+Do you have any questions? [Contact us](https://www.omnimes.com/en/contact) and our experts will guide you through the entire implementation process.
