@@ -1,6 +1,6 @@
 {
-  "commit": "0ef880893dfe2b04e889fda06a37026359314c63",
-  "generated": "2025-10-16T13:16:17.246Z",
+  "commit": "bd4f834754d99499aba9e1d28b021f453acfc8e9",
+  "generated": "2025-10-16T17:28:13.692Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3563,8 +3563,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0ef880893dfe2b04e889fda06a37026359314c63",
-        "hash": "154767181",
+        "commit": "bd4f834754d99499aba9e1d28b021f453acfc8e9",
+        "hash": "4146209118",
         "path": "outstatic/content/news/omnicloud-is-ready.md"
       },
       "author": {
