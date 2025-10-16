@@ -1,6 +1,6 @@
 {
-  "commit": "5a70ff1e6f1119d7c1edcef823f2a266ccf38401",
-  "generated": "Thu, 16 Oct 2025 12:47:14 GMT",
+  "commit": "ec6d38a39309fbd3f9f56462c972493a096a29e1",
+  "generated": "2025-10-16T12:53:07.962Z",
   "metadata": [
     {
       "__outstatic": {
@@ -248,25 +248,6 @@
       "slug": "omnimes-demo-now-available-try-the-production-system-live",
       "status": "published",
       "title": "OmniMES Demo Now Available – Try the Production System Live!"
-    },
-    {
-      "__outstatic": {
-        "commit": "0c8f5a949812107e313b3881a327cd2087999fe0",
-        "hash": "1562889690",
-        "path": "outstatic/content/news/omnicloud-is-ready.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/omncloud-A4Mz.png",
-      "description": "We are delighted to announce that OmniCloud, our new cloud-based platform, is now officially available! This breakthrough solution opens an entirely new chapter in the way MES-class systems are deployed and managed.",
-      "lang": "en",
-      "publishedAt": "2025-10-16T12:53:05.499Z",
-      "slug": "omnicloud-is-ready",
-      "status": "published",
-      "title": "Omnicloud is ready"
     },
     {
       "__outstatic": {
@@ -3579,6 +3560,25 @@
         }
       ],
       "title": "Wykrywanie awarii w systemach MES za pomocą XGBoost, LightGBM i CatBoost"
+    },
+    {
+      "__outstatic": {
+        "commit": "ec6d38a39309fbd3f9f56462c972493a096a29e1",
+        "hash": "2063851239",
+        "path": "outstatic/content/news/omnicloud-is-ready.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omncloud-gyMT.png",
+      "description": "Z ogromną radością informujemy, że OmniCloud, nasza nowa platforma oparta na technologii chmurowej, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES",
+      "lang": "pl",
+      "publishedAt": "2025-10-16T13:03:23.006Z",
+      "slug": "omnicloud-is-ready",
+      "status": "published",
+      "title": "Omnicloud is ready"
     }
   ]
 }
