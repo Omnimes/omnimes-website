@@ -1,6 +1,6 @@
 {
-  "commit": "f021f5325fb9e2520de98bfe8fe2e25dc0e6b758",
-  "generated": "2025-10-16T12:40:39.388Z",
+  "commit": "7fea2b5b9c50f47af45e92570424289ced64d7c9",
+  "generated": "2025-10-16T12:42:28.480Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3534,8 +3534,8 @@
     },
     {
       "__outstatic": {
-        "commit": "f021f5325fb9e2520de98bfe8fe2e25dc0e6b758",
-        "hash": "4045286657",
+        "commit": "7fea2b5b9c50f47af45e92570424289ced64d7c9",
+        "hash": "3380860957",
         "path": "outstatic/content/news/omnicloud-is-ready.md"
       },
       "author": {
@@ -3543,10 +3543,10 @@
         "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
       },
       "collection": "news",
-      "coverImage": "/images/omncloud-g0Nj.png",
-      "description": "Z ogromną radością informujemy, że OmniCloud, nasza nowa platforma oparta na technologii chmurowej, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES.",
-      "lang": "pl",
-      "publishedAt": "2025-10-16T12:42:55.355Z",
+      "coverImage": "/images/omncloud-A4Mz.png",
+      "description": "We are delighted to announce that OmniCloud, our new cloud-based platform, is now officially available! This breakthrough solution opens an entirely new chapter in the way MES-class systems are deployed and managed.",
+      "lang": "en",
+      "publishedAt": "2025-10-16T12:53:05.499Z",
       "slug": "omnicloud-is-ready",
       "status": "published",
       "title": "Omnicloud is ready"

@@ -5,36 +5,36 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'omnicloud-is-ready'
-description: 'Z ogromną radością informujemy, że OmniCloud, nasza nowa platforma oparta na technologii chmurowej, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES.'
-coverImage: '/images/omncloud-g0Nj.png'
-lang: 'pl'
-publishedAt: '2025-10-16T12:42:55.355Z'
+description: 'We are delighted to announce that OmniCloud, our new cloud-based platform, is now officially available! This breakthrough solution opens an entirely new chapter in the way MES-class systems are deployed and managed.'
+coverImage: '/images/omncloud-A4Mz.png'
+lang: 'en'
+publishedAt: '2025-10-16T12:53:05.499Z'
 ---
 
-Szanowni Państwo,
+Dear Partners,
 
-Z ogromną radością informujemy, że OmniCloud (<https://cloud.omnimes.com/>), nasza nowa platforma oparta na technologii chmurowej, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES.
+We are delighted to announce that OmniCloud (<https://cloud.omnimes.com/>), our new cloud-based platform, is now officially available! This breakthrough solution opens an entirely new chapter in the way MES-class systems are deployed and managed.
 
-Czym jest OmniCloud?
+What is OmniCloud?
 
-OmniCloud (<https://cloud.omnimes.com/>) to innowacyjna platforma typu SaaS (Software as a Service), która umożliwia błyskawiczne uruchomienie systemu OmniMES (<https://www.omnimes.com/pl>) – w pełni funkcjonalnego narzędzia do cyfrowego zarządzania produkcją. Dzięki automatycznemu wdrożeniu nie potrzebujesz wsparcia działu IT ani skomplikowanej konfiguracji – cały proces instalacji trwa zaledwie do 10 minut.
+OmniCloud (<https://cloud.omnimes.com/>) is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system (https://www.omnimes.com/en) — a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.
 
-OmniCloud wpisuje się w ideę Przemysłu 5.0, w którym człowiek i technologia współpracują w harmonii, by tworzyć elastyczne, zrównoważone i inteligentne procesy produkcyjne. To rozwiązanie, które pozwala przenieść cyfryzację zakładu na zupełnie nowy poziom.
+OmniCloud embodies the concept of Industry 5.0, where humans and technology work together in harmony to create flexible, sustainable, and intelligent production processes. It is a solution that brings your factory’s digital transformation to a whole new level.
 
-Korzyści
+Benefits
 
-Dzięki połączeniu mocy chmury i funkcjonalności systemu OmniMES, otrzymujesz kompletne narzędzie do zarządzania, analizy i optymalizacji procesów produkcyjnych. Kluczowe korzyści to między innymi: pełna kontrola nad produkcją i wgląd w procesy oraz status maszyn w czasie rzeczywistym, szybkie wdrożenie systemu w kilka minut bez potrzeby angażowania specjalistów IT, analityka wspierana przez AI umożliwiająca inteligentne raportowanie, analizę danych historycznych i predykcję trendów, monitorowanie wskaźników KPI (m.in. OEE) dla bieżącej oceny efektywności produkcji, moduł harmonogramowania zleceń dla efektywnego planowania i alokacji zasobów oraz bezpieczne środowisko chmurowe oparte na prywatnym serwerze VPS, które gwarantuje ochronę danych i wysoką wydajność.
+By combining the power of the cloud with the functionality of the OmniMES system, you gain a complete tool for managing, analyzing, and optimizing production processes. The key advantages include: full control over production and real-time insight into machine status, quick implementation without the need for IT specialists, AI-powered analytics for intelligent reporting, historical data analysis, and trend prediction, monitoring of key performance indicators (including OEE) for real-time efficiency assessment, an advanced scheduling module for optimal planning and resource allocation, and a secure cloud environment with a private VPS server ensuring data protection and high performance.
 
-OmniCloud to najszybsza droga do cyfryzacji zakładu produkcyjnego, bez ryzyka, kosztownych wdrożeń i długich przestojów.
+OmniCloud is the fastest way to digitize your production facility — without risk, costly deployments, or long downtimes.
 
-Przetestuj możliwości systemu
+Try the system yourself
 
-Zachęcamy do samodzielnego wypróbowania systemu w praktyce. Skorzystaj z bezpłatnej wersji demo naszego systemu (<https://www.omnimes.com/pl/demo>) i przekonaj się, jak łatwo można usprawnić zarządzanie produkcją dzięki technologii chmurowej.
+We invite you to test the system in practice. Take advantage of our free demo version (https://www.omnimes.com/en/demo) and discover how easily cloud technology can enhance production management.
 
-Spotkajmy się na Warsaw Industry Week!
+Meet us at Warsaw Industry Week!
 
-Już 4–6 listopada zapraszamy do odwiedzenia naszego stoiska Multiprojekt (F2.34) podczas targów Warsaw Industry Week w Ptak Warsaw Expo. Będzie to doskonała okazja do wymiany doświadczeń, a także uzyskania kodu rabatowego na system OmniMES, ważnego do końca roku.
+From November 4th to 6th, we invite you to visit our Multiprojekt booth (F2.34) at the Warsaw Industry Week held at Ptak Warsaw Expo. It will be a great opportunity to exchange experiences and receive a special discount code for the OmniMES system, valid until the end of the year.
 
-OmniCloud – system MES w chmurze, który uruchomisz w 10 minut.
+OmniCloud – the cloud-based MES system you can launch in just 10 minutes.
 
-Masz pytania? Skontaktuj się (<https://www.omnimes.com/pl/kontakt>), a nasi eksperci przeprowadzą Cię przez cały proces wdrożenia.
+Do you have any questions? Contact us (https://www.omnimes.com/en/contact) and our experts will guide you through the entire implementation process.
