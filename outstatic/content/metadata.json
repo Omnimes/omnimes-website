@@ -1,6 +1,6 @@
 {
-  "commit": "bd4f834754d99499aba9e1d28b021f453acfc8e9",
-  "generated": "2025-10-16T17:28:13.692Z",
+  "commit": "d52915d79830e5ffaa972804a27dcb68aefd3546",
+  "generated": "2025-10-16T21:21:47.494Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3579,6 +3579,25 @@
       "slug": "omnicloud-is-ready",
       "status": "published",
       "title": "Omnicloud is ready"
+    },
+    {
+      "__outstatic": {
+        "commit": "d52915d79830e5ffaa972804a27dcb68aefd3546",
+        "hash": "3346914246",
+        "path": "outstatic/content/news/omnimes-is-ready.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omncloud-E0ND.png",
+      "description": "",
+      "lang": "en",
+      "publishedAt": "2025-10-16T21:29:44.669Z",
+      "slug": "omnimes-is-ready",
+      "status": "published",
+      "title": "Omnimes is ready"
     }
   ]
 }
