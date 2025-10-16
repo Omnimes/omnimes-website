@@ -13,11 +13,11 @@ publishedAt: '2025-10-16T12:53:05.499Z'
 
 Dear Partners,
 
-We are delighted to announce that OmniCloud (<https://cloud.omnimes.com/>), our new cloud-based platform, is now officially available! This breakthrough solution opens an entirely new chapter in the way MES-class systems are deployed and managed.
+We are delighted to announce that OmniCloud [https://cloud.omnimes.com](https://cloud.omnimes.com/), our new cloud-based platform, is now officially available! This breakthrough solution opens an entirely new chapter in the way MES-class systems are deployed and managed.
 
 What is OmniCloud?
 
-OmniCloud (<https://cloud.omnimes.com/>) is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system (https://www.omnimes.com/en) — a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.
+OmniCloud [https://cloud.omnimes.com](https://cloud.omnimes.com/) is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system (https://www.omnimes.com/en) — a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.
 
 OmniCloud embodies the concept of Industry 5.0, where humans and technology work together in harmony to create flexible, sustainable, and intelligent production processes. It is a solution that brings your factory’s digital transformation to a whole new level.
 
