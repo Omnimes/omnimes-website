@@ -1,6 +1,6 @@
 {
-  "commit": "cbfe8f3d6fa6c35e15a03858eeb17b4362a594e1",
-  "generated": "2025-10-16T21:34:32.570Z",
+  "commit": "d63b103fcc5825a72f49913a03f4cc3fd49abae7",
+  "generated": "2025-10-17T20:17:54.709Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3563,28 +3563,9 @@
     },
     {
       "__outstatic": {
-        "commit": "bd4f834754d99499aba9e1d28b021f453acfc8e9",
-        "hash": "4146209118",
+        "commit": "d63b103fcc5825a72f49913a03f4cc3fd49abae7",
+        "hash": "3011070363",
         "path": "outstatic/content/news/omnicloud-is-ready.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/omncloud-gyMT.png",
-      "description": "Z ogromną radością informujemy, że OmniCloud, nasza nowa platforma oparta na technologii chmurowej, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES",
-      "lang": "pl",
-      "publishedAt": "2025-10-16T13:03:23.006Z",
-      "slug": "omnicloud-is-ready",
-      "status": "published",
-      "title": "Omnicloud is ready"
-    },
-    {
-      "__outstatic": {
-        "commit": "cbfe8f3d6fa6c35e15a03858eeb17b4362a594e1",
-        "hash": "4187840167",
-        "path": "outstatic/content/news/omnimes-is-ready.md"
       },
       "author": {
         "name": "OmniMES",
@@ -3595,9 +3576,9 @@
       "description": "OmniCloud is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system - a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.",
       "lang": "en",
       "publishedAt": "2025-10-16T21:29:44.669Z",
-      "slug": "omnimes-is-ready",
+      "slug": "omnicloud-is-ready",
       "status": "published",
-      "title": "Omnimes is ready"
+      "title": "Omnicloud is ready"
     }
   ]
 }
