@@ -1,6 +1,6 @@
 {
-  "commit": "d63b103fcc5825a72f49913a03f4cc3fd49abae7",
-  "generated": "2025-10-17T20:17:54.709Z",
+  "commit": "570c270932ad3d962b4492ef7b127763757a03ed",
+  "generated": "2025-10-17T20:27:07.634Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3579,6 +3579,25 @@
       "slug": "omnicloud-is-ready",
       "status": "published",
       "title": "Omnicloud is ready"
+    },
+    {
+      "__outstatic": {
+        "commit": "570c270932ad3d962b4492ef7b127763757a03ed",
+        "hash": "3086798264",
+        "path": "outstatic/content/news/omnicloud-otwarcie.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omncloud-UzND.png",
+      "description": "Z radością informujemy, że OmniCloud, nasza nowa platforma chmurowa, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES.",
+      "lang": "pl",
+      "publishedAt": "2025-10-16T20:32:44.000Z",
+      "slug": "omnicloud-otwarcie",
+      "status": "published",
+      "title": "OmniCloud - otwarcie"
     }
   ]
 }
