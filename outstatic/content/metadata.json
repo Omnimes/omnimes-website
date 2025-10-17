@@ -1,6 +1,6 @@
 {
   "commit": "d799284392cdf6303143186e357821df2f722da3",
-  "generated": "2025-10-17T20:55:34.501Z",
+  "generated": "2025-10-17T20:55:51.067Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3563,9 +3563,9 @@
     },
     {
       "__outstatic": {
-        "commit": "f5864e7a3b670f273421ad539744f8a757f21de6",
-        "hash": "2931169771",
-        "path": "outstatic/content/news/omnicloud-otwarcie.md"
+        "commit": "d799284392cdf6303143186e357821df2f722da3",
+        "hash": "3318288908",
+        "path": "outstatic/content/news/omnicloud-is-ready.md"
       },
       "author": {
         "name": "OmniMES",
@@ -3576,28 +3576,9 @@
       "description": "Z radością informujemy, że OmniCloud, nasza nowa platforma chmurowa, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES.",
       "lang": "pl",
       "publishedAt": "2025-10-16T20:32:44.000Z",
-      "slug": "omnicloud-otwarcie",
+      "slug": "omnicloud-is-ready",
       "status": "published",
-      "title": "OmniCloud - otwarcie"
-    },
-    {
-      "__outstatic": {
-        "commit": "d799284392cdf6303143186e357821df2f722da3",
-        "hash": "2435233736",
-        "path": "outstatic/content/news/omnicloud-open.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/omncloud-E0ND.png",
-      "description": "OmniCloud is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system - a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.",
-      "lang": "en",
-      "publishedAt": "2025-10-16T21:29:44.669Z",
-      "slug": "omnicloud-open",
-      "status": "published",
-      "title": "Omnicloud - open"
+      "title": "OmniCloud is ready"
     }
   ]
 }

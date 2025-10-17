@@ -1,10 +1,10 @@
 ---
-title: 'OmniCloud - otwarcie'
+title: 'OmniCloud is ready'
 status: 'published'
 author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'omnicloud-otwarcie'
+slug: 'omnicloud-is-ready'
 description: 'Z radością informujemy, że OmniCloud, nasza nowa platforma chmurowa, jest już oficjalnie dostępna! To przełomowe rozwiązanie otwiera zupełnie nowy rozdział w sposobie wdrażania i zarządzania systemami klasy MES.'
 coverImage: '/images/omncloud-UzND.png'
 lang: 'pl'
@@ -21,7 +21,7 @@ Z radością informujemy, że [**OmniCloud**](https://www.omnicloud.com), nasza 
 
 ### Korzyści
 
-Łącząc moc chmury z funkcjonalnością systemu [**OmniMES**](https://www.omnimes.com), otrzymujesz kompletne narzędzie do zarządzania, analizy i optymalizacji procesów produkcyjnych.  
+Łącząc moc chmury z funkcjonalnością systemu [**OmniMES**](https://www.omnimes.com), otrzymujesz kompletne narzędzie do zarządzania, analizy i optymalizacji procesów produkcyjnych.\
 Najważniejsze zalety to:
 
 - pełna kontrola nad produkcją i bieżący podgląd statusu maszyn,
@@ -35,12 +35,12 @@ Najważniejsze zalety to:
 
 ### Wypróbuj system samodzielnie
 
-Zapraszamy do praktycznego przetestowania systemu. Skorzystaj z darmowej wersji demo [omnimes.com/pl/demo](https://www.omnimes.com/pl/demo)  
+Zapraszamy do praktycznego przetestowania systemu. Skorzystaj z darmowej wersji demo [omnimes.com/pl/demo](https://www.omnimes.com/pl/demo)\
 i przekonaj się, jak łatwo technologia chmurowa może usprawnić zarządzanie produkcją.
 
 ### Spotkajmy się na Warsaw Industry Week!
 
-W dniach **4–6 listopada** zapraszamy do odwiedzenia naszego stoiska **Multiprojekt (F2.34)** podczas **Warsaw Industry Week** w **Ptak Warsaw Expo**.  
+W dniach **4–6 listopada** zapraszamy do odwiedzenia naszego stoiska **Multiprojekt (F2.34)** podczas **Warsaw Industry Week** w **Ptak Warsaw Expo**.\
 To doskonała okazja do wymiany doświadczeń i uzyskania **specjalnego kodu rabatowego na system OmniMES**, ważnego do końca roku.
 
 **OmniCloud – system MES w chmurze, który uruchomisz w zaledwie 10 minut.**
