@@ -15,7 +15,7 @@ Z radością informujemy, że [**OmniCloud**](https://www.omnicloud.com), nasza 
 
 ### Czym jest OmniCloud?
 
-[**OmniCloud**](https://www.omnicloud.com) to innowacyjna platforma typu **SaaS (Software as a Service)**, która umożliwia uruchomienie systemu  [**OmniMES**](https://www.omnimes.com) – w pełni funkcjonalnego narzędzia do cyfrowego zarządzania produkcją – w zaledwie kilka minut. Dzięki automatycznemu wdrożeniu nie ma potrzeby angażowania działu IT ani przeprowadzania skomplikowanej konfiguracji. Cały proces instalacji zajmuje jedynie około **10 minut**.
+[**OmniCloud**](https://www.omnicloud.com) to innowacyjna platforma typu **SaaS (Software as a Service)**, która umożliwia uruchomienie systemu [**OmniMES**](https://www.omnimes.com) – w pełni funkcjonalnego narzędzia do cyfrowego zarządzania produkcją – w zaledwie kilka minut. Dzięki automatycznemu wdrożeniu nie ma potrzeby angażowania działu IT ani przeprowadzania skomplikowanej konfiguracji. Cały proces instalacji zajmuje jedynie około **10 minut**.
 
 **OmniCloud** realizuje ideę **Przemysłu 5.0**, w której człowiek i technologia współpracują w harmonii, tworząc elastyczne, zrównoważone i inteligentne procesy produkcyjne. To rozwiązanie, które wynosi cyfrową transformację Twojej fabryki na zupełnie nowy poziom.
 
@@ -40,7 +40,7 @@ Najważniejsze zalety to:
 
 ### Wypróbuj system samodzielnie
 
-Zapraszamy do praktycznego przetestowania systemu. Skorzystaj z darmowej wersji demo <https://www.omnimes.com/en/demo>\
+Zapraszamy do praktycznego przetestowania systemu. Skorzystaj z darmowej wersji demo <https://www.omnimes.com/pl/demo>\
 i przekonaj się, jak łatwo technologia chmurowa może usprawnić zarządzanie produkcją.
 
 ### Spotkajmy się na Warsaw Industry Week!

@@ -1,6 +1,6 @@
 {
-  "commit": "570c270932ad3d962b4492ef7b127763757a03ed",
-  "generated": "2025-10-17T20:27:07.634Z",
+  "commit": "f5864e7a3b670f273421ad539744f8a757f21de6",
+  "generated": "2025-10-17T20:32:19.192Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3582,8 +3582,8 @@
     },
     {
       "__outstatic": {
-        "commit": "570c270932ad3d962b4492ef7b127763757a03ed",
-        "hash": "3086798264",
+        "commit": "f5864e7a3b670f273421ad539744f8a757f21de6",
+        "hash": "2931169771",
         "path": "outstatic/content/news/omnicloud-otwarcie.md"
       },
       "author": {
