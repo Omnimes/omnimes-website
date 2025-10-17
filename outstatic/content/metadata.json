@@ -1,6 +1,6 @@
 {
-  "commit": "f5864e7a3b670f273421ad539744f8a757f21de6",
-  "generated": "2025-10-17T20:32:19.192Z",
+  "commit": "d799284392cdf6303143186e357821df2f722da3",
+  "generated": "2025-10-17T20:55:34.501Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3563,25 +3563,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d63b103fcc5825a72f49913a03f4cc3fd49abae7",
-        "hash": "3011070363",
-        "path": "outstatic/content/news/omnicloud-is-ready.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/omncloud-E0ND.png",
-      "description": "OmniCloud is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system - a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.",
-      "lang": "en",
-      "publishedAt": "2025-10-16T21:29:44.669Z",
-      "slug": "omnicloud-is-ready",
-      "status": "published",
-      "title": "Omnicloud is ready"
-    },
-    {
-      "__outstatic": {
         "commit": "f5864e7a3b670f273421ad539744f8a757f21de6",
         "hash": "2931169771",
         "path": "outstatic/content/news/omnicloud-otwarcie.md"
@@ -3598,6 +3579,25 @@
       "slug": "omnicloud-otwarcie",
       "status": "published",
       "title": "OmniCloud - otwarcie"
+    },
+    {
+      "__outstatic": {
+        "commit": "d799284392cdf6303143186e357821df2f722da3",
+        "hash": "2435233736",
+        "path": "outstatic/content/news/omnicloud-open.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omncloud-E0ND.png",
+      "description": "OmniCloud is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system - a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.",
+      "lang": "en",
+      "publishedAt": "2025-10-16T21:29:44.669Z",
+      "slug": "omnicloud-open",
+      "status": "published",
+      "title": "Omnicloud - open"
     }
   ]
 }

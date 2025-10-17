@@ -1,10 +1,10 @@
 ---
-title: 'Omnicloud is ready'
+title: 'Omnicloud - open'
 status: 'published'
 author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
-slug: 'omnicloud-is-ready'
+slug: 'omnicloud-open'
 description: 'OmniCloud is an innovative SaaS (Software as a Service) platform that enables you to launch the OmniMES system - a fully functional tool for digital production management — in just a few minutes. Thanks to automated deployment, there is no need for IT department support or complex configuration. The entire installation process takes as little as 10 minutes.'
 coverImage: '/images/omncloud-E0ND.png'
 lang: 'en'
