@@ -6,14 +6,12 @@ author:
   picture: '/images/photo-E3OD.jpg'
 slug: '7-wastes-of-muda-how-to-understand-and-eliminate-waste-in-production'
 description: 'Every manufacturing company has activities that do not add value to the product yet consume time, resources, and employee energy. In the book Toyota Production System: Beyond Large-Scale Production (1978), Taiichi Ohno identified seven of the most common types of waste.
-
 In Lean Manufacturing philosophy, these activities are called Muda – meaning wastefulness or uselessness (Japanese: muda = useless, unnecessary).
-
 Japanese companies, led by Toyota, have been effectively eliminating Muda for decades, achieving high production efficiency and flexibility. Understanding the seven classic wastes of Muda helps identify where productivity may be leaking in your company — and how to fix it.'
 coverImage: '/images/7zasdamuda-Y0NT.png'
 lang: 'en'
 tags: [{"label":"7 Wastes of Muda","value":"7WastesOfMuda"},{"value":"omniMES","label":"OmniMES"},{"value":"leanManufacturing","label":"Lean Manufacturing"}]
-publishedAt: '2025-10-27T08:27:32.700Z'
+publishedAt: '2025-10-20T07:27:32.000Z'
 ---
 
 Every manufacturing company has activities that do not add value to the product yet consume time, resources, and employee energy. In the book *Toyota Production System: Beyond Large-Scale Production* (1978), Taiichi Ohno identified seven of the most common types of waste.
