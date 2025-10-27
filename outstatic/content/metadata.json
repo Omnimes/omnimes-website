@@ -1,6 +1,6 @@
 {
-  "commit": "d799284392cdf6303143186e357821df2f722da3",
-  "generated": "2025-10-17T20:55:51.067Z",
+  "commit": "8573263378f5dd683002a5ed40eb064bb83716e4",
+  "generated": "2025-10-27T08:21:10.847Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3579,6 +3579,39 @@
       "slug": "omnicloud-is-ready",
       "status": "published",
       "title": "OmniCloud is ready"
+    },
+    {
+      "__outstatic": {
+        "commit": "8573263378f5dd683002a5ed40eb064bb83716e4",
+        "hash": "652988458",
+        "path": "outstatic/content/posts/7-strat-muda-jak-zrozumiec-i-wyeliminowac-marnotrawstwo-w-produkcji.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-czNz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/7zasdamuda-I4NT.png",
+      "description": "W każdej firmie produkcyjnej istnieją działania, które nie dodają wartości produktowi, a mimo to pochłaniają czas, zasoby i energię pracowników. W książce Toyota Production System: Beyond Large-Scale Production autorstwa Taiichi Ohno z 1978 roku wskazanych zostało siedem najczęściej występujących rodzajów strat.\nW filozofii Lean Manufacturing owe działania określa się mianem Muda – czyli marnotrawstwa (muda jap. bezużyteczny, zbędny).\nJapońskie przedsiębiorstwa, z Toyotą na czele, od lat skutecznie eliminują Muda, osiągając dzięki temu wysoką efektywność i elastyczność produkcji. Poznanie 7 klasycznych strat Muda pomaga zrozumieć, gdzie w Twojej firmie może uciekać produktywność – i jak można to zmienić.",
+      "lang": "pl",
+      "publishedAt": "2025-10-20T06:43:50.000Z",
+      "slug": "7-strat-muda-jak-zrozumiec-i-wyeliminowac-marnotrawstwo-w-produkcji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "7 zasad Muda",
+          "value": "7ZasadMuda"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Lean Manufacturing",
+          "value": "leanManufacturing"
+        }
+      ],
+      "title": "7 strat Muda – jak zrozumieć i wyeliminować marnotrawstwo w produkcji"
     }
   ]
 }
