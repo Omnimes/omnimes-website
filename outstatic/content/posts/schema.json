@@ -541,6 +541,18 @@
         {
           "value": "7WastesOfMuda",
           "label": "7 Wastes of Muda"
+        },
+        {
+          "value": "omnicloud",
+          "label": "omnicloud"
+        },
+        {
+          "value": "saas",
+          "label": "saas"
+        },
+        {
+          "value": "onPremise",
+          "label": "on premise"
         }
       ]
     },

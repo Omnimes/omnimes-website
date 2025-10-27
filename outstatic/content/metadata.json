@@ -1,6 +1,6 @@
 {
-  "commit": "d5093d34e00402fdf45fa2e1f0eaa3cdb9cb9d17",
-  "generated": "2025-10-27T08:27:13.689Z",
+  "commit": "3cf0732760cc5d155f82f4e5df500af1911bc7c1",
+  "generated": "2025-10-27T08:40:32.626Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3645,6 +3645,39 @@
         }
       ],
       "title": "7 Wastes of Muda – How to Understand and Eliminate Waste in Production"
+    },
+    {
+      "__outstatic": {
+        "commit": "3cf0732760cc5d155f82f4e5df500af1911bc7c1",
+        "hash": "4159467526",
+        "path": "outstatic/content/posts/chmura-czy-on-premise-jak-wybrac-najlepszy-model-wdrozenia-systemu-mes.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-MwNT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/saasvsonpremise-IxNj.png",
+      "description": "Wybór między systemem działającym w chmurze a rozwiązaniem instalowanym lokalnie to dziś jedno z najczęstszych pytań firm produkcyjnych rozważających wdrożenie systemów do kontroli produkcji. Oba podejścia mają swoje zalety i ograniczenia – różnią się pod względem kosztów, bezpieczeństwa, szybkości wdrożenia czy elastyczności konfiguracji. W tym artykule wyjaśniamy, na czym polegają kluczowe różnice i jak system OmniMES dostosowuje się do potrzeb przedsiębiorstw, oferując oba modele wdrożeniowe: OmniCloud (SaaS) oraz OmniMES On-Premise.",
+      "lang": "pl",
+      "publishedAt": "2025-10-27T08:35:00.267Z",
+      "slug": "chmura-czy-on-premise-jak-wybrac-najlepszy-model-wdrozenia-systemu-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "omnicloud",
+          "value": "omnicloud"
+        },
+        {
+          "label": "saas",
+          "value": "saas"
+        },
+        {
+          "label": "on premise",
+          "value": "onPremise"
+        }
+      ],
+      "title": "Chmura czy On-Premise? Jak wybrać najlepszy model wdrożenia systemu MES"
     }
   ]
 }
