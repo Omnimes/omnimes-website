@@ -1,6 +1,6 @@
 {
-  "commit": "3cf0732760cc5d155f82f4e5df500af1911bc7c1",
-  "generated": "2025-10-27T08:40:32.626Z",
+  "commit": "2034ef925b192e9cecf51619a0e109972036726f",
+  "generated": "2025-10-27T08:47:21.954Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3678,6 +3678,39 @@
         }
       ],
       "title": "Chmura czy On-Premise? Jak wybrać najlepszy model wdrożenia systemu MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "2034ef925b192e9cecf51619a0e109972036726f",
+        "hash": "1338272315",
+        "path": "outstatic/content/posts/cloud-or-on-premise-how-to-choose-the-best-mes-deployment-model.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-Y5Nz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/saasvsonpremise-E5Mz.png",
+      "description": "Choosing between a cloud-based system and an on-premise solution is one of the most common decisions faced by manufacturing companies considering the implementation of production control systems. Both approaches have their advantages and limitations — they differ in terms of cost, security, deployment speed, and configuration flexibility. This article explains the key differences and shows how the OmniMES system adapts to various business needs, offering both deployment models: OmniCloud (SaaS) and OmniMES On-Premise.",
+      "lang": "en",
+      "publishedAt": "2025-10-27T08:49:24.991Z",
+      "slug": "cloud-or-on-premise-how-to-choose-the-best-mes-deployment-model",
+      "status": "published",
+      "tags": [
+        {
+          "label": "omnicloud",
+          "value": "omnicloud"
+        },
+        {
+          "label": "saas",
+          "value": "saas"
+        },
+        {
+          "label": "on premise",
+          "value": "onPremise"
+        }
+      ],
+      "title": "Cloud or On-Premise? How to Choose the Best MES Deployment Model"
     }
   ]
 }
