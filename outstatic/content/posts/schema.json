@@ -537,6 +537,10 @@
         {
           "value": "7ZasadMuda",
           "label": "7 zasad Muda"
+        },
+        {
+          "value": "7WastesOfMuda",
+          "label": "7 Wastes of Muda"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
-  "commit": "8573263378f5dd683002a5ed40eb064bb83716e4",
-  "generated": "2025-10-27T08:21:10.847Z",
+  "commit": "924e15a900ffd7c508cd91df7525e8aff640e863",
+  "generated": "2025-10-27T08:25:51.525Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3612,6 +3612,39 @@
         }
       ],
       "title": "7 strat Muda – jak zrozumieć i wyeliminować marnotrawstwo w produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "924e15a900ffd7c508cd91df7525e8aff640e863",
+        "hash": "514108898",
+        "path": "outstatic/content/posts/7-wastes-of-muda-how-to-understand-and-eliminate-waste-in-production.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-E3OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/7zasdamuda-Y0NT.png",
+      "description": "Every manufacturing company has activities that do not add value to the product yet consume time, resources, and employee energy. In the book Toyota Production System: Beyond Large-Scale Production (1978), Taiichi Ohno identified seven of the most common types of waste.\nIn Lean Manufacturing philosophy, these activities are called Muda – meaning wastefulness or uselessness (Japanese: muda = useless, unnecessary).\nJapanese companies, led by Toyota, have been effectively eliminating Muda for decades, achieving high production efficiency and flexibility. Understanding the seven classic wastes of Muda helps identify where productivity may be leaking in your company — and how to fix it.",
+      "lang": "en",
+      "publishedAt": "2025-10-27T08:27:32.700Z",
+      "slug": "7-wastes-of-muda-how-to-understand-and-eliminate-waste-in-production",
+      "status": "published",
+      "tags": [
+        {
+          "label": "7 Wastes of Muda",
+          "value": "7WastesOfMuda"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Lean Manufacturing",
+          "value": "leanManufacturing"
+        }
+      ],
+      "title": "7 Wastes of Muda – How to Understand and Eliminate Waste in Production"
     }
   ]
 }
