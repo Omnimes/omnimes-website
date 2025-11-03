@@ -820,7 +820,12 @@
     "message3": "Control",
     "message4": "Competitiveness",
     "message5": "Optimization",
-    "message6": "Excellence"
+    "message6": "Excellence",
+    "promotion": {
+      "title": "🎉 Special Promotion!",
+      "description": "Fill out the form by November 7th to receive a 15% promotional code for the first 3 months of system usage! Code valid until the end of 2025.",
+      "deadline": "Offer valid until November 7, 2024"
+    }
   },
   "Contact": {
     "title": "Contact sales",

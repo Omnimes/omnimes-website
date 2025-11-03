@@ -1,10 +1,10 @@
 // src/app/[locale]/(marketing)/omnienergy/page.tsx
 "use client"
 
-import { useTranslations } from "next-intl"
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
+import { useTranslations } from "next-intl"
 
 export default function OmniEnergyPage() {
   const t = useTranslations("OmniEnergy")
