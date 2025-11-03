@@ -141,6 +141,418 @@
     "label": "Change language",
     "locale": "{locale, select, pl {Polish} en {English} de {Deutsch} other {Unknown}}"
   },
+
+
+
+  "OmniEnergy": {
+    "meta": {
+      "title": "OmniEnergy - ISO 50001 compliant EnMS energy management system | OmniEnergy",
+      "description": "The module supports ISO-50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting. Energy cost reduction of 15-25%."
+    },
+    "title": "OmniEnergy",
+    "subtitle": "ISO 50001 compliant energy management system",
+    "intro": "The system supports ISO-50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
+    "hero": {
+      "badge": "ISO 50001 compliant energy management system",
+      "title": "Save energy with",
+      "titleHighlight": "OmniEnergy",
+      "description": "The system supports ISO-50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
+      "ctaPrimary": "Check OmniEnergy Demo",
+      "ctaSecondary": "See features",
+      "features": {
+        "iso": "ISO 50001 compliance",
+        "reduction": "20% consumption reduction"
+      },
+      "stats": {
+        "monitoring": {
+          "label": "Real-time monitoring",
+          "value": "24/7"
+        },
+        "savings": {
+          "label": "Annual savings",
+          "value": "up to 200k PLN"
+        },
+        "enpi": {
+          "label": "EnPI reduction",
+          "value": "15-25%"
+        }
+      }
+    },
+    "features": {
+      "sectionTitle": "Comprehensive energy management system",
+      "sectionDescription": "The system supports all ISO 50001 standard requirements, ensuring complete control over energy consumption",
+      "dashboard": {
+        "title": "Energy dashboard",
+        "description": "Main starting point of the EnMS system with energy consumption charts, SEU, EnPI, action progress and threshold alerts",
+        "items": [
+          "Real-time charts",
+          "Tiles for all utilities",
+          "Alerts and notifications"
+        ]
+      },
+      "sources": {
+        "title": "Sources and measurement points",
+        "description": "Tabular view with map/planogram of each device linked to production line and energy carrier",
+        "items": [
+          "Monitoring of all points",
+          "Sensor statuses",
+          "Planogram visualization"
+        ]
+      },
+      "analysis": {
+        "title": "Consumption analysis",
+        "description": "Daily, weekly, monthly trend charts with year-over-year comparison and SEU view",
+        "items": [
+          "Trend analysis",
+          "Pareto and heat maps",
+          "Multi-period comparisons"
+        ]
+      },
+      "enpi": {
+        "title": "EnPI indicators",
+        "description": "List of energy performance indicators with graphical trend view and baseline relationship",
+        "items": [
+          "kWh/piece, MJ/ton",
+          "Trends and baseline",
+          "Advanced filters"
+        ]
+      },
+      "enb": {
+        "title": "Energy baseline (EnB)",
+        "description": "Defining baseline period and its values with ability to compare with current period",
+        "items": [
+          "Baseline periods",
+          "Data normalization",
+          "Period comparisons"
+        ]
+      },
+      "goals": {
+        "title": "Energy objectives and actions",
+        "description": "Board with objectives, target values, responsible persons and deadlines with implementation status",
+        "items": [
+          "Objective management",
+          "Color-coded statuses",
+          "Monthly reports"
+        ]
+      },
+      "audits": {
+        "title": "Audits and reviews",
+        "description": "Audit schedule with checklists, results history and PDF export capability",
+        "items": [
+          "Audit schedule",
+          "Audit checklists",
+          "Report export"
+        ]
+      },
+      "documentation": {
+        "title": "Energy documentation",
+        "description": "File repository with energy policy, reports, procedures and links to ISO standards",
+        "items": [
+          "Document center",
+          "Version history",
+          "ISO 50001 compliance"
+        ]
+      },
+      "seu": {
+        "title": "Significant energy uses (SEU)",
+        "description": "Identification and monitoring of areas with highest energy consumption with optimization capability",
+        "items": [
+          "Pareto analysis",
+          "Action prioritization",
+          "24/7 monitoring"
+        ]
+      }
+    },
+    "iso50001": {
+      "badge": "ISO 50001 certification",
+      "sectionTitle": "Full compliance with ISO 50001:2018 standard",
+      "sectionDescription": "System designed in accordance with international energy management standard requirements",
+      "requirements": [
+        {
+          "number": "1",
+          "title": "Context of the organization",
+          "description": "Analysis of internal and external factors affecting the Energy Management System, determination of boundaries and scope of the EnMS system"
+        },
+        {
+          "number": "2",
+          "title": "Leadership",
+          "description": "Top management commitment, organizational energy policy, roles and responsibilities in the EnMS system"
+        },
+        {
+          "number": "3",
+          "title": "Planning",
+          "description": "Energy review, energy baseline (EnB), energy performance indicators (EnPI), energy objectives and action plans"
+        },
+        {
+          "number": "4",
+          "title": "Support",
+          "description": "Resources, competence, awareness, communication, documented information necessary for EnMS operation"
+        },
+        {
+          "number": "5",
+          "title": "Operation",
+          "description": "Operational planning and control, change management, design, procurement and actions regarding SEU"
+        },
+        {
+          "number": "6",
+          "title": "Performance evaluation",
+          "description": "Monitoring, measurement, analysis and evaluation of energy performance, internal audit, management review"
+        },
+        {
+          "number": "7",
+          "title": "Improvement",
+          "description": "Nonconformity and corrective action, continual improvement of energy management system and energy performance"
+        }
+      ]
+    },
+    "benefits": {
+      "sectionTitle": "Benefits for your organization",
+      "sectionDescription": "Implementation of energy management system brings tangible financial and environmental benefits",
+      "items": [
+        {
+          "title": "Energy cost reduction",
+          "description": "15-25% reduction in energy consumption translates into significant savings in operational budget",
+          "value": "15-25%",
+          "label": "average cost reduction"
+        },
+        {
+          "title": "Regulatory compliance",
+          "description": "Meeting energy audit requirements in accordance with energy efficiency law",
+          "value": "100%",
+          "label": "regulatory compliance"
+        },
+        {
+          "title": "Carbon footprint",
+          "description": "CO2 emission reduction supports sustainable development goals and improves company image",
+          "value": "-30%",
+          "label": "CO2 emission reduction"
+        },
+        {
+          "title": "Faster ROI",
+          "description": "Return on investment in EnMS system occurs on average within 12-18 months from implementation",
+          "value": "12-18",
+          "label": "months to ROI"
+        },
+        {
+          "title": "Process automation",
+          "description": "Automated data collection, reporting and alerting saves team time",
+          "value": "80%",
+          "label": "task automation"
+        },
+        {
+          "title": "Continual improvement",
+          "description": "PDCA cycle (Plan-Do-Check-Act) ensures systematic improvement of energy performance",
+          "value": "∞",
+          "label": "continuous process"
+        }
+      ]
+    },
+    "roi": {
+      "title": "Calculate return on investment",
+      "description": "OmniEnergy implementation is not just a step towards digital transformation – it's an investment that can quickly pay off through savings.",
+      "formula": {
+        "label": "ROI formula",
+        "text": "ROI = (Gain - Cost) ÷ Cost × 100%"
+      },
+      "benefits": [
+        "15% efficiency increase",
+        "20% energy consumption reduction",
+        "60% audit time reduction"
+      ],
+      "example": {
+        "title": "Example scenario",
+        "investment": {
+          "label": "Total investment costs",
+          "value": "160,000 PLN",
+          "items": [
+            "Cloud services",
+            "Software licenses",
+            "Communication gateways, HMI panels, PLC controllers",
+            "System configuration service and implementation costs"
+          ]
+        },
+        "savings": {
+          "label": "Estimated annual savings",
+          "value": "200,000 PLN",
+          "items": [
+            "15% efficiency increase",
+            "20% energy consumption reduction"
+          ]
+        },
+        "result": {
+          "label": "ROI",
+          "value": "25%",
+          "description": "ROI indicator at 0.25 level means that the company will save 25% of invested funds value in the first year of system use."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready for energy optimization?",
+      "description": "Join companies that are already saving through intelligent energy management",
+      "ctaPrimary": "Contact us",
+      "ctaSecondary": "Get in touch",
+      "stats": {
+        "implementations": {
+          "value": "500+",
+          "label": "System implementations"
+        },
+        "savings": {
+          "value": "25%",
+          "label": "Average cost reduction"
+        },
+        "support": {
+          "value": "24/7",
+          "label": "Technical support"
+        }
+      }
+    },
+    "modules": {
+      "dashboard": {
+        "name": "Energy dashboard",
+        "description": "Main starting point of the system",
+        "features": [
+          "Charts: energy consumption [kWh], SEU, EnPI",
+          "Action progress and threshold alerts",
+          "Tiles for electricity, gas, compressed air",
+          "Navigation buttons: Analysis → EnPI → Objectives → Audits"
+        ]
+      },
+      "sources": {
+        "name": "Sources and measurement points",
+        "description": "Device and sensor monitoring",
+        "features": [
+          "Tabular view + map/planogram",
+          "Each device linked to production line",
+          "Statuses: active, no signal, sensor failure"
+        ]
+      },
+      "analysis": {
+        "name": "Consumption analysis",
+        "description": "Energy consumption charts and trends",
+        "features": [
+          "Trend charts: daily, weekly, monthly",
+          "Year-over-year comparison (energy, cost, production unit)",
+          "SEU view as Pareto or heat map"
+        ]
+      },
+      "enpi": {
+        "name": "EnPI indicators",
+        "description": "Energy performance indicators",
+        "features": [
+          "Indicator list (kWh/piece, MJ/ton)",
+          "Graphical trend view and baseline relationship",
+          "Filtering by line, device, period"
+        ]
+      },
+      "enb": {
+        "name": "Energy baseline (EnB)",
+        "description": "Baseline periods and comparisons",
+        "features": [
+          "Defining baseline period and values",
+          "Comparison capability with current period"
+        ]
+      },
+      "goals": {
+        "name": "Energy objectives and actions",
+        "description": "Energy objective management",
+        "features": [
+          "Board: objective, target value, responsible person, deadline, status",
+          "Color coding: green – OK, yellow – in progress, red – delayed",
+          "Monthly progress report"
+        ]
+      },
+      "audits": {
+        "name": "Audits and reviews",
+        "description": "Energy audit system",
+        "features": [
+          "Audit schedule + checklists",
+          "Audit history and results (date, auditor, findings)",
+          "Corrective actions",
+          "PDF export"
+        ]
+      },
+      "documentation": {
+        "name": "Energy documentation",
+        "description": "Documentation repository",
+        "features": [
+          "Energy policy, reports, procedures",
+          "Version history and update date",
+          "Links to ISO 50001 standards / compliance reports"
+        ]
+      }
+    },
+    "isoRequirements": {
+      "title": "ISO 50001:2018 requirements",
+      "description": "ISO 50001:2018 standard defines organizational, process and evidence structure for energy management system",
+      "items": [
+        {
+          "title": "Context of the organization",
+          "items": [
+            "Understanding the organization and its context",
+            "Understanding the needs and expectations of interested parties",
+            "Determining the scope of the energy management system",
+            "Energy management system and its processes"
+          ]
+        },
+        {
+          "title": "Leadership",
+          "items": [
+            "Leadership and commitment",
+            "Energy policy",
+            "Organizational roles, responsibilities and authorities"
+          ]
+        },
+        {
+          "title": "Planning",
+          "items": [
+            "Actions to address risks and opportunities",
+            "Energy objectives and planning to achieve them",
+            "Energy review",
+            "Energy performance indicators (EnPI)",
+            "Energy baseline (EnB)",
+            "Planning for collection of energy data"
+          ]
+        },
+        {
+          "title": "Support",
+          "items": [
+            "Resources",
+            "Competence",
+            "Awareness",
+            "Communication",
+            "Documented information"
+          ]
+        },
+        {
+          "title": "Operation",
+          "items": [
+            "Operational planning and control",
+            "Design",
+            "Procurement"
+          ]
+        },
+        {
+          "title": "Performance evaluation",
+          "items": [
+            "Monitoring, measurement, analysis and evaluation of energy performance",
+            "Compliance evaluation",
+            "Internal audit",
+            "Management review"
+          ]
+        },
+        {
+          "title": "Improvement",
+          "items": [
+            "Nonconformity and corrective action",
+            "Continual improvement"
+          ]
+        }
+      ]
+    }
+  },
+
+
+
   "Error": {
     "title": "Something went wrong!",
     "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"

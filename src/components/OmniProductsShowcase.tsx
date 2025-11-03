@@ -26,7 +26,7 @@ export const OmniProductsShowcase = () => {
   // Konfiguracja linków - łatwe do edycji
   const productLinks = {
     omnimes: "https://www.omnimes.com/#whatIsOmnimes",
-    omnienergy: "https://www.omnienergy.pl",
+    omnienergy: "/omnienergy",
     omnicloud: "https://www.cloud.omnimes.com",
     onpremise: {
       pl: "https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/omnimes-jako-saas-vs-on-premise-na-czym-polega-roznica-GtutTGFR2a",

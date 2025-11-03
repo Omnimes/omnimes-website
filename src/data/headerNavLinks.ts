@@ -3,6 +3,7 @@ import { LuAtom, LuCable, LuCombine, LuGalleryHorizontalEnd, LuSignature } from 
 
 export const headerNavLinks: NavLink[] = [
   { href: "/", title: "home" },
+  // { href: "/omnienergy", title: "omniEnergy" },
   { href: "/courses", title: "courses" },
   { href: "/implementation", title: "implementation" },
   { href: "/blog", title: "blog" },

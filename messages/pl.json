@@ -114,8 +114,8 @@
     "intro_title": "Szkolenia OmniMES dla integratorów i producentów",
     "intro_description": "Jesteś integratorem automatyki lub producentem maszyn? Chcesz poznać system i razem z nami unowocześniać przemysł? Świetnie trafiłeś! Zapisz się na bezpłatne, otwarte szkolenie z konfiguracji oprogramowania OmniMES.",
     "upcoming_dates": "Najbliższe terminy",
-    "date_1": "26.11.2025 (Kraków, ul. Siwka 11)",
-    "date_2": "28.11.2025 (Kraków, ul. Siwka 11)",
+    "date_1": "10.12.2025 (Kraków, ul. Siwka 11)",
+    "date_2": "12.12.2025 (Kraków, ul. Siwka 11)",
     "duration_label": "Czas trwania",
     "duration_value": "6h (godz. 9:00-15:00)",
     "registration_link": "Link do zapisów",
@@ -135,6 +135,413 @@
     "title": "Wybrane realizacje",
     "NotFound": "Już wkrótce",
     "search":"Wyszukaj..."
+  },
+
+"OmniEnergy": {
+    "meta": {
+      "title": "OmniEnergy - system Enms zarządzania energią zgodny z ISO 50001 | OmniEnergy",
+      "description": "Moduł wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie. Redukcja kosztów energii o 15-25%."
+    },
+    "title": "OmniEnergy",
+    "subtitle": "System zarządzania energią zgodny z ISO 50001",
+    "intro": "System wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
+    "hero": {
+      "badge": "System zarządzania energią zgodny z ISO 50001",
+      "title": "Oszczędzaj energię dzięki",
+      "titleHighlight": "OmniEnergy",
+      "description": "System wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
+      "ctaPrimary": "Sprawdź Demo OmniEnergy",
+      "ctaSecondary": "Zobacz funkcje",
+      "features": {
+        "iso": "Zgodność z ISO 50001",
+        "reduction": "Redukcja zużycia o 20%"
+      },
+      "stats": {
+        "monitoring": {
+          "label": "Monitorowanie w czasie rzeczywistym",
+          "value": "24/7"
+        },
+        "savings": {
+          "label": "Oszczędności roczne",
+          "value": "do 200k PLN"
+        },
+        "enpi": {
+          "label": "Redukcja EnPI",
+          "value": "15-25%"
+        }
+      }
+    },
+    "features": {
+      "sectionTitle": "Kompleksowy system zarządzania energią",
+      "sectionDescription": "System wspiera wszystkie wymagania normy ISO 50001, zapewniając pełną kontrolę nad zużyciem energii",
+      "dashboard": {
+        "title": "Dashboard energetyczny",
+        "description": "Główne miejsce startowe systemu Enms z wykresami zużycia energii, SEU, EnPI, postępem działań i alertami przekroczeń",
+        "items": [
+          "Wykresy w czasie rzeczywistym",
+          "Kafle dla wszystkich mediów",
+          "Alerty i powiadomienia"
+        ]
+      },
+      "sources": {
+        "title": "Źródła i punkty pomiarowe",
+        "description": "Widok tabelaryczny z mapą/planogramem każdego urządzenia powiązanego z linią produkcyjną i nośnikiem energii",
+        "items": [
+          "Monitoring wszystkich punktów",
+          "Statusy czujników",
+          "Wizualizacja na planogramie"
+        ]
+      },
+      "analysis": {
+        "title": "Analiza zużycia",
+        "description": "Wykresy trendów dziennych, tygodniowych, miesięcznych z porównaniem rok do roku i widokiem SEU",
+        "items": [
+          "Analiza trendów",
+          "Pareto i mapy ciepła",
+          "Porównania wielookresowe"
+        ]
+      },
+      "enpi": {
+        "title": "Wskaźniki EnPI",
+        "description": "Lista wskaźników wydajności energetycznej z widokiem graficznym trendu i relacji do baseline",
+        "items": [
+          "kWh/sztuka, MJ/tona",
+          "Trendy i baseline",
+          "Filtry zaawansowane"
+        ]
+      },
+      "enb": {
+        "title": "Baza odniesienia (EnB)",
+        "description": "Definiowanie okresu bazowego i jego wartości z możliwością porównania z aktualnym okresem",
+        "items": [
+          "Okresy bazowe",
+          "Normalizacja danych",
+          "Porównania okresowe"
+        ]
+      },
+      "goals": {
+        "title": "Cele i działania energetyczne",
+        "description": "Tablica z celami, wartościami docelowymi, odpowiedzialnymi i terminami ze statusem realizacji",
+        "items": [
+          "Zarządzanie celami",
+          "Statusy kolorystyczne",
+          "Raporty miesięczne"
+        ]
+      },
+      "audits": {
+        "title": "Audyty i przeglądy",
+        "description": "Harmonogram audytów z checklistami, historią wyników i możliwością eksportu do PDF",
+        "items": [
+          "Harmonogram audytów",
+          "Checklisty audytowe",
+          "Eksport raportów"
+        ]
+      },
+      "documentation": {
+        "title": "Dokumentacja energetyczna",
+        "description": "Repozytorium plików z polityką energetyczną, raportami, procedurami i linkami do norm ISO",
+        "items": [
+          "Centrum dokumentów",
+          "Historia wersji",
+          "Zgodność z ISO 50001"
+        ]
+      },
+      "seu": {
+        "title": "Znaczące zużycia energii (SEU)",
+        "description": "Identyfikacja i monitoring obszarów o największym zużyciu energii z możliwością optymalizacji",
+        "items": [
+          "Analiza Pareto",
+          "Priorytetyzacja działań",
+          "Monitoring 24/7"
+        ]
+      }
+    },
+    "iso50001": {
+      "badge": "Certyfikacja ISO 50001",
+      "sectionTitle": "Pełna zgodność z normą ISO 50001:2018",
+      "sectionDescription": "System zaprojektowany zgodnie z wymaganiami międzynarodowego standardu zarządzania energią",
+      "requirements": [
+        {
+          "number": "1",
+          "title": "Kontekst organizacji",
+          "description": "Analiza wewnętrznych i zewnętrznych czynników wpływających na System zarządzania energią, określenie granic i zakresu systemu EnMS"
+        },
+        {
+          "number": "2",
+          "title": "Przywództwo",
+          "description": "Zaangażowanie najwyższego kierownictwa, polityka energetyczna organizacji, role i odpowiedzialności w systemie EnMS"
+        },
+        {
+          "number": "3",
+          "title": "Planowanie",
+          "description": "Przegląd energetyczny, baza odniesienia (EnB), wskaźniki wydajności energetycznej (EnPI), cele energetyczne i plany działania"
+        },
+        {
+          "number": "4",
+          "title": "Wsparcie",
+          "description": "Zasoby, kompetencje, świadomość, komunikacja, udokumentowana informacja niezbędna do funkcjonowania systemu EnMS"
+        },
+        {
+          "number": "5",
+          "title": "Działanie",
+          "description": "Planowanie i kontrola operacyjna, zarządzanie zmianą, projektowanie, zamówienia i działania w zakresie SEU"
+        },
+        {
+          "number": "6",
+          "title": "Ocena działania",
+          "description": "Monitoring, pomiar, analiza i ocena wydajności energetycznej, audyt wewnętrzny, przegląd zarządzania"
+        },
+        {
+          "number": "7",
+          "title": "Doskonalenie",
+          "description": "Niezgodności i działania korygujące, ciągłe doskonalenie systemu zarządzania energią oraz wydajności energetycznej"
+        }
+      ]
+    },
+    "benefits": {
+      "sectionTitle": "Korzyści dla Twojej organizacji",
+      "sectionDescription": "Wdrożenie systemu zarządzania energią przynosi wymierne korzyści finansowe i środowiskowe",
+      "items": [
+        {
+          "title": "Redukcja kosztów energii",
+          "description": "Zmniejszenie zużycia energii o 15-25% przekłada się na znaczące oszczędności w budżecie operacyjnym",
+          "value": "15-25%",
+          "label": "średnia redukcja kosztów"
+        },
+        {
+          "title": "Zgodność z regulacjami",
+          "description": "Spełnienie wymagań audytów energetycznych zgodnie z ustawą o efektywności energetycznej",
+          "value": "100%",
+          "label": "zgodność regulacyjna"
+        },
+        {
+          "title": "Ślad węglowy",
+          "description": "Redukcja emisji CO2 wspiera cele zrównoważonego rozwoju i poprawia wizerunek firmy",
+          "value": "-30%",
+          "label": "redukcja emisji CO2"
+        },
+        {
+          "title": "Szybszy ROI",
+          "description": "Zwrot z inwestycji w system EnMS następuje średnio w ciągu 12-18 miesięcy od wdrożenia",
+          "value": "12-18",
+          "label": "miesięcy do ROI"
+        },
+        {
+          "title": "Automatyzacja procesów",
+          "description": "Zautomatyzowane zbieranie danych, raportowanie i alarmowanie oszczędza czas zespołu",
+          "value": "80%",
+          "label": "automatyzacji zadań"
+        },
+        {
+          "title": "Ciągłe doskonalenie",
+          "description": "Cykl PDCA (Plan-Do-Check-Act) zapewnia systematyczne ulepszanie wydajności energetycznej",
+          "value": "∞",
+          "label": "proces ciągły"
+        }
+      ]
+    },
+    "roi": {
+      "title": "Oblicz zwrot z inwestycji",
+      "description": "Wdrożenie OmniEnergy to nie tylko krok w stronę cyfrowej transformacji – to inwestycja, która może szybko się zwrócić poprzez oszczędności.",
+      "formula": {
+        "label": "Wzór ROI",
+        "text": "ROI = (Zysk - Koszt) ÷ Koszt × 100%"
+      },
+      "benefits": [
+        "Zwiększenie wydajności o 15%",
+        "Redukcja zużycia energii o 20%",
+        "Skrócenie czasu audytów o 60%"
+      ],
+      "example": {
+        "title": "Przykładowy scenariusz",
+        "investment": {
+          "label": "Łączne koszty inwestycji",
+          "value": "160 000 PLN",
+          "items": [
+            "Usługi chmurowe",
+            "Licencje na oprogramowanie",
+            "Bramki komunikacyjne, panele HMI, sterowniki PLC",
+            "Usługa konfiguracji systemu i koszty wdrożenia"
+          ]
+        },
+        "savings": {
+          "label": "Szacowane roczne oszczędności",
+          "value": "200 000 PLN",
+          "items": [
+            "Zwiększenie wydajności o 15%",
+            "Redukcja zużycia energii o 20%"
+          ]
+        },
+        "result": {
+          "label": "ROI",
+          "value": "25%",
+          "description": "Wskaźnik ROI na poziomie 0,25 oznacza, że firma zaoszczędzi 25% wartości zainwestowanych środków w pierwszym roku użytkowania systemu."
+        }
+      }
+    },
+    "cta": {
+      "title": "Gotowy na optymalizację energii?",
+      "description": "Dołącz do firm, które już oszczędzają dzięki inteligentnemu zarządzaniu energią",
+      "ctaPrimary": "Skontaktuj się",
+      "ctaSecondary": "Skontaktuj się z nami",
+      "stats": {
+        "implementations": {
+          "value": "500+",
+          "label": "Wdrożeń systemów"
+        },
+        "savings": {
+          "value": "25%",
+          "label": "Średnia redukcja kosztów"
+        },
+        "support": {
+          "value": "24/7",
+          "label": "Wsparcie techniczne"
+        }
+      }
+    },
+    "modules": {
+      "dashboard": {
+        "name": "Dashboard energetyczny",
+        "description": "Główne miejsce startowe systemu",
+        "features": [
+          "Wykresy: zużycie energii [kWh], SEU, EnPI",
+          "Postęp działań i alerty przekroczeń",
+          "Kafle dla energii elektrycznej, gazu, sprężonego powietrza",
+          "Przyciski do przejścia: Analiza → EnPI → Cele → Audyty"
+        ]
+      },
+      "sources": {
+        "name": "Źródła i punkty pomiarowe",
+        "description": "Monitoring urządzeń i czujników",
+        "features": [
+          "Widok tabelaryczny + mapa/planogram",
+          "Każde urządzenie powiązane z linią produkcyjną",
+          "Statusy: aktywny, brak sygnału, awaria czujnika"
+        ]
+      },
+      "analysis": {
+        "name": "Analiza zużycia",
+        "description": "Wykresy i trendy zużycia energii",
+        "features": [
+          "Wykresy trendów: dzienne, tygodniowe, miesięczne",
+          "Porównanie rok do roku (energia, koszt, jednostka produkcji)",
+          "Widok SEU w formie Pareto lub mapy ciepła"
+        ]
+      },
+      "enpi": {
+        "name": "Wskaźniki EnPI",
+        "description": "Wskaźniki wydajności energetycznej",
+        "features": [
+          "Lista wskaźników (kWh/sztuka, MJ/tona)",
+          "Widok graficzny trendu i relacji do baseline",
+          "Filtrowanie po linii, urządzeniu, okresie"
+        ]
+      },
+      "enb": {
+        "name": "Baza odniesienia (EnB)",
+        "description": "Okresy bazowe i porównania",
+        "features": [
+          "Definiowanie okresu bazowego i wartości",
+          "Możliwość porównania z aktualnym okresem"
+        ]
+      },
+      "goals": {
+        "name": "Cele i działania energetyczne",
+        "description": "Zarządzanie celami energetycznymi",
+        "features": [
+          "Tablica: cel, wartość docelowa, odpowiedzialny, termin, status",
+          "Kolorystyka: zielony – OK, żółty – w toku, czerwony – opóźniony",
+          "Raport miesięczny z postępów"
+        ]
+      },
+      "audits": {
+        "name": "Audyty i przeglądy",
+        "description": "System audytów energetycznych",
+        "features": [
+          "Harmonogram audytów + checklisty",
+          "Historia i wyniki audytów (data, audytor, wnioski)",
+          "Działania korygujące",
+          "Eksport do PDF"
+        ]
+      },
+      "documentation": {
+        "name": "Dokumentacja energetyczna",
+        "description": "Repozytorium dokumentacji",
+        "features": [
+          "Polityka energetyczna, raporty, procedury",
+          "Historia wersji i data aktualizacji",
+          "Linki do norm ISO 50001 / raportów compliance"
+        ]
+      }
+    },
+    "isoRequirements": {
+      "title": "Wymagania ISO 50001:2018",
+      "description": "Standard ISO 50001:2018 definiuje strukturę organizacyjną, procesową i dowodową dla systemu zarządzania energią",
+      "items": [
+        {
+          "title": "Kontekst organizacji",
+          "items": [
+            "Zrozumienie organizacji i jej kontekstu",
+            "Zrozumienie potrzeb i oczekiwań zainteresowanych stron",
+            "Określenie zakresu systemu zarządzania energią",
+            "System zarządzania energią i jego procesy"
+          ]
+        },
+        {
+          "title": "Przywództwo",
+          "items": [
+            "Przywództwo i zaangażowanie",
+            "Polityka energetyczna",
+            "Role, odpowiedzialności i uprawnienia w organizacji"
+          ]
+        },
+        {
+          "title": "Planowanie",
+          "items": [
+            "Działania dotyczące ryzyka i szans",
+            "Cele energetyczne i planowanie ich osiągnięcia",
+            "Przegląd energetyczny",
+            "Wskaźniki wydajności energetycznej (EnPI)",
+            "Baza odniesienia energetycznego (EnB)",
+            "Planowanie zbierania danych energetycznych"
+          ]
+        },
+        {
+          "title": "Wsparcie",
+          "items": [
+            "Zasoby",
+            "Kompetencje",
+            "Świadomość",
+            "Komunikacja",
+            "Udokumentowana informacja"
+          ]
+        },
+        {
+          "title": "Działanie",
+          "items": [
+            "Planowanie i kontrola operacyjna",
+            "Projektowanie",
+            "Zamówienia"
+          ]
+        },
+        {
+          "title": "Ocena działania",
+          "items": [
+            "Monitoring, pomiar, analiza i ocena wydajności energetycznej",
+            "Ocena zgodności",
+            "Audyt wewnętrzny",
+            "Przegląd zarządzania"
+          ]
+        },
+        {
+          "title": "Doskonalenie",
+          "items": [
+            "Niezgodność i działanie korygujące",
+            "Ciągłe doskonalenie"
+          ]
+        }
+      ]
+    }
   },
 
   "Error": {
@@ -190,6 +597,7 @@
     "searchSubtitle4": "Sprawdź aktualności OmniMES.",
     "searchSubtitle5": "Zobacz galerię zdjęć OmniMES",
     "ariaTriger": "Rozwiń menu i zobacz wszystkie opcje",
+    "omniEnergy":"OmniEnergy",
     "documentation":"Dokumentacja",
     "documentationPL": "Dokumentacja PL",
     "documentationEN": "Dokumentacja EN",
