@@ -258,7 +258,7 @@
     },
     "iso50001": {
       "badge": "Certyfikacja ISO 50001",
-      "sectionTitle": "Pełna zgodność z normą ISO 50001:2018",
+      "sectionTitle": "Pełna zgodność z normą ISO 50001",
       "sectionDescription": "System zaprojektowany zgodnie z wymaganiami międzynarodowego standardu zarządzania energią",
       "requirements": [
         {
@@ -475,8 +475,8 @@
       }
     },
     "isoRequirements": {
-      "title": "Wymagania ISO 50001:2018",
-      "description": "Standard ISO 50001:2018 definiuje strukturę organizacyjną, procesową i dowodową dla systemu zarządzania energią",
+      "title": "Wymagania ISO 50001",
+      "description": "Standard ISO 50001 definiuje strukturę organizacyjną, procesową i dowodową dla systemu zarządzania energią",
       "items": [
         {
           "title": "Kontekst organizacji",

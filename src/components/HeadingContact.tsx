@@ -18,16 +18,16 @@ export const HeadingContact = () => {
           </ul>
         </span>
       </h3>
-      
+
       {/* Alert informacyjny o promocji - pełna szerokość */}
       <div className="mx-auto mt-8 w-full max-w-6xl px-4">
-        <div className="relative overflow-hidden rounded-2xl border-2 border-primary-200 bg-white p-6 shadow-lg">
+        <div className="border-primary-200 relative overflow-hidden rounded-2xl border-2 bg-white p-6 shadow-lg">
           {/* Animowany badge "PROMOCJA" */}
-          <div className="absolute -right-12 -top-12 size-32 animate-pulse rounded-full bg-primary-200 opacity-30 blur-2xl"></div>
-          
+          <div className="bg-primary-200 absolute -right-12 -top-12 size-32 animate-pulse rounded-full opacity-30 blur-2xl"></div>
+
           <div className="relative flex items-start gap-4">
             {/* Ikona - powiększona */}
-            <div className="flex size-16 shrink-0 items-center justify-center rounded-full bg-primary-500 shadow-lg">
+            <div className="bg-primary-500 flex size-16 shrink-0 items-center justify-center rounded-full shadow-lg">
               <svg
                 className="size-9 text-white"
                 fill="none"
@@ -45,21 +45,12 @@ export const HeadingContact = () => {
 
             {/* Treść alertu */}
             <div className="flex-1 text-left">
-              <h4 className="mb-2 text-lg font-bold text-primary-900">
-                {t("promotion.title")}
-              </h4>
-              <p className="text-primary-800">
-                {t("promotion.description")}
-              </p>
-              
+              <h4 className="text-primary-900 mb-2 text-lg font-bold">{t("promotion.title")}</h4>
+              <p className="text-primary-800">{t("promotion.description")}</p>
+
               {/* Data ważności */}
-              <div className="mt-3 flex items-center gap-2 text-sm font-semibold text-primary-700">
-                <svg
-                  className="size-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+              <div className="text-primary-700 mt-3 flex items-center gap-2 text-sm font-semibold">
+                <svg className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
