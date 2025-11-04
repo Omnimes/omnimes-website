@@ -553,6 +553,14 @@
         {
           "value": "onPremise",
           "label": "on premise"
+        },
+        {
+          "value": "energyConsumptionMonitoring",
+          "label": "energy consumption monitoring"
+        },
+        {
+          "value": "renewableSources",
+          "label": "renewable sources"
         }
       ]
     },
