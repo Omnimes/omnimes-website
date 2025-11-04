@@ -1,15 +1,13 @@
 ---
-title: 'New OmniMES Energy Module – Intelligent Energy Management in Compliance with ISO 50001'
+title: 'New OmniEnergy Energy Module – Intelligent Energy Management in Compliance with ISO 50001'
 status: 'published'
 author:
   name: 'Szymon Rewilak'
   picture: '/images/photo-UwMD.jpg'
 slug: 'new-omnimes-energy-module-intelligent-energy-management-in-compliance-with-iso-50001'
-description: 'As electricity costs continue to rise faster than production margins, companies are increasingly looking for ways to achieve lasting reductions in utility consumption. The answer to these needs is the new energy module in the OmniMES system, which functions as an Energy Management System (EMS).
-It enables companies to monitor, analyze, and optimize energy consumption across the entire plant — using the same data already utilized by the MES system.
-
+description: 'As electricity costs continue to rise faster than production margins, companies are increasingly looking for ways to achieve lasting reductions in utility consumption. The answer to these needs is the new energy module in the OmniMES system, which functions as an Energy Management System (EMS). It enables companies to monitor, analyze, and optimize energy consumption across the entire plant — using the same data already utilized by the MES system.
 This means there’s no need to install sensors or measuring devices twice — the same data can serve both MES and EMS purposes, significantly reducing implementation time and cost.'
-coverImage: '/images/projekt-bez-nazwy--1--k4Mz.png'
+coverImage: '/images/omnienergy-M4MD.png'
 lang: 'en'
 tags: [{"value":"omniEnergy","label":"OmniEnergy"},{"label":"energy consumption monitoring","value":"energyConsumptionMonitoring"},{"label":"renewable sources","value":"renewableSources"}]
 publishedAt: '2025-11-03T09:18:59.000Z'

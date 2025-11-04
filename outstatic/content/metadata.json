@@ -1,6 +1,6 @@
 {
-  "commit": "f6a53b4649062cbb10cf295b698f5f952b6fa38d",
-  "generated": "2025-11-04T09:17:31.917Z",
+  "commit": "329eec24a92b5571f873f353995c29ea7d375395",
+  "generated": "2025-11-04T09:19:33.081Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3747,8 +3747,8 @@
     },
     {
       "__outstatic": {
-        "commit": "f6a53b4649062cbb10cf295b698f5f952b6fa38d",
-        "hash": "3432060119",
+        "commit": "329eec24a92b5571f873f353995c29ea7d375395",
+        "hash": "3348866994",
         "path": "outstatic/content/posts/new-omnimes-energy-module-intelligent-energy-management-in-compliance-with-iso-50001.md"
       },
       "author": {
@@ -3756,8 +3756,8 @@
         "picture": "/images/photo-UwMD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/projekt-bez-nazwy--1--k4Mz.png",
-      "description": "As electricity costs continue to rise faster than production margins, companies are increasingly looking for ways to achieve lasting reductions in utility consumption. The answer to these needs is the new energy module in the OmniMES system, which functions as an Energy Management System (EMS). It enables companies to monitor, analyze, and optimize energy consumption across the entire plant — using the same data already utilized by the MES system.\nThis means there’s no need to install sensors or measuring devices twice — the same data can serve both MES and EMS purposes, significantly reducing implementation time and cost.",
+      "coverImage": "/images/omnienergy-M4MD.png",
+      "description": "As electricity costs continue to rise faster than production margins, companies are increasingly looking for ways to achieve lasting reductions in utility consumption. The answer to these needs is the new energy module in the OmniMES system, which functions as an Energy Management System (EMS). It enables companies to monitor, analyze, and optimize energy consumption across the entire plant — using the same data already utilized by the MES system. This means there’s no need to install sensors or measuring devices twice — the same data can serve both MES and EMS purposes, significantly reducing implementation time and cost.",
       "lang": "en",
       "publishedAt": "2025-11-03T09:18:59.000Z",
       "slug": "new-omnimes-energy-module-intelligent-energy-management-in-compliance-with-iso-50001",
@@ -3776,7 +3776,7 @@
           "value": "renewableSources"
         }
       ],
-      "title": "New OmniMES Energy Module – Intelligent Energy Management in Compliance with ISO 50001"
+      "title": "New OmniEnergy Energy Module – Intelligent Energy Management in Compliance with ISO 50001"
     }
   ]
 }
