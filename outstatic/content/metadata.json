@@ -1,6 +1,6 @@
 {
-  "commit": "329eec24a92b5571f873f353995c29ea7d375395",
-  "generated": "2025-11-04T09:19:33.081Z",
+  "commit": "4bf3e05a8083ac3d595763d2d2554a3c459eedf4",
+  "generated": "2025-11-04T09:20:48.977Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3714,39 +3714,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1977e4d004fa09643e39bd71789b63e831b88ca8",
-        "hash": "3460866821",
-        "path": "outstatic/content/posts/nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001.md"
-      },
-      "author": {
-        "name": "Szymon Rewilak",
-        "picture": "/images/photo-Y4OD.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/projekt-bez-nazwy--1--k5MT.png",
-      "description": "W czasach, gdy koszty energii elektrycznej rosną szybciej niż marże produkcyjne, firmy coraz częściej poszukują sposobów na trwałe obniżenie zużycia mediów. Odpowiedzią na te potrzeby jest nowy moduł energetyczny w systemie OmniMES, który pełni funkcję systemu EMS (Energy Management System). Dzięki niemu przedsiębiorstwa mogą monitorować, analizować i optymalizować zużycie energii w całym zakładzie — w oparciu o dane, które już są wykorzystywane w systemie MES.\nTo oznacza, że nie trzeba podłączać czujników ani urządzeń pomiarowych dwukrotnie — te same dane mogą pracować jednocześnie na potrzeby MES i EMS, co znacząco skraca czas wdrożenia i obniża jego koszt",
-      "lang": "pl",
-      "publishedAt": "2025-11-03T09:00:52.000Z",
-      "slug": "nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001",
-      "status": "published",
-      "tags": [
-        {
-          "label": "OmniEnergy",
-          "value": "omniEnergy"
-        },
-        {
-          "label": "Odnawialne źródła energii",
-          "value": "odnawialneZrodlaEnergii"
-        },
-        {
-          "label": "Monitorowanie zużycia energii",
-          "value": "monitorowanieZuzyciaEnergii"
-        }
-      ],
-      "title": "Nowy moduł energetyczny OmniMES – inteligentne zarządzanie energią zgodne z ISO 50001"
-    },
-    {
-      "__outstatic": {
         "commit": "329eec24a92b5571f873f353995c29ea7d375395",
         "hash": "3348866994",
         "path": "outstatic/content/posts/new-omnimes-energy-module-intelligent-energy-management-in-compliance-with-iso-50001.md"
@@ -3777,6 +3744,39 @@
         }
       ],
       "title": "New OmniEnergy Energy Module – Intelligent Energy Management in Compliance with ISO 50001"
+    },
+    {
+      "__outstatic": {
+        "commit": "4bf3e05a8083ac3d595763d2d2554a3c459eedf4",
+        "hash": "1524211114",
+        "path": "outstatic/content/posts/nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-Y4OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/omnienergy-MyNT.png",
+      "description": "W czasach, gdy koszty energii elektrycznej rosną szybciej niż marże produkcyjne, firmy coraz częściej poszukują sposobów na trwałe obniżenie zużycia mediów. Odpowiedzią na te potrzeby jest nowy moduł energetyczny w systemie OmniMES, który pełni funkcję systemu EMS (Energy Management System). Dzięki niemu przedsiębiorstwa mogą monitorować, analizować i optymalizować zużycie energii w całym zakładzie — w oparciu o dane, które już są wykorzystywane w systemie MES. To oznacza, że nie trzeba podłączać czujników ani urządzeń pomiarowych dwukrotnie — te same dane mogą pracować jednocześnie na potrzeby MES i EMS, co znacząco skraca czas wdrożenia i obniża jego koszt",
+      "lang": "pl",
+      "publishedAt": "2025-11-03T09:00:52.000Z",
+      "slug": "nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        },
+        {
+          "label": "Odnawialne źródła energii",
+          "value": "odnawialneZrodlaEnergii"
+        },
+        {
+          "label": "Monitorowanie zużycia energii",
+          "value": "monitorowanieZuzyciaEnergii"
+        }
+      ],
+      "title": "Nowy moduł energetyczny OmniEenergy – inteligentne zarządzanie energią zgodne z ISO 50001"
     }
   ]
 }

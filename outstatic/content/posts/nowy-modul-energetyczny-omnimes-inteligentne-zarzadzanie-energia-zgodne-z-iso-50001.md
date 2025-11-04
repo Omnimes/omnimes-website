@@ -1,14 +1,13 @@
 ---
-title: 'Nowy moduł energetyczny OmniMES – inteligentne zarządzanie energią zgodne z ISO 50001'
+title: 'Nowy moduł energetyczny OmniEenergy – inteligentne zarządzanie energią zgodne z ISO 50001'
 status: 'published'
 author:
   name: 'Szymon Rewilak'
   picture: '/images/photo-Y4OD.jpg'
 slug: 'nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001'
 description: 'W czasach, gdy koszty energii elektrycznej rosną szybciej niż marże produkcyjne, firmy coraz częściej poszukują sposobów na trwałe obniżenie zużycia mediów. Odpowiedzią na te potrzeby jest nowy moduł energetyczny w systemie OmniMES, który pełni funkcję systemu EMS (Energy Management System). Dzięki niemu przedsiębiorstwa mogą monitorować, analizować i optymalizować zużycie energii w całym zakładzie — w oparciu o dane, które już są wykorzystywane w systemie MES.
-
 To oznacza, że nie trzeba podłączać czujników ani urządzeń pomiarowych dwukrotnie — te same dane mogą pracować jednocześnie na potrzeby MES i EMS, co znacząco skraca czas wdrożenia i obniża jego koszt'
-coverImage: '/images/projekt-bez-nazwy--1--k5MT.png'
+coverImage: '/images/omnienergy-MyNT.png'
 lang: 'pl'
 tags: [{"value":"omniEnergy","label":"OmniEnergy"},{"value":"odnawialneZrodlaEnergii","label":"Odnawialne źródła energii"},{"value":"monitorowanieZuzyciaEnergii","label":"Monitorowanie zużycia energii"}]
 publishedAt: '2025-11-03T09:00:52.000Z'
@@ -80,4 +79,4 @@ To pozwala łączyć analizę wydajności maszyn z ich zużyciem energii — na 
 
 Dzięki nowemu modułowi energetycznemu OmniMES możesz nie tylko monitorować zużycie energii, ale także aktywnie nim zarządzać – zgodnie z filozofią **ciągłego doskonalenia (PDCA)** i wymaganiami **ISO 50001**. To rozwiązanie, które pozwala jednocześnie oszczędzać energię, obniżać koszty i spełniać wymogi prawne.
 
-**Dowiedz się, jak szybko Twoja firma może uzyskać zwrot z inwestycji w system zarządzania energią – umów prezentację OmniEnergy**
+[**Dowiedz się, jak szybko Twoja firma może uzyskać zwrot z inwestycji w system zarządzania energią – umów prezentację OmniEnergy**](https://www.omnimes.com/pl/omnienergy)
