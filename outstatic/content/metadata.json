@@ -1,6 +1,6 @@
 {
-  "commit": "4bf3e05a8083ac3d595763d2d2554a3c459eedf4",
-  "generated": "2025-11-04T09:20:48.977Z",
+  "commit": "2db4eba9cfec3111b2e54893af57167c7b7b274a",
+  "generated": "2025-11-12T08:08:26.694Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3747,8 +3747,8 @@
     },
     {
       "__outstatic": {
-        "commit": "4bf3e05a8083ac3d595763d2d2554a3c459eedf4",
-        "hash": "1524211114",
+        "commit": "2db4eba9cfec3111b2e54893af57167c7b7b274a",
+        "hash": "1030971944",
         "path": "outstatic/content/posts/nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001.md"
       },
       "author": {
@@ -3776,7 +3776,7 @@
           "value": "monitorowanieZuzyciaEnergii"
         }
       ],
-      "title": "Nowy moduł energetyczny OmniEenergy – inteligentne zarządzanie energią zgodne z ISO 50001"
+      "title": "Nowy moduł energetyczny OmniEnergy – inteligentne zarządzanie energią zgodne z ISO 50001"
     }
   ]
 }
