@@ -1,6 +1,6 @@
 {
-  "commit": "2db4eba9cfec3111b2e54893af57167c7b7b274a",
-  "generated": "2025-11-12T08:08:26.694Z",
+  "commit": "6fd13c02e63a54d23211c4f827ce45b4df01f179",
+  "generated": "2025-11-12T10:08:24.808Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3777,6 +3777,39 @@
         }
       ],
       "title": "Nowy moduł energetyczny OmniEnergy – inteligentne zarządzanie energią zgodne z ISO 50001"
+    },
+    {
+      "__outstatic": {
+        "commit": "6fd13c02e63a54d23211c4f827ce45b4df01f179",
+        "hash": "2515039863",
+        "path": "outstatic/content/posts/od-czego-zaczac-wdrozenie-systemu-mes-praktyczny-przewodnik-krok-po-kroku.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-c4Nz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/omnimes_retro-QxMz.png",
+      "description": "Wdrożenie systemu MES (Manufacturing Execution System) to nie tylko instalacja oprogramowania i podłączenie maszyn. To przede wszystkim proces transformacji organizacyjnej, w którym technologia staje się narzędziem do realizacji jasno zdefiniowanych celów biznesowych.Aby wdrożenie zakończyło się sukcesem, warto podejść do niego metodycznie — krok po kroku. Poniżej opisujemy, jak wygląda proces wdrożenia MES w praktyce, z uwzględnieniem najlepszych praktyk i doświadczeń z projektów realizowanych z wykorzystaniem systemu OmniMES.",
+      "lang": "pl",
+      "publishedAt": "2025-11-10T09:38:00.000Z",
+      "slug": "od-czego-zaczac-wdrozenie-systemu-mes-praktyczny-przewodnik-krok-po-kroku",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Wdrozenie",
+          "value": "wdrozenie"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Od czego zacząć wdrożenie systemu MES? Praktyczny przewodnik krok po kroku"
     }
   ]
 }
