@@ -1,18 +1,9 @@
 "use client"
 
-import { sendDemoEmail } from "@/utils/sendDemoEmail"
-import {
-  Button,
-  Card,
-  CardBody,
-  cn,
-  Input,
-  Link,
-  Spinner,
-  Switch,
-} from "@nextui-org/react"
-import { useLocale, useTranslations } from "next-intl"
 import { FormEvent, useMemo, useState } from "react"
+import { sendDemoEmail } from "@/utils/sendDemoEmail"
+import { Button, Card, CardBody, cn, Input, Link, Spinner, Switch } from "@nextui-org/react"
+import { useLocale, useTranslations } from "next-intl"
 import { LuBuilding, LuMail, LuUser } from "react-icons/lu"
 
 import { DangerAlert, SuccessAlert } from "./ui/Alerts"
@@ -84,12 +75,7 @@ export const FormDemo = () => {
       setValidMarketing(true)
       return
     }
-    if (
-      isInvalidName ||
-      isInvalidLastName ||
-      isInvalidCompany ||
-      isInvalidEmail
-    ) {
+    if (isInvalidName || isInvalidLastName || isInvalidCompany || isInvalidEmail) {
       setAlert(true)
       return
     }
@@ -151,7 +137,7 @@ export const FormDemo = () => {
           {t("formTitle")}
         </h2>
         <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-          {t("formSubtitle") }
+          {t("formSubtitle")}
         </p>
       </div>
 
@@ -168,53 +154,53 @@ export const FormDemo = () => {
                 {t("personalData")}
               </h3>
               <div className="grid gap-6 sm:grid-cols-2">
-              <Input
-                type="text"
-                label={t("firstName") || "Imię"}
-                placeholder={t("firstNamePlaceholder") || "Wprowadź swoje imię"}
-                labelPlacement="outside"
-                isRequired
-                isClearable
-                startContent={<LuUser className="text-gray-400" />}
-                value={formValues.name}
-                isInvalid={isInvalidName}
-                errorMessage={isInvalidName && (t("firstNameMessage") || "Imię jest wymagane")}
-                onValueChange={(evt) => onChange("name", evt)}
-                variant="bordered"
-                classNames={{
-                  base: "group",
-                  input:
-                    "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                  inputWrapper:
-                    "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
-                  label: "text-gray-700 dark:text-gray-300 font-medium",
-                }}
-              />
+                <Input
+                  type="text"
+                  label={t("firstName") || "Imię"}
+                  placeholder={t("firstNamePlaceholder") || "Wprowadź swoje imię"}
+                  labelPlacement="outside"
+                  isRequired
+                  isClearable
+                  startContent={<LuUser className="text-gray-400" />}
+                  value={formValues.name}
+                  isInvalid={isInvalidName}
+                  errorMessage={isInvalidName && (t("firstNameMessage") || "Imię jest wymagane")}
+                  onValueChange={(evt) => onChange("name", evt)}
+                  variant="bordered"
+                  classNames={{
+                    base: "group",
+                    input:
+                      "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                    inputWrapper:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                    label: "text-gray-700 dark:text-gray-300 font-medium",
+                  }}
+                />
 
-              <Input
-                type="text"
-                label={t("lastName") || "Nazwisko"}
-                placeholder={t("lastNamePlaceholder") || "Wprowadź swoje nazwisko"}
-                labelPlacement="outside"
-                isRequired
-                isClearable
-                startContent={<LuUser className="text-gray-400" />}
-                value={formValues.lastName}
-                isInvalid={isInvalidLastName}
-                errorMessage={
-                  isInvalidLastName && (t("lastNameMessage") || "Nazwisko jest wymagane")
-                }
-                onValueChange={(evt) => onChange("lastName", evt)}
-                variant="bordered"
-                classNames={{
-                  base: "group",
-                  input:
-                    "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
-                  inputWrapper:
-                    "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
-                  label: "text-gray-700 dark:text-gray-300 font-medium",
-                }}
-              />
+                <Input
+                  type="text"
+                  label={t("lastName") || "Nazwisko"}
+                  placeholder={t("lastNamePlaceholder") || "Wprowadź swoje nazwisko"}
+                  labelPlacement="outside"
+                  isRequired
+                  isClearable
+                  startContent={<LuUser className="text-gray-400" />}
+                  value={formValues.lastName}
+                  isInvalid={isInvalidLastName}
+                  errorMessage={
+                    isInvalidLastName && (t("lastNameMessage") || "Nazwisko jest wymagane")
+                  }
+                  onValueChange={(evt) => onChange("lastName", evt)}
+                  variant="bordered"
+                  classNames={{
+                    base: "group",
+                    input:
+                      "text-gray-900 dark:text-white group-hover:bg-gray-50/50 dark:group-hover:bg-gray-800/50 transition-colors",
+                    inputWrapper:
+                      "border-gray-200 hover:border-[#FF1CF7]/30 focus-within:border-[#FF1CF7] dark:border-gray-700 dark:hover:border-[#b249f8]/30 dark:focus-within:border-[#b249f8]",
+                    label: "text-gray-700 dark:text-gray-300 font-medium",
+                  }}
+                />
               </div>
 
               <Input
@@ -338,7 +324,7 @@ export const FormDemo = () => {
               >
                 <div className="flex flex-col gap-2">
                   <p className="text-sm font-medium text-gray-900 dark:text-white">
-                    {t('dataProtectionInfo2')}
+                    {t("dataProtectionInfo2")}
                   </p>
                 </div>
               </Switch>

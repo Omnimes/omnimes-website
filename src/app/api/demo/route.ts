@@ -3,7 +3,7 @@ import nodemailer from "nodemailer"
 import Mail from "nodemailer/lib/mailer"
 
 import demoConfig from "@/config/demoConfig.json"
-import emailTranslations from "@/config/emailTranslations.json" // <<< WAŻNE: import JSON
+import emailTranslations from "@/config/emailTranslations.json"; // <<< WAŻNE: import JSON
 
 type SupportedLocale = "pl" | "en" | "de"
 
@@ -21,12 +21,6 @@ export async function POST(request: NextRequest) {
     lastName,
     company,
     email,
-    phone,
-    country,
-    position,
-    industry,
-    employeeCount,
-    message,
     locale: bodyLocale,
   } = body
 
@@ -47,12 +41,6 @@ export async function POST(request: NextRequest) {
     lastName,
     company,
     email,
-    phone,
-    country,
-    position,
-    industry,
-    employeeCount,
-    message,
     locale,
   })
 
@@ -65,35 +53,12 @@ export async function POST(request: NextRequest) {
   const t = emailTranslations[locale as keyof typeof emailTranslations]
 
   // --- VALIDATION ---
-  if (
-    !name ||
-    !lastName ||
-    !email ||
-    !company ||
-    !position ||
-    !industry ||
-    (!employeeCount && employeeCount !== 0)
-  ) {
+  if (!name || !lastName || !email || !company) {
     console.log("Validation failed - missing fields")
     return NextResponse.json(
       { error: "Wiadomość nie może zostać wysłana z powodu brakujących danych." },
       { status: 400 }
     )
-  }
-
-  // --- HELPERS ---
-  const sanitizePhone = (val?: string) => (val ?? "").toString().replace(/\D/g, "")
-  const phoneDigits = sanitizePhone(phone)
-
-  const number = () => {
-    if (country === "england") return "+44" + phoneDigits
-    if (country === "poland") return "+48" + phoneDigits
-    if (country === "switzerland") return "+41" + phoneDigits
-    if (country === "germany") return "+49" + phoneDigits
-    if (country === "spain") return "+34" + phoneDigits
-    if (country === "france") return "+33" + phoneDigits
-    if (country === "italy") return "+39" + phoneDigits
-    return phoneDigits
   }
 
   // --- TRANSPORT ---
@@ -197,16 +162,7 @@ ${t.teamEmail.title}
 ${t.teamEmail.contactData}
 ${t.teamEmail.name} ${name} ${lastName}
 ${t.teamEmail.company} ${company}
-${t.teamEmail.position} ${position}
 ${t.teamEmail.email} ${email}
-${t.teamEmail.phone} ${number()}
-${t.teamEmail.country} ${country}
-
-${t.teamEmail.companyInfo}
-${t.teamEmail.industry} ${industry}
-${t.teamEmail.employees} ${employeeCount}
-
-${t.teamEmail.message} ${message}
 
 ---
 ${t.teamEmail.credentials}
