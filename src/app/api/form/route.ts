@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
       Kraj: ${country}
       Wiadomość: ${message}
     `,
-    cc: ["PSierant@multiprojekt.pl", "MSzerment@multiprojekt.pl", "MCichon@multiprojekt.pl"],
+    cc: ["srewilak@multiprojekt.pl", "mszerment@multiprojekt.pl"],
   }
 
   const sendMailPromise = () =>

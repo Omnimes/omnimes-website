@@ -1,8 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import { Avatar, Button } from "@nextui-org/react"
 import { useTranslations } from "next-intl"
-import { useState } from "react"
 import { LuPhone, LuUser } from "react-icons/lu"
 
 export const DirectContact = () => {

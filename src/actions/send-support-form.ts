@@ -38,7 +38,7 @@ export const sendSupportMail = async ({ values, userData }: Props) => {
         Problem: ${problem}${problem == "other" ? " - " + other : ""}
         Wiadomość: ${message}
     `,
-    cc: ["PSierant@multiprojekt.pl", "MSzerment@multiprojekt.pl", "MCichon@multiprojekt.pl"],
+    cc: ["mszerment@multiprojekt.pl","srewilak@multiprojekt.pl"],
   }
 
   const sendMailPromise = () =>
