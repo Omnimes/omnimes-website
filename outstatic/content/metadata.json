@@ -1,6 +1,6 @@
 {
-  "commit": "078e0e26b8d85ed80d16d1333cef80064d6e9b3c",
-  "generated": "2025-11-21T14:32:57.100Z",
+  "commit": "c02fd86737ffba4c6b333042b8acfd954ba271c8",
+  "generated": "2025-11-23T00:00:37.638Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3843,6 +3843,26 @@
         }
       ],
       "title": "Jak systemy MES pomagają poprawiać efektywność energetyczną przedsiębiorstw?"
+    },
+    {
+      "__outstatic": {
+        "commit": "c02fd86737ffba4c6b333042b8acfd954ba271c8",
+        "hash": "1999552400",
+        "path": "outstatic/content/courses/instalacja.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "courses",
+      "coverImage": "/images/baner_youtube-UzNj.png",
+      "description": "W tym materiale pokazuję pełen proces instalacji systemu OmniMES w środowisku on-premise. Film przeprowadza przez wszystkie kroki – od przygotowania serwera, przez konfigurację usług, aż po pierwsze uruchomienie aplikacji i logowanie do panelu administracyjnego.\nMateriał przeznaczony jest dla integratorów, administratorów IT oraz firm wdrażających cyfryzację produkcji.",
+      "lang": "pl",
+      "publishedAt": "2025-11-23T00:02:02.578Z",
+      "slug": "instalacja",
+      "status": "published",
+      "tags": "Instalacja onprimise",
+      "title": "Instalacja"
     }
   ]
 }
