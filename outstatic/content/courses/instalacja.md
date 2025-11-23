@@ -22,7 +22,7 @@ Materiał przeznaczony jest dla integratorów, administratorów IT oraz firm wdr
 
 <iframe
   width="100%"
-  height="420"
+  height="600"
   src="https://www.youtube.com/embed/jB3sqJtXSzQ"
   title="OmniMES – Instalacja on-premise"
   frameborder="0"
