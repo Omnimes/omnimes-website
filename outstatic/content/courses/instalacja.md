@@ -18,4 +18,14 @@ Film przeprowadza przez wszystkie kroki – od przygotowania serwera, przez konf
 
 Materiał przeznaczony jest dla integratorów, administratorów IT oraz firm wdrażających cyfryzację produkcji.
 
-&lt;iframe width="100%" height="420" src="https://www.youtube.com/embed/jB3sqJtXSzQ" title="OmniMES – Instalacja on-premise" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&lt;/iframe&gt;
+<br />
+
+<iframe
+  width="100%"
+  height="420"
+  src="https://www.youtube.com/embed/jB3sqJtXSzQ"
+  title="OmniMES – Instalacja on-premise"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
