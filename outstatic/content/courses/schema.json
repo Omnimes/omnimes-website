@@ -1,6 +1,7 @@
 {
   "title": "courses",
   "type": "object",
+  "format": "mdx",
   "properties": {
     "lang": {
       "required": true,
