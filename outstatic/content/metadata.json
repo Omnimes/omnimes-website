@@ -1,6 +1,6 @@
 {
-  "commit": "09a4b25cfbbb8a0e4514c800c8d93d58b109f126",
-  "generated": "2025-11-24T08:49:43.946Z",
+  "commit": "65bd53121d423342a23dd2cb0401d1ce614fd784",
+  "generated": "2025-11-24T08:56:26.998Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3866,25 +3866,6 @@
     },
     {
       "__outstatic": {
-        "commit": "4f4180d9ae589dfb9e31500bdc3f8579c6e2c8ea",
-        "hash": "562678959",
-        "path": "outstatic/content/news/nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/baner_youtube-IyMj.png",
-      "description": "Udostępniamy oficjalny kanał szkoleniowy OmniMES – przestrzeń stworzoną dla specjalistów produkcji, automatyki, integratorów oraz firm wdrażających cyfryzację w środowiskach Industry 4.0 / 5.0.",
-      "lang": "pl",
-      "publishedAt": "2025-11-24T08:16:36.919Z",
-      "slug": "nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube",
-      "status": "published",
-      "title": "Nowość: Oficjalny kanał szkoleniowy systemu OmniMES na YouTube"
-    },
-    {
-      "__outstatic": {
         "commit": "09a4b25cfbbb8a0e4514c800c8d93d58b109f126",
         "hash": "2811423041",
         "path": "outstatic/content/news/new-official-omnimes-training-channel-on-youtube.md"
@@ -3901,6 +3882,25 @@
       "slug": "new-official-omnimes-training-channel-on-youtube",
       "status": "published",
       "title": "New: Official OmniMES Training Channel on YouTube"
+    },
+    {
+      "__outstatic": {
+        "commit": "65bd53121d423342a23dd2cb0401d1ce614fd784",
+        "hash": "1586056178",
+        "path": "outstatic/content/news/nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/baner_youtube-IyMj.png",
+      "description": "Udostępniamy oficjalny kanał szkoleniowy OmniMES – przestrzeń stworzoną dla specjalistów produkcji, automatyki, integratorów oraz firm wdrażających cyfryzację w środowiskach Industry 4.0 / 5.0.",
+      "lang": "pl",
+      "publishedAt": "2025-11-24T08:16:36.919Z",
+      "slug": "nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube",
+      "status": "published",
+      "title": "Nowość: Oficjalny kanał szkoleniowy systemu OmniMES na YouTube"
     }
   ]
 }

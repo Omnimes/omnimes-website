@@ -36,5 +36,6 @@ Na kanale publikujemy krótkie lekcje, case study i praktyczne przewodniki dla u
 
 ---
 
-Zapraszamy do subskrypcji i śledzenia nowych materiałów:\
-[**Oficjalny kanał szkoleniowy systemu OmniMES**](https://www.youtube.com/@omni-mes)
+Materiały wideo będą publikowane zarówno na kanale YouTube, jak i na stronie [Omnimes](https://omnimes.com), tak aby użytkownicy mogli wygodnie korzystać z treści w obu miejscach.
+
+Zapraszamy do subskrypcji i śledzenia nowych materiałów na naszym kanale: [Oficjalny kanał szkoleniowy systemu OmniMES](https://www.youtube.com/@omni-mes)
