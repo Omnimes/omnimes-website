@@ -37,5 +37,6 @@ The channel delivers short lessons, case studies, and practical guides for users
 
 ---
 
-Subscribe and stay updated with new content:\
-[The official OmniMES training channel](https://www.youtube.com/@omni-mes)
+Video materials will be published both on our YouTube channel and on the [OmniMES](https://omnimes.com) website, allowing users to conveniently access the content in both locations.
+
+We invite you to subscribe and follow new releases on our channel: [The official OmniMES training channel.](https://www.youtube.com/@omni-mes)
