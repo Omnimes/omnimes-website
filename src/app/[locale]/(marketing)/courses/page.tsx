@@ -37,6 +37,7 @@ async function getData(locale: string) {
       "description",
       "author",
       "tags",
+      "coverImage",
     ])
     .sort({ publishedAt: -1 })
     .limit(20)
@@ -60,6 +61,7 @@ async function getDataToSearch() {
       "description",
       "lang",
       "tags",
+      "coverImage",
     ])
     .sort({ publishedAt: -1 })
     .toArray()
@@ -88,14 +90,26 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <div className="mb-12 mt-5 rounded-lg border border-gray-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 dark:border-gray-700 dark:from-gray-800 dark:to-gray-900">
+      {/* GÓRA: lista kursów / DirectContact */}
+      {allCourses.length === 0 ? (
+        <DirectContact />
+      ) : (
+        <ListLayout
+          posts={allCourses}
+          initialDisplayPosts={allCourses}
+          pagination={pagination}
+          title={t("title")}
+        />
+      )}
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* <div className="mb-12 mt-5 rounded-lg border border-gray-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 dark:border-gray-700 dark:from-gray-800 dark:to-gray-900"> */}
         <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100">
           {t("intro_title")}
         </h2>
         <p className="mb-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
           {t("intro_description")}
         </p>
-
         <div className="mb-6 grid gap-6 md:grid-cols-2">
           <div className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
             <div className="mb-4 flex items-center gap-2">
@@ -152,7 +166,6 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
             </p>
           </div>
         </div>
-
         <div className="mb-6 flex justify-center">
           <a
             href="https://forms.gle/DYJgiaAbv6bvmoaP6"
@@ -177,7 +190,6 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
             {t("registration_link")}
           </a>
         </div>
-
         <div className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
           <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-gray-100">
             {t("scope_title")}:
@@ -213,7 +225,6 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
             </li>
           </ul>
         </div>
-
         <div className="mt-6 rounded-lg border-l-4 border-blue-600 bg-blue-50 p-4 dark:border-blue-400 dark:bg-gray-800">
           <div className="flex items-start gap-3">
             <svg
@@ -238,17 +249,6 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
           </div>
         </div>
       </div>
-
-      {allCourses.length === 0 ? (
-        <DirectContact />
-      ) : (
-        <ListLayout
-          posts={allCourses}
-          initialDisplayPosts={allCourses}
-          pagination={pagination}
-          title={t("title")}
-        />
-      )}
     </>
   )
 }

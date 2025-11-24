@@ -3,7 +3,7 @@ import nodemailer from "nodemailer"
 import Mail from "nodemailer/lib/mailer"
 
 import demoConfig from "@/config/demoConfig.json"
-import emailTranslations from "@/config/emailTranslations.json"; // <<< WAŻNE: import JSON
+import emailTranslations from "@/config/emailTranslations.json" // <<< WAŻNE: import JSON
 
 type SupportedLocale = "pl" | "en" | "de"
 
@@ -16,13 +16,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 })
   }
 
-  const {
-    name,
-    lastName,
-    company,
-    email,
-    locale: bodyLocale,
-  } = body
+  const { name, lastName, company, email, locale: bodyLocale } = body
 
   // --- LOCALE: query -> body -> header -> 'pl' ---
   const urlLocale = request.nextUrl.searchParams.get("locale")

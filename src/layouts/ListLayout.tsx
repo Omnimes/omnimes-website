@@ -90,6 +90,12 @@ export default function ListLayout({
 
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {/* Title */}
+      <div className="mb-6 mt-5 sm:mb-8">
+        <h1 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl dark:text-white">
+          {title}
+        </h1>
+      </div>
       {/* Simple Search Bar - bez tła */}
       <div className="mb-6 sm:mb-8">
         <div className="mx-auto mt-3 max-w-2xl">
@@ -109,7 +115,6 @@ export default function ListLayout({
           />
         </div>
       </div>
-
       {/* Posts Grid */}
       {!filteredBlogPosts.length ? (
         <div className="py-12 text-center sm:py-16">
@@ -242,7 +247,6 @@ export default function ListLayout({
           })}
         </div>
       )}
-
       {/* Pagination */}
       {pagination && pagination.totalPages > 1 && !searchValue && (
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
