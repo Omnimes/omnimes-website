@@ -39,4 +39,4 @@ Na kanale publikujemy krótkie lekcje, case study i praktyczne przewodniki dla u
 Zapraszamy do subskrypcji i śledzenia nowych materiałów:\
 **OmniMES – jeden ekosystem dla całej produkcji.**
 
-<https://youtube.com/@omni-mes>
+[https://youtube.com/@omni-mes](https://youtube.com/@omni-mes)
