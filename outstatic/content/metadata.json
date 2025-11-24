@@ -1,6 +1,6 @@
 {
-  "commit": "4f4180d9ae589dfb9e31500bdc3f8579c6e2c8ea",
-  "generated": "2025-11-24T08:48:09.806Z",
+  "commit": "09a4b25cfbbb8a0e4514c800c8d93d58b109f126",
+  "generated": "2025-11-24T08:49:43.946Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3866,25 +3866,6 @@
     },
     {
       "__outstatic": {
-        "commit": "693f492dea1f4832a11798d0fd6d07a8b10dc8e9",
-        "hash": "3818059546",
-        "path": "outstatic/content/news/new-official-omnimes-training-channel-on-youtube.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/baner_youtube-M3MD.png",
-      "description": "We’re launching the official OmniMES training channel – a dedicated space for manufacturing engineers, automation specialists, system integrators, and companies implementing Industry 4.0 / 5.0 solutions. OmniMES is an advanced MES platform combining production, energy management, and automation in one ecosystem. The channel delivers short lessons, case studies, and practical guides for users and administrators.",
-      "lang": "en",
-      "publishedAt": "2025-11-24T08:20:42.913Z",
-      "slug": "new-official-omnimes-training-channel-on-youtube",
-      "status": "published",
-      "title": "New: Official OmniMES Training Channel on YouTube"
-    },
-    {
-      "__outstatic": {
         "commit": "4f4180d9ae589dfb9e31500bdc3f8579c6e2c8ea",
         "hash": "562678959",
         "path": "outstatic/content/news/nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube.md"
@@ -3901,6 +3882,25 @@
       "slug": "nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube",
       "status": "published",
       "title": "Nowość: Oficjalny kanał szkoleniowy systemu OmniMES na YouTube"
+    },
+    {
+      "__outstatic": {
+        "commit": "09a4b25cfbbb8a0e4514c800c8d93d58b109f126",
+        "hash": "2811423041",
+        "path": "outstatic/content/news/new-official-omnimes-training-channel-on-youtube.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/baner_youtube-M3MD.png",
+      "description": "We’re launching the official OmniMES training channel – a dedicated space for manufacturing engineers, automation specialists, system integrators, and companies implementing Industry 4.0 / 5.0 solutions. OmniMES is an advanced MES platform combining production, energy management, and automation in one ecosystem. The channel delivers short lessons, case studies, and practical guides for users and administrators.",
+      "lang": "en",
+      "publishedAt": "2025-11-24T08:20:42.913Z",
+      "slug": "new-official-omnimes-training-channel-on-youtube",
+      "status": "published",
+      "title": "New: Official OmniMES Training Channel on YouTube"
     }
   ]
 }
