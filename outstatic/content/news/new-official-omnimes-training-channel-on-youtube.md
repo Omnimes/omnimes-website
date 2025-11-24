@@ -6,9 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'new-official-omnimes-training-channel-on-youtube'
 description: 'We’re launching the official OmniMES training channel – a dedicated space for manufacturing engineers, automation specialists, system integrators, and companies implementing Industry 4.0 / 5.0 solutions.
-
-OmniMES is an advanced MES platform combining production, energy management, and automation in one ecosystem.
-The channel delivers short lessons, case studies, and practical guides for users and administrators.'
+OmniMES is an advanced MES platform combining production, energy management, and automation in one ecosystem. The channel delivers short lessons, case studies, and practical guides for users and administrators.'
 coverImage: '/images/baner_youtube-M3MD.png'
 lang: 'en'
 publishedAt: '2025-11-24T08:20:42.913Z'
