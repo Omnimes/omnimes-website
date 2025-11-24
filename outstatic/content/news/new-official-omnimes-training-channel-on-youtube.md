@@ -41,4 +41,7 @@ The channel delivers short lessons, case studies, and practical guides for users
 Subscribe and stay updated with new content:\
 **OmniMES – one ecosystem for your entire production.**
 
+[OmniMES – training channel](https://youtube.com/@omni-mes)
+
+
 <https://youtube.com/@omni-mes>
