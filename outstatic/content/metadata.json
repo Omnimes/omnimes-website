@@ -1,6 +1,6 @@
 {
-  "commit": "0a67d00f27b0b39317b9b6d118339b5ba2a55178",
-  "generated": "2025-11-23T00:26:20.389Z",
+  "commit": "6610ba1bf09feb78b0dacbb58b7caa01a365d03a",
+  "generated": "2025-11-24T08:14:25.356Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3863,6 +3863,25 @@
       "status": "published",
       "tags": "Instalacja onprimise",
       "title": "1. Instalacja"
+    },
+    {
+      "__outstatic": {
+        "commit": "6610ba1bf09feb78b0dacbb58b7caa01a365d03a",
+        "hash": "3847136319",
+        "path": "outstatic/content/news/nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/baner_youtube-IyMj.png",
+      "description": "Udostępniamy oficjalny kanał szkoleniowy OmniMES – przestrzeń stworzoną dla specjalistów produkcji, automatyki, integratorów oraz firm wdrażających cyfryzację w środowiskach Industry 4.0 / 5.0.",
+      "lang": "pl",
+      "publishedAt": "2025-11-24T08:16:36.919Z",
+      "slug": "nowosc-oficjalny-kanal-szkoleniowy-systemu-omnimes-na-youtube",
+      "status": "published",
+      "title": "Nowość: Oficjalny kanał szkoleniowy systemu OmniMES na YouTube"
     }
   ]
 }
