@@ -1,6 +1,6 @@
 {
-  "commit": "65bd53121d423342a23dd2cb0401d1ce614fd784",
-  "generated": "2025-11-24T08:57:23.456Z",
+  "commit": "ce1e4b99d3ef1878400721c69681a37c7f2b7851",
+  "generated": "2025-12-02T09:52:06.847Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3901,6 +3901,39 @@
       "slug": "new-official-omnimes-training-channel-on-youtube",
       "status": "published",
       "title": "New: Official OmniMES Training Channel on YouTube"
+    },
+    {
+      "__outstatic": {
+        "commit": "ce1e4b99d3ef1878400721c69681a37c7f2b7851",
+        "hash": "3826854977",
+        "path": "outstatic/content/posts/oee-kluczowy-wskaznik-efektywnosci-produkcji-czym-jest-jak-go-obliczac-i-dlaczego-warto-mierzyc-go-w-czasie-rzeczywistym.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-IyOD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/oee-MxOD.png",
+      "description": "W świecie nowoczesnej produkcji, w którym liczy się każda minuta pracy maszyny, jednym z najważniejszych parametrów oceny efektywności jest OEE (Overall Equipment Effectiveness). To wskaźnik, który pozwala w jednym prostym wyniku określić, na ile efektywnie wykorzystujemy posiadany park maszynowy. Wbrew pozorom OEE nie jest tylko formułą matematyczną — to narzędzie zarządcze, które pomaga wykrywać straty, podejmować decyzje operacyjne i rozwijać kulturę ciągłego doskonalenia. Firmy, które regularnie monitorują OEE, szybciej eliminują marnotrawstwo, lepiej planują produkcję i osiągają wyższe moce przerobowe bez konieczności inwestowania w nowe maszyny.",
+      "lang": "pl",
+      "publishedAt": "2025-11-24T09:27:40.000Z",
+      "slug": "oee-kluczowy-wskaznik-efektywnosci-produkcji-czym-jest-jak-go-obliczac-i-dlaczego-warto-mierzyc-go-w-czasie-rzeczywistym",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OEE",
+          "value": "oee"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Analiza danych czasowych",
+          "value": "analizaDanychCzasowych"
+        }
+      ],
+      "title": "OEE – kluczowy wskaźnik efektywności produkcji. Czym jest, jak go obliczać i dlaczego warto mierzyć go w czasie rzeczywistym?"
     }
   ]
 }
