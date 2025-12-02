@@ -1,6 +1,6 @@
 {
-  "commit": "ce1e4b99d3ef1878400721c69681a37c7f2b7851",
-  "generated": "2025-12-02T09:52:06.847Z",
+  "commit": "172503d4dbade1c52a785df3edf07b618b25aca3",
+  "generated": "2025-12-02T09:56:59.663Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3934,6 +3934,39 @@
         }
       ],
       "title": "OEE – kluczowy wskaźnik efektywności produkcji. Czym jest, jak go obliczać i dlaczego warto mierzyć go w czasie rzeczywistym?"
+    },
+    {
+      "__outstatic": {
+        "commit": "172503d4dbade1c52a785df3edf07b618b25aca3",
+        "hash": "1570292697",
+        "path": "outstatic/content/posts/jak-omnimes-wspiera-kierownika-produkcji-w-poprawie-efektywnosci-procesow.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-kwMT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/omni1-Q3ND.png",
+      "description": "Rola kierownika produkcji staje się z roku na rok coraz bardziej złożona. Współczesne zakłady wymagają nie tylko utrzymania płynności pracy i terminowej realizacji planów, ale też optymalizacji kosztów, szybkiego reagowania na odchylenia oraz budowania kultury ciągłego doskonalenia. W takim środowisku tradycyjne arkusze w Excelu, ręczne raporty czy intuicyjne decyzje przestają wystarczać. To właśnie w tym miejscu swoją wartość pokazuje OmniMES — system, który dostarcza kierownikowi produkcji narzędzi do podejmowania świadomych, szybkich i trafnych decyzji.",
+      "lang": "pl",
+      "publishedAt": "2025-12-01T09:58:28.000Z",
+      "slug": "jak-omnimes-wspiera-kierownika-produkcji-w-poprawie-efektywnosci-procesow",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Wydajność produkcji",
+          "value": "production-efficiency"
+        },
+        {
+          "label": "Analiza produkcji",
+          "value": "analizaProdukcji"
+        }
+      ],
+      "title": "Jak OmniMES wspiera kierownika produkcji w poprawie efektywności procesów?"
     }
   ]
 }
