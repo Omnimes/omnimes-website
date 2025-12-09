@@ -569,6 +569,14 @@
         {
           "value": "analizaProdukcji",
           "label": "Analiza produkcji"
+        },
+        {
+          "value": "itOt",
+          "label": "it-ot"
+        },
+        {
+          "value": "cyberbezpieczenstwo",
+          "label": "cyberbezpieczenstwo"
         }
       ]
     },

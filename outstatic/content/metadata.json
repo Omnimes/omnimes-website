@@ -1,6 +1,6 @@
 {
-  "commit": "172503d4dbade1c52a785df3edf07b618b25aca3",
-  "generated": "2025-12-02T09:56:59.663Z",
+  "commit": "5992f8ad75171a6e6c291c85e625691c268c1e16",
+  "generated": "2025-12-09T09:28:48.885Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3967,6 +3967,39 @@
         }
       ],
       "title": "Jak OmniMES wspiera kierownika produkcji w poprawie efektywności procesów?"
+    },
+    {
+      "__outstatic": {
+        "commit": "5992f8ad75171a6e6c291c85e625691c268c1e16",
+        "hash": "1092171236",
+        "path": "outstatic/content/posts/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-E3OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/cyberbezpiecznestwo-k2MD.png",
+      "description": "Cyfryzacja zakładów produkcyjnych sprawiła, że systemy automatyki i systemy informatyczne muszą współpracować ze sobą znacznie bliżej niż kiedykolwiek wcześniej. Dane z maszyn trafiają do systemów MES, ERP i platform analitycznych, a z kolei systemy IT potrzebują dostępu do urządzeń przemysłowych, aby monitorować ich stan, bezpieczeństwo i zgodność z politykami.\nTo ogromna szansa na rozwój przedsiębiorstwa, ale jednocześnie obszar wymagający szczególnej ostrożności. Komunikacja między sieciami IT i OT jest bowiem jednym z najbardziej wrażliwych punktów zakładu — to właśnie tam mogą powstać luki, które prowadzą do ataków cybernetycznych lub destabilizacji procesów produkcyjnych.",
+      "lang": "pl",
+      "publishedAt": "2025-12-08T09:21:06.000Z",
+      "slug": "dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa",
+      "status": "published",
+      "tags": [
+        {
+          "label": "it-ot",
+          "value": "itOt"
+        },
+        {
+          "label": "cyberbezpieczenstwo",
+          "value": "cyberbezpieczenstwo"
+        },
+        {
+          "label": "Komunikacja IoT",
+          "value": "komunikacjaIoT"
+        }
+      ],
+      "title": "Dobre praktyki komunikacji między siecią IT a OT. Jak zbudować bezpieczną i nowoczesną architekturę przemysłową?"
     }
   ]
 }
