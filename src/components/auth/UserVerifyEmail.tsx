@@ -1,5 +1,3 @@
-"use client"
-
 import { useCallback, useEffect, useState } from "react"
 import { revalidatePath } from "next/cache"
 import { useRouter, useSearchParams } from "next/navigation"
