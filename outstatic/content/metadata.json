@@ -1,6 +1,6 @@
 {
-  "commit": "38ede0d916b30bb68e13030864ac59257382f7d4",
-  "generated": "2025-12-09T09:35:08.256Z",
+  "commit": "bf1818409c7a1e65ada814d84b7670f48449444b",
+  "generated": "2025-12-09T09:58:30.801Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4003,8 +4003,8 @@
     },
     {
       "__outstatic": {
-        "commit": "38ede0d916b30bb68e13030864ac59257382f7d4",
-        "hash": "1484153627",
+        "commit": "bf1818409c7a1e65ada814d84b7670f48449444b",
+        "hash": "2802744905",
         "path": "outstatic/content/posts/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture.md"
       },
       "author": {

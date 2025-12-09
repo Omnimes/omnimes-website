@@ -1,13 +1,11 @@
 ---
-title: 'Good practices for communication between IT and OT networks.
-How to build a secure and modern industrial architecture?'
+title: 'Good practices for communication between IT and OT networks. How to build a secure and modern industrial architecture?'
 status: 'published'
 author:
   name: 'Szymon Rewilak'
   picture: '/images/photo-I1Nz.jpg'
 slug: 'good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture'
-description: 'Digitalization of manufacturing plants has made automation systems and IT systems work together more closely than ever before. Machine data flows into MES, ERP, and analytical platforms, while IT systems increasingly need access to industrial devices to monitor their status, security, and compliance with corporate policies.
-This creates tremendous opportunities for business growth, but it also introduces an area that requires exceptional caution. Communication between IT and OT networks is one of the most sensitive points within a facility — it is exactly here where vulnerabilities can emerge, leading to cyberattacks or disruptions in production processes.'
+description: 'Digitalization of manufacturing plants has made automation systems and IT systems work together more closely than ever before. Machine data flows into MES, ERP, and analytical platforms, while IT systems increasingly need access to industrial devices to monitor their status, security, and compliance with corporate policies. This creates tremendous opportunities for business growth, but it also introduces an area that requires exceptional caution. Communication between IT and OT networks is one of the most sensitive points within a facility — it is exactly here where vulnerabilities can emerge, leading to cyberattacks or disruptions in production processes.'
 coverImage: '/images/cyberbezpiecznestwo-Y0OT.png'
 lang: 'en'
 tags: [{"value":"itOt","label":"it-ot"},{"label":"cybersecurity","value":"cybersecurity"},{"value":"ioTCommunication","label":"IoT Communication"}]
