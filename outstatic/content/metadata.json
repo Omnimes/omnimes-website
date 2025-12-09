@@ -1,6 +1,6 @@
 {
-  "commit": "8d41a1c5370c17b6039b2b643ca31b7dd33407c1",
-  "generated": "2025-12-09T09:58:51.550Z",
+  "commit": "dd7223a063d1cc6640c052c05dd71b03f7e71940",
+  "generated": "2025-12-09T18:49:39.940Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4033,6 +4033,39 @@
         }
       ],
       "title": "Dobre praktyki komunikacji między siecią IT a OT. Jak zbudować bezpieczną i nowoczesną architekturę przemysłową?"
+    },
+    {
+      "__outstatic": {
+        "commit": "dd7223a063d1cc6640c052c05dd71b03f7e71940",
+        "hash": "303232000",
+        "path": "outstatic/content/posts/how-does-omnimes-support-a-production-manager-in-improving-process-efficiency.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-I5Mz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/omni1-M1NT.png",
+      "description": "The role of a production manager is becoming more complex every year. Modern factories demand not only smooth operations and on-time execution, but also cost optimization, rapid reaction to deviations, and building a culture of continuous improvement. In such an environment, traditional Excel sheets, manual reports, or intuition-based decisions are no longer enough.\nThis is where OmniMES proves its value — a system that gives the production manager tools to make informed, fast, and accurate decisions.",
+      "lang": "en",
+      "publishedAt": "2025-12-01T18:49:12.000Z",
+      "slug": "how-does-omnimes-support-a-production-manager-in-improving-process-efficiency",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Production efficiency",
+          "value": "productionEfficiency"
+        },
+        {
+          "label": "Production analysis",
+          "value": "productionAnalysis"
+        }
+      ],
+      "title": "How does OmniMES support a production manager in improving process efficiency?"
     }
   ]
 }

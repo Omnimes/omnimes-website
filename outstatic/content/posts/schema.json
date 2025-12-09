@@ -581,6 +581,14 @@
         {
           "value": "cybersecurity",
           "label": "cybersecurity"
+        },
+        {
+          "value": "productionEfficiency",
+          "label": "Production efficiency"
+        },
+        {
+          "value": "productionAnalysis",
+          "label": "Production analysis"
         }
       ]
     },
