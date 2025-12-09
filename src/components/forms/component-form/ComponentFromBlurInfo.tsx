@@ -1,3 +1,5 @@
+"use client"
+
 import { sendResetRequestDeveloper } from "@/actions/become-developer"
 import { useTranslations } from "next-intl"
 

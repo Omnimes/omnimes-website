@@ -102,8 +102,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
         />
       )}
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* <div className="mb-12 mt-5 rounded-lg border border-gray-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 dark:border-gray-700 dark:from-gray-800 dark:to-gray-900"> */}
+      {/* <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100">
           {t("intro_title")}
         </h2>
@@ -248,7 +247,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
