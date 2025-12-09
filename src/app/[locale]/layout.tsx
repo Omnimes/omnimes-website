@@ -2,19 +2,20 @@ import { ReactNode } from "react"
 import { Space_Grotesk } from "next/font/google"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { siteMetadata } from "@/data/siteMetadata"
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { NextIntlClientProvider } from "next-intl"
+// import { Analytics } from "@vercel/analytics/react"
+// import { SpeedInsights } from "@vercel/speed-insights/next"
+// import { NextIntlClientProvider } from "next-intl"
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server"
 
-import { Toaster } from "@/components/ui/Toaster"
-import { Widget } from "@/components/ui/Widget"
-import { NextAuthProviders } from "@/components/providers/nextauth-providers"
-import { NextUIProviders } from "@/components/providers/nextui-providers"
-import { ThemeProviders } from "@/components/providers/theme-providers"
-import { TailwindIndicator } from "@/components/TailwindIndicator"
+// import { Toaster } from "@/components/ui/Toaster"
+// import { Widget } from "@/components/ui/Widget"
+// import { NextAuthProviders } from "@/components/providers/nextauth-providers"
+// import { NextUIProviders } from "@/components/providers/nextui-providers"
+// import { ThemeProviders } from "@/components/providers/theme-providers"
+// import { TailwindIndicator } from "@/components/TailwindIndicator"
 
 import { locales } from "../../config"
+import { ClientProviders } from "./ClientProviders"
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -131,21 +132,15 @@ export default async function LocaleLayout({
         href="https://omnimes.com/news.json"
       />
       <body className="relative h-full min-h-screen overflow-x-hidden">
-        <NextAuthProviders>
-          <NextUIProviders>
-            <NextIntlClientProvider messages={messages}>
-              <ThemeProviders>
-                <Widget text={t("title")} href={"/contact"} buttonText={t("text")} />
-                {/* <Widget text={t("titleHanover")}  href={"https://www.multiprojekt.pl/multiprojekt-wystawca-na-targach-w-hanowerze/"} buttonText={t("textButton")}  /> */}
-                {children}
-                <Toaster />
-                <Analytics />
-                <SpeedInsights />
-                <TailwindIndicator />
-              </ThemeProviders>
-            </NextIntlClientProvider>
-          </NextUIProviders>
-        </NextAuthProviders>
+        <ClientProviders
+          locale={locale}
+          messages={messages}
+          widgetButtonText={t("text")}
+          widgetHref="/contact"
+          widgetText={t("title")}
+        >
+          {children}
+        </ClientProviders>
       </body>
     </html>
   )
