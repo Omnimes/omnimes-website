@@ -1,5 +1,9 @@
+// @ts-nocheck
+
 import { OutstaticApi } from "outstatic"
 
-export const GET = OutstaticApi.GET
+// Rzucamy całą OutstaticApi na `any`, żeby typy GET/POST były też `any`
+const anyOutstaticApi: any = OutstaticApi
 
-export const POST = OutstaticApi.POST
+export const GET = anyOutstaticApi.GET
+export const POST = anyOutstaticApi.POST

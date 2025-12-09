@@ -29,18 +29,29 @@ export async function generateMetadata({
   return genPageMetadata(obj)
 }
 
-export const generateStaticParams = async ({ params }: { params: Promise<{ locale: string }> }) => {
-  const { locale } = await params
-  const tags = (await getDataTags(locale)) as { value: string; label: string; count: number }[]
-  if (!tags) return []
+export async function generateStaticParams({
+  params,
+}: {
+  params: { locale: string; tag: string }
+}) {
+  const { locale } = params
 
-  const staticParams = tags.map((tag) => ({
-    tag: slug(tag.label),
+  const tags = (await getDataTags(locale)) as {
+    value: string
+    label: string
+    count: number
+  }[]
+
+  if (!tags || tags.length === 0) {
+    return []
+  }
+
+  return tags.map((tag) => ({
     locale,
+    tag: slug(tag.label),
   }))
-
-  return staticParams
 }
+
 
 async function getDataTags(locale: string) {
   const posts = getDocuments("posts", ["lang", "tags"])

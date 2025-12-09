@@ -7,17 +7,27 @@ import { genPageMetadata } from "@/app/seo"
 
 import { ExtendedOstDocument } from "../../page"
 
-export const generateStaticParams = async ({ params }: { params: Promise<{ locale: string }> }) => {
-  const resolvedParams = await params
-  const locale = resolvedParams.locale
-  const courses = getDocuments("courses", ["lang"]) // ⬅ zmiana
+export async function generateStaticParams({
+  params,
+}: {
+  params: { locale: string; page: string }
+}) {
+  const locale = params.locale
+
+  const courses = getDocuments("courses", ["lang"])
   if (!courses || courses.length === 0) {
     return []
   }
+
   const localeCourses = courses.filter((c) => c.lang === locale)
   const totalPages = Math.ceil(localeCourses.length / 10)
-  return Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
+
+  return Array.from({ length: totalPages }, (_, i) => ({
+    locale,
+    page: (i + 1).toString(),
+  }))
 }
+
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params

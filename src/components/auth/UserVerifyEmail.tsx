@@ -1,9 +1,13 @@
+"use client"
+
 import { useCallback, useEffect, useState } from "react"
-import { revalidatePath } from "next/cache"
+// ⛔ USUWAMY to ↓
+// import { revalidatePath } from "next/cache"
 import { useRouter, useSearchParams } from "next/navigation"
 import { newVerification } from "@/actions/verification"
 import { useTranslations } from "next-intl"
 import { LuCircleAlert, LuCircleEllipsis, LuTerminal } from "react-icons/lu"
+
 
 import { Alert, AlertDescription, AlertTitle } from "../ui/Alerts"
 
@@ -43,7 +47,7 @@ export const UserVerifyEmail = () => {
         setTimeoutMessage("redirectedSoon")
         setTimeout(() => {
           router.push("/dashboard")
-          revalidatePath("/")
+          // revalidatePath("/")
         }, 2000)
       })
   }, [success, error, token, router])
