@@ -1,6 +1,6 @@
 {
-  "commit": "5992f8ad75171a6e6c291c85e625691c268c1e16",
-  "generated": "2025-12-09T09:28:48.885Z",
+  "commit": "38ede0d916b30bb68e13030864ac59257382f7d4",
+  "generated": "2025-12-09T09:35:08.256Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4000,6 +4000,39 @@
         }
       ],
       "title": "Dobre praktyki komunikacji między siecią IT a OT. Jak zbudować bezpieczną i nowoczesną architekturę przemysłową?"
+    },
+    {
+      "__outstatic": {
+        "commit": "38ede0d916b30bb68e13030864ac59257382f7d4",
+        "hash": "1484153627",
+        "path": "outstatic/content/posts/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-I1Nz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/cyberbezpiecznestwo-Y0OT.png",
+      "description": "Digitalization of manufacturing plants has made automation systems and IT systems work together more closely than ever before. Machine data flows into MES, ERP, and analytical platforms, while IT systems increasingly need access to industrial devices to monitor their status, security, and compliance with corporate policies. This creates tremendous opportunities for business growth, but it also introduces an area that requires exceptional caution. Communication between IT and OT networks is one of the most sensitive points within a facility — it is exactly here where vulnerabilities can emerge, leading to cyberattacks or disruptions in production processes.",
+      "lang": "en",
+      "publishedAt": "2025-12-08T09:35:02.000Z",
+      "slug": "good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture",
+      "status": "published",
+      "tags": [
+        {
+          "label": "it-ot",
+          "value": "itOt"
+        },
+        {
+          "label": "cybersecurity",
+          "value": "cybersecurity"
+        },
+        {
+          "label": "IoT Communication",
+          "value": "ioTCommunication"
+        }
+      ],
+      "title": "Good practices for communication between IT and OT networks. How to build a secure and modern industrial architecture?"
     }
   ]
 }
