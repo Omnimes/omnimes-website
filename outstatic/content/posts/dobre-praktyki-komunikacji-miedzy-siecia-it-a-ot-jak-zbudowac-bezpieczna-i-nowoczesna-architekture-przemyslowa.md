@@ -6,7 +6,6 @@ author:
   picture: '/images/photo-E3OD.jpg'
 slug: 'dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa'
 description: 'Cyfryzacja zakładów produkcyjnych sprawiła, że systemy automatyki i systemy informatyczne muszą współpracować ze sobą znacznie bliżej niż kiedykolwiek wcześniej. Dane z maszyn trafiają do systemów MES, ERP i platform analitycznych, a z kolei systemy IT potrzebują dostępu do urządzeń przemysłowych, aby monitorować ich stan, bezpieczeństwo i zgodność z politykami.
-
 To ogromna szansa na rozwój przedsiębiorstwa, ale jednocześnie obszar wymagający szczególnej ostrożności. Komunikacja między sieciami IT i OT jest bowiem jednym z najbardziej wrażliwych punktów zakładu — to właśnie tam mogą powstać luki, które prowadzą do ataków cybernetycznych lub destabilizacji procesów produkcyjnych.'
 coverImage: '/images/cyberbezpiecznestwo-k2MD.png'
 lang: 'pl'
