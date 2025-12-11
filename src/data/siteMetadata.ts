@@ -1,11 +1,11 @@
 /** @type {import("pliny/config").PlinyConfig } */
 export const siteMetadata = {
   title: "title",
-  author: "Piotr Sierant",
+  author: "Piotr Sierant i Martin Szerment",
   description: "description",
   keywords: "keywords",
-  headerTitle: "OmniMES",
-  theme: "light",
+  headerTitle: "Omnimes",
+  theme: "dark",
   siteUrl: process.env.SITE_URL || "http://localhost:3000",
   socialBanner: "/images/meta/twitter-card.png",
   search: {

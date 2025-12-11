@@ -61,11 +61,15 @@ export async function generateMetadata({
     }
   }
 
+  const cover = post.coverImage?.startsWith("http")
+    ? post.coverImage
+    : `${siteMetadata.siteUrl}${post.coverImage}`
+
   return {
     title: post.title,
     description: post.description,
     alternates: {
-      canonical: siteMetadata.siteUrl + "/" + locale + "/blog",
+      canonical: siteMetadata.siteUrl + "/" + locale + "/blog/" + post.slug,
     },
     openGraph: {
       title: post.title,
@@ -75,14 +79,20 @@ export async function generateMetadata({
       type: "article",
       publishedTime: new Date(post.publishedAt).toISOString(),
       url: siteMetadata.siteUrl + "/" + locale + "/blog/" + post.slug,
-      images: [siteMetadata.socialBanner],
+      images: [
+        {
+          url: cover,
+          width: 1200,
+          height: 630,
+        },
+      ],
       authors: post.author?.name || "",
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [siteMetadata.socialBanner],
+      images: [cover],
     },
     robots: {
       index: true,

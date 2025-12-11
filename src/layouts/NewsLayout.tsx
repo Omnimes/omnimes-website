@@ -25,21 +25,28 @@ export default function NewsLayout({
   const { title, publishedAt, content, tags, author, coverImage, description } = post
   const lang = useLocale()
 
+  // Dodaje parametr xcache=2 do aktualnego URL
+  const getShareUrl = () => {
+    const url = new URL(window.location.href)
+    url.searchParams.set("xcache", "2") // możesz zmienić np. na "share" albo "v"
+    return encodeURIComponent(url.toString())
+  }
+
   const handleTwitterShare = () => {
-    const url = encodeURIComponent(window.location.href)
-    const text = encodeURIComponent(`${title} - sprawdź tę wiadomość!`)
+    const url = getShareUrl()
+    const text = encodeURIComponent(`${title} - sprawdź ten artykuł!`)
     const shareUrl = `https://x.com/intent/tweet?text=${text}&url=${url}`
     window.open(shareUrl, "_blank", "noopener,noreferrer")
   }
 
   const handleLinkedInShare = () => {
-    const url = encodeURIComponent(window.location.href)
+    const url = getShareUrl()
     const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`
     window.open(shareUrl, "_blank", "noopener,noreferrer")
   }
 
   const handleFacebookShare = () => {
-    const url = encodeURIComponent(window.location.href)
+    const url = getShareUrl()
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`
     window.open(shareUrl, "_blank", "noopener,noreferrer")
   }

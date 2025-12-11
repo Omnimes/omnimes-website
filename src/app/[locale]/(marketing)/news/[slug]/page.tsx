@@ -59,11 +59,23 @@ export async function generateMetadata({
     }
   }
 
+  // --- KLUCZOWA CZĘŚĆ: wybór obrazka ---
+  // jeśli jest coverImage -> użyj go, inaczej globalny socialBanner
+  const rawCover = (news as any).coverImage || siteMetadata.socialBanner
+
+  // pełny URL (X / LinkedIn / FB tego wymagają)
+  const cover =
+    typeof rawCover === "string" && rawCover.startsWith("http")
+      ? rawCover
+      : `${siteMetadata.siteUrl}${rawCover}`
+
+  const baseUrl = `${siteMetadata.siteUrl}/${locale}/news/${news.slug}`
+
   return {
     title: news.title,
     description: news.description,
     alternates: {
-      canonical: siteMetadata.siteUrl + "/" + locale + "/news",
+      canonical: baseUrl, // canonical na konkretny news, nie na /news
     },
     openGraph: {
       title: news.title,
@@ -72,15 +84,21 @@ export async function generateMetadata({
       locale: getLocalePrimaryDialects(locale),
       type: "article",
       publishedTime: new Date(news.publishedAt).toISOString(),
-      url: siteMetadata.siteUrl + "/" + locale + "/news/" + news.slug,
-      images: [siteMetadata.socialBanner],
-      authors: news.author?.name || "",
+      url: baseUrl,
+      images: [
+        {
+          url: cover,
+          width: 1200,
+          height: 630,
+        },
+      ],
+      authors: (news as any).author?.name || "",
     },
     twitter: {
       card: "summary_large_image",
       title: news.title,
       description: news.description,
-      images: [siteMetadata.socialBanner],
+      images: [cover],
     },
     robots: {
       index: true,
