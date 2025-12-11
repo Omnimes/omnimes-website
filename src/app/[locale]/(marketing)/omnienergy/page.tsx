@@ -173,8 +173,8 @@ export default function OmniEnergyPage() {
       <section id="features" className="py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-900">{t("features.sectionTitle")}</h2>
-            <p className="mx-auto max-w-3xl text-xl text-600">{t("features.sectionDescription")}</p>
+            <h2 className="text-900 mb-4 text-4xl font-bold">{t("features.sectionTitle")}</h2>
+            <p className="text-600 mx-auto max-w-3xl text-xl">{t("features.sectionDescription")}</p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -565,7 +565,7 @@ export default function OmniEnergyPage() {
       </section>
 
       {/* ISO 50001 Compliance */}
-      <section className="rounded-3xl bg-gradient-to-br from-50 to-gray-100 py-20">
+      <section className="from-50 rounded-3xl bg-gradient-to-br to-gray-100 py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2">
@@ -584,8 +584,8 @@ export default function OmniEnergyPage() {
               </svg>
               <span className="text-sm font-semibold text-emerald-700">{t("iso50001.badge")}</span>
             </div>
-            <h2 className="mb-4 text-4xl font-bold text-900">{t("iso50001.sectionTitle")}</h2>
-            <p className="mx-auto max-w-3xl text-xl text-600">{t("iso50001.sectionDescription")}</p>
+            <h2 className="text-900 mb-4 text-4xl font-bold">{t("iso50001.sectionTitle")}</h2>
+            <p className="text-600 mx-auto max-w-3xl text-xl">{t("iso50001.sectionDescription")}</p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -611,8 +611,8 @@ export default function OmniEnergyPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-900">{t("benefits.sectionTitle")}</h2>
-            <p className="mx-auto max-w-3xl text-xl text-600">{t("benefits.sectionDescription")}</p>
+            <h2 className="text-900 mb-4 text-4xl font-bold">{t("benefits.sectionTitle")}</h2>
+            <p className="text-600 mx-auto max-w-3xl text-xl">{t("benefits.sectionDescription")}</p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -636,12 +636,12 @@ export default function OmniEnergyPage() {
       </section>
 
       {/* ROI Calculator Section */}
-      <section className="rounded-3xl bg-gradient-to-br from-50 to-gray-100 py-20">
+      <section className="from-50 rounded-3xl bg-gradient-to-br to-gray-100 py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-5xl">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-4xl font-bold text-900">{t("roi.title")}</h2>
-              <p className="text-xl text-600">{t("roi.description")}</p>
+              <h2 className="text-900 mb-4 text-4xl font-bold">{t("roi.title")}</h2>
+              <p className="text-600 text-xl">{t("roi.description")}</p>
             </div>
 
             <div className="mb-8 rounded-3xl border border-gray-200 bg-white p-8 shadow-xl">
@@ -777,8 +777,8 @@ export default function OmniEnergyPage() {
       <section id="demo" className="py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-900">{t("modules.dashboard.name")}</h2>
-            <p className="mx-auto max-w-3xl text-xl text-600">
+            <h2 className="text-900 mb-4 text-4xl font-bold">{t("modules.dashboard.name")}</h2>
+            <p className="text-600 mx-auto max-w-3xl text-xl">
               {t("modules.dashboard.description")}
             </p>
           </div>

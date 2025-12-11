@@ -8,7 +8,6 @@ import { newVerification } from "@/actions/verification"
 import { useTranslations } from "next-intl"
 import { LuCircleAlert, LuCircleEllipsis, LuTerminal } from "react-icons/lu"
 
-
 import { Alert, AlertDescription, AlertTitle } from "../ui/Alerts"
 
 export const UserVerifyEmail = () => {

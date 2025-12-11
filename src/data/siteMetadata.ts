@@ -5,7 +5,7 @@ export const siteMetadata = {
   description: "description",
   keywords: "keywords",
   headerTitle: "Omnimes",
-  theme: "dark",
+  theme: "light",
   siteUrl: process.env.SITE_URL || "http://localhost:3000",
   socialBanner: "/images/meta/twitter-card.png",
   search: {

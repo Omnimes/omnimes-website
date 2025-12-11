@@ -52,7 +52,6 @@ export async function generateStaticParams({
   }))
 }
 
-
 async function getDataTags(locale: string) {
   const posts = getDocuments("posts", ["lang", "tags"])
 
