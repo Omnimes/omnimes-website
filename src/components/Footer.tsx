@@ -56,7 +56,7 @@ export const Footer = () => {
           ))}
         </ul>
 
-        <div className="mt-3 flex items-center justify-center space-x-2 text-gray-900 dark:text-white">
+        <div className="mt-3 flex items-center justify-center space-x-4 text-gray-900 dark:text-white">
           <a
             href="https://x.com/OmnimesOfficial"
             target="_blank"
@@ -74,6 +74,26 @@ export const Footer = () => {
               <path d="M18.244 2.25h3.308l-7.227 8.26L24 21.75h-6.828l-5.316-6.977-6.087 6.977H2.46l7.73-8.86L0 2.25h7.078l4.843 6.41 6.323-6.41z" />
             </svg>
             <span>x.com/OmnimesOfficial</span>
+          </a>
+
+          {/* YouTube */}
+          <a
+            href="https://www.youtube.com/@omni-mes"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center transition-colors hover:text-red-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="mr-1"
+            >
+              <path d="M23.5 6.2s-.2-1.7-.9-2.5c-.8-.9-1.7-.9-2.1-1C16.9 2.3 12 2.3 12 2.3h0s-4.9 0-8.5.4c-.4 0-1.3.1-2.1 1-.7.8-.9 2.5-.9 2.5S0 8.1 0 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.9 2.5c.8.9 1.9.9 2.4 1 1.8.2 7.5.4 7.5.4s4.9 0 8.5-.4c.4 0 1.3-.1 2.1-1 .7-.8.9-2.5.9-2.5s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.6 14.8V8.9l6.3 2.9-6.3 3z" />
+            </svg>
+            <span>youtube.com/@omni-mes</span>
           </a>
         </div>
 
