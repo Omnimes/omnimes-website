@@ -56,12 +56,12 @@ export const Footer = () => {
           ))}
         </ul>
 
-        <div className="mt-3 flex justify-center items-center space-x-2 text-gray-900 dark:text-white">
+        <div className="mt-3 flex items-center justify-center space-x-2 text-gray-900 dark:text-white">
           <a
             href="https://x.com/OmnimesOfficial"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center hover:text-blue-500 transition-colors"
+            className="flex items-center transition-colors hover:text-blue-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
