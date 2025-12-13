@@ -1,6 +1,6 @@
 {
-  "commit": "14ead3299177cb9b44a304ddbf6faa97cb0548f3",
-  "generated": "2025-12-13T22:37:38.615Z",
+  "commit": "cb0d65cc58b5b684aaf6eb8ecffb86a2d206c483",
+  "generated": "2025-12-13T22:41:36.943Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4069,39 +4069,6 @@
     },
     {
       "__outstatic": {
-        "commit": "8a5f141ec02fda8dfd281b783bc131137bedd6e6",
-        "hash": "1339835175",
-        "path": "outstatic/content/posts/mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-Q0NT.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/twitter-card-k1ND.png",
-      "description": "Jeśli w 2025 roku ktoś nadal myśli o systemie MES jako o \"terminalach na stanowiskach i raportach z wydziału\", to jest mniej więcej tak aktualne jak faks w integracji OT-IT. System Manufacturing Execution System przestał być aplikacją na halę. MES stał się warstwą operacyjnej prawdy między światem automatyki (OT) a światem biznesu (IT).\nSystemy MES w 2025 roku to platformy operacyjne, które decydują o tym, czy firma żyje z dostępności, jakości, czasu realizacji i efektywności energetycznej. System MES przestał być kosztem—stał się mechanizmem sterowania konkurencyjnością.",
-      "lang": "pl",
-      "publishedAt": "2025-12-13T22:34:57.129Z",
-      "slug": "mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MES System",
-          "value": "mesSystem"
-        },
-        {
-          "label": "MES",
-          "value": "mes"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        }
-      ],
-      "title": "MES w 2025: Dlaczego system MES to już nie \"system na halę\", tylko kręgosłup danych produkcyjnych"
-    },
-    {
-      "__outstatic": {
         "commit": "14ead3299177cb9b44a304ddbf6faa97cb0548f3",
         "hash": "3953261317",
         "path": "outstatic/content/posts/mes-in-2025-why-mes-systems-are-no-longer-just-shop-floor-systems-but-the-backbone-of-production-data.md"
@@ -4132,6 +4099,39 @@
         }
       ],
       "title": "MES in 2025: Why MES Systems Are No Longer Just \"Shop Floor Systems\" but the Backbone of Production Data"
+    },
+    {
+      "__outstatic": {
+        "commit": "cb0d65cc58b5b684aaf6eb8ecffb86a2d206c483",
+        "hash": "1405503695",
+        "path": "outstatic/content/posts/mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-Q0NT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/twitter-card-k1ND.png",
+      "description": "Jeśli w 2025 roku ktoś nadal myśli o systemie MES jako o \"terminalach na stanowiskach i raportach z wydziału\", to jest mniej więcej tak aktualne jak faks w integracji OT-IT. System Manufacturing Execution System przestał być aplikacją na halę. MES stał się warstwą operacyjnej prawdy między światem automatyki (OT) a światem biznesu (IT). Systemy MES w 2025 roku to platformy operacyjne, które decydują o tym, czy firma żyje z dostępności, jakości, czasu realizacji i efektywności energetycznej. System MES przestał być kosztem—stał się mechanizmem sterowania konkurencyjnością.",
+      "lang": "pl",
+      "publishedAt": "2025-12-13T22:34:57.129Z",
+      "slug": "mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        }
+      ],
+      "title": "MES w 2025: Dlaczego system MES to już nie \"system na halę\", tylko kręgosłup danych produkcyjnych"
     }
   ]
 }
