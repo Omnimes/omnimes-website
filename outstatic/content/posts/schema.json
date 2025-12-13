@@ -589,6 +589,10 @@
         {
           "value": "productionAnalysis",
           "label": "Production analysis"
+        },
+        {
+          "value": "mes",
+          "label": "MES"
         }
       ]
     },

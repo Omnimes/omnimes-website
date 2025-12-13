@@ -1,6 +1,6 @@
 {
-  "commit": "dd7223a063d1cc6640c052c05dd71b03f7e71940",
-  "generated": "2025-12-09T18:49:39.940Z",
+  "commit": "8a5f141ec02fda8dfd281b783bc131137bedd6e6",
+  "generated": "2025-12-13T22:34:24.422Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4066,6 +4066,39 @@
         }
       ],
       "title": "How does OmniMES support a production manager in improving process efficiency?"
+    },
+    {
+      "__outstatic": {
+        "commit": "8a5f141ec02fda8dfd281b783bc131137bedd6e6",
+        "hash": "1339835175",
+        "path": "outstatic/content/posts/mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-Q0NT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/twitter-card-k1ND.png",
+      "description": "Jeśli w 2025 roku ktoś nadal myśli o systemie MES jako o \"terminalach na stanowiskach i raportach z wydziału\", to jest mniej więcej tak aktualne jak faks w integracji OT-IT. System Manufacturing Execution System przestał być aplikacją na halę. MES stał się warstwą operacyjnej prawdy między światem automatyki (OT) a światem biznesu (IT).\nSystemy MES w 2025 roku to platformy operacyjne, które decydują o tym, czy firma żyje z dostępności, jakości, czasu realizacji i efektywności energetycznej. System MES przestał być kosztem—stał się mechanizmem sterowania konkurencyjnością.",
+      "lang": "pl",
+      "publishedAt": "2025-12-13T22:34:57.129Z",
+      "slug": "mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        }
+      ],
+      "title": "MES w 2025: Dlaczego system MES to już nie \"system na halę\", tylko kręgosłup danych produkcyjnych"
     }
   ]
 }
