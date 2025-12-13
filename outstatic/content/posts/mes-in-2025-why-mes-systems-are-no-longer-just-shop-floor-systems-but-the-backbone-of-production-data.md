@@ -6,7 +6,6 @@ author:
   picture: '/images/1645307189660-M2OT.jpg'
 slug: 'mes-in-2025-why-mes-systems-are-no-longer-just-shop-floor-systems-but-the-backbone-of-production-data'
 description: 'If someone in 2025 still thinks of an MES system as "terminals at workstations and reports from the department," it''s about as current as a fax machine in OT-IT integration. The Manufacturing Execution System has ceased being a shop floor application. MES has become the operational layer of truth between the world of automation (OT) and the business world (IT).
-
 MES systems in 2025 are operational platforms that determine whether a company thrives on availability, quality, lead time, and energy efficiency. The MES system has stopped being a cost—it has become a mechanism for steering competitiveness.'
 coverImage: '/images/twitter-card-EyND.png'
 lang: 'en'
@@ -153,7 +152,7 @@ This text is a shortened version of an extensive, technical article on MES syste
 ## Stay Updated
 
 **Want to stay up-to-date with IT technology for industry and automation?**\
-Follow us on X (Twitter): [https://x.com/](https://x.com/OmnimesOfficial)[OmnimesOfficial](https://x.com/OmnimesOfficial)
+Follow us on X (Twitter): [@OmnimesOfficial](https://x.com@OmnimesOfficial)
 
 We regularly share:
 
@@ -161,6 +160,3 @@ We regularly share:
 - OT-IT integration practices
 - Case studies from production system implementations
 - Insights on Sparkplug B, UNS, edge computing
-
-**Join the Industry 4.0 professional community!**\
-<https://x.com/OmnimesOfficial>
