@@ -153,7 +153,7 @@ Ten tekst to skrócona wersja obszernego, technicznego artykułu o architekturze
 ## Bądź na bieżąco
 
 **Chcesz być na bieżąco w świecie technologii IT dla przemysłu i automatyki?**\
-Śledź nas na X (Twitter) - [@OmnimesOfficial](https://x.com@OmnimesOfficial)
+[Śledź nas na X (Twitter) - OmniMES na x.com](https://x.com/OmnimesOfficial)
 
 Regularnie dzielimy się:
 
