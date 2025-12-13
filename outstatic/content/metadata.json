@@ -1,6 +1,6 @@
 {
-  "commit": "b720f59a270b0d8606fda3aab0612e16e77c0882",
-  "generated": "2025-12-13T22:49:47.618Z",
+  "commit": "08c9f147709b7b9a0a0338976176f16d45eaa42b",
+  "generated": "2025-12-13T22:52:03.908Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4069,39 +4069,6 @@
     },
     {
       "__outstatic": {
-        "commit": "5635b0c20a35600b139b46b8667d143cdde44b41",
-        "hash": "3169649745",
-        "path": "outstatic/content/posts/mes-in-2025-why-mes-systems-are-no-longer-just-shop-floor-systems-but-the-backbone-of-production-data.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-M2OT.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/twitter-card-EyND.png",
-      "description": "If someone in 2025 still thinks of an MES system as \"terminals at workstations and reports from the department,\" it's about as current as a fax machine in OT-IT integration. The Manufacturing Execution System has ceased being a shop floor application. MES has become the operational layer of truth between the world of automation (OT) and the business world (IT). MES systems in 2025 are operational platforms that determine whether a company thrives on availability, quality, lead time, and energy efficiency. The MES system has stopped being a cost—it has become a mechanism for steering competitiveness.",
-      "lang": "en",
-      "publishedAt": "2025-12-13T22:40:37.321Z",
-      "slug": "mes-in-2025-why-mes-systems-are-no-longer-just-shop-floor-systems-but-the-backbone-of-production-data",
-      "status": "published",
-      "tags": [
-        {
-          "label": "MES",
-          "value": "mes"
-        },
-        {
-          "label": "MES System",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Omnimes",
-          "value": "omnimes"
-        }
-      ],
-      "title": "MES in 2025: Why MES Systems Are No Longer Just \"Shop Floor Systems\" but the Backbone of Production Data"
-    },
-    {
-      "__outstatic": {
         "commit": "b720f59a270b0d8606fda3aab0612e16e77c0882",
         "hash": "4049623436",
         "path": "outstatic/content/posts/mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych.md"
@@ -4132,6 +4099,39 @@
         }
       ],
       "title": "MES w 2025: Dlaczego system MES to już nie \"system na halę\", tylko kręgosłup danych produkcyjnych"
+    },
+    {
+      "__outstatic": {
+        "commit": "08c9f147709b7b9a0a0338976176f16d45eaa42b",
+        "hash": "2184555964",
+        "path": "outstatic/content/posts/mes-in-2025-why-mes-systems-are-no-longer-just-shop-floor-systems-but-the-backbone-of-production-data.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-M2OT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/twitter-card-EyND.png",
+      "description": "If someone in 2025 still thinks of an MES system as \"terminals at workstations and reports from the department,\" it's about as current as a fax machine in OT-IT integration. The Manufacturing Execution System has ceased being a shop floor application. MES has become the operational layer of truth between the world of automation (OT) and the business world (IT). MES systems in 2025 are operational platforms that determine whether a company thrives on availability, quality, lead time, and energy efficiency. The MES system has stopped being a cost—it has become a mechanism for steering competitiveness.",
+      "lang": "en",
+      "publishedAt": "2025-12-13T22:40:37.321Z",
+      "slug": "mes-in-2025-why-mes-systems-are-no-longer-just-shop-floor-systems-but-the-backbone-of-production-data",
+      "status": "published",
+      "tags": [
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        }
+      ],
+      "title": "MES in 2025: Why MES Systems Are No Longer Just \"Shop Floor Systems\" but the Backbone of Production Data"
     }
   ]
 }
