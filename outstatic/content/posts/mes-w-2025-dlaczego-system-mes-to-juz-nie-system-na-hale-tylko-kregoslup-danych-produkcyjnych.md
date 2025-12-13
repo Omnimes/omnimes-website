@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-Q0NT.jpg'
 slug: 'mes-w-2025-dlaczego-system-mes-to-juz-nie-system-na-hale-tylko-kregoslup-danych-produkcyjnych'
-description: 'Jeśli w 2025 roku ktoś nadal myśli o systemie MES jako o "terminalach na stanowiskach i raportach z wydziału", to jest mniej więcej tak aktualne jak faks w integracji OT-IT. System Manufacturing Execution System przestał być aplikacją na halę. MES stał się warstwą operacyjnej prawdy między światem automatyki (OT) a światem biznesu (IT). Systemy MES w 2025 roku to platformy operacyjne, które decydują o tym, czy firma żyje z dostępności, jakości, czasu realizacji i efektywności energetycznej. System MES przestał być kosztem—stał się mechanizmem sterowania konkurencyjnością.'
+description: 'System MES (Manufacturing Execution System) - Jeśli w 2025 roku ktoś nadal myśli o systemie MES jako o "terminalach na stanowiskach i raportach z wydziału", to jest mniej więcej tak aktualne jak faks w integracji OT-IT. System Manufacturing Execution System przestał być aplikacją na halę. MES stał się warstwą operacyjnej prawdy między światem automatyki (OT) a światem biznesu (IT). Systemy MES w 2025 roku to platformy operacyjne, które decydują o tym, czy firma żyje z dostępności, jakości, czasu realizacji i efektywności energetycznej. System MES przestał być kosztem—stał się mechanizmem sterowania konkurencyjnością.'
 coverImage: '/images/twitter-card-k1ND.png'
 lang: 'pl'
 tags: [{"value":"mesSystem","label":"MES System"},{"label":"MES","value":"mes"},{"value":"omnimes","label":"Omnimes"}]
