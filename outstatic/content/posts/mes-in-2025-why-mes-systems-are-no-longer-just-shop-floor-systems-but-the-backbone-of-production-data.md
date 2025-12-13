@@ -150,7 +150,8 @@ This text is a shortened version of an extensive, technical article on MES syste
 
 ## Stay Updated
 
-**Want to stay up-to-date with IT technology for industry and automation?**\
+**Want to stay up-to-date with IT technology for industry and automation?**
+
 [Follow us on X (Twitter)](https://x.com@OmnimesOfficial)
 
 We regularly share:
