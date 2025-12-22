@@ -172,11 +172,11 @@ Blockchain w przemyśle nie ma zastąpić MES ani ERP. To **warstwa zaufania i a
 
 ## **Chcesz więcej? Przeczytaj cały artykuł**
 
-### [**Blockchain in Industry 4.0: Why Energy and Compliance Are the Only Rational Web3 Use Cases Today**](https://medium.com/@szerment84/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today-22143888846b)
+[Blockchain in Industry 4.0: Why Energy and Compliance Are the Only Rational Web3 Use Cases Today](https://medium.com/@szerment84/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today-22143888846b)
 
 ---
 
-### **Śledź nas na X (Twitter) - [@OmniMES](https://x.com/OmniMES)**\\
+### **Śledź nas na X (Twitter) -** [@OmnimesOfficial](https://x.com/OmnimesOfficial)
 
 Regularnie dzielimy się:
 

@@ -1,6 +1,6 @@
 {
   "commit": "d79a37467abcabe9d71449fb4b9a13a587dcf54e",
-  "generated": "2025-12-22T21:01:38.527Z",
+  "generated": "2025-12-22T21:04:27.724Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4135,53 +4135,8 @@
     },
     {
       "__outstatic": {
-        "commit": "c282f96eea648bbb6f049fdf7ff72fb318ea7b22",
-        "hash": "1948315919",
-        "path": "outstatic/content/posts/blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-U2Nj.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/blockchain_web3-I5MD.png",
-      "description": "",
-      "lang": "pl",
-      "publishedAt": "2025-12-22T18:51:22.823Z",
-      "slug": "blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Industry 4.0",
-          "value": "industry40"
-        },
-        {
-          "label": "MES System",
-          "value": "mesSystem"
-        },
-        {
-          "label": "IndustrialIoT",
-          "value": "industrialIoT"
-        },
-        {
-          "label": "SmartFactory",
-          "value": "smartFactory"
-        },
-        {
-          "label": "Lean Manufacturing",
-          "value": "leanManufacturing"
-        },
-        {
-          "label": "IndustrialIT",
-          "value": "industrialIt"
-        }
-      ],
-      "title": "Blockchain w Przemyśle 4.0: Dlaczego energetyka i zgodność z przepisami to jedyne racjonalne przypadki użycia Web3"
-    },
-    {
-      "__outstatic": {
-        "commit": "d79a37467abcabe9d71449fb4b9a13a587dcf54e",
-        "hash": "1182191669",
+        "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
+        "hash": "2126502865",
         "path": "outstatic/content/posts/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today.md"
       },
       "author": {
@@ -4222,6 +4177,51 @@
         }
       ],
       "title": "Blockchain in Industry 4.0: Why Energy and Compliance Are the Only Rational Web3 Use Cases Today"
+    },
+    {
+      "__outstatic": {
+        "commit": "d79a37467abcabe9d71449fb4b9a13a587dcf54e",
+        "hash": "3241711036",
+        "path": "outstatic/content/posts/blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-U2Nj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/blockchain_web3-I5MD.png",
+      "description": "Przemysł nie potrzebuje kolejnej rewolucji technologicznej, ale przewidywalności i mierzalnego ROI. Większość inicjatyw Web3 w produkcji nie wychodzi poza fazę pilotażową, bo rozwiązuje problemy, których zakłady nie mają.",
+      "lang": "pl",
+      "publishedAt": "2025-12-22T18:51:22.823Z",
+      "slug": "blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "IndustrialIoT",
+          "value": "industrialIoT"
+        },
+        {
+          "label": "SmartFactory",
+          "value": "smartFactory"
+        },
+        {
+          "label": "Lean Manufacturing",
+          "value": "leanManufacturing"
+        },
+        {
+          "label": "IndustrialIT",
+          "value": "industrialIt"
+        }
+      ],
+      "title": "Blockchain w Przemyśle 4.0: Dlaczego energetyka i zgodność z przepisami to jedyne racjonalne przypadki użycia Web3"
     }
   ]
 }
