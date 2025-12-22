@@ -1,6 +1,6 @@
 {
-  "commit": "d79a37467abcabe9d71449fb4b9a13a587dcf54e",
-  "generated": "2025-12-22T21:05:06.034Z",
+  "commit": "353963bebce0c87c57d856444251a9ef40b92110",
+  "generated": "2025-12-22T21:26:18.615Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4180,8 +4180,8 @@
     },
     {
       "__outstatic": {
-        "commit": "d79a37467abcabe9d71449fb4b9a13a587dcf54e",
-        "hash": "877857331",
+        "commit": "353963bebce0c87c57d856444251a9ef40b92110",
+        "hash": "2224849142",
         "path": "outstatic/content/posts/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today.md"
       },
       "author": {
@@ -4189,7 +4189,7 @@
         "picture": "/images/1645307189660-A1Mj.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/blockchain_web3-Q4MD.png",
+      "coverImage": "/images/blockchain_web3-gwMD.png",
       "description": "Industry doesn't need another technological revolution, but predictability and measurable ROI. Most Web3 initiatives in manufacturing never escape pilot phase because they solve problems plants don't actually have.",
       "lang": "en",
       "publishedAt": "2025-12-22T19:23:33.631Z",
