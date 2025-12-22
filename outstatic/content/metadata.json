@@ -1,6 +1,6 @@
 {
   "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
-  "generated": "2025-12-22T19:18:36.176Z",
+  "generated": "2025-12-22T19:22:00.833Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4135,8 +4135,8 @@
     },
     {
       "__outstatic": {
-        "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
-        "hash": "3283582194",
+        "commit": "c282f96eea648bbb6f049fdf7ff72fb318ea7b22",
+        "hash": "1948315919",
         "path": "outstatic/content/posts/blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3.md"
       },
       "author": {
@@ -4145,7 +4145,7 @@
       },
       "collection": "posts",
       "coverImage": "/images/blockchain_web3-I5MD.png",
-      "description": "Przemysł nie potrzebuje kolejnej rewolucji technologicznej, ale przewidywalności i mierzalnego ROI. Większość inicjatyw Web3 w produkcji nie wychodzi poza fazę pilotażową, bo rozwiązuje problemy, których zakłady nie mają.",
+      "description": "",
       "lang": "pl",
       "publishedAt": "2025-12-22T18:51:22.823Z",
       "slug": "blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3",
@@ -4177,6 +4177,51 @@
         }
       ],
       "title": "Blockchain w Przemyśle 4.0: Dlaczego energetyka i zgodność z przepisami to jedyne racjonalne przypadki użycia Web3"
+    },
+    {
+      "__outstatic": {
+        "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
+        "hash": "2126502865",
+        "path": "outstatic/content/posts/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-A1Mj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/blockchain_web3-Q4MD.png",
+      "description": "Industry doesn't need another technological revolution, but predictability and measurable ROI. Most Web3 initiatives in manufacturing never escape pilot phase because they solve problems plants don't actually have.",
+      "lang": "en",
+      "publishedAt": "2025-12-22T19:23:33.631Z",
+      "slug": "blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "IndustrialIoT",
+          "value": "industrialIoT"
+        },
+        {
+          "label": "SmartFactory",
+          "value": "smartFactory"
+        },
+        {
+          "label": "Lean Manufacturing",
+          "value": "leanManufacturing"
+        },
+        {
+          "label": "IndustrialIT",
+          "value": "industrialIt"
+        }
+      ],
+      "title": "Blockchain in Industry 4.0: Why Energy and Compliance Are the Only Rational Web3 Use Cases Today"
     }
   ]
 }
