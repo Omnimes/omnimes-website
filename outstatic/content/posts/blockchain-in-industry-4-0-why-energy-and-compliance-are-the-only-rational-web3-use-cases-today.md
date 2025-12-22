@@ -173,7 +173,7 @@ Blockchain in industry isn't meant to replace MES or ERP. It's a **trust and aud
 
 ---
 
-**Follow us on X (Twitter) - \[@Omnimes\](https://x.com/OmnimesOfficial)**\
+**Follow us on X (Twitter) -** [@OmnimesOfficial](https://x.com/OmnimesOfficial)\
 We regularly share:
 
 - Latest trends in MES systems and Industry 4.0
