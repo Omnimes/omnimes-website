@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-A1Mj.jpg'
 slug: 'blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today'
 description: 'Industry doesn''t need another technological revolution, but predictability and measurable ROI. Most Web3 initiatives in manufacturing never escape pilot phase because they solve problems plants don''t actually have.'
-coverImage: '/images/blockchain_web3-gwMD.png'
+coverImage: '/images/blockchain_web3-Q4Mj.png'
 lang: 'en'
 tags: [{"value":"industry40","label":"Industry 4.0"},{"value":"mesSystem","label":"MES System"},{"value":"industrialIoT","label":"IndustrialIoT"},{"value":"smartFactory","label":"SmartFactory"},{"value":"leanManufacturing","label":"Lean Manufacturing"},{"value":"industrialIt","label":"IndustrialIT"}]
 publishedAt: '2025-12-22T19:23:33.631Z'
