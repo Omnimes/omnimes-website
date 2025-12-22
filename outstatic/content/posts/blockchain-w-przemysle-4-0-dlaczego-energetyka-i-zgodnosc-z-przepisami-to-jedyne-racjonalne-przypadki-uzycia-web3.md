@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-U2Nj.jpg'
 slug: 'blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3'
 description: 'Przemysł nie potrzebuje kolejnej rewolucji technologicznej, ale przewidywalności i mierzalnego ROI. Większość inicjatyw Web3 w produkcji nie wychodzi poza fazę pilotażową, bo rozwiązuje problemy, których zakłady nie mają.'
-coverImage: '/images/blockchain_web3-I5MD.png'
+coverImage: '/images/blockchain_web3-Q5ND.png'
 lang: 'pl'
 tags: [{"value":"industry40","label":"Industry 4.0"},{"value":"mesSystem","label":"MES System"},{"label":"IndustrialIoT","value":"industrialIoT"},{"label":"SmartFactory","value":"smartFactory"},{"value":"leanManufacturing","label":"Lean Manufacturing"},{"label":"IndustrialIT","value":"industrialIt"}]
 publishedAt: '2025-12-22T18:51:22.823Z'
