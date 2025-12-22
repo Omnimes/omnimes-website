@@ -1,6 +1,6 @@
 {
-  "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
-  "generated": "2025-12-22T19:22:00.833Z",
+  "commit": "d79a37467abcabe9d71449fb4b9a13a587dcf54e",
+  "generated": "2025-12-22T21:01:38.527Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4180,8 +4180,8 @@
     },
     {
       "__outstatic": {
-        "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
-        "hash": "2126502865",
+        "commit": "d79a37467abcabe9d71449fb4b9a13a587dcf54e",
+        "hash": "1182191669",
         "path": "outstatic/content/posts/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today.md"
       },
       "author": {

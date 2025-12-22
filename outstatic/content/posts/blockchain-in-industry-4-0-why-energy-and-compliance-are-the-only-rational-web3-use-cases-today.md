@@ -167,12 +167,13 @@ Blockchain in industry isn't meant to replace MES or ERP. It's a **trust and aud
 
 ---
 
-**Want more? Read the full article:**\
-[**Blockchain in Industry 4.0: Why Energy and Compliance Are the Only Rational Web3 Use Cases Today**](https://medium.com/@szerment84/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today-22143888846b)
+**Want more? Read the full article:**
+
+[Blockchain in Industry 4.0: Why Energy and Compliance Are the Only Rational Web3 Use Cases Today](https://medium.com/@szerment84/blockchain-in-industry-4-0-why-energy-and-compliance-are-the-only-rational-web3-use-cases-today-22143888846b)
 
 ---
 
-**Follow us on X (Twitter) - [@OmniMES](https://x.com/OmniMES)**\
+**Follow us on X (Twitter) - \[@Omnimes\](https://x.com/OmnimesOfficial)**\
 We regularly share:
 
 - Latest trends in MES systems and Industry 4.0
