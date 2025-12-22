@@ -1,6 +1,6 @@
 {
-  "commit": "cc5197e7f85dba6486d0c3ca81d409df0b7c1e14",
-  "generated": "2025-12-13T23:19:03.141Z",
+  "commit": "c282f96eea648bbb6f049fdf7ff72fb318ea7b22",
+  "generated": "2025-12-22T19:16:06.946Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4132,6 +4132,51 @@
         }
       ],
       "title": "MES w 2025: Dlaczego system MES to już nie \"system na halę\", tylko kręgosłup danych produkcyjnych"
+    },
+    {
+      "__outstatic": {
+        "commit": "c282f96eea648bbb6f049fdf7ff72fb318ea7b22",
+        "hash": "1948315919",
+        "path": "outstatic/content/posts/blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-U2Nj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/blockchain_web3-I5MD.png",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2025-12-22T18:51:22.823Z",
+      "slug": "blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Industry 4.0",
+          "value": "industry40"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "IndustrialIoT",
+          "value": "industrialIoT"
+        },
+        {
+          "label": "SmartFactory",
+          "value": "smartFactory"
+        },
+        {
+          "label": "Lean Manufacturing",
+          "value": "leanManufacturing"
+        },
+        {
+          "label": "IndustrialIT",
+          "value": "industrialIt"
+        }
+      ],
+      "title": "Blockchain w Przemyśle 4.0: Dlaczego energetyka i zgodność z przepisami to jedyne racjonalne przypadki użycia Web3"
     }
   ]
 }

@@ -593,6 +593,18 @@
         {
           "value": "mes",
           "label": "MES"
+        },
+        {
+          "value": "industrialIoT",
+          "label": "IndustrialIoT"
+        },
+        {
+          "value": "smartFactory",
+          "label": "SmartFactory"
+        },
+        {
+          "value": "industrialIt",
+          "label": "IndustrialIT"
         }
       ]
     },
