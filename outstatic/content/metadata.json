@@ -1,6 +1,6 @@
 {
-  "commit": "c282f96eea648bbb6f049fdf7ff72fb318ea7b22",
-  "generated": "2025-12-22T19:16:06.946Z",
+  "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
+  "generated": "2025-12-22T19:18:36.176Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4135,8 +4135,8 @@
     },
     {
       "__outstatic": {
-        "commit": "c282f96eea648bbb6f049fdf7ff72fb318ea7b22",
-        "hash": "1948315919",
+        "commit": "aaf3bc1cb40e668dcba526e61501c55f3705e4c1",
+        "hash": "3283582194",
         "path": "outstatic/content/posts/blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3.md"
       },
       "author": {
@@ -4145,7 +4145,7 @@
       },
       "collection": "posts",
       "coverImage": "/images/blockchain_web3-I5MD.png",
-      "description": "",
+      "description": "Przemysł nie potrzebuje kolejnej rewolucji technologicznej, ale przewidywalności i mierzalnego ROI. Większość inicjatyw Web3 w produkcji nie wychodzi poza fazę pilotażową, bo rozwiązuje problemy, których zakłady nie mają.",
       "lang": "pl",
       "publishedAt": "2025-12-22T18:51:22.823Z",
       "slug": "blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3",
