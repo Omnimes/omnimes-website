@@ -176,7 +176,7 @@ Blockchain w przemyśle nie ma zastąpić MES ani ERP. To **warstwa zaufania i a
 
 ---
 
-### **Śledź nas na X (Twitter) -** [@OmnimesOfficial](https://x.com/OmnimesOfficial)
+**Śledź nas na X (Twitter) -** [@OmnimesOfficial](https://x.com/OmnimesOfficial)
 
 Regularnie dzielimy się:
 
