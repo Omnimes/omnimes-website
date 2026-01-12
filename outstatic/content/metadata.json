@@ -1,6 +1,6 @@
 {
-  "commit": "404d367255a9fffc716cbcd2b44aaad08a5e4744",
-  "generated": "2026-01-12T10:02:34.045Z",
+  "commit": "d5e85d8e5e11c12a10c8ec0b29ed4d79828a6665",
+  "generated": "2026-01-12T10:04:12.693Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4255,6 +4255,39 @@
         }
       ],
       "title": "Suwerenność danych w przemyśle: jak projektować odporne, bezpieczne i skalowalne systemy produkcyjne"
+    },
+    {
+      "__outstatic": {
+        "commit": "d5e85d8e5e11c12a10c8ec0b29ed4d79828a6665",
+        "hash": "2811146025",
+        "path": "outstatic/content/posts/data-sovereignty-in-manufacturing-building-resilient-secure-and-scalable-industrial-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I0NT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-QwOT.png",
+      "description": "Why data sovereignty is no longer a technical detail — but a strategic advantage\nAs factories accelerate digital transformation, cloud platforms are often presented as the foundation of innovation. But for manufacturing environments, where every second of downtime translates directly into financial and operational losses, dependency on external cloud services introduces real risk.\nData sovereignty — the ability to control where industrial data is processed, who can access it, and how it is governed — is becoming one of the most important pillars of modern manufacturing architecture.\nThis is not a trend. It is the foundation of operational resilience, industrial AI, and competitive advantage.",
+      "lang": "en",
+      "publishedAt": "2026-01-12T10:08:53.492Z",
+      "slug": "data-sovereignty-in-manufacturing-building-resilient-secure-and-scalable-industrial-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Data,",
+          "value": "data,"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        }
+      ],
+      "title": "Data Sovereignty in Manufacturing: Building Resilient, Secure, and Scalable Industrial Systems"
     }
   ]
 }
