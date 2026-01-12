@@ -1,6 +1,6 @@
 {
-  "commit": "d5e85d8e5e11c12a10c8ec0b29ed4d79828a6665",
-  "generated": "2026-01-12T10:04:12.693Z",
+  "commit": "4c233fbc86649445d2d2f2e516a6437d5220104e",
+  "generated": "2026-01-12T10:14:16.371Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4288,6 +4288,43 @@
         }
       ],
       "title": "Data Sovereignty in Manufacturing: Building Resilient, Secure, and Scalable Industrial Systems"
+    },
+    {
+      "__outstatic": {
+        "commit": "4c233fbc86649445d2d2f2e516a6437d5220104e",
+        "hash": "3536293036",
+        "path": "outstatic/content/posts/dlaczego-wyspecjalizowane-branze-sa-nowa-granica-innowacji-w-przemysle.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-gwMz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/wyspecjalozwane-branze---blog---omnimes-c4NT.png",
+      "description": "Przez ostatnie 20 lat innowacje w IT koncentrowały się na rynkach masowych: e-commerce, social media, SaaS dla biur. Tymczasem największy niewykorzystany potencjał znajduje się dziś w branżach specjalistycznych – tam, gdzie procesy są fizyczne, regulowane, krytyczne operacyjnie i oparte na rzeczywistych danych z maszyn.\nProdukcja przemysłowa, energetyka, logistyka czy infrastruktura krytyczna nie potrzebują „kolejnej aplikacji”. Potrzebują systemów, które rozumieją ich rzeczywistość operacyjną.\nI właśnie tam powstaje kolejna fala innowacji.",
+      "lang": "pl",
+      "publishedAt": "2026-01-05T10:14:40.000Z",
+      "slug": "dlaczego-wyspecjalizowane-branze-sa-nowa-granica-innowacji-w-przemysle",
+      "status": "published",
+      "tags": [
+        {
+          "label": "SmartFactory",
+          "value": "smartFactory"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "Industry 5.0",
+          "value": "industry50"
+        }
+      ],
+      "title": "Dlaczego wyspecjalizowane branże są nową granicą innowacji w przemyśle"
     }
   ]
 }
