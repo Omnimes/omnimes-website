@@ -1,6 +1,6 @@
 {
-  "commit": "1f6c91624837806d653536a5ff456edc41b89409",
-  "generated": "2025-12-22T22:00:40.493Z",
+  "commit": "404d367255a9fffc716cbcd2b44aaad08a5e4744",
+  "generated": "2026-01-12T10:02:34.045Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4222,6 +4222,39 @@
         }
       ],
       "title": "Blockchain in Industry 4.0: Why Energy and Compliance Are the Only Rational Web3 Use Cases Today"
+    },
+    {
+      "__outstatic": {
+        "commit": "404d367255a9fffc716cbcd2b44aaad08a5e4744",
+        "hash": "2572361217",
+        "path": "outstatic/content/posts/suwerennosc-danych-w-przemysle-jak-projektowac-odporne-bezpieczne-i-skalowalne-systemy-produkcyjne.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-kzMz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/data-c3Nj.png",
+      "description": "W erze cyfrowej transformacji fabryk pojęcie „chmura” często jest utożsamiane z innowacją i elastycznością. Jednak dla zakładów produkcyjnych, w których każda przerwa oznacza znaczące straty, zależność od zewnętrznych usług chmurowych może być poważnym ryzykiem. Suwerenność danych – czyli kontrola nad tym, gdzie dane są przetwarzane, kto ma do nich dostęp i jak są zarządzane – staje się kluczowym czynnikiem decydującym o odporności operacyjnej.\nTo nie jest kwestia technologicznego trendu. To fundament nowoczesnych, zwinnych i bezpiecznych systemów przemysłowych.",
+      "lang": "pl",
+      "publishedAt": "2026-01-12T10:02:36.379Z",
+      "slug": "suwerennosc-danych-w-przemysle-jak-projektowac-odporne-bezpieczne-i-skalowalne-systemy-produkcyjne",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Data,",
+          "value": "data,"
+        },
+        {
+          "label": "IIoT",
+          "value": "iIoT"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        }
+      ],
+      "title": "Suwerenność danych w przemyśle: jak projektować odporne, bezpieczne i skalowalne systemy produkcyjne"
     }
   ]
 }

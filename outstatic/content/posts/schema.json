@@ -605,6 +605,10 @@
         {
           "value": "industrialIt",
           "label": "IndustrialIT"
+        },
+        {
+          "value": "data,",
+          "label": "Data,"
         }
       ]
     },
