@@ -609,6 +609,10 @@
         {
           "value": "data,",
           "label": "Data,"
+        },
+        {
+          "value": "digitalFactory",
+          "label": "digital factory"
         }
       ]
     },

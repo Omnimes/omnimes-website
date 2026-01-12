@@ -1,6 +1,6 @@
 {
-  "commit": "4c233fbc86649445d2d2f2e516a6437d5220104e",
-  "generated": "2026-01-12T10:14:16.371Z",
+  "commit": "59cfdba3ae1eff978d594c93572ce999a1cede1d",
+  "generated": "2026-01-12T10:18:29.633Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4325,6 +4325,43 @@
         }
       ],
       "title": "Dlaczego wyspecjalizowane branże są nową granicą innowacji w przemyśle"
+    },
+    {
+      "__outstatic": {
+        "commit": "59cfdba3ae1eff978d594c93572ce999a1cede1d",
+        "hash": "1837794529",
+        "path": "outstatic/content/posts/why-specialized-industries-are-the-new-frontier-of-industrial-innovation.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-A0MT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/wyspecjalozwane-branze---blog---omnimes-cxMj.png",
+      "description": "For the last two decades, most digital innovation has focused on mass-market IT: e-commerce, social platforms, and office SaaS. But the largest untapped opportunities now lie in highly specialized, industrial domains — where processes are physical, regulated, and operationally critical.\nManufacturing, energy, logistics, and infrastructure do not need more generic software. They need systems that understand how the real world of machines actually works.\nThat is where the next decade of industrial innovation will be built.",
+      "lang": "en",
+      "publishedAt": "2026-01-05T10:21:04.000Z",
+      "slug": "why-specialized-industries-are-the-new-frontier-of-industrial-innovation",
+      "status": "published",
+      "tags": [
+        {
+          "label": "SmartFactory",
+          "value": "smartFactory"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "digital factory",
+          "value": "digitalFactory"
+        }
+      ],
+      "title": "Why Specialized Industries Are the New Frontier of Industrial Innovation"
     }
   ]
 }
