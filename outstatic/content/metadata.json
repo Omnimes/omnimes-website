@@ -1,6 +1,6 @@
 {
-  "commit": "f7659ace3c1bb8a8a8417e703318231891d2437b",
-  "generated": "2026-01-19T10:02:53.187Z",
+  "commit": "e0d10f700c89dfe14525bcf11e29160bf7edd33e",
+  "generated": "2026-01-19T10:05:23.268Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4399,6 +4399,47 @@
         }
       ],
       "title": "Unijna regulacja danych przemysłowych: od przeszkody prawnej do klucza cyfrowej transformacji"
+    },
+    {
+      "__outstatic": {
+        "commit": "e0d10f700c89dfe14525bcf11e29160bf7edd33e",
+        "hash": "2517509477",
+        "path": "outstatic/content/posts/eu-industrial-data-regulation-from-a-legal-obstacle-to-the-key-to-digital-transformation.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/article_data_ue-g1OD.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/article_data_ue-E1OT.png",
+      "description": "Nvidia and the data problem at a broader scale\n",
+      "lang": "en",
+      "publishedAt": "2026-01-19T10:09:24.480Z",
+      "slug": "eu-industrial-data-regulation-from-a-legal-obstacle-to-the-key-to-digital-transformation",
+      "status": "published",
+      "tags": [
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "UNS",
+          "value": "uns"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "EU Industrial Data Regulation: From a Legal Obstacle to the Key to Digital Transformation"
     }
   ]
 }
