@@ -1,6 +1,6 @@
 {
-  "commit": "59cfdba3ae1eff978d594c93572ce999a1cede1d",
-  "generated": "2026-01-12T10:18:29.633Z",
+  "commit": "f7659ace3c1bb8a8a8417e703318231891d2437b",
+  "generated": "2026-01-19T10:02:53.187Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4362,6 +4362,43 @@
         }
       ],
       "title": "Why Specialized Industries Are the New Frontier of Industrial Innovation"
+    },
+    {
+      "__outstatic": {
+        "commit": "f7659ace3c1bb8a8a8417e703318231891d2437b",
+        "hash": "2913377184",
+        "path": "outstatic/content/posts/unijna-regulacja-danych-przemyslowych-od-przeszkody-prawnej-do-klucza-cyfrowej-transformacji.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-MwND.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/article_data_ue-EzMT.png",
+      "description": "Unia Europejska słynie z wprowadzania restrykcyjnych regulacji, które często komplikują życie biznesowi. Tym razem jednak jest inaczej – nowe przepisy dotyczące dostępu do danych przemysłowych rozwiązują problem, który od lat hamował cyfryzację fabryk.\nProblem, który blokował transformację\nProducenci oprogramowania MES (Manufacturing Execution System) doskonale znają ten scenariusz: firma kupuje maszynę za miliony, ale nie może swobodnie pobierać z niej danych. Producent sprzętu albo technicznie blokuje dostęp, chroniąc swoje know-how, albo wymusza dodatkowe opłaty, a często narzuca własny system MES.\nTo nie tylko kwestia techniczna. Brak standaryzacji protokołów komunikacyjnych to jedno, ale prawne bariery w dostępie do danych z własnych maszyn to zupełnie inna sprawa. Dla firm rozwijających rozwiązania oparte na AI problem jest fundamentalny – bez danych nie ma algorytmów, bez algorytmów nie ma inteligentnych fabryk.",
+      "lang": "pl",
+      "publishedAt": "2026-01-19T10:02:21.737Z",
+      "slug": "unijna-regulacja-danych-przemyslowych-od-przeszkody-prawnej-do-klucza-cyfrowej-transformacji",
+      "status": "published",
+      "tags": [
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "UNS",
+          "value": "uns"
+        }
+      ],
+      "title": "Unijna regulacja danych przemysłowych: od przeszkody prawnej do klucza cyfrowej transformacji"
     }
   ]
 }

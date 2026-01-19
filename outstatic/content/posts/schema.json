@@ -613,6 +613,14 @@
         {
           "value": "digitalFactory",
           "label": "digital factory"
+        },
+        {
+          "value": "ue",
+          "label": "UE"
+        },
+        {
+          "value": "uns",
+          "label": "UNS"
         }
       ]
     },
