@@ -1,6 +1,6 @@
 {
-  "commit": "e0d10f700c89dfe14525bcf11e29160bf7edd33e",
-  "generated": "2026-01-19T10:05:23.268Z",
+  "commit": "c25dce01c76789b5dce8be563f37ebb6f38935d5",
+  "generated": "2026-01-19T10:05:52.358Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4402,17 +4402,17 @@
     },
     {
       "__outstatic": {
-        "commit": "e0d10f700c89dfe14525bcf11e29160bf7edd33e",
-        "hash": "2517509477",
+        "commit": "c25dce01c76789b5dce8be563f37ebb6f38935d5",
+        "hash": "1344512854",
         "path": "outstatic/content/posts/eu-industrial-data-regulation-from-a-legal-obstacle-to-the-key-to-digital-transformation.md"
       },
       "author": {
         "name": "Martin Szerment",
-        "picture": "/images/article_data_ue-g1OD.png"
+        "picture": "/images/1645307189660-YzOD.jpg"
       },
       "collection": "posts",
       "coverImage": "/images/article_data_ue-E1OT.png",
-      "description": "Nvidia and the data problem at a broader scale\n",
+      "description": "Nvidia and the data problem at a broader scale ",
       "lang": "en",
       "publishedAt": "2026-01-19T10:09:24.480Z",
       "slug": "eu-industrial-data-regulation-from-a-legal-obstacle-to-the-key-to-digital-transformation",

@@ -3,10 +3,9 @@ title: 'EU Industrial Data Regulation: From a Legal Obstacle to the Key to Digit
 status: 'published'
 author:
   name: 'Martin Szerment'
-  picture: '/images/article_data_ue-g1OD.png'
+  picture: '/images/1645307189660-YzOD.jpg'
 slug: 'eu-industrial-data-regulation-from-a-legal-obstacle-to-the-key-to-digital-transformation'
 description: 'Nvidia and the data problem at a broader scale
-
 '
 coverImage: '/images/article_data_ue-E1OT.png'
 lang: 'en'
