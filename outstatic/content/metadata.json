@@ -1,6 +1,6 @@
 {
-  "commit": "c25dce01c76789b5dce8be563f37ebb6f38935d5",
-  "generated": "2026-01-19T10:05:52.358Z",
+  "commit": "dee38644d4917a12065794b3cbe0100298d990f2",
+  "generated": "2026-01-26T09:33:09.629Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4440,6 +4440,43 @@
         }
       ],
       "title": "EU Industrial Data Regulation: From a Legal Obstacle to the Key to Digital Transformation"
+    },
+    {
+      "__outstatic": {
+        "commit": "dee38644d4917a12065794b3cbe0100298d990f2",
+        "hash": "217239868",
+        "path": "outstatic/content/posts/rewolucja-ai-w-przemysle-przelomowe-technologie-stycznia-2026.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-U2Nz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/revolution_ai-UyMz.png",
+      "description": "Styczeń 2026 roku przyniósł kluczowy punkt zwrotny w rozwoju sztucznej inteligencji . AI ewoluuje z \"interaktywnego narzędzia\" do \"fizycznej jednostki\" zdolnej do fundamentalnej transformacji wszystkich sektorów przemysłowych, szczególnie produkcji .\nFizyczne AI i era robotyki\nJensen Huang, CEO NVIDIA, ogłosił na CES 2026, że \"nadszedł moment ChatGPT w robotyce\", sygnalizując masowe przejście AI z przestrzeni wirtualnej do świata fizycznego . NVIDIA wprowadziło serię otwartych modeli dla fizycznego AI, w tym modele \"Cosmos\" zdolne do rozumienia świata oraz tworzenia planów działania, a także Isaac GR00T N1.6 dedykowany robotom humanoidalnym .\nNowy moduł Jetson T4000 z architekturą Blackwell oferuje czterokrotnie wyższą efektywność energetyczną i moc obliczeniową AI w porównaniu z poprzednią generacją, w cenie 1 999 USD (przy zamówieniu 1000 sztuk) . Globalne firmy takie jak Boston Dynamics, Caterpillar, Franka Robotics, LG Electronics i NEURA Robotics zaprezentowały nową generację robotów wykorzystujących technologie NVIDIA .",
+      "lang": "pl",
+      "publishedAt": "2026-01-26T09:29:59.894Z",
+      "slug": "rewolucja-ai-w-przemysle-przelomowe-technologie-stycznia-2026",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "technology",
+          "value": "technology"
+        },
+        {
+          "label": "industry",
+          "value": "industry"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        }
+      ],
+      "title": "Rewolucja AI w przemyśle: Przełomowe technologie stycznia 2026"
     }
   ]
 }
