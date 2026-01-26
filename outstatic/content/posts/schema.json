@@ -633,6 +633,10 @@
         {
           "value": "robotics",
           "label": "robotics"
+        },
+        {
+          "value": "deepseek",
+          "label": "deepseek"
         }
       ]
     },

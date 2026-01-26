@@ -1,6 +1,6 @@
 {
-  "commit": "dee38644d4917a12065794b3cbe0100298d990f2",
-  "generated": "2026-01-26T09:33:09.629Z",
+  "commit": "efaac3dd4b87bf5457e1449b820a2d2c98d16ea5",
+  "generated": "2026-01-26T09:35:50.811Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4477,6 +4477,43 @@
         }
       ],
       "title": "Rewolucja AI w przemyśle: Przełomowe technologie stycznia 2026"
+    },
+    {
+      "__outstatic": {
+        "commit": "efaac3dd4b87bf5457e1449b820a2d2c98d16ea5",
+        "hash": "2475319983",
+        "path": "outstatic/content/posts/ai-revolution-in-industry-breakthrough-technologies-of-january-2026.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-A0Nz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/revolution_ai-A3OT.png",
+      "description": "January 2026 marked a pivotal turning point in the development of artificial intelligence. AI is evolving from an “interactive tool” into a “physical entity” capable of fundamentally transforming all industrial sectors—especially manufacturing.\nPhysical AI and the Robotics Era\nJensen Huang, CEO of NVIDIA, announced at CES 2026 that “the ChatGPT moment for robotics has arrived,” signaling a mass transition of AI from the virtual space into the physical world. NVIDIA introduced a series of open models for physical AI, including the Cosmos models capable of understanding the world and generating action plans, as well as Isaac GR00T N1.6, dedicated to humanoid robots.\nThe new Jetson T4000 module, based on the Blackwell architecture, delivers four times higher energy efficiency and AI compute performance compared to the previous generation, priced at USD 1,999 (for orders of 1,000 units). Global companies such as Boston Dynamics, Caterpillar, Franka Robotics, LG Electronics, and NEURA Robotics presented a new generation of robots powered by NVIDIA technologies.",
+      "lang": "en",
+      "publishedAt": "2026-01-26T09:39:33.374Z",
+      "slug": "ai-revolution-in-industry-breakthrough-technologies-of-january-2026",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "SmartFactory",
+          "value": "smartFactory"
+        },
+        {
+          "label": "Digital Twin",
+          "value": "digitalTwin"
+        },
+        {
+          "label": "deepseek",
+          "value": "deepseek"
+        }
+      ],
+      "title": "AI Revolution in Industry: Breakthrough Technologies of January 2026"
     }
   ]
 }
