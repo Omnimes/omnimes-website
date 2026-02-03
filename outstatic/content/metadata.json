@@ -1,6 +1,6 @@
 {
-  "commit": "cc991eb03fb99a3060ac5bcd8238937bd5815de0",
-  "generated": "2026-02-03T11:04:19.726Z",
+  "commit": "8363f68c3c9a74d9108fe44e4d049518b8110b55",
+  "generated": "2026-02-03T11:08:43.998Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4559,6 +4559,51 @@
         }
       ],
       "title": "Jak system MES zasila cyfrowego bliźniaka w NVIDIA Omniverse danymi produkcyjnymi"
+    },
+    {
+      "__outstatic": {
+        "commit": "8363f68c3c9a74d9108fe44e4d049518b8110b55",
+        "hash": "1812793005",
+        "path": "outstatic/content/posts/how-mes-systems-feed-digital-twins-in-nvidia-omniverse-with-production-data.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-MzNj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/omniandomniverse-I4OT.jpg",
+      "description": "Digital twins are increasingly appearing in modern factory strategies. Process simulations, virtual production lines, scenario testing without the risk of stopping production – this sounds like the future of manufacturing. One of the most recognizable tools in this area is NVIDIA Omniverse. The problem begins when a digital twin is supposed to stop being a visualization and become a reflection of actual production. For this, data is needed. And this is where MES-class systems play a key role.",
+      "lang": "en",
+      "publishedAt": "2026-02-02T11:10:55.000Z",
+      "slug": "how-mes-systems-feed-digital-twins-in-nvidia-omniverse-with-production-data",
+      "status": "published",
+      "tags": [
+        {
+          "label": "nvidia",
+          "value": "nvidia"
+        },
+        {
+          "label": "omniverse",
+          "value": "omniverse"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Digital Twin",
+          "value": "digitalTwin"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        }
+      ],
+      "title": "How MES Systems Feed Digital Twins in NVIDIA Omniverse with Production Data"
     }
   ]
 }
