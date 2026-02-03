@@ -6,9 +6,8 @@ author:
   picture: '/images/1645307189660-Y2ND.jpg'
 slug: 'jak-system-mes-zasila-cyfrowego-blizniaka-w-nvidia-omniverse-danymi-produkcyjnymi'
 description: 'Cyfrowy bliźniak coraz częściej pojawia się w strategiach nowoczesnych fabryk. Symulacje procesów, wirtualne linie produkcyjne, testowanie scenariuszy bez ryzyka zatrzymania produkcji – to brzmi jak przyszłość przemysłu. Jednym z najbardziej rozpoznawalnych narzędzi w tym obszarze jest NVIDIA Omniverse.
-
 Problem zaczyna się w momencie, gdy cyfrowy bliźniak ma przestać być wizualizacją, a stać się odzwierciedleniem rzeczywistej produkcji. Do tego potrzebne są dane. I tu kluczową rolę odgrywa system klasy MES.'
-coverImage: '/images/omniandomniverse-c4MT.jpg'
+coverImage: '/images/omniandomniverse-E4Nj.png'
 lang: 'pl'
 tags: [{"label":"nvidia","value":"nvidia"},{"label":"omniverse","value":"omniverse"},{"value":"omniMES","label":"OmniMES"},{"value":"mesSystem","label":"MES System"},{"value":"mes","label":"MES"},{"value":"omnimes","label":"Omnimes"}]
 publishedAt: '2026-02-02T10:53:49.000Z'
@@ -145,3 +144,8 @@ NVIDIA Omniverse pozwala te dane:
 - zasymulować przyszłość produkcji.
 
 Razem tworzą system. Osobno – tylko narzędzia.
+
+**Chcesz więcej odwiedź?**
+
+- [Discover OmniMES capabilities](https://www.omnimes.com)
+- [Explore NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/)
