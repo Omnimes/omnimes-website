@@ -5,9 +5,8 @@ author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-MzNj.jpg'
 slug: 'how-mes-systems-feed-digital-twins-in-nvidia-omniverse-with-production-data'
-description: 'Digital twins are increasingly appearing in modern factory strategies. Process simulations, virtual production lines, scenario testing without the risk of stopping production – this sounds like the future of manufacturing. One of the most recognizable tools in this area is NVIDIA Omniverse.
-The problem begins when a digital twin is supposed to stop being a visualization and become a reflection of actual production. For this, data is needed. And this is where MES-class systems play a key role.'
-coverImage: '/images/omniandomniverse-I4OT.jpg'
+description: 'Digital twins are increasingly appearing in modern factory strategies. Process simulations, virtual production lines, scenario testing without the risk of stopping production – this sounds like the future of manufacturing. One of the most recognizable tools in this area is NVIDIA Omniverse. The problem begins when a digital twin is supposed to stop being a visualization and become a reflection of actual production. For this, data is needed. And this is where MES-class systems play a key role.'
+coverImage: '/images/omniandomniverse-c5Mj.png'
 lang: 'en'
 tags: [{"value":"nvidia","label":"nvidia"},{"value":"omniverse","label":"omniverse"},{"value":"omniMES","label":"OmniMES"},{"value":"mesSystem","label":"MES System"},{"value":"digitalTwin","label":"Digital Twin"},{"value":"mes","label":"MES"}]
 publishedAt: '2026-02-02T11:10:55.000Z'
