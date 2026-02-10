@@ -1,6 +1,6 @@
 {
-  "commit": "0e846feaa401bb341a4d00a14b25912c4eb90cd3",
-  "generated": "2026-02-03T11:22:03.369Z",
+  "commit": "11ce2f18dee825a7aa72f703541983e9587ec1dc",
+  "generated": "2026-02-10T13:24:55.934Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4604,6 +4604,39 @@
         }
       ],
       "title": "Jak system MES zasila cyfrowego bliźniaka w NVIDIA Omniverse danymi produkcyjnymi"
+    },
+    {
+      "__outstatic": {
+        "commit": "11ce2f18dee825a7aa72f703541983e9587ec1dc",
+        "hash": "177652029",
+        "path": "outstatic/content/posts/fizyczna-rewolucja-ai-jak-sieci-napedzaja-ere-inteligentnych-maszyn.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-cxNT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/robotics-gxOD.png",
+      "description": "Wyobraź sobie robota magazynowego przemieszczającego się z pełną prędkością między regałami, albo portowy żuraw precyzyjnie układający kontenery co do milimetra. To nie są maszyny działające według z góry napisanego skryptu – to systemy AI podejmujące decyzje w czasie rzeczywistym. Właśnie tak wygląda era Fizycznej AI.\nFizyczna AI to inteligentne systemy zdolne do postrzegania, interpretowania i działania w prawdziwym świecie. Autonomiczne pojazdy nawigujące w miejskim ruchu, ramiona robotyczne składające komponenty z chirurgiczną precyzją, inteligentne sieci energetyczne reagujące w czasie rzeczywistym na zmiany obciążenia – to tylko kilka przykładów.",
+      "lang": "pl",
+      "publishedAt": "2026-02-09T13:21:07.000Z",
+      "slug": "fizyczna-rewolucja-ai-jak-sieci-napedzaja-ere-inteligentnych-maszyn",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Digital Twin",
+          "value": "digitalTwin"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        }
+      ],
+      "title": "Fizyczna rewolucja AI: jak sieci napędzają erę inteligentnych maszyn"
     }
   ]
 }
