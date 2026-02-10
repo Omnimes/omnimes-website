@@ -1,6 +1,6 @@
 {
-  "commit": "11ce2f18dee825a7aa72f703541983e9587ec1dc",
-  "generated": "2026-02-10T13:24:55.934Z",
+  "commit": "d810a1ed2c71e37b371846dc384706e6b85449a0",
+  "generated": "2026-02-10T13:26:50.691Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4637,6 +4637,39 @@
         }
       ],
       "title": "Fizyczna rewolucja AI: jak sieci napędzają erę inteligentnych maszyn"
+    },
+    {
+      "__outstatic": {
+        "commit": "d810a1ed2c71e37b371846dc384706e6b85449a0",
+        "hash": "2147026077",
+        "path": "outstatic/content/posts/the-physical-ai-revolution-how-networks-power-the-age-of-intelligent-machines.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-UxMz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/robotics-QzNj.png",
+      "description": "Picture a warehouse robot navigating the aisles at full speed, or a port crane stacking containers with millimeter-level precision. These aren't machines running pre-written scripts — they're AI systems making decisions in real time. This is what the era of Physical AI looks like.\nPhysical AI refers to intelligent systems capable of sensing, interpreting, and acting in the real world. Autonomous vehicles weaving through city traffic, robotic arms assembling components with surgical accuracy, smart energy grids responding instantly to load changes — these are just a few examples.",
+      "lang": "en",
+      "publishedAt": "2026-02-09T13:31:06.000Z",
+      "slug": "the-physical-ai-revolution-how-networks-power-the-age-of-intelligent-machines",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Digital Twin",
+          "value": "digitalTwin"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        }
+      ],
+      "title": "The Physical AI Revolution: How Networks Power the Age of Intelligent Machines"
     }
   ]
 }
