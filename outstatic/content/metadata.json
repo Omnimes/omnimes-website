@@ -1,6 +1,6 @@
 {
-  "commit": "d810a1ed2c71e37b371846dc384706e6b85449a0",
-  "generated": "2026-02-10T13:26:50.691Z",
+  "commit": "e410dc41a9a5b00cf0818e09f9d4b687f8680141",
+  "generated": "2026-02-18T12:14:42.357Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4670,6 +4670,43 @@
         }
       ],
       "title": "The Physical AI Revolution: How Networks Power the Age of Intelligent Machines"
+    },
+    {
+      "__outstatic": {
+        "commit": "e410dc41a9a5b00cf0818e09f9d4b687f8680141",
+        "hash": "2213021457",
+        "path": "outstatic/content/posts/jak-skomunikowac-starsze-maszyny-produkcyjne-z-systemem-mes.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-QxMT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/starszy-park-I0ND.png",
+      "description": "W wielu zakładach produkcyjnych obok nowoczesnych linii pracują maszyny, które mają kilkanaście, a czasem nawet kilkadziesiąt lat. Choć często są one nadal sprawne mechanicznie i technologicznie, to ich największym ograniczeniem bywa brak komunikacji cyfrowej. W efekcie przedsiębiorstwa, które chcą wdrażać nowoczesne systemy MES, stają przed pytaniem: czy starsze urządzenia można skutecznie zintegrować z cyfrowym środowiskiem produkcji?\nOdpowiedź brzmi: tak — i co więcej, istnieje kilka sprawdzonych sposobów na ich podłączenie, które pozwalają uzyskać dane niezbędne do analizy efektywności i optymalizacji procesów.",
+      "lang": "pl",
+      "publishedAt": "2026-02-16T12:17:00.000Z",
+      "slug": "jak-skomunikowac-starsze-maszyny-produkcyjne-z-systemem-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "Technologie MES",
+          "value": "mes-technologies"
+        }
+      ],
+      "title": "Jak skomunikować starsze maszyny produkcyjne z systemem MES?"
     }
   ]
 }
