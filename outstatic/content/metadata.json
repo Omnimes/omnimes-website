@@ -1,6 +1,6 @@
 {
-  "commit": "e410dc41a9a5b00cf0818e09f9d4b687f8680141",
-  "generated": "2026-02-18T12:14:42.357Z",
+  "commit": "91e5f0a360a07cbeb19f4bee089cef3876fcb2b3",
+  "generated": "2026-02-18T12:25:51.346Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4707,6 +4707,39 @@
         }
       ],
       "title": "Jak skomunikować starsze maszyny produkcyjne z systemem MES?"
+    },
+    {
+      "__outstatic": {
+        "commit": "91e5f0a360a07cbeb19f4bee089cef3876fcb2b3",
+        "hash": "3724532033",
+        "path": "outstatic/content/posts/how-to-connect-legacy-production-machines-to-an-mes-system.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-A4Nz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/starszy-park-A1MD.png",
+      "description": "Why Connect Older Machines to an MES System?\nLegacy machines are often a crucial part of the production fleet, yet their actual performance frequently remains unknown. Data is collected manually, reports are delayed or missing entirely, and operational decisions rely on experience rather than facts.\n",
+      "lang": "en",
+      "publishedAt": "2026-02-16T12:29:53.000Z",
+      "slug": "how-to-connect-legacy-production-machines-to-an-mes-system",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Technologie MES",
+          "value": "mes-technologies"
+        }
+      ],
+      "title": "How to Connect Legacy Production Machines to an MES System?"
     }
   ]
 }
