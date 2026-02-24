@@ -1,6 +1,6 @@
 {
-  "commit": "91e5f0a360a07cbeb19f4bee089cef3876fcb2b3",
-  "generated": "2026-02-18T12:25:51.346Z",
+  "commit": "3abf462277a3fb34c82676600beb9be89a80052e",
+  "generated": "2026-02-24T09:29:23.895Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4740,6 +4740,39 @@
         }
       ],
       "title": "How to Connect Legacy Production Machines to an MES System?"
+    },
+    {
+      "__outstatic": {
+        "commit": "3abf462277a3fb34c82676600beb9be89a80052e",
+        "hash": "701576960",
+        "path": "outstatic/content/posts/ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I4Nj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/hbgjbulxaaapaaz-E3Mj.jpeg",
+      "description": "AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych.\nW dyskusjach o Przemyśle 4.0 i 5.0 bardzo często pojawia się argument, że modele AI osiągają około 90% trafności, a w środowisku przemysłowym nawet 10% błędu może oznaczać milionowe straty. Argument brzmi racjonalnie — operuje liczbami i odwołuje się do realnego ryzyka operacyjnego.\nProblem polega na tym, że ten argument zakłada istnienie w pełni zdigitalizowanej fabryki.",
+      "lang": "pl",
+      "publishedAt": "2026-02-23T09:29:06.000Z",
+      "slug": "ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        }
+      ],
+      "title": "AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych."
     }
   ]
 }
