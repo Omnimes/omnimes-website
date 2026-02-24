@@ -6,11 +6,9 @@ author:
   picture: '/images/1645307189660-I4Nj.jpg'
 slug: 'ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych'
 description: 'AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych.
-
 W dyskusjach o Przemyśle 4.0 i 5.0 bardzo często pojawia się argument, że modele AI osiągają około 90% trafności, a w środowisku przemysłowym nawet 10% błędu może oznaczać milionowe straty. Argument brzmi racjonalnie — operuje liczbami i odwołuje się do realnego ryzyka operacyjnego.
-
 Problem polega na tym, że ten argument zakłada istnienie w pełni zdigitalizowanej fabryki.'
-coverImage: '/images/hbgjbulxaaapaaz-E3Mj.jpeg'
+coverImage: '/images/hbgjbulxaaapaaz-E2Mj.jpeg'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"mes","label":"MES"},{"value":"omniMES","label":"OmniMES"}]
 publishedAt: '2026-02-23T09:29:06.000Z'

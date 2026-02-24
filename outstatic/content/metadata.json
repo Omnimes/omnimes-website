@@ -1,6 +1,6 @@
 {
-  "commit": "67bdb794c773384aec3dd12d3e5d4d88d6f83196",
-  "generated": "2026-02-24T09:35:31.832Z",
+  "commit": "6aa8d562d973a20e3ecfc345004176946cb7bf64",
+  "generated": "2026-02-24T09:36:01.985Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4743,39 +4743,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3abf462277a3fb34c82676600beb9be89a80052e",
-        "hash": "701576960",
-        "path": "outstatic/content/posts/ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-I4Nj.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/hbgjbulxaaapaaz-E3Mj.jpeg",
-      "description": "AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych.\nW dyskusjach o Przemyśle 4.0 i 5.0 bardzo często pojawia się argument, że modele AI osiągają około 90% trafności, a w środowisku przemysłowym nawet 10% błędu może oznaczać milionowe straty. Argument brzmi racjonalnie — operuje liczbami i odwołuje się do realnego ryzyka operacyjnego.\nProblem polega na tym, że ten argument zakłada istnienie w pełni zdigitalizowanej fabryki.",
-      "lang": "pl",
-      "publishedAt": "2026-02-23T09:29:06.000Z",
-      "slug": "ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "AI"
-        },
-        {
-          "label": "MES",
-          "value": "mes"
-        },
-        {
-          "label": "OmniMES",
-          "value": "omniMES"
-        }
-      ],
-      "title": "AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych."
-    },
-    {
-      "__outstatic": {
         "commit": "67bdb794c773384aec3dd12d3e5d4d88d6f83196",
         "hash": "4151590401",
         "path": "outstatic/content/posts/ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity.md"
@@ -4806,6 +4773,39 @@
         }
       ],
       "title": "AI in manufacturing: the real issue isn’t 90% accuracy. It’s data maturity."
+    },
+    {
+      "__outstatic": {
+        "commit": "6aa8d562d973a20e3ecfc345004176946cb7bf64",
+        "hash": "842727354",
+        "path": "outstatic/content/posts/ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I4Nj.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/hbgjbulxaaapaaz-E2Mj.jpeg",
+      "description": "AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych. W dyskusjach o Przemyśle 4.0 i 5.0 bardzo często pojawia się argument, że modele AI osiągają około 90% trafności, a w środowisku przemysłowym nawet 10% błędu może oznaczać milionowe straty. Argument brzmi racjonalnie — operuje liczbami i odwołuje się do realnego ryzyka operacyjnego. Problem polega na tym, że ten argument zakłada istnienie w pełni zdigitalizowanej fabryki.",
+      "lang": "pl",
+      "publishedAt": "2026-02-23T09:29:06.000Z",
+      "slug": "ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        }
+      ],
+      "title": "AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych."
     }
   ]
 }
