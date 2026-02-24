@@ -1,6 +1,6 @@
 {
-  "commit": "6aa8d562d973a20e3ecfc345004176946cb7bf64",
-  "generated": "2026-02-24T09:39:06.502Z",
+  "commit": "fced1147fe12592ed3618166ba93739551ac6889",
+  "generated": "2026-02-24T09:39:57.341Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4743,39 +4743,6 @@
     },
     {
       "__outstatic": {
-        "commit": "67bdb794c773384aec3dd12d3e5d4d88d6f83196",
-        "hash": "4151590401",
-        "path": "outstatic/content/posts/ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-QzNz.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/hbgjbulxaaapaaz-MxMz.jpeg",
-      "description": "In Industry 4.0 and 5.0 discussions, a common argument appears: AI models reach around 90% accuracy, and in industrial environments a 10% error can cost millions. The reasoning sounds compelling because it is framed numerically and linked to operational risk. However, this argument assumes something critical — the existence of a fully digitized factory. In reality, across many manufacturing plants in Poland and Europe — especially in the SME sector — that level of digital maturity simply does not exist.",
-      "lang": "en",
-      "publishedAt": "2026-02-23T09:35:34.000Z",
-      "slug": "ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "AI"
-        },
-        {
-          "label": "OmniMES",
-          "value": "omniMES"
-        },
-        {
-          "label": "MES",
-          "value": "mes"
-        }
-      ],
-      "title": "AI in manufacturing: the real issue isn’t 90% accuracy. It’s data maturity."
-    },
-    {
-      "__outstatic": {
         "commit": "6aa8d562d973a20e3ecfc345004176946cb7bf64",
         "hash": "4100572762",
         "path": "outstatic/content/posts/ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych.md"
@@ -4806,6 +4773,39 @@
         }
       ],
       "title": "AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych."
+    },
+    {
+      "__outstatic": {
+        "commit": "fced1147fe12592ed3618166ba93739551ac6889",
+        "hash": "3814401705",
+        "path": "outstatic/content/posts/ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-QzNz.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/hbgjbulxaaapaaz-MxMz.jpeg",
+      "description": "In Industry 4.0 and 5.0 discussions, a common argument appears: AI models reach around 90% accuracy, and in industrial environments a 10% error can cost millions. The reasoning sounds compelling because it is framed numerically and linked to operational risk. However, this argument assumes something critical — the existence of a fully digitized factory. In reality, across many manufacturing plants in Poland and Europe — especially in the SME sector — that level of digital maturity simply does not exist.",
+      "lang": "en",
+      "publishedAt": "2026-02-23T09:35:34.000Z",
+      "slug": "ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        }
+      ],
+      "title": "AI in manufacturing: the real issue isn’t 90% accuracy. It’s data maturity."
     }
   ]
 }

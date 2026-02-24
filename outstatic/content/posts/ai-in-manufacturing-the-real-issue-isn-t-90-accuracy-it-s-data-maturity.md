@@ -5,9 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-QzNz.jpg'
 slug: 'ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity'
-description: 'In Industry 4.0 and 5.0 discussions, a common argument appears: AI models reach around 90% accuracy, and in industrial environments a 10% error can cost millions. The reasoning sounds compelling because it is framed numerically and linked to operational risk.
-However, this argument assumes something critical — the existence of a fully digitized factory.
-In reality, across many manufacturing plants in Poland and Europe — especially in the SME sector — that level of digital maturity simply does not exist.'
+description: 'In Industry 4.0 and 5.0 discussions, a common argument appears: AI models reach around 90% accuracy, and in industrial environments a 10% error can cost millions. The reasoning sounds compelling because it is framed numerically and linked to operational risk. However, this argument assumes something critical — the existence of a fully digitized factory. In reality, across many manufacturing plants in Poland and Europe — especially in the SME sector — that level of digital maturity simply does not exist.'
 coverImage: '/images/hbgjbulxaaapaaz-MxMz.jpeg'
 lang: 'en'
 tags: [{"value":"AI","label":"AI"},{"value":"omniMES","label":"OmniMES"},{"value":"mes","label":"MES"}]
@@ -19,6 +17,8 @@ In Industry 4.0 and 5.0 discussions, a common argument appears: AI models reach 
 However, this argument assumes something critical — the existence of a fully digitized factory.
 
 In reality, across many manufacturing plants in Poland and Europe — especially in the SME sector — that level of digital maturity simply does not exist.
+
+![](/images/image-k1NT.png)
 
 Many factories operate in what could be described as “analog production with a digital front-end.” ERP systems are present. Production planning tools are implemented. Sometimes even BI dashboards exist. But on the shop floor:
 
@@ -35,6 +35,8 @@ Many factories operate in what could be described as “analog production with a
 In such an environment, asking whether AI achieves 90% or 95% accuracy becomes secondary. AI cannot function effectively without structured, continuous, high-quality data.
 
 ## MES as infrastructure, not optional software
+
+![](/images/image-IzNj.png)
 
 A Manufacturing Execution System is not just another IT deployment. It is the infrastructure layer that enables:
 
@@ -61,6 +63,8 @@ Importantly, measurement and visualization alone deliver significant results —
 These are gains driven by transparency and structured data — not predictive algorithms.
 
 ## The main barriers are organizational, not technological
+
+![](/images/image-E3Mz.png)
 
 Implementation experience consistently shows that transformation challenges are primarily structural:
 
