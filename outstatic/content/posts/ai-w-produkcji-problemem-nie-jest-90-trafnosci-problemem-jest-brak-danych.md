@@ -8,7 +8,7 @@ slug: 'ai-w-produkcji-problemem-nie-jest-90-trafnosci-problemem-jest-brak-danych
 description: 'AI w produkcji: problemem nie jest 90% trafności. Problemem jest brak danych.
 W dyskusjach o Przemyśle 4.0 i 5.0 bardzo często pojawia się argument, że modele AI osiągają około 90% trafności, a w środowisku przemysłowym nawet 10% błędu może oznaczać milionowe straty. Argument brzmi racjonalnie — operuje liczbami i odwołuje się do realnego ryzyka operacyjnego.
 Problem polega na tym, że ten argument zakłada istnienie w pełni zdigitalizowanej fabryki.'
-coverImage: '/images/hbgjbulxaaapaaz-E2Mj.jpeg'
+coverImage: '/images/hbgjbulxaaapaaz-Q1Nj.jpeg'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"mes","label":"MES"},{"value":"omniMES","label":"OmniMES"}]
 publishedAt: '2026-02-23T09:29:06.000Z'
@@ -21,6 +21,8 @@ W dyskusjach o Przemyśle 4.0 i 5.0 bardzo często pojawia się argument, że mo
 Problem polega na tym, że ten argument zakłada istnienie w pełni zdigitalizowanej fabryki.
 
 A w praktyce — w wielu zakładach produkcyjnych w Polsce i Europie, szczególnie w sektorze MŚP — taki poziom dojrzałości danych po prostu nie istnieje.
+
+![](/images/image-U4NT.png)
 
 Wiele firm funkcjonuje w modelu, który można określić jako „produkcja analogowa z cyfrowym front-endem”. System ERP jest. Planowanie produkcji jest. Czasem jest nawet raportowanie BI. Ale na poziomie hali produkcyjnej:
 
@@ -37,6 +39,8 @@ Wiele firm funkcjonuje w modelu, który można określić jako „produkcja anal
 W takim środowisku pytanie „czy AI osiągnie 90% czy 95% trafności?” jest wtórne. AI nie ma spójnych, ciągłych danych, na których mogłoby budować wiarygodne modele.
 
 ## MES jako fundament transformacji
+
+![](/images/image-AwNT.png)
 
 System MES nie jest kolejnym „narzędziem IT do wdrożenia”. Jest warstwą infrastrukturalną, która umożliwia:
 
@@ -63,6 +67,8 @@ Co istotne — już sama implementacja pomiaru i wizualizacji przynosi wymierne 
 To efekty wynikające z transparentności i dostępu do danych. Nie z algorytmów predykcyjnych.
 
 ## Największe bariery? Organizacyjne i infrastrukturalne.
+
+![](/images/image-MwMz.png)
 
 Z doświadczeń wdrożeniowych wynika jasno, że największe przeszkody transformacji nie są technologiczne.
 
