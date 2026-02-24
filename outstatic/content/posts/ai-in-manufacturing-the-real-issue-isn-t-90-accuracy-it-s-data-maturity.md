@@ -6,11 +6,9 @@ author:
   picture: '/images/1645307189660-QzNz.jpg'
 slug: 'ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity'
 description: 'In Industry 4.0 and 5.0 discussions, a common argument appears: AI models reach around 90% accuracy, and in industrial environments a 10% error can cost millions. The reasoning sounds compelling because it is framed numerically and linked to operational risk.
-
 However, this argument assumes something critical — the existence of a fully digitized factory.
-
 In reality, across many manufacturing plants in Poland and Europe — especially in the SME sector — that level of digital maturity simply does not exist.'
-coverImage: '/images/hbgjbulxaaapaaz-k3Mz.jpeg'
+coverImage: '/images/hbgjbulxaaapaaz-MxMz.jpeg'
 lang: 'en'
 tags: [{"value":"AI","label":"AI"},{"value":"omniMES","label":"OmniMES"},{"value":"mes","label":"MES"}]
 publishedAt: '2026-02-23T09:35:34.000Z'
