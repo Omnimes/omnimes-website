@@ -1,6 +1,6 @@
 {
-  "commit": "fced1147fe12592ed3618166ba93739551ac6889",
-  "generated": "2026-02-24T09:39:57.341Z",
+  "commit": "733721adec91a729b08dfc157d6ff5fe0337c83d",
+  "generated": "2026-03-05T07:57:01.549Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4806,6 +4806,39 @@
         }
       ],
       "title": "AI in manufacturing: the real issue isn’t 90% accuracy. It’s data maturity."
+    },
+    {
+      "__outstatic": {
+        "commit": "733721adec91a729b08dfc157d6ff5fe0337c83d",
+        "hash": "381233628",
+        "path": "outstatic/content/posts/2026-rok-w-ktorym-agentic-ai-zmienia-przemysl-produkcyjny.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/ai_2026_agents-I1MD.png",
+      "description": "W globalnym przemyśle produkcyjnym coraz wyraźniej widać jedną prawidłowość: niestabilność przestała być czymś, na co można się przygotować — stała się środowiskiem, w którym firmy muszą codziennie funkcjonować.\nOrganizacje mierzą się dziś jednocześnie z wieloma wyzwaniami:\nnapięciami geopolitycznymi,\nzakłóceniami w łańcuchach dostaw,\nrosnącymi wymaganiami regulacyjnymi,\noraz coraz większymi oczekiwaniami klientów.\nKażdy z tych czynników wpływa bezpośrednio na proces produkcyjny — od planowania po realizację. W takich warunkach firmy, które zbudowały solidne fundamenty cyfrowe, mają znaczącą przewagę konkurencyjną.",
+      "lang": "pl",
+      "publishedAt": "2026-03-02T07:54:42.000Z",
+      "slug": "2026-rok-w-ktorym-agentic-ai-zmienia-przemysl-produkcyjny",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        }
+      ],
+      "title": "2026: Rok, w którym Agentic AI zmienia przemysł produkcyjny"
     }
   ]
 }
