@@ -1,6 +1,6 @@
 {
-  "commit": "733721adec91a729b08dfc157d6ff5fe0337c83d",
-  "generated": "2026-03-05T07:57:01.549Z",
+  "commit": "c7bb968588de886123478f829cf527cb8a06c02a",
+  "generated": "2026-03-05T07:59:43.808Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4839,6 +4839,39 @@
         }
       ],
       "title": "2026: Rok, w którym Agentic AI zmienia przemysł produkcyjny"
+    },
+    {
+      "__outstatic": {
+        "commit": "c7bb968588de886123478f829cf527cb8a06c02a",
+        "hash": "3504221569",
+        "path": "outstatic/content/posts/2026-the-year-agentic-ai-transforms-industrial-manufacturing.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-ExOT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/ai_2026_agents-Y4Mj.png",
+      "description": "Across global manufacturing, one theme has become increasingly clear: volatility is no longer something companies plan around — it is the environment they operate within.\nManufacturers today face a complex combination of challenges:\ngeopolitical uncertainty,\nongoing supply-chain disruptions,\nincreasing regulatory pressure,\nrising customer expectations.\nEach of these forces affects the entire production cycle — from planning and procurement to execution and delivery. In such conditions, organizations that have built strong digital foundations gain a significant competitive advantage.",
+      "lang": "en",
+      "publishedAt": "2026-03-02T08:03:15.000Z",
+      "slug": "2026-the-year-agentic-ai-transforms-industrial-manufacturing",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        }
+      ],
+      "title": "2026: The Year Agentic AI Transforms Industrial Manufacturing"
     }
   ]
 }
