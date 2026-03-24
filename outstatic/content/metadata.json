@@ -1,6 +1,6 @@
 {
-  "commit": "9f01a12433443b7f3f6e4ed44dea9b1736dcaf94",
-  "generated": "2026-03-24T09:39:27.323Z",
+  "commit": "dd44a372d137102161db3fe8c533dee971e91d15",
+  "generated": "2026-03-24T09:41:18.852Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4941,8 +4941,8 @@
     },
     {
       "__outstatic": {
-        "commit": "9f01a12433443b7f3f6e4ed44dea9b1736dcaf94",
-        "hash": "3415272566",
+        "commit": "dd44a372d137102161db3fe8c533dee971e91d15",
+        "hash": "677664518",
         "path": "outstatic/content/posts/dlaczego-dane-z-produkcji-nie-sa-wiarygodne-najczestsze-bledy-w-raportowaniu-i-jak-rozwiazuje-je-mes.md"
       },
       "author": {
@@ -4951,7 +4951,7 @@
       },
       "collection": "posts",
       "coverImage": "/images/industry-data-gyNj.png",
-      "description": "W nowoczesnym przemyśle dane stały się jednym z najważniejszych zasobów przedsiębiorstwa. To właśnie na ich podstawie podejmowane są decyzje dotyczące planowania produkcji, optymalizacji kosztów, inwestycji w maszyny czy organizacji pracy. Nie bez powodu mówi się dziś, że dane są paliwem Przemysłu 4.0.\nProblem polega jednak na tym, że w wielu zakładach produkcyjnych dane wcale nie są tak wiarygodne, jak mogłoby się wydawać. Raporty nie zgadzają się z rzeczywistością, wyniki OEE są trudne do porównania, a informacje o przestojach czy wydajności często powstają na podstawie ręcznych zapisów. W efekcie przedsiębiorstwo podejmuje decyzje w oparciu o niepełny lub zniekształcony obraz sytuacji.\nDlatego jednym z pierwszych kroków w kierunku Przemysłu 4.0 jest uporządkowanie sposobu zbierania danych i wdrożenie systemu MES, który zapewnia ich spójność, aktualność i wiarygodność.",
+      "description": "W nowoczesnym przemyśle dane stały się jednym z najważniejszych zasobów przedsiębiorstwa. To właśnie na ich podstawie podejmowane są decyzje dotyczące planowania produkcji, optymalizacji kosztów, inwestycji w maszyny czy organizacji pracy. Nie bez powodu mówi się dziś, że dane są paliwem Przemysłu 4.0. Problem polega jednak na tym, że w wielu zakładach produkcyjnych dane wcale nie są tak wiarygodne, jak mogłoby się wydawać. Raporty nie zgadzają się z rzeczywistością, wyniki OEE są trudne do porównania, a informacje o przestojach czy wydajności często powstają na podstawie ręcznych zapisów. W efekcie przedsiębiorstwo podejmuje decyzje w oparciu o niepełny lub zniekształcony obraz sytuacji. Dlatego jednym z pierwszych kroków w kierunku Przemysłu 4.0 jest uporządkowanie sposobu zbierania danych i wdrożenie systemu MES, który zapewnia ich spójność, aktualność i wiarygodność.",
       "lang": "pl",
       "publishedAt": "2026-03-16T09:42:12.000Z",
       "slug": "dlaczego-dane-z-produkcji-nie-sa-wiarygodne-najczestsze-bledy-w-raportowaniu-i-jak-rozwiazuje-je-mes",
