@@ -649,6 +649,14 @@
         {
           "value": "agentAi",
           "label": "AGENT AI"
+        },
+        {
+          "value": "daneProdukcyjne",
+          "label": "Dane produkcyjne"
+        },
+        {
+          "value": "omnnimes",
+          "label": "Omnnimes"
         }
       ]
     },
