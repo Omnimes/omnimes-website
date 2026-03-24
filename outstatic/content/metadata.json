@@ -1,6 +1,6 @@
 {
-  "commit": "858d3cf1b62e359ecd53bb2e9fc8ed0c5c3c36ed",
-  "generated": "2026-03-24T09:43:46.894Z",
+  "commit": "8c0b213e911d5264554c913821fb86d754148455",
+  "generated": "2026-03-24T09:56:48.357Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4908,39 +4908,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1e576b385694bb5069733692b846541e406a8439",
-        "hash": "2250268328",
-        "path": "outstatic/content/posts/pilot-mes-implementation-how-to-start-and-why-a-phased-approach-works-best.md"
-      },
-      "author": {
-        "name": "Szymon Rewilak",
-        "picture": "/images/photo-I4ND.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/pilot-M0Mj.png",
-      "description": "Implementing a Manufacturing Execution System (MES) rarely begins with a full-scale rollout across the entire production environment. In practice, the most effective approach is incremental—starting with a pilot implementation on a selected production line or area. This allows companies to validate the system in real operating conditions, collect data, and fine-tune the configuration before scaling across the entire machine park.\nMore and more organizations choose a pilot not only for technical reasons but also for organizational ones. MES impacts the daily work of operators, production managers, maintenance teams, and planners. Therefore, implementation should be a controlled process rather than a one-time deployment.",
-      "lang": "en",
-      "publishedAt": "2026-03-09T09:38:58.000Z",
-      "slug": "pilot-mes-implementation-how-to-start-and-why-a-phased-approach-works-best",
-      "status": "published",
-      "tags": [
-        {
-          "label": "OmniMES",
-          "value": "omniMES"
-        },
-        {
-          "label": "MES System",
-          "value": "mesSystem"
-        },
-        {
-          "label": "Wydajność produkcji",
-          "value": "production-efficiency"
-        }
-      ],
-      "title": "Pilot MES Implementation – How to Start and Why a Phased Approach Works Best"
-    },
-    {
-      "__outstatic": {
         "commit": "dd44a372d137102161db3fe8c533dee971e91d15",
         "hash": "677664518",
         "path": "outstatic/content/posts/dlaczego-dane-z-produkcji-nie-sa-wiarygodne-najczestsze-bledy-w-raportowaniu-i-jak-rozwiazuje-je-mes.md"
@@ -5004,6 +4971,39 @@
         }
       ],
       "title": "Data as the Foundation of Industry 4.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "8c0b213e911d5264554c913821fb86d754148455",
+        "hash": "3243127971",
+        "path": "outstatic/content/posts/pilot-mes-implementation-how-to-start-and-why-a-phased-approach-works-best.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-I4ND.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pilot-M0Mj.png",
+      "description": "Implementing a Manufacturing Execution System (MES) rarely begins with a full-scale rollout across the entire production environment. In practice, the most effective approach is incremental—starting with a pilot implementation on a selected production line or area. This allows companies to validate the system in real operating conditions, collect data, and fine-tune the configuration before scaling across the entire machine park. More and more organizations choose a pilot not only for technical reasons but also for organizational ones. MES impacts the daily work of operators, production managers, maintenance teams, and planners. Therefore, implementation should be a controlled process rather than a one-time deployment.",
+      "lang": "en",
+      "publishedAt": "2026-03-09T09:38:58.000Z",
+      "slug": "pilot-mes-implementation-how-to-start-and-why-a-phased-approach-works-best",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Wydajność produkcji",
+          "value": "production-efficiency"
+        }
+      ],
+      "title": "Pilot MES Implementation – How to Start and Why a Phased Approach Works Best"
     }
   ]
 }

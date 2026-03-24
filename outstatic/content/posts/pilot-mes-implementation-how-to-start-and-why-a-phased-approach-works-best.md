@@ -6,14 +6,12 @@ author:
   picture: '/images/photo-I4ND.jpg'
 slug: 'pilot-mes-implementation-how-to-start-and-why-a-phased-approach-works-best'
 description: 'Implementing a Manufacturing Execution System (MES) rarely begins with a full-scale rollout across the entire production environment. In practice, the most effective approach is incremental—starting with a pilot implementation on a selected production line or area. This allows companies to validate the system in real operating conditions, collect data, and fine-tune the configuration before scaling across the entire machine park.
-
 More and more organizations choose a pilot not only for technical reasons but also for organizational ones. MES impacts the daily work of operators, production managers, maintenance teams, and planners. Therefore, implementation should be a controlled process rather than a one-time deployment.'
 coverImage: '/images/pilot-M0Mj.png'
 lang: 'en'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"mesSystem","label":"MES System"},{"value":"production-efficiency","label":"Wydajność produkcji"}]
 publishedAt: '2026-03-09T09:38:58.000Z'
 ---
-
 
 Implementing a Manufacturing Execution System (MES) rarely begins with a full-scale rollout across the entire production environment. In practice, the most effective approach is incremental—starting with a pilot implementation on a selected production line or area. This allows companies to validate the system in real operating conditions, collect data, and fine-tune the configuration before scaling across the entire machine park.
 
@@ -132,5 +130,5 @@ OmniMES is designed exactly for this approach—from rapid start, through pilot,
 
 ---
 
-👉 Want to see what a pilot could look like in your company?\
-Try OmniCloud and test OmniMES in real conditions—without high initial costs.
+Want to see what a pilot could look like in your company?\
+Try [OmniCloud](https://cloud.omnimes.com/) and test [OmniMES](https://www.omnimes.com/en) in real conditions—without high initial costs.
