@@ -1,6 +1,6 @@
 {
   "commit": "8c0b213e911d5264554c913821fb86d754148455",
-  "generated": "2026-03-24T09:56:48.357Z",
+  "generated": "2026-03-24T09:58:09.235Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4975,7 +4975,7 @@
     {
       "__outstatic": {
         "commit": "8c0b213e911d5264554c913821fb86d754148455",
-        "hash": "3243127971",
+        "hash": "237071928",
         "path": "outstatic/content/posts/pilot-mes-implementation-how-to-start-and-why-a-phased-approach-works-best.md"
       },
       "author": {
@@ -4999,8 +4999,8 @@
           "value": "mesSystem"
         },
         {
-          "label": "Wydajność produkcji",
-          "value": "production-efficiency"
+          "label": "Production efficiency",
+          "value": "productionEfficiency"
         }
       ],
       "title": "Pilot MES Implementation – How to Start and Why a Phased Approach Works Best"

@@ -9,7 +9,7 @@ description: 'Implementing a Manufacturing Execution System (MES) rarely begins 
 More and more organizations choose a pilot not only for technical reasons but also for organizational ones. MES impacts the daily work of operators, production managers, maintenance teams, and planners. Therefore, implementation should be a controlled process rather than a one-time deployment.'
 coverImage: '/images/pilot-M0Mj.png'
 lang: 'en'
-tags: [{"value":"omniMES","label":"OmniMES"},{"value":"mesSystem","label":"MES System"},{"value":"production-efficiency","label":"Wydajność produkcji"}]
+tags: [{"value":"omniMES","label":"OmniMES"},{"value":"mesSystem","label":"MES System"},{"value":"productionEfficiency","label":"Production efficiency"}]
 publishedAt: '2026-03-09T09:38:58.000Z'
 ---
 
