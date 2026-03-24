@@ -1,6 +1,6 @@
 {
-  "commit": "7ac303f1f444f3a2fb35e4813ba73021d0a06e17",
-  "generated": "2026-03-24T10:26:55.130Z",
+  "commit": "4b2ca25f24bfde03b0bcaba076e0a5f8286755aa",
+  "generated": "2026-03-24T10:40:23.454Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5037,6 +5037,39 @@
         }
       ],
       "title": "Agenci AI w Przemyśle 5.0: Od Automatyzacji do Autonomii"
+    },
+    {
+      "__outstatic": {
+        "commit": "4b2ca25f24bfde03b0bcaba076e0a5f8286755aa",
+        "hash": "4223727965",
+        "path": "outstatic/content/posts/ai-agents-in-industry-4-0-from-automation-to-autonomy.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-U4MD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/6710d7dc-cbbf-442a-b95b-380358d35ecf-M3Nj.png",
+      "description": "Agentic AI is redefining the trajectory of Industry 4.0. Traditional systems have largely been reactive—analyzing data and supporting human decision-making. Today, a new paradigm is emerging: autonomous agents that independently make decisions, optimize processes, and adapt to changes in real time.\nIn modern smart factories, these systems integrate with MES, IIoT, and ERP platforms to create self-optimizing environments. Machines no longer wait for instructions—they identify issues, anticipate disruptions, and act before production is affected.",
+      "lang": "en",
+      "publishedAt": "2026-03-23T10:42:38.000Z",
+      "slug": "ai-agents-in-industry-4-0-from-automation-to-autonomy",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        }
+      ],
+      "title": "AI Agents in Industry 4.0: From Automation to Autonomy"
     }
   ]
 }
