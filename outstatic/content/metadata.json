@@ -1,6 +1,6 @@
 {
-  "commit": "8c0b213e911d5264554c913821fb86d754148455",
-  "generated": "2026-03-24T09:58:09.235Z",
+  "commit": "7ac303f1f444f3a2fb35e4813ba73021d0a06e17",
+  "generated": "2026-03-24T10:26:55.130Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5004,6 +5004,39 @@
         }
       ],
       "title": "Pilot MES Implementation – How to Start and Why a Phased Approach Works Best"
+    },
+    {
+      "__outstatic": {
+        "commit": "7ac303f1f444f3a2fb35e4813ba73021d0a06e17",
+        "hash": "3960721953",
+        "path": "outstatic/content/posts/agenci-ai-w-przemysle-5-0-od-automatyzacji-do-autonomii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-YzNT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/6710d7dc-cbbf-442a-b95b-380358d35ecf-U0OD.png",
+      "description": "Agentyczne AI (agentic AI) wyznacza nowy etap rozwoju Przemysłu 4.0. Dotychczasowe systemy były głównie reaktywne — analizowały dane i wspierały decyzje człowieka. Dziś pojawia się nowy paradygmat: autonomiczne „agenty”, które samodzielnie podejmują decyzje, optymalizują procesy i adaptują się do zmian w czasie rzeczywistym.\nW nowoczesnych fabrykach systemy te integrują się z MES, IIoT oraz ERP, tworząc środowiska typu self-optimizing. Maszyny nie czekają już na polecenia — identyfikują problemy, przewidują zdarzenia i reagują zanim wpłyną one na produkcję.",
+      "lang": "pl",
+      "publishedAt": "2026-03-23T10:20:57.000Z",
+      "slug": "agenci-ai-w-przemysle-5-0-od-automatyzacji-do-autonomii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "Przemysł 5.0",
+          "value": "przemysł50"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Agenci AI w Przemyśle 5.0: Od Automatyzacji do Autonomii"
     }
   ]
 }

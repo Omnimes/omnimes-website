@@ -661,6 +661,10 @@
         {
           "value": "productionData",
           "label": "Production Data"
+        },
+        {
+          "value": "przemysł50",
+          "label": "Przemysł 5.0"
         }
       ]
     },
