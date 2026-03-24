@@ -1,6 +1,6 @@
 {
-  "commit": "c7bb968588de886123478f829cf527cb8a06c02a",
-  "generated": "2026-03-05T07:59:43.808Z",
+  "commit": "2170aa7e0d46ab451e8ad84f1d237281d9f3c1ae",
+  "generated": "2026-03-24T09:29:32.877Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4872,6 +4872,39 @@
         }
       ],
       "title": "2026: The Year Agentic AI Transforms Industrial Manufacturing"
+    },
+    {
+      "__outstatic": {
+        "commit": "2170aa7e0d46ab451e8ad84f1d237281d9f3c1ae",
+        "hash": "2455506666",
+        "path": "outstatic/content/posts/pilotazowe-wdrozenie-systemu-mes-jak-zaczac-i-dlaczego-warto-zrobic-to-etapami.md"
+      },
+      "author": {
+        "name": "Szymon Rewilak",
+        "picture": "/images/photo-E3OT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pilot-k3ND.png",
+      "description": "Wdrożenie systemu MES rzadko zaczyna się od instalacji na całej produkcji. W praktyce najlepsze rezultaty przynosi podejście etapowe, w którym pierwszym krokiem jest pilotażowe wdrożenie systemu na wybranej linii lub obszarze produkcji. Takie podejście pozwala sprawdzić działanie rozwiązania w realnych warunkach, zebrać dane i dopasować konfigurację do potrzeb zakładu, zanim system zostanie rozszerzony na cały park maszynowy.\nCoraz więcej przedsiębiorstw decyduje się na pilotaż nie tylko ze względów technicznych, ale również organizacyjnych. MES wpływa na sposób pracy operatorów, kierowników produkcji, utrzymania ruchu i planowania, dlatego wdrożenie powinno być procesem kontrolowanym, a nie jednorazową instalacją.",
+      "lang": "pl",
+      "publishedAt": "2026-03-09T09:29:33.000Z",
+      "slug": "pilotazowe-wdrozenie-systemu-mes-jak-zaczac-i-dlaczego-warto-zrobic-to-etapami",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        },
+        {
+          "label": "Produkcja",
+          "value": "produkcja"
+        }
+      ],
+      "title": "Pilotażowe wdrożenie systemu MES – jak zacząć i dlaczego warto zrobić to etapami?"
     }
   ]
 }
