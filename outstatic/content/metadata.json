@@ -1,6 +1,6 @@
 {
-  "commit": "e9e0f0b38c9f8423d746b610e8cd6c368d81b5b1",
-  "generated": "2026-04-01T20:34:16.504Z",
+  "commit": "a8ec6679a5dae6333253b0e81ecf62ea3bfce06b",
+  "generated": "2026-04-01T20:38:15.084Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5089,6 +5089,25 @@
       "slug": "omnimes-nowa-wersja-juz-dostepna",
       "status": "published",
       "title": "OmniMES — nowa wersja już dostępna"
+    },
+    {
+      "__outstatic": {
+        "commit": "a8ec6679a5dae6333253b0e81ecf62ea3bfce06b",
+        "hash": "1252224853",
+        "path": "outstatic/content/news/omnimes-the-new-version-is-now-available.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/3-A3ND.png",
+      "description": "More capabilities. Faster decisions. Better control over production.\nOmniMES is entering a new level — the latest version of the system has been designed to help your teams work faster, more efficiently, and with full access to the data they need at critical moments.\nThe refreshed, intuitive interface organizes key information and eliminates unnecessary steps — bringing you exactly where you need to be, right away.",
+      "lang": "en",
+      "publishedAt": "2026-04-01T20:48:55.115Z",
+      "slug": "omnimes-the-new-version-is-now-available",
+      "status": "published",
+      "title": "OmniMES — the new version is now available"
     }
   ]
 }
