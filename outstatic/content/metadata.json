@@ -1,6 +1,6 @@
 {
-  "commit": "05bca382e452c29418d5901e3ad3c62e3f0bc021",
-  "generated": "2026-04-01T20:46:39.610Z",
+  "commit": "075299efe8366dae771d70f287ce8b72e5968426",
+  "generated": "2026-04-01T20:54:55.840Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5127,6 +5127,25 @@
       "slug": "omnienergy-zarzadzaj-energia-zanim-energia-zarzadzi-kosztami",
       "status": "published",
       "title": "OmniEnergy — zarządzaj energią, zanim energia zarządzi kosztami "
+    },
+    {
+      "__outstatic": {
+        "commit": "075299efe8366dae771d70f287ce8b72e5968426",
+        "hash": "2304385420",
+        "path": "outstatic/content/news/omnienergy-manage-energy-before-energy-manages-your-costs.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/2-g2OT.png",
+      "description": "OmniEnergy is an intelligent solution for organizations that want to truly control energy consumption and build a sustainable cost advantage.\nThe platform combines operational data with advanced energy efficiency analytics — ensuring that every decision is backed by solid numbers.",
+      "lang": "en",
+      "publishedAt": "2026-04-01T21:05:08.499Z",
+      "slug": "omnienergy-manage-energy-before-energy-manages-your-costs",
+      "status": "published",
+      "title": "OmniEnergy — manage energy before energy manages your costs"
     }
   ]
 }
