@@ -1,6 +1,6 @@
 {
-  "commit": "4b2ca25f24bfde03b0bcaba076e0a5f8286755aa",
-  "generated": "2026-03-24T10:40:23.454Z",
+  "commit": "e9e0f0b38c9f8423d746b610e8cd6c368d81b5b1",
+  "generated": "2026-04-01T20:34:16.504Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5070,6 +5070,25 @@
         }
       ],
       "title": "AI Agents in Industry 4.0: From Automation to Autonomy"
+    },
+    {
+      "__outstatic": {
+        "commit": "e9e0f0b38c9f8423d746b610e8cd6c368d81b5b1",
+        "hash": "4207919281",
+        "path": "outstatic/content/news/omnimes-nowa-wersja-juz-dostepna.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/3-IwOD.png",
+      "description": "Więcej możliwości. Szybsze decyzje. Lepsza kontrola nad produkcją.\nOmniMES wchodzi na nowy poziom — nowa wersja systemu została zaprojektowana tak, by Twoje zespoły pracowały szybciej, sprawniej i z pełnym dostępem do danych, których potrzebują w krytycznych momentach.\nOdświeżony, intuicyjny interfejs porządkuje kluczowe informacje i eliminuje zbędne kroki — od razu tam, gdzie trzeba.",
+      "lang": "pl",
+      "publishedAt": "2026-04-01T20:03:06.413Z",
+      "slug": "omnimes-nowa-wersja-juz-dostepna",
+      "status": "published",
+      "title": "OmniMES — nowa wersja już dostępna"
     }
   ]
 }
