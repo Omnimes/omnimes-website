@@ -2,7 +2,8 @@
   "Metadata": {
     "title": "OmniMES - Manufacturing Execution System",
     "description": "OmniMES is a state-of-the-art Manufacturing Execution System, streamlining production processes for enhanced efficiency and quality control",
-    "keywords": "MES system, Manufacturing Execution System, OmniMES, production digitalization, Industry 4.0, Industry 5.0, industrial automation, production efficiency, quality control, production data analytics, ERP integration, OEE optimization, production management, IIoT, predictive maintenance",    "postNotFound": "Post Not Found",
+    "keywords": "MES system, Manufacturing Execution System, OmniMES, production digitalization, Industry 4.0, Industry 5.0, industrial automation, production efficiency, quality control, production data analytics, ERP integration, OEE optimization, production management, IIoT, predictive maintenance",
+    "postNotFound": "Post Not Found",
     "blog_title": "OmniMES Blog: Explore the World of Industry 4.0",
     "blog_desc": "Discover the world of OmniMES and Industry 4.0 on our blog! Explore innovative content, learn the secrets of production efficiency and modern technologies.",
     "blog_keywords": "Industry 4.0, Manufacturing Technologies, MES Software, Innovations in Industry, Production Efficiency, Process Automation, Production Management, Enterprise Digitalization, Production Data Analysis, Modern Industrial Solutions",
@@ -89,7 +90,6 @@
     }
   },
 
-
   "Courses": {
     "title": "All Courses",
     "NotFound": "Coming soon",
@@ -113,7 +113,6 @@
     "no_date_description": "Contact us to learn about upcoming training sessions."
   },
 
-
   "cookie": {
     "message": "We use cookies for analytics and advertising personalization. You can accept all, reject, or choose categories. See details in the Privacy Policy.",
     "details": {
@@ -135,15 +134,13 @@
   "Implementation": {
     "title": "Selected implementations",
     "NotFound": "Coming soon",
-    "search":"Search..."
+    "search": "Search..."
   },
 
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, pl {Polish} en {English} de {Deutsch} other {Unknown}}"
   },
-
-
 
   "OmniEnergy": {
     "meta": {
@@ -174,7 +171,7 @@
           "value": "up to 200k PLN"
         },
         "enpi": {
-          "label": "EnPI reduction",
+          "label": "Reduction of energy consumption",
           "value": "15-25%"
         }
       }
@@ -185,83 +182,47 @@
       "dashboard": {
         "title": "Energy dashboard",
         "description": "Main starting point of the EnMS system with energy consumption charts, SEU, EnPI, action progress and threshold alerts",
-        "items": [
-          "Real-time charts",
-          "Tiles for all utilities",
-          "Alerts and notifications"
-        ]
+        "items": ["Real-time charts", "Tiles for all utilities", "Alerts and notifications"]
       },
       "sources": {
         "title": "Sources and measurement points",
         "description": "Tabular view with map/planogram of each device linked to production line and energy carrier",
-        "items": [
-          "Monitoring of all points",
-          "Sensor statuses",
-          "Planogram visualization"
-        ]
+        "items": ["Monitoring of all points", "Sensor statuses", "Planogram visualization"]
       },
       "analysis": {
         "title": "Consumption analysis",
         "description": "Daily, weekly, monthly trend charts with year-over-year comparison and SEU view",
-        "items": [
-          "Trend analysis",
-          "Pareto and heat maps",
-          "Multi-period comparisons"
-        ]
+        "items": ["Trend analysis", "Pareto and heat maps", "Multi-period comparisons"]
       },
       "enpi": {
         "title": "EnPI indicators",
         "description": "List of energy performance indicators with graphical trend view and baseline relationship",
-        "items": [
-          "kWh/piece, MJ/ton",
-          "Trends and baseline",
-          "Advanced filters"
-        ]
+        "items": ["kWh/piece, MJ/ton", "Trends and baseline", "Advanced filters"]
       },
       "enb": {
         "title": "Energy baseline (EnB)",
         "description": "Defining baseline period and its values with ability to compare with current period",
-        "items": [
-          "Baseline periods",
-          "Data normalization",
-          "Period comparisons"
-        ]
+        "items": ["Baseline periods", "Data normalization", "Period comparisons"]
       },
       "goals": {
         "title": "Energy objectives and actions",
         "description": "Board with objectives, target values, responsible persons and deadlines with implementation status",
-        "items": [
-          "Objective management",
-          "Color-coded statuses",
-          "Monthly reports"
-        ]
+        "items": ["Objective management", "Color-coded statuses", "Monthly reports"]
       },
       "audits": {
         "title": "Audits and reviews",
         "description": "Audit schedule with checklists, results history and PDF export capability",
-        "items": [
-          "Audit schedule",
-          "Audit checklists",
-          "Report export"
-        ]
+        "items": ["Audit schedule", "Audit checklists", "Report export"]
       },
       "documentation": {
         "title": "Energy documentation",
         "description": "File repository with energy policy, reports, procedures and links to ISO standards",
-        "items": [
-          "Document center",
-          "Version history",
-          "ISO 50001 compliance"
-        ]
+        "items": ["Document center", "Version history", "ISO 50001 compliance"]
       },
       "seu": {
         "title": "Significant energy uses (SEU)",
         "description": "Identification and monitoring of areas with highest energy consumption with optimization capability",
-        "items": [
-          "Pareto analysis",
-          "Action prioritization",
-          "24/7 monitoring"
-        ]
+        "items": ["Pareto analysis", "Action prioritization", "24/7 monitoring"]
       }
     },
     "iso50001": {
@@ -375,10 +336,7 @@
         "savings": {
           "label": "Estimated annual savings",
           "value": "200,000 PLN",
-          "items": [
-            "15% efficiency increase",
-            "20% energy consumption reduction"
-          ]
+          "items": ["15% efficiency increase", "20% energy consumption reduction"]
         },
         "result": {
           "label": "ROI",
@@ -526,11 +484,7 @@
         },
         {
           "title": "Operation",
-          "items": [
-            "Operational planning and control",
-            "Design",
-            "Procurement"
-          ]
+          "items": ["Operational planning and control", "Design", "Procurement"]
         },
         {
           "title": "Performance evaluation",
@@ -543,16 +497,11 @@
         },
         {
           "title": "Improvement",
-          "items": [
-            "Nonconformity and corrective action",
-            "Continual improvement"
-          ]
+          "items": ["Nonconformity and corrective action", "Continual improvement"]
         }
       ]
     }
   },
-
-
 
   "Error": {
     "title": "Something went wrong!",
@@ -609,7 +558,6 @@
     "chatDocs": "ChatDocs",
     "implementation": "Implementation",
     "courses": "Courses"
-
   },
   "Blog": {
     "title": "All posts",
@@ -642,7 +590,7 @@
     "allCourses": "All courses",
     "backToImplementation": "Back to implementations",
     "allImplementation": "All implementations",
-     "author": "Author",
+    "author": "Author",
     "shareMessage": "Did you like this article? Share it!",
     "shareOnTwitter": "Twitter",
     "shareOnLinkedIn": "LinkedIn",
@@ -667,14 +615,14 @@
     "or": "or"
   },
   "Benefits": {
-  "title": "Business benefits for your company:",
-  "increasedProductivity": "Increase production efficiency – produce the same amount in less time by minimizing micro-downtime and optimizing machine operations.",
-  "fasterReaction": "Faster problem response – monitor machine status in real time and make more accurate business decisions.",
-  "shorterCycle": "Shorter production cycle – use modules for scheduling, eliminating micro-downtime, and monitoring production efficiency.",
-  "betterQuality": "Improved product quality – reduce production waste and customer complaints, which also improve client relations.",
-  "dataAnalysis": "Historical data analysis – draw conclusions and optimize production processes based on historical data.",
-  "fasterOnboarding": "Faster onboarding of new employees – shorten onboarding time through standardized monitoring of production processes."
-  },  
+    "title": "Business benefits for your company:",
+    "increasedProductivity": "Increase production efficiency – produce the same amount in less time by minimizing micro-downtime and optimizing machine operations.",
+    "fasterReaction": "Faster problem response – monitor machine status in real time and make more accurate business decisions.",
+    "shorterCycle": "Shorter production cycle – use modules for scheduling, eliminating micro-downtime, and monitoring production efficiency.",
+    "betterQuality": "Improved product quality – reduce production waste and customer complaints, which also improve client relations.",
+    "dataAnalysis": "Historical data analysis – draw conclusions and optimize production processes based on historical data.",
+    "fasterOnboarding": "Faster onboarding of new employees – shorten onboarding time through standardized monitoring of production processes."
+  },
   "OmniProducts": {
     "title": "Optimize Production with OmniMES Systems",
     "subtitle": "Comprehensive solutions for modern production and energy management",
@@ -749,9 +697,9 @@
     "descriptionCard3": "We will undertake the comprehensive preparation of the factory infrastructure, providing the necessary means for the effective implementation of digital solutions. Our goal is to create a solid foundation for modern production.",
     "title4": "System implementation",
     "descriptionCard4": "A team of experts will carry out the effective implementation of the system, tailored to the results of the analysis. Together, we will unlock the potential of your production by introducing innovative technological solutions.",
-    "gateways":"Discover our communication gateways"
+    "gateways": "Discover our communication gateways"
   },
-   "EnergyInfo": {
+  "EnergyInfo": {
     "smallSubtitle": "Energy media data collection",
     "heading": "Cut costs and boost energy efficiency!",
     "description": "OmniMES enables precise monitoring of electricity and other utilities across your production process.",
@@ -1538,10 +1486,10 @@
     "keywords": "Users, OmniMES, Administration Panel, Permissions"
   },
   "AdminDashboardMeta": {
-  "title": "Admin Dashboard - Admin Management Panel",
-  "desc": "Manage the OmniMes system",
-  "keywords": "Panel, Admin Panel, admin, omnimes"
-},
+    "title": "Admin Dashboard - Admin Management Panel",
+    "desc": "Manage the OmniMes system",
+    "keywords": "Panel, Admin Panel, admin, omnimes"
+  },
   "AdminUsers": {
     "users": "Users",
     "searchUsers": "Search for a user...",

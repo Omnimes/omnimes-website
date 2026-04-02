@@ -88,9 +88,8 @@
       "chemical": "Chemiczna",
       "other": "Inna"
     }
-},
+  },
 
-  
   "cookie": {
     "message": "Używamy plików cookie do analityki i personalizacji reklam. Możesz zaakceptować wszystkie, odrzucić lub wybrać kategorie. Szczegóły w Polityce prywatności.",
     "details": {
@@ -132,13 +131,13 @@
     "no_date_description": "Skontaktuj się z nami, aby dowiedzieć się o kolejnych planowanych szkoleniach."
   },
 
-  "Implementation":{
+  "Implementation": {
     "title": "Wybrane realizacje",
     "NotFound": "Już wkrótce",
-    "search":"Wyszukaj..."
+    "search": "Wyszukaj..."
   },
 
-"OmniEnergy": {
+  "OmniEnergy": {
     "meta": {
       "title": "OmniEnergy - system Enms zarządzania energią zgodny z ISO 50001 | OmniEnergy",
       "description": "Moduł wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie. Redukcja kosztów energii o 15-25%."
@@ -167,7 +166,7 @@
           "value": "do 200k PLN"
         },
         "enpi": {
-          "label": "Redukcja EnPI",
+          "label": "Redukcja zużycia energii",
           "value": "15-25%"
         }
       }
@@ -196,65 +195,37 @@
       "analysis": {
         "title": "Analiza zużycia",
         "description": "Wykresy trendów dziennych, tygodniowych, miesięcznych z porównaniem rok do roku i widokiem SEU",
-        "items": [
-          "Analiza trendów",
-          "Pareto i mapy ciepła",
-          "Porównania wielookresowe"
-        ]
+        "items": ["Analiza trendów", "Pareto i mapy ciepła", "Porównania wielookresowe"]
       },
       "enpi": {
         "title": "Wskaźniki EnPI",
         "description": "Lista wskaźników wydajności energetycznej z widokiem graficznym trendu i relacji do baseline",
-        "items": [
-          "kWh/sztuka, MJ/tona",
-          "Trendy i baseline",
-          "Filtry zaawansowane"
-        ]
+        "items": ["kWh/sztuka, MJ/tona", "Trendy i baseline", "Filtry zaawansowane"]
       },
       "enb": {
         "title": "Baza odniesienia (EnB)",
         "description": "Definiowanie okresu bazowego i jego wartości z możliwością porównania z aktualnym okresem",
-        "items": [
-          "Okresy bazowe",
-          "Normalizacja danych",
-          "Porównania okresowe"
-        ]
+        "items": ["Okresy bazowe", "Normalizacja danych", "Porównania okresowe"]
       },
       "goals": {
         "title": "Cele i działania energetyczne",
         "description": "Tablica z celami, wartościami docelowymi, odpowiedzialnymi i terminami ze statusem realizacji",
-        "items": [
-          "Zarządzanie celami",
-          "Statusy kolorystyczne",
-          "Raporty miesięczne"
-        ]
+        "items": ["Zarządzanie celami", "Statusy kolorystyczne", "Raporty miesięczne"]
       },
       "audits": {
         "title": "Audyty i przeglądy",
         "description": "Harmonogram audytów z checklistami, historią wyników i możliwością eksportu do PDF",
-        "items": [
-          "Harmonogram audytów",
-          "Checklisty audytowe",
-          "Eksport raportów"
-        ]
+        "items": ["Harmonogram audytów", "Checklisty audytowe", "Eksport raportów"]
       },
       "documentation": {
         "title": "Dokumentacja energetyczna",
         "description": "Repozytorium plików z polityką energetyczną, raportami, procedurami i linkami do norm ISO",
-        "items": [
-          "Centrum dokumentów",
-          "Historia wersji",
-          "Zgodność z ISO 50001"
-        ]
+        "items": ["Centrum dokumentów", "Historia wersji", "Zgodność z ISO 50001"]
       },
       "seu": {
         "title": "Znaczące zużycia energii (SEU)",
         "description": "Identyfikacja i monitoring obszarów o największym zużyciu energii z możliwością optymalizacji",
-        "items": [
-          "Analiza Pareto",
-          "Priorytetyzacja działań",
-          "Monitoring 24/7"
-        ]
+        "items": ["Analiza Pareto", "Priorytetyzacja działań", "Monitoring 24/7"]
       }
     },
     "iso50001": {
@@ -368,10 +339,7 @@
         "savings": {
           "label": "Szacowane roczne oszczędności",
           "value": "200 000 PLN",
-          "items": [
-            "Zwiększenie wydajności o 15%",
-            "Redukcja zużycia energii o 20%"
-          ]
+          "items": ["Zwiększenie wydajności o 15%", "Redukcja zużycia energii o 20%"]
         },
         "result": {
           "label": "ROI",
@@ -519,11 +487,7 @@
         },
         {
           "title": "Działanie",
-          "items": [
-            "Planowanie i kontrola operacyjna",
-            "Projektowanie",
-            "Zamówienia"
-          ]
+          "items": ["Planowanie i kontrola operacyjna", "Projektowanie", "Zamówienia"]
         },
         {
           "title": "Ocena działania",
@@ -536,10 +500,7 @@
         },
         {
           "title": "Doskonalenie",
-          "items": [
-            "Niezgodność i działanie korygujące",
-            "Ciągłe doskonalenie"
-          ]
+          "items": ["Niezgodność i działanie korygujące", "Ciągłe doskonalenie"]
         }
       ]
     }
@@ -598,13 +559,13 @@
     "searchSubtitle4": "Sprawdź aktualności OmniMES.",
     "searchSubtitle5": "Zobacz galerię zdjęć OmniMES",
     "ariaTriger": "Rozwiń menu i zobacz wszystkie opcje",
-    "omniEnergy":"OmniEnergy",
-    "documentation":"Dokumentacja",
+    "omniEnergy": "OmniEnergy",
+    "documentation": "Dokumentacja",
     "documentationPL": "Dokumentacja PL",
     "documentationEN": "Dokumentacja EN",
-    "chatDocs":"ChatDocs",
-    "implementation":"Realizacje",
-    "courses":"Kursy"
+    "chatDocs": "ChatDocs",
+    "implementation": "Realizacje",
+    "courses": "Kursy"
   },
   "Blog": {
     "title": "Wszystkie posty",
@@ -644,22 +605,22 @@
     "backToBlog": "Powrót"
   },
   "HeroSection": {
-      "SubTitle3": "Zobacz jak działa Omnicloud",
-      "playAria": "Odtwórz wideo prezentacyjne platformy Omnicloud",
-      "heroTitle": "Witaj w",
-      "heroTitleHighlight": "Omnicloud",
-      "heroSubtitle": "Nowoczesna platforma chmurowa dla systemu Omnimes - zaprojektowana dla nowoczesnej produkcji. Zarządzaj infrastrukturą i automatyzuj procesy – wszystko w jednym miejscu.",
-      "heroFeature1": "Wdrożenie w 5 minut – bez skomplikowanej konfiguracji",
-      "heroFeature2": "Automatyczne skalowanie i load balancing",
-      "heroFeature3": "Gotowe środowisko dla systemu Omnimes",
-      "tryDemo": "Sprawdź Demo Omnimes",
-      "tryDemoAria": "Otwórz wersję demonstracyjną systemu Omnimes",
-      "contactSales": "Zobacz Omnimes na Omnicloud",
-      "contactSalesAria": "Skorzystaj z wersji chmurowej na platformie Omnicloud",
-      "learnMore": "Dowiedz się więcej",
-      "learnMoreAria": "Dowiedz się więcej o funkcjach platformy Omnicloud",
-      "newPlatformBadge": "🎉 Nowa platforma chmurowa już dostępna!",
-      "or":"lub"
+    "SubTitle3": "Zobacz jak działa Omnicloud",
+    "playAria": "Odtwórz wideo prezentacyjne platformy Omnicloud",
+    "heroTitle": "Witaj w",
+    "heroTitleHighlight": "Omnicloud",
+    "heroSubtitle": "Nowoczesna platforma chmurowa dla systemu Omnimes - zaprojektowana dla nowoczesnej produkcji. Zarządzaj infrastrukturą i automatyzuj procesy – wszystko w jednym miejscu.",
+    "heroFeature1": "Wdrożenie w 5 minut – bez skomplikowanej konfiguracji",
+    "heroFeature2": "Automatyczne skalowanie i load balancing",
+    "heroFeature3": "Gotowe środowisko dla systemu Omnimes",
+    "tryDemo": "Sprawdź Demo Omnimes",
+    "tryDemoAria": "Otwórz wersję demonstracyjną systemu Omnimes",
+    "contactSales": "Zobacz Omnimes na Omnicloud",
+    "contactSalesAria": "Skorzystaj z wersji chmurowej na platformie Omnicloud",
+    "learnMore": "Dowiedz się więcej",
+    "learnMoreAria": "Dowiedz się więcej o funkcjach platformy Omnicloud",
+    "newPlatformBadge": "🎉 Nowa platforma chmurowa już dostępna!",
+    "or": "lub"
   },
   "Benefits": {
     "title": "Korzyści biznesowe dla Twojej firmy:",
@@ -670,7 +631,7 @@
     "dataAnalysis": "Analiza danych historycznych – wyciągaj wnioski i optymalizuj procesy produkcyjne na podstawie danych historycznych.",
     "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – skróć czas onboarding’u dzięki standaryzacji monitorowania procesów produkcyjnych."
   },
-"OmniProducts": {
+  "OmniProducts": {
     "title": "Optymalizuj produkcję z systemami OmniMES",
     "subtitle": "Kompleksowe rozwiązania dla nowoczesnej produkcji i zarządzania energią",
     "omnimes": {
@@ -744,7 +705,7 @@
     "descriptionCard3": "Przystąpimy do kompleksowego przygotowania infrastruktury fabryki, zapewniając niezbędne środki do efektywnego wdrożenia rozwiązań cyfrowych. Naszym celem jest stworzenie solidnej podstawy dla nowoczesnej produkcji.",
     "title4": "Wdrożenie systemu",
     "descriptionCard4": "Zespół ekspertów przeprowadzi skuteczne wdrożenie systemu, dostosowanego do wyników analizy. Razem odblokujemy potencjał Twojej produkcji, wprowadzając innowacyjne rozwiązania technologiczne.",
-    "gateways":"Poznaj nasze bramki komunikacyjne"
+    "gateways": "Poznaj nasze bramki komunikacyjne"
   },
   "EnergyInfo": {
     "smallSubtitle": "Zbieranie danych z mediów energetycznych",
@@ -865,7 +826,7 @@
     "ErrorFormMessage": "Prosimy spróbować ponownie lub skontaktować się z nami bezpośrednio.",
     "Button": "Porozmawiajmy",
     "AriaButton": "Prześlij formularz kontaktowy",
-    "OrContactDirectly":"Skontaktuj się bezpośrednio",
+    "OrContactDirectly": "Skontaktuj się bezpośrednio",
     "showPhone": "Pokaż numer"
   },
   "Widget": {
@@ -914,7 +875,7 @@
     "text": "Z nami to proste",
     "textHeading": "Uruchom swoją produkcję na nowym poziomie już dzisiaj",
     "textDesc": "MES na wyciągnięcie ręki – z nami przez każdy etap wdrażania",
-    "dontKnowWhereToStart":"Nie wiesz od czego zaczać",
+    "dontKnowWhereToStart": "Nie wiesz od czego zaczać",
     "contact": "Skontaktuj się",
     "buttonAria": "Przejdź do strony z formularzem kontaktowym"
   },
@@ -1558,7 +1519,7 @@
     "company": "Firma",
     "title": "Prośby o zostanie developerem",
     "desc": "Zakceptuj lub usuń prośbę o zostanie developerem.",
-    "deleteRequestBecameDeveloperSuccess": "Pomyślnie usunięto prośbę.",    
+    "deleteRequestBecameDeveloperSuccess": "Pomyślnie usunięto prośbę.",
     "deleteRequestBecameDeveloperError": "Nie udało się usunąć prośby, spróbuj ponownie później.",
     "aproveRequestBecameDeveloperSuccess": "Pomyślnie dodano nowego developera.",
     "aproveRequestBecameDeveloperError": "Nie udało się dodać nowego developera, spróbuj później.",
@@ -1691,7 +1652,7 @@
     "BelongsTo": "Należysz do ",
     "sended": "Wysłano prośbę",
     "add": "Dodaj firmę",
-    "name":"Nazwa firmy",
+    "name": "Nazwa firmy",
     "nip": "Nip firmy",
     "email": "Email",
     "website": "Strona",
@@ -1706,7 +1667,7 @@
     "ceo": "Admin firmy",
     "user": "Użytkownik",
     "action": "Akcje",
-    "noData":"Brak danych",
+    "noData": "Brak danych",
     "placeholderRole": "Wybierz role",
     "delete": "Usuń",
     "msgSuccessDeleteUserFromCompany": "Użytkownik został usunięty z Twojej firmy.",
