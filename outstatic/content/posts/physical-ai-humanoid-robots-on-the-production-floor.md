@@ -6,12 +6,11 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'physical-ai-humanoid-robots-on-the-production-floor'
 description: 'Humanoid robots have moved past the trade-show demo. In the last twelve months they have appeared on BMW assembly lines, in Amazon warehouses, and in Mercedes-Benz pilots. Physical AI — the software layer that lets a machine perceive the physical world, reason about it, and act on it — is reshaping how manufacturers think about automation.
-
 This article walks through where humanoids actually stand in 2026, what the market data really says, which companies have moved beyond pilots, and where the demo ends and real production begins.'
 coverImage: '/images/robotics-gxOD.png'
 lang: 'en'
 tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"smartFactory","label":"smartFactory"}]
-publishedAt: '2026-04-30T08:00:00.000Z'
+publishedAt: '2026-03-30T08:00:00.000Z'
 ---
 
 Humanoid robots are no longer a laboratory curiosity. In the last twelve months they have appeared on BMW assembly lines, inside Amazon fulfillment centers, in pilots at Mercedes-Benz and GXO Logistics. What looked like a Boston Dynamics YouTube stunt in 2022 is, in 2026, a line item in the capital expenditure plans of the world's largest manufacturers.

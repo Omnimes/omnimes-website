@@ -1,6 +1,6 @@
 {
-  "commit": "075299efe8366dae771d70f287ce8b72e5968426",
-  "generated": "2026-04-01T20:54:55.840Z",
+  "commit": "37151de59e06cdb7de9f46e622740cffba0d0236",
+  "generated": "2026-04-14T16:40:30.826Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5184,39 +5184,6 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
-        "path": "outstatic/content/posts/physical-ai-humanoid-robots-on-the-production-floor.md"
-      },
-      "author": {
-        "name": "Martin Szerment",
-        "picture": "/images/1645307189660-I1OD.jpg"
-      },
-      "collection": "posts",
-      "coverImage": "/images/robotics-gxOD.png",
-      "description": "Humanoid robots have moved past the trade-show demo. In the last twelve months they have appeared on BMW assembly lines, in Amazon warehouses, and in Mercedes-Benz pilots. Physical AI — the software layer that lets a machine perceive the physical world, reason about it, and act on it — is reshaping how manufacturers think about automation.\nThis article walks through where humanoids actually stand in 2026, what the market data really says, which companies have moved beyond pilots, and where the demo ends and real production begins.",
-      "lang": "en",
-      "publishedAt": "2026-04-30T08:00:00.000Z",
-      "slug": "physical-ai-humanoid-robots-on-the-production-floor",
-      "status": "published",
-      "tags": [
-        {
-          "label": "AI",
-          "value": "AI"
-        },
-        {
-          "label": "robotics",
-          "value": "robotics"
-        },
-        {
-          "label": "smartFactory",
-          "value": "smartFactory"
-        }
-      ],
-      "title": "Physical AI: Humanoid Robots on the Production Floor"
-    },
-    {
-      "__outstatic": {
-        "commit": "pending",
-        "hash": "0",
         "path": "outstatic/content/posts/agentic-ai-w-produkcji-jak-autonomiczne-agenty-przejmuja-sterowanie-fabryka-w-2026.md"
       },
       "author": {
@@ -5286,6 +5253,39 @@
         }
       ],
       "title": "Agentic AI in Manufacturing: How Autonomous Agents Take Over the Factory in 2026"
+    },
+    {
+      "__outstatic": {
+        "commit": "37151de59e06cdb7de9f46e622740cffba0d0236",
+        "hash": "523505089",
+        "path": "outstatic/content/posts/physical-ai-humanoid-robots-on-the-production-floor.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/robotics-gxOD.png",
+      "description": "Humanoid robots have moved past the trade-show demo. In the last twelve months they have appeared on BMW assembly lines, in Amazon warehouses, and in Mercedes-Benz pilots. Physical AI — the software layer that lets a machine perceive the physical world, reason about it, and act on it — is reshaping how manufacturers think about automation. This article walks through where humanoids actually stand in 2026, what the market data really says, which companies have moved beyond pilots, and where the demo ends and real production begins.",
+      "lang": "en",
+      "publishedAt": "2026-03-30T08:00:00.000Z",
+      "slug": "physical-ai-humanoid-robots-on-the-production-floor",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        },
+        {
+          "label": "smartFactory",
+          "value": "smartFactory"
+        }
+      ],
+      "title": "Physical AI: Humanoid Robots on the Production Floor"
     }
   ]
 }
