@@ -5146,6 +5146,72 @@
       "slug": "omnienergy-manage-energy-before-energy-manages-your-costs",
       "status": "published",
       "title": "OmniEnergy — manage energy before energy manages your costs"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/physical-ai-roboty-humanoidalne-na-hali-produkcyjnej.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/robotics-gxOD.png",
+      "description": "Humanoidalne roboty przestają być eksponatem z konferencji technologicznych, a zaczynają pojawiać się przy linii montażowej w BMW, Mercedes-Benz i w magazynach Amazona. Physical AI — warstwa oprogramowania, która pozwala maszynie rozumieć otoczenie fizyczne, podejmować decyzje i wykonywać zadania manipulacyjne — zmienia sposób, w jaki myślimy o automatyzacji produkcji.\nArtykuł pokazuje, gdzie w 2026 roku znajdujemy się z humanoidami w przemyśle, jakie są realne dane rynkowe, które firmy faktycznie wdrożyły te rozwiązania, oraz gdzie kończy się demo, a zaczyna produkcja.",
+      "lang": "pl",
+      "publishedAt": "2026-04-30T08:00:00.000Z",
+      "slug": "physical-ai-roboty-humanoidalne-na-hali-produkcyjnej",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        },
+        {
+          "label": "smartFactory",
+          "value": "smartFactory"
+        }
+      ],
+      "title": "Physical AI: roboty humanoidalne na hali produkcyjnej"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/physical-ai-humanoid-robots-on-the-production-floor.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/robotics-gxOD.png",
+      "description": "Humanoid robots have moved past the trade-show demo. In the last twelve months they have appeared on BMW assembly lines, in Amazon warehouses, and in Mercedes-Benz pilots. Physical AI — the software layer that lets a machine perceive the physical world, reason about it, and act on it — is reshaping how manufacturers think about automation.\nThis article walks through where humanoids actually stand in 2026, what the market data really says, which companies have moved beyond pilots, and where the demo ends and real production begins.",
+      "lang": "en",
+      "publishedAt": "2026-04-30T08:00:00.000Z",
+      "slug": "physical-ai-humanoid-robots-on-the-production-floor",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        },
+        {
+          "label": "smartFactory",
+          "value": "smartFactory"
+        }
+      ],
+      "title": "Physical AI: Humanoid Robots on the Production Floor"
     }
   ]
 }
