@@ -5286,6 +5286,80 @@
         }
       ],
       "title": "Physical AI: roboty humanoidalne na hali produkcyjnej"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/od-przemyslu-4-0-do-5-0-jak-human-centric-ai-zmienia-role-operatora-na-hali-produkcyjnej.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/industry_5_0_5g-M4ND.png",
+      "description": "Przemysł 4.0 obiecywał \"fabrykę bez ludzi\". Komisja Europejska, WEF i coraz więcej producentów odpowiadają koncepcją Industry 5.0 — gdzie człowiek nie znika z hali, ale dostaje nowe narzędzia: cobota, AI asystenta, exoszkielet, rozszerzoną rzeczywistość. Operator 2026 roku to nie osoba podająca komponent, tylko przetwarzająca informacje, nadzorująca systemy i uczestnicząca w decyzjach.\nArtykuł pokazuje, czym różni się 4.0 od 5.0, jakie są dane rynkowe (BCG, McKinsey, EU Joint Research Centre), kto faktycznie wdraża human-centric AI (Bosch, Stellantis, Airbus), oraz jakie są bariery — zmęczenie kognitywne, zgodność z ISO 45001 i EU AI Act.",
+      "lang": "pl",
+      "publishedAt": "2026-04-13T08:00:00.000Z",
+      "slug": "od-przemyslu-4-0-do-5-0-jak-human-centric-ai-zmienia-role-operatora-na-hali-produkcyjnej",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "industry50",
+          "value": "industry50"
+        },
+        {
+          "label": "przemysł50",
+          "value": "przemysł50"
+        },
+        {
+          "label": "smartFactory",
+          "value": "smartFactory"
+        }
+      ],
+      "title": "Od Przemysłu 4.0 do 5.0 — jak human-centric AI zmienia rolę operatora na hali produkcyjnej"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/from-industry-4-0-to-5-0-how-human-centric-ai-is-redefining-the-operator-on-the-production-floor.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/industry_5_0_5g-M4ND.png",
+      "description": "Industry 4.0 promised a \"factory without people.\" The European Commission, the WEF, and a growing number of manufacturers are answering with Industry 5.0 — where the human stays on the floor but gets new tools: a cobot, an AI assistant, an exoskeleton, augmented reality. The 2026 operator is no longer the person handing over a component — they process information, supervise systems, and participate in decisions.\nThis article shows how 4.0 and 5.0 actually differ, what the market data looks like (BCG, McKinsey, EU Joint Research Centre), who is really deploying human-centric AI (Bosch, Stellantis, Airbus), and where the barriers are — cognitive fatigue, compliance with ISO 45001 and the EU AI Act.",
+      "lang": "en",
+      "publishedAt": "2026-04-13T08:00:00.000Z",
+      "slug": "from-industry-4-0-to-5-0-how-human-centric-ai-is-redefining-the-operator-on-the-production-floor",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "industry50",
+          "value": "industry50"
+        },
+        {
+          "label": "przemysł50",
+          "value": "przemysł50"
+        },
+        {
+          "label": "smartFactory",
+          "value": "smartFactory"
+        }
+      ],
+      "title": "From Industry 4.0 to 5.0: How Human-Centric AI Is Redefining the Operator on the Production Floor"
     }
   ]
 }
