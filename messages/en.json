@@ -145,16 +145,16 @@
   "OmniEnergy": {
     "meta": {
       "title": "OmniEnergy - ISO 50001 compliant EnMS energy management system | OmniEnergy",
-      "description": "The module supports ISO-50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting. Energy cost reduction of 15-25%."
+      "description": "The module supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting. Energy cost reduction of 15-25%."
     },
     "title": "OmniEnergy",
     "subtitle": "ISO 50001 compliant energy management system",
-    "intro": "The system supports ISO-50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
+    "intro": "The system supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
     "hero": {
       "badge": "ISO 50001 compliant energy management system",
       "title": "Save energy with",
       "titleHighlight": "OmniEnergy",
-      "description": "The system supports ISO-50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
+      "description": "The system supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
       "ctaPrimary": "Check OmniEnergy Demo",
       "ctaSecondary": "See features",
       "features": {
@@ -168,11 +168,11 @@
         },
         "savings": {
           "label": "Annual savings",
-          "value": "up to 200k PLN"
+          "value": "even 200k PLN"
         },
         "enpi": {
           "label": "Reduction of energy consumption",
-          "value": "15-25%"
+          "value": "5-15%"
         }
       }
     },
@@ -638,11 +638,11 @@
       }
     },
     "omnienergy": {
-      "subtitle": "Energy management system compliant with ISO-50001(EMS)",
+      "subtitle": "Energy management system compliant with ISO 50001(EMS)",
       "statistic": "Reduce energy and media consumption by 20%!",
-      "description": "System supports ISO-50001 implementation, optimization of energy and media consumption, energy data analysis, and alerting with reporting.",
+      "description": "System supports ISO 50001 implementation, optimization of energy and media consumption, energy data analysis, and alerting with reporting.",
       "features": {
-        "iso": "System supports ISO-50001 standard implementation",
+        "iso": "System supports ISO 50001 standard implementation",
         "optimization": "Energy and media consumption optimization",
         "analysis": "Energy data analysis",
         "reporting": "Alerting and reporting"
@@ -718,7 +718,7 @@
     },
     "iso": {
       "badge": "Compliance & sustainability",
-      "text": "OmniMES helps meet ISO-50001 (energy management) and ISO-14001 (environmental management) goals."
+      "text": "OmniMES helps meet ISO 50001 (energy management) and ISO-14001 (environmental management) goals."
     }
   },
   "CloudInfo": {

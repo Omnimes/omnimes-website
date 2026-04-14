@@ -140,16 +140,16 @@
   "OmniEnergy": {
     "meta": {
       "title": "OmniEnergy - system Enms zarządzania energią zgodny z ISO 50001 | OmniEnergy",
-      "description": "Moduł wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie. Redukcja kosztów energii o 15-25%."
+      "description": "Moduł wspiera wdrożenie normy ISO 50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie. Redukcja kosztów energii o 15-25%."
     },
     "title": "OmniEnergy",
     "subtitle": "System zarządzania energią zgodny z ISO 50001",
-    "intro": "System wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
+    "intro": "System wspiera wdrożenie normy ISO 50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
     "hero": {
       "badge": "System zarządzania energią zgodny z ISO 50001",
       "title": "Oszczędzaj energię dzięki",
       "titleHighlight": "OmniEnergy",
-      "description": "System wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
+      "description": "System wspiera wdrożenie normy ISO 50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
       "ctaPrimary": "Sprawdź Demo OmniEnergy",
       "ctaSecondary": "Zobacz funkcje",
       "features": {
@@ -163,11 +163,11 @@
         },
         "savings": {
           "label": "Oszczędności roczne",
-          "value": "do 200k PLN"
+          "value": "nawet 200k PLN"
         },
         "enpi": {
           "label": "Redukcja zużycia energii",
-          "value": "15-25%"
+          "value": "5-15%"
         }
       }
     },
@@ -646,11 +646,11 @@
       }
     },
     "omnienergy": {
-      "subtitle": "System zarządzania energią zgodny z ISO-50001(EMS)",
+      "subtitle": "System zarządzania energią zgodny z ISO 50001(EMS)",
       "statistic": "Zmniejsz zużycie energii i innych mediów o 20%!",
-      "description": "System wspiera wdrożenie normy ISO-50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
+      "description": "System wspiera wdrożenie normy ISO 50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie.",
       "features": {
-        "iso": "System wspiera wdrożenie normy ISO-50001",
+        "iso": "System wspiera wdrożenie normy ISO 50001",
         "optimization": "Optymalizacja zużycia energii i innych mediów",
         "analysis": "Analiza danych energetycznych",
         "reporting": "Alarmowanie i raportowanie"
@@ -726,7 +726,7 @@
     },
     "iso": {
       "badge": "Zgodność i zrównoważony rozwój",
-      "text": "OmniMES wspiera spełnianie wymagań ISO-50001 (zarządzanie energią) i ISO-14001 (zarządzanie środowiskowe), pomagając osiągać cele oszczędności i sustainability."
+      "text": "OmniMES wspiera spełnianie wymagań ISO 50001 (zarządzanie energią) i ISO-14001 (zarządzanie środowiskowe), pomagając osiągać cele oszczędności i sustainability."
     }
   },
   "CloudInfo": {
