@@ -107,7 +107,7 @@ The AI Act classifies systems that influence working conditions or worker evalua
 
 ### 4. Cost and TCO
 
-A HoloLens 2 for an operator is ~USD 3,500; a passive exoskeleton EUR 3–8k; a cobot EUR 30–80k; an AI assistant SaaS USD 50–200 per operator per month. In small plants (<100 people), a full Operator 5.0 rollout can exceed EUR 1 million. ROI closes in 18–36 months, but demands management discipline.
+A HoloLens 2 for an operator is ~USD 3,500; a passive exoskeleton EUR 3–8k; a cobot EUR 30–80k; an AI assistant SaaS USD 50–200 per operator per month. In small plants (under 100 people), a full Operator 5.0 rollout can exceed EUR 1 million. ROI closes in 18–36 months, but demands management discipline.
 
 ### 5. Skills gap
 

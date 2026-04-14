@@ -107,7 +107,7 @@ Akt o AI kategoryzuje systemy, które wpływają na warunki pracy lub ocenę pra
 
 ### 4. Koszt wdrożenia i TCO
 
-HoloLens 2 dla operatora to ~3500 USD, exoszkielet pasywny 3–8 tys. EUR, cobot 30–80 tys. EUR, asystent AI w modelu SaaS 50–200 USD/operator/miesiąc. W małych zakładach (<100 osób) pełne wdrożenie zestawu Operator 5.0 może przekroczyć 1 mln EUR. ROI zamyka się w 18–36 miesięcy, ale wymaga dyscypliny zarządczej.
+HoloLens 2 dla operatora to ~3500 USD, exoszkielet pasywny 3–8 tys. EUR, cobot 30–80 tys. EUR, asystent AI w modelu SaaS 50–200 USD/operator/miesiąc. W małych zakładach (poniżej 100 osób) pełne wdrożenie zestawu Operator 5.0 może przekroczyć 1 mln EUR. ROI zamyka się w 18–36 miesięcy, ale wymaga dyscypliny zarządczej.
 
 ### 5. Niedobór kompetencji
 
