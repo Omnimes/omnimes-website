@@ -389,6 +389,7 @@
       "title": "Bereit für Energieoptimierung?",
       "description": "Schließen Sie sich Unternehmen an, die bereits durch intelligentes Energiemanagement sparen",
       "ctaPrimary": "Kontaktieren Sie uns",
+      "ctaDemo": "OmniEnergy Demo ansehen",
       "ctaSecondary": "Nehmen Sie Kontakt auf",
       "stats": {
         "implementations": {
@@ -477,6 +478,26 @@
           "Energiepolitik, Berichte, Verfahren",
           "Versionsverlauf und Aktualisierungsdatum",
           "Links zu ISO 50001-Normen / Compliance-Berichten"
+        ]
+      },
+      "report": {
+        "name": "Automatischer Energiebericht",
+        "description": "Detaillierte Energieberichte werden automatisch generiert – fertige Dokumente mit Trendanalyse, ISO 50001-Konformitätsbewertung und Empfehlungen für Korrekturmaßnahmen.",
+        "features": [
+          "Automatische Berichtsgenerierung ohne Benutzereingriff",
+          "ISO 50001-Konformitätsanalyse",
+          "Energieverbrauchstrends und Optimierungsempfehlungen",
+          "PDF-Export mit Versionsverlauf"
+        ]
+      },
+      "summary": {
+        "name": "Zusammenfassung der Energieeffizienz",
+        "description": "Gesamter Medienverbrauch an einem Ort – Strom, Wasser, Gas, Druckluft. Die Pareto PCT 80%-Analyse identifiziert automatisch Maschinen und Linien mit dem größten Einfluss auf die Energiekosten.",
+        "features": [
+          "Alle Energieträger in einer Ansicht",
+          "Pareto PCT 80%-Analyse – automatische Erkennung signifikanter Positionen",
+          "Aufschlüsselung nach Maschinen und Produktionslinien",
+          "Vollautomatisch, keine manuelle Konfiguration"
         ]
       }
     },
