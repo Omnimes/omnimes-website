@@ -6,12 +6,11 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'physical-ai-roboty-humanoidalne-na-hali-produkcyjnej'
 description: 'Humanoidalne roboty przestają być eksponatem z konferencji technologicznych, a zaczynają pojawiać się przy linii montażowej w BMW, Mercedes-Benz i w magazynach Amazona. Physical AI — warstwa oprogramowania, która pozwala maszynie rozumieć otoczenie fizyczne, podejmować decyzje i wykonywać zadania manipulacyjne — zmienia sposób, w jaki myślimy o automatyzacji produkcji.
-
 Artykuł pokazuje, gdzie w 2026 roku znajdujemy się z humanoidami w przemyśle, jakie są realne dane rynkowe, które firmy faktycznie wdrożyły te rozwiązania, oraz gdzie kończy się demo, a zaczyna produkcja.'
 coverImage: '/images/robotics-gxOD.png'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"smartFactory","label":"smartFactory"}]
-publishedAt: '2026-04-30T08:00:00.000Z'
+publishedAt: '2026-03-30T08:00:00.000Z'
 ---
 
 Humanoidalne roboty przestają być eksponatem z konferencji technologicznych. W ciągu ostatnich dwunastu miesięcy pojawiły się przy liniach montażowych BMW, w magazynach Amazona, w pilotażach Mercedes-Benz i GXO Logistics. To, co jeszcze w 2022 roku wyglądało na ciekawostkę z laboratorium Boston Dynamics, w 2026 roku jest realnym elementem planów inwestycyjnych największych producentów.
@@ -86,7 +85,7 @@ Norma **ISO 10218** (roboty przemysłowe) i **ISO/TS 15066** (współpraca czło
 
 ### 4. ROI nie zamyka się dzisiaj
 
-McKinsey w analizie z 2025 roku pokazał, że w regionach o niskich kosztach pracy (Europa Środkowo-Wschodnia, Meksyk, Azja Południowo-Wschodnia) **TCO humanoida jest dziś wyższe niż TCO operatora ludzkiego**. Break-even pojawia się przy koszcie jednostkowym poniżej 30 tys. USD i żywotności >20 tys. godzin — co według konsensusu rynku nastąpi między 2028 a 2031 rokiem.
+McKinsey w analizie z 2025 roku pokazał, że w regionach o niskich kosztach pracy (Europa Środkowo-Wschodnia, Meksyk, Azja Południowo-Wschodnia) **TCO humanoida jest dziś wyższe niż TCO operatora ludzkiego**. Break-even pojawia się przy koszcie jednostkowym poniżej 30 tys. USD i żywotności &gt;20 tys. godzin — co według konsensusu rynku nastąpi między 2028 a 2031 rokiem.
 
 ### 5. Integracja z MES i ERP
 
