@@ -349,6 +349,7 @@
       "title": "Ready for energy optimization?",
       "description": "Join companies that are already saving through intelligent energy management",
       "ctaPrimary": "Contact us",
+      "ctaDemo": "Check OmniEnergy Demo",
       "ctaSecondary": "Get in touch",
       "stats": {
         "implementations": {
@@ -437,6 +438,26 @@
           "Energy policy, reports, procedures",
           "Version history and update date",
           "Links to ISO 50001 standards / compliance reports"
+        ]
+      },
+      "report": {
+        "name": "Automatic energy report",
+        "description": "Detailed energy reports generated automatically – ready documents with trend analysis, ISO 50001 compliance assessment and corrective action recommendations.",
+        "features": [
+          "Automatic report generation without user intervention",
+          "ISO 50001 compliance analysis",
+          "Energy consumption trends and optimization recommendations",
+          "PDF export with version history"
+        ]
+      },
+      "summary": {
+        "name": "Energy efficiency summary",
+        "description": "All media consumption in one place – electricity, water, gas, compressed air. Pareto PCT 80% analysis automatically identifies machines and lines with the greatest impact on energy costs.",
+        "features": [
+          "All energy media in one view",
+          "Pareto PCT 80% analysis – automatic detection of significant positions",
+          "Breakdown by machines and production lines",
+          "Fully automated, no manual configuration"
         ]
       }
     },
@@ -605,8 +626,8 @@
     "heroFeature1": "Deploy in 5 minutes – no complex configuration",
     "heroFeature2": "Automatic scaling and load balancing",
     "heroFeature3": "Ready-to-use environment for Omnimes system",
-    "tryDemo": "Check Omnimes Demo",
-    "tryDemoAria": "Open Omnimes system demo version",
+    "tryDemo": "Check OmniMES and OmniEnergy Demo",
+    "tryDemoAria": "Open OmniMES and OmniEnergy system demo version",
     "contactSales": "See Omnimes on Omnicloud",
     "contactSalesAria": "Use cloud version on Omnicloud platform",
     "learnMore": "Learn More",

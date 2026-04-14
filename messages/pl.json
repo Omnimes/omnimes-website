@@ -176,7 +176,7 @@
       "sectionDescription": "System wspiera wszystkie wymagania normy ISO 50001, zapewniając pełną kontrolę nad zużyciem energii",
       "dashboard": {
         "title": "Dashboard energetyczny",
-        "description": "Główne miejsce startowe systemu Enms z wykresami zużycia energii, SEU, EnPI, postępem działań i alertami przekroczeń",
+        "description": "Główne miejsce startowe systemu Enms z wykresami zużycia energii, ZWE, WEE, postępem działań i alertami przekroczeń",
         "items": [
           "Wykresy w czasie rzeczywistym",
           "Kafle dla wszystkich mediów",
@@ -194,16 +194,16 @@
       },
       "analysis": {
         "title": "Analiza zużycia",
-        "description": "Wykresy trendów dziennych, tygodniowych, miesięcznych z porównaniem rok do roku i widokiem SEU",
+        "description": "Wykresy trendów dziennych, tygodniowych, miesięcznych z porównaniem rok do roku i widokiem ZWE",
         "items": ["Analiza trendów", "Pareto i mapy ciepła", "Porównania wielookresowe"]
       },
       "enpi": {
-        "title": "Wskaźniki EnPI",
+        "title": "Wskaźniki WEE",
         "description": "Lista wskaźników wydajności energetycznej z widokiem graficznym trendu i relacji do baseline",
         "items": ["kWh/sztuka, MJ/tona", "Trendy i baseline", "Filtry zaawansowane"]
       },
       "enb": {
-        "title": "Baza odniesienia (EnB)",
+        "title": "Baza odniesienia (ENLB)",
         "description": "Definiowanie okresu bazowego i jego wartości z możliwością porównania z aktualnym okresem",
         "items": ["Okresy bazowe", "Normalizacja danych", "Porównania okresowe"]
       },
@@ -223,7 +223,7 @@
         "items": ["Centrum dokumentów", "Historia wersji", "Zgodność z ISO 50001"]
       },
       "seu": {
-        "title": "Znaczące zużycia energii (SEU)",
+        "title": "Znaczące zużycia energii (ZWE)",
         "description": "Identyfikacja i monitoring obszarów o największym zużyciu energii z możliwością optymalizacji",
         "items": ["Analiza Pareto", "Priorytetyzacja działań", "Monitoring 24/7"]
       }
@@ -246,7 +246,7 @@
         {
           "number": "3",
           "title": "Planowanie",
-          "description": "Przegląd energetyczny, baza odniesienia (EnB), wskaźniki wydajności energetycznej (EnPI), cele energetyczne i plany działania"
+          "description": "Przegląd energetyczny, baza odniesienia (ENLB), wskaźniki wydajności energetycznej (WEE), cele energetyczne i plany działania"
         },
         {
           "number": "4",
@@ -256,7 +256,7 @@
         {
           "number": "5",
           "title": "Działanie",
-          "description": "Planowanie i kontrola operacyjna, zarządzanie zmianą, projektowanie, zamówienia i działania w zakresie SEU"
+          "description": "Planowanie i kontrola operacyjna, zarządzanie zmianą, projektowanie, zamówienia i działania w zakresie ZWE"
         },
         {
           "number": "6",
@@ -352,6 +352,7 @@
       "title": "Gotowy na optymalizację energii?",
       "description": "Dołącz do firm, które już oszczędzają dzięki inteligentnemu zarządzaniu energią",
       "ctaPrimary": "Skontaktuj się",
+      "ctaDemo": "Sprawdź Demo OmniEnergy",
       "ctaSecondary": "Skontaktuj się z nami",
       "stats": {
         "implementations": {
@@ -373,10 +374,10 @@
         "name": "Dashboard energetyczny",
         "description": "Główne miejsce startowe systemu",
         "features": [
-          "Wykresy: zużycie energii [kWh], SEU, EnPI",
+          "Wykresy: zużycie energii [kWh], ZWE, WEE",
           "Postęp działań i alerty przekroczeń",
           "Kafle dla energii elektrycznej, gazu, sprężonego powietrza",
-          "Przyciski do przejścia: Analiza → EnPI → Cele → Audyty"
+          "Przyciski do przejścia: Analiza → WEE → Cele → Audyty"
         ]
       },
       "sources": {
@@ -394,11 +395,11 @@
         "features": [
           "Wykresy trendów: dzienne, tygodniowe, miesięczne",
           "Porównanie rok do roku (energia, koszt, jednostka produkcji)",
-          "Widok SEU w formie Pareto lub mapy ciepła"
+          "Widok ZWE w formie Pareto lub mapy ciepła"
         ]
       },
       "enpi": {
-        "name": "Wskaźniki EnPI",
+        "name": "Wskaźniki WEE",
         "description": "Wskaźniki wydajności energetycznej",
         "features": [
           "Lista wskaźników (kWh/sztuka, MJ/tona)",
@@ -407,7 +408,7 @@
         ]
       },
       "enb": {
-        "name": "Baza odniesienia (EnB)",
+        "name": "Baza odniesienia (ENLB)",
         "description": "Okresy bazowe i porównania",
         "features": [
           "Definiowanie okresu bazowego i wartości",
@@ -441,6 +442,26 @@
           "Historia wersji i data aktualizacji",
           "Linki do norm ISO 50001 / raportów compliance"
         ]
+      },
+      "report": {
+        "name": "Automatyczny raport energetyczny",
+        "description": "Szczegółowe raporty energetyczne generowane automatycznie – gotowe dokumenty z analizą trendów, oceną zgodności z normą ISO 50001 oraz rekomendacjami działań naprawczych.",
+        "features": [
+          "Automatyczne generowanie raportów bez ingerencji użytkownika",
+          "Analiza zgodności z normą ISO 50001",
+          "Trendy zużycia energii i rekomendacje optymalizacji",
+          "Eksport do PDF z historią wersji"
+        ]
+      },
+      "summary": {
+        "name": "Zestawienie efektywności energetycznej",
+        "description": "Podsumowanie zużycia wszystkich mediów w jednym miejscu – energia elektryczna, woda, gaz, sprężone powietrze. Analiza Pareto PCT 80% automatycznie wskazuje maszyny i linie o największym wpływie na koszty energii.",
+        "features": [
+          "Wszystkie media energetyczne w jednym widoku",
+          "Analiza Pareto PCT 80% – automatyczne wykrywanie znaczących pozycji",
+          "Zestawienie według maszyn i linii produkcyjnych",
+          "W pełni zautomatyzowane, bez ręcznej konfiguracji"
+        ]
       }
     },
     "isoRequirements": {
@@ -470,8 +491,8 @@
             "Działania dotyczące ryzyka i szans",
             "Cele energetyczne i planowanie ich osiągnięcia",
             "Przegląd energetyczny",
-            "Wskaźniki wydajności energetycznej (EnPI)",
-            "Baza odniesienia energetycznego (EnB)",
+            "Wskaźniki wydajności energetycznej (WEE)",
+            "Baza odniesienia energetycznego (ENLB)",
             "Planowanie zbierania danych energetycznych"
           ]
         },
@@ -613,8 +634,8 @@
     "heroFeature1": "Wdrożenie w 5 minut – bez skomplikowanej konfiguracji",
     "heroFeature2": "Automatyczne skalowanie i load balancing",
     "heroFeature3": "Gotowe środowisko dla systemu Omnimes",
-    "tryDemo": "Sprawdź Demo Omnimes",
-    "tryDemoAria": "Otwórz wersję demonstracyjną systemu Omnimes",
+    "tryDemo": "Sprawdź Demo OmniMES i OmniEnergy",
+    "tryDemoAria": "Otwórz wersję demonstracyjną systemu OmniMES i OmniEnergy",
     "contactSales": "Zobacz Omnimes na Omnicloud",
     "contactSalesAria": "Skorzystaj z wersji chmurowej na platformie Omnicloud",
     "learnMore": "Dowiedz się więcej",

@@ -34,6 +34,16 @@ export default function OmniEnergyPage() {
 
               <div className="flex flex-wrap gap-4">
                 <Link
+                  href="/demo"
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-600 to-teal-500 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                >
+                  {t("hero.ctaPrimary")}
+                  <svg className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </Link>
+                <Link
                   href="#features"
                   className="inline-flex items-center gap-2 rounded-full border-2 border-emerald-200 bg-white px-8 py-4 font-semibold text-emerald-600 transition-all duration-300 hover:border-emerald-400 hover:shadow-lg"
                 >
@@ -959,6 +969,182 @@ export default function OmniEnergyPage() {
                 </div>
               </div>
             </div>
+
+            {/* Screenshot 3 - Automatyczny raport energetyczny */}
+            <div className="grid items-center gap-12 lg:grid-cols-2">
+              <div className="order-2 lg:order-1">
+                <div className="rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 to-indigo-50 p-8">
+                  <div className="mb-6 flex items-center gap-3">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-blue-100">
+                      <svg
+                        className="size-6 text-blue-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      {t("modules.report.name")}
+                    </h3>
+                  </div>
+                  <p className="mb-6 text-gray-600">{t("modules.report.description")}</p>
+                  <ul className="space-y-3">
+                    {t.raw("modules.report.features").map((feature: string, index: number) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-blue-500">
+                          <svg
+                            className="size-4 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                        </div>
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="order-1 flex justify-center lg:order-2">
+                <div
+                  className="hover:shadow-3xl relative w-full max-w-sm cursor-pointer overflow-hidden rounded-3xl border-4 border-blue-100 shadow-2xl transition-shadow"
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => setModalImage("/screenshots/omnienergy-report.png")}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault()
+                      setModalImage("/screenshots/omnienergy-report.png")
+                    }
+                  }}
+                >
+                  <Image
+                    src="/screenshots/omnienergy-report.png"
+                    alt={t("modules.report.name")}
+                    width={900}
+                    height={1200}
+                    className="h-auto w-full"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all hover:bg-black/10">
+                    <svg
+                      className="size-16 text-white opacity-0 transition-opacity hover:opacity-100"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Screenshot 4 - Zestawienie efektywności energetycznej */}
+            <div className="grid items-center gap-12 lg:grid-cols-2">
+              <div>
+                <div
+                  className="hover:shadow-3xl relative cursor-pointer overflow-hidden rounded-3xl border-4 border-emerald-100 shadow-2xl transition-shadow"
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => setModalImage("/screenshots/omnienergy-summary.png")}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault()
+                      setModalImage("/screenshots/omnienergy-summary.png")
+                    }
+                  }}
+                >
+                  <Image
+                    src="/screenshots/omnienergy-summary.png"
+                    alt={t("modules.summary.name")}
+                    width={1200}
+                    height={800}
+                    className="h-auto w-full"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all hover:bg-black/10">
+                    <svg
+                      className="size-16 text-white opacity-0 transition-opacity hover:opacity-100"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 to-green-50 p-8">
+                  <div className="mb-6 flex items-center gap-3">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-emerald-100">
+                      <svg
+                        className="size-6 text-emerald-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      {t("modules.summary.name")}
+                    </h3>
+                  </div>
+                  <p className="mb-6 text-gray-600">{t("modules.summary.description")}</p>
+                  <ul className="space-y-3">
+                    {t.raw("modules.summary.features").map((feature: string, index: number) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-500">
+                          <svg
+                            className="size-4 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                        </div>
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -984,6 +1170,26 @@ export default function OmniEnergyPage() {
                     strokeLinejoin="round"
                     strokeWidth={2}
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="/demo"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white/60 bg-white/10 px-10 py-5 text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-white hover:bg-white/20 hover:shadow-2xl"
+              >
+                {t("cta.ctaDemo")}
+                <svg className="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
               </Link>

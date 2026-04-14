@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la d:/projekty/omnimes_www3/public/screenshots/omnienergy-*.png)"
+    ]
+  }
+}
