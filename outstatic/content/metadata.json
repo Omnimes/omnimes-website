@@ -5212,6 +5212,80 @@
         }
       ],
       "title": "Physical AI: Humanoid Robots on the Production Floor"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/agentic-ai-w-produkcji-jak-autonomiczne-agenty-przejmuja-sterowanie-fabryka-w-2026.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/ai_2026_agents-Y4Mj.png",
+      "description": "Agentic AI to kolejny etap po generatywnej AI. Agent nie tylko odpowiada na pytania, ale sam planuje zadania, uruchamia narzędzia, modyfikuje parametry linii produkcyjnej i raportuje wynik. W 2026 roku pierwsze fabryki zaczynają przekazywać agentom realne decyzje operacyjne — od harmonogramowania przez planowanie utrzymania ruchu po optymalizację zużycia energii.\nArtykuł pokazuje, czym różni się agent od klasycznego chatbota, które firmy wdrożyły agenty w produkcji, jakie są dane rynkowe Gartnera, McKinseya i Deloitte, oraz gdzie leżą realne bariery: kontrola, audytowalność i integracja z MES/ERP.",
+      "lang": "pl",
+      "publishedAt": "2026-04-06T08:00:00.000Z",
+      "slug": "agentic-ai-w-produkcji-jak-autonomiczne-agenty-przejmuja-sterowanie-fabryka-w-2026",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "smartFactory",
+          "value": "smartFactory"
+        }
+      ],
+      "title": "Agentic AI w produkcji — jak autonomiczne agenty przejmują sterowanie fabryką w 2026"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/agentic-ai-in-manufacturing-how-autonomous-agents-take-over-the-factory-in-2026.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/ai_2026_agents-Y4Mj.png",
+      "description": "Agentic AI is the next stage after generative AI. An agent does not just answer questions — it plans tasks, calls tools, adjusts line parameters, and reports the outcome. In 2026, the first factories are handing real operational decisions to agents: scheduling, maintenance planning, energy optimization.\nThis article explains how an agent differs from a classical chatbot, which manufacturers have moved beyond pilot, what Gartner, McKinsey and Deloitte data actually says, and where the real barriers sit — control, auditability, and integration with MES/ERP.",
+      "lang": "en",
+      "publishedAt": "2026-04-06T08:00:00.000Z",
+      "slug": "agentic-ai-in-manufacturing-how-autonomous-agents-take-over-the-factory-in-2026",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "MES",
+          "value": "mes"
+        },
+        {
+          "label": "smartFactory",
+          "value": "smartFactory"
+        }
+      ],
+      "title": "Agentic AI in Manufacturing: How Autonomous Agents Take Over the Factory in 2026"
     }
   ]
 }
