@@ -8,7 +8,7 @@ slug: 'agentic-ai-w-produkcji-jak-autonomiczne-agenty-przejmuja-sterowanie-fabry
 description: 'Agentic AI to kolejny etap po generatywnej AI. Agent nie tylko odpowiada na pytania, ale sam planuje zadania, uruchamia narzędzia, modyfikuje parametry linii produkcyjnej i raportuje wynik. W 2026 roku pierwsze fabryki zaczynają przekazywać agentom realne decyzje operacyjne — od harmonogramowania przez planowanie utrzymania ruchu po optymalizację zużycia energii.
 
 Artykuł pokazuje, czym różni się agent od klasycznego chatbota, które firmy wdrożyły agenty w produkcji, jakie są dane rynkowe Gartnera, McKinseya i Deloitte, oraz gdzie leżą realne bariery: kontrola, audytowalność i integracja z MES/ERP.'
-coverImage: '/images/ai_2026_agents-Y4Mj.png'
+coverImage: '/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"agentAi","label":"AGENT AI"},{"value":"mes","label":"MES"},{"value":"smartFactory","label":"smartFactory"}]
 publishedAt: '2026-04-06T08:00:00.000Z'

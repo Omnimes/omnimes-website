@@ -8,7 +8,7 @@ slug: 'agentic-ai-in-manufacturing-how-autonomous-agents-take-over-the-factory-i
 description: 'Agentic AI is the next stage after generative AI. An agent does not just answer questions — it plans tasks, calls tools, adjusts line parameters, and reports the outcome. In 2026, the first factories are handing real operational decisions to agents: scheduling, maintenance planning, energy optimization.
 
 This article explains how an agent differs from a classical chatbot, which manufacturers have moved beyond pilot, what Gartner, McKinsey and Deloitte data actually says, and where the real barriers sit — control, auditability, and integration with MES/ERP.'
-coverImage: '/images/ai_2026_agents-Y4Mj.png'
+coverImage: '/images/enhancing-manufacturing-efficiency-through-ai-driven-mes-systems-a-practical-guide-to-oee-monitoring-in-factory-digitali.png'
 lang: 'en'
 tags: [{"value":"AI","label":"AI"},{"value":"agentAi","label":"AGENT AI"},{"value":"mes","label":"MES"},{"value":"smartFactory","label":"smartFactory"}]
 publishedAt: '2026-04-06T08:00:00.000Z'
