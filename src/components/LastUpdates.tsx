@@ -115,11 +115,11 @@ const Skeleton = ({ src }: { src: string | undefined }) => {
 const SkeletonCover = ({ src }: { src: string | undefined }) => {
   if (src == undefined || src == "") {
     return (
-      <div className="flex size-full min-h-40 flex-1 bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
+      <div className="flex h-44 w-full bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
     )
   } else {
     return (
-      <div className="relative size-full min-h-40 flex-1 overflow-hidden bg-neutral-100 dark:bg-neutral-900">
+      <div className="relative h-44 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900">
         <Image
           src={src}
           alt={"Post photo"}

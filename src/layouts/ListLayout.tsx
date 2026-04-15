@@ -62,7 +62,6 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 
 export default function ListLayout({
   posts,
-  title,
   initialDisplayPosts = [],
   pagination,
 }: ListLayoutProps) {
@@ -86,10 +85,6 @@ export default function ListLayout({
       />
 
       <header className="ol-header">
-        <div className="ol-eyebrow">
-          <span>Index</span>
-        </div>
-        <h1 className="ol-h1">{title}</h1>
         <div className="ol-search">
           <LuSearch aria-hidden />
           <input
@@ -111,9 +106,7 @@ export default function ListLayout({
         <div className="ol-grid">
           {displayPosts.map((post) => {
             const { title, description, tags, publishedAt, slug, coverImage } = post
-            const tagList = Array.isArray(tags)
-              ? (tags as { value: string; label: string }[])
-              : []
+            const tagList = Array.isArray(tags) ? (tags as { value: string; label: string }[]) : []
             const href = `/${basePath}/${slug}`
 
             return (
@@ -125,9 +118,7 @@ export default function ListLayout({
                       <img src={coverImage} alt={`Okładka: ${title}`} loading="lazy" />
                       <div className="ol-card-date">
                         <LuCalendar aria-hidden />
-                        <time dateTime={publishedAt}>
-                          {getFormattedDate(publishedAt, lang)}
-                        </time>
+                        <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>
                       </div>
                     </div>
                   ) : (
@@ -251,7 +242,7 @@ export default function ListLayout({
           border: 1px solid var(--rule);
           border-radius: 999px;
           background: var(--paper);
-          max-width: 520px;
+          width: 100%;
           transition: border-color .15s, box-shadow .15s;
         }
         .ol-search:focus-within {
