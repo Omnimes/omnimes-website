@@ -191,6 +191,19 @@ export default function NewsLayout({
           line-height: 1.7;
           -webkit-font-smoothing: antialiased;
         }
+        .dark .on-root, .on-root.dark {
+          --ink:    #f5f2ec;
+          --ink2:   #d4cfc4;
+          --ink3:   #8b857b;
+          --paper:  #0f0e0d;
+          --paper2: #1a1816;
+          --paper3: #242120;
+          --steel:  #8fb3dc;
+          --copper: #f472b6;
+          --copper2:#ec4899;
+          --teal:   #5eead4;
+          --rule:   #2e2a27;
+        }
         .on-top-rule {
           height: 4px;
           background: linear-gradient(90deg, var(--steel) 0%, var(--copper) 50%, var(--teal) 100%);
@@ -222,7 +235,7 @@ export default function NewsLayout({
         }
 
         .on-hero {
-          max-width: 760px;
+          max-width: 820px;
           margin: 0 auto;
           padding: 40px 40px 32px;
         }
@@ -286,7 +299,7 @@ export default function NewsLayout({
         }
 
         .on-cover-wrap {
-          max-width: 760px;
+          max-width: 820px;
           margin: 0 auto;
           padding: 16px 40px 0;
         }
@@ -300,7 +313,7 @@ export default function NewsLayout({
         }
 
         .on-article-body {
-          max-width: 760px;
+          max-width: 820px;
           margin: 0 auto;
           padding: 40px 40px 32px;
         }
@@ -388,7 +401,7 @@ export default function NewsLayout({
         }
 
         .on-share-strip {
-          max-width: 760px;
+          max-width: 820px;
           margin: 0 auto;
           padding: 20px 40px;
           border-top: 1px solid var(--rule);
@@ -426,7 +439,7 @@ export default function NewsLayout({
         .on-share-fb:hover { background: #1877f2; color: var(--paper); border-color: #1877f2; }
 
         .on-footer {
-          max-width: 760px;
+          max-width: 820px;
           margin: 0 auto;
           padding: 24px 40px 48px;
           display: flex;
@@ -462,7 +475,7 @@ export default function NewsLayout({
         .on-cover-wrap { animation-delay: .06s; }
         .on-article-body { animation-delay: .12s; }
 
-        @media (max-width: 760px) {
+        @media (max-width: 900px) {
           .on-nav { padding: 10px 20px; }
           .on-hero { padding: 28px 20px 24px; }
           .on-cover-wrap { padding: 12px 20px 0; }

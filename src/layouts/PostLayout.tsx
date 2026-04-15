@@ -240,6 +240,19 @@ export default function PostLayout({
           line-height: 1.75;
           -webkit-font-smoothing: antialiased;
         }
+        .dark .oe-root, .oe-root.dark {
+          --ink:    #f5f2ec;
+          --ink2:   #d4cfc4;
+          --ink3:   #8b857b;
+          --paper:  #0f0e0d;
+          --paper2: #1a1816;
+          --paper3: #242120;
+          --steel:  #8fb3dc;
+          --copper: #f472b6;
+          --copper2:#ec4899;
+          --teal:   #5eead4;
+          --rule:   #2e2a27;
+        }
         .oe-top-rule {
           height: 4px;
           background: linear-gradient(90deg, var(--steel) 0%, var(--copper) 50%, var(--teal) 100%);
@@ -271,7 +284,7 @@ export default function PostLayout({
         }
 
         .oe-hero {
-          max-width: 820px;
+          max-width: 960px;
           margin: 0 auto;
           padding: 48px 48px 40px;
           border-bottom: 1px solid var(--rule);
@@ -337,7 +350,7 @@ export default function PostLayout({
         .oe-meta span { display: flex; align-items: center; gap: 6px; }
 
         .oe-cover-wrap {
-          max-width: 820px;
+          max-width: 960px;
           margin: 0 auto;
           padding: 32px 48px 0;
         }
@@ -351,12 +364,12 @@ export default function PostLayout({
         }
 
         .oe-article-wrap {
-          max-width: 820px;
+          max-width: 960px;
           margin: 0 auto;
           padding: 0 48px;
           display: grid;
-          grid-template-columns: 1fr 200px;
-          gap: 56px;
+          grid-template-columns: 1fr 220px;
+          gap: 60px;
           align-items: start;
         }
 
@@ -375,8 +388,8 @@ export default function PostLayout({
           color: var(--steel);
         }
         .oe-article-body p {
-          font-size: .97rem;
-          line-height: 1.82;
+          font-size: 1.05rem;
+          line-height: 1.8;
           color: var(--ink2);
           margin-bottom: 1.35em;
         }
@@ -596,7 +609,7 @@ export default function PostLayout({
         .oe-share-fb:hover { background: #1877f2; border-color: #1877f2; }
 
         .oe-footer {
-          max-width: 820px;
+          max-width: 960px;
           margin: 0 auto;
           padding: 24px 48px 48px;
           border-top: 2px solid var(--ink);
@@ -633,7 +646,7 @@ export default function PostLayout({
         .oe-cover-wrap  { animation-delay: .08s; }
         .oe-article-wrap { animation-delay: .16s; }
 
-        @media (max-width: 820px) {
+        @media (max-width: 900px) {
           .oe-nav { padding: 12px 24px; }
           .oe-hero { padding: 32px 24px; }
           .oe-cover-wrap { padding: 24px 24px 0; }

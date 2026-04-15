@@ -2,13 +2,11 @@
 
 import { useState } from "react"
 import { usePathname } from "next/navigation"
-import { Input } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
-import { LuCalendar, LuSearch } from "react-icons/lu"
+import { LuSearch } from "react-icons/lu"
 
 import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
-import Tag from "@/components/Tag"
 import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface PaginationProps {
@@ -30,43 +28,35 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
   const nextPage = currentPage + 1 <= totalPages
 
   return (
-    <div className="flex items-center justify-center space-x-2 py-6 sm:space-x-4 sm:py-8">
-      <nav className="flex items-center space-x-2 sm:space-x-6">
-        {prevPage ? (
-          <CustomLink
-            href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
-            rel="prev"
-            className="rounded-lg bg-white px-3 py-2 text-sm text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg sm:rounded-xl sm:px-6 sm:py-3 sm:text-base dark:bg-gray-800 dark:text-gray-200"
-          >
-            ← {t("prev")}
-          </CustomLink>
-        ) : (
-          <div className="cursor-not-allowed rounded-lg px-3 py-2 text-sm text-gray-400 sm:rounded-xl sm:px-6 sm:py-3 sm:text-base">
-            ← {t("prev")}
-          </div>
-        )}
+    <nav className="ol-pagination">
+      {prevPage ? (
+        <CustomLink
+          href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
+          rel="prev"
+          className="ol-page-link"
+        >
+          ← {t("prev")}
+        </CustomLink>
+      ) : (
+        <span className="ol-page-link ol-page-disabled">← {t("prev")}</span>
+      )}
 
-        <div className="flex items-center space-x-1 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-2 py-1 text-xs font-medium text-white sm:space-x-2 sm:px-4 sm:py-2 sm:text-sm">
-          <span>{currentPage}</span>
-          <span className="text-blue-100">{t("of")}</span>
-          <span>{totalPages}</span>
-        </div>
+      <span className="ol-page-indicator">
+        {currentPage} <span className="ol-page-sep">{t("of")}</span> {totalPages}
+      </span>
 
-        {nextPage ? (
-          <CustomLink
-            href={`/${basePath}/page/${currentPage + 1}`}
-            rel="next"
-            className="rounded-lg bg-white px-3 py-2 text-sm text-gray-700 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg sm:rounded-xl sm:px-6 sm:py-3 sm:text-base dark:bg-gray-800 dark:text-gray-200"
-          >
-            {t("next")} →
-          </CustomLink>
-        ) : (
-          <div className="cursor-not-allowed rounded-lg px-3 py-2 text-sm text-gray-400 sm:rounded-xl sm:px-6 sm:py-3 sm:text-base">
-            {t("next")} →
-          </div>
-        )}
-      </nav>
-    </div>
+      {nextPage ? (
+        <CustomLink
+          href={`/${basePath}/page/${currentPage + 1}`}
+          rel="next"
+          className="ol-page-link"
+        >
+          {t("next")} →
+        </CustomLink>
+      ) : (
+        <span className="ol-page-link ol-page-disabled">{t("next")} →</span>
+      )}
+    </nav>
   )
 }
 
@@ -89,168 +79,361 @@ export default function ListLayout({
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
   return (
-    <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      {/* Title */}
-      <div className="mb-6 mt-5 sm:mb-8">
-        <h1 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl dark:text-white">
-          {title}
-        </h1>
-      </div>
-      {/* Simple Search Bar - bez tła */}
-      <div className="mb-6 sm:mb-8">
-        <div className="mx-auto mt-3 max-w-2xl">
-          <Input
+    <div className="ol-root">
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap"
+      />
+
+      <div className="ol-top-rule" />
+
+      <header className="ol-header">
+        <div className="ol-eyebrow">
+          <span>Index</span>
+        </div>
+        <h1 className="ol-h1">{title}</h1>
+        <div className="ol-search">
+          <LuSearch aria-hidden />
+          <input
             aria-label={t("search")}
             type="text"
-            onChange={(e) => setSearchValue(e.target.value)}
             placeholder={t("search")}
-            startContent={<LuSearch className="text-gray-400" />}
-            className="w-full"
-            classNames={{
-              input: "text-base sm:text-lg pl-3 sm:pl-4",
-              innerWrapper: "bg-white dark:bg-gray-800",
-              inputWrapper:
-                "h-11 sm:h-12 bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-600 rounded-xl hover:shadow-lg focus-within:shadow-lg transition-all duration-300",
-            }}
+            value={searchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
           />
         </div>
-      </div>
-      {/* Posts Grid */}
+      </header>
+
       {!filteredBlogPosts.length ? (
-        <div className="py-12 text-center sm:py-16">
-          <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-gray-200 sm:mb-6 sm:size-20 dark:from-gray-700 dark:to-gray-800">
-            <LuSearch className="size-6 text-gray-400 sm:size-8" />
-          </div>
-          <p className="text-lg text-gray-500 sm:text-xl dark:text-gray-400">{t("NotFound")}</p>
+        <div className="ol-empty">
+          <LuSearch aria-hidden />
+          <p>{t("NotFound")}</p>
         </div>
       ) : (
-        <div className="mb-8 grid grid-cols-1 gap-5 sm:mb-12 sm:gap-6 md:grid-cols-2 lg:gap-8 xl:grid-cols-3">
-          {displayPosts.map((post, index) => {
+        <div className="ol-list">
+          {displayPosts.map((post) => {
             const { title, description, tags, publishedAt, slug, coverImage } = post
+            const tagList = Array.isArray(tags)
+              ? (tags as { value: string; label: string }[])
+              : []
+            const primaryTag = tagList.length > 0 ? tagList[0]?.label : null
+            const href = `/${basePath}/${slug}`
 
             return (
-              <article
-                key={slug}
-                className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:rounded-3xl dark:border-gray-700 dark:bg-gray-800"
-                style={{
-                  animationDelay: `${index * 100}ms`,
-                }}
-              >
-                {/* Cover Image */}
-                <div className="relative h-44 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 sm:h-48 lg:h-56 dark:from-gray-700 dark:to-gray-600">
+              <article key={slug} className="ol-card">
+                <CustomLink href={href} className="ol-card-link">
                   {coverImage ? (
-                    <CustomLink href={`/${basePath}/${slug}`} className="block h-full">
-                      <div className="relative h-full">
-                        <img
-                          src={coverImage}
-                          alt={`Okładka: ${title}`}
-                          className="size-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        />
-                        {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
-                      </div>
-                    </CustomLink>
+                    <div className="ol-card-cover">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={coverImage} alt={`Okładka: ${title}`} loading="lazy" />
+                    </div>
                   ) : (
-                    <div className="flex h-full items-center justify-center">
-                      <div className="flex size-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-200 to-purple-200 sm:size-16 sm:rounded-2xl lg:size-20 dark:from-gray-600 dark:to-gray-500">
-                        <LuSearch className="size-6 text-gray-400 sm:size-7 lg:size-8" />
-                      </div>
+                    <div className="ol-card-cover ol-card-cover-empty">
+                      <LuSearch aria-hidden />
                     </div>
                   )}
+                </CustomLink>
 
-                  {/* Date Badge */}
-                  <div className="absolute left-3 top-3 sm:left-4 sm:top-4">
-                    <div className="rounded-lg bg-white/90 px-2 py-1 shadow-lg backdrop-blur-sm sm:rounded-xl sm:px-3 sm:py-2 dark:bg-gray-800/90">
-                      <div className="flex items-center space-x-1 text-xs sm:space-x-2 sm:text-sm">
-                        <LuCalendar className="size-3 text-blue-500 sm:size-4" />
-                        <time
-                          dateTime={publishedAt}
-                          className="font-medium text-gray-700 dark:text-gray-200"
-                        >
-                          {getFormattedDate(publishedAt, lang)}
-                        </time>
-                      </div>
-                    </div>
+                <div className="ol-card-body">
+                  <div className="ol-card-meta">
+                    <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>
+                    {primaryTag && (
+                      <>
+                        <span className="ol-meta-sep">·</span>
+                        <span className="ol-meta-tag">{primaryTag}</span>
+                      </>
+                    )}
                   </div>
-                </div>
 
-                {/* Content */}
-                <div className="space-y-3 p-4 sm:space-y-4 sm:p-5 lg:p-6">
-                  {/* Tags */}
-                  {tags && Array.isArray(tags) && (
-                    <div className="flex flex-wrap gap-1 sm:gap-2">
-                      {tags.slice(0, 3).map((tag: any, tagIndex: number) => {
-                        const tagValue = tag?.value || tag?.label || tag || tagIndex
-                        const tagLabel = tag?.label || tag?.value || tag || ""
-                        const uniqueKey = `${slug}-tag-${tagValue}-${tagIndex}`
-
-                        return tagLabel ? (
-                          <div
-                            key={uniqueKey}
-                            className="transition-transform duration-200 hover:scale-105"
-                          >
-                            <Tag text={tagLabel} />
-                          </div>
-                        ) : null
-                      })}
-                      {tags.length > 3 && (
-                        <span
-                          key={`${slug}-more-tags`}
-                          className="inline-flex cursor-pointer items-center rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 transition-colors duration-200 hover:bg-gray-200 sm:px-3 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-                        >
-                          +{tags.length - 3}
-                        </span>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Title */}
-                  <h2 className="text-lg font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-blue-600 sm:text-xl lg:text-2xl dark:text-white dark:group-hover:text-blue-400">
-                    <CustomLink
-                      href={`/${basePath}/${slug}`}
-                      className="decoration-2 underline-offset-4 hover:underline"
-                    >
-                      {title}
-                    </CustomLink>
+                  <h2 className="ol-card-title">
+                    <CustomLink href={href}>{title}</CustomLink>
                   </h2>
 
-                  {/* Description */}
-                  <p className="line-clamp-3 text-sm leading-relaxed text-gray-600 sm:text-base lg:text-lg dark:text-gray-300">
-                    {description}
-                  </p>
+                  {description && <p className="ol-card-desc">{description}</p>}
 
-                  {/* Read More Link */}
-                  <div className="pt-2">
-                    <CustomLink
-                      href={`/${basePath}/${slug}`}
-                      className="group/link inline-flex items-center space-x-2 text-sm font-medium text-blue-600 transition-colors duration-300 hover:text-blue-700 sm:text-base dark:text-blue-400 dark:hover:text-blue-300"
-                    >
-                      <span>Czytaj więcej</span>
-                      <svg
-                        className="size-3 transition-transform duration-300 group-hover/link:translate-x-1 sm:size-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </CustomLink>
-                  </div>
+                  <CustomLink href={href} className="ol-card-cta">
+                    {t("search") === "Search" ? "Read more" : "Czytaj więcej"} →
+                  </CustomLink>
                 </div>
               </article>
             )
           })}
         </div>
       )}
-      {/* Pagination */}
+
       {pagination && pagination.totalPages > 1 && !searchValue && (
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
       )}
-    </main>
+
+      <style>{`
+        .ol-root {
+          --ink:    #1a1714;
+          --ink2:   #3d3a35;
+          --ink3:   #7a756e;
+          --paper:  #ffffff;
+          --paper2: #fafafa;
+          --paper3: #f2f2f2;
+          --steel:  #1c3a5c;
+          --copper: #db2777;
+          --copper2:#ec4899;
+          --teal:   #0e6b5e;
+          --rule:   #e5e5e5;
+          --serif:  'Playfair Display', 'Georgia', serif;
+          --body:   'Libre Baskerville', 'Georgia', serif;
+          --mono:   'IBM Plex Mono', ui-monospace, monospace;
+          --sans:   'IBM Plex Sans', system-ui, sans-serif;
+
+          background: var(--paper);
+          color: var(--ink);
+          font-family: var(--body);
+          -webkit-font-smoothing: antialiased;
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 0 48px 64px;
+        }
+        .dark .ol-root, .ol-root.dark {
+          --ink:    #f5f2ec;
+          --ink2:   #d4cfc4;
+          --ink3:   #8b857b;
+          --paper:  #0f0e0d;
+          --paper2: #1a1816;
+          --paper3: #242120;
+          --steel:  #8fb3dc;
+          --copper: #f472b6;
+          --copper2:#ec4899;
+          --teal:   #5eead4;
+          --rule:   #2e2a27;
+        }
+
+        .ol-top-rule {
+          height: 3px;
+          margin: 0 -48px 0;
+          background: linear-gradient(90deg, var(--steel) 0%, var(--copper) 50%, var(--teal) 100%);
+        }
+
+        .ol-header {
+          padding: 40px 0 28px;
+          border-bottom: 1px solid var(--rule);
+          margin-bottom: 12px;
+        }
+        .ol-eyebrow {
+          font-family: var(--mono);
+          font-size: .7rem;
+          letter-spacing: .18em;
+          text-transform: uppercase;
+          color: var(--copper);
+          margin-bottom: 14px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+        .ol-eyebrow::after {
+          content: '';
+          flex: 1;
+          height: 1px;
+          background: var(--rule);
+        }
+        .ol-h1 {
+          font-family: var(--serif);
+          font-size: clamp(2rem, 4vw, 2.8rem);
+          font-weight: 700;
+          line-height: 1.15;
+          letter-spacing: -.02em;
+          color: var(--ink);
+          margin-bottom: 24px;
+        }
+        .ol-search {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 14px;
+          border: 1px solid var(--rule);
+          border-radius: 2px;
+          background: var(--paper);
+          max-width: 480px;
+          transition: border-color .15s;
+        }
+        .ol-search:focus-within { border-color: var(--copper); }
+        .ol-search svg { color: var(--ink3); flex-shrink: 0; }
+        .ol-search input {
+          flex: 1;
+          background: transparent;
+          border: none;
+          outline: none;
+          font-family: var(--sans);
+          font-size: .95rem;
+          color: var(--ink);
+        }
+        .ol-search input::placeholder { color: var(--ink3); }
+
+        .ol-list {
+          display: flex;
+          flex-direction: column;
+        }
+        .ol-card {
+          display: grid;
+          grid-template-columns: 260px 1fr;
+          gap: 32px;
+          padding: 32px 0;
+          border-bottom: 1px solid var(--rule);
+          align-items: start;
+        }
+        .ol-card:first-child { padding-top: 32px; }
+        .ol-card-link { display: block; }
+        .ol-card-cover {
+          position: relative;
+          aspect-ratio: 4 / 3;
+          overflow: hidden;
+          border: 1px solid var(--rule);
+          border-radius: 2px;
+          background: var(--paper2);
+        }
+        .ol-card-cover img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform .5s ease;
+        }
+        .ol-card-link:hover .ol-card-cover img {
+          transform: scale(1.04);
+        }
+        .ol-card-cover-empty {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--ink3);
+        }
+        .ol-card-cover-empty svg { width: 28px; height: 28px; }
+
+        .ol-card-body {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .ol-card-meta {
+          font-family: var(--mono);
+          font-size: .68rem;
+          letter-spacing: .08em;
+          color: var(--ink3);
+          text-transform: uppercase;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          align-items: center;
+        }
+        .ol-meta-sep { opacity: .5; }
+        .ol-meta-tag { color: var(--copper); }
+
+        .ol-card-title {
+          font-family: var(--serif);
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.2;
+          letter-spacing: -.015em;
+          color: var(--ink);
+          margin: 0;
+        }
+        .ol-card-title a {
+          color: inherit;
+          text-decoration: none;
+          background-image: linear-gradient(var(--copper), var(--copper));
+          background-size: 0 1px;
+          background-repeat: no-repeat;
+          background-position: 0 100%;
+          transition: background-size .3s ease;
+        }
+        .ol-card-title a:hover {
+          background-size: 100% 1px;
+          color: var(--copper);
+        }
+        .ol-card-desc {
+          font-family: var(--sans);
+          font-size: .96rem;
+          line-height: 1.6;
+          color: var(--ink2);
+          font-weight: 300;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        .ol-card-cta {
+          font-family: var(--mono);
+          font-size: .7rem;
+          letter-spacing: .14em;
+          text-transform: uppercase;
+          color: var(--copper);
+          text-decoration: none;
+          margin-top: 4px;
+          transition: color .15s;
+        }
+        .ol-card-cta:hover { color: var(--copper2); }
+
+        .ol-empty {
+          padding: 80px 0;
+          text-align: center;
+          color: var(--ink3);
+        }
+        .ol-empty svg {
+          width: 32px;
+          height: 32px;
+          margin: 0 auto 16px;
+          display: block;
+        }
+        .ol-empty p {
+          font-family: var(--sans);
+          font-size: 1rem;
+        }
+
+        .ol-pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 24px;
+          padding: 40px 0 16px;
+          border-top: 1px solid var(--rule);
+          margin-top: 24px;
+          font-family: var(--mono);
+          font-size: .74rem;
+          letter-spacing: .08em;
+          text-transform: uppercase;
+        }
+        .ol-page-link {
+          color: var(--ink2);
+          text-decoration: none;
+          padding: 6px 14px;
+          border: 1px solid var(--rule);
+          border-radius: 2px;
+          transition: border-color .15s, color .15s;
+        }
+        .ol-page-link:hover { border-color: var(--copper); color: var(--copper); }
+        .ol-page-disabled {
+          color: var(--paper3);
+          border-color: var(--paper3);
+          cursor: not-allowed;
+        }
+        .dark .ol-page-disabled, .ol-root.dark .ol-page-disabled {
+          color: var(--paper3);
+          border-color: var(--rule);
+          opacity: .4;
+        }
+        .ol-page-indicator {
+          color: var(--copper);
+          font-weight: 500;
+        }
+        .ol-page-sep { color: var(--ink3); margin: 0 4px; }
+
+        @media (max-width: 900px) {
+          .ol-root { padding: 0 24px 48px; }
+          .ol-top-rule { margin: 0 -24px; }
+          .ol-card {
+            grid-template-columns: 1fr;
+            gap: 16px;
+          }
+          .ol-card-cover { max-width: 100%; aspect-ratio: 16 / 9; }
+          .ol-card-title { font-size: 1.35rem; }
+        }
+      `}</style>
+    </div>
   )
 }
