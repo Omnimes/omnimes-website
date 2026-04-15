@@ -210,6 +210,7 @@ export default function NewsLayout({
         .on-root .on-h1,
         .on-root .on-article-body h1,
         .on-root .on-article-body h2,
+        .on-root .on-article-body h3,
         .on-root .on-article-body h4 {
           color: var(--ink);
         }
@@ -356,7 +357,7 @@ export default function NewsLayout({
           font-weight: 500;
           letter-spacing: .1em;
           text-transform: uppercase;
-          color: var(--steel);
+          color: var(--ink);
           margin: 1.6em 0 .4em;
         }
         .on-article-body ul, .on-article-body ol {

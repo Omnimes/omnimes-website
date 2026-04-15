@@ -259,7 +259,9 @@ export default function PostLayout({
         .oe-root .oe-h1,
         .oe-root .oe-article-body h1,
         .oe-root .oe-article-body h2,
-        .oe-root .oe-article-body h4 {
+        .oe-root .oe-article-body h3,
+        .oe-root .oe-article-body h4,
+        .oe-root .oe-article-body > p:first-of-type::first-letter {
           color: var(--ink);
         }
         .oe-top-rule {
@@ -394,7 +396,7 @@ export default function PostLayout({
           float: left;
           margin-right: 6px;
           margin-top: 5px;
-          color: var(--steel);
+          color: var(--ink);
         }
         .oe-article-body p {
           font-size: 1.05rem;
@@ -442,7 +444,7 @@ export default function PostLayout({
           font-weight: 500;
           letter-spacing: .12em;
           text-transform: uppercase;
-          color: var(--steel);
+          color: var(--ink);
           margin: 2em 0 .5em;
         }
         .oe-article-body h4 {
