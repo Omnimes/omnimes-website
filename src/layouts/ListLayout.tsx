@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { useLocale, useTranslations } from "next-intl"
-import { LuSearch } from "react-icons/lu"
+import { LuCalendar, LuSearch } from "react-icons/lu"
 
 import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
@@ -85,8 +85,6 @@ export default function ListLayout({
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap"
       />
 
-      <div className="ol-top-rule" />
-
       <header className="ol-header">
         <div className="ol-eyebrow">
           <span>Index</span>
@@ -110,22 +108,27 @@ export default function ListLayout({
           <p>{t("NotFound")}</p>
         </div>
       ) : (
-        <div className="ol-list">
+        <div className="ol-grid">
           {displayPosts.map((post) => {
             const { title, description, tags, publishedAt, slug, coverImage } = post
             const tagList = Array.isArray(tags)
               ? (tags as { value: string; label: string }[])
               : []
-            const primaryTag = tagList.length > 0 ? tagList[0]?.label : null
             const href = `/${basePath}/${slug}`
 
             return (
               <article key={slug} className="ol-card">
-                <CustomLink href={href} className="ol-card-link">
+                <CustomLink href={href} className="ol-card-cover-link">
                   {coverImage ? (
                     <div className="ol-card-cover">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={coverImage} alt={`Okładka: ${title}`} loading="lazy" />
+                      <div className="ol-card-date">
+                        <LuCalendar aria-hidden />
+                        <time dateTime={publishedAt}>
+                          {getFormattedDate(publishedAt, lang)}
+                        </time>
+                      </div>
                     </div>
                   ) : (
                     <div className="ol-card-cover ol-card-cover-empty">
@@ -135,15 +138,15 @@ export default function ListLayout({
                 </CustomLink>
 
                 <div className="ol-card-body">
-                  <div className="ol-card-meta">
-                    <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>
-                    {primaryTag && (
-                      <>
-                        <span className="ol-meta-sep">·</span>
-                        <span className="ol-meta-tag">{primaryTag}</span>
-                      </>
-                    )}
-                  </div>
+                  {tagList.length > 0 && (
+                    <div className="ol-card-tags">
+                      {tagList.map((tag, i) => (
+                        <span key={`${slug}-${tag.value}-${i}`} className="ol-card-tag">
+                          {tag.label}
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
                   <h2 className="ol-card-title">
                     <CustomLink href={href}>{title}</CustomLink>
@@ -183,15 +186,16 @@ export default function ListLayout({
           --mono:   'IBM Plex Mono', ui-monospace, monospace;
           --sans:   'IBM Plex Sans', system-ui, sans-serif;
 
-          background: var(--paper);
           color: var(--ink);
           font-family: var(--body);
           -webkit-font-smoothing: antialiased;
-          max-width: 960px;
+          max-width: 1280px;
           margin: 0 auto;
-          padding: 0 48px 64px;
+          padding: 0 32px 64px;
         }
-        .dark .ol-root, .ol-root.dark {
+        html.dark .ol-root,
+        .dark .ol-root,
+        .ol-root.dark {
           --ink:    #f5f2ec;
           --ink2:   #d4cfc4;
           --ink3:   #8b857b;
@@ -204,17 +208,15 @@ export default function ListLayout({
           --teal:   #5eead4;
           --rule:   #2e2a27;
         }
-
-        .ol-top-rule {
-          height: 3px;
-          margin: 0 -48px 0;
-          background: linear-gradient(90deg, var(--steel) 0%, var(--copper) 50%, var(--teal) 100%);
+        .ol-root,
+        .ol-root .ol-h1,
+        .ol-root .ol-card-title {
+          color: var(--ink);
         }
 
         .ol-header {
           padding: 40px 0 28px;
-          border-bottom: 1px solid var(--rule);
-          margin-bottom: 12px;
+          margin-bottom: 20px;
         }
         .ol-eyebrow {
           font-family: var(--mono);
@@ -239,21 +241,23 @@ export default function ListLayout({
           font-weight: 700;
           line-height: 1.15;
           letter-spacing: -.02em;
-          color: var(--ink);
           margin-bottom: 24px;
         }
         .ol-search {
           display: flex;
           align-items: center;
           gap: 10px;
-          padding: 10px 14px;
+          padding: 12px 18px;
           border: 1px solid var(--rule);
-          border-radius: 2px;
+          border-radius: 999px;
           background: var(--paper);
-          max-width: 480px;
-          transition: border-color .15s;
+          max-width: 520px;
+          transition: border-color .15s, box-shadow .15s;
         }
-        .ol-search:focus-within { border-color: var(--copper); }
+        .ol-search:focus-within {
+          border-color: var(--copper);
+          box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.12);
+        }
         .ol-search svg { color: var(--ink3); flex-shrink: 0; }
         .ol-search input {
           flex: 1;
@@ -266,36 +270,41 @@ export default function ListLayout({
         }
         .ol-search input::placeholder { color: var(--ink3); }
 
-        .ol-list {
-          display: flex;
-          flex-direction: column;
+        .ol-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 28px;
         }
         .ol-card {
-          display: grid;
-          grid-template-columns: 260px 1fr;
-          gap: 32px;
-          padding: 32px 0;
-          border-bottom: 1px solid var(--rule);
-          align-items: start;
+          background: var(--paper);
+          border: 1px solid var(--rule);
+          border-radius: 18px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          transition: border-color .2s, transform .3s, box-shadow .3s;
         }
-        .ol-card:first-child { padding-top: 32px; }
-        .ol-card-link { display: block; }
+        .ol-card:hover {
+          border-color: var(--copper);
+          transform: translateY(-3px);
+          box-shadow: 0 14px 36px -18px rgba(219, 39, 119, 0.25);
+        }
+
+        .ol-card-cover-link { display: block; }
         .ol-card-cover {
           position: relative;
-          aspect-ratio: 4 / 3;
+          aspect-ratio: 16 / 10;
           overflow: hidden;
-          border: 1px solid var(--rule);
-          border-radius: 2px;
           background: var(--paper2);
         }
         .ol-card-cover img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: transform .5s ease;
+          transition: transform .6s ease;
         }
-        .ol-card-link:hover .ol-card-cover img {
-          transform: scale(1.04);
+        .ol-card:hover .ol-card-cover img {
+          transform: scale(1.06);
         }
         .ol-card-cover-empty {
           display: flex;
@@ -305,67 +314,94 @@ export default function ListLayout({
         }
         .ol-card-cover-empty svg { width: 28px; height: 28px; }
 
+        .ol-card-date {
+          position: absolute;
+          top: 14px;
+          left: 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 12px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.92);
+          backdrop-filter: blur(6px);
+          font-family: var(--mono);
+          font-size: .65rem;
+          letter-spacing: .05em;
+          color: var(--ink);
+        }
+        html.dark .ol-card-date,
+        .dark .ol-card-date {
+          background: rgba(15, 14, 13, 0.82);
+          color: var(--ink);
+        }
+        .ol-card-date svg { color: var(--copper); width: 12px; height: 12px; }
+
         .ol-card-body {
+          padding: 22px 22px 24px;
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: 12px;
+          flex: 1;
         }
-        .ol-card-meta {
-          font-family: var(--mono);
-          font-size: .68rem;
-          letter-spacing: .08em;
-          color: var(--ink3);
-          text-transform: uppercase;
+        .ol-card-tags {
           display: flex;
           flex-wrap: wrap;
-          gap: 8px;
-          align-items: center;
+          gap: 6px;
         }
-        .ol-meta-sep { opacity: .5; }
-        .ol-meta-tag { color: var(--copper); }
+        .ol-card-tag {
+          font-family: var(--mono);
+          font-size: .6rem;
+          letter-spacing: .06em;
+          text-transform: uppercase;
+          padding: 4px 10px;
+          border-radius: 999px;
+          background: rgba(219, 39, 119, 0.08);
+          color: var(--copper);
+          border: 1px solid rgba(219, 39, 119, 0.25);
+        }
+        html.dark .ol-card-tag,
+        .dark .ol-card-tag {
+          background: rgba(244, 114, 182, 0.12);
+          border-color: rgba(244, 114, 182, 0.3);
+        }
 
         .ol-card-title {
           font-family: var(--serif);
-          font-size: 1.6rem;
+          font-size: 1.3rem;
           font-weight: 600;
-          line-height: 1.2;
-          letter-spacing: -.015em;
-          color: var(--ink);
+          line-height: 1.25;
+          letter-spacing: -.01em;
           margin: 0;
         }
         .ol-card-title a {
           color: inherit;
           text-decoration: none;
-          background-image: linear-gradient(var(--copper), var(--copper));
-          background-size: 0 1px;
-          background-repeat: no-repeat;
-          background-position: 0 100%;
-          transition: background-size .3s ease;
+          transition: color .2s;
         }
-        .ol-card-title a:hover {
-          background-size: 100% 1px;
-          color: var(--copper);
-        }
+        .ol-card-title a:hover { color: var(--copper); }
         .ol-card-desc {
           font-family: var(--sans);
-          font-size: .96rem;
-          line-height: 1.6;
+          font-size: .92rem;
+          line-height: 1.55;
           color: var(--ink2);
           font-weight: 300;
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           overflow: hidden;
+          margin: 0;
         }
         .ol-card-cta {
           font-family: var(--mono);
-          font-size: .7rem;
+          font-size: .68rem;
           letter-spacing: .14em;
           text-transform: uppercase;
           color: var(--copper);
           text-decoration: none;
-          margin-top: 4px;
-          transition: color .15s;
+          margin-top: auto;
+          padding-top: 6px;
+          transition: color .15s, gap .15s;
         }
         .ol-card-cta:hover { color: var(--copper2); }
 
@@ -390,9 +426,8 @@ export default function ListLayout({
           justify-content: center;
           align-items: center;
           gap: 24px;
-          padding: 40px 0 16px;
-          border-top: 1px solid var(--rule);
-          margin-top: 24px;
+          padding: 48px 0 16px;
+          margin-top: 36px;
           font-family: var(--mono);
           font-size: .74rem;
           letter-spacing: .08em;
@@ -401,21 +436,26 @@ export default function ListLayout({
         .ol-page-link {
           color: var(--ink2);
           text-decoration: none;
-          padding: 6px 14px;
+          padding: 8px 18px;
           border: 1px solid var(--rule);
-          border-radius: 2px;
-          transition: border-color .15s, color .15s;
+          border-radius: 999px;
+          transition: border-color .15s, color .15s, background .15s;
         }
-        .ol-page-link:hover { border-color: var(--copper); color: var(--copper); }
+        .ol-page-link:hover {
+          border-color: var(--copper);
+          color: var(--copper);
+          background: rgba(219, 39, 119, 0.06);
+        }
         .ol-page-disabled {
-          color: var(--paper3);
-          border-color: var(--paper3);
+          color: var(--ink3);
+          border-color: var(--rule);
+          opacity: .45;
           cursor: not-allowed;
         }
-        .dark .ol-page-disabled, .ol-root.dark .ol-page-disabled {
-          color: var(--paper3);
+        .ol-page-disabled:hover {
           border-color: var(--rule);
-          opacity: .4;
+          color: var(--ink3);
+          background: transparent;
         }
         .ol-page-indicator {
           color: var(--copper);
@@ -423,15 +463,13 @@ export default function ListLayout({
         }
         .ol-page-sep { color: var(--ink3); margin: 0 4px; }
 
-        @media (max-width: 900px) {
-          .ol-root { padding: 0 24px 48px; }
-          .ol-top-rule { margin: 0 -24px; }
-          .ol-card {
-            grid-template-columns: 1fr;
-            gap: 16px;
-          }
-          .ol-card-cover { max-width: 100%; aspect-ratio: 16 / 9; }
-          .ol-card-title { font-size: 1.35rem; }
+        @media (max-width: 1024px) {
+          .ol-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+        }
+        @media (max-width: 640px) {
+          .ol-root { padding: 0 20px 48px; }
+          .ol-grid { grid-template-columns: 1fr; gap: 20px; }
+          .ol-card-title { font-size: 1.2rem; }
         }
       `}</style>
     </div>

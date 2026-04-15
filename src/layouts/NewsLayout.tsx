@@ -191,7 +191,9 @@ export default function NewsLayout({
           line-height: 1.7;
           -webkit-font-smoothing: antialiased;
         }
-        .dark .on-root, .on-root.dark {
+        html.dark .on-root,
+        .dark .on-root,
+        .on-root.dark {
           --ink:    #f5f2ec;
           --ink2:   #d4cfc4;
           --ink3:   #8b857b;
@@ -203,6 +205,13 @@ export default function NewsLayout({
           --copper2:#ec4899;
           --teal:   #5eead4;
           --rule:   #2e2a27;
+        }
+        .on-root,
+        .on-root .on-h1,
+        .on-root .on-article-body h1,
+        .on-root .on-article-body h2,
+        .on-root .on-article-body h4 {
+          color: var(--ink);
         }
         .on-top-rule {
           height: 4px;

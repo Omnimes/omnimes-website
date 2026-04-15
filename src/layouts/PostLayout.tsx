@@ -240,7 +240,9 @@ export default function PostLayout({
           line-height: 1.75;
           -webkit-font-smoothing: antialiased;
         }
-        .dark .oe-root, .oe-root.dark {
+        html.dark .oe-root,
+        .dark .oe-root,
+        .oe-root.dark {
           --ink:    #f5f2ec;
           --ink2:   #d4cfc4;
           --ink3:   #8b857b;
@@ -252,6 +254,13 @@ export default function PostLayout({
           --copper2:#ec4899;
           --teal:   #5eead4;
           --rule:   #2e2a27;
+        }
+        .oe-root,
+        .oe-root .oe-h1,
+        .oe-root .oe-article-body h1,
+        .oe-root .oe-article-body h2,
+        .oe-root .oe-article-body h4 {
+          color: var(--ink);
         }
         .oe-top-rule {
           height: 4px;
