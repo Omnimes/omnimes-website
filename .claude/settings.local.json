@@ -1,7 +1,26 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls -la d:/projekty/omnimes_www3/public/screenshots/omnienergy-*.png)"
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git checkout:*)",
+      "Bash(rm -f .claude/settings.local.json)",
+      "Bash(grep -v \"\\\\.md$\")",
+      "Bash(grep -h \"^tags:\" outstatic/content/posts/*.md)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('outstatic/content/metadata.json'\\)\\); print\\('valid JSON'\\)\")",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.15.1/bin:$PATH\")",
+      "Bash(git stash:*)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('outstatic/content/metadata.json'\\)\\); print\\('valid JSON, entries:', len\\(d['metadata']\\)\\)\")",
+      "Bash(git rebase:*)",
+      "Bash(GIT_EDITOR=true git rebase --continue)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.15.1/bin:$PATH\" GIT_EDITOR=true GIT_SEQUENCE_EDITOR=true EDITOR=true)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.15.1/bin:$PATH\" GIT_EDITOR=true)",
+      "Bash(git commit:*)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('outstatic/content/metadata.json'\\)\\); print\\('valid, entries:', len\\(d['metadata']\\)\\)\")",
+      "Bash(npx tsc:*)"
     ]
   }
 }

@@ -7,7 +7,7 @@ author:
 slug: 'physical-ai-roboty-humanoidalne-na-hali-produkcyjnej'
 description: 'Humanoidalne roboty przestają być eksponatem z konferencji technologicznych, a zaczynają pojawiać się przy linii montażowej w BMW, Mercedes-Benz i w magazynach Amazona. Physical AI — warstwa oprogramowania, która pozwala maszynie rozumieć otoczenie fizyczne, podejmować decyzje i wykonywać zadania manipulacyjne — zmienia sposób, w jaki myślimy o automatyzacji produkcji.
 Artykuł pokazuje, gdzie w 2026 roku znajdujemy się z humanoidami w przemyśle, jakie są realne dane rynkowe, które firmy faktycznie wdrożyły te rozwiązania, oraz gdzie kończy się demo, a zaczyna produkcja.'
-coverImage: '/images/leveraging-robotics-and-mes-for-real-time-monitoring-to-optimize-supply-chain-processes.png'
+coverImage: '/images/physical-ai-humanoids-2026.png'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"smartFactory","label":"smartFactory"}]
 publishedAt: '2026-03-30T08:00:00.000Z'

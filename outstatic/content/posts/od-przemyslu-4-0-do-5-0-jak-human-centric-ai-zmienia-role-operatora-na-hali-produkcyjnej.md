@@ -8,7 +8,7 @@ slug: 'od-przemyslu-4-0-do-5-0-jak-human-centric-ai-zmienia-role-operatora-na-ha
 description: 'Przemysł 4.0 obiecywał "fabrykę bez ludzi". Komisja Europejska, WEF i coraz więcej producentów odpowiadają koncepcją Industry 5.0 — gdzie człowiek nie znika z hali, ale dostaje nowe narzędzia: cobota, AI asystenta, exoszkielet, rozszerzoną rzeczywistość. Operator 2026 roku to nie osoba podająca komponent, tylko przetwarzająca informacje, nadzorująca systemy i uczestnicząca w decyzjach.
 
 Artykuł pokazuje, czym różni się 4.0 od 5.0, jakie są dane rynkowe (BCG, McKinsey, EU Joint Research Centre), kto faktycznie wdraża human-centric AI (Bosch, Stellantis, Airbus), oraz jakie są bariery — zmęczenie kognitywne, zgodność z ISO 45001 i EU AI Act.'
-coverImage: '/images/indystry_5_0_vs_4_0-IyMT.png'
+coverImage: '/images/industry-5-0-human-centric-operator-2026.png'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"industry50","label":"industry50"},{"value":"przemysł50","label":"przemysł50"},{"value":"smartFactory","label":"smartFactory"}]
 publishedAt: '2026-04-13T08:00:00.000Z'

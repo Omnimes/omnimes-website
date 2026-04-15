@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenci AI w Przemyśle 4.0: Od Automatyzacji do Autonomii</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:      #1a1714;
+  --ink2:     #3d3a35;
+  --ink3:     #7a756e;
+  --paper:    #faf8f4;
+  --paper2:   #f2ede4;
+  --paper3:   #e8e1d5;
+  --steel:    #1c3a5c;
+  --steel2:   #2a5280;
+  --copper:   #b5530a;
+  --copper2:  #d96c1a;
+  --teal:     #0e6b5e;
+  --teal2:    #128574;
+  --amber:    #c48b0e;
+  --rule:     #d4cdc0;
+  --serif:    'Playfair Display', 'Georgia', serif;
+  --body:     'Libre Baskerville', 'Georgia', serif;
+  --mono:     'IBM Plex Mono', monospace;
+  --sans:     'IBM Plex Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 17px; scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-weight: 400;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── TOP RULE ── */
+.top-rule {
+  height: 4px;
+  background: linear-gradient(90deg, var(--steel) 0%, var(--copper) 50%, var(--teal) 100%);
+}
+
+/* ── NAV BAR ── */
+.nav {
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--paper);
+}
+.nav-brand {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink3);
+}
+.nav-tag {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--copper);
+  border: 1px solid var(--copper);
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+/* ── HERO ── */
+.hero {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 64px 48px 48px;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-eyebrow::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -.02em;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+h1 .sub {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  font-size: .62em;
+  color: var(--ink3);
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+
+.hero-deck {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--ink2);
+  line-height: 1.65;
+  max-width: 620px;
+  margin: 24px 0 32px;
+  padding-left: 18px;
+  border-left: 3px solid var(--copper2);
+}
+
+.hero-meta {
+  display: flex;
+  gap: 24px;
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: var(--ink3);
+  letter-spacing: .06em;
+  flex-wrap: wrap;
+}
+.hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+/* ── STAT BANNER ── */
+.stat-banner {
+  background: var(--steel);
+  color: #e8eef5;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.stat-banner-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #2a4a6a;
+}
+.stat-b {
+  padding: 22px 20px;
+  border-right: 1px solid #2a4a6a;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stat-b:last-child { border-right: none; }
+.stat-b-num {
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  color: var(--copper2);
+  line-height: 1;
+  font-weight: 600;
+}
+.stat-b-label {
+  font-family: var(--sans);
+  font-size: .72rem;
+  color: #8fa8c0;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.stat-b-src {
+  font-family: var(--mono);
+  font-size: .58rem;
+  color: #4a6a88;
+  margin-top: 4px;
+}
+
+/* ── LAYOUT ── */
+.article-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 56px;
+  align-items: start;
+}
+
+.article-body {
+  padding: 52px 0 80px;
+}
+
+/* dropcap */
+.dropcap::first-letter {
+  font-family: var(--serif);
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: .82;
+  float: left;
+  margin-right: 6px;
+  margin-top: 5px;
+  color: var(--steel);
+}
+
+.article-body p {
+  font-size: .97rem;
+  line-height: 1.82;
+  color: var(--ink2);
+  margin-bottom: 1.35em;
+}
+.article-body p strong { font-weight: 700; color: var(--ink); }
+.article-body p em { color: var(--copper); font-style: italic; }
+
+/* section heads */
+h2.sh {
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 2.8em 0 .65em;
+  letter-spacing: -.015em;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--rule);
+}
+h2.sh .sh-num {
+  font-family: var(--mono);
+  font-size: .65rem;
+  color: var(--copper);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+
+h3.sub {
+  font-family: var(--sans);
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--steel);
+  margin: 2em 0 .5em;
+}
+
+/* pull quote */
+.pq {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 20px 0 18px;
+  margin: 2.2em 0;
+}
+.pq p {
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.4;
+  margin: 0 !important;
+}
+
+/* ── USE CASES GRID ── */
+.usecase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 1.8em 0;
+}
+.usecase-card {
+  background: var(--paper);
+  padding: 20px 22px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 0 16px;
+  align-items: start;
+  transition: background .15s;
+}
+.usecase-card:hover { background: var(--paper2); }
+.uc-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.uc-i1 { background: #1c3a5c18; }
+.uc-i2 { background: #b5530a18; }
+.uc-i3 { background: #0e6b5e18; }
+.uc-title {
+  font-family: var(--sans);
+  font-size: .88rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.uc-body {
+  font-family: var(--sans);
+  font-size: .8rem;
+  color: var(--ink3);
+  line-height: 1.55;
+}
+.uc-tag {
+  display: inline-block;
+  margin-top: 7px;
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .08em;
+  padding: 2px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.tag-blue   { background: #1c3a5c12; color: var(--steel); border: 1px solid #1c3a5c30; }
+.tag-copper { background: #b5530a12; color: var(--copper); border: 1px solid #b5530a30; }
+.tag-teal   { background: #0e6b5e12; color: var(--teal); border: 1px solid #0e6b5e30; }
+
+/* ── VENDOR TABLE ── */
+.vendor-table {
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 1.8em 0;
+  font-family: var(--sans);
+}
+.vt-head {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.6fr;
+  background: var(--steel);
+  color: #c8d8e8;
+}
+.vt-head div, .vt-row div {
+  padding: 10px 16px;
+  font-size: .72rem;
+}
+.vt-head div {
+  font-family: var(--mono);
+  font-size: .63rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #8fa8c0;
+  border-right: 1px solid #2a4a6a;
+}
+.vt-head div:last-child { border-right: none; }
+.vt-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.6fr;
+  border-bottom: 1px solid var(--rule);
+}
+.vt-row:last-child { border-bottom: none; }
+.vt-row:nth-child(even) { background: var(--paper2); }
+.vt-row div { border-right: 1px solid var(--rule); font-size: .8rem; color: var(--ink2); line-height: 1.4; }
+.vt-row div:first-child { font-weight: 500; color: var(--ink); }
+.vt-row div:last-child { border-right: none; color: var(--ink3); font-size: .75rem; }
+.vt-highlight { color: var(--teal) !important; font-weight: 500 !important; font-family: var(--mono); font-size: .72rem !important; }
+
+/* ── ROADMAP ── */
+.roadmap {
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 1.8em 0;
+}
+.rm-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  border-bottom: 1px solid var(--rule);
+  align-items: stretch;
+}
+.rm-row:last-child { border-bottom: none; }
+.rm-step {
+  background: var(--steel);
+  color: #c8d8e8;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #2a4a6a;
+  font-weight: 600;
+}
+.rm-content { padding: 14px 18px; }
+.rm-title {
+  font-family: var(--sans);
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.rm-desc {
+  font-family: var(--sans);
+  font-size: .78rem;
+  color: var(--ink3);
+  line-height: 1.45;
+}
+
+/* ── BENEFIT PILLS ── */
+.benefit-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1.4em 0;
+}
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: var(--sans);
+  font-size: .78rem;
+  font-weight: 400;
+  border: 1px solid;
+}
+.pill-blue   { background: #1c3a5c0a; color: var(--steel2); border-color: #1c3a5c30; }
+.pill-copper { background: #b5530a0a; color: var(--copper); border-color: #b5530a30; }
+.pill-teal   { background: #0e6b5e0a; color: var(--teal);   border-color: #0e6b5e30; }
+.pill-amber  { background: #c48b0e0a; color: var(--amber);  border-color: #c48b0e30; }
+.pill b { font-weight: 500; }
+
+/* ── CHALLENGE CARDS ── */
+.challenge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 1.8em 0;
+}
+.ch-card {
+  background: var(--paper2);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 18px 18px;
+}
+.ch-head {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: .84rem;
+  color: var(--ink);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ch-icon { font-size: .9rem; }
+.ch-body {
+  font-family: var(--sans);
+  font-size: .78rem;
+  color: var(--ink3);
+  line-height: 1.5;
+}
+.ch-solution {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: .65rem;
+  color: var(--teal);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* ── ROI STRIP ── */
+.roi-strip {
+  background: var(--paper2);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--copper);
+  padding: 18px 20px;
+  margin: 1.8em 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.roi-item {
+  padding: 0 16px;
+  border-right: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.roi-item:first-child { padding-left: 0; }
+.roi-item:last-child  { border-right: none; }
+.roi-num {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--copper);
+  line-height: 1;
+  font-weight: 600;
+}
+.roi-label {
+  font-family: var(--sans);
+  font-size: .72rem;
+  color: var(--ink3);
+  line-height: 1.4;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  padding: 52px 0 80px;
+  position: sticky;
+  top: 28px;
+}
+.sb-block {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.sb-block:last-child { border-bottom: none; }
+.sb-label {
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 12px;
+}
+.sb-toc {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sb-toc li a {
+  font-family: var(--sans);
+  font-size: .78rem;
+  color: var(--ink3);
+  text-decoration: none;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  line-height: 1.3;
+  transition: color .15s;
+}
+.sb-toc li a:hover { color: var(--copper); }
+.sb-toc li a .toc-num { font-family: var(--mono); font-size: .6rem; color: var(--rule); flex-shrink: 0; }
+
+.sb-vendors {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sb-vendors li {
+  font-family: var(--sans);
+  font-size: .76rem;
+  color: var(--ink2);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--paper3);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.sb-vendors li span { font-family: var(--mono); font-size: .62rem; color: var(--ink3); }
+
+.sb-stat-big {
+  font-family: var(--serif);
+  font-size: 2rem;
+  color: var(--copper);
+  line-height: 1;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.sb-stat-desc {
+  font-family: var(--sans);
+  font-size: .74rem;
+  color: var(--ink3);
+  line-height: 1.5;
+}
+
+/* ── FOOTER ── */
+.article-footer {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 48px 48px;
+  border-top: 2px solid var(--ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.footer-sources {
+  font-family: var(--mono);
+  font-size: .62rem;
+  color: var(--ink3);
+  line-height: 1.8;
+  flex: 1;
+  min-width: 240px;
+}
+.footer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.ftag {
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .06em;
+  padding: 4px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  color: var(--ink3);
+  text-transform: uppercase;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero, .stat-banner, .article-wrap {
+  animation: fadeUp .6s ease both;
+}
+.stat-banner { animation-delay: .1s; }
+.article-wrap { animation-delay: .18s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 780px) {
+  .article-wrap { grid-template-columns: 1fr; gap: 0; }
+  .sidebar { display: none; }
+  .stat-banner-inner { grid-template-columns: 1fr 1fr; }
+  .stat-b:nth-child(2) { border-right: none; }
+  .stat-b:nth-child(3) { border-top: 1px solid #2a4a6a; }
+  .challenge-grid { grid-template-columns: 1fr; }
+  .roi-strip { grid-template-columns: 1fr; gap: 14px; }
+  .roi-item { border-right: none; padding: 0; border-bottom: 1px solid var(--rule); padding-bottom: 12px; }
+  .roi-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .hero, .article-wrap { padding-left: 24px; padding-right: 24px; }
+  .nav { padding: 12px 24px; }
+  .stat-banner-inner { padding: 0; }
+  .article-footer { padding: 24px; }
+  .vt-head, .vt-row { grid-template-columns: 1fr 1fr; }
+  .vt-head div:last-child, .vt-row div:last-child { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="top-rule"></div>
+
+<nav class="nav">
+  <span class="nav-brand">Technologia · Przemysł · AI</span>
+  <span class="nav-tag">Industry 4.0</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Analiza · Marzec 2026</div>
+  <h1>
+    Agenci AI w Przemyśle 4.0
+    <span class="sub">Od Automatyzacji do Autonomii</span>
+  </h1>
+  <p class="hero-deck">
+    Agentyczne AI rewolucjonizuje inteligentne fabryki — przechodząc od reaktywnych systemów do autonomicznych agentów, którzy sami podejmują decyzje, optymalizują procesy i adaptują się do zmian w czasie rzeczywistym. Oto co to znaczy w praktyce.
+  </p>
+  <div class="hero-meta">
+    <span>⏱ 7 min czytania</span>
+    <span>📅 Marzec 2026</span>
+    <span>🏭 Industry 4.0 / 5.0</span>
+    <span>Źródła: Gartner, Siemens, Anthropic</span>
+  </div>
+</section>
+
+<!-- STAT BANNER -->
+<div class="stat-banner">
+  <div class="stat-banner-inner">
+    <div class="stat-b">
+      <div class="stat-b-num">30–50%</div>
+      <div class="stat-b-label">redukcja przestojów dzięki predictive maintenance</div>
+      <div class="stat-b-src">Siemens / McKinsey 2025</div>
+    </div>
+    <div class="stat-b">
+      <div class="stat-b-num">40%</div>
+      <div class="stat-b-label">aplikacji enterprise będzie używać AI agents do 2026</div>
+      <div class="stat-b-src">Gartner 2025</div>
+    </div>
+    <div class="stat-b">
+      <div class="stat-b-num">+40%</div>
+      <div class="stat-b-label">poprawa OEE z agentycznym planowaniem produkcji</div>
+      <div class="stat-b-src">Rockwell Automation 2025</div>
+    </div>
+    <div class="stat-b">
+      <div class="stat-b-num">25 mld$</div>
+      <div class="stat-b-label">rynek cloud MES do roku 2030</div>
+      <div class="stat-b-src">MarketsandMarkets 2025</div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div class="article-wrap">
+  <article class="article-body">
+
+    <p class="dropcap">
+      W tradycyjnej fabryce maszyna czeka na polecenie. W inteligentnej fabryce 2026 roku
+      maszyna <strong>sama analizuje dane, przewiduje problem i planuje rozwiązanie</strong> — zanim
+      jakikolwiek operator zdąży to zauważyć. To właśnie odróżnia automatyzację od autonomii.
+      I to jest istota tego, co Przemysł 4.0 staje się dzięki agentycznemu AI.
+    </p>
+
+    <p>
+      Agentyczne AI (agentic AI) to systemy zdolne do samodzielnego podejmowania decyzji,
+      realizacji złożonych zadań wieloetapowych i adaptacji w czasie rzeczywistym — bez
+      ciągłej interwencji człowieka. W kontekście przemysłu oznacza to integrację z MES
+      (Manufacturing Execution Systems), IIoT i ERP w sposób, który tworzy
+      <em>self-optimizing environments</em>: środowiska produkcyjne, które same się naprawiają
+      i doskonalą.
+    </p>
+
+    <div class="pq">
+      <p>„Maszyny nie czekają już na polecenia — proaktywnie rozwiązują problemy, zanim staną się awariami."</p>
+    </div>
+
+    <!-- SECTION 1 -->
+    <h2 class="sh" id="zastosowania">
+      <span class="sh-num">01</span>
+      Kluczowe zastosowania agentów AI
+    </h2>
+
+    <p>
+      Trzy obszary, w których agentyczne AI przynosi dziś najbardziej mierzalne rezultaty
+      w środowiskach produkcyjnych:
+    </p>
+
+    <div class="usecase-grid">
+      <div class="usecase-card">
+        <div class="uc-icon uc-i1">🔧</div>
+        <div>
+          <div class="uc-title">Predictive Maintenance 2.0</div>
+          <div class="uc-body">Agenci monitorują sensory IoT w trybie ciągłym, wykrywają anomalie (wzrost temperatury, drgania poza normą), analizują harmonogram produkcji i <strong>automatycznie planują okna serwisowe</strong> minimalizujące wpływ na output. Siemens w fabryce w Erlangen uruchomił AI-driven maintenance z agentami optymalizującymi asset health w czasie rzeczywistym.</div>
+          <span class="uc-tag tag-blue">−30–50% downtime</span>
+        </div>
+      </div>
+      <div class="usecase-card">
+        <div class="uc-icon uc-i2">📊</div>
+        <div>
+          <div class="uc-title">Dynamiczne planowanie produkcji</div>
+          <div class="uc-body">W warstwie MES agenci rebalansują zlecenia produkcyjne na podstawie real-time data — prognozując popyt, wykrywając wąskie gardła i dostosowując łańcuchy dostaw bez interwencji planistów. Gartner raportuje poprawę accuracy prognoz o <strong>20–50%</strong> i redukcję zapasów o 30%.</div>
+          <span class="uc-tag tag-copper">+20–50% forecast accuracy</span>
+        </div>
+      </div>
+      <div class="usecase-card">
+        <div class="uc-icon uc-i3">🤖</div>
+        <div>
+          <div class="uc-title">Quality Control i robotyka samoucząca się</div>
+          <div class="uc-body">Agenci z 3D vision i reinforcement learning uczą roboty <em>self-learning grasping</em> — zdolność chwytania nowych obiektów bez ręcznego programowania. Micropsi MIRAI skraca onboarding robotów z <strong>dni do godzin</strong>. Kontrola jakości przechodzi od inspekcji próbkowej do 100% inline monitoring.</div>
+          <span class="uc-tag tag-teal">Onboarding: dni → godziny</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <h2 class="sh" id="vendorzy">
+      <span class="sh-num">02</span>
+      Vendorzy i benchmark korzyści
+    </h2>
+
+    <div class="vendor-table">
+      <div class="vt-head">
+        <div>Zastosowanie</div>
+        <div>Korzyść</div>
+        <div>Przykładowi vendorzy</div>
+      </div>
+      <div class="vt-row">
+        <div>Predictive Maintenance</div>
+        <div class="vt-highlight">−50% downtime</div>
+        <div>Siemens Copilot, ABB Ability, GE Predix</div>
+      </div>
+      <div class="vt-row">
+        <div>Production Scheduling</div>
+        <div class="vt-highlight">+40% OEE</div>
+        <div>Rockwell FactoryTalk AI, Dassault 3DEXPERIENCE</div>
+      </div>
+      <div class="vt-row">
+        <div>Supply Chain Optimization</div>
+        <div class="vt-highlight">−30% inventory</div>
+        <div>Agentic systems w cloud MES, o9 Solutions</div>
+      </div>
+      <div class="vt-row">
+        <div>Quality Control</div>
+        <div class="vt-highlight">100% inline</div>
+        <div>Micropsi MIRAI, Cognex ViDi, Landing AI</div>
+      </div>
+      <div class="vt-row">
+        <div>Energy Management</div>
+        <div class="vt-highlight">−15–25% zużycie</div>
+        <div>Schneider Electric EcoStruxure AI, Honeywell Forge</div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <h2 class="sh" id="industry5">
+      <span class="sh-num">03</span>
+      Od Industry 4.0 do Industry 5.0
+    </h2>
+
+    <p>
+      Agentyczne AI otwiera drogę do <strong>Industry 5.0</strong> — modelu, w którym
+      colaboracja człowiek-maszyna staje się normą, a nie wyjątkiem. Agenci przejmują
+      rutynowe, powtarzalne procesy, uwalniając operatorów do pracy, która wymaga
+      kreatywności, osądu i kontaktu z klientem.
+    </p>
+
+    <div class="benefit-row">
+      <span class="pill pill-blue"><b>Self-healing</b> fabryki</span>
+      <span class="pill pill-copper"><b>Resilient</b> supply chains</span>
+      <span class="pill pill-teal"><b>Human-centric</b> automation</span>
+      <span class="pill pill-amber"><b>Real-time</b> adaptacja</span>
+      <span class="pill pill-blue"><b>Touchless</b> processing</span>
+      <span class="pill pill-teal">Closed-loop <b>quality</b></span>
+    </div>
+
+    <p>
+      W Polsce firmy takie jak <strong>byteLAKE</strong> rozwijają custom agents dedykowane
+      automatyzacji MES i SCADA — dostosowane do specyfiki lokalnych linii produkcyjnych.
+      BMW testuje humanoidalne roboty z embedded AI agents na liniach montażowych.
+      FANUC inwestuje w roboty z nową generacją AI, zdolne do samodzielnej rekonfiguracji
+      zadań produkcyjnych.
+    </p>
+
+    <div class="roi-strip">
+      <div class="roi-item">
+        <div class="roi-num">4×</div>
+        <div class="roi-label">szybsze realizowanie zadań vs. tradycyjna automatyzacja</div>
+      </div>
+      <div class="roi-item">
+        <div class="roi-num">90%</div>
+        <div class="roi-label">touchless processing w pilotach Siemens</div>
+      </div>
+      <div class="roi-item">
+        <div class="roi-num">25 mld$</div>
+        <div class="roi-label">szacowany rynek cloud MES w 2030 r.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <h2 class="sh" id="wyzwania">
+      <span class="sh-num">04</span>
+      Wyzwania i jak je rozwiązać
+    </h2>
+
+    <p>
+      Wdrożenie agentycznego AI w środowiskach OT (Operational Technology) napotyka
+      dwie główne bariery — obydwie z dojrzałymi rozwiązaniami:
+    </p>
+
+    <div class="challenge-grid">
+      <div class="ch-card">
+        <div class="ch-head"><span class="ch-icon">🗄️</span> Data silos</div>
+        <div class="ch-body">Dane produkcyjne żyją w odizolowanych systemach MES, SCADA, ERP — agent nie ma spójnego widoku na stan fabryki.</div>
+        <div class="ch-solution">Rozwiązanie → MCP (Model Context Protocol): plug-and-play integracja z systemami MES bez custom pipelines</div>
+      </div>
+      <div class="ch-card">
+        <div class="ch-head"><span class="ch-icon">🔒</span> Cyberbezpieczeństwo OT</div>
+        <div class="ch-body">Sieci OT były projektowane z myślą o izolacji, nie o połączeniu z zewnętrznymi modelami AI — atak na agenta może dotknąć fizyczną infrastrukturę.</div>
+        <div class="ch-solution">Rozwiązanie → Zero-trust architecture + AI threat detection w warstwie OT/IT convergence</div>
+      </div>
+      <div class="ch-card">
+        <div class="ch-head"><span class="ch-icon">📐</span> Jakość danych</div>
+        <div class="ch-body">Agent jest tak dobry jak dane, na których operuje. Brudne dane historyczne sabotują predykcję zanim agent wystartuje.</div>
+        <div class="ch-solution">Rozwiązanie → Data foundation jako krok zero — przed jakimkolwiek pilotem agentycznym</div>
+      </div>
+      <div class="ch-card">
+        <div class="ch-head"><span class="ch-icon">🧑‍🏭</span> Change management</div>
+        <div class="ch-body">Operatorzy z 20-letnim doświadczeniem nie ufają systemowi, który „sam decyduje". Adoption jest równie krytyczny jak technologia.</div>
+        <div class="ch-solution">Rozwiązanie → Human-in-the-loop na etapie pilotu, stopniowe rozszerzanie autonomii z mierzalnym ROI</div>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <h2 class="sh" id="roadmap">
+      <span class="sh-num">05</span>
+      Roadmap implementacji
+    </h2>
+
+    <p>
+      Sprawdzony schemat wdrożenia agentycznego AI w środowisku produkcyjnym —
+      od fundamentów do pełnej autonomii:
+    </p>
+
+    <div class="roadmap">
+      <div class="rm-row">
+        <div class="rm-step">1</div>
+        <div class="rm-content">
+          <div class="rm-title">Clean data foundation</div>
+          <div class="rm-desc">Ujednolicenie danych z MES, SCADA, sensorów IoT. Bez spójnego data layer żaden agent nie zadziała wiarygodnie.</div>
+        </div>
+      </div>
+      <div class="rm-row">
+        <div class="rm-step">2</div>
+        <div class="rm-content">
+          <div class="rm-title">MCP integration</div>
+          <div class="rm-desc">Podłączenie systemów przez Model Context Protocol — standaryzowany interfejs między agentem a narzędziami OT/IT.</div>
+        </div>
+      </div>
+      <div class="rm-row">
+        <div class="rm-step">3</div>
+        <div class="rm-content">
+          <div class="rm-title">Pilot: maintenance agent</div>
+          <div class="rm-desc">Pierwsze wdrożenie w obszarze predictive maintenance — najwyższy ROI, najniższe ryzyko. Mierzony wynik: redukcja nieplanowanych przestojów.</div>
+        </div>
+      </div>
+      <div class="rm-row">
+        <div class="rm-step">4</div>
+        <div class="rm-content">
+          <div class="rm-title">Scale: scheduling + quality</div>
+          <div class="rm-desc">Rozszerzenie na planowanie produkcji i kontrolę jakości po potwierdzeniu ROI pilotu. Human-in-the-loop nadal aktywny.</div>
+        </div>
+      </div>
+      <div class="rm-row">
+        <div class="rm-step">5</div>
+        <div class="rm-content">
+          <div class="rm-title">Full autonomy — self-healing factory</div>
+          <div class="rm-desc">Orkiestrator zarządza zespołem agentów, fabryka reaguje na zakłócenia autonomicznie. Człowiek definiuje cele, agent realizuje.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLOSING -->
+    <h2 class="sh" id="podsumowanie">
+      <span class="sh-num">06</span>
+      Podsumowanie
+    </h2>
+
+    <p>
+      Agentyczne AI to nie kolejna warstwa narzędzi IT nałożona na linię produkcyjną.
+      To <strong>zmiana modelu operacyjnego</strong>: od systemu, który reaguje na polecenia,
+      do systemu, który sam definiuje kolejne kroki i realizuje je autonomicznie.
+    </p>
+
+    <p>
+      Fabryki, które traktują to jako ewolucję automatyzacji, będą walczyć z adaptacją.
+      Fabryki, które traktują to jako nowy model współpracy człowiek–maszyna,
+      mają szansę zbudować <em>self-healing, resilient</em> środowisko produkcyjne —
+      nieosiągalne dla konkurencji działającej w starym paradygmacie.
+    </p>
+
+    <div class="pq">
+      <p>Agentyczne AI to nie narzędzie. To partner w Przemyśle 4.0 — i fundament Industry 5.0.</p>
+    </div>
+
+    <p>
+      Pytanie nie brzmi już „czy wdrożyć agentyczne AI". Brzmi:
+      <strong>od którego procesu zaczniesz i jak szybko zmierzysz ROI pierwszego pilotu?</strong>
+    </p>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-block">
+      <div class="sb-label">Spis treści</div>
+      <ul class="sb-toc">
+        <li><a href="#zastosowania"><span class="toc-num">01</span> Kluczowe zastosowania</a></li>
+        <li><a href="#vendorzy"><span class="toc-num">02</span> Vendorzy i benchmarki</a></li>
+        <li><a href="#industry5"><span class="toc-num">03</span> Industry 4.0 → 5.0</a></li>
+        <li><a href="#wyzwania"><span class="toc-num">04</span> Wyzwania</a></li>
+        <li><a href="#roadmap"><span class="toc-num">05</span> Roadmap</a></li>
+        <li><a href="#podsumowanie"><span class="toc-num">06</span> Podsumowanie</a></li>
+      </ul>
+    </div>
+
+    <div class="sb-block">
+      <div class="sb-label">Kluczowi vendorzy</div>
+      <ul class="sb-vendors">
+        <li>Siemens Copilot <span>Maintenance</span></li>
+        <li>ABB Ability <span>Maintenance</span></li>
+        <li>Rockwell FactoryTalk AI <span>Scheduling</span></li>
+        <li>Dassault 3DEXPERIENCE <span>Scheduling</span></li>
+        <li>Micropsi MIRAI <span>Robotics</span></li>
+        <li>byteLAKE <span>MES/SCADA PL</span></li>
+        <li>FANUC <span>Embedded AI</span></li>
+      </ul>
+    </div>
+
+    <div class="sb-block">
+      <div class="sb-label">Prognoza Gartner</div>
+      <div class="sb-stat-big">40%</div>
+      <div class="sb-stat-desc">aplikacji enterprise z AI agents do 2026 r.</div>
+    </div>
+
+    <div class="sb-block">
+      <div class="sb-label">ROI pilotu maintenance</div>
+      <div class="sb-stat-big">4×</div>
+      <div class="sb-stat-desc">szybsze realizowanie zadań vs. tradycyjna automatyzacja (Siemens, 2025)</div>
+    </div>
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer class="article-footer">
+  <div class="footer-sources">
+    <strong style="color:var(--ink2)">Źródła:</strong><br>
+    Siemens Digital Industries — Erlangen Smart Factory Report 2025<br>
+    Gartner — Emerging Tech: AI Agents in Industrial Automation, 2025<br>
+    McKinsey — The State of AI in Manufacturing, 2025<br>
+    Rockwell Automation — FactoryTalk AI Benchmark Study, 2025<br>
+    MarketsandMarkets — Cloud MES Market Forecast 2030<br>
+    byteLAKE — MES/SCADA Agentic AI Case Studies, 2025<br>
+    BMW Group — Humanoid Robotics Pilot Report, Q1 2026
+  </div>
+  <div class="footer-tags">
+    <span class="ftag">Industry 4.0</span>
+    <span class="ftag">Agentic AI</span>
+    <span class="ftag">MES</span>
+    <span class="ftag">IIoT</span>
+    <span class="ftag">Predictive Maintenance</span>
+    <span class="ftag">Industry 5.0</span>
+    <span class="ftag">OT Security</span>
+    <span class="ftag">MCP</span>
+  </div>
+</footer>
+
+</body>
+</html>
