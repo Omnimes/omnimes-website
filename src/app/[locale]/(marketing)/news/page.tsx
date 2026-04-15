@@ -70,13 +70,13 @@ const Skeleton = ({ src }: { src: string | undefined }) => {
     )
   } else {
     return (
-      <div className="relative flex size-full min-h-40 flex-1 overflow-hidden rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800">
+      <div className="relative flex size-full min-h-40 flex-1 items-center justify-center overflow-hidden rounded-xl bg-white p-4 dark:bg-neutral-900">
         <Image
           src={src}
           alt={"News photo"}
           width={1096}
           height={282}
-          className="h-auto max-h-[300px] w-full object-cover object-center"
+          className="max-h-[260px] w-auto max-w-full object-contain object-center"
         />
       </div>
     )
