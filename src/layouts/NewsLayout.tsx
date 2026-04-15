@@ -104,7 +104,7 @@ export default function NewsLayout({
               fill
               priority
               sizes="(max-width: 820px) 100vw, 820px"
-              style={{ objectFit: "cover", objectPosition: "center" }}
+              style={{ objectFit: "contain", objectPosition: "center" }}
             />
           </div>
         </div>
@@ -214,6 +214,17 @@ export default function NewsLayout({
         .on-root .on-article-body h4 {
           color: var(--ink);
         }
+        .on-article-body h1,
+        .on-article-body h2,
+        .on-article-body h3,
+        .on-article-body h4,
+        .on-article-body h1 a,
+        .on-article-body h2 a,
+        .on-article-body h3 a,
+        .on-article-body h4 a {
+          text-decoration: none;
+          color: inherit;
+        }
         .on-top-rule {
           height: 4px;
           background: linear-gradient(90deg, var(--steel) 0%, var(--copper) 50%, var(--teal) 100%);
@@ -320,6 +331,8 @@ export default function NewsLayout({
           overflow: hidden;
           border: 1px solid var(--rule);
           border-radius: 2px;
+          background: var(--paper);
+          padding: 8px;
         }
 
         .on-article-body {

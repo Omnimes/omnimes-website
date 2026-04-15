@@ -264,6 +264,17 @@ export default function PostLayout({
         .oe-root .oe-article-body > p:first-of-type::first-letter {
           color: var(--ink);
         }
+        .oe-article-body h1,
+        .oe-article-body h2,
+        .oe-article-body h3,
+        .oe-article-body h4,
+        .oe-article-body h1 a,
+        .oe-article-body h2 a,
+        .oe-article-body h3 a,
+        .oe-article-body h4 a {
+          text-decoration: none;
+          color: inherit;
+        }
         .oe-top-rule {
           height: 4px;
           background: linear-gradient(90deg, var(--steel) 0%, var(--copper) 50%, var(--teal) 100%);
