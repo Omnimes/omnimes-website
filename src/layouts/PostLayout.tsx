@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
 
 import getFormattedDate from "@/lib/getFormattedDate"
+import { slug } from "github-slugger"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
@@ -154,7 +155,9 @@ export default function PostLayout({
               <div className="oe-sb-label">{t("tags")}</div>
               <ul className="oe-sb-tags">
                 {tags.map((tag) => (
-                  <li key={tag.value}>{tag.label}</li>
+                  <li key={tag.value}>
+                    <CustomLink href={`/tags/${slug(tag.label)}`}>{tag.label}</CustomLink>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -202,9 +205,9 @@ export default function PostLayout({
         {Array.isArray(tags) && tags.length > 0 && (
           <div className="oe-footer-tags">
             {tags.map((tag) => (
-              <span key={tag.value} className="oe-ftag">
+              <CustomLink key={tag.value} href={`/tags/${slug(tag.label)}`} className="oe-ftag">
                 {tag.label}
-              </span>
+              </CustomLink>
             ))}
           </div>
         )}
@@ -606,6 +609,12 @@ export default function PostLayout({
           border-bottom: 1px solid var(--paper3);
         }
         .oe-sb-tags li:last-child { border-bottom: none; }
+        .oe-sb-tags li a {
+          color: var(--ink2);
+          text-decoration: none;
+          transition: color .15s;
+        }
+        .oe-sb-tags li a:hover { color: var(--copper); }
 
         .oe-share {
           display: flex;
@@ -655,7 +664,10 @@ export default function PostLayout({
           border-radius: 2px;
           color: var(--ink3);
           text-transform: uppercase;
+          text-decoration: none;
+          transition: border-color .15s, color .15s;
         }
+        .oe-ftag:hover { border-color: var(--copper); color: var(--copper); }
         .oe-back-bottom { align-self: center; }
 
         @keyframes oeFadeUp {

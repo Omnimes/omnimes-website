@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { useLocale, useTranslations } from "next-intl"
+import { slug as slugify } from "github-slugger"
 import { LuCalendar, LuSearch } from "react-icons/lu"
 
 import getFormattedDate from "@/lib/getFormattedDate"
@@ -132,9 +133,13 @@ export default function ListLayout({
                   {tagList.length > 0 && (
                     <div className="ol-card-tags">
                       {tagList.map((tag, i) => (
-                        <span key={`${slug}-${tag.value}-${i}`} className="ol-card-tag">
+                        <CustomLink
+                          key={`${slug}-${tag.value}-${i}`}
+                          href={`/tags/${slugify(tag.label)}`}
+                          className="ol-card-tag"
+                        >
                           {tag.label}
-                        </span>
+                        </CustomLink>
                       ))}
                     </div>
                   )}
@@ -350,6 +355,12 @@ export default function ListLayout({
           background: rgba(219, 39, 119, 0.08);
           color: var(--copper);
           border: 1px solid rgba(219, 39, 119, 0.25);
+          text-decoration: none;
+          transition: background .15s, border-color .15s;
+        }
+        .ol-card-tag:hover {
+          background: rgba(219, 39, 119, 0.18);
+          border-color: var(--copper);
         }
         html.dark .ol-card-tag,
         .dark .ol-card-tag {
