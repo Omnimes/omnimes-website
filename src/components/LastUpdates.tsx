@@ -49,7 +49,7 @@ export const LastUpdates = ({
               slug={"/news/" + item.slug}
               title={item.title}
               description={item.description}
-              header={<Skeleton src={item.coverImage} />}
+              header={<SkeletonCover src={item.coverImage} />}
               className={i === 3 || i === 6 ? "md:col-span-2" : ""}
               date={item.publishedAt}
               locale={locale}

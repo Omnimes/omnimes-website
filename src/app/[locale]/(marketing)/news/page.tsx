@@ -66,17 +66,17 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
 const Skeleton = ({ src }: { src: string | undefined }) => {
   if (src == undefined || src == "") {
     return (
-      <div className="flex size-full min-h-40 flex-1 rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
+      <div className="flex h-44 w-full bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
     )
   } else {
     return (
-      <div className="relative flex size-full min-h-40 flex-1 items-center justify-center overflow-hidden rounded-xl bg-white p-4 dark:bg-neutral-900">
+      <div className="relative h-44 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900">
         <Image
           src={src}
           alt={"News photo"}
           width={1096}
           height={282}
-          className="max-h-[260px] w-auto max-w-full object-contain object-center"
+          className="size-full object-cover object-center"
         />
       </div>
     )
