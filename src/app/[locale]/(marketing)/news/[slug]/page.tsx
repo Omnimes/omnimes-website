@@ -1,6 +1,7 @@
 import "highlight.js/styles/github-dark.css"
 
 import { Metadata } from "next"
+import { redirect } from "next/navigation"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { siteMetadata } from "@/data/siteMetadata"
 import NewsLayout from "@/layouts/NewsLayout"
@@ -42,6 +43,24 @@ async function getData(locale: string, slug: string) {
     ...news,
     content,
   }
+}
+
+async function findTranslatedNewsSlug(slug: string, targetLocale: string): Promise<string | null> {
+  const db = await load()
+  const sourceNews = await db
+    .find<OstDocument>({ collection: "news", slug }, ["publishedAt", "lang"])
+    .first()
+
+  if (!sourceNews || sourceNews.lang === targetLocale) return null
+
+  const translated = await db
+    .find<OstDocument>(
+      { collection: "news", lang: targetLocale, publishedAt: sourceNews.publishedAt },
+      ["slug"]
+    )
+    .first()
+
+  return translated?.slug ?? null
 }
 
 export async function generateMetadata({
@@ -123,7 +142,14 @@ export default async function NewsPost({
   const news = await getData(locale, slug)
   const t = await getTranslations("NewsData")
 
-  if (!news || news == undefined) {
+  if (!news) {
+    const translatedSlug = await findTranslatedNewsSlug(slug, locale)
+    if (translatedSlug) {
+      redirect(`/${locale}/news/${translatedSlug}`)
+    }
+  }
+
+  if (!news) {
     return (
       <article className="mx-auto mt-32 max-w-screen-lg px-4 text-center md:px-0">
         <h1 className="font-heading my-2 inline-block text-4xl leading-tight lg:text-5xl">

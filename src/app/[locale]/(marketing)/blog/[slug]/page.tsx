@@ -1,6 +1,7 @@
 import "highlight.js/styles/github-dark.css"
 
 import { Metadata } from "next"
+import { redirect } from "next/navigation"
 import { getLocalePrimaryDialects } from "@/data/locales"
 import { siteMetadata } from "@/data/siteMetadata"
 import PostLayout from "@/layouts/PostLayout"
@@ -45,6 +46,47 @@ async function getData({ params }: { params: { slug: string; locale: string } })
   }
 }
 
+async function findTranslatedSlug(slug: string, targetLocale: string): Promise<string | null> {
+  const db = await load()
+  const sourcePost = await db
+    .find<ExtendedOstDocument>({ collection: "posts", slug }, ["publishedAt", "lang"])
+    .first()
+
+  if (!sourcePost || sourcePost.lang === targetLocale) return null
+
+  const translated = await db
+    .find<ExtendedOstDocument>(
+      { collection: "posts", lang: targetLocale, publishedAt: sourcePost.publishedAt },
+      ["slug"]
+    )
+    .first()
+
+  return translated?.slug ?? null
+}
+
+async function getAlternates(slug: string, locale: string) {
+  const db = await load()
+  const post = await db
+    .find<ExtendedOstDocument>({ collection: "posts", slug, lang: locale }, ["publishedAt"])
+    .first()
+
+  if (!post) return {}
+
+  const allVersions = await db
+    .find<ExtendedOstDocument>(
+      { collection: "posts", publishedAt: post.publishedAt },
+      ["slug", "lang"]
+    )
+    .toArray()
+
+  const languages: Record<string, string> = {}
+  for (const v of allVersions) {
+    const lang = v.lang as string
+    languages[lang] = `${siteMetadata.siteUrl}/${lang}/blog/${v.slug}`
+  }
+  return languages
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -65,11 +107,14 @@ export async function generateMetadata({
     ? post.coverImage
     : `${siteMetadata.siteUrl}${post.coverImage}`
 
+  const languages = await getAlternates(post.slug, locale)
+
   return {
     title: post.title,
     description: post.description,
     alternates: {
       canonical: siteMetadata.siteUrl + "/" + locale + "/blog/" + post.slug,
+      languages,
     },
     openGraph: {
       title: post.title,
@@ -119,7 +164,14 @@ export default async function BlogPost({
   const post = await getData({ params: resolvedParams })
   const t = await getTranslations("PostLayout")
 
-  if (!post || post == undefined) {
+  if (!post) {
+    const translatedSlug = await findTranslatedSlug(resolvedParams.slug, resolvedParams.locale)
+    if (translatedSlug) {
+      redirect(`/${resolvedParams.locale}/blog/${translatedSlug}`)
+    }
+  }
+
+  if (!post) {
     return (
       <article className="mx-auto mt-32 max-w-screen-lg px-4 text-center md:px-0">
         <h1 className="font-heading my-2 inline-block text-4xl leading-tight lg:text-5xl">
