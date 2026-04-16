@@ -130,10 +130,44 @@ export default function RootLayout({ children }: Props) {
             name: "OmniMES",
             url: "https://omnimes.com",
             logo: "https://omnimes.com/images/logo.png",
+            description:
+              "OmniMES — nowoczesny system klasy MES do zarządzania i realizacji produkcji. Monitoring OEE, raportowanie, integracja z maszynami, moduł OmniEnergy EMS.",
             sameAs: [
               "https://x.com/OmnimesOfficial",
               "https://www.linkedin.com/showcase/omnimes-smart-mes-system",
             ],
+          })}
+        </Script>
+        {/* Schema.org – WebSite with SearchAction */}
+        <Script id="schema-org-website" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "OmniMES",
+            url: "https://omnimes.com",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://omnimes.com/pl/blog?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          })}
+        </Script>
+        {/* Schema.org – SoftwareApplication */}
+        <Script id="schema-org-software" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "OmniMES",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description:
+              "Manufacturing Execution System (MES) for production management, OEE monitoring, shift reporting, and energy efficiency (OmniEnergy EMS module).",
+            url: "https://omnimes.com",
+            offers: {
+              "@type": "Offer",
+              category: "SaaS",
+              url: "https://omnimes.com/pl/offer",
+            },
           })}
         </Script>
       </head>

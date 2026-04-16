@@ -73,10 +73,10 @@ async function getAlternates(slug: string, locale: string) {
   if (!post) return {}
 
   const allVersions = await db
-    .find<ExtendedOstDocument>(
-      { collection: "posts", publishedAt: post.publishedAt },
-      ["slug", "lang"]
-    )
+    .find<ExtendedOstDocument>({ collection: "posts", publishedAt: post.publishedAt }, [
+      "slug",
+      "lang",
+    ])
     .toArray()
 
   const languages: Record<string, string> = {}
@@ -196,5 +196,43 @@ export default async function BlogPost({
     )
   }
 
-  return <PostLayout post={post} />
+  const cover = post.coverImage?.startsWith("http")
+    ? post.coverImage
+    : `${siteMetadata.siteUrl}${post.coverImage}`
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    image: cover,
+    datePublished: new Date(post.publishedAt).toISOString(),
+    author: {
+      "@type": "Person",
+      name: post.author?.name || siteMetadata.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "OmniMES",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteMetadata.siteUrl}/images/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteMetadata.siteUrl}/${resolvedParams.locale}/blog/${post.slug}`,
+    },
+    inLanguage: resolvedParams.locale,
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <PostLayout post={post} />
+    </>
+  )
 }

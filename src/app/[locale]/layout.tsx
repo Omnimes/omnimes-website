@@ -88,7 +88,11 @@ export default async function LocaleLayout({
       <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
       <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-      <link rel="canonical" href="https://omnimes.com/pl/" key="canonical" />
+      <link rel="canonical" href={`${siteMetadata.siteUrl}/${locale}/`} key="canonical" />
+      <link rel="alternate" hrefLang="pl" href={`${siteMetadata.siteUrl}/pl/`} />
+      <link rel="alternate" hrefLang="en" href={`${siteMetadata.siteUrl}/en/`} />
+      <link rel="alternate" hrefLang="de" href={`${siteMetadata.siteUrl}/de/`} />
+      <link rel="alternate" hrefLang="x-default" href={`${siteMetadata.siteUrl}/pl/`} />
       <link
         rel="sitemap"
         type="application/xml"

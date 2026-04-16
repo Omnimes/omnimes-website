@@ -174,5 +174,45 @@ export default async function NewsPost({
     )
   }
 
-  return <NewsLayout post={news} />
+  const rawCover = (news as any).coverImage || siteMetadata.socialBanner
+  const coverUrl =
+    typeof rawCover === "string" && rawCover.startsWith("http")
+      ? rawCover
+      : `${siteMetadata.siteUrl}${rawCover}`
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: news.title,
+    description: news.description,
+    image: coverUrl,
+    datePublished: new Date(news.publishedAt).toISOString(),
+    author: {
+      "@type": "Organization",
+      name: "OmniMES",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "OmniMES",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteMetadata.siteUrl}/images/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteMetadata.siteUrl}/${locale}/news/${news.slug}`,
+    },
+    inLanguage: locale,
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <NewsLayout post={news} />
+    </>
+  )
 }
