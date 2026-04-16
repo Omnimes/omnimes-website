@@ -8,7 +8,7 @@ slug: 'mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i'
 description: 'Comparison of MQTT and Sparkplug B Communication Protocols in the Context of Industrial Internet of Things (IIoT). Learn about their advantages, differences, quality of service (QoS), and message retention. Discover which protocol better meets the requirements of your IoT project.'
 coverImage: '/images/4.png'
 lang: 'en'
-tags: [{"value":"mqtt","label":"MQTT"},{"value":"sparkplugB","label":"Sparkplug B"},{"label":"Communication Protocol","value":"communicationProtocol"},{"value":"qoS","label":"QoS"},{"value":"iIoT","label":"IIoT"},{"label":"IoT Communication","value":"ioTCommunication"},{"value":"omnimes","label":"Omnimes"},{"label":"Industry 4.0","value":"industry40"},{"label":"Communication Standards","value":"communicationStandards"}]
+tags: [{"value":"mqtt","label":"MQTT"},{"value":"sparkplugB","label":"Sparkplug B"},{"label":"Communication Protocol","value":"communicationProtocol"},{"value":"qoS","label":"QoS"},{"value":"iIoT","label":"IIoT"},{"label":"IoT Communication","value":"ioTCommunication"},{"value":"omniMES","label":"OmniMES"},{"label":"Industry 4.0","value":"industry40"},{"label":"Communication Standards","value":"communicationStandards"}]
 publishedAt: '2024-06-05T09:20:51.000Z'
 ---
 

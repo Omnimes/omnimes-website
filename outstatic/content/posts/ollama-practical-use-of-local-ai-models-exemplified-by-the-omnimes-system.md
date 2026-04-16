@@ -8,7 +8,7 @@ slug: 'ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system
 description: 'The Ollama project is an open, free software that allows running local AI models, specifically large language models (LLMs), on your own computer or server. Due to its low hardware requirements, this software is accessible to medium and small businesses, providing access to 93 AI models without significant limitations.'
 coverImage: '/images/1.png'
 lang: 'en'
-tags: [{"value":"ai","label":"AI"},{"value":"aiLocal","label":"AI local"},{"value":"llama3","label":"llama3"},{"value":"meta","label":"Meta"},{"value":"gemma","label":"Gemma"},{"value":"mistral","label":"Mistral"},{"value":"gpt4","label":"GPT-4"},{"value":"gpt35","label":"GPT-3.5"}]
+tags: [{"value":"AI","label":"AI"},{"value":"aiLocal","label":"AI local"},{"value":"llama3","label":"llama3"},{"value":"meta","label":"Meta"},{"value":"gemma","label":"Gemma"},{"value":"mistral","label":"Mistral"},{"value":"gpt4","label":"GPT-4"},{"value":"gpt35","label":"GPT-3.5"}]
 publishedAt: '2024-06-20T13:47:51.265Z'
 ---
 

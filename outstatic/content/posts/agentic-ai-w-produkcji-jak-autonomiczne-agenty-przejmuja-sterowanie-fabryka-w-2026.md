@@ -10,7 +10,7 @@ description: 'Agentic AI to kolejny etap po generatywnej AI. Agent nie tylko odp
 Artykuł pokazuje, czym różni się agent od klasycznego chatbota, które firmy wdrożyły agenty w produkcji, jakie są dane rynkowe Gartnera, McKinseya i Deloitte, oraz gdzie leżą realne bariery: kontrola, audytowalność i integracja z MES/ERP.'
 coverImage: '/images/agentic-ai-manufacturing-2026.jpg'
 lang: 'pl'
-tags: [{"value":"AI","label":"AI"},{"value":"agentAi","label":"AGENT AI"},{"value":"mes","label":"MES"},{"value":"smartFactory","label":"smartFactory"}]
+tags: [{"value":"AI","label":"AI"},{"value":"agentAi","label":"AGENT AI"},{"value":"mes","label":"MES"},{"value":"smartFactory","label":"Smart Factory"}]
 publishedAt: '2026-04-06T08:00:00.000Z'
 ---
 

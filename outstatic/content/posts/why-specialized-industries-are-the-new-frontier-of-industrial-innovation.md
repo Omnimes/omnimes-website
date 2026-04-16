@@ -14,7 +14,7 @@ They need systems that understand how the real world of machines actually works.
 That is where the next decade of industrial innovation will be built.'
 coverImage: '/images/wyspecjalozwane-branze---blog---omnimes-cxMj.png'
 lang: 'en'
-tags: [{"value":"smartFactory","label":"SmartFactory"},{"value":"mesSystem","label":"MES System"},{"value":"omniMES","label":"OmniMES"},{"label":"digital factory","value":"digitalFactory"}]
+tags: [{"value":"smartFactory","label":"Smart Factory"},{"value":"mesSystem","label":"MES System"},{"value":"omniMES","label":"OmniMES"},{"label":"digital factory","value":"digitalFactory"}]
 publishedAt: '2026-01-05T10:21:04.000Z'
 ---
 

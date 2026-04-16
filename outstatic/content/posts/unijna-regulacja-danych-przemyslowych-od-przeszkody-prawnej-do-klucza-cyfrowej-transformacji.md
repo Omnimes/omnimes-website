@@ -14,7 +14,7 @@ Producenci oprogramowania MES (Manufacturing Execution System) doskonale znają 
 To nie tylko kwestia techniczna. Brak standaryzacji protokołów komunikacyjnych to jedno, ale prawne bariery w dostępie do danych z własnych maszyn to zupełnie inna sprawa. Dla firm rozwijających rozwiązania oparte na AI problem jest fundamentalny – bez danych nie ma algorytmów, bez algorytmów nie ma inteligentnych fabryk.'
 coverImage: '/images/article_data_ue-EzMT.png'
 lang: 'pl'
-tags: [{"label":"UE","value":"ue"},{"value":"mes","label":"MES"},{"value":"omnimes","label":"Omnimes"},{"label":"UNS","value":"uns"}]
+tags: [{"label":"UE","value":"ue"},{"value":"mes","label":"MES"},{"value":"omniMES","label":"OmniMES"},{"label":"UNS","value":"uns"}]
 publishedAt: '2026-01-19T10:02:21.737Z'
 ---
 

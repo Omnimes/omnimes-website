@@ -25,8 +25,8 @@
           "value": "eldrew"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Wdrożenie",
@@ -58,8 +58,8 @@
           "value": "eldrew"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Integration",
@@ -87,8 +87,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Eldrew",
@@ -541,8 +541,8 @@
           "value": "industry50"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Utrzymanie ruchu",
@@ -746,16 +746,16 @@
       "status": "published",
       "tags": [
         {
-          "label": "XGBoost",
-          "value": "xgboost"
+          "value": "xgBoost",
+          "label": "XGBoost"
         },
         {
-          "label": "LightGBM",
-          "value": "lightgbm"
+          "value": "lightGbm",
+          "label": "LightGBM"
         },
         {
-          "label": "CatBoost",
-          "value": "catboost"
+          "value": "catBoost",
+          "label": "CatBoost"
         },
         {
           "label": "MES Systems",
@@ -840,8 +840,8 @@
           "value": "catBoost"
         },
         {
-          "label": "MES-System",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
           "label": "Algorithmusleistung",
@@ -910,8 +910,8 @@
           "value": "industry50"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Sparkplug B",
@@ -976,8 +976,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "IoT",
@@ -1013,8 +1013,8 @@
           "value": "hmi"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
           "label": "ROI",
@@ -1075,16 +1075,16 @@
       "status": "published",
       "tags": [
         {
-          "label": "XGBoost",
-          "value": "xgboost"
+          "value": "xgBoost",
+          "label": "XGBoost"
         },
         {
-          "label": "LightGBM",
-          "value": "lightgbm"
+          "value": "lightGbm",
+          "label": "LightGBM"
         },
         {
-          "label": "CatBoost",
-          "value": "catboost"
+          "value": "catBoost",
+          "label": "CatBoost"
         },
         {
           "label": "MES-Systeme",
@@ -1120,16 +1120,16 @@
           "value": "hmi"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         }
       ],
       "title": "Integracja systemów HMI z symulacją: Strategiczny fundament optymalizacji zasobów w przemyśle 5.0"
@@ -1153,12 +1153,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "5G",
@@ -1186,12 +1186,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "5G",
@@ -1219,12 +1219,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "5G",
@@ -1293,8 +1293,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "IoT",
@@ -1326,16 +1326,16 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Green Energy",
@@ -1363,16 +1363,16 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
           "label": "Green Energy",
@@ -1404,16 +1404,16 @@
           "value": "hmi"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         }
       ],
       "title": "Integration von HMI-Systemen mit Simulation: Strategisches Fundament der Ressourcenoptimierung in Industrie 5.0"
@@ -1441,16 +1441,16 @@
           "value": "hmi"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         }
       ],
       "title": "Integration of HMI Systems with Simulation: A Strategic Foundation for Resource Optimization in Industry 5.0"
@@ -1478,8 +1478,8 @@
           "value": "OEE"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Green Energy",
@@ -1511,8 +1511,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Data Analysis",
@@ -1544,8 +1544,8 @@
           "value": "hmi"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
           "label": "ROI",
@@ -1573,8 +1573,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "modeleLlm",
-          "value": "modeleLlm"
+          "value": "modeleLlm",
+          "label": "Modele LLM"
         },
         {
           "label": "langchainLlm",
@@ -1671,8 +1671,8 @@
           "value": "ioTCommunication"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Industry 4.0",
@@ -1704,12 +1704,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Quality",
@@ -1737,12 +1737,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Quality",
@@ -1774,8 +1774,8 @@
           "value": "OEE"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Green Energy",
@@ -1811,8 +1811,8 @@
           "value": "OEE"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "OmniEnergy",
@@ -1844,8 +1844,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "AI local",
@@ -1897,8 +1897,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "Ollama",
@@ -2003,8 +2003,8 @@
           "value": "iIoT"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Industry 4.0",
@@ -2068,8 +2068,8 @@
           "value": "komunikacjaIoT"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Przemysł 4.0",
@@ -2109,8 +2109,8 @@
           "value": "llmModels"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         }
       ],
       "title": "Practical Applications of AI in the Era of Factory Digitalization: How Can Vector Databases Support Time Series Analysis?"
@@ -2134,8 +2134,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "Data Analysis",
@@ -2241,8 +2241,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "AI local",
@@ -2294,12 +2294,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
           "label": "Sparkplug B",
@@ -2331,8 +2331,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "Dane czasowe",
@@ -2343,8 +2343,8 @@
           "value": "bazaWektorowa"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         }
       ],
       "title": "Praktyczne zastosowanie AI w dobie cyfryzacji fabryk: Jak bazy wektorowe mogą wspierać analizę danych czasowych?"
@@ -2368,8 +2368,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "Modele LLM",
@@ -2417,8 +2417,8 @@
           "value": "llmModels"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         }
       ],
       "title": "Praktische Anwendungen von KI im Zeitalter der Fabrikdigitalisierung: Wie können Vektordatenbanken die Analyse von Zeitreihendaten unterstützen?"
@@ -2442,8 +2442,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
           "label": "Datenanalyse",
@@ -2654,12 +2654,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
           "label": "Sparkplug B",
@@ -2691,20 +2691,20 @@
       "status": "published",
       "tags": [
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
-          "label": "OmniMES",
-          "value": "omnimess"
+          "value": "omniMES",
+          "label": "OmniMES"
         }
       ],
       "title": "Smart MES in Industry 5.0: How Machine Learning Revolutionizes Continuous Improvement in Renewable Energy"
@@ -2752,8 +2752,8 @@
           "value": "industrialData"
         },
         {
-          "label": "industrial automation",
-          "value": "industrialAutomation"
+          "value": "industrialAutomation",
+          "label": "Industrial Automation"
         },
         {
           "label": "algorithm comparison",
@@ -2797,8 +2797,8 @@
           "value": "catBoost"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
           "label": "algorithm performance",
@@ -2867,8 +2867,8 @@
           "value": "web3"
         },
         {
-          "label": "blockchain",
-          "value": "blockchain"
+          "value": "blockchain",
+          "label": "Blockchain"
         },
         {
           "label": "RES",
@@ -2883,8 +2883,8 @@
           "value": "energyTokenization"
         },
         {
-          "label": "smart contracts",
-          "value": "smartContracts"
+          "value": "smartContracts",
+          "label": "Smart Contracts"
         },
         {
           "label": "energy consumption monitoring",
@@ -2924,12 +2924,12 @@
       "status": "published",
       "tags": [
         {
-          "label": "OmniMES",
-          "value": "omnimess"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
           "label": "Quality",
@@ -2990,8 +2990,8 @@
           "value": "industry50"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
           "label": "AI",
@@ -3043,8 +3043,8 @@
           "value": "industriedaten"
         },
         {
-          "label": "industrielle Automatisierung",
-          "value": "industrielleAutomatisierung"
+          "value": "industrielleAutomatisierung",
+          "label": "Industrielle Automatisierung"
         },
         {
           "label": "Algorithmusvergleich",
@@ -3072,8 +3072,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Data Analysis",
@@ -3109,12 +3109,12 @@
           "value": "sparkplugB"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         }
       ],
       "title": "Sparkplug B protocol with MES systems: a modern approach to failure prediction and energy optimization in industry"
@@ -3154,8 +3154,8 @@
           "value": "catBoost"
         },
         {
-          "label": "MES system",
-          "value": "mesSystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
           "label": "wydajność algorytmów",
@@ -3277,8 +3277,8 @@
           "value": "hmi"
         },
         {
-          "label": "Industry 5.0",
-          "value": "Industry 5.0"
+          "value": "industry50",
+          "label": "Industry 5.0"
         },
         {
           "label": "ROI",
@@ -3310,8 +3310,8 @@
           "value": "iot"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Industry 5.0",
@@ -3376,16 +3376,16 @@
           "value": "web3"
         },
         {
-          "label": "blockchain",
-          "value": "blockchain"
+          "value": "blockchain",
+          "label": "Blockchain"
         },
         {
           "label": "OZE",
           "value": "oze"
         },
         {
-          "label": "odnawialne źródła energii",
-          "value": "odnawialneŹródłaEnergii"
+          "value": "odnawialneZrodlaEnergii",
+          "label": "Odnawialne źródła energii"
         },
         {
           "label": "tokenizacja energii",
@@ -3396,8 +3396,8 @@
           "value": "smartKontrakty"
         },
         {
-          "label": "monitorowanie zużycia energii",
-          "value": "monitorowanieZużyciaEnergii"
+          "value": "monitorowanieZuzyciaEnergii",
+          "label": "Monitorowanie zużycia energii"
         },
         {
           "label": "automatyzacja rozliczeń",
@@ -3445,8 +3445,8 @@
           "value": "timeSeriesData"
         },
         {
-          "label": "analiza danych czasowych",
-          "value": "analizaDanychCzasowych"
+          "value": "analizaDanychCzasowych",
+          "label": "Analiza danych czasowych"
         }
       ],
       "title": "Zastosowanie InfluxDB w zbieraniu danych przemysłowych i porównanie z MongoDB"
@@ -3470,8 +3470,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "Data Analysis",
@@ -3499,24 +3499,24 @@
       "status": "published",
       "tags": [
         {
-          "label": "XGBoost",
-          "value": "xgboost"
+          "value": "xgBoost",
+          "label": "XGBoost"
         },
         {
-          "label": "LightGBM",
-          "value": "lightgbm"
+          "value": "lightGbm",
+          "label": "LightGBM"
         },
         {
-          "label": "CatBoost",
-          "value": "catboost"
+          "value": "catBoost",
+          "label": "CatBoost"
         },
         {
-          "label": "AI",
-          "value": "ai"
+          "value": "AI",
+          "label": "AI"
         },
         {
-          "label": "MES system",
-          "value": "messystem"
+          "value": "mesSystem",
+          "label": "MES System"
         },
         {
           "label": "wykrywanie awarii",
@@ -3921,8 +3921,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "OEE",
-          "value": "oee"
+          "value": "OEE",
+          "label": "OEE"
         },
         {
           "label": "OmniMES",
@@ -4094,8 +4094,8 @@
           "value": "mesSystem"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         }
       ],
       "title": "MES in 2025: Why MES Systems Are No Longer Just \"Shop Floor Systems\" but the Backbone of Production Data"
@@ -4127,8 +4127,8 @@
           "value": "mes"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         }
       ],
       "title": "MES w 2025: Dlaczego system MES to już nie \"system na halę\", tylko kręgosłup danych produkcyjnych"
@@ -4164,8 +4164,8 @@
           "value": "industrialIoT"
         },
         {
-          "label": "SmartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         },
         {
           "label": "Lean Manufacturing",
@@ -4209,8 +4209,8 @@
           "value": "industrialIoT"
         },
         {
-          "label": "SmartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         },
         {
           "label": "Lean Manufacturing",
@@ -4308,8 +4308,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "SmartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         },
         {
           "label": "MES System",
@@ -4345,8 +4345,8 @@
       "status": "published",
       "tags": [
         {
-          "label": "SmartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         },
         {
           "label": "MES System",
@@ -4390,8 +4390,8 @@
           "value": "mes"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         },
         {
           "label": "UNS",
@@ -4501,8 +4501,8 @@
           "value": "AI"
         },
         {
-          "label": "SmartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         },
         {
           "label": "Digital Twin",
@@ -4599,8 +4599,8 @@
           "value": "mes"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         }
       ],
       "title": "Jak system MES zasila cyfrowego bliźniaka w NVIDIA Omniverse danymi produkcyjnymi"
@@ -5065,8 +5065,8 @@
           "value": "mesSystem"
         },
         {
-          "label": "Omnimes",
-          "value": "omnimes"
+          "value": "omniMES",
+          "label": "OmniMES"
         }
       ],
       "title": "AI Agents in Industry 4.0: From Automation to Autonomy"
@@ -5178,8 +5178,8 @@
           "value": "mes"
         },
         {
-          "label": "smartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         }
       ],
       "title": "Agentic AI w produkcji — jak autonomiczne agenty przejmują sterowanie fabryką w 2026"
@@ -5215,8 +5215,8 @@
           "value": "mes"
         },
         {
-          "label": "smartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         }
       ],
       "title": "Agentic AI in Manufacturing: How Autonomous Agents Take Over the Factory in 2026"
@@ -5248,8 +5248,8 @@
           "value": "robotics"
         },
         {
-          "label": "smartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         }
       ],
       "title": "Physical AI: Humanoid Robots on the Production Floor"
@@ -5281,8 +5281,8 @@
           "value": "robotics"
         },
         {
-          "label": "smartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         }
       ],
       "title": "Physical AI: roboty humanoidalne na hali produkcyjnej"
@@ -5318,8 +5318,8 @@
           "value": "przemysł50"
         },
         {
-          "label": "smartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         }
       ],
       "title": "Od Przemysłu 4.0 do 5.0 — jak human-centric AI zmienia rolę operatora na hali produkcyjnej"
@@ -5355,8 +5355,8 @@
           "value": "przemysł50"
         },
         {
-          "label": "smartFactory",
-          "value": "smartFactory"
+          "value": "smartFactory",
+          "label": "Smart Factory"
         }
       ],
       "title": "From Industry 4.0 to 5.0: How Human-Centric AI Is Redefining the Operator on the Production Floor"

@@ -8,7 +8,7 @@ slug: 'ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-sy
 description: 'Das Ollama-Projekt ist eine offene und kostenlose Software, die es ermöglicht, lokale KI-Modelle, insbesondere große Sprachmodelle (LLMs), auf Ihrem eigenen Computer oder Server auszuführen. Aufgrund seiner geringen Hardware-Anforderungen ist diese Software für mittlere und kleine Unternehmen zugänglich und bietet Zugang zu 93 KI-Modellen ohne signifikante Einschränkungen.'
 coverImage: '/images/1.png'
 lang: 'de'
-tags: [{"value":"ai","label":"AI"},{"value":"aiLocal","label":"AI local"},{"value":"llama3","label":"llama3"},{"value":"meta","label":"Meta"},{"value":"gemma","label":"Gemma"},{"value":"mistral","label":"Mistral"},{"value":"gpt4","label":"GPT-4"},{"value":"gpt35","label":"GPT-3.5"}]
+tags: [{"value":"AI","label":"AI"},{"value":"aiLocal","label":"AI local"},{"value":"llama3","label":"llama3"},{"value":"meta","label":"Meta"},{"value":"gemma","label":"Gemma"},{"value":"mistral","label":"Mistral"},{"value":"gpt4","label":"GPT-4"},{"value":"gpt35","label":"GPT-3.5"}]
 publishedAt: '2024-06-20T08:28:30.000Z'
 ---
 

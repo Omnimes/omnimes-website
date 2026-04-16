@@ -9,7 +9,7 @@ description: 'Humanoidalne roboty przestają być eksponatem z konferencji techn
 Artykuł pokazuje, gdzie w 2026 roku znajdujemy się z humanoidami w przemyśle, jakie są realne dane rynkowe, które firmy faktycznie wdrożyły te rozwiązania, oraz gdzie kończy się demo, a zaczyna produkcja.'
 coverImage: '/images/physical-ai-humanoids-2026.png'
 lang: 'pl'
-tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"smartFactory","label":"smartFactory"}]
+tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"smartFactory","label":"Smart Factory"}]
 publishedAt: '2026-03-30T08:00:00.000Z'
 ---
 

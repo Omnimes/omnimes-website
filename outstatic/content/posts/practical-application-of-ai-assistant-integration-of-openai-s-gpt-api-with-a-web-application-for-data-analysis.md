@@ -8,7 +8,7 @@ slug: 'practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-wit
 description: 'Learn how to integrate the GPT-4 API with a web application step by step to leverage advanced data analysis features. Example in Python and Flask, along with settings and data security.'
 coverImage: '/images/2.png'
 lang: 'en'
-tags: [{"value":"ai","label":"AI"},{"label":"Data Analysis","value":"dataAnalysis"},{"value":"dataSecurity","label":"Data Security"},{"label":"GPT-4 API","value":"gpt4Api"},{"label":"LLM Models","value":"llmModels"}]
+tags: [{"value":"AI","label":"AI"},{"label":"Data Analysis","value":"dataAnalysis"},{"value":"dataSecurity","label":"Data Security"},{"label":"GPT-4 API","value":"gpt4Api"},{"label":"LLM Models","value":"llmModels"}]
 publishedAt: '2024-06-10T09:10:14.654Z'
 ---
 

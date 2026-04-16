@@ -14,7 +14,7 @@ Potrzebują systemów, które rozumieją ich rzeczywistość operacyjną.
 I właśnie tam powstaje kolejna fala innowacji.'
 coverImage: '/images/wyspecjalozwane-branze---blog---omnimes-c4NT.png'
 lang: 'pl'
-tags: [{"value":"smartFactory","label":"SmartFactory"},{"value":"mesSystem","label":"MES System"},{"value":"iIoT","label":"IIoT"},{"value":"industry50","label":"Industry 5.0"}]
+tags: [{"value":"smartFactory","label":"Smart Factory"},{"value":"mesSystem","label":"MES System"},{"value":"iIoT","label":"IIoT"},{"value":"industry50","label":"Industry 5.0"}]
 publishedAt: '2026-01-05T10:14:40.000Z'
 ---
 

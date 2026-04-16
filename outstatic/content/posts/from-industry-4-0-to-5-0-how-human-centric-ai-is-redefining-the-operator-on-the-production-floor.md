@@ -10,7 +10,7 @@ description: 'Industry 4.0 promised a "factory without people." The European Com
 This article shows how 4.0 and 5.0 actually differ, what the market data looks like (BCG, McKinsey, EU Joint Research Centre), who is really deploying human-centric AI (Bosch, Stellantis, Airbus), and where the barriers are — cognitive fatigue, compliance with ISO 45001 and the EU AI Act.'
 coverImage: '/images/industry-5-0-human-centric-operator-2026.png'
 lang: 'en'
-tags: [{"value":"AI","label":"AI"},{"value":"industry50","label":"industry50"},{"value":"przemysł50","label":"przemysł50"},{"value":"smartFactory","label":"smartFactory"}]
+tags: [{"value":"AI","label":"AI"},{"value":"industry50","label":"industry50"},{"value":"przemysł50","label":"przemysł50"},{"value":"smartFactory","label":"Smart Factory"}]
 publishedAt: '2026-04-13T08:00:00.000Z'
 ---
 

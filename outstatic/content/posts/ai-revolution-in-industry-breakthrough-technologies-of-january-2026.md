@@ -14,7 +14,7 @@ Jensen Huang, CEO of NVIDIA, announced at CES 2026 that “the ChatGPT moment fo
 The new Jetson T4000 module, based on the Blackwell architecture, delivers four times higher energy efficiency and AI compute performance compared to the previous generation, priced at USD 1,999 (for orders of 1,000 units). Global companies such as Boston Dynamics, Caterpillar, Franka Robotics, LG Electronics, and NEURA Robotics presented a new generation of robots powered by NVIDIA technologies.'
 coverImage: '/images/revolution_ai-A3OT.png'
 lang: 'en'
-tags: [{"value":"AI","label":"AI"},{"value":"smartFactory","label":"SmartFactory"},{"value":"digitalTwin","label":"Digital Twin"},{"label":"deepseek","value":"deepseek"}]
+tags: [{"value":"AI","label":"AI"},{"value":"smartFactory","label":"Smart Factory"},{"value":"digitalTwin","label":"Digital Twin"},{"label":"deepseek","value":"deepseek"}]
 publishedAt: '2026-01-26T09:39:33.374Z'
 ---
 

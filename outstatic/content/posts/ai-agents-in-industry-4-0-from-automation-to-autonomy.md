@@ -10,7 +10,7 @@ description: 'Agentic AI is redefining the trajectory of Industry 4.0. Tradition
 In modern smart factories, these systems integrate with MES, IIoT, and ERP platforms to create self-optimizing environments. Machines no longer wait for instructions—they identify issues, anticipate disruptions, and act before production is affected.'
 coverImage: '/images/6710d7dc-cbbf-442a-b95b-380358d35ecf-M3Nj.png'
 lang: 'en'
-tags: [{"value":"agentAi","label":"AGENT AI"},{"value":"mesSystem","label":"MES System"},{"value":"omnimes","label":"Omnimes"}]
+tags: [{"value":"agentAi","label":"AGENT AI"},{"value":"mesSystem","label":"MES System"},{"value":"omniMES","label":"OmniMES"}]
 publishedAt: '2026-03-23T10:42:38.000Z'
 ---
 

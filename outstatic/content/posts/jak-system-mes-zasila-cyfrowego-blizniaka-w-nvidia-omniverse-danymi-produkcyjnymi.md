@@ -9,7 +9,7 @@ description: 'Cyfrowy bliźniak coraz częściej pojawia się w strategiach nowo
 Problem zaczyna się w momencie, gdy cyfrowy bliźniak ma przestać być wizualizacją, a stać się odzwierciedleniem rzeczywistej produkcji. Do tego potrzebne są dane. I tu kluczową rolę odgrywa system klasy MES.'
 coverImage: '/images/omniandomniverse-E4Nj.png'
 lang: 'pl'
-tags: [{"label":"nvidia","value":"nvidia"},{"label":"omniverse","value":"omniverse"},{"value":"omniMES","label":"OmniMES"},{"value":"mesSystem","label":"MES System"},{"value":"mes","label":"MES"},{"value":"omnimes","label":"Omnimes"}]
+tags: [{"label":"nvidia","value":"nvidia"},{"label":"omniverse","value":"omniverse"},{"value":"omniMES","label":"OmniMES"},{"value":"mesSystem","label":"MES System"},{"value":"mes","label":"MES"},{"value":"omniMES","label":"OmniMES"}]
 publishedAt: '2026-02-02T10:53:49.000Z'
 ---
 

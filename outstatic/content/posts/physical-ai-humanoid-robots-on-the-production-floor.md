@@ -9,7 +9,7 @@ description: 'Humanoid robots have moved past the trade-show demo. In the last t
 This article walks through where humanoids actually stand in 2026, what the market data really says, which companies have moved beyond pilots, and where the demo ends and real production begins.'
 coverImage: '/images/physical-ai-humanoids-2026.png'
 lang: 'en'
-tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"smartFactory","label":"smartFactory"}]
+tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"smartFactory","label":"Smart Factory"}]
 publishedAt: '2026-03-30T08:00:00.000Z'
 ---
 

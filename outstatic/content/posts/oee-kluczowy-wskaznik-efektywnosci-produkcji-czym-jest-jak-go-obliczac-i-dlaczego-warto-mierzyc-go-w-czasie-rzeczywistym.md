@@ -9,7 +9,7 @@ description: 'W świecie nowoczesnej produkcji, w którym liczy się każda minu
 Wbrew pozorom OEE nie jest tylko formułą matematyczną — to narzędzie zarządcze, które pomaga wykrywać straty, podejmować decyzje operacyjne i rozwijać kulturę ciągłego doskonalenia. Firmy, które regularnie monitorują OEE, szybciej eliminują marnotrawstwo, lepiej planują produkcję i osiągają wyższe moce przerobowe bez konieczności inwestowania w nowe maszyny.'
 coverImage: '/images/oee-MxOD.png'
 lang: 'pl'
-tags: [{"value":"oee","label":"OEE"},{"value":"omniMES","label":"OmniMES"},{"value":"analizaDanychCzasowych","label":"Analiza danych czasowych"}]
+tags: [{"value":"OEE","label":"OEE"},{"value":"omniMES","label":"OmniMES"},{"value":"analizaDanychCzasowych","label":"Analiza danych czasowych"}]
 publishedAt: '2025-11-24T09:27:40.000Z'
 ---
 

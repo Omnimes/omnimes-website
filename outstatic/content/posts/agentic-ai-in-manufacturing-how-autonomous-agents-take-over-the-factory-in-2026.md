@@ -10,7 +10,7 @@ description: 'Agentic AI is the next stage after generative AI. An agent does no
 This article explains how an agent differs from a classical chatbot, which manufacturers have moved beyond pilot, what Gartner, McKinsey and Deloitte data actually says, and where the real barriers sit — control, auditability, and integration with MES/ERP.'
 coverImage: '/images/agentic-ai-manufacturing-2026.jpg'
 lang: 'en'
-tags: [{"value":"AI","label":"AI"},{"value":"agentAi","label":"AGENT AI"},{"value":"mes","label":"MES"},{"value":"smartFactory","label":"smartFactory"}]
+tags: [{"value":"AI","label":"AI"},{"value":"agentAi","label":"AGENT AI"},{"value":"mes","label":"MES"},{"value":"smartFactory","label":"Smart Factory"}]
 publishedAt: '2026-04-06T08:00:00.000Z'
 ---
 
