@@ -5360,6 +5360,80 @@
         }
       ],
       "title": "From Industry 4.0 to 5.0: How Human-Centric AI Is Redefining the Operator on the Production Floor"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/redash-w-omnimes-dashboardy-na-mongodb-przez-sql-i-rest-api.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-redash/cover-redash.png",
+      "description": "Jednym z częściej zadawanych pytań w projektach MES jest: jak zbudować dashboardy analityczne na danych, które żyją w MongoDB, bez przepisywania backendu do bazy SQL? W OmniMES używamy do tego Redash — z dwóch powodów. Po pierwsze, Redash potrafi konsumować REST API jako źródło danych. Po drugie, ma mechanizm Query Results, który pozwala pisać pełny SQL na wyniku dowolnego wcześniejszego zapytania.\nEfekt: dostajemy siłę SQL (JOIN, CTE, funkcje okienne) na danych z nierelacyjnej bazy, bez zmian w warstwie produkcyjnej. Artykuł pokazuje krok po kroku, jak to uruchomić — od konfiguracji Redasha, przez zapytanie do REST API OmniMES, po SQL wyliczający trend wibracji i wizualizację na dashboardzie.",
+      "lang": "pl",
+      "publishedAt": "2026-04-20T08:00:00.000Z",
+      "slug": "redash-w-omnimes-dashboardy-na-mongodb-przez-sql-i-rest-api",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Data Visualization",
+          "value": "dataVisualization"
+        },
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "mongoDb",
+          "value": "mongoDb"
+        }
+      ],
+      "title": "Redash w OmniMES: dashboardy na MongoDB przez SQL i REST API"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/redash-in-omnimes-dashboards-on-mongodb-with-sql-and-rest-api.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-redash/cover-redash.png",
+      "description": "One of the recurring questions on MES projects is: how do you build analytical dashboards on data that lives in MongoDB, without rewriting the backend to a SQL database? In OmniMES we use Redash for this — for two reasons. First, Redash can consume a REST API as a data source. Second, it has a Query Results mechanism that lets you write full SQL on the result of any earlier query.\nThe outcome is a combination that proves to be a game changer for many MES deployments: full SQL power (JOIN, CTE, window functions) over a NoSQL backend, with zero changes in the production layer. This article walks through the setup step by step — from configuring Redash, through querying the OmniMES REST API, to a SQL query that computes a vibration trend and a ready dashboard.",
+      "lang": "en",
+      "publishedAt": "2026-04-20T08:00:00.000Z",
+      "slug": "redash-in-omnimes-dashboards-on-mongodb-with-sql-and-rest-api",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "Data Visualization",
+          "value": "dataVisualization"
+        },
+        {
+          "label": "redash",
+          "value": "redash"
+        },
+        {
+          "label": "mongoDb",
+          "value": "mongoDb"
+        }
+      ],
+      "title": "Redash in OmniMES: Dashboards on MongoDB with SQL and REST API"
     }
   ]
 }
