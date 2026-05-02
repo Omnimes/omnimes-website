@@ -6,6 +6,8 @@ import { siteMetadata } from "@/data/siteMetadata"
 // import { SpeedInsights } from "@vercel/speed-insights/next"
 // import { NextIntlClientProvider } from "next-intl"
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server"
+import { OstDocument } from "outstatic"
+import { load } from "outstatic/server"
 
 // import { Toaster } from "@/components/ui/Toaster"
 // import { Widget } from "@/components/ui/Widget"
@@ -63,6 +65,23 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
+async function getLatestNews(locale: string) {
+  try {
+    const db = await load()
+    const latest = await db
+      .find<OstDocument>({ collection: "news", status: "published", lang: locale }, [
+        "title",
+        "slug",
+      ])
+      .sort({ publishedAt: -1 })
+      .limit(1)
+      .first()
+    return latest ?? null
+  } catch {
+    return null
+  }
+}
+
 export default async function LocaleLayout({
   children,
   params,
@@ -74,6 +93,9 @@ export default async function LocaleLayout({
   setRequestLocale(locale)
   const messages = await getMessages()
   const t = await getTranslations("Widget")
+  const latestNews = await getLatestNews(locale)
+  const widgetText = latestNews?.title ?? t("title")
+  const widgetHref = latestNews ? `/${locale}/news/${latestNews.slug}` : "/news"
   return (
     <html
       lang={getLocalePrimaryDialects(locale)}
@@ -139,9 +161,8 @@ export default async function LocaleLayout({
         <ClientProviders
           locale={locale}
           messages={messages}
-          widgetButtonText={t("text")}
-          widgetHref="/contact"
-          widgetText={t("title")}
+          widgetHref={widgetHref}
+          widgetText={widgetText}
         >
           {children}
         </ClientProviders>

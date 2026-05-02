@@ -91,15 +91,6 @@ export const Hero = () => {
             </span>
           </h1>
 
-          {/* Info badge */}
-          <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FF1CF7]/10 to-[#b249f8]/10 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300">
-            <span className="relative flex size-2">
-              <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#FF1CF7] opacity-75"></span>
-              <span className="relative inline-flex size-2 rounded-full bg-[#FF1CF7]"></span>
-            </span>
-            {t("newPlatformBadge")}
-          </div>
-
           <p className="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-400">
             {t("heroSubtitle")}
           </p>
@@ -125,8 +116,8 @@ export const Hero = () => {
           </div>
 
           <div className="mt-8">
-            {/* Przyciski w jednej linii z separatorem "lub" */}
-            <div className="flex flex-row flex-wrap items-center gap-4">
+            {/* Przyciski w pionie z separatorem "lub" pomiędzy */}
+            <div className="flex flex-col items-start gap-3">
               <Link
                 href="https://cloud.omnimes.com"
                 target="_blank"
@@ -146,7 +137,7 @@ export const Hero = () => {
                 </svg>
               </Link>
 
-              <span className="text-base font-medium text-gray-500 dark:text-gray-400">
+              <span className="px-1 text-base font-medium text-gray-500 dark:text-gray-400">
                 {t("or")}
               </span>
 

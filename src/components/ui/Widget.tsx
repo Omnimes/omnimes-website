@@ -1,14 +1,15 @@
 "use client"
 
 import { usePathname } from "next/navigation"
+import { useTranslations } from "next-intl"
 import { useIsClient, useWindowSize } from "usehooks-ts"
 
 type WidgetProps = {
   text: string
   href?: string
-  buttonText?: string
 }
-export const Widget = ({ text, href, buttonText }: WidgetProps) => {
+export const Widget = ({ text, href }: WidgetProps) => {
+  const t = useTranslations("Widget")
   const isClient = useIsClient()
   const pathname = usePathname()
   const { width = 0 } = useWindowSize()
@@ -65,7 +66,7 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
   return (
     <>
       {isClient && width > 690 ? (
-        <div className="border-b-1 border-divider bg-background relative isolate z-50 flex items-center gap-x-6 overflow-hidden px-6 py-2 sm:px-3.5 sm:before:flex-1">
+        <div className="border-b-1 border-divider bg-background relative isolate z-50 flex items-center justify-center overflow-hidden px-6 py-2 sm:px-3.5">
           <div
             aria-hidden="true"
             className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -90,18 +91,18 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
               }}
             ></div>
           </div>
-          <div className="flex w-full items-center justify-between gap-x-3 md:justify-center">
+          <div className="flex w-full items-center justify-center gap-x-3">
             <a
-              className="text-small text-foreground flex items-end transition-opacity hover:opacity-80 sm:text-[0.93rem]"
+              className="text-small text-foreground flex items-center gap-2 transition-opacity hover:opacity-80 sm:text-[0.93rem]"
               href={href}
               rel="noopener noreferrer"
-              target="_blank"
             >
               <span aria-label="rocket" className="hidden md:block" role="img">
                 🚀
               </span>
+              <span className="text-foreground/80 font-medium">{t("latestNews")}</span>
               <span
-                className="animate-text-gradient inline-flex bg-[linear-gradient(90deg,#D6009A_0%,#8a56cc_50%,#D6009A_100%)] bg-clip-text font-medium text-transparent md:ml-1 dark:bg-[linear-gradient(90deg,#FFEBF9_0%,#8a56cc_50%,#FFEBF9_100%)]"
+                className="animate-text-gradient inline-flex bg-[linear-gradient(90deg,#D6009A_0%,#8a56cc_50%,#D6009A_100%)] bg-clip-text font-medium text-transparent dark:bg-[linear-gradient(90deg,#FFEBF9_0%,#8a56cc_50%,#FFEBF9_100%)]"
                 style={{
                   fontSize: "inherit",
                   backgroundSize: "200%",
@@ -112,36 +113,6 @@ export const Widget = ({ text, href, buttonText }: WidgetProps) => {
                 {text}
               </span>
             </a>
-            {href && buttonText && (
-              <a
-                className="focus-visible:outline-primary text-foreground group relative flex min-w-[120px] items-center gap-1.5 overflow-hidden rounded-full p-px font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                href={href}
-                rel="noopener noreferrer"
-              >
-                <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#F54180_0%,#338EF7_50%,#F54180_100%)]"></span>
-                <div className="bg-background text-foreground transition-background group-hover:bg-background/70 inline-flex size-full cursor-pointer items-center justify-center rounded-full px-3 py-1 text-sm font-medium backdrop-blur-3xl">
-                  {buttonText}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    className="outline-none transition-transform group-hover:translate-x-0.5 [&>path]:stroke-[2px]"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M4 12h16m0 0l-6-6m6 6l-6 6"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            )}
           </div>
         </div>
       ) : null}

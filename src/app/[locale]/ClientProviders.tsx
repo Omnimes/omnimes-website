@@ -18,7 +18,6 @@ type ClientProvidersProps = {
   messages: AbstractIntlMessages
   widgetText: string
   widgetHref: string
-  widgetButtonText: string
 }
 
 export function ClientProviders({
@@ -27,14 +26,13 @@ export function ClientProviders({
   messages,
   widgetText,
   widgetHref,
-  widgetButtonText,
 }: ClientProvidersProps) {
   return (
     <NextAuthProviders>
       <NextUIProviders>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProviders>
-            <Widget text={widgetText} href={widgetHref} buttonText={widgetButtonText} />
+            <Widget text={widgetText} href={widgetHref} />
             {children}
             <Toaster />
             <Analytics />
