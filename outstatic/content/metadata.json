@@ -4,6 +4,80 @@
   "metadata": [
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/model-context-protocol-mcp-the-new-standard-for-ai-integration-with-mes-systems.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-mcp-mes/cover-mcp-mes.jpg",
+      "description": "Model Context Protocol (MCP), released by Anthropic in November 2024 and adopted in 2025 by OpenAI, Google and Microsoft, has become the de facto standard for connecting LLM agents to external data and tools. For the MES world, it ends the era of \"one integration per model\" and starts an architecture in which a plant exposes its data once — and Claude, ChatGPT, Gemini, and home-grown agents all plug in. This article explains how MCP works, what to expose from an MES, how to design it safely (lethal trifecta, IT/OT zoning), and when MCP simply does not make sense.",
+      "lang": "en",
+      "publishedAt": "2026-04-27T08:00:00.000Z",
+      "slug": "model-context-protocol-mcp-the-new-standard-for-ai-integration-with-mes-systems",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MCP",
+          "value": "mcp"
+        }
+      ],
+      "title": "Model Context Protocol (MCP): the new standard for AI integration with MES systems. How to open production data to LLM agents without vendor lock-in"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/model-context-protocol-mcp-nowy-standard-integracji-ai-z-systemami-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-mcp-mes/cover-mcp-mes.jpg",
+      "description": "Model Context Protocol (MCP), opublikowany przez Anthropic w listopadzie 2024 i przyjęty w 2025 przez OpenAI, Google i Microsoft, stał się de facto standardem łączenia agentów LLM z danymi i narzędziami zewnętrznymi. Dla świata MES oznacza to koniec ery integracji „każdy model osobno\" — i początek architektury, w której fabryka wystawia swoje dane raz, a podpinają się do nich Claude, ChatGPT, Gemini i agenci własnej produkcji. Artykuł pokazuje, jak działa MCP, co warto eksponować z systemu MES, jak to zaprojektować bezpiecznie (lethal trifecta, IT/OT) i kiedy MCP po prostu nie ma sensu.",
+      "lang": "pl",
+      "publishedAt": "2026-04-27T08:00:00.000Z",
+      "slug": "model-context-protocol-mcp-nowy-standard-integracji-ai-z-systemami-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "AGENT AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "MCP",
+          "value": "mcp"
+        }
+      ],
+      "title": "Model Context Protocol (MCP) — nowy standard integracji AI z systemami MES. Jak otworzyć dane produkcyjne dla agentów LLM bez vendor lock-inu"
+    },
+    {
+      "__outstatic": {
         "commit": "4d7a1e8f5cec9bd6a2e014fa531b8838553d4c68",
         "hash": "4217151175",
         "path": "outstatic/content/implementation/eldrew-producent-opakowan-drewnianych.md"
