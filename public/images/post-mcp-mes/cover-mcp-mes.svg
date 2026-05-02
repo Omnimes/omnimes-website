@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Model Context Protocol for MES">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="55%" stop-color="#101a3a"/>
+      <stop offset="100%" stop-color="#1b1340"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF1CF7"/>
+      <stop offset="100%" stop-color="#338EF7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8a56cc" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#8a56cc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="200" cy="120" rx="320" ry="180" fill="url(#glow)" filter="url(#soft)"/>
+  <ellipse cx="1050" cy="500" rx="380" ry="220" fill="url(#glow)" filter="url(#soft)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04">
+    <path d="M0 90 H1200 M0 180 H1200 M0 270 H1200 M0 360 H1200 M0 450 H1200 M0 540 H1200"/>
+    <path d="M120 0 V630 M240 0 V630 M360 0 V630 M480 0 V630 M600 0 V630 M720 0 V630 M840 0 V630 M960 0 V630 M1080 0 V630"/>
+  </g>
+
+  <!-- top tag -->
+  <g transform="translate(80,80)">
+    <rect width="170" height="34" rx="17" fill="#1f2a55" stroke="#3a4a8c" stroke-opacity="0.6"/>
+    <text x="85" y="22" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#a8b6ff" letter-spacing="2">OMNIMES · BLOG</text>
+  </g>
+
+  <!-- title -->
+  <g transform="translate(80,180)">
+    <text font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" fill="#ffffff">
+      <tspan x="0" dy="0">Model Context Protocol</tspan>
+      <tspan x="0" dy="68">w systemach MES</tspan>
+    </text>
+    <text x="0" y="200" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500" fill="#c9d2ff" opacity="0.85">
+      <tspan x="0" dy="0">Standard integracji AI z fabryką</tspan>
+      <tspan x="0" dy="34">bez vendor lock-inu</tspan>
+    </text>
+  </g>
+
+  <!-- diagram nodes -->
+  <g transform="translate(770,210)">
+    <!-- LLM -->
+    <g transform="translate(0,0)">
+      <rect width="160" height="70" rx="14" fill="#0f1736" stroke="url(#accent)" stroke-width="2"/>
+      <text x="80" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">LLM Agent</text>
+      <text x="80" y="54" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9aa6e0">Claude · GPT · Gemini</text>
+    </g>
+
+    <!-- arrow -->
+    <g stroke="url(#accent)" stroke-width="2" fill="none">
+      <path d="M80 80 V120"/>
+      <path d="M70 110 L80 122 L90 110"/>
+    </g>
+
+    <!-- MCP -->
+    <g transform="translate(0,130)">
+      <rect width="160" height="70" rx="14" fill="#1a1248" stroke="#FF1CF7" stroke-width="2"/>
+      <text x="80" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" fill="#ffffff">MCP Server</text>
+      <text x="80" y="54" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#ffb3f5">tools · resources</text>
+    </g>
+
+    <!-- arrow -->
+    <g stroke="url(#accent)" stroke-width="2" fill="none">
+      <path d="M80 210 V250"/>
+      <path d="M70 240 L80 252 L90 240"/>
+    </g>
+
+    <!-- MES -->
+    <g transform="translate(0,260)">
+      <rect width="160" height="70" rx="14" fill="#0f1736" stroke="#338EF7" stroke-width="2"/>
+      <text x="80" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">OmniMES</text>
+      <text x="80" y="54" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9aa6e0">OEE · alarmy · partie</text>
+    </g>
+  </g>
+
+  <!-- bottom strip -->
+  <g transform="translate(80,540)">
+    <text font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#a8b6ff" opacity="0.9">
+      <tspan x="0" dy="0">Anthropic · OpenAI · Google · Microsoft</tspan>
+      <tspan x="0" dy="22" font-weight="400" fill="#9aa6e0">8M → 97M pobrań SDK miesięcznie · 2024–2026</tspan>
+    </text>
+    <g transform="translate(900,-4)">
+      <rect width="220" height="48" rx="24" fill="url(#accent)"/>
+      <text x="110" y="31" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#0b1020">omnimes.com</text>
+    </g>
+  </g>
+</svg>

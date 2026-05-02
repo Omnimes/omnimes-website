@@ -665,6 +665,10 @@
         {
           "value": "przemysł50",
           "label": "Przemysł 5.0"
+        },
+        {
+          "value": "mcp",
+          "label": "MCP"
         }
       ]
     },
