@@ -6,6 +6,80 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
+        "path": "outstatic/content/posts/eu-ai-act-august-2026-which-mes-functions-qualify-as-high-risk-ai.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-ai-act-mes/cover-ai-act-mes.png",
+      "description": "On 2 August 2026, the EU AI Act high-risk rules become fully enforceable. A subset of MES functions — predictive maintenance tied to machine safety, operator performance monitoring, AI in medical-grade quality control, and AI-assisted workforce decisions — may be classified as high-risk, with fines up to €15M for breaches. This article maps concrete MES modules to Annex I and Annex III, lists the seven obligations of high-risk operators, and gives a 3-month action checklist for plant owners.",
+      "lang": "en",
+      "publishedAt": "2026-05-05T08:00:00.000Z",
+      "slug": "eu-ai-act-august-2026-which-mes-functions-qualify-as-high-risk-ai",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "AI Act",
+          "value": "aiAct"
+        }
+      ],
+      "title": "EU AI Act, August 2026: which MES functions qualify as \"high-risk AI\" — and what it means in practice"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-ai-act-mes/cover-ai-act-mes.png",
+      "description": "2 sierpnia 2026 zaczynają obowiązywać przepisy AI Act dotyczące systemów wysokiego ryzyka. Część funkcji MES — predykcja awarii, monitoring operatorów, AI w kontroli jakości i wsparcie decyzji o przeniesieniach kadrowych — może zostać sklasyfikowana jako high-risk z karą do 15 mln EUR za naruszenia. Artykuł pokazuje konkretnie, które funkcje MES są pod regulacją (Annex I + Annex III), które prawie na pewno nie, jakie obowiązki musi spełnić deployer i provider, oraz co zrobić w pozostałych ~3 miesiącach.",
+      "lang": "pl",
+      "publishedAt": "2026-05-05T08:00:00.000Z",
+      "slug": "eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "AI Act",
+          "value": "aiAct"
+        }
+      ],
+      "title": "EU AI Act, sierpień 2026: które funkcje MES kwalifikują się jako „high-risk AI\" — i co to znaczy w praktyce"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
         "path": "outstatic/content/posts/model-context-protocol-mcp-the-new-standard-for-ai-integration-with-mes-systems.md"
       },
       "author": {
