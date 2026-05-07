@@ -65,14 +65,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
-async function getLatestNews(locale: string) {
+async function getLatestFromCollection(collection: "news" | "posts", locale: string) {
   try {
     const db = await load()
     const latest = await db
-      .find<OstDocument>({ collection: "news", status: "published", lang: locale }, [
-        "title",
-        "slug",
-      ])
+      .find<OstDocument>({ collection, status: "published", lang: locale }, ["title", "slug"])
       .sort({ publishedAt: -1 })
       .limit(1)
       .first()
@@ -93,9 +90,39 @@ export default async function LocaleLayout({
   setRequestLocale(locale)
   const messages = await getMessages()
   const t = await getTranslations("Widget")
-  const latestNews = await getLatestNews(locale)
-  const widgetText = latestNews?.title ?? t("title")
-  const widgetHref = latestNews ? `/${locale}/news/${latestNews.slug}` : "/news"
+  const [latestNews, latestPost] = await Promise.all([
+    getLatestFromCollection("news", locale),
+    getLatestFromCollection("posts", locale),
+  ])
+  const widgetItems = [
+    latestNews
+      ? {
+          kind: "news" as const,
+          label: t("latestNews"),
+          badge: t("badgeNews"),
+          text: latestNews.title,
+          href: `/${locale}/news/${latestNews.slug}`,
+        }
+      : null,
+    latestPost
+      ? {
+          kind: "post" as const,
+          label: t("latestPost"),
+          badge: t("badgeBlog"),
+          text: latestPost.title,
+          href: `/${locale}/blog/${latestPost.slug}`,
+        }
+      : null,
+  ].filter((x): x is NonNullable<typeof x> => x !== null)
+  if (widgetItems.length === 0) {
+    widgetItems.push({
+      kind: "news",
+      label: t("latestNews"),
+      badge: t("badgeNews"),
+      text: t("title"),
+      href: "/news",
+    })
+  }
   return (
     <html
       lang={getLocalePrimaryDialects(locale)}
@@ -113,7 +140,6 @@ export default async function LocaleLayout({
       <link rel="canonical" href={`${siteMetadata.siteUrl}/${locale}/`} key="canonical" />
       <link rel="alternate" hrefLang="pl" href={`${siteMetadata.siteUrl}/pl/`} />
       <link rel="alternate" hrefLang="en" href={`${siteMetadata.siteUrl}/en/`} />
-      <link rel="alternate" hrefLang="de" href={`${siteMetadata.siteUrl}/de/`} />
       <link rel="alternate" hrefLang="x-default" href={`${siteMetadata.siteUrl}/pl/`} />
       <link
         rel="sitemap"
@@ -158,12 +184,7 @@ export default async function LocaleLayout({
         href="https://omnimes.com/news.json"
       />
       <body className="relative h-full min-h-screen overflow-x-hidden">
-        <ClientProviders
-          locale={locale}
-          messages={messages}
-          widgetHref={widgetHref}
-          widgetText={widgetText}
-        >
+        <ClientProviders locale={locale} messages={messages} widgetItems={widgetItems}>
           {children}
         </ClientProviders>
       </body>

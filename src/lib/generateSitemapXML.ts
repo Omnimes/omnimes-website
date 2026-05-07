@@ -61,7 +61,6 @@ export function generateURLObjectsTags(paths: TagsPath, host: string): URLObject
   const pathMapping: { [key: string]: string } = {
     pl: "tagi",
     en: "tags",
-    de: "stichworte",
   }
 
   for (const lang in paths) {
@@ -89,13 +88,12 @@ export function generateURLObjectsWithoutAlternate(
 ): URLObject[] {
   const pathMappingNews: { [key: string]: string } = {
     en: "news",
-    de: "nachrichten",
     pl: "aktualności",
   }
 
   if (collection == "news") {
     return paths.map((url) => {
-      const lang = (url.lang ?? "pl") as "en" | "de" | "pl"
+      const lang = (url.lang ?? "pl") as "en" | "pl"
       return {
         url: `${host}${url.lang ?? "pl"}/${pathMappingNews[lang]}/${url.slug}`,
         lastModified: url.publishedAt || new Date(),

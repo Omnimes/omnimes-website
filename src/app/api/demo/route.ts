@@ -5,7 +5,7 @@ import Mail from "nodemailer/lib/mailer"
 import demoConfig from "@/config/demoConfig.json"
 import emailTranslations from "@/config/emailTranslations.json" // <<< WAŻNE: import JSON
 
-type SupportedLocale = "pl" | "en" | "de"
+type SupportedLocale = "pl" | "en"
 
 export async function POST(request: NextRequest) {
   // --- BODY PARSE ---
@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
 
   const rawLocale = (urlLocale || bodyLocale || headerLocale || "pl").toString().toLowerCase()
   const locale: SupportedLocale = (
-    ["pl", "en", "de"].includes(rawLocale) ? rawLocale : "pl"
+    ["pl", "en"].includes(rawLocale) ? rawLocale : "pl"
   ) as SupportedLocale
 
   console.log("=== DEBUG API DEMO ===")

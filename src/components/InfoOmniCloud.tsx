@@ -15,9 +15,7 @@ export const InfoOmniCloud = () => {
   const imgAlt =
     locale === "pl"
       ? "OmniPlatforma – zarządzanie serwerami OmniMES w chmurze"
-      : locale === "de"
-        ? "OmniPlatform – Verwaltung von OmniMES-Servern in der Cloud"
-        : "OmniPlatform – manage OmniMES servers in the cloud"
+      : "OmniPlatform – manage OmniMES servers in the cloud"
 
   return (
     <>

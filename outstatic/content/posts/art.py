@@ -22,7 +22,6 @@ BASE_URL = "https://www.omnimes.com"
 LANG_PREFIX = {
     "pl": "/pl",
     "en": "/en",
-    "de": "/de",
 }
 START_DIR = Path(".").resolve()
 EXCLUDE_DIRS = {"backup"}  # nie skanujemy kopii
@@ -80,12 +79,11 @@ def main():
     out_lang_txt = {
         "pl": START_DIR / "urls_pl.txt",
         "en": START_DIR / "urls_en.txt",
-        "de": START_DIR / "urls_de.txt",
     }
 
     all_urls = []
     rows = []
-    per_lang = {"pl": [], "en": [], "de": []}
+    per_lang = {"pl": [], "en": []}
 
     for md in iter_md_files(START_DIR):
         raw = md.read_text(encoding="utf-8", errors="ignore")

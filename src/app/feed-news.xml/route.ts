@@ -32,12 +32,11 @@ export async function GET() {
 
   const pathMappingNews: { [key: string]: string } = {
     en: "news",
-    de: "nachrichten",
     pl: "aktualności",
   }
 
   news.forEach((item) => {
-    const lang = (item.lang ?? "pl") as "en" | "de" | "pl"
+    const lang = (item.lang ?? "pl") as "en" | "pl"
 
     feed.addItem({
       title: item.title,

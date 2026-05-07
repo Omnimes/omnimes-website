@@ -13,12 +13,7 @@ export const WhatIsOmnimes = () => {
 
   const imgSrc = locale === "pl" ? "/images/omnimes-schemat.png" : "/images/omnimes-schemat-en.png"
 
-  const imgAlt =
-    locale === "pl"
-      ? "Schemat działania systemu OmniMES"
-      : locale === "de"
-        ? "OmniMES Systemablauf"
-        : "OmniMES system flow"
+  const imgAlt = locale === "pl" ? "Schemat działania systemu OmniMES" : "OmniMES system flow"
 
   // Wspólna klasa kafelka
   const cardCls =

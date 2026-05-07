@@ -32,14 +32,13 @@ export async function GET() {
 
   const pathMappingNews: { [key: string]: string } = {
     en: "news",
-    de: "nachrichten",
     pl: "aktualności",
   }
 
   news
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .map((item) => {
-      const lang = (item.lang ?? "pl") as "en" | "de" | "pl"
+      const lang = (item.lang ?? "pl") as "en" | "pl"
       feed.addItem({
         title: item.title,
         link: `${host}${item.lang}/${pathMappingNews[lang]}/${item.slug}`,

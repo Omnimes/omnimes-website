@@ -10,7 +10,7 @@
       "password": "Hasło:",
       "instructionsTitle": "Instrukcje:",
       "instruction1": "1. Wejdź na stronę demonstracyjną używając powyższego linku",
-      "instruction2": "2. Zaloguj się używając podanych danych dostępowych", 
+      "instruction2": "2. Zaloguj się używając podanych danych dostępowych",
       "instruction3": "3. Poznaj funkcjonalności systemu OmniMES",
       "featuresTitle": "Co możesz przetestować w wersji demo:",
       "feature1": "• Zarządzanie produkcją w czasie rzeczywistym",
@@ -89,52 +89,6 @@
     "common": {
       "successMessage": "Access credentials have been sent to the provided email address",
       "errorMessage": "An error occurred while sending the email"
-    }
-  },
-  "de": {
-    "userEmail": {
-      "subject": "Zugang zur OmniMES Demo-Version",
-      "greeting": "Sehr geehrte/r",
-      "thanks": "Vielen Dank für Ihr Interesse an unserem OmniMES-System!",
-      "credentialsTitle": "Hier sind die Zugangsdaten für die Demo-Version:",
-      "url": "URL:",
-      "login": "Login:",
-      "password": "Passwort:",
-      "instructionsTitle": "Anweisungen:",
-      "instruction1": "1. Gehen Sie über den obigen Link zur Demo-Seite",
-      "instruction2": "2. Melden Sie sich mit den angegebenen Zugangsdaten an",
-      "instruction3": "3. Erkunden Sie die Funktionen des OmniMES-Systems",
-      "featuresTitle": "Was Sie in der Demo-Version testen können:",
-      "feature1": "• Echtzeit-Produktionsmanagement",
-      "feature2": "• Maschinen- und Produktionslinienüberwachung",
-      "feature3": "• Produktionsberichte und Analysen",
-      "feature4": "• Planung und Terminierung",
-      "feature5": "• Qualitätsmanagement und Fehlerverfolgung",
-      "contactTitle": "Bei Fragen oder dem Wunsch nach einer Live-Präsentation kontaktieren Sie uns bitte:",
-      "email": "E-Mail:",
-      "phone": "Telefon:",
-      "note": "Hinweis: Der Zugang zur Demo-Version hat Einschränkungen bezüglich einiger Funktionalitäten.",
-      "footer": "OmniMES Team<br>Industrietechnologien"
-    },
-    "teamEmail": {
-      "subject": "NEUE DEMO-ANFRAGE von",
-      "title": "🚀 NEUE DEMO-ZUGANGSANFRAGE",
-      "contactData": "Kontaktdaten:",
-      "name": "Name:",
-      "company": "Unternehmen:",
-      "position": "Position:",
-      "email": "E-Mail:",
-      "phone": "Telefon:",
-      "country": "Land:",
-      "companyInfo": "Unternehmensinformationen:",
-      "industry": "Branche:",
-      "employees": "Anzahl der Mitarbeiter:",
-      "message": "Nachricht:",
-      "credentials": "Benutzer hat Demo-Zugangsdaten automatisch erhalten:"
-    },
-    "common": {
-      "successMessage": "Die Zugangsdaten wurden an die angegebene E-Mail-Adresse gesendet",
-      "errorMessage": "Beim Versenden der E-Mail ist ein Fehler aufgetreten"
     }
   }
 }

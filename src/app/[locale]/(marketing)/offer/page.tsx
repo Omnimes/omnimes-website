@@ -164,13 +164,6 @@ export default async function OfferPage({ params }: { params: Promise<{ locale: 
         price.currency +
         " " +
         t("perMachine")
-    } else if (locale == "de") {
-      rows[item.machine][periodKey] =
-        (item.price * price.base_eu).toFixed(2).toString() +
-        " " +
-        price.currency_eu +
-        " " +
-        t("perMachine")
     } else {
       rows[item.machine][periodKey] =
         (item.price * price.base_usd).toFixed(2).toString() +

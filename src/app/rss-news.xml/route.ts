@@ -24,12 +24,11 @@ export async function GET() {
 
   const pathMappingNews: { [key: string]: string } = {
     en: "news",
-    de: "nachrichten",
     pl: "aktualności",
   }
 
   news.map((post) => {
-    const lang = (post.lang ?? "pl") as "en" | "de" | "pl"
+    const lang = (post.lang ?? "pl") as "en" | "pl"
 
     feed.item({
       title: post.title,

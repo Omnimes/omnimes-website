@@ -6,7 +6,6 @@ const primaryDialects: PrimaryDialects = {
   cs: "cs-CZ",
   cy: "cy-GB",
   da: "da-DK",
-  de: "de-DE",
   el: "el-GR",
   en: "en-US",
   es: "es-ES",
