@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { AbstractIntlMessages, NextIntlClientProvider } from "next-intl"
 
 import { Toaster } from "@/components/ui/Toaster"
-import { Widget } from "@/components/ui/Widget"
+import { Widget, WidgetItem } from "@/components/ui/Widget"
 import { NextAuthProviders } from "@/components/providers/nextauth-providers"
 import { NextUIProviders } from "@/components/providers/nextui-providers"
 import { ThemeProviders } from "@/components/providers/theme-providers"
@@ -16,23 +16,16 @@ type ClientProvidersProps = {
   children: ReactNode
   locale: string
   messages: AbstractIntlMessages
-  widgetText: string
-  widgetHref: string
+  widgetItems: WidgetItem[]
 }
 
-export function ClientProviders({
-  children,
-  locale,
-  messages,
-  widgetText,
-  widgetHref,
-}: ClientProvidersProps) {
+export function ClientProviders({ children, locale, messages, widgetItems }: ClientProvidersProps) {
   return (
     <NextAuthProviders>
       <NextUIProviders>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProviders>
-            <Widget text={widgetText} href={widgetHref} />
+            <Widget items={widgetItems} />
             {children}
             <Toaster />
             <Analytics />
