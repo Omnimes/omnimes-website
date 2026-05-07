@@ -12,9 +12,7 @@ export const InfoEnergyData = () => {
   const locale = useLocale()
 
   const imgAlt =
-    locale === "pl"
-      ? "Wykresy zużycia energii w OmniMES"
-      : "Energy consumption charts in OmniMES"
+    locale === "pl" ? "Wykresy zużycia energii w OmniMES" : "Energy consumption charts in OmniMES"
 
   const cardCls =
     "relative box-border flex flex-col overflow-hidden rounded-large shadow-medium " +
