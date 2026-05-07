@@ -18,15 +18,15 @@
  * Site identifier is auto-discovered. Override with GSC_SITE
  * (e.g. GSC_SITE='sc-domain:omnimes.com' or 'https://omnimes.com/').
  */
-import { google, searchconsole_v1 } from "googleapis"
-import { OAuth2Client } from "google-auth-library"
-import { mkdir, readFile, writeFile } from "fs/promises"
+import { exec } from "child_process"
 import { existsSync } from "fs"
+import { mkdir, readFile, writeFile } from "fs/promises"
+import { createServer } from "http"
+import { AddressInfo } from "net"
 import { homedir } from "os"
 import { join } from "path"
-import { createServer } from "http"
-import { exec } from "child_process"
-import { AddressInfo } from "net"
+import { OAuth2Client } from "google-auth-library"
+import { google, searchconsole_v1 } from "googleapis"
 
 const CLIENT_FILE = process.env.GSC_OAUTH_CLIENT || join(homedir(), ".gsc", "oauth-client.json")
 const TOKEN_FILE = process.env.GSC_OAUTH_TOKEN || join(homedir(), ".gsc", "oauth-token.json")
@@ -233,6 +233,20 @@ async function cmdSitemaps() {
   )
 }
 
+async function cmdDeleteSitemap(feedpath: string) {
+  const sc = await client()
+  const siteUrl = await pickSite(sc)
+  await sc.sitemaps.delete({ siteUrl, feedpath })
+  console.log(`Deleted sitemap entry: ${feedpath}`)
+}
+
+async function cmdSubmitSitemap(feedpath: string) {
+  const sc = await client()
+  const siteUrl = await pickSite(sc)
+  await sc.sitemaps.submit({ siteUrl, feedpath })
+  console.log(`Submitted sitemap: ${feedpath}`)
+}
+
 async function cmdInspect(url: string) {
   const sc = await client()
   const siteUrl = await pickSite(sc)
@@ -240,6 +254,60 @@ async function cmdInspect(url: string) {
     requestBody: { inspectionUrl: url, siteUrl, languageCode: "pl-PL" },
   })
   console.log(JSON.stringify(data.inspectionResult, null, 2))
+}
+
+async function cmdCoverage(sampleSize = 10) {
+  await mkdir(DATA_DIR, { recursive: true })
+  const sc = await client()
+  const siteUrl = await pickSite(sc)
+
+  // Fetch site sitemap
+  console.log("Fetching https://www.omnimes.com/sitemap.xml ...")
+  const xml = await fetch("https://www.omnimes.com/sitemap.xml").then((r) => r.text())
+  const sitemapUrls = Array.from(xml.matchAll(/<loc>([^<]+)<\/loc>/g)).map((m) => m[1])
+  console.log(`Sitemap contains ${sitemapUrls.length} URLs`)
+
+  // Fetch search analytics — pages with any impressions in 90d
+  const { data } = await sc.searchanalytics.query({
+    siteUrl,
+    requestBody: { ...rangeDays(90), dimensions: ["page"], rowLimit: 5000 },
+  })
+  const trackedUrls = new Set((data.rows ?? []).map((r) => r.keys?.[0] ?? ""))
+  console.log(`GSC analytics has ${trackedUrls.size} URLs with traffic in 90d`)
+
+  // Pages in sitemap but no traffic = candidates for "not indexed"
+  const dark = sitemapUrls.filter((u) => !trackedUrls.has(u))
+  console.log(`\n${dark.length} URLs in sitemap with NO impressions in 90d (likely not indexed):`)
+  dark.slice(0, 30).forEach((u) => console.log(`  ${u.replace("https://www.omnimes.com", "")}`))
+
+  // Sample first N for live URL inspection
+  console.log(`\nInspecting first ${sampleSize} dark URLs via GSC API...`)
+  const results: Array<{ url: string; verdict?: string; coverage?: string; indexing?: string }> = []
+  for (const url of dark.slice(0, sampleSize)) {
+    try {
+      const { data: insp } = await sc.urlInspection.index.inspect({
+        requestBody: { inspectionUrl: url, siteUrl, languageCode: "pl-PL" },
+      })
+      const r = insp.inspectionResult?.indexStatusResult
+      results.push({
+        url: url.replace("https://www.omnimes.com", ""),
+        verdict: r?.verdict ?? undefined,
+        coverage: r?.coverageState ?? undefined,
+        indexing: r?.indexingState ?? undefined,
+      })
+    } catch (err: any) {
+      results.push({ url, verdict: "ERROR: " + err.message })
+    }
+  }
+  console.table(results)
+
+  const stamp = new Date().toISOString().slice(0, 10)
+  const out = join(DATA_DIR, `coverage-${stamp}.json`)
+  await writeFile(
+    out,
+    JSON.stringify({ sitemapTotal: sitemapUrls.length, withTraffic: trackedUrls.size, dark, sample: results }, null, 2)
+  )
+  console.log(`Wrote ${out}`)
 }
 
 async function cmdAudit() {
@@ -306,8 +374,19 @@ const [, , cmd, ...rest] = process.argv
         if (!rest[0]) throw new Error("Usage: gsc inspect <url>")
         await cmdInspect(rest[0])
         break
+      case "delete-sitemap":
+        if (!rest[0]) throw new Error("Usage: gsc delete-sitemap <feedpath>")
+        await cmdDeleteSitemap(rest[0])
+        break
+      case "submit-sitemap":
+        if (!rest[0]) throw new Error("Usage: gsc submit-sitemap <feedpath>")
+        await cmdSubmitSitemap(rest[0])
+        break
       case "audit":
         await cmdAudit()
+        break
+      case "coverage":
+        await cmdCoverage(rest[0] ? Number(rest[0]) : 10)
         break
       default:
         console.error(

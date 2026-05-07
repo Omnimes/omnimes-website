@@ -6,7 +6,7 @@ export const siteMetadata = {
   keywords: "keywords",
   headerTitle: "Omnimes",
   theme: "light",
-  siteUrl: process.env.SITE_URL || "http://localhost:3000",
+  siteUrl: (process.env.SITE_URL || "http://localhost:3000").replace(/\/+$/, ""),
   socialBanner: "/images/meta/twitter-card.png",
   search: {
     provider: "kbar",
