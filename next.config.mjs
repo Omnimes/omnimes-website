@@ -19,6 +19,7 @@ const nextConfig = {
     authInterrupts: true,
     nextScriptWorkers: true,
     webVitalsAttribution: ["CLS", "LCP"],
+    optimizePackageImports: ["@nextui-org/react", "framer-motion", "react-icons"],
   },
   images: {
     remotePatterns: [
@@ -27,6 +28,18 @@ const nextConfig = {
         hostname: "**.githubusercontent.com",
       },
     ],
+  },
+
+  async headers() {
+    const immutable = [
+      { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+    ]
+    return [
+      { source: "/videos/:path*", headers: immutable },
+      { source: "/images/:path*", headers: immutable },
+      { source: "/favicons/:path*", headers: immutable },
+      { source: "/screenshots/:path*", headers: immutable },
+    ]
   },
 
   async redirects() {

@@ -1,22 +1,19 @@
 "use client"
 
-import { Suspense, useEffect, useRef } from "react"
-import dynamic from "next/dynamic"
+import { useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
-import { Skeleton } from "@nextui-org/react"
 import { useLocale, useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
 
 import { VideoPlayIcon } from "./ui/Icons"
 import { Subtitle } from "./ui/Subtitle"
 
-const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false })
-
 export const Hero = () => {
   const t = useTranslations("HeroSection")
   const locale = useLocale()
   const { theme } = useTheme()
-  const playerRef = useRef<null | { showPreview: () => void }>(null)
+  const [isPlaying, setIsPlaying] = useState(false)
 
   // Lista funkcji
   const features = ["heroFeature1", "heroFeature3"]
@@ -30,10 +27,6 @@ export const Hero = () => {
   const poster = locale === "pl" ? pathPoster : pathPosterOther
   const path = locale === "pl" ? "/videos/video.pl.mp4" : "/videos/video.en.mp4"
 
-  useEffect(() => {
-    playerRef.current?.showPreview()
-  }, [theme, locale])
-
   return (
     <div className="relative mx-auto mt-12 max-w-7xl px-6 sm:mt-20 sm:px-8">
       <section className="grid grid-cols-1 items-center gap-12 sm:grid-cols-3">
@@ -43,43 +36,41 @@ export const Hero = () => {
             <div className="text-primary-500 mb-8 text-xl md:text-center">
               <Subtitle text={t("SubTitle3")} />
             </div>
-            <div className="aspect-[16/9] w-full">
-              <Suspense fallback={<Skeleton className="size-full rounded-xl" />}>
-                <ReactPlayer
-                  id="hero-player"
-                  ref={playerRef as any}
-                  className="react-player-fix size-full"
-                  url={path}
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-white">
+              {isPlaying ? (
+                // eslint-disable-next-line jsx-a11y/media-has-caption
+                <video
+                  className="size-full object-cover"
+                  src={path}
+                  poster={poster}
                   controls
-                  width="100%"
-                  height="100%"
-                  pip
-                  light={poster}
-                  playIcon={
-                    <button
-                      aria-label={t("playAria")}
-                      title={t("playAria")}
-                      className="absolute left-1/2 top-1/2 z-40 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] shadow-lg"
-                    >
-                      <VideoPlayIcon />
-                    </button>
-                  }
+                  autoPlay
+                  preload="metadata"
+                  playsInline
                 />
-              </Suspense>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setIsPlaying(true)}
+                  aria-label={t("playAria")}
+                  title={t("playAria")}
+                  className="group relative block size-full"
+                >
+                  <Image
+                    src={poster}
+                    alt=""
+                    fill
+                    sizes="(max-width: 640px) 100vw, 66vw"
+                    priority
+                    className="object-cover"
+                  />
+                  <span className="absolute left-1/2 top-1/2 z-40 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] shadow-lg transition-transform group-hover:scale-110">
+                    <VideoPlayIcon />
+                  </span>
+                </button>
+              )}
             </div>
           </div>
-
-          {/* eslint-disable-next-line react/no-unknown-property */}
-          <style jsx global>{`
-            .react-player-fix > .react-player__preview,
-            .react-player-fix video {
-              border-radius: 0.75rem !important;
-              width: 100% !important;
-              height: 100% !important;
-              object-fit: cover;
-              background-color: #ffffff !important;
-            }
-          `}</style>
         </div>
 
         {/* PRAWA STRONA – TEKST */}
