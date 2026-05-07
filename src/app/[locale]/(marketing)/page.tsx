@@ -1,7 +1,10 @@
 import { Suspense } from "react"
-import { setRequestLocale } from "next-intl/server"
+import { getLocalePrimaryDialects } from "@/data/locales"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
+
+import { genPageMetadata } from "@/app/seo"
 
 import { Skeleton } from "@/components/ui/Skeleton"
 import { BusinessBenefits } from "@/components/BusinessBenefits"
@@ -51,6 +54,20 @@ async function getData(locale: string) {
     allNews,
     allPosts,
   }
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "Metadata" })
+  const localeShort = getLocalePrimaryDialects(locale)
+  return genPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords"),
+    localeShort,
+    locale,
+    path: "/",
+  })
 }
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {

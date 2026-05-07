@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const keywords = t("courses_keywords")
   const localeShort = getLocalePrimaryDialects(locale)
 
-  return genPageMetadata({ title, description, keywords, localeShort })
+  return genPageMetadata({ title, description, keywords, localeShort, locale, path: "/courses" })
 }
 
 /** DB: lista kursów dla danego języka */

@@ -16,6 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description,
     keywords,
     localeShort,
+    locale,
+    path: "/project/schedule",
   }
   return genPageMetadata(obj)
 }

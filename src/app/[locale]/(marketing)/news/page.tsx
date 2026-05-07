@@ -19,6 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description,
     keywords,
     localeShort,
+    locale,
+    path: "/news",
   }
   return genPageMetadata(obj)
 }
