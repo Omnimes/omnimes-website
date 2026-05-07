@@ -41,7 +41,75 @@ const nextConfig = {
 
       // === DE locale removed (2026-05) — 301 redirects to /en preserve SEO equity ===
 
-      // Deleted German content (slugs no longer exist) → redirect to EN listing pages
+      // Specific high-traffic DE blog post mappings (data from GSC audit 2026-05-07).
+      // Slug-by-slug to keep deep-link equity rather than dumping to /en/blog listing.
+      {
+        source: "/de/blog/ollama-praktische-anwendung-lokaler-ki-modelle-am-beispiel-des-omnimes-systems",
+        destination: "/en/blog/ollama-practical-use-of-local-ai-models-exemplified-by-the-omnimes-system",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/von-industrie-4-0-zu-5-0-die-evolution-der-digitalisierung-und-ihre-auswirkungen-auf-moderne-fabriken",
+        destination: "/en/blog/from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/mqtt-vs-sparkplug-b-vergleich-der-kommunikationsprotokolle-teil-i",
+        destination: "/en/blog/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/sparkplug-b-protokoll-mit-mes-systemen-ein-moderner-ansatz-zur-ausfallvorhersage-und-energieoptimierung-in-der-industrie",
+        destination: "/en/blog/utilization-of-smart-manufacturing-and-failure-prediction-in-mes-with-sparkplug-b-protocol",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/wie-die-integration-von-mes-und-iot-die-produktionsqualitat-revolutioniert-und-ausfallzeiten-eliminiert",
+        destination: "/en/blog/how-mes-iot-integration-revolutionizes-production-quality-and-eliminates-downtime",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/wie-die-integration-von-mes-mit-iot-die-moderne-produktion-transformiert-und-eine-roi-von-uber-25-liefert",
+        destination: "/en/blog/how-the-integration-of-mes-with-iot-transforms-modern-manufacturing-and-delivers-roi-above-25",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/integration-von-hmi-systemen-mit-simulation-strategisches-fundament-der-ressourcenoptimierung-in-industrie-5-0",
+        destination: "/en/blog/integration-of-hmi-systems-with-simulation-a-strategic-foundation-for-resource-optimization-in-industry-5-0",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/industrie-5-0-wie-ki-und-fortschrittliche-konnektivitat-die-industrielle-uberwachung-revolutionieren",
+        destination: "/en/blog/industry-5-0-how-ai-and-advanced-connectivity-are-revolutionizing-industrial-monitoring",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/verwaltung-von-produktionschargen-im-zeitalter-von-industrie-5-0-strategischer-ansatz-zur-digitalen-transformation-der-fertigung",
+        destination: "/en/blog/managing-production-batches-in-the-era-of-industry-5-0-a-strategic-approach-to-digital-transformation-in-manufacturing",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/praktische-anwendung-eines-ki-assistenten-integration-der-openai-gpt-api-in-eine-webanwendung-fur-datenanalyse",
+        destination: "/en/blog/practical-application-of-ai-assistant-integration-of-openai-s-gpt-api-with-a-web-application-for-data-analysis",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/praktische-anwendungen-von-ki-im-zeitalter-der-fabrikdigitalisierung-wie-konnen-vektordatenbanken-die-analyse-von-zeitreihendaten-unterstutzen",
+        destination: "/en/blog/practical-applications-of-ai-in-the-era-of-factory-digitalization-how-can-vector-databases-support-time-series-analysis",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/verwendung-von-pytorch-in-industriedaten",
+        destination: "/en/blog/using-pytorch-in-industrial-data",
+        permanent: true,
+      },
+      {
+        source: "/de/blog/datenvisualisierung-der-erfolg-der-analyse-redash",
+        destination: "/en/blog/data-visualization-the-success-of-analysis-redash",
+        permanent: true,
+      },
+
+      // Deleted German content with no measurable traffic → redirect to EN listing
       { source: "/de/blog/:slug*", destination: "/en/blog", permanent: true },
       { source: "/de/nachrichten/:slug*", destination: "/en/news", permanent: true },
       { source: "/de/implementation/:slug*", destination: "/en/implementation", permanent: true },
