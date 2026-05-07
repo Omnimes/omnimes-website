@@ -48,75 +48,59 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return genPageMetadata(obj)
 }
 
+const EMPTY_DATA: Data = { count: 0, next: null, previous: null, results: [] }
+const DEFAULT_SETTINGS = {
+  results: [
+    {
+      data: JSON.stringify({
+        base: 100,
+        currency: "PLN",
+        base_eu: 25,
+        currency_eu: "EUR",
+        base_usd: 25,
+        currency_us: "USD",
+      }),
+    },
+  ],
+}
+
 async function getData(): Promise<Data> {
   const token = process.env.API_TOKEN
-
-  if (!token) {
-    console.warn("Brak API_TOKEN – zwracam mockowane dane")
-    return {
-      count: 0,
-      next: null,
-      previous: null,
-      results: [],
+  if (!token) return EMPTY_DATA
+  try {
+    const res = await fetch(
+      "https://licencje.eomni.pl/package-price/?limit=20&offset=0&ordering=period",
+      { method: "GET", cache: "no-cache", headers: { Authorization: `Token ${token}` } }
+    )
+    if (!res.ok) {
+      console.error("Błąd pobierania package-price:", res.status)
+      return EMPTY_DATA
     }
+    return await res.json()
+  } catch (err) {
+    console.error("getData fetch threw:", err)
+    return EMPTY_DATA
   }
-
-  const res = await fetch(
-    "https://licencje.eomni.pl/package-price/?limit=20&offset=0&ordering=period",
-    {
-      method: "GET",
-      cache: "no-cache",
-      headers: {
-        Authorization: `Token ${token}`,
-      },
-    }
-  )
-
-  if (!res.ok) {
-    const errText = await res.text()
-    console.error("Błąd pobierania package-price:", res.status, errText)
-    throw new Error("Failed to fetch data from package-price")
-  }
-
-  return res.json()
 }
 
 async function getSettings() {
   const token = process.env.API_TOKEN
-
-  if (!token) {
-    console.warn("Brak API_TOKEN – zwracam mockowane ustawienia")
-    return {
-      results: [
-        {
-          data: JSON.stringify({
-            base: 100,
-            currency: "PLN",
-            base_eu: 25,
-            currency_eu: "EUR",
-            base_usd: 25,
-            currency_us: "USD",
-          }),
-        },
-      ],
+  if (!token) return DEFAULT_SETTINGS
+  try {
+    const res = await fetch("https://licencje.eomni.pl/settings/", {
+      method: "GET",
+      cache: "no-cache",
+      headers: { Authorization: `Token ${token}` },
+    })
+    if (!res.ok) {
+      console.error("Błąd pobierania settings:", res.status)
+      return DEFAULT_SETTINGS
     }
+    return await res.json()
+  } catch (err) {
+    console.error("getSettings fetch threw:", err)
+    return DEFAULT_SETTINGS
   }
-
-  const res = await fetch("https://licencje.eomni.pl/settings/", {
-    method: "GET",
-    cache: "no-cache",
-    headers: {
-      Authorization: `Token ${token}`,
-    },
-  })
-
-  if (!res.ok) {
-    const errText = await res.text()
-    console.error("Błąd pobierania settings:", res.status, errText)
-    throw new Error("Failed to fetch data from settings")
-  }
-
-  return res.json()
 }
 
 export default async function OfferPage({ params }: { params: Promise<{ locale: string }> }) {
