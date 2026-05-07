@@ -19,9 +19,9 @@ export async function GET() {
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     generator: "Feed for Node.js",
     feedLinks: {
-      json: `${host}posts.json`,
-      atom: `${host}feed.xml`,
-      rss2: `${host}rss.xml`,
+      json: `${host}/posts.json`,
+      atom: `${host}/feed.xml`,
+      rss2: `${host}/rss.xml`,
     },
     author: {
       name: "OmniMes",
@@ -38,7 +38,7 @@ export async function GET() {
     .map((item: ExtendedOstDocument) => {
       feed.addItem({
         title: item.title,
-        link: `${host}${item.lang}/blog/${item.slug}`,
+        link: `${host}/${item.lang}/blog/${item.slug}`,
         description: item.description,
         date: new Date(item.publishedAt),
         published: new Date(item.publishedAt),

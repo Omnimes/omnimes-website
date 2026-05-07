@@ -68,7 +68,7 @@ export function generateURLObjectsTags(paths: TagsPath, host: string): URLObject
       const pathTag = pathMapping[lang] || pathMapping["pl"]
 
       const urlObj: URLObject = {
-        url: `${host}${lang ?? "pl"}/${pathTag}/${tag}`,
+        url: `${host}/${lang ?? "pl"}/${pathTag}/${tag}`,
         lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 0.8,
@@ -91,21 +91,24 @@ export function generateURLObjectsWithoutAlternate(
     pl: "aktualności",
   }
 
-  if (collection == "news") {
-    return paths.map((url) => {
-      const lang = (url.lang ?? "pl") as "en" | "pl"
-      return {
-        url: `${host}${url.lang ?? "pl"}/${pathMappingNews[lang]}/${url.slug}`,
-        lastModified: url.publishedAt || new Date(),
-        changeFrequency: "weekly",
-        priority: 0.9,
-      }
-    })
+  // Map outstatic collection name → URL path segment.
+  // Without this map the generator used to lump every non-"news" collection
+  // under /blog/, producing broken URLs like /pl/blog/instalacja for a course
+  // (real URL is /pl/courses/instalacja). Add new collections here when adding
+  // them to outstatic.
+  const collectionPathSegment: Record<string, string | { en: string; pl: string }> = {
+    posts: "blog",
+    news: { en: "news", pl: "aktualności" },
+    courses: "courses",
+    implementation: "implementation",
   }
 
   return paths.map((url) => {
+    const lang = (url.lang ?? "pl") as "en" | "pl"
+    const segment = collectionPathSegment[collection] ?? collection
+    const localizedSegment = typeof segment === "string" ? segment : (segment[lang] ?? segment.pl)
     return {
-      url: `${host}${url.lang ?? "pl"}/blog/${url.slug}`,
+      url: `${host}/${lang}/${localizedSegment}/${url.slug}`,
       lastModified: url.publishedAt || new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
@@ -126,8 +129,12 @@ export function generateURLObjects(
       continue
     }
 
+    // Homepage is keyed as "/" in pathnames; emitting `${baseURL}/${locale}/`
+    // produces a trailing slash that Vercel/Next.js then 301-redirects away,
+    // triggering "Page with redirect" warnings in GSC. Strip "/" for homepage.
+    const stripRoot = (p: string) => (p === "/" ? "" : p)
     const urlObject: URLObject = {
-      url: `${baseURL}${defaultLocale}${path[defaultLocale]}`,
+      url: `${baseURL}/${defaultLocale}${stripRoot(path[defaultLocale])}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
@@ -139,7 +146,7 @@ export function generateURLObjects(
     for (const lang in path) {
       if (lang !== defaultLocale && urlObject.alternates) {
         urlObject.alternates.languages[lang] =
-          `${baseURL}${lang}${path[lang as keyof LanguagePaths]}`
+          `${baseURL}/${lang}${stripRoot(path[lang as keyof LanguagePaths])}`
       }
     }
     urlObjects.push(urlObject)

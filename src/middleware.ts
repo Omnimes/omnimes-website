@@ -30,6 +30,11 @@ export const excludePaths = [
   "/courses/[slug]",
   "/tags/[tag]",
   "/verify-email",
+  // Auth-walled or low-value pages — keep out of sitemap to avoid GSC
+  // "Page with redirect" warnings (auth middleware redirects them to /login).
+  "/documentation",
+  "/login",
+  "/register",
 ]
 export const defaultLocale = "pl" as const
 

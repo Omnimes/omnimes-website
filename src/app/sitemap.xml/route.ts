@@ -61,7 +61,7 @@ export async function GET() {
   const xmlFilesUrls: URLObject[] = []
   xmlFiles.forEach((item) => {
     xmlFilesUrls.push({
-      url: `${host}${item}`,
+      url: `${host}/${item}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,

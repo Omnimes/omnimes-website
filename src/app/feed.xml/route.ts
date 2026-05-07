@@ -16,9 +16,9 @@ export async function GET() {
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     generator: "Feed for Node.js",
     feedLinks: {
-      json: `${host}posts.json`,
-      atom: `${host}feed.xml`,
-      rss2: `${host}rss.xml`,
+      json: `${host}/posts.json`,
+      atom: `${host}/feed.xml`,
+      rss2: `${host}/rss.xml`,
     },
     author: {
       name: "OmniMes",
@@ -33,8 +33,8 @@ export async function GET() {
   posts.forEach((item) => {
     feed.addItem({
       title: item.title,
-      id: `${host}${item.lang}/blog/${item.slug}`,
-      link: `${host}${item.lang}/blog/${item.slug}`,
+      id: `${host}/${item.lang}/blog/${item.slug}`,
+      link: `${host}/${item.lang}/blog/${item.slug}`,
       description: item.description,
       content: item.content,
       date: new Date(item.publishedAt),

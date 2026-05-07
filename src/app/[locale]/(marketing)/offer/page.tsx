@@ -127,13 +127,20 @@ export default async function OfferPage({ params }: { params: Promise<{ locale: 
   const data: Data = await getData()
   const settings = await getSettings()
 
+  const rawSettings: Record<string, unknown> = (() => {
+    try {
+      return JSON.parse(settings?.results?.[0]?.data ?? "{}")
+    } catch {
+      return {}
+    }
+  })()
   const price = {
-    base: JSON.parse(settings.results[0].data)["base"] || 100,
-    currency: JSON.parse(settings.results[0].data)["currency"] || "PLN",
-    base_eu: JSON.parse(settings.results[0].data)["base_eu"] || 25,
-    currency_eu: JSON.parse(settings.results[0].data)["currency_eu"] || "EUR",
-    base_usd: JSON.parse(settings.results[0].data)["base_usd"] || 25,
-    currency_us: JSON.parse(settings.results[0].data)["currency_us"] || "USD",
+    base: (rawSettings.base as number) || 100,
+    currency: (rawSettings.currency as string) || "PLN",
+    base_eu: (rawSettings.base_eu as number) || 25,
+    currency_eu: (rawSettings.currency_eu as string) || "EUR",
+    base_usd: (rawSettings.base_usd as number) || 25,
+    currency_us: (rawSettings.currency_us as string) || "USD",
   }
 
   const periods = Array.from(new Set(data.results.map((item) => item.period))).sort((a, b) => a - b)

@@ -25,8 +25,8 @@ export async function GET() {
   posts.map((post) => {
     feed.item({
       title: post.title,
-      guid: `${host}${post.lang}/blog/${post.slug}`,
-      url: `${host}${post.lang}/blog/${post.slug}`,
+      guid: `${host}/${post.lang}/blog/${post.slug}`,
+      url: `${host}/${post.lang}/blog/${post.slug}`,
       date: new Date(post.publishedAt),
       description: post.description ?? "",
       author: post.author?.name,
