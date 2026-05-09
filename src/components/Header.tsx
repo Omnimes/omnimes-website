@@ -21,7 +21,7 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/react"
 import { SessionProvider } from "next-auth/react"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import { LuBook, LuChevronDown, LuFileText, LuMessageCircle } from "react-icons/lu"
 
 import { Notification } from "@/components/Notification"
@@ -34,6 +34,10 @@ import ThemeSwitch from "./ThemeSwitch"
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const t = useTranslations("HeaderLinks")
+  const locale = useLocale()
+
+  const resolveDropdownHref = (item: (typeof headerNavLinksDropDown)[number]) =>
+    item.hrefByLocale?.[locale === "en" ? "en" : "pl"] ?? item.href
 
   const iconClasses = "text-xl text-default-500 pointer-events-none flex-shrink-0"
 
@@ -123,11 +127,13 @@ export default function Header() {
               variant="faded"
             >
               <DropdownSection title={t("titleSectionDropDown")} showDivider>
-                {headerNavLinksDropDown.slice(0, 2).map((item) => {
+                {headerNavLinksDropDown.slice(0, 1).map((item) => {
                   return (
                     <DropdownItem
                       key={item.href}
-                      href={item.href}
+                      href={resolveDropdownHref(item)}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
                       description={t(item.desc)}
                       startContent={
                         <item.icon size={25} color={item.color} className={iconClasses} />
@@ -143,11 +149,13 @@ export default function Header() {
                 })}
               </DropdownSection>
               <DropdownSection title={t("titleSectionDropDown2")}>
-                {headerNavLinksDropDown.slice(2, 4).map((item) => {
+                {headerNavLinksDropDown.slice(1, 3).map((item) => {
                   return (
                     <DropdownItem
                       key={item.href}
-                      href={item.href}
+                      href={resolveDropdownHref(item)}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
                       description={t(item.desc)}
                       startContent={
                         <item.icon size={25} color={item.color} className={iconClasses} />
@@ -163,11 +171,13 @@ export default function Header() {
                 })}
               </DropdownSection>
               <DropdownSection title={t("titleSectionDropDown4")}>
-                {headerNavLinksDropDown.slice(4).map((item) => {
+                {headerNavLinksDropDown.slice(3).map((item) => {
                   return (
                     <DropdownItem
                       key={item.href}
-                      href={item.href}
+                      href={resolveDropdownHref(item)}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
                       description={t(item.desc)}
                       startContent={
                         <item.icon size={25} color={item.color} className={iconClasses} />
@@ -246,7 +256,14 @@ export default function Header() {
             .filter((link) => link.href !== "/")
             .map((link) => (
               <NavbarItem key={link.title}>
-                <Link href={link.href} color="foreground">
+                <Link
+                  href={link.href}
+                  color="foreground"
+                  isExternal={link.external}
+                  showAnchorIcon={link.external}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                >
                   {t(`${link.title}`)}
                 </Link>
               </NavbarItem>
@@ -292,7 +309,15 @@ export default function Header() {
             .filter((link) => link.href !== "/")
             .map((link) => (
               <NavbarMenuItem key={link.title}>
-                <Link href={link.href} color="foreground" size="lg">
+                <Link
+                  href={link.href}
+                  color="foreground"
+                  size="lg"
+                  isExternal={link.external}
+                  showAnchorIcon={link.external}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                >
                   {t(`${link.title}`)}
                 </Link>
               </NavbarMenuItem>
@@ -300,7 +325,15 @@ export default function Header() {
           <Divider />
           {headerNavLinksDropDown.map((link) => (
             <NavbarMenuItem key={link.title}>
-              <Link href={link.href} color="foreground" size="lg">
+              <Link
+                href={resolveDropdownHref(link)}
+                color="foreground"
+                size="lg"
+                isExternal={link.external}
+                showAnchorIcon={link.external}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+              >
                 {t(`${link.title}`)}
               </Link>
             </NavbarMenuItem>

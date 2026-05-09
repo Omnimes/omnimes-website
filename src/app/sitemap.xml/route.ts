@@ -21,6 +21,8 @@ export async function GET() {
   const uniqueTagsByLang: { [key: string]: Set<string> } = {}
 
   collections.forEach((collection) => {
+    // Skip courses — moved to YouTube (https://www.youtube.com/@omni-mes), pages return 404
+    if (collection === "courses") return
     const date = getDocuments(collection, ["slug", "lang", "tags"]).filter(
       (entry) => entry.status == "published"
     )

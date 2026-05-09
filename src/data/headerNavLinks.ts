@@ -4,7 +4,7 @@ import { LuAtom, LuCable, LuCombine, LuGalleryHorizontalEnd, LuSignature } from 
 export const headerNavLinks: NavLink[] = [
   { href: "/", title: "home" },
   // { href: "/omnienergy", title: "omniEnergy" },
-  { href: "/courses", title: "courses" },
+  { href: "https://www.youtube.com/@omni-mes", title: "courses", external: true },
   { href: "/implementation", title: "implementation" },
   { href: "/blog", title: "blog" },
   { href: "/about", title: "about" },
@@ -12,13 +12,14 @@ export const headerNavLinks: NavLink[] = [
 ]
 
 export const headerNavLinksDropDown: NavLinkDrop[] = [
-  {
-    href: "/offer",
-    title: "offer",
-    desc: "offerDesc",
-    icon: LuSignature,
-    color: "#9455d3",
-  },
+  // Oferta wyłączona (2026-05-08) — wpis zachowany do potencjalnego przywrócenia.
+  // {
+  //   href: "/offer",
+  //   title: "offer",
+  //   desc: "offerDesc",
+  //   icon: LuSignature,
+  //   color: "#9455d3",
+  // },
   { href: "/project", title: "project", desc: "projectDesc", icon: LuAtom, color: "#0070f0" },
   // { href: '/demo', title: 'demo', desc: 'demoDesc', icon: LuMonitorStop , color: '#c7861f' },
   {
@@ -28,7 +29,18 @@ export const headerNavLinksDropDown: NavLinkDrop[] = [
     icon: LuCombine,
     color: "#18c964",
   },
-  { href: "/faq", title: "faq", desc: "faqDesc", icon: LuCable, color: "#f31260" },
+  {
+    href: "/faq",
+    hrefByLocale: {
+      en: "https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/faq-IFQjCNYt1Q",
+      pl: "https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/faq-XN4QKuFPZL",
+    },
+    title: "faq",
+    desc: "faqDesc",
+    icon: LuCable,
+    color: "#f31260",
+    external: true,
+  },
   {
     href: "/gallery",
     title: "gallery",
@@ -41,12 +53,16 @@ export const headerNavLinksDropDown: NavLinkDrop[] = [
 type NavLink = {
   href: string
   title: string
+  external?: boolean
 }
 
 type NavLinkDrop = {
   href: string
+  /** When set, overrides `href` based on active locale (used for external locale-specific docs). */
+  hrefByLocale?: { en: string; pl: string }
   title: string
   icon: IconType
   desc: string
   color: string
+  external?: boolean
 }

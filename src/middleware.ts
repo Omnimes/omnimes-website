@@ -27,6 +27,7 @@ export const excludePaths = [
   ...protectedPages,
   ...developerPages,
   "/blog/[slug]",
+  "/courses",
   "/courses/[slug]",
   "/tags/[tag]",
   "/verify-email",
