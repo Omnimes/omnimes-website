@@ -70,6 +70,49 @@ Napisz **dwie wersje językowe**:
 2. Status: `published`
 3. Slug: wygeneruj na podstawie tytułu
 
+#### Pułapki MDX — koniecznie sprawdź przed commitem
+
+Outstatic używa MDX (Markdown + JSX), więc niektóre sekwencje znaków w narracji parsują się jako JSX i wywalają build na Vercelu z błędem typu `Cannot process MDX file with esbuild: Unexpected character ...`. Najczęstsze przypadki:
+
+- **`<` + cyfra lub litera** — parsuje się jako JSX tag opener.
+  - ❌ `If <60%`, `latencja <5ms`, `<Image>` w przykładzie kodu
+  - ✅ `If under 60%`, `latencja poniżej 5 ms`, lub spacja po `<` (`< 60`), lub backtick: `` `<Image>` ``
+- **Surowe `{ }`** w tekście (poza blokami kodu) — MDX traktuje to jako JSX expression. Owijaj w backtick: `` `{key: value}` ``.
+- **Pojedynczy `>` na początku linii** — może zostać zinterpretowany jako Markdown blockquote. Owijaj w backtick lub przepisuj („ponad").
+
+Przed `git push` zawsze: `grep -nE "<[0-9]|<[A-Z]" outstatic/content/posts/<slug>.md` — jeśli coś znajduje, to potencjalny problem.
+
+#### Krok 6.5: Aktualizacja `outstatic/content/metadata.json` (OBOWIĄZKOWE przy bezpośredniej edycji plików)
+
+Outstatic ma dwa źródła prawdy dla treści:
+- `outstatic/content/posts/*.md` — pełna treść (czytana przez `getDocumentBySlug` na stronach szczegółowych)
+- `outstatic/content/metadata.json` — **indeks** używany przez `load().find()` na listingach (`/blog`, `/news`, search)
+
+Jeśli post dodajesz przez Outstatic Admin UI (`/outstatic`), `metadata.json` aktualizuje się sam (CMS commit'uje go razem z `.md`). Jeśli dodajesz post **bezpośrednio przez edycję plików** (jak ten skrypt), MUSISZ dopisać wpis do `metadata.json` ręcznie — inaczej post będzie pod bezpośrednim URLem (HTTP 200), ale **nie pojawi się na liście `/blog`**.
+
+Format wpisu (skopiuj z istniejących entry w `metadata.json` i podmień pola):
+```json
+{
+  "__outstatic": {
+    "commit": "pending",
+    "hash": "0",
+    "path": "outstatic/content/posts/<slug>.md"
+  },
+  "author": { "name": "Martin Szerment", "picture": "/images/1645307189660-I1OD.jpg" },
+  "collection": "posts",
+  "coverImage": "<ścieżka z frontmatter>",
+  "description": "<description z frontmatter>",
+  "lang": "pl",
+  "publishedAt": "<publishedAt z frontmatter>",
+  "slug": "<slug>",
+  "status": "published",
+  "tags": [...],
+  "title": "<title>"
+}
+```
+
+Po dopisaniu wpisów (PL+EN) posortuj cały `metadata` array po `__outstatic.path` i zapisz z indentem 2 + alfabetycznymi kluczami (tak robi Outstatic przez `json-stable-stringify`).
+
 ### Krok 7: Git
 ```bash
 git add .
