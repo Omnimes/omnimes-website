@@ -20,7 +20,8 @@ export const headerNavLinksDropDown: NavLinkDrop[] = [
   //   icon: LuSignature,
   //   color: "#9455d3",
   // },
-  { href: "/project", title: "project", desc: "projectDesc", icon: LuAtom, color: "#0070f0" },
+  // Funkcje (project) wyłączone (2026-05-11) — wpis zachowany do przywrócenia.
+  // { href: "/project", title: "project", desc: "projectDesc", icon: LuAtom, color: "#0070f0" },
   // { href: '/demo', title: 'demo', desc: 'demoDesc', icon: LuMonitorStop , color: '#c7861f' },
   {
     href: "/news",

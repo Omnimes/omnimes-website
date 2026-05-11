@@ -126,30 +126,8 @@ export default function Header() {
               }}
               variant="faded"
             >
-              <DropdownSection title={t("titleSectionDropDown")} showDivider>
-                {headerNavLinksDropDown.slice(0, 1).map((item) => {
-                  return (
-                    <DropdownItem
-                      key={item.href}
-                      href={resolveDropdownHref(item)}
-                      target={item.external ? "_blank" : undefined}
-                      rel={item.external ? "noopener noreferrer" : undefined}
-                      description={t(item.desc)}
-                      startContent={
-                        <item.icon size={25} color={item.color} className={iconClasses} />
-                      }
-                      classNames={{
-                        base: "gap-4",
-                        description: "text-wrap text-gray-400 whitespace-normal",
-                      }}
-                    >
-                      {t(item.title)}
-                    </DropdownItem>
-                  )
-                })}
-              </DropdownSection>
-              <DropdownSection title={t("titleSectionDropDown2")}>
-                {headerNavLinksDropDown.slice(1, 3).map((item) => {
+              <DropdownSection title={t("titleSectionDropDown2")} showDivider>
+                {headerNavLinksDropDown.slice(0, 2).map((item) => {
                   return (
                     <DropdownItem
                       key={item.href}
@@ -171,7 +149,7 @@ export default function Header() {
                 })}
               </DropdownSection>
               <DropdownSection title={t("titleSectionDropDown4")}>
-                {headerNavLinksDropDown.slice(3).map((item) => {
+                {headerNavLinksDropDown.slice(2).map((item) => {
                   return (
                     <DropdownItem
                       key={item.href}
