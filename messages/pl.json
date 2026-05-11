@@ -789,7 +789,22 @@
     "company": "Automatyzacja przedsiębiorstwa to proces skomplikowany, wymagający fachowej wiedzy i rzetelnych dostawców. Dlatego firma MultiProjekt postawiła sobie za cel wspieranie polskich firm w automatyzacji przemysłu na każdym jego etapie. MultiProjekt jest sprawdzonym dostawcą komponentów automatyki i części do maszyn z 20-letnim doświadczeniem. Jednak to, co charakteryzuje Nas najbardziej, to fachowe doradztwo i indywidualne podejście do klienta.",
     "descriptionCompany": "Dzięki wieloletniemu doświadczeniu w automatyzacji firma MultiProjekt stworzyła autorski program OmniMES. To oprogramowanie, które nie tylko reaguje, ale również przewiduje zmiany w przemyśle. To obietnica lepszej efektywności, wyższej jakości oraz przewidywalności procesów produkcyjnych.",
     "descriptionTeam": "Jesteśmy zgranym zespołem, który łączy swoje umiejętności i entuzjazm, aby dostarczać najwyższej jakości oprogramowanie naszym klientom. Każdy członek naszego zespołu to ekspert w swojej dziedzinie, posiadający bogate doświadczenie i nieustannie rozwijający się w swoim fachu.",
-    "tilte": "Nasz zespół"
+    "tilte": "Nasz zespół",
+    "photoAlt1": "Stoisko OmniMES na targach Hannover Messe — prezentacja systemu MES",
+    "photoAlt2": "Zespół OmniMES podczas rozmów z klientami na targach branżowych",
+    "statsTitle": "OmniMES w liczbach",
+    "stat1Value": "20+",
+    "stat1Label": "lat doświadczenia w automatyce przemysłowej",
+    "stat2Value": "5+",
+    "stat2Label": "branż wdrożeniowych: motoryzacja, chemia, FMCG, metalurgia, medyczna",
+    "stat3Value": "100%",
+    "stat3Label": "wdrożeń on-premise lub w dedykowanej chmurze",
+    "stat4Value": "24/7",
+    "stat4Label": "produkcyjna gotowość systemu",
+    "ctaTitle": "Sprawdź, jak OmniMES działa w Twojej fabryce",
+    "ctaSubtitle": "Zobacz nasze realizacje albo umów krótką rozmowę — bez prezentacji sprzedażowej, tylko konkret o Twoich procesach.",
+    "ctaImplementations": "Zobacz realizacje",
+    "ctaContact": "Umów rozmowę"
   },
   "ContactHeading": {
     "title": "Zamów OmniMES już dziś i osiągnij wyższy poziom",

@@ -781,7 +781,22 @@
     "company": "Automation of a business is a complex process that requires specialized knowledge and reliable suppliers. That is why the company MultiProjekt has set a goal to support Polish companies in industrial automation at every stage. MultiProjekt is a proven supplier of automation components and machine parts with 20 years of experience. However, what characterizes us the most is professional consulting and an individual approach to the customer.",
     "descriptionCompany": "Thanks to years of experience in automation, the company MultiProjekt has created a proprietary program called OmniMES. This software not only reacts but also predicts changes in the industry. It's a promise of improved efficiency, higher quality, and predictability of manufacturing processes.",
     "descriptionTeam": "We are a cohesive team that combines our skills and enthusiasm to deliver high-quality software to our clients. Each member of our team is an expert in their field, possessing rich experience and constantly evolving in their profession.",
-    "tilte": "Our team"
+    "tilte": "Our team",
+    "photoAlt1": "OmniMES booth at Hannover Messe — Manufacturing Execution System demo",
+    "photoAlt2": "OmniMES team talking with customers at an industry trade show",
+    "statsTitle": "OmniMES by the numbers",
+    "stat1Value": "20+",
+    "stat1Label": "years of experience in industrial automation",
+    "stat2Value": "5+",
+    "stat2Label": "deployment industries: automotive, chemicals, FMCG, metals, medical",
+    "stat3Value": "100%",
+    "stat3Label": "deployments on-premise or in a dedicated cloud",
+    "stat4Value": "24/7",
+    "stat4Label": "production-grade availability",
+    "ctaTitle": "See how OmniMES works in your plant",
+    "ctaSubtitle": "Browse our case studies or book a short call — no sales pitch, just a concrete conversation about your processes.",
+    "ctaImplementations": "See implementations",
+    "ctaContact": "Book a call"
   },
   "ContactHeading": {
     "title": "Order OmniMES today and reach a higher level",

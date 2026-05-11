@@ -16,18 +16,18 @@ export const Company = () => {
       </div>
       <div className="mt-8 grid grid-cols-2 gap-4">
         <Image
-          className="z-1 w-full rounded-lg"
-          src="/images/about/company.png"
-          alt="office content 1"
-          width={300}
-          height={400}
+          className="z-1 size-full rounded-lg object-cover"
+          src="/images/gallery/fhd/01.jpg"
+          alt={t("photoAlt1")}
+          width={600}
+          height={800}
         />
         <Image
-          className="z-1 mt-4 w-full rounded-lg lg:mt-10"
-          src="/images/about/company2.png"
-          alt="office content 2"
-          width={300}
-          height={400}
+          className="z-1 mt-4 size-full rounded-lg object-cover lg:mt-10"
+          src="/images/gallery/fhd/09.jpg"
+          alt={t("photoAlt2")}
+          width={600}
+          height={800}
         />
       </div>
     </div>
