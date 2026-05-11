@@ -127,7 +127,7 @@ Dla zespołów, które chcą zacząć:
 
 **Tydzień 3 — integracja MES.** Endpoint REST `POST /ask`, autoryzacja LDAP, logging do osobnej tabeli w SQLite. Widget w UI panelu operatorskiego. Pierwsze 10 osób z zespołu jakości i utrzymania ruchu na pilocie.
 
-**Tydzień 4 — pomiar i decyzja.** Zbierz 100 realnych zapytań, oznacz odpowiedzi (użyteczne / częściowo / nieużyteczne). Jeśli >75% użytecznych — promocja na NX 16 GB w produkcji, plan rolloutu na całość zakładu. Jeśli <60% — wróć do retrievalu (zwykle problemem jest jakość chunkowania albo brakujące dokumenty), nie do modelu.
+**Tydzień 4 — pomiar i decyzja.** Zbierz 100 realnych zapytań, oznacz odpowiedzi (użyteczne / częściowo / nieużyteczne). Jeśli ponad 75% jest użytecznych — promocja na NX 16 GB w produkcji, plan rolloutu na całość zakładu. Jeśli mniej niż 60% — wróć do retrievalu (zwykle problemem jest jakość chunkowania albo brakujące dokumenty), nie do modelu.
 
 Cały POC w wariancie minimalnym to **400 USD hardware'u plus 1,5 etatu na miesiąc**. Klasyczny pilot chmurowy z OpenAI Enterprise startuje od 5–10× tej kwoty plus 6–12 tygodni negocjacji DPA i procurementu.
 

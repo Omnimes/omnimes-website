@@ -127,7 +127,7 @@ For teams that want to start moving:
 
 **Week 3 — MES integration.** REST endpoint `POST /ask`, LDAP authorization, logging to a separate SQLite table. Widget in the operator panel UI. First 10 people from quality and maintenance teams on the pilot.
 
-**Week 4 — measurement and decision.** Collect 100 real queries, label the answers (useful / partly / not useful). If >75% are useful — promote to a 16 GB NX in production and plan a plant-wide rollout. If <60% — go back to retrieval (the issue is usually chunking quality or missing documents), not the model.
+**Week 4 — measurement and decision.** Collect 100 real queries, label the answers (useful / partly / not useful). If more than 75% are useful — promote to a 16 GB NX in production and plan a plant-wide rollout. If under 60% — go back to retrieval (the issue is usually chunking quality or missing documents), not the model.
 
 The whole POC in its minimal variant is **USD 400 of hardware plus 1.5 FTE-months**. A classical cloud pilot with OpenAI Enterprise starts at 5–10× that figure plus 6–12 weeks of DPA negotiation and procurement.
 
