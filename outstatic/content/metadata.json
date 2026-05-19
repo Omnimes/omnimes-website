@@ -1196,7 +1196,7 @@
       "coverImage": "/images/post-dpp-mes/cover-dpp-mes.png",
       "description": "On 18 February 2027 the battery passport becomes mandatory for EV batteries, industrial batteries above 2 kWh, and LMT batteries — the first concrete moment when the Digital Product Passport (DPP) turns from EU concept into a hard production requirement. For an MES, this means exposing roughly seventeen attributes per unit: material origin, carbon footprint, recycled content, batch ID, durability, cell health data. This article walks through ESPR (2024/1781) and the Battery Regulation (2023/1542) without fluff: which MES functions already produce the data, what is missing, how to wire it up architecturally with GS1 Digital Link, and what to do in the nine months left before the deadline.",
       "lang": "en",
-      "publishedAt": "2026-05-11T08:00:00.000Z",
+      "publishedAt": "2026-05-18T08:00:00.000Z",
       "slug": "digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february",
       "status": "published",
       "tags": [
@@ -1233,7 +1233,7 @@
       "coverImage": "/images/post-dpp-mes/cover-dpp-mes.png",
       "description": "18 lutego 2027 paszport baterii staje się obowiązkowy dla baterii EV, przemysłowych powyżej 2 kWh i LMT — pierwszy moment, w którym Digital Product Passport (DPP) z koncepcji unijnej zmienia się w konkretny wymóg produkcyjny. Dla MES oznacza to obowiązek wystawienia kilkunastu atrybutów per sztuka: pochodzenie surowców, ślad węglowy, zawartość recyklatu, batch ID, durability, dane o zdrowiu ogniwa. Artykuł rozbiera ESPR (2024/1781) i Battery Regulation (2023/1542) bez wody: które funkcje MES już to produkują, czego brakuje, jak architektonicznie podpiąć GS1 Digital Link, i co zrobić w pozostałych 9 miesiącach przed deadline'em.",
       "lang": "pl",
-      "publishedAt": "2026-05-11T08:00:00.000Z",
+      "publishedAt": "2026-05-18T08:00:00.000Z",
       "slug": "digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego",
       "status": "published",
       "tags": [

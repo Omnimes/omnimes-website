@@ -9,7 +9,7 @@ description: 'On 18 February 2027 the battery passport becomes mandatory for EV 
 coverImage: '/images/post-dpp-mes/cover-dpp-mes.png'
 lang: 'en'
 tags: [{"value":"ue","label":"UE"},{"value":"omniMES","label":"OmniMES"},{"value":"dpp","label":"DPP"},{"value":"mesSystem","label":"MES System"}]
-publishedAt: '2026-05-11T08:00:00.000Z'
+publishedAt: '2026-05-18T08:00:00.000Z'
 ---
 
 **18 February 2027** is the date most European battery, electronics, steel, and textile manufacturers should already have on their compliance calendar. On that day, under Article 77 of the [Battery Regulation 2023/1542](https://eur-lex.europa.eu/eli/reg/2023/1542/oj), the [Digital Product Passport (DPP)](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) becomes mandatory for every industrial battery above 2 kWh, every EV battery, and every battery for Light Means of Transport (LMT — e-scooters, e-bikes). Without a passport, the product cannot be placed on the EU market. Article 25 of the [ESPR 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) gives market surveillance authorities the power to ban distribution, and member states define the administrative penalties (Germany — up to **4% of annual turnover** for serious breaches, [Bundesnetzagentur 2025](https://www.bundesnetzagentur.de/EN/Areas/Energy/Companies/SecurityOfSupply/Battery_Regulation/start.html)).

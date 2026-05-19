@@ -9,7 +9,7 @@ description: '18 lutego 2027 paszport baterii staje się obowiązkowy dla bateri
 coverImage: '/images/post-dpp-mes/cover-dpp-mes.png'
 lang: 'pl'
 tags: [{"value":"ue","label":"UE"},{"value":"omniMES","label":"OmniMES"},{"value":"dpp","label":"DPP"},{"value":"mesSystem","label":"MES System"}]
-publishedAt: '2026-05-11T08:00:00.000Z'
+publishedAt: '2026-05-18T08:00:00.000Z'
 ---
 
 **18 lutego 2027** — to data, którą większość polskich zakładów produkujących baterie, komponenty elektroniki przemysłowej, stal, tekstylia lub akumulatory dla EV powinna już mieć w kalendarzu compliance. Tego dnia, zgodnie z Art. 77 [Battery Regulation 2023/1542](https://eur-lex.europa.eu/eli/reg/2023/1542/oj), [Digital Product Passport (DPP)](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) staje się obowiązkowy dla wszystkich baterii przemysłowych powyżej 2 kWh, baterii pojazdów elektrycznych i baterii lekkich środków transportu (LMT — hulajnogi, e-rowery). Bez paszportu — produkt nie może być wprowadzony na rynek UE. Art. 25 [ESPR 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) daje organom nadzoru rynku uprawnienie do zakazu obrotu, a państwa członkowskie ustalają kary administracyjne (Niemcy — do **4% rocznego obrotu** za poważne naruszenia, [Bundesnetzagentur 2025](https://www.bundesnetzagentur.de/EN/Areas/Energy/Companies/SecurityOfSupply/Battery_Regulation/start.html)).
