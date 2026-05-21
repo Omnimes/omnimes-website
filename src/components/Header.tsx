@@ -127,7 +127,7 @@ export default function Header() {
               variant="faded"
             >
               <DropdownSection title={t("titleSectionDropDown2")} showDivider>
-                {headerNavLinksDropDown.slice(0, 2).map((item) => {
+                {headerNavLinksDropDown.slice(0, 1).map((item) => {
                   return (
                     <DropdownItem
                       key={item.href}
@@ -149,7 +149,7 @@ export default function Header() {
                 })}
               </DropdownSection>
               <DropdownSection title={t("titleSectionDropDown4")}>
-                {headerNavLinksDropDown.slice(2).map((item) => {
+                {headerNavLinksDropDown.slice(1).map((item) => {
                   return (
                     <DropdownItem
                       key={item.href}

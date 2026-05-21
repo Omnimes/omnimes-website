@@ -7,6 +7,7 @@ export const headerNavLinks: NavLink[] = [
   { href: "https://www.youtube.com/@omni-mes", title: "courses", external: true },
   { href: "/implementation", title: "implementation" },
   { href: "/blog", title: "blog" },
+  { href: "/news", title: "news" },
   { href: "/about", title: "about" },
   { href: "/contact", title: "contact" },
 ]
@@ -23,13 +24,14 @@ export const headerNavLinksDropDown: NavLinkDrop[] = [
   // Funkcje (project) wyłączone (2026-05-11) — wpis zachowany do przywrócenia.
   // { href: "/project", title: "project", desc: "projectDesc", icon: LuAtom, color: "#0070f0" },
   // { href: '/demo', title: 'demo', desc: 'demoDesc', icon: LuMonitorStop , color: '#c7861f' },
-  {
-    href: "/news",
-    title: "news",
-    desc: "NewsDesc",
-    icon: LuCombine,
-    color: "#18c964",
-  },
+  // News (Nowości w OmniMES) przeniesione do głównego menu (2026-05-21) — wpis zachowany do przywrócenia.
+  // {
+  //   href: "/news",
+  //   title: "news",
+  //   desc: "NewsDesc",
+  //   icon: LuCombine,
+  //   color: "#18c964",
+  // },
   {
     href: "/faq",
     hrefByLocale: {
