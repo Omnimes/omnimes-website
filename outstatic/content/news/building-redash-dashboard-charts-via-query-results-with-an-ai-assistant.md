@@ -6,14 +6,14 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'building-redash-dashboard-charts-via-query-results-with-an-ai-assistant'
 description: 'OmniMES has a new module that lets users build analytical charts directly from inside the app — without clicking around Redash and without writing SQL. An AI assistant generates the SQL, picks the right chart type and publishes the widget to a dashboard in one click.'
-coverImage: '/images/news-redash-ai/cover.png'
+coverImage: '/images/news-redash-ai/cover-en.png'
 lang: 'en'
 publishedAt: '2026-05-22T09:00:00.000Z'
 ---
 
 OmniMES has a new module that lets users build analytical charts **directly from inside the application** — without clicking around Redash and without knowing SQL. The whole flow rests on three building blocks: base JSON queries, the Query Results editor powered by Redash's SQL engine, and an AI assistant that helps at every step.
 
-<video controls width="100%" preload="metadata" poster="/images/news-redash-ai/cover.png">
+<video controls width="100%" preload="metadata" poster="/images/news-redash-ai/cover-en.png">
   <source src="/videos/qr-ai-en.mp4" type="video/mp4" />
   Your browser does not support HTML5 video playback.
 </video>

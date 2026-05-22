@@ -6,14 +6,14 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'tworzenie-wykresow-redash-z-asystentem-ai-w-omnimes'
 description: 'OmniMES dostał nowy moduł, który pozwala użytkownikom budować wykresy analityczne bezpośrednio z poziomu aplikacji — bez ręcznego klikania w Redash i bez znajomości SQL. Asystent AI generuje SQL, dobiera typ wykresu i publikuje widget na dashboardzie jednym kliknięciem.'
-coverImage: '/images/news-redash-ai/cover.png'
+coverImage: '/images/news-redash-ai/cover-pl.png'
 lang: 'pl'
 publishedAt: '2026-05-22T09:00:00.000Z'
 ---
 
 OmniMES dostał nowy moduł, który pozwala użytkownikom budować wykresy analityczne **bezpośrednio z poziomu aplikacji** — bez ręcznego klikania w Redash i bez znajomości SQL. Całość opiera się o trzy elementy: bazowe zapytania JSON, edytor Query Results z silnikiem SQL Redasha oraz asystenta AI, który pomaga na każdym etapie procesu.
 
-<video controls width="100%" preload="metadata" poster="/images/news-redash-ai/cover.png">
+<video controls width="100%" preload="metadata" poster="/images/news-redash-ai/cover-pl.png">
   <source src="/videos/qr-ai-pl.mp4" type="video/mp4" />
   Twoja przeglądarka nie obsługuje odtwarzania wideo HTML5.
 </video>
