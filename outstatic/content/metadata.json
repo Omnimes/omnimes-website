@@ -4,6 +4,44 @@
   "metadata": [
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/building-redash-dashboard-charts-via-query-results-with-an-ai-assistant.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/news-redash-ai/cover.png",
+      "description": "OmniMES has a new module that lets users build analytical charts directly from inside the app — without clicking around Redash and without writing SQL. An AI assistant generates the SQL, picks the right chart type and publishes the widget to a dashboard in one click.",
+      "lang": "en",
+      "publishedAt": "2026-05-22T09:00:00.000Z",
+      "slug": "building-redash-dashboard-charts-via-query-results-with-an-ai-assistant",
+      "status": "published",
+      "title": "Building Redash dashboard charts via Query Results with an AI assistant"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/tworzenie-wykresow-redash-z-asystentem-ai-w-omnimes.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/news-redash-ai/cover.png",
+      "description": "OmniMES dostał nowy moduł, który pozwala użytkownikom budować wykresy analityczne bezpośrednio z poziomu aplikacji — bez ręcznego klikania w Redash i bez znajomości SQL. Asystent AI generuje SQL, dobiera typ wykresu i publikuje widget na dashboardzie jednym kliknięciem.",
+      "lang": "pl",
+      "publishedAt": "2026-05-22T09:00:00.000Z",
+      "slug": "tworzenie-wykresow-redash-z-asystentem-ai-w-omnimes",
+      "status": "published",
+      "title": "Tworzenie wykresów na dashboardach Redash przez Query Results z asystentem AI"
+    },
+    {
+      "__outstatic": {
         "commit": "d225845a72198d2427fd73b8a15223994c3c853c",
         "hash": "3900969134",
         "path": "outstatic/content/courses/instalacja.md"
