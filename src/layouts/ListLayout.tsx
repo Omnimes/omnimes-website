@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react"
-import { usePathname } from "next/navigation"
 import { slug as slugify } from "github-slugger"
 import { useLocale, useTranslations } from "next-intl"
 import { LuCalendar, LuSearch } from "react-icons/lu"
 
 import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
+import { usePathname } from "@/navigation"
 import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface PaginationProps {
@@ -24,7 +24,7 @@ interface ListLayoutProps {
 function Pagination({ totalPages, currentPage }: PaginationProps) {
   const t = useTranslations("Pagination")
   const pathname = usePathname()
-  const basePath = pathname?.split("/")[2]
+  const basePath = pathname?.split("/")[1]
   const prevPage = currentPage - 1 > 0
   const nextPage = currentPage + 1 <= totalPages
 
@@ -76,7 +76,7 @@ export default function ListLayout({
   const t = useTranslations("ListLayout")
   const lang = useLocale()
   const pathname = usePathname()
-  const basePath = pathname?.split("/")[2]
+  const basePath = pathname?.split("/")[1]
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
