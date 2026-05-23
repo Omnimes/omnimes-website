@@ -1,11 +1,12 @@
-import Image from "next/image"
 import { getLocalePrimaryDialects } from "@/data/locales"
+import ListLayout from "@/layouts/ListLayout"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
 
-import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid"
 import { genPageMetadata } from "@/app/seo"
+
+export const revalidate = 3600
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -34,9 +35,10 @@ async function getData(locale: string) {
       "slug",
       "coverImage",
       "description",
+      "author",
     ])
     .sort({ publishedAt: -1 })
-    .limit(20)
+    .limit(21)
     .toArray()
 
   return allNews
@@ -46,41 +48,13 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   setRequestLocale(locale)
   const allNews = await getData(locale)
+  const t = await getTranslations({ locale, namespace: "NewsMeta" })
 
   return (
-    <main className="py-24">
-      <BentoGrid className="mx-auto max-w-screen-xl">
-        {allNews.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            slug={"/news/" + item.slug}
-            title={item.title}
-            description={item.description}
-            header={<Skeleton src={item.coverImage} />}
-            className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-          />
-        ))}
-      </BentoGrid>
-    </main>
+    <ListLayout
+      posts={allNews}
+      initialDisplayPosts={allNews}
+      title={t("title")}
+    />
   )
-}
-
-const Skeleton = ({ src }: { src: string | undefined }) => {
-  if (src == undefined || src == "") {
-    return (
-      <div className="flex h-44 w-full bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
-    )
-  } else {
-    return (
-      <div className="relative h-44 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900">
-        <Image
-          src={src}
-          alt={"News photo"}
-          width={1096}
-          height={282}
-          className="size-full object-cover object-center"
-        />
-      </div>
-    )
-  }
 }

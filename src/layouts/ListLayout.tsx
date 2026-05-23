@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import { usePathname } from "next/navigation"
-import { useLocale, useTranslations } from "next-intl"
 import { slug as slugify } from "github-slugger"
+import { useLocale, useTranslations } from "next-intl"
 import { LuCalendar, LuSearch } from "react-icons/lu"
 
 import getFormattedDate from "@/lib/getFormattedDate"
@@ -68,7 +68,9 @@ export default function ListLayout({
 }: ListLayoutProps) {
   const [searchValue, setSearchValue] = useState("")
   const filteredBlogPosts = posts.filter((post) => {
-    const searchContent = post.title + post.subtitle + post.keywords
+    const searchContent = [post.title, post.subtitle, post.keywords, post.description]
+      .filter(Boolean)
+      .join(" ")
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
   const t = useTranslations("ListLayout")

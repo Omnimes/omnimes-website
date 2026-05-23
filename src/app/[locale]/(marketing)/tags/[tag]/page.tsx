@@ -93,7 +93,7 @@ async function getData(locale: string, tagParams: string) {
 
   if (!posts) return undefined
   return posts.filter((post) =>
-    post.tags.some((tag) => slug(tag.label) == slug(decodeURIComponent(tagParams)))
+    (post.tags ?? []).some((tag) => slug(tag.label) == slug(decodeURIComponent(tagParams)))
   )
 }
 

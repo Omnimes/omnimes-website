@@ -154,7 +154,7 @@ export default function ListLayoutWithTags({ posts, tags, tag, pagination }: Lis
                             </CustomLink>
                           </h2>
                           <div className="flex flex-wrap">
-                            {tags.map((tag: { value: string; label: string }) => {
+                            {(tags ?? []).map((tag: { value: string; label: string }) => {
                               return <Tag key={tag.value} text={tag.label} />
                             })}
                           </div>

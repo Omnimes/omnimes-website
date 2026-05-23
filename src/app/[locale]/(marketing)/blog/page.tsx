@@ -7,7 +7,7 @@ import { getDocuments, load } from "outstatic/server"
 import { generateSearchJSON } from "@/lib/generateSearchJSON"
 import { genPageMetadata } from "@/app/seo"
 
-export type ExtendedOstDocument = OstDocument & { tags: { value: string; label: string }[] }
+export type ExtendedOstDocument = OstDocument & { tags?: { value: string; label: string }[] }
 export const revalidate = 3600
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -70,7 +70,7 @@ async function getDataToSearch() {
 
   const posts = AllPosts.map((post) => ({
     ...post,
-    tags: post.tags.map((tag) => tag.label).join(", "),
+    tags: (post.tags ?? []).map((tag) => tag.label).join(", "),
   }))
 
   await generateSearchJSON(posts)
