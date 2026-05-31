@@ -4,44 +4,6 @@
   "metadata": [
     {
       "__outstatic": {
-        "commit": "pending",
-        "hash": "0",
-        "path": "outstatic/content/news/building-redash-dashboard-charts-via-query-results-with-an-ai-assistant.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/news-redash-ai/cover-en.png",
-      "description": "OmniMES has a new module that lets users build analytical charts directly from inside the app — without clicking around Redash and without writing SQL. An AI assistant generates the SQL, picks the right chart type and publishes the widget to a dashboard in one click.",
-      "lang": "en",
-      "publishedAt": "2026-05-22T09:00:00.000Z",
-      "slug": "building-redash-dashboard-charts-via-query-results-with-an-ai-assistant",
-      "status": "published",
-      "title": "Building Redash dashboard charts via Query Results with an AI assistant"
-    },
-    {
-      "__outstatic": {
-        "commit": "pending",
-        "hash": "0",
-        "path": "outstatic/content/news/tworzenie-wykresow-redash-z-asystentem-ai-w-omnimes.md"
-      },
-      "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
-      },
-      "collection": "news",
-      "coverImage": "/images/news-redash-ai/cover-pl.png",
-      "description": "OmniMES dostał nowy moduł, który pozwala użytkownikom budować wykresy analityczne bezpośrednio z poziomu aplikacji — bez ręcznego klikania w Redash i bez znajomości SQL. Asystent AI generuje SQL, dobiera typ wykresu i publikuje widget na dashboardzie jednym kliknięciem.",
-      "lang": "pl",
-      "publishedAt": "2026-05-22T09:00:00.000Z",
-      "slug": "tworzenie-wykresow-redash-z-asystentem-ai-w-omnimes",
-      "status": "published",
-      "title": "Tworzenie wykresów na dashboardach Redash przez Query Results z asystentem AI"
-    },
-    {
-      "__outstatic": {
         "commit": "d225845a72198d2427fd73b8a15223994c3c853c",
         "hash": "3900969134",
         "path": "outstatic/content/courses/instalacja.md"
@@ -125,6 +87,25 @@
         }
       ],
       "title": "Eldrew - producent opakowań drewnianych"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/building-redash-dashboard-charts-via-query-results-with-an-ai-assistant.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/news-redash-ai/cover-en.png",
+      "description": "OmniMES has a new module that lets users build analytical charts directly from inside the app — without clicking around Redash and without writing SQL. An AI assistant generates the SQL, picks the right chart type and publishes the widget to a dashboard in one click.",
+      "lang": "en",
+      "publishedAt": "2026-05-22T09:00:00.000Z",
+      "slug": "building-redash-dashboard-charts-via-query-results-with-an-ai-assistant",
+      "status": "published",
+      "title": "Building Redash dashboard charts via Query Results with an AI assistant"
     },
     {
       "__outstatic": {
@@ -448,6 +429,25 @@
       "slug": "pierwsza-w-polsce-platforma-dla-przemyslu-5-0-z-ai",
       "status": "published",
       "title": "Pierwsza w Polsce platforma dla Przemysłu 5.0 z AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/tworzenie-wykresow-redash-z-asystentem-ai-w-omnimes.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/news-redash-ai/cover-pl.png",
+      "description": "OmniMES dostał nowy moduł, który pozwala użytkownikom budować wykresy analityczne bezpośrednio z poziomu aplikacji — bez ręcznego klikania w Redash i bez znajomości SQL. Asystent AI generuje SQL, dobiera typ wykresu i publikuje widget na dashboardzie jednym kliknięciem.",
+      "lang": "pl",
+      "publishedAt": "2026-05-22T09:00:00.000Z",
+      "slug": "tworzenie-wykresow-redash-z-asystentem-ai-w-omnimes",
+      "status": "published",
+      "title": "Tworzenie wykresów na dashboardach Redash przez Query Results z asystentem AI"
     },
     {
       "__outstatic": {
@@ -4141,6 +4141,80 @@
         }
       ],
       "title": "The Use of Web3 and Blockchain Technology in Industrial Data Management and Promoting Renewable Energy Sources"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-tsfm-mes/cover-tsfm-mes.png",
+      "description": "Two years after the first pretrained transformers for time series — TimesFM from Google, Chronos-Bolt from Amazon, Moirai-MoE from Salesforce — we finally have real answers to the question of whether a custom XGBoost pipeline for failure prediction in MES can be replaced by a zero-shot foundation model. This article walks through it without hype: what these models were trained on, the quality they deliver on real compressor sensor data, latencies on Jetson Orin and on a GPU server, when zero-shot is enough, and when fine-tuning is unavoidable — and what this means for the classic six-month ML project in a factory.",
+      "lang": "en",
+      "publishedAt": "2026-05-25T08:00:00.000Z",
+      "slug": "time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        }
+      ],
+      "title": "Time-series Foundation Models in MES: are TimesFM/Chronos/Moirai already beating your own XGBoost in failure prediction?"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-tsfm-mes/cover-tsfm-mes.png",
+      "description": "Po dwóch latach od wypuszczenia pierwszych pretrained transformerów dla szeregów czasowych — TimesFM od Google, Chronos-Bolt od Amazona, Moirai-MoE od Salesforce'a — mamy realne odpowiedzi na pytanie, czy custom XGBoost dla predykcji awarii w MES da się wymienić na zero-shot foundation model. Artykuł rozbiera to bez wody: na czym te modele zostały trenowane, jaką jakość dają na realnych sensor data z kompresora, jakie są latencje na Jetson Orin i serwerze GPU, kiedy zero-shot wystarcza, a kiedy fine-tune jest konieczny — i co to znaczy dla 6-miesięcznych projektów ML w fabryce.",
+      "lang": "pl",
+      "publishedAt": "2026-05-25T08:00:00.000Z",
+      "slug": "time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "time-series data",
+          "value": "timeSeriesData"
+        },
+        {
+          "label": "XGBoost",
+          "value": "xgBoost"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        }
+      ],
+      "title": "Time-series Foundation Models w MES: czy TimesFM/Chronos/Moirai już biją własny XGBoost w predykcji awarii?"
     },
     {
       "__outstatic": {
