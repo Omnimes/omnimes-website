@@ -3056,6 +3056,80 @@
     },
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-nis2-mes/cover-nis2-mes.png",
+      "description": "The Polish amendment to the National Cybersecurity Act (KSC2), transposing the EU NIS2 Directive, enters real enforcement in the second half of 2026. Factories producing chemicals, food, machinery, automotive, electronics or medical devices — if they employ more than 50 people — are classified as \"important entities\" and fall under the full obligations package. This article walks through the ten Article 21 NIS2 requirements from an MES perspective: which functions already produce compliance evidence, what is missing, how every external API (OpenAI, cloud LLM, SaaS MES) grows your audit surface, and what to do concretely in the remaining months of 2026.",
+      "lang": "en",
+      "publishedAt": "2026-06-01T08:00:00.000Z",
+      "slug": "nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory",
+      "status": "published",
+      "tags": [
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "cyberbezpieczenstwo",
+          "value": "cyberbezpieczenstwo"
+        },
+        {
+          "label": "NIS2",
+          "value": "nis2"
+        }
+      ],
+      "title": "NIS2 and the Polish KSC2 Act in 2026: how MES becomes cyber-compliance evidence for an EU factory"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-nis2-mes/cover-nis2-mes.png",
+      "description": "Polska nowelizacja ustawy KSC (transponująca dyrektywę NIS2) wchodzi w fazę realnej egzekucji w drugiej połowie 2026. Fabryki produkujące chemię, żywność, maszyny, motoryzację, elektronikę lub wyroby medyczne — jeżeli mają więcej niż 50 osób — są klasyfikowane jako „podmioty istotne\" i podlegają pełnemu pakietowi obowiązków. Artykuł rozbiera 10 wymagań Art. 21 NIS2 z perspektywy MES: które funkcje już produkują dowody compliance, czego brakuje, jak każde zewnętrzne API (OpenAI, chmurowe LLM, SaaS MES) zwiększa powierzchnię audytową, i co konkretnie zrobić w pozostałych miesiącach 2026.",
+      "lang": "pl",
+      "publishedAt": "2026-06-01T08:00:00.000Z",
+      "slug": "nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki",
+      "status": "published",
+      "tags": [
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "cyberbezpieczenstwo",
+          "value": "cyberbezpieczenstwo"
+        },
+        {
+          "label": "NIS2",
+          "value": "nis2"
+        }
+      ],
+      "title": "NIS2 i KSC2 w 2026: jak MES staje się elementem cyber-compliance polskiej fabryki"
+    },
+    {
+      "__outstatic": {
         "commit": "5c5c477835a23eb8f03614efd89cd36ba3167caa",
         "hash": "1030971944",
         "path": "outstatic/content/posts/nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001.md"
