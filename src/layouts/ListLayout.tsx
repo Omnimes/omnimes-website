@@ -19,6 +19,7 @@ interface ListLayoutProps {
   title: string
   initialDisplayPosts?: ExtendedOstDocument[]
   pagination?: PaginationProps
+  imageFit?: "cover" | "contain"
 }
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
@@ -65,6 +66,7 @@ export default function ListLayout({
   posts,
   initialDisplayPosts = [],
   pagination,
+  imageFit = "cover",
 }: ListLayoutProps) {
   const [searchValue, setSearchValue] = useState("")
   const filteredBlogPosts = posts.filter((post) => {
@@ -118,7 +120,12 @@ export default function ListLayout({
                   {coverImage ? (
                     <div className="ol-card-cover">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={coverImage} alt={`Okładka: ${title}`} loading="lazy" />
+                      <img
+                        src={coverImage}
+                        alt={`Okładka: ${title}`}
+                        loading="lazy"
+                        style={{ objectFit: imageFit }}
+                      />
                       <div className="ol-card-date">
                         <LuCalendar aria-hidden />
                         <time dateTime={publishedAt}>{getFormattedDate(publishedAt, lang)}</time>

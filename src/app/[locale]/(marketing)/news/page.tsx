@@ -55,6 +55,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
       posts={allNews}
       initialDisplayPosts={allNews}
       title={t("title")}
+      imageFit="contain"
     />
   )
 }
