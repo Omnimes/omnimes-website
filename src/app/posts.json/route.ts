@@ -43,7 +43,9 @@ export async function GET() {
         date: new Date(item.publishedAt),
         published: new Date(item.publishedAt),
         author: [item.author ?? {}],
-        category: (item.tags ?? []).map((tag: { value: string; label: string }) => ({ name: tag.label })),
+        category: (item.tags ?? []).map((tag: { value: string; label: string }) => ({
+          name: tag.label,
+        })),
       })
     })
 

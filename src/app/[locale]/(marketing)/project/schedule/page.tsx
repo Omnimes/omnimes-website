@@ -10,9 +10,9 @@ export default function Page() {
 // import Image from "next/image"
 // import { getLocalePrimaryDialects } from "@/data/locales"
 // import { getTranslations, setRequestLocale } from "next-intl/server"
-// 
+//
 // import { genPageMetadata } from "@/app/seo"
-// 
+//
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   const t = await getTranslations({ locale, namespace: "ScheduleMeta" })
@@ -30,7 +30,7 @@ export default function Page() {
 //   }
 //   return genPageMetadata(obj)
 // }
-// 
+//
 // export default async function SchedulePage({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   setRequestLocale(locale)
@@ -86,7 +86,7 @@ export default function Page() {
 //           className="my-3 ml-8 pb-7 text-lg leading-8 text-gray-500 dark:text-gray-400"
 //         />
 //       </ul>
-// 
+//
 //       <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
 //         {t("heading2")}
 //       </h2>

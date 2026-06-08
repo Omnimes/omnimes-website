@@ -8,7 +8,7 @@ export default function Page() {
 
 // ===== ORIGINAL CODE BELOW (DISABLED) =====
 // import "highlight.js/styles/github-dark.css"
-// 
+//
 // import { Metadata } from "next"
 // import { getLocalePrimaryDialects } from "@/data/locales"
 // import { siteMetadata } from "@/data/siteMetadata"
@@ -17,17 +17,17 @@ export default function Page() {
 // import { getTranslations, setRequestLocale } from "next-intl/server"
 // import { getDocumentSlugs, load } from "outstatic/server"
 // import { LuCircleArrowLeft } from "react-icons/lu"
-// 
+//
 // import MDXServer from "@/lib/mdxServer"
-// 
+//
 // // typ z listy kursów
 // import { ExtendedOstDocument } from "../page"
-// 
+//
 // export async function generateStaticParams() {
 //   const courses = getDocumentSlugs("courses") // ⬅ tu zmiana
 //   return courses.map((slug) => ({ slug }))
 // }
-// 
+//
 // async function getData({ params }: { params: { slug: string; locale: string } }) {
 //   const db = await load()
 //   const course = await db
@@ -46,18 +46,18 @@ export default function Page() {
 //       ]
 //     )
 //     .first()
-// 
+//
 //   if (!course) {
 //     return undefined
 //   }
-// 
+//
 //   const content = await MDXServer(course.content)
 //   return {
 //     ...course,
 //     content,
 //   }
 // }
-// 
+//
 // export async function generateMetadata({
 //   params,
 // }: {
@@ -67,13 +67,13 @@ export default function Page() {
 //   const course = await getData({ params: resolvedParams })
 //   const locale = resolvedParams.locale
 //   const t = await getTranslations({ locale, namespace: "Metadata" })
-// 
+//
 //   if (!course) {
 //     return {
 //       title: t("coursesNotFound"),
 //     }
 //   }
-// 
+//
 //   return {
 //     title: course.title,
 //     description: course.description,
@@ -110,7 +110,7 @@ export default function Page() {
 //     },
 //   }
 // }
-// 
+//
 // export default async function CoursePage({
 //   params,
 // }: {
@@ -118,10 +118,10 @@ export default function Page() {
 // }) {
 //   const resolvedParams = await params
 //   setRequestLocale(resolvedParams.locale)
-// 
+//
 //   const course = await getData({ params: resolvedParams })
 //   const t = await getTranslations("PostLayout")
-// 
+//
 //   if (!course) {
 //     return (
 //       <article className="mx-auto mt-32 max-w-screen-lg px-4 text-center md:px-0">
@@ -146,7 +146,7 @@ export default function Page() {
 //       </article>
 //     )
 //   }
-// 
+//
 //   return (
 //     <PostLayout
 //       post={course}

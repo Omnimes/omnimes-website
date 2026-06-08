@@ -10,10 +10,10 @@ export default function Page() {
 // import { getLocalePrimaryDialects } from "@/data/locales"
 // import { projectsData } from "@/data/projects"
 // import { getTranslations, setRequestLocale } from "next-intl/server"
-// 
+//
 // import { ProjectCard } from "@/components/ProjectCard"
 // import { genPageMetadata } from "@/app/seo"
-// 
+//
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   const t = await getTranslations({ locale, namespace: "ProjectMeta" })
@@ -31,12 +31,12 @@ export default function Page() {
 //   }
 //   return genPageMetadata(obj)
 // }
-// 
+//
 // export default async function ProjectPage({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   setRequestLocale(locale)
 //   const t = await getTranslations("Project")
-// 
+//
 //   return (
 //     <main className="divide-y divide-gray-200 dark:divide-gray-700">
 //       <div className="space-y-2 pb-8 pt-6 md:space-y-5">

@@ -12,10 +12,10 @@ const Time = dynamic(() => import("./Time").then((m) => ({ default: m.Time })), 
   loading: sectionSkeleton,
 })
 
-const ContactTwo = dynamic(
-  () => import("./ContactTwo").then((m) => ({ default: m.ContactTwo })),
-  { ssr: false, loading: sectionSkeleton }
-)
+const ContactTwo = dynamic(() => import("./ContactTwo").then((m) => ({ default: m.ContactTwo })), {
+  ssr: false,
+  loading: sectionSkeleton,
+})
 
 const WhatPeopleSay = dynamic(
   () => import("./WhatPeopleSay").then((m) => ({ default: m.WhatPeopleSay })),

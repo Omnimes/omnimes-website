@@ -9,9 +9,9 @@ export default function Page() {
 // ===== ORIGINAL CODE BELOW (DISABLED) =====
 // import { getLocalePrimaryDialects } from "@/data/locales"
 // import { getTranslations, setRequestLocale } from "next-intl/server"
-// 
+//
 // import { genPageMetadata } from "@/app/seo"
-// 
+//
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   const t = await getTranslations({ locale, namespace: "InstallationMeta" })
@@ -29,7 +29,7 @@ export default function Page() {
 //   }
 //   return genPageMetadata(obj)
 // }
-// 
+//
 // export default async function InstallationPage({
 //   params,
 // }: {

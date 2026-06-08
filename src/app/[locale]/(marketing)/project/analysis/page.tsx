@@ -10,9 +10,9 @@ export default function Page() {
 // import Image from "next/image"
 // import { getLocalePrimaryDialects } from "@/data/locales"
 // import { getTranslations, setRequestLocale } from "next-intl/server"
-// 
+//
 // import { genPageMetadata } from "@/app/seo"
-// 
+//
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   const t = await getTranslations({ locale, namespace: "AnalysisMeta" })
@@ -50,7 +50,7 @@ export default function Page() {
 //         {t("heading1")}
 //       </h2>
 //       <p className="mb-10 mt-6 text-lg leading-8 text-gray-500 dark:text-gray-400">{t("p1")}</p>
-// 
+//
 //       <ol className="mt-0 list-decimal">
 //         <li className="my-3 ml-5 text-lg leading-8 text-gray-500 dark:text-gray-400">
 //           <p
@@ -94,7 +94,7 @@ export default function Page() {
 //             className="my-10 hidden h-auto w-full rounded-md object-contain shadow-md dark:flex"
 //           />
 //         </li>
-// 
+//
 //         <li className="my-3 ml-5 text-lg leading-8 text-gray-500 dark:text-gray-400">
 //           <p
 //             dangerouslySetInnerHTML={{ __html: t.raw("l2") }}
@@ -137,7 +137,7 @@ export default function Page() {
 //             className="my-10 hidden h-auto w-full rounded-md object-contain shadow-md dark:flex"
 //           />
 //         </li>
-// 
+//
 //         <li className="my-3 ml-5 text-lg leading-8 text-gray-500 dark:text-gray-400">
 //           <p
 //             dangerouslySetInnerHTML={{ __html: t.raw("l3") }}

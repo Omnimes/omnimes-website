@@ -10,9 +10,9 @@ export default function Page() {
 // import Image from "next/image"
 // import { getLocalePrimaryDialects } from "@/data/locales"
 // import { getTranslations, setRequestLocale } from "next-intl/server"
-// 
+//
 // import { genPageMetadata } from "@/app/seo"
-// 
+//
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   const t = await getTranslations({ locale, namespace: "ReportMeta" })
@@ -30,7 +30,7 @@ export default function Page() {
 //   }
 //   return genPageMetadata(obj)
 // }
-// 
+//
 // export default async function ReportCreatorPage({
 //   params,
 // }: {
@@ -63,7 +63,7 @@ export default function Page() {
 //         dangerouslySetInnerHTML={{ __html: t.raw("p2") }}
 //         className="mb-10 mt-6 text-lg leading-8 text-gray-500 dark:text-gray-400"
 //       />
-// 
+//
 //       <Image
 //         src={`/images/project/${localPath}/report/light.png`}
 //         alt={t("altLight")}
@@ -78,7 +78,7 @@ export default function Page() {
 //         height={656}
 //         className="my-10 hidden h-auto w-full rounded-md object-contain shadow-md dark:flex"
 //       />
-// 
+//
 //       <p
 //         dangerouslySetInnerHTML={{ __html: t.raw("p3") }}
 //         className="mb-10 mt-6 text-lg leading-8 text-gray-500 dark:text-gray-400"
@@ -87,7 +87,7 @@ export default function Page() {
 //         {t("heading2")}
 //       </h2>
 //       <p className="mb-10 mt-6 text-lg leading-8 text-gray-500 dark:text-gray-400">{t("p4")}</p>
-// 
+//
 //       <Image
 //         src={`/images/project/${localPath}/report/1light.png`}
 //         alt={t("altLight1")}
@@ -102,7 +102,7 @@ export default function Page() {
 //         height={656}
 //         className="my-10 hidden h-auto w-full rounded-md object-contain shadow-md dark:flex"
 //       />
-// 
+//
 //       <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
 //         {t("heading3")}
 //       </h2>

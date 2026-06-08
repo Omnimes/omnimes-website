@@ -1119,6 +1119,80 @@
     },
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/computex-2026-five-nvidia-amd-intel-announcements-that-will-change-mes-in-2027-groot-n1-5-cosmos-omniverse-replicator.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-computex-2026/cover-computex-2026.png",
+      "description": "Jensen Huang's Computex 2026 keynote (2 June) ran three hours and focused on industry — robotics, AI factories, digital twins. AMD and Intel countered the same day. From an MES perspective, five announcements actually change the technology map for 2027: GR00T N1.5 (robot foundation model), Cosmos 2.0 (world model for synthetic training data), the new Omniverse Replicator, AMD Ryzen AI Max+ as a Jetson alternative, and Intel Gaudi 3 for edge inference. This piece walks through each from a real deployment-pipeline perspective, not marketing.",
+      "lang": "en",
+      "publishedAt": "2026-06-08T08:00:00.000Z",
+      "slug": "computex-2026-five-nvidia-amd-intel-announcements-that-will-change-mes-in-2027-groot-n1-5-cosmos-omniverse-replicator",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "nvidia",
+          "value": "nvidia"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        }
+      ],
+      "title": "Computex 2026: five NVIDIA/AMD/Intel announcements that will change MES in 2027 (GR00T N1.5, Cosmos, Omniverse Replicator)"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/computex-2026-piec-ogloszen-nvidia-amd-intel-ktore-zmienia-mes-w-2027-groot-n1-5-cosmos-omniverse-replicator.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-computex-2026/cover-computex-2026.png",
+      "description": "Keynote Jensena Huanga na Computexie 2026 (2 czerwca) trwał trzy godziny i był skoncentrowany na przemyśle — robotyce, AI factories i digital twins. AMD i Intel kontrowali tego samego dnia. Z perspektywy MES, pięć ogłoszeń realnie zmienia mapę technologiczną na 2027: GR00T N1.5 (robot foundation model), Cosmos 2.0 (world model do syntetycznych danych treningowych), nowy Omniverse Replicator, AMD Ryzen AI Max+ jako alternatywa dla Jetsona, oraz Intel Gaudi 3 dla edge inference. Artykuł rozbiera każde z nich z perspektywy realnego pipeline'u wdrożeniowego, nie marketingu.",
+      "lang": "pl",
+      "publishedAt": "2026-06-08T08:00:00.000Z",
+      "slug": "computex-2026-piec-ogloszen-nvidia-amd-intel-ktore-zmienia-mes-w-2027-groot-n1-5-cosmos-omniverse-replicator",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "nvidia",
+          "value": "nvidia"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        }
+      ],
+      "title": "Computex 2026: 5 ogłoszeń NVIDIA/AMD/Intel, które zmienią MES w 2027 (GR00T N1.5, Cosmos, Omniverse Replicator)"
+    },
+    {
+      "__outstatic": {
         "commit": "3ba48845f069711debe25968bb2b38aa87e1df35",
         "hash": "3368572356",
         "path": "outstatic/content/posts/data-as-the-foundation-of-industry-4-0.md"

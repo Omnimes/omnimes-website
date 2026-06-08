@@ -12,17 +12,17 @@ export default function Page() {
 // import { getTranslations, setRequestLocale } from "next-intl/server"
 // import { OstDocument } from "outstatic"
 // import { getDocuments, load } from "outstatic/server"
-// 
+//
 // import { generateSearchJSON } from "@/lib/generateSearchJSON"
 // import { DirectContact } from "@/components/DirectContact"
 // import { genPageMetadata } from "@/app/seo"
-// 
+//
 // export type ExtendedOstDocument = OstDocument & {
 //   tags: { value: string; label: string }[]
 // }
-// 
+//
 // export const revalidate = 3600
-// 
+//
 // /** SEO */
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
@@ -31,10 +31,10 @@ export default function Page() {
 //   const description = t("courses_desc")
 //   const keywords = t("courses_keywords")
 //   const localeShort = getLocalePrimaryDialects(locale)
-// 
+//
 //   return genPageMetadata({ title, description, keywords, localeShort, locale, path: "/courses" })
 // }
-// 
+//
 // /** DB: lista kursów dla danego języka */
 // async function getData(locale: string) {
 //   const db = await load()
@@ -51,14 +51,14 @@ export default function Page() {
 //     .sort({ publishedAt: -1 })
 //     .limit(20)
 //     .toArray()
-// 
+//
 //   const total = getDocuments("courses", ["lang"]).filter(
 //     (doc) => doc.status === "published" && doc.lang === locale
 //   ).length
-// 
+//
 //   return { allCourses, total }
 // }
-// 
+//
 // /** Search JSON (jeśli używasz wewnętrznego searcha) */
 // /** Search JSON (jeśli używasz wewnętrznego searcha) */
 // async function getDataToSearch() {
@@ -74,29 +74,29 @@ export default function Page() {
 //     ])
 //     .sort({ publishedAt: -1 })
 //     .toArray()
-// 
+//
 //   const docs = AllCourses.map((d) => ({
 //     ...d,
 //     tags: "", // Tymczasowo wyłącz tags żeby sprawdzić czy reszta działa
 //   }))
-// 
+//
 //   await generateSearchJSON(docs)
 // }
-// 
+//
 // /** Strona listy kursów */
 // export default async function CoursesPage({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   setRequestLocale(locale)
-// 
+//
 //   await getDataToSearch()
 //   const { allCourses, total } = await getData(locale)
-// 
+//
 //   const t = await getTranslations("Courses") // <-- dodaj namespace "Courses" w i18n
 //   const pagination = {
 //     currentPage: 1,
 //     totalPages: Math.ceil(total / 20),
 //   }
-// 
+//
 //   return (
 //     <>
 //       {/* GÓRA: lista kursów / DirectContact */}
@@ -110,7 +110,7 @@ export default function Page() {
 //           title={t("title")}
 //         />
 //       )}
-// 
+//
 //       {/* <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 //         <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100">
 //           {t("intro_title")}
@@ -149,7 +149,7 @@ export default function Page() {
 //               </li>
 //             </ul>
 //           </div>
-// 
+//
 //           <div className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
 //             <div className="mb-4 flex items-center gap-2">
 //               <svg

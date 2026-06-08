@@ -1,10 +1,10 @@
 "use client"
 
 import Image from "next/image"
+import { slug } from "github-slugger"
 import { useLocale, useTranslations } from "next-intl"
 
 import getFormattedDate from "@/lib/getFormattedDate"
-import { slug } from "github-slugger"
 import { CustomLink } from "@/components/Link"
 import MDXComponent from "@/components/mdx/MdxComponent"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"

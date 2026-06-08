@@ -20,7 +20,28 @@
       "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.15.1/bin:$PATH\" GIT_EDITOR=true)",
       "Bash(git commit:*)",
       "Bash(python3 -c \"import json; d=json.load\\(open\\('outstatic/content/metadata.json'\\)\\); print\\('valid, entries:', len\\(d['metadata']\\)\\)\")",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(grep -l \"ListLayout\\\\|ListImplementation\\\\|NewsLayout\" src/app/\\\\[locale\\\\]/\\\\\\(marketing\\\\\\)/**/*.tsx)",
+      "Bash(head -30 /Users/martinszerment/MyData/projekty/omnimes_www3/outstatic/content/posts/utili*.md)",
+      "Bash(grep -n \"canonical\" /Users/martinszerment/MyData/projekty/omnimes_www3/src/app/[locale]/layout.tsx)",
+      "Bash(grep -n \"og:\" /Users/martinszerment/MyData/projekty/omnimes_www3/src/app/[locale]/layout.tsx)",
+      "Bash(grep -n \"omnimes.com/pl\" /Users/martinszerment/MyData/projekty/omnimes_www3/src/app/[locale]/layout.tsx)",
+      "Bash(cat /Users/martinszerment/MyData/projekty/omnimes_www3/src/app/[locale]/layout.tsx)",
+      "Bash(grep -E \"\\\\.\\(ts|tsx\\)$\")",
+      "Bash(grep -n \"lang=\" /Users/martinszerment/MyData/projekty/omnimes_www3/src/app/[locale]/layout.tsx)",
+      "Bash(grep -n \"getLocalePrimaryDialects\" /Users/martinszerment/MyData/projekty/omnimes_www3/src/app/[locale]/layout.tsx)",
+      "Bash(python3 -c ' *)",
+      "WebSearch",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Users/martinszerment/.nvm/versions/node/**)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v20.19.2/bin:$PATH\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('SCRIPTS:'\\); [print\\(f'  {k}: {v}'\\) for k,v in d['scripts'].items\\(\\)]; print\\(\\); print\\('OUTSTATIC DEPS:'\\); [print\\(f'  {k}: {v}'\\) for k,v in {**d.get\\('dependencies',{}\\), **d.get\\('devDependencies',{}\\)}.items\\(\\) if 'outstatic' in k.lower\\(\\)]\")",
+      "Bash(npm run *)",
+      "WebFetch(domain:artificialintelligenceact.eu)",
+      "Bash(mkdir -p /Users/martinszerment/MyData/projekty/omnimes_www3/public/images/post-ai-act-mes)",
+      "Bash(cp /Users/martinszerment/MyData/projekty/omnimes_www3/images_post/5.png /Users/martinszerment/MyData/projekty/omnimes_www3/public/images/post-ai-act-mes/cover-ai-act-mes.png)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('outstatic/content/metadata.json'\\)\\)\")",
+      "Bash(export PATH=\"/Users/martinszerment/.nvm/versions/node/v22.15.1/bin:$PATH\")"
     ]
   }
 }

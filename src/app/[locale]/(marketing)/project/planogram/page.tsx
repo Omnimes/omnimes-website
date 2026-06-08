@@ -10,9 +10,9 @@ export default function Page() {
 // import Image from "next/image"
 // import { getLocalePrimaryDialects } from "@/data/locales"
 // import { getTranslations, setRequestLocale } from "next-intl/server"
-// 
+//
 // import { genPageMetadata } from "@/app/seo"
-// 
+//
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
 //   const { locale } = await params
 //   const t = await getTranslations({ locale, namespace: "PlanogramMeta" })

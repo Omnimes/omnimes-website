@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react"
+import { usePathname } from "@/navigation"
 import { slug as slugify } from "github-slugger"
 import { useLocale, useTranslations } from "next-intl"
 import { LuCalendar, LuSearch } from "react-icons/lu"
 
 import getFormattedDate from "@/lib/getFormattedDate"
 import { CustomLink } from "@/components/Link"
-import { usePathname } from "@/navigation"
 import { ExtendedOstDocument } from "@/app/[locale]/(marketing)/blog/page"
 
 interface PaginationProps {

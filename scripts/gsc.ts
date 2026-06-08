@@ -305,7 +305,11 @@ async function cmdCoverage(sampleSize = 10) {
   const out = join(DATA_DIR, `coverage-${stamp}.json`)
   await writeFile(
     out,
-    JSON.stringify({ sitemapTotal: sitemapUrls.length, withTraffic: trackedUrls.size, dark, sample: results }, null, 2)
+    JSON.stringify(
+      { sitemapTotal: sitemapUrls.length, withTraffic: trackedUrls.size, dark, sample: results },
+      null,
+      2
+    )
   )
   console.log(`Wrote ${out}`)
 }
