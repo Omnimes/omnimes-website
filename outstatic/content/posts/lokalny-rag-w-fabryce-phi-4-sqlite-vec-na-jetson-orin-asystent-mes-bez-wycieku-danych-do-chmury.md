@@ -155,3 +155,4 @@ Jeśli wasz MES wciąż nie ma żadnego asystenta opartego o LLM, najlepszy mome
 - [Rozporządzenie 2024/1689 (AI Act)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — tekst rozporządzenia
 - [Dyrektywa 2022/2555 (NIS2)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) — tekst dyrektywy
 - OpenAI API pricing, stan na maj 2026 ([platform.openai.com/pricing](https://platform.openai.com/pricing))
+- [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu: vendor risk i compliance dla wdrożenia lokalnego stacku AI

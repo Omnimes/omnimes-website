@@ -155,3 +155,4 @@ If your MES still has no LLM-based assistant, the best moment to start was yeste
 - [Regulation 2024/1689 (AI Act)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — regulation text
 - [Directive 2022/2555 (NIS2)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) — directive text
 - OpenAI API pricing, as of May 2026 ([platform.openai.com/pricing](https://platform.openai.com/pricing))
+- [OmniMES — cybersecurity and CRA compliance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/cybersecurity-compliance-cra-pPJBcC6sBf) — product documentation: vendor risk and compliance considerations for local AI stack deployment

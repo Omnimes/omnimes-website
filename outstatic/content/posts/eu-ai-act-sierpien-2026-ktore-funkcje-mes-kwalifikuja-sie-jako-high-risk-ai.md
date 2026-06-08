@@ -126,3 +126,4 @@ Najgorszy scenariusz: zakład odkrywa we wrześniu 2026, że dashboard z ranking
 - EU-OSHA — [Regulation 2023/1230/EU - machinery](https://osha.europa.eu/en/legislation/directive/regulation-20231230eu-machinery)
 - Rzeczpospolita — [Rząd przyjął projekt ustawy o systemach sztucznej inteligencji (marzec 2026)](https://www.rp.pl/prawo-w-polsce/art44076181-rzad-przyjal-projekt-ustawy-o-systemach-sztucznej-inteligencji-ma-wdrozyc-w-polsce-ai-act)
 - Prawo.pl — [Firmy muszą działać zgodnie z AI Act, mimo braku krajowych przepisów (kwiecień 2026)](https://www.prawo.pl/biznes/ai-act-juz-obowiazuje-co-to-oznacza-dla-firm,534568.html)
+- [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu: zgodność OmniMES z obowiązkami AI Act dla deployera

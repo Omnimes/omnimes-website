@@ -126,3 +126,4 @@ Worst-case scenario: a plant discovers in September 2026 that its operator-ranki
 - EU-OSHA — [Regulation 2023/1230/EU - machinery](https://osha.europa.eu/en/legislation/directive/regulation-20231230eu-machinery)
 - Rzeczpospolita — [Government adopts the draft AI systems act (March 2026)](https://www.rp.pl/prawo-w-polsce/art44076181-rzad-przyjal-projekt-ustawy-o-systemach-sztucznej-inteligencji-ma-wdrozyc-w-polsce-ai-act)
 - Prawo.pl — [Companies must comply with the AI Act despite the missing national legislation (April 2026)](https://www.prawo.pl/biznes/ai-act-juz-obowiazuje-co-to-oznacza-dla-firm,534568.html)
+- [OmniMES — cybersecurity and CRA compliance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/cybersecurity-compliance-cra-pPJBcC6sBf) — product documentation: how OmniMES aligns with deployer obligations under the AI Act

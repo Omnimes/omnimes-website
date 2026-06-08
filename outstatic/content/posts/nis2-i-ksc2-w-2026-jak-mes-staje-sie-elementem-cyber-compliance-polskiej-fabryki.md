@@ -156,3 +156,4 @@ Sankcje są wysokie (do 10 mln EUR i odpowiedzialność osobista zarządu), ale 
 - [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) — standard zarządzania bezpieczeństwem informacji
 - [Dobre praktyki komunikacji IT/OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa) — nasz wcześniejszy artykuł o segmentacji
 - [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury) — redukcja powierzchni audytowej przez lokalne LLM
+- [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu: jak OmniMES spełnia wymogi CRA dla dostawcy MES

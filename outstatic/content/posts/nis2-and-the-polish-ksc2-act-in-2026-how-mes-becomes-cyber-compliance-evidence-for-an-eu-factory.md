@@ -156,3 +156,4 @@ The fines are high (up to EUR 10 million plus personal management liability), bu
 - [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) — information-security management standard
 - [Good practices for IT/OT communication](/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture) — our earlier piece on segmentation
 - [Local RAG in the factory: Phi-4 + sqlite-vec on Jetson Orin](/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage) — shrinking the audit surface via local LLMs
+- [OmniMES — cybersecurity and CRA compliance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/cybersecurity-compliance-cra-pPJBcC6sBf) — product documentation: how OmniMES meets the CRA obligations applicable to MES vendors
