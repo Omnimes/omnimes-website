@@ -65,6 +65,32 @@ Napisz **dwie wersje językowe**:
   - Bariery i ograniczenia — uczciwa ocena
   - Co to oznacza dla biznesu / fabryki czytelnika — praktyczne wnioski i rekomendacje
 
+#### Styl polskiego tekstu — unikaj „języka agentowego"
+
+Po polsku LLM-y mają tendencję do produkowania manier, które w angielskim brzmią naturalnie, ale w polskim sygnalizują „wygenerowane przez AI" i obniżają wiarygodność artykułu branżowego. Trzymaj się polskiego stylu redakcyjnego (jak w Control Engineering Polska, Automatyka, Production Manager), nie tłumacz konstrukcji angielskich 1:1.
+
+**Konstrukcje do wyeliminowania** (jeśli pojawiają się więcej niż raz w tekście — przepisz):
+
+- **Meta-narracja**: „warto zauważyć, że…", „należy podkreślić…", „nie sposób przecenić…", „jak słusznie wskazuje…" (gdy nie cytujesz konkretnej osoby)
+- **Pseudo-akademickie wprowadzenia**: „w dzisiejszych czasach…", „w erze cyfrowej transformacji…", „we współczesnym przemyśle…", „w obliczu wyzwań…"
+- **Inflacja epitetów**: „rewolucyjny", „przełomowy", „pionierski", „wszechstronny", „dynamiczny", „kompleksowy" — używaj maksymalnie raz na artykuł i tylko jeśli faktycznie zasłużone
+- **Filler-y łączące**: nadmiar „co więcej", „ponadto", „dodatkowo", „warto dodać" — w polskim wystarczy nowy akapit
+- **Pytania retoryczne**: „Czy zastanawialiście się kiedyś…?", „A co jeśli…?" — pomiń, idź od razu do tezy
+- **Patetyczne zakończenia**: „Przyszłość należy do tych, którzy…", „Czas pokaże…", „Jedno jest pewne…" — kończ konkretnym wnioskiem, nie aforyzmem
+- **Meta-zakończenia**: „Reasumując…", „Podsumowując…", „Na zakończenie warto…" — sekcja wniosków sama mówi co to jest, nie potrzebuje nagłówka „podsumowanie"
+- **Powtarzanie tezy w każdym akapicie** — angielski to toleruje (TL;DR culture), polski nie — wystarczy raz w intro i raz we wnioskach
+- **Nieuzasadnione anglicyzmy**: „leveragować", „scalować rozwiązanie", „delivery'ować wartość", „onboarding'ować klienta" — używaj polskich odpowiedników gdy istnieją („wykorzystać", „skalować", „dostarczać wartość", „wdrażać klienta")
+- **Powtarzanie kontekstu**: jeśli artykuł jest o MES w polskiej fabryce, nie pisz „w polskiej fabryce" w co drugim akapicie — kontekst się utrzymuje
+
+**Co robić zamiast tego:**
+- Zaczynaj akapit od konkretnej informacji (data, liczba, nazwa firmy), nie od „warto zauważyć"
+- Pisz krótkimi zdaniami (15–20 słów) gdy to możliwe; długie zdania zostaw na argumentację, nie na opis
+- Używaj konkretnych czasowników („wdrażamy" zamiast „realizujemy proces wdrożenia")
+- Jeśli twierdzisz coś silnego — podaj cyfrę lub linkuj źródło, nie wzmacniaj epitetem
+- Patrz na realne polskie artykuły branżowe (np. najnowsze numery „Production Manager") jako wzór dykcji
+
+**Test końcowy przed commitem:** przeczytaj artykuł na głos. Jeśli na którymś zdaniu czujesz, że „brzmi jak ChatGPT" — przepisz krócej, bardziej rzeczowo, z konkretnym podmiotem.
+
 ### Krok 6: Utworzenie plików
 1. Utwórz pliki `.mdx` z poprawnym frontmatter w odpowiednich katalogach (zgodnie z konwencją wykrytą w Kroku 1)
 2. Status: `published`
