@@ -52,6 +52,23 @@ const nextConfig = {
         permanent: true, // 301
       },
 
+      // TimescaleDB post — slug zmieniony 2026-06-16 (z "zastąpiły MongoDB" na "obsługują")
+      // żeby uniknąć defensywnego framingu. Stare URLe → nowe.
+      {
+        source:
+          "/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-zastapily-mongodb-dla-200-mln-pomiarow-dziennie",
+        destination:
+          "/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie",
+        permanent: true,
+      },
+      {
+        source:
+          "/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-replaced-mongodb-for-200m-readings-per-day",
+        destination:
+          "/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day",
+        permanent: true,
+      },
+
       // === DE locale removed (2026-05) — 301 redirects to /en preserve SEO equity ===
 
       // Specific high-traffic DE blog post mappings (data from GSC audit 2026-05-07).

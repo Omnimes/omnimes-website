@@ -4368,7 +4368,7 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
-        "path": "outstatic/content/posts/timescaledb-in-omnimes-how-postgresql-hypertables-replaced-mongodb-for-200m-readings-per-day.md"
+        "path": "outstatic/content/posts/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -4376,10 +4376,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/post-timescaledb-mes/cover-timescaledb-mes.png",
-      "description": "For three years we kept OmniMES sensor time-series data in MongoDB. It worked up to about 50 million readings a day. Then aggregation pipelines started taking 10–15 seconds, and storage was growing by 60 GB per month. In January 2026 we began the migration to TimescaleDB — a PostgreSQL extension with hypertables. Six months later: 3.6 TB on MongoDB → 180 GB on TimescaleDB (95% compression), aggregations from 12 s to 400 ms, zero downtime during the migration. This article walks through what, how and why — plus what we would do differently.",
+      "description": "OmniMES uses TimescaleDB — the PostgreSQL extension with hypertables, native compression and continuous aggregates — as its database for industrial sensor time-series. The architecture handles 200 million readings per day, delivers 95% storage compression and 200–800 ms aggregations. This article walks through the hypertables concept, the OmniMES stack architecture, continuous aggregates and concrete production numbers.",
       "lang": "en",
       "publishedAt": "2026-06-16T08:00:00.000Z",
-      "slug": "timescaledb-in-omnimes-how-postgresql-hypertables-replaced-mongodb-for-200m-readings-per-day",
+      "slug": "timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day",
       "status": "published",
       "tags": [
         {
@@ -4387,25 +4387,25 @@
           "value": "timeSeriesData"
         },
         {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
           "label": "TimescaleDB",
           "value": "timescaleDb"
+        },
+        {
+          "label": "PostgreSQL",
+          "value": "postgres"
         },
         {
           "label": "OmniMES",
           "value": "omniMES"
         }
       ],
-      "title": "TimescaleDB in OmniMES: how PostgreSQL hypertables replaced MongoDB for 200M readings per day"
+      "title": "TimescaleDB in OmniMES: how PostgreSQL hypertables handle 200M readings per day"
     },
     {
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
-        "path": "outstatic/content/posts/timescaledb-w-omnimes-jak-hypertables-postgresql-zastapily-mongodb-dla-200-mln-pomiarow-dziennie.md"
+        "path": "outstatic/content/posts/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie.md"
       },
       "author": {
         "name": "Martin Szerment",
@@ -4413,10 +4413,10 @@
       },
       "collection": "posts",
       "coverImage": "/images/post-timescaledb-mes/cover-timescaledb-mes.png",
-      "description": "Przez trzy lata trzymaliśmy dane czasowe z czujników OmniMES w MongoDB. Zadziałało do skali 50 mln pomiarów dziennie, potem aggregation pipelines zaczęły zajmować 10–15 sekund, a storage rósł 60 GB miesięcznie. W styczniu 2026 zaczęliśmy migrację na TimescaleDB — rozszerzenie PostgreSQL z hypertables. Po sześciu miesiącach: 3,6 TB MongoDB → 180 GB TimescaleDB (95% kompresji), agregacje z 12 s do 400 ms, zero downtime w trakcie migracji. Artykuł opisuje konkretnie co, jak i dlaczego — plus co byśmy zrobili inaczej.",
+      "description": "OmniMES używa TimescaleDB — rozszerzenia PostgreSQL z hypertables, kompresją i continuous aggregates — jako bazę danych dla danych czasowych z czujników przemysłowych. Architektura obsługuje 200 mln pomiarów dziennie, daje 95% kompresji storage i agregacje 200–800 ms. Artykuł opisuje koncept hypertables, architekturę stack'u OmniMES, continuous aggregates i konkretne liczby z produkcji.",
       "lang": "pl",
       "publishedAt": "2026-06-16T08:00:00.000Z",
-      "slug": "timescaledb-w-omnimes-jak-hypertables-postgresql-zastapily-mongodb-dla-200-mln-pomiarow-dziennie",
+      "slug": "timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie",
       "status": "published",
       "tags": [
         {
@@ -4424,19 +4424,19 @@
           "value": "timeSeriesData"
         },
         {
-          "label": "MongoDB",
-          "value": "mongoDb"
-        },
-        {
           "label": "TimescaleDB",
           "value": "timescaleDb"
+        },
+        {
+          "label": "PostgreSQL",
+          "value": "postgres"
         },
         {
           "label": "OmniMES",
           "value": "omniMES"
         }
       ],
-      "title": "TimescaleDB w OmniMES: jak hypertables PostgreSQL zastąpiły MongoDB dla 200 mln pomiarów dziennie"
+      "title": "TimescaleDB w OmniMES: jak hypertables PostgreSQL obsługują 200 mln pomiarów dziennie"
     },
     {
       "__outstatic": {
