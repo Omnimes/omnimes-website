@@ -1020,6 +1020,80 @@
     },
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/cbam-dla-eksporterow-stali-aluminium-cementu-pierwszy-raport-1-sierpnia-2026-co-mes-ems-musi-liczyc.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-cbam-mes/cover-cbam-mes.png",
+      "description": "Definitive period CBAM startuje 1 stycznia 2026, a 1 sierpnia 2026 mija termin pierwszego okresowego raportu w nowym reżimie. Polskie firmy w sektorach stali, aluminium, cementu, nawozów, wodoru i energii — zarówno jako importerzy do UE, jak i eksporterzy do rynków wymagających carbon reporting — muszą zacząć liczyć embedded emissions per tonę produktu. Artykuł rozbiera bez wody: jakie dane z MES + EMS są źródłem, jak je mapować na PCF (ISO 14067), które narzędzia działają, ile to kosztuje, jakie są sankcje. Plus 6-tygodniowa roadmapa do deadline'u.",
+      "lang": "pl",
+      "publishedAt": "2026-06-22T08:00:00.000Z",
+      "slug": "cbam-dla-eksporterow-stali-aluminium-cementu-pierwszy-raport-1-sierpnia-2026-co-mes-ems-musi-liczyc",
+      "status": "published",
+      "tags": [
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "CBAM",
+          "value": "cbam"
+        },
+        {
+          "label": "EMS",
+          "value": "ems"
+        }
+      ],
+      "title": "CBAM dla eksporterów ze stali, aluminium i cementu: pierwszy raport definitive period 1 sierpnia 2026 — co MES + EMS musi liczyć"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/cbam-for-steel-aluminium-cement-exporters-first-definitive-period-report-by-1-august-2026-what-mes-ems-must-measure.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-cbam-mes/cover-cbam-mes.png",
+      "description": "The CBAM definitive period started on 1 January 2026, and 1 August 2026 is the deadline for the first periodic report under the new regime. European companies in steel, aluminium, cement, fertilisers, hydrogen and electricity — whether importing into the EU or exporting to carbon-aware markets — need to start computing embedded emissions per tonne of product. This article walks through what data MES + EMS must produce, how to map it to PCF (ISO 14067), which tools actually work, what it costs and what the penalties are. Plus a six-week roadmap to the deadline.",
+      "lang": "en",
+      "publishedAt": "2026-06-22T08:00:00.000Z",
+      "slug": "cbam-for-steel-aluminium-cement-exporters-first-definitive-period-report-by-1-august-2026-what-mes-ems-must-measure",
+      "status": "published",
+      "tags": [
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "CBAM",
+          "value": "cbam"
+        },
+        {
+          "label": "EMS",
+          "value": "ems"
+        }
+      ],
+      "title": "CBAM for steel, aluminium and cement exporters: first definitive-period report by 1 August 2026 — what MES + EMS must measure"
+    },
+    {
+      "__outstatic": {
         "commit": "9d4d4a74558c57a0b3296617efc7a70053b01ed7",
         "hash": "4159467526",
         "path": "outstatic/content/posts/chmura-czy-on-premise-jak-wybrac-najlepszy-model-wdrozenia-systemu-mes.md"
