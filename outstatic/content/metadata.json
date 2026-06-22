@@ -4055,6 +4055,80 @@
     },
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/robot-foundation-models-in-the-factory-pi-zero-openvla-groot-n1-5-the-end-of-teach-pendant-programming.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-robot-foundation-models/cover-robot-foundation-models.png",
+      "description": "For 50 years an industrial robot learned a single task through teach-pendant trajectory programming. In 2024–2026 three open foundation models for robotic manipulation arrived — Pi-Zero from Physical Intelligence, OpenVLA from Stanford and GR00T N1.5 from NVIDIA — promising to end that era. The operator shows the robot what to do in VR/AR through 5–10 demonstrations, and a generic model translates that into a real-time trajectory. This article walks through how it actually works today, where it is enough, where it is not, and the real implications for MES integrators across the EU.",
+      "lang": "en",
+      "publishedAt": "2026-06-16T08:00:00.000Z",
+      "slug": "robot-foundation-models-in-the-factory-pi-zero-openvla-groot-n1-5-the-end-of-teach-pendant-programming",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        },
+        {
+          "label": "Physical AI",
+          "value": "physicalAI"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        }
+      ],
+      "title": "Robot Foundation Models in the factory: Pi-Zero, OpenVLA, GR00T N1.5 — the end of teach-pendant programming"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/robot-foundation-models-w-fabryce-pi-zero-openvla-groot-n1-5-koniec-ery-programowania-robotow-teach-pendantem.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-robot-foundation-models/cover-robot-foundation-models.png",
+      "description": "Przez 50 lat robot przemysłowy uczył się jednego zadania przez programowanie trajektorii w teach pendant. W 2024–2026 pojawiły się trzy otwarte foundation models dla manipulacji robotycznej — Pi-Zero od Physical Intelligence, OpenVLA ze Stanford i GR00T N1.5 od NVIDIA — które obiecują koniec tej ery. Operator pokazuje robotowi co ma zrobić w VR/AR przez 5–10 demonstracji, model generyczny tłumaczy to na trajektorię w czasie rzeczywistym. Artykuł rozbiera, jak to dziś działa, gdzie wystarcza, a gdzie wciąż nie — plus realne implikacje dla integratorów MES w Polsce.",
+      "lang": "pl",
+      "publishedAt": "2026-06-16T08:00:00.000Z",
+      "slug": "robot-foundation-models-w-fabryce-pi-zero-openvla-groot-n1-5-koniec-ery-programowania-robotow-teach-pendantem",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "robotics",
+          "value": "robotics"
+        },
+        {
+          "label": "Physical AI",
+          "value": "physicalAI"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        }
+      ],
+      "title": "Robot Foundation Models w fabryce: Pi-Zero, OpenVLA, GR00T N1.5 — koniec ery programowania robotów teach pendantem"
+    },
+    {
+      "__outstatic": {
         "commit": "fc498618e6a0d6dfdf7ebbdc210bad94086e7cfb",
         "hash": "2514531143",
         "path": "outstatic/content/posts/smart-mes-in-industry-5-0-how-machine-learning-revolutionizes-continuous-improvement-in-renewable-energy.md"
