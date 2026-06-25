@@ -11,6 +11,12 @@ type SupportedLocale = "pl" | "en"
 // w innym wypadku hardcoded support@omnimes.com.
 const SUPPORT_EMAIL = process.env.SUPPORT_EMAIL || "support@omnimes.com"
 
+// SMTP — domyślnie OVH Mail Pro (ssl0.ovh.net:465). Override przez env
+// gdy używasz innego providera (OVH Exchange = ex5.mail.ovh.net itp.).
+const SMTP_HOST = process.env.SMTP_HOST || "ssl0.ovh.net"
+const SMTP_PORT = Number(process.env.SMTP_PORT) || 465
+const SMTP_SECURE = process.env.SMTP_SECURE !== "false" // domyślnie true (port 465)
+
 export async function POST(request: NextRequest) {
   // --- BODY PARSE ---
   let body: any = {}
@@ -73,9 +79,9 @@ export async function POST(request: NextRequest) {
   }
 
   const transport = nodemailer.createTransport({
-    host: "mp1.atthost24.pl",
-    port: 465,
-    secure: true,
+    host: SMTP_HOST,
+    port: SMTP_PORT,
+    secure: SMTP_SECURE,
     auth: {
       user: process.env.MY_EMAIL as string,
       pass: process.env.MY_PASSWORD as string,
