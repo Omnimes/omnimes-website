@@ -360,14 +360,10 @@ export const FormDemo = () => {
             </div>
 
             {/* Info Box */}
-            <div className="rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 p-6 dark:from-blue-900/20 dark:to-indigo-900/20">
+            <div className="rounded-xl border-l-4 border-blue-600 bg-blue-600 p-6 text-white shadow-md dark:bg-blue-700">
               <div className="flex items-start gap-3">
-                <div className="shrink-0 rounded-full bg-blue-100 p-2 dark:bg-blue-800/50">
-                  <svg
-                    className="size-5 text-blue-600 dark:text-blue-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
+                <div className="shrink-0 rounded-full bg-white/15 p-2">
+                  <svg className="size-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
@@ -376,12 +372,8 @@ export const FormDemo = () => {
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold text-blue-900 dark:text-blue-100">
-                    {t("dataProtection")}
-                  </h4>
-                  <p className="mt-1 text-sm text-blue-700 dark:text-blue-200">
-                    {t("dataProtectionInfo")}
-                  </p>
+                  <h4 className="text-base font-semibold text-white">{t("dataProtection")}</h4>
+                  <p className="mt-1 text-sm text-white/95">{t("dataProtectionInfo")}</p>
                 </div>
               </div>
             </div>
