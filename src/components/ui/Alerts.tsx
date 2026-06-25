@@ -53,11 +53,11 @@ const DangerAlert = ({ title, text }: { title: string; text: string | undefined 
   if (text == undefined) return null
   return (
     <div
-      className="bg-danger-50 text-danger my-6 flex flex-col rounded-lg p-4 text-sm"
+      className="border-danger-600 bg-danger-500 dark:bg-danger-600 my-6 flex flex-col rounded-lg border-l-4 p-4 text-sm text-white shadow-md"
       role="alert"
     >
-      <h6 className="font-medium">{title}</h6>
-      <p>{text}</p>
+      <h6 className="text-base font-semibold">{title}</h6>
+      <p className="mt-1 text-white/95">{text}</p>
     </div>
   )
 }
@@ -66,11 +66,11 @@ const SuccessAlert = ({ title, text }: { title: string; text: string | undefined
   if (text == undefined) return null
   return (
     <div
-      className="bg-success-50 text-success my-6 flex flex-col rounded-lg p-4 text-sm"
+      className="border-success-600 bg-success-500 dark:bg-success-600 my-6 flex flex-col rounded-lg border-l-4 p-4 text-sm text-white shadow-md"
       role="alert"
     >
-      <h6 className="font-medium">{title}</h6>
-      <p>{text}</p>
+      <h6 className="text-base font-semibold">{title}</h6>
+      <p className="mt-1 text-white/95">{text}</p>
     </div>
   )
 }
