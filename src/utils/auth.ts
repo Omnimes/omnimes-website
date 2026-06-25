@@ -28,10 +28,9 @@ export const authOptions: NextAuthOptions = {
     EmailProvider({
       from: process.env.MY_EMAIL,
       server: {
-        service: "atthost24",
-        host: "mp1.atthost24.pl",
-        port: 465,
-        secure: true,
+        host: process.env.SMTP_HOST || "ssl0.ovh.net",
+        port: Number(process.env.SMTP_PORT) || 465,
+        secure: process.env.SMTP_SECURE !== "false",
         auth: {
           user: process.env.MY_EMAIL as string,
           pass: process.env.MY_PASSWORD as string,

@@ -21,8 +21,8 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  // Bramka SMTP — wciąż używamy konta z atthost24 (env MY_EMAIL / MY_PASSWORD)
-  // tylko po to, żeby się zalogować i wysłać. Wiadomość trafia do SUPPORT_EMAIL.
+  // Bramka SMTP — autoryzacja kontem MY_EMAIL / MY_PASSWORD (OVH lub innego
+  // providera wg env SMTP_HOST). Wiadomość trafia do SUPPORT_EMAIL.
   if (!process.env.MY_EMAIL || !process.env.MY_PASSWORD) {
     console.error("[api/form] Missing SMTP credentials (MY_EMAIL / MY_PASSWORD env vars)")
     return NextResponse.json(
