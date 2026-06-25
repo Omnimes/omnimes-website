@@ -7,6 +7,10 @@ import emailTranslations from "@/config/emailTranslations.json" // <<< WAŻNE: i
 
 type SupportedLocale = "pl" | "en"
 
+// Target: kontaktowy odbiorca formularza. Override przez env SUPPORT_EMAIL,
+// w innym wypadku hardcoded support@omnimes.com.
+const SUPPORT_EMAIL = process.env.SUPPORT_EMAIL || "support@omnimes.com"
+
 export async function POST(request: NextRequest) {
   // --- BODY PARSE ---
   let body: any = {}
@@ -56,11 +60,17 @@ export async function POST(request: NextRequest) {
   }
 
   // --- TRANSPORT ---
-  console.log("Creating nodemailer transport...")
-  console.log("Email config:", {
-    user: process.env.MY_EMAIL ? "EXISTS" : "MISSING",
-    pass: process.env.MY_PASSWORD ? "EXISTS" : "MISSING",
-  })
+  if (!process.env.MY_EMAIL || !process.env.MY_PASSWORD) {
+    console.error("[api/demo] Missing SMTP credentials (MY_EMAIL / MY_PASSWORD env vars)")
+    return NextResponse.json(
+      {
+        error:
+          "Formularz tymczasowo niedostępny (brak konfiguracji serwera pocztowego). " +
+          `Prosimy o kontakt bezpośrednio: ${SUPPORT_EMAIL}`,
+      },
+      { status: 503 }
+    )
+  }
 
   const transport = nodemailer.createTransport({
     host: "mp1.atthost24.pl",
@@ -74,7 +84,8 @@ export async function POST(request: NextRequest) {
 
   // --- USER MAIL (HTML) ---
   const userMailOptions: Mail.Options = {
-    from: process.env.MY_EMAIL as string,
+    from: `OmniMES <${process.env.MY_EMAIL}>`,
+    replyTo: SUPPORT_EMAIL,
     to: email,
     subject: t.userEmail.subject,
     html: `
@@ -127,7 +138,7 @@ export async function POST(request: NextRequest) {
 
           <div class="contact-info">
             <p><strong>${t.userEmail.contactTitle}</strong></p>
-            <p>📧 ${t.userEmail.email} ${process.env.MY_EMAIL}</p>
+            <p>📧 ${t.userEmail.email} ${SUPPORT_EMAIL}</p>
             <p>📞 ${t.userEmail.phone} ${demoConfig.email.contact.phone}</p>
           </div>
 
@@ -146,9 +157,9 @@ export async function POST(request: NextRequest) {
 
   // --- TEAM MAIL (PLAIN TEXT) ---
   const teamMailOptions: Mail.Options = {
-    from: process.env.MY_EMAIL as string,
+    from: `OmniMES Demo Form <${process.env.MY_EMAIL}>`,
     replyTo: `${name} ${lastName} <${email}>`,
-    to: process.env.MY_EMAIL as string,
+    to: SUPPORT_EMAIL,
     subject: `${t.teamEmail.subject} ${company} - ${name} ${lastName}`,
     text: `
 ${t.teamEmail.title}

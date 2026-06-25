@@ -2,11 +2,31 @@ import { NextResponse, type NextRequest } from "next/server"
 import nodemailer from "nodemailer"
 import Mail from "nodemailer/lib/mailer"
 
+// Target: kontaktowy odbiorca formularza. Override przez env SUPPORT_EMAIL,
+// w innym wypadku hardcoded support@omnimes.com.
+const SUPPORT_EMAIL = process.env.SUPPORT_EMAIL || "support@omnimes.com"
+
 export async function POST(request: NextRequest) {
   const { name, lastName, company, email, phone, country, message } = await request.json()
   if (!name || !lastName || !email || !message || !company || !phone || !country) {
-    const errorMessage = "Wiadomość nie może zostać wysłana z powodu brakujących danych."
-    return NextResponse.json({ error: errorMessage }, { status: 500 })
+    return NextResponse.json(
+      { error: "Wiadomość nie może zostać wysłana z powodu brakujących danych." },
+      { status: 400 }
+    )
+  }
+
+  // Bramka SMTP — wciąż używamy konta z atthost24 (env MY_EMAIL / MY_PASSWORD)
+  // tylko po to, żeby się zalogować i wysłać. Wiadomość trafia do SUPPORT_EMAIL.
+  if (!process.env.MY_EMAIL || !process.env.MY_PASSWORD) {
+    console.error("[api/form] Missing SMTP credentials (MY_EMAIL / MY_PASSWORD env vars)")
+    return NextResponse.json(
+      {
+        error:
+          "Formularz tymczasowo niedostępny (brak konfiguracji serwera pocztowego). " +
+          "Prosimy o kontakt bezpośrednio: support@omnimes.com",
+      },
+      { status: 503 }
+    )
   }
 
   const number = () => {
@@ -20,48 +40,45 @@ export async function POST(request: NextRequest) {
   }
 
   const transport = nodemailer.createTransport({
-    service: "atthost24",
     host: "mp1.atthost24.pl",
     port: 465,
     secure: true,
     auth: {
-      user: process.env.MY_EMAIL as string,
-      pass: process.env.MY_PASSWORD as string,
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD,
     },
   })
 
   const mailOptions: Mail.Options = {
-    from: `${name} ${lastName} - ${email}`,
-    to: process.env.MY_EMAIL as string,
-    sender: email,
+    from: `OmniMES Contact Form <${process.env.MY_EMAIL}>`,
+    to: SUPPORT_EMAIL,
     replyTo: email,
-    subject: `Message from ${name} (${email})`,
+    subject: `Wiadomość z formularza kontaktowego: ${name} ${lastName} (${company})`,
     text: `
-      Wiadomość od ${name} ${lastName}
-      Firma: ${company}
-      Email: ${email}
-      Telefon: ${number()}
-      Kraj: ${country}
-      Wiadomość: ${message}
+      Wiadomość od: ${name} ${lastName}
+      Firma:        ${company}
+      Email:        ${email}
+      Telefon:      ${number()}
+      Kraj:         ${country}
+
+      Treść wiadomości:
+      ${message}
     `,
-    cc: ["srewilak@multiprojekt.pl", "mszerment@multiprojekt.pl"],
   }
 
-  const sendMailPromise = () =>
-    new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err) {
-        if (!err) {
-          resolve("sent")
-        } else {
-          reject(err.message)
-        }
-      })
-    })
-
   try {
-    await sendMailPromise()
+    await transport.sendMail(mailOptions)
     return NextResponse.json({ message: "sent", success: true })
   } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 })
+    const errorMessage = err instanceof Error ? err.message : String(err)
+    console.error("[api/form] sendMail failed:", errorMessage)
+    return NextResponse.json(
+      {
+        error:
+          "Nie udało się wysłać wiadomości. Prosimy spróbować ponownie lub napisać bezpośrednio: " +
+          SUPPORT_EMAIL,
+      },
+      { status: 500 }
+    )
   }
 }
