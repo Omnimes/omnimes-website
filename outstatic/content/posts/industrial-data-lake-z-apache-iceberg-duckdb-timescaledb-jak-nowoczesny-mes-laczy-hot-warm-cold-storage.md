@@ -9,7 +9,7 @@ description: 'TimescaleDB świetnie obsługuje dane czasowe z ostatnich 1–90 d
 coverImage: '/images/post-industrial-data-lake/cover-industrial-data-lake.png'
 lang: 'pl'
 tags: [{"value":"timeSeriesData","label":"time-series data"},{"value":"timescaleDb","label":"TimescaleDB"},{"value":"iceberg","label":"Apache Iceberg"},{"value":"omniMES","label":"OmniMES"}]
-publishedAt: '2026-06-16T08:00:00.000Z'
+publishedAt: '2026-07-06T08:00:00.000Z'
 ---
 
 [TimescaleDB w OmniMES](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) obsługuje 200 mln pomiarów dziennie z agregacjami pod 400 ms — dla danych z ostatniego kwartału. Dla danych starszych niż rok pojawia się problem ekonomiczny: PostgreSQL SSD storage w wersji enterprise (z replikami, backupami, indeksami) kosztuje rzędu **0,30–0,60 EUR/GB miesięcznie**, podczas gdy S3 lub MinIO (object storage) — **0,01–0,025 EUR/GB**. Dla 5-letniej historii sensor data po kompresji TimescaleDB (180 GB rocznie) różnica to **6 vs 90 EUR miesięcznie** na storage. To nie kryzys, ale przy 20+ zakładach klienckich liczby zaczynają mieć znaczenie.

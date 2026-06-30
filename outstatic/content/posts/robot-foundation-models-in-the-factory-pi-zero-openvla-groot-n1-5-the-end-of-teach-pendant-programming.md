@@ -9,7 +9,7 @@ description: 'For 50 years an industrial robot learned a single task through tea
 coverImage: '/images/post-robot-foundation-models/cover-robot-foundation-models.png'
 lang: 'en'
 tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"physicalAI","label":"Physical AI"},{"value":"omniMES","label":"OmniMES"}]
-publishedAt: '2026-06-16T08:00:00.000Z'
+publishedAt: '2026-06-20T08:00:00.000Z'
 ---
 
 For 50 years an industrial robot learned one task through **teach-pendant trajectory programming** — point by point, angle by angle, hours of integrator work for a single pick-and-place operation. A second product variant meant a second program. A third — a third one. That was the reality of FANUC, KUKA, ABB and Yaskawa from the 1980s onwards.

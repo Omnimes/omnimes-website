@@ -2254,7 +2254,7 @@
       "coverImage": "/images/post-industrial-data-lake/cover-industrial-data-lake.png",
       "description": "TimescaleDB handles time-series from the last 1–90 days (hot) excellently, but at 5+ years of history the cost of PostgreSQL SSD and RAM grows faster than the business value. Apache Iceberg (a table format for the data lake) plus DuckDB (a local SQL engine) deliver a cheaper warm tier (90–730 days) and cold tier (>2 years) on S3 or MinIO. A 3-tier architecture cuts storage cost by 80–95% while keeping data queryable. This article shows how to build it for MES, where the limits are, what it costs, and how to migrate from a monolithic TimescaleDB.",
       "lang": "en",
-      "publishedAt": "2026-06-16T08:00:00.000Z",
+      "publishedAt": "2026-07-06T08:00:00.000Z",
       "slug": "industrial-data-lake-with-apache-iceberg-duckdb-and-timescaledb-how-a-modern-mes-bridges-hot-warm-and-cold-storage",
       "status": "published",
       "tags": [
@@ -2291,7 +2291,7 @@
       "coverImage": "/images/post-industrial-data-lake/cover-industrial-data-lake.png",
       "description": "TimescaleDB świetnie obsługuje dane czasowe z ostatnich 1–90 dni (hot), ale przy 5+ latach historii koszt SSD i RAM PostgreSQL rośnie szybciej niż wartość biznesowa. Apache Iceberg (table format dla data lake) plus DuckDB (lokalny silnik SQL) dają tańszą warstwę warm (90–730 dni) i cold (>2 lata) na S3 lub MinIO. Architektura 3-warstwowa redukuje koszt storage o 80–95% przy zachowaniu queryowalności. Artykuł pokazuje konkretnie jak to zbudować dla MES, gdzie są bariery, ile to kosztuje i jak migrować z monolitycznego TimescaleDB.",
       "lang": "pl",
-      "publishedAt": "2026-06-16T08:00:00.000Z",
+      "publishedAt": "2026-07-06T08:00:00.000Z",
       "slug": "industrial-data-lake-z-apache-iceberg-duckdb-timescaledb-jak-nowoczesny-mes-laczy-hot-warm-cold-storage",
       "status": "published",
       "tags": [
@@ -4141,7 +4141,7 @@
       "coverImage": "/images/post-robot-foundation-models/cover-robot-foundation-models.png",
       "description": "For 50 years an industrial robot learned a single task through teach-pendant trajectory programming. In 2024–2026 three open foundation models for robotic manipulation arrived — Pi-Zero from Physical Intelligence, OpenVLA from Stanford and GR00T N1.5 from NVIDIA — promising to end that era. The operator shows the robot what to do in VR/AR through 5–10 demonstrations, and a generic model translates that into a real-time trajectory. This article walks through how it actually works today, where it is enough, where it is not, and the real implications for MES integrators across the EU.",
       "lang": "en",
-      "publishedAt": "2026-06-16T08:00:00.000Z",
+      "publishedAt": "2026-06-20T08:00:00.000Z",
       "slug": "robot-foundation-models-in-the-factory-pi-zero-openvla-groot-n1-5-the-end-of-teach-pendant-programming",
       "status": "draft",
       "tags": [
@@ -4178,7 +4178,7 @@
       "coverImage": "/images/post-robot-foundation-models/cover-robot-foundation-models.png",
       "description": "Przez 50 lat robot przemysłowy uczył się jednego zadania przez programowanie trajektorii w teach pendant. W 2024–2026 pojawiły się trzy otwarte foundation models dla manipulacji robotycznej — Pi-Zero od Physical Intelligence, OpenVLA ze Stanford i GR00T N1.5 od NVIDIA — które obiecują koniec tej ery. Operator pokazuje robotowi co ma zrobić w VR/AR przez 5–10 demonstracji, model generyczny tłumaczy to na trajektorię w czasie rzeczywistym. Artykuł rozbiera, jak to dziś działa, gdzie wystarcza, a gdzie wciąż nie — plus realne implikacje dla integratorów MES w Polsce.",
       "lang": "pl",
-      "publishedAt": "2026-06-16T08:00:00.000Z",
+      "publishedAt": "2026-06-20T08:00:00.000Z",
       "slug": "robot-foundation-models-w-fabryce-pi-zero-openvla-groot-n1-5-koniec-ery-programowania-robotow-teach-pendantem",
       "status": "draft",
       "tags": [

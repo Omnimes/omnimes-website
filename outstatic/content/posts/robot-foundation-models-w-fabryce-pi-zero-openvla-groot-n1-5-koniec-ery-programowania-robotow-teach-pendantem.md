@@ -9,7 +9,7 @@ description: 'Przez 50 lat robot przemysłowy uczył się jednego zadania przez 
 coverImage: '/images/post-robot-foundation-models/cover-robot-foundation-models.png'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"robotics","label":"robotics"},{"value":"physicalAI","label":"Physical AI"},{"value":"omniMES","label":"OmniMES"}]
-publishedAt: '2026-06-16T08:00:00.000Z'
+publishedAt: '2026-06-20T08:00:00.000Z'
 ---
 
 Przez 50 lat robot przemysłowy uczył się jednego zadania przez **programowanie trajektorii w teach pendant** — punkt po punkcie, kąt po kącie, godziny pracy integratora dla jednej operacji pick-and-place. Drugi wariant produktu wymagał drugiego programu. Trzeci — trzeciego. To była rzeczywistość FANUC, KUKA, ABB, Yaskawa od dekady osiemdziesiątej.
