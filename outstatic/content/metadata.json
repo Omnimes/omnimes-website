@@ -4141,9 +4141,9 @@
       "coverImage": "/images/post-robot-foundation-models/cover-robot-foundation-models.png",
       "description": "For 50 years an industrial robot learned a single task through teach-pendant trajectory programming. In 2024–2026 three open foundation models for robotic manipulation arrived — Pi-Zero from Physical Intelligence, OpenVLA from Stanford and GR00T N1.5 from NVIDIA — promising to end that era. The operator shows the robot what to do in VR/AR through 5–10 demonstrations, and a generic model translates that into a real-time trajectory. This article walks through how it actually works today, where it is enough, where it is not, and the real implications for MES integrators across the EU.",
       "lang": "en",
-      "publishedAt": "2026-06-20T08:00:00.000Z",
+      "publishedAt": "2026-07-06T08:00:00.000Z",
       "slug": "robot-foundation-models-in-the-factory-pi-zero-openvla-groot-n1-5-the-end-of-teach-pendant-programming",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "AI",
@@ -4178,9 +4178,9 @@
       "coverImage": "/images/post-robot-foundation-models/cover-robot-foundation-models.png",
       "description": "Przez 50 lat robot przemysłowy uczył się jednego zadania przez programowanie trajektorii w teach pendant. W 2024–2026 pojawiły się trzy otwarte foundation models dla manipulacji robotycznej — Pi-Zero od Physical Intelligence, OpenVLA ze Stanford i GR00T N1.5 od NVIDIA — które obiecują koniec tej ery. Operator pokazuje robotowi co ma zrobić w VR/AR przez 5–10 demonstracji, model generyczny tłumaczy to na trajektorię w czasie rzeczywistym. Artykuł rozbiera, jak to dziś działa, gdzie wystarcza, a gdzie wciąż nie — plus realne implikacje dla integratorów MES w Polsce.",
       "lang": "pl",
-      "publishedAt": "2026-06-20T08:00:00.000Z",
+      "publishedAt": "2026-07-06T08:00:00.000Z",
       "slug": "robot-foundation-models-w-fabryce-pi-zero-openvla-groot-n1-5-koniec-ery-programowania-robotow-teach-pendantem",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "AI",
