@@ -585,8 +585,29 @@
     "documentationPL": "Dokumentacja PL",
     "documentationEN": "Dokumentacja EN",
     "chatDocs": "ChatDocs",
+    "changelog": "Historia zmian",
     "implementation": "Realizacje",
     "courses": "Kursy"
+  },
+  "ChangelogMeta": {
+    "title": "OmniMES – historia zmian (changelog)",
+    "desc": "Najważniejsze zmiany, nowe funkcje i poprawki w systemie OmniMES (api + stream + www). Aktualizowany na bieżąco.",
+    "keywords": "OmniMES, changelog, historia zmian, aktualizacje MES, wersje OmniMES, roadmap"
+  },
+  "ChangelogPage": {
+    "eyebrow": "OmniMES · Produkt",
+    "title": "Historia zmian",
+    "subtitle": "Wszystkie istotne zmiany w produkcie OmniMES (api + stream + www). Trzymamy się formatu Keep a Changelog i wersjonowania SemVer — jedna wersja obejmuje cały produkt, wdrażany razem.",
+    "current": "Aktualna wersja",
+    "latest": "najnowsza",
+    "category": {
+      "added": "Dodano",
+      "changed": "Zmienione",
+      "fixed": "Poprawione",
+      "security": "Bezpieczeństwo"
+    },
+    "footerTitle": "Aktualizowany regularnie",
+    "footerText": "Ta strona odzwierciedla realny stan wdrożonego systemu — publikujemy tu wersje trafiające na produkcję u klientów. Zależy nam na transparentności rozwoju: każda wersja to potwierdzenie, że OmniMES rośnie w rytmie potrzeb fabryk, z którymi pracujemy."
   },
   "Blog": {
     "title": "Wszystkie posty",

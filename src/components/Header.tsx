@@ -22,7 +22,7 @@ import {
 } from "@nextui-org/react"
 import { SessionProvider } from "next-auth/react"
 import { useLocale, useTranslations } from "next-intl"
-import { LuBook, LuChevronDown, LuFileText, LuMessageCircle } from "react-icons/lu"
+import { LuBook, LuChevronDown, LuFileText, LuHistory, LuMessageCircle } from "react-icons/lu"
 
 import { Notification } from "@/components/Notification"
 
@@ -47,18 +47,28 @@ export default function Header() {
       href: "https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/wstep-XMdRkBsh9c",
       icon: LuFileText,
       color: "primary",
+      external: true,
     },
     {
       title: t("documentationEN"),
       href: "https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/introduction-98dAKUj3hP",
       icon: LuBook,
       color: "secondary",
+      external: true,
     },
     {
       title: t("chatDocs"),
       href: "https://cloud.omnimes.com/askme",
       icon: LuMessageCircle,
       color: "success",
+      external: true,
+    },
+    {
+      title: t("changelog"),
+      href: "/changelog",
+      icon: LuHistory,
+      color: "warning",
+      external: false,
     },
   ]
 
@@ -214,8 +224,8 @@ export default function Header() {
                   <DropdownItem
                     key={item.href}
                     href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
                     startContent={
                       <item.icon size={25} color={item.color} className={iconClasses} />
                     }
@@ -324,8 +334,10 @@ export default function Header() {
                 href={link.href}
                 color="foreground"
                 size="lg"
-                target="_blank"
-                rel="noopener noreferrer"
+                isExternal={link.external}
+                showAnchorIcon={link.external}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
               >
                 {link.title}
               </Link>

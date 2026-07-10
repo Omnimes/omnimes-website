@@ -146,6 +146,10 @@ export const pathnames = {
     en: "/gallery",
     pl: "/galeria",
   },
+  "/changelog": {
+    en: "/changelog",
+    pl: "/lista-zmian",
+  },
 } satisfies Pathnames<typeof locales>
 
 // Use the default: `always`

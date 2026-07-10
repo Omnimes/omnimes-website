@@ -577,8 +577,29 @@
     "documentationPL": "Documentation PL",
     "documentationEN": "Documentation EN",
     "chatDocs": "ChatDocs",
+    "changelog": "Changelog",
     "implementation": "Implementation",
     "courses": "Courses"
+  },
+  "ChangelogMeta": {
+    "title": "OmniMES – Changelog",
+    "desc": "All notable changes, new features and fixes in OmniMES (api + stream + www). Kept up to date.",
+    "keywords": "OmniMES, changelog, release notes, MES updates, OmniMES versions, roadmap"
+  },
+  "ChangelogPage": {
+    "eyebrow": "OmniMES · Product",
+    "title": "Changelog",
+    "subtitle": "All notable changes across OmniMES (api + stream + www). We follow the Keep a Changelog format and SemVer — a single version covers the entire product, released together.",
+    "current": "Current version",
+    "latest": "latest",
+    "category": {
+      "added": "Added",
+      "changed": "Changed",
+      "fixed": "Fixed",
+      "security": "Security"
+    },
+    "footerTitle": "Updated regularly",
+    "footerText": "This page reflects the actual state of the deployed system — we publish versions that reach production at customer sites. We care about transparency: every release is proof that OmniMES grows in step with the factories we work with."
   },
   "Blog": {
     "title": "All posts",
