@@ -21,15 +21,15 @@ export type UpcomingFeature = {
 export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
   pl: [
     {
-      scope: "MCP (Model Context Protocol) — OmniMES pod dowolny model AI",
-      body: "Otwarty serwer MCP dla OmniMES pozwoli podłączyć system do dowolnego dużego modelu językowego — komercyjnego (Claude, GPT, Gemini) oraz darmowego przez OpenRouter (Llama, Qwen, DeepSeek i inne). Konfiguracja alarmów, harmonogramów, statusów maszyn oraz odczyt bieżącego stanu produkcji będą dostępne z poziomu asystenta AI, w języku naturalnym — bez klikania w interfejsie. Model dobierany świadomie: lokalny gdy zależy na prywatności, chmurowy gdy zależy na jakości.",
+      scope: "MCP (Model Context Protocol) — OmniMES sterowany z dowolnego asystenta AI",
+      body: "Po instalacji OmniMES wystawi standardowy endpoint MCP na serwerze fabryki. W swoim asystencie AI — Claude Desktop, ChatGPT, Cursor, Copilot lub innym wspierającym MCP — doinstalowujesz wtyczkę „OmniMES” ze sklepu tego asystenta, wklejasz token dostępu do serwera i to wszystko. Z dowolnego komputera w sieci firmowej, w języku naturalnym, można wtedy: konfigurować alarmy i harmonogramy, definiować statusy maszyn, budować wykresy i dashboardy, odczytywać bieżący stan produkcji, generować raporty. Cała logika OmniMES trafia do asystenta przez protokół MCP, więc użytkownik nie musi znać interfejsu ani pisać zapytań SQL — mówi „pokaż OEE linii 3 za ostatni tydzień z podziałem na zmiany” i dostaje gotowy wykres na dashboardzie. Model dobierany świadomie: komercyjny (Claude, GPT, Gemini) — gdy zależy na jakości; darmowy przez OpenRouter (Llama, Qwen, DeepSeek) — gdy zależy na kosztach; lokalny (Ollama, LM Studio) — gdy dane muszą zostać w sieci fabrycznej.",
       eta: "2026 Q3",
     },
   ],
   en: [
     {
-      scope: "MCP (Model Context Protocol) — OmniMES for any AI model",
-      body: "An open MCP server for OmniMES will let you connect the system to any large language model — commercial (Claude, GPT, Gemini) or free via OpenRouter (Llama, Qwen, DeepSeek and others). Configuring alarms, schedules and machine statuses, as well as reading live production state, will be available from an AI assistant in natural language — without clicking through the UI. Choose the model deliberately: local when privacy matters, cloud when quality matters.",
+      scope: "MCP (Model Context Protocol) — control OmniMES from any AI assistant",
+      body: "After installation, OmniMES exposes a standard MCP endpoint on the factory server. In your AI assistant — Claude Desktop, ChatGPT, Cursor, Copilot or any other MCP-capable app — you install the „OmniMES” plugin from that assistant's marketplace, paste an access token to your server, and that's it. From any computer on the company network, in natural language, you can then: configure alarms and schedules, define machine statuses, build charts and dashboards, read live production state, generate reports. All OmniMES logic flows into the assistant through the MCP protocol, so users don't need to memorize the UI or write SQL — they say „show OEE for line 3 over the last week split by shift” and get a ready chart on the dashboard. Choose the model deliberately: commercial (Claude, GPT, Gemini) — when quality matters; free via OpenRouter (Llama, Qwen, DeepSeek) — when cost matters; local (Ollama, LM Studio) — when data must stay inside the factory network.",
       eta: "2026 Q3",
     },
   ],
