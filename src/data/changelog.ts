@@ -12,6 +12,29 @@ export type Release = {
   entries: ChangelogEntry[]
 }
 
+export type UpcomingFeature = {
+  scope: string
+  body: string
+  eta?: string
+}
+
+export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
+  pl: [
+    {
+      scope: "MCP (Model Context Protocol) — OmniMES pod dowolny model AI",
+      body: "Otwarty serwer MCP dla OmniMES pozwoli podłączyć system do dowolnego dużego modelu językowego — komercyjnego (Claude, GPT, Gemini) oraz darmowego przez OpenRouter (Llama, Qwen, DeepSeek i inne). Konfiguracja alarmów, harmonogramów, statusów maszyn oraz odczyt bieżącego stanu produkcji będą dostępne z poziomu asystenta AI, w języku naturalnym — bez klikania w interfejsie. Model dobierany świadomie: lokalny gdy zależy na prywatności, chmurowy gdy zależy na jakości.",
+      eta: "2026 Q3",
+    },
+  ],
+  en: [
+    {
+      scope: "MCP (Model Context Protocol) — OmniMES for any AI model",
+      body: "An open MCP server for OmniMES will let you connect the system to any large language model — commercial (Claude, GPT, Gemini) or free via OpenRouter (Llama, Qwen, DeepSeek and others). Configuring alarms, schedules and machine statuses, as well as reading live production state, will be available from an AI assistant in natural language — without clicking through the UI. Choose the model deliberately: local when privacy matters, cloud when quality matters.",
+      eta: "2026 Q3",
+    },
+  ],
+}
+
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
@@ -42,7 +65,7 @@ export const changelog: Record<"pl" | "en", Release[]> = {
         {
           category: "added",
           scope: "Klasyfikacja stanu pracy maszyny na podstawie pomiaru",
-          body: "Progi wartości sygnału (np. prąd, ciśnienie) wyznaczają stan pracy maszyny. Konfigurowalne w konfiguratorze statusów, widoczne na żywo w Monitoringu i uwzględniane w historii oraz raportach.",
+          body: "Zamiast polegać wyłącznie na sygnałach cyfrowych ze sterownika, stan pracy maszyny (praca / praca jałowa / przezbrojenie / postój) można teraz wyznaczać z progu dowolnego pomiaru analogowego — prądu silnika, ciśnienia hydrauliki, obrotów wrzeciona. Przykład: prąd silnika > 12 A → maszyna pracuje; 3–12 A → praca jałowa; < 3 A → wyłączona. Progi konfiguruje się w konfiguratorze statusów, klasyfikacja działa na żywo w Monitoringu i jest zapisywana w historii, dzięki czemu OEE, MTBF i raporty produkcyjne uwzględniają faktyczny stan maszyny bez potrzeby doprowadzania dodatkowych sygnałów binarnych z PLC.",
         },
       ],
     },
@@ -56,9 +79,9 @@ export const changelog: Record<"pl" | "en", Release[]> = {
           body: "Zamiast MongoDB — szybsze zapytania i wyraźnie mniejsze zużycie miejsca dla telemetrii, przy zachowaniu dotychczasowej funkcjonalności.",
         },
         {
-          category: "changed",
-          scope: "Broker / stream",
-          body: "Parametry połączenia z brokerem MQTT pobierane z ustawień w bazie danych.",
+          category: "added",
+          scope: "Bezpośrednia obsługa MQTT (obok Sparkplug B)",
+          body: "Stream OmniMES może teraz przyjmować pomiary bezpośrednio z topików MQTT — nie tylko z ramek Sparkplug B. Ułatwia to integrację ze sterownikami, bramkami IIoT i urządzeniami publikującymi dane w formacie natywnym (JSON lub prosty payload), bez konieczności dokładania warstwy Sparkplug po stronie źródła.",
         },
         {
           category: "fixed",
@@ -108,7 +131,7 @@ export const changelog: Record<"pl" | "en", Release[]> = {
         {
           category: "added",
           scope: "Machine state classification based on measurement",
-          body: "Signal value thresholds (e.g. current, pressure) determine the machine's working state. Configurable in the status configurator, visible live in Monitoring and included in history and reports.",
+          body: "Instead of relying solely on digital signals from the controller, the machine's working state (running / idle / changeover / stopped) can now be derived from a threshold on any analog measurement — motor current, hydraulic pressure, spindle RPM. Example: motor current > 12 A → machine running; 3–12 A → idle; < 3 A → stopped. Thresholds are defined in the status configurator; classification runs live in Monitoring and is persisted in history, so OEE, MTBF and production reports reflect the real machine state without wiring additional binary signals from the PLC.",
         },
       ],
     },
@@ -122,9 +145,9 @@ export const changelog: Record<"pl" | "en", Release[]> = {
           body: "Replacing MongoDB — faster queries and noticeably lower storage footprint for telemetry, while keeping the existing functionality intact.",
         },
         {
-          category: "changed",
-          scope: "Broker / stream",
-          body: "MQTT broker connection parameters are now sourced from database settings.",
+          category: "added",
+          scope: "Native MQTT ingestion (alongside Sparkplug B)",
+          body: "The OmniMES stream can now ingest measurements directly from MQTT topics — not only from Sparkplug B frames. This simplifies integration with controllers, IIoT gateways and devices that publish in native formats (JSON or plain payload), without requiring a Sparkplug layer on the source side.",
         },
         {
           category: "fixed",

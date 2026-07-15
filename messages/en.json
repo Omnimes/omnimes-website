@@ -589,7 +589,7 @@
   "ChangelogPage": {
     "eyebrow": "OmniMES · Product",
     "title": "Changelog",
-    "subtitle": "All notable changes across OmniMES (api + stream + www). We follow the Keep a Changelog format and SemVer — a single version covers the entire product, released together.",
+    "subtitle": "A record of every notable change, feature and fix in the OmniMES system. The product is built from three components (API, stream, web app) developed and released as a single unit — every version number represents a synchronized update of all elements. Published in the Keep a Changelog format, versioned according to SemVer.",
     "current": "Current version",
     "latest": "latest",
     "category": {
@@ -599,7 +599,16 @@
       "security": "Security"
     },
     "footerTitle": "Updated regularly",
-    "footerText": "This page reflects the actual state of the deployed system — we publish versions that reach production at customer sites. We care about transparency: every release is proof that OmniMES grows in step with the factories we work with."
+    "footerText": "This page reflects the actual state of the deployed system — we publish versions that reach production at customer sites. We care about transparency: every release is proof that OmniMES grows in step with the factories we work with.",
+    "footerDocsPrompt": "Detailed descriptions of new functionality and step-by-step configuration are available in the",
+    "footerDocsLabel": "OmniMES documentation",
+    "releasedTitle": "Released versions",
+    "releasedBadge": "in production",
+    "roadmapTitle": "Coming next",
+    "roadmapBadge": "roadmap",
+    "roadmapDisclaimer": "Features we're currently working on. Not yet available in production releases — they will move to the changelog once deployed at customer sites.",
+    "roadmapEta": "Target version",
+    "roadmapEmpty": "Nothing in the queue — the next ideas will be posted here before they ship."
   },
   "Blog": {
     "title": "All posts",

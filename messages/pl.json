@@ -597,7 +597,7 @@
   "ChangelogPage": {
     "eyebrow": "OmniMES · Produkt",
     "title": "Historia zmian",
-    "subtitle": "Wszystkie istotne zmiany w produkcie OmniMES (api + stream + www). Trzymamy się formatu Keep a Changelog i wersjonowania SemVer — jedna wersja obejmuje cały produkt, wdrażany razem.",
+    "subtitle": "Rejestr wszystkich istotnych zmian, nowych funkcjonalności i poprawek w systemie OmniMES. Produkt tworzą trzy komponenty (API, stream, aplikacja web) rozwijane i wdrażane jako spójna całość — każdy numer wersji oznacza jednoczesną aktualizację wszystkich elementów. Publikujemy w formacie Keep a Changelog, wersjonowanie zgodne ze standardem SemVer.",
     "current": "Aktualna wersja",
     "latest": "najnowsza",
     "category": {
@@ -607,7 +607,16 @@
       "security": "Bezpieczeństwo"
     },
     "footerTitle": "Aktualizowany regularnie",
-    "footerText": "Ta strona odzwierciedla realny stan wdrożonego systemu — publikujemy tu wersje trafiające na produkcję u klientów. Zależy nam na transparentności rozwoju: każda wersja to potwierdzenie, że OmniMES rośnie w rytmie potrzeb fabryk, z którymi pracujemy."
+    "footerText": "Ta strona odzwierciedla realny stan wdrożonego systemu — publikujemy tu wersje trafiające na produkcję u klientów. Zależy nam na transparentności rozwoju: każda wersja to potwierdzenie, że OmniMES rośnie w rytmie potrzeb fabryk, z którymi pracujemy.",
+    "footerDocsPrompt": "Szczegółowe opisy nowych funkcjonalności oraz konfiguracja krok po kroku znajdują się w",
+    "footerDocsLabel": "dokumentacji OmniMES",
+    "releasedTitle": "Wydane wersje",
+    "releasedBadge": "na produkcji",
+    "roadmapTitle": "W przygotowaniu",
+    "roadmapBadge": "roadmap",
+    "roadmapDisclaimer": "Funkcjonalności, nad którymi obecnie pracujemy. Nie są jeszcze dostępne w wydaniach produkcyjnych — trafią do changelogu po wdrożeniu u klientów.",
+    "roadmapEta": "Planowana wersja",
+    "roadmapEmpty": "Nic w kolejce — najbliższe pomysły publikujemy tutaj, zanim trafią do wydania."
   },
   "Blog": {
     "title": "Wszystkie posty",
