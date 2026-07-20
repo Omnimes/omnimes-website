@@ -59,7 +59,7 @@ Mapując typowe moduły OmniMES (i konkurencyjnych systemów MES) na środki Art
 
 **Integracja z SIEM (Splunk, Elastic, Wazuh)** — obowiązki 2 i 6. MES powinien wysyłać zdarzenia istotne dla bezpieczeństwa (nieudane logowania, podniesienie uprawnień, nietypowe zmiany parametrów) do centralnego SIEM, który koreluje je ze zdarzeniami z ERP, Active Directory i firewalla.
 
-**Kopie zapasowe i replikacja** — obowiązek 3. Baza danych MES (zazwyczaj PostgreSQL/SQL Server), konfiguracja oraz własne skrypty — wszystko z dziennym pełnym backupem do osobnej geograficznie lokalizacji (np. NASK oferuje chmurę dla podmiotów istotnych na preferencyjnych warunkach).
+**Kopie zapasowe i replikacja** — obowiązek 3. Baza danych MES (zazwyczaj PostgreSQL/SQL Server), konfiguracja oraz własne skrypty — wszystko z dzienną pełną kopią zapasową do osobnej geograficznie lokalizacji (np. NASK oferuje chmurę dla podmiotów istotnych na preferencyjnych warunkach).
 
 ## Czego MES standardowo NIE umie — luki do uzupełnienia
 

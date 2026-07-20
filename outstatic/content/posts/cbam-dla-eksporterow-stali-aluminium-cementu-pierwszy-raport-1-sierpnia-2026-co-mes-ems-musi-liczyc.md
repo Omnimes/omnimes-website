@@ -14,7 +14,7 @@ publishedAt: '2026-06-22T08:00:00.000Z'
 
 **1 sierpnia 2026** — termin pierwszego raportu okresowego CBAM w nowym, definitive period. Reżim zaczął obowiązywać **1 stycznia 2026** po zakończeniu fazy przejściowej (1.10.2023 – 31.12.2025). Dla polskich firm w sektorach **stali, aluminium, cementu, nawozów azotowych, wodoru i energii elektrycznej** to pierwszy moment, w którym brak danych o embedded emissions per tonę produktu zaczyna kosztować — najpierw raportowo, od 2027 płatnościowo. Sankcje za brak raportowania: **10–50 EUR za tonę CO₂** nie ujętą w raporcie ([Art. 26 Rozporządzenia CBAM 2023/956](https://eur-lex.europa.eu/eli/reg/2023/956/oj)). Za brak certyfikatów (od 2027): **100 EUR za tonę** plus odmowa wjazdu produktu na rynek UE.
 
-Mit, który trzeba na początek rozbroić: **CBAM nie dotyczy tylko importerów do UE**. Polski producent stali eksportujący do UK (gdzie [CBAM UK startuje 1 stycznia 2027](https://www.gov.uk/government/consultations/factsheet-the-uks-carbon-border-adjustment-mechanism)), niemiecki OEM żądający PCF od polskiego dostawcy komponentów aluminium, holenderski klient cementu wymagający embedded emissions zgodnie z [Battery Regulation DPP](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) — wszyscy potrzebują tych samych danych. Skala: w branży motoryzacyjnej wg [VDA Sustainability Initiative](https://www.vda.de/en/topics/environment-and-climate/sustainability) 70% europejskich OEM już wymaga PCF od dostawców na 2027.
+Mit, który trzeba na początek rozbroić: **CBAM nie dotyczy tylko importerów do UE**. Polski producent stali eksportujący do UK (gdzie [CBAM UK startuje 1 stycznia 2027](https://www.gov.uk/government/consultations/factsheet-the-uks-carbon-border-adjustment-mechanism)), niemiecki OEM żądający PCF od polskiego dostawcy komponentów aluminium, holenderski klient cementu wymagający embedded emissions zgodnie z [Battery Regulation DPP](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) — wszyscy potrzebują tych samych danych. Skala: w branży motoryzacyjnej wg [VDA Sustainability Initiative](https://www.vda.de/en/topics/environment-and-climate/sustainability) 70% europejskich producentów OEM już wymaga PCF od dostawców na 2027.
 
 Niżej rozbieram konkretnie, kto jest objęty, jakie dane musi dostarczyć MES + EMS, jak to liczyć, ile to kosztuje i co zrobić w pozostałych 6 tygodniach.
 
@@ -37,11 +37,11 @@ Od 2027 prawdopodobnie dojdą: **stopy aluminium**, **wyroby przetworzone ze sta
 
 Trzy ścieżki — większość polskich firm w sektorach Annex I jest na jednej lub kilku:
 
-**1. Polski importer materiałów objętych Annex I.** Klasyczny przypadek: producent maszyn kupuje stal z Białorusi lub Ukrainy. Od 1.01.2026 musisz mieć status **CBAM declarant** w polskim rejestrze (KOBiZE jako Krajowy Ośrodek Bilansowania), zgłaszać kwartalnie embedded emissions importowanych ton i — od 2027 — kupować odpowiednią liczbę certyfikatów CBAM po cenie indeksowanej do EU ETS.
+**1. Polski importer materiałów objętych Annex I.** Klasyczny przypadek: producent maszyn kupuje stal z Białorusi lub Ukrainy. Od 1.01.2026 musisz mieć status **zgłaszającego CBAM (CBAM declarant)** w polskim rejestrze (KOBiZE jako Krajowy Ośrodek Bilansowania), zgłaszać kwartalnie embedded emissions importowanych ton i — od 2027 — kupować odpowiednią liczbę certyfikatów CBAM po cenie indeksowanej do EU ETS.
 
-**2. Polski eksporter na rynki carbon-aware (UK, US, Kanada, Japonia).** Wielka Brytania uruchamia własny CBAM od **1.01.2027**, z metodologią zbliżoną do unijnej. USA pracują nad CCA (Clean Competition Act). Polski producent stali sprzedający do UK musi już dziś podać embedded emissions per tonę — bez tego klient nie zaakceptuje zamówienia po 2026.
+**2. Polski eksporter na rynki wrażliwe na ślad węglowy (UK, USA, Kanada, Japonia).** Wielka Brytania uruchamia własny CBAM od **1.01.2027**, z metodologią zbliżoną do unijnej. USA pracują nad CCA (Clean Competition Act). Polski producent stali sprzedający do UK musi już dziś podać embedded emissions na tonę — bez tego klient nie zaakceptuje zamówienia po 2026.
 
-**3. Dostawca europejski dla OEM wymagających PCF.** Volkswagen, Mercedes, Stellantis, Siemens, Bosch — wszyscy mają politykę „PCF or no contract" dla nowych umów od 2026. To nie jest CBAM, ale dane są te same: kg CO₂-eq per tonę / per sztukę z metodologią ISO 14067 lub PEF Commission Recommendation 2021/2279.
+**3. Dostawca europejski dla producentów OEM wymagających PCF.** Volkswagen, Mercedes, Stellantis, Siemens, Bosch — wszyscy mają politykę „PCF or no contract" dla nowych umów od 2026. To nie jest CBAM, ale dane są te same: kg CO₂-eq na tonę / na sztukę z metodologią ISO 14067 lub PEF Commission Recommendation 2021/2279.
 
 Jeżeli wasza firma produkuje stal, aluminium lub cement w Polsce — sprawdźcie listę klientów. Co najmniej połowa już ma PCF w wymaganiach przetargowych na 2027.
 
@@ -57,15 +57,15 @@ Dla tony stali konwerterowej typowy przedział: **1,6–2,4 tCO₂/t**. Dla tony
 
 ## Skąd MES bierze te dane
 
-Embedded emissions to nie pojedyncza liczba — to **per batch** (partia produkcyjna), zsumowana z trzech źródeł:
+Embedded emissions to nie pojedyncza liczba — to wartość **na partię produkcyjną**, zsumowana z trzech źródeł:
 
-**1. Genealogia partii (z MES).** Każda partia ma swój zestaw surowców (BOM), maszyn, czasów cyklu, operatorów. To podstawa alokacji — jeśli batch A i batch B przeszły przez ten sam piec, ale A trwał 4 godziny a B 6 godzin, energia (i CO₂) muszą być alokowane proporcjonalnie do czasu pracy pieca.
+**1. Genealogia partii (z MES).** Każda partia ma swój zestaw surowców (BOM), maszyn, czasów cyklu, operatorów. To podstawa alokacji — jeśli partia A i partia B przeszły przez ten sam piec, ale A trwała 4 godziny a B 6 godzin, energia (i CO₂) muszą być alokowane proporcjonalnie do czasu pracy pieca.
 
-**2. Zużycie energii per maszyna / per linia (z EMS).** System Energy Management mierzy kWh energii elektrycznej i m³ gazu per maszyna w rozdzielczości minutowej lub sekundowej. Jeśli mam batch A w piecu od 08:00 do 12:00, EMS daje mi dokładnie ile MWh prądu i ile m³ gazu zużyła ta maszyna w tym oknie czasowym.
+**2. Zużycie energii na maszynę / na linię (z EMS).** System Energy Management mierzy kWh energii elektrycznej i m³ gazu na maszynę w rozdzielczości minutowej lub sekundowej. Jeśli mam partię A w piecu od 08:00 do 12:00, EMS daje mi dokładnie ile MWh prądu i ile m³ gazu zużyła ta maszyna w tym oknie czasowym.
 
-**3. Bill of Materials z ERP** (surowce, ich emission factors). Surowiec ferromanganu z konkretnej kopalni ma swój PCF (dostarczony przez dostawcę albo wartość default z bazy KOBiZE). MES wie, ile kg surowca trafiło do batcha A. Mnożymy: kg surowca × kg CO₂/kg surowca = embedded emissions z prekursorów.
+**3. Bill of Materials z ERP** (surowce, ich emission factors). Surowiec ferromanganu z konkretnej kopalni ma swój PCF (dostarczony przez dostawcę albo wartość domyślna z bazy KOBiZE). MES wie, ile kg surowca trafiło do partii A. Mnożymy: kg surowca × kg CO₂/kg surowca = embedded emissions z prekursorów.
 
-Razem: **embedded CO₂ per tonę produktu = (scope 1 + scope 2 + precursors) / wyprodukowane tony**.
+Razem: **embedded CO₂ na tonę produktu = (scope 1 + scope 2 + precursors) / wyprodukowane tony**.
 
 Naturalny stack OmniMES dla tego: MES (genealogia) + EMS (energy metering) + ERP (BOM + supplier data) + warstwa kalkulacyjna PCF (w bazie czasowej — w [TimescaleDB](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) trzymamy emission factors jako time-series, bo emission factor sieci zmienia się rok do roku, a regulator wymaga **kontemporalnego** mnożnika).
 
@@ -85,37 +85,37 @@ W praktyce wewnątrz UE dominuje ISO 14067. Dla CBAM declarant zawsze trzeba zma
 
 Cztery realne opcje:
 
-**SAP S/4HANA Sustainability Footprint Management.** Komercyjne, drogie (rzędu 50–150 tys. EUR rocznie dla średniego zakładu), ale integruje się natywnie z ERP. Jeśli macie SAP, to obvious choice. Plus: pełna obsługa CBAM, raportowanie do KOBiZE.
+**SAP S/4HANA Sustainability Footprint Management.** Komercyjne, drogie (rzędu 50–150 tys. EUR rocznie dla średniego zakładu), ale integruje się natywnie z ERP. Jeśli macie SAP, to oczywisty wybór. Plus: pełna obsługa CBAM, raportowanie do KOBiZE.
 
-**Microsoft Cloud for Sustainability.** Alternatywa dla SAP, integracja z Microsoft Dynamics 365 i Azure. Lepsze ceny dla mid-market.
+**Microsoft Cloud for Sustainability.** Alternatywa dla SAP, integracja z Microsoft Dynamics 365 i Azure. Lepsze ceny dla segmentu średniego rynku.
 
-**[openLCA](https://www.openlca.org/)** — open-source LCA tool. Darmowy, ale wymaga manualnej integracji z MES/EMS. Dobre dla startupów i mniejszych zakładów, słabsze dla compliance audit (ślad audytowy mniej dojrzały).
+**[openLCA](https://www.openlca.org/)** — narzędzie LCA typu open source. Darmowe, ale wymaga ręcznej integracji z MES/EMS. Dobre dla startupów i mniejszych zakładów, słabsze dla audytu zgodności (ślad audytowy mniej dojrzały).
 
-**Custom — bezpośrednio w MES.** Dla zakładów, które już mają solidny stack (PostgreSQL + TimescaleDB + Grafana), kalkulator embedded emissions to ~200 linii SQL/Python. Plus baza emission factors (importowana z KOBiZE rocznie). To realna ścieżka — robimy tak w OmniMES, bo emission factors mapują się 1:1 na continuous aggregates per zmiana × per linia.
+**Rozwiązanie własne — bezpośrednio w MES.** Dla zakładów, które już mają solidny stos (PostgreSQL + TimescaleDB + Grafana), kalkulator embedded emissions to ~200 linii SQL/Python. Plus baza emission factors (importowana z KOBiZE rocznie). To realna ścieżka — robimy tak w OmniMES, bo emission factors mapują się 1:1 na continuous aggregates dla zmiany × linii.
 
-Co wybrać: dla zakładów >100 mln EUR obrotu z SAP — SFM. Dla mid-market 10–100 mln EUR z PostgreSQL + custom MES — własna kalkulacja jest tańsza i bardziej elastyczna. Dla najmniejszych — openLCA + Excel.
+Co wybrać: dla zakładów >100 mln EUR obrotu z SAP — SFM. Dla średniego rynku 10–100 mln EUR z PostgreSQL + własnym MES — własna kalkulacja jest tańsza i bardziej elastyczna. Dla najmniejszych — openLCA + Excel.
 
-## Default values: pułapka dla nieprzygotowanych
+## Wartości domyślne: pułapka dla nieprzygotowanych
 
-Jeżeli polski importer aluminium z Białorusi nie ma weryfikowanych danych o embedded emissions od białoruskiego dostawcy (bo dostawca po prostu nie raportuje), CBAM nakazuje stosować **default values**. Dla aluminium pierwotnego default to **16,5 tCO₂/t** — czyli najwyższy realny przedział dla węgla.
+Jeżeli polski importer aluminium z Białorusi nie ma zweryfikowanych danych o embedded emissions od białoruskiego dostawcy (bo dostawca po prostu nie raportuje), CBAM nakazuje stosować **wartości domyślne (default values)**. Dla aluminium pierwotnego wartość domyślna to **16,5 tCO₂/t** — czyli najwyższy realny przedział dla węgla.
 
-Realna stawka CBAM 2027 (indeksowana do ETS): ~80 EUR/t CO₂. Czyli **importer zapłaci ~1320 EUR/t aluminium dodatkowo, jeśli używa default**. Verified data od dostawcy może obniżyć to do 800–1000 EUR/t aluminium — różnica 300–500 EUR na tonie.
+Realna stawka CBAM 2027 (indeksowana do ETS): ~80 EUR/t CO₂. Czyli **importer zapłaci ~1320 EUR/t aluminium dodatkowo, jeśli używa wartości domyślnej**. Zweryfikowane dane od dostawcy mogą obniżyć to do 800–1000 EUR/t aluminium — różnica 300–500 EUR na tonie.
 
-Wniosek: **inwestycja w pozyskanie verified data od dostawców spoza UE zwraca się natychmiast.** Polscy importerzy stali z Ukrainy lub Turcji powinni już dziś podpisywać aneksy do umów z wymogiem CBAM-ready PCF. To samo dla aluminium z ZEA, Indii, Bahrajnu.
+Wniosek: **inwestycja w pozyskanie zweryfikowanych danych od dostawców spoza UE zwraca się natychmiast.** Polscy importerzy stali z Ukrainy lub Turcji powinni już dziś podpisywać aneksy do umów z wymogiem PCF gotowego pod CBAM. To samo dla aluminium z ZEA, Indii, Bahrajnu.
 
-## Roadmapa 6 tygodni do 1 sierpnia 2026
+## Plan działania na 6 tygodni do 1 sierpnia 2026
 
-Dla firm, które dziś nie mają jeszcze CBAM workflow:
+Dla firm, które dziś nie mają jeszcze przepływu pracy dla CBAM:
 
-**Tydzień 1–2 (22 czerwca – 5 lipca):** rejestracja jako CBAM declarant w KOBiZE. Inwentaryzacja co dokładnie importujemy/eksportujemy (CN codes z Annex I). Lista TIER-1 dostawców spoza UE i ich kontaktów.
+**Tydzień 1–2 (22 czerwca – 5 lipca):** rejestracja jako zgłaszający CBAM (CBAM declarant) w KOBiZE. Inwentaryzacja co dokładnie importujemy/eksportujemy (kody CN z Annex I). Lista dostawców TIER-1 spoza UE i ich kontaktów.
 
-**Tydzień 3–4 (6 lipca – 19 lipca):** zbieranie raw data. Z MES — quarterly summary partii produkcyjnych Q2 2026. Z EMS — energia elektryczna + gaz per linia. Z ERP — BOM + invoices za surowce. Z dostawców spoza UE — verified PCF lub akceptacja default.
+**Tydzień 3–4 (6 lipca – 19 lipca):** zbieranie danych źródłowych. Z MES — kwartalne podsumowanie partii produkcyjnych Q2 2026. Z EMS — energia elektryczna + gaz na linię. Z ERP — BOM + faktury za surowce. Z dostawców spoza UE — zweryfikowany PCF lub akceptacja wartości domyślnej.
 
-**Tydzień 5–6 (20 lipca – 1 sierpnia):** kalkulacja embedded emissions per CN code, walidacja przez wewnętrzny audyt lub external verifier (TÜV, DEKRA, SGS dla high-stakes). Złożenie raportu w portalu CBAM. Plan działań na Q3.
+**Tydzień 5–6 (20 lipca – 1 sierpnia):** kalkulacja embedded emissions dla kodu CN, walidacja przez wewnętrzny audyt lub zewnętrznego weryfikatora (TÜV, DEKRA, SGS dla spraw o wysokiej wadze). Złożenie raportu w portalu CBAM. Plan działań na Q3.
 
-Realny koszt pierwszego raportu dla średniego zakładu (50–500 ton importu Annex I miesięcznie): **15–40 tys. EUR** (konsultant + external verifier + setup tooling). Plus 0,2 etatu na bieżącą obsługę.
+Realny koszt pierwszego raportu dla średniego zakładu (50–500 ton importu Annex I miesięcznie): **15–40 tys. EUR** (konsultant + zewnętrzny weryfikator + wdrożenie narzędzi). Plus 0,2 etatu na bieżącą obsługę.
 
-Najwięcej czasu zajmie **dostawcy spoza UE** — typowo 4–6 tygodni od pierwszego maila do PCF, jeśli dostawca to widzi po raz pierwszy. Stąd presja czasowa.
+Najwięcej czasu zajmą **dostawcy spoza UE** — typowo 4–6 tygodni od pierwszego maila do PCF, jeśli dostawca widzi to po raz pierwszy. Stąd presja czasowa.
 
 ## Sankcje — co konkretnie ryzykujemy
 
@@ -134,9 +134,9 @@ Trzy konkrety:
 
 **Po pierwsze**, CBAM dotyczy realnie 3000+ polskich zakładów (sektor Annex I + powiązania importowo-eksportowe). Jeżeli wasza firma jest w stalach, aluminium, cemencie, nawozach lub elektronice z metalowymi komponentami — sprawdźcie status na ten tydzień. Termin 1.08.2026 jest twardy.
 
-**Po drugie**, MES + EMS są fundamentem danych dla CBAM (60–70% potrzebnych informacji). Genealogia partii z MES, energy metering z EMS, BOM z ERP — to wszystko już macie. Trzeba dodać warstwę kalkulacyjną i interfejs do raportowania. Koszt 15–40 tys. EUR + dwa miesiące pracy konsultanta. Nie wymiana stacku, tylko ekspozycja danych.
+**Po drugie**, MES + EMS są fundamentem danych dla CBAM (60–70% potrzebnych informacji). Genealogia partii z MES, pomiar energii z EMS, BOM z ERP — to wszystko już macie. Trzeba dodać warstwę kalkulacyjną i interfejs do raportowania. Koszt 15–40 tys. EUR + dwa miesiące pracy konsultanta. Nie wymiana stosu, tylko ekspozycja danych.
 
-**Po trzecie**, CBAM zamyka cluster regulacyjny UE 2026: [AI Act](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai) (sierpień), [DPP/Battery Regulation](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) (luty 2027), [NIS2/KSC2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) (H2 2026), CBAM (sierpień 2026). Cztery filary, jeden wspólny mianownik: **MES jako źródło dowodów compliance**. Firmy, które potraktują to jako jedną platformę danych zamiast czterech osobnych projektów, zaoszczędzą 40–60% kosztu wdrożenia.
+**Po trzecie**, CBAM zamyka klaster regulacyjny UE 2026: [AI Act](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai) (sierpień), [DPP/Battery Regulation](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) (luty 2027), [NIS2/KSC2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) (H2 2026), CBAM (sierpień 2026). Cztery filary, jeden wspólny mianownik: **MES jako źródło dowodów zgodności**. Firmy, które potraktują to jako jedną platformę danych zamiast czterech osobnych projektów, zaoszczędzą 40–60% kosztu wdrożenia.
 
 CBAM nie zniknie. Jeżeli polski przemysł chce konkurować na rynkach carbon-aware (UE, UK, USA od 2027), embedded emissions per tonę staną się standardową specyfikacją produktu — obok wymiarów, składu chemicznego i wytrzymałości. Najlepszy moment, żeby zacząć liczyć, był rok temu. Drugi najlepszy — to dzisiaj.
 

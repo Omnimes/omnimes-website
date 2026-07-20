@@ -26,7 +26,7 @@ To istotne, bo w MES typowo mamy dwa rodzaje danych:
 - **transakcyjne** (zlecenia produkcyjne, operatorzy, kontrola jakości, magazyn) — klasyczny OLTP, naturalna dziedzina PostgreSQL
 - **czasowe** (sensor readings, alarmy, OEE counters, energy metering) — wymagają innej obsługi: szybkiego appendu, kompresji, agregacji po okresach
 
-Większość systemów MES rozwiązuje to przez **dwa silniki**: PostgreSQL/MS SQL/Oracle dla OLTP, plus InfluxDB/MongoDB/ClickHouse dla danych czasowych. To działa, ale wprowadza koszty: dwa systemy do utrzymania, dwie filozofie query, dwa stacki monitoringu, dwa zespoły wiedzy, dwie kopie zapasowe, dwa wektory audytu dla [NIS2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki).
+Większość systemów MES rozwiązuje to przez **dwa silniki**: PostgreSQL/MS SQL/Oracle dla OLTP, plus InfluxDB/MongoDB/ClickHouse dla danych czasowych. To działa, ale wprowadza koszty: dwa systemy do utrzymania, dwie filozofie zapytań, dwa stosy monitoringu, dwa zespoły wiedzy, dwie kopie zapasowe, dwa wektory audytu dla [NIS2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki).
 
 TimescaleDB pozwala mieć **jeden silnik** — z dedykowanymi mechanizmami dla time-series tam, gdzie są potrzebne. Konsolidacja stacku jest realnym argumentem operacyjnym, nie tylko estetycznym.
 
@@ -63,13 +63,13 @@ ALTER TABLE sensor_readings SET (
 SELECT add_compression_policy('sensor_readings', INTERVAL '7 days');
 ```
 
-W naszej produkcji: po policy `compress after 7 days`, dane starsze niż tydzień zajmują średnio **5% oryginalnego rozmiaru**. Dla 18 miesięcy historii sensor data daje to **180 GB zamiast surowych około 3,6 TB**. Storage to nie tylko koszt dysku — to też RAM dla working set, prędkość backupu (45 minut zamiast 6 godzin), pasmo replikacji do disaster recovery site.
+W naszej produkcji: po polityce `compress after 7 days`, dane starsze niż tydzień zajmują średnio **5% oryginalnego rozmiaru**. Dla 18 miesięcy historii danych z czujników daje to **180 GB zamiast surowych około 3,6 TB**. Miejsce na dysku to nie tylko jego koszt — to też RAM na aktywny zbiór roboczy, prędkość kopii zapasowej (45 minut zamiast 6 godzin), pasmo replikacji do ośrodka odtwarzania po awarii (disaster recovery).
 
-Test był uczciwy: porównujemy całkowitą zajętość dysku (włącznie z replikami, backupami, indeksami), nie tylko goły dataset.
+Test był uczciwy: porównujemy całkowitą zajętość dysku (włącznie z replikami, kopiami zapasowymi, indeksami), nie tylko goły zbiór danych.
 
 ## Continuous aggregates — pre-computed rollups w tle
 
-Continuous aggregates to **materialized views**, które TimescaleDB automatycznie aktualizuje w tle. Zamiast obliczać OEE per czujnik co request, zapisujemy minutowe rollups raz, a dashboardy czytają gotowy widok:
+Continuous aggregates to **widoki zmaterializowane (materialized views)**, które TimescaleDB automatycznie aktualizuje w tle. Zamiast obliczać OEE dla każdego czujnika przy każdym żądaniu, zapisujemy minutowe agregaty raz, a pulpity czytają gotowy widok:
 
 ```sql
 CREATE MATERIALIZED VIEW oee_5min
@@ -117,7 +117,7 @@ Kluczowa decyzja architektoniczna: **ten sam PostgreSQL dla OLTP i danych czasow
 - Time-series na SSD SATA z większą pojemnością (sensor_readings i continuous aggregates)
 - WAL na osobnym dysku (klasyczna optymalizacja PostgreSQL)
 
-Plus pgBouncer z transaction pooling, maksymalnie 200 połączeń per aplikacja. Trzy tygodnie testów przed produkcyjnym rolloutem pokazały, że workload time-series (głównie append-only) nie konkuruje z OLTP (mix read/write) przy odpowiednim tuningu.
+Plus pgBouncer z transaction pooling, maksymalnie 200 połączeń na aplikację. Trzy tygodnie testów przed produkcyjnym wdrożeniem pokazały, że obciążenie time-series (głównie dopisywanie) nie konkuruje z OLTP (mieszanina odczytów i zapisów) przy odpowiednim strojeniu.
 
 ## Wydajność i skala — liczby z produkcji
 
@@ -135,21 +135,21 @@ Mierzone wartości średnie z czerwca 2026:
 | Backfill nowego raportu (24 mies.) | 18 minut |
 | Liczba continuous aggregates | 12 (różne wymiary i okresy) |
 
-Hardware: jeden serwer PostgreSQL (32 vCPU, 256 GB RAM, NVMe + SATA SSD) plus replika do failover. To wystarcza na cały zakres workloadu — OLTP i time-series razem.
+Sprzęt: jeden serwer PostgreSQL (32 vCPU, 256 GB RAM, NVMe + SATA SSD) plus replika do przełączania awaryjnego (failover). To wystarcza na cały zakres obciążenia — OLTP i time-series razem.
 
-Najbardziej istotne dla MES: **liniowa skala**. Dodając kolejne 50 tys. czujników nie musimy zmieniać architektury — wystarczy dorzucić storage i zwiększyć chunk_time_interval, jeśli baza chunks staje się zbyt duża. PostgreSQL z TimescaleDB obsługuje pojedynczo do dziesiątek miliardów pomiarów per zakład bez konieczności sharding.
+Najbardziej istotne dla MES: **liniowa skala**. Dodając kolejne 50 tys. czujników nie musimy zmieniać architektury — wystarczy dorzucić miejsce na dysku i zwiększyć chunk_time_interval, jeśli baza chunks staje się zbyt duża. PostgreSQL z TimescaleDB obsługuje pojedynczo do dziesiątek miliardów pomiarów na zakład bez konieczności sharding.
 
 ## Dlaczego TimescaleDB to dobry wybór dla MES
 
 Cztery konkretne argumenty:
 
-**1. Jeden silnik dla wszystkiego.** OLTP (zlecenia, operatorzy, jakość, magazyn) i time-series (sensor readings, alarms, OEE) w tym samym PostgreSQL. Brak osobnej bazy do utrzymania, brak osobnej procedury backup, brak osobnego monitoringu, brak osobnych skilli w zespole.
+**1. Jeden silnik dla wszystkiego.** OLTP (zlecenia, operatorzy, jakość, magazyn) i time-series (sensor readings, alarms, OEE) w tym samym PostgreSQL. Brak osobnej bazy do utrzymania, brak osobnej procedury kopii zapasowej, brak osobnego monitoringu, brak osobnych kompetencji w zespole.
 
-**2. SQL jako lingua franca.** Każdy senior developer i data engineer zna SQL. Aggregation pipelines z NoSQL baz wymagają specyficznej wiedzy i są trudniejsze do debugowania. SQL jest zrozumiały dla audytora compliance, dla data scientista, dla DBA — i dla samego siebie po dwóch latach od napisania query.
+**2. SQL jako lingua franca.** Każdy doświadczony deweloper i inżynier danych zna SQL. Potoki agregacji w bazach NoSQL wymagają specyficznej wiedzy i są trudniejsze do debugowania. SQL jest zrozumiały dla audytora ds. zgodności, dla data scientista, dla DBA — i dla samego siebie po dwóch latach od napisania zapytania.
 
 **3. Dojrzały ekosystem.** PostgreSQL ma 35 lat na rynku, TimescaleDB 9 lat. Dojrzałe narzędzia: pgBouncer, pgBackRest, pg_stat_statements, pgwatch2, pgBadger, pg_partman. Klientów referencyjnych dla TimescaleDB w produkcji: tysiące, w tym Microsoft, Cisco, Bloomberg, ABB.
 
-**4. Niski vendor risk.** TimescaleDB jest pod **Apache 2.0** dla wersji Community. Komercyjna wersja Enterprise dodaje multi-node sharding i high availability (oba niepotrzebne dla średniego MES). Migracja w razie potrzeby — back to pure PostgreSQL przez `pg_dump` z prostym mapowaniem na partitioned tables. To eliminuje klasyczny problem dedykowanych time-series baz (InfluxDB licensing shifts, ClickHouse w środowisku non-Yandex).
+**4. Niskie ryzyko dostawcy.** TimescaleDB jest pod **Apache 2.0** dla wersji Community. Komercyjna wersja Enterprise dodaje multi-node sharding i wysoką dostępność (oba niepotrzebne dla średniego MES). Migracja w razie potrzeby — powrót do czystego PostgreSQL przez `pg_dump` z prostym mapowaniem na tabele partycjonowane. To eliminuje klasyczny problem dedykowanych baz time-series (zmiany licencyjne InfluxDB, ClickHouse w środowisku non-Yandex).
 
 ## Kiedy TimescaleDB NIE jest dobrym wyborem
 
@@ -157,23 +157,23 @@ Uczciwa lista — nie wszystko jest dla każdego zakładu:
 
 **Bardzo małe wdrożenia (do 1 mln pomiarów dziennie).** Dla zakładu z 200 czujnikami i raportowaniem dziennym czysty PostgreSQL bez TimescaleDB wystarczy. Hypertables zaczynają mieć sens dopiero gdy chunks zaczynają się liczyć na dziesiątki — typowo od kilkudziesięciu milionów pomiarów dziennie.
 
-**Bardzo wysokie write throughput (powyżej 1 mln per sekundę per node).** ClickHouse w trybie distributed ma lepsze write performance niż PostgreSQL + TimescaleDB. Dla aplikacji typu ad-tech, financial markets — ClickHouse jest właściwym wyborem. Dla MES — limity są zwykle daleko poniżej tego progu.
+**Bardzo wysoka przepustowość zapisu (powyżej 1 mln na sekundę na węzeł).** ClickHouse w trybie rozproszonym ma lepszą wydajność zapisu niż PostgreSQL + TimescaleDB. Dla aplikacji typu ad-tech, financial markets — ClickHouse jest właściwym wyborem. Dla MES — limity są zwykle daleko poniżej tego progu.
 
-**Brak SQL skills w zespole.** Jeżeli zespół data engineeringu pracuje wyłącznie z pandas i Spark, dodanie PostgreSQL jako głównej bazy wymaga inwestycji w naukę. Wtedy warto przeanalizować TCO.
+**Brak kompetencji SQL w zespole.** Jeżeli zespół inżynierii danych pracuje wyłącznie z pandas i Spark, dodanie PostgreSQL jako głównej bazy wymaga inwestycji w naukę. Wtedy warto przeanalizować TCO.
 
-**Edge deployment (mała pamięć, mała moc).** PostgreSQL + TimescaleDB to klasyczny serwer 32 vCPU / 256 GB RAM. Dla edge'a (Jetson, Raspberry Pi w gateway hali) lepiej sprawdzą się SQLite z extensions albo specjalizowane embedded time-series bazy (np. RedisTimeSeries dla in-memory).
+**Wdrożenia na urządzeniach brzegowych (mała pamięć, mała moc).** PostgreSQL + TimescaleDB to klasyczny serwer 32 vCPU / 256 GB RAM. Dla brzegu (Jetson, Raspberry Pi w bramie hali) lepiej sprawdzą się SQLite z rozszerzeniami albo specjalizowane wbudowane bazy time-series (np. RedisTimeSeries dla pamięci operacyjnej).
 
 ## Rekomendacje dla zakładu rozważającego architekturę danych
 
 Trzy konkrety:
 
-**Po pierwsze**, jeżeli budujecie nowy MES od zera w 2026, PostgreSQL z TimescaleDB jest dziś defaultem. Konsolidacja stacku na jeden silnik SQL upraszcza operacje i compliance. Dedykowane time-series bazy (InfluxDB, ClickHouse) mają sens tylko w specyficznych scenariuszach (extreme write throughput, custom analytics use cases).
+**Po pierwsze**, jeżeli budujecie nowy MES od zera w 2026, PostgreSQL z TimescaleDB jest dziś domyślnym wyborem. Konsolidacja stosu na jeden silnik SQL upraszcza operacje i zgodność. Dedykowane bazy time-series (InfluxDB, ClickHouse) mają sens tylko w specyficznych scenariuszach (ekstremalna przepustowość zapisu, niestandardowe zastosowania analityczne).
 
-**Po drugie**, jeżeli macie już PostgreSQL dla OLTP, dodanie TimescaleDB jest bezbolesne — to extension, instaluje się przez `CREATE EXTENSION timescaledb`. Nie wymaga to wymiany infrastruktury, dodatkowych licencji, ani osobnego zespołu DBA.
+**Po drugie**, jeżeli macie już PostgreSQL dla OLTP, dodanie TimescaleDB jest bezbolesne — to rozszerzenie, instaluje się przez `CREATE EXTENSION timescaledb`. Nie wymaga to wymiany infrastruktury, dodatkowych licencji, ani osobnego zespołu DBA.
 
-**Po trzecie**, planując storage budget pamiętajcie o kompresji. Naiwne kalkulacje typu „1 czujnik × 1 Hz × 8 bajtów × 31 mln sekund/rok = 250 MB rocznie" są prawdziwe na surowych danych — ale TimescaleDB skompresuje to do około 15 MB rocznie. Dla 50 tys. czujników to różnica między 12 TB a 600 GB rocznie. Realne planowanie capacity musi uwzględniać kompresję od początku.
+**Po trzecie**, planując budżet magazynu pamiętajcie o kompresji. Naiwne kalkulacje typu „1 czujnik × 1 Hz × 8 bajtów × 31 mln sekund/rok = 250 MB rocznie" są prawdziwe na surowych danych — ale TimescaleDB skompresuje to do około 15 MB rocznie. Dla 50 tys. czujników to różnica między 12 TB a 600 GB rocznie. Realne planowanie pojemności musi uwzględniać kompresję od początku.
 
-Stack OmniMES jest świadomie zbudowany na konsolidacji i prostocie — jeden silnik SQL, jasna ścieżka danych od czujnika do dashboardu, minimum vendorów. Następny krok to integracja z [Time-series Foundation Models](/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — continuous aggregates jako input features dla TimesFM/Chronos działają lepiej niż surowe sensor data, co znacznie obniża koszt inferencji w predykcji awarii.
+Stos OmniMES jest świadomie zbudowany na konsolidacji i prostocie — jeden silnik SQL, jasna ścieżka danych od czujnika do pulpitu, minimum dostawców. Następny krok to integracja z [Time-series Foundation Models](/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — continuous aggregates jako cechy wejściowe dla TimesFM/Chronos działają lepiej niż surowe dane z czujników, co znacznie obniża koszt inferencji w predykcji awarii.
 
 ---
 
@@ -185,5 +185,5 @@ Stack OmniMES jest świadomie zbudowany na konsolidacji i prostocie — jeden si
 - [pgBouncer documentation](https://www.pgbouncer.org/) — connection pooling dla PostgreSQL
 - [TimescaleDB benchmarks](https://www.timescale.com/blog/timescaledb-vs-influxdb-for-time-series-data/) — porównanie wydajności (source biased — TimescaleDB)
 - [Time-series Foundation Models w MES](/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — kolejny krok analityczny
-- [NIS2 i KSC2 w 2026](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) — kontekst compliance dla konsolidacji stacku
+- [NIS2 i KSC2 w 2026](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) — kontekst zgodności dla konsolidacji stosu
 - [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu

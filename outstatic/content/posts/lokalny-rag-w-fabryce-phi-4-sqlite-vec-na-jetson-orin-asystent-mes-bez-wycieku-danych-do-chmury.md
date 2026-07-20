@@ -14,7 +14,7 @@ publishedAt: '2026-05-11T08:00:00.000Z'
 
 W styczniu 2025 Microsoft udostępnił [Phi-4](https://huggingface.co/microsoft/phi-4) na licencji MIT — model 14 miliardów parametrów, który w testach matematycznych i kodzie bije GPT-4o-mini, a w wersji skwantyzowanej do 4 bitów mieści się w 8 GB pamięci. W lipcu 2024 [Alex Garcia opublikował sqlite-vec](https://github.com/asg017/sqlite-vec) — rozszerzenie SQLite, które daje wektorowe wyszukiwanie w jednym pliku, bez serwera, bez Dockera, bez koncepcji „klastra". Trzy miesiące później NVIDIA odświeżyła linię [Jetson Orin Nano Super](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit) i przeceniła devkit z 499 do **249 USD**, dając 67 TOPS dla generatywnej AI na brzegu sieci.
 
-Te trzy zdarzenia razem oznaczają, że dyskusja „RAG dla MES — chmura czy on-prem?" w 2026 roku ma już inną odpowiedź niż dwa lata temu. Lokalny stos działa, kosztuje setki, a nie tysiące euro miesięcznie, i nie wymaga, żeby parametry procesu, lista operatorów i historia jakości wędrowały do US-EAST-1.
+Te trzy zdarzenia razem oznaczają, że dyskusja „RAG dla MES — chmura czy wdrożenie lokalne (on-prem)?" w 2026 roku ma już inną odpowiedź niż dwa lata temu. Lokalny stos działa, kosztuje setki, a nie tysiące euro miesięcznie, i nie wymaga, żeby parametry procesu, lista operatorów i historia jakości wędrowały do US-EAST-1.
 
 W tym artykule pokazuję konkretną architekturę takiego stosu w środowisku MES, mierzone wartości tokenów na sekundę i RAM-u, gdzie sensownie to wdrożyć, a gdzie ten model po prostu się nie sprawdzi.
 
@@ -26,7 +26,7 @@ RAG (Retrieval-Augmented Generation) wprowadza pomiędzy pytanie a model warstw�
 
 W praktyce w MES warstwa wiedzy obejmuje:
 
-- **dokumentację**: SOP, work instructions, instrukcje BHP, manuale maszyn,
+- **dokumentację**: SOP, instrukcje pracy, instrukcje BHP, manuale maszyn,
 - **dane procesowe**: zagregowane raporty OEE, historię alarmów, wyniki kontroli jakości,
 - **wiedzę plemienną**: notatki utrzymania ruchu, transkrypty Teams z reakcji na awarie, wiki działu produkcji.
 
@@ -36,7 +36,7 @@ Te dane prawie nigdy nie powinny opuszczać zakładu. SOP zawiera know-how koszt
 
 Stos, który stosujemy w pilotach OmniMES, w wersji minimalnej wygląda następująco:
 
-**Warstwa hardware'u:** [Jetson Orin NX 16 GB](https://developer.nvidia.com/embedded/jetson-orin) lub [Orin AGX 64 GB](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/). NX kosztuje ~899 USD za moduł, AGX ~1999 USD. NX wystarcza dla Phi-4 Q4 i 100 osób w zakładzie z 5–10 zapytaniami dziennie. AGX dobiera się, gdy chcemy trzymać dwa modele równolegle (np. Phi-4 + Llama 3.3 70B Q4 dla trudnych zapytań) lub gdy planujemy obsługę 200+ użytkowników.
+**Warstwa sprzętu:** [Jetson Orin NX 16 GB](https://developer.nvidia.com/embedded/jetson-orin) lub [Orin AGX 64 GB](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/). NX kosztuje ~899 USD za moduł, AGX ~1999 USD. NX wystarcza dla Phi-4 Q4 i 100 osób w zakładzie z 5–10 zapytaniami dziennie. AGX dobiera się, gdy chcemy trzymać dwa modele równolegle (np. Phi-4 + Llama 3.3 70B Q4 dla trudnych zapytań) lub gdy planujemy obsługę 200+ użytkowników.
 
 **Warstwa danych:** SQLite z rozszerzeniem `sqlite-vec`. Jeden plik `.db`, snapshoty przez `cp`, backup przez `rclone` na NAS. Brak Postgresa, brak Chromy, brak Redisa. Dla 50 000 stron dokumentacji indeks waży poniżej 1 GB. Operacja wstawienia embeddingu i wyszukania top-5 zajmuje pojedyncze milisekundy.
 
@@ -46,7 +46,7 @@ Stos, który stosujemy w pilotach OmniMES, w wersji minimalnej wygląda następu
 
 **Warstwa UI:** wbudowany widget w panel operatorski OmniMES lub osobna PWA. Brak Slacka, brak chmury, brak SSO przez Auth0 — uwierzytelnianie przez LDAP zakładu.
 
-Czas budowy indeksu dla 10 000 stron PDF na NX 16 GB: 35–50 minut jednorazowo, rebuild inkrementalny przez nightly cron.
+Czas budowy indeksu dla 10 000 stron PDF na NX 16 GB: 35–50 minut jednorazowo, przyrostowa przebudowa przez nocny cron.
 
 ## Benchmarki: ile to naprawdę dostaje
 
@@ -81,23 +81,23 @@ Założenia: zakład 250 pracowników, ~15 000 zapytań do asystenta MES miesię
 
 **Wariant B — lokalny Jetson Orin NX 16 GB:**
 
-- Hardware (NX devkit + obudowa + UPS): **~1 800 USD jednorazowo**
+- Sprzęt (NX devkit + obudowa + UPS): **~1 800 USD jednorazowo**
 - Prąd: 12 W avg × 24h × 365 dni × 3 lata × 0,12 EUR/kWh = **38 EUR/3 lata**
 - Wdrożenie + integracja MES: 8–12 dni roboczych konsultanta = **6 000–9 000 USD jednorazowo**
 - Utrzymanie: 0,2 etatu inżyniera DevOps wewnętrznego, w większości pokryte przez istniejący zespół
 - **Suma 3 lata: ~8 000–11 000 USD**
 
-Lokalny stos zwraca się w **6–12 miesiącach** przy tej skali ruchu i przestaje zwracać sens, kiedy ruch spada poniżej 2 000 zapytań/mies. Wtedy taniej jest płacić OpenAI, jeśli compliance na to pozwala. To „jeśli" jest jednak fundamentalne — niżej.
+Lokalny stos zwraca się w **6–12 miesiącach** przy tej skali ruchu i przestaje zwracać sens, kiedy ruch spada poniżej 2 000 zapytań/mies. Wtedy taniej jest płacić OpenAI, jeśli zgodność na to pozwala. To „jeśli" jest jednak fundamentalne — niżej.
 
 ## Co to znaczy dla AI Act, NIS2 i RODO
 
 Wysyłanie danych produkcyjnych do dostawcy LLM w USA tworzy trzy warstwy ryzyka regulacyjnego, które w 2026 roku przestają być teoretyczne.
 
-**AI Act ([rozporządzenie 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)).** Od 2 sierpnia 2026 roku obowiązują przepisy dla systemów high-risk (Annex III). Jeśli wasz asystent MES służy do oceny wydajności operatorów lub wpływa na decyzje kadrowe (zmiana grafiku, premiowanie), pakiet obowiązków providera + deployera obejmuje m.in. data governance, dokumentację technologiczną, log retention i prawo do wyjaśnienia. Korzystając z GPT-4o przez API stajecie się **deployerem systemu AI**, którego provider (OpenAI) ma swoje obowiązki Annex VIII. Sieć kontraktowa, w której musicie udowodnić, że provider robi swoje, jest kosztowna w utrzymaniu — łatwiej zrobić to in-house z Phi-4 na MIT. Pisałem o szczegółach w [artykule o AI Act dla MES](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai).
+**AI Act ([rozporządzenie 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)).** Od 2 sierpnia 2026 roku obowiązują przepisy dla systemów wysokiego ryzyka (Annex III). Jeśli wasz asystent MES służy do oceny wydajności operatorów lub wpływa na decyzje kadrowe (zmiana grafiku, premiowanie), pakiet obowiązków providera + deployera obejmuje m.in. zarządzanie danymi, dokumentację technologiczną, przechowywanie logów i prawo do wyjaśnienia. Korzystając z GPT-4o przez API stajecie się **deployerem systemu AI**, którego provider (OpenAI) ma swoje obowiązki Annex VIII. Sieć kontraktowa, w której musicie udowodnić, że provider robi swoje, jest kosztowna w utrzymaniu — łatwiej zrobić to wewnętrznie z Phi-4 na MIT. Pisałem o szczegółach w [artykule o AI Act dla MES](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai).
 
-**NIS2 ([dyrektywa 2022/2555](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)).** Zakłady produkcyjne powyżej 50 pracowników w sektorach krytycznych (chemia, żywność, motoryzacja, energia) są klasyfikowane jako „podmioty istotne" lub „kluczowe". Mają obowiązek inwentaryzacji łańcucha dostaw IT, w tym providerów AI. Każde API zewnętrzne to dodatkowy wpis w rejestrze ryzyka, obowiązki audytowe i 24/72-godzinne okno na raportowanie incydentu. Lokalny model w segmencie OT nie generuje takiego długu compliance — Phi-4 na Jetsonie jest **urządzeniem**, nie dostawcą usługi.
+**NIS2 ([dyrektywa 2022/2555](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)).** Zakłady produkcyjne powyżej 50 pracowników w sektorach krytycznych (chemia, żywność, motoryzacja, energia) są klasyfikowane jako „podmioty istotne" lub „kluczowe". Mają obowiązek inwentaryzacji łańcucha dostaw IT, w tym providerów AI. Każde API zewnętrzne to dodatkowy wpis w rejestrze ryzyka, obowiązki audytowe i 24/72-godzinne okno na raportowanie incydentu. Lokalny model w segmencie OT nie generuje takiego długu zgodności — Phi-4 na Jetsonie jest **urządzeniem**, nie dostawcą usługi.
 
-**RODO.** Logi zapytań do GPT-4o zawierają imiona operatorów, numery zleceń, dane jakościowe. Standardowa umowa OpenAI Enterprise daje przetwarzanie w UE i 30-dniowe retention, ale to wciąż transfer danych osobowych do amerykańskiego processora. Jetson w zakładzie tego problemu po prostu nie tworzy.
+**RODO.** Logi zapytań do GPT-4o zawierają imiona operatorów, numery zleceń, dane jakościowe. Standardowa umowa OpenAI Enterprise daje przetwarzanie w UE i 30-dniowe przechowywanie, ale to wciąż transfer danych osobowych do amerykańskiego podmiotu przetwarzającego. Jetson w zakładzie tego problemu po prostu nie tworzy.
 
 Praktyczna obserwacja: dyrektorzy IT, którzy mieli problem ze zgodą działów prawnych na pilot z GPT-4o, dostają zielone światło dla Phi-4 lokalnie w tydzień. To często decyduje o tym, czy projekt w ogóle ruszy.
 
@@ -105,31 +105,31 @@ Praktyczna obserwacja: dyrektorzy IT, którzy mieli problem ze zgodą działów 
 
 Brief tego artykułu nie pozwala mi pisać marketingu, więc — bariery.
 
-**1. Jakość modelu vs frontier LLM.** Phi-4 14B jest dobre w typowych zadaniach MES (instrukcje, raporty, krótkie analizy), ale w zadaniach wymagających wielokrokowego rozumowania (np. analiza root cause z 30 sygnałów) wciąż gubi się tam, gdzie GPT-5 lub Claude 4.5 Sonnet sobie radzą. Jeśli wasz use case to złożone diagnozy, hybryda — Phi-4 dla zapytań rutynowych + opt-in escalation do chmury dla trudnych przypadków — jest bardziej uczciwa niż udawanie, że lokal pokrywa 100% potrzeb.
+**1. Jakość modelu vs czołowy LLM.** Phi-4 14B jest dobre w typowych zadaniach MES (instrukcje, raporty, krótkie analizy), ale w zadaniach wymagających wielokrokowego rozumowania (np. analiza przyczyn źródłowych z 30 sygnałów) wciąż gubi się tam, gdzie GPT-5 lub Claude 4.5 Sonnet sobie radzą. Jeśli wasz przypadek użycia to złożone diagnozy, hybryda — Phi-4 dla zapytań rutynowych + opcjonalna eskalacja do chmury dla trudnych przypadków — jest bardziej uczciwa niż udawanie, że lokal pokrywa 100% potrzeb.
 
-**2. Konteksty powyżej 8k tokenów.** Phi-4 ma natywne 16k kontekstu, w praktyce powyżej 8k jakość spada. Llama 3.3 70B Q4 (44 GB, mieści się tylko na AGX 64 GB) ma 128k i tu jest lepsza, ale to inna klasa hardware'u i ~3× wolniejsza generacja.
+**2. Konteksty powyżej 8k tokenów.** Phi-4 ma natywne 16k kontekstu, w praktyce powyżej 8k jakość spada. Llama 3.3 70B Q4 (44 GB, mieści się tylko na AGX 64 GB) ma 128k i tu jest lepsza, ale to inna klasa sprzętu i ~3× wolniejsza generacja.
 
-**3. Multimodalność.** Phi-4 (standardowy) nie czyta obrazów. Jeśli waszym use case'em jest „pokaż mi to zdjęcie wadliwej etykiety i powiedz, co jest nie tak", potrzebujecie Vision Language Model — [Phi-3.5-Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) lub Qwen2-VL 7B. To inny pipeline, ale ten sam Jetson go uciągnie.
+**3. Multimodalność.** Phi-4 (standardowy) nie czyta obrazów. Jeśli waszym przypadkiem użycia jest „pokaż mi to zdjęcie wadliwej etykiety i powiedz, co jest nie tak", potrzebujecie Vision Language Model — [Phi-3.5-Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) lub Qwen2-VL 7B. To inny pipeline, ale ten sam Jetson go uciągnie.
 
-**4. MTBF i utrzymanie hardware'u.** Konsumenckie devkity NVIDIA nie są zaprojektowane do pracy 24/7 w środowisku z pyłem, wibracjami i wahaniami napięcia. Do produkcji idą warianty industrial-grade (np. AverMedia Box, Connect Tech Boson) z fanless casing, IP54 i temperaturą pracy -20…+70°C. Cena rośnie ~2–3×.
+**4. MTBF i utrzymanie sprzętu.** Konsumenckie devkity NVIDIA nie są zaprojektowane do pracy 24/7 w środowisku z pyłem, wibracjami i wahaniami napięcia. Do produkcji idą warianty przemysłowe (np. AverMedia Box, Connect Tech Boson) z obudową bezwentylatorową, IP54 i temperaturą pracy -20…+70°C. Cena rośnie ~2–3×.
 
 **5. Brak SLA.** GPT-4o ma kontraktowe 99,9% uptime. Lokalny Jetson nie ma żadnego SLA poza waszą umową utrzymania. Dla asystenta MES klasyfikowanego jako „nice to have" to OK. Dla agenta sterującego decyzjami w pętli produkcji — nie, tam i tak nie powinno być LLM-a.
 
-**6. Updates modelu.** GPT-4o aktualizuje się bez waszego udziału (co czasem jest bonusem, czasem regresją). Lokalny model trzyma „state" — musicie ręcznie zdecydować, kiedy wdrożyć Phi-5, gdy się pojawi, przetestować na waszym zestawie pytań i zrobić rolloutowe wdrożenie. To koszt operacyjny, którego nie ma w chmurze.
+**6. Aktualizacje modelu.** GPT-4o aktualizuje się bez waszego udziału (co czasem jest bonusem, czasem regresją). Lokalny model trzyma „stan" — musicie ręcznie zdecydować, kiedy wdrożyć Phi-5, gdy się pojawi, przetestować na waszym zestawie pytań i zrobić stopniowe wdrożenie. To koszt operacyjny, którego nie ma w chmurze.
 
-## Roadmapa wdrożenia w 4 tygodnie
+## Plan wdrożenia w 4 tygodnie
 
 Dla zespołów, które chcą zacząć:
 
-**Tydzień 1 — assessment i POC.** Inwentaryzacja źródeł wiedzy (SOP, manuale, raporty), wybór trzech pilotażowych use case'ów (np. „instrukcje ustawienia maszyny", „odpowiedzi na alarmy", „raporty zmianowe"). Zakup Orin Nano Super devkit (249 USD) na testy. Instalacja JetPack 6.1, llama.cpp z CUDA, Phi-4 Q4.
+**Tydzień 1 — ocena stanu i POC.** Inwentaryzacja źródeł wiedzy (SOP, manuale, raporty), wybór trzech pilotażowych przypadków użycia (np. „instrukcje ustawienia maszyny", „odpowiedzi na alarmy", „raporty zmianowe"). Zakup Orin Nano Super devkit (249 USD) na testy. Instalacja JetPack 6.1, llama.cpp z CUDA, Phi-4 Q4.
 
 **Tydzień 2 — pipeline danych.** Skrypt ETL: PDF → tekst → chunki 512 tokenów → embedding BGE-M3 → wpis w sqlite-vec. Pierwsza wersja indeksu na ~1000 dokumentów. Walidacja jakości retrievalu na 30 ręcznych zapytaniach.
 
-**Tydzień 3 — integracja MES.** Endpoint REST `POST /ask`, autoryzacja LDAP, logging do osobnej tabeli w SQLite. Widget w UI panelu operatorskiego. Pierwsze 10 osób z zespołu jakości i utrzymania ruchu na pilocie.
+**Tydzień 3 — integracja MES.** Endpoint REST `POST /ask`, autoryzacja LDAP, logowanie do osobnej tabeli w SQLite. Widget w UI panelu operatorskiego. Pierwsze 10 osób z zespołu jakości i utrzymania ruchu na pilocie.
 
-**Tydzień 4 — pomiar i decyzja.** Zbierz 100 realnych zapytań, oznacz odpowiedzi (użyteczne / częściowo / nieużyteczne). Jeśli ponad 75% jest użytecznych — promocja na NX 16 GB w produkcji, plan rolloutu na całość zakładu. Jeśli mniej niż 60% — wróć do retrievalu (zwykle problemem jest jakość chunkowania albo brakujące dokumenty), nie do modelu.
+**Tydzień 4 — pomiar i decyzja.** Zbierz 100 realnych zapytań, oznacz odpowiedzi (użyteczne / częściowo / nieużyteczne). Jeśli ponad 75% jest użytecznych — promocja na NX 16 GB w produkcji, plan wdrożenia na całość zakładu. Jeśli mniej niż 60% — wróć do retrievalu (zwykle problemem jest jakość chunkowania albo brakujące dokumenty), nie do modelu.
 
-Cały POC w wariancie minimalnym to **400 USD hardware'u plus 1,5 etatu na miesiąc**. Klasyczny pilot chmurowy z OpenAI Enterprise startuje od 5–10× tej kwoty plus 6–12 tygodni negocjacji DPA i procurementu.
+Cały POC w wariancie minimalnym to **400 USD sprzętu plus 1,5 etatu na miesiąc**. Klasyczny pilot chmurowy z OpenAI Enterprise startuje od 5–10× tej kwoty plus 6–12 tygodni negocjacji DPA i zakupów.
 
 ## Wnioski dla dyrektora produkcji i CIO
 
@@ -137,11 +137,11 @@ Trzy rzeczy do zapamiętania.
 
 **Po pierwsze**, ekonomia lokalnego RAG-u w 2026 roku jest realnie korzystniejsza dla typowego polskiego zakładu produkcyjnego niż chmura — pod warunkiem, że macie więcej niż 5 000 zapytań miesięcznie i wewnętrzny zespół IT zdolny utrzymać Jetsona. Próg wejścia 2 000 USD, zwrot w 6–12 miesięcy.
 
-**Po drugie**, AI Act i NIS2 zaczną zmieniać kontekst tej decyzji w sierpniu 2026 i 2027. Lokalny model to nie tylko kwestia ekonomii — to też zmniejszenie powierzchni audytowej. Każde API zewnętrzne, które zniknie z waszego stack-a, to mniej dokumentów do utrzymywania w razie inspekcji.
+**Po drugie**, AI Act i NIS2 zaczną zmieniać kontekst tej decyzji w sierpniu 2026 i 2027. Lokalny model to nie tylko kwestia ekonomii — to też zmniejszenie powierzchni audytowej. Każde API zewnętrzne, które zniknie z waszego stosu, to mniej dokumentów do utrzymywania w razie inspekcji.
 
-**Po trzecie**, Phi-4 nie zastąpi GPT-5 dla najtrudniejszych zadań. Architektura hybrydowa — lokalny model jako default, chmurowy jako opt-in dla edge cases — jest pragmatyczna i daje 95% korzyści przy 15% kosztu i ryzyka.
+**Po trzecie**, Phi-4 nie zastąpi GPT-5 dla najtrudniejszych zadań. Architektura hybrydowa — lokalny model jako domyślny, chmurowy jako opcjonalny dla przypadków skrajnych — jest pragmatyczna i daje 95% korzyści przy 15% kosztu i ryzyka.
 
-Jeśli wasz MES wciąż nie ma żadnego asystenta opartego o LLM, najlepszy moment, żeby zacząć, był wczoraj. Drugi najlepszy — to dzisiaj, na lokalnym Phi-4. Frontier modele zostawcie do refaktora, kiedy lokalny stack będzie już produkcyjnie ograny i będziecie wiedzieć, co dokładnie chcecie eskalować do chmury.
+Jeśli wasz MES wciąż nie ma żadnego asystenta opartego o LLM, najlepszy moment, żeby zacząć, był wczoraj. Drugi najlepszy — to dzisiaj, na lokalnym Phi-4. Czołowe modele zostawcie do refaktora, kiedy lokalny stos będzie już produkcyjnie ograny i będziecie wiedzieć, co dokładnie chcecie eskalować do chmury.
 
 ---
 
@@ -155,4 +155,4 @@ Jeśli wasz MES wciąż nie ma żadnego asystenta opartego o LLM, najlepszy mome
 - [Rozporządzenie 2024/1689 (AI Act)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — tekst rozporządzenia
 - [Dyrektywa 2022/2555 (NIS2)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) — tekst dyrektywy
 - OpenAI API pricing, stan na maj 2026 ([platform.openai.com/pricing](https://platform.openai.com/pricing))
-- [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu: vendor risk i compliance dla wdrożenia lokalnego stacku AI
+- [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu: ryzyko dostawcy i zgodność dla wdrożenia lokalnego stosu AI

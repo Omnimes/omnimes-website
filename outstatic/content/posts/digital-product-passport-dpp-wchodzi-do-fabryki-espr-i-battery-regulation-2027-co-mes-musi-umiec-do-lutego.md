@@ -12,7 +12,7 @@ tags: [{"value":"ue","label":"UE"},{"value":"omniMES","label":"OmniMES"},{"value
 publishedAt: '2026-05-18T08:00:00.000Z'
 ---
 
-**18 lutego 2027** — to data, którą większość polskich zakładów produkujących baterie, komponenty elektroniki przemysłowej, stal, tekstylia lub akumulatory dla EV powinna już mieć w kalendarzu compliance. Tego dnia, zgodnie z Art. 77 [Battery Regulation 2023/1542](https://eur-lex.europa.eu/eli/reg/2023/1542/oj), [Digital Product Passport (DPP)](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) staje się obowiązkowy dla wszystkich baterii przemysłowych powyżej 2 kWh, baterii pojazdów elektrycznych i baterii lekkich środków transportu (LMT — hulajnogi, e-rowery). Bez paszportu — produkt nie może być wprowadzony na rynek UE. Art. 25 [ESPR 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) daje organom nadzoru rynku uprawnienie do zakazu obrotu, a państwa członkowskie ustalają kary administracyjne (Niemcy — do **4% rocznego obrotu** za poważne naruszenia, [Bundesnetzagentur 2025](https://www.bundesnetzagentur.de/EN/Areas/Energy/Companies/SecurityOfSupply/Battery_Regulation/start.html)).
+**18 lutego 2027** — to data, którą większość polskich zakładów produkujących baterie, komponenty elektroniki przemysłowej, stal, tekstylia lub akumulatory dla EV powinna już mieć w kalendarzu zgodności. Tego dnia, zgodnie z Art. 77 [Battery Regulation 2023/1542](https://eur-lex.europa.eu/eli/reg/2023/1542/oj), [Digital Product Passport (DPP)](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) staje się obowiązkowy dla wszystkich baterii przemysłowych powyżej 2 kWh, baterii pojazdów elektrycznych i baterii lekkich środków transportu (LMT — hulajnogi, e-rowery). Bez paszportu — produkt nie może być wprowadzony na rynek UE. Art. 25 [ESPR 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj) daje organom nadzoru rynku uprawnienie do zakazu obrotu, a państwa członkowskie ustalają kary administracyjne (Niemcy — do **4% rocznego obrotu** za poważne naruszenia, [Bundesnetzagentur 2025](https://www.bundesnetzagentur.de/EN/Areas/Energy/Companies/SecurityOfSupply/Battery_Regulation/start.html)).
 
 Dla świata MES, ERP i PLM nie jest to abstrakcyjny temat ESG. To konkretny wymóg na dane operacyjne — kilkunastu atrybutów per sztuka produktu, dostępnych przez publiczny URL z QR-em na obudowie. Jeżeli wasz MES dziś nie produkuje tych danych w sposób strukturalnie zlinkowany do batch ID, to do lutego 2027 macie 9 miesięcy roboczych na nadgonienie. Niżej rozbieram to bez wody: która regulacja czego wymaga, które funkcje MES już to mają, jakich brakuje, i co konkretnie zrobić w pozostałych miesiącach.
 
@@ -63,25 +63,25 @@ Mapując typowe moduły MES/EMS/CMMS na atrybuty Annex XIII:
 
 **Genealogia partii (batch genealogy).** Każdy MES warty tego określenia produkuje batch ID i wiąże go z surowcami, operatorem, maszyną i zmianą. To pokrywa atrybuty 8–10 bezpośrednio. Jeżeli mamy dobrze postawioną genealogię, dane DPP są w bazie — kwestia tylko ekspozycji.
 
-**OEE i performance tracking per linia.** Tu OEE per pakiet baterii dostarcza pośrednią proxy dla atrybutu 4 (carbon footprint) — bo CFP zależy od zużycia energii na sztukę w produkcji. Łącząc OEE z EMS (Energy Management System) i ISO 50001, można policzyć kWh elektryczności na pakiet, a dalej kg CO₂-eq (mnożąc przez emission factor sieci).
+**OEE i śledzenie wydajności na linię.** Tu OEE na pakiet baterii dostarcza pośredni wskaźnik zastępczy dla atrybutu 4 (ślad węglowy) — bo CFP zależy od zużycia energii na sztukę w produkcji. Łącząc OEE z EMS (Energy Management System) i ISO 50001, można policzyć kWh elektryczności na pakiet, a dalej kg CO₂-eq (mnożąc przez współczynnik emisji sieci).
 
 **Kontrola jakości / SPC.** Atrybuty 11–13 (SoH, SoC, pojemność) wynikają z testów end-of-line, które MES standardowo loguje. Tu typowo dane już są — tylko siedzą w zamkniętym systemie quality i nie są wiązane z numerem seryjnym pakietu w sposób publicznie dostępny.
 
-**Traceability surowców (jeśli macie SCM-MES integration).** Atrybut 3 (skład materiałowy, recyklat %) wymaga ścieżki w dół do dostawcy materiałów aktywnych — kobalt z konkretnej kopalni, lit z konkretnego brine pool. Większość polskich MES tego nie robi, ale jeśli macie integrację z dostawcami w ERP, to architektonicznie da się to spiąć.
+**Traceability surowców (jeśli macie integrację SCM-MES).** Atrybut 3 (skład materiałowy, recyklat %) wymaga ścieżki w dół do dostawcy materiałów aktywnych — kobalt z konkretnej kopalni, lit z konkretnego brine pool. Większość polskich MES tego nie robi, ale jeśli macie integrację z dostawcami w ERP, to architektonicznie da się to spiąć.
 
-**CMMS dla repair history.** Atrybut 15 (historia napraw) — to klasyczna funkcja CMMS. Wyzwanie tylko techniczne: musi być dostępna pod konkretnym numerem seryjnym przez REST API, nie jako PDF w SharePoint.
+**CMMS dla historii napraw.** Atrybut 15 (historia napraw) — to klasyczna funkcja CMMS. Wyzwanie tylko techniczne: musi być dostępna pod konkretnym numerem seryjnym przez REST API, nie jako PDF w SharePoint.
 
 ## Czego MES standardowo NIE umie
 
 Kilka rzeczy wymagających dorobienia praktycznie w każdej fabryce, którą widziałem:
 
-**1. Carbon footprint per sztuka, weryfikowany przez stronę trzecią.** Annex XIII wymaga CFP z metodologii zatwierdzonej przez Komisję ([Recommendation 2021/2279](https://eur-lex.europa.eu/eli/reco/2021/2279/oj) — Product Environmental Footprint method). Większość MES nie liczy CO₂ na sztukę, bo nie ma związanego LCA. Co najmniej trzeba wdrożyć moduł integrujący zużycie energii (z EMS) + emission factors z sieci + alokację per produkt. Niemiecki Volkswagen używa do tego SAP S/4HANA Sustainability Footprint Management — w open-source ekwiwalenty to np. [openLCA](https://www.openlca.org/) + custom integracja.
+**1. Ślad węglowy na sztukę, weryfikowany przez stronę trzecią.** Annex XIII wymaga CFP z metodologii zatwierdzonej przez Komisję ([Recommendation 2021/2279](https://eur-lex.europa.eu/eli/reco/2021/2279/oj) — Product Environmental Footprint method). Większość MES nie liczy CO₂ na sztukę, bo nie ma związanego LCA. Co najmniej trzeba wdrożyć moduł integrujący zużycie energii (z EMS) + współczynniki emisji z sieci + alokację na produkt. Niemiecki Volkswagen używa do tego SAP S/4HANA Sustainability Footprint Management — w wersji open-source odpowiednikiem jest np. [openLCA](https://www.openlca.org/) + własna integracja.
 
 **2. Sub-tier supply chain tracking.** Atrybut 3 (recyklat %, pochodzenie surowca) wymaga schodzenia o 2–3 poziomy w dół łańcucha. Większość ERP zatrzymuje się na bezpośrednim dostawcy. Battery Passport Initiative pracuje nad standardem ([Battery Pass project, lipiec 2025](https://thebatterypass.eu/)) — w praktyce trzeba aneksować umowy z dostawcami, żeby przekazywali składowe DPP.
 
-**3. Publiczna ekspozycja danych.** Atrybut publiczny dostępny przez URL+QR — to inna kategoria niż wewnętrzne dashboardy MES. Wymaga publicznego endpointu (HTTPS, podpisanego, z weryfikacją), z odpowiednim authorization model: trzy poziomy dostępu wg Battery Regulation Art. 78 (publiczny, ograniczony dla repair operators, pełny dla regulatorów).
+**3. Publiczna ekspozycja danych.** Atrybut publiczny dostępny przez URL+QR — to inna kategoria niż wewnętrzne dashboardy MES. Wymaga publicznego endpointu (HTTPS, podpisanego, z weryfikacją), z odpowiednim modelem autoryzacji: trzy poziomy dostępu wg Battery Regulation Art. 78 (publiczny, ograniczony dla operatorów napraw, pełny dla regulatorów).
 
-**4. Aktualizacje w cyklu życia.** Atrybuty 11–17 (SoH, repair, recycling) muszą być aktualizowalne PO opuszczeniu fabryki — przez serwis, repair operator, recykler. To wymaga API, którym mogą pisać podmioty trzecie z odpowiednią autoryzacją. Architektonicznie to webhook + event-sourced storage.
+**4. Aktualizacje w cyklu życia.** Atrybuty 11–17 (SoH, repair, recycling) muszą być aktualizowalne PO opuszczeniu fabryki — przez serwis, operatora napraw, recyklera. To wymaga API, którym mogą pisać podmioty trzecie z odpowiednią autoryzacją. Architektonicznie to webhook + event-sourced storage.
 
 **5. Format wymiany.** Dane muszą być w standardzie interoperacyjnym. Komisja Europejska wskazuje na **GS1 Digital Link** ([standardizacja GS1, 2025](https://www.gs1.org/standards/gs1-digital-link)) jako preferowany sposób linkowania QR → struktura JSON, i **W3C Verifiable Credentials** dla danych podpisanych kryptograficznie.
 
@@ -91,18 +91,18 @@ Stos, który spełnia minimum Battery Regulation 2027 w dojrzałym MES, wygląda
 
 **Warstwa danych (źródło):** istniejący MES + ERP + EMS + CMMS, z wyciągami przez wewnętrzny event bus (Kafka, MQTT). Wszystkie atrybuty 1–17 muszą tu istnieć — to fundament, którego nie da się ominąć.
 
-**Warstwa agregacji (DPP store):** osobna baza zorientowana na produkt (nie batch). Każdy numer seryjny pakietu baterii = jeden dokument JSON-LD. Sub-second aktualizacje z MES events. PostgreSQL z JSONB + GIN index na seryjnym lub nowy dokumentowy store (MongoDB, Elasticsearch).
+**Warstwa agregacji (DPP store):** osobna baza zorientowana na produkt (nie na partię). Każdy numer seryjny pakietu baterii = jeden dokument JSON-LD. Sub-sekundowe aktualizacje ze zdarzeń MES. PostgreSQL z JSONB + GIN index na seryjnym lub nowy dokumentowy store (MongoDB, Elasticsearch).
 
-**Warstwa standardu (GS1 Digital Link):** URL pattern: `https://dpp.firma.com/01/<GTIN>/21/<SerialNumber>`. Server odpowiada zgodnie z [GS1 Digital Link 1.4.0](https://ref.gs1.org/standards/digital-link/) JSON Schemą.
+**Warstwa standardu (GS1 Digital Link):** wzorzec URL: `https://dpp.firma.com/01/<GTIN>/21/<SerialNumber>`. Serwer odpowiada zgodnie z [GS1 Digital Link 1.4.0](https://ref.gs1.org/standards/digital-link/) JSON Schemą.
 
 **Warstwa autoryzacji:** trzy poziomy zgodne z Art. 78 Battery Regulation:
 - **Publiczny** — chemia, producent, CFP, recyklat % (wymagane przez konsumenta)
-- **Restricted** — repair operators (po podpisaniu NDA z producentem) — pełna historia napraw, schemat ogniw
-- **Regulatory** — pełen dostęp dla organów nadzoru rynku, w tym dane konkurencyjne
+- **Ograniczony** — operatorzy napraw (po podpisaniu NDA z producentem) — pełna historia napraw, schemat ogniw
+- **Regulacyjny** — pełen dostęp dla organów nadzoru rynku, w tym dane konkurencyjne
 
-**Warstwa zaufania (opcjonalna, anchoring):** dla najwyższych wymagań compliance — podpisanie kryptograficzne danych (W3C Verifiable Credentials) + opcjonalnie anchoring hash na blockchain publicznym (Ethereum, Polkadot) dla niezaprzeczalności. Battery Pass Project rekomenduje to dla CFP i recyklat %, gdzie dane mogą być audytowane retroaktywnie. Cross-link do naszego art. [blockchain w przemyśle 4.0](/blog/blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3) — to dokładnie ten use case, który tam opisywałem jako jeden z dwóch racjonalnych dla web3 w przemyśle.
+**Warstwa zaufania (opcjonalna, anchoring):** dla najwyższych wymagań zgodności — podpisanie kryptograficzne danych (W3C Verifiable Credentials) + opcjonalnie anchoring hash na blockchain publicznym (Ethereum, Polkadot) dla niezaprzeczalności. Battery Pass Project rekomenduje to dla CFP i recyklat %, gdzie dane mogą być audytowane retroaktywnie. Odsyłacz do naszego art. [blockchain w przemyśle 4.0](/blog/blockchain-w-przemysle-4-0-dlaczego-energetyka-i-zgodnosc-z-przepisami-to-jedyne-racjonalne-przypadki-uzycia-web3) — to dokładnie ten przypadek użycia, który tam opisywałem jako jeden z dwóch racjonalnych dla web3 w przemyśle.
 
-**Warstwa publikacji (QR + URL):** QR code generowany podczas etykietowania, drukowany na obudowie pakietu lub trwałej naklejce ([Battery Regulation Art. 13 ust. 6](https://eur-lex.europa.eu/eli/reg/2023/1542/oj) wymaga trwałości przez cały cykl życia).
+**Warstwa publikacji (QR + URL):** kod QR generowany podczas etykietowania, drukowany na obudowie pakietu lub trwałej naklejce ([Battery Regulation Art. 13 ust. 6](https://eur-lex.europa.eu/eli/reg/2023/1542/oj) wymaga trwałości przez cały cykl życia).
 
 ## Sankcje — co konkretnie ryzykujemy
 
@@ -114,27 +114,27 @@ Battery Regulation ([Art. 93](https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng
 
 ESPR ([Art. 74](https://eur-lex.europa.eu/eli/reg/2024/1781/oj)) dodatkowo daje uprawnienia do **wycofania produktu z rynku** w razie wykrycia braku DPP po wprowadzeniu — analogicznie do MDR dla wyrobów medycznych. Strata reputacyjna i logistyczna z tego tytułu bywa większa niż sama kara.
 
-## Roadmapa 9 miesięcy do lutego 2027
+## Plan działania na 9 miesięcy do lutego 2027
 
 Dla zespołów, które dziś nie mają DPP w planie:
 
-**Miesiące 1–2 (maj–czerwiec 2026): assessment i klasyfikacja.** Czy produkujemy baterie objęte regulacją (>2 kWh przemysłowe, EV, LMT)? Jeśli tak — pełne 17 atrybutów. Inwentaryzacja źródeł danych w MES/ERP/EMS/CMMS. Identyfikacja luk (typowo: CFP, sub-tier supply chain, repair API).
+**Miesiące 1–2 (maj–czerwiec 2026): ocena stanu i klasyfikacja.** Czy produkujemy baterie objęte regulacją (>2 kWh przemysłowe, EV, LMT)? Jeśli tak — pełne 17 atrybutów. Inwentaryzacja źródeł danych w MES/ERP/EMS/CMMS. Identyfikacja luk (typowo: CFP, sub-tier supply chain, repair API).
 
-**Miesiące 3–4 (lipiec–sierpień 2026): pilot na jednym produkcie.** Wybierz jeden model baterii — najlepiej już produkowany w niskim wolumenie. Postaw DPP store + GS1 Digital Link endpoint + QR generator. Etap CO₂ — przyjmij wstępnie emission factor z mixu krajowego (KOBiZE dla PL, IFEU dla EU), zostaw room na uściślenie.
+**Miesiące 3–4 (lipiec–sierpień 2026): pilot na jednym produkcie.** Wybierz jeden model baterii — najlepiej już produkowany w niskim wolumenie. Postaw DPP store + GS1 Digital Link endpoint + QR generator. Etap CO₂ — przyjmij wstępnie współczynnik emisji z miksu krajowego (KOBiZE dla PL, IFEU dla EU), zostaw miejsce na uściślenie.
 
-**Miesiące 5–6 (wrzesień–październik 2026): supply chain.** Aneksuj umowy z dostawcami katod, anod, elektrolitu, separatorów — wymóg przekazywania danych do DPP. Battery Pass Initiative ma gotowe template'y kontraktowe. Tutaj typowo największe opóźnienia — niektórzy dostawcy nie są gotowi.
+**Miesiące 5–6 (wrzesień–październik 2026): łańcuch dostaw.** Aneksuj umowy z dostawcami katod, anod, elektrolitu, separatorów — wymóg przekazywania danych do DPP. Battery Pass Initiative ma gotowe szablony kontraktowe. Tutaj typowo największe opóźnienia — niektórzy dostawcy nie są gotowi.
 
-**Miesiące 7–8 (listopad–grudzień 2026): walidacja i rozszerzenie.** Pełne pokrycie portfolio. Walidacja przez third-party verifier (TÜV, DEKRA, SGS) — wymagane dla CFP. Test stress endpointu publicznego.
+**Miesiące 7–8 (listopad–grudzień 2026): walidacja i rozszerzenie.** Pełne pokrycie portfolio. Walidacja przez zewnętrznego weryfikatora (TÜV, DEKRA, SGS) — wymagane dla CFP. Test obciążeniowy publicznego endpointu.
 
-**Miesiąc 9 (styczeń 2027): rollout do produkcji.** Wszystkie nowe pakiety wychodzą z fabryki z QR. Plan obsługi pierwszych zapytań od kupujących i regulatorów.
+**Miesiąc 9 (styczeń 2027): wdrożenie do produkcji.** Wszystkie nowe pakiety wychodzą z fabryki z QR. Plan obsługi pierwszych zapytań od kupujących i regulatorów.
 
-Koszt realistyczny: dla średniej fabryki baterii (1 linia, ~50 MWh/rok wolumen) — **EUR 150–400 tys.** na pełne wdrożenie, plus running cost ~EUR 30–60 tys./rok na utrzymanie i audyty.
+Koszt realistyczny: dla średniej fabryki baterii (1 linia, ~50 MWh/rok wolumen) — **EUR 150–400 tys.** na pełne wdrożenie, plus koszty utrzymania ~EUR 30–60 tys./rok na utrzymanie i audyty.
 
 ## Wnioski dla dyrektora produkcji
 
 Trzy konkrety:
 
-**Po pierwsze**, deadline 18.02.2027 jest twardy i niemożliwy do przesunięcia bez nowego rozporządzenia. To 9 miesięcy roboczych. Jeżeli nie macie zespołu projektowego dla DPP — uruchomcie go w maju.
+**Po pierwsze**, termin 18.02.2027 jest twardy i niemożliwy do przesunięcia bez nowego rozporządzenia. To 9 miesięcy roboczych. Jeżeli nie macie zespołu projektowego dla DPP — uruchomcie go w maju.
 
 **Po drugie**, MES jest źródłem 60–70% danych do DPP (genealogia, OEE/CFP, quality data, repair). Pozostałe 30% to ERP (supply chain) i nowy moduł DPP store + publikacja. **Nie chodzi o wymianę MES, tylko o ekspozycję danych, które już są.**
 
