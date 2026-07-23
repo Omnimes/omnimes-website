@@ -59,6 +59,7 @@ async function getData(locale: string, page: string) {
       "description",
       "author",
       "tags",
+      "coverFit",
     ])
     .sort({ publishedAt: -1 })
     .skip((Number(page) - 1) * 21)

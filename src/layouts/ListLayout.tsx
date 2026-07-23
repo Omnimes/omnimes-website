@@ -124,7 +124,7 @@ export default function ListLayout({
                         src={coverImage}
                         alt={`Okładka: ${title}`}
                         loading="lazy"
-                        style={{ objectFit: imageFit }}
+                        style={{ objectFit: post.coverFit ?? imageFit }}
                       />
                       <div className="ol-card-date">
                         <LuCalendar aria-hidden />

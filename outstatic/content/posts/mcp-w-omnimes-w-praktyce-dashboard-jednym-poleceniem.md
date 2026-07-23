@@ -5,14 +5,17 @@ author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'mcp-w-omnimes-w-praktyce-dashboard-jednym-poleceniem'
-description: 'OmniMES udostępnia endpoint MCP (Model Context Protocol) — most, przez który dowolny asystent AI rozmawia bezpośrednio z Twoim systemem produkcji. Pokazujemy krok po kroku, jak od pustego systemu dojść do gotowego dashboardu na przykładzie zakładu mebli WOODCRAFT — bez interfejsu i bez jednej linijki SQL.'
+description: 'OmniMES udostępnia endpoint MCP (Model Context Protocol) — most, przez który dowolny asystent AI rozmawia bezpośrednio z Twoim systemem produkcji. Pokazujemy krok po kroku, jak od pustego systemu dojść do gotowego dashboardu na fikcyjnym przykładzie zakładu mebli WOODCRAFT — bez interfejsu i bez jednej linijki SQL.'
 coverImage: '/images/omnimes-mcp-banner.png'
+coverFit: 'contain'
 lang: 'pl'
 tags: [{"value":"mcp","label":"MCP"},{"value":"agentAi","label":"AGENT AI"},{"value":"ai","label":"AI"},{"value":"omnimes","label":"Omnimes"},{"value":"redash","label":"Redash"}]
 publishedAt: '2026-07-20T10:00:00.000Z'
 ---
 
 OmniMES udostępnia teraz standardowy endpoint **MCP (Model Context Protocol)** — most, przez który dowolny asystent AI (Claude Desktop, ChatGPT, Cursor, Copilot) rozmawia bezpośrednio z Twoim systemem produkcji. Zamiast klikać po interfejsie albo pisać SQL, opisujesz w języku naturalnym, co chcesz osiągnąć, a asystent wykonuje to w OmniMES: buduje strukturę fabryki, konfiguruje sygnały, tworzy raporty i dashboardy, odczytuje bieżący stan produkcji. Poniżej pokazujemy, jak wygląda to w praktyce — na przykładzie zakładu mebli drewnianych WOODCRAFT, od zera do gotowego pulpitu.
+
+> **Zastrzeżenie:** Nazwa „WOODCRAFT" oraz opisany w artykule i wideo zakład są **fikcyjne** — użyte wyłącznie do demonstracji działania protokołu MCP w systemie OmniMES. Żadne wdrożenie w firmie o tej nazwie nie miało miejsca. Ewentualne podobieństwo do istniejących podmiotów jest przypadkowe.
 
 <video controls width="100%" preload="metadata" poster="/images/omnimes-mcp-cover.png">
   <source src="/videos/omnimes-mcp.mp4" type="video/mp4" />
