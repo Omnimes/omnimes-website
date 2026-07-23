@@ -47,14 +47,14 @@
         "path": "outstatic/content/posts/mcp-w-omnimes-w-praktyce-dashboard-jednym-poleceniem.md"
       },
       "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/omnimes-mcp-cover.png",
+      "coverImage": "/images/omnimes-mcp-banner.png",
       "description": "OmniMES udostępnia endpoint MCP (Model Context Protocol) — most, przez który dowolny asystent AI rozmawia bezpośrednio z Twoim systemem produkcji. Pokazujemy krok po kroku, jak od pustego systemu dojść do gotowego dashboardu na przykładzie zakładu mebli WOODCRAFT — bez interfejsu i bez jednej linijki SQL.",
       "lang": "pl",
-      "publishedAt": "2026-07-23T10:00:00.000Z",
+      "publishedAt": "2026-07-20T10:00:00.000Z",
       "slug": "mcp-w-omnimes-w-praktyce-dashboard-jednym-poleceniem",
       "status": "published",
       "tags": [
@@ -73,14 +73,14 @@
         "path": "outstatic/content/posts/mcp-in-omnimes-in-practice-dashboard-in-one-prompt.md"
       },
       "author": {
-        "name": "OmniMES",
-        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-ExOT.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/omnimes-mcp-cover.png",
+      "coverImage": "/images/omnimes-mcp-banner.png",
       "description": "OmniMES exposes an MCP (Model Context Protocol) endpoint — a bridge through which any AI assistant talks directly to your production system. We walk through, step by step, how to go from an empty system to a finished dashboard using the WOODCRAFT furniture plant as an example — with no UI and not a single line of SQL.",
       "lang": "en",
-      "publishedAt": "2026-07-23T10:00:00.000Z",
+      "publishedAt": "2026-07-20T10:00:00.000Z",
       "slug": "mcp-in-omnimes-in-practice-dashboard-in-one-prompt",
       "status": "published",
       "tags": [

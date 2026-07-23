@@ -2,14 +2,14 @@
 title: 'MCP w OmniMES w praktyce — park maszynowy i dashboard produkcyjny jednym poleceniem'
 status: 'published'
 author:
-  name: 'OmniMES'
-  picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
+  name: 'Martin Szerment'
+  picture: '/images/1645307189660-I1OD.jpg'
 slug: 'mcp-w-omnimes-w-praktyce-dashboard-jednym-poleceniem'
 description: 'OmniMES udostępnia endpoint MCP (Model Context Protocol) — most, przez który dowolny asystent AI rozmawia bezpośrednio z Twoim systemem produkcji. Pokazujemy krok po kroku, jak od pustego systemu dojść do gotowego dashboardu na przykładzie zakładu mebli WOODCRAFT — bez interfejsu i bez jednej linijki SQL.'
-coverImage: '/images/omnimes-mcp-cover.png'
+coverImage: '/images/omnimes-mcp-banner.png'
 lang: 'pl'
 tags: [{"value":"mcp","label":"MCP"},{"value":"agentAi","label":"AGENT AI"},{"value":"ai","label":"AI"},{"value":"omnimes","label":"Omnimes"},{"value":"redash","label":"Redash"}]
-publishedAt: '2026-07-23T10:00:00.000Z'
+publishedAt: '2026-07-20T10:00:00.000Z'
 ---
 
 OmniMES udostępnia teraz standardowy endpoint **MCP (Model Context Protocol)** — most, przez który dowolny asystent AI (Claude Desktop, ChatGPT, Cursor, Copilot) rozmawia bezpośrednio z Twoim systemem produkcji. Zamiast klikać po interfejsie albo pisać SQL, opisujesz w języku naturalnym, co chcesz osiągnąć, a asystent wykonuje to w OmniMES: buduje strukturę fabryki, konfiguruje sygnały, tworzy raporty i dashboardy, odczytuje bieżący stan produkcji. Poniżej pokazujemy, jak wygląda to w praktyce — na przykładzie zakładu mebli drewnianych WOODCRAFT, od zera do gotowego pulpitu.
