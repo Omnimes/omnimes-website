@@ -18,6 +18,8 @@ As of version **4.3.0**, OmniMES ships with built-in support for **MCP (Model Co
   Your browser does not support HTML5 video playback.
 </video>
 
+> **Disclaimer:** The name „WOODCRAFT" and the plant shown in the video are **fictional** — used solely to demonstrate the MCP protocol in OmniMES. No deployment took place at any company by this name. Any resemblance to existing entities is coincidental.
+
 ## What you get
 
 - **Connected in a minute** — a ready-made Claude Desktop extension with the server address and token already filled in, or a manual paste into any MCP-capable assistant. No Python or Node install required.

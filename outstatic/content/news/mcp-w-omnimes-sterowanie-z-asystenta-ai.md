@@ -18,6 +18,8 @@ Od wersji **4.3.0** OmniMES ma wbudowaną obsługę **MCP (Model Context Protoco
   Twoja przeglądarka nie obsługuje odtwarzania wideo HTML5.
 </video>
 
+> **Zastrzeżenie:** Nazwa „WOODCRAFT" oraz zakład pokazany w wideo są **fikcyjne** — użyte wyłącznie do demonstracji działania protokołu MCP w OmniMES. Żadne wdrożenie w firmie o tej nazwie nie miało miejsca. Ewentualne podobieństwo do istniejących podmiotów jest przypadkowe.
+
 ## Co dostajesz
 
 - **Połączenie w minutę** — gotowe rozszerzenie do Claude Desktop z już wpisanym adresem serwera i tokenem, albo ręczne wklejenie danych w dowolnym asystencie wspierającym MCP. Bez instalacji Pythona ani Node.
