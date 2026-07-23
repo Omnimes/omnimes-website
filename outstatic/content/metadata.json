@@ -4,6 +4,96 @@
   "metadata": [
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/mcp-w-omnimes-sterowanie-z-asystenta-ai.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omnimes-mcp-cover.png",
+      "description": "Model Context Protocol jest już wdrożony w OmniMES (wersja 4.3.0). Podłącz Claude, ChatGPT, Cursor lub Copilot, wklej token i w języku naturalnym buduj dashboardy, konfiguruj maszyny i czytaj stan produkcji — bez klikania po interfejsie i bez SQL.",
+      "lang": "pl",
+      "publishedAt": "2026-07-23T09:00:00.000Z",
+      "slug": "mcp-w-omnimes-sterowanie-z-asystenta-ai",
+      "status": "published",
+      "title": "MCP już w OmniMES — steruj systemem produkcji z dowolnego asystenta AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/mcp-in-omnimes-control-from-any-ai-assistant.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omnimes-mcp-cover.png",
+      "description": "The Model Context Protocol is now live in OmniMES (version 4.3.0). Connect Claude, ChatGPT, Cursor or Copilot, paste a token, and use plain language to build dashboards, configure machines and read production state — with no UI clicking and no SQL.",
+      "lang": "en",
+      "publishedAt": "2026-07-23T09:00:00.000Z",
+      "slug": "mcp-in-omnimes-control-from-any-ai-assistant",
+      "status": "published",
+      "title": "MCP is now in OmniMES — control your production system from any AI assistant"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/mcp-w-omnimes-w-praktyce-dashboard-jednym-poleceniem.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/omnimes-mcp-cover.png",
+      "description": "OmniMES udostępnia endpoint MCP (Model Context Protocol) — most, przez który dowolny asystent AI rozmawia bezpośrednio z Twoim systemem produkcji. Pokazujemy krok po kroku, jak od pustego systemu dojść do gotowego dashboardu na przykładzie zakładu mebli WOODCRAFT — bez interfejsu i bez jednej linijki SQL.",
+      "lang": "pl",
+      "publishedAt": "2026-07-23T10:00:00.000Z",
+      "slug": "mcp-w-omnimes-w-praktyce-dashboard-jednym-poleceniem",
+      "status": "published",
+      "tags": [
+        { "label": "MCP", "value": "mcp" },
+        { "label": "AGENT AI", "value": "agentAi" },
+        { "label": "AI", "value": "ai" },
+        { "label": "Omnimes", "value": "omnimes" },
+        { "label": "Redash", "value": "redash" }
+      ],
+      "title": "MCP w OmniMES w praktyce — park maszynowy i dashboard produkcyjny jednym poleceniem"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/mcp-in-omnimes-in-practice-dashboard-in-one-prompt.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/omnimes-mcp-cover.png",
+      "description": "OmniMES exposes an MCP (Model Context Protocol) endpoint — a bridge through which any AI assistant talks directly to your production system. We walk through, step by step, how to go from an empty system to a finished dashboard using the WOODCRAFT furniture plant as an example — with no UI and not a single line of SQL.",
+      "lang": "en",
+      "publishedAt": "2026-07-23T10:00:00.000Z",
+      "slug": "mcp-in-omnimes-in-practice-dashboard-in-one-prompt",
+      "status": "published",
+      "tags": [
+        { "label": "MCP", "value": "mcp" },
+        { "label": "AGENT AI", "value": "agentAi" },
+        { "label": "AI", "value": "ai" },
+        { "label": "Omnimes", "value": "omnimes" },
+        { "label": "Redash", "value": "redash" }
+      ],
+      "title": "MCP in OmniMES in practice — a machine park and a production dashboard in one prompt"
+    },
+    {
+      "__outstatic": {
         "commit": "d225845a72198d2427fd73b8a15223994c3c853c",
         "hash": "3900969134",
         "path": "outstatic/content/courses/instalacja.md"

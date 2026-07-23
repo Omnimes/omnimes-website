@@ -21,22 +21,39 @@ export type UpcomingFeature = {
 export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
   pl: [
     {
-      scope: "MCP (Model Context Protocol) — OmniMES sterowany z dowolnego asystenta AI",
-      body: "Po instalacji OmniMES wystawi standardowy endpoint MCP na serwerze fabryki. W swoim asystencie AI — Claude Desktop, ChatGPT, Cursor, Copilot lub innym wspierającym MCP — doinstalowujesz wtyczkę „OmniMES” ze sklepu tego asystenta, wklejasz token dostępu do serwera i to wszystko. Z dowolnego komputera w sieci firmowej, w języku naturalnym, można wtedy: konfigurować alarmy i harmonogramy, definiować statusy maszyn, budować wykresy i dashboardy, odczytywać bieżący stan produkcji, generować raporty. Cała logika OmniMES trafia do asystenta przez protokół MCP, więc użytkownik nie musi znać interfejsu ani pisać zapytań SQL — mówi „pokaż OEE linii 3 za ostatni tydzień z podziałem na zmiany” i dostaje gotowy wykres na dashboardzie. Model dobierany świadomie: komercyjny (Claude, GPT, Gemini) — gdy zależy na jakości; darmowy przez OpenRouter (Llama, Qwen, DeepSeek) — gdy zależy na kosztach; lokalny (Ollama, LM Studio) — gdy dane muszą zostać w sieci fabrycznej.",
-      eta: "2026 Q3",
+      scope: "Konektor do systemów ERP",
+      body: "Dwukierunkowa integracja OmniMES z systemami ERP — zlecenia produkcyjne, indeksy wyrobów i meldunki zwrotne (wykonanie, braki, zużycie surowca) wymieniane automatycznie, bez ręcznego przepisywania danych między ERP a halą produkcyjną. Cel: jedno źródło prawdy o produkcji — plan z ERP trafia na maszyny, a realizacja z hali wraca do ERP w czasie zbliżonym do rzeczywistego.",
+    },
+    {
+      scope: "Uniwersalne wtyczki OmniMES — w tym sterowanie maszynami po MQTT",
+      body: "Otwarty mechanizm wtyczek pozwalający rozszerzać OmniMES o własne integracje i funkcje, wraz ze sterowaniem maszynami bezpośrednio po MQTT. Cel: dać mniejszym i średnim przedsiębiorstwom lekką i tanią drogę do dwukierunkowej komunikacji z parkiem maszynowym — nie tylko odczyt stanu, ale i wysyłanie poleceń — bez kosztownej warstwy pośredniej i bez wymiany istniejącej automatyki.",
     },
   ],
   en: [
     {
-      scope: "MCP (Model Context Protocol) — control OmniMES from any AI assistant",
-      body: "After installation, OmniMES exposes a standard MCP endpoint on the factory server. In your AI assistant — Claude Desktop, ChatGPT, Cursor, Copilot or any other MCP-capable app — you install the „OmniMES” plugin from that assistant's marketplace, paste an access token to your server, and that's it. From any computer on the company network, in natural language, you can then: configure alarms and schedules, define machine statuses, build charts and dashboards, read live production state, generate reports. All OmniMES logic flows into the assistant through the MCP protocol, so users don't need to memorize the UI or write SQL — they say „show OEE for line 3 over the last week split by shift” and get a ready chart on the dashboard. Choose the model deliberately: commercial (Claude, GPT, Gemini) — when quality matters; free via OpenRouter (Llama, Qwen, DeepSeek) — when cost matters; local (Ollama, LM Studio) — when data must stay inside the factory network.",
-      eta: "2026 Q3",
+      scope: "ERP systems connector",
+      body: "Two-way integration between OmniMES and ERP systems — production orders, product indexes and feedback reports (output, scrap, material consumption) exchanged automatically, without rekeying data by hand between the ERP and the shop floor. The goal: a single source of truth about production — the plan flows from the ERP to the machines, and execution flows from the floor back to the ERP in near real time.",
+    },
+    {
+      scope: "Universal OmniMES plugins — including machine control over MQTT",
+      body: "An open plugin mechanism to extend OmniMES with custom integrations and features, including controlling machines directly over MQTT. The goal: give small and medium enterprises a lightweight, low-cost path to two-way communication with their machine park — not just reading state, but sending commands — without an expensive middleware layer and without replacing existing automation.",
     },
   ],
 }
 
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
+    {
+      version: "4.3.0",
+      date: "2026-07-23",
+      entries: [
+        {
+          category: "added",
+          scope: "MCP (Model Context Protocol) — OmniMES sterowany z dowolnego asystenta AI",
+          body: "Dostępne po instalacji: OmniMES wystawia standardowy endpoint MCP na serwerze fabryki. W dowolnym asystencie AI wspierającym MCP (Claude Desktop, ChatGPT, Cursor, Copilot) instalujesz wtyczkę „OmniMES”, wklejasz token dostępu do serwera i gotowe. Z dowolnego komputera w sieci firmowej, w języku naturalnym, budujesz kompletne dashboardy i raporty, konfigurujesz strukturę parku, statusy maszyn, alarmy i harmonogramy, odczytujesz bieżący stan produkcji oraz źródła i punkty pomiarowe OmniEnergy — bez znajomości interfejsu i bez pisania SQL. Przykład z praktyki: jednym poleceniem „zbuduj dashboard z dostępnością, awaryjnością i kosztem energii na sztukę dla parku maszynowego” asystent tworzy kilkanaście zapytań SQL, wizualizacji i gotowy pulpit w Redashu. Model dobierasz świadomie: komercyjny (Claude, GPT, Gemini) — gdy zależy na jakości; darmowy przez OpenRouter (Llama, Qwen, DeepSeek) — gdy zależy na kosztach; lokalny (Ollama, LM Studio) — gdy dane muszą zostać w sieci fabrycznej.",
+        },
+      ],
+    },
     {
       version: "4.2.1",
       date: "2026-07-10",
@@ -103,6 +120,17 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.3.0",
+      date: "2026-07-23",
+      entries: [
+        {
+          category: "added",
+          scope: "MCP (Model Context Protocol) — control OmniMES from any AI assistant",
+          body: "Available right after installation: OmniMES exposes a standard MCP endpoint on the factory server. In any MCP-capable AI assistant (Claude Desktop, ChatGPT, Cursor, Copilot) you install the „OmniMES” plugin, paste an access token to your server, and you're done. From any computer on the company network, in natural language, you build complete dashboards and reports, configure the plant structure, machine statuses, alarms and schedules, and read the live production state as well as OmniEnergy measurement sources and points — without knowing the UI and without writing SQL. A real-world example: a single instruction „build a dashboard with availability, failure rate and energy cost per unit for the machine park” has the assistant create a dozen SQL queries, visualizations and a finished Redash dashboard. Choose the model deliberately: commercial (Claude, GPT, Gemini) — when quality matters; free via OpenRouter (Llama, Qwen, DeepSeek) — when cost matters; local (Ollama, LM Studio) — when data must stay inside the factory network.",
+        },
+      ],
+    },
     {
       version: "4.2.1",
       date: "2026-07-10",
