@@ -23,7 +23,7 @@ Od wersji **4.3.0** OmniMES ma wbudowaną obsługę **MCP (Model Context Protoco
 ## Co dostajesz
 
 - **Połączenie w minutę** — gotowe rozszerzenie do Claude Desktop z już wpisanym adresem serwera i tokenem, albo ręczne wklejenie danych w dowolnym asystencie wspierającym MCP. Bez instalacji Pythona ani Node.
-- **Sterowanie rozmową** — „zbuduj dashboard z dostępnością maszyn i kosztem energii na sztukę dla parku WOODCRAFT" i po chwili masz gotowy pulpit w Redashu złożony z kilkunastu wykresów.
+- **Sterowanie rozmową** — „zbuduj dashboard z dostępnością maszyn i kosztem energii na sztukę dla wybranego parku maszynowego" i po chwili masz gotowy pulpit w Redashu złożony z kilkunastu wykresów.
 - **Konfiguracja bez interfejsu** — struktura fabryki (parki, linie, maszyny), statusy maszyn, alarmy, harmonogramy oraz źródła i punkty pomiarowe OmniEnergy.
 - **Dane pod kontrolą** — model dobierasz świadomie: komercyjny (Claude, GPT, Gemini) dla jakości, darmowy przez OpenRouter (Llama, Qwen, DeepSeek) dla kosztów, albo lokalny (Ollama, LM Studio), gdy dane muszą zostać w sieci fabryki. Surowa telemetria maszyn pozostaje **tylko do odczytu**.
 

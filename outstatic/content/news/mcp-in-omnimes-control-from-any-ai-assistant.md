@@ -23,7 +23,7 @@ As of version **4.3.0**, OmniMES ships with built-in support for **MCP (Model Co
 ## What you get
 
 - **Connected in a minute** — a ready-made Claude Desktop extension with the server address and token already filled in, or a manual paste into any MCP-capable assistant. No Python or Node install required.
-- **Control by conversation** — "build a dashboard with machine availability and energy cost per unit for the WOODCRAFT plant" and moments later you have a finished Redash dashboard made of a dozen charts.
+- **Control by conversation** — "build a dashboard with machine availability and energy cost per unit for the selected machine park" and moments later you have a finished Redash dashboard made of a dozen charts.
 - **Configuration without the UI** — plant structure (parks, lines, machines), machine statuses, alarms, schedules, and OmniEnergy measurement sources and points.
 - **Your data, your rules** — choose the model deliberately: commercial (Claude, GPT, Gemini) for quality, free via OpenRouter (Llama, Qwen, DeepSeek) for cost, or local (Ollama, LM Studio) when data must stay inside the factory network. Raw machine telemetry stays **read-only**.
 
