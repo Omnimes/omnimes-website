@@ -191,7 +191,7 @@ export default async function ChangelogPage({ params }: { params: Promise<{ loca
                     <div className="mb-3 flex items-start gap-2">
                       <LuFlaskConical
                         aria-hidden
-                        className="mt-0.5 size-4 flex-shrink-0 text-violet-600 dark:text-violet-400"
+                        className="mt-0.5 size-4 shrink-0 text-violet-600 dark:text-violet-400"
                       />
                       <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
                         {item.scope}

@@ -44,6 +44,87 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.4.0",
+      date: "2026-07-29",
+      entries: [
+        {
+          category: "added",
+          scope: "Monitoring — własna kolejność kafelków",
+          body: "Kafelki maszyn można ułożyć w dowolnej kolejności w obrębie linii, zamiast wyłącznie alfabetycznie. Ustawienie jest wspólne dla wszystkich użytkowników i zapamiętywane, a wybór sposobu sortowania (A–Z, Z–A, własna) zostaje przy kolejnym wejściu na ekran.",
+        },
+        {
+          category: "added",
+          scope: "Monitoring — własna nazwa podstatusu dla pojedynczej maszyny",
+          body: "Nazwę wyświetlaną pod kafelkiem można nadpisać dla jednej maszyny bez zmieniania profilu wspólnego dla wszystkich. Wcześniej jedyną drogą było duplikowanie całego profilu.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — ręczne wartości WEE za konkretny okres",
+          body: "Jeśli licznik lub mianownik wskaźnika nie pochodzi z pomiaru (np. liczba wyprodukowanych sztuk z raportu zmianowego), można podać wartość dla danej migawki, a nie jedną stałą dla wszystkich okresów. Do tej pory ta sama liczba trafiała do każdego okresu, przez co trend potrafił pokazywać odwrotny kierunek niż rzeczywisty.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — automatyzacja czekająca na dane",
+          body: "Harmonogram może utworzyć migawkę i oznaczyć ją jako oczekującą na wartość, zamiast podstawiać stałą z konfiguracji. Lista migawek pokazuje, ile okresów czeka na uzupełnienie, a wartość można wpisać wprost z listy.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — porównywarka okien czasowych ZWE",
+          body: "Zestawienie zużycia per maszyna dla wielu wybranych okresów naraz, ze zmianą względem poprzedniego okresu i podsumowaniem od pierwszego do ostatniego. Porównanie okresów o wyraźnie różnej długości jest blokowane, bo dawałoby mylące wyniki.",
+        },
+        {
+          category: "added",
+          scope: "Konfigurator statusów — filtr tematu przy wykrywaniu sygnałów",
+          body: "Przy automatycznym wykrywaniu sygnałów można zawęzić nasłuch do wybranego tematu MQTT, zamiast przeglądać wszystko, co nadaje broker.",
+        },
+        {
+          category: "changed",
+          scope: "Konfigurator statusów — jednolity zapis przyciskiem",
+          body: "Profile statusów i lista statusów zapisują się dopiero po kliknięciu „Zapisz”, a nie po każdym opuszczeniu pola. Zmienione wiersze są oznaczane, a zamknięcie okna z niezapisanymi zmianami wymaga potwierdzenia.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy — czytelniejsza konfiguracja EnLB",
+          body: "Wartość bazowa i wskaźnik dla maszyn są rozdzielone ramkami; pola wartości ręcznych opisane są jednostką z definicji wskaźnika zamiast określeniami „licznik” i „mianownik”.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy — ślad audytowy wartości ręcznych",
+          body: "Przy każdej wartości podanej ręcznie zapisywane jest, kto i kiedy ją wprowadził. Wartości ręcznych nie da się odtworzyć z pomiarów, więc przy przeglądzie ISO 50001 muszą być identyfikowalne.",
+        },
+        {
+          category: "fixed",
+          scope: "Monitoring — brakujące maszyny na liście",
+          body: "Ekran pokazywał maksymalnie 30 maszyn na linię; przy większej liczbie część kafelków była niewidoczna bez żadnego ostrzeżenia. Teraz zawsze wyświetlane są wszystkie maszyny z linii.",
+        },
+        {
+          category: "fixed",
+          scope: "Konfigurator statusów — limit wykrywanych sygnałów",
+          body: "Ustawiony limit był ignorowany i wykrywanie potrafiło zebrać wielokrotnie więcej sygnałów, niż wskazano. Poprawiono też filtry, w których pusta reguła przepuszczała lub blokowała wszystko.",
+        },
+        {
+          category: "fixed",
+          scope: "Profile statusów — wartości ułamkowe prędkościomierza",
+          body: "Maksymalna wartość zakresu była po cichu zaokrąglana do liczby całkowitej. Kolumna w bazie została doprowadzona do zgodności z modelem, wraz z brakującymi kolumnami raportów.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy — zafałszowane wykresy i wskaźniki",
+          body: "Migawki bez kompletu danych trafiały na wykres jako zero, tworząc pozorny spadek; mianownik równy zero dawał wskaźnik równy surowej energii bez żadnego ostrzeżenia. Migawki niekompletne są teraz pomijane na wykresie i blokowane w audytach oraz raportach.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy — wybór godziny w harmonogramie",
+          body: "Pole „Następne wykonanie” korzystało z kontrolki przeglądarki, w której w Firefoksie nie dało się wybrać godziny. Wszystkie pola dat w harmonogramie używają teraz tego samego komponentu co reszta systemu.",
+        },
+        {
+          category: "fixed",
+          scope: "Konfiguracja — jednostka parametru",
+          body: "Po wyborze parametru jednostka uzupełnia się automatycznie, z możliwością ręcznej zmiany.",
+        },
+      ],
+    },
+    {
       version: "4.3.0",
       date: "2026-07-23",
       entries: [
@@ -120,6 +201,87 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.4.0",
+      date: "2026-07-29",
+      entries: [
+        {
+          category: "added",
+          scope: "Monitoring — custom tile order",
+          body: "Machine tiles can be arranged in any order within a line instead of alphabetically only. The setting is shared by all users and persisted, and the chosen sort mode (A–Z, Z–A, custom) is remembered between visits.",
+        },
+        {
+          category: "added",
+          scope: "Monitoring — per-machine sub-status name",
+          body: "The name shown under a tile can be overridden for a single machine without changing the profile shared by all of them. Previously the only way was to duplicate the whole profile.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — manual EnPI values for a specific period",
+          body: "When the numerator or denominator does not come from a measurement (for example the number of units produced, taken from a shift report), the value can be entered for a given snapshot instead of a single constant used for every period. Until now the same figure was applied to every period, which could make the trend point in the opposite direction to reality.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — automation that waits for data",
+          body: "A schedule can create a snapshot and mark it as awaiting a value instead of substituting the constant from the configuration. The snapshot list shows how many periods await completion, and the value can be entered directly from the list.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — SEU time window comparison",
+          body: "Per-machine consumption compared across several selected periods at once, with the change versus the previous period and a summary from the first to the last one. Comparing periods of clearly different length is blocked because the result would be misleading.",
+        },
+        {
+          category: "added",
+          scope: "Status configurator — topic filter during signal discovery",
+          body: "Automatic signal discovery can be narrowed to a selected MQTT topic instead of scanning everything the broker publishes.",
+        },
+        {
+          category: "changed",
+          scope: "Status configurator — consistent save button",
+          body: "Status profiles and the status list are now saved only after clicking “Save”, not on every field exit. Changed rows are highlighted and closing the dialog with unsaved changes requires confirmation.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy — clearer EnB configuration",
+          body: "The baseline value and the per-machine indicator are separated into framed sections; manual value fields are labelled with the unit from the indicator definition instead of “numerator” and “denominator”.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy — audit trail for manual values",
+          body: "Every manually entered value records who entered it and when. Manual values cannot be reconstructed from measurements, so they must be traceable during an ISO 50001 review.",
+        },
+        {
+          category: "fixed",
+          scope: "Monitoring — missing machines in the list",
+          body: "The screen displayed at most 30 machines per line; with more than that some tiles were invisible without any warning. All machines of a line are now always shown.",
+        },
+        {
+          category: "fixed",
+          scope: "Status configurator — signal discovery limit",
+          body: "The configured limit was ignored and discovery could collect many times more signals than requested. Filters were also fixed, where an empty rule let everything through or blocked everything.",
+        },
+        {
+          category: "fixed",
+          scope: "Status profiles — fractional speedometer values",
+          body: "The maximum range value was silently rounded to an integer. The database column was brought in line with the model, together with missing report columns.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy — distorted charts and indicators",
+          body: "Snapshots without complete data were plotted as zero, creating an apparent drop; a denominator of zero produced an indicator equal to the raw energy with no warning. Incomplete snapshots are now skipped on the chart and blocked in audits and reports.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy — time selection in the schedule",
+          body: "The “Next run” field used a browser control in which Firefox offered no way to pick the time. All date fields in the schedule now use the same component as the rest of the system.",
+        },
+        {
+          category: "fixed",
+          scope: "Configuration — parameter unit",
+          body: "After choosing a parameter the unit is filled in automatically, with manual override still possible.",
+        },
+      ],
+    },
     {
       version: "4.3.0",
       date: "2026-07-23",
