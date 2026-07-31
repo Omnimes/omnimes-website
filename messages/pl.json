@@ -462,6 +462,18 @@
           "Zestawienie według maszyn i linii produkcyjnych",
           "W pełni zautomatyzowane, bez ręcznej konfiguracji"
         ]
+      },
+      "timeComparison": {
+        "badge": "Nowość w wersji 4.4.0",
+        "name": "Porównywarka okien czasowych ZWE",
+        "description": "Zestawienie zużycia per maszyna dla wielu wybranych okresów naraz, ze zmianą względem poprzedniego okresu i podsumowaniem od pierwszego do ostatniego okresu. Porównanie okien o wyraźnie różnej długości jest blokowane, bo dawałoby mylące wyniki.",
+        "features": [
+          "Wiele okien czasowych obok siebie, per maszyna i per źródło",
+          "Zmiana (▲/▼) względem poprzedniego okna oraz suma grupy od pierwszego do ostatniego",
+          "Automatyczne przybliżenie do maszyn o największym zużyciu, reszta zostaje w tabeli",
+          "Ochrona przed błędnymi wnioskami: porównanie okien o wyraźnie różnej długości jest blokowane",
+          "Gotowe pod przegląd ISO 50001 — każda wartość identyfikowalna do źródłowego pomiaru"
+        ]
       }
     },
     "isoRequirements": {

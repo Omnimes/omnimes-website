@@ -459,6 +459,18 @@
           "Breakdown by machines and production lines",
           "Fully automated, no manual configuration"
         ]
+      },
+      "timeComparison": {
+        "badge": "New in v4.4.0",
+        "name": "SEU time window comparison",
+        "description": "Consumption breakdown per machine across many selected periods at once, with change relative to the previous period and a summary from the first to the last window. Comparing periods of very different length is blocked, because it would give misleading results.",
+        "features": [
+          "Multiple time windows compared side by side, per machine and per source",
+          "Delta (▲/▼) against the previous window plus a group total from first to last",
+          "Automatic zooming to the top-consuming machines, the rest kept in the table",
+          "Guardrails: comparing windows of very different length is blocked to avoid false conclusions",
+          "Ready for ISO 50001 review — every value traceable to source measurements"
+        ]
       }
     },
     "isoRequirements": {
