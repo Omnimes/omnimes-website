@@ -1389,6 +1389,154 @@
     },
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/ai-act-w-akcji-15-dni-po-2-sierpnia-2026-co-uodo-i-uokik-faktycznie-kontroluja-w-polskim-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-ai-act-day15/cover-ai-act-day15.png",
+      "description": "2 sierpnia 2026 uruchomił się reżim egzekucji przepisów AI Act dla systemów wysokiego ryzyka. Piętnaście dni później mamy pierwsze dane z rynku: które dokumenty organy nadzoru w Polsce faktycznie sprawdzają, jak wygląda pierwsza fala wezwań do wyjaśnień, gdzie polskie fabryki potykają się najczęściej. Artykuł zbiera fakty z pierwszych dwóch tygodni obowiązywania Annex III w polskim przemyśle produkcyjnym — bez marketingu, z konkretnymi przypadkami i realną listą punktów, które MES musi mieć uporządkowane w pierwszej kolejności.",
+      "lang": "pl",
+      "publishedAt": "2026-08-17T08:00:00.000Z",
+      "slug": "ai-act-w-akcji-15-dni-po-2-sierpnia-2026-co-uodo-i-uokik-faktycznie-kontroluja-w-polskim-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "AI Act",
+          "value": "aiAct"
+        }
+      ],
+      "title": "AI Act w akcji: 15 dni po 2 sierpnia 2026 — co UODO i UOKiK faktycznie kontrolują w polskim MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/ai-act-in-action-15-days-after-2-august-2026-what-eu-supervisors-actually-check-in-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-ai-act-day15/cover-ai-act-day15.png",
+      "description": "On 2 August 2026 the AI Act enforcement regime for high-risk systems went live. Fifteen days later we have the first market data: which documents supervisory authorities actually request, what the first wave of information requests looks like, where European factories are stumbling most often. This article gathers facts from the first two weeks of Annex III enforcement in EU manufacturing — no marketing, with concrete cases and a realistic list of items an MES must have in order first.",
+      "lang": "en",
+      "publishedAt": "2026-08-17T08:00:00.000Z",
+      "slug": "ai-act-in-action-15-days-after-2-august-2026-what-eu-supervisors-actually-check-in-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "AI Act",
+          "value": "aiAct"
+        }
+      ],
+      "title": "AI Act in action: 15 days after 2 August 2026 — what EU supervisors actually check in MES"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/blackhat-i-def-con-2026-trzy-nowe-wektory-ataku-na-mes-i-systemy-ot-co-polska-fabryka-musi-wdrozyc-w-30-dni.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-blackhat-2026/cover-blackhat-2026.png",
+      "description": "BlackHat USA 2026 (1–6 sierpnia) i DEF CON 33 (6–9 sierpnia) zamknęły najgorętsze dwa tygodnie roku dla ekspertów bezpieczeństwa przemysłowego. Trzy prezentacje realnie zmieniają mapę zagrożeń dla polskiego MES: zautomatyzowane włamanie do OPC UA przez zatrute certyfikaty, kradzież modelu AI z serwerów edge Jetson przez side-channel oraz atak łańcuchowy przez ekosystem otwartych bibliotek Python w środowisku SCADA. Artykuł rozbiera każdy z tych trzech wektorów bez marketingu, plus konkretną listę zmian które trzeba wdrożyć w ciągu 30 dni.",
+      "lang": "pl",
+      "publishedAt": "2026-08-24T08:00:00.000Z",
+      "slug": "blackhat-i-def-con-2026-trzy-nowe-wektory-ataku-na-mes-i-systemy-ot-co-polska-fabryka-musi-wdrozyc-w-30-dni",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "cyberbezpieczenstwo",
+          "value": "cyberbezpieczenstwo"
+        },
+        {
+          "label": "it-ot",
+          "value": "itOt"
+        },
+        {
+          "label": "NIS2",
+          "value": "nis2"
+        }
+      ],
+      "title": "BlackHat i DEF CON 2026: trzy nowe wektory ataku na MES i systemy OT — co polska fabryka musi wdrożyć w 30 dni"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/blackhat-and-def-con-2026-three-new-attack-vectors-on-mes-and-ot-systems-what-eu-factories-must-deploy-in-30-days.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-blackhat-2026/cover-blackhat-2026.png",
+      "description": "BlackHat USA 2026 (1–6 August) and DEF CON 33 (6–9 August) closed the hottest two weeks of the year for industrial security experts. Three presentations genuinely change the threat map for European MES: automated OPC UA break-in through poisoned certificates, AI model theft from edge Jetson servers via side-channel, and a supply-chain attack through the open-source Python ecosystem in SCADA environments. This article walks through each of the three vectors without marketing, plus a concrete list of changes to deploy within 30 days.",
+      "lang": "en",
+      "publishedAt": "2026-08-24T08:00:00.000Z",
+      "slug": "blackhat-and-def-con-2026-three-new-attack-vectors-on-mes-and-ot-systems-what-eu-factories-must-deploy-in-30-days",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "cyberbezpieczenstwo",
+          "value": "cyberbezpieczenstwo"
+        },
+        {
+          "label": "it-ot",
+          "value": "itOt"
+        },
+        {
+          "label": "NIS2",
+          "value": "nis2"
+        }
+      ],
+      "title": "BlackHat and DEF CON 2026: three new attack vectors on MES and OT systems — what EU factories must deploy in 30 days"
+    },
+    {
+      "__outstatic": {
         "commit": "3ba48845f069711debe25968bb2b38aa87e1df35",
         "hash": "3368572356",
         "path": "outstatic/content/posts/data-as-the-foundation-of-industry-4-0.md"

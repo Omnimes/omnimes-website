@@ -80,6 +80,23 @@ Po polsku LLM-y mają tendencję do produkowania manier, które w angielskim brz
 - **Meta-zakończenia**: „Reasumując…", „Podsumowując…", „Na zakończenie warto…" — sekcja wniosków sama mówi co to jest, nie potrzebuje nagłówka „podsumowanie"
 - **Powtarzanie tezy w każdym akapicie** — angielski to toleruje (TL;DR culture), polski nie — wystarczy raz w intro i raz we wnioskach
 - **Nieuzasadnione anglicyzmy**: „leveragować", „scalować rozwiązanie", „delivery'ować wartość", „onboarding'ować klienta" — używaj polskich odpowiedników gdy istnieją („wykorzystać", „skalować", „dostarczać wartość", „wdrażać klienta")
+- **Minimalizuj słownictwo angielskie w polskiej wersji** — im mniej wtrąceń angielskich, tym profesjonalniej brzmi tekst branżowy. Zamień gdziekolwiek jest polski odpowiednik:
+  - „workflow" → „przepływ pracy" / „procedura"
+  - „pipeline" (w kontekście procesowym) → „potok danych" / „proces"
+  - „stack" → „stos technologiczny" / „zestaw narzędzi"
+  - „deployment" → „wdrożenie"
+  - „framework" → „framework" można zostawić (utrwalone), ale unikaj „frameworkowe rozwiązanie"
+  - „use case" → „przypadek użycia" / „scenariusz"
+  - „support" → „wsparcie", „obsługa"
+  - „issue" → „problem", „zagadnienie"
+  - „real-time" → „w czasie rzeczywistym"
+  - „end-to-end" → „całościowy", „od-do"
+  - „high-level" → „ogólny", „na wysokim poziomie abstrakcji"
+  - „by-design" → „z zasady", „od podstaw", „w projekcie systemu"
+  - „mission-critical" → „krytyczny operacyjnie", „kluczowy dla ciągłości"
+  - Terminy techniczne (SQL, REST API, JSON, TCP, MQTT, OPC UA, LLM, RAG, CVE, PLC, SCADA, ERP, MES, EMS, CBAM, NIS2, AI Act, GR00T, Phi-4, TimescaleDB) — zostaw po angielsku, to nazwy własne / skróty branżowe
+  - Nazwy firm i produktów (NVIDIA, Amazon, Microsoft, FANUC, KUKA, Siemens) — zostaw po angielsku
+  - **Zasada praktyczna**: jeśli słowo istnieje w słowniku polskim technicznym (Automatyka, Control Engineering Polska, Production Manager), użyj go. Jeśli nie ma polskiego odpowiednika — zostaw angielski. Nie tłumacz na siłę, ale i nie pisz „po polglisz".
 - **Powtarzanie kontekstu**: jeśli artykuł jest o MES w polskiej fabryce, nie pisz „w polskiej fabryce" w co drugim akapicie — kontekst się utrzymuje
 
 **Co robić zamiast tego:**
