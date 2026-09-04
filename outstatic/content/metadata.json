@@ -1537,6 +1537,72 @@
     },
     {
       "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/digital-product-passport-baterie-do-18-lutego-2027-co-polska-fabryka-musi-miec-w-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-dpp-batteries/cover-dpp-batteries.png",
+      "description": "18 lutego 2027 dla baterii przemysłowych powyżej 2 kWh i baterii pojazdów elektrycznych startuje obowiązek Digital Product Passport (rozporządzenie 2023/1542). Pięć i pół miesiąca to nie jest dużo czasu — dostawcy do OEM (Volkswagen, Stellantis, BMW) już od sierpnia 2026 zaczynają wymagać gotowości danych w MES od poddostawców. Artykuł zbiera co dokładnie musi znaleźć się w DPP, jaka jest rola MES w tej strukturze, jakie są wnioski z pierwszych 12 pilotaży EU (Battery Pass Consortium, Circulor/Volvo, ACC, Verkor), i konkretną roadmapę na 5,5 miesiąca dla polskiej fabryki baterii.",
+      "lang": "pl",
+      "publishedAt": "2026-08-31T08:00:00.000Z",
+      "slug": "digital-product-passport-baterie-do-18-lutego-2027-co-polska-fabryka-musi-miec-w-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "DPP",
+          "value": "dpp"
+        }
+      ],
+      "title": "Digital Product Passport dla baterii: 5,5 miesiąca do 18 lutego 2027 — co polska fabryka musi mieć w MES, żeby zdążyć (wnioski z pierwszych pilotaży EU)"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/digital-product-passport-for-batteries-5-5-months-to-18-february-2027-what-your-mes-must-cover.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-dpp-batteries/cover-dpp-batteries.png",
+      "description": "On 18 February 2027 the Digital Product Passport obligation goes live for industrial batteries above 2 kWh and EV batteries (Regulation 2023/1542). Five and a half months is not much time — OEM suppliers (Volkswagen, Stellantis, BMW) are already, from August 2026, asking sub-suppliers for MES-side data readiness. This piece gathers what the DPP must contain in detail, the role of MES in that structure, lessons from the first 12 EU pilots (Battery Pass Consortium, Circulor/Volvo, ACC, Verkor), and a concrete 5.5-month roadmap for a European battery plant.",
+      "lang": "en",
+      "publishedAt": "2026-08-31T08:00:00.000Z",
+      "slug": "digital-product-passport-for-batteries-5-5-months-to-18-february-2027-what-your-mes-must-cover",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "DPP",
+          "value": "dpp"
+        }
+      ],
+      "title": "Digital Product Passport for batteries: 5.5 months to 18 February 2027 — what your MES must cover (lessons from the first EU pilots)"
+    },
+    {
+      "__outstatic": {
         "commit": "3ba48845f069711debe25968bb2b38aa87e1df35",
         "hash": "3368572356",
         "path": "outstatic/content/posts/data-as-the-foundation-of-industry-4-0.md"
