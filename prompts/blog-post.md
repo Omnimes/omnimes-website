@@ -216,6 +216,48 @@ Claude Code przeczyta instrukcje z pliku, wykona wszystkie kroki (rozpoznanie st
 
 - **Zawsze** najpierw sprawdź strukturę istniejących postów przed tworzeniem nowych
 - **Zawsze** zrób research tematu — nie pisz z pamięci, szukaj aktualnych danych
-- **Nigdy** nie publikuj artykułu bez sekcji o barierach/ograniczeniach — wiarygodność jest priorytetem
+- **Nigdy** nie publikuj artykułu bez sekcji o barierach oraz ograniczeniach — wiarygodność jest priorytetem
 - **Nigdy** nie tłumacz PL→EN dosłownie — obie wersje mają brzmieć naturalnie w swoim języku
 - Jeśli temat jest zbyt szeroki, zaproponuj zawężenie zanim zaczniesz pisać
+
+## Zasada stylu — nie nadużywaj ukośników (slashy)
+
+**Nie łącz słów ukośnikami** typu `hardware/software`, `praca/postój`, `PL/EN`, `kW/kVA`, `api/stream/www`, `24/7` w tekście prozą. To bardzo charakterystyczny wzorzec LLM-a i od razu psuje autorytet artykułu. Czytelnik widzi tekst z 10 slashami na akapit i wie że „to pisała maszyna".
+
+**Zamiana na słowa:**
+
+| Zamiast | Napisz |
+|---|---|
+| `hardware/software` | `sprzęt oraz oprogramowanie`, `sprzęt i oprogramowanie` |
+| `praca/postój/przezbrojenie` | `praca, postój oraz przezbrojenie` |
+| `PL/EN` | `polski oraz angielski`, `PL oraz EN` (jeśli jako etykiety) |
+| `hardware/software/wdrożenie` | `sprzęt, oprogramowanie oraz wdrożenie` |
+| `api/stream/www` | `api, stream oraz www` (rozdziel przecinkami) |
+| `kW/kVA` | `kW oraz kVA` (albo osobno w kontekście, np. „krzywa mocy czynnej i pozornej") |
+| `24/7` | `przez całą dobę`, `w trybie ciągłym` (chyba że to termin techniczny) |
+| `MID/RS-485` | `standard MID oraz komunikacja RS-485` |
+| `Modbus RTU/TCP/IP` | `Modbus RTU oraz TCP/IP` |
+
+**Wyjątki — slash JEST OK w tych przypadkach:**
+
+- **Ścieżki plików i URL:** `/blog/nowy-post`, `outstatic/content/posts/`, `https://example.com`
+- **Frakcje matematyczne oraz jednostki:** `kg/m²`, `kWh/tona`, `%/rok`
+- **Podwójne nazwy własne / oficjalne terminy:** `EU/UE`, `EU AI Act`, `TCP/IP` gdy występuje jako pojedynczy termin techniczny
+- **Data w formacie ISO:** `2026/09/10` (choć preferuj `2026-09-10`)
+
+**Test kontrolny przed publikacją:** przeczytaj artykuł głośno. Slash w tekście prozą zawsze wybija z rytmu i brzmi jak wyliczenie z prezentacji. Jeśli musisz wymienić trzy rzeczy — napisz „X, Y oraz Z" zamiast `X/Y/Z`.
+
+## Zasada treści — respektowanie klauzul poufności partnerów
+
+Przy artykułach dotyczących wdrożeń u konkretnego partnera lub klienta:
+
+1. **Sprawdź umowę / klauzulę referencyjną** zanim wpuścisz do artykułu jakiekolwiek dane z instalacji
+2. **Typowa klauzula** pozwala tylko na: nazwę partnera, logo, ogólny opis zakresu wdrożonego systemu, cel oraz korzyści wdrożenia, ogólny opis środowiska
+3. **Typowo ZABRONIONE:**
+   - konkretne dane techniczne (konfiguracje, mapowania, wersje)
+   - konkretne dane biznesowe (nazwy maszyn, koszty w PLN, procenty pokrycia, wolumeny produkcji)
+   - dane osobowe (imiona, nazwiska, stanowiska)
+   - warunki handlowe współpracy
+4. **Screenshoty z systemu** klienta prawie zawsze pokazują dane wrażliwe — nazwy maszyn, wartości pomiarów, koszty. **Nie umieszczaj ich domyślnie.** Nawet niereferowane pliki w `public/` są publicznie dostępne pod przewidywalnymi URL.
+5. Bezpieczne obrazki: **zdjęcia marketingowe** (uścisk dłoni na targach, ludzie z badge'ami), **zdjęcia produktu partnera** (jeżeli publiczne z ich katalogu), **logo** — te są zwykle dozwolone jako materiał referencyjny.
+6. W razie wątpliwości: **napisz ogólnie**. „System monitoruje kilka obszarów parku maszynowego" zamiast „System monitoruje Drążarki, Frezarki, Galwanizernię 1 oraz Galwanizernię 2".
