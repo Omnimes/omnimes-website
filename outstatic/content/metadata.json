@@ -6,6 +6,178 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
+        "path": "outstatic/content/implementation/relpol-partnership-smart-energy-metering-network.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "/images/relpol/relpol-liczniki.jpg",
+      "description": "In 2026 Multiprojekt Automatyka (the maker of OmniMES) entered a partnership with Relpol S.A. — a Polish manufacturer of relays and RMM-series energy meters. The joint offering combines Relpol's metering hardware with the OmniMES + OmniEnergy system compliant with ISO 50001. A pilot deployment at the Relpol plant showcases the stack running live.",
+      "lang": "en",
+      "publishedAt": "2026-09-10T09:00:00.000Z",
+      "slug": "relpol-partnership-smart-energy-metering-network",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Relpol",
+          "value": "relpol"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        },
+        {
+          "label": "Partnership",
+          "value": "partnership"
+        },
+        {
+          "label": "ISO 50001",
+          "value": "iso50001"
+        }
+      ],
+      "title": "Relpol — partnership and a smart energy metering network"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/implementation/relpol-partnerstwo-inteligentna-siec-pomiarow-energii.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "/images/relpol/relpol-liczniki.jpg",
+      "description": "W 2026 roku Multiprojekt Automatyka (producent OmniMES) rozpoczął partnerstwo z Relpol S.A. — polskim producentem przekaźników i liczników energii serii RMM. Wspólna oferta łączy sprzęt pomiarowy Relpolu z systemem OmniMES + OmniEnergy zgodnym z ISO 50001. Pilotaż uruchomiony w zakładzie Relpol pokazuje działanie stacka na żywo.",
+      "lang": "pl",
+      "publishedAt": "2026-09-10T09:00:00.000Z",
+      "slug": "relpol-partnerstwo-inteligentna-siec-pomiarow-energii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Relpol",
+          "value": "relpol"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        },
+        {
+          "label": "Partnerstwo",
+          "value": "partnerstwo"
+        },
+        {
+          "label": "ISO 50001",
+          "value": "iso50001"
+        }
+      ],
+      "title": "Relpol — partnerstwo i inteligentna sieć pomiarów energii"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/omnimes-relpol-partnership-smart-energy-metering-network.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-ExOT.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/relpol/relpol-multiprojekt-handshake.png",
+      "description": "Multiprojekt (the maker of OmniMES) and Relpol S.A. are launching a joint offering: certified Relpol RMM energy meters plus the OmniMES system with the OmniEnergy module compliant with ISO 50001. A pilot deployment at the Relpol plant showcases the full data trace — from a DIN-rail meter, through the telemetry stream, to a ready ISO 50001 review dashboard. One hardware vendor, one software vendor, one invoice, one point of support.",
+      "lang": "en",
+      "publishedAt": "2026-09-10T09:00:00.000Z",
+      "slug": "omnimes-relpol-partnership-smart-energy-metering-network",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        },
+        {
+          "label": "Relpol",
+          "value": "relpol"
+        },
+        {
+          "label": "EMS",
+          "value": "ems"
+        },
+        {
+          "label": "ISO 50001",
+          "value": "iso50001"
+        },
+        {
+          "label": "energy efficiency",
+          "value": "energyEfficiency"
+        }
+      ],
+      "title": "OmniMES × Relpol partnership — a smart energy metering network for Polish industry"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/partnerstwo-omnimes-relpol-inteligentna-siec-pomiarow-energii.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/relpol/relpol-multiprojekt-handshake.png",
+      "description": "Multiprojekt (producent systemu OmniMES) i Relpol S.A. rozpoczynają wspólną ofertę: certyfikowane liczniki energii RMM od Relpolu plus system MES z modułem OmniEnergy zgodnym z ISO 50001. Pilotaż uruchomiony w zakładzie Relpol pokazuje kompletny ślad danych — od licznika na szynie DIN, przez stream telemetryczny, po pulpit ZWE gotowy do przeglądu ISO 50001. Jeden dostawca hardware, jeden dostawca software, jedna faktura, jedno wsparcie.",
+      "lang": "pl",
+      "publishedAt": "2026-09-10T09:00:00.000Z",
+      "slug": "partnerstwo-omnimes-relpol-inteligentna-siec-pomiarow-energii",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        },
+        {
+          "label": "Relpol",
+          "value": "relpol"
+        },
+        {
+          "label": "EMS",
+          "value": "ems"
+        },
+        {
+          "label": "ISO 50001",
+          "value": "iso50001"
+        },
+        {
+          "label": "efektywność energetyczna",
+          "value": "efektywnośćEnergetyczna"
+        }
+      ],
+      "title": "Partnerstwo OmniMES × Relpol — inteligentna sieć pomiarów energii dla polskiego przemysłu"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
         "path": "outstatic/content/news/mcp-w-omnimes-sterowanie-z-asystenta-ai.md"
       },
       "author": {
