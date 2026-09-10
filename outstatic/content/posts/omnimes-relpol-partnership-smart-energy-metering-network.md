@@ -7,6 +7,7 @@ author:
 slug: 'omnimes-relpol-partnership-smart-energy-metering-network'
 description: 'Multiprojekt (the maker of OmniMES) and Relpol S.A. are launching a joint offering: certified Relpol RMM energy meters plus the OmniMES system with the OmniEnergy module compliant with ISO 50001. A pilot deployment at the Relpol plant showcases the full data trace — from a DIN-rail meter, through the telemetry stream, to a ready ISO 50001 review dashboard. One hardware vendor, one software vendor, one invoice, one point of support.'
 coverImage: '/images/relpol/relpol-multiprojekt-handshake.png'
+coverPosition: 'top'
 lang: 'en'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"omniEnergy","label":"OmniEnergy"},{"value":"relpol","label":"Relpol"},{"value":"ems","label":"EMS"},{"value":"iso50001","label":"ISO 50001"},{"value":"energyEfficiency","label":"energy efficiency"}]
 publishedAt: '2026-09-10T09:00:00.000Z'

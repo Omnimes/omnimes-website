@@ -38,6 +38,7 @@ async function getData(locale: string) {
       "publishedAt",
       "slug",
       "coverImage",
+      "coverPosition",
       "description",
     ])
     .sort({ publishedAt: -1 })

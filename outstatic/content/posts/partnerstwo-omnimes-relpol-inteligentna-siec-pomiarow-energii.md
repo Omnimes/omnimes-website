@@ -7,6 +7,7 @@ author:
 slug: 'partnerstwo-omnimes-relpol-inteligentna-siec-pomiarow-energii'
 description: 'Multiprojekt (producent systemu OmniMES) i Relpol S.A. rozpoczynają wspólną ofertę: certyfikowane liczniki energii RMM od Relpolu plus system MES z modułem OmniEnergy zgodnym z ISO 50001. Pilotaż uruchomiony w zakładzie Relpol pokazuje kompletny ślad danych — od licznika na szynie DIN, przez stream telemetryczny, po pulpit ZWE gotowy do przeglądu ISO 50001. Jeden dostawca hardware, jeden dostawca software, jedna faktura, jedno wsparcie.'
 coverImage: '/images/relpol/relpol-multiprojekt-handshake.png'
+coverPosition: 'top'
 lang: 'pl'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"omniEnergy","label":"OmniEnergy"},{"value":"relpol","label":"Relpol"},{"value":"ems","label":"EMS"},{"value":"iso50001","label":"ISO 50001"},{"value":"efektywnośćEnergetyczna","label":"efektywność energetyczna"}]
 publishedAt: '2026-09-10T09:00:00.000Z'

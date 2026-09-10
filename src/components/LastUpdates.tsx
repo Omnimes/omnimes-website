@@ -10,13 +10,15 @@ import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
 import { SubtitleNormal } from "./ui/Subtitle"
 
+type CardDoc = OstDocument & { coverPosition?: string }
+
 export const LastUpdates = ({
   allNews,
   allPosts,
   locale,
 }: {
-  allNews: OstDocument[]
-  allPosts: OstDocument[]
+  allNews: CardDoc[]
+  allPosts: CardDoc[]
   locale: string
 }) => {
   const t = useTranslations("OmniNews")
@@ -49,7 +51,7 @@ export const LastUpdates = ({
               slug={"/news/" + item.slug}
               title={item.title}
               description={item.description}
-              header={<SkeletonCover src={item.coverImage} />}
+              header={<SkeletonCover src={item.coverImage} position={item.coverPosition} />}
               className={i === 3 || i === 6 ? "md:col-span-2" : ""}
               date={item.publishedAt}
               locale={locale}
@@ -80,7 +82,7 @@ export const LastUpdates = ({
               slug={"/blog/" + item.slug}
               title={item.title}
               description={item.description}
-              header={<SkeletonCover src={item.coverImage} />}
+              header={<SkeletonCover src={item.coverImage} position={item.coverPosition} />}
               className={i === 0 || i === 5 ? "md:col-span-2" : ""}
               date={item.publishedAt}
               locale={locale}
@@ -112,7 +114,13 @@ const Skeleton = ({ src }: { src: string | undefined }) => {
   }
 }
 
-const SkeletonCover = ({ src }: { src: string | undefined }) => {
+const SkeletonCover = ({
+  src,
+  position,
+}: {
+  src: string | undefined
+  position?: string
+}) => {
   if (src == undefined || src == "") {
     return (
       <div className="flex h-44 w-full bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
@@ -125,7 +133,8 @@ const SkeletonCover = ({ src }: { src: string | undefined }) => {
           alt={"Post photo"}
           width={1096}
           height={282}
-          className="size-full object-cover object-center transition-transform duration-500 group-hover/bento:scale-105"
+          style={{ objectPosition: position ?? "center" }}
+          className="size-full object-cover transition-transform duration-500 group-hover/bento:scale-105"
         />
       </div>
     )
