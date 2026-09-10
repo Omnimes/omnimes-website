@@ -95,7 +95,7 @@
         "picture": "/images/1645307189660-ExOT.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/relpol/relpol-multiprojekt-handshake.png",
+      "coverImage": "/images/relpol/relpol-multiprojekt-cover.jpg",
       "description": "Multiprojekt (the maker of OmniMES) and Relpol S.A. are launching a joint offering: certified Relpol RMM energy meters combined with the OmniMES system and the OmniEnergy module compliant with ISO 50001. One hardware vendor, one software vendor, one invoice, one point of technical support — instead of three separate integration projects.",
       "lang": "en",
       "publishedAt": "2026-09-10T09:00:00.000Z",
@@ -127,8 +127,7 @@
           "value": "energyEfficiency"
         }
       ],
-      "title": "OmniMES × Relpol partnership — a smart energy metering network for Polish industry",
-      "coverPosition": "top"
+      "title": "OmniMES × Relpol partnership — a smart energy metering network for Polish industry"
     },
     {
       "__outstatic": {
@@ -141,7 +140,7 @@
         "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/relpol/relpol-multiprojekt-handshake.png",
+      "coverImage": "/images/relpol/relpol-multiprojekt-cover.jpg",
       "description": "Multiprojekt (producent systemu OmniMES) oraz Relpol S.A. rozpoczynają wspólną ofertę: certyfikowane liczniki energii RMM od Relpolu w połączeniu z systemem MES i modułem OmniEnergy zgodnym z ISO 50001. Jeden dostawca sprzętu, jeden dostawca oprogramowania, jedna faktura, jedno wsparcie techniczne — zamiast trzech osobnych projektów integracyjnych.",
       "lang": "pl",
       "publishedAt": "2026-09-10T09:00:00.000Z",
@@ -173,8 +172,7 @@
           "value": "efektywnośćEnergetyczna"
         }
       ],
-      "title": "Partnerstwo OmniMES × Relpol — inteligentna sieć pomiarów energii dla polskiego przemysłu",
-      "coverPosition": "top"
+      "title": "Partnerstwo OmniMES × Relpol — inteligentna sieć pomiarów energii dla polskiego przemysłu"
     },
     {
       "__outstatic": {

@@ -6,8 +6,7 @@ author:
   picture: '/images/1645307189660-ExOT.jpg'
 slug: 'omnimes-relpol-partnership-smart-energy-metering-network'
 description: 'Multiprojekt (the maker of OmniMES) and Relpol S.A. are launching a joint offering: certified Relpol RMM energy meters combined with the OmniMES system and the OmniEnergy module compliant with ISO 50001. One hardware vendor, one software vendor, one invoice, one point of technical support — instead of three separate integration projects.'
-coverImage: '/images/relpol/relpol-multiprojekt-handshake.png'
-coverPosition: 'top'
+coverImage: '/images/relpol/relpol-multiprojekt-cover.jpg'
 lang: 'en'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"omniEnergy","label":"OmniEnergy"},{"value":"relpol","label":"Relpol"},{"value":"ems","label":"EMS"},{"value":"iso50001","label":"ISO 50001"},{"value":"energyEfficiency","label":"energy efficiency"}]
 publishedAt: '2026-09-10T09:00:00.000Z'
@@ -15,7 +14,7 @@ publishedAt: '2026-09-10T09:00:00.000Z'
 
 In 2026, **Multiprojekt Automatyka** — the maker of the **OmniMES** system — is entering a strategic partnership with **Relpol S.A.**, one of Poland's most established manufacturers of relays and electrical meters. The joint offering combines two layers that Polish factories used to have to source separately: **metering hardware** (Relpol RMM DIN-rail energy meters) and **management software** (OmniMES with the OmniEnergy module, ISO 50001 compliant).
 
-![Multiprojekt and Relpol partnership — signing the agreement](/images/relpol/relpol-multiprojekt-handshake.png)
+![Multiprojekt and Relpol partnership — signing the agreement](/images/relpol/relpol-multiprojekt-handshake.jpg)
 
 The outcome for the end customer is simple: **one hardware vendor, one software vendor, one invoice, one support desk**. You no longer separately configure the gateway, map Modbus registers, and chase the software to keep up with whatever the meter vendor changed — the whole chain is designed and tested together.
 

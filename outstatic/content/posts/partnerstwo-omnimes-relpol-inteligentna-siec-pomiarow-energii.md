@@ -6,8 +6,7 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'partnerstwo-omnimes-relpol-inteligentna-siec-pomiarow-energii'
 description: 'Multiprojekt (producent systemu OmniMES) oraz Relpol S.A. rozpoczynają wspólną ofertę: certyfikowane liczniki energii RMM od Relpolu w połączeniu z systemem MES i modułem OmniEnergy zgodnym z ISO 50001. Jeden dostawca sprzętu, jeden dostawca oprogramowania, jedna faktura, jedno wsparcie techniczne — zamiast trzech osobnych projektów integracyjnych.'
-coverImage: '/images/relpol/relpol-multiprojekt-handshake.png'
-coverPosition: 'top'
+coverImage: '/images/relpol/relpol-multiprojekt-cover.jpg'
 lang: 'pl'
 tags: [{"value":"omnimes","label":"Omnimes"},{"value":"omniEnergy","label":"OmniEnergy"},{"value":"relpol","label":"Relpol"},{"value":"ems","label":"EMS"},{"value":"iso50001","label":"ISO 50001"},{"value":"efektywnośćEnergetyczna","label":"efektywność energetyczna"}]
 publishedAt: '2026-09-10T09:00:00.000Z'
@@ -15,7 +14,7 @@ publishedAt: '2026-09-10T09:00:00.000Z'
 
 W 2026 roku **Multiprojekt Automatyka** — producent systemu **OmniMES** — rozpoczyna strategiczną współpracę z **Relpol S.A.**, jednym z najstarszych polskich producentów przekaźników i mierników elektrycznych. Wspólna oferta łączy dwie warstwy, które dotąd polska fabryka musiała składać z osobnych zakupów: **sprzęt pomiarowy** (liczniki energii Relpol RMM montowane na szynie DIN) oraz **oprogramowanie zarządzające** (OmniMES z modułem OmniEnergy — zgodnym z normą ISO 50001).
 
-![Partnerstwo Multiprojekt oraz Relpol — podpisanie współpracy](/images/relpol/relpol-multiprojekt-handshake.png)
+![Partnerstwo Multiprojekt oraz Relpol — podpisanie współpracy](/images/relpol/relpol-multiprojekt-handshake.jpg)
 
 Efekt dla klienta końcowego jest prosty: **jeden dostawca sprzętu, jeden dostawca oprogramowania, jedna faktura, jedno wsparcie**. Nie trzeba osobno konfigurować bramki komunikacyjnej, mapować rejestrów Modbus i „doganiać" oprogramowaniem tego, co zmienił producent liczników — cały łańcuch jest zaprojektowany i przetestowany razem.
 
