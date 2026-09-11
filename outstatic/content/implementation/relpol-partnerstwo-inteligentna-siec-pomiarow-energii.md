@@ -5,7 +5,7 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'relpol-partnerstwo-inteligentna-siec-pomiarow-energii'
-description: 'W 2026 roku Multiprojekt Automatyka (producent OmniMES) rozpoczął partnerstwo z Relpol S.A. — polskim producentem przekaźników i liczników energii serii RMM. Wspólna oferta łączy sprzęt pomiarowy Relpolu z systemem OmniMES i modułem OmniEnergy zgodnym z ISO 50001. Cel: jeden dostawca sprzętu i oprogramowania, jedno wsparcie techniczne, zamiast trzech osobnych projektów integracyjnych.'
+description: 'Multiprojekt Automatyka (producent OmniMES) rozpoczął partnerstwo z Relpol S.A. — polskim producentem przekaźników i liczników energii serii RMM. Wspólna oferta łączy sprzęt pomiarowy Relpolu z systemem OmniMES i modułem OmniEnergy zgodnym z ISO 50001. Cel: jeden dostawca sprzętu i oprogramowania, jedno wsparcie techniczne, zamiast trzech osobnych projektów integracyjnych.'
 coverImage: '/images/relpol/relpol-liczniki.jpg'
 lang: 'pl'
 tags: [{"label":"Relpol","value":"relpol"},{"label":"Omnimes","value":"omnimes"},{"label":"OmniEnergy","value":"omniEnergy"},{"label":"Partnerstwo","value":"partnerstwo"},{"label":"ISO 50001","value":"iso50001"}]

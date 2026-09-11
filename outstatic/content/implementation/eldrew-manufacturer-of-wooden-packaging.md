@@ -5,7 +5,7 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'eldrew-manufacturer-of-wooden-packaging'
-description: 'In 2023, we implemented the OmniMES system at Eldrew, covering selected production processes related to pallet manufacturing. The project enabled the integration of the system with the machines used in the production process and the customization of OmniMES functionalities to the specific requirements of the wooden packaging industry.'
+description: 'We implemented the OmniMES system at Eldrew, covering selected production processes related to pallet manufacturing. The project enabled the integration of the system with the machines used in the production process and the customization of OmniMES functionalities to the specific requirements of the wooden packaging industry.'
 coverImage: '/images/logo2-M2Nz.png'
 lang: 'en'
 tags: [{"label":"Eldrew","value":"eldrew"},{"label":"Omnimes","value":"omnimes"},{"label":"Integration","value":"integration"}]

@@ -5,7 +5,7 @@ author:
   name: 'OmniMES'
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'relpol-partnership-smart-energy-metering-network'
-description: 'In 2026 Multiprojekt Automatyka (the maker of OmniMES) entered a partnership with Relpol S.A. — a Polish manufacturer of relays and RMM-series energy meters. The joint offering combines Relpol''s metering hardware with the OmniMES system and the OmniEnergy module compliant with ISO 50001. Goal: one vendor for hardware and software, one point of support, instead of three separate integration projects.'
+description: 'Multiprojekt Automatyka (the maker of OmniMES) entered a partnership with Relpol S.A. — a Polish manufacturer of relays and RMM-series energy meters. The joint offering combines Relpol''s metering hardware with the OmniMES system and the OmniEnergy module compliant with ISO 50001. Goal: one vendor for hardware and software, one point of support, instead of three separate integration projects.'
 coverImage: '/images/relpol/relpol-liczniki.jpg'
 lang: 'en'
 tags: [{"label":"Relpol","value":"relpol"},{"label":"Omnimes","value":"omnimes"},{"label":"OmniEnergy","value":"omniEnergy"},{"label":"Partnership","value":"partnership"},{"label":"ISO 50001","value":"iso50001"}]
