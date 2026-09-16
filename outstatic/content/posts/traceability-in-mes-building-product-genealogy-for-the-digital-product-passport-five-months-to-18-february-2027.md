@@ -29,7 +29,7 @@ The first step has no product-category deadline attached to it at all: before yo
 The second change is more concrete still. **CEN/CENELEC JTC 24 published six of its eight European standards in 2026** — EN 18216, 18219, 18220, 18221, 18222 and 18223 — with prEN 18239 and prEN 18246 still in development (Regen Studio, 2026). Two of them land directly on the factory:
 
 - **EN 18219** — unique identifiers. It codifies five permitted product-identifier schemes, including web-enabled structured paths such as a GS1 Digital Link URI.
-- **EN 18220** — data carriers. It governs how the identifier is applied to the product: 2D symbols (QR Code, Data Matrix) and RFID (HF, NFC and UHF/RAIN), with rules on placement, marking and print quality.
+- **EN 18220** — data carriers. It governs how the identifier is applied to the product: 2D symbols (QR Code, Data Matrix) and RFID in the HF, NFC and UHF (RAIN) bands, with rules on placement, marking and print quality.
 
 Which means the in-house numbering convention you have used for fifteen years is no longer a free choice. The identifier has to follow a recognised scheme, and the carrier has to meet quality requirements.
 
@@ -76,7 +76,7 @@ Three failure points show up in implementation after implementation:
 
 A battery passport is roughly **90 data attributes across seven content clusters**, split into three access layers: public data (identification, carbon footprint, recyclability), data for regulatory authorities (test results, certificates, declaration of conformity), and data for service and recycling (disassembly instructions, state of health, charging cycle history) — per the Battery Pass Consortium guidance (Battery Pass Consortium, 2024; attribute longlist updated January 2025 to align with DIN DKE SPEC 99100).
 
-It is worth sorting those attributes by origin, because that splits the project across three different departments:
+Those attributes come from three different places, which splits the project across three departments:
 
 - **From ERP and purchasing records** — supplier data, material declarations, certificates. Not an MES job.
 - **From the lab and quality** — test results, declaration of conformity.
@@ -157,7 +157,7 @@ Sequence matters, because some of this is irreversible: data you do not capture 
 
 **The final test** is the one your auditor will run: **take a random unit from the warehouse and try to reconstruct its full history within an hour**. If you cannot, you have found your gap. Run that exercise in November, not in February.
 
-## In summary
+## The passport is a format, not a source
 
 A product passport is a data exchange format, not a data source. The source is the shop floor and whatever the system recorded while the goods were being made. Factories that already have genealogy add the passport layer in weeks. Factories that do not discover in January that there is nothing to export.
 

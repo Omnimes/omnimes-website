@@ -29,7 +29,7 @@ Pierwszy krok nie ma przy tym żadnego terminu przypisanego do grupy produktowej
 Druga zmiana jest jeszcze bardziej konkretna. **CEN/CENELEC JTC 24 opublikował w 2026 sześć z ośmiu norm europejskich** dla systemu paszportowego — EN 18216, 18219, 18220, 18221, 18222 i 18223; dwie kolejne (prEN 18239 i prEN 18246) są w opracowaniu (Regen Studio, 2026). Dla fabryki najistotniejsze są dwie:
 
 - **EN 18219** — unikalne identyfikatory. Kodyfikuje pięć dopuszczalnych schematów identyfikacji produktu, w tym ścieżki adresowe typu GS1 Digital Link.
-- **EN 18220** — nośniki danych. Określa, jak identyfikator ma być naniesiony na wyrób: kody dwuwymiarowe (QR, Data Matrix) oraz RFID (HF, NFC, UHF/RAIN), wraz z zasadami umieszczania, znakowania i jakości nadruku.
+- **EN 18220** — nośniki danych. Określa, jak identyfikator ma być naniesiony na wyrób: kody dwuwymiarowe (QR, Data Matrix) oraz RFID w pasmach HF, NFC i UHF (RAIN), wraz z zasadami umieszczania, znakowania i jakości nadruku.
 
 Innymi słowy: nie ma już miejsca na własną konwencję numerowania „bo u nas zawsze tak było". Identyfikator, którym oznaczycie wyrób, musi być jednym z uznanych schematów, a nośnik musi spełniać wymagania jakościowe.
 
@@ -76,13 +76,13 @@ Z wdrożeń wychodzą trzy powtarzalne miejsca:
 
 Paszport bateryjny to około **90 atrybutów danych z siedmiu klastrów treściowych**, podzielonych na trzy warstwy dostępu: dane publiczne (identyfikacja, ślad węglowy, przydatność do recyklingu), dane dla organów nadzoru (wyniki badań, certyfikaty, deklaracja zgodności) oraz dane dla serwisu i recyklingu (instrukcje demontażu, stan zdrowia baterii, historia cykli ładowania) — tak wynika z opracowania konsorcjum Battery Pass (Battery Pass Consortium, 2024; lista atrybutów aktualizowana w styczniu 2025 pod DIN DKE SPEC 99100).
 
-Warto zobaczyć, skąd te dane realnie pochodzą, bo to rozkłada projekt na trzy różne działy:
+Te dane pochodzą z trzech różnych miejsc i to rozkłada projekt na trzy działy:
 
 - **Z systemu ERP i dokumentacji zakupowej** — dane dostawców, deklaracje materiałowe, certyfikaty. To nie jest praca dla MES.
 - **Z laboratorium i działu jakości** — wyniki badań, deklaracja zgodności.
 - **Z hali, czyli z MES** — i to jest część, której nie da się kupić ani dopisać po fakcie: kiedy powstała dana sztuka, na jakiej maszynie, przy jakich nastawach, z jakiej partii materiału, ile energii zużyto, jakie zdarzenia i przestoje wystąpiły w trakcie.
 
-Ostatni punkt jest wart podkreślenia, bo ślad węglowy na poziomie sztuki liczy się **z rzeczywistego zużycia energii przypisanego do zlecenia**, a nie ze średniej rocznej podzielonej przez liczbę wyrobów. Jeżeli macie opomiarowanie energii na poziomie maszyny i wiecie, które zlecenie na niej wtedy szło — macie z czego liczyć. Jeżeli nie — zostaje szacowanie, które audytor ma prawo zakwestionować.
+Ten ostatni punkt decyduje o zgodności, bo ślad węglowy na poziomie sztuki liczy się **z rzeczywistego zużycia energii przypisanego do zlecenia**, a nie ze średniej rocznej podzielonej przez liczbę wyrobów. Jeżeli macie opomiarowanie energii na poziomie maszyny i wiecie, które zlecenie na niej wtedy szło — macie z czego liczyć. Jeżeli nie — zostaje szacowanie, które audytor ma prawo zakwestionować.
 
 ## Jak to wygląda w architekturze systemu — na przykładzie OmniMES
 
@@ -104,7 +104,7 @@ Sensowna kolejność prac jest więc taka: **najpierw tożsamość i zużycie ma
 
 ## Kto to już robi
 
-Warto patrzeć na tych, którzy przeszli pełny cykl, a nie na pilotaże pokazowe.
+Miarodajne są firmy, które przeszły pełny cykl, a nie pilotaże pokazowe.
 
 **Motoryzacja** jest tu najdalej, bo genealogia była tam wymagana na długo przed paszportem — przez IATF 16949 i wymagania klientów OEM. Producenci akumulatorów trakcyjnych budujący fabryki w Europie projektują linie od razu ze znakowaniem sztukowym i rejestracją zużycia elektrolitu partiami, bo wiedzą, że bez tego nie sprzedadzą do OEM-a.
 
@@ -155,9 +155,9 @@ Kolejność ma znaczenie, bo część rzeczy jest nieodwracalna: danych, któryc
 5. **Uruchomcie znakowanie i odczyt na operacjach krytycznych** — nie na wszystkich naraz. Krytyczne są te, na których wchodzi materiał podlegający deklaracji, oraz te, po których wyrób zmienia tożsamość.
 6. **Przepnijcie ślad węglowy na rzeczywiste zużycie energii per zlecenie**, jeśli macie opomiarowanie. Jeśli nie macie — to ostatni moment, żeby je dołożyć.
 
-**Test końcowy**, ten sam, który zrobi audytor: **weźcie losową sztukę z magazynu i spróbujcie w ciągu godziny odtworzyć jej pełną historię**. Jeśli się nie da — wiecie, gdzie jest dziura. To ćwiczenie warto zrobić w listopadzie, a nie w lutym.
+**Test końcowy**, ten sam, który zrobi audytor: **weźcie losową sztukę z magazynu i spróbujcie w ciągu godziny odtworzyć jej pełną historię**. Jeśli się nie da — wiecie, gdzie jest dziura. Zróbcie to ćwiczenie w listopadzie, a nie w lutym.
 
-## Podsumowanie
+## Paszport jest formatem, nie źródłem danych
 
 Paszport produktu jest formatem wymiany danych, nie źródłem danych. Źródłem jest hala — i to, co system zapisał w chwili, gdy wyrób powstawał. Fabryki, które mają genealogię, dopisują do niej warstwę paszportową w kilka tygodni. Fabryki, które jej nie mają, odkrywają w styczniu, że nie ma czego eksportować.
 
