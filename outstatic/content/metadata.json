@@ -5789,6 +5789,80 @@
         }
       ],
       "title": "Zbieranie danych z rzeczywistych maszyn przemysłowych: Metody i narzędzia"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/traceability-w-mes-genealogia-wyrobu-digital-product-passport-5-miesiecy-do-18-lutego-2027.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-traceability-dpp/cover-traceability-dpp.png",
+      "description": "Od 18 lutego 2027 paszport produktu staje się obowiązkowy dla baterii przemysłowych powyżej 2 kWh, trakcyjnych i LMT. Paszportu nie da się wystawić z arkusza kalkulacyjnego — potrzebna jest genealogia wyrobu zbierana na bieżąco przez MES. Pokazujemy, jakie dane trzeba wiązać, które normy to regulują (EN 18219, EN 18220) i co realnie zdąży zrobić średnia polska fabryka w pięć miesięcy.",
+      "lang": "pl",
+      "publishedAt": "2026-09-14T08:00:00.000Z",
+      "slug": "traceability-w-mes-genealogia-wyrobu-digital-product-passport-5-miesiecy-do-18-lutego-2027",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "DPP",
+          "value": "dpp"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Traceability w MES: jak zbudować genealogię wyrobu, której wymaga Digital Product Passport — 5 miesięcy do 18 lutego 2027"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/traceability-in-mes-building-product-genealogy-for-the-digital-product-passport-five-months-to-18-february-2027.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-traceability-dpp/cover-traceability-dpp.png",
+      "description": "From 18 February 2027 the product passport becomes mandatory for industrial batteries above 2 kWh, EV and LMT batteries. A passport cannot be assembled from a spreadsheet after the fact — it needs product genealogy captured by the MES while the goods are being made. Here is which data has to be linked, which standards now govern it (EN 18219, EN 18220), and what a mid-sized factory can realistically finish in five months.",
+      "lang": "en",
+      "publishedAt": "2026-09-14T08:00:00.000Z",
+      "slug": "traceability-in-mes-building-product-genealogy-for-the-digital-product-passport-five-months-to-18-february-2027",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "DPP",
+          "value": "dpp"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Traceability in MES: building the product genealogy the Digital Product Passport demands — five months to 18 February 2027"
     }
   ]
 }
