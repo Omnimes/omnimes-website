@@ -5863,6 +5863,80 @@
         }
       ],
       "title": "Traceability in MES: building the product genealogy the Digital Product Passport demands — five months to 18 February 2027"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/jev-w-przemysle-gdy-decyzja-kosztuje-mniej-niz-jeden-token.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-jev-decyzje/cover-jev-decyzje.png",
+      "description": "TypeSafe wypuścił Jeva — model, który nie pisze tekstu, tylko zwraca typowane decyzje z kalibrowanym prawdopodobieństwem. Koszt pojedynczego rozstrzygnięcia schodzi poniżej ceny kilku tokenów, a latencja z sekund do milisekund. Sprawdzamy, co to realnie zmienia w MES: gdzie na hali taki model ma sens, gdzie go stosować nie wolno i jak wpiąć go w architekturę bez naruszania wymogów audytu.",
+      "lang": "pl",
+      "publishedAt": "2026-09-23T06:00:00.000Z",
+      "slug": "jev-w-przemysle-gdy-decyzja-kosztuje-mniej-niz-jeden-token",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "Agent AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Jev w przemyśle: gdy decyzja kosztuje mniej niż jeden token"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/jev-in-industry-when-a-decision-costs-less-than-a-single-token.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-jev-decyzje/cover-jev-decyzje.png",
+      "description": "TypeSafe has released Jev — a model that writes no text at all and instead returns typed decisions with calibrated probability. The cost of a single judgment drops below the price of a few tokens, and latency from seconds to milliseconds. We look at what this actually changes in an MES: where such a model belongs on the shop floor, where it must never be used, and how to wire it in without breaking your audit trail.",
+      "lang": "en",
+      "publishedAt": "2026-09-23T06:00:00.000Z",
+      "slug": "jev-in-industry-when-a-decision-costs-less-than-a-single-token",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "Agent AI",
+          "value": "agentAi"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Jev in industry: when a decision costs less than a single token"
     }
   ]
 }

@@ -1,5 +1,47 @@
 [
   {
+    "title": "Jev w przemyśle: gdy decyzja kosztuje mniej niż jeden token",
+    "slug": "jev-w-przemysle-gdy-decyzja-kosztuje-mniej-niz-jeden-token",
+    "description": "TypeSafe wypuścił Jeva — model, który nie pisze tekstu, tylko zwraca typowane decyzje z kalibrowanym prawdopodobieństwem. Koszt pojedynczego rozstrzygnięcia schodzi poniżej ceny kilku tokenów, a latencja z sekund do milisekund. Sprawdzamy, co to realnie zmienia w MES: gdzie na hali taki model ma sens, gdzie go stosować nie wolno i jak wpiąć go w architekturę bez naruszania wymogów audytu.",
+    "lang": "pl",
+    "tags": "OmniMES, AI, Agent AI, MES System"
+  },
+  {
+    "title": "Jev in industry: when a decision costs less than a single token",
+    "slug": "jev-in-industry-when-a-decision-costs-less-than-a-single-token",
+    "description": "TypeSafe has released Jev — a model that writes no text at all and instead returns typed decisions with calibrated probability. The cost of a single judgment drops below the price of a few tokens, and latency from seconds to milliseconds. We look at what this actually changes in an MES: where such a model belongs on the shop floor, where it must never be used, and how to wire it in without breaking your audit trail.",
+    "lang": "en",
+    "tags": "OmniMES, AI, Agent AI, MES System"
+  },
+  {
+    "title": "Traceability w MES: jak zbudować genealogię wyrobu, której wymaga Digital Product Passport — 5 miesięcy do 18 lutego 2027",
+    "slug": "traceability-w-mes-genealogia-wyrobu-digital-product-passport-5-miesiecy-do-18-lutego-2027",
+    "description": "Od 18 lutego 2027 paszport produktu staje się obowiązkowy dla baterii przemysłowych powyżej 2 kWh, trakcyjnych i LMT. Paszportu nie da się wystawić z arkusza kalkulacyjnego — potrzebna jest genealogia wyrobu zbierana na bieżąco przez MES. Pokazujemy, jakie dane trzeba wiązać, które normy to regulują (EN 18219, EN 18220) i co realnie zdąży zrobić średnia polska fabryka w pięć miesięcy.",
+    "lang": "pl",
+    "tags": "OmniMES, UE, DPP, MES System"
+  },
+  {
+    "title": "Traceability in MES: building the product genealogy the Digital Product Passport demands — five months to 18 February 2027",
+    "slug": "traceability-in-mes-building-product-genealogy-for-the-digital-product-passport-five-months-to-18-february-2027",
+    "description": "From 18 February 2027 the product passport becomes mandatory for industrial batteries above 2 kWh, EV and LMT batteries. A passport cannot be assembled from a spreadsheet after the fact — it needs product genealogy captured by the MES while the goods are being made. Here is which data has to be linked, which standards now govern it (EN 18219, EN 18220), and what a mid-sized factory can realistically finish in five months.",
+    "lang": "en",
+    "tags": "OmniMES, UE, DPP, MES System"
+  },
+  {
+    "title": "OmniMES × Relpol partnership — a smart energy metering network for Polish industry",
+    "slug": "omnimes-relpol-partnership-smart-energy-metering-network",
+    "description": "Multiprojekt (the maker of OmniMES) and Relpol S.A. are launching a joint offering: certified Relpol RMM energy meters combined with the OmniMES system and the OmniEnergy module compliant with ISO 50001. One hardware vendor, one software vendor, one invoice, one point of technical support — instead of three separate integration projects.",
+    "lang": "en",
+    "tags": "Omnimes, OmniEnergy, Relpol, EMS, ISO 50001, energy efficiency"
+  },
+  {
+    "title": "Partnerstwo OmniMES × Relpol — inteligentna sieć pomiarów energii dla polskiego przemysłu",
+    "slug": "partnerstwo-omnimes-relpol-inteligentna-siec-pomiarow-energii",
+    "description": "Multiprojekt (producent systemu OmniMES) oraz Relpol S.A. rozpoczynają wspólną ofertę: certyfikowane liczniki energii RMM od Relpolu w połączeniu z systemem MES i modułem OmniEnergy zgodnym z ISO 50001. Jeden dostawca sprzętu, jeden dostawca oprogramowania, jedna faktura, jedno wsparcie techniczne — zamiast trzech osobnych projektów integracyjnych.",
+    "lang": "pl",
+    "tags": "Omnimes, OmniEnergy, Relpol, EMS, ISO 50001, efektywność energetyczna"
+  },
+  {
     "title": "Digital Product Passport dla baterii: 5,5 miesiąca do 18 lutego 2027 — co polska fabryka musi mieć w MES, żeby zdążyć (wnioski z pierwszych pilotaży EU)",
     "slug": "digital-product-passport-baterie-do-18-lutego-2027-co-polska-fabryka-musi-miec-w-mes",
     "description": "18 lutego 2027 dla baterii przemysłowych powyżej 2 kWh i baterii pojazdów elektrycznych startuje obowiązek Digital Product Passport (rozporządzenie 2023/1542). Pięć i pół miesiąca to nie jest dużo czasu — dostawcy do OEM (Volkswagen, Stellantis, BMW) już od sierpnia 2026 zaczynają wymagać gotowości danych w MES od poddostawców. Artykuł zbiera co dokładnie musi znaleźć się w DPP, jaka jest rola MES w tej strukturze, jakie są wnioski z pierwszych 12 pilotaży EU (Battery Pass Consortium, Circulor/Volvo, ACC, Verkor), i konkretną roadmapę na 5,5 miesiąca dla polskiej fabryki baterii.",
