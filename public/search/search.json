@@ -1,5 +1,19 @@
 [
   {
+    "title": "OmniEnergy w praktyce: od licznika do raportu ISO 50001 bez arkusza kalkulacyjnego",
+    "slug": "omnienergy-w-praktyce-od-licznika-do-raportu-iso-50001-bez-arkusza-kalkulacyjnego",
+    "description": "Przechodzimy przez moduł OmniEnergy w tej kolejności, w jakiej pracuje się w aplikacji: od podłączenia licznika, przez konfigurację ZWE i wskaźniki WEE, po porównanie okresów, harmonogram i raport w PDF. Pokazujemy też, dlaczego system zapisuje, kto wpisał wartość ręczną, pomija niekompletne migawki i blokuje porównania okresów różnej długości — bo od tego zależy, czy dane obronią się na audycie ISO 50001.",
+    "lang": "pl",
+    "tags": "OmniMES, OmniEnergy, ISO 50001, MES System"
+  },
+  {
+    "title": "OmniEnergy in practice: from energy meter to ISO 50001 report, with no spreadsheet in between",
+    "slug": "omnienergy-in-practice-from-energy-meter-to-iso-50001-report-with-no-spreadsheet",
+    "description": "A walk through the OmniEnergy module in the order you actually use it: connecting a meter, configuring SEUs and EnPIs, comparing periods, scheduling and exporting the report to PDF. Along the way we explain why the system records who entered every manual value, leaves incomplete snapshots off the charts and refuses to compare periods of different length — because that is what decides whether your data survives an ISO 50001 audit.",
+    "lang": "en",
+    "tags": "OmniMES, OmniEnergy, ISO 50001, MES System"
+  },
+  {
     "title": "Jev w przemyśle: gdy decyzja kosztuje mniej niż jeden token",
     "slug": "jev-w-przemysle-gdy-decyzja-kosztuje-mniej-niz-jeden-token",
     "description": "TypeSafe wypuścił Jeva — model, który nie pisze tekstu, tylko zwraca typowane decyzje z kalibrowanym prawdopodobieństwem. Koszt pojedynczego rozstrzygnięcia schodzi poniżej ceny kilku tokenów, a latencja z sekund do milisekund. Sprawdzamy, co to realnie zmienia w MES: gdzie na hali taki model ma sens, gdzie go stosować nie wolno i jak wpiąć go w architekturę bez naruszania wymogów audytu.",
