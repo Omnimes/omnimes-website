@@ -25,8 +25,8 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
       body: "Dwukierunkowa integracja OmniMES z systemami ERP — zlecenia produkcyjne, indeksy wyrobów i meldunki zwrotne (wykonanie, braki, zużycie surowca) wymieniane automatycznie, bez ręcznego przepisywania danych między ERP a halą produkcyjną. Cel: jedno źródło prawdy o produkcji — plan z ERP trafia na maszyny, a realizacja z hali wraca do ERP w czasie zbliżonym do rzeczywistego.",
     },
     {
-      scope: "Uniwersalne wtyczki OmniMES — w tym sterowanie maszynami po MQTT",
-      body: "Otwarty mechanizm wtyczek pozwalający rozszerzać OmniMES o własne integracje i funkcje, wraz ze sterowaniem maszynami bezpośrednio po MQTT. Cel: dać mniejszym i średnim przedsiębiorstwom lekką i tanią drogę do dwukierunkowej komunikacji z parkiem maszynowym — nie tylko odczyt stanu, ale i wysyłanie poleceń — bez kosztownej warstwy pośredniej i bez wymiany istniejącej automatyki.",
+      scope: "MCP Apps — interaktywne widoki OmniMES w asystencie AI",
+      body: "W trakcie wdrażania. MCP Apps to rozszerzenie standardu MCP, dzięki któremu asystent AI (np. Claude, ChatGPT) nie tylko odpowiada tekstem, ale wyświetla w rozmowie interaktywne widoki OmniMES: wykresy, tabele i zestawienia, z którymi można od razu pracować. To dużo większe możliwości niż dotychczasowa wtyczka: zamiast opisu danych — gotowy, klikalny widok prosto z systemu, bez przełączania się między oknami.",
     },
   ],
   en: [
@@ -35,14 +35,105 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
       body: "Two-way integration between OmniMES and ERP systems — production orders, product indexes and feedback reports (output, scrap, material consumption) exchanged automatically, without rekeying data by hand between the ERP and the shop floor. The goal: a single source of truth about production — the plan flows from the ERP to the machines, and execution flows from the floor back to the ERP in near real time.",
     },
     {
-      scope: "Universal OmniMES plugins — including machine control over MQTT",
-      body: "An open plugin mechanism to extend OmniMES with custom integrations and features, including controlling machines directly over MQTT. The goal: give small and medium enterprises a lightweight, low-cost path to two-way communication with their machine park — not just reading state, but sending commands — without an expensive middleware layer and without replacing existing automation.",
+      scope: "MCP Apps — interactive OmniMES views in your AI assistant",
+      body: "In progress. MCP Apps is an extension of the MCP standard that lets an AI assistant (e.g. Claude, ChatGPT) do more than reply in text: it shows interactive OmniMES views right in the conversation — charts, tables and summaries you can work with immediately. Much greater possibilities than the current plugin: instead of a description of the data, a ready, clickable view straight from the system, without switching windows.",
     },
   ],
 }
 
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
+    {
+      version: "4.5.0",
+      date: "2026-10-02",
+      entries: [
+        {
+          category: "added",
+          scope: "OmniEnergy — cykliczne porównanie okresów ZWE wysyłane mailem",
+          body: "W harmonogramie automatyzacji nowy typ zadania „Porównanie okresów ZWE”. System sam zestawia wybraną liczbę ostatnich okresów konfiguracji ZWE i wysyła mailem tabelę porównania (maszyna i źródło w wierszach, okresy w kolumnach, zmiana procentowa i zmiana łącznie) z załącznikiem CSV. Liczby są identyczne z tymi w oknie porównania w aplikacji. Gdy brakuje okresów o zbliżonej długości, zadanie zostaje pominięte z czytelnym powodem, zamiast zgłaszać błąd.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — eksport raportu ZWE i porównania okresów do PDF i PNG",
+          body: "Raport i porównanie można pobrać jako PDF (format A4 z podziałem na strony) albo PNG, z wykresami dokładnie takimi jak na ekranie. Pliki trafiają też do archiwum na serwerze, tak jak raporty z pulpitów BI.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — sumaryczne zużycie w porównywarce okresów",
+          body: "Przy zmianie procentowej widać sumę zużycia w każdym porównywanym okresie, w nagłówku raportu i w każdej grupie źródeł. Sumy liczone są osobno dla każdej jednostki, więc kWh nie są dodawane do metrów sześciennych.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — filtr listy ZWE po konfiguracji",
+          body: "Listę raportów ZWE można zawęzić do wybranej konfiguracji; wybór jest zapamiętywany razem z pozostałymi filtrami.",
+        },
+        {
+          category: "added",
+          scope: "Planogram — układanie kafelków",
+          body: "Zaznaczone kafelki można wyrównać w jednej linii poziomej lub pionowej, rozmieścić w równych odstępach albo ułożyć w siatce. Wyrównanie liczone jest względem środków kafelków, więc kafelki różnej wielkości układają się równo.",
+        },
+        {
+          category: "added",
+          scope: "Logo firmy w aplikacji",
+          body: "W Konfiguracji ogólnej można wgrać logo klienta (wersję jasną i ciemną); wyświetla się w nagłówku systemu obok logo OmniMES.",
+        },
+        {
+          category: "added",
+          scope: "Konfigurator statusów — jednostka parametru",
+          body: "Przy dodawaniu parametru w nowym profilu można od razu podać jego jednostkę.",
+        },
+        {
+          category: "changed",
+          scope: "Logowanie — nazwa użytkownika albo e-mail",
+          body: "Do OmniMES można się zalogować nazwą użytkownika albo adresem e-mail (bez rozróżniania wielkości liter), czyli tym samym adresem co do Redasha. E-mail jest wymagany i unikalny dla nowych kont, a jego zmiana w panelu użytkownika od razu obowiązuje przy logowaniu. Dotychczasowe loginy działają bez zmian.",
+        },
+        {
+          category: "changed",
+          scope: "Konfiguracja ogólna — podpowiedź portu brokera",
+          body: "Podpowiedź zależy od protokołu: MQTT → 1883, szyfrowany MQTTS → 8883; nazwy protokołów zapisane wielkimi literami.",
+        },
+        {
+          category: "changed",
+          scope: "Wykrywanie sygnałów — filtr tematu w regułach filtrowania",
+          body: "Filtr nazwy tematu MQTT jest w sekcji „Reguły filtrowania”, z opisem różnicy względem reguł działających na tagach. Zwinięcie sekcji czyści filtry, więc wykrywanie nie zawęża się już po cichu.",
+        },
+        {
+          category: "fixed",
+          scope: "Pulpity — zapytania JSON w instalacji lokalnej",
+          body: "Zapytania JSON tworzone kreatorem nie wykonywały się w Redashu w instalacji lokalnej, bo Redash próbował połączyć się sam ze sobą. W konfiguracji Redasha doszło pole z adresem OmniMES dla Redasha, domyślnie ustawione tak, by instalacja lokalna działała bez zmian.",
+        },
+        {
+          category: "fixed",
+          scope: "Wykrywanie sygnałów — reguły filtrowania",
+          body: "Poprawiono błędy, przez które reguły filtrowania działały inaczej, niż wskazywała konfiguracja.",
+        },
+        {
+          category: "fixed",
+          scope: "Czas pracy — wszystkie zdarzenia w instalacji lokalnej",
+          body: "Widok pokazywał tylko zdarzenia maszyn klasyfikowanych na podstawie pomiarów; teraz pokazuje zdarzenia wszystkich maszyn.",
+        },
+        {
+          category: "fixed",
+          scope: "Konfigurator statusów — pole „wartość tagu”",
+          body: "Po użyciu klasyfikacji na podstawie pomiaru pole pozostawało zablokowane nawet po usunięciu zakresu, więc nie dało się wrócić do klasycznej klasyfikacji stanów.",
+        },
+        {
+          category: "fixed",
+          scope: "Profile — segmenty prędkościomierza",
+          body: "Konfiguracja nowego profilu pokazuje tyle segmentów, ile widać na podglądzie.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram — zmiana rozmiaru kafla",
+          body: "Wpisanie nowego rozmiaru kafla w edytorze planogramu powodowało błędy.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy — miesięczne podsumowania z automatyzacji",
+          body: "Mail z podsumowaniem przychodzi pierwszego dnia miesiąca z danymi za cały poprzedni miesiąc; wcześniej w miesiącach 31-dniowych przychodził 30. dnia.",
+        },
+      ],
+    },
     {
       version: "4.4.0",
       date: "2026-07-29",
@@ -201,6 +292,97 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.5.0",
+      date: "2026-10-02",
+      entries: [
+        {
+          category: "added",
+          scope: "OmniEnergy — recurring SEU period comparison by email",
+          body: "A new task type in the automation schedule: „SEU period comparison”. The system compares the chosen number of most recent periods of an SEU configuration and emails the comparison table (machine and source in rows, periods in columns, percentage change and total change) with a CSV attachment. The numbers are identical to those in the comparison window in the app. When there are not enough periods of similar length, the task is skipped with a clear reason instead of reporting an error.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — export of the SEU report and period comparison to PDF and PNG",
+          body: "The report and the comparison can be downloaded as PDF (A4, split into pages) or PNG, with charts exactly as on screen. Files are also stored in the server archive, just like BI dashboard reports.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — total consumption in the period comparison",
+          body: "Next to the percentage change you now see total consumption in each compared period, in the report header and in each source group. Totals are calculated separately for each unit, so kWh are never added to cubic metres.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy — filtering the SEU list by configuration",
+          body: "The SEU report list can be narrowed down to a selected configuration; the choice is remembered together with the other filters.",
+        },
+        {
+          category: "added",
+          scope: "Planogram — arranging tiles",
+          body: "Selected tiles can be aligned on one horizontal or vertical line, distributed at equal spacing or arranged in a grid. Alignment uses tile centres, so tiles of different sizes line up neatly.",
+        },
+        {
+          category: "added",
+          scope: "Company logo in the app",
+          body: "In General configuration you can upload the customer's logo (light and dark version); it is shown in the system header next to the OmniMES logo.",
+        },
+        {
+          category: "added",
+          scope: "Status configurator — parameter unit",
+          body: "When adding a parameter to a new profile, you can set its unit right away.",
+        },
+        {
+          category: "changed",
+          scope: "Sign-in — username or email",
+          body: "You can sign in to OmniMES with your username or email address (case-insensitive) — the same address you use for Redash. Email is required and unique for new accounts, and changing it in the user panel applies to sign-in immediately. Existing logins keep working.",
+        },
+        {
+          category: "changed",
+          scope: "General configuration — broker port hint",
+          body: "The hint depends on the protocol: MQTT → 1883, encrypted MQTTS → 8883; protocol names are written in capitals.",
+        },
+        {
+          category: "changed",
+          scope: "Signal discovery — topic filter in filtering rules",
+          body: "The MQTT topic name filter now sits in the „Filtering rules” section, with an explanation of how it differs from rules applied to tags. Collapsing the section clears the filters, so discovery is no longer narrowed silently.",
+        },
+        {
+          category: "fixed",
+          scope: "Dashboards — JSON queries in local installations",
+          body: "JSON queries created with the wizard did not run in Redash in local installations, because Redash tried to connect to itself. Redash settings now include a field with the OmniMES address for Redash, set by default so that local installations work without changes.",
+        },
+        {
+          category: "fixed",
+          scope: "Signal discovery — filtering rules",
+          body: "Fixed bugs that made filtering rules behave differently from what the configuration specified.",
+        },
+        {
+          category: "fixed",
+          scope: "Working time — all events in local installations",
+          body: "The view showed only events of machines classified from measurements; it now shows events of all machines.",
+        },
+        {
+          category: "fixed",
+          scope: "Status configurator — „tag value” field",
+          body: "After using measurement-based classification the field stayed locked even after removing the range, so it was impossible to go back to classic state classification.",
+        },
+        {
+          category: "fixed",
+          scope: "Profiles — speedometer segments",
+          body: "The configuration of a new profile shows as many segments as the preview.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram — resizing a tile",
+          body: "Typing a new tile size in the planogram editor caused errors.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy — monthly automation summaries",
+          body: "The summary email arrives on the first day of the month with data for the whole previous month; previously, in 31-day months it arrived on the 30th.",
+        },
+      ],
+    },
     {
       version: "4.4.0",
       date: "2026-07-29",
