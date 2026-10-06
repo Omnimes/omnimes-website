@@ -147,7 +147,7 @@ High-risk AI obligations start in December 2027, not August 2026. The emotion-re
 
 - On 18 September 2026 the Sejm appointed Pamela Krzypkowska, previously director of the Research and Innovation Department at the Ministry of Digital Affairs, as chair of KRiBSI, with 271 votes in favour, 24 against and 140 abstentions ([rp.pl](https://www.rp.pl/prawo-w-polsce/art45159621-sejm-powolal-pamele-krzypkowska-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai)). The Senate consented on 24 September 2026 ([wnp.pl](https://www.wnp.pl/rynki/senat-za-powolaniem-pameli-krzypkowskiej-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai,1102315.html)).
 - The inspection and penalty provisions of the Polish Act take effect on 28 October 2026 (Article 127).
-- The first version described requests from data protection and consumer authorities to plants, a statement by the "head of the Digital Market Department at UODO", parallel activity in other member states and a PLN 5 million penalty cap. We could not confirm any of this: UODO has no such department ([UODO](https://uodo.gov.pl/pl/p/o-nas)), and the Act refers to the fines in Article 99 of the AI Act. We have removed that content and apologise to our readers.
+- The first version described requests from data protection and consumer authorities to plants, a statement by the "head of the Digital Market Department at UODO", parallel activity in other member states and a PLN 5 million penalty cap. We could not confirm any of this: UODO has no such department ([UODO](https://uodo.gov.pl/pl/p/o-nas)), and the Act refers to the fines in Article 99 of the AI Act. We have removed that content.
 
 ---
 

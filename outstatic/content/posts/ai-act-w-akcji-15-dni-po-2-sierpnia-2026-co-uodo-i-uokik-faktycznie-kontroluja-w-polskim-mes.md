@@ -149,7 +149,7 @@ Obowiązki dla AI wysokiego ryzyka zaczną się stosować w grudniu 2027 r., a n
 
 - 18 września 2026 r. Sejm powołał Pamelę Krzypkowską na przewodniczącą KRiBSI: 271 posłów za, 24 przeciw, 140 wstrzymujących się. Wcześniej była dyrektorką Departamentu Badań i Innowacji w Ministerstwie Cyfryzacji ([rp.pl](https://www.rp.pl/prawo-w-polsce/art45159621-sejm-powolal-pamele-krzypkowska-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai)). 24 września 2026 r. Senat wyraził zgodę na jej powołanie ([wnp.pl](https://www.wnp.pl/rynki/senat-za-powolaniem-pameli-krzypkowskiej-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai,1102315.html)).
 - 28 października 2026 r. wchodzą w życie przepisy o kontroli i karach (art. 127 ustawy).
-- Pierwsza wersja artykułu opisywała wezwania UODO i UOKiK do zakładów, wypowiedź „szefowej Departamentu Rynku Cyfrowego UODO" i karę do 5 mln zł z polskiej ustawy. Żadnej z tych informacji nie potwierdziliśmy: UODO nie ma takiego departamentu ([UODO](https://uodo.gov.pl/pl/p/o-nas)), a ustawa odsyła do kar z art. 99 AI Act. Usunęliśmy te treści i przepraszamy czytelników.
+- Pierwsza wersja artykułu opisywała wezwania UODO i UOKiK do zakładów, wypowiedź „szefowej Departamentu Rynku Cyfrowego UODO" i karę do 5 mln zł z polskiej ustawy. Żadnej z tych informacji nie potwierdziliśmy: UODO nie ma takiego departamentu ([UODO](https://uodo.gov.pl/pl/p/o-nas)), a ustawa odsyła do kar z art. 99 AI Act. Usunęliśmy te treści.
 
 ---
 
