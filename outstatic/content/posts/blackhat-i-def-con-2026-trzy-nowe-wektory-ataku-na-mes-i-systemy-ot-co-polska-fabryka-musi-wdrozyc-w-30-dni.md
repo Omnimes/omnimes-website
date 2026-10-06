@@ -1,108 +1,200 @@
 ---
-title: 'BlackHat i DEF CON 2026: trzy nowe wektory ataku na MES i systemy OT — co polska fabryka musi wdrożyć w 30 dni'
+title: 'Black Hat USA 2026 i DEF CON 34: trzy wektory ataku na MES i systemy OT — co fabryka powinna wdrożyć w 30 dni'
 status: 'published'
 author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'blackhat-i-def-con-2026-trzy-nowe-wektory-ataku-na-mes-i-systemy-ot-co-polska-fabryka-musi-wdrozyc-w-30-dni'
-description: 'BlackHat USA 2026 (1–6 sierpnia) i DEF CON 33 (6–9 sierpnia) zamknęły najgorętsze dwa tygodnie roku dla ekspertów bezpieczeństwa przemysłowego. Trzy prezentacje realnie zmieniają mapę zagrożeń dla polskiego MES: zautomatyzowane włamanie do OPC UA przez zatrute certyfikaty, kradzież modelu AI z serwerów edge Jetson przez side-channel oraz atak łańcuchowy przez ekosystem otwartych bibliotek Python w środowisku SCADA. Artykuł rozbiera każdy z tych trzech wektorów bez marketingu, plus konkretną listę zmian które trzeba wdrożyć w ciągu 30 dni.'
+description: 'Black Hat USA 2026 i DEF CON 34 przyniosły trzy wątki ważne dla zakładów produkcyjnych: kulisy ataku na polską energetykę i firmę produkcyjną z grudnia 2025 r. (wejście do sieci OT przez prywatny APN), słabości protokołów i narzędzi inżynierskich (CC-Link IE TSN, OPC UA, open62541, Siemens S7) oraz podatności lokalnych środowisk uruchomieniowych AI. Opisujemy, co faktycznie pokazano, i proponujemy listę działań na 30 dni.'
 coverImage: '/images/post-blackhat-2026/cover-blackhat-2026.png'
 lang: 'pl'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"cyberbezpieczenstwo","label":"cyberbezpieczenstwo"},{"value":"itOt","label":"it-ot"},{"value":"nis2","label":"NIS2"}]
 publishedAt: '2026-08-24T08:00:00.000Z'
 ---
 
-Dwa tygodnie temu Las Vegas hostowało najgorętsze wydarzenie roku dla specjalistów cyberbezpieczeństwa. **BlackHat USA 2026** (1–6 sierpnia) i **DEF CON 33** (6–9 sierpnia) zamknęły ośmiodniowy maraton prezentacji, warsztatów i konkursów. Zwykle traktowane jako „impreza dla świata IT/consumer", w 2026 miały bezprecedensowy udział treści przemysłowych — Village ICS/OT rósł o 40% względem 2025, prezentacje o systemach MES i SCADA były w głównym paśmie BlackHat, a jeden z ataków demonstracyjnych DEF CON dotknął realnego wdrożenia w europejskiej fabryce.
+*Artykuł poprawiony 6 października 2026 r. Pierwsza wersja zawierała nieprawdziwe informacje o prezentacjach, podatnościach i pakietach oprogramowania.*
 
-Z perspektywy polskiego dyrektora produkcji lub CISO — trzy z tegorocznych prezentacji zmieniają praktyczną mapę zagrożeń i powinny wywołać konkretne zmiany w waszym środowisku. Nie jest to lista „ciekawostek do przeczytania" — to jest lista trzech wektorów ataku, które są **teraz publicznie udokumentowane**, mają **działający kod demonstracyjny** i będą w kolejnych miesiącach wykorzystywane przez grupy atakujące. Poniżej rozbieram każdy z nich i wskazuję, co konkretnie trzeba wdrożyć w ciągu 30 dni.
+Black Hat USA 2026 trwał od 1 do 6 sierpnia w Mandalay Bay w Las Vegas, a prelekcje odbyły się 5 i 6 sierpnia. Od 6 do 9 sierpnia w Las Vegas Convention Center odbywał się DEF CON 34. Z obu programów wybraliśmy trzy wątki, które bezpośrednio dotyczą sieci OT i otoczenia systemu MES w zakładzie produkcyjnym:
 
-## Wektor 1 — OPC UA i zatrute certyfikaty (BlackHat główna scena, 4 sierpnia)
+1. przebieg ataku na polską energetykę i firmę produkcyjną z 29 grudnia 2025 r.,
+2. słabości protokołów przemysłowych i oprogramowania inżynierskiego,
+3. bezpieczeństwo modeli AI uruchamianych lokalnie, na brzegu sieci.
 
-Zespół z Claroty i Team82 pokazał **CVE-2026-38472** — podatność w referencyjnej bibliotece OPC UA (`open62541`), pozwalającą atakującemu z dostępem do sieci OT wstrzyknąć zatruty certyfikat serwera do zaufanego katalogu klienta OPC UA. Efekt: pełny man-in-the-middle na komunikacji PLC↔MES, z możliwością nie tylko podglądu, ale też **modyfikacji poleceń sterujących**.
+Ton nadał panel o infrastrukturze krytycznej na Black Hat. Matthew Rogers, który w amerykańskiej agencji CISA odpowiada za cyberbezpieczeństwo OT, stwierdził, że w żadnej z obserwowanych w ostatnich miesiącach aktywności atakujący nie wykorzystali w OT ani jednej podatności z numerem CVE. Dodał, że komunikacja w tych sieciach zwykle nie jest ani szyfrowana, ani podpisywana (Cybersecurity Dive, 6.08.2026). Dwa pierwsze wątki poniżej to potwierdzają: atakujący wchodzą przez domyślne hasła, otwarte interfejsy administracyjne i słabo odseparowane sieci. Trzeci dotyczy nowszej warstwy, czyli modeli AI uruchamianych w zakładzie.
 
-Konkretnie w prezentacji BlackHat demo pokazało: atakujący na tym samym VLAN co MES, wprowadza się między MES a sterownik Siemens S7-1500, przechwytuje polecenie zmiany setpointu na linii pakującej, zmienia wartość „ciśnienie: 3.2 bar" na „ciśnienie: 7.8 bar" w drodze do sterownika. MES widzi potwierdzenie „3.2 bar" (bo atakujący modyfikuje też odpowiedź), operator nic nie widzi, linia zaczyna produkować niewłaściwie. Czas od uzyskania dostępu do sieci do udanej podmiany polecenia — 90 sekund.
+## Wektor 1 — od farmy wiatrowej do elektrociepłowni przez prywatny APN
 
-Dlaczego to jest problem dla polskich fabryk:
-- `open62541` i pokrewne biblioteki są w większości nowoczesnych stacków MES i SCADA, w tym w części wdrożeń OmniMES z klientem OPC UA
-- Sieci OT wciąż często są słabo segmentowane — atakujący, który dostał się przez phishing do sieci biurowej, w wielu zakładach ma prostą drogę do VLAN OT
-- Podpisane certyfikaty OPC UA są rzadko rotowane — typowo raz przy wdrożeniu i „na zawsze"
+### Co się stało 29 grudnia 2025 r.
 
-Co realnie robić w 30 dni:
-1. **Sprawdzić wersję biblioteki OPC UA** w waszym MES i SCADA. Wersje `open62541` przed 1.4.2 są podatne. Aktualizacja do 1.4.2 lub nowszej jest priorytetem.
-2. **Włączyć weryfikację nazw hostów w certyfikatach OPC UA** — wielu integratorów wyłączyło to domyślnie „bo działa łatwiej"; teraz to bezpośrednia furtka do ataku.
-3. **Segmentacja VLAN IT/OT** z regułą „domyślnie zamknięte" na firewallu przemysłowym — jeśli nie mieliście tego wdrożonego zgodnie z [zaleceniami z artykułu o IT/OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa), to jest teraz naprawdę pilne.
-4. **Rotacja certyfikatów OPC UA** — plan przynajmniej raz na 12 miesięcy, z procedurą wycofania starych certyfikatów.
+Według raportu CERT Polska z 30 stycznia 2026 r. skoordynowane ataki z 29 grudnia objęły co najmniej 30 farm wiatrowych i fotowoltaicznych, elektrociepłownię dostarczającą ciepło do blisko pół miliona odbiorców oraz prywatną firmę z sektora produkcyjnego. Wszystkie miały charakter wyłącznie niszczący, bez żądania okupu. Infrastruktura atakującego w dużym stopniu pokrywała się z grupami aktywności opisywanymi jako Static Tundra, Berserk Bear, Ghost Blizzard i Dragonfly.
 
-## Wektor 2 — kradzież modelu AI z Jetson Orin przez side-channel (DEF CON, 7 sierpnia)
+Na farmach punktem wejścia były urządzenia FortiGate pełniące rolę koncentratora VPN i zapory sieciowej. Interfejs VPN był dostępny z internetu i pozwalał logować się bez uwierzytelniania wieloskładnikowego. Dalej atakujący korzystał z domyślnych danych logowania:
+- na sterownikach Hitachi RTU560 wgrał uszkodzone oprogramowanie układowe,
+- serwery portów szeregowych Moxa NPort przywracał do ustawień fabrycznych, zmieniał w nich hasło i ustawiał nieosiągalny adres IP 127.0.0.1.
 
-Prezentacja z Village Hardware Hacking pokazała **atak side-channel na Jetson Orin AGX** pozwalający wykraść wagi modelu neuronowego uruchomionego lokalnie na urządzeniu, przez pomiar zużycia prądu i emisji elektromagnetycznej. Autorstwo — badacze z Ruhr-Universität Bochum plus zespół niezależny z Politechniki Warszawskiej (ważne — polski udział, więc temat jest już w polskim środowisku akademickim).
+Produkcja energii trwała, ale farmy straciły łączność z operatorami systemów dystrybucyjnych. W dużej elektrociepłowni system EDR zablokował uruchomienie programu niszczącego dane (wipera, nazwanego przez CERT Polska DynoWiper).
 
-Konkretnie: atakujący z fizycznym dostępem do Jetsona Orin (np. serwisant, wynajęty operator, ktoś na produkcji z dostępem do serwerowni) montuje przez 4 do 8 godzin sondę pomiarową. W tym czasie model uruchomiony na Jetsonie wykonuje standardowe zadania inferencji. Sonda mierzy elektromagnetyczne emisje procesora, atakujący rekonstruuje wagi modelu z dokładnością pozwalającą na jego użycie w innej lokalizacji lub sprzedaż konkurencji.
+Firma produkcyjna była według CERT Polska celem oportunistycznym, niezwiązanym z pozostałymi. Atakujący wszedł przez urządzenie brzegowe Fortinet, które wcześniej było podatne. Jego konfiguracja wcześniej wyciekła i trafiła m.in. na forum przestępcze. Po przejęciu uprawnień administratora domeny atakujący rozesłał skrypt niszczący pliki (LazyWiper, napisany w PowerShell) przez obiekt zasad grupy.
 
-Dlaczego to jest problem dla polskiego przemysłu:
-- Coraz więcej zakładów wdraża [lokalne modele AI na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury) — nasz artykuł z maja pokazywał, że to sensowna architektura kosztowo i pod kątem RODO, ale nie omawialiśmy fizycznego bezpieczeństwa urządzenia
-- Model wytrenowany na waszych danych produkcyjnych (predykcja awarii, klasyfikacja wad w kontroli jakości, personalizowany asystent operatora) jest **cennym IP** — kradzież modelu to kradzież lat pracy waszych inżynierów
-- Wielu integratorów instaluje Jetsony w łatwo dostępnych miejscach na hali produkcyjnej, bez zabezpieczenia fizycznego
+CERT Polska opisuje też, że atakujący logował się do usług M365 danymi przejętymi w sieciach lokalnych. Pobierał z nich pliki i wiadomości dotyczące modernizacji sieci OT, systemów SCADA i prac technicznych w zaatakowanych organizacjach.
 
-Co realnie robić w 30 dni:
-1. **Inwentaryzacja lokalizacji fizycznej wszystkich Jetsonów w waszym zakładzie**. Jeśli którykolwiek stoi w miejscu dostępnym dla osoby postronnej — natychmiast do zamkniętej szafy rack.
-2. **Model watermarking** — technika oznaczania modelu unikalnym „znakiem wodnym" pozwalającym udowodnić kradzież. Biblioteka `torch-watermark` jest darmowa i można ją wdrożyć w ciągu tygodnia.
-3. **Model splitting** — dla najważniejszych modeli podzielenie inferencji między dwa urządzenia w różnych fizycznie lokalizacjach. Znacznie komplikuje atak side-channel.
-4. **Rozważcie kwantyzację modelu do niższej precyzji (INT4) tuż przed wdrożeniem na produkcję** — kwantyzacja utrudnia rekonstrukcję wag przez side-channel (choć nie eliminuje problemu).
+### Co pokazano na DEF CON 34
 
-## Wektor 3 — atak łańcuchowy przez ekosystem Python w SCADA (BlackHat, 5 sierpnia)
+8 sierpnia na ścieżce głównej DEF CON 34 wystąpił Marcin Dudek, kierujący CERT Polska, z prezentacją „From Wind Farm to CHP Plant: The Untold Story of Lateral Movement in a Polish Energy Sector Attack”. Tego samego dnia CERT Polska opublikował raport uzupełniający. Dotyczy on drugiej, mniejszej elektrociepłowni, która dostarcza ciepło do około 50 tys. mieszkańców.
 
-Zespół z Sonatype pokazał zaawansowaną wersję ataku na łańcuch dostaw oprogramowania, konkretnie ukierunkowaną na środowiska SCADA używające otwartych bibliotek Python. Wektor: atakujący publikuje bibliotekę Python o nazwie łudząco podobnej do popularnej (typowo znanej biblioteki do pracy z Modbus, MQTT lub OPC UA). Instalacja pakietu prowadzi do wykonania kodu, który przez trzy do sześciu miesięcy jest w trybie „uśpionym" (żadnych działań ofensywnych), a po tym okresie aktywuje się i zaczyna wyprowadzać dane z sieci OT do zewnętrznego serwera atakującego.
+Ścieżka ataku zrekonstruowana przez CERT Polska wyglądała tak:
 
-Konkretnie w prezentacji BlackHat pokazano cztery realne przypadki takich bibliotek wykrytych w ciągu ostatnich 8 miesięcy: `pymodbus-async` (nie mylić z legalnym `pymodbus-async-client`), `opcua-utils` (podobne do `opcua`), `mqtt-connector` (podobne do `paho-mqtt`), `scada-tools`. Wszystkie cztery były zainstalowane w co najmniej kilkuset środowiskach SCADA na świecie w momencie wykrycia.
+1. Dostęp do koncentratora VPN FortiGate na farmie wiatrowej.
+2. Logowanie przez SSH do routera komórkowego Teltonika RUTX50 i najpewniej zestawienie tunelu SSH do prywatnego APN, czyli wydzielonej sieci transmisji danych operatora systemu dystrybucyjnego w sieci komórkowej.
+3. Od 18 grudnia skanowanie prywatnego APN w poszukiwaniu usług VNC i HTTP oraz protokołów S7 i Modbus.
+4. W elektrociepłowni atakujący znalazł sterownik WAGO PFC200 z wbudowanym modemem komórkowym. Jego interfejs WWW był dostępny od strony APN i chroniony domyślnym hasłem konta „admin”. Atakujący włączył na nim SSH i zrobił z niego bramę do sieci OT zakładu.
+5. Od 18 do 25 grudnia trwał rekonesans, m.in. skanowanie portów S7 (102 TCP), Modbus (502 TCP) i CODESYS (11740 TCP). 25 grudnia atakujący połączył się protokołem S7 z trzema sterownikami Siemens.
+6. 29 grudnia atakujący działał w sieci zakładu mniej więcej od 5:30 do 10:10. Według relacji personelu sterowniki S7-300, S7-1200 i S7-1500 zostały przełączone w tryb STOP i zabezpieczone hasłem. Turbina parowa i stacja uzdatniania wody technologicznej stanęły, a proces kogeneracji został przerwany.
 
-Dlaczego to jest problem dla polskiego przemysłu:
-- Wielu integratorów SCADA i MES używa Pythona do skryptów integracyjnych, custom modułów, pipeline'ów danych
-- Instalacja nowej biblioteki przez `pip install` jest w wielu zespołach traktowana jako trywialna operacja, bez weryfikacji źródła
-- Sieci OT często mają wychodzącą łączność do internetu (do aktualizacji, telemetrii producenta, integracji z chmurą) — atakujący ma drogę do exfiltracji danych
+Dzięki szybkiej reakcji operatorów odbiorcy nie odczuli przerwy w dostawach ciepła ani energii elektrycznej. Zakład początkowo uznał zdarzenie za błąd inżynierów wykonawcy, który prowadził prace serwisowe, i zgłosił je tylko informacyjnie. CERT Polska podjął obsługę incydentu przy założeniu, że może to być cyberatak, a analiza trwała ponad trzy miesiące. Przywrócenie sterowników do ustawień fabrycznych skróciło przestój, ale usunęło z nich dzienniki zdarzeń. Sterownik WAGO, który posłużył za bramę, atakujący uszkodził, niszcząc tablicę partycji.
 
-Co realnie robić w 30 dni:
-1. **Wprowadzenie polityki „lock-file only" dla wszystkich środowisk Python w SCADA i MES** — zero instalacji nowych bibliotek na produkcji bez pull requesta, code review i sprawdzenia sumy kontrolnej.
-2. **Audyt istniejących zależności** — narzędzia `pip-audit`, `safety` lub komercyjny `Snyk`. Sprawdźcie każdą zainstalowaną bibliotekę pod kątem znanych podatności i typo-squatting.
-3. **Zablokowanie ruchu wychodzącego z sieci OT do internetu**, poza konkretnie zdefiniowanymi celami (np. serwer aktualizacji producenta MES). To pojedyncza najbardziej skuteczna kontrola — nawet jeśli zainstalujecie zainfekowaną bibliotekę, dane nie wychodzą nigdzie na zewnątrz.
-4. **Prywatne repozytorium PyPI (np. Artifactory, Nexus)** dla środowisk SCADA — wszystkie instalacje idą przez zaufany serwer, żadnego bezpośredniego dostępu do publicznego PyPI.
+Według CERT Polska to pierwszy zaobserwowany przypadek realnego ataku, w którym do sieci OT wchodzi się przez prywatny APN. Umożliwiła to konfiguracja, w której dowolne urządzenia w APN mogły się ze sobą komunikować. Z ankiet przeprowadzonych przez CERT Polska wynika, że taka konfiguracja była w Polsce powszechna, a według zespołu podobne ustawienia są szeroko stosowane także w innych krajach. Ten sam incydent omawiał w ICS Village Joe Slowik (Dataminr) w wystąpieniu „Lessons Learned from Poland and Beyond”.
 
-## Czym te trzy wektory różnią się od poprzednich lat
+### Co to oznacza dla fabryki
 
-Trzy istotne obserwacje:
+Raport uzupełniający kończy się zaleceniami dla podmiotów korzystających z prywatnych APN:
+- włączyć izolację klientów, czyli zablokować bezpośrednią komunikację między urządzeniami w APN,
+- traktować APN jako sieć niezaufaną, a jeśli organizacja nie kontroluje jego konfiguracji, to na równi z internetem,
+- dopuszczać ruch między siecią OT a bramą APN tylko według listy dozwolonych połączeń,
+- monitorować ten ruch i centralnie zbierać dzienniki zdarzeń,
+- nie udostępniać od strony APN interfejsów administracyjnych (WWW, SSH, Telnet),
+- zmienić domyślne hasła,
+- objąć APN testami penetracyjnymi i przeglądami architektury.
 
-**Po pierwsze**, wszystkie trzy prezentacje pokazały **działający kod demonstracyjny** — to nie są teoretyczne ataki. Kod jest publiczny (dwa z trzech na GitHubie), więc grupy przestępcze zaczną wdrażać je w kampaniach ransomware w ciągu najbliższych 3–6 miesięcy. Wcześniejsze prezentacje BlackHat o OT często były w rejestrze „teoretycznie możliwe" — teraz są w rejestrze „gotowe do użycia".
+Nasza ocena: routery komórkowe, sterowniki z modemami i zdalny dostęp serwisowy dostawców maszyn są też w zakładach produkcyjnych. Te zalecenia warto więc stosować szerzej niż tylko w energetyce. Druga lekcja pochodzi wprost od CERT Polska: zgłaszać nie tylko potwierdzone incydenty, ale też niewyjaśnione awarie i zakłócenia pracy.
 
-**Po drugie**, dwa z trzech wektorów (OPC UA i Python supply chain) są **łatwe do wdrożenia** dla atakującego z podstawową wiedzą techniczną. Poprzednie ataki na OT wymagały głębokiej wiedzy o konkretnych sterownikach PLC — nowe wektory działają uniwersalnie i można je wdrożyć bez znajomości waszego środowiska.
+## Wektor 2 — protokoły przemysłowe i oprogramowanie inżynierskie
 
-**Po trzecie**, wszystkie trzy są **bezpośrednio związane z realnym wdrożeniem MES** — nie są to ataki na abstrakcyjną „infrastrukturę krytyczną", tylko na konkretną warstwę oprogramowania, którą wasz zakład prawdopodobnie ma zainstalowaną w tej chwili.
+### CC-Link IE TSN: zmiana wartości wejść i wyjść
 
-## Priorytetowa lista działań na najbliższe 30 dni
+Nozomi Networks przygotowało na Black Hat USA 2026 nagraną sesję „Deterministic Chaos — Exploiting and Securing Predictable Timing in TSN Industrial Networks”, dostępną dla uczestników konferencji. Prowadzili ją Alessandro Di Pinto, Luca Cremona i Gabriele Quagliarella. Badacze opisali atak na protokół CC-Link IE TSN firmy Mitsubishi Electric. Łączy on podatności dnia zerowego w przełącznikach TSN ze wstrzykiwaniem pakietów na poziomie protokołu. Efekt to precyzyjna i trudna do wykrycia zmiana wartości wejść i wyjść przesyłanych między sterownikiem a urządzeniami polowymi.
 
-Jeżeli mielibyście czas tylko na jedno działanie z tego artykułu — jest to blokada ruchu wychodzącego z sieci OT do internetu z „allow-list" dokładnie zdefiniowanych celów. To pojedyncza najbardziej skuteczna kontrola przeciwko wszystkim trzem wektorom.
+30 lipca 2026 r. Mitsubishi Electric opublikowało komunikat o podatności CVE-2026-13584 w protokole CC-Link IE TSN, z podziękowaniem dla zespołu Nozomi Networks za jej zgłoszenie. Kategoria to CWE-924 (niewystarczające egzekwowanie integralności wiadomości), a ocena CVSS v4 wynosi 7,1. Atakujący z dostępem do sieci CC-Link IE TSN może przy określonych warunkach czasowych zmieniać dane sterujące. Podatność dotyczy wszystkich wersji wymienionych produktów: sterowników MELSEC, modułów ruchu, falowników, serwonapędów i kontrolerów robotów. Producent nie wskazuje wersji z poprawką. Zaleca natomiast:
+- ograniczenie fizycznego dostępu (kontrola wejść na obiekt, zamykane szafy sterownicze, blokady portów Ethernet),
+- pracę w zaufanej sieci oddzielonej zaporą,
+- właściwe ustawienie haseł i uprawnień na urządzeniach na granicy sieci.
 
-Jeżeli macie czas na trzy działania — dodajcie do tego aktualizację `open62541` do wersji 1.4.2 lub nowszej oraz przeniesienie Jetsonów AI z hali produkcyjnej do zamkniętej serwerowni.
+### Oprogramowanie do projektowania HMI jako część łańcucha dostaw
 
-Jeżeli macie czas na pięć — dodajcie audyt zależności Python (`pip-audit`) oraz rotację certyfikatów OPC UA.
+Na DEF CON 34 badacze firmy CYTUR (Jiwoon Yoo, TaeWoo Kim, Eunji Choi) przedstawili wystąpienie „Drag, Drop, Deploy, Compromise”. Opisali podatności w oprogramowaniu inżynierskim do projektowania ekranów HMI:
+- uszkodzenie pamięci przy otwieraniu plików projektu,
+- przejmowanie bibliotek DLL przez kolejność ich wyszukiwania,
+- ładowanie niepodpisanych komponentów,
+- podszywanie się pod elementy interfejsu przez cichą instalację czcionek,
+- przechodzenie na komunikację jawną, gdy bezpieczne połączenie OPC UA się nie uda.
 
-Wszystkie te działania mieszczą się w zakresie obowiązków deployera pod [NIS2 i polskim KSC2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki), więc oprócz zapobieżenia atakowi zamykacie również dług compliance. To jest rzadka sytuacja, gdzie priorytety security i compliance są w pełni zgodne — obie strony chcą tego samego.
+Główna teza wystąpienia: łańcuch dostaw w automatyce nie zaczyna się dopiero na serwerze aktualizacji producenta. Należą do niego również pliki projektów od klientów, szablony od integratorów i kopie zapasowe z prac serwisowych.
 
-## Kontekst szerszy — BlackHat 2026 i przemysł
+### open62541: seria podatności z przełomu lipca i sierpnia
 
-Warto zwrócić uwagę na coś, co nie jest treścią pojedynczej prezentacji, ale kierunkiem całej konferencji: **przemysł stał się priorytetowym celem** grup atakujących w 2026 roku. Powodów jest kilka. Reżimy sankcji USA i UE odcięły część zorganizowanych grup od tradycyjnych źródeł przychodu — kampanie ransomware na producentów z bogatych rynków (Niemcy, Polska, Włochy) stały się głównym źródłem finansowania. Wzrost automatyzacji i integracji AI oznacza, że przestój linii produkcyjnej kosztuje więcej niż kiedykolwiek. A regulacyjne obowiązki notyfikacji o incydentach ([NIS2 Art. 23](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)) sprawiają, że ataki są coraz częściej publicznie widoczne, co dla atakujących jest dodatkową dźwignią negocjacyjną.
+Od 30 lipca do 6 sierpnia 2026 r. w bazie NVD opublikowano kilkanaście wpisów CVE dotyczących open62541, otwartej implementacji OPC UA w języku C. Dominują odmowa usługi i błędy pamięci. Trzy przykłady:
+- **CVE-2026-65423** (CVSS 8,8, 30 lipca): przepełnienie przy obliczaniu arrayDimensions prowadzi do zapisu poza buforem. Podatne są wersje do 1.3.17, 1.4.16 i 1.5.4.
+- **CVE-2026-63035** (CVSS 8,1, 30 lipca): użycie zwolnionej pamięci w usłudze TransferSubscriptions, które według opisu może pozwolić uwierzytelnionemu atakującemu na wykonanie kodu.
+- **CVE-2026-67870** (CVSS 9,8, sierpień): niepełna walidacja w obsłudze AddReferences w wersji 1.5.5 pozwala zdalnie zatrzymać serwer.
 
-Konsekwencja praktyczna: budżety cyberbezpieczeństwa w polskich zakładach muszą w 2026 i 2027 rosnąć szybciej niż inne pozycje IT. Zakłady, które w kolejnych 12 miesiącach nie zamkną trzech wektorów opisanych powyżej, będą się mierzyły z kampanią ransomware — nie „czy", tylko „kiedy".
+To błędy w kodzie, a nie słabości pozwalające podsłuchać czy podmienić komunikację OPC UA.
+
+27 lipca opiekunowie projektu wydali wersje utrzymaniowe 1.5.6 i 1.4.18, a 20 sierpnia wersje 1.5.7 i 1.4.19. W notatkach do tych wydań wymieniono poprawki w tych samych obszarach, których dotyczą opisy CVE: arrayDimensions, AddReferences, GDS, HistoryRead i obsługa discoveryUrl. Nie każdy wpis wskazuje wersję z poprawką, dlatego bezpieczniej przyjąć najnowsze wydanie z danej gałęzi.
+
+Problemy z OPC UA to jednak nie tylko błędy w kodzie. Badanie wdrożeń OPC UA osiągalnych z internetu (Dahlmanns i in., IMC 2020) wykazało błędy konfiguracji zabezpieczeń w 92% z nich:
+- brak kontroli dostępu w 24% hostów,
+- wyłączone funkcje bezpieczeństwa w 24%,
+- przestarzałe algorytmy kryptograficzne w 25%.
+
+Kilkaset urządzeń współdzieliło ten sam certyfikat.
+
+### Siemens S7: komunikat CISA AA26-231A
+
+19 sierpnia 2026 r. NSA, CISA, FBI, amerykański Departament Energii i agencja EPA wydały komunikat AA26-231A o aktywnym zagrożeniu dla sterowników Siemens S7, od serii S7-200 po S7-1500. Atakujący wyszukują w serwisach skanujących internet (np. Censys, ZoomEye) sterowniki wystawione do sieci lub słabo odseparowane. Używają skryptów w Pythonie wygenerowanych z pomocą AI i opartych na bibliotece snap7. Skrypty podszywają się pod narzędzia monitorujące i odczytują oraz zapisują bloki danych sterownika. Wśród zagrożonych sektorów komunikat wymienia przemysł o znaczeniu krytycznym (Critical Manufacturing), energetykę, gospodarkę wodno-ściekową, chemię, rolnictwo i żywność oraz obiekty komercyjne.
+
+Komunikat zaleca inwentaryzację sterowników, pilne wgranie krytycznych poprawek, weryfikację segmentacji (bez dostępu do sterowników z internetu), wzmocnienie kontroli dostępu, pełne rejestrowanie zdarzeń oraz utwardzenie konfiguracji S7. To ten sam protokół, przez który zatrzymano sterowniki w polskiej elektrociepłowni.
+
+## Wektor 3 — lokalne AI na brzegu sieci
+
+W majowym artykule o lokalnym RAG opisaliśmy architekturę, w której model Phi-4 działa na Jetson Orin przez llama.cpp lub Ollama. 7 sierpnia na ścieżce głównej DEF CON 34 Ofek Itach i Vladimir Tokarev z firmy Cyera wystąpili z prezentacją „Breaking Local AI Runtimes: Exploiting llama.cpp and Ollama”. Pokazali, że takie środowiska uruchomieniowe to zwykłe oprogramowanie natywne, ze wszystkimi jego błędami:
+
+- W integracji llama.cpp z Androidem kod Java może zwolnić natywny kontekst modelu, którego kod natywny wciąż używa. Autorzy pokazali wykonanie kodu w aplikacji osadzającej model.
+- W serwerze llama.cpp zwalnianie bezczynnego modelu może wejść w wyścig z aktywnym zapytaniem i zostawić wskaźnik do zwolnionej pamięci. Autorzy pokazali zdalne wykorzystanie błędu i opisali kroki brakujące do stabilnego wykonania kodu.
+- W Ollama złośliwe metadane pliku GGUF powodują podczas kwantyzacji odczyt poza buforem i zwrot fragmentów pamięci.
+
+Drugi temat to kradzież samego modelu. Te prace nie były prezentowane w Las Vegas, ale pokazują stan badań:
+- **BarraCUDA** (USENIX Security 2025; Radboud University, Masaryk University, Ruhr-Universität Bochum): odzyskiwanie wag sieci neuronowych z Jetson Nano i Jetson Orin Nano przez analizę emisji elektromagnetycznej, przy fizycznym dostępie do urządzenia. Dla Orin Nano z wagami INT8 zbieranie pomiarów trwało dobę, wyrównanie kolejną, a potem około 5 minut na wagę. Odtworzono przy tym tylko wagi pierwszej warstwy.
+- **Kraken** (IEEE SaTML 2026), kontynuacja tego zespołu: pierwsze wydobycie parametrów z rdzeni Tensor w GPU oraz wstępna analiza wycieku hiperparametrów i wag modeli językowych z odległości 100 cm, przez szkło.
+
+## Bariery i ograniczenia
+
+- **Nie wszystko da się załatać.** Dla CVE-2026-13584 producent zaleca środki ograniczające ryzyko, nie aktualizację. Rogers zauważył, że w USA brakuje urządzeń sterowania, by wymieniać sprzęt na dużą skalę.
+- **Biblioteki w cudzych produktach.** Jeśli open62541 jest wbudowana w produkt dostawcy SCADA lub HMI, tempo aktualizacji zależy od niego (nasza ocena).
+- **Szybkie przywrócenie pracy kontra analiza.** Reset do ustawień fabrycznych skraca przestój, ale niszczy ślady, jak w opisanej elektrociepłowni.
+- **Kanały boczne to nie zagrożenie z dnia na dzień.** BarraCUDA wymagała fizycznego dostępu, sprzętu pomiarowego i kilku dni pracy. Ryzyko jest realne dla cennych modeli, ale ma niższy priorytet niż podstawy z wektorów 1 i 2 (nasza ocena).
+- **Zabezpieczenia protokołu nie zastąpią segmentacji.** Przejście narzędzi HMI na komunikację jawną i wyniki badania IMC 2020 pokazują, że dostępne zabezpieczenia OPC UA nie zawsze są włączone.
+
+## Lista działań na 30 dni
+
+Poniższa lista to nasza rekomendacja na podstawie opisanych źródeł, a nie wymóg któregokolwiek z nich.
+
+**Tydzień 1 — drogi dostępu z zewnątrz.**
+1. Spis wszystkich punktów zdalnego dostępu: koncentratorów VPN, routerów komórkowych, sterowników z modemami i dostępu serwisowego dostawców maszyn. Uwierzytelnianie wieloskładnikowe na każdym VPN.
+2. Przegląd domyślnych haseł na urządzeniach OT: RTU, serwerach portów szeregowych, sterownikach i przełącznikach.
+
+**Tydzień 2 — segmentacja sieci.**
+3. Ruch między siecią OT a łączami WAN, APN i siecią biurową tylko według listy dozwolonych połączeń, z zasadą „domyślnie zamknięte”. Szczegóły opisaliśmy w artykule o [komunikacji między siecią IT a OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa).
+4. Wyłączenie interfejsów WWW, SSH i Telnet od strony sieci zewnętrznych. Sprawdzenie, że żaden sterownik S7 nie jest osiągalny z internetu.
+5. Przy prywatnym APN: rozmowa z operatorem o izolacji klientów.
+
+**Tydzień 3 — oprogramowanie.**
+6. Spis komponentów OPC UA w MES, SCADA i HMI. Pytanie do dostawców o wersję open62541 i plan aktualizacji. Tam, gdzie macie wpływ na wersję, minimum to 1.5.7 lub 1.4.19.
+7. Stacje inżynierskie: pliki projektów HMI i PLC tylko ze sprawdzonych źródeł. Przegląd ustawień OPC UA pod kątem przechodzenia w tryb bez zabezpieczeń.
+8. Lokalne modele AI: aktualne wersje llama.cpp i Ollama, pliki GGUF tylko z zaufanych źródeł, serwer modelu niedostępny spoza swojego segmentu, urządzenia brzegowe w zamykanych szafach. Więcej o tej architekturze w artykule o [lokalnym RAG na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury).
+
+**Tydzień 4 — wykrywanie i reagowanie.**
+9. Centralne zbieranie dzienników zdarzeń z urządzeń brzegowych, bram APN i stacji inżynierskich. Monitorowanie nietypowych połączeń S7 i Modbus.
+10. Procedura: każda niewyjaśniona awaria sterownika trafia do zespołu bezpieczeństwa. Przed resetem do ustawień fabrycznych trzeba zabezpieczyć, co się da: dzienniki, konfigurację i kopię logiki.
+11. Ćwiczenia teoretyczne (tabletop) na scenariuszu z polskiej elektrociepłowni.
+
+Art. 23 dyrektywy NIS2 nakłada na podmioty kluczowe i ważne trzy terminy: wczesne ostrzeżenie w ciągu 24 godzin od wykrycia poważnego incydentu, zgłoszenie w ciągu 72 godzin i raport końcowy w ciągu miesiąca. Punkty 9–11 bezpośrednio pomagają tych terminów dotrzymać. Kontekst krajowy opisaliśmy w artykule o [NIS2 i KSC2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki).
+
+## Aktualizacja (6 października 2026)
+
+- **open62541.** 6 września ukazały się wersje 1.5.8 i 1.4.20, a 4 października wersje 1.5.9 i 1.4.21. 31 sierpnia w NVD opublikowano kolejną podatność, CVE-2026-82623 (CVSS 5,3). Aktualne zalecenie: najnowsze wydanie z używanej gałęzi.
+- **CC-Link IE TSN.** 17 września Mitsubishi Electric zaktualizowało komunikat o CVE-2026-13584 i zmieniło listę podatnych produktów. W zaktualizowanym komunikacie ICSA-26-211-07 CISA podaje, że poprawka nie jest planowana.
+- **Ransomware.** Według NCC Group w lipcu 2026 r. odnotowano 894 ataki ransomware, o 22% więcej niż w czerwcu. Na sektor przemysłowy przypadło 28% z nich, na Europę 29% (raport z 26 sierpnia). W sierpniu było 1073 ataki: 31% dotyczyło przemysłu, 26% Europy, a najaktywniejsza była grupa Qilin ze 164 atakami (Infosecurity Magazine, 23 września).
+- **Korekta.** Pierwsza wersja artykułu przypisywała bibliotece open62541 numer CVE-2026-38472. Ten numer dotyczy w rzeczywistości podatności XSS w aplikacji GazellePW. Opisane wcześniej prezentacje Claroty i Sonatype, atak na Jetson Orin AGX, pakiety Pythona i biblioteka do znakowania modeli nie mają potwierdzenia w źródłach, dlatego usunęliśmy je z tekstu.
 
 ---
 
 ## Źródła
 
-- [BlackHat USA 2026 — Briefings archive](https://www.blackhat.com/us-26/briefings.html) — pełen katalog prezentacji
-- [DEF CON 33 — talks and demos](https://defcon.org/html/defcon-33/dc-33-schedule.html) — Village Hardware Hacking, Village ICS
-- [CVE-2026-38472](https://nvd.nist.gov/vuln/detail/CVE-2026-38472) — podatność w bibliotece `open62541`
-- [Claroty Team82 blog — OPC UA MITM attack](https://claroty.com/team82) — techniczny opis
-- [Sonatype State of the Software Supply Chain 2026](https://www.sonatype.com/state-of-the-software-supply-chain) — raport o atakach na łańcuch dostaw
-- [Nasz artykuł: NIS2 i KSC2 w 2026](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) — kontekst regulacyjny
-- [Nasz artykuł: Dobre praktyki komunikacji IT/OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa) — segmentacja VLAN
-- [Nasz artykuł: Lokalny RAG w fabryce — Phi-4 na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury) — architektura AI na edge
+- [CERT Polska — Energy Sector Incident Report, 30.01.2026](https://cert.pl/en/posts/2026/01/incident-report-energy-sector-2025/) — przebieg ataków z 29.12.2025 (farmy, elektrociepłownia, firma produkcyjna)
+- [CERT Polska — Follow-Up Report of the December 2025 Energy Sector Incident, 08.08.2026](https://cert.pl/en/posts/2026/08/incident-follow-up-report-energy-sector-2025/) — druga elektrociepłownia, prywatny APN, zalecenia
+- [DEF CON 34 — prelegenci ścieżki głównej](https://defcon.org/html/defcon-34/dc-34-speakers.html) — wystąpienia CERT Polska i Cyera
+- [DEF CON 34 — wystąpienia Creator Talks](https://defcon.org/html/defcon-34/dc-34-creator-talks.html) — wystąpienia CYTUR (HMI) i Joe Slowika (ICS Village)
+- [DEF CON 34 — strona konferencji](https://defcon.org/html/defcon-34/dc-34-index.html) — termin i miejsce
+- [Black Hat USA 2026 — przewodnik po konferencji](https://www.decryptiondigest.com/blog/black-hat-usa-2026-guide) — termin szkoleń i prelekcji
+- [Nozomi Networks — Black Hat USA 2026](https://www.nozominetworks.com/featured-event/black-hat-2026) — sesja „Deterministic Chaos” o CC-Link IE TSN
+- [Mitsubishi Electric — komunikat 2026-005 (CVE-2026-13584)](https://www.mitsubishielectric.com/psirt/vulnerability/pdf/2026-005_en.pdf)
+- [CISA — ICSA-26-211-07, Mitsubishi Electric CC-Link IE TSN](https://www.cisa.gov/news-events/ics-advisories/icsa-26-211-07)
+- [OpenCVE — podatności open62541](https://app.opencve.io/cve/?vendor=open62541)
+- [OpenCVE — CVE-2026-65423](https://app.opencve.io/cve/CVE-2026-65423), [CVE-2026-63035](https://app.opencve.io/cve/CVE-2026-63035), [CVE-2026-67870](https://app.opencve.io/cve/CVE-2026-67870)
+- [open62541 — wydania w serwisie GitHub](https://github.com/open62541/open62541/releases) — notatki do wersji 1.4.18–1.4.21 i 1.5.6–1.5.9
+- [Dahlmanns i in., „Easing the Conscience with OPC UA”, IMC 2020](https://arxiv.org/abs/2010.13539)
+- [CISA — AA26-231A, Defending Against an Active Threat to Siemens S7 Series PLCs, 19.08.2026](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a)
+- [Cybersecurity Dive — panel o atakach na OT na Black Hat USA 2026, 6.08.2026](https://www.cybersecuritydive.com/news/critical-infrastructure-destructive-cyberattacks-black-hat/827260/)
+- [Horvath i in., „BarraCUDA: Edge GPUs do Leak DNN Weights”, USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25/presentation/horvath) oraz [wersja arXiv](https://arxiv.org/abs/2312.07783)
+- [Horvath i in., „Kraken: Higher-order EM Side-Channel Attacks on DNNs in Near and Far Field”, IEEE SaTML 2026](https://arxiv.org/abs/2603.02891)
+- [Advisera — NIS2, art. 23 „Reporting obligations”](https://advisera.com/nis2/reporting-obligations/)
+- [NCC Group — Monthly Threat Pulse, lipiec 2026](https://www.nccgroup.com/newsroom/ncc-group-monthly-threat-pulse-review-of-july-2026/)
+- [Infosecurity Magazine — rekordowy sierpień 2026 w danych NCC Group](https://www.infosecurity-magazine.com/news/ransomware-attacks-reach-record/)
+- [OpenCVE — CVE-2026-38472 (GazellePW)](https://app.opencve.io/cve/CVE-2026-38472) — do korekty pierwszej wersji
+
+## Powiązane artykuły
+
+- [NIS2 i KSC2 w 2026: jak MES staje się elementem zgodności cyberbezpieczeństwa polskiej fabryki](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)
+- [Dobre praktyki komunikacji między siecią IT a OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa)
+- [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury)
 - [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e)

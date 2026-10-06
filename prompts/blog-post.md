@@ -35,10 +35,23 @@ Tagi dobierasz **automatycznie** na podstawie tytułu i treści artykułu. Zasad
 4. Przypisz **2–4 tagi** na post — nie więcej
 5. Tagi muszą być takie same w wersji PL i EN (chyba że konwencja w projekcie mówi inaczej — sprawdź istniejące posty)
 
-### Krok 3: Research tematu
-1. Przeszukaj internet w poszukiwaniu **najnowszych danych, raportów i case studies** związanych z tematem posta
-2. Zbierz konkretne liczby, prognozy, nazwiska firm wdrażających technologię
+### Krok 3: Research tematu (OBOWIĄZKOWY — bez niego nie zaczynasz pisać)
+1. Przeszukaj internet (WebSearch / WebFetch) w poszukiwaniu **najnowszych danych, raportów i case studies** związanych z tematem posta
+2. Zbierz konkretne liczby, prognozy, nazwiska firm wdrażających technologię — **każdą z adresem źródła, które faktycznie otworzyłeś**
 3. Zidentyfikuj bariery, ograniczenia i realistyczną ocenę tematu — artykuł nie może być jednostronnie optymistyczny
+4. Jeśli narzędzia do wyszukiwania są niedostępne — **przerwij i powiedz o tym użytkownikowi**. Nie pisz artykułu z pamięci.
+
+#### Zasada faktów — nigdy nie wymyślaj
+
+Model językowy potrafi wygenerować „fakty", które brzmią wiarygodnie, a nie istnieją. Przy zwykłym czytaniu nie da się ich wyłapać. Dlatego:
+
+- **Każdy konkret musi pochodzić ze źródła znalezionego w tej sesji**, nie z pamięci modelu. Konkret to: liczba, kwota, procent, data, nazwa firmy w kontekście konkretnego wdrożenia, nazwisko, cytat, numer CVE, numer aktu prawnego, artykuł przepisu, nazwa prezentacji lub konferencji, wynik pilotażu.
+- **Wydarzenia po dacie granicznej wiedzy modelu** (konferencje, decyzje urzędów, nowe przepisy, incydenty) możesz opisać **wyłącznie** na podstawie źródeł znalezionych w wyszukiwarce. Jeśli nic nie znalazłeś — to wydarzenie dla Ciebie nie istnieje.
+- **Zakaz wymyślania:** cytatów i wywiadów, wypowiedzi urzędników, numerów CVE, numerów rozporządzeń i ustaw, kwot i wyników pilotaży, nazw pakietów i produktów, autorów badań, „rozmów z zespołami w N fabrykach", „nieoficjalnych informacji z kuluarów".
+- **Brak źródła = brak konkretu.** Usuń zdanie albo napisz ogólnie, bez liczb i nazw („kilka organów nadzoru", „pierwsze pilotaże pokazały, że…" — tylko jeśli to też masz z źródła).
+- **Własne szacunki i scenariusze** oznaczaj wprost („nasz szacunek", „scenariusz przykładowy", „hipotetycznie") — nie podawaj ich jak faktów.
+- **Sekcja „Źródła"** zawiera tylko strony, które faktycznie otworzyłeś i które potwierdzają tezę. Nie zgaduj adresów URL ani nie linkuj ogólnych stron głównych jako „źródła" konkretnej liczby.
+- **Przepisy prawa** (daty wejścia w życie, terminy, wysokość kar) sprawdzaj w EUR-Lex lub oficjalnych komunikatach — zmieniają się (np. pakiety typu Digital Omnibus przesuwają terminy).
 
 ### Krok 4: Cover image (obrazek wyróżniający)
 1. Sprawdź w istniejących postach gdzie przechowywane są cover images (np. `public/images/`, `outstatic/images/` itp.) i jaki format/rozmiar stosują
@@ -107,6 +120,13 @@ Po polsku LLM-y mają tendencję do produkowania manier, które w angielskim brz
 - Patrz na realne polskie artykuły branżowe (np. najnowsze numery „Production Manager") jako wzór dykcji
 
 **Test końcowy przed commitem:** przeczytaj artykuł na głos. Jeśli na którymś zdaniu czujesz, że „brzmi jak ChatGPT" — przepisz krócej, bardziej rzeczowo, z konkretnym podmiotem.
+
+#### Krok 5.5: Weryfikacja faktów przed commitem (OBOWIĄZKOWA)
+
+1. Wypisz z artykułu (PL i EN) **wszystkie konkretne twierdzenia** — liczby, daty, nazwy, cytaty, numery przepisów i CVE, wyniki pilotaży.
+2. Przy każdym wskaż źródło (URL), z którego pochodzi. Twierdzenie bez źródła — usuń albo przepisz ogólnie.
+3. Sprawdź, czy wersja PL i EN mówią to samo (te same liczby, te same daty).
+4. W wiadomości końcowej do użytkownika podaj **tabelę: twierdzenie → źródło**, żeby mógł to sprawdzić przed publikacją. Zaznacz wprost, które elementy są Twoim szacunkiem lub przykładem, a nie faktem.
 
 ### Krok 6: Utworzenie plików
 1. Utwórz pliki `.mdx` z poprawnym frontmatter w odpowiednich katalogach (zgodnie z konwencją wykrytą w Kroku 1)
@@ -216,6 +236,7 @@ Claude Code przeczyta instrukcje z pliku, wykona wszystkie kroki (rozpoznanie st
 
 - **Zawsze** najpierw sprawdź strukturę istniejących postów przed tworzeniem nowych
 - **Zawsze** zrób research tematu — nie pisz z pamięci, szukaj aktualnych danych
+- **Nigdy** nie wymyślaj faktów, cytatów, liczb, numerów CVE ani przepisów — każdy konkret musi mieć źródło znalezione w tej sesji (patrz „Zasada faktów" w Kroku 3 i Krok 5.5)
 - **Nigdy** nie publikuj artykułu bez sekcji o barierach oraz ograniczeniach — wiarygodność jest priorytetem
 - **Nigdy** nie tłumacz PL→EN dosłownie — obie wersje mają brzmieć naturalnie w swoim języku
 - Jeśli temat jest zbyt szeroki, zaproponuj zawężenie zanim zaczniesz pisać

@@ -56,44 +56,44 @@
     "tags": "Omnimes, OmniEnergy, Relpol, EMS, ISO 50001, efektywność energetyczna"
   },
   {
-    "title": "Digital Product Passport dla baterii: 5,5 miesiąca do 18 lutego 2027 — co polska fabryka musi mieć w MES, żeby zdążyć (wnioski z pierwszych pilotaży EU)",
+    "title": "Paszport baterii (DPP): 5,5 miesiąca do 18 lutego 2027 — co fabryka musi mieć w MES (wnioski z pilotaży Battery Pass, Volvo i GBA)",
     "slug": "digital-product-passport-baterie-do-18-lutego-2027-co-polska-fabryka-musi-miec-w-mes",
-    "description": "18 lutego 2027 dla baterii przemysłowych powyżej 2 kWh i baterii pojazdów elektrycznych startuje obowiązek Digital Product Passport (rozporządzenie 2023/1542). Pięć i pół miesiąca to nie jest dużo czasu — dostawcy do OEM (Volkswagen, Stellantis, BMW) już od sierpnia 2026 zaczynają wymagać gotowości danych w MES od poddostawców. Artykuł zbiera co dokładnie musi znaleźć się w DPP, jaka jest rola MES w tej strukturze, jakie są wnioski z pierwszych 12 pilotaży EU (Battery Pass Consortium, Circulor/Volvo, ACC, Verkor), i konkretną roadmapę na 5,5 miesiąca dla polskiej fabryki baterii.",
+    "description": "Od 18 lutego 2027 każda bateria LMT, przemysłowa powyżej 2 kWh i do pojazdów elektrycznych wprowadzana do obrotu w UE musi mieć paszport (art. 77 rozporządzenia 2023/1542). Na podstawie wytycznych Komisji z sierpnia 2026 opisujemy, które dane są obowiązkowe od lutego, czego jeszcze się nie wypełnia (ślad węglowy, recyklat, należyta staranność), co pokazały pilotaże Battery Pass, Volvo i GBA oraz jakie dane powinien przygotować MES.",
     "lang": "pl",
     "tags": "OmniMES, UE, DPP"
   },
   {
-    "title": "Digital Product Passport for batteries: 5.5 months to 18 February 2027 — what your MES must cover (lessons from the first EU pilots)",
+    "title": "Digital Product Passport for batteries: 5.5 months to 18 February 2027 — what your MES must cover (lessons from the Battery Pass, Volvo and GBA pilots)",
     "slug": "digital-product-passport-for-batteries-5-5-months-to-18-february-2027-what-your-mes-must-cover",
-    "description": "On 18 February 2027 the Digital Product Passport obligation goes live for industrial batteries above 2 kWh and EV batteries (Regulation 2023/1542). Five and a half months is not much time — OEM suppliers (Volkswagen, Stellantis, BMW) are already, from August 2026, asking sub-suppliers for MES-side data readiness. This piece gathers what the DPP must contain in detail, the role of MES in that structure, lessons from the first 12 EU pilots (Battery Pass Consortium, Circulor/Volvo, ACC, Verkor), and a concrete 5.5-month roadmap for a European battery plant.",
+    "description": "From 18 February 2027 every LMT battery, every industrial battery above 2 kWh and every EV battery placed on the EU market must have a battery passport (Article 77 of Regulation 2023/1542). Based on the European Commission guidance of August 2026 we explain which data points are mandatory from February, which are not yet filled in (carbon footprint, recycled content, due diligence), what the Battery Pass, Volvo and GBA pilots showed, and what data your MES should prepare.",
     "lang": "en",
     "tags": "OmniMES, UE, DPP"
   },
   {
-    "title": "BlackHat i DEF CON 2026: trzy nowe wektory ataku na MES i systemy OT — co polska fabryka musi wdrożyć w 30 dni",
+    "title": "Black Hat USA 2026 i DEF CON 34: trzy wektory ataku na MES i systemy OT — co fabryka powinna wdrożyć w 30 dni",
     "slug": "blackhat-i-def-con-2026-trzy-nowe-wektory-ataku-na-mes-i-systemy-ot-co-polska-fabryka-musi-wdrozyc-w-30-dni",
-    "description": "BlackHat USA 2026 (1–6 sierpnia) i DEF CON 33 (6–9 sierpnia) zamknęły najgorętsze dwa tygodnie roku dla ekspertów bezpieczeństwa przemysłowego. Trzy prezentacje realnie zmieniają mapę zagrożeń dla polskiego MES: zautomatyzowane włamanie do OPC UA przez zatrute certyfikaty, kradzież modelu AI z serwerów edge Jetson przez side-channel oraz atak łańcuchowy przez ekosystem otwartych bibliotek Python w środowisku SCADA. Artykuł rozbiera każdy z tych trzech wektorów bez marketingu, plus konkretną listę zmian które trzeba wdrożyć w ciągu 30 dni.",
+    "description": "Black Hat USA 2026 i DEF CON 34 przyniosły trzy wątki ważne dla zakładów produkcyjnych: kulisy ataku na polską energetykę i firmę produkcyjną z grudnia 2025 r. (wejście do sieci OT przez prywatny APN), słabości protokołów i narzędzi inżynierskich (CC-Link IE TSN, OPC UA, open62541, Siemens S7) oraz podatności lokalnych środowisk uruchomieniowych AI. Opisujemy, co faktycznie pokazano, i proponujemy listę działań na 30 dni.",
     "lang": "pl",
     "tags": "OmniMES, cyberbezpieczenstwo, it-ot, NIS2"
   },
   {
-    "title": "BlackHat and DEF CON 2026: three new attack vectors on MES and OT systems — what EU factories must deploy in 30 days",
+    "title": "Black Hat USA 2026 and DEF CON 34: three attack vectors against MES and OT systems — what factories should deploy in 30 days",
     "slug": "blackhat-and-def-con-2026-three-new-attack-vectors-on-mes-and-ot-systems-what-eu-factories-must-deploy-in-30-days",
-    "description": "BlackHat USA 2026 (1–6 August) and DEF CON 33 (6–9 August) closed the hottest two weeks of the year for industrial security experts. Three presentations genuinely change the threat map for European MES: automated OPC UA break-in through poisoned certificates, AI model theft from edge Jetson servers via side-channel, and a supply-chain attack through the open-source Python ecosystem in SCADA environments. This article walks through each of the three vectors without marketing, plus a concrete list of changes to deploy within 30 days.",
+    "description": "Black Hat USA 2026 and DEF CON 34 brought three threads that matter to manufacturers: the inside story of the December 2025 attack on Poland's energy sector and a manufacturing company (lateral movement into OT through a private APN), weaknesses in industrial protocols and engineering software (CC-Link IE TSN, OPC UA, open62541, Siemens S7), and vulnerabilities in local AI runtimes. We cover what was actually presented and propose a 30-day action list.",
     "lang": "en",
     "tags": "OmniMES, cyberbezpieczenstwo, it-ot, NIS2"
   },
   {
-    "title": "AI Act w akcji: 15 dni po 2 sierpnia 2026 — co UODO i UOKiK faktycznie kontrolują w polskim MES",
+    "title": "AI Act 15 dni po 2 sierpnia 2026: co UODO i UOKiK faktycznie kontrolują w polskim MES — i dlaczego obowiązki dla AI wysokiego ryzyka przesunięto na grudzień 2027",
     "slug": "ai-act-w-akcji-15-dni-po-2-sierpnia-2026-co-uodo-i-uokik-faktycznie-kontroluja-w-polskim-mes",
-    "description": "2 sierpnia 2026 uruchomił się reżim egzekucji przepisów AI Act dla systemów wysokiego ryzyka. Piętnaście dni później mamy pierwsze dane z rynku: które dokumenty organy nadzoru w Polsce faktycznie sprawdzają, jak wygląda pierwsza fala wezwań do wyjaśnień, gdzie polskie fabryki potykają się najczęściej. Artykuł zbiera fakty z pierwszych dwóch tygodni obowiązywania Annex III w polskim przemyśle produkcyjnym — bez marketingu, z konkretnymi przypadkami i realną listą punktów, które MES musi mieć uporządkowane w pierwszej kolejności.",
+    "description": "2 sierpnia 2026 r. nie uruchomił egzekucji obowiązków dla systemów AI wysokiego ryzyka. Pakiet Digital Omnibus (rozporządzenie 2026/1744) przesunął je na 2 grudnia 2027 r. dla załącznika III i na 2 sierpnia 2028 r. dla załącznika I. Wyjaśniamy, co fabryka z systemem MES musi spełniać już teraz (zakaz rozpoznawania emocji w miejscu pracy, obowiązki przejrzystości, RODO i ocena skutków przy monitorowaniu operatorów), kto w Polsce nadzoruje AI Act i jak wykorzystać czas do grudnia 2027 r.",
     "lang": "pl",
     "tags": "AI, OmniMES, UE, AI Act"
   },
   {
-    "title": "AI Act in action: 15 days after 2 August 2026 — what EU supervisors actually check in MES",
+    "title": "AI Act 15 days after 2 August 2026: what supervisors can actually check in MES — and why high-risk AI obligations moved to December 2027",
     "slug": "ai-act-in-action-15-days-after-2-august-2026-what-eu-supervisors-actually-check-in-mes",
-    "description": "On 2 August 2026 the AI Act enforcement regime for high-risk systems went live. Fifteen days later we have the first market data: which documents supervisory authorities actually request, what the first wave of information requests looks like, where European factories are stumbling most often. This article gathers facts from the first two weeks of Annex III enforcement in EU manufacturing — no marketing, with concrete cases and a realistic list of items an MES must have in order first.",
+    "description": "The 2 August 2026 date did not start enforcement of high-risk AI obligations. The Digital Omnibus (Regulation (EU) 2026/1744) moved them to 2 December 2027 for Annex III systems and to 2 August 2028 for Annex I. What a factory running an MES must comply with today (the workplace emotion-recognition ban, transparency duties, GDPR and DPIAs for operator monitoring), who supervises the AI Act in Poland, and how to use the time until December 2027.",
     "lang": "en",
     "tags": "AI, OmniMES, UE, AI Act"
   },

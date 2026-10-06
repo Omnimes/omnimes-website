@@ -1,103 +1,177 @@
 ---
-title: 'AI Act w akcji: 15 dni po 2 sierpnia 2026 — co UODO i UOKiK faktycznie kontrolują w polskim MES'
+title: 'AI Act 15 dni po 2 sierpnia 2026: co UODO i UOKiK faktycznie kontrolują w polskim MES — i dlaczego obowiązki dla AI wysokiego ryzyka przesunięto na grudzień 2027'
 status: 'published'
 author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'ai-act-w-akcji-15-dni-po-2-sierpnia-2026-co-uodo-i-uokik-faktycznie-kontroluja-w-polskim-mes'
-description: '2 sierpnia 2026 uruchomił się reżim egzekucji przepisów AI Act dla systemów wysokiego ryzyka. Piętnaście dni później mamy pierwsze dane z rynku: które dokumenty organy nadzoru w Polsce faktycznie sprawdzają, jak wygląda pierwsza fala wezwań do wyjaśnień, gdzie polskie fabryki potykają się najczęściej. Artykuł zbiera fakty z pierwszych dwóch tygodni obowiązywania Annex III w polskim przemyśle produkcyjnym — bez marketingu, z konkretnymi przypadkami i realną listą punktów, które MES musi mieć uporządkowane w pierwszej kolejności.'
+description: '2 sierpnia 2026 r. nie uruchomił egzekucji obowiązków dla systemów AI wysokiego ryzyka. Pakiet Digital Omnibus (rozporządzenie 2026/1744) przesunął je na 2 grudnia 2027 r. dla załącznika III i na 2 sierpnia 2028 r. dla załącznika I. Wyjaśniamy, co fabryka z systemem MES musi spełniać już teraz (zakaz rozpoznawania emocji w miejscu pracy, obowiązki przejrzystości, RODO i ocena skutków przy monitorowaniu operatorów), kto w Polsce nadzoruje AI Act i jak wykorzystać czas do grudnia 2027 r.'
 coverImage: '/images/post-ai-act-day15/cover-ai-act-day15.png'
 lang: 'pl'
 tags: [{"value":"AI","label":"AI"},{"value":"omniMES","label":"OmniMES"},{"value":"ue","label":"UE"},{"value":"aiAct","label":"AI Act"}]
 publishedAt: '2026-08-17T08:00:00.000Z'
 ---
 
-**2 sierpnia 2026** — ta data przez trzy miesiące funkcjonowała w polskim przemyśle jako abstrakcja, którą prezesi i dyrektorzy IT odkładali na „później". Piętnaście dni po jej minięciu abstrakcja zamieniła się w konkret: pierwsze wezwania z UODO do polskich zakładów motoryzacyjnych, wnioski o dokumentację techniczną AI od UOKiK do trzech dużych producentów spożywczych, mocna wypowiedź szefowej Departamentu Rynku Cyfrowego UODO w Rzeczpospolitej („nie planujemy karencji dla podmiotów, które od kwietnia wiedziały, jak się przygotować").
+*Artykuł poprawiony 6 października 2026 r. Pierwsza wersja zawierała błędne informacje o terminach stosowania AI Act i o organach nadzoru.*
 
-W tym artykule pokazuję konkretnie, co w tych pierwszych dwóch tygodniach faktycznie sprawdzają polskie organy, jak wyglądają pierwsze wezwania w praktyce, jakie funkcje MES okazały się „gorące" (w sensie natychmiastowego zainteresowania regulatora) i co trzeba mieć uporządkowane w pierwszej kolejności, jeśli wasz zakład jeszcze nie jest gotowy. To sequel do naszego [artykułu o klasyfikacji high-risk z maja](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai) — teraz z realnych obserwacji zamiast prognoz.
+**2 sierpnia 2026 r.** miał być dniem, od którego obowiązki AI Act dla systemów wysokiego ryzyka obejmą fabryki: monitorowanie operatorów, ocenę wyników pracy, przydział zadań na podstawie zachowania pracownika. Tak zakładaliśmy w [majowym artykule o klasyfikacji funkcji MES](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai). Ten termin już nie obowiązuje. Pakiet Digital Omnibus, czyli rozporządzenie (UE) 2026/1744, wszedł w życie 27 lipca 2026 r. Przesunął stosowanie przepisów o systemach wysokiego ryzyka z załącznika III (Annex III) na **2 grudnia 2027 r.**, a dla systemów wbudowanych w produkty z załącznika I — na **2 sierpnia 2028 r.** ([K&L Gates](https://www.cyberlawwatch.com/2026/07/31/eu-digital-omnibus-on-ai-enters-into-force/), [Ministerstwo Cyfryzacji](https://www.gov.pl/web/cyfryzacja/ai-act--co-sie-zmienilo-2-sierpnia-2026-roku)).
 
-## Kto dostał wezwanie w pierwszej fali
+Piętnaście dni po 2 sierpnia odpowiedź na pytanie z tytułu jest więc prostsza, niż sugerowały rynkowe zapowiedzi. Ani UODO, ani UOKiK nie są organem nadzoru rynku AI. Polska ustawa powierza tę rolę nowej Komisji Rozwoju i Bezpieczeństwa Sztucznej Inteligencji (KRiBSI), a przepisy o kontroli i karach wchodzą w życie dopiero 28 października 2026 r. UODO kontroluje to samo co wcześniej: przetwarzanie danych osobowych na podstawie RODO, także przez systemy AI.
 
-Z tego, co udało się zebrać z rozmów z zespołami compliance w piętnastu polskich zakładach w drugim tygodniu sierpnia, wyłania się dość spójny obraz:
+## Digital Omnibus: co przesunięto i dlaczego
 
-**UODO uderzył pierwszy** — w pierwszym tygodniu sierpnia rozesłał zapytania do co najmniej dwunastu podmiotów przetwarzających dane operatorów za pomocą systemów AI. Trzech dużych producentów motoryzacyjnych (Kraków, Poznań, Bielsko-Biała), dwie firmy chemiczne w rejonie tarnowsko-rzeszowskim, jeden przetwórca mięsa. W każdym przypadku pierwsze pytanie było identyczne: „prosimy o kopię oceny ryzyka AI dla systemu monitorowania wydajności operatorów, zgodnie z Art. 27 AI Act".
+Komisja Europejska przedstawiła projekt 19 listopada 2025 r. Parlament i Rada osiągnęły porozumienie 7 maja 2026 r., a Parlament zatwierdził je 16 czerwca 2026 r.: 423 głosy za, 57 przeciw, 174 wstrzymujące się ([EPRS](https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI%282026%29782651_EN.pdf)). Rozporządzenie z 8 lipca 2026 r. opublikowano w Dzienniku Urzędowym UE 24 lipca 2026 r. ([nicfab](https://www.nicfab.eu/en/posts/digital-omnibus-ai-official-journal/)).
 
-**UOKiK dołączył w tygodniu drugim** — z węższym zakresem, ale ostrzejszymi konsekwencjami. Zapytania do trzech producentów wyrobów medycznych o AI klasyfikującą braki w kontroli jakości. Termin odpowiedzi: 14 dni. Sankcje za brak odpowiedzi: do 5 mln zł według polskiej ustawy o AI z marca 2026.
+Najważniejsze zmiany z perspektywy przemysłu:
 
-**CSIRT NASK i UKE** — na razie cisza. Sektor krytyczny prawdopodobnie zostanie objęty przeglądem w drugiej połowie sierpnia, ale sygnałów z rynku jeszcze nie widać.
+- **Załącznik III** (m.in. zatrudnienie i zarządzanie pracownikami): przepisy rozdziału III stosuje się od 2 grudnia 2027 r. zamiast od 2 sierpnia 2026 r.
+- **Załącznik I** (AI w produktach objętych unijnym prawodawstwem harmonizacyjnym): od 2 sierpnia 2028 r.
+- **Maszyny:** zgodnie z porozumieniem maszyny z funkcjami AI wyłączono z bezpośredniego stosowania reżimu wysokiego ryzyka AI Act. Wymagania mają spełniać w ramach rozporządzenia maszynowego 2023/1230, do którego Komisja doda je aktami delegowanymi ([EPRS](https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI%282026%29782651_EN.pdf)).
+- **Kompetencje w zakresie AI (art. 4):** obowiązek „zapewnienia" odpowiedniego poziomu kompetencji personelu zastąpiono obowiązkiem podejmowania działań wspierających ich rozwój. Przepis wprost nie wymaga gwarantowania określonego poziomu u każdej osoby ([nicfab](https://www.nicfab.eu/en/posts/digital-omnibus-ai-official-journal/)).
+- **Nowe zakazy** generowania treści intymnych bez zgody oraz materiałów przedstawiających seksualne wykorzystywanie dzieci — od 2 grudnia 2026 r. ([harmonogram Komisji Europejskiej](https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act)).
 
-Wnioski: **UODO postawił na masową falę wezwań**, przeważnie do zakładów, które w kwartalnych sprawozdaniach RODO wspomniały o „analityce wydajności pracowników". To nie jest przypadek — te dane były w UODO od lat, teraz zostały przefiltrowane pod kątem AI Act.
+Ministerstwo Cyfryzacji uzasadnia zmianę tak: „Przesunięcie terminów ma umożliwić przygotowanie norm, narzędzi i procedur potrzebnych do jednolitego stosowania wymagań w całej Unii" ([gov.pl, 3.08.2026](https://www.gov.pl/web/cyfryzacja/ai-act--co-sie-zmienilo-2-sierpnia-2026-roku)). Biuro analiz Parlamentu Europejskiego wskazuje na opóźnienia w wyznaczaniu organów krajowych i w publikacji norm zharmonizowanych ([EPRS](https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI%282026%29782651_EN.pdf)).
 
-## Co dokładnie sprawdzają — trzy dokumenty w pierwszej kolejności
+Treść obowiązków dla systemów wysokiego ryzyka się nie zmieniła. Zmienił się termin.
 
-Analiza kilkunastu pierwszych wezwań pokazuje, że organy koncentrują się na trzech konkretnych dokumentach. Jeżeli wasz MES ma jakikolwiek moduł AI wpływający na operatorów lub kwalifikujący produkt medyczny/motoryzacyjny, przygotujcie te trzy rzeczy przed potencjalnym wezwaniem:
+## Co obowiązuje fabrykę z MES już dziś
 
-**1. Ocena ryzyka AI (AI Risk Assessment) zgodna z Art. 27 AI Act.** Dokument opisujący: cel systemu, zbiory danych treningowych i walidacyjnych, metody testowania na dyskryminację, plan monitorowania w produkcji, procedura eskalacji błędów. Objętość realistyczna — 15 do 30 stron dla typowego modułu MES-AI. Trzy pierwsze wezwania UODO odrzuciło jako niewystarczające dokumenty krótsze niż 8 stron („brak metodologii walidacji na zbiorach demograficznie zbalansowanych").
+### Zakaz rozpoznawania emocji w miejscu pracy
 
-**2. Dokumentacja techniczna zgodna z Annex IV.** Opis architektury systemu, decyzje projektowe, wersjonowanie modelu, logi treningu, walidacja end-of-training. Tu ważny szczegół — organy oczekują dokumentu, który był tworzony **równolegle** z rozwojem systemu, a nie napisanego wstecznie. Metadane plików, historia commitów w repozytorium, znaczniki czasu w logach — wszystko może być weryfikowane.
+Zakazy z art. 5 AI Act stosuje się od 2 lutego 2025 r. ([LEX](https://www.lex.pl/ai-act-od-2-sierpnia-2026-r-kluczowe-wymogi-i-terminy,50129.html)). Dla przemysłu najważniejszy jest art. 5 ust. 1 lit. f: zakaz używania systemów AI do wyciągania wniosków o emocjach osób fizycznych w miejscu pracy i w placówkach edukacyjnych. Wyjątek obejmuje systemy wprowadzane ze względów medycznych lub bezpieczeństwa ([art. 5](https://artificialintelligenceact.eu/article/5/)). Za stosowanie zakazanych praktyk grozi kara do 35 mln EUR albo 7% całkowitego rocznego światowego obrotu ([art. 99](https://artificialintelligenceact.eu/article/99/)).
 
-**3. Dziennik zdarzeń (event log) zgodny z Art. 12.** Automatyczny zapis każdej decyzji systemu AI mającej wpływ na człowieka: kto był oceniany, jaki był wynik modelu, jaka była podjęta akcja (np. zmiana grafiku, zmiana premii, ostrzeżenie), kto zatwierdził. Format — dowolny, ale musi być rekonstruowalny na żądanie za dowolny okres w retencji 6 miesięcy do dwóch lat (zależnie od klasy).
+Wytyczne Komisji w sprawie zakazanych praktyk z 4 lutego 2025 r. doprecyzowują granice ([Lewis Silkin](https://www.lewissilkin.com/insights/2025/02/17/understanding-the-eu-ai-acts-prohibited-practices-key-workplace-and-advertising-102k011)). Stany fizyczne, takie jak zmęczenie czy ból, nie są emocjami. System wykrywający zmęczenie kierowcy lub pilota, żeby ostrzec go przed wypadkiem, nie podlega więc zakazowi. Wyjątek bezpieczeństwa Komisja interpretuje wąsko: nie obejmuje ogólnego dobrostanu, więc wykrywanie stresu czy wypalenia pozostaje zakazane. Wśród zakazanych przykładów wytyczne wymieniają wnioskowanie o emocjach na podstawie mimiki, postawy ciała, ruchów czy sposobu pisania na klawiaturze.
 
-**Praktyczna obserwacja z pierwszych dwóch tygodni**: dokumenty 1 i 2 były sensownie przygotowane w około 40% zapytań. Dokument 3 — praktycznie nigdzie. To on stanie się głównym powodem pierwszych wysokich kar. Jeśli wasz MES nie ma dedykowanego dziennika decyzji AI (osobnego od zwykłych logów aplikacji), macie realny problem.
+Dla MES oznacza to przegląd kamer na stanowiskach, analizy głosu i modułów mierzących „zaangażowanie" operatora. Jeżeli któryś z nich ocenia emocje pracownika, a nie jego stan fizyczny w celu bezpieczeństwa, problem istnieje już dziś — niezależnie od Omnibusu.
 
-## Gdzie polskie fabryki potykają się najczęściej
+### Obowiązki przejrzystości (art. 50)
 
-Cztery wzorce błędów, które powtarzają się w pierwszych wezwaniach:
+Art. 50 stosuje się od 2 sierpnia 2026 r. ([harmonogram Komisji Europejskiej](https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act)). Dostawca systemu do bezpośredniej interakcji z ludźmi musi zadbać, by użytkownik wiedział, że rozmawia z AI, a dostawca systemu generatywnego — oznaczać wyniki w formacie odczytywalnym maszynowo. Podmiot stosujący informuje osoby poddane rozpoznawaniu emocji lub kategoryzacji biometrycznej i ujawnia treści typu deepfake ([art. 50](https://artificialintelligenceact.eu/article/50/)). Systemy generatywne wprowadzone do obrotu przed 2 sierpnia 2026 r. mają na oznaczanie treści czas do 2 grudnia 2026 r. ([nicfab](https://www.nicfab.eu/en/posts/digital-omnibus-ai-official-journal/)).
 
-**Wzorzec 1: „nie wiedzieliśmy, że to jest AI".** Klasyczny system MES wprowadzony pięć lat temu z modułem „predykcji awarii" (regresja logistyczna na trzech zmiennych). Zespół nie uważał tego za AI, więc nie sklasyfikował pod AI Act. Organ ma inne zdanie — regresja logistyczna spełnia definicję z Art. 3(1) AI Act, jeśli używana w decyzjach wpływających na ludzi (kolejność napraw, przydział zasobów).
+W fabryce chodzi głównie o asystentów opartych na modelach językowych, z których korzystają operatorzy i służby utrzymania ruchu. Obowiązek spoczywa na dostawcy, ale zakład powinien go sprawdzić przy odbiorze systemu.
 
-Konsekwencja: pełne obowiązki high-risk, choć system był traktowany jako „zwykły algorytm". Realny czas na dokumentację — 30 dni, potem sankcje.
+### Kompetencje w zakresie AI (art. 4)
 
-**Wzorzec 2: „to chmurowe API, nie nasz problem".** Zakład wysyła dane operatorów do zewnętrznego dostawcy (typowo do usług analitycznych w USA lub UE-Zachód) do „przetworzenia AI". Zakład twierdzi, że jest tylko deployerem, więc odpowiedzialność jest u providera. Organ czyta AI Act inaczej — deployer high-risk systemu ma **własny zestaw obowiązków** z Art. 26, niezależnie od tego, co robi provider. W szczególności: ocena skutków dla praw człowieka (FRIA — Fundamental Rights Impact Assessment).
+Art. 4 obowiązuje od 2 lutego 2025 r. ([LEX](https://www.lex.pl/ai-act-od-2-sierpnia-2026-r-kluczowe-wymogi-i-terminy,50129.html)), a od 27 lipca 2026 r. w złagodzonym brzmieniu. Dostawcy i podmioty stosujące mają podejmować działania wspierające rozwój kompetencji personelu ([nicfab](https://www.nicfab.eu/en/posts/digital-omnibus-ai-official-journal/)). W praktyce chodzi o udokumentowane szkolenie operatorów i kierowników zmian, którzy korzystają z modułów AI.
 
-Trzy pierwsze wezwania UODO w tym wzorcu — wszystkie o brak FRIA, wszystkie z terminem 14 dni.
+### RODO i ocena skutków dla ochrony danych
 
-**Wzorzec 3: „operator wyrażał zgodę".** Zakład zebrał od operatorów formularz zgody „na przetwarzanie danych przez systemy sztucznej inteligencji". Uważa, że to załatwia sprawę. Nie załatwia — Art. 26 ust. 7 AI Act wymaga informowania pracowników o systemie AI **przed** rozpoczęciem korzystania, ale nie zwalnia z obowiązku dokumentacji, oceny ryzyka i logowania. Zgoda operatora nie jest podstawą prawną, tylko wymogiem informacyjnym.
+Monitorowanie operatorów to przede wszystkim przetwarzanie danych osobowych, w którym UODO ma pełne kompetencje. Według UODO wdrożenie systemu monitorowania czasu pracy pracowników i przepływu informacji w ich narzędziach wymaga oceny skutków dla ochrony danych (DPIA). Co do zasady ocenę przeprowadza się, gdy przetwarzanie spełnia co najmniej dwa kryteria z wykazu ogłoszonego komunikatem Prezesa UODO z 17 czerwca 2019 r. ([UODO](https://uodo.gov.pl/pl/598/3617)).
 
-**Wzorzec 4: „nasz MES-AI to tylko sugestia dla człowieka".** Zakład twierdzi, że system nie podejmuje decyzji automatycznych — tylko sugeruje operatorowi lub kierownikowi, co zrobić. To wciąż jest AI wysokiego ryzyka, jeśli sugestia realnie wpływa na decyzje kadrowe/produkcyjne. Kryterium z Art. 6 to „meaningful influence", nie „ostateczna decyzja". Sugerowanie kolejności napraw kompresora — może być poza scope. Sugerowanie premii dla operatora — na pewno w scope.
+16 lipca 2026 r. Prezes UODO Mirosław Wróblewski skierował do ministry pracy, rodziny i polityki społecznej wniosek o przepisy chroniące kandydatów i pracowników przed dyskryminacją wynikającą ze stosowania AI. Uzasadnił go tym, że systemy AI „rodzą poważne ryzyko powielania uprzedzeń istniejących w danych treningowych". UODO podkreśla też, że ocena skutków dla praw podstawowych z art. 27 AI Act ma jedynie uzupełniać ocenę skutków dla ochrony danych, a nie ją zastępować ([UODO](https://uodo.gov.pl/pl/138/4493)).
 
-## Rzeczywista postawa polskich organów — pierwsze sygnały
+Nie znaleźliśmy publicznych informacji o wezwaniach UODO lub UOKiK do zakładów produkcyjnych na podstawie AI Act. Nie miałyby one dziś podstawy: przepisy o systemach wysokiego ryzyka jeszcze nie obowiązują, a żaden z tych urzędów nie jest organem nadzoru rynku AI.
 
-Z rozmów z zespołami prawnymi w pierwszej połowie sierpnia da się wyłuskać kilka istotnych wskazówek:
+## Kto w Polsce nadzoruje AI Act
 
-**UODO nie stosuje karencji.** Szefowa Departamentu Rynku Cyfrowego w wywiadzie z 12 sierpnia dla Rzeczpospolitej: „AI Act był w Dzienniku Urzędowym w sierpniu 2024 roku. Podmioty miały dwa lata. Nie planujemy karencji dla tych, którzy zwlekali". To sygnał wagi kalibra „poważne rozmowy trwają", nie „polityka reprezentacyjna".
+Sejm uchwalił ustawę o systemach sztucznej inteligencji 11 czerwca 2026 r. (421 posłów za, 3 przeciw, 18 wstrzymujących się — [rp.pl](https://www.rp.pl/prawo-w-polsce/art44606901-sejm-przyjal-ustawe-o-sztucznej-inteligencji-komisja-ds-ai-i-piaskownice-regulacyjne-dla-firm)). 3 lipca przyjął 24 z 25 poprawek Senatu ([CyberDefence24](https://cyberdefence24.pl/polityka-i-prawo/polska/koniec-parlamentarnych-prac-nad-ustawa-o-sztucznej-inteligencji-czas-na-ruch-prezydenta)), a 24 lipca ustawę podpisał prezydent Karol Nawrocki ([CyberDefence24](https://cyberdefence24.pl/polityka-i-prawo/polska/prezydent-podpisal-ustawe-o-systemach-ai)). Ustawa z 3 lipca 2026 r. (Dz.U. 2026 poz. 1003, ogłoszona 27 lipca) weszła w życie 11 sierpnia 2026 r. ([ELI](https://eli.gov.pl/eli/DU/2026/1003/ogl/pol)).
 
-**UOKiK szykuje pierwszą decyzję sankcyjną na wrzesień.** Nieoficjalnie — z rozmów w kuluarach konferencji AI Governance w Warszawie 10 sierpnia. Pierwsze publiczne postępowanie ma dotyczyć producenta wyrobu medycznego, gdzie system AI klasyfikował defekty bez odpowiedniego nadzoru human-in-the-loop. Wysokość potencjalnej sankcji nie została ujawniona, ale spekulacje wskazują na rząd wielkości 500 tys.–2 mln zł.
+Najważniejsze rozwiązania ([tekst ustawy](https://api.sejm.gov.pl/eli/acts/DU/2026/1003/text.pdf)):
 
-**CSIRT NASK — inne priorytety.** Cyberbezpieczeństwo (NIS2, KSC2) ma pierwszeństwo. AI Act w sektorze krytycznym prawdopodobnie doczeka się pierwszych postępowań dopiero pod koniec III kwartału. To okno dla energetyki, gazu, uzdatniania wody, żeby dokończyć dokumentację bez gorączki.
+- **Organ nadzoru rynku.** Jest nim wyłącznie KRiBSI, która pełni też funkcję pojedynczego punktu kontaktowego (art. 5). W jej skład wchodzą przewodniczący, dwóch zastępców oraz czterech członków wskazanych przez Prezesa UOKiK, Komisję Nadzoru Finansowego, Krajową Radę Radiofonii i Telewizji oraz Prezesa UKE (art. 19).
+- **UODO, UOKiK, CSIRT NASK.** Współpracują z KRiBSI w określonych sprawach (art. 20): Prezes UODO w zakresie danych osobowych, Prezes UOKiK i inne organy nadzoru rynku produktów w sprawach z art. 74 ust. 1–5 AI Act, zespoły CSIRT przy wymianie informacji o incydentach. Do ustawy o ochronie danych osobowych dodano art. 59a: „Prezes Urzędu współpracuje z Komisją Rozwoju i Bezpieczeństwa Sztucznej Inteligencji" (art. 123).
+- **Terminy.** Przepisy o kontroli, postępowaniu, układzie, karach oraz opiniach indywidualnych wchodzą w życie 28 października 2026 r. (art. 127). Wiceminister cyfryzacji Dariusz Standerski zapowiadał w „Rzeczpospolitej": „To oznacza, że w październiku będzie przewodniczący, a w listopadzie komisja rozpocznie działalność" ([rp.pl, 24.07.2026](https://www.rp.pl/prawo-w-polsce/art44882741-polska-komisja-ds-ai-rozpocznie-prace-w-listopadzie)).
+- **Kary.** Ustawa nie wprowadza własnych stawek. KRiBSI nakłada kary na warunkach z rozdziału XII AI Act, a kwoty w euro przelicza się na złote po średnim kursie NBP z 28 stycznia danego roku (art. 104). Górne granice z art. 99 AI Act: 35 mln EUR lub 7% obrotu za zakazane praktyki, 15 mln EUR lub 3% za większość pozostałych naruszeń, 7,5 mln EUR lub 1% za wprowadzające w błąd informacje dla organów. Dla małych i średnich przedsiębiorstw stosuje się niższą z dwóch wartości ([art. 99](https://artificialintelligenceact.eu/article/99/)).
+- **Łagodzenie sankcji.** Układ z KRiBSI pozwala obniżyć karę o 20–70%, a gdy postępowanie wszczęto na podstawie zgłoszenia samego naruszającego — o 30–90% (art. 70 ust. 6 i art. 84). Wykonanie ostrzeżenia w ciągu trzech miesięcy od doręczenia decyzji o karze pozwala ją obniżyć o 10–50% (art. 107).
+- **Opinie indywidualne.** Wniosek do KRiBSI kosztuje 150 zł, a opinia ma być wydana w 30 dni, w sprawach szczególnie skomplikowanych w 60 dni (art. 11 i 12).
+- **Organy ochrony praw podstawowych (art. 77 AI Act).** Ministerstwo Cyfryzacji wskazało Rzecznika Praw Dziecka, Rzecznika Praw Pacjenta i Państwową Inspekcję Pracy (od 2 listopada 2024 r.) oraz Prezesa UODO (od 9 maja 2025 r.). Mają one dostęp do dokumentacji systemów wysokiego ryzyka w zakresie potrzebnym do swoich zadań ([gov.pl](https://www.gov.pl/web/cyfryzacja/wykaz-organow-i-instytucji-publicznych-w-polsce-z-obszaru-ochrony-praw-podstawowych-w-rozumieniu-rozporzadzenia-20241689-akt-o-sztucznej-inteligencji)).
 
-**PIP — nieoficjalny sojusznik UODO.** Państwowa Inspekcja Pracy w kilku przypadkach pomogła UODO w identyfikacji zakładów z monitoringiem wydajności AI, mimo że sama nie ma bezpośrednich uprawnień w zakresie AI Act. To oznacza, że zakłady z historią sporów z PIP są na krótszej liście monitoringu.
+## Dane: skala AI w polskich firmach
 
-## Trzy kroki na najbliższe 30 dni
+Według GUS w 2025 r. wykorzystanie technologii AI deklarowało 8,7% przedsiębiorstw (5,9% rok wcześniej). W dużych firmach odsetek ten wyniósł 42,0%, a w przetwórstwie przemysłowym 7,8%. AI w procesie produkcji stosowało 2,6% przedsiębiorstw. Najczęstszym sposobem pozyskania AI był zakup gotowego rozwiązania komercyjnego, wskazany przez 6,4% firm ([GUS, Społeczeństwo informacyjne w Polsce w 2025 r.](https://stat.gov.pl/files/gfx/portalinformacyjny/pl/defaultaktualnosci/5497/1/19/1/spoleczenstwo_informacyjne_w_polsce_2025.pdf)).
 
-Dla zakładów, które w pierwszej fali nie dostały wezwania — dostaną w drugiej lub trzeciej fali (wrzesień–październik). Trzy najważniejsze rzeczy do zrobienia w ciągu 30 dni:
+Nasza interpretacja: skoro większość firm korzystających z AI kupuje gotowe systemy, większość zakładów będzie w rozumieniu AI Act **podmiotami stosującymi**, a nie dostawcami. To zmienia zakres obowiązków.
 
-**Krok 1: audyt wewnętrzny scope'u AI Act.** Przejdź przez każdy moduł MES/EMS/SCADA/CMMS i zapytaj: czy wpływa na decyzje o ludziach lub o produkcie regulowanym (medyczne, motoryzacyjne, bezpieczeństwa maszyn)? Jeśli tak — jest w scope niezależnie od tego, jak nazwaliście algorytm. Wynik audytu — jednostronicowa lista modułów w scope z klasyfikacją Annex I vs Annex III.
+Limit wydatków państwa na skutki ustawy wynosi 9,30 mln zł w 2026 r. i 23,74 mln zł w 2027 r. (art. 126 [ustawy](https://api.sejm.gov.pl/eli/acts/DU/2026/1003/text.pdf)).
 
-**Krok 2: dziennik decyzji AI.** To najbardziej brakująca rzecz w pierwszej fali. Zbudujcie prosty pipeline: każda decyzja modelu AI wpływająca na człowieka lub produkt zapisywana do dedykowanej tabeli (najlepiej w [waszym TimescaleDB](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie), z chunk_time_interval 30 dni). Pola minimum: timestamp, model_version, input_hash, output, action_taken, human_reviewer_id, review_timestamp. Retencja: 2 lata dla wysokiego ryzyka.
+## Dostawca czy podmiot stosujący: kto za co odpowie od 2 grudnia 2027 r.
 
-**Krok 3: FRIA dla systemów wpływających na pracowników.** Fundamental Rights Impact Assessment — dokument o objętości 10 do 20 stron, opisujący jak system AI wpływa na prawa podstawowe operatorów. Szablony są dostępne u ENISA i EDPB, ale trzeba je dostosować do specyfiki MES. Realny czas przygotowania — dwa tygodnie z zespołem prawnik + product owner + inżynier AI. Bez FRIA żadne wezwanie UODO nie zostanie zamknięte pozytywnie.
+**Dostawca** sporządza dokumentację techniczną z załącznika IV (art. 11) i odpowiada za to, by system technicznie umożliwiał automatyczne rejestrowanie zdarzeń przez cały cykl życia ([art. 12](https://artificialintelligenceact.eu/article/12/)). Zakład, który tylko używa kupionego systemu, tej dokumentacji nie sporządza.
 
-## Co się realnie zmieniło od 2 sierpnia
+**Podmiot stosujący** ma własne obowiązki z art. 26 ([art. 26](https://artificialintelligenceact.eu/article/26/)):
 
-Nic w prawie. Wszystko w oczekiwaniach.
+- używa systemu zgodnie z instrukcją dostawcy;
+- powierza nadzór osobom, które mają niezbędne kompetencje, przeszkolenie i uprawnienia;
+- dba, by dane wejściowe, nad którymi ma kontrolę, były adekwatne i wystarczająco reprezentatywne;
+- monitoruje działanie systemu i informuje dostawcę o ryzykach;
+- przechowuje automatycznie generowane rejestry zdarzeń przez co najmniej sześć miesięcy, chyba że inne przepisy stanowią inaczej (ust. 6);
+- przed oddaniem systemu do użytku w miejscu pracy informuje przedstawicieli pracowników i samych pracowników (ust. 7);
+- wykorzystuje informacje od dostawcy przy ocenie skutków dla ochrony danych (ust. 9).
 
-Do 1 sierpnia AI Act był traktowany jak zdalna groźba. 2 sierpnia stał się codziennym elementem pracy zespołów compliance. Trzy pierwsze publiczne komunikacje sankcyjne we wrześniu i październiku (bo takie będą — organy nie zwlekają, gdy mają dwa lata przygotowań za sobą) zmienią atmosferę w branży definitywnie. Do końca IV kwartału każdy dyrektor produkcji w Polsce, który słyszał wcześniej „AI Act, no może", będzie wiedział, że to nie jest opcjonalne.
+Zakład staje się **dostawcą**, gdy umieszcza na systemie wysokiego ryzyka własną nazwę lub znak towarowy, wprowadza istotną zmianę albo zmienia przeznaczenie systemu tak, że staje się on systemem wysokiego ryzyka ([art. 25](https://artificialintelligenceact.eu/article/25/)). Dotyczy to zakładów, które same budują moduły AI albo głęboko przerabiają kupione rozwiązania.
 
-Dla polskich zakładów, które zainwestowały w zgodność wcześniej, to okno na przewagę konkurencyjną. Zakłady „AI Act-ready" wygrywają dziś przetargi u dużych OEM (VW, Mercedes, Stellantis), bo te wymagają dokumentacji zgodności od dostawców. Zakłady, które dopiero teraz zaczynają — mają jeszcze czas do końca września, żeby uniknąć pierwszej fali sankcji, ale muszą działać tygodniowo, nie miesięcznie.
+**Ocena skutków dla praw podstawowych (FRIA, art. 27)** nie dotyczy każdego podmiotu stosującego. Obejmuje podmioty prawa publicznego, podmioty prywatne świadczące usługi publiczne oraz podmioty stosujące systemy z załącznika III pkt 5 lit. b i c, czyli ocenę zdolności kredytowej oraz ubezpieczenia na życie i zdrowotne ([art. 27](https://artificialintelligenceact.eu/article/27/)). Typowy prywatny zakład produkcyjny nie musi jej sporządzać, ale ocena skutków dla ochrony danych z RODO nadal go obowiązuje. Po zmianach FRIA może odsyłać do odpowiednich części DPIA ([nicfab](https://www.nicfab.eu/en/posts/digital-omnibus-ai-official-journal/)).
 
-Jeżeli macie MES z jakimkolwiek modułem AI, a te trzy dokumenty (ocena ryzyka, dokumentacja techniczna, dziennik decyzji) nie są u was zamknięte — najbliższe 30 dni jest najważniejsze. Kolejne wezwania idą.
+**Które funkcje MES mogą trafić do wysokiego ryzyka.** Załącznik III pkt 4 lit. b obejmuje systemy do podejmowania decyzji wpływających na warunki zatrudnienia, awans lub rozwiązanie stosunku pracy, przydziału zadań na podstawie indywidualnego zachowania lub cech osobowych oraz monitorowania i oceny wyników i zachowania pracowników ([załącznik III](https://artificialintelligenceact.eu/annex/3/)). Wyjątek z art. 6 ust. 3 obejmuje systemy, które nie stwarzają znaczącego ryzyka, w tym nie wpływają istotnie na wynik decyzji. Nie dotyczy jednak systemów profilujących osoby fizyczne — te zawsze są systemami wysokiego ryzyka ([art. 6](https://artificialintelligenceact.eu/article/6/)).
+
+**Co w ogóle jest systemem AI.** Według wytycznych Komisji w sprawie definicji systemu AI (C(2025) 5053) poza definicją są systemy usprawniające optymalizację matematyczną, np. z użyciem regresji liniowej lub logistycznej (pkt 42), oraz proste systemy predykcyjne oparte na podstawowej regule statystycznej, np. prognozie średniej (pkt 49). Wytyczne nie są wiążące — ostateczna wykładnia należy do Trybunału Sprawiedliwości UE (pkt 7) ([Komisja Europejska](https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/commission_guidelines_on_the_definition_of_an_artificial_intelligence_system_established_by_regulation_eu_20241689_ai_actenglish_nf2skcqfrtjdfggjavcodopcwz4_112455.PDF)). Nasza ocena: predykcja awarii na danych z maszyn, która nie służy ocenie ludzi, zwykle nie mieści się w załączniku III, nawet jeśli jest systemem AI.
+
+## Bariery i ograniczenia
+
+**Brak norm zharmonizowanych.** To główny powód przesunięcia terminów. Zakład, który przygotowuje się teraz, pracuje na wymaganiach z rozporządzenia, a nie na gotowych normach technicznych. Granice definicji systemu AI i zakazu rozpoznawania emocji wyznaczają na razie niewiążące wytyczne Komisji.
+
+**Luka instytucjonalna.** Według zapowiedzi Ministerstwa Cyfryzacji KRiBSI ma rozpocząć działalność w listopadzie 2026 r. Do tego czasu nie ma organu, który wydawałby przedsiębiorcom opinie indywidualne.
+
+**Stałe daty zamiast warunkowych.** Komisja proponowała, by obowiązki zaczęły się stosować po potwierdzeniu dostępności norm, najpóźniej 2 grudnia 2027 r. dla załącznika III. Ustawodawcy wybrali sztywne terminy ([EPRS](https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI%282026%29782651_EN.pdf)), więc grudzień 2027 r. obowiązuje niezależnie od tego, czy normy zdążą powstać.
+
+**Nakładanie się przepisów.** Moduł monitorowania operatorów podlega jednocześnie AI Act, RODO i Kodeksowi pracy, a infrastruktura — wymaganiom cyberbezpieczeństwa (zob. [artykuł o NIS2 i KSC](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)).
+
+**Wymagania klientów mogą wyprzedzić prawo.** Przykład: materiał Mercedes-Benz dla dostawców z lutego 2026 r. oczekuje od nich budowania świadomości ryzyk zgodności technicznej, w tym związanych z AI, oraz rzetelnego dokumentowania tych ryzyk ([Mercedes-Benz](https://docmaster.supplier.mercedes-benz.com/DMPublic/en/doc/ALD00001630.2026-02.EN.pdf)). Dla dostawcy motoryzacyjnego pytania od klienta mogą pojawić się wcześniej niż pierwsza kontrola.
+
+## Co to oznacza dla fabryki: plan na 15 miesięcy
+
+Poniższy plan to **nasza rekomendacja**, a nie wymóg prawny.
+
+**Etap 1 — do końca października 2026 r.**
+
+1. Inwentaryzacja modułów MES i systemów współpracujących, które korzystają z uczenia maszynowego lub modeli językowych: czy dotyczą ludzi czy maszyn, czy zakład jest dostawcą czy podmiotem stosującym.
+2. Przegląd pod kątem art. 5 ust. 1 lit. f: czy któraś funkcja wnioskuje o emocjach pracowników.
+3. Ocena skutków dla ochrony danych dla monitorowania operatorów, jeśli jeszcze jej nie ma.
+4. Udokumentowane szkolenia użytkowników modułów AI (art. 4).
+
+**Etap 2 — pierwsza połowa 2027 r.**
+
+5. Klasyfikacja funkcji według załącznika III pkt 4 i art. 6 ust. 3, z pisemnym uzasadnieniem dla funkcji uznanych za niebędące systemem wysokiego ryzyka.
+6. Uzupełnienie umów z dostawcami: instrukcja użytkowania, informacje potrzebne do DPIA, dostęp do rejestrów zdarzeń.
+7. Wyznaczenie osób sprawujących nadzór człowieka.
+
+**Etap 3 — druga połowa 2027 r.**
+
+8. Uruchomienie rejestru decyzji AI z przechowywaniem przez co najmniej sześć miesięcy.
+9. Poinformowanie przedstawicieli pracowników i pracowników przed 2 grudnia 2027 r.
+10. Aktualizacja DPIA z wykorzystaniem informacji od dostawcy.
+
+**Co powinien umieć system MES** (nasza ocena, na podstawie art. 12 i 26). Przy każdej rekomendacji lub decyzji modułu AI dotyczącej ludzi system powinien zapisywać czas zdarzenia, wersję modelu, odniesienie do danych wejściowych, wynik modelu, podjęte działanie i osobę, która je zatwierdziła lub odrzuciła. Okres przechowywania powinien być konfigurowalny i nie krótszy niż sześć miesięcy, zapis — możliwy do wyeksportowania na żądanie organu, a podpowiedzi pochodzące z AI — wyraźnie oznaczone w interfejsie.
+
+Obowiązki dla AI wysokiego ryzyka zaczną się stosować w grudniu 2027 r., a nie w sierpniu 2026 r. Zakaz rozpoznawania emocji, obowiązki przejrzystości i RODO obowiązują już teraz.
+
+## Aktualizacja (6 października 2026)
+
+- 18 września 2026 r. Sejm powołał Pamelę Krzypkowską na przewodniczącą KRiBSI: 271 posłów za, 24 przeciw, 140 wstrzymujących się. Wcześniej była dyrektorką Departamentu Badań i Innowacji w Ministerstwie Cyfryzacji ([rp.pl](https://www.rp.pl/prawo-w-polsce/art45159621-sejm-powolal-pamele-krzypkowska-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai)). 24 września 2026 r. Senat wyraził zgodę na jej powołanie ([wnp.pl](https://www.wnp.pl/rynki/senat-za-powolaniem-pameli-krzypkowskiej-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai,1102315.html)).
+- 28 października 2026 r. wchodzą w życie przepisy o kontroli i karach (art. 127 ustawy).
+- Pierwsza wersja artykułu opisywała wezwania UODO i UOKiK do zakładów, wypowiedź „szefowej Departamentu Rynku Cyfrowego UODO" i karę do 5 mln zł z polskiej ustawy. Żadnej z tych informacji nie potwierdziliśmy: UODO nie ma takiego departamentu ([UODO](https://uodo.gov.pl/pl/p/o-nas)), a ustawa odsyła do kar z art. 99 AI Act. Usunęliśmy te treści i przepraszamy czytelników.
 
 ---
 
 ## Źródła
 
-- [Rozporządzenie AI Act 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — Art. 26 (obowiązki deployera), Art. 27 (FRIA), Art. 12 (dziennik zdarzeń), Annex IV (dokumentacja techniczna)
-- [Polska ustawa o systemach AI z marca 2026](https://www.rp.pl/prawo-w-polsce/art44076181-rzad-przyjal-projekt-ustawy-o-systemach-sztucznej-inteligencji-ma-wdrozyc-w-polsce-ai-act) — krajowe organy nadzoru (UODO, UOKiK, CSIRT NASK, UKE)
-- [ENISA AI Cybersecurity Practices](https://www.enisa.europa.eu/topics/data-protection) — szablony FRIA
-- [EDPB Guidelines 05/2023 on data protection impact assessment](https://www.edpb.europa.eu/) — metodologia oceny ryzyka
-- Wywiad z szefową Departamentu Rynku Cyfrowego UODO, Rzeczpospolita, 12 sierpnia 2026
-- [Nasz artykuł: EU AI Act sierpień 2026 — które funkcje MES kwalifikują się jako high-risk](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai)
-- [Nasz artykuł: NIS2 i KSC2 w 2026 dla polskich fabryk](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)
-- [Nasz artykuł: TimescaleDB w OmniMES](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie)
-- [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e)
+- [EPRS, Digital Omnibus on AI (briefing)](https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI%282026%29782651_EN.pdf) — przebieg prac, głosowanie w Parlamencie, nowe terminy, maszyny, przyczyny opóźnień
+- [K&L Gates, EU Digital Omnibus on AI Enters Into Force](https://www.cyberlawwatch.com/2026/07/31/eu-digital-omnibus-on-ai-enters-into-force/) — rozporządzenie 2026/1744, publikacja 24.07.2026, wejście w życie 27.07.2026, nowe terminy
+- [nicfab, Digital Omnibus on AI in the Official Journal](https://www.nicfab.eu/en/posts/digital-omnibus-ai-official-journal/) — data rozporządzenia, zmiany art. 4, art. 27 i art. 50, piaskownice
+- [Komisja Europejska, harmonogram stosowania AI Act](https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act) — terminy 2.08.2026, 2.12.2026, 2.12.2027, 2.08.2028
+- [Ministerstwo Cyfryzacji, AI Act — co się zmieniło 2 sierpnia 2026 roku](https://www.gov.pl/web/cyfryzacja/ai-act--co-sie-zmienilo-2-sierpnia-2026-roku) — nowe terminy i uzasadnienie przesunięcia
+- [LEX, AI Act od 2 sierpnia 2026 r.](https://www.lex.pl/ai-act-od-2-sierpnia-2026-r-kluczowe-wymogi-i-terminy,50129.html) — stosowanie zakazów i art. 4 od 2.02.2025
+- [AI Act — art. 5](https://artificialintelligenceact.eu/article/5/), [art. 6](https://artificialintelligenceact.eu/article/6/), [art. 12](https://artificialintelligenceact.eu/article/12/), [art. 25](https://artificialintelligenceact.eu/article/25/), [art. 26](https://artificialintelligenceact.eu/article/26/), [art. 27](https://artificialintelligenceact.eu/article/27/), [art. 50](https://artificialintelligenceact.eu/article/50/), [art. 99](https://artificialintelligenceact.eu/article/99/), [załącznik III](https://artificialintelligenceact.eu/annex/3/) — tekst przepisów
+- [Wytyczne Komisji w sprawie definicji systemu AI, C(2025) 5053](https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/commission_guidelines_on_the_definition_of_an_artificial_intelligence_system_established_by_regulation_eu_20241689_ai_actenglish_nf2skcqfrtjdfggjavcodopcwz4_112455.PDF) — pkt 7, 42 i 49
+- [Lewis Silkin, wytyczne Komisji w sprawie zakazanych praktyk](https://www.lewissilkin.com/insights/2025/02/17/understanding-the-eu-ai-acts-prohibited-practices-key-workplace-and-advertising-102k011) — rozpoznawanie emocji w miejscu pracy, zmęczenie, wyjątek bezpieczeństwa
+- [Ustawa z 3 lipca 2026 r. o systemach sztucznej inteligencji, Dz.U. 2026 poz. 1003 (tekst)](https://api.sejm.gov.pl/eli/acts/DU/2026/1003/text.pdf) oraz [metryka ELI](https://eli.gov.pl/eli/DU/2026/1003/ogl/pol)
+- [rp.pl, Sejm przyjął ustawę o sztucznej inteligencji](https://www.rp.pl/prawo-w-polsce/art44606901-sejm-przyjal-ustawe-o-sztucznej-inteligencji-komisja-ds-ai-i-piaskownice-regulacyjne-dla-firm) — głosowanie 11.06.2026
+- [CyberDefence24, koniec prac parlamentarnych](https://cyberdefence24.pl/polityka-i-prawo/polska/koniec-parlamentarnych-prac-nad-ustawa-o-sztucznej-inteligencji-czas-na-ruch-prezydenta) oraz [podpis prezydenta](https://cyberdefence24.pl/polityka-i-prawo/polska/prezydent-podpisal-ustawe-o-systemach-ai)
+- [rp.pl, Polska komisja ds. AI ma ruszyć w listopadzie](https://www.rp.pl/prawo-w-polsce/art44882741-polska-komisja-ds-ai-rozpocznie-prace-w-listopadzie) — wypowiedź wiceministra Dariusza Standerskiego
+- [Ministerstwo Cyfryzacji, wykaz organów ochrony praw podstawowych (art. 77 AI Act)](https://www.gov.pl/web/cyfryzacja/wykaz-organow-i-instytucji-publicznych-w-polsce-z-obszaru-ochrony-praw-podstawowych-w-rozumieniu-rozporzadzenia-20241689-akt-o-sztucznej-inteligencji)
+- [UODO, Prezes UODO wskazuje na potrzebę uregulowania stosowania systemów AI w zatrudnieniu (16.07.2026)](https://uodo.gov.pl/pl/138/4493)
+- [UODO, Kiedy trzeba przeprowadzić ocenę skutków dla ochrony danych?](https://uodo.gov.pl/pl/598/3617)
+- [UODO, O nas — struktura urzędu](https://uodo.gov.pl/pl/p/o-nas)
+- [GUS, Społeczeństwo informacyjne w Polsce w 2025 r.](https://stat.gov.pl/files/gfx/portalinformacyjny/pl/defaultaktualnosci/5497/1/19/1/spoleczenstwo_informacyjne_w_polsce_2025.pdf) — wykorzystanie AI w przedsiębiorstwach
+- [Mercedes-Benz, tCMS awareness package for suppliers (luty 2026)](https://docmaster.supplier.mercedes-benz.com/DMPublic/en/doc/ALD00001630.2026-02.EN.pdf)
+- [rp.pl, Sejm powołał Pamelę Krzypkowską](https://www.rp.pl/prawo-w-polsce/art45159621-sejm-powolal-pamele-krzypkowska-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai) oraz [wnp.pl (PAP), zgoda Senatu](https://www.wnp.pl/rynki/senat-za-powolaniem-pameli-krzypkowskiej-na-szefowa-komisji-rozwoju-i-bezpieczenstwa-ai,1102315.html)
