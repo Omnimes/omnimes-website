@@ -88,6 +88,154 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
+        "path": "outstatic/content/posts/basal-in-the-factory-a-polish-decision-model-that-makes-downtime-calls-on-site.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-basal-decyzje/cover-basal-decyzje.png",
+      "description": "Remigiusz Kinas's Basal is a family of open-weight typed-decision models for Polish and English that run on your own server. Using a downtime event in OmniMES, we walk through the request, the cost matrix, deferral to a human and an honest comparison with Jev.",
+      "lang": "en",
+      "publishedAt": "2026-10-19T08:00:00.000Z",
+      "slug": "basal-in-the-factory-a-polish-decision-model-that-makes-downtime-calls-on-site",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Basal in the factory: a Polish decision model that makes downtime calls on-site"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/basal-w-fabryce-polski-model-decyzyjny-ktory-rozstrzyga-przestoje-lokalnie.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-basal-decyzje/cover-basal-decyzje.png",
+      "description": "Basal Remigiusza Kinasa to otwarte modele typowanych decyzji dla polskiego i angielskiego, uruchamiane na własnym serwerze. Na przykładzie przestoju w OmniMES pokazujemy zapytanie, macierz kosztów, odsyłanie niepewnych przypadków do człowieka i uczciwe porównanie z Jevem.",
+      "lang": "pl",
+      "publishedAt": "2026-10-19T08:00:00.000Z",
+      "slug": "basal-w-fabryce-polski-model-decyzyjny-ktory-rozstrzyga-przestoje-lokalnie",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "AI",
+          "value": "AI"
+        },
+        {
+          "label": "AI local",
+          "value": "aiLocal"
+        },
+        {
+          "label": "MES System",
+          "value": "mesSystem"
+        }
+      ],
+      "title": "Basal w fabryce: polski model decyzyjny, który rozstrzyga przestoje lokalnie"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/cyber-resilience-act-24-godziny-na-zgloszenie-podatnosci-co-to-zmienia-dla-mes-i-fabryki.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci.png",
+      "description": "Od 11 września 2026 producent oprogramowania, także systemu MES, ma 24 godziny na wczesne ostrzeżenie o aktywnie wykorzystywanej podatności i 72 godziny na pełne zgłoszenie do CSIRT i ENISA. Wyjaśniamy, kogo obejmuje art. 14 CRA i czego fabryka powinna wymagać od dostawcy.",
+      "lang": "pl",
+      "publishedAt": "2026-10-05T08:00:00.000Z",
+      "slug": "cyber-resilience-act-24-godziny-na-zgloszenie-podatnosci-co-to-zmienia-dla-mes-i-fabryki",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "cyberbezpieczenstwo",
+          "value": "cyberbezpieczenstwo"
+        },
+        {
+          "label": "CRA",
+          "value": "cra"
+        }
+      ],
+      "title": "Cyber Resilience Act: od 11 września 2026 producent ma 24 godziny na zgłoszenie podatności — co to zmienia dla MES i fabryki"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/cyber-resilience-act-24-hours-to-report-an-exploited-vulnerability-what-it-means-for-mes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci.png",
+      "description": "Since 11 September 2026, software manufacturers, MES vendors included, must send an early warning of an actively exploited vulnerability within 24 hours and a full notification within 72 hours to the CSIRT and ENISA. Who Article 14 of the CRA covers and what factories should ask of their vendor.",
+      "lang": "en",
+      "publishedAt": "2026-10-05T08:00:00.000Z",
+      "slug": "cyber-resilience-act-24-hours-to-report-an-exploited-vulnerability-what-it-means-for-mes",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UE",
+          "value": "ue"
+        },
+        {
+          "label": "cyberbezpieczenstwo",
+          "value": "cyberbezpieczenstwo"
+        },
+        {
+          "label": "CRA",
+          "value": "cra"
+        }
+      ],
+      "title": "Cyber Resilience Act: since 11 September 2026 manufacturers have 24 hours to report an exploited vulnerability — what it means for MES vendors and factories"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
         "path": "outstatic/content/posts/omnimes-relpol-partnership-smart-energy-metering-network.md"
       },
       "author": {
@@ -5167,6 +5315,80 @@
         }
       ],
       "title": "TimescaleDB w OmniMES: jak hypertables PostgreSQL obsługują 200 mln pomiarów dziennie"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/unified-namespace-in-practice-one-source-of-factory-data-on-mqtt-and-sparkplug-b.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-uns-sparkplug/cover-uns-sparkplug.png",
+      "description": "How to build a Unified Namespace on an MQTT broker and Sparkplug B without replacing your controllers: an ISA-95 topic hierarchy, birth and death certificates, data contracts, broker high availability, IT and OT segmentation and a 30-day plan to get started.",
+      "lang": "en",
+      "publishedAt": "2026-10-12T08:00:00.000Z",
+      "slug": "unified-namespace-in-practice-one-source-of-factory-data-on-mqtt-and-sparkplug-b",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UNS",
+          "value": "uns"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        }
+      ],
+      "title": "Unified Namespace in practice: one source of factory data on MQTT and Sparkplug B"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/unified-namespace-w-praktyce-jedno-zrodlo-danych-fabryki-na-mqtt-i-sparkplug-b.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-uns-sparkplug/cover-uns-sparkplug.png",
+      "description": "Jak zbudować Unified Namespace na brokerze MQTT i Sparkplug B bez wymiany sterowników: hierarchia tematów według ISA-95, certyfikaty narodzin i śmierci, kontrakty danych, wysoka dostępność brokera, segmentacja sieci IT i OT oraz plan na pierwsze 30 dni.",
+      "lang": "pl",
+      "publishedAt": "2026-10-12T08:00:00.000Z",
+      "slug": "unified-namespace-w-praktyce-jedno-zrodlo-danych-fabryki-na-mqtt-i-sparkplug-b",
+      "status": "published",
+      "tags": [
+        {
+          "label": "OmniMES",
+          "value": "omniMES"
+        },
+        {
+          "label": "UNS",
+          "value": "uns"
+        },
+        {
+          "label": "MQTT",
+          "value": "mqtt"
+        },
+        {
+          "label": "Sparkplug B",
+          "value": "sparkplugB"
+        }
+      ],
+      "title": "Unified Namespace w praktyce: jedno źródło danych fabryki na MQTT i Sparkplug B"
     },
     {
       "__outstatic": {
