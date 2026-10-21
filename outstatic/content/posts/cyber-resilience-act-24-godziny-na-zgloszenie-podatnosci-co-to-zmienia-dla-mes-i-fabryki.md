@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'cyber-resilience-act-24-godziny-na-zgloszenie-podatnosci-co-to-zmienia-dla-mes-i-fabryki'
 description: 'Od 11 września 2026 producent oprogramowania, także systemu MES, ma 24 godziny na wczesne ostrzeżenie o aktywnie wykorzystywanej podatności i 72 godziny na pełne zgłoszenie do CSIRT i ENISA. Wyjaśniamy, kogo obejmuje art. 14 CRA i czego fabryka powinna wymagać od dostawcy.'
-coverImage: '/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci.png'
+coverImage: '/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci-pl.png'
 lang: 'pl'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"ue","label":"UE"},{"value":"cyberbezpieczenstwo","label":"cyberbezpieczenstwo"},{"value":"cra","label":"CRA"}]
 publishedAt: '2026-10-05T08:00:00.000Z'

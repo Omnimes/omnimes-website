@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'basal-w-fabryce-polski-model-decyzyjny-ktory-rozstrzyga-przestoje-lokalnie'
 description: 'Basal Remigiusza Kinasa to otwarte modele typowanych decyzji dla polskiego i angielskiego, uruchamiane na własnym serwerze. Na przykładzie przestoju w OmniMES pokazujemy zapytanie, macierz kosztów, odsyłanie niepewnych przypadków do człowieka i uczciwe porównanie z Jevem.'
-coverImage: '/images/post-basal-decyzje/cover-basal-decyzje.png'
+coverImage: '/images/post-basal-decyzje/cover-basal-decyzje-pl.png'
 lang: 'pl'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"AI","label":"AI"},{"value":"aiLocal","label":"AI local"},{"value":"mesSystem","label":"MES System"}]
 publishedAt: '2026-10-19T08:00:00.000Z'

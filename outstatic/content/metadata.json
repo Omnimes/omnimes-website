@@ -95,7 +95,7 @@
         "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/post-basal-decyzje/cover-basal-decyzje.png",
+      "coverImage": "/images/post-basal-decyzje/cover-basal-decyzje-en.png",
       "description": "Remigiusz Kinas's Basal is a family of open-weight typed-decision models for Polish and English that run on your own server. Using a downtime event in OmniMES, we walk through the request, the cost matrix, deferral to a human and an honest comparison with Jev.",
       "lang": "en",
       "publishedAt": "2026-10-19T08:00:00.000Z",
@@ -132,7 +132,7 @@
         "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/post-basal-decyzje/cover-basal-decyzje.png",
+      "coverImage": "/images/post-basal-decyzje/cover-basal-decyzje-pl.png",
       "description": "Basal Remigiusza Kinasa to otwarte modele typowanych decyzji dla polskiego i angielskiego, uruchamiane na własnym serwerze. Na przykładzie przestoju w OmniMES pokazujemy zapytanie, macierz kosztów, odsyłanie niepewnych przypadków do człowieka i uczciwe porównanie z Jevem.",
       "lang": "pl",
       "publishedAt": "2026-10-19T08:00:00.000Z",
@@ -169,7 +169,7 @@
         "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci.png",
+      "coverImage": "/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci-pl.png",
       "description": "Od 11 września 2026 producent oprogramowania, także systemu MES, ma 24 godziny na wczesne ostrzeżenie o aktywnie wykorzystywanej podatności i 72 godziny na pełne zgłoszenie do CSIRT i ENISA. Wyjaśniamy, kogo obejmuje art. 14 CRA i czego fabryka powinna wymagać od dostawcy.",
       "lang": "pl",
       "publishedAt": "2026-10-05T08:00:00.000Z",
@@ -206,7 +206,7 @@
         "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci.png",
+      "coverImage": "/images/post-cra-zglaszanie-podatnosci/cover-cra-zglaszanie-podatnosci-en.png",
       "description": "Since 11 September 2026, software manufacturers, MES vendors included, must send an early warning of an actively exploited vulnerability within 24 hours and a full notification within 72 hours to the CSIRT and ENISA. Who Article 14 of the CRA covers and what factories should ask of their vendor.",
       "lang": "en",
       "publishedAt": "2026-10-05T08:00:00.000Z",
@@ -5327,7 +5327,7 @@
         "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/post-uns-sparkplug/cover-uns-sparkplug.png",
+      "coverImage": "/images/post-uns-sparkplug/cover-uns-sparkplug-en.png",
       "description": "How to build a Unified Namespace on an MQTT broker and Sparkplug B without replacing your controllers: an ISA-95 topic hierarchy, birth and death certificates, data contracts, broker high availability, IT and OT segmentation and a 30-day plan to get started.",
       "lang": "en",
       "publishedAt": "2026-10-12T08:00:00.000Z",
@@ -5364,7 +5364,7 @@
         "picture": "/images/1645307189660-I1OD.jpg"
       },
       "collection": "posts",
-      "coverImage": "/images/post-uns-sparkplug/cover-uns-sparkplug.png",
+      "coverImage": "/images/post-uns-sparkplug/cover-uns-sparkplug-pl.png",
       "description": "Jak zbudować Unified Namespace na brokerze MQTT i Sparkplug B bez wymiany sterowników: hierarchia tematów według ISA-95, certyfikaty narodzin i śmierci, kontrakty danych, wysoka dostępność brokera, segmentacja sieci IT i OT oraz plan na pierwsze 30 dni.",
       "lang": "pl",
       "publishedAt": "2026-10-12T08:00:00.000Z",

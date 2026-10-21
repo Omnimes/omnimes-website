@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'unified-namespace-in-practice-one-source-of-factory-data-on-mqtt-and-sparkplug-b'
 description: 'How to build a Unified Namespace on an MQTT broker and Sparkplug B without replacing your controllers: an ISA-95 topic hierarchy, birth and death certificates, data contracts, broker high availability, IT and OT segmentation and a 30-day plan to get started.'
-coverImage: '/images/post-uns-sparkplug/cover-uns-sparkplug.png'
+coverImage: '/images/post-uns-sparkplug/cover-uns-sparkplug-en.png'
 lang: 'en'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"uns","label":"UNS"},{"value":"mqtt","label":"MQTT"},{"value":"sparkplugB","label":"Sparkplug B"}]
 publishedAt: '2026-10-12T08:00:00.000Z'

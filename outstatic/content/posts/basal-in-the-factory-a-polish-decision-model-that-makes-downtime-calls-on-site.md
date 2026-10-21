@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'basal-in-the-factory-a-polish-decision-model-that-makes-downtime-calls-on-site'
 description: 'Remigiusz Kinas''s Basal is a family of open-weight typed-decision models for Polish and English that run on your own server. Using a downtime event in OmniMES, we walk through the request, the cost matrix, deferral to a human and an honest comparison with Jev.'
-coverImage: '/images/post-basal-decyzje/cover-basal-decyzje.png'
+coverImage: '/images/post-basal-decyzje/cover-basal-decyzje-en.png'
 lang: 'en'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"AI","label":"AI"},{"value":"aiLocal","label":"AI local"},{"value":"mesSystem","label":"MES System"}]
 publishedAt: '2026-10-19T08:00:00.000Z'

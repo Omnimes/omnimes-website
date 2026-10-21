@@ -60,6 +60,7 @@ Model językowy potrafi wygenerować „fakty", które brzmią wiarygodnie, a ni
    - **Alternatywa:** Wygeneruj prostą grafikę SVG z tytułem posta i ikoną tematyczną, zapisz jako plik w katalogu obrazów
    - **Fallback:** Jeśli żadna z powyższych metod nie działa, ustaw w frontmatter ścieżkę cover image na pusty string i wypisz komunikat: `⚠️ Cover image nie został dodany — dodaj ręcznie obraz do [ścieżka]`
 3. Zapisz obraz w odpowiednim katalogu z nazwą pasującą do sluga posta
+4. **Okładka z tekstem = osobna wersja dla każdego języka.** Wersja polska i angielska to osobne pliki, a każdy ma własne pole `coverImage`. Jeśli na grafice jest jakikolwiek tekst (tytuł, plakietka, etykiety), zrób dwie okładki: `cover-<nazwa>-pl.png` z polskim tekstem dla wpisu PL i `cover-<nazwa>-en.png` z angielskim dla wpisu EN. Wspólna okładka dla obu wersji jest dopuszczalna tylko wtedy, gdy nie ma na niej żadnego tekstu. Inaczej czytelnik angielskiej wersji widzi polskie napisy.
 
 ### Krok 5: Napisanie artykułu
 Napisz **dwie wersje językowe**:
