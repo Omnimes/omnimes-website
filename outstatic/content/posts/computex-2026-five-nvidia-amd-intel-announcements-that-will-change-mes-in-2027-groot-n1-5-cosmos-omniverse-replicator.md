@@ -67,7 +67,7 @@ First partner products (HP, Lenovo industrial workstations) announced for **Sept
 
 ## 5. Intel Gaudi 3 + OpenVINO 2026 — ML inference cost drops 60%
 
-Intel showed **Gaudi 3** for edge inference (previously data-center only), in a PCIe form factor — it slots into any 1U server. Plus a new **OpenVINO 2026** with native optimization for TimesFM, Chronos, and the other time-series foundation models I covered in [the previous article](/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction).
+Intel showed **Gaudi 3** for edge inference (previously data-center only), in a PCIe form factor — it slots into any 1U server. Plus a new **OpenVINO 2026** with native optimization for TimesFM, Chronos, and the other time-series foundation models I covered in [the previous article](/en/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction).
 
 Measured numbers from the keynote: **failure prediction for 200 sensors every 5 seconds** — Gaudi 3 draws 18 W and costs USD 2,400, matching the throughput of an A100 server (USD 25,000). That's a **10x lower CAPEX** for a typical MES analytics pipeline.
 
@@ -105,7 +105,7 @@ Five items that deserve an honest comment:
 
 **Medium term (2027):** plan the investment budget for the second wave of edge AI. Cosmos 2.0 plus a new CV pipeline for variant-heavy products. GR00T N1.5 for one pilot cell with a cobot.
 
-**Strategic (by 2028):** consider exiting cloud LLMs for production data. The local stack on the new hardware becomes cheaper, faster to respond, and fundamentally simpler under NIS2 compliance (covered in the [NIS2 article](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory)).
+**Strategic (by 2028):** consider exiting cloud LLMs for production data. The local stack on the new hardware becomes cheaper, faster to respond, and fundamentally simpler under NIS2 compliance (covered in the [NIS2 article](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory)).
 
 Computex 2026 was not a revolution in the ChatGPT-2022 sense. It was a series of incremental announcements that together change the edge-AI economics for the mid-sized manufacturer. The next 12 months will decide who moves first on the new economics — and whether mid-market European manufacturers will be in time before TIER-1 competitors compound their lead further.
 
@@ -119,5 +119,5 @@ Computex 2026 was not a revolution in the ChatGPT-2022 sense. It was a series of
 - [AMD Ryzen AI Max+ announcement (Computex 2026)](https://www.amd.com/en/press-releases) — specification and partnerships
 - [Intel Gaudi 3 PCIe (Computex 2026)](https://www.intel.com/content/www/us/en/newsroom/news.html) — Foxconn benchmark case study
 - [OpenVINO 2026 release notes](https://docs.openvino.ai/) — TimesFM and Chronos optimization
-- [Time-series Foundation Models in MES](/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — our earlier TSFM article
-- [NIS2 and the Polish KSC2 Act in 2026](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) — regulatory context for local AI
+- [Time-series Foundation Models in MES](/en/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — our earlier TSFM article
+- [NIS2 and the Polish KSC2 Act in 2026](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) — regulatory context for local AI

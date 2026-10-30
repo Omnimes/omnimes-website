@@ -134,7 +134,7 @@ Nasza ocena: pilotaże Volvo i GBA wykraczają poza wymogi rozporządzenia (ocen
 - **Zużycie energii przypisane do linii i partii.** Metodyka śladu węglowego nie jest przyjęta, ale deklaracja będzie dotyczyć modelu w danym zakładzie. Surowe dane ze znacznikiem czasu da się przeliczyć, gdy metodyka zostanie opublikowana.
 - **Parametry procesu** (formowanie, suszenie, kalandrowanie) — nie są wymagane, ale przydają się w analizie jakości i reklamacjach.
 
-Przy dużej liczbie egzemplarzy i pomiarów potrzebna jest baza szeregów czasowych — opisaliśmy to w artykule o [TimescaleDB w OmniMES](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie).
+Przy dużej liczbie egzemplarzy i pomiarów potrzebna jest baza szeregów czasowych — opisaliśmy to w artykule o [TimescaleDB w OmniMES](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie).
 
 ## Bariery i ograniczenia
 
@@ -154,7 +154,7 @@ Przy dużej liczbie egzemplarzy i pomiarów potrzebna jest baza szeregów czasow
 
 ## ESPR: co po bateriach
 
-Plan roboczy ESPR na lata 2025–2030 ([COM(2025) 187 z 16 kwietnia 2025 r.](https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:52025DC0187)) podaje orientacyjne lata **przyjęcia** aktów delegowanych: żelazo i stal — 2026; odzież, opony i aluminium — 2027; meble — 2028; materace — 2029. Wymogi horyzontalne to naprawialność (2027) oraz zawartość materiałów z recyklingu i recyklowalność sprzętu elektrycznego i elektronicznego (2029). Daty stosowania, w tym paszportu, określi każdy akt osobno. Szerszy kontekst opisaliśmy w artykule [DPP wchodzi do fabryki](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego).
+Plan roboczy ESPR na lata 2025–2030 ([COM(2025) 187 z 16 kwietnia 2025 r.](https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:52025DC0187)) podaje orientacyjne lata **przyjęcia** aktów delegowanych: żelazo i stal — 2026; odzież, opony i aluminium — 2027; meble — 2028; materace — 2029. Wymogi horyzontalne to naprawialność (2027) oraz zawartość materiałów z recyklingu i recyklowalność sprzętu elektrycznego i elektronicznego (2029). Daty stosowania, w tym paszportu, określi każdy akt osobno. Szerszy kontekst opisaliśmy w artykule [DPP wchodzi do fabryki](/pl/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego).
 
 ## Aktualizacja (6 października 2026)
 

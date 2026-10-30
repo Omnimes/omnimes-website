@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { headerNavLinks, headerNavLinksDropDown } from "@/data/headerNavLinks"
-import Logo from "@/data/logo.svg"
+import Logo from "@/data/logo.png"
 import {
   Button,
   Divider,
@@ -88,10 +88,10 @@ export default function Header() {
             <Image
               src={Logo.src}
               alt={"OmniMES logo"}
-              width={44}
-              height={36}
+              width={40}
+              height={40}
               className="mr-2"
-              style={{ width: "44px", height: "auto" }}
+              style={{ width: "40px", height: "40px" }}
             />
             <Link href="/" className="hidden font-bold text-inherit min-[760px]:flex">
               OmniMES

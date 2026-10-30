@@ -67,7 +67,7 @@ Four things almost every implementation needs to add:
 
 **1. Vulnerability disclosure (Article 21(2)(e) plus CRA Article 6).** Does your MES vendor have a process for accepting vulnerability reports from researchers (CVE) and publishing security advisories? Most small MES vendors (and the in-house IT team if MES is built in-house) do not. Under NIS2 this is required, under CRA it becomes a duty to customers from 11 December 2027. Practically: stand up a `security.txt` on your corporate site, set up a responsible-disclosure email, and define a triage procedure for reports.
 
-**2. IT/OT network segmentation.** Most MES installations run in the same network as office LAN — a classic gap a regulator will not forgive after the first incident. Standard: MES + SCADA in a separate VLAN (the OT zone), with a stateful firewall between IT and OT, allowlisting protocols (OPC UA, Modbus TCP, MQTT — but only the specific signatures you need). Cross-link to our piece on [IT/OT communication best practices](/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture) — the full reference segmentation architecture is there.
+**2. IT/OT network segmentation.** Most MES installations run in the same network as office LAN — a classic gap a regulator will not forgive after the first incident. Standard: MES + SCADA in a separate VLAN (the OT zone), with a stateful firewall between IT and OT, allowlisting protocols (OPC UA, Modbus TCP, MQTT — but only the specific signatures you need). Cross-link to our piece on [IT/OT communication best practices](/en/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture) — the full reference segmentation architecture is there.
 
 **3. Continuous monitoring / OT-specific IDS.** Classical IDS (Suricata, Snort) handle OT poorly — they don't understand Modbus, S7 or EtherNet/IP. You need an OT IDS — commercial (Claroty, Dragos, Nozomi) or open-source (Malcolm from CISA). Without it you cannot meet the Article 23 incident-detection requirement.
 
@@ -88,7 +88,7 @@ This is why **local LLMs** (Phi-4, Llama 3.3, Qwen 2.5) on your own hardware are
 - off-site audit trail
 - unpredictable API changes
 
-I made this case concretely in our piece on [Local RAG in the factory: Phi-4 + sqlite-vec on Jetson Orin](/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage). Under NIS2 this is not just an economics question — it shrinks the audit surface by an entire US vendor.
+I made this case concretely in our piece on [Local RAG in the factory: Phi-4 + sqlite-vec on Jetson Orin](/en/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage). Under NIS2 this is not just an economics question — it shrinks the audit surface by an entire US vendor.
 
 Same logic applies to SaaS MES (Plex, Tulip, parts of the Siemens offering): you, as the customer, need supply-chain risk documentation and an SLA that covers NIS2 obligations. On-prem MES simply means fewer documents and fewer questions from the auditor.
 
@@ -154,6 +154,6 @@ The fines are high (up to EUR 10 million plus personal management liability), bu
 - [CSIRT NASK](https://csirt.nask.pl/) — Polish CERT for Annex II important entities
 - [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) — reference risk-assessment model
 - [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) — information-security management standard
-- [Good practices for IT/OT communication](/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture) — our earlier piece on segmentation
-- [Local RAG in the factory: Phi-4 + sqlite-vec on Jetson Orin](/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage) — shrinking the audit surface via local LLMs
+- [Good practices for IT/OT communication](/en/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture) — our earlier piece on segmentation
+- [Local RAG in the factory: Phi-4 + sqlite-vec on Jetson Orin](/en/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage) — shrinking the audit surface via local LLMs
 - [OmniMES — cybersecurity and CRA compliance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/cybersecurity-compliance-cra-pPJBcC6sBf) — product documentation: how OmniMES meets the CRA obligations applicable to MES vendors

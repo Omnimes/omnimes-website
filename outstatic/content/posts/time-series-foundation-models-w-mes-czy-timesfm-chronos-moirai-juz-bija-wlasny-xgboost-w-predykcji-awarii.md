@@ -138,7 +138,7 @@ Dla pozostałych 30–40% (predykcja rzadkich awarii, krytyczne alarmowanie, reg
 
 Lista barier, których zakres tego artykułu wymaga uczciwie poruszyć:
 
-**1. Brak interpretowalności.** XGBoost ma SHAP values, drzewa decyzyjne — operator widzi „alarm bo wibracja X w paśmie 50–80 Hz wzrosła o 40%". Foundation model w trybie zero-shot daje tylko residual — „rzeczywistość odbiega od prognozy". Dla zgodności ([AI Act — AI wysokiego ryzyka](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai)) to istotna luka.
+**1. Brak interpretowalności.** XGBoost ma SHAP values, drzewa decyzyjne — operator widzi „alarm bo wibracja X w paśmie 50–80 Hz wzrosła o 40%". Foundation model w trybie zero-shot daje tylko residual — „rzeczywistość odbiega od prognozy". Dla zgodności ([AI Act — AI wysokiego ryzyka](/pl/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai)) to istotna luka.
 
 **2. Zajętość pamięci na urządzeniach brzegowych.** TimesFM 2.0 (500M params) zajmuje 4 GB RAM w FP16. To wyklucza Jetson Nano (8 GB), Raspberry Pi, większość starych urządzeń wbudowanych. Trzeba kupować nowy sprzęt (Jetson Orin NX/AGX), co dla zakładu z 50 maszynami i lokalną inferencją na każdej nie jest trywialne.
 
@@ -193,4 +193,4 @@ Jeśli macie pipeline XGBoost dla predykcji awarii, który działa — nie wyrzu
 - [TimesFM paper, ICML 2024](https://arxiv.org/abs/2310.10688) — „A decoder-only foundation model for time-series forecasting"
 - [Chronos paper, Amazon Science 2024](https://arxiv.org/abs/2403.07815) — „Chronos: Learning the Language of Time Series"
 - [Moirai paper, ICML 2024](https://arxiv.org/abs/2402.02592) — „Unified Training of Universal Time Series Forecasting Transformers"
-- [Wykrywanie awarii w MES z XGBoost/LightGBM/CatBoost](/blog/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost) — nasz wcześniejszy artykuł o klasycznym ML w MES
+- [Wykrywanie awarii w MES z XGBoost/LightGBM/CatBoost](/pl/blog/wykrywanie-awarii-w-systemach-mes-za-pomoca-xgboost-lightgbm-i-catboost) — nasz wcześniejszy artykuł o klasycznym ML w MES

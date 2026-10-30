@@ -132,7 +132,7 @@ Our assessment: both pilots go beyond the regulation (ESG scoring, material prov
 - **Energy consumption per line and batch.** The carbon footprint methodology is not adopted, but the declaration will be per model per plant. Raw, timestamped data can be recalculated once the methodology is published.
 - **Process parameters** (formation, drying, calendering) — not required, but useful for quality analysis and warranty claims.
 
-High data volumes call for a time-series database — see our article on [TimescaleDB in OmniMES](/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day).
+High data volumes call for a time-series database — see our article on [TimescaleDB in OmniMES](/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day).
 
 ## Barriers and limitations
 
@@ -152,7 +152,7 @@ High data volumes call for a time-series database — see our article on [Timesc
 
 ## ESPR: what comes after batteries
 
-The ESPR working plan for 2025–2030 ([COM(2025) 187 of 16 April 2025](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0187)) gives indicative years for **adopting** delegated acts: iron and steel — 2026; textiles (apparel), tyres and aluminium — 2027; furniture — 2028; mattresses — 2029. Horizontal measures cover repairability (2027) and recycled content and recyclability of electrical and electronic equipment (2029). Application dates, including passports, will be set in each act. Wider context: our article [DPP enters the factory](/blog/digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february).
+The ESPR working plan for 2025–2030 ([COM(2025) 187 of 16 April 2025](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0187)) gives indicative years for **adopting** delegated acts: iron and steel — 2026; textiles (apparel), tyres and aluminium — 2027; furniture — 2028; mattresses — 2029. Horizontal measures cover repairability (2027) and recycled content and recyclability of electrical and electronic equipment (2029). Application dates, including passports, will be set in each act. Wider context: our article [DPP enters the factory](/en/blog/digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february).
 
 ## Update (6 October 2026)
 

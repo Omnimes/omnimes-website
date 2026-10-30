@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { getLocalePrimaryDialects } from "@/data/locales"
-import Logo from "@/data/logo.svg"
+import Logo from "@/data/logo.png"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { LuMoveLeft } from "react-icons/lu"
 
@@ -43,8 +43,8 @@ export default async function LoginPage({ params }: { params: Promise<{ locale: 
           <Image
             src={Logo.src}
             alt={"OmniMES logo"}
-            width={44}
-            height={36}
+            width={40}
+            height={40}
             priority
             className="mr-2"
             style={{ width: "44px", height: "auto" }}

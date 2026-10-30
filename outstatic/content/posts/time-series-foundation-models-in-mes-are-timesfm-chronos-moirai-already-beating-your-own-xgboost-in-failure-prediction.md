@@ -138,7 +138,7 @@ For the remaining 30–40% — predicting rare failures, critical alerting, regu
 
 The honest list of limits this article's brief demands:
 
-**1. No interpretability.** XGBoost gives you SHAP values, decision trees — the operator sees "alarm because vibration X in the 50–80 Hz band rose 40%". A foundation model in zero-shot mode gives only residuals — "reality deviates from the forecast". For compliance under the [AI Act high-risk regime](/blog/eu-ai-act-august-2026-which-mes-functions-qualify-as-high-risk-ai) this is a meaningful gap.
+**1. No interpretability.** XGBoost gives you SHAP values, decision trees — the operator sees "alarm because vibration X in the 50–80 Hz band rose 40%". A foundation model in zero-shot mode gives only residuals — "reality deviates from the forecast". For compliance under the [AI Act high-risk regime](/en/blog/eu-ai-act-august-2026-which-mes-functions-qualify-as-high-risk-ai) this is a meaningful gap.
 
 **2. Memory footprint at the edge.** TimesFM 2.0 (500M params) takes 4 GB of RAM in FP16. That excludes Jetson Nano (8 GB), Raspberry Pi, most older embedded boxes. You need new hardware (Jetson Orin NX or AGX), and for a plant with 50 machines and local inference on each that is not trivial.
 
@@ -193,4 +193,4 @@ If you already have an XGBoost failure-prediction pipeline that works — do not
 - [TimesFM paper, ICML 2024](https://arxiv.org/abs/2310.10688) — "A decoder-only foundation model for time-series forecasting"
 - [Chronos paper, Amazon Science 2024](https://arxiv.org/abs/2403.07815) — "Chronos: Learning the Language of Time Series"
 - [Moirai paper, ICML 2024](https://arxiv.org/abs/2402.02592) — "Unified Training of Universal Time Series Forecasting Transformers"
-- [Failure detection in MES with XGBoost/LightGBM/CatBoost](/blog/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost) — our earlier piece on classical ML in MES
+- [Failure detection in MES with XGBoost/LightGBM/CatBoost](/en/blog/fault-detection-in-mes-systems-using-xgboost-lightgbm-catboost) — our earlier piece on classical ML in MES

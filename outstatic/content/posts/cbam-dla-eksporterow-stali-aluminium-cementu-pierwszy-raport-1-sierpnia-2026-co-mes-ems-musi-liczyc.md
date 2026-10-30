@@ -14,7 +14,7 @@ publishedAt: '2026-06-22T08:00:00.000Z'
 
 **1 sierpnia 2026** — termin pierwszego raportu okresowego CBAM w nowym, definitive period. Reżim zaczął obowiązywać **1 stycznia 2026** po zakończeniu fazy przejściowej (1.10.2023 – 31.12.2025). Dla polskich firm w sektorach **stali, aluminium, cementu, nawozów azotowych, wodoru i energii elektrycznej** to pierwszy moment, w którym brak danych o embedded emissions per tonę produktu zaczyna kosztować — najpierw raportowo, od 2027 płatnościowo. Sankcje za brak raportowania: **10–50 EUR za tonę CO₂** nie ujętą w raporcie ([Art. 26 Rozporządzenia CBAM 2023/956](https://eur-lex.europa.eu/eli/reg/2023/956/oj)). Za brak certyfikatów (od 2027): **100 EUR za tonę** plus odmowa wjazdu produktu na rynek UE.
 
-Mit, który trzeba na początek rozbroić: **CBAM nie dotyczy tylko importerów do UE**. Polski producent stali eksportujący do UK (gdzie [CBAM UK startuje 1 stycznia 2027](https://www.gov.uk/government/consultations/factsheet-the-uks-carbon-border-adjustment-mechanism)), niemiecki OEM żądający PCF od polskiego dostawcy komponentów aluminium, holenderski klient cementu wymagający embedded emissions zgodnie z [Battery Regulation DPP](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) — wszyscy potrzebują tych samych danych. Skala: w branży motoryzacyjnej wg [VDA Sustainability Initiative](https://www.vda.de/en/topics/environment-and-climate/sustainability) 70% europejskich producentów OEM już wymaga PCF od dostawców na 2027.
+Mit, który trzeba na początek rozbroić: **CBAM nie dotyczy tylko importerów do UE**. Polski producent stali eksportujący do UK (gdzie [CBAM UK startuje 1 stycznia 2027](https://www.gov.uk/government/consultations/factsheet-the-uks-carbon-border-adjustment-mechanism)), niemiecki OEM żądający PCF od polskiego dostawcy komponentów aluminium, holenderski klient cementu wymagający embedded emissions zgodnie z [Battery Regulation DPP](/pl/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) — wszyscy potrzebują tych samych danych. Skala: w branży motoryzacyjnej wg [VDA Sustainability Initiative](https://www.vda.de/en/topics/environment-and-climate/sustainability) 70% europejskich producentów OEM już wymaga PCF od dostawców na 2027.
 
 Niżej rozbieram konkretnie, kto jest objęty, jakie dane musi dostarczyć MES + EMS, jak to liczyć, ile to kosztuje i co zrobić w pozostałych 6 tygodniach.
 
@@ -67,7 +67,7 @@ Embedded emissions to nie pojedyncza liczba — to wartość **na partię produk
 
 Razem: **embedded CO₂ na tonę produktu = (scope 1 + scope 2 + precursors) / wyprodukowane tony**.
 
-Naturalny stack OmniMES dla tego: MES (genealogia) + EMS (energy metering) + ERP (BOM + supplier data) + warstwa kalkulacyjna PCF (w bazie czasowej — w [TimescaleDB](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) trzymamy emission factors jako time-series, bo emission factor sieci zmienia się rok do roku, a regulator wymaga **kontemporalnego** mnożnika).
+Naturalny stack OmniMES dla tego: MES (genealogia) + EMS (energy metering) + ERP (BOM + supplier data) + warstwa kalkulacyjna PCF (w bazie czasowej — w [TimescaleDB](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) trzymamy emission factors jako time-series, bo emission factor sieci zmienia się rok do roku, a regulator wymaga **kontemporalnego** mnożnika).
 
 ## Standardy: ISO 14067, GHG Protocol, EU CBAM methodology
 
@@ -136,7 +136,7 @@ Trzy konkrety:
 
 **Po drugie**, MES + EMS są fundamentem danych dla CBAM (60–70% potrzebnych informacji). Genealogia partii z MES, pomiar energii z EMS, BOM z ERP — to wszystko już macie. Trzeba dodać warstwę kalkulacyjną i interfejs do raportowania. Koszt 15–40 tys. EUR + dwa miesiące pracy konsultanta. Nie wymiana stosu, tylko ekspozycja danych.
 
-**Po trzecie**, CBAM zamyka klaster regulacyjny UE 2026: [AI Act](/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai) (sierpień), [DPP/Battery Regulation](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) (luty 2027), [NIS2/KSC2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) (H2 2026), CBAM (sierpień 2026). Cztery filary, jeden wspólny mianownik: **MES jako źródło dowodów zgodności**. Firmy, które potraktują to jako jedną platformę danych zamiast czterech osobnych projektów, zaoszczędzą 40–60% kosztu wdrożenia.
+**Po trzecie**, CBAM zamyka klaster regulacyjny UE 2026: [AI Act](/pl/blog/eu-ai-act-sierpien-2026-ktore-funkcje-mes-kwalifikuja-sie-jako-high-risk-ai) (sierpień), [DPP/Battery Regulation](/pl/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) (luty 2027), [NIS2/KSC2](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) (H2 2026), CBAM (sierpień 2026). Cztery filary, jeden wspólny mianownik: **MES jako źródło dowodów zgodności**. Firmy, które potraktują to jako jedną platformę danych zamiast czterech osobnych projektów, zaoszczędzą 40–60% kosztu wdrożenia.
 
 CBAM nie zniknie. Jeżeli polski przemysł chce konkurować na rynkach carbon-aware (UE, UK, USA od 2027), embedded emissions per tonę staną się standardową specyfikacją produktu — obok wymiarów, składu chemicznego i wytrzymałości. Najlepszy moment, żeby zacząć liczyć, był rok temu. Drugi najlepszy — to dzisiaj.
 
@@ -153,6 +153,6 @@ CBAM nie zniknie. Jeżeli polski przemysł chce konkurować na rynkach carbon-aw
 - [UK CBAM consultation](https://www.gov.uk/government/consultations/factsheet-the-uks-carbon-border-adjustment-mechanism) — start 1.01.2027
 - [VDA Sustainability Initiative](https://www.vda.de/en/topics/environment-and-climate/sustainability) — wymagania PCF dla motoryzacji
 - [openLCA](https://www.openlca.org/) — open-source LCA tool
-- [DPP wchodzi do fabryki](/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) — nasz wcześniejszy artykuł o paszporcie produktu, naturalny powiązany
-- [TimescaleDB w OmniMES](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — architektura przechowywania emission factors jako time-series
+- [DPP wchodzi do fabryki](/pl/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) — nasz wcześniejszy artykuł o paszporcie produktu, naturalny powiązany
+- [TimescaleDB w OmniMES](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — architektura przechowywania emission factors jako time-series
 - [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu

@@ -670,15 +670,16 @@
   "HeroSection": {
     "SubTitle3": "Zobacz jak działa Omnicloud",
     "playAria": "Odtwórz wideo prezentacyjne platformy Omnicloud",
-    "heroTitle": "MES, który liczy",
-    "heroTitleHighlight": "energię na sztukę",
-    "heroSubtitle": "OmniMES łączy pracę maszyn, zużycie energii i dane produkcyjne w jednym systemie, a o wyniki zapytasz swojego asystenta AI.",
-    "heroFeature1": "Asystent AI przez MCP: Claude, ChatGPT, Cursor, Copilot",
+    "heroTitle": "Zobacz, co zatrzymuje produkcję",
+    "heroTitleHighlight": "i ile energii zużywa każda sztuka",
+    "heroSubtitle": "OmniMES to system realizacji produkcji (MES), który zbiera dane bezpośrednio z maszyn i liczników energii, a o wyniki zapytasz swojego asystenta AI.",
+    "heroFeature1": "Stan maszyn, przestoje i OEE na żywo",
     "heroFeature2": "kWh na sztukę i koszt energii w rozbiciu na stany maszyny",
-    "heroFeature3": "Chmura gotowa w 5–10 minut albo Twój własny serwer",
-    "tryDemo": "Sprawdź Demo OmniMES i OmniEnergy",
+    "heroFeature3": "W chmurze w 5–10 minut albo na Twoim serwerze",
+    "tryDemo": "Zobacz demo",
     "tryDemoAria": "Otwórz wersję demonstracyjną systemu OmniMES i OmniEnergy",
-    "contactSales": "Zobacz Omnimes na Omnicloud",
+    "contactSales": "Uruchom w chmurze",
+    "heroImageAlt": "Omnimes: analityka przemysłowa i platforma MES oparte na AI",
     "contactSalesAria": "Skorzystaj z wersji chmurowej na platformie Omnicloud",
     "learnMore": "Dowiedz się więcej",
     "learnMoreAria": "Dowiedz się więcej o funkcjach platformy Omnicloud",
@@ -686,13 +687,13 @@
     "or": "lub"
   },
   "Benefits": {
-    "title": "Korzyści biznesowe dla Twojej firmy:",
+    "title": "Co zmienia się w zakładzie po wdrożeniu OmniMES",
     "increasedProductivity": "Zwiększenie wydajności produkcji – produkuj tyle samo w krótszym czasie, dzięki minimalizacji mikroprzestojów i optymalizacji pracy maszyn.",
     "fasterReaction": "Szybsze reagowanie na problemy – monitoruj stan maszyn w czasie rzeczywistym i podejmuj trafniejsze decyzje biznesowe.",
     "shorterCycle": "Skrócenie czasu cyklu produkcyjnego – wykorzystaj moduły do harmonogramowania, eliminowania mikroprzestojów i monitoringu efektywności produkcji.",
     "betterQuality": "Zwiększenie jakości produktu – zmniejsz ilość odrzutu produkcyjnego i reklamacji, które również wpływają na jakość relacji z klientem.",
     "dataAnalysis": "Analiza danych historycznych – wyciągaj wnioski i optymalizuj procesy produkcyjne na podstawie danych historycznych.",
-    "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – skróć czas onboarding’u dzięki standaryzacji monitorowania procesów produkcyjnych."
+    "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – skróć czas wdrażania dzięki standaryzacji monitorowania procesów produkcyjnych."
   },
   "OmniProducts": {
     "seeMore": "Zobacz więcej",
@@ -724,13 +725,13 @@
       }
     },
     "deployment": {
-      "title": "Systemy dopasowane do Twojej infrastruktury",
-      "subtitle": "Wybierz model wdrożenia idealny dla Twojej organizacji",
+      "title": "Chmura czy własny serwer: wybierz, jak uruchomić system",
+      "subtitle": "W chmurze zaczynasz w 5–10 minut. Na własnym serwerze dane zostają u Ciebie.",
       "cloud": {
         "management": "Chmura do zarządzania produkcją",
         "saas": "Oprogramowanie SaaS",
         "installation": "Szybka instalacja systemu (od 5 do 10 min)",
-        "system": "Prosta i szybka zarządzanie systemem"
+        "system": "Proste i szybkie zarządzanie systemem"
       },
       "premise": {
         "infrastructure": "Instalacja na Twojej infrastrukturze",
@@ -739,6 +740,22 @@
         "integration": "Łatwa integracja z systemami"
       }
     }
+  },
+  "ProofStrip": {
+    "smallSubtitle": "Kto stoi za OmniMES",
+    "title": "Działa w produkcji, tworzy go polska firma",
+    "eldrewLabel": "Wdrożenie",
+    "eldrewName": "Eldrew",
+    "eldrewText": "Producent palet drewnianych. W 2023 roku wdrożyliśmy OmniMES w wybranych procesach produkcji palet, z integracją z maszynami.",
+    "eldrewLink": "Zobacz wdrożenie",
+    "relpolLabel": "Partnerstwo",
+    "relpolName": "Relpol S.A.",
+    "relpolText": "Polski producent liczników energii. Liczniki Relpol RMM mają przetestowaną konfigurację z OmniMES i OmniEnergy.",
+    "relpolLink": "Zobacz partnerstwo",
+    "makerLabel": "Producent",
+    "makerName": "Multiprojekt Automatyka",
+    "makerText": "Polska firma, która tworzy OmniMES i wspiera klientów od audytu produkcji po szkolenie zespołu.",
+    "makerLink": "Poznaj firmę"
   },
   "McpSpotlight": {
     "badge": "Nowość od wersji 4.3",
@@ -831,10 +848,10 @@
     "conclusion": "MES to inwestycja, która nie tylko zwiększy poziom cyfryzacji fabryki, ale także przyniesie realne oszczędności. Sukces zależy od dobrego przygotowania zakładu oraz właściwego wyboru technologii."
   },
   "OmnimesInformation": {
-    "smallSubtitle": "Czym jest omniMES?",
+    "smallSubtitle": "Czym jest OmniMES?",
     "subTitle": "Więcej zysku, mniej strat.",
-    "heading": "to innowacyjny system realizacji produkcji",
-    "description": "Monitoruje procesy w czasie rzeczywistym, umożliwiając bieżącą analizę i eliminację wąskich gardeł. Dzięki rzetelnym informacjom i zwiększeniu efektywności, OmniMES rewolucjonizuje zarządzanie produkcją, otwierając drzwi przed nowymi możliwościami optymalizacji.",
+    "heading": "zbiera dane z maszyn i pokazuje, co hamuje produkcję",
+    "description": "To system realizacji produkcji (MES): pobiera sygnały ze sterowników i liczników energii, a potem pokazuje stany maszyn, przestoje, OEE i zużycie energii na żywo oraz w raportach. Wdrażamy go razem z Tobą, od analizy potrzeb po podłączenie maszyn.",
     "title1": "Odblokuj potencjał produkcji",
     "descriptionCard1": "Przeprowadzimy Twoją firmę produkcyjną przez proces transformacji cyfrowej.",
     "title2": "Analiza potrzeb klienta",
@@ -869,8 +886,8 @@
   },
   "CloudInfo": {
     "smallSubtitle": "Zarządzanie OmniMES w chmurze",
-    "heading": "Pełna kontrola nad Omnimes w parę minut",
-    "tagline": "OmniPlatform – Twoje miejsce do zarządzania OmniMES.",
+    "heading": "uruchamia OmniMES w chmurze w 5–10 minut",
+    "tagline": "Zakładasz konto, wybierasz plan i system działa. Serwerem zajmujemy się my.",
     "subTitle": "Szybki start i prosta konfiguracja",
     "blockTitle": "Uruchom, skonfiguruj, działaj",
     "p1": "OmniPlatforma to intuicyjna platforma WWW, która umożliwia łatwe uruchomienie i skonfigurowanie instancji OmniMES. Cały proces – łącznie z wyborem planu – zajmuje zwykle 5–10 minut.",
@@ -892,8 +909,8 @@
     "Raports": "Tworzenie elastycznych raportów w kreatorze",
     "Raports_desc": "Kreator raportów oferuje możliwość tworzenia elastycznych raportów dostosowanych do konkretnych potrzeb, co ułatwia zbieranie, analizę i prezentację kluczowych danych związanych z produkcją.",
     "Feature": "Funkcje",
-    "title": "Skuteczne rozwiązania MES dla maksymalnej kontroli i optymalizacji produkcji",
-    "desc": "Automatyczne monitorowanie procesów produkcyjnych - Zdobądź pełną kontrolę i maksymalizuj efektywność Twojej produkcji dzięki innowacyjnym funkcjonalnościom systemu OmniMES."
+    "title": "Co dostajesz w OmniMES: monitoring, analizy, harmonogram i raporty",
+    "desc": "Sześć funkcji działających na danych zbieranych automatycznie z maszyn."
   },
   "Time": {
     "smallSubtitle": "Oszczędź na czasie przerw!",
@@ -1014,7 +1031,7 @@
     "step3": "Krok 3",
     "step4": "Krok 4",
     "step5": "Krok 5",
-    "title1": "Otwórz drzwi do innowacji! W jednym telefonie zaczynasz rewolucję w swojej fabryce.",
+    "title1": "Zaczynamy od rozmowy o Twojej produkcji",
     "title2": "Poznaj kluczowe wskazówki do optymalizacji produkcji w swojej fabryce.",
     "title3": "Zdigitalizuj swoją produkcję już dziś, z korzyścią dla efektywności i konkurencyjności Twojej fabryki.",
     "title4": "Optymalizacja cyfrowa Twojej produkcji bez dodatkowych kosztów",
@@ -1030,8 +1047,8 @@
     "description4": "Jeśli Twoja fabryka jest gotowa do wdrożenia MESa, przystąpimy do indywidualnej wyceny usługi. Nasza oferta uwzględni wszystkie niezbędne elementy, zapewniając Ci transparentność i klarowność co do kosztów. Bez względu na to, czy potrzebujesz podstawowego wdrożenia czy pełnego pakietu dostosowawczego, dostosujemy się do Twoich potrzeb.",
     "description5": "Zapewniamy bezpłatne szkolenie dla Twojego zespołu, aby wszyscy pracownicy mogli efektywnie korzystać z nowego systemu. Nasza współpraca się nie kończy - pomagamy i aktualizujemy system przez cały okres Twojego abonamentu, zapewniając Ci stały rozwój i doskonałość produkcyjną.",
     "text": "Z nami to proste",
-    "textHeading": "Uruchom swoją produkcję na nowym poziomie już dzisiaj",
-    "textDesc": "MES na wyciągnięcie ręki – z nami przez każdy etap wdrażania",
+    "textHeading": "Od pierwszego telefonu do działającego systemu w pięciu krokach",
+    "textDesc": "Rozmowa, audyt produkcji, dobór rozwiązania, wycena i szkolenie: prowadzimy Cię przez każdy etap.",
     "dontKnowWhereToStart": "Nie wiesz od czego zaczać",
     "contact": "Skontaktuj się",
     "buttonAria": "Przejdź do strony z formularzem kontaktowym"

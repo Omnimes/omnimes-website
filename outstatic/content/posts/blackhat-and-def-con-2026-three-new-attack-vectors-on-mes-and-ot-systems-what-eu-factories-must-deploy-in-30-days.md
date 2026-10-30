@@ -109,21 +109,21 @@ This list is our recommendation, not a requirement of any of the sources.
 2. Hunt for default credentials on RTUs, serial device servers, PLCs and switches.
 
 **Week 2 — network segmentation.**
-3. Allowlist-only traffic between OT and WAN links, APNs and the office network, with default deny (see our [IT and OT networking article](/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture)).
+3. Allowlist-only traffic between OT and WAN links, APNs and the office network, with default deny (see our [IT and OT networking article](/en/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture)).
 4. No web, SSH or Telnet admin interfaces on external-facing sides; no S7 PLC reachable from the internet.
 5. On a private APN, ask your operator about client isolation.
 
 **Week 3 — software.**
 6. Inventory OPC UA components in MES, SCADA and HMI and ask vendors which open62541 version they ship. Where you control it, run at least 1.5.7 or 1.4.19.
 7. Open HMI and PLC project files only from verified sources; check OPC UA settings for silent fallback to unsecured modes.
-8. Keep llama.cpp and Ollama current, load GGUF files only from trusted sources, keep inference servers inside their segment and lock edge devices in cabinets (see our [local RAG on Jetson Orin article](/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage)).
+8. Keep llama.cpp and Ollama current, load GGUF files only from trusted sources, keep inference servers inside their segment and lock edge devices in cabinets (see our [local RAG on Jetson Orin article](/en/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage)).
 
 **Week 4 — detection and response.**
 9. Centralise logs from edge devices, APN gateways and engineering workstations; watch for unusual S7 and Modbus connections.
 10. Route every unexplained PLC failure to the security team, and preserve logs, configuration and logic before any factory reset.
 11. Run a tabletop exercise on the Polish CHP scenario.
 
-Article 23 of the NIS2 Directive requires essential and important entities to send an early warning within 24 hours of becoming aware of a significant incident, a notification within 72 hours and a final report within one month. Items 9–11 make those deadlines far easier to meet. For the Polish and EU context, see our article on [NIS2 and the Polish KSC2 Act](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory).
+Article 23 of the NIS2 Directive requires essential and important entities to send an early warning within 24 hours of becoming aware of a significant incident, a notification within 72 hours and a final report within one month. Items 9–11 make those deadlines far easier to meet. For the Polish and EU context, see our article on [NIS2 and the Polish KSC2 Act](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory).
 
 ## Update (6 October 2026)
 
@@ -160,7 +160,7 @@ Article 23 of the NIS2 Directive requires essential and important entities to se
 
 ## Related reading
 
-- [NIS2 and the Polish KSC2 Act in 2026: how MES becomes cyber-compliance evidence for an EU factory](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory)
-- [Good practices for communication between IT and OT networks](/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture)
-- [Local RAG in the factory: Phi-4 + sqlite-vec on Jetson Orin](/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage)
+- [NIS2 and the Polish KSC2 Act in 2026: how MES becomes cyber-compliance evidence for an EU factory](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory)
+- [Good practices for communication between IT and OT networks](/en/blog/good-practices-for-communication-between-it-and-ot-networks-how-to-build-a-secure-and-modern-industrial-architecture)
+- [Local RAG in the factory: Phi-4 + sqlite-vec on Jetson Orin](/en/blog/local-rag-in-the-factory-phi-4-sqlite-vec-on-jetson-orin-mes-assistant-without-cloud-data-leakage)
 - [OmniMES — cybersecurity and CRA compliance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/cybersecurity-compliance-cra-pPJBcC6sBf)

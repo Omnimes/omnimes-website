@@ -14,6 +14,7 @@
  *   npx tsx scripts/gsc.ts sitemaps         — sitemap statuses
  *   npx tsx scripts/gsc.ts inspect <url>    — URL inspection (indexing status)
  *   npx tsx scripts/gsc.ts audit            — full audit, dump to gsc-data/
+ *   npx tsx scripts/gsc.ts pairs [days]     — query+page rows, dump to gsc-data/ (input for jev-seo.ts)
  *
  * Site identifier is auto-discovered. Override with GSC_SITE
  * (e.g. GSC_SITE='sc-domain:omnimes.com' or 'https://omnimes.com/').
@@ -355,6 +356,27 @@ async function cmdAudit() {
   )
 }
 
+async function cmdPairs(days = 90) {
+  await mkdir(DATA_DIR, { recursive: true })
+  const sc = await client()
+  const siteUrl = await pickSite(sc)
+  const { data } = await sc.searchanalytics.query({
+    siteUrl,
+    requestBody: { ...rangeDays(days), dimensions: ["query", "page"], rowLimit: 5000 },
+  })
+  const rows = (data.rows ?? []).map((r) => ({
+    query: r.keys?.[0] ?? "",
+    page: r.keys?.[1] ?? "",
+    clicks: r.clicks ?? 0,
+    impressions: r.impressions ?? 0,
+    ctr: r.ctr ?? 0,
+    position: r.position ?? 0,
+  }))
+  const out = join(DATA_DIR, `query-page-${new Date().toISOString().slice(0, 10)}.json`)
+  await writeFile(out, JSON.stringify({ site: siteUrl, windowDays: days, rows }, null, 2))
+  console.log(`Wrote ${out} (${rows.length} rows)`)
+}
+
 const [, , cmd, ...rest] = process.argv
 ;(async () => {
   try {
@@ -392,9 +414,12 @@ const [, , cmd, ...rest] = process.argv
       case "coverage":
         await cmdCoverage(rest[0] ? Number(rest[0]) : 10)
         break
+      case "pairs":
+        await cmdPairs(rest[0] ? Number(rest[0]) : 90)
+        break
       default:
         console.error(
-          "Commands: auth | sites | top [days] | queries [days] | sitemaps | inspect <url> | audit"
+          "Commands: auth | sites | top [days] | queries [days] | sitemaps | inspect <url> | audit | pairs [days]"
         )
         process.exit(2)
     }

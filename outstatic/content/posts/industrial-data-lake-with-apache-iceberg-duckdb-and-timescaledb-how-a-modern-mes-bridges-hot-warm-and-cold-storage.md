@@ -12,9 +12,9 @@ tags: [{"value":"timeSeriesData","label":"time-series data"},{"value":"timescale
 publishedAt: '2026-06-29T08:00:00.000Z'
 ---
 
-[TimescaleDB in OmniMES](/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) handles 200 million readings per day with sub-400 ms aggregations — for data from the last quarter. For data older than a year an economic problem appears: enterprise PostgreSQL SSD storage (including replicas, backups, indexes) costs around **EUR 0.30–0.60 per GB per month**, while S3 or MinIO (object storage) costs **EUR 0.01–0.025 per GB**. For 5 years of sensor history after TimescaleDB compression (180 GB per year) that is **EUR 6 vs EUR 90 per month** on storage alone. Not a crisis, but with 20+ customer plants the numbers start to matter.
+[TimescaleDB in OmniMES](/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) handles 200 million readings per day with sub-400 ms aggregations — for data from the last quarter. For data older than a year an economic problem appears: enterprise PostgreSQL SSD storage (including replicas, backups, indexes) costs around **EUR 0.30–0.60 per GB per month**, while S3 or MinIO (object storage) costs **EUR 0.01–0.025 per GB**. For 5 years of sensor history after TimescaleDB compression (180 GB per year) that is **EUR 6 vs EUR 90 per month** on storage alone. Not a crisis, but with 20+ customer plants the numbers start to matter.
 
-A second question: does queryability of 2022 data need to match 2026 data? A shop-floor operator does not need a 4-year-old compressor temperature chart in 100 ms. A compliance auditor ([CBAM 1.08.2026](/blog/cbam-for-steel-aluminium-cement-exporters-first-definitive-period-report-by-1-august-2026-what-mes-ems-must-measure), [DPP 2027](/blog/digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february)) needs the data to be available and immutable — but 5–30 s latency is acceptable.
+A second question: does queryability of 2022 data need to match 2026 data? A shop-floor operator does not need a 4-year-old compressor temperature chart in 100 ms. A compliance auditor ([CBAM 1.08.2026](/en/blog/cbam-for-steel-aluminium-cement-exporters-first-definitive-period-report-by-1-august-2026-what-mes-ems-must-measure), [DPP 2027](/en/blog/digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february)) needs the data to be available and immutable — but 5–30 s latency is acceptable.
 
 A **3-tier data-lake architecture** for MES addresses both. **Hot** (1–90 days) on TimescaleDB. **Warm** (90–730 days) on Apache Iceberg on object storage. **Cold** (>730 days) on Iceberg with strong compression. All queryable through a single SQL endpoint thanks to DuckDB. Below: how it works today and whether it makes sense for a mid-sized European plant.
 
@@ -105,7 +105,7 @@ Three realistic options for warm/cold tier:
 
 **AWS S3 / Azure Blob / GCP Cloud Storage.** Cheapest per GB in absolute terms, but **egress fees** (charge per GB pulled out of the cloud — USD 0.08–0.12/GB) can exceed storage savings. For MES with active history querying (CBAM/DPP reports) — do the math carefully.
 
-**MinIO on-prem.** Self-hosted S3-compatible storage. Gives control over data sovereignty (critical under [NIS2](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) and GDPR), zero egress fees, but requires cluster operations (typically 3–6 nodes, EUR 12–25k CapEx + 0.2 FTE DevOps). For plants with an in-house data center it makes sense.
+**MinIO on-prem.** Self-hosted S3-compatible storage. Gives control over data sovereignty (critical under [NIS2](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) and GDPR), zero egress fees, but requires cluster operations (typically 3–6 nodes, EUR 12–25k CapEx + 0.2 FTE DevOps). For plants with an in-house data center it makes sense.
 
 **On-prem NAS with S3 gateway.** Cheaper CapEx (Synology / QNAP enterprise with S3 gateway ~EUR 5–10k), but slower and less scalable. Works for plants up to 5 TB cold data, poorly for 50+ TB.
 
@@ -149,7 +149,7 @@ Three concrete points:
 
 **Second**, the simplest adoption path for a plant in 2026: start with **Iceberg + MinIO on-prem** as a warm tier with DuckDB as the query engine. That is one new technology plus one server (or a 3-node MinIO cluster). The hot tier (TimescaleDB) stays untouched. After six months consider a cold tier with ZSTD-9 compression if storage savings justify the extra complexity.
 
-**Third**, this stack is a solid foundation for integrating with [Time-series Foundation Models](/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction). Training a failure-prediction model on 5 years of history requires access to the full archive — Iceberg in the warm/cold tier provides that natively, with no need to copy data into a dedicated ML layer. DuckDB can read Iceberg into PyTorch/numpy without conversion, which cuts the training pipeline by 2–3 stages.
+**Third**, this stack is a solid foundation for integrating with [Time-series Foundation Models](/en/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction). Training a failure-prediction model on 5 years of history requires access to the full archive — Iceberg in the warm/cold tier provides that natively, with no need to copy data into a dedicated ML layer. DuckDB can read Iceberg into PyTorch/numpy without conversion, which cuts the training pipeline by 2–3 stages.
 
 An industrial data lake is not a fashion item — it is **real storage economics for MES with 5+ years of operation**. The TimescaleDB + Iceberg + DuckDB stack today is mature, open (Apache 2.0 and MIT) and requires one MinIO cluster plus 2–3 months of project time. Storage ROI typically 12–18 months, plus architectural flexibility for ML and AI integration down the road.
 
@@ -163,8 +163,8 @@ An industrial data lake is not a fashion item — it is **real storage economics
 - [Project Nessie](https://projectnessie.org/) — Iceberg catalog with git-like branching
 - [MinIO](https://min.io/) — S3-compatible object storage, self-hosted
 - [Iceberg v1.6 release notes](https://github.com/apache/iceberg/releases/tag/apache-iceberg-1.6.0) — rolling deletes, schema improvements
-- [TimescaleDB in OmniMES](/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) — hot tier foundation
-- [CBAM for steel/aluminium/cement exporters](/blog/cbam-for-steel-aluminium-cement-exporters-first-definitive-period-report-by-1-august-2026-what-mes-ems-must-measure) — compliance retention requirements
-- [DPP / Battery Regulation 2027](/blog/digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february) — 10-year DPP retention for battery data
-- [NIS2 and the Polish KSC2 Act](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) — audit log retention requirements
-- [Time-series Foundation Models](/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — next analytical step on 5-year data
+- [TimescaleDB in OmniMES](/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) — hot tier foundation
+- [CBAM for steel/aluminium/cement exporters](/en/blog/cbam-for-steel-aluminium-cement-exporters-first-definitive-period-report-by-1-august-2026-what-mes-ems-must-measure) — compliance retention requirements
+- [DPP / Battery Regulation 2027](/en/blog/digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february) — 10-year DPP retention for battery data
+- [NIS2 and the Polish KSC2 Act](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) — audit log retention requirements
+- [Time-series Foundation Models](/en/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — next analytical step on 5-year data

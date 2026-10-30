@@ -662,15 +662,16 @@
   "HeroSection": {
     "SubTitle3": "See how Omnicloud works",
     "playAria": "Play Omnicloud platform presentation video",
-    "heroTitle": "The MES that tracks",
-    "heroTitleHighlight": "energy per unit",
-    "heroSubtitle": "OmniMES brings machine activity, energy use and production data into one system, and your AI assistant can answer questions about the results.",
-    "heroFeature1": "AI assistant over MCP: Claude, ChatGPT, Cursor, Copilot",
+    "heroTitle": "See what stops your production",
+    "heroTitleHighlight": "and how much energy each unit uses",
+    "heroSubtitle": "OmniMES is a manufacturing execution system (MES) that collects data directly from machines and energy meters, and your AI assistant can answer questions about the results.",
+    "heroFeature1": "Machine status, downtime and OEE live",
     "heroFeature2": "kWh per unit and energy cost broken down by machine state",
-    "heroFeature3": "Cloud ready in 5–10 minutes, or run it on your own server",
-    "tryDemo": "Check OmniMES and OmniEnergy Demo",
+    "heroFeature3": "In the cloud in 5–10 minutes, or on your own server",
+    "tryDemo": "See the demo",
     "tryDemoAria": "Open OmniMES and OmniEnergy system demo version",
-    "contactSales": "See Omnimes on Omnicloud",
+    "contactSales": "Start in the cloud",
+    "heroImageAlt": "Omnimes: AI-powered industrial analytics and MES platform",
     "contactSalesAria": "Use cloud version on Omnicloud platform",
     "learnMore": "Learn More",
     "learnMoreAria": "Learn more about Omnicloud platform features",
@@ -678,7 +679,7 @@
     "or": "or"
   },
   "Benefits": {
-    "title": "Business benefits for your company:",
+    "title": "What changes in your plant with OmniMES",
     "increasedProductivity": "Increase production efficiency – produce the same amount in less time by minimizing micro-downtime and optimizing machine operations.",
     "fasterReaction": "Faster problem response – monitor machine status in real time and make more accurate business decisions.",
     "shorterCycle": "Shorter production cycle – use modules for scheduling, eliminating micro-downtime, and monitoring production efficiency.",
@@ -716,8 +717,8 @@
       }
     },
     "deployment": {
-      "title": "Systems Tailored to Your Infrastructure",
-      "subtitle": "Choose the deployment model perfect for your organization",
+      "title": "Cloud or your own server: choose how to run it",
+      "subtitle": "In the cloud you start in 5–10 minutes. On your own server the data stays with you.",
       "cloud": {
         "management": "Cloud for production management",
         "saas": "SaaS Software",
@@ -731,6 +732,22 @@
         "integration": "Easy integration with systems"
       }
     }
+  },
+  "ProofStrip": {
+    "smallSubtitle": "Who is behind OmniMES",
+    "title": "Running in production, built by a Polish company",
+    "eldrewLabel": "Implementation",
+    "eldrewName": "Eldrew",
+    "eldrewText": "A manufacturer of wooden pallets. In 2023 we implemented OmniMES in selected pallet production processes, integrated with the machines.",
+    "eldrewLink": "See the implementation",
+    "relpolLabel": "Partnership",
+    "relpolName": "Relpol S.A.",
+    "relpolText": "A Polish maker of energy meters. Relpol RMM meters have a tested configuration with OmniMES and OmniEnergy.",
+    "relpolLink": "See the partnership",
+    "makerLabel": "Maker",
+    "makerName": "Multiprojekt Automatyka",
+    "makerText": "The Polish company that builds OmniMES and supports customers from the production audit to team training.",
+    "makerLink": "Meet the company"
   },
   "McpSpotlight": {
     "badge": "New since version 4.3",
@@ -825,8 +842,8 @@
   "OmnimesInformation": {
     "smallSubtitle": "What is OmniMES?",
     "subTitle": "More profit, less waste.",
-    "heading": "is an innovative production execution system",
-    "description": "Monitors processes in real-time, allowing for continuous analysis and elimination of bottlenecks. With reliable information and increased efficiency, OmniMES revolutionizes production management, opening doors to new optimization possibilities.",
+    "heading": "collects data from your machines and shows what slows production",
+    "description": "It is a manufacturing execution system (MES): it reads signals from controllers and energy meters, then shows machine states, downtime, OEE and energy use live and in reports. We implement it with you, from needs analysis to connecting the machines.",
     "title1": "Unlock production potential",
     "descriptionCard1": "We will guide your manufacturing company through the process of digital transformation.",
     "title2": "Customer needs analysis",
@@ -861,8 +878,8 @@
   },
   "CloudInfo": {
     "smallSubtitle": "Manage OmniMES in the cloud",
-    "heading": "Full control over OmniMES in just a few minutes",
-    "tagline": "OmniPlatform – your place to manage OmniMES.",
+    "heading": "launches OmniMES in the cloud in 5–10 minutes",
+    "tagline": "You create an account, pick a plan and the system runs. We take care of the server.",
     "subTitle": "Fast start & simple setup",
     "blockTitle": "Launch, configure, go",
     "p1": "OmniPlatform is an intuitive web platform that lets you launch and configure OmniMES instances with ease. The entire process — including plan selection — typically takes 5–10 minutes.",
@@ -884,8 +901,8 @@
     "Raports": "Flexible report creation in the creator",
     "Raports_desc": "The report creator provides the ability to create flexible reports tailored to specific needs, facilitating the collection, analysis, and presentation of key production-related data.",
     "Feature": "Feature",
-    "title": "Effective MES solutions for maximum control and production optimization",
-    "desc": "Automated monitoring of production processes - gain full control and maximize efficiency of your production with innovative functionalities of the OmniMES System."
+    "title": "What you get in OmniMES: monitoring, analysis, scheduling and reports",
+    "desc": "Six functions running on data collected automatically from your machines."
   },
   "Time": {
     "smallSubtitle": "Save time on breaks!",
@@ -1006,7 +1023,7 @@
     "step3": "Step 3",
     "step4": "Step 4",
     "step5": "Step 5",
-    "title1": "Open the doors to innovation! Start a revolution in your factory with just one phone call.",
+    "title1": "We start with a conversation about your production",
     "title2": "Discover key tips for optimizing production in your factory.",
     "title3": "Digitize your production today, for the benefit of efficiency and competitiveness of your factory.",
     "title4": "Digital optimization of your production without additional costs",
@@ -1022,8 +1039,8 @@
     "description4": "If your factory is ready for MES implementation, we will proceed with an individual service quotation. Our offer will include all necessary elements, providing you with transparency and clarity regarding costs. Whether you need basic implementation or a full custom package, we will tailor to your needs.",
     "description5": "We provide free training for your team so that all employees can effectively use the new system. Our collaboration does not end there - we assist and update the system throughout your subscription period, ensuring continuous development and production excellence.",
     "text": "With us, it's simple",
-    "textHeading": "Take your production to a new level today",
-    "textDesc": "MES at your fingertips - with us through every stage of implementation",
+    "textHeading": "From the first call to a running system in five steps",
+    "textDesc": "Call, production audit, choosing the solution, quote and training: we guide you through every stage.",
     "dontKnowWhereToStart": "Don't know where to start",
     "contact": "Contact us",
     "buttonAria": "Go to the contact form page"

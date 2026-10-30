@@ -1,81 +1,35 @@
 "use client"
 
-import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { useLocale, useTranslations } from "next-intl"
-import { useTheme } from "next-themes"
-
-import { VideoPlayIcon } from "./ui/Icons"
-import { Subtitle } from "./ui/Subtitle"
+import { useTranslations } from "next-intl"
 
 export const Hero = () => {
   const t = useTranslations("HeroSection")
-  const locale = useLocale()
-  const { theme } = useTheme()
-  const [isPlaying, setIsPlaying] = useState(false)
 
   // Lista funkcji
   const features = ["heroFeature1", "heroFeature2", "heroFeature3"]
 
-  // Postery
-  const pathPoster =
-    theme === "dark" ? "/images/poster/poster.dark.pl.png" : "/images/poster/poster.pl.png"
-  const pathPosterOther =
-    theme === "dark" ? "/images/poster/poster.dark.en.png" : "/images/poster/poster.en.png"
-
-  const poster = locale === "pl" ? pathPoster : pathPosterOther
-  const path = locale === "pl" ? "/videos/video.pl.mp4" : "/videos/video.en.mp4"
-
   return (
     <div className="relative mx-auto mt-12 max-w-7xl px-6 sm:mt-20 sm:px-8">
       <section className="grid grid-cols-1 items-center gap-12 sm:grid-cols-3">
-        {/* LEWA STRONA – WIDEO */}
+        {/* LEWA STRONA – BANER */}
         <div className="sm:col-span-2">
-          <div className="dark:bg-content1 relative isolate z-30 overflow-hidden rounded-xl bg-white shadow-xl">
-            <div className="text-primary-500 mb-8 text-xl md:text-center">
-              <Subtitle text={t("SubTitle3")} />
-            </div>
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-white">
-              {isPlaying ? (
-                // eslint-disable-next-line jsx-a11y/media-has-caption
-                <video
-                  className="size-full object-cover"
-                  src={path}
-                  poster={poster}
-                  controls
-                  autoPlay
-                  preload="metadata"
-                  playsInline
-                />
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => setIsPlaying(true)}
-                  aria-label={t("playAria")}
-                  title={t("playAria")}
-                  className="group relative block size-full"
-                >
-                  <Image
-                    src={poster}
-                    alt=""
-                    fill
-                    sizes="(max-width: 640px) 100vw, 66vw"
-                    priority
-                    className="object-cover"
-                  />
-                  <span className="absolute left-1/2 top-1/2 z-40 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] shadow-lg transition-transform group-hover:scale-110">
-                    <VideoPlayIcon />
-                  </span>
-                </button>
-              )}
-            </div>
+          <div className="relative isolate z-30 aspect-[16/9] w-full overflow-hidden rounded-xl bg-black shadow-xl">
+            <Image
+              src="/images/hero/omnimes-hero.jpg"
+              alt={t("heroImageAlt")}
+              fill
+              sizes="(max-width: 640px) 100vw, 66vw"
+              priority
+              className="object-cover"
+            />
           </div>
         </div>
 
         {/* PRAWA STRONA – TEKST */}
         <div className="text-left">
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-gray-900 md:text-5xl dark:text-white">
+          <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl dark:text-white">
             {t("heroTitle")}&nbsp;
             <span className="inline bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent">
               {t("heroTitleHighlight")}

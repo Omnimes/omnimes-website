@@ -20,7 +20,7 @@ Poniżej przechodzimy przez moduł OmniEnergy w kolejności, w jakiej robi się 
 
 ## 1. Źródła i punkty pomiarowe: skąd biorą się dane
 
-Liczniki energii elektrycznej, gazu, sprężonego powietrza czy wody wysyłają odczyty po MQTT w formacie Sparkplug B — bezpośrednio albo przez sterownik lub bramkę komunikacyjną. OmniMES odbiera je z brokera i zapisuje każdy odczyt w TimescaleDB. O tym, jak ta baza radzi sobie z setkami milionów pomiarów dziennie, pisaliśmy w artykule [TimescaleDB w OmniMES](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie).
+Liczniki energii elektrycznej, gazu, sprężonego powietrza czy wody wysyłają odczyty po MQTT w formacie Sparkplug B — bezpośrednio albo przez sterownik lub bramkę komunikacyjną. OmniMES odbiera je z brokera i zapisuje każdy odczyt w TimescaleDB. O tym, jak ta baza radzi sobie z setkami milionów pomiarów dziennie, pisaliśmy w artykule [TimescaleDB w OmniMES](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie).
 
 W OmniEnergy nie podłącza się licznika drugi raz. Konfiguracja ma dwa poziomy:
 

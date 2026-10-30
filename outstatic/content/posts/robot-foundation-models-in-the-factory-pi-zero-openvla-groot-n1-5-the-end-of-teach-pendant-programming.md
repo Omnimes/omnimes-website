@@ -62,7 +62,7 @@ In practice OpenVLA is **worse than Pi-Zero** on multi-step manipulation, but su
 
 ## GR00T N1.5 — NVIDIA at Computex 2026
 
-[GR00T N1.5](https://developer.nvidia.com/project-gr00t), unveiled at Computex 2026 (covered in [our keynote retrospective](/blog/computex-2026-five-nvidia-amd-intel-announcements-that-will-change-mes-in-2027-groot-n1-5-cosmos-omniverse-replicator)), is the **production-grade version** of NVIDIA's foundation model. What changed from N1 (March 2026):
+[GR00T N1.5](https://developer.nvidia.com/project-gr00t), unveiled at Computex 2026 (covered in [our keynote retrospective](/en/blog/computex-2026-five-nvidia-amd-intel-announcements-that-will-change-mes-in-2027-groot-n1-5-cosmos-omniverse-replicator)), is the **production-grade version** of NVIDIA's foundation model. What changed from N1 (March 2026):
 
 - **300% more training data**, a substantial portion of which is synthetic generated in Cosmos (NVIDIA's world model)
 - **Zero-shot manipulation across 50+ gripper types** — from two-finger to suction to multi-finger
@@ -122,7 +122,7 @@ The key element is **MES as a store of prompts and demonstrations**. Each roboti
 - Fine-tune result as an artifact (model weights, ~200 MB)
 - Production telemetry (success rate, cycle time, collisions)
 
-That maps cleanly onto OmniMES data architecture — prompts in PostgreSQL, demonstrations in object storage, telemetry in [TimescaleDB as time-series](/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day).
+That maps cleanly onto OmniMES data architecture — prompts in PostgreSQL, demonstrations in object storage, telemetry in [TimescaleDB as time-series](/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day).
 
 ## What it means for European integrators
 
@@ -142,7 +142,7 @@ Three things to remember:
 
 **Second**, the strongest change is **the economics of low-volume**. Foundation models make robotization of products that were previously manual (under 5,000 units of a variant) economically viable. For European custom manufacturing (niche automotive, consumer electronics, premium packaging) — a fundamental shift.
 
-**Third**, MES becomes part of the robotic stack, not just an observer. New responsibilities: store of prompts, demonstration library, approval workflow, performance monitoring. That requires extending the existing MES or replacing it with an AI-ready one. A [TimescaleDB-based data architecture](/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) helps — telemetry from robots is classical time-series that hypertables handle unmodified.
+**Third**, MES becomes part of the robotic stack, not just an observer. New responsibilities: store of prompts, demonstration library, approval workflow, performance monitoring. That requires extending the existing MES or replacing it with an AI-ready one. A [TimescaleDB-based data architecture](/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) helps — telemetry from robots is classical time-series that hypertables handle unmodified.
 
 Foundation models will not replace classical robot programming in 2026. But by 2028 they become the **default integration option** for most production deployments. European mid-market manufacturers that start experimenting in 2026 will have a two-year edge over regional competitors.
 
@@ -156,7 +156,7 @@ Foundation models will not replace classical robot programming in 2026. But by 2
 - [Open X-Embodiment Dataset](https://robotics-transformer-x.github.io/) — aggregated dataset of 970k trajectories from 22 platforms
 - [NVIDIA Project GR00T](https://developer.nvidia.com/project-gr00t) — product page, technical documentation
 - [LeRobot library (Hugging Face)](https://github.com/huggingface/lerobot) — reference PyTorch library for robot foundation models
-- [Physical AI: humanoid robots on the production floor](/blog/physical-ai-humanoid-robots-on-the-production-floor) — earlier article on humanoids
-- [Agentic AI in manufacturing](/blog/agentic-ai-in-manufacturing-how-autonomous-agents-take-over-the-factory-in-2026) — agentic AI context in the factory
-- [Computex 2026 — 5 announcements for MES](/blog/computex-2026-five-nvidia-amd-intel-announcements-that-will-change-mes-in-2027-groot-n1-5-cosmos-omniverse-replicator) — Computex retrospective with GR00T N1.5
-- [TimescaleDB in OmniMES](/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) — time-series architecture for robot telemetry
+- [Physical AI: humanoid robots on the production floor](/en/blog/physical-ai-humanoid-robots-on-the-production-floor) — earlier article on humanoids
+- [Agentic AI in manufacturing](/en/blog/agentic-ai-in-manufacturing-how-autonomous-agents-take-over-the-factory-in-2026) — agentic AI context in the factory
+- [Computex 2026 — 5 announcements for MES](/en/blog/computex-2026-five-nvidia-amd-intel-announcements-that-will-change-mes-in-2027-groot-n1-5-cosmos-omniverse-replicator) — Computex retrospective with GR00T N1.5
+- [TimescaleDB in OmniMES](/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day) — time-series architecture for robot telemetry

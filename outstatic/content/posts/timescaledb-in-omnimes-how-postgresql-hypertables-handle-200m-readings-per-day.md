@@ -26,7 +26,7 @@ This matters because in MES you typically have two kinds of data:
 - **Transactional** (production orders, operators, quality control, warehouse) — classic OLTP, PostgreSQL's native domain
 - **Time-series** (sensor readings, alarms, OEE counters, energy metering) — requires different handling: fast appends, compression, time-bucket aggregations
 
-Most MES platforms solve this with **two engines**: PostgreSQL/MS SQL/Oracle for OLTP, plus InfluxDB/MongoDB/ClickHouse for time-series. It works, but it has costs: two systems to operate, two query philosophies, two monitoring stacks, two skill pools, two backup procedures, two audit vectors under [NIS2](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory).
+Most MES platforms solve this with **two engines**: PostgreSQL/MS SQL/Oracle for OLTP, plus InfluxDB/MongoDB/ClickHouse for time-series. It works, but it has costs: two systems to operate, two query philosophies, two monitoring stacks, two skill pools, two backup procedures, two audit vectors under [NIS2](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory).
 
 TimescaleDB lets you keep **one engine** — with dedicated mechanisms for time-series where they are actually needed. Stack consolidation is a real operational argument, not just an aesthetic one.
 
@@ -173,7 +173,7 @@ Three concrete points:
 
 **Third**, when budgeting storage, account for compression. Naive calculations such as "1 sensor × 1 Hz × 8 bytes × 31M seconds/year = 250 MB/year" are correct on raw data — but TimescaleDB will compress that to roughly 15 MB/year. For 50,000 sensors that is the difference between 12 TB and 600 GB per year. Realistic capacity planning has to take compression into account from the start.
 
-The OmniMES stack is deliberately built on consolidation and simplicity — one SQL engine, a clear data path from sensor to dashboard, a minimal vendor footprint. The next step is integration with [Time-series Foundation Models](/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — continuous aggregates as input features for TimesFM/Chronos work better than raw sensor data, which substantially lowers the inference cost of failure prediction.
+The OmniMES stack is deliberately built on consolidation and simplicity — one SQL engine, a clear data path from sensor to dashboard, a minimal vendor footprint. The next step is integration with [Time-series Foundation Models](/en/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — continuous aggregates as input features for TimesFM/Chronos work better than raw sensor data, which substantially lowers the inference cost of failure prediction.
 
 ---
 
@@ -184,6 +184,6 @@ The OmniMES stack is deliberately built on consolidation and simplicity — one 
 - [Gorilla compression paper, Facebook 2015](https://www.vldb.org/pvldb/vol8/p1816-teller.pdf) — compression algorithm for time series
 - [pgBouncer documentation](https://www.pgbouncer.org/) — connection pooling for PostgreSQL
 - [TimescaleDB benchmarks](https://www.timescale.com/blog/timescaledb-vs-influxdb-for-time-series-data/) — performance comparison (note: source biased — TimescaleDB)
-- [Time-series Foundation Models in MES](/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — the next analytical step
-- [NIS2 and the Polish KSC2 Act in 2026](/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) — compliance context for stack consolidation
+- [Time-series Foundation Models in MES](/en/blog/time-series-foundation-models-in-mes-are-timesfm-chronos-moirai-already-beating-your-own-xgboost-in-failure-prediction) — the next analytical step
+- [NIS2 and the Polish KSC2 Act in 2026](/en/blog/nis2-and-the-polish-ksc2-act-in-2026-how-mes-becomes-cyber-compliance-evidence-for-an-eu-factory) — compliance context for stack consolidation
 - [OmniMES — cybersecurity and CRA compliance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/cybersecurity-compliance-cra-pPJBcC6sBf) — product documentation

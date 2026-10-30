@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Logo from "@/data/logo.svg"
+import Logo from "@/data/logo.png"
 import { useTranslations } from "next-intl"
 
 import SectionContainer from "./SectionContainer"
@@ -31,8 +31,8 @@ export const Footer = () => {
           <Image
             src={Logo.src}
             alt="OmniMES logo"
-            width={44}
-            height={36}
+            width={40}
+            height={40}
             className="z-1 mr-2"
             style={{ width: "44px", height: "auto" }}
           />

@@ -20,7 +20,7 @@ What follows is a tour of the OmniEnergy module in the order the work is done in
 
 ## 1. Measurement sources and points: where the data comes from
 
-Electricity, gas, compressed-air and water meters publish readings over MQTT using Sparkplug B, either directly or through a PLC or gateway. OmniMES picks them up from the broker and stores every reading in TimescaleDB. We covered how that database copes with hundreds of millions of readings a day in [TimescaleDB in OmniMES](/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day).
+Electricity, gas, compressed-air and water meters publish readings over MQTT using Sparkplug B, either directly or through a PLC or gateway. OmniMES picks them up from the broker and stores every reading in TimescaleDB. We covered how that database copes with hundreds of millions of readings a day in [TimescaleDB in OmniMES](/en/blog/timescaledb-in-omnimes-how-postgresql-hypertables-handle-200m-readings-per-day).
 
 OmniEnergy never asks you to connect a meter a second time. Configuration has two layers:
 

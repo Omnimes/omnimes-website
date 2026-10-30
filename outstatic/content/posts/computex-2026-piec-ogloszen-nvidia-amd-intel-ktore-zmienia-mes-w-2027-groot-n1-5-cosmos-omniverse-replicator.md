@@ -67,7 +67,7 @@ Pierwsze partnerskie produkty (przemysłowe stacje robocze HP, Lenovo) zapowiedz
 
 ## 5. Intel Gaudi 3 + OpenVINO 2026 — koszt inferencji ML spada o 60%
 
-Intel pokazał **Gaudi 3** dla inferencji na brzegu (poprzednio tylko dla centrów danych), w formacie PCIe — można wstawić do każdego serwera 1U. Plus nowa wersja **OpenVINO 2026** z natywną optymalizacją dla TimesFM, Chronos i pozostałych time-series foundation models (które omawiałem w [poprzednim artykule](/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii)).
+Intel pokazał **Gaudi 3** dla inferencji na brzegu (poprzednio tylko dla centrów danych), w formacie PCIe — można wstawić do każdego serwera 1U. Plus nowa wersja **OpenVINO 2026** z natywną optymalizacją dla TimesFM, Chronos i pozostałych time-series foundation models (które omawiałem w [poprzednim artykule](/pl/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii)).
 
 Mierzone wartości z keynote: **predykcja awarii dla 200 sensorów co 5 sekund** — Gaudi 3 zużywa 18 W i kosztuje USD 2400, dorównuje wydajnością serwerowi z A100 (USD 25 000). To **10x niższy koszt CAPEX** dla typowego potoku analityki MES.
 
@@ -105,7 +105,7 @@ Pięć rzeczy, które wymagają uczciwego komentarza:
 
 **Średnioterminowo (2027):** zaplanuj budżet inwestycyjny na drugą falę edge AI. Cosmos 2.0 + nowy potok CV dla zmienialnych wariantów produktu. GR00T N1.5 dla jednego stanowiska pilotażowego z robotem typu cobot.
 
-**Strategicznie (do 2028):** rozważ wyjście z chmurowych LLM dla danych produkcyjnych. Lokalny stos na nowym sprzęcie staje się tańszy, szybszy w odpowiedzi, i fundamentalnie prostszy w kontekście zgodności z NIS2 (pisałem o tym w [artykule o NIS2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)).
+**Strategicznie (do 2028):** rozważ wyjście z chmurowych LLM dla danych produkcyjnych. Lokalny stos na nowym sprzęcie staje się tańszy, szybszy w odpowiedzi, i fundamentalnie prostszy w kontekście zgodności z NIS2 (pisałem o tym w [artykule o NIS2](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)).
 
 Computex 2026 nie był rewolucją w stylu ChatGPT 2022. Był serią inkrementalnych ogłoszeń, które w sumie zmieniają mapę ekonomii edge AI dla średniego producenta. Następne 12 miesięcy zdecyduje, kto pierwszy wykorzysta nową ekonomię — i czy polscy producenci zdążą, zanim niemiecka konkurencja zrobi to samo.
 
@@ -119,5 +119,5 @@ Computex 2026 nie był rewolucją w stylu ChatGPT 2022. Był serią inkrementaln
 - [AMD Ryzen AI Max+ announcement (Computex 2026)](https://www.amd.com/en/press-releases) — specyfikacja i partnerstwa
 - [Intel Gaudi 3 PCIe (Computex 2026)](https://www.intel.com/content/www/us/en/newsroom/news.html) — benchmark Foxconn case study
 - [OpenVINO 2026 release notes](https://docs.openvino.ai/) — optymalizacja TimesFM, Chronos
-- [Time-series Foundation Models w MES](/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — nasz wcześniejszy artykuł o TSFM
-- [NIS2 i KSC2 w 2026](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) — kontekst regulacyjny lokalnego AI
+- [Time-series Foundation Models w MES](/pl/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — nasz wcześniejszy artykuł o TSFM
+- [NIS2 i KSC2 w 2026](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) — kontekst regulacyjny lokalnego AI

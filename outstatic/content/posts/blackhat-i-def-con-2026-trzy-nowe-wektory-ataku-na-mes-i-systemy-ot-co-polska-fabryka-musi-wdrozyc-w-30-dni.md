@@ -143,21 +143,21 @@ Poniższa lista to nasza rekomendacja na podstawie opisanych źródeł, a nie wy
 2. Przegląd domyślnych haseł na urządzeniach OT: RTU, serwerach portów szeregowych, sterownikach i przełącznikach.
 
 **Tydzień 2 — segmentacja sieci.**
-3. Ruch między siecią OT a łączami WAN, APN i siecią biurową tylko według listy dozwolonych połączeń, z zasadą „domyślnie zamknięte”. Szczegóły opisaliśmy w artykule o [komunikacji między siecią IT a OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa).
+3. Ruch między siecią OT a łączami WAN, APN i siecią biurową tylko według listy dozwolonych połączeń, z zasadą „domyślnie zamknięte”. Szczegóły opisaliśmy w artykule o [komunikacji między siecią IT a OT](/pl/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa).
 4. Wyłączenie interfejsów WWW, SSH i Telnet od strony sieci zewnętrznych. Sprawdzenie, że żaden sterownik S7 nie jest osiągalny z internetu.
 5. Przy prywatnym APN: rozmowa z operatorem o izolacji klientów.
 
 **Tydzień 3 — oprogramowanie.**
 6. Spis komponentów OPC UA w MES, SCADA i HMI. Pytanie do dostawców o wersję open62541 i plan aktualizacji. Tam, gdzie macie wpływ na wersję, minimum to 1.5.7 lub 1.4.19.
 7. Stacje inżynierskie: pliki projektów HMI i PLC tylko ze sprawdzonych źródeł. Przegląd ustawień OPC UA pod kątem przechodzenia w tryb bez zabezpieczeń.
-8. Lokalne modele AI: aktualne wersje llama.cpp i Ollama, pliki GGUF tylko z zaufanych źródeł, serwer modelu niedostępny spoza swojego segmentu, urządzenia brzegowe w zamykanych szafach. Więcej o tej architekturze w artykule o [lokalnym RAG na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury).
+8. Lokalne modele AI: aktualne wersje llama.cpp i Ollama, pliki GGUF tylko z zaufanych źródeł, serwer modelu niedostępny spoza swojego segmentu, urządzenia brzegowe w zamykanych szafach. Więcej o tej architekturze w artykule o [lokalnym RAG na Jetson Orin](/pl/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury).
 
 **Tydzień 4 — wykrywanie i reagowanie.**
 9. Centralne zbieranie dzienników zdarzeń z urządzeń brzegowych, bram APN i stacji inżynierskich. Monitorowanie nietypowych połączeń S7 i Modbus.
 10. Procedura: każda niewyjaśniona awaria sterownika trafia do zespołu bezpieczeństwa. Przed resetem do ustawień fabrycznych trzeba zabezpieczyć, co się da: dzienniki, konfigurację i kopię logiki.
 11. Ćwiczenia teoretyczne (tabletop) na scenariuszu z polskiej elektrociepłowni.
 
-Art. 23 dyrektywy NIS2 nakłada na podmioty kluczowe i ważne trzy terminy: wczesne ostrzeżenie w ciągu 24 godzin od wykrycia poważnego incydentu, zgłoszenie w ciągu 72 godzin i raport końcowy w ciągu miesiąca. Punkty 9–11 bezpośrednio pomagają tych terminów dotrzymać. Kontekst krajowy opisaliśmy w artykule o [NIS2 i KSC2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki).
+Art. 23 dyrektywy NIS2 nakłada na podmioty kluczowe i ważne trzy terminy: wczesne ostrzeżenie w ciągu 24 godzin od wykrycia poważnego incydentu, zgłoszenie w ciągu 72 godzin i raport końcowy w ciągu miesiąca. Punkty 9–11 bezpośrednio pomagają tych terminów dotrzymać. Kontekst krajowy opisaliśmy w artykule o [NIS2 i KSC2](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki).
 
 ## Aktualizacja (6 października 2026)
 
@@ -194,7 +194,7 @@ Art. 23 dyrektywy NIS2 nakłada na podmioty kluczowe i ważne trzy terminy: wcze
 
 ## Powiązane artykuły
 
-- [NIS2 i KSC2 w 2026: jak MES staje się elementem zgodności cyberbezpieczeństwa polskiej fabryki](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)
-- [Dobre praktyki komunikacji między siecią IT a OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa)
-- [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury)
+- [NIS2 i KSC2 w 2026: jak MES staje się elementem zgodności cyberbezpieczeństwa polskiej fabryki](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)
+- [Dobre praktyki komunikacji między siecią IT a OT](/pl/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa)
+- [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/pl/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury)
 - [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e)

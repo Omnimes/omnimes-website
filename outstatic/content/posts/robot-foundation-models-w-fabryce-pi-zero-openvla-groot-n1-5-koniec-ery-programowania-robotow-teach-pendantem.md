@@ -62,7 +62,7 @@ Praktycznie: OpenVLA jest **gorszy niż Pi-Zero** w manipulacji wieloetapowej, a
 
 ## GR00T N1.5 — NVIDIA na Computex 2026
 
-[GR00T N1.5](https://developer.nvidia.com/project-gr00t), prezentowany na Computex 2026 (omawiałem w [retrospektywie keynote](/blog/computex-2026-piec-ogloszen-nvidia-amd-intel-ktore-zmienia-mes-w-2027-groot-n1-5-cosmos-omniverse-replicator)), to **wersja produkcyjna** NVIDIA foundation model. Co zmieniło się względem N1 (marzec 2026):
+[GR00T N1.5](https://developer.nvidia.com/project-gr00t), prezentowany na Computex 2026 (omawiałem w [retrospektywie keynote](/pl/blog/computex-2026-piec-ogloszen-nvidia-amd-intel-ktore-zmienia-mes-w-2027-groot-n1-5-cosmos-omniverse-replicator)), to **wersja produkcyjna** NVIDIA foundation model. Co zmieniło się względem N1 (marzec 2026):
 
 - **300% więcej danych treningowych**, znaczna część z syntetyków generowanych w Cosmos (NVIDIA world model)
 - **Zero-shot manipulacja dla 50+ typów chwytaków** — od dwupalczastych przez podciśnieniowe po multi-finger
@@ -122,7 +122,7 @@ Kluczowy element to **MES jako magazyn poleceń i demonstracji**. Każde zadanie
 - Wynik dostrajania jako artefakt (wagi modelu, ~200 MB)
 - Telemetria z produkcji (wskaźnik sukcesu, czas wykonania, kolizje)
 
-To dokładnie pasuje do architektury danych w OmniMES — polecenia trzymane w PostgreSQL, demonstracje w magazynie obiektowym, telemetria w [TimescaleDB jako time-series](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie).
+To dokładnie pasuje do architektury danych w OmniMES — polecenia trzymane w PostgreSQL, demonstracje w magazynie obiektowym, telemetria w [TimescaleDB jako time-series](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie).
 
 ## Co znaczy dla polskich integratorów
 
@@ -142,7 +142,7 @@ Trzy konkrety:
 
 **Po drugie**, najmocniejsza zmiana to **ekonomia małoseryjnych**. Foundation models robią ekonomicznie opłacalną robotyzację produktów, które do tej pory były ręczne (poniżej 5 tys. sztuk wariantu). Dla polskiego rynku produkcji na zamówienie (motoryzacja niszowa, elektronika konsumencka, opakowania premium) — to fundamentalna zmiana.
 
-**Po trzecie**, MES staje się elementem stosu robotycznego, nie tylko obserwatorem. Nowa rola: magazyn poleceń, biblioteka demonstracji, proces zatwierdzania, monitorowanie wydajności. To wymaga rozszerzenia istniejącego MES lub wymiany na MES gotowy na integrację z AI. Pomocna jest [architektura danych z TimescaleDB](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — telemetria z robotów to klasyczna time-series, którą hypertables obsługują bez modyfikacji.
+**Po trzecie**, MES staje się elementem stosu robotycznego, nie tylko obserwatorem. Nowa rola: magazyn poleceń, biblioteka demonstracji, proces zatwierdzania, monitorowanie wydajności. To wymaga rozszerzenia istniejącego MES lub wymiany na MES gotowy na integrację z AI. Pomocna jest [architektura danych z TimescaleDB](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — telemetria z robotów to klasyczna time-series, którą hypertables obsługują bez modyfikacji.
 
 Foundation models nie zastąpią klasycznego programowania robotów w 2026. Ale do 2028 stają się **domyślną opcją integracji** dla większości wdrożeń produkcyjnych. Polski przemysł, który zacznie eksperymentować w 2026, będzie miał 2-letnią przewagę nad konkurencją regionalną.
 
@@ -156,7 +156,7 @@ Foundation models nie zastąpią klasycznego programowania robotów w 2026. Ale 
 - [Open X-Embodiment Dataset](https://robotics-transformer-x.github.io/) — agregowany dataset 970 tys. trajektorii z 22 platform
 - [NVIDIA Project GR00T](https://developer.nvidia.com/project-gr00t) — strona produktu, dokumentacja techniczna
 - [LeRobot library (Hugging Face)](https://github.com/huggingface/lerobot) — referencyjna biblioteka PyTorch dla robot foundation models
-- [Physical AI: roboty humanoidalne na hali produkcyjnej](/blog/physical-ai-roboty-humanoidalne-na-hali-produkcyjnej) — wcześniejszy artykuł o humanoidach
-- [Agentic AI w produkcji](/blog/agentic-ai-w-produkcji-jak-autonomiczne-agenty-przejmuja-sterowanie-fabryka-w-2026) — kontekst agentic AI w fabryce
-- [Computex 2026 — 5 ogłoszeń dla MES](/blog/computex-2026-piec-ogloszen-nvidia-amd-intel-ktore-zmienia-mes-w-2027-groot-n1-5-cosmos-omniverse-replicator) — retrospektywa Computex z GR00T N1.5
-- [TimescaleDB w OmniMES](/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — architektura time-series dla telemetrii robotów
+- [Physical AI: roboty humanoidalne na hali produkcyjnej](/pl/blog/physical-ai-roboty-humanoidalne-na-hali-produkcyjnej) — wcześniejszy artykuł o humanoidach
+- [Agentic AI w produkcji](/pl/blog/agentic-ai-w-produkcji-jak-autonomiczne-agenty-przejmuja-sterowanie-fabryka-w-2026) — kontekst agentic AI w fabryce
+- [Computex 2026 — 5 ogłoszeń dla MES](/pl/blog/computex-2026-piec-ogloszen-nvidia-amd-intel-ktore-zmienia-mes-w-2027-groot-n1-5-cosmos-omniverse-replicator) — retrospektywa Computex z GR00T N1.5
+- [TimescaleDB w OmniMES](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — architektura time-series dla telemetrii robotów

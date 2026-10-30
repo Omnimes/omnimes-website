@@ -26,7 +26,7 @@ To istotne, bo w MES typowo mamy dwa rodzaje danych:
 - **transakcyjne** (zlecenia produkcyjne, operatorzy, kontrola jakości, magazyn) — klasyczny OLTP, naturalna dziedzina PostgreSQL
 - **czasowe** (sensor readings, alarmy, OEE counters, energy metering) — wymagają innej obsługi: szybkiego appendu, kompresji, agregacji po okresach
 
-Większość systemów MES rozwiązuje to przez **dwa silniki**: PostgreSQL/MS SQL/Oracle dla OLTP, plus InfluxDB/MongoDB/ClickHouse dla danych czasowych. To działa, ale wprowadza koszty: dwa systemy do utrzymania, dwie filozofie zapytań, dwa stosy monitoringu, dwa zespoły wiedzy, dwie kopie zapasowe, dwa wektory audytu dla [NIS2](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki).
+Większość systemów MES rozwiązuje to przez **dwa silniki**: PostgreSQL/MS SQL/Oracle dla OLTP, plus InfluxDB/MongoDB/ClickHouse dla danych czasowych. To działa, ale wprowadza koszty: dwa systemy do utrzymania, dwie filozofie zapytań, dwa stosy monitoringu, dwa zespoły wiedzy, dwie kopie zapasowe, dwa wektory audytu dla [NIS2](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki).
 
 TimescaleDB pozwala mieć **jeden silnik** — z dedykowanymi mechanizmami dla time-series tam, gdzie są potrzebne. Konsolidacja stacku jest realnym argumentem operacyjnym, nie tylko estetycznym.
 
@@ -173,7 +173,7 @@ Trzy konkrety:
 
 **Po trzecie**, planując budżet magazynu pamiętajcie o kompresji. Naiwne kalkulacje typu „1 czujnik × 1 Hz × 8 bajtów × 31 mln sekund/rok = 250 MB rocznie" są prawdziwe na surowych danych — ale TimescaleDB skompresuje to do około 15 MB rocznie. Dla 50 tys. czujników to różnica między 12 TB a 600 GB rocznie. Realne planowanie pojemności musi uwzględniać kompresję od początku.
 
-Stos OmniMES jest świadomie zbudowany na konsolidacji i prostocie — jeden silnik SQL, jasna ścieżka danych od czujnika do pulpitu, minimum dostawców. Następny krok to integracja z [Time-series Foundation Models](/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — continuous aggregates jako cechy wejściowe dla TimesFM/Chronos działają lepiej niż surowe dane z czujników, co znacznie obniża koszt inferencji w predykcji awarii.
+Stos OmniMES jest świadomie zbudowany na konsolidacji i prostocie — jeden silnik SQL, jasna ścieżka danych od czujnika do pulpitu, minimum dostawców. Następny krok to integracja z [Time-series Foundation Models](/pl/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — continuous aggregates jako cechy wejściowe dla TimesFM/Chronos działają lepiej niż surowe dane z czujników, co znacznie obniża koszt inferencji w predykcji awarii.
 
 ---
 
@@ -184,6 +184,6 @@ Stos OmniMES jest świadomie zbudowany na konsolidacji i prostocie — jeden sil
 - [Gorilla compression paper, Facebook 2015](https://www.vldb.org/pvldb/vol8/p1816-teller.pdf) — algorytm kompresji dla time-series
 - [pgBouncer documentation](https://www.pgbouncer.org/) — connection pooling dla PostgreSQL
 - [TimescaleDB benchmarks](https://www.timescale.com/blog/timescaledb-vs-influxdb-for-time-series-data/) — porównanie wydajności (source biased — TimescaleDB)
-- [Time-series Foundation Models w MES](/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — kolejny krok analityczny
-- [NIS2 i KSC2 w 2026](/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) — kontekst zgodności dla konsolidacji stosu
+- [Time-series Foundation Models w MES](/pl/blog/time-series-foundation-models-w-mes-czy-timesfm-chronos-moirai-juz-bija-wlasny-xgboost-w-predykcji-awarii) — kolejny krok analityczny
+- [NIS2 i KSC2 w 2026](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki) — kontekst zgodności dla konsolidacji stosu
 - [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu

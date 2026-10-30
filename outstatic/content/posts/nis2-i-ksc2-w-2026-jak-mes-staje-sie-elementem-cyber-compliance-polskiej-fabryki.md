@@ -67,7 +67,7 @@ Cztery rzeczy wymagające dorobienia praktycznie w każdym wdrożeniu:
 
 **1. Zgłaszanie podatności (Art. 21 ust. 2 lit. e + Art. 6 CRA).** Czy wasz dostawca MES ma proces przyjmowania zgłoszeń o podatnościach od badaczy bezpieczeństwa (CVE) i czy publikuje ogłoszenia o podatnościach? Większość mniejszych dostawców MES (a także wewnętrznych zespołów IT, gdy MES jest budowany własnymi siłami) tego nie ma. Pod NIS2 to obowiązek; pod CRA od 11.12.2027 — obowiązek wobec klientów. W praktyce: trzeba opublikować plik `security.txt` na stronie firmowej, udostępnić adres do odpowiedzialnego zgłaszania podatności i wdrożyć procedurę wstępnej oceny zgłoszeń.
 
-**2. Segmentacja sieci IT/OT.** Większość systemów MES działa w tej samej sieci co biurowy LAN — to klasyczna luka, której regulator nie wybaczy po pierwszym incydencie. Standardem jest umieszczenie MES i SCADA w osobnym VLAN-ie (strefa OT), z firewallem stanowym między IT a OT i listą dozwolonych protokołów (OPC UA, Modbus TCP, MQTT — i tylko ich konkretne sygnatury). Odsyłam do naszego artykułu [Dobre praktyki komunikacji IT/OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa) — znajdziecie tam pełną referencyjną architekturę segmentacji.
+**2. Segmentacja sieci IT/OT.** Większość systemów MES działa w tej samej sieci co biurowy LAN — to klasyczna luka, której regulator nie wybaczy po pierwszym incydencie. Standardem jest umieszczenie MES i SCADA w osobnym VLAN-ie (strefa OT), z firewallem stanowym między IT a OT i listą dozwolonych protokołów (OPC UA, Modbus TCP, MQTT — i tylko ich konkretne sygnatury). Odsyłam do naszego artykułu [Dobre praktyki komunikacji IT/OT](/pl/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa) — znajdziecie tam pełną referencyjną architekturę segmentacji.
 
 **3. Ciągłe monitorowanie i system IDS dedykowany OT.** Klasyczne systemy IDS (Suricata, Snort) słabo radzą sobie z OT — nie rozumieją protokołów Modbus, S7 ani EtherNet/IP. Trzeba dodać IDS dla OT — komercyjny (Claroty, Dragos, Nozomi) lub open source (Malcolm od CISA). Bez tego nie pokryjecie wymogu wykrywania incydentów z Art. 23.
 
@@ -88,7 +88,7 @@ Dlatego **lokalne modele LLM** (Phi-4, Llama 3.3, Qwen 2.5) działające na wasz
 - ślad audytowy poza siedzibą
 - nieprzewidywalne zmiany API
 
-Pokazywałem to konkretnie w artykule [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury). Pod NIS2 to nie tylko kwestia ekonomii — to redukcja powierzchni audytowej o całego dostawcę z USA.
+Pokazywałem to konkretnie w artykule [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/pl/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury). Pod NIS2 to nie tylko kwestia ekonomii — to redukcja powierzchni audytowej o całego dostawcę z USA.
 
 Analogicznie: MES w modelu SaaS (Plex, Tulip, niektóre produkty Siemensa) wymaga od Was, jako klienta, dokumentacji ryzyka łańcucha dostaw oraz SLA pokrywającego wymogi NIS2. MES wdrożony lokalnie (on-premise) to po prostu mniej dokumentów i mniej pytań od audytora.
 
@@ -154,6 +154,6 @@ Sankcje są wysokie (do 10 mln EUR i odpowiedzialność osobista zarządu), ale 
 - [CSIRT NASK](https://csirt.nask.pl/) — polski CERT dla podmiotów istotnych z Załącznika II
 - [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) — referencyjny model oceny ryzyka
 - [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) — standard zarządzania bezpieczeństwem informacji
-- [Dobre praktyki komunikacji IT/OT](/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa) — nasz wcześniejszy artykuł o segmentacji
-- [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury) — redukcja powierzchni audytowej przez lokalne LLM
+- [Dobre praktyki komunikacji IT/OT](/pl/blog/dobre-praktyki-komunikacji-miedzy-siecia-it-a-ot-jak-zbudowac-bezpieczna-i-nowoczesna-architekture-przemyslowa) — nasz wcześniejszy artykuł o segmentacji
+- [Lokalny RAG w fabryce: Phi-4 + sqlite-vec na Jetson Orin](/pl/blog/lokalny-rag-w-fabryce-phi-4-sqlite-vec-na-jetson-orin-asystent-mes-bez-wycieku-danych-do-chmury) — redukcja powierzchni audytowej przez lokalne LLM
 - [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu: jak OmniMES spełnia wymogi CRA dla dostawcy MES
