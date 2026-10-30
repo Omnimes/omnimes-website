@@ -428,8 +428,10 @@ export function mountEcosystem(
     new THREE.Vector3(NODE_X[4], 5.4, NODE_Z[4]),
     new THREE.Vector3(NODE_X[5], 8.4, NODE_Z[5]),
     new THREE.Vector3(serverCenter, 0.2, NODE_Z[3] + 4.4),
-    new THREE.Vector3(NODE_X[0] + 7.5, 0, NODE_Z[0] + 0.8),
+    new THREE.Vector3(NODE_X[0] + 5.6, 3.4, NODE_Z[0] + 1.6),
   ]
+  // Z góry etykieta robota stoi przy jego kablu, żeby nie zasłaniać linii
+  const robotAnchorWide = new THREE.Vector3(15.3, 0, -2.4)
   const roleAnchors = panels.map((panel) =>
     panel.group.position.clone().add(new THREE.Vector3(0, 4.75, 0))
   )
@@ -541,7 +543,10 @@ export function mountEcosystem(
     }
     robotPackets.instanceMatrix.needsUpdate = true
 
-    overlay.stations.forEach((element, index) => place(element, anchors[index]))
+    overlay.stations.forEach((element, index) => {
+      const robot = index === anchors.length - 1 && current === OVERVIEW
+      place(element, robot ? robotAnchorWide : anchors[index])
+    })
     overlay.roles.forEach((element, index) => {
       const low = current === OVERVIEW && index % 2 === 1
       place(element, low ? roleAnchorsLow[index] : roleAnchors[index])
