@@ -747,22 +747,6 @@
       }
     }
   },
-  "ProofStrip": {
-    "smallSubtitle": "Where OmniMES runs",
-    "title": "Proven in pallet production, tested with Relpol energy meters",
-    "eldrewLabel": "Implementation",
-    "eldrewName": "Eldrew",
-    "eldrewText": "A manufacturer of wooden pallets. In 2023 we implemented OmniMES in selected pallet production processes, integrated with the machines.",
-    "eldrewLink": "See the implementation",
-    "relpolLabel": "Partnership",
-    "relpolName": "Relpol S.A.",
-    "relpolText": "A Polish maker of energy meters. Relpol RMM meters have a tested configuration with OmniMES and OmniEnergy.",
-    "relpolLink": "See the partnership",
-    "makerLabel": "Maker",
-    "makerName": "Multiprojekt Automatyka",
-    "makerText": "The Polish company that builds OmniMES and supports customers from the production audit to team training.",
-    "makerLink": "Meet the company"
-  },
   "Ecosystem": {
     "smallSubtitle": "How it works",
     "title": "From machine to screen: how data moves through OmniMES",

@@ -755,22 +755,6 @@
       }
     }
   },
-  "ProofStrip": {
-    "smallSubtitle": "Gdzie działa OmniMES",
-    "title": "Sprawdzony w produkcji palet, zgrany z licznikami energii Relpol",
-    "eldrewLabel": "Wdrożenie",
-    "eldrewName": "Eldrew",
-    "eldrewText": "Producent palet drewnianych. W 2023 roku wdrożyliśmy OmniMES w wybranych procesach produkcji palet, z integracją z maszynami.",
-    "eldrewLink": "Zobacz wdrożenie",
-    "relpolLabel": "Partnerstwo",
-    "relpolName": "Relpol S.A.",
-    "relpolText": "Polski producent liczników energii. Liczniki Relpol RMM mają przetestowaną konfigurację z OmniMES i OmniEnergy.",
-    "relpolLink": "Zobacz partnerstwo",
-    "makerLabel": "Producent",
-    "makerName": "Multiprojekt Automatyka",
-    "makerText": "Polska firma, która tworzy OmniMES i wspiera klientów od audytu produkcji po szkolenie zespołu.",
-    "makerLink": "Poznaj firmę"
-  },
   "Ecosystem": {
     "smallSubtitle": "Jak to działa",
     "title": "Od maszyny do ekranu: droga danych w OmniMES",
