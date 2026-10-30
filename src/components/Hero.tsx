@@ -26,9 +26,8 @@ export const Hero = () => {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#05060f]/70 via-[#05060f]/40 to-[#05060f]/70" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-8 sm:grid-cols-3 sm:gap-12 sm:px-8 sm:py-12">
-        {/* LEWA STRONA – ANIMACJA I DUŻE LOGO */}
+        {/* LEWA STRONA – DUŻE LOGO I ANIMACJA */}
         <div className="flex flex-col gap-6 sm:col-span-2 sm:gap-8">
-          <HeroFactory />
           <Image
             src="/images/hero/omnimes-wordmark.svg"
             alt="OmniMES"
@@ -37,6 +36,7 @@ export const Hero = () => {
             unoptimized
             className="h-auto w-full drop-shadow-[0_0_28px_rgba(47,155,255,0.55)]"
           />
+          <HeroFactory />
         </div>
 
         {/* PRAWA STRONA – TEKST */}
