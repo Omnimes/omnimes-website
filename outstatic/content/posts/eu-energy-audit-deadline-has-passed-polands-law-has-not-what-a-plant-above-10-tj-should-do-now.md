@@ -46,7 +46,7 @@ Poland is not among the countries named for this directive in the June and Octob
 
 The main change is the test itself: energy use replaces company size. Sławomir Różycki of Efetech described the post-consultation draft in WysokieNapiecie.pl on 23 October. It sets three levels.
 
-![Three levels of obligation in bill UC77: below 10 TJ no new obligation, 10–85 TJ an audit every 4 years, above 85 TJ an energy management system](/images/post-audyt-eed/wykres-progi-en.png)
+![Three levels of obligation in bill UC77: below 10 TJ no new obligation, 10–85 TJ an audit every 4 years, above 85 TJ an energy management system](/images/post-audyt-eed/eed-progi-en.png)
 
 The figure is a three-year annual average, added up across all sites and carriers, fuel in company vehicles included. That is why 10 TJ arrives sooner than an electricity meter alone would suggest: it equals about 278,000 m³ of natural gas or about 275,000 litres of diesel a year. Estimates quoted in the same article put roughly 1,500 firms in the management system tier and roughly 11,300 in the audit tier, many of them mid-sized companies that have never had an audit.
 
@@ -64,11 +64,11 @@ The regulatory impact assessment puts an average audit at about PLN 100,000 and 
 
 On 19 October Eurostat released data for the first half of 2026. In consumption band ID, 2 to 20 GWh of electricity a year, the price excluding VAT and other recoverable taxes and levies was 18.12 ct/kWh in Poland, or PLN 0.77/kWh. The EU average was 15.59 ct, Germany 17.42 ct (provisional) and Czechia 14.58 ct.
 
-![Electricity price for band ID industrial consumers, 2021–2026: Poland 18.12 ct/kWh, Germany 17.42, EU average 15.59, Czechia 14.58](/images/post-audyt-eed/wykres-ceny-en.png)
+![Electricity price for band ID industrial consumers, 2021–2026: Poland 18.12 ct/kWh, Germany 17.42, EU average 15.59, Czechia 14.58](/images/post-audyt-eed/eed-ceny-en.png)
 
 In five years Poland has moved from below the EU average to above it. In the first half of 2021 the Polish price was 12.5% lower; in the first half of 2026 it was 16.2% higher. Over the latest half-year it rose 4.4% while the EU average fell 2.3%, Germany fell 9.4% and Czechia fell 10.9%.
 
-![Gap between the Polish price and the EU average, from minus 24.6% in H2 2021 to plus 16.2% in H1 2026](/images/post-audyt-eed/wykres-roznica-en.png)
+![Gap between the Polish price and the EU average, from minus 24.6% in H2 2021 to plus 16.2% in H1 2026](/images/post-audyt-eed/eed-roznica-en.png)
 
 These figures have limits. They are band averages, not what any given plant pays, and they say nothing about why the gap exists, whether contracts, charges or relief schemes. What they do show is direction: against its neighbours, the same kilowatt-hour is costing a Polish plant more.
 
@@ -84,7 +84,7 @@ Article 37 of the current Polish Act is specific about the raw material: audits 
 
 An electricity invoice gives you one number a month. It shows neither power demand nor what the plant does overnight and at weekends.
 
-![Sample weekly power profile of a plant: about 900 kW on shifts, 380 kW at night and 320 kW at the weekend with no production](/images/post-audyt-eed/wykres-profil-en.png)
+![Sample weekly power profile of a plant: about 900 kW on shifts, 380 kW at night and 320 kW at the weekend with no production](/images/post-audyt-eed/eed-profil-en.png)
 
 The chart above uses sample data. In it, about 30% of the week's energy falls outside production shifts. Without a profile you never see that number, and it is the number that starts the conversation about equipment running while nothing is being made.
 

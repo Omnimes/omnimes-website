@@ -46,7 +46,7 @@ W pakietach postępowań z czerwca i października Polski nie ma wśród państw
 
 Najważniejsza zmiana to kryterium: zamiast wielkości firmy liczy się zużycie energii. Sławomir Różycki z Efetech opisał 23 października na łamach WysokieNapiecie.pl wersję projektu po uzgodnieniach. Wynikają z niej trzy poziomy.
 
-![Trzy poziomy obowiązków w projekcie UC77: poniżej 10 TJ bez nowego obowiązku, 10–85 TJ audyt co 4 lata, powyżej 85 TJ system zarządzania energią](/images/post-audyt-eed/wykres-progi-pl.png)
+![Trzy poziomy obowiązków w projekcie UC77: poniżej 10 TJ bez nowego obowiązku, 10–85 TJ audyt co 4 lata, powyżej 85 TJ system zarządzania energią](/images/post-audyt-eed/eed-progi-pl.png)
 
 Próg liczy się jako średnią roczną z trzech lat, łącznie dla wszystkich zakładów i nośników, także dla paliw w samochodach. Dlatego 10 TJ osiąga się szybciej, niż sugeruje sam licznik prądu: to ok. 278 tys. m³ gazu albo ok. 275 tys. litrów oleju napędowego rocznie. Według szacunków przytoczonych w tym samym tekście system zarządzania energią obejmie ok. 1,5 tys. firm, a audyt ok. 11,3 tys., w tym wiele średnich przedsiębiorstw, które dotąd audytu nie robiły.
 
@@ -64,11 +64,11 @@ Koszty podane w ocenie skutków regulacji to ok. 100 tys. zł za średni audyt i
 
 Eurostat opublikował 19 października dane za I połowę 2026 r. W paśmie ID, czyli przy zakupie od 2 do 20 GWh prądu rocznie, cena bez VAT i innych podatków podlegających odliczeniu wyniosła w Polsce 18,12 ct/kWh, czyli 0,77 zł/kWh. Średnia UE to 15,59 ct, Niemcy 17,42 ct (dane wstępne), Czechy 14,58 ct.
 
-![Cena energii elektrycznej dla odbiorców przemysłowych w paśmie ID w latach 2021–2026: Polska 18,12 ct/kWh, Niemcy 17,42, średnia UE 15,59, Czechy 14,58](/images/post-audyt-eed/wykres-ceny-pl.png)
+![Cena energii elektrycznej dla odbiorców przemysłowych w paśmie ID w latach 2021–2026: Polska 18,12 ct/kWh, Niemcy 17,42, średnia UE 15,59, Czechy 14,58](/images/post-audyt-eed/eed-ceny-pl.png)
 
 Przez pięć lat Polska przeszła z pozycji tańszej od średniej unijnej na droższą. W I połowie 2021 r. cena była niższa o 12,5%, a w I połowie 2026 r. wyższa o 16,2%. W ostatnim półroczu cena w Polsce wzrosła o 4,4%, średnia UE spadła o 2,3%, a w Niemczech i Czechach ceny spadły odpowiednio o 9,4% i 10,9%.
 
-![Różnica między ceną w Polsce a średnią UE: od minus 24,6% w II połowie 2021 r. do plus 16,2% w I połowie 2026 r.](/images/post-audyt-eed/wykres-roznica-pl.png)
+![Różnica między ceną w Polsce a średnią UE: od minus 24,6% w II połowie 2021 r. do plus 16,2% w I połowie 2026 r.](/images/post-audyt-eed/eed-roznica-pl.png)
 
 Te dane mają ograniczenia. To średnie dla pasma, a nie cena konkretnego zakładu. Nie wyjaśniają też przyczyn różnicy, takich jak kontrakty, opłaty czy ulgi. Pokazują natomiast kierunek: względem sąsiadów ta sama kilowatogodzina kosztuje polski zakład coraz więcej.
 
@@ -84,7 +84,7 @@ Obowiązujący art. 37 ustawy mówi wprost, z czego ma powstać audyt: z „aktu
 
 Faktura za prąd daje jedną liczbę na miesiąc. Nie pokaże zapotrzebowania na moc ani tego, co zakład robi w nocy i w weekend.
 
-![Przykładowy tygodniowy profil mocy zakładu: około 900 kW na zmianach, 380 kW w nocy i 320 kW w weekend bez produkcji](/images/post-audyt-eed/wykres-profil-pl.png)
+![Przykładowy tygodniowy profil mocy zakładu: około 900 kW na zmianach, 380 kW w nocy i 320 kW w weekend bez produkcji](/images/post-audyt-eed/eed-profil-pl.png)
 
 Ten wykres powstał na danych przykładowych. Około 30% energii tygodnia przypada w nim na godziny poza zmianami. Bez profilu takiej liczby nie widać, a to od niej zaczyna się rozmowa o urządzeniach, które pracują, gdy nic nie jest produkowane.
 
