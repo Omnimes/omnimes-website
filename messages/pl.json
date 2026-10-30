@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "OmniMES - System realizacji produkcji",
-    "description": "OmniMES to nowoczesny system realizacji produkcji, usprawniający procesy produkcyjne dla lepszej efektywności i kontroli jakości",
-    "keywords": "System MES, System realizacji produkcji, OmniMES, cyfryzacja produkcji, Przemysł 4.0, Przemysł 5.0, automatyzacja przemysłu, efektywność produkcji, kontrola jakości, analiza danych produkcyjnych, integracja ERP, optymalizacja OEE, zarządzanie produkcją, IIoT, predykcyjne utrzymanie ruchu",
+    "description": "OmniMES to system realizacji produkcji z zarządzaniem energią: monitoring maszyn, OEE, kWh na sztukę, wsparcie ISO 50001 i asystent AI przez MCP. W chmurze albo na własnym serwerze.",
+    "keywords": "System MES, System realizacji produkcji, OmniMES, cyfryzacja produkcji, Przemysł 4.0, Przemysł 5.0, automatyzacja przemysłu, efektywność produkcji, kontrola jakości, analiza danych produkcyjnych, integracja ERP, optymalizacja OEE, zarządzanie produkcją, IIoT, predykcyjne utrzymanie ruchu, MCP, asystent AI, kWh na sztukę, ISO 50001",
     "postNotFound": "Artykułu nie znaleziono",
     "blog_title": "OmniMES Blog: Odkrywaj Świat Przemysłu 4.0",
     "blog_desc": "Odkryj świat OmniMES i Przemysłu 4.0 na naszym blogu! Eksploruj innowacyjne treści, zgłębiaj tajniki efektywności produkcyjnej i nowoczesnych technologii.",
@@ -670,12 +670,12 @@
   "HeroSection": {
     "SubTitle3": "Zobacz jak działa Omnicloud",
     "playAria": "Odtwórz wideo prezentacyjne platformy Omnicloud",
-    "heroTitle": "Witaj w",
-    "heroTitleHighlight": "Omnicloud",
-    "heroSubtitle": "Nowoczesna platforma chmurowa dla systemu Omnimes - zaprojektowana dla nowoczesnej produkcji. Zarządzaj infrastrukturą i automatyzuj procesy – wszystko w jednym miejscu.",
-    "heroFeature1": "Wdrożenie w 5 minut – bez skomplikowanej konfiguracji",
-    "heroFeature2": "Automatyczne skalowanie i load balancing",
-    "heroFeature3": "Gotowe środowisko dla systemu Omnimes",
+    "heroTitle": "MES, który liczy",
+    "heroTitleHighlight": "energię na sztukę",
+    "heroSubtitle": "OmniMES łączy pracę maszyn, zużycie energii i dane produkcyjne w jednym systemie, a o wyniki zapytasz swojego asystenta AI.",
+    "heroFeature1": "Asystent AI przez MCP: Claude, ChatGPT, Cursor, Copilot",
+    "heroFeature2": "kWh na sztukę i koszt energii w rozbiciu na stany maszyny",
+    "heroFeature3": "Chmura gotowa w 5–10 minut albo Twój własny serwer",
     "tryDemo": "Sprawdź Demo OmniMES i OmniEnergy",
     "tryDemoAria": "Otwórz wersję demonstracyjną systemu OmniMES i OmniEnergy",
     "contactSales": "Zobacz Omnimes na Omnicloud",
@@ -695,6 +695,10 @@
     "fasterOnboarding": "Szybsze wdrażanie nowych pracowników – skróć czas onboarding’u dzięki standaryzacji monitorowania procesów produkcyjnych."
   },
   "OmniProducts": {
+    "seeMore": "Zobacz więcej",
+    "goToCloud": "Przejdź do OmniCloud",
+    "learnMore": "Dowiedz się więcej",
+    "readMore": "Czytaj więcej by poznać różnicę",
     "title": "Optymalizuj produkcję z systemami OmniMES",
     "subtitle": "Kompleksowe rozwiązania dla nowoczesnej produkcji i zarządzania energią",
     "omnimes": {
@@ -735,6 +739,77 @@
         "integration": "Łatwa integracja z systemami"
       }
     }
+  },
+  "McpSpotlight": {
+    "badge": "Nowość od wersji 4.3",
+    "smallSubtitle": "AI przez MCP",
+    "heading": "Zapytaj o produkcję swojego asystenta AI",
+    "description": "OmniMES łączy się z Claude, ChatGPT, Cursorem czy Copilotem przez otwarty standard MCP. Piszesz zwykłym językiem, a asystent czyta dane z systemu, buduje dashboardy i konfiguruje strukturę fabryki.",
+    "points": {
+      "connect": {
+        "title": "Połączenie w minutę",
+        "body": "Gotowe rozszerzenie do Claude Desktop albo adres i token wklejone w dowolnym asystencie obsługującym MCP."
+      },
+      "dashboards": {
+        "title": "Dashboard jednym poleceniem",
+        "body": "Opisujesz, co chcesz zobaczyć, a pulpit w Redashu powstaje bez pisania SQL."
+      },
+      "config": {
+        "title": "Konfiguracja rozmową",
+        "body": "Parki maszynowe, linie, maszyny, statusy i punkty pomiarowe OmniEnergy."
+      },
+      "control": {
+        "title": "Dane pod Twoją kontrolą",
+        "body": "Model wybierasz sam, także lokalny (Ollama, LM Studio). Surowa telemetria maszyn jest tylko do odczytu."
+      }
+    },
+    "chat": {
+      "caption": "Przykładowa rozmowa",
+      "user": "Zbuduj dashboard z dostępnością maszyn i kosztem energii na sztukę dla wybranego parku maszynowego.",
+      "assistant": "Gotowe. Pulpit jest w Redashu: dostępność maszyn, kWh na sztukę i postoje nieplanowane."
+    },
+    "cta": "Zobacz, jak to działa"
+  },
+  "WhatsNew": {
+    "smallSubtitle": "Rozwój systemu",
+    "heading": "Co działa już dziś i co szykujemy",
+    "description": "OmniMES rozwijamy w trzech kierunkach: energia na poziomie sztuki, asystent AI i otwarte integracje.",
+    "cards": {
+      "energy": {
+        "tag": "OmniEnergy",
+        "title": "Energia na sztukę",
+        "body": "Wskaźniki WEE, np. kWh na sztukę, oraz koszt energii według taryfy w rozbiciu na stany maszyny."
+      },
+      "reports": {
+        "tag": "Wersja 4.5",
+        "title": "Porównania ZWE na maila",
+        "body": "System sam zestawia okresy zużycia i wysyła je mailem. Raport pobierzesz też jako PDF lub PNG."
+      },
+      "classification": {
+        "tag": "Wersja 4.2",
+        "title": "Stan maszyny z pomiaru",
+        "body": "Praca, praca jałowa czy postój wyznaczane z progu pomiaru, np. prądu silnika, a nie tylko z sygnałów cyfrowych ze sterownika."
+      },
+      "open": {
+        "tag": "Wersja 4.1",
+        "title": "Otwarte dane",
+        "body": "MQTT i Sparkplug B na wejściu, PostgreSQL z TimescaleDB na dane. W chmurze albo na Twoim serwerze."
+      }
+    },
+    "next": {
+      "title": "Co szykujemy",
+      "mcpApps": {
+        "status": "W trakcie wdrażania",
+        "title": "MCP Apps",
+        "body": "Asystent AI pokaże w rozmowie interaktywne wykresy i tabele z OmniMES, a nie tylko opis danych."
+      },
+      "erp": {
+        "status": "W planach",
+        "title": "Konektor ERP",
+        "body": "Zlecenia i indeksy z ERP trafią na halę, a wykonanie, braki i zużycie surowca wrócą do ERP bez ręcznego przepisywania."
+      }
+    },
+    "changelogLink": "Pełna historia zmian"
   },
   "Roi": {
     "title": "Zwrot z inwestycji w MES – jak obliczyć?",

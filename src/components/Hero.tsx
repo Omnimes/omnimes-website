@@ -16,7 +16,7 @@ export const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false)
 
   // Lista funkcji
-  const features = ["heroFeature1", "heroFeature3"]
+  const features = ["heroFeature1", "heroFeature2", "heroFeature3"]
 
   // Postery
   const pathPoster =

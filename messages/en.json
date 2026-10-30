@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "OmniMES - Manufacturing Execution System",
-    "description": "OmniMES is a state-of-the-art Manufacturing Execution System, streamlining production processes for enhanced efficiency and quality control",
-    "keywords": "MES system, Manufacturing Execution System, OmniMES, production digitalization, Industry 4.0, Industry 5.0, industrial automation, production efficiency, quality control, production data analytics, ERP integration, OEE optimization, production management, IIoT, predictive maintenance",
+    "description": "OmniMES is a Manufacturing Execution System with energy management: machine monitoring, OEE, kWh per unit, ISO 50001 support and an AI assistant over MCP. In the cloud or on your own server.",
+    "keywords": "MES system, Manufacturing Execution System, OmniMES, production digitalization, Industry 4.0, Industry 5.0, industrial automation, production efficiency, quality control, production data analytics, ERP integration, OEE optimization, production management, IIoT, predictive maintenance, MCP, AI assistant, kWh per unit, ISO 50001",
     "postNotFound": "Post Not Found",
     "blog_title": "OmniMES Blog: Explore the World of Industry 4.0",
     "blog_desc": "Discover the world of OmniMES and Industry 4.0 on our blog! Explore innovative content, learn the secrets of production efficiency and modern technologies.",
@@ -662,12 +662,12 @@
   "HeroSection": {
     "SubTitle3": "See how Omnicloud works",
     "playAria": "Play Omnicloud platform presentation video",
-    "heroTitle": "Welcome to",
-    "heroTitleHighlight": "Omnicloud",
-    "heroSubtitle": "Modern cloud platform for Omnimes system – designed for modern manufacturing. Manage infrastructure and automate processes – all in one place.",
-    "heroFeature1": "Deploy in 5 minutes – no complex configuration",
-    "heroFeature2": "Automatic scaling and load balancing",
-    "heroFeature3": "Ready-to-use environment for Omnimes system",
+    "heroTitle": "The MES that tracks",
+    "heroTitleHighlight": "energy per unit",
+    "heroSubtitle": "OmniMES brings machine activity, energy use and production data into one system, and your AI assistant can answer questions about the results.",
+    "heroFeature1": "AI assistant over MCP: Claude, ChatGPT, Cursor, Copilot",
+    "heroFeature2": "kWh per unit and energy cost broken down by machine state",
+    "heroFeature3": "Cloud ready in 5–10 minutes, or run it on your own server",
     "tryDemo": "Check OmniMES and OmniEnergy Demo",
     "tryDemoAria": "Open OmniMES and OmniEnergy system demo version",
     "contactSales": "See Omnimes on Omnicloud",
@@ -687,6 +687,10 @@
     "fasterOnboarding": "Faster onboarding of new employees – shorten onboarding time through standardized monitoring of production processes."
   },
   "OmniProducts": {
+    "seeMore": "See more",
+    "goToCloud": "Go to OmniCloud",
+    "learnMore": "Learn more",
+    "readMore": "Read more to see the difference",
     "title": "Optimize Production with OmniMES Systems",
     "subtitle": "Comprehensive solutions for modern production and energy management",
     "omnimes": {
@@ -727,6 +731,77 @@
         "integration": "Easy integration with systems"
       }
     }
+  },
+  "McpSpotlight": {
+    "badge": "New since version 4.3",
+    "smallSubtitle": "AI over MCP",
+    "heading": "Ask your AI assistant about production",
+    "description": "OmniMES connects to Claude, ChatGPT, Cursor or Copilot through the open MCP standard. You write in plain language, and the assistant reads system data, builds dashboards and configures your factory structure.",
+    "points": {
+      "connect": {
+        "title": "Connected in a minute",
+        "body": "A ready-made Claude Desktop extension, or the address and token pasted into any assistant that supports MCP."
+      },
+      "dashboards": {
+        "title": "A dashboard from one prompt",
+        "body": "Describe what you want to see and the Redash dashboard is built with no SQL to write."
+      },
+      "config": {
+        "title": "Configuration by conversation",
+        "body": "Machine parks, lines, machines, statuses and OmniEnergy measuring points."
+      },
+      "control": {
+        "title": "Your data stays under your control",
+        "body": "You choose the model, including local ones (Ollama, LM Studio). Raw machine telemetry is read-only."
+      }
+    },
+    "chat": {
+      "caption": "Example conversation",
+      "user": "Build a dashboard with machine availability and energy cost per unit for the selected machine park.",
+      "assistant": "Done. The dashboard is in Redash: machine availability, kWh per unit and unplanned downtime."
+    },
+    "cta": "See how it works"
+  },
+  "WhatsNew": {
+    "smallSubtitle": "Product direction",
+    "heading": "What works today and what’s coming",
+    "description": "We’re developing OmniMES in three directions: energy down to the single unit, AI assistants and open integrations.",
+    "cards": {
+      "energy": {
+        "tag": "OmniEnergy",
+        "title": "Energy per unit",
+        "body": "EnPI indicators such as kWh per unit, plus energy cost by tariff broken down by machine state."
+      },
+      "reports": {
+        "tag": "Version 4.5",
+        "title": "SEU comparisons by email",
+        "body": "The system compares consumption periods and sends them by email. Reports can also be downloaded as PDF or PNG."
+      },
+      "classification": {
+        "tag": "Version 4.2",
+        "title": "Machine state from measurements",
+        "body": "Running, idle or stopped is derived from a measurement threshold, such as motor current, not only from digital PLC signals."
+      },
+      "open": {
+        "tag": "Version 4.1",
+        "title": "Open data",
+        "body": "MQTT and Sparkplug B on the way in, PostgreSQL with TimescaleDB for storage. In the cloud or on your own server."
+      }
+    },
+    "next": {
+      "title": "What’s coming",
+      "mcpApps": {
+        "status": "In progress",
+        "title": "MCP Apps",
+        "body": "Your AI assistant will show interactive OmniMES charts and tables in the conversation, not just a description of the data."
+      },
+      "erp": {
+        "status": "Planned",
+        "title": "ERP connector",
+        "body": "Orders and product codes will reach the shop floor from ERP, while output, scrap and material use go back with no manual re-entry."
+      }
+    },
+    "changelogLink": "Full changelog"
   },
   "Roi": {
     "title": "Return on investment in MES – how to calculate?",

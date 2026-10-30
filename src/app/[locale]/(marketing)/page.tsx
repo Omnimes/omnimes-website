@@ -10,12 +10,14 @@ import { HeroImage } from "@/components/HeroImage"
 import HomeBelowFold from "@/components/HomeBelowFold"
 import { InfoEnergyData } from "@/components/InfoEnergyData"
 import { InfoOmniCloud } from "@/components/InfoOmniCloud"
+import { McpSpotlight } from "@/components/McpSpotlight"
 import { OmniProductsShowcase } from "@/components/OmniProductsShowcase"
 import { Performance } from "@/components/Performance"
 import { Roi } from "@/components/Roi"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import { Timeline } from "@/components/Timeline"
 import { WhatIsOmnimes } from "@/components/WhatIsOmnimes"
+import { WhatsNew } from "@/components/WhatsNew"
 import { genPageMetadata } from "@/app/seo"
 
 async function getData(locale: string) {
@@ -73,12 +75,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <HeroImage />
       <Hero />
+      <McpSpotlight />
+      <WhatsNew />
       <OmniProductsShowcase />
+      <InfoEnergyData />
       <BusinessBenefits />
       <Roi />
       <WhatIsOmnimes />
       <Feature />
-      <InfoEnergyData />
       <InfoOmniCloud />
       <Performance />
       <Timeline />

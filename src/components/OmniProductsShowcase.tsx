@@ -53,7 +53,6 @@ export const OmniProductsShowcase = () => {
       gradient: "from-blue-500 to-cyan-400",
       icon: <FaIndustry className="text-3xl text-white" />,
       link: productLinks.omnimes,
-      buttonText: "Zwiększ efektywność produkcji o 30%",
       features: [
         {
           icon: <FaTachometerAlt className="text-lg text-blue-500" />,
@@ -82,7 +81,6 @@ export const OmniProductsShowcase = () => {
       gradient: "from-green-500 to-emerald-400",
       icon: <FaLeaf className="text-3xl text-white" />,
       link: productLinks.omnienergy,
-      buttonText: "Zmniejsz zużycie energii i innych mediów o 20%",
       features: [
         {
           icon: <FaShieldAlt className="text-lg text-green-500" />,
@@ -124,7 +122,7 @@ export const OmniProductsShowcase = () => {
       icon: <FaServer className="text-3xl text-white" />,
       gradient: "from-orange-500 to-amber-400",
       link: getOnPremiseLink(),
-      readMoreText: "Czytaj więcej by poznać różnicę",
+      readMoreText: t("readMore"),
       features: [
         t("deployment.premise.infrastructure"),
         t("deployment.premise.storage"),
@@ -176,7 +174,7 @@ export const OmniProductsShowcase = () => {
                   className={`inline-flex items-center rounded-full bg-gradient-to-r px-6 py-3 ${product.gradient} text-sm font-semibold text-white shadow-lg`}
                 >
                   <FaRocket className="mr-2" />
-                  {product.buttonText}
+                  {product.statistic}
                 </div>
               </div>
 
@@ -208,7 +206,7 @@ export const OmniProductsShowcase = () => {
                   rel="noopener noreferrer"
                   className={`inline-flex items-center bg-gradient-to-r px-6 py-3 ${product.gradient} group rounded-xl font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg`}
                 >
-                  Zobacz więcej
+                  {t("seeMore")}
                   <FaArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </a>
               </div>
@@ -275,7 +273,7 @@ export const OmniProductsShowcase = () => {
                   rel="noopener noreferrer"
                   className={`inline-flex items-center bg-gradient-to-r px-6 py-3 ${option.gradient} group rounded-xl font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg`}
                 >
-                  {option.id === "cloud" ? "Przejdź do OmniCloud" : "Dowiedz się więcej"}
+                  {option.id === "cloud" ? t("goToCloud") : t("learnMore")}
                   <FaExternalLinkAlt className="ml-2 transition-transform duration-300 group-hover:scale-110" />
                 </a>
               </div>
