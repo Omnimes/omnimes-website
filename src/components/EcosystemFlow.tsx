@@ -144,7 +144,7 @@ export const EcosystemFlow = () => {
                 {/* Na telefonie widok z góry pokazuje numery kroków z listy poniżej */}
                 {wide && !extra && <span className="sm:hidden">{index + 1}</span>}
                 <span className={wide && !extra ? "hidden sm:inline" : ""}>
-                  {t(`${step}Label`)}
+                  {t(step === "robot" && wide ? "robotShort" : `${step}Label`)}
                 </span>
               </div>
             )

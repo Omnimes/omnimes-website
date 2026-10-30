@@ -801,7 +801,8 @@
     "serverData": "The broker receives the message and passes it to the database",
     "databaseData": "08:14:03 | machine3 | run | 0",
     "panelsData": "Panel: machine 3 stopped at 08:14",
-    "robotLabel": "Robot connected to OmniMES"
+    "robotLabel": "Robot connected to OmniMES",
+    "robotShort": "Robot in OmniMES"
   },
   "McpSpotlight": {
     "badge": "New since version 4.3",

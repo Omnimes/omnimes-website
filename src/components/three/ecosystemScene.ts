@@ -431,7 +431,7 @@ export function mountEcosystem(
     new THREE.Vector3(NODE_X[0] + 5.6, 3.4, NODE_Z[0] + 1.6),
   ]
   // Z góry etykieta robota stoi przy jego kablu, żeby nie zasłaniać linii
-  const robotAnchorWide = new THREE.Vector3(15.3, 0, -2.4)
+  const robotAnchorWide = new THREE.Vector3(10.5, 0, -4.5)
   const roleAnchors = panels.map((panel) =>
     panel.group.position.clone().add(new THREE.Vector3(0, 4.75, 0))
   )
