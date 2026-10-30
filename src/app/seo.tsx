@@ -25,7 +25,8 @@ function buildCanonical(locale: string, path: string): string {
   } else {
     resolvedPath = config[locale] ?? path
   }
-  return `${siteMetadata.siteUrl}/${locale}${resolvedPath}`
+  // Home page has no trailing slash: /pl/ redirects to /pl
+  return `${siteMetadata.siteUrl}/${locale}${resolvedPath === "/" ? "" : resolvedPath}`
 }
 
 export function genPageMetadata({
@@ -38,6 +39,9 @@ export function genPageMetadata({
   path,
 }: PageSEOProps): Metadata {
   const canonical = locale && path ? buildCanonical(locale, path) : undefined
+  const images = image
+    ? [image]
+    : [{ url: siteMetadata.socialBanner, width: 1200, height: 630, type: "image/jpeg", alt: title }]
   return {
     title,
     description,
@@ -48,14 +52,15 @@ export function genPageMetadata({
       description,
       url: canonical ?? "./",
       siteName: title,
-      images: image ? [image] : [siteMetadata.socialBanner],
-      locale: localeShort,
+      images,
+      locale: localeShort.replace("-", "_"),
       type: "website",
     },
     twitter: {
       title,
       card: "summary_large_image",
-      images: image ? [image] : [siteMetadata.socialBanner],
+      site: siteMetadata.xHandle,
+      images,
     },
     robots: {
       index: true,

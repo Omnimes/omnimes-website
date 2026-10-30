@@ -7,7 +7,8 @@ export const siteMetadata = {
   headerTitle: "Omnimes",
   theme: "light",
   siteUrl: (process.env.SITE_URL || "http://localhost:3000").replace(/\/+$/, ""),
-  socialBanner: "/images/meta/twitter-card.png",
+  socialBanner: "/images/meta/omnimes-card.jpg",
+  xHandle: "@OmnimesOfficial",
   search: {
     provider: "kbar",
     kbarConfig: {

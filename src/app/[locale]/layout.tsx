@@ -60,6 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     twitter: {
       title: t(siteMetadata.title),
       card: "summary_large_image",
+      site: siteMetadata.xHandle,
       images: [siteMetadata.socialBanner],
     },
   }
