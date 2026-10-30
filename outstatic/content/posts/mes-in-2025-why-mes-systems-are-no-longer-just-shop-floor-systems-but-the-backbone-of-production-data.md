@@ -46,7 +46,7 @@ In 2025, the winning company isn't the one with the most data. The winner is the
 
 Classic point-to-point integration in MES systems (PLC → SCADA → SQL → reports) leads to chaos: costs grow non-linearly, changing one source breaks three integrations.
 
-**Solution: UNS (Unified Namespace)**
+**Solution: UNS ([Unified Namespace](/en/blog/unified-namespace-in-practice-one-source-of-factory-data-on-mqtt-and-sparkplug-b))**
 
 The MES system becomes a natural consumer and producer of data in one coherent event ecosystem. In practice, UNS for MES systems is built on:
 
@@ -81,7 +81,7 @@ An MES system manages at least four data classes:
 - Complex event documents—the MES system stores downtimes with cause, comment, parameter snapshot
 - Event store—the MES system needs documents with indexes
 
-**When InfluxDB in MES system?**
+**When [InfluxDB](/en/blog/using-influxdb-for-industrial-data-collection-and-comparison-with-mongodb) in MES system?**
 
 - Millions of data points daily
 - Efficient windowed aggregations for MES analytics
@@ -120,7 +120,7 @@ Examples of real AI applications in MES systems:
 
 ## Summary: MES System as Strategic Decision
 
-In 2025, **MES systems aren't isolated applications, but platforms integrating all aspects of production operations**. The Manufacturing Execution System is the backbone of production data, the bridge between strategy and execution, the foundation of Industry 4.0.
+In 2025, **MES systems aren't isolated applications, but platforms integrating all aspects of production operations**. The Manufacturing Execution System is the backbone of production data, the bridge between strategy and execution, the [foundation of Industry 4.0](/en/blog/data-as-the-foundation-of-industry-4-0).
 
 A modern MES system is based on:
 

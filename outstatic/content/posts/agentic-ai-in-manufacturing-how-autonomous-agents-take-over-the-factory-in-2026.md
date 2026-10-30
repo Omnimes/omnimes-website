@@ -73,7 +73,7 @@ The foundation layer:
 - **Memory:** vector stores (Pinecone, Weaviate, pgvector) plus episodic memory.
 - **Observability:** LangSmith, Arize, Helicone — tools dedicated to agent decision logging and audit.
 
-The integration layer has converged on **MCP (Model Context Protocol)** — the Anthropic standard from 2024 that lets an agent talk to tools (MES, ERP, CMMS) without writing a dedicated integration per model. In 2026 MCP is adopted by OpenAI and Google as well, removing lock-in on any single model vendor.
+The integration layer has converged on **MCP ([Model Context Protocol](/en/blog/model-context-protocol-mcp-the-new-standard-for-ai-integration-with-mes-systems))** — the Anthropic standard from 2024 that lets an agent talk to tools (MES, ERP, CMMS) without writing a dedicated integration per model. In 2026 MCP is adopted by OpenAI and Google as well, removing lock-in on any single model vendor.
 
 ## Barriers — where agents don't work yet in 2026
 

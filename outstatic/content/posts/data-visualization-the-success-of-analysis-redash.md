@@ -18,7 +18,7 @@ publishedAt: '2024-06-15T22:02:14.000Z'
 
 In today's world, the rapid development of technology and increasing market demands make efficient production management crucial for a company's success. Systems like Omnimes offer advanced tools for process optimization, including data visualization, which supports analysis and decision-making.
 
-Data visualization transforms raw data into valuable information that is easy to interpret at various levels within an organization. With tools like Redash, Omnimes users can create interactive dashboards that present key performance indicators (KPIs), monitor production progress, and identify areas for improvement.
+Data visualization transforms raw data into valuable information that is easy to interpret at various levels within an organization. With tools like [Redash](/en/blog/redash-in-omnimes-dashboards-on-mongodb-with-sql-and-rest-api), Omnimes users can create interactive dashboards that present key performance indicators (KPIs), monitor production progress, and identify areas for improvement.
 
 In this article, we will discuss how the integration of Omnimes with Redash supports production through effective data visualization. We will present specific application examples, showcasing benefits such as production optimization, improved team communication, quicker problem resolution, and more informed decision-making.
 

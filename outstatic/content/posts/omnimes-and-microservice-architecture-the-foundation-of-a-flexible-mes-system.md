@@ -69,7 +69,7 @@ Each of these services plays a clearly defined role but together they form a **c
 
 ### 4. Example Data Flow
 
-1. The machine sends data in **MQTT Sparkplug B** format to the **EMQX broker**.
+1. The machine sends data in **[MQTT Sparkplug B](/en/blog/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i)** format to the **EMQX broker**.
 
 2. The `stream` service decodes messages, analyzes frequency, and saves data to **MongoDB or PostgreSQL**.
 

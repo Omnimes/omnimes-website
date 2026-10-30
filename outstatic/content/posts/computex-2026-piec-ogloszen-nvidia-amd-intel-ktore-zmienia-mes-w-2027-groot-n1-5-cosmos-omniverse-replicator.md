@@ -18,7 +18,7 @@ Z perspektywy MES — pięć rzeczy w tej fali realnie zmienia mapę technologic
 
 ## 1. GR00T N1.5 — robot foundation model w wersji produkcyjnej
 
-[Project GR00T](https://developer.nvidia.com/project-gr00t) NVIDIA pokazała pierwszy raz w marcu 2024 jako platformę treningową dla humanoidów. GR00T N1 (marzec 2026) był pierwszą wersją z otwartymi wagami — ogólna polityka manipulacji, trenowana na 10 tysiącach godzin demonstracji od FANUC, ABB i Boston Dynamics. **GR00T N1.5**, pokazany 2 czerwca, to pierwsza wersja, którą NVIDIA pozycjonuje jako produkcyjną.
+[Project GR00T](https://developer.nvidia.com/project-gr00t) NVIDIA pokazała pierwszy raz w marcu 2024 jako platformę treningową dla humanoidów. GR00T N1 (marzec 2026) był pierwszą wersją z otwartymi wagami — ogólna polityka manipulacji, trenowana na 10 tysiącach godzin demonstracji od FANUC, ABB i Boston Dynamics. **[GR00T N1.5](/pl/blog/robot-foundation-models-w-fabryce-pi-zero-openvla-groot-n1-5-koniec-ery-programowania-robotow-teach-pendantem)**, pokazany 2 czerwca, to pierwsza wersja, którą NVIDIA pozycjonuje jako produkcyjną.
 
 Co realnie się zmieniło między N1 a N1.5:
 - **300% więcej danych treningowych** — głównie z syntetyków generowanych w Cosmos (patrz pkt 2)

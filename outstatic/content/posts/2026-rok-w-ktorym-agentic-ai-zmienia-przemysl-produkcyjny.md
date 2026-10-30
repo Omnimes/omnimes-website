@@ -75,7 +75,7 @@ Dotychczas w przemyśle dominowały dwa podejścia do sztucznej inteligencji:
 
 - **AI generatywne** – generowanie raportów, analiz czy rekomendacji
 
-Obecnie pojawia się kolejny etap rozwoju: **Agentic AI**.
+Obecnie pojawia się kolejny etap rozwoju: **[Agentic AI](/pl/blog/agentic-ai-w-produkcji-jak-autonomiczne-agenty-przejmuja-sterowanie-fabryka-w-2026)**.
 
 Agentic AI to systemy, które nie tylko analizują dane, ale:
 

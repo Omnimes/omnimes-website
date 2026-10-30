@@ -74,7 +74,7 @@ Until recently, industrial AI mainly focused on two areas:
 
 - **Generative AI** – generating reports, insights, or recommendations
 
-Now a new stage is emerging: **Agentic AI**.
+Now a new stage is emerging: **[Agentic AI](/en/blog/agentic-ai-in-manufacturing-how-autonomous-agents-take-over-the-factory-in-2026)**.
 
 Agentic AI systems do more than analyze data. They:
 

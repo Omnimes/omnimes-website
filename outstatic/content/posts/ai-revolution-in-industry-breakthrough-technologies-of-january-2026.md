@@ -22,7 +22,7 @@ January 2026 marked a pivotal turning point in the development of artificial int
 
 ## Physical AI and the Robotics Era
 
-Jensen Huang, CEO of NVIDIA, announced at CES 2026 that “the ChatGPT moment for robotics has arrived,” signaling a mass transition of AI from the virtual space into the physical world. NVIDIA introduced a series of open models for physical AI, including the *Cosmos* models capable of understanding the world and generating action plans, as well as *Isaac GR00T N1.6*, dedicated to humanoid robots.
+Jensen Huang, CEO of NVIDIA, announced at CES 2026 that “the ChatGPT moment for robotics has arrived,” signaling a mass transition of AI from the virtual space into the physical world. NVIDIA introduced a series of open models for [physical AI](/en/blog/the-physical-ai-revolution-how-networks-power-the-age-of-intelligent-machines), including the *Cosmos* models capable of understanding the world and generating action plans, as well as *Isaac GR00T N1.6*, dedicated to [humanoid robots](/en/blog/physical-ai-humanoid-robots-on-the-production-floor).
 
 The new Jetson T4000 module, based on the Blackwell architecture, delivers four times higher energy efficiency and AI compute performance compared to the previous generation, priced at USD 1,999 (for orders of 1,000 units). Global companies such as Boston Dynamics, Caterpillar, Franka Robotics, LG Electronics, and NEURA Robotics presented a new generation of robots powered by NVIDIA technologies.
 

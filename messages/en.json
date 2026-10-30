@@ -734,8 +734,8 @@
     }
   },
   "ProofStrip": {
-    "smallSubtitle": "Who is behind OmniMES",
-    "title": "Running in production, built by a Polish company",
+    "smallSubtitle": "Where OmniMES runs",
+    "title": "Proven in pallet production, tested with Relpol energy meters",
     "eldrewLabel": "Implementation",
     "eldrewName": "Eldrew",
     "eldrewText": "A manufacturer of wooden pallets. In 2023 we implemented OmniMES in selected pallet production processes, integrated with the machines.",

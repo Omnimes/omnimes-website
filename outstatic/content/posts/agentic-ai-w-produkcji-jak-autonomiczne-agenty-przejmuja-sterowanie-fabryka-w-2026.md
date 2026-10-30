@@ -73,7 +73,7 @@ Warstwa fundamentalna:
 - **Pamięć:** bazy wektorowe (Pinecone, Weaviate, pgvector) + magazyn epizodyczny.
 - **Obserwowalność:** LangSmith, Arize, Helicone — dedykowane narzędzia do logowania i audytu decyzji agenta.
 
-W warstwie integracji pojawia się **MCP (Model Context Protocol)** — standard Anthropic z 2024 roku, który pozwala spiąć agenta z narzędziami (MES, ERP, CMMS) bez pisania dedykowanej integracji dla każdego modelu. W 2026 MCP adoptowany jest m.in. przez OpenAI i Google, co znosi lock-in na konkretnego dostawcę modelu.
+W warstwie integracji pojawia się **MCP ([Model Context Protocol](/pl/blog/model-context-protocol-mcp-nowy-standard-integracji-ai-z-systemami-mes))** — standard Anthropic z 2024 roku, który pozwala spiąć agenta z narzędziami (MES, ERP, CMMS) bez pisania dedykowanej integracji dla każdego modelu. W 2026 MCP adoptowany jest m.in. przez OpenAI i Google, co znosi lock-in na konkretnego dostawcę modelu.
 
 ## Bariery — gdzie agenty nie działają w 2026
 

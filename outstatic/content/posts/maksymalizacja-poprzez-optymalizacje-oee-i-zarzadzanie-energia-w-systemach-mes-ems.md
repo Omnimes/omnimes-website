@@ -29,7 +29,7 @@ publishedAt: '2025-05-05T09:00:00.000Z'
 
 W dobie Industry 5.0, gdzie efektywność energetyczna staje się kluczowym wyróżnikiem, przedsiębiorstwa produkcyjne stoją przed bezprecedensowym wyzwaniem. Zgodnie z nową dyrektywą UE 2023/1791 w sprawie efektywności energetycznej, kraje członkowskie muszą osiągnąć średni roczny wskaźnik oszczędności energii w wysokości 1,49% w latach 2024-2030, co oznacza, że firmy muszą radykalnie przemyśleć swoje podejście do zarządzania energią.
 
-Kluczowym narzędziem w tej transformacji jest optymalizacja wskaźnika OEE (Overall Equipment Effectiveness) poprzez inteligentne zarządzanie energią w systemach klasy MES. W dobie Industry 4.0 i 5.0 OEE odgrywa kluczową rolę w planowaniu poziomu zwrotu z inwestycji tzw. ROI oraz niezawodności i stabilności produkcji.
+Kluczowym narzędziem w tej transformacji jest optymalizacja wskaźnika OEE (Overall Equipment Effectiveness) poprzez [inteligentne zarządzanie energią](/pl/blog/nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001) w systemach klasy MES. W dobie Industry 4.0 i 5.0 OEE odgrywa kluczową rolę w planowaniu poziomu zwrotu z inwestycji tzw. ROI oraz niezawodności i stabilności produkcji.
 
 ## Regulacyjne fundamenty: Dyrektywy UE jako katalizator zmian
 

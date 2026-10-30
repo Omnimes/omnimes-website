@@ -12,7 +12,7 @@ tags: [{"value":"omnimes","label":"Omnimes"},{"value":"omniEnergy","label":"Omni
 publishedAt: '2026-09-10T09:00:00.000Z'
 ---
 
-In 2026, **Multiprojekt Automatyka** — the maker of the **OmniMES** system — is entering a strategic partnership with **Relpol S.A.**, one of Poland's most established manufacturers of relays and electrical meters. The joint offering combines two layers that Polish factories used to have to source separately: **metering hardware** (Relpol RMM DIN-rail energy meters) and **management software** (OmniMES with the OmniEnergy module, ISO 50001 compliant).
+In 2026, **Multiprojekt Automatyka** — the maker of the **OmniMES** system — is entering a strategic partnership with **Relpol S.A.**, one of Poland's most established manufacturers of relays and electrical meters. The joint offering combines two layers that Polish factories used to have to source separately: **metering hardware** (Relpol RMM DIN-rail energy meters) and **management software** (OmniMES with the [OmniEnergy module](/en/blog/omnienergy-in-practice-from-energy-meter-to-iso-50001-report-with-no-spreadsheet), ISO 50001 compliant).
 
 ![Multiprojekt and Relpol partnership — signing the agreement](/images/relpol/relpol-multiprojekt-handshake.jpg)
 
@@ -22,13 +22,13 @@ The outcome for the end customer is simple: **one hardware vendor, one software 
 
 Relpol S.A., headquartered in Żary, Poland, is a manufacturer of electrical apparatus: industrial relays, controllers, network meters, and energy metering systems. Their **RMM (Relpol Multi Meter)** family are three-phase energy analyzers — they measure voltage, current, active, reactive and apparent power, energy, frequency, cos φ, harmonics as well as THD. They are certified, MID-compliant, and communicate over RS-485 (Modbus RTU) as well as TCP/IP.
 
-Critically, these are **meters from a Polish manufacturer, stocked in Poland, with Polish-language technical support**. For factories that actually need to deploy an energy audit under ISO 50001, this shortens the supply chain and removes single-vendor lock-in with a foreign supplier.
+Critically, these are **meters from a Polish manufacturer, stocked in Poland, with Polish-language technical support**. For factories that actually need to deploy an [energy audit](/en/blog/energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system) under ISO 50001, this shortens the supply chain and removes single-vendor lock-in with a foreign supplier.
 
 ![Relpol RMM meters — smart energy metering network](/images/relpol/relpol-liczniki.jpg)
 
 ## Why the OmniMES partnership
 
-OmniMES is an MES-class system developed by Multiprojekt Automatyka over the past several years — with an **OmniEnergy** module dedicated to energy management under ISO 50001. The system ingests measurements from a communication gateway (typically over MQTT or Sparkplug B), stores them in a PostgreSQL time-series database with the TimescaleDB extension, builds energy performance indicators (EnPI), defines baselines (EnB), significant energy uses (SEU) and generates evidence for auditor reviews.
+OmniMES is an MES-class system developed by Multiprojekt Automatyka over the past several years — with an **OmniEnergy** module dedicated to [energy management](/en/blog/new-omnimes-energy-module-intelligent-energy-management-in-compliance-with-iso-50001) under ISO 50001. The system ingests measurements from a communication gateway (typically over MQTT or Sparkplug B), stores them in a PostgreSQL time-series database with the TimescaleDB extension, builds energy performance indicators (EnPI), defines baselines (EnB), significant energy uses (SEU) and generates evidence for auditor reviews.
 
 The recurring pain point for mid-sized Polish factories: **metering hardware comes from one vendor, the software to operate it from another, and the communication gateway from yet another**. Configuring that setup usually takes an integrator two or three weeks, and every meter firmware update can break the register mapping. The Multiprojekt and Relpol partnership removes that architectural debt: RMM meters and OmniMES have a jointly tested configuration, and new meter firmware releases are validated on the software side before publication.
 

@@ -13,7 +13,7 @@ tags: [{"value":"mcp","label":"MCP"},{"value":"agentAi","label":"AGENT AI"},{"va
 publishedAt: '2026-07-20T10:00:00.000Z'
 ---
 
-OmniMES now exposes a standard **MCP (Model Context Protocol)** endpoint — a bridge through which any AI assistant (Claude Desktop, ChatGPT, Cursor, Copilot) talks directly to your production system. Instead of clicking through the UI or writing SQL, you describe in natural language what you want to achieve, and the assistant does it inside OmniMES: it builds the plant structure, configures signals, creates reports and dashboards, reads the live production state. Below we show what this looks like in practice — using the WOODCRAFT wooden-furniture plant, from zero to a finished dashboard.
+OmniMES now exposes a standard **MCP ([Model Context Protocol](/en/blog/model-context-protocol-mcp-the-new-standard-for-ai-integration-with-mes-systems))** endpoint — a bridge through which any AI assistant (Claude Desktop, ChatGPT, Cursor, Copilot) talks directly to your production system. Instead of clicking through the UI or writing SQL, you describe in natural language what you want to achieve, and the assistant does it inside OmniMES: it builds the plant structure, configures signals, creates reports and dashboards, reads the live production state. Below we show what this looks like in practice — using the WOODCRAFT wooden-furniture plant, from zero to a finished dashboard.
 
 > **Disclaimer:** The name „WOODCRAFT" and the plant described in this article and video are **fictional** — used solely to demonstrate the MCP protocol in OmniMES. No deployment took place at any company by this name. Any resemblance to existing entities is coincidental.
 

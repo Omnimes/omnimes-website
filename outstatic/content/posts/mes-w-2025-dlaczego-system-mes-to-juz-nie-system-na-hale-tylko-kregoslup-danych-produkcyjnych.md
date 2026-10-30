@@ -48,12 +48,12 @@ W 2025 nie wygrywa firma, która ma najwięcej danych. Wygrywa firma, której **
 
 Klasyczna integracja punkt-punkt w systemach MES (PLC → SCADA → SQL → raporty) prowadzi do chaosu: koszty rosną nieliniowo, zmiana jednego źródła rozwala trzy integracje.
 
-**Rozwiązanie: UNS (Unified Namespace)**
+**Rozwiązanie: UNS ([Unified Namespace](/pl/blog/unified-namespace-w-praktyce-jedno-zrodlo-danych-fabryki-na-mqtt-i-sparkplug-b))**
 
 System MES staje się naturalnym konsumentem i producentem danych w jednym, spójnym ekosystemie zdarzeń. W praktyce UNS dla systemów MES buduje się na:
 
 - Brokerze MQTT jako transport
-- **Sparkplug B** jako standard modelu danych dla MES
+- **[Sparkplug B](/pl/blog/protokol-sparkplug-b-z-systemami-klasy-mes-nowoczesne-podejscie-do-predykcji-awarii-i-optymalizacji-energetycznej-w-przemysle)** jako standard modelu danych dla MES
 - Namespace zrozumiały dla systemu MES
 - Zasadach wersjonowania i ownership
 
@@ -83,7 +83,7 @@ System MES zarządza co najmniej czterema klasami danych:
 - Złożone dokumenty zdarzeń—system MES przechowuje przestoje z przyczyną, komentarzem, snapshotem parametrów
 - Event store—system MES potrzebuje dokumentów z indeksami
 
-**Kiedy InfluxDB w systemie MES?**
+**Kiedy [InfluxDB](/pl/blog/zastosowanie-influxdb-w-zbieraniu-danych-przemyslowych-i-porownanie-z-mongodb) w systemie MES?**
 
 - Miliony punktów danych dziennie
 - Wydajne agregacje okienkowe dla analityki MES

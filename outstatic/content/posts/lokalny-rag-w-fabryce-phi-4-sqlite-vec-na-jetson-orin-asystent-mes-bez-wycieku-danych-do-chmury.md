@@ -76,7 +76,7 @@ Założenia: zakład 250 pracowników, ~15 000 zapytań do asystenta MES miesię
 - Output: 15 000 × 400 tok × 10 USD/1M = **60 USD/mies.**
 - Razem: ~491 USD/mies. = **~17 700 USD przez 3 lata**
 - Plus: backend orkiestracji w chmurze (~150 USD/mies.) = +5 400 USD
-- Plus: ryzyko audytowe (AI Act, NIS2) — niewyceniane, ale realne
+- Plus: ryzyko audytowe (AI Act, [NIS2](/pl/blog/nis2-i-ksc2-w-2026-jak-mes-staje-sie-elementem-cyber-compliance-polskiej-fabryki)) — niewyceniane, ale realne
 - **Suma 3 lata: ~23 000 USD**
 
 **Wariant B — lokalny Jetson Orin NX 16 GB:**

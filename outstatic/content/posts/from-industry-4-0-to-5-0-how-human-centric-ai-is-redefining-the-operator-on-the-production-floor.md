@@ -103,7 +103,7 @@ Biometric sensors, workplace cameras, micro-motion timing — all easily turn in
 
 ### 3. EU AI Act — high-risk classification
 
-The AI Act classifies systems that influence working conditions or worker evaluation as **high-risk**. That means mandatory conformity assessment, technical documentation, EU database registration, external audit. Most manufacturers are only starting these processes in 2026 — and non-compliance penalties reach **EUR 35 million or 7% of global turnover**.
+The [AI Act](/en/blog/eu-ai-act-august-2026-which-mes-functions-qualify-as-high-risk-ai) classifies systems that influence working conditions or worker evaluation as **high-risk**. That means mandatory conformity assessment, technical documentation, EU database registration, external audit. Most manufacturers are only starting these processes in 2026 — and non-compliance penalties reach **EUR 35 million or 7% of global turnover**.
 
 ### 4. Cost and TCO
 

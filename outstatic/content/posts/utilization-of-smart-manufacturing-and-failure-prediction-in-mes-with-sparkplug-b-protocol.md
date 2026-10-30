@@ -25,7 +25,7 @@ publishedAt: '2025-08-26T09:00:00.000Z'
 
 #### Introduction
 
-The ongoing digital transformation in industry requires advanced communication solutions that ensure system interoperability and enable efficient use of operational data. The Sparkplug B protocol, an extension of the MQTT standard for industrial applications, provides a structured approach to communication within the Industrial Internet of Things (IIoT). Its integration with Manufacturing Execution Systems (MES) opens new opportunities in predictive maintenance and energy optimization in production processes.
+The ongoing digital transformation in industry requires advanced communication solutions that ensure system interoperability and enable efficient use of operational data. The Sparkplug B protocol, an extension of the [MQTT standard](/en/blog/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i) for industrial applications, provides a structured approach to communication within the Industrial Internet of Things (IIoT). Its integration with Manufacturing Execution Systems (MES) opens new opportunities in predictive maintenance and energy optimization in production processes.
 
 #### Technical Characteristics of Sparkplug B
 

@@ -27,7 +27,7 @@ When integrated with the MES system, the EMS becomes a **powerful operational ma
 
 ### Key Concepts: SEU, EnPI, and EMP
 
-To effectively implement energy management in line with **ISO 50001**, it’s important to understand three key concepts:
+To effectively implement energy management in line with **[ISO 50001](/en/blog/omnienergy-in-practice-from-energy-meter-to-iso-50001-report-with-no-spreadsheet)**, it’s important to understand three key concepts:
 
 - **SEU (Significant Energy Use)** – areas or devices responsible for the highest energy consumption in the plant. These are the primary targets for optimization efforts, as they yield the greatest benefits. Examples include compressor stations, industrial furnaces, or injection molding lines.
 
@@ -41,7 +41,7 @@ The EMS supports all these components, enabling **continuous improvement and com
 
 The **ISO 50001** standard defines requirements for energy management systems in enterprises. Organizations that implement and maintain such a system may be **exempt from mandatory periodic energy audits** required by Polish law (Energy Efficiency Act).
 
-This means that, beyond direct cost savings from reduced energy use, implementing an EMS also helps avoid **administrative costs and obligations**, which in large companies can reach **tens of thousands of PLN every four years**.
+This means that, beyond direct cost savings from reduced energy use, implementing an EMS also helps avoid **[administrative costs and obligations](/en/blog/energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system)**, which in large companies can reach **tens of thousands of PLN every four years**.
 
 ### Features of an ISO 50001-Compliant EMS
 

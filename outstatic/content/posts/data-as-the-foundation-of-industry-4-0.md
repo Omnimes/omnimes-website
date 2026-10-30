@@ -15,7 +15,7 @@ publishedAt: '2026-03-16T09:47:36.000Z'
 ---
 
 
-The concept of Industry 4.0 is based on continuous monitoring of production processes and decision-making driven by real-time data. Without reliable information, it is impossible to implement predictive maintenance, energy optimization, automated planning, or meaningful OEE analysis.
+The concept of Industry 4.0 is based on continuous monitoring of production processes and decision-making driven by [real-time data](/en/blog/mes-systems-with-real-time-data-analytics-a-revolution-in-production-quality-control). Without reliable information, it is impossible to implement predictive maintenance, energy optimization, automated planning, or meaningful OEE analysis.
 
 If data is delayed, incomplete, or inconsistent, digitalization becomes only superficial. IT systems may be in place, but they do not deliver real business value. That is why it is critical to build an architecture in which data is collected automatically, consistently, and centrally.
 
@@ -23,7 +23,7 @@ If data is delayed, incomplete, or inconsistent, digitalization becomes only sup
 
 ## MQTT Sparkplug B – A Modern Industrial Communication Standard
 
-Modern production systems increasingly rely on the MQTT protocol, particularly its industrial implementation—Sparkplug B. This standard is designed for environments where reliability, data consistency, and large-scale device management are essential.
+Modern production systems increasingly rely on the MQTT protocol, particularly its industrial implementation—[Sparkplug B](/en/blog/mqtt-vs-sparkplug-b-comparison-of-communication-protocols-part-i). This standard is designed for environments where reliability, data consistency, and large-scale device management are essential.
 
 Sparkplug B introduces a structured communication model, allowing the supervisory system to know exactly:
 

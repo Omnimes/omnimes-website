@@ -32,13 +32,13 @@ publishedAt: '2025-05-05T09:00:00.000Z'
 
 In the age of Industry 5.0, where energy efficiency becomes a key differentiator, manufacturing enterprises face unprecedented challenges. According to the new EU Directive 2023/1791 on energy efficiency, member states must achieve an average annual energy savings rate of 1.49% between 2024–2030. This means that companies must radically rethink their approach to energy management.
 
-A crucial tool in this transformation is the optimization of the OEE (Overall Equipment Effectiveness) index through intelligent energy management in MES-class systems. In both Industry 4.0 and 5.0, OEE plays a key role in ROI planning, reliability, and production stability.
+A crucial tool in this transformation is the optimization of the OEE (Overall Equipment Effectiveness) index through [intelligent energy management](/en/blog/new-omnimes-energy-module-intelligent-energy-management-in-compliance-with-iso-50001) in MES-class systems. In both Industry 4.0 and 5.0, OEE plays a key role in ROI planning, reliability, and production stability.
 
 ---
 
 ### Regulatory Foundations: EU Directives as a Catalyst for Change
 
-**Legal obligations for enterprises**\
+**[Legal obligations for enterprises](/en/blog/energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system)**\
 Under the new law, energy management systems will become mandatory for large energy consumers (exceeding 85 TJ of annual energy consumption). Enterprises consuming more than 10 TJ will be required to conduct an energy audit and prepare an action plan. This is not just a compliance requirement but also a strategic opportunity to gain a competitive advantage.
 
 **Impact on industry**\

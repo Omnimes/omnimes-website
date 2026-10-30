@@ -18,7 +18,7 @@ tags:
 lang: en
 publishedAt: '2025-04-26T09:00:00.000Z'
 ---
-The MES market is growing at a rate of 14.1% annually, reaching USD 41.78 billion by 2032, while Industry 5.0 puts humans at the center of production, combining sustainability with advanced technologies. Integrating MES with IoT in the Industry 5.0 era is not just a trend—it is a necessity for companies aiming to remain competitive.
+The MES market is growing at a rate of 14.1% annually, reaching USD 41.78 billion by 2032, while [Industry 5.0](/en/blog/from-industry-4-0-to-5-0-the-evolution-of-digitalization-and-its-impact-on-modern-factories) puts humans at the center of production, combining sustainability with advanced technologies. Integrating MES with IoT in the Industry 5.0 era is not just a trend—it is a necessity for companies aiming to remain competitive.
 
 ### Introduction: The Era of Industry 5.0 in Manufacturing
 

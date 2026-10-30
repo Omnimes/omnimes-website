@@ -26,7 +26,7 @@ W dzisiejszych czasach dynamiczny rozwój technologii i rosnące wymagania rynko
 
 Wizualizacja danych przekształca surowe dane w wartościowe informacje, łatwe do interpretacji na różnych poziomach organizacji. Dzięki narzędziom takim jak REdash, użytkownicy Omnimes mogą tworzyć interaktywne dashboardy prezentujące kluczowe wskaźniki wydajności (KPI), monitorować postęp produkcji i identyfikować obszary do poprawy.
 
-W artykule omówimy, jak integracja Omnimes z Redash wspiera produkcję poprzez efektywną wizualizację danych. Przedstawimy konkretne przykłady zastosowań, pokazujące korzyści takie jak optymalizacja produkcji, lepsza komunikacja w zespole, szybsze reagowanie na problemy i bardziej świadome podejmowanie decyzji.
+W artykule omówimy, jak integracja Omnimes z [Redash](/pl/blog/redash-w-omnimes-dashboardy-na-mongodb-przez-sql-i-rest-api) wspiera produkcję poprzez efektywną wizualizację danych. Przedstawimy konkretne przykłady zastosowań, pokazujące korzyści takie jak optymalizacja produkcji, lepsza komunikacja w zespole, szybsze reagowanie na problemy i bardziej świadome podejmowanie decyzji.
 
 ## Czym jest Redash
 

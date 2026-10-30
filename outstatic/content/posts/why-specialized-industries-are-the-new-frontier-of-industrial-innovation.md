@@ -109,7 +109,7 @@ Industrial AI must therefore be:
 ## **Data infrastructure is the foundation of Industrial AI**
 
 Companies like HiveMQ demonstrate a fundamental truth:\
-AI in manufacturing fails without **machine-grade data pipelines**.
+[AI in manufacturing](/en/blog/ai-in-manufacturing-the-real-issue-isn-t-90-accuracy-it-s-data-maturity) fails without **machine-grade data pipelines**.
 
 Without:
 

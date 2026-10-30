@@ -17,10 +17,10 @@
  *                                              — score every home page section, PL and EN
  *   npx tsx scripts/jev-seo.ts variants <file> — score copy variants: [{ id, lang, text }]
  */
-import { config } from "dotenv"
-import { appendFile, mkdir, readFile, readdir, writeFile } from "fs/promises"
-import matter from "gray-matter"
+import { appendFile, mkdir, readdir, readFile, writeFile } from "fs/promises"
 import { join } from "path"
+import { config } from "dotenv"
+import matter from "gray-matter"
 
 config({ path: ".env.local" })
 
@@ -107,9 +107,11 @@ async function loadPosts(): Promise<Post[]> {
       headings: [...content.matchAll(/^#{2,3} (.+)$/gm)].map((m) => m[1].trim()),
       lead: plainText(content).slice(0, 700),
       links: new Set(
-        [...content.matchAll(/\]\((?:https:\/\/www\.omnimes\.com)?\/(?:(?:pl|en)\/)?blog\/([a-z0-9-]+)/g)].map(
-          (m) => m[1]
-        )
+        [
+          ...content.matchAll(
+            /\]\((?:https:\/\/www\.omnimes\.com)?\/(?:(?:pl|en)\/)?blog\/([a-z0-9-]+)/g
+          ),
+        ].map((m) => m[1])
       ),
     })
   }
@@ -395,7 +397,9 @@ async function cmdQueries(args: string[]) {
           },
           intent: {
             type: "choice",
-            instructions: pl ? "Jaka jest intencja search_query?" : "What is the intent of search_query?",
+            instructions: pl
+              ? "Jaka jest intencja search_query?"
+              : "What is the intent of search_query?",
             criteria: {
               learn: pl ? "Chce się czegoś dowiedzieć." : "Wants to learn something.",
               compare: pl
@@ -404,7 +408,9 @@ async function cmdQueries(args: string[]) {
               buy: pl
                 ? "Szuka produktu lub wdrożenia do kupienia."
                 : "Looks for a product or implementation to buy.",
-              brand: pl ? "Szuka konkretnej marki lub firmy." : "Looks for a specific brand or company.",
+              brand: pl
+                ? "Szuka konkretnej marki lub firmy."
+                : "Looks for a specific brand or company.",
             },
           },
         }
@@ -522,10 +528,7 @@ async function cmdHome(args: string[]) {
       sections.map((section, index) => ({ section, index })),
       4,
       async ({ section, index }) => {
-        const decision = await decide(
-          { page: homeReader(lang), section },
-          homeQuestions(lang)
-        )
+        const decision = await decide({ page: homeReader(lang), section }, homeQuestions(lang))
         run.record(decision)
         const a = decision.answers
         rows.push({
@@ -545,7 +548,9 @@ async function cmdHome(args: string[]) {
     console.log(JSON.stringify(run.summary()))
   }
 
-  rows.sort((a, b) => String(a.lang).localeCompare(String(b.lang)) || Number(a.index) - Number(b.index))
+  rows.sort(
+    (a, b) => String(a.lang).localeCompare(String(b.lang)) || Number(a.index) - Number(b.index)
+  )
   const out = join(OUT_DIR, `home-${stamp}.json`)
   await writeFile(out, JSON.stringify(rows, null, 2))
   console.table(rows)
@@ -557,7 +562,9 @@ async function cmdVariants(args: string[]) {
   const [file] = args
   if (!file) throw new Error("Usage: jev-seo variants <file>")
   await mkdir(OUT_DIR, { recursive: true })
-  const variants: { id: string; lang: Lang; text: string }[] = JSON.parse(await readFile(file, "utf8"))
+  const variants: { id: string; lang: Lang; text: string }[] = JSON.parse(
+    await readFile(file, "utf8")
+  )
   const rows: Record<string, unknown>[] = []
   await pool(variants, 4, async (variant) => {
     const pl = variant.lang === "pl"
@@ -609,23 +616,29 @@ async function fixLinks(apply: boolean) {
     if (byKey.has(`${source.lang}/${slug}`)) return slug
     const other = posts.find((p) => p.slug === slug)
     if (!other) return null
-    return posts.find((p) => p.lang === source.lang && p.publishedAt === other.publishedAt)?.slug ?? null
+    return (
+      posts.find((p) => p.lang === source.lang && p.publishedAt === other.publishedAt)?.slug ?? null
+    )
   }
 
   let rewritten = 0
   let dead = 0
   for (const post of posts) {
-    const next = post.raw.replace(/\]\(\/blog\/([a-z0-9-]+)([#?][^)]*)?\)/g, (whole, slug, rest = "") => {
-      const target = sameLang(post, slug)
-      if (!target) {
-        dead += 1
-        console.log(`dead: ${post.lang}/${post.slug} → ${slug}`)
-        return whole
+    const next = post.raw.replace(
+      /\]\(\/blog\/([a-z0-9-]+)([#?][^)]*)?\)/g,
+      (whole, slug, rest = "") => {
+        const target = sameLang(post, slug)
+        if (!target) {
+          dead += 1
+          console.log(`dead: ${post.lang}/${post.slug} → ${slug}`)
+          return whole
+        }
+        rewritten += 1
+        if (target !== slug)
+          console.log(`translated: ${post.lang}/${post.slug}: ${slug} → ${target}`)
+        return `](/${post.lang}/blog/${target}${rest})`
       }
-      rewritten += 1
-      if (target !== slug) console.log(`translated: ${post.lang}/${post.slug}: ${slug} → ${target}`)
-      return `](/${post.lang}/blog/${target}${rest})`
-    })
+    )
     if (apply && next !== post.raw) await writeFile(post.file, next)
   }
   console.log(`${apply ? "rewrote" : "would rewrite"} ${rewritten} links, ${dead} dead`)
@@ -654,7 +667,9 @@ const [, , cmd, ...rest] = process.argv
         await cmdVariants(rest)
         break
       default:
-        console.error("Commands: links-check | links-fix | pairs | queries <file> | home | variants <file>")
+        console.error(
+          "Commands: links-check | links-fix | pairs | queries <file> | home | variants <file>"
+        )
         process.exit(2)
     }
   } catch (err: any) {

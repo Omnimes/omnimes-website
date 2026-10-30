@@ -34,7 +34,7 @@ Dotychczasowy problem polskich fabryk średniej wielkości: **sprzęt pomiarowy 
 
 ## Co konkretnie dostaje klient
 
-Klient końcowy — polska fabryka średniej wielkości chcąca wdrożyć zarządzanie energią pod ISO 50001 — z jednej rozmowy z Multiprojekt Automatyka może uzyskać:
+Klient końcowy — polska fabryka średniej wielkości chcąca wdrożyć [zarządzanie energią](/pl/blog/nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001) pod ISO 50001 — z jednej rozmowy z Multiprojekt Automatyka może uzyskać:
 
 - **Certyfikowane liczniki Relpol RMM** dobrane do liczby punktów pomiarowych, z gotową konfiguracją Modbus oraz RS-485
 - **Bramka komunikacyjna** (przemysłowy komputer z Ethernet oraz RS-485) skonfigurowana pod dany zestaw liczników

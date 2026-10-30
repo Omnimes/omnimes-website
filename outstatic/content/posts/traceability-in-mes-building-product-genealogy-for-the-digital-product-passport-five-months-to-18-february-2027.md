@@ -12,7 +12,7 @@ tags: [{"value":"omniMES","label":"OmniMES"},{"value":"ue","label":"UE"},{"value
 publishedAt: '2026-09-14T08:00:00.000Z'
 ---
 
-We have covered the Digital Product Passport twice on this blog — first the legal shape of it, then the deadlines. Both times the same question came back from the room: fine, but where is the data supposed to come from? Because a product passport is not a document the quality department fills in once a quarter. It is a record of what actually happened to a specific unit or batch on the shop floor — and if you were not capturing it while the goods were being made, you cannot reconstruct it afterwards.
+We have covered the Digital Product Passport twice on this blog — first [the legal shape of it](/en/blog/digital-product-passport-dpp-enters-the-factory-espr-and-battery-regulation-2027-what-mes-must-deliver-by-february), then [the deadlines](/en/blog/digital-product-passport-for-batteries-5-5-months-to-18-february-2027-what-your-mes-must-cover). Both times the same question came back from the room: fine, but where is the data supposed to come from? Because a product passport is not a document the quality department fills in once a quarter. It is a record of what actually happened to a specific unit or batch on the shop floor — and if you were not capturing it while the goods were being made, you cannot reconstruct it afterwards.
 
 This article is about the layer underneath the passport: **product genealogy**. The ability to take any serial number and answer "which material, which machine, which process settings, which operator" — and to run the same question backwards: "which raw material lot ended up in which finished units".
 

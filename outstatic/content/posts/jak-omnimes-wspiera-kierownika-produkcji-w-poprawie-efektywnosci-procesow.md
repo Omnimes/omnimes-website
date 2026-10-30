@@ -33,7 +33,7 @@ Kierownik produkcji może w ten sposób zrozumieć, **dlaczego** efektywność s
 
 ## Monitoring OEE i kluczowych wskaźników procesu
 
-OmniMES automatycznie liczy wskaźniki OEE, dostępności, wydajności i jakości — zarówno dla maszyn, jak i dla zleceń produkcyjnych. Kierownik może analizować efektywność każdej zmiany, porównywać linie, identyfikować odchylenia i sprawdzać, jak działania poprawiające wpływają na wyniki.
+OmniMES automatycznie liczy wskaźniki [OEE](/pl/blog/oee-kluczowy-wskaznik-efektywnosci-produkcji-czym-jest-jak-go-obliczac-i-dlaczego-warto-mierzyc-go-w-czasie-rzeczywistym), dostępności, wydajności i jakości — zarówno dla maszyn, jak i dla zleceń produkcyjnych. Kierownik może analizować efektywność każdej zmiany, porównywać linie, identyfikować odchylenia i sprawdzać, jak działania poprawiające wpływają na wyniki.
 
 To narzędzie, które umożliwia podejmowanie decyzji opartych na faktach, a nie subiektywnych obserwacjach. Dane mówią jasno, gdzie firma traci czas, pieniądze i moce przerobowe.
 

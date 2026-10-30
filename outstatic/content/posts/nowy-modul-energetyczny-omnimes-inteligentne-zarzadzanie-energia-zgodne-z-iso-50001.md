@@ -24,7 +24,7 @@ W połączeniu z systemem MES, EMS staje się potężnym narzędziem zarządzani
 
 ## Kluczowe pojęcia: SEU, EnPI i EMP
 
-Aby skutecznie wdrażać zarządzanie energią zgodne z normą **ISO 50001**, warto znać trzy podstawowe pojęcia:
+Aby skutecznie wdrażać zarządzanie energią zgodne z normą **[ISO 50001](/pl/blog/omnienergy-w-praktyce-od-licznika-do-raportu-iso-50001-bez-arkusza-kalkulacyjnego)**, warto znać trzy podstawowe pojęcia:
 
 **SEU (Significant Energy Use)** – oznacza obszary lub urządzenia, które odpowiadają za największe zużycie energii w zakładzie. To tam należy skoncentrować działania optymalizacyjne, ponieważ przynoszą one największy efekt. Przykładem SEU może być sprężarkownia, piec przemysłowy lub linia wtryskarek.
 

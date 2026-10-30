@@ -12,13 +12,13 @@ tags: [{"value":"AI","label":"AI"},{"value":"nvidia","label":"nvidia"},{"value":
 publishedAt: '2026-06-08T08:00:00.000Z'
 ---
 
-**2 June 2026, Taipei.** Jensen Huang opened Computex 2026 with a three-hour keynote in which, for the first time in the conference's history, the majority of his time went to industrial topics — robotics, AI factories, digital twins. Consumer GPUs got ten minutes at the end. AMD fired its own press conference four hours later, Intel the next morning. Three keynotes, more than a dozen announcements, one clear conclusion: edge AI on the factory floor is leaving the pilot phase.
+**2 June 2026, Taipei.** Jensen Huang opened Computex 2026 with a three-hour keynote in which, for the first time in the conference's history, the majority of his time went to industrial topics — robotics, AI factories, [digital twins](/en/blog/how-mes-systems-feed-digital-twins-in-nvidia-omniverse-with-production-data). Consumer GPUs got ten minutes at the end. AMD fired its own press conference four hours later, Intel the next morning. Three keynotes, more than a dozen announcements, one clear conclusion: edge AI on the factory floor is leaving the pilot phase.
 
 From an MES perspective — five items in this wave actually move the 2027 technology map. Not everything in the keynote matters to a manufacturing plant, most was demo, but the five below have a concrete production pipeline in a 12-month horizon.
 
 ## 1. GR00T N1.5 — robot foundation model goes production-grade
 
-NVIDIA first showed [Project GR00T](https://developer.nvidia.com/project-gr00t) in March 2024 as a training platform for humanoids. GR00T N1 (March 2026) was the first version with open weights — a generic manipulation policy trained on 10,000 hours of demonstrations from FANUC, ABB, and Boston Dynamics. **GR00T N1.5**, unveiled on 2 June, is the first version NVIDIA positions as production-grade.
+NVIDIA first showed [Project GR00T](https://developer.nvidia.com/project-gr00t) in March 2024 as a training platform for humanoids. GR00T N1 (March 2026) was the first version with open weights — a generic manipulation policy trained on 10,000 hours of demonstrations from FANUC, ABB, and Boston Dynamics. **[GR00T N1.5](/en/blog/robot-foundation-models-in-the-factory-pi-zero-openvla-groot-n1-5-the-end-of-teach-pendant-programming)**, unveiled on 2 June, is the first version NVIDIA positions as production-grade.
 
 What actually changed from N1 to N1.5:
 - **300% more training data**, mostly from synthetic data generated in Cosmos (see #2)

@@ -30,7 +30,7 @@ Member States are required to transpose its key provisions into national law –
 
 Article 11 of the EED defines the energy-consumption thresholds that determine the obligations:
 
-- **Companies consuming &gt;85 TJ/year (approx. 23.6 GWh average over 3 years)** – must implement an Energy Management System certified in accordance with **ISO 50001**.\
+- **Companies consuming &gt;85 TJ/year (approx. 23.6 GWh average over 3 years)** – must implement an Energy Management System certified in accordance with **[ISO 50001](/en/blog/omnienergy-in-practice-from-energy-meter-to-iso-50001-report-with-no-spreadsheet)**.\
   The system must be implemented **no later than 11 October 2027**.
 
 - **Companies consuming &gt;10 TJ/year (approx. 2.78 GWh average over 3 years)** – must perform an **energy audit every 4 years**, unless they have an EMS in place (in which case an external audit is not required).\
