@@ -236,6 +236,43 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
+        "path": "outstatic/content/posts/eu-energy-audit-deadline-has-passed-polands-law-has-not-what-a-plant-above-10-tj-should-do-now.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-audyt-eed/cover-audyt-eed-en.png",
+      "description": "The EU date for the first energy audit of firms above 10 TJ passed on 11 October 2026, and Poland's bill UC77 is still with the government. What binds a plant today, what the bill changes, and what fresh Eurostat prices say about the cost of waiting.",
+      "lang": "en",
+      "publishedAt": "2026-10-26T08:00:00.000Z",
+      "slug": "eu-energy-audit-deadline-has-passed-polands-law-has-not-what-a-plant-above-10-tj-should-do-now",
+      "status": "published",
+      "tags": [
+        {
+          "value": "omniEnergy",
+          "label": "OmniEnergy"
+        },
+        {
+          "value": "iso50001",
+          "label": "ISO 50001"
+        },
+        {
+          "value": "ems",
+          "label": "EMS"
+        },
+        {
+          "value": "ue",
+          "label": "UE"
+        }
+      ],
+      "title": "The EU energy audit deadline has passed, Poland's law has not: what a plant above 10 TJ should do now"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
         "path": "outstatic/content/posts/omnimes-relpol-partnership-smart-energy-metering-network.md"
       },
       "author": {
@@ -5073,6 +5110,43 @@
         }
       ],
       "title": "Systemy MES z analityką danych w czasie rzeczywistym: Rewolucja w kontroli jakości produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/termin-audytu-energetycznego-minal-ustawy-nadal-nie-ma-co-zaklad-powyzej-10-tj-powinien-zrobic.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-audyt-eed/cover-audyt-eed-pl.png",
+      "description": "11 października 2026 r. minął unijny termin pierwszego audytu energetycznego dla firm powyżej 10 TJ, a polska nowelizacja UC77 wciąż czeka na rząd. Pokazujemy, kogo co obowiązuje dziś, co zmienia projekt i co mówią najnowsze ceny energii z Eurostatu.",
+      "lang": "pl",
+      "publishedAt": "2026-10-26T08:00:00.000Z",
+      "slug": "termin-audytu-energetycznego-minal-ustawy-nadal-nie-ma-co-zaklad-powyzej-10-tj-powinien-zrobic",
+      "status": "published",
+      "tags": [
+        {
+          "value": "omniEnergy",
+          "label": "OmniEnergy"
+        },
+        {
+          "value": "iso50001",
+          "label": "ISO 50001"
+        },
+        {
+          "value": "ems",
+          "label": "EMS"
+        },
+        {
+          "value": "ue",
+          "label": "UE"
+        }
+      ],
+      "title": "Termin audytu energetycznego minął, ustawy nadal nie ma: co zakład powyżej 10 TJ powinien zrobić teraz"
     },
     {
       "__outstatic": {
