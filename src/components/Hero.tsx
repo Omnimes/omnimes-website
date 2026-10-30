@@ -13,35 +13,42 @@ export const Hero = () => {
   const features = ["heroFeature1", "heroFeature2", "heroFeature3"]
 
   return (
-    <div className="relative mx-auto mt-12 max-w-7xl px-6 sm:mt-20 sm:px-8">
-      <section className="grid grid-cols-1 items-center gap-12 sm:grid-cols-3">
-        {/* LEWA STRONA – BANER I ANIMACJA */}
-        <div className="flex flex-col gap-4 sm:col-span-2">
-          <div className="relative aspect-[4/1] w-full overflow-hidden rounded-xl bg-black shadow-xl ring-1 ring-white/10">
-            <Image
-              src="/images/hero/omnimes-banner.jpg"
-              alt={t("bannerAlt")}
-              fill
-              sizes="(max-width: 640px) 100vw, 66vw"
-              priority
-              className="object-cover"
-            />
-          </div>
+    <section className="relative left-1/2 isolate w-screen -translate-x-1/2 overflow-hidden text-white">
+      {/* Tło z banera bez napisu, lekko rozmyte, na cały pierwszy ekran */}
+      <Image
+        src="/images/hero/hero-background.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        priority
+        className="-z-20 scale-105 object-cover blur-[3px]"
+      />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#05060f]/70 via-[#05060f]/40 to-[#05060f]/70" />
+
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-8 sm:grid-cols-3 sm:gap-12 sm:px-8 sm:py-12">
+        {/* LEWA STRONA – ANIMACJA I DUŻE LOGO */}
+        <div className="flex flex-col gap-6 sm:col-span-2 sm:gap-8">
           <HeroFactory />
+          <Image
+            src="/images/hero/omnimes-wordmark.svg"
+            alt="OmniMES"
+            width={2595}
+            height={510}
+            unoptimized
+            className="h-auto w-full drop-shadow-[0_0_28px_rgba(47,155,255,0.55)]"
+          />
         </div>
 
         {/* PRAWA STRONA – TEKST */}
         <div className="text-left">
-          <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl dark:text-white">
+          <h1 className="text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl">
             {t("heroTitle")}&nbsp;
             <span className="inline bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent">
               {t("heroTitleHighlight")}
             </span>
           </h1>
 
-          <p className="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-400">
-            {t("heroSubtitle")}
-          </p>
+          <p className="mt-6 text-xl leading-8 text-gray-200">{t("heroSubtitle")}</p>
 
           {/* Features List */}
           <div className="mt-6 space-y-3">
@@ -58,7 +65,7 @@ export const Hero = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-base text-gray-700 dark:text-gray-300">{t(feature)}</span>
+                <span className="text-base text-gray-100">{t(feature)}</span>
               </div>
             ))}
           </div>
@@ -85,9 +92,7 @@ export const Hero = () => {
                 </svg>
               </Link>
 
-              <span className="px-1 text-base font-medium text-gray-500 dark:text-gray-400">
-                {t("or")}
-              </span>
+              <span className="px-1 text-base font-medium text-gray-300">{t("or")}</span>
 
               <Link
                 href="/demo"
@@ -108,7 +113,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }

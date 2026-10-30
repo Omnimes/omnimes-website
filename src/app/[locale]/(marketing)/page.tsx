@@ -7,7 +7,6 @@ import { BusinessBenefits } from "@/components/BusinessBenefits"
 import { EcosystemFlow } from "@/components/EcosystemFlow"
 import { Feature } from "@/components/Feature"
 import { Hero } from "@/components/Hero"
-import { HeroImage } from "@/components/HeroImage"
 import HomeBelowFold from "@/components/HomeBelowFold"
 import { InfoEnergyData } from "@/components/InfoEnergyData"
 import { InfoOmniCloud } from "@/components/InfoOmniCloud"
@@ -75,7 +74,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { allNews, allPosts } = await getData(locale)
   return (
     <>
-      <HeroImage />
       <Hero />
       <ProofStrip />
       <EcosystemFlow />
