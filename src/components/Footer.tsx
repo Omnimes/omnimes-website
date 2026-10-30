@@ -56,7 +56,7 @@ export const Footer = () => {
           ))}
         </ul>
 
-        <div className="mt-3 flex items-center justify-center space-x-4 text-gray-900 dark:text-white">
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-gray-900 dark:text-white">
           <a
             href="https://x.com/OmnimesOfficial"
             target="_blank"

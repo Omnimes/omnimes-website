@@ -1,8 +1,9 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
+
+import { HeroFactory } from "./HeroFactory"
 
 export const Hero = () => {
   const t = useTranslations("HeroSection")
@@ -13,18 +14,9 @@ export const Hero = () => {
   return (
     <div className="relative mx-auto mt-12 max-w-7xl px-6 sm:mt-20 sm:px-8">
       <section className="grid grid-cols-1 items-center gap-12 sm:grid-cols-3">
-        {/* LEWA STRONA – BANER */}
+        {/* LEWA STRONA – ANIMACJA */}
         <div className="sm:col-span-2">
-          <div className="relative isolate z-30 aspect-[16/9] w-full overflow-hidden rounded-xl bg-black shadow-xl">
-            <Image
-              src="/images/hero/omnimes-hero.jpg"
-              alt={t("heroImageAlt")}
-              fill
-              sizes="(max-width: 640px) 100vw, 66vw"
-              priority
-              className="object-cover"
-            />
-          </div>
+          <HeroFactory />
         </div>
 
         {/* PRAWA STRONA – TEKST */}

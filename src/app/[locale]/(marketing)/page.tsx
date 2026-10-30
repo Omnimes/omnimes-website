@@ -4,6 +4,7 @@ import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
 
 import { BusinessBenefits } from "@/components/BusinessBenefits"
+import { EcosystemFlow } from "@/components/EcosystemFlow"
 import { Feature } from "@/components/Feature"
 import { Hero } from "@/components/Hero"
 import { HeroImage } from "@/components/HeroImage"
@@ -77,6 +78,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <HeroImage />
       <Hero />
       <ProofStrip />
+      <EcosystemFlow />
       <McpSpotlight />
       <WhatsNew />
       <OmniProductsShowcase />

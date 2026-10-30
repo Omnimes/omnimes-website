@@ -16,6 +16,7 @@
  *   npx tsx scripts/jev-seo.ts home [--site https://www.omnimes.com]
  *                                              — score every home page section, PL and EN
  *   npx tsx scripts/jev-seo.ts variants <file> — score copy variants: [{ id, lang, text }]
+ *   npx tsx scripts/jev-seo.ts ask <file>      — any typed decisions: [{ id, state, questions }]
  */
 import { appendFile, mkdir, readdir, readFile, writeFile } from "fs/promises"
 import { join } from "path"
@@ -604,6 +605,23 @@ async function cmdVariants(args: string[]) {
   await writeFile(join(OUT_DIR, "variants.json"), JSON.stringify(rows, null, 2))
 }
 
+/** Any typed decisions from a JSON file: [{ id, state, questions }]. */
+async function cmdAsk(args: string[]) {
+  const [file] = args
+  if (!file) throw new Error("Usage: jev-seo ask <file>")
+  const items: { id: string; state: unknown; questions: Record<string, unknown> }[] = JSON.parse(
+    await readFile(file, "utf8")
+  )
+  const rows: Record<string, unknown>[] = []
+  await pool(items, 4, async (item) => {
+    const { answers } = await decide(item.state, item.questions)
+    const values = Object.entries(answers).map(([name, a]) => [name, a.noul ?? a.score ?? a.choice])
+    rows.push({ id: item.id, ...Object.fromEntries(values) })
+  })
+  rows.sort((a, b) => String(a.id).localeCompare(String(b.id)))
+  console.table(rows)
+}
+
 /**
  * The site always prefixes the locale, so /blog/x is a 307 that resolves by
  * cookie or Accept-Language. Crawlers land on Polish, which sends English
@@ -666,9 +684,12 @@ const [, , cmd, ...rest] = process.argv
       case "variants":
         await cmdVariants(rest)
         break
+      case "ask":
+        await cmdAsk(rest)
+        break
       default:
         console.error(
-          "Commands: links-check | links-fix | pairs | queries <file> | home | variants <file>"
+          "Commands: links-check | links-fix | pairs | queries <file> | home | variants <file> | ask <file>"
         )
         process.exit(2)
     }
