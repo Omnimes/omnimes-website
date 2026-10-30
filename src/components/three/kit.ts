@@ -1,5 +1,6 @@
 import * as THREE from "three"
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js"
+import { RoundedBoxGeometry } from "three/examples/jsm/geometries/RoundedBoxGeometry.js"
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js"
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js"
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
@@ -9,6 +10,9 @@ export const COLORS = {
   background: 0x05060f,
   steel: 0x2d3757,
   steelLight: 0x4c5a82,
+  body: 0x717e9e,
+  bright: 0x8d99b5,
+  robot: 0x6d5cff,
   blue: 0x2f9bff,
   violet: 0x7c5cff,
   magenta: 0xd946ef,
@@ -29,6 +33,11 @@ export function steel(color: number = COLORS.steel) {
   return new THREE.MeshStandardMaterial({ color, metalness: 0.62, roughness: 0.38 })
 }
 
+/** Lakier proszkowy, jak na obudowach maszyn. */
+export function paint(color: number, roughness = 0.46) {
+  return new THREE.MeshStandardMaterial({ color, metalness: 0.12, roughness })
+}
+
 export function glow(color: number, intensity = 1.6) {
   return new THREE.MeshStandardMaterial({
     color: 0x000000,
@@ -37,14 +46,26 @@ export function glow(color: number, intensity = 1.6) {
   })
 }
 
+function solid<T extends THREE.Object3D>(mesh: T) {
+  mesh.castShadow = true
+  mesh.receiveShadow = true
+  return mesh
+}
+
 export function box(
   size: [number, number, number],
   material: THREE.Material,
-  position: [number, number, number] = [0, 0, 0]
+  position: [number, number, number] = [0, 0, 0],
+  radius = 0.05
 ) {
-  const mesh = new THREE.Mesh(new THREE.BoxGeometry(...size), material)
+  const smallest = Math.min(...size)
+  const geometry =
+    smallest < 0.08
+      ? new THREE.BoxGeometry(...size)
+      : new RoundedBoxGeometry(...size, 4, Math.min(radius, smallest * 0.45))
+  const mesh = new THREE.Mesh(geometry, material)
   mesh.position.set(...position)
-  return mesh
+  return solid(mesh)
 }
 
 export function cylinder(
@@ -53,9 +74,84 @@ export function cylinder(
   material: THREE.Material,
   position: [number, number, number] = [0, 0, 0]
 ) {
-  const mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, height, 24), material)
+  const mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, height, 64), material)
   mesh.position.set(...position)
-  return mesh
+  return solid(mesh)
+}
+
+/** Ramię o zaokrąglonych końcach, biegnące wzdłuż osi X albo Y. */
+function capsule(
+  radius: number,
+  length: number,
+  material: THREE.Material,
+  position: [number, number, number],
+  axis: "x" | "y" = "y"
+) {
+  const mesh = new THREE.Mesh(new THREE.CapsuleGeometry(radius, length, 12, 40), material)
+  mesh.position.set(...position)
+  if (axis === "x") mesh.rotation.z = Math.PI / 2
+  return solid(mesh)
+}
+
+function sphere(radius: number, material: THREE.Material, position: [number, number, number]) {
+  const mesh = new THREE.Mesh(new THREE.SphereGeometry(radius, 48, 32), material)
+  mesh.position.set(...position)
+  return solid(mesh)
+}
+
+function canvasTexture(width: number, height: number, draw: (c: CanvasRenderingContext2D) => void) {
+  const canvas = document.createElement("canvas")
+  canvas.width = width
+  canvas.height = height
+  draw(canvas.getContext("2d") as CanvasRenderingContext2D)
+  const texture = new THREE.CanvasTexture(canvas)
+  texture.colorSpace = THREE.SRGBColorSpace
+  texture.anisotropy = 8
+  return texture
+}
+
+function hazardMaterial() {
+  const texture = canvasTexture(128, 32, (c) => {
+    c.fillStyle = "#12141c"
+    c.fillRect(0, 0, 128, 32)
+    c.fillStyle = "#f2b01e"
+    for (let x = -32; x < 160; x += 32) {
+      c.beginPath()
+      c.moveTo(x, 32)
+      c.lineTo(x + 16, 32)
+      c.lineTo(x + 32, 0)
+      c.lineTo(x + 16, 0)
+      c.fill()
+    }
+  })
+  return new THREE.MeshStandardMaterial({ map: texture, roughness: 0.6 })
+}
+
+/** Panel operatora na słupku. */
+export function makeHmi() {
+  const group = new THREE.Group()
+  group.add(cylinder(0.05, 1.15, steel(COLORS.steelLight), [0, 0.58, 0]))
+  group.add(box([0.9, 0.62, 0.1], paint(0x1a2133), [0, 1.42, 0]))
+  const texture = canvasTexture(256, 160, (c) => {
+    c.fillStyle = "#08101f"
+    c.fillRect(0, 0, 256, 160)
+    c.fillStyle = "#2f9bff"
+    c.fillRect(14, 14, 228, 22)
+    ;["#22e58a", "#22e58a", "#22e58a", "#ffb020"].forEach((color, index) => {
+      c.fillStyle = color
+      c.fillRect(14 + index * 58, 50, 50, 40)
+    })
+    c.fillStyle = "#28344f"
+    c.fillRect(14, 104, 228, 12)
+    c.fillRect(14, 126, 150, 12)
+  })
+  const screen = new THREE.Mesh(
+    new THREE.PlaneGeometry(0.8, 0.5),
+    new THREE.MeshBasicMaterial({ map: texture, toneMapped: false, color: 0xa8a8a8 })
+  )
+  screen.position.set(0, 1.42, 0.056)
+  group.add(screen)
+  return group
 }
 
 /** Kolumna sygnalizacyjna maszyny. */
@@ -63,11 +159,12 @@ export function makeStackLight() {
   const group = new THREE.Group()
   const lamps = (["stop", "warn", "run"] as MachineState[]).map((state, index) => {
     const material = glow(STATE_COLOR[state], 0.08)
-    const lamp = cylinder(0.11, 0.2, material, [0, 0.2 + (2 - index) * 0.22, 0])
+    const lamp = cylinder(0.11, 0.2, material, [0, 0.24 + (2 - index) * 0.21, 0])
     group.add(lamp)
     return { state, material }
   })
-  group.add(cylinder(0.05, 0.2, steel(), [0, 0, 0]))
+  group.add(cylinder(0.05, 0.16, steel(), [0, 0.06, 0]))
+  group.add(sphere(0.11, steel(COLORS.steelLight), [0, 0.68, 0]))
 
   return {
     group,
@@ -83,30 +180,38 @@ export function makeStackLight() {
 
 export function makeConveyor(length: number) {
   const group = new THREE.Group()
-  group.add(box([length, 0.22, 1.5], steel(), [0, 0.72, 0]))
-  group.add(box([length, 0.08, 0.06], glow(COLORS.blue, 1.1), [0, 0.84, 0.76]))
+  const rail = steel(0x9aa7c4)
+  group.add(box([length, 0.2, 0.09], rail, [0, 0.78, 0.7]))
+  group.add(box([length, 0.2, 0.09], rail, [0, 0.78, -0.7]))
+  group.add(box([length, 0.05, 0.03], glow(COLORS.blue, 1.1), [0, 0.74, 0.76]))
+  group.add(box([length, 0.14, 1.3], steel(), [0, 0.64, 0]))
+  ;[-length / 2, length / 2].forEach((x) => {
+    const roller = cylinder(0.14, 1.34, steel(0x9aa7c4), [x, 0.79, 0])
+    roller.rotation.x = Math.PI / 2
+    group.add(roller)
+  })
 
-  const canvas = document.createElement("canvas")
-  canvas.width = 256
-  canvas.height = 32
-  const context = canvas.getContext("2d") as CanvasRenderingContext2D
-  context.fillStyle = "#0a0d18"
-  context.fillRect(0, 0, 256, 32)
-  context.fillStyle = "#222c47"
-  for (let x = 0; x < 256; x += 32) context.fillRect(x, 0, 6, 32)
-  const texture = new THREE.CanvasTexture(canvas)
+  const texture = canvasTexture(256, 32, (c) => {
+    c.fillStyle = "#0a0d18"
+    c.fillRect(0, 0, 256, 32)
+    c.fillStyle = "#26304e"
+    for (let x = 0; x < 256; x += 32) c.fillRect(x, 0, 5, 32)
+  })
   texture.wrapS = THREE.RepeatWrapping
   texture.repeat.set(length / 1.4, 1)
   const belt = new THREE.Mesh(
     new THREE.BoxGeometry(length, 0.04, 1.26),
-    new THREE.MeshStandardMaterial({ map: texture, roughness: 0.9 })
+    new THREE.MeshStandardMaterial({ map: texture, roughness: 0.85 })
   )
-  belt.position.y = 0.85
+  belt.position.y = 0.87
+  belt.receiveShadow = true
   group.add(belt)
 
+  const leg = steel(COLORS.steelLight)
   for (let x = -length / 2 + 1; x < length / 2; x += 2.6) {
-    group.add(box([0.14, 0.62, 0.14], steel(COLORS.steelLight), [x, 0.31, 0.6]))
-    group.add(box([0.14, 0.62, 0.14], steel(COLORS.steelLight), [x, 0.31, -0.6]))
+    group.add(box([0.12, 0.6, 0.12], leg, [x, 0.3, 0.6]))
+    group.add(box([0.12, 0.6, 0.12], leg, [x, 0.3, -0.6]))
+    group.add(box([0.1, 0.08, 1.2], leg, [x, 0.22, 0]))
   }
 
   return {
@@ -117,13 +222,22 @@ export function makeConveyor(length: number) {
   }
 }
 
-/** Wyroby jadące po przenośniku. */
-export function makeProducts(count: number, length: number) {
+/** Wyroby zmieniają wygląd po każdej maszynie: blacha, wytłoczka, detal, karton. */
+export function makeProducts(count: number, length: number, stages: number[]) {
+  const looks = [
+    { color: new THREE.Color(0xc2cadb), scale: [1, 0.42, 1] },
+    { color: new THREE.Color(0x9fb0d4), scale: [1, 0.78, 1] },
+    { color: new THREE.Color(0x5b8cff), scale: [0.94, 1, 0.94] },
+    { color: new THREE.Color(0xc99a63), scale: [1.16, 1.3, 1.16] },
+  ]
   const mesh = new THREE.InstancedMesh(
-    new THREE.BoxGeometry(0.5, 0.34, 0.6),
-    new THREE.MeshStandardMaterial({ color: 0x8fa3c9, metalness: 0.5, roughness: 0.35 }),
+    new RoundedBoxGeometry(0.5, 0.34, 0.6, 4, 0.05),
+    new THREE.MeshStandardMaterial({ color: 0xffffff, metalness: 0.28, roughness: 0.42 }),
     count
   )
+  mesh.castShadow = true
+  mesh.receiveShadow = true
+  mesh.frustumCulled = false
   const matrix = new THREE.Matrix4()
   const offsets = Array.from({ length: count }, (_, index) => (index / count) * length)
 
@@ -132,71 +246,171 @@ export function makeProducts(count: number, length: number) {
     update(delta: number, speed: number) {
       offsets.forEach((offset, index) => {
         offsets[index] = (offset + delta * speed * 1.5) % length
-        matrix.makeTranslation(offsets[index] - length / 2, 1.04, 0)
+        const x = offsets[index] - length / 2
+        const look = looks[Math.min(stages.filter((stage) => x > stage).length, looks.length - 1)]
+        const height = 0.34 * look.scale[1]
+        matrix
+          .makeScale(look.scale[0], look.scale[1], look.scale[2])
+          .setPosition(x, 0.89 + height / 2, 0)
         mesh.setMatrixAt(index, matrix)
+        mesh.setColorAt(index, look.color)
       })
       mesh.instanceMatrix.needsUpdate = true
+      if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true
+    },
+  }
+}
+
+/** Iskry przy obróbce. */
+export function makeSparks(count: number) {
+  const positions = new Float32Array(count * 3).fill(-100)
+  const velocities = Array.from({ length: count }, () => new THREE.Vector3())
+  const ages = new Float32Array(count).fill(1)
+  const geometry = new THREE.BufferGeometry()
+  geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3))
+  const dot = canvasTexture(32, 32, (c) => {
+    const gradient = c.createRadialGradient(16, 16, 0, 16, 16, 16)
+    gradient.addColorStop(0, "rgba(255,255,255,1)")
+    gradient.addColorStop(1, "rgba(255,255,255,0)")
+    c.fillStyle = gradient
+    c.fillRect(0, 0, 32, 32)
+  })
+  const points = new THREE.Points(
+    geometry,
+    new THREE.PointsMaterial({
+      map: dot,
+      color: 0xffc46b,
+      size: 0.14,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      toneMapped: false,
+    })
+  )
+  points.frustumCulled = false
+  let next = 0
+
+  return {
+    points,
+    burst(origin: THREE.Vector3, amount: number) {
+      for (let index = 0; index < amount; index += 1) {
+        const id = next
+        next = (next + 1) % count
+        ages[id] = 0
+        positions[id * 3] = origin.x
+        positions[id * 3 + 1] = origin.y
+        positions[id * 3 + 2] = origin.z
+        velocities[id].set(
+          (Math.random() - 0.5) * 3,
+          Math.random() * 1.8 + 0.4,
+          (Math.random() - 0.5) * 3
+        )
+      }
+    },
+    update(delta: number) {
+      for (let id = 0; id < count; id += 1) {
+        if (ages[id] >= 1) {
+          positions[id * 3 + 1] = -100
+          continue
+        }
+        ages[id] += delta * 2.4
+        velocities[id].y -= delta * 7
+        positions[id * 3] += velocities[id].x * delta
+        positions[id * 3 + 1] += velocities[id].y * delta
+        positions[id * 3 + 2] += velocities[id].z * delta
+      }
+      geometry.attributes.position.needsUpdate = true
     },
   }
 }
 
 export function makePress() {
   const group = new THREE.Group()
-  const frame = steel(COLORS.steelLight)
-  group.add(box([0.32, 3, 0.32], frame, [-0.95, 1.5, 0]))
-  group.add(box([0.32, 3, 0.32], frame, [0.95, 1.5, 0]))
-  group.add(box([2.3, 0.5, 1], steel(), [0, 3.1, 0]))
-  const ram = box([1.3, 0.55, 0.9], steel(COLORS.steelLight), [0, 2.1, 0])
+  const body = paint(COLORS.body)
+  group.add(box([2.5, 0.42, 1.5], paint(COLORS.steelLight), [0, 0.21, -0.08], 0.08))
+  group.add(box([0.38, 3.1, 0.5], body, [-1, 1.65, 0], 0.09))
+  group.add(box([0.38, 3.1, 0.5], body, [1, 1.65, 0], 0.09))
+  group.add(box([2.5, 0.72, 1.14], body, [0, 3.32, 0], 0.12))
+  group.add(box([2.36, 0.1, 0.03], hazardMaterial(), [0, 3.1, 0.58]))
+  ;[-0.46, 0.46].forEach((x) => group.add(cylinder(0.05, 1.5, steel(0xa7b3cc), [x, 2.25, 0])))
+  const ram = box([1.42, 0.6, 0.94], paint(0x3f4d73), [0, 2.1, 0], 0.08)
   group.add(ram)
-  group.add(box([1.4, 0.05, 0.05], glow(COLORS.blue), [0, 2.82, 0.52]))
+  const strip = box([1.1, 0.05, 0.03], glow(COLORS.blue), [0, 0, 0.48])
+  ram.add(strip)
+  let wasDown = false
 
   return {
     group,
     update(time: number, running: boolean) {
-      if (running) ram.position.y = 1.9 + Math.abs(Math.sin(time * 2.2)) * 0.7
+      if (!running) return false
+      ram.position.y = 1.62 + Math.abs(Math.sin(time * 2.2)) * 1.05
+      const down = ram.position.y < 1.68
+      const hit = down && !wasDown
+      wasDown = down
+      return hit
     },
   }
 }
 
 export function makeCnc() {
   const group = new THREE.Group()
-  group.add(box([2.3, 2.4, 1.9], steel(), [0, 1.2, 0]))
+  const body = paint(COLORS.bright)
+  group.add(box([2.6, 2.5, 2], body, [0, 1.25, 0], 0.16))
+  group.add(box([2.66, 0.36, 2.06], paint(0x28324f), [0, 0.18, 0], 0.08))
+  group.add(box([2.4, 0.08, 0.03], hazardMaterial(), [0, 0.42, 1.02]))
   const glass = new THREE.MeshStandardMaterial({
     color: 0x0b1a33,
     emissive: COLORS.blue,
     emissiveIntensity: 0.55,
-    transparent: true,
-    opacity: 0.9,
+    metalness: 0.4,
+    roughness: 0.12,
   })
-  group.add(box([1.5, 1, 0.04], glass, [0, 1.5, 0.97]))
-  const spindle = cylinder(0.09, 0.8, glow(COLORS.violet, 2), [0, 1.55, 0.99])
+  group.add(box([1.5, 1.1, 0.06], paint(0x28324f), [-0.25, 1.46, 1]))
+  group.add(box([1.36, 0.96, 0.03], glass, [-0.25, 1.46, 1.03]))
+  group.add(box([0.05, 0.62, 0.05], steel(0xa7b3cc), [0.42, 1.46, 1.06]))
+  const spindle = cylinder(0.08, 0.72, glow(COLORS.violet, 2), [0, 1.5, 1.05])
   group.add(spindle)
+  const panel = box([0.5, 0.86, 0.08], paint(0x1a2133), [0.92, 1.46, 1.02])
+  group.add(panel)
+  ;[COLORS.green, COLORS.amber, COLORS.blue].forEach((color, index) => {
+    group.add(box([0.1, 0.05, 0.02], glow(color, 1.6), [0.8 + index * 0.12, 1.74, 1.07]))
+  })
 
   return {
     group,
     update(time: number, running: boolean) {
-      glass.emissiveIntensity = running ? 0.55 + Math.sin(time * 6) * 0.15 : 0.15
-      if (running) spindle.position.x = Math.sin(time * 1.4) * 0.5
+      glass.emissiveIntensity = running ? 0.6 + Math.sin(time * 6) * 0.18 : 0.12
+      if (running) spindle.position.x = -0.25 + Math.sin(time * 1.4) * 0.48
     },
   }
 }
 
 export function makeRobot() {
   const group = new THREE.Group()
-  const metal = steel(COLORS.steelLight)
-  group.add(cylinder(0.5, 0.3, steel(), [0, 0.15, 0]))
+  const body = paint(COLORS.robot, 0.34)
+  const joint = paint(0x1d2336, 0.4)
+  group.add(cylinder(0.62, 0.14, paint(0x28324f), [0, 0.07, 0]))
+  group.add(cylinder(0.44, 0.34, body, [0, 0.31, 0]))
   const shoulder = new THREE.Group()
-  shoulder.position.y = 0.34
+  shoulder.position.y = 0.52
   group.add(shoulder)
+  shoulder.add(sphere(0.3, joint, [0, 0, 0]))
   const upper = new THREE.Group()
   shoulder.add(upper)
-  upper.add(box([0.26, 1.7, 0.26], metal, [0, 0.85, 0]))
+  upper.add(capsule(0.17, 1.42, body, [0, 0.85, 0]))
   const elbow = new THREE.Group()
   elbow.position.y = 1.7
   upper.add(elbow)
-  elbow.add(cylinder(0.2, 0.34, glow(COLORS.magenta, 1.2)).rotateX(Math.PI / 2))
-  elbow.add(box([1.5, 0.2, 0.2], metal, [0.75, 0, 0]))
-  elbow.add(box([0.12, 0.4, 0.34], glow(COLORS.blue, 1.5), [1.5, -0.18, 0]))
+  elbow.add(sphere(0.25, joint, [0, 0, 0]))
+  elbow.add(cylinder(0.15, 0.56, glow(COLORS.magenta, 1.2)).rotateX(Math.PI / 2))
+  elbow.add(capsule(0.13, 1.2, body, [0.76, 0, 0], "x"))
+  const wrist = new THREE.Group()
+  wrist.position.x = 1.52
+  elbow.add(wrist)
+  wrist.add(sphere(0.15, joint, [0, 0, 0]))
+  wrist.add(box([0.3, 0.1, 0.34], steel(0xa7b3cc), [0, -0.2, 0], 0.03))
+  wrist.add(box([0.05, 0.3, 0.09], steel(0xa7b3cc), [-0.11, -0.38, 0]))
+  wrist.add(box([0.05, 0.3, 0.09], steel(0xa7b3cc), [0.11, -0.38, 0]))
 
   return {
     group,
@@ -205,23 +419,25 @@ export function makeRobot() {
       shoulder.rotation.y = Math.sin(time * 1.1) * 0.9
       upper.rotation.z = -0.25 + Math.sin(time * 1.6) * 0.16
       elbow.rotation.z = -0.25 + Math.cos(time * 1.6) * 0.3
+      wrist.rotation.z = -(upper.rotation.z + elbow.rotation.z)
     },
   }
 }
 
 export function makePacker() {
   const group = new THREE.Group()
-  const frame = steel(COLORS.steelLight)
-  group.add(box([0.26, 2.3, 1.8], frame, [-0.8, 1.15, 0]))
-  group.add(box([0.26, 2.3, 1.8], frame, [0.8, 1.15, 0]))
-  group.add(box([1.86, 0.34, 1.8], steel(), [0, 2.4, 0]))
-  const beam = box([1.3, 0.04, 1.3], glow(COLORS.green, 2), [0, 1.6, 0])
+  const body = paint(COLORS.body)
+  group.add(box([0.3, 2.4, 2], body, [-0.95, 1.2, 0], 0.08))
+  group.add(box([0.3, 2.4, 2], body, [0.95, 1.2, 0], 0.08))
+  group.add(box([2.3, 0.56, 2.1], paint(COLORS.bright), [0, 2.6, 0], 0.14))
+  group.add(box([2.1, 0.08, 0.03], hazardMaterial(), [0, 2.32, 1.06]))
+  const beam = box([1.5, 0.05, 1.5], glow(COLORS.green, 2), [0, 1.6, 0])
   group.add(beam)
 
   return {
     group,
     update(time: number, running: boolean) {
-      beam.position.y = running ? 1.35 + Math.sin(time * 3) * 0.3 : 1.35
+      beam.position.y = running ? 1.55 + Math.sin(time * 3) * 0.3 : 1.55
     },
   }
 }
@@ -296,32 +512,10 @@ export function makeWaveField(width: number, depth: number, density: number) {
   }
 }
 
-/** Tekst jako tekstura, dla etykiet w scenie. */
-export function textSprite(text: string, width = 3.4) {
-  const canvas = document.createElement("canvas")
-  canvas.width = 768
-  canvas.height = 128
-  const context = canvas.getContext("2d") as CanvasRenderingContext2D
-  context.font = "600 62px system-ui, 'Segoe UI', sans-serif"
-  context.textAlign = "center"
-  context.textBaseline = "middle"
-  context.fillStyle = "#b9c5ea"
-  context.fillText(text, 384, 66)
-  const texture = new THREE.CanvasTexture(canvas)
-  texture.colorSpace = THREE.SRGBColorSpace
-  const sprite = new THREE.Sprite(
-    new THREE.SpriteMaterial({
-      map: texture,
-      transparent: true,
-      depthWrite: false,
-      toneMapped: false,
-    })
-  )
-  sprite.scale.set(width, width / 6, 1)
-  return sprite
-}
-
-export function createStage(canvas: HTMLCanvasElement, options: { compact: boolean }) {
+export function createStage(
+  canvas: HTMLCanvasElement,
+  options: { compact: boolean; shadowSpan?: number }
+) {
   const renderer = new THREE.WebGLRenderer({
     canvas,
     antialias: true,
@@ -330,6 +524,8 @@ export function createStage(canvas: HTMLCanvasElement, options: { compact: boole
   renderer.setClearColor(0x000000, 1)
   renderer.toneMapping = THREE.ACESFilmicToneMapping
   renderer.toneMappingExposure = 1.1
+  renderer.shadowMap.enabled = true
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap
 
   const scene = new THREE.Scene()
   scene.fog = new THREE.Fog(COLORS.background, 26, 70)
@@ -337,9 +533,23 @@ export function createStage(canvas: HTMLCanvasElement, options: { compact: boole
   scene.environment = environment.texture
   scene.environmentIntensity = 0.5
   scene.add(new THREE.HemisphereLight(0x8aa4ff, 0x10122a, 1.6))
+
   const sun = new THREE.DirectionalLight(0xffffff, 2.2)
   sun.position.set(6, 14, 10)
-  scene.add(sun)
+  sun.castShadow = !options.compact
+  sun.shadow.mapSize.set(2048, 2048)
+  sun.shadow.bias = -0.0004
+  sun.shadow.normalBias = 0.03
+  sun.shadow.radius = 5
+  const span = options.shadowSpan ?? 16
+  sun.shadow.camera.left = -span
+  sun.shadow.camera.right = span
+  sun.shadow.camera.top = span
+  sun.shadow.camera.bottom = -span
+  sun.shadow.camera.near = 1
+  sun.shadow.camera.far = 60
+  scene.add(sun, sun.target)
+
   const rim = new THREE.DirectionalLight(COLORS.violet, 2.4)
   rim.position.set(-8, 6, -10)
   scene.add(rim)
@@ -347,14 +557,30 @@ export function createStage(canvas: HTMLCanvasElement, options: { compact: boole
   grid.position.y = -0.02
   scene.add(grid)
 
+  // Cień pada na przezroczystą płaszczyznę, żeby fala punktów pozostała widoczna
+  const ground = new THREE.Mesh(
+    new THREE.PlaneGeometry(200, 200),
+    new THREE.ShadowMaterial({ opacity: 0.62, depthWrite: false })
+  )
+  ground.rotation.x = -Math.PI / 2
+  ground.position.y = 0.002
+  ground.receiveShadow = true
+  ground.renderOrder = 2
+  scene.add(ground)
+
   const camera = new THREE.PerspectiveCamera(30, 16 / 9, 0.1, 200)
-  const composer = new EffectComposer(renderer)
+  // Efekty renderują do osobnego bufora, więc wygładzanie krawędzi trzeba włączyć tutaj
+  const target = new THREE.WebGLRenderTarget(1, 1, {
+    type: THREE.HalfFloatType,
+    samples: options.compact ? 4 : 8,
+  })
+  const composer = new EffectComposer(renderer, target)
   composer.addPass(new RenderPass(scene, camera))
   const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.42, 0.5, 0.74)
   if (!options.compact) composer.addPass(bloom)
   composer.addPass(new OutputPass())
 
-  let limit = options.compact ? 1.5 : 1.75
+  let limit = 2
   const resize = () => {
     const width = canvas.clientWidth
     const height = canvas.clientHeight
@@ -377,10 +603,12 @@ export function createStage(canvas: HTMLCanvasElement, options: { compact: boole
     renderer,
     scene,
     camera,
+    sun,
     render: () => composer.render(),
     degrade() {
       bloom.enabled = false
-      limit = 1
+      sun.castShadow = false
+      limit = 1.25
       resize()
     },
     onResize(callback: () => void) {
@@ -399,6 +627,7 @@ export function createStage(canvas: HTMLCanvasElement, options: { compact: boole
         }
       })
       environment.dispose()
+      target.dispose()
       composer.dispose()
       renderer.dispose()
     },

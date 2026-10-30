@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
 
@@ -14,8 +15,18 @@ export const Hero = () => {
   return (
     <div className="relative mx-auto mt-12 max-w-7xl px-6 sm:mt-20 sm:px-8">
       <section className="grid grid-cols-1 items-center gap-12 sm:grid-cols-3">
-        {/* LEWA STRONA – ANIMACJA */}
-        <div className="sm:col-span-2">
+        {/* LEWA STRONA – BANER I ANIMACJA */}
+        <div className="flex flex-col gap-4 sm:col-span-2">
+          <div className="relative aspect-[4/1] w-full overflow-hidden rounded-xl bg-black shadow-xl ring-1 ring-white/10">
+            <Image
+              src="/images/hero/omnimes-banner.jpg"
+              alt={t("bannerAlt")}
+              fill
+              sizes="(max-width: 640px) 100vw, 66vw"
+              priority
+              className="object-cover"
+            />
+          </div>
           <HeroFactory />
         </div>
 

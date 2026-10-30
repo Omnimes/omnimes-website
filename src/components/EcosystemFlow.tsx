@@ -11,6 +11,8 @@ import { Heading } from "./ui/Heading"
 import { SubtitleNormal } from "./ui/Subtitle"
 
 const STEPS = ["line", "plc", "gateway", "server", "database", "panels"]
+const ROLES = ["roleOperator", "roleMaintenance", "roleManager", "roleEnergy", "roleExecutive"]
+const OVERVIEW = STEPS.length
 
 type Scene = {
   setStage: (stage: number) => void
@@ -23,6 +25,8 @@ export const EcosystemFlow = () => {
   const section = useRef<HTMLElement>(null)
   const canvas = useRef<HTMLCanvasElement>(null)
   const scene = useRef<Scene | null>(null)
+  const stations = useRef<HTMLElement[]>([])
+  const roles = useRef<HTMLElement[]>([])
   const [ready, setReady] = useState(false)
   const [animated, setAnimated] = useState(false)
   const [stage, setStage] = useState(0)
@@ -40,7 +44,7 @@ export const EcosystemFlow = () => {
         scene.current = mountEcosystem(
           canvas.current,
           {
-            stations: STEPS.map((step) => t(`${step}Label`)),
+            gateway: "cMT-G01X",
             panels: [
               { role: t("roleOperator"), kind: "status" },
               { role: t("roleMaintenance"), kind: "alarms" },
@@ -49,6 +53,7 @@ export const EcosystemFlow = () => {
               { role: t("roleExecutive"), kind: "report" },
             ],
           },
+          { stations: stations.current, roles: roles.current },
           { compact: window.innerWidth < 768, still: !moving, onStage: setStage }
         )
         setAnimated(moving)
@@ -87,6 +92,12 @@ export const EcosystemFlow = () => {
     setPaused(!paused)
   }
 
+  // Na ujęciu z góry etykiety są większe, bo obiekty stają się małe
+  const wide = stage === OVERVIEW
+  const labelClass = `pointer-events-none absolute left-0 top-0 z-10 whitespace-nowrap rounded-md border border-white/25 bg-[#05060f]/85 px-2 py-0.5 font-semibold text-white shadow-lg backdrop-blur transition-[font-size] duration-500 ${
+    wide ? "text-sm sm:text-lg" : "text-xs sm:text-sm"
+  }`
+
   return (
     <section
       ref={section}
@@ -116,17 +127,67 @@ export const EcosystemFlow = () => {
             ready ? "opacity-100" : "opacity-0"
           }`}
         />
+
+        <div className={ready ? "contents" : "hidden"} aria-hidden="true">
+          {[...STEPS, "serverGroup", "robot"].map((step, index) => {
+            const extra = index >= STEPS.length
+            return (
+              <div
+                key={step}
+                ref={(element) => {
+                  if (element) stations.current[index] = element
+                }}
+                className={`${labelClass} ${
+                  extra ? "border-violet-400/70 text-violet-100" : ""
+                } ${extra && wide ? "hidden sm:block" : ""}`}
+              >
+                {/* Na telefonie widok z góry pokazuje numery kroków z listy poniżej */}
+                {wide && !extra && <span className="sm:hidden">{index + 1}</span>}
+                <span className={wide && !extra ? "hidden sm:inline" : ""}>
+                  {t(`${step}Label`)}
+                </span>
+              </div>
+            )
+          })}
+          {ROLES.map((role, index) => (
+            <div
+              key={role}
+              ref={(element) => {
+                if (element) roles.current[index] = element
+              }}
+              className={`pointer-events-none absolute left-0 top-0 z-10 hidden whitespace-nowrap rounded bg-[#05060f]/85 px-1.5 py-0.5 text-[11px] font-semibold text-white sm:block sm:text-xs ${
+                stage === OVERVIEW - 1 || wide ? "" : "!hidden"
+              }`}
+            >
+              {t(role)}
+            </div>
+          ))}
+
+          {/* Ta sama informacja na każdym etapie drogi */}
+          {!wide && (
+            <div className="pointer-events-none absolute left-2 top-2 z-20 max-w-[78%] rounded-lg border border-red-400/40 bg-[#05060f]/85 p-2 text-white shadow-lg backdrop-blur sm:left-3 sm:top-3 sm:max-w-md sm:p-3">
+              <p className="text-[10px] font-semibold uppercase tracking-wide text-red-300 sm:text-xs">
+                {t("dataLabel")}
+              </p>
+              <p className="mt-0.5 font-mono text-xs sm:text-sm">{t(`${STEPS[stage]}Data`)}</p>
+            </div>
+          )}
+        </div>
+
         {animated && (
           <button
             type="button"
             onClick={togglePause}
             aria-label={paused ? t("play") : t("pause")}
             title={paused ? t("play") : t("pause")}
-            className="absolute right-3 top-3 z-10 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
+            className="absolute right-3 top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
           >
             {paused ? <FaPlay size={12} /> : <FaPause size={12} />}
           </button>
         )}
+        <p className="absolute bottom-2 right-3 z-10 rounded bg-black/55 px-1.5 py-0.5 text-[10px] text-white/70 sm:text-[11px]">
+          {t("dataNote")}
+        </p>
       </div>
 
       <ol className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
