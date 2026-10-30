@@ -3,12 +3,13 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
-import { FaPause, FaPlay } from "react-icons/fa"
+import { FaCompress, FaExpand, FaPause, FaPlay } from "react-icons/fa"
 
 import { canAnimate } from "./HeroFactory"
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
 import { SubtitleNormal } from "./ui/Subtitle"
+import { useFullscreen } from "./useFullscreen"
 
 const STEPS = ["line", "plc", "gateway", "server", "database", "panels"]
 const ROLES = ["roleOperator", "roleMaintenance", "roleManager", "roleEnergy", "roleExecutive"]
@@ -23,13 +24,15 @@ type Scene = {
 export const EcosystemFlow = () => {
   const t = useTranslations("Ecosystem")
   const section = useRef<HTMLElement>(null)
+  const frame = useRef<HTMLDivElement>(null)
+  const screen = useFullscreen(frame)
   const canvas = useRef<HTMLCanvasElement>(null)
   const scene = useRef<Scene | null>(null)
   const stations = useRef<HTMLElement[]>([])
   const roles = useRef<HTMLElement[]>([])
   const [ready, setReady] = useState(false)
   const [animated, setAnimated] = useState(false)
-  const [stage, setStage] = useState(0)
+  const [stage, setStage] = useState(OVERVIEW)
   const [paused, setPaused] = useState(false)
 
   useEffect(() => {
@@ -95,7 +98,7 @@ export const EcosystemFlow = () => {
   // Na ujęciu z góry etykiety są większe, bo obiekty stają się małe
   const wide = stage === OVERVIEW
   const labelClass = `pointer-events-none absolute left-0 top-0 z-10 whitespace-nowrap rounded-md border border-white/25 bg-[#05060f]/85 px-2 py-0.5 font-semibold text-white shadow-lg backdrop-blur transition-[font-size] duration-500 ${
-    wide ? "text-sm sm:text-lg" : "text-xs sm:text-sm"
+    screen.active ? "text-lg sm:text-2xl" : wide ? "text-sm sm:text-lg" : "text-xs sm:text-sm"
   }`
 
   return (
@@ -110,7 +113,10 @@ export const EcosystemFlow = () => {
         <DescriptionPrimary text={t("description")} />
       </div>
 
-      <div className="relative mt-8 aspect-[4/3] w-full overflow-hidden rounded-xl bg-[#05060f] shadow-xl ring-1 ring-white/10 sm:aspect-[21/9]">
+      <div
+        ref={frame}
+        className="relative mt-8 aspect-[4/3] w-full overflow-hidden rounded-xl bg-[#05060f] shadow-xl ring-1 ring-white/10 sm:aspect-[21/9] [&:fullscreen]:mt-0 [&:fullscreen]:aspect-auto [&:fullscreen]:rounded-none"
+      >
         <Image
           src="/images/hero/ecosystem-poster.jpg"
           alt={t("animationAlt")}
@@ -174,6 +180,17 @@ export const EcosystemFlow = () => {
           )}
         </div>
 
+        {screen.supported && (
+          <button
+            type="button"
+            onClick={screen.toggle}
+            aria-label={screen.active ? t("exitFullscreen") : t("fullscreen")}
+            title={screen.active ? t("exitFullscreen") : t("fullscreen")}
+            className="absolute right-14 top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
+          >
+            {screen.active ? <FaCompress size={13} /> : <FaExpand size={13} />}
+          </button>
+        )}
         {animated && (
           <button
             type="button"

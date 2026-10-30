@@ -1,15 +1,18 @@
 import * as THREE from "three"
 
 import {
+  addFloorText,
+  addWordmark,
   box,
   COLORS,
   createStage,
   cylinder,
   glow,
+  loadWordmark,
   makeConveyor,
+  makePalletCell,
   makePress,
   makeProducts,
-  makeRobot,
   makeStackLight,
   makeWaveField,
   paint,
@@ -31,7 +34,8 @@ export type EcosystemOverlay = {
 }
 
 export const STAGE_COUNT = 7
-const STAGE_SECONDS = 7
+const STAGE_SECONDS = 5
+const OVERVIEW_SECONDS = 4
 const OVERVIEW = STAGE_COUNT - 1
 
 // Węzły ułożone zygzakiem, broker i baza stoją obok siebie na jednym serwerze
@@ -79,29 +83,32 @@ function makeGateway(label: string) {
 
   const canvas = document.createElement("canvas")
   canvas.width = 512
-  canvas.height = 128
+  canvas.height = 220
   const context = canvas.getContext("2d") as CanvasRenderingContext2D
   context.fillStyle = "#0d1322"
-  context.fillRect(0, 0, 512, 128)
-  context.font = "700 74px system-ui, 'Segoe UI', sans-serif"
-  context.fillStyle = "#e4eaff"
+  context.fillRect(0, 0, 512, 220)
   context.textAlign = "center"
   context.textBaseline = "middle"
-  context.fillText(label, 256, 68)
+  context.font = "800 88px system-ui, 'Segoe UI', sans-serif"
+  context.fillStyle = "#ffffff"
+  context.fillText("WEINTEK", 256, 72)
+  context.font = "600 64px system-ui, 'Segoe UI', sans-serif"
+  context.fillStyle = "#b9c5ea"
+  context.fillText(label, 256, 162)
   const texture = new THREE.CanvasTexture(canvas)
   texture.colorSpace = THREE.SRGBColorSpace
   texture.anisotropy = 8
   const plate = new THREE.Mesh(
-    new THREE.PlaneGeometry(1.32, 0.33),
+    new THREE.PlaneGeometry(1.32, 0.57),
     new THREE.MeshBasicMaterial({ map: texture, color: 0xc8c8c8, toneMapped: false })
   )
-  plate.position.set(0, 2.62, 0.26)
+  plate.position.set(0, 2.72, 0.26)
   group.add(plate)
 
   const leds: THREE.MeshStandardMaterial[] = []
   ;[COLORS.green, COLORS.blue, COLORS.amber].forEach((color, index) => {
     const material = glow(color, 2.2)
-    group.add(box([0.1, 0.1, 0.02], material, [-0.4 + index * 0.25, 2.2, 0.26]))
+    group.add(box([0.1, 0.1, 0.02], material, [-0.4 + index * 0.25, 2.25, 0.26]))
     leds.push(material)
   })
   // Gniazda Ethernet i COM
@@ -162,6 +169,13 @@ function panelTexture(kind: PanelKind, alert: boolean) {
   const c = canvas.getContext("2d") as CanvasRenderingContext2D
   c.fillStyle = "#0a0f1f"
   c.fillRect(0, 0, 768, 480)
+
+  c.font = "700 28px system-ui, 'Segoe UI', sans-serif"
+  c.textAlign = "right"
+  c.textBaseline = "middle"
+  c.fillStyle = "#9fb0d8"
+  c.fillText("OmniMES", 744, 24)
+  c.textAlign = "left"
 
   const green = "#22e58a"
   const red = "#ff3b5c"
@@ -263,14 +277,19 @@ export function mountEcosystem(
   // 1. Linia produkcyjna
   const line = new THREE.Group()
   const conveyor = makeConveyor(9)
-  const products = makeProducts(5, 9, [-2, 2])
+  const products = makeProducts(3, 9, [-2, -0.6, 0.9], 3.3)
   const press = makePress()
-  const robot = makeRobot()
+  const cell = makePalletCell({
+    base: [3.3, 2],
+    pickX: 3.3,
+    pallet: [1.5, 3.5],
+    spacing: products.spacing,
+    length: 9,
+  })
   const lamp = makeStackLight()
   press.group.position.x = -2
-  robot.group.position.set(2, 0, 1.6)
   lamp.group.position.set(-0.95, 3.68, 0.3)
-  line.add(conveyor.group, products.mesh, press.group, robot.group, lamp.group)
+  line.add(conveyor.group, products.mesh, press.group, cell.group, lamp.group)
   line.position.set(NODE_X[0], 0, NODE_Z[0])
   scene.add(line)
 
@@ -287,6 +306,10 @@ export function mountEcosystem(
   const serverBase = makeServerBase(15.5, 7.6)
   serverBase.position.set(serverCenter, 0, NODE_Z[3] + 0.3)
   scene.add(cabinet.group, gateway.group, server.group, database.group, serverBase)
+  addWordmark(server.group, 1.7, [0, 4.98, 1.13])
+  addWordmark(serverBase, 7.2, [0, 0.175, 2.3], { flat: true })
+  addFloorText(gateway.group, "WEINTEK", 6.4, [0, 0.03, 3])
+  addWordmark(scene, 30, [28, 0.03, 19], { flat: true, opacity: 0.82 })
 
   // 6. Panele dla ludzi w zakładzie
   const spread = labels.panels.length
@@ -343,8 +366,8 @@ export function mountEcosystem(
   // Robot łączy się z bramką własnym kablem
   const robotRoute = new THREE.CatmullRomCurve3(
     [
-      new THREE.Vector3(NODE_X[0] + 2, y, NODE_Z[0] + 2.3),
-      new THREE.Vector3(NODE_X[0] + 7, y, NODE_Z[0] + 3),
+      new THREE.Vector3(NODE_X[0] + 3.3, y, NODE_Z[0] + 2.6),
+      new THREE.Vector3(NODE_X[0] + 7.5, y, NODE_Z[0] + 3),
       new THREE.Vector3(NODE_X[0] + 13, y, NODE_Z[0] - 3.2),
       new THREE.Vector3(NODE_X[2] - 1, y, NODE_Z[2] - 1),
     ],
@@ -412,12 +435,18 @@ export function mountEcosystem(
     position: new THREE.Vector3(NODE_X[index] + x, height, NODE_Z[index] + z),
     look: new THREE.Vector3(NODE_X[index], index === 5 ? 2.1 : 2.7, NODE_Z[index]),
   }))
-  const wide = camera.aspect >= 1.6 ? 1 : 1.62
-  if (wide > 1) scene.fog = new THREE.Fog(COLORS.background, 70, 210)
-  cameras.push({
-    position: new THREE.Vector3(31.5, 45 * wide, 49 * wide),
-    look: new THREE.Vector3(31.5, 0, -2),
-  })
+  const overview = {
+    position: new THREE.Vector3(),
+    look: new THREE.Vector3(31.5, 0, 1),
+  }
+  cameras.push(overview)
+  // Kadr z góry zależy od proporcji ekranu, także po wejściu w pełny ekran
+  const frameOverview = () => {
+    const wide = Math.max(1, 2.38 / camera.aspect)
+    overview.position.set(31.5, 50 * wide, 52 * wide)
+    scene.fog = new THREE.Fog(COLORS.background, 50 * wide, 170 * wide)
+  }
+  frameOverview()
 
   // Punkty, nad którymi stoją etykiety. Ostatni opisuje wspólny serwer.
   const anchors = [
@@ -447,7 +476,7 @@ export function mountEcosystem(
     element.style.visibility = inside ? "visible" : "hidden"
   }
 
-  let current = options.still ? OVERVIEW : 0
+  let current = OVERVIEW
   let elapsed = 0
   let signalProgress = 0
   let branchProgress = 0
@@ -467,31 +496,31 @@ export function mountEcosystem(
 
   const frame = (delta: number, time: number, real = delta) => {
     elapsed += real
-    if (!options.still && elapsed > STAGE_SECONDS) {
+    if (!options.still && elapsed > (current === OVERVIEW ? OVERVIEW_SECONDS : STAGE_SECONDS)) {
       elapsed = 0
       current = (current + 1) % STAGE_COUNT
       options.onStage(current)
     }
 
     const shot = cameras[current]
-    const ease = 1 - Math.exp(-real * 1.7)
+    const ease = 1 - Math.exp(-real * 2.5)
     camera.position.lerp(shot.position, ease)
     lookAt.lerp(shot.look, ease)
     camera.lookAt(lookAt)
     focus.position.lerp(spot.set(shot.look.x, 7, shot.look.z + 6), ease)
 
     // Maszyna staje, sygnał rusza przez kolejne węzły i kończy na panelach
-    const fault = current < OVERVIEW && (current > 0 || elapsed > 1.8 || options.still)
+    const fault = current < OVERVIEW && (current > 0 || elapsed > 1 || options.still)
     const stopIndex = Math.min(current, SIGNAL_STOPS.length - 1)
     if (options.still) {
       signalProgress = SIGNAL_STOPS[stopIndex]
       branchProgress = 1
     } else if (fault) {
-      signalProgress += (SIGNAL_STOPS[stopIndex] - signalProgress) * (1 - Math.exp(-real * 1.6))
+      signalProgress += (SIGNAL_STOPS[stopIndex] - signalProgress) * (1 - Math.exp(-real * 2.6))
     } else {
       signalProgress = 0
     }
-    branchProgress = current === OVERVIEW - 1 ? Math.min(1, branchProgress + real * 0.42) : 0
+    branchProgress = current === OVERVIEW - 1 ? Math.min(1, branchProgress + real * 0.6) : 0
     if (options.still && current === OVERVIEW - 1) branchProgress = 1
     const inBranches = current === OVERVIEW - 1
 
@@ -513,7 +542,7 @@ export function mountEcosystem(
     conveyor.update(delta, speed)
     products.update(delta, speed)
     press.update(time, !fault)
-    robot.update(time, !fault)
+    cell.update(products.distance())
     lamp.set(fault ? "stop" : "run", time)
     wave.update(time)
     blink(cabinet.leds, time, 7)
@@ -554,6 +583,7 @@ export function mountEcosystem(
     stage.render()
   }
 
+  let disposed = false
   // Bez animacji: jedna klatka, a kamera przeskakuje na wybrany etap
   const still = () => {
     camera.position.copy(cameras[current].position)
@@ -561,9 +591,18 @@ export function mountEcosystem(
     frame(0.016, 1)
   }
   const loop = options.still ? null : runLoop(canvas, frame, stage.degrade)
+  stage.onResize(() => {
+    frameOverview()
+    if (options.still) still()
+  })
   if (options.still) {
     still()
-    stage.onResize(still)
+    // Jedna klatka powstaje przed wczytaniem logo, więc trzeba ją narysować ponownie
+    loadWordmark()
+      .then(() => {
+        if (!disposed) still()
+      })
+      .catch(() => {})
   }
 
   return {
@@ -577,6 +616,7 @@ export function mountEcosystem(
       loop?.setPaused(value)
     },
     dispose() {
+      disposed = true
       loop?.stop()
       panels.forEach((panel) => panel.dispose())
       stage.dispose()

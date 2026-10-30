@@ -696,7 +696,9 @@
     "stateRun": "Praca",
     "stateWait": "Czeka",
     "stateStop": "Postój",
-    "chipResume": "Praca wznowiona"
+    "chipResume": "Praca wznowiona",
+    "fullscreen": "Pełny ekran",
+    "exitFullscreen": "Zamknij pełny ekran"
   },
   "Benefits": {
     "title": "Co zmienia się w zakładzie po wdrożeniu OmniMES",
@@ -809,7 +811,9 @@
     "databaseData": "08:14:03 | maszyna3 | praca | 0",
     "panelsData": "Panel: maszyna 3 stoi od 08:14",
     "robotLabel": "Robot podłączony do OmniMES",
-    "robotShort": "Robot w OmniMES"
+    "robotShort": "Robot w OmniMES",
+    "fullscreen": "Pełny ekran",
+    "exitFullscreen": "Zamknij pełny ekran"
   },
   "McpSpotlight": {
     "badge": "Nowość od wersji 4.3",

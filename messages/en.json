@@ -688,7 +688,9 @@
     "stateRun": "Running",
     "stateWait": "Waiting",
     "stateStop": "Stopped",
-    "chipResume": "Back in production"
+    "chipResume": "Back in production",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen"
   },
   "Benefits": {
     "title": "What changes in your plant with OmniMES",
@@ -801,7 +803,9 @@
     "databaseData": "08:14:03 | machine3 | run | 0",
     "panelsData": "Panel: machine 3 stopped at 08:14",
     "robotLabel": "Robot connected to OmniMES",
-    "robotShort": "Robot in OmniMES"
+    "robotShort": "Robot in OmniMES",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen"
   },
   "McpSpotlight": {
     "badge": "New since version 4.3",

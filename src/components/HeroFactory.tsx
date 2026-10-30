@@ -3,11 +3,14 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
+import { FaCompress, FaExpand } from "react-icons/fa"
+
+import { useFullscreen } from "./useFullscreen"
 
 const chipClass =
   "pointer-events-none absolute left-0 top-0 z-10 whitespace-nowrap rounded-md border px-2 py-1 text-[11px] font-semibold text-white opacity-0 backdrop-blur transition-opacity duration-300 sm:text-xs"
 
-const STATIONS = ["stationPress", "stationCnc", "stationRobot", "stationPack"]
+const STATIONS = ["stationPress", "stationCnc", "stationPack", "stationRobot"]
 
 export function canAnimate() {
   const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
@@ -17,6 +20,8 @@ export function canAnimate() {
 export const HeroFactory = () => {
   const t = useTranslations("HeroSection")
   const locale = useLocale()
+  const frame = useRef<HTMLDivElement>(null)
+  const screen = useFullscreen(frame)
   const canvas = useRef<HTMLCanvasElement>(null)
   const stop = useRef<HTMLDivElement>(null)
   const stopValue = useRef<HTMLSpanElement>(null)
@@ -80,7 +85,10 @@ export const HeroFactory = () => {
   }, [t, locale])
 
   return (
-    <div className="relative isolate z-30 aspect-[16/9] w-full overflow-hidden rounded-xl bg-[#05060f] shadow-xl ring-1 ring-white/10">
+    <div
+      ref={frame}
+      className="relative isolate z-30 aspect-[16/9] w-full overflow-hidden rounded-xl bg-[#05060f] shadow-xl ring-1 ring-white/10 [&:fullscreen]:aspect-auto [&:fullscreen]:rounded-none"
+    >
       <Image
         src="/images/hero/factory-poster.jpg"
         alt={t("animationAlt")}
@@ -101,7 +109,11 @@ export const HeroFactory = () => {
 
       <div className={ready ? "contents" : "hidden"} aria-hidden="true">
         {/* Mini panel OmniMES */}
-        <div className="pointer-events-none absolute left-2 top-2 z-10 w-36 rounded-lg border border-white/15 bg-black/65 p-2 text-[10px] text-white backdrop-blur sm:left-3 sm:top-3 sm:w-48 sm:p-2.5 sm:text-[11px]">
+        <div
+          className={`pointer-events-none absolute left-2 top-2 z-10 w-36 rounded-lg border border-white/15 bg-black/65 p-2 text-[10px] text-white backdrop-blur sm:left-3 sm:top-3 sm:w-48 sm:p-2.5 sm:text-[11px] ${
+            screen.active ? "origin-top-left scale-150" : ""
+          }`}
+        >
           <div className="mb-1 flex items-center justify-between font-semibold">
             <span>OmniMES</span>
             <span className="font-normal text-white/60">{t("hudLine")}</span>
@@ -153,6 +165,18 @@ export const HeroFactory = () => {
           {t("chipResume")}
         </div>
       </div>
+
+      {screen.supported && (
+        <button
+          type="button"
+          onClick={screen.toggle}
+          aria-label={screen.active ? t("exitFullscreen") : t("fullscreen")}
+          title={screen.active ? t("exitFullscreen") : t("fullscreen")}
+          className="absolute right-3 top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
+        >
+          {screen.active ? <FaCompress size={13} /> : <FaExpand size={13} />}
+        </button>
+      )}
 
       <p className="absolute bottom-2 right-3 z-10 rounded bg-black/55 px-1.5 py-0.5 text-[10px] text-white/70 sm:text-[11px]">
         {t("animationNote")}

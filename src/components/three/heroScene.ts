@@ -8,9 +8,9 @@ import {
   makeConveyor,
   makeHmi,
   makePacker,
+  makePalletCell,
   makePress,
   makeProducts,
-  makeRobot,
   makeSparks,
   makeStackLight,
   makeWaveField,
@@ -29,11 +29,11 @@ export type HeroOverlay = {
 
 export type HeroLabels = Record<MachineState, string>
 
-const CYCLE = 16
-const STOP_FROM = 6
-const STOP_TO = 11
-const RESUME_TO = 13.5
-const STOPPED_STATION = 2
+const CYCLE = 13
+const STOP_FROM = 4.5
+const STOP_TO = 8.5
+const RESUME_TO = 10.5
+const STOPPED_STATION = 3
 
 const DOT: Record<MachineState, string> = { run: "#22e58a", warn: "#ffb020", stop: "#ff3b5c" }
 
@@ -50,10 +50,10 @@ export function mountHero(
     maximumFractionDigits: 2,
   })
 
-  const wideCamera = new THREE.Vector3(8.5, 7.2, 18.4)
-  const wideLook = new THREE.Vector3(0, 3.95, 0)
-  const closeCamera = new THREE.Vector3(6.6, 5.2, 13.6)
-  const closeLook = new THREE.Vector3(1.4, 2.5, 0.8)
+  const wideCamera = new THREE.Vector3(8.5, 7.8, 21)
+  const wideLook = new THREE.Vector3(0.4, 3.5, 0.4)
+  const closeCamera = new THREE.Vector3(9.5, 5.4, 15)
+  const closeLook = new THREE.Vector3(4.6, 2.2, 1.6)
   const position = wideCamera.clone()
   const look = wideLook.clone()
   camera.position.copy(position)
@@ -67,29 +67,41 @@ export function mountHero(
   scene.add(conveyor.group)
   const stations = [
     { x: -5.1, z: 0 },
-    { x: -1.7, z: -2.05 },
-    { x: 1.9, z: 1.6 },
-    { x: 5.2, z: 0 },
+    { x: -2.5, z: -2.05 },
+    { x: 2.1, z: 0 },
+    { x: 6.1, z: 2 },
   ]
+  const pickX = 6.1
   const products = makeProducts(
-    10,
+    5,
     15,
-    stations.map((station) => station.x)
+    stations.slice(0, 3).map((station) => station.x),
+    pickX
   )
   scene.add(products.mesh)
 
   const press = makePress()
   const cnc = makeCnc()
-  const robot = makeRobot()
   const packer = makePacker()
-  const machines = [press, cnc, robot, packer]
-  const lights = machines.map((machine, index) => {
+  const machines = [press, cnc, packer]
+  machines.forEach((machine, index) => {
     machine.group.position.set(stations[index].x, 0, stations[index].z)
     scene.add(machine.group)
+  })
+  const cell = makePalletCell({
+    base: [stations[3].x, stations[3].z],
+    pickX,
+    pallet: [4.3, 3.5],
+    spacing: products.spacing,
+    length: 15,
+  })
+  scene.add(cell.group)
+
+  const lights = stations.map((station, index) => {
     const light = makeStackLight()
-    const height = [3.68, 2.5, 0.56, 2.88][index]
-    light.group.position.set(stations[index].x + 1.05, height, stations[index].z + 0.3)
-    if (index === 2) light.group.position.set(stations[index].x - 0.5, 0.0, stations[index].z + 0.5)
+    const height = [3.68, 2.5, 2.88, 0][index]
+    const side = index === 3 ? [0.95, 0.35] : [1.05, 0.3]
+    light.group.position.set(station.x + side[0], height, station.z + side[1])
     scene.add(light.group)
     return light
   })
@@ -173,7 +185,7 @@ export function mountHero(
   // Paczki danych z maszyn do pierścienia
   const perStation = options.compact ? 3 : 5
   const curves = stations.map((station, index) => {
-    const start = new THREE.Vector3(station.x, [4.3, 3.2, 3.2, 3.6][index], station.z)
+    const start = new THREE.Vector3(station.x, [4.3, 3.2, 3.6, 3.4][index], station.z)
     const end = hub.position.clone().add(new THREE.Vector3(station.x * 0.2, -1.6, 0))
     const middle = start
       .clone()
@@ -231,10 +243,11 @@ export function mountHero(
     const stopped = phase >= STOP_FROM && phase < STOP_TO
     const resumed = phase >= STOP_TO && phase < RESUME_TO
     speed += ((stopped ? 0 : 1) - speed) * Math.min(delta * 3, 1)
-    push += ((stopped ? 1 : 0) - push) * Math.min(delta * 1.1, 1)
+    push += ((stopped ? 1 : 0) - push) * Math.min(delta * 1.7, 1)
 
     conveyor.update(delta, speed)
     products.update(delta, speed)
+    cell.update(products.distance())
     sparks.update(delta)
     wave.update(time)
     web.rotation.y = time * 0.18
@@ -242,14 +255,14 @@ export function mountHero(
     hub.lookAt(camera.position)
     ring.scale.setScalar(1 + Math.sin(time * 2.2) * 0.008)
 
-    machines.forEach((machine, index) => {
-      const blocked = stopped && Math.abs(index - STOPPED_STATION) === 1
+    stations.forEach((_, index) => {
+      const blocked = stopped && index === STOPPED_STATION - 1
       const down = stopped && index === STOPPED_STATION
       const running = !down && !blocked
-      if (machine === press) {
+      if (index === 0) {
         if (press.update(time, running)) sparks.burst(sparkOrigin, options.compact ? 6 : 12)
-      } else {
-        machine.update(time, running)
+      } else if (index < 3) {
+        machines[index].update(time, running)
       }
       const state: MachineState = down ? "stop" : blocked ? "warn" : "run"
       lights[index].set(state, time)
@@ -281,8 +294,8 @@ export function mountHero(
     alertMaterial.opacity = stopped ? 0.9 * (1 - pulse) : resumed ? 0.65 : 0
 
     // Wartości poglądowe: postój obniża OEE i podbija energię na sztukę
-    oee += ((stopped ? 71 : 84) - oee) * delta * (stopped ? 0.32 : 0.16)
-    energy += ((stopped ? 1.62 : 1.24) - energy) * delta * (stopped ? 0.4 : 0.2)
+    oee += ((stopped ? 71 : 84) - oee) * delta * (stopped ? 0.45 : 0.28)
+    energy += ((stopped ? 1.62 : 1.24) - energy) * delta * (stopped ? 0.55 : 0.32)
     overlay.oeeValue.textContent = `${Math.round(oee)}%`
     overlay.energyValue.textContent = number.format(energy)
 
@@ -299,7 +312,7 @@ export function mountHero(
       )
     }
 
-    const seconds = Math.max(0, Math.floor((phase - STOP_FROM) * 12))
+    const seconds = Math.max(0, Math.floor((phase - STOP_FROM) * 15))
     overlay.stopValue.textContent = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`
     overlay.stop.style.opacity = stopped ? "1" : "0"
     overlay.resume.style.opacity = resumed ? "1" : "0"

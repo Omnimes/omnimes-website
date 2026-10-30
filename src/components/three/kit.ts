@@ -110,6 +110,90 @@ function canvasTexture(width: number, height: number, draw: (c: CanvasRenderingC
   return texture
 }
 
+let wordmarkSource: Promise<{ path: Path2D; box: number[]; dot: number[] }> | undefined
+
+export function loadWordmark() {
+  wordmarkSource ??= fetch("/images/hero/omnimes-wordmark.svg")
+    .then((response) => response.text())
+    .then((svg) => ({
+      path: new Path2D(svg.match(/ d="([^"]+)"/)?.[1] ?? ""),
+      box: (svg.match(/viewBox="([^"]+)"/)?.[1] ?? "0 0 1 1").split(" ").map(Number),
+      dot: ["cx", "cy", "r"].map((name) =>
+        Number(svg.match(new RegExp(` ${name}="([^"]+)"`))?.[1] ?? 0)
+      ),
+    }))
+  return wordmarkSource
+}
+
+/** Logo OmniMES jako płaski znak w scenie. */
+export function addWordmark(
+  parent: THREE.Object3D,
+  width: number,
+  position: [number, number, number],
+  options: { flat?: boolean; opacity?: number } = {}
+) {
+  const material = new THREE.MeshBasicMaterial({
+    color: 0xdcdcdc,
+    transparent: true,
+    opacity: options.opacity ?? 1,
+    depthWrite: false,
+    toneMapped: false,
+    visible: false,
+  })
+  const plate = new THREE.Mesh(new THREE.PlaneGeometry(width, width / 5.09), material)
+  plate.position.set(...position)
+  if (options.flat) plate.rotation.x = -Math.PI / 2
+  parent.add(plate)
+
+  loadWordmark()
+    .then(({ path, box, dot }) => {
+      const scale = 1536 / box[2]
+      const texture = canvasTexture(1536, Math.round(box[3] * scale), (c) => {
+        c.scale(scale, scale)
+        c.translate(-box[0], -box[1])
+        c.fillStyle = "#ffffff"
+        c.fill(path, "evenodd")
+        c.fillStyle = "#1a8cff"
+        c.beginPath()
+        c.arc(dot[0], dot[1], dot[2], 0, Math.PI * 2)
+        c.fill()
+      })
+      material.map = texture
+      material.visible = true
+      material.needsUpdate = true
+    })
+    .catch(() => {})
+}
+
+/** Napis na podłodze, czytelny z góry. */
+export function addFloorText(
+  parent: THREE.Object3D,
+  text: string,
+  width: number,
+  position: [number, number, number]
+) {
+  const texture = canvasTexture(1024, 200, (c) => {
+    c.font = "800 150px system-ui, 'Segoe UI', sans-serif"
+    c.textAlign = "center"
+    c.textBaseline = "middle"
+    c.fillStyle = "#ffffff"
+    c.fillText(text, 512, 104)
+  })
+  const plate = new THREE.Mesh(
+    new THREE.PlaneGeometry(width, width / 5.12),
+    new THREE.MeshBasicMaterial({
+      map: texture,
+      color: 0xc8c8c8,
+      transparent: true,
+      depthWrite: false,
+      toneMapped: false,
+    })
+  )
+  plate.position.set(...position)
+  plate.rotation.x = -Math.PI / 2
+  parent.add(plate)
+}
+
 function hazardMaterial() {
   const texture = canvasTexture(128, 32, (c) => {
     c.fillStyle = "#12141c"
@@ -223,7 +307,7 @@ export function makeConveyor(length: number) {
 }
 
 /** Wyroby zmieniają wygląd po każdej maszynie: blacha, wytłoczka, detal, karton. */
-export function makeProducts(count: number, length: number, stages: number[]) {
+export function makeProducts(count: number, length: number, stages: number[], pickAt = Infinity) {
   const looks = [
     { color: new THREE.Color(0xc2cadb), scale: [1, 0.42, 1] },
     { color: new THREE.Color(0x9fb0d4), scale: [1, 0.78, 1] },
@@ -239,22 +323,26 @@ export function makeProducts(count: number, length: number, stages: number[]) {
   mesh.receiveShadow = true
   mesh.frustumCulled = false
   const matrix = new THREE.Matrix4()
-  const offsets = Array.from({ length: count }, (_, index) => (index / count) * length)
+  const spacing = length / count
+  let distance = 0
 
   return {
     mesh,
+    spacing,
+    distance: () => distance,
     update(delta: number, speed: number) {
-      offsets.forEach((offset, index) => {
-        offsets[index] = (offset + delta * speed * 1.5) % length
-        const x = offsets[index] - length / 2
+      distance += delta * speed * 1.2
+      for (let index = 0; index < count; index += 1) {
+        const x = ((distance + index * spacing) % length) - length / 2
         const look = looks[Math.min(stages.filter((stage) => x > stage).length, looks.length - 1)]
         const height = 0.34 * look.scale[1]
+        const size = x > pickAt ? 0 : 1
         matrix
-          .makeScale(look.scale[0], look.scale[1], look.scale[2])
+          .makeScale(look.scale[0] * size, look.scale[1] * size, look.scale[2] * size)
           .setPosition(x, 0.89 + height / 2, 0)
         mesh.setMatrixAt(index, matrix)
         mesh.setColorAt(index, look.color)
-      })
+      }
       mesh.instanceMatrix.needsUpdate = true
       if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true
     },
@@ -335,6 +423,7 @@ export function makePress() {
   ;[-0.46, 0.46].forEach((x) => group.add(cylinder(0.05, 1.5, steel(0xa7b3cc), [x, 2.25, 0])))
   const ram = box([1.42, 0.6, 0.94], paint(0x3f4d73), [0, 2.1, 0], 0.08)
   group.add(ram)
+  addWordmark(group, 1.7, [0, 3.34, 0.585])
   const strip = box([1.1, 0.05, 0.03], glow(COLORS.blue), [0, 0, 0.48])
   ram.add(strip)
   let wasDown = false
@@ -385,6 +474,10 @@ export function makeCnc() {
   }
 }
 
+const UPPER_ARM = 1.7
+const FOREARM = 1.52
+const SHOULDER_HEIGHT = 0.52
+
 export function makeRobot() {
   const group = new THREE.Group()
   const body = paint(COLORS.robot, 0.34)
@@ -392,20 +485,20 @@ export function makeRobot() {
   group.add(cylinder(0.62, 0.14, paint(0x28324f), [0, 0.07, 0]))
   group.add(cylinder(0.44, 0.34, body, [0, 0.31, 0]))
   const shoulder = new THREE.Group()
-  shoulder.position.y = 0.52
+  shoulder.position.y = SHOULDER_HEIGHT
   group.add(shoulder)
   shoulder.add(sphere(0.3, joint, [0, 0, 0]))
   const upper = new THREE.Group()
   shoulder.add(upper)
   upper.add(capsule(0.17, 1.42, body, [0, 0.85, 0]))
   const elbow = new THREE.Group()
-  elbow.position.y = 1.7
+  elbow.position.y = UPPER_ARM
   upper.add(elbow)
   elbow.add(sphere(0.25, joint, [0, 0, 0]))
   elbow.add(cylinder(0.15, 0.56, glow(COLORS.magenta, 1.2)).rotateX(Math.PI / 2))
   elbow.add(capsule(0.13, 1.2, body, [0.76, 0, 0], "x"))
   const wrist = new THREE.Group()
-  wrist.position.x = 1.52
+  wrist.position.x = FOREARM
   elbow.add(wrist)
   wrist.add(sphere(0.15, joint, [0, 0, 0]))
   wrist.add(box([0.3, 0.1, 0.34], steel(0xa7b3cc), [0, -0.2, 0], 0.03))
@@ -414,12 +507,125 @@ export function makeRobot() {
 
   return {
     group,
-    update(time: number, running: boolean) {
-      if (!running) return
-      shoulder.rotation.y = Math.sin(time * 1.1) * 0.9
-      upper.rotation.z = -0.25 + Math.sin(time * 1.6) * 0.16
-      elbow.rotation.z = -0.25 + Math.cos(time * 1.6) * 0.3
-      wrist.rotation.z = -(upper.rotation.z + elbow.rotation.z)
+    /** Ustawia nadgarstek w punkcie, chwytak zawsze patrzy w dół. */
+    reach(x: number, y: number, z: number) {
+      shoulder.rotation.y = Math.atan2(-z, x)
+      const radial = Math.hypot(x, z)
+      const height = y - SHOULDER_HEIGHT
+      const span = Math.min(Math.hypot(radial, height), UPPER_ARM + FOREARM - 0.02)
+      const first =
+        Math.atan2(height, radial) +
+        Math.acos((UPPER_ARM ** 2 + span ** 2 - FOREARM ** 2) / (2 * UPPER_ARM * span))
+      const inner = Math.acos(
+        (UPPER_ARM ** 2 + FOREARM ** 2 - span ** 2) / (2 * UPPER_ARM * FOREARM)
+      )
+      const second = first - (Math.PI - inner)
+      upper.rotation.z = first - Math.PI / 2
+      elbow.rotation.z = second - upper.rotation.z
+      wrist.rotation.z = -second
+    },
+  }
+}
+
+/** Robot zdejmuje kartony z końca linii i układa je warstwami na palecie. */
+export function makePalletCell(options: {
+  base: [number, number]
+  pickX: number
+  pallet: [number, number]
+  spacing: number
+  length: number
+}) {
+  const { base, pickX, pallet, spacing, length } = options
+  const group = new THREE.Group()
+  const robot = makeRobot()
+  robot.group.position.set(base[0], 0, base[1])
+  group.add(robot.group)
+
+  const wood = paint(0xa27a4e, 0.72)
+  for (let index = -1; index <= 1; index += 1) {
+    group.add(box([2.2, 0.14, 0.2], wood, [pallet[0], 0.07, pallet[1] + index * 0.62], 0.02))
+  }
+  for (let index = -3; index <= 3; index += 1) {
+    group.add(box([0.26, 0.06, 1.5], wood, [pallet[0] + index * 0.31, 0.17, pallet[1]], 0.02))
+  }
+
+  const cartonSize: [number, number, number] = [0.58, 0.44, 0.69]
+  const cartonGeometry = new RoundedBoxGeometry(...cartonSize, 4, 0.04)
+  const cartonMaterial = paint(0xc99a63, 0.6)
+  const slots: THREE.Vector3[] = []
+  for (let layer = 0; layer < 2; layer += 1) {
+    for (let row = 0; row < 2; row += 1) {
+      for (let column = 0; column < 3; column += 1) {
+        slots.push(
+          new THREE.Vector3(
+            pallet[0] + (column - 1) * 0.66,
+            0.2 + cartonSize[1] * (layer + 0.5),
+            pallet[1] + (row - 0.5) * 0.74
+          )
+        )
+      }
+    }
+  }
+  const stack = new THREE.InstancedMesh(cartonGeometry, cartonMaterial, slots.length)
+  stack.castShadow = true
+  stack.receiveShadow = true
+  stack.frustumCulled = false
+  const matrix = new THREE.Matrix4()
+  slots.forEach((slot, index) => stack.setMatrixAt(index, matrix.makeTranslation(slot)))
+  stack.count = 0
+  group.add(stack)
+  const held = new THREE.Mesh(cartonGeometry, cartonMaterial)
+  held.castShadow = true
+  group.add(held)
+
+  const polar = (x: number, y: number, z: number) => ({
+    angle: Math.atan2(z - base[1], x - base[0]),
+    radius: Math.hypot(x - base[0], z - base[1]),
+    y,
+  })
+  const beltTop = 0.89 + cartonSize[1]
+  const lifted = 2.5
+  const release = 0.54
+  const keys = [0, 0.14, 0.42, release, 0.66, 0.9, 1]
+  const smooth = (value: number) => value * value * (3 - 2 * value)
+
+  return {
+    group,
+    /** Ruch wynika z drogi taśmy, więc robot zawsze trafia w karton i staje razem z linią. */
+    update(distance: number) {
+      const cycle = (distance - (pickX + length / 2)) / spacing
+      const round = Math.floor(cycle)
+      const phase = cycle - round
+      const placed = ((round % slots.length) + slots.length) % slots.length
+      const slot = slots[placed]
+      const top = slot.y + cartonSize[1] / 2
+
+      const pick = polar(pickX, beltTop, 0)
+      const pickHigh = { ...pick, y: lifted }
+      const drop = polar(slot.x, top, slot.z)
+      const dropHigh = { ...drop, y: lifted }
+      const route = [pick, pickHigh, dropHigh, drop, dropHigh, pickHigh, pick]
+
+      let segment = 0
+      while (phase > keys[segment + 1]) segment += 1
+      const from = route[segment]
+      const to = route[segment + 1]
+      const blend = smooth((phase - keys[segment]) / (keys[segment + 1] - keys[segment]))
+      const angle =
+        from.angle +
+        Math.atan2(Math.sin(to.angle - from.angle), Math.cos(to.angle - from.angle)) * blend
+      const radius = from.radius + (to.radius - from.radius) * blend
+      const y = from.y + (to.y - from.y) * blend
+
+      const x = Math.cos(angle) * radius
+      const z = Math.sin(angle) * radius
+      robot.reach(x, y + 0.53, z)
+
+      const carrying = phase < release
+      held.visible = carrying
+      held.position.set(base[0] + x, y - cartonSize[1] / 2, base[1] + z)
+      held.rotation.y = -angle + pick.angle
+      stack.count = placed + (carrying ? 0 : 1)
     },
   }
 }
