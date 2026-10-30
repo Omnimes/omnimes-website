@@ -12,7 +12,11 @@ import { SubtitleNormal } from "./ui/Subtitle"
 
 const STEPS = ["line", "plc", "gateway", "server", "database", "panels"]
 
-type Scene = { setStage: (stage: number) => void; setPaused: (paused: boolean) => void; dispose: () => void }
+type Scene = {
+  setStage: (stage: number) => void
+  setPaused: (paused: boolean) => void
+  dispose: () => void
+}
 
 export const EcosystemFlow = () => {
   const t = useTranslations("Ecosystem")
@@ -84,7 +88,11 @@ export const EcosystemFlow = () => {
   }
 
   return (
-    <section ref={section} id="jak-to-dziala" className="mx-auto mt-16 max-w-7xl scroll-mt-24 px-6 sm:mt-24 sm:px-8">
+    <section
+      ref={section}
+      id="jak-to-dziala"
+      className="mx-auto mt-16 max-w-7xl scroll-mt-24 px-6 sm:mt-24 sm:px-8"
+    >
       <div className="md:text-center">
         <SubtitleNormal text={t("smallSubtitle")} />
         <Heading text={t("title")} />

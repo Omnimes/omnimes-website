@@ -3,6 +3,7 @@ import * as THREE from "three"
 import {
   COLORS,
   createStage,
+  MachineState,
   makeCnc,
   makeConveyor,
   makePacker,
@@ -11,7 +12,6 @@ import {
   makeRobot,
   makeStackLight,
   makeWaveField,
-  MachineState,
   runLoop,
 } from "./kit"
 
@@ -30,7 +30,11 @@ const STOP_FROM = 7
 const STOP_TO = 11.5
 const STOPPED_STATION = 2
 
-export function mountHero(canvas: HTMLCanvasElement, chips: HeroChips, options: { compact: boolean }) {
+export function mountHero(
+  canvas: HTMLCanvasElement,
+  chips: HeroChips,
+  options: { compact: boolean }
+) {
   const stage = createStage(canvas, options)
   const { scene, camera } = stage
   camera.position.set(8.5, 7.2, 18.4)
@@ -62,7 +66,11 @@ export function mountHero(canvas: HTMLCanvasElement, chips: HeroChips, options: 
     machine.group.position.set(stations[index].x, 0, stations[index].z)
     scene.add(machine.group)
     const light = makeStackLight()
-    light.group.position.set(stations[index].x + 1.25, index === 2 ? 0.8 : 2.6, stations[index].z + 0.4)
+    light.group.position.set(
+      stations[index].x + 1.25,
+      index === 2 ? 0.8 : 2.6,
+      stations[index].z + 0.4
+    )
     scene.add(light.group)
     return light
   })
@@ -77,11 +85,17 @@ export function mountHero(canvas: HTMLCanvasElement, chips: HeroChips, options: 
   const colors = new Float32Array(ringGeometry.attributes.position.count * 3)
   const position = ringGeometry.attributes.position
   for (let index = 0; index < position.count; index += 1) {
-    left.clone().lerp(right, position.getX(index) / 3.5 + 0.5).toArray(colors, index * 3)
+    left
+      .clone()
+      .lerp(right, position.getX(index) / 3.5 + 0.5)
+      .toArray(colors, index * 3)
   }
   ringGeometry.setAttribute("color", new THREE.BufferAttribute(colors, 3))
   hub.add(
-    new THREE.Mesh(ringGeometry, new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false }))
+    new THREE.Mesh(
+      ringGeometry,
+      new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })
+    )
   )
   const web = new THREE.Group()
   hub.add(web)
@@ -104,7 +118,10 @@ export function mountHero(canvas: HTMLCanvasElement, chips: HeroChips, options: 
   const curves = stations.map((station) => {
     const start = new THREE.Vector3(station.x, 3, station.z)
     const end = hub.position.clone().add(new THREE.Vector3(station.x * 0.2, -1.6, 0))
-    const middle = start.clone().lerp(end, 0.5).add(new THREE.Vector3(0, 0.5, 0))
+    const middle = start
+      .clone()
+      .lerp(end, 0.5)
+      .add(new THREE.Vector3(0, 0.5, 0))
     return new THREE.QuadraticBezierCurve3(start, middle, end)
   })
   const packets = new THREE.InstancedMesh(
@@ -137,7 +154,11 @@ export function mountHero(canvas: HTMLCanvasElement, chips: HeroChips, options: 
     element.style.transform = `translate(-50%, -100%) translate(${x}px, ${y}px)`
   }
   const anchors = {
-    stop: new THREE.Vector3(options.compact ? -0.6 : stations[2].x, options.compact ? 4.3 : 3.5, stations[2].z),
+    stop: new THREE.Vector3(
+      options.compact ? -0.6 : stations[2].x,
+      options.compact ? 4.3 : 3.5,
+      stations[2].z
+    ),
     energy: new THREE.Vector3(options.compact ? stations[3].x + 0.6 : stations[3].x, 3.4, 0),
     oee: new THREE.Vector3(stations[0].x, 4.1, 0),
     ring: new THREE.Vector3(3.9, 8, -1.6),
@@ -174,7 +195,9 @@ export function mountHero(canvas: HTMLCanvasElement, chips: HeroChips, options: 
     let instance = 0
     curves.forEach((curve, station) => {
       const alert = stopped && station === STOPPED_STATION
-      ;(beams[station].material as THREE.LineBasicMaterial).color.set(alert ? COLORS.red : COLORS.blue)
+      ;(beams[station].material as THREE.LineBasicMaterial).color.set(
+        alert ? COLORS.red : COLORS.blue
+      )
       for (let index = 0; index < perStation; index += 1) {
         const progress = (time * 0.26 + index / perStation + station * 0.13) % 1
         const spot = curve.getPoint(progress)

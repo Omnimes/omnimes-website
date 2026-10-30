@@ -200,7 +200,11 @@ function makePanel(role: string, kind: EcosystemLabels["panels"][number]["kind"]
   group.add(
     new THREE.Mesh(
       new THREE.PlaneGeometry(3.12, 1.95),
-      new THREE.MeshBasicMaterial({ map: panelTexture(role, kind), color: 0xb4b4b4, toneMapped: false })
+      new THREE.MeshBasicMaterial({
+        map: panelTexture(role, kind),
+        color: 0xb4b4b4,
+        toneMapped: false,
+      })
     )
   )
   ;(group.children[1] as THREE.Mesh).position.set(0, 2.55, 0.07)

@@ -101,10 +101,7 @@ export const HeroFactory = () => {
         <div ref={energy} className={chipClass}>
           kWh / {t("chipUnit")} <span ref={energyValue} className="tabular-nums" />
         </div>
-        <div
-          ref={stop}
-          className={`${chipClass} border-red-400/60 bg-red-600/80 opacity-0`}
-        >
+        <div ref={stop} className={`${chipClass} border-red-400/60 bg-red-600/80 opacity-0`}>
           {t("chipStop")} <span ref={stopValue} className="tabular-nums" />
         </div>
       </div>
