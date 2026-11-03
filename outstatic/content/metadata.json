@@ -273,6 +273,80 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
+        "path": "outstatic/content/posts/mcp-dotarl-do-sterownikow-jak-podlaczyc-agenta-ai-do-linii-zeby-czytal-dane-a-zmiany-zatwierdzal-czlowiek.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-mcp-sterownik/cover-mcp-sterownik-pl.png",
+      "description": "W 2026 r. serwery MCP dostały Ignition, CODESYS i OPC UA, a Rockwell i Siemens pokazali agentów inżynierskich. Pokazujemy przetestowany serwer MCP dla linii w Pythonie: odczyt z listy tagów, zmiana nastawy dopiero po zatwierdzeniu człowieka i miejsce takiego serwera w architekturze zakładu.",
+      "lang": "pl",
+      "publishedAt": "2026-11-02T08:00:00.000Z",
+      "slug": "mcp-dotarl-do-sterownikow-jak-podlaczyc-agenta-ai-do-linii-zeby-czytal-dane-a-zmiany-zatwierdzal-czlowiek",
+      "status": "published",
+      "tags": [
+        {
+          "value": "mcp",
+          "label": "MCP"
+        },
+        {
+          "value": "agentAi",
+          "label": "AGENT AI"
+        },
+        {
+          "value": "AI",
+          "label": "AI"
+        },
+        {
+          "value": "omniMES",
+          "label": "OmniMES"
+        }
+      ],
+      "title": "MCP dotarł do sterowników: jak podłączyć agenta AI do linii, żeby czytał dane, a zmiany zatwierdzał człowiek"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/mcp-has-reached-the-plc-how-to-connect-an-ai-agent-to-a-line-so-it-reads-data-and-a-human-approves-changes.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-mcp-sterownik/cover-mcp-sterownik-en.png",
+      "description": "In 2026 Ignition, CODESYS and OPC UA gained MCP servers, and Rockwell and Siemens showed engineering agents. Here is a tested MCP server for a production line in Python: reads from a tag allow-list, setpoint changes only after a person approves, and where such a server belongs in a plant.",
+      "lang": "en",
+      "publishedAt": "2026-11-02T08:00:00.000Z",
+      "slug": "mcp-has-reached-the-plc-how-to-connect-an-ai-agent-to-a-line-so-it-reads-data-and-a-human-approves-changes",
+      "status": "published",
+      "tags": [
+        {
+          "value": "mcp",
+          "label": "MCP"
+        },
+        {
+          "value": "agentAi",
+          "label": "AGENT AI"
+        },
+        {
+          "value": "AI",
+          "label": "AI"
+        },
+        {
+          "value": "omniMES",
+          "label": "OmniMES"
+        }
+      ],
+      "title": "MCP has reached the PLC: how to connect an AI agent to a line so it reads data and a human approves changes"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
         "path": "outstatic/content/posts/omnimes-relpol-partnership-smart-energy-metering-network.md"
       },
       "author": {
