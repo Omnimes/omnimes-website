@@ -426,6 +426,7 @@ export default function PostLayout({
           text-decoration-color: var(--rule);
           text-underline-offset: 3px;
           transition: text-decoration-color .15s;
+          overflow-wrap: anywhere;
         }
         .oe-article-body a:hover { text-decoration-color: var(--copper); }
 
@@ -688,6 +689,10 @@ export default function PostLayout({
             grid-template-columns: minmax(0, 1fr);
             gap: 0;
             padding: 0 24px;
+          }
+          .oe-article-body table {
+            display: block;
+            overflow-x: auto;
           }
           .oe-sidebar {
             position: static;
