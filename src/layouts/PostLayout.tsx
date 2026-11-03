@@ -393,7 +393,7 @@ export default function PostLayout({
           margin: 0 auto;
           padding: 0 48px;
           display: grid;
-          grid-template-columns: 1fr 220px;
+          grid-template-columns: minmax(0, 1fr) 220px;
           gap: 60px;
           align-items: start;
         }
@@ -685,7 +685,7 @@ export default function PostLayout({
           .oe-hero { padding: 32px 24px; }
           .oe-cover-wrap { padding: 24px 24px 0; }
           .oe-article-wrap {
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(0, 1fr);
             gap: 0;
             padding: 0 24px;
           }
