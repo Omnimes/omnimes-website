@@ -88,6 +88,43 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
+        "path": "outstatic/content/posts/48-mld-zl-dla-przemyslu-energochlonnego-polowe-pomocy-trzeba-zainwestowac-co-policzyc-przed-naborem.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-energochlonni/cover-energochlonni-pl.png",
+      "description": "Sejm przyjął 5 listopada poprawki Senatu do ustawy o wsparciu sektorów energochłonnych: 4,8 mld zł na lata 2027–2030, podział proporcjonalny zamiast konkursu i obowiązek zainwestowania co najmniej połowy pomocy w 48 miesięcy. Wyjaśniamy mechanizm, liczymy przykład i podpowiadamy, jakie dane zebrać już teraz.",
+      "lang": "pl",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "slug": "48-mld-zl-dla-przemyslu-energochlonnego-polowe-pomocy-trzeba-zainwestowac-co-policzyc-przed-naborem",
+      "status": "published",
+      "tags": [
+        {
+          "value": "omniEnergy",
+          "label": "OmniEnergy"
+        },
+        {
+          "value": "ems",
+          "label": "EMS"
+        },
+        {
+          "value": "ue",
+          "label": "UE"
+        },
+        {
+          "value": "omniMES",
+          "label": "OmniMES"
+        }
+      ],
+      "title": "4,8 mld zł dla przemysłu energochłonnego: połowę pomocy trzeba zainwestować. Co policzyć i zmierzyć przed naborem"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
         "path": "outstatic/content/posts/basal-in-the-factory-a-polish-decision-model-that-makes-downtime-calls-on-site.md"
       },
       "author": {
@@ -4593,6 +4630,43 @@
         }
       ],
       "title": "Pilotażowe wdrożenie systemu MES – jak zacząć i dlaczego warto zrobić to etapami?"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/polands-pln-4-8bn-for-energy-intensive-industry-half-the-aid-must-be-invested-what-to-measure-first.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/post-energochlonni/cover-energochlonni-en.png",
+      "description": "On 5 November the Polish Sejm accepted the Senate's amendments to a PLN 4.8bn electricity support scheme for energy-intensive firms in 2027–2030: a proportional split instead of a contest, and a duty to invest at least half the aid within 48 months. How the support is calculated, a worked example, and the data to start collecting now.",
+      "lang": "en",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "slug": "polands-pln-4-8bn-for-energy-intensive-industry-half-the-aid-must-be-invested-what-to-measure-first",
+      "status": "published",
+      "tags": [
+        {
+          "value": "omniEnergy",
+          "label": "OmniEnergy"
+        },
+        {
+          "value": "ems",
+          "label": "EMS"
+        },
+        {
+          "value": "ue",
+          "label": "UE"
+        },
+        {
+          "value": "omniMES",
+          "label": "OmniMES"
+        }
+      ],
+      "title": "Poland's PLN 4.8bn for energy-intensive industry: half the aid must be invested. What to calculate and measure first"
     },
     {
       "__outstatic": {
