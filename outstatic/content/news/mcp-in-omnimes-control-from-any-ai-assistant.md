@@ -13,8 +13,8 @@ publishedAt: '2026-07-23T09:00:00.000Z'
 
 As of version **4.3.0**, OmniMES ships with built-in support for **MCP (Model Context Protocol)** — an open standard that lets any AI assistant connect directly to your production system. You plug in Claude Desktop, ChatGPT, Cursor or Copilot, paste a token, and use natural language to build dashboards, configure machines and statuses, and read the live production state — with no UI clicking and no SQL to write.
 
-<video controls width="100%" preload="metadata" poster="/images/omnimes-mcp-cover.png">
-  <source src="/videos/omnimes-mcp.mp4" type="video/mp4" />
+<video controls width="100%" preload="metadata" poster="/images/omnimes-mcp-cover-en.jpg">
+  <source src="/videos/omnimes-mcp-en.mp4" type="video/mp4" />
   Your browser does not support HTML5 video playback.
 </video>
 

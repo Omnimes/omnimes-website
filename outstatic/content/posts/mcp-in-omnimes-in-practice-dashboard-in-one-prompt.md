@@ -17,8 +17,8 @@ OmniMES now exposes a standard **MCP ([Model Context Protocol](/en/blog/model-co
 
 > **Disclaimer:** The name „WOODCRAFT" and the plant described in this article and video are **fictional** — used solely to demonstrate the MCP protocol in OmniMES. No deployment took place at any company by this name. Any resemblance to existing entities is coincidental.
 
-<video controls width="100%" preload="metadata" poster="/images/omnimes-mcp-cover.png">
-  <source src="/videos/omnimes-mcp.mp4" type="video/mp4" />
+<video controls width="100%" preload="metadata" poster="/images/omnimes-mcp-cover-en.jpg">
+  <source src="/videos/omnimes-mcp-en.mp4" type="video/mp4" />
   Your browser does not support HTML5 video playback.
 </video>
 
