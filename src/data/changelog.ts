@@ -44,6 +44,37 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.5.1",
+      date: "2026-11-10",
+      entries: [
+        {
+          category: "changed",
+          scope: "Dokumentacja — zalecany system: Linux z Dockerem",
+          body: "Wymagania sprzętowe i instrukcja instalacji jasno wskazują zalecane środowisko serwera produkcyjnego: Linux (Debian lub Ubuntu Server LTS) z Docker Engine. Przy infrastrukturze opartej na Windows zalecamy maszynę wirtualną z Linuksem. Instalacja na Windows Server wymaga indywidualnych ustaleń, a dokumentacja wyjaśnia dlaczego: Docker Desktop nie jest tam wspierany przez producenta, a system startuje dopiero po zalogowaniu użytkownika.",
+        },
+        {
+          category: "changed",
+          scope: "Dokumentacja — nowe minimalne wymagania sprzętowe",
+          body: "Minimalna konfiguracja serwera to teraz 16 GB RAM i procesor z co najmniej 4 rdzeniami i 8 wątkami. Dzięki temu system ma zapas na telemetrię, pulpity BI i funkcje AI działające jednocześnie.",
+        },
+        {
+          category: "changed",
+          scope: "Instalator — przypięty do numeru wersji",
+          body: "Paczka instalacyjna zawiera numer wersji i instaluje dokładnie tę wersję, z którą została wydana — także przy ponownej instalacji lub przebudowie usług. Wcześniej instalator pobierał zawsze najnowszy kod, więc ta sama paczka mogła zainstalować różne wersje w różnych dniach.",
+        },
+        {
+          category: "fixed",
+          scope: "Instalacja — budowa interfejsu www",
+          body: "Na nowszych systemach budowa interfejsu przerywała instalację i aktualizację z błędem pobierania kodu. Sposób pobierania został poprawiony i działa zarówno na starszych, jak i nowych wersjach narzędzi.",
+        },
+        {
+          category: "fixed",
+          scope: "Asystent AI (MCP) — instalacja",
+          body: "Świeża instalacja mogła pobrać niezgodną, nową wersję biblioteki MCP, przez co serwer dla asystentów AI (Claude, Cursor) się nie uruchamiał. Wersja biblioteki jest teraz przypięta do zgodnej.",
+        },
+      ],
+    },
+    {
       version: "4.5.0",
       date: "2026-10-02",
       entries: [
@@ -292,6 +323,37 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.5.1",
+      date: "2026-11-10",
+      entries: [
+        {
+          category: "changed",
+          scope: "Documentation — recommended system: Linux with Docker",
+          body: "The hardware requirements and the installation guide clearly state the recommended environment for a production server: Linux (Debian or Ubuntu Server LTS) with Docker Engine. For Windows-based infrastructure we recommend a Linux virtual machine. An installation on Windows Server requires individual arrangements, and the documentation explains why: Docker Desktop is not supported there by its vendor, and the system only starts after a user logs in.",
+        },
+        {
+          category: "changed",
+          scope: "Documentation — new minimum hardware requirements",
+          body: "The minimum server configuration is now 16 GB RAM and a processor with at least 4 cores and 8 threads, which leaves headroom for telemetry, BI dashboards and AI features running at the same time.",
+        },
+        {
+          category: "changed",
+          scope: "Installer — pinned to the version number",
+          body: "The installation package carries its version number and installs exactly the version it was released with — also when reinstalling or rebuilding services. Previously the installer always fetched the latest code, so the same package could install different versions on different days.",
+        },
+        {
+          category: "fixed",
+          scope: "Installation — building the web interface",
+          body: "On newer systems, building the interface interrupted installation and updates with a code download error. The download method has been fixed and works with both older and newer versions of the tools.",
+        },
+        {
+          category: "fixed",
+          scope: "AI assistant (MCP) — installation",
+          body: "A fresh installation could pull an incompatible new version of the MCP library, which prevented the server for AI assistants (Claude, Cursor) from starting. The library version is now pinned to a compatible one.",
+        },
+      ],
+    },
     {
       version: "4.5.0",
       date: "2026-10-02",
