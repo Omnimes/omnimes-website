@@ -44,6 +44,32 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.6.0",
+      date: "2026-11-11",
+      entries: [
+        {
+          category: "added",
+          scope: "Hologram — model 3D hali produkcyjnej z danymi na żywo",
+          body: "Nowy ekran obok Monitoringu i Planogramu: hala z maszynami, liniami, regałami, wózkami i przepływem materiału w 3D. Każda maszyna pokazuje swój stan na żywo (sygnalizator na maszynie, obrys na posadzce w kolorze statusu, tabliczka z numerem stanowiska), a karty stanowisk w kolejności procesu podają aktualne pomiary. U góry liczniki: maszyny w pracy, postoje i awarie. Kliknięcie karty przybliża widok do maszyny; dostępny jest widok z góry i pełny ekran, a karty stanowisk można ustawić z boku, na dole albo je ukryć.",
+        },
+        {
+          category: "added",
+          scope: "Hologram — symulacja przepływu",
+          body: "Ten sam model w trybie symulacji pokazuje, jak materiał płynie przez linie: wydajność, liczbę gotowych wyrobów i wąskie gardło. Czas cyklu i liczbę miejsc w buforach można zmienić przy stanowisku i od razu zobaczyć efekt — bez ryzyka dla produkcji.",
+        },
+        {
+          category: "added",
+          scope: "Hologram — model budowany przez asystenta AI (MCP)",
+          body: "Model hali tworzy asystent AI (zalecany Claude Opus 5.5 lub nowszy) przez serwer MCP, na podstawie maszyn i linii zapisanych w systemie. Zakres może obejmować cały park maszynowy, wybrane linie albo pojedyncze maszyny. Kreator w „Hologram – ustawienia” przygotowuje gotowe polecenie do skopiowania, a po każdym zapisie system sprawdza model (brakujące maszyny, nachodzące na siebie elementy, maszyny poza przepływem) i podpowiada asystentowi, co poprawić. Istniejący model można rozbudować o kolejne maszyny.",
+        },
+        {
+          category: "added",
+          scope: "Hologram — wersje i konfiguracja",
+          body: "Każda zmiana modelu zapisuje nową wersję z autorem i opisem; wcześniejszą wersję można przywrócić jednym kliknięciem. W konfiguracji można zmienić nazwę i opis, zapisać widok startowy kamery, powiązać element modelu z maszyną albo usunąć element.",
+        },
+      ],
+    },
+    {
       version: "4.5.1",
       date: "2026-11-10",
       entries: [
@@ -323,6 +349,32 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.6.0",
+      date: "2026-11-11",
+      entries: [
+        {
+          category: "added",
+          scope: "Hologram — a live 3D model of the production hall",
+          body: "A new screen next to Monitoring and Planogram: the hall with its machines, lines, racks, forklifts and material flow in 3D. Every machine shows its live state (a stack light on the machine, a floor outline in the status colour, a plate with the station number), and station cards in process order show current measurements. Counters at the top: machines running, stops and failures. Clicking a card flies the view to the machine; there is a top view and full screen, and the station cards can sit on the side, at the bottom or be hidden.",
+        },
+        {
+          category: "added",
+          scope: "Hologram — flow simulation",
+          body: "The same model in simulation mode shows how material moves through the lines: throughput, finished parts and the bottleneck. Cycle time and buffer capacity can be changed at a station and the effect is visible right away — with no risk to production.",
+        },
+        {
+          category: "added",
+          scope: "Hologram — model built by an AI assistant (MCP)",
+          body: "The hall model is built by an AI assistant (Claude Opus 5.5 or newer recommended) through the MCP server, from the machines and lines already in the system. The scope can cover the whole machine park, selected lines or individual machines. A wizard in “Hologram – settings” prepares a ready prompt to copy, and after every save the system checks the model (missing machines, overlapping elements, machines outside the flow) and tells the assistant what to fix. An existing model can be extended with more machines.",
+        },
+        {
+          category: "added",
+          scope: "Hologram — versions and configuration",
+          body: "Every change to the model saves a new version with its author and note; an earlier version can be restored in one click. The configuration lets you change the name and description, save the camera's start view, bind a model element to a machine or remove an element.",
+        },
+      ],
+    },
     {
       version: "4.5.1",
       date: "2026-11-10",
