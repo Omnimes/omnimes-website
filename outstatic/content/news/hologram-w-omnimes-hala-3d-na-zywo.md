@@ -47,6 +47,6 @@ Dla porządku: model anglojęzycznego zakładu **WOODCRAFT** z naszego demo (zob
 
 ## Gdzie to zobaczyć
 
-Hologram działa na [demo OmniMES](https://demo.omnimes.com) — w menu **Podgląd → Hologram**. Pełną listę zmian w wersji 4.6.0 znajdziesz w [historii zmian](/pl/lista-zmian).
+Hologram działa na [demo OmniMES](https://demo.omnimes.com) — w menu **Podgląd → Hologram**. Opis krok po kroku znajdziesz w [rozdziale Hologram w dokumentacji](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/hologram-4c8uZjjt0b), a pełną listę zmian w wersji 4.6.0 — w [historii zmian](/pl/lista-zmian).
 
 > **Zastrzeżenie:** Zakłady „Stalownia” i „WOODCRAFT” pokazane w filmach są **fikcyjne** — to dane demonstracyjne OmniMES. Ewentualne podobieństwo do istniejących podmiotów jest przypadkowe.

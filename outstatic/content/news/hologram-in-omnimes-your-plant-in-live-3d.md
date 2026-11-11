@@ -38,7 +38,7 @@ Switch the same model to simulation mode and watch material flow through the lin
 
 Nobody has to spend weeks in a CAD tool. The hall model is built by an AI assistant (Claude Opus 5.5 and newer models give the best results) through the [OmniMES MCP server](/en/news/mcp-in-omnimes-control-from-any-ai-assistant), from the machine parks, lines and machines already in the system:
 
-1. In **Hologram – settings** you pick the scope: a whole machine park, selected lines or just a few machines.
+1. In **Hologram settings** you pick the scope: a whole machine park, selected lines or just a few machines.
 2. The wizard assembles a ready prompt with the right identifiers — you copy it into your assistant.
 3. The assistant lays out the hall: machines at real-world sizes, racks, aisles, forklifts, cranes and material flows. After every save, OmniMES checks the model (are all machines there, does anything overlap, is every machine part of the flow) and tells the assistant what to fix.
 4. Every change is a new version with a note — going back to an earlier one takes a single click. When new machines arrive, the model is extended rather than redrawn.
@@ -47,6 +47,6 @@ For the record, the **WOODCRAFT** wooden furniture plant in the videos was built
 
 ## Where to see it
 
-Hologram is live on the [OmniMES demo](https://demo.omnimes.com) — in the menu under **Main panel → Hologram**. The full list of changes in version 4.6.0 is in the [changelog](/en/changelog).
+Hologram is live on the [OmniMES demo](https://demo.omnimes.com) — in the menu under **Preview → Hologram**. Step-by-step instructions are in the [Hologram chapter of the documentation](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/hologram-xG1tKbrxg7), and the full list of changes in version 4.6.0 is in the [changelog](/en/changelog).
 
 > **Disclaimer:** The “WOODCRAFT” and “Stalownia” plants shown in the videos are **fictional** — OmniMES demo data. Any resemblance to existing entities is coincidental.
