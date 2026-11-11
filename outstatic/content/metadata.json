@@ -6455,6 +6455,44 @@
         }
       ],
       "title": "OmniEnergy in practice: from energy meter to ISO 50001 report, with no spreadsheet in between"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/hologram-w-omnimes-hala-3d-na-zywo.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omnimes-hologram-cover.jpg",
+      "description": "OmniMES 4.6.0 wprowadza Hologram — model 3D hali produkcyjnej, w którym maszyny świecą kolorem swojego stanu na żywo, a w trybie symulacji widać przepływ materiału i wąskie gardło. Model buduje asystent AI przez MCP: kopiujesz gotowe polecenie i gotowe.",
+      "lang": "pl",
+      "publishedAt": "2026-11-11T21:00:00.000Z",
+      "slug": "hologram-w-omnimes-hala-3d-na-zywo",
+      "status": "published",
+      "title": "Hologram w OmniMES — Twoja hala w 3D: na żywo, z symulacją i zbudowana przez AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/hologram-in-omnimes-your-plant-in-live-3d.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/omnimes-hologram-cover-en.jpg",
+      "description": "OmniMES 4.6.0 introduces Hologram — a 3D model of the production hall where every machine glows in the colour of its live state, and a simulation mode shows material flow and the bottleneck. The model is built by an AI assistant over MCP: copy a ready prompt and you are done.",
+      "lang": "en",
+      "publishedAt": "2026-11-11T21:00:00.000Z",
+      "slug": "hologram-in-omnimes-your-plant-in-live-3d",
+      "status": "published",
+      "title": "Hologram in OmniMES — your plant in 3D: live, simulated and built by AI"
     }
   ]
 }
