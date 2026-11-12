@@ -44,6 +44,27 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.6.1",
+      date: "2026-11-13",
+      entries: [
+        {
+          category: "added",
+          scope: "Dokumentacja — rozdział Hologram",
+          body: "Instrukcja (online i PDF w instalatorze) ma nowy rozdział o Hologramie: tryb na żywo, symulacja z przykładem szukania wąskiego gardła, konfiguracja, historia wersji oraz budowa modelu przez asystenta AI krok po kroku.",
+        },
+        {
+          category: "changed",
+          scope: "Hologram — objaśnienia w symulacji",
+          body: "Okno parametrów symulacji wyjaśnia, czym są Miejsca, Bufor oraz praca między postojami i postój. Legenda na pasku symulacji ma podpis „Stany w symulacji”, żeby nie myliła się ze stanami maszyn z Konfiguratora statusów. Kreator polecenia dla asystenta AI podpowiada, że inny park albo zakres wybiera się w kreatorze, a nie poprawia ręcznie w poleceniu.",
+        },
+        {
+          category: "fixed",
+          scope: "Hologram — nazwy maszyn zawsze z OmniMES",
+          body: "Model 3D, karty stanowisk, panel szczegółów i symulacja pokazują nazwy maszyn dokładnie takie jak w strukturze OmniMES — także wtedy, gdy asystent AI zapisał w modelu inne, np. przetłumaczone. Przenośniki bez własnej nazwy mają w symulacji czytelne opisy, np. „Przenośnik c2”, zamiast samego oznaczenia.",
+        },
+      ],
+    },
+    {
       version: "4.6.0",
       date: "2026-11-11",
       entries: [
@@ -349,6 +370,27 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.6.1",
+      date: "2026-11-13",
+      entries: [
+        {
+          category: "added",
+          scope: "Documentation — Hologram chapter",
+          body: "The user guide (online and the PDF in the installer) has a new chapter on Hologram: live mode, the simulation with a bottleneck-hunting example, configuration, version history and building the model with an AI assistant step by step.",
+        },
+        {
+          category: "changed",
+          scope: "Hologram — explanations in the simulation",
+          body: "The simulation parameters dialog explains Slots, Buffer, run time between stops and stop. The legend on the simulation bar is labelled “Simulation states” so it is not confused with machine states from the Status configurator. The AI assistant prompt wizard explains that a different park or scope is chosen in the wizard rather than by editing the prompt.",
+        },
+        {
+          category: "fixed",
+          scope: "Hologram — machine names always from OmniMES",
+          body: "The 3D model, station cards, details panel and simulation show machine names exactly as in the OmniMES structure — even when the AI assistant saved different, e.g. translated, names in the model. Conveyors without their own name get readable labels in the simulation, e.g. “Conveyor c2”, instead of a bare identifier.",
+        },
+      ],
+    },
     {
       version: "4.6.0",
       date: "2026-11-11",
