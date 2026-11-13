@@ -44,6 +44,42 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.7.0",
+      date: "2026-11-13",
+      entries: [
+        {
+          category: "added",
+          scope: "Ustawienia → Redash: dostęp do danych BI",
+          body: "Administrator widzi, w jakim trybie działa dostęp do danych BI, kto w ostatnich 7 dniach pobierał je bez tokenu (adres i program) oraz kiedy i z jakim skutkiem system ostatnio dopisał token do zapytań Redasha. Dzięki temu wiadomo, kiedy można bezpiecznie włączyć tryb wymagający tokenu.",
+        },
+        {
+          category: "changed",
+          scope: "Pulpity i asystent AI dopisują token do zapytań Redasha",
+          body: "Nowe zapytania utworzone w module Pulpity i przez asystenta AI (MCP) od razu mają nagłówek z tokenem, a analiza pulpitów przez asystenta AI czyta dane także wtedy, gdy token jest wymagany.",
+        },
+        {
+          category: "fixed",
+          scope: "Opisy kolumn w kreatorze zapytań",
+          body: "Kreator zapytań pobiera opisy kolumn z adresu API, którego używa przeglądarka (wcześniej z adresu przeznaczonego dla Redasha, często nieosiągalnego z komputera użytkownika), i poprawnie rozpoznaje adres w zapytaniach zapisanych w kilku liniach.",
+        },
+        {
+          category: "fixed",
+          scope: "Błędny token — czytelna odpowiedź zamiast błędu serwera",
+          body: "Zapytanie z nieprawidłowym lub wygasłym tokenem dostaje odpowiedź „brak uwierzytelnienia” (401) zamiast błędu serwera (500).",
+        },
+        {
+          category: "security",
+          scope: "Bezpieczne ustawienia API (Cyber Resilience Act)",
+          body: "Nowa, opcjonalna sekcja SECURITY w konfiguracji instalacji: wyłączony tryb debugowania, lista adresów, pod którymi działa API, dostęp z przeglądarki (CORS) tylko dla adresu OmniMES i własny tajny klucz każdej instalacji. Raporty BI, dokumenty OmniEnergy i panel administracyjny działają także w tym trybie. Bez tej sekcji system działa dokładnie jak dotąd — aktualizacja niczego nie zmienia, a w logu pojawia się przypomnienie. Instrukcja dla wdrożeniowców: BEZPIECZENSTWO_API.md w instalatorze.",
+        },
+        {
+          category: "security",
+          scope: "Dane BI dla Redasha chronione tokenem",
+          body: "Pulpity Redasha pobierają dane z OmniMES z tokenem konta serwisowego, które może wyłącznie odczytywać dane BI. Token dopisuje się sam do istniejących zapytań w ciągu 15 minut po aktualizacji (treść sprzed zmiany jest zachowana), a pulpity — także udostępnione osobom trzecim linkiem publicznym — działają bez zmian. Trzy tryby: otwarty, loguj (domyślny: pobieranie bez tokenu działa, ale jest widoczne w Ustawieniach) i wymagaj (bez tokenu odmowa).",
+        },
+      ],
+    },
+    {
       version: "4.6.1",
       date: "2026-11-13",
       entries: [
@@ -370,6 +406,42 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.7.0",
+      date: "2026-11-13",
+      entries: [
+        {
+          category: "added",
+          scope: "Settings → Redash: access to BI data",
+          body: "Administrators can see which mode BI data access runs in, who fetched BI data without a token over the last 7 days (address and program), and when and with what result the system last added the token to Redash queries. This shows when it is safe to switch on the token-required mode.",
+        },
+        {
+          category: "changed",
+          scope: "Dashboards and the AI assistant add the token to Redash queries",
+          body: "New queries created in the Dashboards module and by the AI assistant (MCP) get the token header right away, and dashboard analysis by the AI assistant reads the data even when the token is required.",
+        },
+        {
+          category: "fixed",
+          scope: "Column descriptions in the query builder",
+          body: "The query builder loads column descriptions from the API address the browser uses (previously from the address meant for Redash, often unreachable from the user's computer) and correctly recognises the address in queries written over several lines.",
+        },
+        {
+          category: "fixed",
+          scope: "Invalid token — a clear response instead of a server error",
+          body: "A request with an invalid or expired token gets a “not authenticated” response (401) instead of a server error (500).",
+        },
+        {
+          category: "security",
+          scope: "Secure API settings (Cyber Resilience Act)",
+          body: "A new, optional SECURITY section in the installation configuration: debug mode off, a list of addresses the API answers on, browser access (CORS) only for the OmniMES address and a secret key of its own for every installation. BI reports, OmniEnergy documents and the admin panel keep working in this mode. Without the section the system behaves exactly as before — the update changes nothing, and the log shows a reminder. Guide for implementers: BEZPIECZENSTWO_API.md in the installer.",
+        },
+        {
+          category: "security",
+          scope: "BI data for Redash protected by a token",
+          body: "Redash dashboards fetch OmniMES data with the token of a service account that can only read BI data. The token is added to existing queries automatically within 15 minutes of the update (the previous text is kept), and dashboards — including those shared with third parties via a public link — keep working unchanged. Three modes: open, log (default: fetching without a token works but is visible in Settings) and require (no token, no data).",
+        },
+      ],
+    },
     {
       version: "4.6.1",
       date: "2026-11-13",
