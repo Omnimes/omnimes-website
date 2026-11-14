@@ -44,6 +44,72 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.8.0",
+      date: "2026-11-14",
+      entries: [
+        {
+          category: "added",
+          scope: "Uprawnienia sprawdzane także przez serwer",
+          body: "Ekrany przypisane grupie w „Uprawnieniach dostępu” decydują teraz również o tym, jakie dane użytkownik odczyta i zmieni przez API, także z pominięciem interfejsu. Hasła i klucze z Konfiguracji ogólnej widzą tylko grupy, których ekrany z nich korzystają. Nowe instalacje mają egzekwowanie włączone od razu. W zaktualizowanych instalacjach system najpierw tylko rejestruje, czego by odmówił, a administrator włącza egzekwowanie po przejrzeniu raportu odmów (opis: BEZPIECZENSTWO_API.md w instalatorze).",
+        },
+        {
+          category: "changed",
+          scope: "Konfiguracja ogólna → Redash",
+          body: "Przy polu „Adres Redash” jest przycisk „Otwórz Redash”, który otwiera Redash w nowej karcie. Techniczny panel stanu danych BI zniknął z ekranu; ten sam stan pokazuje raport administracyjny.",
+        },
+        {
+          category: "changed",
+          scope: "Usuwanie użytkownika",
+          body: "Usunięcie konta potwierdza się w oknie aplikacji z loginem usuwanego konta (zamiast okna przeglądarki), a gdy system odmówi, wyświetla komunikat z powodem.",
+        },
+        {
+          category: "fixed",
+          scope: "Usuwanie użytkownika przy nowszym Redashu",
+          body: "Użytkownika da się usunąć także wtedy, gdy Redash nie ma rozszerzenia OmniMES do usuwania kont. Konto w Redashu jest wtedy wyłączane, a jego adres e-mail zwalniany, więc tę samą osobę można dodać ponownie.",
+        },
+        {
+          category: "fixed",
+          scope: "Raporty z szablonu: błędny wzór",
+          body: "Błędny wzór w elemencie raportu (np. pusty nawias albo brakująca wartość) daje wynik „błąd składni” zamiast błędu serwera.",
+        },
+        {
+          category: "fixed",
+          scope: "Kopie zapasowe: import starszych kopii",
+          body: "Import kopii zapisanej w starszym formacie nie kończy się błędem serwera.",
+        },
+        {
+          category: "fixed",
+          scope: "Konfiguracja ogólna bez zbędnych błędów",
+          body: "Osoby bez prawa zmiany ustawień nie widzą już błędu przy liście modeli asystenta AI.",
+        },
+        {
+          category: "security",
+          scope: "Ochrona kont administracyjnych",
+          body: "Konta administratora głównego (np. omni), konta serwisowe (mcp, redash_bi) i członków grupy Administratorzy może zmienić (hasło, login, e-mail, profil, usunięcie) wyłącznie administrator główny; tylko on przypisuje też do grupy Administratorzy. Zasada działa niezależnie od trybu uprawnień.",
+        },
+        {
+          category: "security",
+          scope: "Hasła użytkowników niedostępne dla innych kont",
+          body: "Usunięto lukę, przez którą zalogowany użytkownik mógł odczytać hasło innej osoby, także administratora. Po aktualizacji zalecamy zmianę haseł kont administracyjnych.",
+        },
+        {
+          category: "security",
+          scope: "Wzory w raportach liczone bezpiecznie",
+          body: "Usunięto lukę, przez którą zalogowany użytkownik mógł wykonać polecenia na serwerze przy generowaniu raportu z szablonu. Wzory przyjmują teraz wyłącznie liczby, działania arytmetyczne i nawiasy. Zalecamy aktualizację wszystkim instalacjom.",
+        },
+        {
+          category: "security",
+          scope: "Kopie zapasowe bez tokenów dostępu",
+          body: "Kopie zapasowe nie zawierają tokenów dostępu do API, a import kopii z kontami użytkowników może wykonać tylko administrator główny.",
+        },
+        {
+          category: "security",
+          scope: "Paczka instalacyjna sprawdzana przed wydaniem",
+          body: "Każde wydanie sprawdza paczkę instalacyjną pod kątem kluczy i haseł, które nie powinny do niej trafić.",
+        },
+      ],
+    },
+    {
       version: "4.7.0",
       date: "2026-11-13",
       entries: [
@@ -406,6 +472,72 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.8.0",
+      date: "2026-11-14",
+      entries: [
+        {
+          category: "added",
+          scope: "Permissions also checked by the server",
+          body: "The screens assigned to a group in Access now also decide which data a user can read and change through the API, including outside the interface. Passwords and keys from General configuration are visible only to groups whose screens use them. New installations have enforcement enabled from the start. In upgraded installations the system first only records what it would deny, and the administrator enables enforcement after reviewing the report of denied requests (see BEZPIECZENSTWO_API.md in the installer).",
+        },
+        {
+          category: "changed",
+          scope: "General configuration → Redash",
+          body: "Next to the Redash address field there is an Open Redash button that opens Redash in a new tab. The technical BI data status panel has been removed from the screen; the same status is available in the administrative report.",
+        },
+        {
+          category: "changed",
+          scope: "Deleting a user",
+          body: "Deleting an account is confirmed in an application dialog showing the login of the account being deleted (instead of a browser pop-up), and if the system refuses, a message explains why.",
+        },
+        {
+          category: "fixed",
+          scope: "Deleting a user with a newer Redash",
+          body: "A user can be deleted even when Redash lacks the OmniMES account-removal extension. The Redash account is then disabled and its e-mail address released, so the same person can be added again.",
+        },
+        {
+          category: "fixed",
+          scope: "Template reports: invalid formula",
+          body: "An invalid formula in a report element (e.g. empty brackets or a missing value) now returns a syntax error result instead of a server error.",
+        },
+        {
+          category: "fixed",
+          scope: "Backups: importing older backups",
+          body: "Importing a backup saved in an older format no longer ends with a server error.",
+        },
+        {
+          category: "fixed",
+          scope: "General configuration without unnecessary errors",
+          body: "Users without permission to change settings no longer see an error at the AI assistant model list.",
+        },
+        {
+          category: "security",
+          scope: "Protection of administrative accounts",
+          body: "The main administrator account (e.g. omni), service accounts (mcp, redash_bi) and members of the Administrators group can be changed (password, login, e-mail, profile, deletion) only by the main administrator, who is also the only one able to assign users to the Administrators group. This rule applies regardless of the permission mode.",
+        },
+        {
+          category: "security",
+          scope: "User passwords not accessible to other accounts",
+          body: "Fixed a vulnerability that allowed a logged-in user to read another person's password, including an administrator's. After updating, we recommend changing the passwords of administrative accounts.",
+        },
+        {
+          category: "security",
+          scope: "Report formulas evaluated safely",
+          body: "Fixed a vulnerability that allowed a logged-in user to run commands on the server when generating a report from a template. Formulas now accept only numbers, arithmetic operations and brackets. We recommend updating all installations.",
+        },
+        {
+          category: "security",
+          scope: "Backups without access tokens",
+          body: "Backups no longer contain API access tokens, and only the main administrator can import a backup that includes user accounts.",
+        },
+        {
+          category: "security",
+          scope: "Installation package checked before release",
+          body: "Every release checks the installation package for keys and passwords that should not be included.",
+        },
+      ],
+    },
     {
       version: "4.7.0",
       date: "2026-11-13",
