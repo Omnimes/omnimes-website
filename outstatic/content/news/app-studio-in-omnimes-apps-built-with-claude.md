@@ -6,7 +6,8 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'app-studio-in-omnimes-apps-built-with-claude'
 description: 'OmniMES 4.9.0 introduces App Studio (Beta): describe what you need in plain language and Claude builds an interactive app on live data from your machines, orders and measurements. The app goes into the menu, you share it with chosen people, and each of them sees only what their permissions allow. All on the open MCP Apps standard.'
-coverImage: '/images/news/studio-aplikacji/cover-en.jpg'
+coverImage: '/images/news/studio-aplikacji/cover-film-en.jpg'
+coverPosition: 'top'
 lang: 'en'
 publishedAt: '2026-11-15T12:00:00.000Z'
 ---

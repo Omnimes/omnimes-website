@@ -7,6 +7,7 @@ author:
 slug: 'app-studio-in-omnimes-build-your-own-shop-floor-tools-by-talking-to-claude'
 description: 'OmniMES 4.9.0 introduces App Studio (Beta). Production managers, maintenance and quality teams describe what they need in a conversation with Claude, and Claude builds an interactive app on live plant data. We show how it works, two examples with real numbers, the security model, and when to choose an app over a BI dashboard.'
 coverImage: '/images/blog/studio-aplikacji/cover-film-en.jpg'
+coverPosition: 'top'
 lang: 'en'
 tags: [{"value":"mcp","label":"MCP"},{"value":"agentAi","label":"AGENT AI"},{"value":"AI","label":"AI"},{"value":"omniMES","label":"OmniMES"}]
 publishedAt: '2026-11-15T08:00:00.000Z'
