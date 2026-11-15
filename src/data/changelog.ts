@@ -24,25 +24,43 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
       scope: "Konektor do systemów ERP",
       body: "Dwukierunkowa integracja OmniMES z systemami ERP — zlecenia produkcyjne, indeksy wyrobów i meldunki zwrotne (wykonanie, braki, zużycie surowca) wymieniane automatycznie, bez ręcznego przepisywania danych między ERP a halą produkcyjną. Cel: jedno źródło prawdy o produkcji — plan z ERP trafia na maszyny, a realizacja z hali wraca do ERP w czasie zbliżonym do rzeczywistego.",
     },
-    {
-      scope: "MCP Apps — interaktywne widoki OmniMES w asystencie AI",
-      body: "W trakcie wdrażania. MCP Apps to rozszerzenie standardu MCP, dzięki któremu asystent AI (np. Claude, ChatGPT) nie tylko odpowiada tekstem, ale wyświetla w rozmowie interaktywne widoki OmniMES: wykresy, tabele i zestawienia, z którymi można od razu pracować. To dużo większe możliwości niż dotychczasowa wtyczka: zamiast opisu danych — gotowy, klikalny widok prosto z systemu, bez przełączania się między oknami.",
-    },
   ],
   en: [
     {
       scope: "ERP systems connector",
       body: "Two-way integration between OmniMES and ERP systems — production orders, product indexes and feedback reports (output, scrap, material consumption) exchanged automatically, without rekeying data by hand between the ERP and the shop floor. The goal: a single source of truth about production — the plan flows from the ERP to the machines, and execution flows from the floor back to the ERP in near real time.",
     },
-    {
-      scope: "MCP Apps — interactive OmniMES views in your AI assistant",
-      body: "In progress. MCP Apps is an extension of the MCP standard that lets an AI assistant (e.g. Claude, ChatGPT) do more than reply in text: it shows interactive OmniMES views right in the conversation — charts, tables and summaries you can work with immediately. Much greater possibilities than the current plugin: instead of a description of the data, a ready, clickable view straight from the system, without switching windows.",
-    },
   ],
 }
 
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
+    {
+      version: "4.9.0",
+      date: "2026-11-15",
+      entries: [
+        {
+          category: "added",
+          scope: "Studio aplikacji [Beta] — aplikacje budowane rozmową z Claude (MCP Apps)",
+          body: "Opisujesz w czacie, czego potrzebujesz, a Claude buduje interaktywną aplikację na danych OmniMES: wskaźniki, wykresy, tabele, notatki i formularze. Aplikacje trafiają do menu bocznego, do sekcji i podmenu, które tworzysz sam, a udostępniasz je wybranym grupom albo osobom. Każda zmiana zapisuje nową wersję, do której można wrócić. Aplikacje działają w otwartym standardzie MCP Apps, więc te same aplikacje otworzysz też w rozmowie w Claude Desktop.",
+        },
+        {
+          category: "added",
+          scope: "Dwie drogi budowania aplikacji",
+          body: "W OmniMES (zakładka Kreator) z kluczem API Claude z Claude Console — plany Claude Max, Ultra i Team zawierają co miesiąc kredyty API. Poza OmniMES w Claude Desktop, na własnej subskrypcji Claude, przez rozszerzenie OmniMES z osobistym tokenem. Do wyboru Claude Opus 5.5 (zalecany), Fable 5.2, Sonnet 5.5, Haiku 5.5 oraz inne zgodne modele pobierane z API Anthropic.",
+        },
+        {
+          category: "added",
+          scope: "Dziennik Studia aplikacji",
+          body: "Superuser widzi, kto utworzył i zmienił aplikację, kto zmienił menu i udostępnianie, kto utworzył albo odwołał osobisty token, jakie dane aplikacje zapisały i czego system odmówił — z filtrem po aplikacji i rodzaju zdarzenia.",
+        },
+        {
+          category: "security",
+          scope: "Bezpieczne aplikacje Studia",
+          body: "Aplikacja działa z uprawnieniami oglądającego i nigdy z większymi niż jej autora; nie ma dostępu do tokenu, ciasteczek ani internetu. Każdy zapis danych z aplikacji potwierdza oglądający w oknie, które pokazuje, co zostanie zapisane i kto napisał aplikację; w Claude Desktop zapis jest wyłączony. Aplikacje z funkcjami administracyjnymi włącza wyłącznie superuser.",
+        },
+      ],
+    },
     {
       version: "4.8.0",
       date: "2026-11-14",
@@ -472,6 +490,32 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.9.0",
+      date: "2026-11-15",
+      entries: [
+        {
+          category: "added",
+          scope: "App Studio [Beta] — apps built by talking to Claude (MCP Apps)",
+          body: "Describe what you need in the chat and Claude builds an interactive app on OmniMES data: KPIs, charts, tables, notes and forms. Apps appear in the side menu, in sections and submenus you create yourself, and you share them with chosen groups or people. Every change saves a new version you can go back to. Apps use the open MCP Apps standard, so the same apps also open in a Claude Desktop conversation.",
+        },
+        {
+          category: "added",
+          scope: "Two ways to build apps",
+          body: "In OmniMES (Builder tab) with a Claude API key from the Claude Console — Claude Max, Ultra and Team plans include monthly API credits. Outside OmniMES in Claude Desktop, on your own Claude subscription, through the OmniMES extension with a personal token. Choose Claude Opus 5.5 (recommended), Fable 5.2, Sonnet 5.5, Haiku 5.5 or other compatible models fetched from the Anthropic API.",
+        },
+        {
+          category: "added",
+          scope: "App Studio audit log",
+          body: "A superuser sees who created and changed an app, who changed the menu and sharing, who created or revoked a personal token, what data apps wrote and what the system denied — filtered by app and event type.",
+        },
+        {
+          category: "security",
+          scope: "Secure App Studio apps",
+          body: "An app runs with the viewer's permissions and never with more than its author's; it has no access to the token, cookies or the internet. Every data write from an app is confirmed by the viewer in a dialog showing what will be written and who wrote the app; writes are disabled in Claude Desktop. Apps with administrative functions can only be enabled by a superuser.",
+        },
+      ],
+    },
     {
       version: "4.8.0",
       date: "2026-11-14",
