@@ -14,19 +14,28 @@ export const Hero = () => {
 
   return (
     <section className="relative left-1/2 isolate w-screen -translate-x-1/2 overflow-hidden text-white">
-      {/* Tło rysowane w CSS: ostre w każdej rozdzielczości i bez pobierania obrazu */}
+      {/* Rozmyte tło z siecią: pas w proporcjach banera przy dolnej krawędzi, wygaszony ku górze
+          i przy samym dole, więc nie jest rozciągnięty i nie ma twardych krawędzi */}
+      <div aria-hidden="true" className="absolute inset-0 -z-30 bg-[#05060f]" />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-20 bg-[#05060f] bg-[radial-gradient(ellipse_55%_60%_at_28%_30%,rgba(47,155,255,0.17),transparent_70%),radial-gradient(ellipse_45%_65%_at_88%_70%,rgba(178,73,248,0.17),transparent_70%)]"
-      />
+        className="absolute inset-x-0 bottom-0 -z-20 aspect-[4/1] min-h-[60%] [mask-image:linear-gradient(to_top,transparent,black_14%,black_50%,transparent)]"
+      >
+        <Image
+          src="/images/hero/hero-background.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          priority
+          className="scale-105 object-cover object-bottom blur-[3px]"
+        />
+      </div>
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[radial-gradient(rgba(148,170,255,0.13)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_75%_70%_at_50%_40%,black,transparent)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_55%_50%_at_28%_25%,rgba(47,155,255,0.10),transparent_70%)]"
       />
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 -z-10 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"
-      />
+      {/* Na telefonie fale leżą pod tekstem, więc lekko je przygaszamy */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[#05060f]/40 sm:hidden" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-8 sm:grid-cols-3 sm:gap-12 sm:px-8 sm:py-12">
         {/* LEWA STRONA – DUŻE LOGO I ANIMACJA */}
