@@ -698,7 +698,9 @@
     "stateStop": "Postój",
     "chipResume": "Praca wznowiona",
     "fullscreen": "Pełny ekran",
-    "exitFullscreen": "Zamknij pełny ekran"
+    "exitFullscreen": "Zamknij pełny ekran",
+    "pause": "Zatrzymaj animację",
+    "play": "Wznów animację"
   },
   "Benefits": {
     "title": "Co zmienia się w zakładzie po wdrożeniu OmniMES",

@@ -41,7 +41,7 @@ export async function mountHero(
   canvas: HTMLCanvasElement,
   overlay: HeroOverlay,
   labels: HeroLabels,
-  options: { compact: boolean; locale: string; onShown: () => void }
+  options: { compact: boolean; calm: boolean; locale: string; onShown: () => void }
 ) {
   const stage = createStage(canvas, { compact: options.compact, shadowSpan: 13 })
   const { scene, camera } = stage
@@ -332,11 +332,12 @@ export async function mountHero(
     fade(overlay.stop, stopped)
     fade(overlay.resume, resumed)
 
-    // Kamera podjeżdża do zatrzymanej maszyny i wraca
-    const eased = push * push * (3 - 2 * push)
+    // Kamera podjeżdża do zatrzymanej maszyny i wraca; przy ograniczonym ruchu stoi w ujęciu ogólnym
+    const eased = options.calm ? 0 : push * push * (3 - 2 * push)
+    const sway = options.calm ? 0 : 1 - eased
     position.copy(wideCamera).lerp(closeCamera, eased)
-    position.x += Math.sin(time * 0.13) * 1.5 * (1 - eased)
-    position.y += Math.sin(time * 0.09) * 0.4 * (1 - eased)
+    position.x += Math.sin(time * 0.13) * 1.5 * sway
+    position.y += Math.sin(time * 0.09) * 0.4 * sway
     look.copy(wideLook).lerp(closeLook, eased)
     camera.position.copy(position)
     camera.lookAt(look)
@@ -351,6 +352,7 @@ export async function mountHero(
   await stage.warmUp()
   const loop = runLoop(canvas, frame, stage.degrade, options.onShown)
   return {
+    setPaused: loop.setPaused,
     dispose() {
       loop.stop()
       stage.dispose()

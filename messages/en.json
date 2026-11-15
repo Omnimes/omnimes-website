@@ -690,7 +690,9 @@
     "stateStop": "Stopped",
     "chipResume": "Back in production",
     "fullscreen": "Full screen",
-    "exitFullscreen": "Exit full screen"
+    "exitFullscreen": "Exit full screen",
+    "pause": "Pause animation",
+    "play": "Resume animation"
   },
   "Benefits": {
     "title": "What changes in your plant with OmniMES",

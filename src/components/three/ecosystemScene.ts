@@ -263,6 +263,7 @@ export async function mountEcosystem(
   options: {
     compact: boolean
     still: boolean
+    calm: boolean
     onStage: (stage: number) => void
     onShown: () => void
   }
@@ -508,7 +509,8 @@ export async function mountEcosystem(
     }
 
     const shot = cameras[current]
-    const ease = 1 - Math.exp(-real * 2.5)
+    // Przy ograniczonym ruchu kamera przeskakuje między ujęciami zamiast przelatywać
+    const ease = options.calm ? 1 : 1 - Math.exp(-real * 2.5)
     camera.position.lerp(shot.position, ease)
     lookAt.lerp(shot.look, ease)
     camera.lookAt(lookAt)

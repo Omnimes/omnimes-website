@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
-import { FaCompress, FaExpand } from "react-icons/fa"
+import { FaCompress, FaExpand, FaPause, FaPlay } from "react-icons/fa"
 
 import { useFullscreen } from "./useFullscreen"
 
@@ -12,9 +12,16 @@ const chipClass =
 
 const STATIONS = ["stationPress", "stationCnc", "stationPack", "stationRobot"]
 
-export function canAnimate() {
+export type Motion = "full" | "calm" | "none"
+
+/**
+ * Ruch scen 3D. Przy „ograniczonym ruchu” (ustawienie systemu, a także każda sesja Pulpitu zdalnego
+ * w Windows) sceny dalej żyją, tylko kamera nie lata. Bez ruchu zostaje tylko oszczędzanie danych.
+ */
+export function motionMode(): Motion {
   const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
-  return !window.matchMedia("(prefers-reduced-motion: reduce)").matches && !connection?.saveData
+  if (connection?.saveData) return "none"
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "calm" : "full"
 }
 
 export const HeroFactory = () => {
@@ -30,10 +37,13 @@ export const HeroFactory = () => {
   const oeeValue = useRef<HTMLSpanElement>(null)
   const chart = useRef<SVGPolylineElement>(null)
   const rows = useRef<HTMLElement[]>([])
+  const scene = useRef<{ setPaused: (paused: boolean) => void } | null>(null)
   const [ready, setReady] = useState(false)
+  const [paused, setPaused] = useState(false)
 
   useEffect(() => {
-    if (!canAnimate()) return
+    const motion = motionMode()
+    if (motion === "none") return
     let cancelled = false
     let dispose: (() => void) | undefined
 
@@ -52,7 +62,7 @@ export const HeroFactory = () => {
         ) {
           return
         }
-        const scene = await mountHero(
+        const mounted = await mountHero(
           canvas.current,
           {
             stop: stop.current,
@@ -69,6 +79,7 @@ export const HeroFactory = () => {
           { run: t("stateRun"), warn: t("stateWait"), stop: t("stateStop") },
           {
             compact: window.innerWidth < 768,
+            calm: motion === "calm",
             locale,
             // Scena zastępuje obraz startowy dopiero wtedy, gdy rysuje płynnie
             onShown: () => {
@@ -76,8 +87,12 @@ export const HeroFactory = () => {
             },
           }
         )
-        if (cancelled) scene.dispose()
-        else dispose = scene.dispose
+        if (cancelled) {
+          mounted.dispose()
+        } else {
+          dispose = mounted.dispose
+          scene.current = mounted
+        }
       } catch {
         // Bez WebGL zostaje obraz startowy
       }
@@ -86,9 +101,15 @@ export const HeroFactory = () => {
     start()
     return () => {
       cancelled = true
+      scene.current = null
       dispose?.()
     }
   }, [t, locale])
+
+  const togglePause = () => {
+    scene.current?.setPaused(!paused)
+    setPaused(!paused)
+  }
 
   return (
     // Cienka ramka w kolorach marki i poświata pod spodem osadzają scenę w tle sekcji
@@ -191,9 +212,22 @@ export const HeroFactory = () => {
             onClick={screen.toggle}
             aria-label={screen.active ? t("exitFullscreen") : t("fullscreen")}
             title={screen.active ? t("exitFullscreen") : t("fullscreen")}
-            className="absolute right-3 top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
+            className={`absolute top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80 ${
+              ready ? "right-14" : "right-3"
+            }`}
           >
             {screen.active ? <FaCompress size={13} /> : <FaExpand size={13} />}
+          </button>
+        )}
+        {ready && (
+          <button
+            type="button"
+            onClick={togglePause}
+            aria-label={paused ? t("play") : t("pause")}
+            title={paused ? t("play") : t("pause")}
+            className="absolute right-3 top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
+          >
+            {paused ? <FaPlay size={12} /> : <FaPause size={12} />}
           </button>
         )}
 

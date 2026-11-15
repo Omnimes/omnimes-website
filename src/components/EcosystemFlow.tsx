@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { FaCompress, FaExpand, FaPause, FaPlay } from "react-icons/fa"
 
-import { canAnimate } from "./HeroFactory"
+import { motionMode } from "./HeroFactory"
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
 import { SubtitleNormal } from "./ui/Subtitle"
@@ -43,7 +43,8 @@ export const EcosystemFlow = () => {
       try {
         const { mountEcosystem } = await import("./three/ecosystemScene")
         if (cancelled || !canvas.current) return
-        const moving = canAnimate()
+        const motion = motionMode()
+        const moving = motion !== "none"
         const mounted = await mountEcosystem(
           canvas.current,
           {
@@ -60,6 +61,7 @@ export const EcosystemFlow = () => {
           {
             compact: window.innerWidth < 768,
             still: !moving,
+            calm: motion === "calm",
             onStage: setStage,
             // Scena zastępuje obraz startowy dopiero wtedy, gdy rysuje płynnie
             onShown: () => {
