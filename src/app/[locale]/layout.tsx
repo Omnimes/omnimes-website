@@ -9,6 +9,8 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
 
+import type { WidgetItem } from "@/components/ui/Widget"
+
 // import { Toaster } from "@/components/ui/Toaster"
 // import { Widget } from "@/components/ui/Widget"
 // import { NextAuthProviders } from "@/components/providers/nextauth-providers"
@@ -66,17 +68,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
-async function getLatestFromCollection(collection: "news" | "posts", locale: string) {
+async function getLatestFromCollection(collection: "news" | "posts", locale: string, limit = 1) {
   try {
     const db = await load()
-    const latest = await db
+    return await db
       .find<OstDocument>({ collection, status: "published", lang: locale }, ["title", "slug"])
       .sort({ publishedAt: -1 })
-      .limit(1)
-      .first()
-    return latest ?? null
+      .limit(limit)
+      .toArray()
   } catch {
-    return null
+    return []
   }
 }
 
@@ -91,30 +92,27 @@ export default async function LocaleLayout({
   setRequestLocale(locale)
   const messages = await getMessages()
   const t = await getTranslations("Widget")
-  const [latestNews, latestPost] = await Promise.all([
-    getLatestFromCollection("news", locale),
+  // Pasek nad nagłówkiem: dwa najnowsze newsy (nowość + poprzednia) i najnowszy wpis na blogu
+  const [latestNews, latestPosts] = await Promise.all([
+    getLatestFromCollection("news", locale, 2),
     getLatestFromCollection("posts", locale),
   ])
-  const widgetItems = [
-    latestNews
-      ? {
-          kind: "news" as const,
-          label: t("latestNews"),
-          badge: t("badgeNews"),
-          text: latestNews.title,
-          href: `/${locale}/news/${latestNews.slug}`,
-        }
-      : null,
-    latestPost
-      ? {
-          kind: "post" as const,
-          label: t("latestPost"),
-          badge: t("badgeBlog"),
-          text: latestPost.title,
-          href: `/${locale}/blog/${latestPost.slug}`,
-        }
-      : null,
-  ].filter((x): x is NonNullable<typeof x> => x !== null)
+  const widgetItems: WidgetItem[] = [
+    ...latestNews.map((news) => ({
+      kind: "news" as const,
+      label: t("latestNews"),
+      badge: t("badgeNews"),
+      text: news.title,
+      href: `/${locale}/news/${news.slug}`,
+    })),
+    ...latestPosts.map((post) => ({
+      kind: "post" as const,
+      label: t("latestPost"),
+      badge: t("badgeBlog"),
+      text: post.title,
+      href: `/${locale}/blog/${post.slug}`,
+    })),
+  ]
   if (widgetItems.length === 0) {
     widgetItems.push({
       kind: "news",

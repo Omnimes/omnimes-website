@@ -858,9 +858,9 @@
     "next": {
       "title": "Co szykujemy",
       "mcpApps": {
-        "status": "W trakcie wdrażania",
-        "title": "MCP Apps",
-        "body": "Asystent AI pokaże w rozmowie interaktywne wykresy i tabele z OmniMES, a nie tylko opis danych."
+        "status": "Beta od wersji 4.9",
+        "title": "Studio aplikacji (MCP Apps)",
+        "body": "Opisujesz w rozmowie z Claude, czego potrzebujesz, a Claude buduje interaktywną aplikację z wykresami i tabelami na danych OmniMES. Gotową aplikację dodajesz do menu i udostępniasz wybranym osobom."
       },
       "erp": {
         "status": "W planach",

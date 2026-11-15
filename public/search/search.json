@@ -1,10 +1,59 @@
 [
   {
-    "title": "Basal w fabryce: polski model decyzyjny, który rozstrzyga przestoje lokalnie",
-    "slug": "basal-w-fabryce-polski-model-decyzyjny-ktory-rozstrzyga-przestoje-lokalnie",
-    "description": "Basal Remigiusza Kinasa to otwarte modele typowanych decyzji dla polskiego i angielskiego, uruchamiane na własnym serwerze. Na przykładzie przestoju w OmniMES pokazujemy zapytanie, macierz kosztów, odsyłanie niepewnych przypadków do człowieka i uczciwe porównanie z Jevem.",
+    "title": "Studio aplikacji w OmniMES: własne narzędzia produkcyjne budowane rozmową z Claude",
+    "slug": "studio-aplikacji-w-omnimes-wlasne-narzedzia-produkcyjne-budowane-rozmowa-z-claude",
+    "description": "OmniMES 4.9.0 wprowadza Studio aplikacji (wersja Beta). Kierownik produkcji, utrzymanie ruchu czy dział jakości opisują w rozmowie z Claude, czego potrzebują, a Claude buduje interaktywną aplikację na bieżących danych zakładu. Pokazujemy, jak to działa, dwa przykłady z liczbami, zasady bezpieczeństwa oraz to, kiedy wybrać aplikację, a kiedy pulpit BI.",
     "lang": "pl",
-    "tags": "OmniMES, AI, AI local, MES System"
+    "tags": "MCP, AGENT AI, AI, OmniMES"
+  },
+  {
+    "title": "App Studio in OmniMES: build your own shop-floor tools by talking to Claude",
+    "slug": "app-studio-in-omnimes-build-your-own-shop-floor-tools-by-talking-to-claude",
+    "description": "OmniMES 4.9.0 introduces App Studio (Beta). Production managers, maintenance and quality teams describe what they need in a conversation with Claude, and Claude builds an interactive app on live plant data. We show how it works, two examples with real numbers, the security model, and when to choose an app over a BI dashboard.",
+    "lang": "en",
+    "tags": "MCP, AGENT AI, AI, OmniMES"
+  },
+  {
+    "title": "4,8 mld zł dla przemysłu energochłonnego: połowę pomocy trzeba zainwestować. Co policzyć i zmierzyć przed naborem",
+    "slug": "48-mld-zl-dla-przemyslu-energochlonnego-polowe-pomocy-trzeba-zainwestowac-co-policzyc-przed-naborem",
+    "description": "Sejm przyjął 5 listopada poprawki Senatu do ustawy o wsparciu sektorów energochłonnych: 4,8 mld zł na lata 2027–2030, podział proporcjonalny zamiast konkursu i obowiązek zainwestowania co najmniej połowy pomocy w 48 miesięcy. Wyjaśniamy mechanizm, liczymy przykład i podpowiadamy, jakie dane zebrać już teraz.",
+    "lang": "pl",
+    "tags": "OmniEnergy, EMS, UE, OmniMES"
+  },
+  {
+    "title": "Poland's PLN 4.8bn for energy-intensive industry: half the aid must be invested. What to calculate and measure first",
+    "slug": "polands-pln-4-8bn-for-energy-intensive-industry-half-the-aid-must-be-invested-what-to-measure-first",
+    "description": "On 5 November the Polish Sejm accepted the Senate's amendments to a PLN 4.8bn electricity support scheme for energy-intensive firms in 2027–2030: a proportional split instead of a contest, and a duty to invest at least half the aid within 48 months. How the support is calculated, a worked example, and the data to start collecting now.",
+    "lang": "en",
+    "tags": "OmniEnergy, EMS, UE, OmniMES"
+  },
+  {
+    "title": "MCP dotarł do sterowników: jak podłączyć agenta AI do linii, żeby czytał dane, a zmiany zatwierdzał człowiek",
+    "slug": "mcp-dotarl-do-sterownikow-jak-podlaczyc-agenta-ai-do-linii-zeby-czytal-dane-a-zmiany-zatwierdzal-czlowiek",
+    "description": "W 2026 r. serwery MCP dostały Ignition, CODESYS i OPC UA, a Rockwell i Siemens pokazali agentów inżynierskich. Pokazujemy przetestowany serwer MCP dla linii w Pythonie: odczyt z listy tagów, zmiana nastawy dopiero po zatwierdzeniu człowieka i miejsce takiego serwera w architekturze zakładu.",
+    "lang": "pl",
+    "tags": "MCP, AGENT AI, AI, OmniMES"
+  },
+  {
+    "title": "MCP has reached the PLC: how to connect an AI agent to a line so it reads data and a human approves changes",
+    "slug": "mcp-has-reached-the-plc-how-to-connect-an-ai-agent-to-a-line-so-it-reads-data-and-a-human-approves-changes",
+    "description": "In 2026 Ignition, CODESYS and OPC UA gained MCP servers, and Rockwell and Siemens showed engineering agents. Here is a tested MCP server for a production line in Python: reads from a tag allow-list, setpoint changes only after a person approves, and where such a server belongs in a plant.",
+    "lang": "en",
+    "tags": "MCP, AGENT AI, AI, OmniMES"
+  },
+  {
+    "title": "The EU energy audit deadline has passed, Poland's law has not: what a plant above 10 TJ should do now",
+    "slug": "eu-energy-audit-deadline-has-passed-polands-law-has-not-what-a-plant-above-10-tj-should-do-now",
+    "description": "The EU date for the first energy audit of firms above 10 TJ passed on 11 October 2026, and Poland's bill UC77 is still with the government. What binds a plant today, what the bill changes, and what fresh Eurostat prices say about the cost of waiting.",
+    "lang": "en",
+    "tags": "OmniEnergy, ISO 50001, EMS, UE"
+  },
+  {
+    "title": "Termin audytu energetycznego minął, ustawy nadal nie ma: co zakład powyżej 10 TJ powinien zrobić teraz",
+    "slug": "termin-audytu-energetycznego-minal-ustawy-nadal-nie-ma-co-zaklad-powyzej-10-tj-powinien-zrobic",
+    "description": "11 października 2026 r. minął unijny termin pierwszego audytu energetycznego dla firm powyżej 10 TJ, a polska nowelizacja UC77 wciąż czeka na rząd. Pokazujemy, kogo co obowiązuje dziś, co zmienia projekt i co mówią najnowsze ceny energii z Eurostatu.",
+    "lang": "pl",
+    "tags": "OmniEnergy, ISO 50001, EMS, UE"
   },
   {
     "title": "Basal in the factory: a Polish decision model that makes downtime calls on-site",
@@ -14,17 +63,24 @@
     "tags": "OmniMES, AI, AI local, MES System"
   },
   {
-    "title": "Unified Namespace w praktyce: jedno źródło danych fabryki na MQTT i Sparkplug B",
-    "slug": "unified-namespace-w-praktyce-jedno-zrodlo-danych-fabryki-na-mqtt-i-sparkplug-b",
-    "description": "Jak zbudować Unified Namespace na brokerze MQTT i Sparkplug B bez wymiany sterowników: hierarchia tematów według ISA-95, certyfikaty narodzin i śmierci, kontrakty danych, wysoka dostępność brokera, segmentacja sieci IT i OT oraz plan na pierwsze 30 dni.",
+    "title": "Basal w fabryce: polski model decyzyjny, który rozstrzyga przestoje lokalnie",
+    "slug": "basal-w-fabryce-polski-model-decyzyjny-ktory-rozstrzyga-przestoje-lokalnie",
+    "description": "Basal Remigiusza Kinasa to otwarte modele typowanych decyzji dla polskiego i angielskiego, uruchamiane na własnym serwerze. Na przykładzie przestoju w OmniMES pokazujemy zapytanie, macierz kosztów, odsyłanie niepewnych przypadków do człowieka i uczciwe porównanie z Jevem.",
     "lang": "pl",
-    "tags": "OmniMES, UNS, MQTT, Sparkplug B"
+    "tags": "OmniMES, AI, AI local, MES System"
   },
   {
     "title": "Unified Namespace in practice: one source of factory data on MQTT and Sparkplug B",
     "slug": "unified-namespace-in-practice-one-source-of-factory-data-on-mqtt-and-sparkplug-b",
     "description": "How to build a Unified Namespace on an MQTT broker and Sparkplug B without replacing your controllers: an ISA-95 topic hierarchy, birth and death certificates, data contracts, broker high availability, IT and OT segmentation and a 30-day plan to get started.",
     "lang": "en",
+    "tags": "OmniMES, UNS, MQTT, Sparkplug B"
+  },
+  {
+    "title": "Unified Namespace w praktyce: jedno źródło danych fabryki na MQTT i Sparkplug B",
+    "slug": "unified-namespace-w-praktyce-jedno-zrodlo-danych-fabryki-na-mqtt-i-sparkplug-b",
+    "description": "Jak zbudować Unified Namespace na brokerze MQTT i Sparkplug B bez wymiany sterowników: hierarchia tematów według ISA-95, certyfikaty narodzin i śmierci, kontrakty danych, wysoka dostępność brokera, segmentacja sieci IT i OT oraz plan na pierwsze 30 dni.",
+    "lang": "pl",
     "tags": "OmniMES, UNS, MQTT, Sparkplug B"
   },
   {

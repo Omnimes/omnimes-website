@@ -850,9 +850,9 @@
     "next": {
       "title": "What’s coming",
       "mcpApps": {
-        "status": "In progress",
-        "title": "MCP Apps",
-        "body": "Your AI assistant will show interactive OmniMES charts and tables in the conversation, not just a description of the data."
+        "status": "Beta since version 4.9",
+        "title": "App Studio (MCP Apps)",
+        "body": "Describe what you need in a chat with Claude, and Claude builds an interactive app with charts and tables on OmniMES data. Add the finished app to the menu and share it with chosen people."
       },
       "erp": {
         "status": "Planned",

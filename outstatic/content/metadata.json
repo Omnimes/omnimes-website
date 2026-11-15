@@ -6493,6 +6493,118 @@
       "slug": "hologram-in-omnimes-your-plant-in-live-3d",
       "status": "published",
       "title": "Hologram in OmniMES — your plant in 3D: live, simulated and built by AI"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/studio-aplikacji-w-omnimes-aplikacje-budowane-z-claude.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/news/studio-aplikacji/cover-pl.jpg",
+      "description": "OmniMES 4.9.0 wprowadza Studio aplikacji (Beta): opisujesz zwykłym językiem, czego potrzebujesz, a Claude buduje interaktywną aplikację na żywych danych z maszyn, zleceń i pomiarów. Aplikacja trafia do menu, udostępniasz ją wybranym osobom, a każda z nich widzi w niej tylko to, do czego ma uprawnienia. Wszystko w otwartym standardzie MCP Apps.",
+      "lang": "pl",
+      "publishedAt": "2026-11-15T12:00:00.000Z",
+      "slug": "studio-aplikacji-w-omnimes-aplikacje-budowane-z-claude",
+      "status": "published",
+      "title": "Studio aplikacji w OmniMES — opisz, czego potrzebujesz, a Claude zbuduje aplikację na danych z produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/news/app-studio-in-omnimes-apps-built-with-claude.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "news",
+      "coverImage": "/images/news/studio-aplikacji/cover-en.jpg",
+      "description": "OmniMES 4.9.0 introduces App Studio (Beta): describe what you need in plain language and Claude builds an interactive app on live data from your machines, orders and measurements. The app goes into the menu, you share it with chosen people, and each of them sees only what their permissions allow. All on the open MCP Apps standard.",
+      "lang": "en",
+      "publishedAt": "2026-11-15T12:00:00.000Z",
+      "slug": "app-studio-in-omnimes-apps-built-with-claude",
+      "status": "published",
+      "title": "App Studio in OmniMES — describe what you need and Claude builds the app on your production data"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/studio-aplikacji-w-omnimes-wlasne-narzedzia-produkcyjne-budowane-rozmowa-z-claude.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/blog/studio-aplikacji/cover-studio-aplikacji-pl.jpg",
+      "description": "OmniMES 4.9.0 wprowadza Studio aplikacji (wersja Beta). Kierownik produkcji, utrzymanie ruchu czy dział jakości opisują w rozmowie z Claude, czego potrzebują, a Claude buduje interaktywną aplikację na bieżących danych zakładu. Pokazujemy, jak to działa, dwa przykłady z liczbami, zasady bezpieczeństwa oraz to, kiedy wybrać aplikację, a kiedy pulpit BI.",
+      "lang": "pl",
+      "publishedAt": "2026-11-15T08:00:00.000Z",
+      "slug": "studio-aplikacji-w-omnimes-wlasne-narzedzia-produkcyjne-budowane-rozmowa-z-claude",
+      "status": "published",
+      "tags": [
+        {
+          "value": "mcp",
+          "label": "MCP"
+        },
+        {
+          "value": "agentAi",
+          "label": "AGENT AI"
+        },
+        {
+          "value": "AI",
+          "label": "AI"
+        },
+        {
+          "value": "omniMES",
+          "label": "OmniMES"
+        }
+      ],
+      "title": "Studio aplikacji w OmniMES: własne narzędzia produkcyjne budowane rozmową z Claude"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/posts/app-studio-in-omnimes-build-your-own-shop-floor-tools-by-talking-to-claude.md"
+      },
+      "author": {
+        "name": "Martin Szerment",
+        "picture": "/images/1645307189660-I1OD.jpg"
+      },
+      "collection": "posts",
+      "coverImage": "/images/blog/studio-aplikacji/cover-studio-aplikacji-en.jpg",
+      "description": "OmniMES 4.9.0 introduces App Studio (Beta). Production managers, maintenance and quality teams describe what they need in a conversation with Claude, and Claude builds an interactive app on live plant data. We show how it works, two examples with real numbers, the security model, and when to choose an app over a BI dashboard.",
+      "lang": "en",
+      "publishedAt": "2026-11-15T08:00:00.000Z",
+      "slug": "app-studio-in-omnimes-build-your-own-shop-floor-tools-by-talking-to-claude",
+      "status": "published",
+      "tags": [
+        {
+          "value": "mcp",
+          "label": "MCP"
+        },
+        {
+          "value": "agentAi",
+          "label": "AGENT AI"
+        },
+        {
+          "value": "AI",
+          "label": "AI"
+        },
+        {
+          "value": "omniMES",
+          "label": "OmniMES"
+        }
+      ],
+      "title": "App Studio in OmniMES: build your own shop-floor tools by talking to Claude"
     }
   ]
 }
