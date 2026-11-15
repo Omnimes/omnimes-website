@@ -833,6 +833,22 @@
     "smallSubtitle": "Rozwój systemu",
     "heading": "Co działa już dziś i co szykujemy",
     "description": "OmniMES rozwijamy w trzech kierunkach: energia na poziomie sztuki, asystent AI i otwarte integracje.",
+    "featured": {
+      "studio": {
+        "tag": "Wersja 4.9 · Beta",
+        "title": "Studio aplikacji",
+        "body": "Opisujesz w rozmowie z Claude, czego potrzebujesz, a Claude buduje aplikację z wykresami i tabelami na żywych danych z produkcji. Gotową aplikację dodajesz do menu i udostępniasz wybranym osobom.",
+        "imageAlt": "Claude zmienia aplikację na żywo w Studiu aplikacji OmniMES"
+      },
+      "hologram": {
+        "tag": "Wersja 4.6",
+        "title": "Hologram — hala w 3D na żywo",
+        "body": "Model 3D hali, w którym maszyny świecą kolorem swojego stanu na żywo, a symulacja pokazuje przepływ materiału i wąskie gardło. Model zbuduje za Ciebie asystent AI.",
+        "imageAlt": "Hologram OmniMES — model 3D hali produkcyjnej"
+      },
+      "readNews": "Przeczytaj w Nowościach",
+      "readArticle": "Artykuł na blogu"
+    },
     "cards": {
       "energy": {
         "tag": "OmniEnergy",
@@ -857,11 +873,6 @@
     },
     "next": {
       "title": "Co szykujemy",
-      "mcpApps": {
-        "status": "Beta od wersji 4.9",
-        "title": "Studio aplikacji (MCP Apps)",
-        "body": "Opisujesz w rozmowie z Claude, czego potrzebujesz, a Claude buduje interaktywną aplikację z wykresami i tabelami na danych OmniMES. Gotową aplikację dodajesz do menu i udostępniasz wybranym osobom."
-      },
       "erp": {
         "status": "W planach",
         "title": "Konektor ERP",

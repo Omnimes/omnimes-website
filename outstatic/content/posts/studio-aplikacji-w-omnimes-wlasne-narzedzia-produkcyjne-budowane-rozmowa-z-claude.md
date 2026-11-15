@@ -6,7 +6,7 @@ author:
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'studio-aplikacji-w-omnimes-wlasne-narzedzia-produkcyjne-budowane-rozmowa-z-claude'
 description: 'OmniMES 4.9.0 wprowadza Studio aplikacji (wersja Beta). Kierownik produkcji, utrzymanie ruchu czy dział jakości opisują w rozmowie z Claude, czego potrzebują, a Claude buduje interaktywną aplikację na bieżących danych zakładu. Pokazujemy, jak to działa, dwa przykłady z liczbami, zasady bezpieczeństwa oraz to, kiedy wybrać aplikację, a kiedy pulpit BI.'
-coverImage: '/images/blog/studio-aplikacji/cover-studio-aplikacji-pl.jpg'
+coverImage: '/images/blog/studio-aplikacji/cover-film-pl.jpg'
 lang: 'pl'
 tags: [{"value":"mcp","label":"MCP"},{"value":"agentAi","label":"AGENT AI"},{"value":"AI","label":"AI"},{"value":"omniMES","label":"OmniMES"}]
 publishedAt: '2026-11-15T08:00:00.000Z'

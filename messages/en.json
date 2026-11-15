@@ -825,6 +825,22 @@
     "smallSubtitle": "Product direction",
     "heading": "What works today and what’s coming",
     "description": "We’re developing OmniMES in three directions: energy down to the single unit, AI assistants and open integrations.",
+    "featured": {
+      "studio": {
+        "tag": "Version 4.9 · Beta",
+        "title": "App Studio",
+        "body": "Describe what you need in a chat with Claude, and Claude builds an app with charts and tables on live production data. Add the finished app to the menu and share it with chosen people.",
+        "imageAlt": "Claude changing an app live in OmniMES App Studio"
+      },
+      "hologram": {
+        "tag": "Version 4.6",
+        "title": "Hologram — your plant in live 3D",
+        "body": "A 3D model of the production hall where every machine glows in the colour of its live state, and a simulation shows material flow and the bottleneck. An AI assistant builds the model for you.",
+        "imageAlt": "OmniMES Hologram — 3D model of a production hall"
+      },
+      "readNews": "Read the news",
+      "readArticle": "Blog article"
+    },
     "cards": {
       "energy": {
         "tag": "OmniEnergy",
@@ -849,11 +865,6 @@
     },
     "next": {
       "title": "What’s coming",
-      "mcpApps": {
-        "status": "Beta since version 4.9",
-        "title": "App Studio (MCP Apps)",
-        "body": "Describe what you need in a chat with Claude, and Claude builds an interactive app with charts and tables on OmniMES data. Add the finished app to the menu and share it with chosen people."
-      },
       "erp": {
         "status": "Planned",
         "title": "ERP connector",
