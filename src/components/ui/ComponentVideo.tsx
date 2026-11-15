@@ -29,7 +29,7 @@ export const ComponentVideo = ({ path }: { path: string }) => {
   return (
     <video
       ref={video}
-      className="ml-auto aspect-[1234/744] w-full rounded-lg bg-default-100 md:max-w-[450px]"
+      className="bg-default-100 ml-auto aspect-[1234/744] w-full rounded-lg md:max-w-[450px]"
       muted
       loop
       playsInline
