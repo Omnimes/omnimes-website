@@ -52,7 +52,7 @@ export const HeroFactory = () => {
         ) {
           return
         }
-        const scene = mountHero(
+        const scene = await mountHero(
           canvas.current,
           {
             stop: stop.current,
@@ -67,120 +67,140 @@ export const HeroFactory = () => {
             })),
           },
           { run: t("stateRun"), warn: t("stateWait"), stop: t("stateStop") },
-          { compact: window.innerWidth < 768, locale }
+          {
+            compact: window.innerWidth < 768,
+            locale,
+            // Scena zastępuje obraz startowy dopiero wtedy, gdy rysuje płynnie
+            onShown: () => {
+              if (!cancelled) setReady(true)
+            },
+          }
         )
-        dispose = scene.dispose
-        setReady(true)
+        if (cancelled) scene.dispose()
+        else dispose = scene.dispose
       } catch {
         // Bez WebGL zostaje obraz startowy
       }
     }
 
-    const timer = window.setTimeout(start, 300)
+    start()
     return () => {
       cancelled = true
-      window.clearTimeout(timer)
       dispose?.()
     }
   }, [t, locale])
 
   return (
-    <div
-      ref={frame}
-      className="relative isolate z-30 aspect-[16/9] w-full overflow-hidden rounded-xl bg-[#05060f] shadow-xl ring-1 ring-white/10 [&:fullscreen]:aspect-auto [&:fullscreen]:rounded-none"
-    >
-      <Image
-        src="/images/hero/factory-poster.jpg"
-        alt={t("animationAlt")}
-        fill
-        sizes="(max-width: 640px) 100vw, 66vw"
-        className="object-cover"
-      />
-      <canvas
-        ref={canvas}
-        role="img"
-        aria-label={t("animationAlt")}
-        className={`absolute inset-0 size-full transition-opacity duration-700 ${
-          ready ? "opacity-100" : "opacity-0"
-        }`}
-      />
-      {/* Winieta skupia wzrok na linii produkcyjnej */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(5,6,15,0.65)_100%)]" />
+    // Cienka ramka w kolorach marki i poświata pod spodem osadzają scenę w tle sekcji
+    <div className="relative rounded-2xl bg-gradient-to-br from-[#2f9bff]/55 via-white/10 to-[#FF1CF7]/55 p-px shadow-[0_28px_90px_-30px_rgba(124,92,255,0.6)]">
+      <div
+        ref={frame}
+        className="relative isolate z-30 aspect-[16/9] w-full overflow-hidden rounded-[15px] bg-[#05060f] [&:fullscreen]:aspect-auto [&:fullscreen]:rounded-none"
+      >
+        {/* Obraz startowy to pierwsza klatka sceny, więc podmiana na animację jest niewidoczna */}
+        <Image
+          src="/images/hero/factory-poster.jpg"
+          alt={t("animationAlt")}
+          fill
+          priority
+          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 62vw, 800px"
+          className="object-cover"
+        />
+        <canvas
+          ref={canvas}
+          role="img"
+          aria-label={t("animationAlt")}
+          className={`absolute inset-0 size-full transition-opacity duration-500 ${
+            ready ? "opacity-100" : "opacity-0"
+          }`}
+        />
+        {/* Winieta skupia wzrok na linii produkcyjnej */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(5,6,15,0.65)_100%)]" />
 
-      <div className={ready ? "contents" : "hidden"} aria-hidden="true">
-        {/* Mini panel OmniMES */}
         <div
-          className={`pointer-events-none absolute left-2 top-2 z-10 w-36 rounded-lg border border-white/15 bg-black/65 p-2 text-[10px] text-white backdrop-blur sm:left-3 sm:top-3 sm:w-48 sm:p-2.5 sm:text-[11px] ${
-            screen.active ? "origin-top-left scale-150" : ""
+          aria-hidden="true"
+          className={`pointer-events-none absolute inset-0 transition-opacity duration-700 ${
+            ready ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="mb-1 flex items-center justify-between font-semibold">
-            <span>OmniMES</span>
-            <span className="font-normal text-white/60">{t("hudLine")}</span>
+          {/* Mini panel OmniMES */}
+          <div
+            className={`pointer-events-none absolute left-2 top-2 z-10 w-36 rounded-lg border border-white/15 bg-black/65 p-2 text-[10px] text-white backdrop-blur sm:left-3 sm:top-3 sm:w-48 sm:p-2.5 sm:text-[11px] ${
+              screen.active ? "origin-top-left scale-150" : ""
+            }`}
+          >
+            <div className="mb-1 flex items-center justify-between font-semibold">
+              <span>OmniMES</span>
+              <span className="font-normal text-white/60">{t("hudLine")}</span>
+            </div>
+            <ul className="hidden space-y-0.5 sm:block">
+              {STATIONS.map((station, index) => (
+                <li key={station} className="flex items-center gap-1.5">
+                  <span
+                    ref={(element) => {
+                      if (element) rows.current[index * 2] = element
+                    }}
+                    className="size-2 rounded-full bg-[#22e58a] transition-colors"
+                  />
+                  <span className="grow">{t(station)}</span>
+                  <span
+                    ref={(element) => {
+                      if (element) rows.current[index * 2 + 1] = element
+                    }}
+                    className="text-white/60"
+                  />
+                </li>
+              ))}
+            </ul>
+            <div className="mt-1 flex justify-between border-t border-white/10 pt-1 font-semibold sm:mt-1.5 sm:pt-1.5">
+              <span>
+                OEE <span ref={oeeValue} className="tabular-nums" />
+              </span>
+              <span>
+                <span ref={energyValue} className="tabular-nums" /> kWh/{t("chipUnit")}
+              </span>
+            </div>
+            <svg
+              viewBox="0 0 117 32"
+              className="mt-1 hidden h-6 w-full sm:block"
+              aria-hidden="true"
+            >
+              <polyline
+                ref={chart}
+                fill="none"
+                stroke="#7c5cff"
+                strokeWidth="1.5"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                vectorEffect="non-scaling-stroke"
+              />
+            </svg>
           </div>
-          <ul className="hidden space-y-0.5 sm:block">
-            {STATIONS.map((station, index) => (
-              <li key={station} className="flex items-center gap-1.5">
-                <span
-                  ref={(element) => {
-                    if (element) rows.current[index * 2] = element
-                  }}
-                  className="size-2 rounded-full bg-[#22e58a] transition-colors"
-                />
-                <span className="grow">{t(station)}</span>
-                <span
-                  ref={(element) => {
-                    if (element) rows.current[index * 2 + 1] = element
-                  }}
-                  className="text-white/60"
-                />
-              </li>
-            ))}
-          </ul>
-          <div className="mt-1 flex justify-between border-t border-white/10 pt-1 font-semibold sm:mt-1.5 sm:pt-1.5">
-            <span>
-              OEE <span ref={oeeValue} className="tabular-nums" />
-            </span>
-            <span>
-              <span ref={energyValue} className="tabular-nums" /> kWh/{t("chipUnit")}
-            </span>
+
+          <div ref={stop} className={`${chipClass} border-red-400/60 bg-red-600/85`}>
+            {t("chipStop")} <span ref={stopValue} className="tabular-nums" />
           </div>
-          <svg viewBox="0 0 117 32" className="mt-1 hidden h-6 w-full sm:block" aria-hidden="true">
-            <polyline
-              ref={chart}
-              fill="none"
-              stroke="#7c5cff"
-              strokeWidth="1.5"
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              vectorEffect="non-scaling-stroke"
-            />
-          </svg>
+          <div ref={resume} className={`${chipClass} border-emerald-300/60 bg-emerald-600/85`}>
+            {t("chipResume")}
+          </div>
         </div>
 
-        <div ref={stop} className={`${chipClass} border-red-400/60 bg-red-600/85`}>
-          {t("chipStop")} <span ref={stopValue} className="tabular-nums" />
-        </div>
-        <div ref={resume} className={`${chipClass} border-emerald-300/60 bg-emerald-600/85`}>
-          {t("chipResume")}
-        </div>
+        {screen.supported && (
+          <button
+            type="button"
+            onClick={screen.toggle}
+            aria-label={screen.active ? t("exitFullscreen") : t("fullscreen")}
+            title={screen.active ? t("exitFullscreen") : t("fullscreen")}
+            className="absolute right-3 top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
+          >
+            {screen.active ? <FaCompress size={13} /> : <FaExpand size={13} />}
+          </button>
+        )}
+
+        <p className="absolute bottom-2 right-3 z-10 rounded bg-black/45 px-1.5 py-0.5 text-[10px] text-white/60 sm:text-[11px]">
+          {t("animationNote")}
+        </p>
       </div>
-
-      {screen.supported && (
-        <button
-          type="button"
-          onClick={screen.toggle}
-          aria-label={screen.active ? t("exitFullscreen") : t("fullscreen")}
-          title={screen.active ? t("exitFullscreen") : t("fullscreen")}
-          className="absolute right-3 top-3 z-20 flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white backdrop-blur transition hover:bg-black/80"
-        >
-          {screen.active ? <FaCompress size={13} /> : <FaExpand size={13} />}
-        </button>
-      )}
-
-      <p className="absolute bottom-2 right-3 z-10 rounded bg-black/55 px-1.5 py-0.5 text-[10px] text-white/70 sm:text-[11px]">
-        {t("animationNote")}
-      </p>
     </div>
   )
 }

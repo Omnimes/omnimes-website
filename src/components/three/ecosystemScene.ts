@@ -256,11 +256,16 @@ function makePanel(kind: PanelKind) {
   }
 }
 
-export function mountEcosystem(
+export async function mountEcosystem(
   canvas: HTMLCanvasElement,
   labels: EcosystemLabels,
   overlay: EcosystemOverlay,
-  options: { compact: boolean; still: boolean; onStage: (stage: number) => void }
+  options: {
+    compact: boolean
+    still: boolean
+    onStage: (stage: number) => void
+    onShown: () => void
+  }
 ) {
   const stage = createStage(canvas, { compact: options.compact, shadowSpan: 46 })
   const { scene, camera, sun } = stage
@@ -590,13 +595,15 @@ export function mountEcosystem(
     lookAt.copy(cameras[current].look)
     frame(0.016, 1)
   }
-  const loop = options.still ? null : runLoop(canvas, frame, stage.degrade)
+  await stage.warmUp()
+  const loop = options.still ? null : runLoop(canvas, frame, stage.degrade, options.onShown)
   stage.onResize(() => {
     frameOverview()
     if (options.still) still()
   })
   if (options.still) {
     still()
+    options.onShown()
     // Jedna klatka powstaje przed wczytaniem logo, więc trzeba ją narysować ponownie
     loadWordmark()
       .then(() => {

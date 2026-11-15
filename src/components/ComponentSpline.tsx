@@ -1,6 +1,6 @@
 "use client"
 
-import React, { Component, ReactNode, Suspense } from "react"
+import React, { Component, ReactNode, Suspense, useEffect, useRef, useState } from "react"
 import { Skeleton } from "@nextui-org/react"
 
 const Spline = React.lazy(() => import("@splinetool/react-spline"))
@@ -22,16 +22,41 @@ class SplineBoundary extends Component<{ children: ReactNode }, { failed: boolea
   }
 }
 
+const placeholder = (
+  <Skeleton className="spline flex aspect-video min-h-2 justify-center rounded-lg" />
+)
+
 export default function ComponentSpline({ url }: { url: string }) {
-  return (
-    <SplineBoundary>
-      <Suspense
-        fallback={
-          <Skeleton className="spline flex aspect-video min-h-2 justify-center rounded-lg" />
+  const box = useRef<HTMLDivElement>(null)
+  const [near, setNear] = useState(false)
+
+  // Silnik Spline (ok. 2 MB) pobiera sie dopiero, gdy czytelnik zbliza sie do sceny
+  useEffect(() => {
+    if (!box.current) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          observer.disconnect()
+          setNear(true)
         }
-      >
-        <Spline scene={url} className="spline" />
-      </Suspense>
-    </SplineBoundary>
+      },
+      { rootMargin: "600px" }
+    )
+    observer.observe(box.current)
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <div ref={box}>
+      {near ? (
+        <SplineBoundary>
+          <Suspense fallback={placeholder}>
+            <Spline scene={url} className="spline" />
+          </Suspense>
+        </SplineBoundary>
+      ) : (
+        placeholder
+      )}
+    </div>
   )
 }

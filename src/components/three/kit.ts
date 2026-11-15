@@ -811,6 +811,18 @@ export function createStage(
     camera,
     sun,
     render: () => composer.render(),
+    /** Kompiluje shadery w tle, zanim scena pojawi się na ekranie, więc strona się nie zacina. */
+    async warmUp() {
+      // Shadery zależą od celu rysowania (efekty rysują do bufora), dlatego kompilujemy pod ten sam cel
+      renderer.setRenderTarget(target)
+      try {
+        await renderer.compileAsync(scene, camera)
+      } catch {
+        // Bez kompilacji w tle shadery skompilują się przy pierwszej klatce
+      } finally {
+        renderer.setRenderTarget(null)
+      }
+    },
     degrade() {
       bloom.enabled = false
       sun.castShadow = false
@@ -840,12 +852,20 @@ export function createStage(
   }
 }
 
-/** Pętla rysowania, która stoi, gdy scena jest poza ekranem albo karta jest ukryta. */
+// Pierwsze klatki kompilują resztę shaderów, więc nie liczą się do oceny płynności
+const WARM_FRAMES = 20
+
+/**
+ * Pętla rysowania, która stoi, gdy scena jest poza ekranem albo karta jest ukryta.
+ * `onShown` dostaje sygnał po kilku narysowanych klatkach: wtedy scenę można pokazać bez zacięcia.
+ */
 export function runLoop(
   canvas: HTMLCanvasElement,
   frame: (delta: number, time: number, real: number) => void,
-  onSlow?: () => void
+  onSlow?: () => void,
+  onShown?: () => void
 ) {
+  let drawn = 0
   let frames = 0
   let spent = 0
   let visible = true
@@ -859,16 +879,19 @@ export function runLoop(
     const raw = (now - last) / 1000 || 0
     const delta = Math.min(raw, 0.05)
     last = now
-    if (onSlow && raw < 0.5) {
+    if (onSlow && raw < 0.5 && drawn > WARM_FRAMES) {
       frames += 1
       spent += raw
       if (frames === 90) {
-        if (spent / frames > 1 / 24) onSlow()
+        // Poniżej ok. 30 kl./s animacja wygląda na zacinającą się, lepiej zrezygnować z efektów
+        if (spent / frames > 1 / 30) onSlow()
         onSlow = undefined
       }
     }
     time += delta
     frame(delta, time, Math.min(raw, 0.25))
+    drawn += 1
+    if (drawn === 3) onShown?.()
     schedule()
   }
   const schedule = () => {

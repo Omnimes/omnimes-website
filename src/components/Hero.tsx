@@ -14,16 +14,19 @@ export const Hero = () => {
 
   return (
     <section className="relative left-1/2 isolate w-screen -translate-x-1/2 overflow-hidden text-white">
-      {/* Tło z banera bez napisu, lekko rozmyte, na cały pierwszy ekran */}
-      <Image
-        src="/images/hero/hero-background.jpg"
-        alt=""
-        fill
-        sizes="100vw"
-        priority
-        className="-z-20 scale-105 object-cover blur-[3px]"
+      {/* Tło rysowane w CSS: ostre w każdej rozdzielczości i bez pobierania obrazu */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 bg-[#05060f] bg-[radial-gradient(ellipse_55%_60%_at_28%_30%,rgba(47,155,255,0.17),transparent_70%),radial-gradient(ellipse_45%_65%_at_88%_70%,rgba(178,73,248,0.17),transparent_70%)]"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#05060f]/70 via-[#05060f]/40 to-[#05060f]/70" />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(rgba(148,170,255,0.13)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_75%_70%_at_50%_40%,black,transparent)]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 -z-10 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"
+      />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-8 sm:grid-cols-3 sm:gap-12 sm:px-8 sm:py-12">
         {/* LEWA STRONA – DUŻE LOGO I ANIMACJA */}
@@ -70,14 +73,14 @@ export const Hero = () => {
             ))}
           </div>
 
-          <div className="mt-8">
-            {/* Przyciski w pionie z separatorem "lub" pomiędzy */}
-            <div className="flex flex-col items-start gap-3">
+          <div className="mt-8 max-w-sm">
+            {/* Przyciski w pionie, tej samej szerokości, z separatorem "lub" pomiędzy */}
+            <div className="flex flex-col gap-3">
               <Link
                 href="https://cloud.omnimes.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] px-6 py-3 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-fuchsia-600/30 transition duration-300 hover:shadow-xl hover:shadow-fuchsia-600/40 hover:brightness-110"
                 aria-label={t("contactSalesAria")}
                 title={t("contactSales")}
               >
@@ -92,11 +95,15 @@ export const Hero = () => {
                 </svg>
               </Link>
 
-              <span className="px-1 text-base font-medium text-gray-300">{t("or")}</span>
+              <span className="flex items-center gap-3 text-sm font-medium text-gray-400">
+                <span aria-hidden="true" className="h-px flex-1 bg-white/15" />
+                {t("or")}
+                <span aria-hidden="true" className="h-px flex-1 bg-white/15" />
+              </span>
 
               <Link
                 href="/demo"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] px-6 py-3 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/25 bg-white/5 px-6 py-3 text-base font-semibold text-white backdrop-blur transition duration-300 hover:border-white/50 hover:bg-white/10"
                 aria-label={t("tryDemoAria")}
                 title={t("tryDemo")}
               >

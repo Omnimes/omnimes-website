@@ -11,32 +11,32 @@ const opinion = [
   {
     opinion: "opinion1",
     name: "Aleksandra Nowak",
-    images: "/images/avatars/avatar_w1.png",
+    images: "/images/avatars/avatar_w1.webp",
   },
   {
     opinion: "opinion2",
     name: "Michał Zając",
-    images: "/images/avatars/avatar_m1.png",
+    images: "/images/avatars/avatar_m1.webp",
   },
   {
     opinion: "opinion3",
     name: "Piotr Nowicki",
-    images: "/images/avatars/avatar_m2.png",
+    images: "/images/avatars/avatar_m2.webp",
   },
   {
     opinion: "opinion4",
     name: "Joanna Kwiatkowska",
-    images: "/images/avatars/avatar_w2.png",
+    images: "/images/avatars/avatar_w2.webp",
   },
   {
     opinion: "opinion5",
     name: "Robert Kowalik",
-    images: "/images/avatars/avatar_m3.png",
+    images: "/images/avatars/avatar_m3.webp",
   },
   {
     opinion: "opinion6",
     name: "Adrian Woźniak",
-    images: "/images/avatars/avatar_m4.png",
+    images: "/images/avatars/avatar_m4.webp",
   },
 ]
 export const WhatPeopleSay = () => {

@@ -37,11 +37,11 @@ const STOPPED_STATION = 3
 
 const DOT: Record<MachineState, string> = { run: "#22e58a", warn: "#ffb020", stop: "#ff3b5c" }
 
-export function mountHero(
+export async function mountHero(
   canvas: HTMLCanvasElement,
   overlay: HeroOverlay,
   labels: HeroLabels,
-  options: { compact: boolean; locale: string }
+  options: { compact: boolean; locale: string; onShown: () => void }
 ) {
   const stage = createStage(canvas, { compact: options.compact, shadowSpan: 13 })
   const { scene, camera } = stage
@@ -227,6 +227,20 @@ export function mountHero(
     element.style.transform = `translate(-50%, -100%) translate(${x}px, ${y}px)`
   }
 
+  // Panel i etykiety zmieniamy tylko przy zmianie wartości, a nie w każdej klatce
+  const written = new WeakMap<object, string>()
+  const changed = (target: object, value: string) => {
+    if (written.get(target) === value) return false
+    written.set(target, value)
+    return true
+  }
+  const write = (element: Element, value: string) => {
+    if (changed(element, value)) element.textContent = value
+  }
+  const fade = (element: HTMLElement, visible: boolean) => {
+    if (changed(element.style, visible ? "1" : "0")) element.style.opacity = visible ? "1" : "0"
+  }
+
   const history: number[] = Array.from({ length: 40 }, () => 1.24)
   let historyClock = 0
   const matrix = new THREE.Matrix4()
@@ -266,8 +280,9 @@ export function mountHero(
       }
       const state: MachineState = down ? "stop" : blocked ? "warn" : "run"
       lights[index].set(state, time)
-      overlay.rows[index].dot.style.background = DOT[state]
-      overlay.rows[index].state.textContent = labels[state]
+      const row = overlay.rows[index]
+      if (changed(row.dot, state)) row.dot.style.background = DOT[state]
+      write(row.state, labels[state])
     })
 
     let instance = 0
@@ -296,8 +311,8 @@ export function mountHero(
     // Wartości poglądowe: postój obniża OEE i podbija energię na sztukę
     oee += ((stopped ? 71 : 84) - oee) * delta * (stopped ? 0.45 : 0.28)
     energy += ((stopped ? 1.62 : 1.24) - energy) * delta * (stopped ? 0.55 : 0.32)
-    overlay.oeeValue.textContent = `${Math.round(oee)}%`
-    overlay.energyValue.textContent = number.format(energy)
+    write(overlay.oeeValue, `${Math.round(oee)}%`)
+    write(overlay.energyValue, number.format(energy))
 
     historyClock += delta
     if (historyClock > 0.2) {
@@ -313,9 +328,9 @@ export function mountHero(
     }
 
     const seconds = Math.max(0, Math.floor((phase - STOP_FROM) * 15))
-    overlay.stopValue.textContent = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`
-    overlay.stop.style.opacity = stopped ? "1" : "0"
-    overlay.resume.style.opacity = resumed ? "1" : "0"
+    write(overlay.stopValue, `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`)
+    fade(overlay.stop, stopped)
+    fade(overlay.resume, resumed)
 
     // Kamera podjeżdża do zatrzymanej maszyny i wraca
     const eased = push * push * (3 - 2 * push)
@@ -325,12 +340,16 @@ export function mountHero(
     look.copy(wideLook).lerp(closeLook, eased)
     camera.position.copy(position)
     camera.lookAt(look)
-    place(overlay.stop)
-    place(overlay.resume)
+    // Etykiety postoju (z wygaszaniem) podążają za maszyną tylko wtedy, gdy mogą być widoczne
+    if (phase >= STOP_FROM - 0.5 && phase < RESUME_TO + 0.5) {
+      place(overlay.stop)
+      place(overlay.resume)
+    }
     stage.render()
   }
 
-  const loop = runLoop(canvas, frame, stage.degrade)
+  await stage.warmUp()
+  const loop = runLoop(canvas, frame, stage.degrade, options.onShown)
   return {
     dispose() {
       loop.stop()

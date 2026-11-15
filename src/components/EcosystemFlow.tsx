@@ -44,7 +44,7 @@ export const EcosystemFlow = () => {
         const { mountEcosystem } = await import("./three/ecosystemScene")
         if (cancelled || !canvas.current) return
         const moving = canAnimate()
-        scene.current = mountEcosystem(
+        const mounted = await mountEcosystem(
           canvas.current,
           {
             gateway: "cMT-G01X",
@@ -57,10 +57,22 @@ export const EcosystemFlow = () => {
             ],
           },
           { stations: stations.current, roles: roles.current },
-          { compact: window.innerWidth < 768, still: !moving, onStage: setStage }
+          {
+            compact: window.innerWidth < 768,
+            still: !moving,
+            onStage: setStage,
+            // Scena zastępuje obraz startowy dopiero wtedy, gdy rysuje płynnie
+            onShown: () => {
+              if (!cancelled) setReady(true)
+            },
+          }
         )
+        if (cancelled) {
+          mounted.dispose()
+          return
+        }
+        scene.current = mounted
         setAnimated(moving)
-        setReady(true)
       } catch {
         // Bez WebGL zostaje obraz i lista kroków
       }
