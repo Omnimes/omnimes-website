@@ -17,7 +17,8 @@ export const Time = () => {
       </div>
       <div className="relative grid grid-cols-6 content-between gap-3">
         <div className="relative order-1 col-span-full md:order-2 md:col-span-3">
-          <ComponentSpline url={"https://draft.spline.design/zJtjPyynUKn-paEo/scene.splinecode"} />
+          {/* Scena z naszej domeny: CDN Spline (draft) oddawal Firefoksowi plik bez naglowka CORS */}
+          <ComponentSpline url={"/spline/omnimes-scena.splinecode"} />
         </div>
         <div className="relative order-2 col-span-full ml-auto rounded-xl md:order-1 md:col-span-3">
           <DescriptionSecondary text={t("text")} />
