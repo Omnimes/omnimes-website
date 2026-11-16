@@ -36,6 +36,27 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.10.0",
+      date: "2026-11-16",
+      entries: [
+        {
+          category: "added",
+          scope: "Hologram: warstwy widoku",
+          body: "Przycisk „Warstwy” nad modelem 3D zastępuje „Etykiety”: osobno włączasz nazwy maszyn, ich stan, parametry, strefy, przepływ materiału i oświetlenie. Parametry widać bezpośrednio nad maszynami — z daleka jako jedna linia wartości, z bliska jako tabelka — i możesz wybrać, które pomiary pokazać. Ustawienie zapamiętuje przeglądarka.",
+        },
+        {
+          category: "added",
+          scope: "Hologram: rekomendacje na karcie maszyny",
+          body: "Po kliknięciu maszyny panel podpowiada, dlaczego stoi i co zrobić: jak długo trwa awaria lub postój na tle wcześniejszych, czy przyczyna leży wcześniej w procesie (poprzednie stanowisko nie podaje materiału) czy dalej (następne nie odbiera), ile było mikropostojów, jaka jest dostępność z 7 dni, MTBF i MTTR, które pomiary wyszły poza typowy zakres i ile energii maszyna pobiera w postojach. Rekomendacje wynikają z historii maszyny w OmniMES i stanu sąsiednich stanowisk — bez modelu predykcyjnego. Te same dane dostaje asystent AI przez MCP.",
+        },
+        {
+          category: "added",
+          scope: "Hologram: oświetlenie hali",
+          body: "Model może pokazywać oprawy oświetlenia pod stropem przypięte do obwodów monitorowanych w OmniMES. Świecą, przygasają w trybie oszczędnym, gasną albo migają przy awarii obwodu — zgodnie ze stanem na żywo.",
+        },
+      ],
+    },
+    {
       version: "4.9.0",
       date: "2026-11-15",
       entries: [
@@ -490,6 +511,27 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.10.0",
+      date: "2026-11-16",
+      entries: [
+        {
+          category: "added",
+          scope: "Hologram: view layers",
+          body: "A “Layers” button above the 3D model replaces “Labels”: switch machine names, machine state, parameters, zones, material flow and lighting on and off separately. Parameters appear right above the machines — a single line of values from afar, a small table close up — and you choose which measurements to show. The browser remembers the setting.",
+        },
+        {
+          category: "added",
+          scope: "Hologram: recommendations on the machine card",
+          body: "Click a machine and the panel explains why it has stopped and what to do: how long the failure or stop has lasted compared with earlier ones, whether the cause is upstream (the previous station is not feeding material) or downstream (the next one is not taking parts), how many micro-stops there were, 7-day availability, MTBF and MTTR, which measurements are outside their typical range and how much energy the machine draws while stopped. Recommendations come from the machine’s history in OmniMES and the state of neighbouring stations — no predictive model. The AI assistant gets the same data through MCP.",
+        },
+        {
+          category: "added",
+          scope: "Hologram: hall lighting",
+          body: "The model can show ceiling luminaires linked to lighting circuits monitored in OmniMES. They light up, dim in economy mode, switch off or flicker on a circuit failure — following the live state.",
+        },
+      ],
+    },
     {
       version: "4.9.0",
       date: "2026-11-15",
