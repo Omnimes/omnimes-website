@@ -34,6 +34,11 @@ export const PromoVideo = () => {
           poster={`/videos/omnimes-promo-${lang}.jpg`}
           aria-label={t("aria")}
           onPlay={() => setStarted(true)}
+          onEnded={() => {
+            // po obejrzeniu wracamy do plakatu (karta tytułowa filmu) z przyciskiem odtwarzania
+            setStarted(false)
+            video.current?.load()
+          }}
         >
           <source src={`/videos/omnimes-promo-${lang}.mp4`} type="video/mp4" />
         </video>
@@ -44,11 +49,12 @@ export const PromoVideo = () => {
               setStarted(true)
               video.current?.play().catch(() => {})
             }}
-            className="group absolute inset-0 flex items-center justify-center rounded-2xl"
+            className="group absolute inset-0 rounded-2xl"
             aria-label={t("play")}
             title={t("play")}
           >
-            <span className="flex size-20 items-center justify-center rounded-full bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] pl-1 shadow-lg shadow-fuchsia-600/30 transition duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-fuchsia-600/40 group-hover:brightness-110">
+            {/* Przycisk pod podtytułem karty tytułowej (85% wysokości), żeby nie zasłaniał hasła */}
+            <span className="absolute left-1/2 top-[85%] flex size-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] pl-0.5 text-[10px] shadow-lg shadow-fuchsia-600/30 transition duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-fuchsia-600/40 group-hover:brightness-110 sm:size-16 sm:text-xs lg:size-20 lg:pl-1 lg:text-base">
               <VideoPlayIcon />
             </span>
           </button>
