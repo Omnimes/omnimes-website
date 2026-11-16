@@ -36,6 +36,22 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.11.0",
+      date: "2026-11-16",
+      entries: [
+        {
+          category: "added",
+          scope: "Hologram: największe zużycie mediów",
+          body: "Nad modelem 3D pojawia się pasek z największymi odbiorcami energii elektrycznej, wody, gazu, sprężonego powietrza czy ciepła z ostatnich 24 godzin, 7 albo 30 dni: łączne zużycie i trzy maszyny o największym udziale — kliknięcie przybliża maszynę. Ci sami odbiorcy dostają na modelu znacznik z ikoną medium i miejscem w rankingu. Osoba z uprawnieniem do ustawień hologramu wybiera, które pomiary oznaczają zużycie, i przypisuje im medium. Liczniki liczone są jako przyrost, a wartości chwilowe (np. kW, m³/h) jako zużycie w czasie.",
+        },
+        {
+          category: "added",
+          scope: "Hologram: rekomendacje zużycia dla całej hali",
+          body: "Rozwijana lista nad modelem podpowiada, gdzie szukać oszczędności: które maszyny zużywają większość danego medium, gdzie zużycie wzrosło względem poprzedniego okresu i które urządzenia pobierają energię, wodę albo sprężone powietrze także w przerwach (czuwanie, nieszczelności, wycieki). Rekomendacje wynikają z danych OmniMES — bez modelu predykcyjnego.",
+        },
+      ],
+    },
+    {
       version: "4.10.0",
       date: "2026-11-16",
       entries: [
@@ -511,6 +527,22 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.11.0",
+      date: "2026-11-16",
+      entries: [
+        {
+          category: "added",
+          scope: "Hologram: top utility consumers",
+          body: "A bar above the 3D model shows the largest consumers of electricity, water, gas, compressed air or heat over the last 24 hours, 7 or 30 days: total consumption and the three machines with the largest share — click one to zoom in. The same consumers get a marker on the model with the utility icon and their rank. A user with hologram settings rights chooses which measurements represent consumption and assigns the utility. Counters are calculated as the increase, instantaneous values (e.g. kW, m³/h) as consumption over time.",
+        },
+        {
+          category: "added",
+          scope: "Hologram: consumption recommendations for the whole hall",
+          body: "An expandable list above the model shows where to look for savings: which machines use most of a utility, where consumption grew compared with the previous period, and which devices draw power, water or compressed air during breaks too (standby, leaks). Recommendations come from OmniMES data — no predictive model.",
+        },
+      ],
+    },
     {
       version: "4.10.0",
       date: "2026-11-16",
