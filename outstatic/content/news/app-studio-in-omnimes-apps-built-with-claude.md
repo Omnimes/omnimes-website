@@ -19,6 +19,8 @@ Every plant has questions that no ready-made screen answers directly: how much d
   Your browser does not support HTML5 video playback.
 </video>
 
+*Music: "Fretless" by Kevin MacLeod ([incompetech.com](https://incompetech.com)), licensed under [Creative Commons: By Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).*
+
 ## How it works
 
 1. **Describe.** In the **Builder** tab, write in plain language, e.g. “show how much money each line loses to downtime and point out the three causes that cost the most”.
