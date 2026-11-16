@@ -13,6 +13,7 @@ import { InfoOmniCloud } from "@/components/InfoOmniCloud"
 import { McpSpotlight } from "@/components/McpSpotlight"
 import { OmniProductsShowcase } from "@/components/OmniProductsShowcase"
 import { Performance } from "@/components/Performance"
+import { PromoVideo } from "@/components/PromoVideo"
 import { Roi } from "@/components/Roi"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
 import { Timeline } from "@/components/Timeline"
@@ -75,6 +76,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <>
       <Hero />
+      <PromoVideo />
       <EcosystemFlow />
       <McpSpotlight />
       <WhatsNew />

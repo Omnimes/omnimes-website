@@ -793,6 +793,13 @@
     "fullscreen": "Full screen",
     "exitFullscreen": "Exit full screen"
   },
+  "PromoVideo": {
+    "smallSubtitle": "Video · 1:18",
+    "heading": "OmniMES in 78 seconds",
+    "description": "Machine data, live monitoring, the 3D hologram, OmniEnergy and ISO 50001, the AI assistant and cloud deployment — shown on real screens from the OmniMES demo.",
+    "aria": "Video about the OmniMES system (1:18)",
+    "play": "Play the OmniMES video"
+  },
   "McpSpotlight": {
     "badge": "New since version 4.3",
     "smallSubtitle": "AI over MCP",
