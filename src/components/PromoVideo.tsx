@@ -8,7 +8,7 @@ import { Heading } from "./ui/Heading"
 import { VideoPlayIcon } from "./ui/Icons"
 import { SubtitleNormal } from "./ui/Subtitle"
 
-// Film promocyjny OmniMES (BO-1221, 1:18) zaraz pod banerem: najpierw całość w skrócie, potem szczegóły.
+// Film promocyjny OmniMES (BO-1221, 1:09 — od BO-1229 bez sceny z monitoringiem) zaraz pod banerem: najpierw całość w skrócie, potem szczegóły.
 // Plik pobiera się dopiero po kliknięciu „odtwórz” (preload="none"); do tego czasu widać plakat z dużym przyciskiem.
 export const PromoVideo = () => {
   const t = useTranslations("PromoVideo")
