@@ -126,6 +126,10 @@ export const pathnames = {
     en: "/privacy-policy",
     pl: "/polityka-prywatnosci",
   },
+  "/security": {
+    en: "/security",
+    pl: "/bezpieczenstwo",
+  },
   "/tags": {
     en: "/tags",
     pl: "/tagi",
