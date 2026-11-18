@@ -58,7 +58,7 @@ export default function Header() {
     },
     {
       title: t("chatDocs"),
-      href: "https://cloud.omnimes.com/askme",
+      href: `https://cloud.omnimes.com/askme?lang=${locale === "pl" ? "pl" : "en"}`,
       icon: LuMessageCircle,
       color: "success",
       external: true,
