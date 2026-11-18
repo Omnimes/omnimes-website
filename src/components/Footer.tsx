@@ -16,6 +16,7 @@ export const Footer = () => {
     "faq",
     "offer",
     "privacy-policy",
+    "security",
     "tags",
     "terms",
     "news",

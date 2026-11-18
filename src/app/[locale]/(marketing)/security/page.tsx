@@ -3,19 +3,21 @@ import { setRequestLocale } from "next-intl/server"
 
 import { genPageMetadata } from "@/app/seo"
 
-// Treść przygotowana w karcie BO-1196 (kanał zgłaszania podatności, CRA art. 14).
+import { CONTACT, securityHref, SecurityNav, type SecurityPageKey } from "./securityShared"
+
+// Treść przygotowana w karcie BO-1196 (kanał zgłaszania podatności, CRA art. 13 i 14).
 // Punkt kontaktowy opiera się o istniejący support: support@omnimes.com.
-// Treść dwujęzyczna jest wpisana w komponencie, żeby nie rozbudowywać dużych
-// plików messages/pl.json i messages/en.json — do decyzji właściciela przed publikacją.
+// Terminy usuwania podatności (CRA-03) i odnośniki do komunikatów oraz okresu wsparcia
+// (CRA-04) dodane 19.11.2026. Wewnętrzna procedura: _biznes/CRA (poza gitem).
 
 const SECURITY_TXT = "https://www.omnimes.com/.well-known/security.txt"
-const CONTACT = "support@omnimes.com"
 
 type Section = {
   heading: string
   intro?: string[]
   list?: string[]
   after?: string[]
+  links?: { key: SecurityPageKey; label: string; desc: string }[]
 }
 
 type Content = {
@@ -32,12 +34,12 @@ const content: Record<"pl" | "en", Content> = {
     meta: {
       title: "Zgłaszanie podatności — OmniMES",
       description:
-        "Punkt kontaktowy OmniMES do zgłaszania podatności: jak i gdzie zgłosić problem bezpieczeństwa (support@omnimes.com), czego oczekujemy i deklaracja braku działań prawnych wobec zgłaszających w dobrej wierze.",
+        "Punkt kontaktowy OmniMES do zgłaszania podatności (support@omnimes.com): jak zgłosić problem bezpieczeństwa, jak obsługujemy zgłoszenia, terminy usuwania podatności i deklaracja braku działań prawnych wobec zgłaszających w dobrej wierze.",
       keywords:
-        "OmniMES, zgłaszanie podatności, bezpieczeństwo, security.txt, RFC 9116, CRA, cyberbezpieczeństwo, MES",
+        "OmniMES, zgłaszanie podatności, bezpieczeństwo, security.txt, RFC 9116, CRA, cyberbezpieczeństwo, MES, CVSS",
     },
     heading: "Zgłaszanie podatności",
-    updated: "Data aktualizacji: 18 listopada 2026",
+    updated: "Data aktualizacji: 19 listopada 2026",
     lead: "W OmniMES bezpieczeństwo traktujemy jako część jakości produktu. Jeśli znalazłeś podatność w którymkolwiek z naszych systemów lub na tej stronie, prosimy o kontakt. Poniżej opisujemy, jak zgłosić problem i czego możesz od nas oczekiwać.",
     sections: [
       {
@@ -57,6 +59,35 @@ const content: Record<"pl" | "en", Content> = {
         ],
       },
       {
+        heading: "Jak obsługujemy zgłoszenie",
+        intro: ["Każde zgłoszenie trafia do naszego rejestru zgłoszeń bezpieczeństwa. Dalej:"],
+        list: [
+          "potwierdzamy otrzymanie zgłoszenia w ciągu 5 dni roboczych,",
+          "sprawdzamy, czy podatność występuje, i oceniamy jej wagę w skali CVSS 3.1 (krytyczna, wysoka, średnia, niska),",
+          "przygotowujemy poprawkę i wydajemy ją w najnowszej wersji OmniMES w terminach podanych niżej,",
+          "po udostępnieniu poprawki publikujemy komunikat bezpieczeństwa i informujemy klientów, których podatność dotyczy.",
+        ],
+      },
+      {
+        heading: "Terminy usuwania podatności",
+        intro: ["Termin liczymy od dnia, w którym potwierdzimy podatność:"],
+        list: [
+          "krytyczna (CVSS 9,0–10,0) — do 14 dni,",
+          "wysoka (CVSS 7,0–8,9) — do 30 dni,",
+          "średnia (CVSS 4,0–6,9) — do 90 dni,",
+          "niska — w jednym z kolejnych planowych wydań.",
+        ],
+        after: [
+          "Jeśli poprawka wymaga więcej czasu, na przykład zmiany komponentu innego producenta, w tym terminie przekażemy klientom sposób ograniczenia ryzyka do czasu wydania poprawki. Podatności znalezione w komponentach innych producentów zgłaszamy ich opiekunom.",
+        ],
+      },
+      {
+        heading: "Podatności wykorzystywane w atakach",
+        intro: [
+          "Jeśli dowiemy się, że podatność w OmniMES jest aktywnie wykorzystywana, albo wystąpi poważny incydent wpływający na bezpieczeństwo produktu, zgłaszamy to zgodnie z art. 14 Aktu o cyberodporności (CRA) — przez platformę zgłoszeń ENISA do CSIRT NASK (CERT Polska). Klientów, których to dotyczy, informujemy bez zbędnej zwłoki i przekazujemy im zalecane działania.",
+        ],
+      },
+      {
         heading: "Czego od Ciebie oczekujemy",
         intro: ["Stosujemy model skoordynowanego ujawniania podatności. Prosimy, abyś:"],
         list: [
@@ -70,7 +101,7 @@ const content: Record<"pl" | "en", Content> = {
         heading: "Co zapewniamy z naszej strony",
         intro: ["Z naszej strony zobowiązujemy się, że:"],
         list: [
-          "potwierdzimy otrzymanie zgłoszenia i ocenimy je w rozsądnym czasie,",
+          "potwierdzimy otrzymanie zgłoszenia i ocenimy je w terminach opisanych wyżej,",
           "będziemy informować Cię o postępie prac nad poprawką,",
           "nie podejmiemy kroków prawnych wobec osób, które zgłaszają podatności w dobrej wierze i zgodnie z tą polityką, ani nie będziemy ich za takie zgłoszenie pozywać czy zgłaszać organom,",
           "na życzenie wymienimy Cię jako osobę, która pomogła nam poprawić bezpieczeństwo produktu.",
@@ -95,19 +126,34 @@ const content: Record<"pl" | "en", Content> = {
         heading: "Preferowane języki",
         intro: ["Zgłoszenia przyjmujemy po polsku i po angielsku."],
       },
+      {
+        heading: "Komunikaty bezpieczeństwa i okres wsparcia",
+        links: [
+          {
+            key: "/security/advisories",
+            label: "Komunikaty bezpieczeństwa",
+            desc: "naprawione podatności: których wersji dotyczą, w której wersji je usunęliśmy i co należy zrobić.",
+          },
+          {
+            key: "/security/support",
+            label: "Okres wsparcia i aktualizacje",
+            desc: "jak długo dostarczamy poprawki bezpieczeństwa i do kiedy wspierana jest każda wersja.",
+          },
+        ],
+      },
     ],
-    note: "OmniMES rozwija firma Multiprojekt. Ten punkt kontaktowy jest zgodny z dobrymi praktykami zgłaszania podatności i odpowiada na oczekiwany od grudnia 2027 wymóg jednego punktu kontaktowego do zgłaszania podatności, o którym mówi Akt o cyberodporności (CRA).",
+    note: "OmniMES rozwija firma Multiprojekt Automatyka Sp. z o.o. Ten punkt kontaktowy jest zgodny z dobrymi praktykami zgłaszania podatności i odpowiada na wymóg jednego punktu kontaktowego do zgłaszania podatności z Aktu o cyberodporności (CRA).",
   },
   en: {
     meta: {
       title: "Vulnerability disclosure — OmniMES",
       description:
-        "OmniMES security contact for reporting vulnerabilities: how and where to report a security issue (support@omnimes.com), what we expect and our commitment not to pursue good-faith researchers.",
+        "OmniMES security contact for reporting vulnerabilities (support@omnimes.com): how to report a security issue, how we handle reports, our remediation timelines and our commitment not to pursue good-faith researchers.",
       keywords:
-        "OmniMES, vulnerability disclosure, security, security.txt, RFC 9116, CRA, cybersecurity, MES",
+        "OmniMES, vulnerability disclosure, security, security.txt, RFC 9116, CRA, cybersecurity, MES, CVSS",
     },
     heading: "Vulnerability disclosure",
-    updated: "Last updated: 18 November 2026",
+    updated: "Last updated: 19 November 2026",
     lead: "At OmniMES we treat security as part of product quality. If you have found a vulnerability in any of our systems or on this website, please let us know. Below we explain how to report it and what you can expect from us.",
     sections: [
       {
@@ -127,6 +173,35 @@ const content: Record<"pl" | "en", Content> = {
         ],
       },
       {
+        heading: "How we handle a report",
+        intro: ["Every report is entered in our security report register. Then we:"],
+        list: [
+          "acknowledge receipt within 5 business days,",
+          "verify the vulnerability and rate its severity on the CVSS 3.1 scale (critical, high, medium, low),",
+          "prepare a fix and ship it in the latest OmniMES version within the timelines below,",
+          "once the fix is available, publish a security advisory and inform the customers affected.",
+        ],
+      },
+      {
+        heading: "Remediation timelines",
+        intro: ["Timelines run from the day we confirm the vulnerability:"],
+        list: [
+          "critical (CVSS 9.0–10.0) — within 14 days,",
+          "high (CVSS 7.0–8.9) — within 30 days,",
+          "medium (CVSS 4.0–6.9) — within 90 days,",
+          "low — in one of the next scheduled releases.",
+        ],
+        after: [
+          "If a fix needs more time, for example because a third-party component must change, we will give customers a way to reduce the risk within that timeline, until the fix is released. Vulnerabilities we find in third-party components are reported to their maintainers.",
+        ],
+      },
+      {
+        heading: "Vulnerabilities exploited in attacks",
+        intro: [
+          "If we become aware that a vulnerability in OmniMES is being actively exploited, or of a severe incident affecting the security of the product, we notify it under Article 14 of the EU Cyber Resilience Act (CRA) — through the ENISA Single Reporting Platform to CSIRT NASK (CERT Polska). We inform the affected customers without undue delay and tell them what to do.",
+        ],
+      },
+      {
         heading: "What we ask of you",
         intro: ["We follow a coordinated vulnerability disclosure model. We ask that you:"],
         list: [
@@ -140,7 +215,7 @@ const content: Record<"pl" | "en", Content> = {
         heading: "What we commit to",
         intro: ["On our side, we commit to:"],
         list: [
-          "acknowledging your report and assessing it within a reasonable time,",
+          "acknowledging and assessing your report within the timelines described above,",
           "keeping you informed about the progress of the fix,",
           "not taking legal action against people who report vulnerabilities in good faith and in line with this policy, and not suing or reporting them to authorities for that disclosure,",
           "crediting you, on request, as someone who helped us improve the product's security.",
@@ -157,14 +232,31 @@ const content: Record<"pl" | "en", Content> = {
           "the OmniPlatform cloud (cloud.omnimes.com),",
           "the www.omnimes.com website and its related services.",
         ],
-        after: ["If you are unsure whether something is in scope, contact us — we are happy to help."],
+        after: [
+          "If you are unsure whether something is in scope, contact us — we are happy to help.",
+        ],
       },
       {
         heading: "Preferred languages",
         intro: ["We accept reports in Polish and English."],
       },
+      {
+        heading: "Security advisories and support period",
+        links: [
+          {
+            key: "/security/advisories",
+            label: "Security advisories",
+            desc: "fixed vulnerabilities: which versions they affect, which version fixes them and what to do.",
+          },
+          {
+            key: "/security/support",
+            label: "Support period and updates",
+            desc: "how long we deliver security fixes and until when each version is supported.",
+          },
+        ],
+      },
     ],
-    note: "OmniMES is developed by Multiprojekt. This contact point follows good vulnerability-disclosure practice and addresses the single point of contact for vulnerability reporting expected under the EU Cyber Resilience Act (CRA) from December 2027.",
+    note: "OmniMES is developed by Multiprojekt Automatyka Sp. z o.o. This contact point follows good vulnerability-disclosure practice and addresses the single point of contact for vulnerability reporting required by the EU Cyber Resilience Act (CRA).",
   },
 }
 
@@ -200,6 +292,8 @@ export default async function SecurityPage({ params }: { params: Promise<{ local
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{c.updated}</p>
       </header>
 
+      <SecurityNav locale={locale} current="/security" />
+
       <section className="text-sm font-light md:text-base">
         <p className="mb-2">{c.lead}</p>
         <p className="mb-2">
@@ -222,6 +316,21 @@ export default async function SecurityPage({ params }: { params: Promise<{ local
               {s.list.map((item, i) => (
                 <li key={i} className="mb-1 ml-5 sm:ml-7">
                   {item}
+                </li>
+              ))}
+            </ul>
+          )}
+          {s.links && (
+            <ul className="mb-2 list-disc text-left">
+              {s.links.map((l) => (
+                <li key={l.key} className="mb-1 ml-5 sm:ml-7">
+                  <a
+                    className="text-primary-500 font-medium hover:underline"
+                    href={securityHref(locale, l.key)}
+                  >
+                    {l.label}
+                  </a>{" "}
+                  — {l.desc}
                 </li>
               ))}
             </ul>

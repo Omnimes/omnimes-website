@@ -130,6 +130,14 @@ export const pathnames = {
     en: "/security",
     pl: "/bezpieczenstwo",
   },
+  "/security/advisories": {
+    en: "/security/advisories",
+    pl: "/bezpieczenstwo/komunikaty",
+  },
+  "/security/support": {
+    en: "/security/support",
+    pl: "/bezpieczenstwo/okres-wsparcia",
+  },
   "/tags": {
     en: "/tags",
     pl: "/tagi",
