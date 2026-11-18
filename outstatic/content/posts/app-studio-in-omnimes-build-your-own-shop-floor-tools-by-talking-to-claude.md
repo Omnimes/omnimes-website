@@ -22,8 +22,6 @@ Below we explain why we built it, what building an app looks like, what two apps
   Your browser does not support HTML5 video playback.
 </video>
 
-*Music: "Fretless" by Kevin MacLeod ([incompetech.com](https://incompetech.com)), licensed under [Creative Commons: By Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).*
-
 ## Every plant has questions no vendor anticipated
 
 An MES is built around what plants have in common: machine states, OEE, orders, shift reports. Yet the questions a production manager asks every day are often specific to one plant:

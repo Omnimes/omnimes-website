@@ -18,8 +18,6 @@ Każdy zakład ma pytania, na które żaden gotowy ekran nie odpowiada wprost: i
   Twoja przeglądarka nie obsługuje odtwarzania wideo HTML5.
 </video>
 
-*Muzyka: „Fretless” – Kevin MacLeod ([incompetech.com](https://incompetech.com)), licencja [Creative Commons: By Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).*
-
 ## Jak to działa
 
 1. **Opisujesz.** W zakładce **Kreator** piszesz zwykłym językiem, np. „pokaż, ile złotych tracimy na przestojach na każdej linii, i wskaż trzy przyczyny, które kosztują najwięcej”.

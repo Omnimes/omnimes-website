@@ -22,8 +22,6 @@ Poniżej wyjaśniamy, po co to zrobiliśmy, jak przebiega budowa aplikacji, co p
   Twoja przeglądarka nie obsługuje odtwarzania wideo HTML5.
 </video>
 
-*Muzyka: „Fretless” – Kevin MacLeod ([incompetech.com](https://incompetech.com)), licencja [Creative Commons: By Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).*
-
 ## Każdy zakład ma pytania, których nie przewidział żaden dostawca
 
 System MES jest budowany pod to, co wspólne dla wielu zakładów: stany maszyn, OEE, zlecenia, raporty zmianowe. Na co dzień kierownik produkcji zadaje jednak pytania, które są tylko jego:
