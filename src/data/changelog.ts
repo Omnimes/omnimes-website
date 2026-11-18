@@ -36,6 +36,52 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.12.0",
+      date: "2026-11-18",
+      entries: [
+        {
+          category: "added",
+          scope: "Studio aplikacji: gotowa aplikacja w menu jednym kliknięciem",
+          body: "Gotową aplikację dodasz do menu bocznego prosto z listy aplikacji albo z zakładki Menu. W tym samym oknie możesz od razu założyć dla niej nową sekcję menu — bez przechodzenia między ekranami.",
+        },
+        {
+          category: "changed",
+          scope: "Hala 3D i Pomiary",
+          body: "Hologram nazywa się teraz Hala 3D, a zakładka Media w Analizie — Pomiary. Nowe nazwy widać w menu, ustawieniach i na ekranach.",
+        },
+        {
+          category: "changed",
+          scope: "Analiza: bez zakładki OEE i raportu manualnego",
+          body: "Zakładka Analiza → OEE i typ „raport manualny” w generatorze raportów zostały usunięte. Widżet pulpitu z analizą OEE ostatniego zlecenia działa dalej, a wcześniej wygenerowane raporty manualne zostają na liście raportów.",
+        },
+        {
+          category: "fixed",
+          scope: "Menu po aktualizacji",
+          body: "Osoby zalogowane przed aktualizacją nie widzą już w menu pozycji, których ekranów nie ma w nowej wersji — wcześniej kliknięcie takiej pozycji kończyło się pustą stroną.",
+        },
+        {
+          category: "fixed",
+          scope: "Asystent dokumentacji",
+          body: "Asystent odpowiada w języku pytania i zna najnowsze rozdziały instrukcji, a link do źródła prowadzi do wersji w tym samym języku.",
+        },
+        {
+          category: "security",
+          scope: "Własne hasła każdej nowej instalacji",
+          body: "Instalator losuje przy instalacji hasła bazy danych, brokera MQTT, panelu EMQX oraz administratora OmniMES i Redasha, a także klucze sesji i API — każda instalacja ma własne poświadczenia zamiast wspólnych z paczki. Na koniec instalacji hasła są wyświetlane i zapisywane w pliku DANE_DOSTEPOWE.txt. Istniejące instalacje zachowują swoje hasła.",
+        },
+        {
+          category: "security",
+          scope: "Bezpieczniejsze obrazy i chmura",
+          body: "Serwer aplikacji nie udostępnia plików roboczych repozytorium i blokuje pliki ukryte. Agent zarządzający instancjami w chmurze uwierzytelnia się tajnym kluczem.",
+        },
+        {
+          category: "security",
+          scope: "Podpisywane licencje",
+          body: "OmniMES obsługuje nowy format licencji podpisany kryptograficznie (Ed25519). Dotychczasowe licencje działają bez zmian.",
+        },
+      ],
+    },
+    {
       version: "4.11.0",
       date: "2026-11-16",
       entries: [
@@ -527,6 +573,52 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.12.0",
+      date: "2026-11-18",
+      entries: [
+        {
+          category: "added",
+          scope: "App Studio: add a ready app to the menu in one click",
+          body: "Add a finished app to the side menu straight from the app list or from the Menu tab. In the same dialog you can create a new menu section for it right away — no switching between screens.",
+        },
+        {
+          category: "changed",
+          scope: "3D Hall and Measurements",
+          body: "Hologram is now called 3D Hall, and the Media tab under Analysis is now Measurements. The new names appear in the menu, settings and on screens.",
+        },
+        {
+          category: "changed",
+          scope: "Analysis: OEE tab and manual report removed",
+          body: "The Analysis → OEE tab and the “manual report” type in the report generator have been removed. The dashboard widget with the OEE analysis of the latest order still works, and previously generated manual reports stay on the reports list.",
+        },
+        {
+          category: "fixed",
+          scope: "Menu after an update",
+          body: "Users who were logged in before an update no longer see menu items whose screens are not in the new version — previously clicking such an item led to an empty page.",
+        },
+        {
+          category: "fixed",
+          scope: "Documentation assistant",
+          body: "The assistant answers in the language of the question and knows the latest manual chapters, and the source link points to the version in the same language.",
+        },
+        {
+          category: "security",
+          scope: "Unique passwords for every new installation",
+          body: "The installer generates random passwords for the database, the MQTT broker, the EMQX dashboard and the OmniMES and Redash administrator, as well as session and API keys — every installation gets its own credentials instead of ones shared through the package. At the end of the installation the passwords are displayed and saved to DANE_DOSTEPOWE.txt. Existing installations keep their passwords.",
+        },
+        {
+          category: "security",
+          scope: "Safer images and cloud",
+          body: "The application server no longer exposes repository working files and blocks hidden files. The agent that manages cloud instances authenticates with a secret key.",
+        },
+        {
+          category: "security",
+          scope: "Signed licences",
+          body: "OmniMES supports a new cryptographically signed licence format (Ed25519). Existing licences keep working unchanged.",
+        },
+      ],
+    },
     {
       version: "4.11.0",
       date: "2026-11-16",
