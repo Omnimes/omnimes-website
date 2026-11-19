@@ -26,6 +26,127 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.14.0",
+      date: "2026-11-20",
+      entries: [
+        {
+          category: "added",
+          scope: "Produkcja: zlecenia, marszruty i harmonogram",
+          body: "Nowe menu Produkcja prowadzi zlecenie od planu do zakończenia. Zlecenie produkcyjne ma marszrutę — etapy na maszynach, liniach albo bez zasobu, z normą czasu cyklu i przezbrojeniem. Harmonogram (Gantt) pokazuje operacje na zasobach: przeciągasz je myszą, widzisz kolizje i blokady, a „Zaplanuj automatycznie” przygotowuje propozycję planu do zatwierdzenia z uwzględnieniem kalendarza zmian. Normy czasu cyklu wyrób × maszyna wpisujesz ręcznie, bierzesz z ERP albo wyliczasz z historii produkcji.",
+        },
+        {
+          category: "added",
+          scope: "Panel operatora",
+          body: "Operator przy stanowisku widzi swoją kolejkę, uruchamia, wstrzymuje i kończy etap, melduje sztuki dobre i braki z przyczyną oraz przekazuje partię na następny etap. Skan partii materiału czytnikiem kodów albo kamerą tabletu pilnuje, żeby na stanowisko trafił właściwy materiał w kolejności FEFO; panel pokazuje też dostępność materiału i braki do przeróbki.",
+        },
+        {
+          category: "added",
+          scope: "Magazyn materiałów i dostępność materiału",
+          body: "Stany materiałów, przyjęcia i ruchy magazynowe z numerem zlecenia. Harmonogram, kolejka operacji, panel i zlecenie pokazują, czy materiału wystarczy według receptury (BOM). Planowanie automatyczne bierze to pod uwagę, „Przelicz od teraz” odświeża plan, a przy zwalnianiu zlecenia widać braki.",
+        },
+        {
+          category: "added",
+          scope: "OEE według ISO 22400 i przyczyny przestojów",
+          body: "Ekran OEE liczy dostępność, wydajność i jakość według ISO 22400 dla maszyny, linii i okresu, z zakładkami: Pareto strat, OEE według zmiany i według wyrobu, MTBF i MTTR oraz przestoje z korektą przyczyny. Przyczyna przestoju przypisuje się automatycznie z sygnału maszyny, a mikroprzestoje rozpoznawane są według typu zdarzenia, nie tylko czasu trwania — praca nie jest mikroprzestojem.",
+        },
+        {
+          category: "added",
+          scope: "Raporty produkcji",
+          body: "Katalog raportów produkcji: zlecenia, produkcja w okresie i raporty traceability. Raport zlecenia pokazuje czas pracy, przestojów i wyłączeń maszyn w oknie zlecenia oraz energię, koszt i emisję CO2 na zlecenie, na sztukę i na stan maszyny.",
+        },
+        {
+          category: "added",
+          scope: "Partie i genealogia (traceability)",
+          body: "Każda partia materiału, półproduktu i wyrobu ma numer, status jakości (np. kwarantanna, zablokowana) i kartę z historią. Genealogia prowadzi wstecz do dostawców i naprzód do odbiorców, a raport identyfikowalności zbiera ją w PDF. Partię znajdziesz polem „Szukaj partii” w górnym pasku — wpisując numer albo skanując kod czytnikiem lub kamerą. Zakładka Proces pokazuje parametry krytyczne z granicami (przekroczenie oznacza partię jako podejrzaną) i energię zużytą na partię, a ekran pokazuje partie, które były na maszynie w wybranym czasie — np. po awarii czujnika.",
+        },
+        {
+          category: "added",
+          scope: "Etykiety i palety",
+          body: "Etykiety partii i palet z kodem QR, GS1 DataMatrix albo GS1-128 — jako PDF na dowolną drukarkę albo ZPL na drukarki Zebra. Szablony i drukarki ustawiasz w konfiguracji, a dziennik wydruków pokazuje każdy wydruk i dodruk. Palety dostają numer SSCC, wydanie palety skanem można cofnąć, etykiety drukują się także przy przyjęciu materiału, a kartoteka wyrobów ma pole GTIN.",
+        },
+        {
+          category: "added",
+          scope: "Wycofanie produktu i bilans masy",
+          body: "Kreator wycofania prowadzi od podejrzanej partii do listy partii pochodnych, ilości, miejsc i odbiorców oraz raportu PDF. Tryb testowy niczego nie blokuje i mierzy czas — to ćwiczenie wycofania przed audytem (BRCGS, IFS); każda sprawa trafia do rejestru wycofań. Bilans masy partii i zlecenia pokazuje stratę materiałową, a partie na stanie można dzielić, łączyć, przepakowywać i przerabiać — także braki do przeróbki zgłoszone w panelu operatora.",
+        },
+        {
+          category: "added",
+          scope: "Jakość",
+          body: "Plany kontroli z charakterystykami i granicami, wyniki pomiarów, niezgodności z kwarantanną i decyzją o dyspozycji. Blokada partii przenosi się na partie z niej wytworzone, a karty SPC pokazują stabilność procesu.",
+        },
+        {
+          category: "added",
+          scope: "Dziennik zdarzeń",
+          body: "Nowy ekran Administracja → Dziennik zdarzeń pokazuje, kto, co i kiedy zmienił: logowania, konta, uprawnienia, tokeny, licencję, ustawienia, produkcję i odczyty — z wartościami przed i po zmianie. Wpisów nie można zmienić ani usunąć. Eksport do CSV, wysyłka do serwera syslog (RFC 5424) i ustawiany czas przechowywania.",
+        },
+        {
+          category: "added",
+          scope: "Integracje ERP: kartoteka, receptury i wymiana plików",
+          body: "ERP przesyła do OmniMES indeksy wyrobów i materiałów z recepturami (BOM) — przez API, plik albo katalog wymiany, także po SFTP (np. SAP). Nowy ekran Kartoteka wyrobów pokazuje wyroby, materiały, jednostki i receptury. Klucz API integracji ma zakres uprawnień, a opis API jest dostępny w formacie OpenAPI.",
+        },
+        {
+          category: "added",
+          scope: "Integracje ERP: bezpośrednie połączenie z Business Central, SAP S/4HANA i Odoo",
+          body: "Konektor loguje się sam — OAuth2 (np. Microsoft Entra ID dla Business Central), sesja SAP Business One, sesja z tokenem, Basic albo stałe nagłówki — i pobiera zlecenia także zapytaniami POST oraz z OData v2. Gotowe ustawienia startowe dla Business Central, SAP S/4HANA i Odoo, bez programu pośredniczącego.",
+        },
+        {
+          category: "added",
+          scope: "Integracje ERP: wynik produkcji zapisywany w ERP",
+          body: "OmniMES zapisuje meldunki bezpośrednio w ERP: przyjęcie wyrobu (PW), potwierdzenie operacji albo raport produkcji w Odoo, SAP Business One i SAP S/4HANA, a w innych systemach przez szablon HTTP. Ponowienie po błędzie nie księguje drugi raz, a podgląd wywołania pokazuje, co trafi do ERP.",
+        },
+        {
+          category: "added",
+          scope: "Integracje ERP: partie, normy, czas pracy i energia",
+          body: "ERP przesyła partie materiałów i palety, a OmniMES odsyła zużycie i produkcję z numerami partii, zmiany statusu partii i genealogię; ustawiasz, kto nadaje numery partii, i przeliczniki jednostek dla każdego materiału. Normy czasu cyklu przychodzą z ERP, kontrola mapowania pokazuje gniazda i jednostki bez przypisania, a wiele meldunków ponawiasz naraz. Meldunki i API dla ERP zawierają czas pracy i przestojów oraz energię, koszt i CO2 zlecenia, a widok Zlecenia z ERP pokazuje prognozę końca zlecenia i opóźnienia.",
+        },
+        {
+          category: "added",
+          scope: "Studio aplikacji: eksport, import i dane produkcji",
+          body: "Aplikację Studia wyeksportujesz do pliku i zaimportujesz w innym systemie OmniMES, a przed każdym importem powstaje kopia zapasowa wszystkich aplikacji — kopię zrobisz też ręcznie i z niej przywrócisz. Aplikacje korzystają z danych ERP, modułu zleceń i partii — gotowe są m.in. „Tablica zleceń ERP” i „Dochodzenie reklamacyjne” (od numeru partii z reklamacji do dostawców i odbiorców).",
+        },
+        {
+          category: "added",
+          scope: "Asystent AI (MCP)",
+          body: "Asystent AI (np. Claude) odpowiada na pytania o zlecenia, kolejki i postęp produkcji, OEE i straty, partie i genealogię, rachunek za energię, bilans liczników oraz zlecenia z ERP — z tych samych obliczeń co ekrany.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: nośniki, emisje CO2 i ESRS",
+          body: "Ekran Nośniki i emisje (ESRS E1) przelicza zużycie nośników na energię końcową i pierwotną oraz emisje CO2 według wskaźników KOBiZE i przygotowuje dane do raportu ESRS E1-5 i E1-6.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: liczniki, bilans i odczyty ręczne",
+          body: "Liczniki układasz w drzewo (licznik główny i podliczniki), dodajesz liczniki wirtualne z formułą i przekładnie, a bilans pokazuje straty między licznikiem głównym a podlicznikami. Liczniki bez transmisji wpisujesz ręcznie albo importem CSV — system pilnuje, żeby odczyt nie był mniejszy od poprzedniego, i obsługuje wymianę licznika.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: taryfy, rachunek i profil mocy",
+          body: "Taryfy energii ze strefami czasowymi, mocą umowną, energią bierną i opłatami stałymi. Ekran Rachunek i profil mocy liczy rachunek za miesiąc z profilu 15-minutowego, pokazuje przekroczenia mocy umownej i tg φ oraz porównanie z poprzednim miesiącem.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: linia bazowa z regresji i temperatura",
+          body: "Linia bazowa może być modelem regresji według ISO 50006 — z produkcją i stopniodniami z temperatury zewnętrznej — z oceną jakości modelu (R², CV(RMSE), istotność); oszczędność jest normalizowana do warunków okresu raportowego. Mianownikiem EnPI może być produkcja z modułu zleceń.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: rejestr SEU, plany działań i raport z audytu",
+          body: "Rejestr znaczącego użytkowania energii (ISO 50001, pkt 6.3), plany działań z weryfikacją oszczędności (M&V) oraz raport z audytu energetycznego przygotowany z danych systemu.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy: nazwy ISO 50001 i cele",
+          body: "Ekrany i raporty używają nazw z ISO 50001: EnPI, SEU i EnB. Cel może mieć kierunek „mniej znaczy lepiej” z postępem liczonym od linii bazowej, a audyt nie zamyka się, gdy wskaźnik się pogorszył. Okresy SEU liczone są w czasie lokalnym także przy zmianie czasu.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: raport SEU do PDF i PNG",
+          body: "Pobieranie raportu SEU jako PDF albo PNG działa — wcześniej kończyło się błędem.",
+        },
+      ],
+    },
+    {
       version: "4.13.1",
       date: "2026-11-19",
       entries: [
@@ -635,6 +756,127 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.14.0",
+      date: "2026-11-20",
+      entries: [
+        {
+          category: "added",
+          scope: "Production: orders, routings and schedule",
+          body: "The new Production menu takes an order from plan to completion. A production order has a routing — stages on machines, lines or without a resource, with a cycle-time standard and changeover. The schedule (Gantt) shows operations on resources: drag them with the mouse, see collisions and locks, and “Plan automatically” prepares a plan proposal for approval that respects the shift calendar. Cycle-time standards per product × machine are entered manually, taken from ERP or calculated from production history.",
+        },
+        {
+          category: "added",
+          scope: "Operator panel",
+          body: "At the workstation the operator sees their queue, starts, pauses and finishes a stage, reports good parts and scrap with a reason, and passes the lot on to the next stage. Scanning the material lot with a barcode reader or a tablet camera makes sure the right material reaches the station in FEFO order; the panel also shows material availability and parts for rework.",
+        },
+        {
+          category: "added",
+          scope: "Material stock and availability",
+          body: "Material stock levels, receipts and stock movements with the order number. The schedule, the operation queue, the panel and the order show whether there is enough material according to the bill of materials (BOM). Automatic planning takes it into account, “Recalculate from now” refreshes the plan, and shortages are shown when an order is released.",
+        },
+        {
+          category: "added",
+          scope: "OEE according to ISO 22400 and downtime reasons",
+          body: "The OEE screen calculates availability, performance and quality according to ISO 22400 for a machine, line and period, with tabs for the loss Pareto, OEE by shift and by product, MTBF and MTTR, and downtimes with reason correction. The downtime reason is assigned automatically from the machine signal, and micro-stops are recognised by event type, not only by duration — running is never a micro-stop.",
+        },
+        {
+          category: "added",
+          scope: "Production reports",
+          body: "A catalogue of production reports: orders, production in a period and traceability reports. The order report shows working time, downtime and machine-off time within the order window, plus energy, cost and CO2 emissions per order, per piece and per machine state.",
+        },
+        {
+          category: "added",
+          scope: "Lots and genealogy (traceability)",
+          body: "Every lot of material, semi-finished product and finished product has a number, a quality status (e.g. quarantine, blocked) and a card with its history. Genealogy goes back to suppliers and forward to customers, and the traceability report puts it into a PDF. Find a lot with the “Find lot” field in the top bar — type the number or scan the code with a reader or a camera. The Process tab shows critical parameters with limits (a breach marks the lot as suspect) and the energy used for the lot, and the screen lists the lots that were on a machine in a chosen time window — e.g. after a sensor failure.",
+        },
+        {
+          category: "added",
+          scope: "Labels and pallets",
+          body: "Lot and pallet labels with a QR, GS1 DataMatrix or GS1-128 code — as a PDF for any printer or as ZPL for Zebra printers. Templates and printers are set in the configuration, and the print log records every print and reprint. Pallets get an SSCC number, a pallet shipped by scanning can be reverted, labels are also printed at material receipt, and the item master has a GTIN field.",
+        },
+        {
+          category: "added",
+          scope: "Product recall and mass balance",
+          body: "The recall wizard goes from the suspect lot to the list of derived lots, quantities, locations and customers, and a PDF report. Test mode blocks nothing and measures the time — a recall drill before an audit (BRCGS, IFS); every case goes into the recall register. The lot and order mass balance shows material loss, and lots in stock can be split, merged, repacked and reworked — including parts for rework reported in the operator panel.",
+        },
+        {
+          category: "added",
+          scope: "Quality",
+          body: "Inspection plans with characteristics and limits, measurement results, and nonconformities with quarantine and a disposition decision. Blocking a lot is propagated to the lots made from it, and SPC charts show process stability.",
+        },
+        {
+          category: "added",
+          scope: "Event log",
+          body: "The new Administration → Event log screen shows who changed what and when: logins, accounts, permissions, tokens, licence, settings, production and readings — with the values before and after the change. Entries cannot be edited or deleted. CSV export, forwarding to a syslog server (RFC 5424) and a configurable retention period.",
+        },
+        {
+          category: "added",
+          scope: "ERP integrations: item master, BOMs and file exchange",
+          body: "The ERP sends product and material items with their bills of materials (BOM) to OmniMES — through the API, a file or an exchange folder, also over SFTP (e.g. SAP). The new Item master screen shows products, materials, units and BOMs. The integration API key has a permission scope, and the API is described in OpenAPI format.",
+        },
+        {
+          category: "added",
+          scope: "ERP integrations: direct connection to Business Central, SAP S/4HANA and Odoo",
+          body: "The connector signs in by itself — OAuth2 (e.g. Microsoft Entra ID for Business Central), SAP Business One session, session with a token, Basic or fixed headers — and also fetches orders with POST requests and from OData v2. Ready-made starter settings for Business Central, SAP S/4HANA and Odoo, with no middleware.",
+        },
+        {
+          category: "added",
+          scope: "ERP integrations: production results posted to the ERP",
+          body: "OmniMES posts reports directly to the ERP: goods receipt of the product, operation confirmation or production report in Odoo, SAP Business One and SAP S/4HANA, and in other systems through an HTTP template. A retry after an error never posts twice, and the call preview shows what will reach the ERP.",
+        },
+        {
+          category: "added",
+          scope: "ERP integrations: lots, standards, working time and energy",
+          body: "The ERP sends material lots and pallets, and OmniMES returns consumption and production with lot numbers, lot status changes and genealogy; you choose who assigns lot numbers and set unit conversions per material. Cycle-time standards come from the ERP, the mapping check lists work centres and units without an assignment, and many reports can be retried at once. Reports and the ERP API include working time and downtime as well as the energy, cost and CO2 of the order, and the ERP orders view shows the forecast order end and delays.",
+        },
+        {
+          category: "added",
+          scope: "App Studio: export, import and production data",
+          body: "Export a Studio app to a file and import it into another OmniMES system; a backup of all apps is made before every import — you can also make a backup yourself and restore from it. Apps can use ERP data, the order module and lots — ready-made apps include the “ERP order board” and “Complaint investigation” (from the lot number in a complaint to suppliers and customers).",
+        },
+        {
+          category: "added",
+          scope: "AI assistant (MCP)",
+          body: "The AI assistant (e.g. Claude) answers questions about orders, queues and production progress, OEE and losses, lots and genealogy, the energy bill, the meter balance and ERP orders — using the same calculations as the screens.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: carriers, CO2 emissions and ESRS",
+          body: "The Energy carriers and emissions (ESRS E1) screen converts carrier consumption into final and primary energy and CO2 emissions using KOBiZE factors, and prepares the data for ESRS E1-5 and E1-6 reporting.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: meters, balance and manual readings",
+          body: "Arrange meters in a tree (main meter and sub-meters), add virtual meters with a formula and transformer ratios, and the balance shows losses between the main meter and its sub-meters. Meters without data transmission are entered manually or imported from CSV — the system makes sure a reading is not lower than the previous one and handles meter replacement.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: tariffs, bill and power profile",
+          body: "Energy tariffs with time zones, contracted power, reactive energy and fixed charges. The Bill and power profile screen calculates the monthly bill from the 15-minute profile and shows contracted-power overruns, tan φ and a comparison with the previous month.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: regression baseline and temperature",
+          body: "The energy baseline can be a regression model according to ISO 50006 — with production and degree days from the outdoor temperature — with model quality checks (R², CV(RMSE), significance); savings are normalised to the conditions of the reporting period. The EnPI denominator can be production from the order module.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: SEU register, action plans and audit report",
+          body: "A register of significant energy uses (ISO 50001, clause 6.3), action plans with savings verification (M&V) and an energy audit report prepared from system data.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy: ISO 50001 names and targets",
+          body: "Screens and reports use the ISO 50001 names: EnPI, SEU and EnB. A target can be “lower is better”, with progress measured from the baseline, and an audit is not closed when the indicator got worse. SEU periods are calculated in local time, also when the clock changes.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: SEU report as PDF and PNG",
+          body: "Downloading the SEU report as PDF or PNG works — it used to end with an error.",
+        },
+      ],
+    },
     {
       version: "4.13.1",
       date: "2026-11-19",
