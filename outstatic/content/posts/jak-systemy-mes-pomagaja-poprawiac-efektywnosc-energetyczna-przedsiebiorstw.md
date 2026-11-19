@@ -46,7 +46,7 @@ OmniEnergy pozwala monitorować zużycie energii na poziomie maszyn, gniazd prod
 
 [Moduł energetyczny OmniEnergy](/pl/blog/nowy-modul-energetyczny-omnimes-inteligentne-zarzadzanie-energia-zgodne-z-iso-50001) wspiera przedsiębiorstwa w spełnianiu wymagań normy **[ISO 50001](/pl/blog/omnienergy-w-praktyce-od-licznika-do-raportu-iso-50001-bez-arkusza-kalkulacyjnego)**, która definiuje standard zarządzania energią w firmach produkcyjnych. Norma nakłada obowiązek identyfikacji obszarów znaczącego zużycia energii (ZWE), tworzenia wskaźników EnPI, opracowywania planów zarządzania energią (EMP) oraz ciągłego doskonalenia efektywności energetycznej.
 
-OmniEnergy zapewnia narzędzia do rejestrowania danych, monitorowania trendów, analizowania odchyleń oraz dokumentowania postępów, co znacząco ułatwia przygotowanie się do certyfikacji oraz jej utrzymanie. Wdrażając system spełniający wymagania ISO 50001, przedsiębiorstwo może również zostać zwolnione z obowiązku przeprowadzania cyklicznego audytu energetycznego — co oznacza oszczędności zarówno w kosztach, jak i czasie pracy zespołów.
+OmniEnergy zapewnia narzędzia do rejestrowania danych, monitorowania trendów, analizowania odchyleń oraz dokumentowania postępów, co znacząco ułatwia przygotowanie się do certyfikacji oraz jej utrzymanie. Przedsiębiorstwo, które ma system zarządzania energią potwierdzony certyfikatem ISO 50001 i przeprowadziło w jego ramach audyt energetyczny, może również zostać zwolnione z obowiązku przeprowadzania cyklicznego audytu energetycznego — co oznacza oszczędności zarówno w kosztach, jak i czasie pracy zespołów. Zwolnienie daje certyfikowany system zarządzania w firmie, a nie samo oprogramowanie.
 
 ## **OmniMES i OmniEnergy – jeden system, prawdziwe oszczędności**
 

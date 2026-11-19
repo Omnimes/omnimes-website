@@ -36,9 +36,9 @@ System EMS wspiera wszystkie te elementy, umożliwiając **ciągłe doskonalenie
 
 ## EMS a norma ISO 50001 – nie tylko technologia, ale i korzyść prawna
 
-Norma **ISO 50001** definiuje wymagania dla systemów zarządzania energią w przedsiębiorstwach. Organizacja, która wdroży system spełniający te wymagania i utrzymuje go w praktyce, **może być zwolniona z obowiązku cyklicznego audytu energetycznego**, wymaganego przez polskie prawo (Ustawa o efektywności energetycznej).
+Norma **ISO 50001** definiuje wymagania dla systemów zarządzania energią w przedsiębiorstwach. Organizacja, która ma system zarządzania energią potwierdzony certyfikatem ISO 50001 i przeprowadziła w jego ramach audyt energetyczny, **może być zwolniona z obowiązku cyklicznego audytu energetycznego**, wymaganego przez polskie prawo (Ustawa o efektywności energetycznej). Zwolnienie wynika z certyfikowanego systemu zarządzania w organizacji, a nie z samego oprogramowania — moduł energetyczny OmniMES pomaga taki system wdrożyć i utrzymać.
 
-To oznacza, że oprócz bezpośrednich oszczędności wynikających z mniejszego zużycia energii, wdrożenie EMS pozwala również **uniknąć kosztów i obowiązków administracyjnych**, które w dużych firmach mogą sięgać nawet kilkudziesięciu tysięcy złotych co cztery lata.
+To oznacza, że oprócz bezpośrednich oszczędności wynikających z mniejszego zużycia energii, certyfikowany system zarządzania energią pozwala również **uniknąć kosztów i obowiązków administracyjnych**, które w dużych firmach mogą sięgać nawet kilkudziesięciu tysięcy złotych co cztery lata.
 
 ## Funkcje, które musi spełniać EMS zgodny z ISO 50001
 
@@ -66,7 +66,7 @@ Koszt utrzymania rocznego (licencje, serwis, aktualizacje): **10 000 PLN**
 
 **Łączny koszt w pierwszym roku: 30 000 PLN**
 
-Oznacza to, że **zwrot z inwestycji następuje w mniej niż 6 miesięcy**, a w kolejnych latach system generuje realne zyski. Dodatkowo firma zyskuje dane niezbędne do spełnienia wymagań ISO 50001 i zostaje **zwolniona z obowiązku przeprowadzania audytu energetycznego**, co stanowi dodatkową oszczędność rzędu kilku–kilkunastu tysięcy złotych.
+Oznacza to, że **zwrot z inwestycji następuje w mniej niż 6 miesięcy**, a w kolejnych latach system generuje realne zyski. Dodatkowo firma zyskuje dane potrzebne do wdrożenia ISO 50001, a po certyfikacji systemu zarządzania energią (z audytem energetycznym przeprowadzonym w jego ramach) **może zostać zwolniona z obowiązku przeprowadzania cyklicznego audytu energetycznego**, co stanowi dodatkową oszczędność rzędu kilku–kilkunastu tysięcy złotych.
 
 ## Moduł energetyczny OmniMES – dane, które pracują podwójnie
 
@@ -76,6 +76,6 @@ To pozwala łączyć analizę wydajności maszyn z ich zużyciem energii — na 
 
 ## Zyskaj kontrolę nad energią z OmniMES
 
-Dzięki nowemu modułowi energetycznemu OmniMES możesz nie tylko monitorować zużycie energii, ale także aktywnie nim zarządzać – zgodnie z filozofią **ciągłego doskonalenia (PDCA)** i wymaganiami **ISO 50001**. To rozwiązanie, które pozwala jednocześnie oszczędzać energię, obniżać koszty i spełniać wymogi prawne.
+Dzięki nowemu modułowi energetycznemu OmniMES możesz nie tylko monitorować zużycie energii, ale także aktywnie nim zarządzać – zgodnie z filozofią **ciągłego doskonalenia (PDCA)** i wymaganiami **ISO 50001**. To rozwiązanie, które pozwala jednocześnie oszczędzać energię, obniżać koszty i łatwiej przygotować się do wymogów prawnych.
 
 [**Dowiedz się, jak szybko Twoja firma może uzyskać zwrot z inwestycji w system zarządzania energią – umów prezentację OmniEnergy**](https://www.omnimes.com/pl/omnienergy)

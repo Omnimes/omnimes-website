@@ -39,9 +39,9 @@ The EMS supports all these components, enabling **continuous improvement and com
 
 ### EMS and ISO 50001 – Not Just Technology, but Also Legal Benefits
 
-The **ISO 50001** standard defines requirements for energy management systems in enterprises. Organizations that implement and maintain such a system may be **exempt from mandatory periodic energy audits** required by Polish law (Energy Efficiency Act).
+The **ISO 50001** standard defines requirements for energy management systems in enterprises. Organizations whose energy management system is certified to ISO 50001 and that have carried out an energy audit within it may be **exempt from mandatory periodic energy audits** required by Polish law (Energy Efficiency Act). The exemption comes from the organisation's certified management system, not from the software itself — the OmniMES Energy Module helps implement and maintain that system.
 
-This means that, beyond direct cost savings from reduced energy use, implementing an EMS also helps avoid **[administrative costs and obligations](/en/blog/energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system)**, which in large companies can reach **tens of thousands of PLN every four years**.
+This means that, beyond direct cost savings from reduced energy use, a certified energy management system also helps avoid **[administrative costs and obligations](/en/blog/energy-efficiency-directive-eed-what-does-it-mean-for-polish-production-plants-and-why-it-is-worth-implementing-an-ems-system)**, which in large companies can reach **tens of thousands of PLN every four years**.
 
 ### Features of an ISO 50001-Compliant EMS
 
@@ -79,7 +79,7 @@ Using a conservative estimate of **5% savings**, this equals **60,000 PLN saved 
 | **Annual savings** | **60,000** |
 
 This means **ROI occurs in less than six months**, and in subsequent years the system generates **real profits**.\
-Additionally, the company gains **data needed for ISO 50001 compliance** and can **avoid the cost of mandatory energy audits**, saving another several to tens of thousands of PLN.
+Additionally, the company gains **data needed to implement ISO 50001**, and once its energy management system is certified (with an energy audit carried out within it) it **may be exempt from mandatory periodic energy audits**, saving another several to tens of thousands of PLN.
 
 ### OmniMES Energy Module – Data That Works Twice
 
@@ -92,6 +92,6 @@ Such synergy between MES and EMS unlocks **new opportunities for production, mai
 ### Take Control of Your Energy with OmniMES
 
 With the new **OmniMES Energy Module**, you can not only monitor energy consumption but **actively manage it** — following the **PDCA continuous improvement cycle** and meeting **ISO 50001 standards**.\
-It’s a solution that allows you to **save energy, reduce costs, and ensure full legal compliance** at the same time.
+It’s a solution that allows you to **save energy, reduce costs, and prepare more easily for legal requirements** at the same time.
 
 [**Discover how quickly your company can achieve ROI** with the OmniEnergy Management System — **book a presentation today!**](https://www.omnimes.com/en/omnienergy)

@@ -129,7 +129,7 @@ Rynek Industrial IoT wzrósł z 119,4 mld USD w 2024 roku do przewidywanych 286,
 
 ### Charakterystyka Systemu
 
-Omnimes to zaawansowany system MES, który usprawnia procesy produkcyjne, zwiększając efektywność i kontrolę jakości na każdym etapie produkcji. System oferuje:
+Omnimes to zaawansowany system MES, który usprawnia procesy produkcyjne, zwiększając efektywność i kontrolę nad produkcją. System oferuje:
 
 **Kluczowe Funkcjonalności**:
 

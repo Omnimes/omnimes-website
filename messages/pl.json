@@ -140,7 +140,7 @@
   "OmniEnergy": {
     "meta": {
       "title": "OmniEnergy - system Enms zarządzania energią zgodny z ISO 50001 | OmniEnergy",
-      "description": "Moduł wspiera wdrożenie normy ISO 50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie. Redukcja kosztów energii o 15-25%."
+      "description": "Moduł wspiera wdrożenie normy ISO 50001, optymalizacja zużycia energii i innych mediów, analiza danych energetycznych oraz alarmowanie i raportowanie."
     },
     "title": "OmniEnergy",
     "subtitle": "System zarządzania energią zgodny z ISO 50001",
@@ -153,8 +153,8 @@
       "ctaPrimary": "Sprawdź Demo OmniEnergy",
       "ctaSecondary": "Zobacz funkcje",
       "features": {
-        "iso": "Zgodność z ISO 50001",
-        "reduction": "Redukcja zużycia o 20%"
+        "iso": "Wsparcie wdrożenia ISO 50001",
+        "reduction": "Mniej strat energii"
       },
       "stats": {
         "monitoring": {
@@ -173,7 +173,7 @@
     },
     "features": {
       "sectionTitle": "Kompleksowy system zarządzania energią",
-      "sectionDescription": "System wspiera wszystkie wymagania normy ISO 50001, zapewniając pełną kontrolę nad zużyciem energii",
+      "sectionDescription": "System wspiera wymagania normy ISO 50001 dotyczące pomiarów, wskaźników, celów i dokumentacji",
       "dashboard": {
         "title": "Dashboard energetyczny",
         "description": "Główne miejsce startowe systemu Enms z wykresami zużycia energii, ZWE, WEE, postępem działań i alertami przekroczeń",
@@ -205,7 +205,7 @@
       "enb": {
         "title": "Baza odniesienia (ENLB)",
         "description": "Definiowanie okresu bazowego i jego wartości z możliwością porównania z aktualnym okresem",
-        "items": ["Okresy bazowe", "Normalizacja danych", "Porównania okresowe"]
+        "items": ["Okresy bazowe", "Normalizacja danych (w planach)", "Porównania okresowe"]
       },
       "goals": {
         "title": "Cele i działania energetyczne",
@@ -229,9 +229,9 @@
       }
     },
     "iso50001": {
-      "badge": "Certyfikacja ISO 50001",
-      "sectionTitle": "Pełna zgodność z normą ISO 50001",
-      "sectionDescription": "System zaprojektowany zgodnie z wymaganiami międzynarodowego standardu zarządzania energią",
+      "badge": "Wsparcie ISO 50001",
+      "sectionTitle": "Wymagania normy ISO 50001",
+      "sectionDescription": "OmniEnergy dostarcza dane, wskaźniki i dokumentację do wymagań normy. Zgodność organizacji z normą potwierdza audyt certyfikujący, a nie samo oprogramowanie",
       "requirements": [
         {
           "number": "1",
@@ -276,33 +276,33 @@
       "items": [
         {
           "title": "Redukcja kosztów energii",
-          "description": "Zmniejszenie zużycia energii o 15-25% przekłada się na znaczące oszczędności w budżecie operacyjnym",
-          "value": "15-25%",
-          "label": "średnia redukcja kosztów"
+          "description": "Pomiar zużycia na poziomie maszyn i linii pokazuje, gdzie energia jest tracona. To podstawa do obniżenia kosztów, a skala oszczędności zależy od zakładu i wdrożonych działań",
+          "value": "kWh",
+          "label": "na maszynę, linię i sztukę"
         },
         {
-          "title": "Zgodność z regulacjami",
-          "description": "Spełnienie wymagań audytów energetycznych zgodnie z ustawą o efektywności energetycznej",
-          "value": "100%",
-          "label": "zgodność regulacyjna"
+          "title": "Wsparcie zgodności z ISO 50001",
+          "description": "Pomiary, wskaźniki WEE, linia bazowa, cele i dokumentacja w jednym miejscu ułatwiają przegląd energetyczny i audyt. Zgodność z normą i przepisami potwierdza audytor lub jednostka certyfikująca, a nie samo oprogramowanie",
+          "value": "ISO 50001",
+          "label": "dane do przeglądu i audytu"
         },
         {
           "title": "Ślad węglowy",
-          "description": "Redukcja emisji CO2 wspiera cele zrównoważonego rozwoju i poprawia wizerunek firmy",
-          "value": "-30%",
-          "label": "redukcja emisji CO2"
+          "description": "Mniejsze zużycie energii to mniejsze emisje. Wyliczanie emisji CO2 z danych o zużyciu jest w planach",
+          "value": "CO2",
+          "label": "wyliczanie emisji: w planach"
         },
         {
-          "title": "Szybszy ROI",
-          "description": "Zwrot z inwestycji w system EnMS następuje średnio w ciągu 12-18 miesięcy od wdrożenia",
-          "value": "12-18",
-          "label": "miesięcy do ROI"
+          "title": "Zwrot z inwestycji",
+          "description": "Czas zwrotu zależy od kosztów energii w zakładzie i od wdrożonych działań. Oszacujesz go na przykładzie poniżej",
+          "value": "ROI",
+          "label": "policz dla swojego zakładu"
         },
         {
           "title": "Automatyzacja procesów",
           "description": "Zautomatyzowane zbieranie danych, raportowanie i alarmowanie oszczędza czas zespołu",
-          "value": "80%",
-          "label": "automatyzacji zadań"
+          "value": "24/7",
+          "label": "automatyczne zbieranie danych"
         },
         {
           "title": "Ciągłe doskonalenie",
@@ -353,21 +353,7 @@
       "description": "Dołącz do firm, które już oszczędzają dzięki inteligentnemu zarządzaniu energią",
       "ctaPrimary": "Skontaktuj się",
       "ctaDemo": "Sprawdź Demo OmniEnergy",
-      "ctaSecondary": "Skontaktuj się z nami",
-      "stats": {
-        "implementations": {
-          "value": "500+",
-          "label": "Wdrożeń systemów"
-        },
-        "savings": {
-          "value": "25%",
-          "label": "Średnia redukcja kosztów"
-        },
-        "support": {
-          "value": "24/7",
-          "label": "Wsparcie techniczne"
-        }
-      }
+      "ctaSecondary": "Skontaktuj się z nami"
     },
     "modules": {
       "dashboard": {
@@ -885,8 +871,8 @@
       "title": "Co szykujemy",
       "erp": {
         "status": "W planach",
-        "title": "Konektor ERP",
-        "body": "Zlecenia i indeksy z ERP trafią na halę, a wykonanie, braki i zużycie surowca wrócą do ERP bez ręcznego przepisywania."
+        "title": "ERP: indeksy, BOM i zużycie surowca",
+        "body": "Integracja ERP już przyjmuje zlecenia i odsyła do ERP meldunki o postępie i zakończeniu (wersja 4.13). W planach: kartoteka indeksów i BOM z ERP oraz zużycie surowca odsyłane do ERP."
       }
     },
     "changelogLink": "Pełna historia zmian"
@@ -1563,11 +1549,11 @@
     "q2": "Jakie są główne korzyści korzystania z systemu OmniMES?",
     "a2": "Korzyści obejmują optymalizację efektywności produkcyjnej, zwiększenie jakości produktów, redukcję kosztów, poprawę śledzenia i kontroli nad procesami, oraz usprawnienie zarządzania danymi produkcyjnymi.",
     "q3": "Jakie funkcje oferuje system OmniMES?",
-    "a3": "System OmniMES oferuje szereg funkcji, w tym planowanie produkcji, śledzenie stanu maszyn, zarządzanie jakością, zarządzanie magazynem, raportowanie i analizy danych produkcyjnych.",
+    "a3": "System OmniMES oferuje m.in. monitorowanie stanów maszyn i przestojów w czasie rzeczywistym, wskaźnik OEE (z ewidencją sztuk dobrych i braków w zleceniach), harmonogram produkcji i listę zleceń, integrację z ERP, monitoring zużycia energii (OmniEnergy), raporty, pulpity i analizy danych produkcyjnych oraz asystenta AI. Rozbudowane zarządzanie jakością (np. słownik kodów wad) jest w planach. OmniMES nie prowadzi gospodarki magazynowej — stany magazynowe zostają w systemie ERP.",
     "q4": "Czy Omnimes jest systemem ERP?",
     "a4": "Nie, system OmnimMES (Manufacturing Execution Software) nie jest systemem ERP (Enterprise Resource Planning).",
     "q5": "Czy OmniMES można zintegrować z ERP?",
-    "a5": "Tak, jest taka funkcjonalność.",
+    "a5": "Tak. Od wersji 4.13.0 moduł Integracje ERP przyjmuje zlecenia produkcyjne z ERP (pobieranie z API systemu ERP, wysyłka z ERP na API OmniMES albo import pliku CSV lub JSON) i odsyła do ERP meldunki o postępie, zakończeniu i anulowaniu zleceń. Gotowe ustawienia startowe są dla SAP Business One, enova365, Comarch Optima i XL, Symfonii, Subiekta oraz plików CSV; inny system podłączysz przez mapowanie pól, jeśli udostępnia REST albo eksport do pliku. Integracja nie przenosi kartoteki indeksów, BOM ani stanów magazynowych.",
     "q6": "Czy istnieje wsparcie techniczne dla użytkowników systemu OmniMES?",
     "a6": "Tak, oferujemy wsparcie techniczne dla naszych użytkowników, które obejmuje szkolenia, pomoc techniczną online oraz wsparcie telefoniczne.",
     "q7": "Jak mogę rozpocząć korzystanie z systemu OmniMES w mojej firmie?",

@@ -67,7 +67,7 @@ Embedded emissions to nie pojedyncza liczba — to wartość **na partię produk
 
 Razem: **embedded CO₂ na tonę produktu = (scope 1 + scope 2 + precursors) / wyprodukowane tony**.
 
-Naturalny stack OmniMES dla tego: MES (genealogia) + EMS (energy metering) + ERP (BOM + supplier data) + warstwa kalkulacyjna PCF (w bazie czasowej — w [TimescaleDB](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) trzymamy emission factors jako time-series, bo emission factor sieci zmienia się rok do roku, a regulator wymaga **kontemporalnego** mnożnika).
+Docelowy zestaw do tego to: MES (genealogia) + EMS (energy metering) + ERP (BOM + supplier data) + warstwa kalkulacyjna PCF. Wskaźniki emisji (emission factors) najlepiej trzymać jako szereg czasowy, np. w [TimescaleDB](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie), bo emission factor sieci zmienia się rok do roku, a regulator wymaga **kontemporalnego** mnożnika. W OmniMES jest dziś pomiar energii na maszynę i linię (OmniEnergy) oraz przyjmowanie zleceń z ERP; genealogia partii, BOM i wyliczanie emisji CO₂ są w planach.
 
 ## Standardy: ISO 14067, GHG Protocol, EU CBAM methodology
 
@@ -91,7 +91,7 @@ Cztery realne opcje:
 
 **[openLCA](https://www.openlca.org/)** — narzędzie LCA typu open source. Darmowe, ale wymaga ręcznej integracji z MES/EMS. Dobre dla startupów i mniejszych zakładów, słabsze dla audytu zgodności (ślad audytowy mniej dojrzały).
 
-**Rozwiązanie własne — bezpośrednio w MES.** Dla zakładów, które już mają solidny stos (PostgreSQL + TimescaleDB + Grafana), kalkulator embedded emissions to ~200 linii SQL/Python. Plus baza emission factors (importowana z KOBiZE rocznie). To realna ścieżka — robimy tak w OmniMES, bo emission factors mapują się 1:1 na continuous aggregates dla zmiany × linii.
+**Rozwiązanie własne — bezpośrednio w MES.** Dla zakładów, które już mają solidny stos (PostgreSQL + TimescaleDB + Grafana), kalkulator embedded emissions to ~200 linii SQL/Python. Plus baza emission factors (importowana z KOBiZE rocznie). To realna ścieżka, bo emission factors mapują się 1:1 na continuous aggregates dla zmiany × linii. W OmniMES taki kalkulator jest w planach.
 
 Co wybrać: dla zakładów >100 mln EUR obrotu z SAP — SFM. Dla średniego rynku 10–100 mln EUR z PostgreSQL + własnym MES — własna kalkulacja jest tańsza i bardziej elastyczna. Dla najmniejszych — openLCA + Excel.
 
@@ -154,5 +154,5 @@ CBAM nie zniknie. Jeżeli polski przemysł chce konkurować na rynkach carbon-aw
 - [VDA Sustainability Initiative](https://www.vda.de/en/topics/environment-and-climate/sustainability) — wymagania PCF dla motoryzacji
 - [openLCA](https://www.openlca.org/) — open-source LCA tool
 - [DPP wchodzi do fabryki](/pl/blog/digital-product-passport-dpp-wchodzi-do-fabryki-espr-i-battery-regulation-2027-co-mes-musi-umiec-do-lutego) — nasz wcześniejszy artykuł o paszporcie produktu, naturalny powiązany
-- [TimescaleDB w OmniMES](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — architektura przechowywania emission factors jako time-series
+- [TimescaleDB w OmniMES](/pl/blog/timescaledb-w-omnimes-jak-hypertables-postgresql-obsluguja-200-mln-pomiarow-dziennie) — jak przechowujemy dane pomiarowe jako szeregi czasowe
 - [OmniMES — cyberbezpieczeństwo i zgodność z CRA](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/cyberbezpieczenstwo-i-zgodnosc-cra-6dbPWZS59e) — dokumentacja produktu

@@ -85,7 +85,7 @@ Efekt:
 | --- | --- | --- |
 | Maintenance | do -50% downtime | Siemens, ABB Ability |
 | Scheduling | do +40% OEE | Rockwell, Dassault |
-| Supply Chain | do -30% inventory | Cloud MES + AI agents, Omnimes |
+| Supply Chain | do -30% inventory | Cloud MES + AI agents |
 
 ---
 

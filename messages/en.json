@@ -145,7 +145,7 @@
   "OmniEnergy": {
     "meta": {
       "title": "OmniEnergy - ISO 50001 compliant EnMS energy management system | OmniEnergy",
-      "description": "The module supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting. Energy cost reduction of 15-25%."
+      "description": "The module supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting."
     },
     "title": "OmniEnergy",
     "subtitle": "ISO 50001 compliant energy management system",
@@ -158,8 +158,8 @@
       "ctaPrimary": "Check OmniEnergy Demo",
       "ctaSecondary": "See features",
       "features": {
-        "iso": "ISO 50001 compliance",
-        "reduction": "20% consumption reduction"
+        "iso": "Supports ISO 50001 implementation",
+        "reduction": "Less energy waste"
       },
       "stats": {
         "monitoring": {
@@ -178,7 +178,7 @@
     },
     "features": {
       "sectionTitle": "Comprehensive energy management system",
-      "sectionDescription": "The system supports all ISO 50001 standard requirements, ensuring complete control over energy consumption",
+      "sectionDescription": "The system supports the ISO 50001 requirements for measurement, indicators, objectives and documentation",
       "dashboard": {
         "title": "Energy dashboard",
         "description": "Main starting point of the EnMS system with energy consumption charts, SEU, EnPI, action progress and threshold alerts",
@@ -202,7 +202,7 @@
       "enb": {
         "title": "Energy baseline (EnB)",
         "description": "Defining baseline period and its values with ability to compare with current period",
-        "items": ["Baseline periods", "Data normalization", "Period comparisons"]
+        "items": ["Baseline periods", "Data normalization (planned)", "Period comparisons"]
       },
       "goals": {
         "title": "Energy objectives and actions",
@@ -226,9 +226,9 @@
       }
     },
     "iso50001": {
-      "badge": "ISO 50001 certification",
-      "sectionTitle": "Full compliance with ISO 50001 standard",
-      "sectionDescription": "System designed in accordance with international energy management standard requirements",
+      "badge": "ISO 50001 support",
+      "sectionTitle": "ISO 50001 requirements",
+      "sectionDescription": "OmniEnergy supplies data, indicators and documentation for the standard's requirements. An organisation's compliance is confirmed by a certification audit, not by the software itself",
       "requirements": [
         {
           "number": "1",
@@ -273,33 +273,33 @@
       "items": [
         {
           "title": "Energy cost reduction",
-          "description": "15-25% reduction in energy consumption translates into significant savings in operational budget",
-          "value": "15-25%",
-          "label": "average cost reduction"
+          "description": "Metering consumption at machine and line level shows where energy is wasted. That is the basis for cutting costs; how much you save depends on the plant and the actions you take",
+          "value": "kWh",
+          "label": "per machine, line and piece"
         },
         {
-          "title": "Regulatory compliance",
-          "description": "Meeting energy audit requirements in accordance with energy efficiency law",
-          "value": "100%",
-          "label": "regulatory compliance"
+          "title": "ISO 50001 compliance support",
+          "description": "Measurements, EnPIs, the baseline, objectives and documentation in one place make the energy review and audits easier. Compliance with the standard and the law is confirmed by an auditor or certification body, not by the software itself",
+          "value": "ISO 50001",
+          "label": "data for review and audit"
         },
         {
           "title": "Carbon footprint",
-          "description": "CO2 emission reduction supports sustainable development goals and improves company image",
-          "value": "-30%",
-          "label": "CO2 emission reduction"
+          "description": "Lower energy use means lower emissions. Calculating CO2 emissions from consumption data is planned",
+          "value": "CO2",
+          "label": "emission calculation: planned"
         },
         {
-          "title": "Faster ROI",
-          "description": "Return on investment in EnMS system occurs on average within 12-18 months from implementation",
-          "value": "12-18",
-          "label": "months to ROI"
+          "title": "Return on investment",
+          "description": "The payback period depends on the plant's energy costs and the actions taken. Estimate it with the example below",
+          "value": "ROI",
+          "label": "calculate for your plant"
         },
         {
           "title": "Process automation",
           "description": "Automated data collection, reporting and alerting saves team time",
-          "value": "80%",
-          "label": "task automation"
+          "value": "24/7",
+          "label": "automatic data collection"
         },
         {
           "title": "Continual improvement",
@@ -350,21 +350,7 @@
       "description": "Join companies that are already saving through intelligent energy management",
       "ctaPrimary": "Contact us",
       "ctaDemo": "Check OmniEnergy Demo",
-      "ctaSecondary": "Get in touch",
-      "stats": {
-        "implementations": {
-          "value": "500+",
-          "label": "System implementations"
-        },
-        "savings": {
-          "value": "25%",
-          "label": "Average cost reduction"
-        },
-        "support": {
-          "value": "24/7",
-          "label": "Technical support"
-        }
-      }
+      "ctaSecondary": "Get in touch"
     },
     "modules": {
       "dashboard": {
@@ -877,8 +863,8 @@
       "title": "What’s coming",
       "erp": {
         "status": "Planned",
-        "title": "ERP connector",
-        "body": "Orders and product codes will reach the shop floor from ERP, while output, scrap and material use go back with no manual re-entry."
+        "title": "ERP: product codes, BOMs and material use",
+        "body": "The ERP integration already takes in orders and sends progress and completion reports back to the ERP (version 4.13). Planned next: product codes and BOMs from the ERP, and material use reported back to it."
       }
     },
     "changelogLink": "Full changelog"
@@ -1555,11 +1541,11 @@
     "q2": "What are the main benefits of using the OmniMES system?",
     "a2": "Benefits include optimizing production efficiency, increasing product quality, reducing costs, improving tracking and control of processes, and streamlining production data management.",
     "q3": "What features does the OmniMES system offer?",
-    "a3": "The OmniMES system offers a range of features, including production planning, machine status tracking, quality management, warehouse management, reporting, and production data analysis.",
+    "a3": "OmniMES offers, among other things, real-time monitoring of machine states and downtime, OEE (with good and scrap counts per order), a production schedule and order list, ERP integration, energy monitoring (OmniEnergy), reports, dashboards and production data analysis, and an AI assistant. Extended quality management (e.g. a defect code list) is planned. OmniMES does not manage warehouse stock — inventory stays in the ERP system.",
     "q4": "Is OmniMES an ERP system?",
     "a4": "No, the OmniMES system (Manufacturing Execution Software) is not an ERP (Enterprise Resource Planning) system.",
     "q5": "Can OmniMES be integrated with ERP?",
-    "a5": "Yes, such functionality exists.",
+    "a5": "Yes. Since version 4.13.0 the ERP integrations module takes in production orders from the ERP (pulled from the ERP's API, pushed by the ERP to the OmniMES API, or imported from a CSV or JSON file) and sends progress, completion and cancellation reports back to the ERP. Ready-made starting settings are available for SAP Business One, enova365, Comarch Optima and XL, Symfonia, Subiekt and CSV files; any other system can be connected through field mapping if it offers REST or a file export. The integration does not transfer product master data, BOMs or warehouse stock.",
     "q6": "Is there technical support for OmniMES system users?",
     "a6": "Yes, we offer technical support for our users, including training, online technical assistance, and telephone support.",
     "q7": "How can I start using the OmniMES system in my company?",

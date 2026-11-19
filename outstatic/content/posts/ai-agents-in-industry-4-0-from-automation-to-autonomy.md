@@ -83,7 +83,7 @@ Results:
 | --- | --- | --- |
 | Maintenance | up to -50% downtime | Siemens, ABB Ability |
 | Scheduling | up to +40% OEE | Rockwell, Dassault |
-| Supply Chain | up to -30% inventory | Cloud MES + AI agents, Omnimes |
+| Supply Chain | up to -30% inventory | Cloud MES + AI agents |
 
 ---
 
