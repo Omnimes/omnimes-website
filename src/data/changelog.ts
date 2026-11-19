@@ -26,6 +26,17 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "4.13.1",
+      date: "2026-11-19",
+      entries: [
+        {
+          category: "fixed",
+          scope: "Aktualizacja instalacji on-premise",
+          body: "Skrypty aktualizacji (updated_api, updated_www, updated_www_api, updated_mcp) działają na instalacjach postawionych z wcześniejszych paczek: migracje kolejki zadań nie przerywają aktualizacji API, zmienione hasło bazy danych (set_pass.py) zostaje zachowane po przebudowie API, z plików frontu znika stary katalog repozytorium, a serwer MCP dostaje poprawny token do API.",
+        },
+      ],
+    },
+    {
       version: "4.13.0",
       date: "2026-11-19",
       entries: [
@@ -624,6 +635,17 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.13.1",
+      date: "2026-11-19",
+      entries: [
+        {
+          category: "fixed",
+          scope: "Updating on-premise installations",
+          body: "The update scripts (updated_api, updated_www, updated_www_api, updated_mcp) work on installations set up from earlier packages: task queue migrations no longer stop the API update, a changed database password (set_pass.py) is kept after the API is rebuilt, the old repository folder is removed from the front-end files, and the MCP server gets a valid API token.",
+        },
+      ],
+    },
     {
       version: "4.13.0",
       date: "2026-11-19",
