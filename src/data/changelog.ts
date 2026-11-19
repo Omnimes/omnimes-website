@@ -19,22 +19,73 @@ export type UpcomingFeature = {
 }
 
 export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
-  pl: [
-    {
-      scope: "Konektor do systemów ERP",
-      body: "Dwukierunkowa integracja OmniMES z systemami ERP — zlecenia produkcyjne, indeksy wyrobów i meldunki zwrotne (wykonanie, braki, zużycie surowca) wymieniane automatycznie, bez ręcznego przepisywania danych między ERP a halą produkcyjną. Cel: jedno źródło prawdy o produkcji — plan z ERP trafia na maszyny, a realizacja z hali wraca do ERP w czasie zbliżonym do rzeczywistego.",
-    },
-  ],
-  en: [
-    {
-      scope: "ERP systems connector",
-      body: "Two-way integration between OmniMES and ERP systems — production orders, product indexes and feedback reports (output, scrap, material consumption) exchanged automatically, without rekeying data by hand between the ERP and the shop floor. The goal: a single source of truth about production — the plan flows from the ERP to the machines, and execution flows from the floor back to the ERP in near real time.",
-    },
-  ],
+  pl: [],
+  en: [],
 }
 
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
+    {
+      version: "4.13.0",
+      date: "2026-11-19",
+      entries: [
+        {
+          category: "added",
+          scope: "Integracje ERP",
+          body: "Nowy ekran Konfiguracja → Integracje ERP łączy OmniMES z systemem ERP. Zlecenia produkcyjne trafiają do OmniMES automatycznie — pobierane z API systemu ERP co kilka minut, wysyłane przez ERP na API OmniMES z kluczem integracji albo importowane z pliku CSV lub JSON. OmniMES odsyła do ERP meldunki o postępie, zakończeniu i anulowaniu zleceń (webhook z podpisem HMAC). Pola, jednostki, statusy i gniazda robocze mapujesz na ekranie i sprawdzasz testem bez zapisu; gotowe ustawienia startowe dla SAP Business One, enova365, Comarch Optima i XL, Symfonii, Subiekta oraz plików CSV. Dziennik komunikatów i kolejka meldunków pokazują, co przyszło z ERP i co do niego wyszło.",
+        },
+        {
+          category: "added",
+          scope: "Norma czasu cyklu w zleceniu",
+          body: "Zlecenie ma pole „norma czasu cyklu” (sekundy na sztukę) — na ekranie Zlecenia → Wprowadzone, w API i w mapowaniu z ERP. Z niej raport zlecenia liczy wydajność OEE.",
+        },
+        {
+          category: "added",
+          scope: "Hala 3D: wskaźnik ładowania",
+          body: "Podczas wczytywania modelu hali widać wskaźnik „Ładowanie modelu hali…” zamiast pustego obszaru.",
+        },
+        {
+          category: "changed",
+          scope: "OEE w raporcie zlecenia",
+          body: "Wydajność jest liczona z normy czasu cyklu: norma × wyprodukowane sztuki / czas pracy. Wcześniej wychodziła prawie zawsze 100%, więc OEE było w praktyce iloczynem dostępności i jakości. Zlecenie bez normy pokazuje „brak normy czasu cyklu w zleceniu” zamiast zmyślonych 100%, a wyprodukowane sztuki to dobre plus braki.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: zużycie z liczników",
+          body: "WEE, linia bazowa i ZWE liczą zużycie z liczników narastających za cały okres, a nie z ostatnich 10 000 odczytów. Chwilowy błędny odczyt nie zeruje już okresu, a reset lub wymiana licznika są rozpoznawane. Okresy liczone są w czasie lokalnym (wcześniej były przesunięte o 1–2 godziny), a wartości ręczne przypisane do kilku maszyn nie są sumowane wielokrotnie. Sygnał, który nie wygląda na licznik narastający, jest oznaczany.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: brak produkcji, nośniki i jednostki",
+          body: "Gdy mianownik wskaźnika (np. produkcja) wynosi 0 albo go brak, WEE i linia bazowa pokazują „czeka na dane” lub „brak produkcji” zamiast dzielić przez 1. Ranking ZWE i udziały są liczone osobno dla każdego nośnika, jednostka WEE wynika z definicji licznika i mianownika, a konfiguracja linii bazowej bez zakresu pokazuje „Brak zakresu” zamiast liczyć cały zakład. Działają dymki na ekranach OmniEnergy, a podpowiedź pod rankingiem ZWE pokazuje liczby.",
+        },
+        {
+          category: "fixed",
+          scope: "MTTR, MTTF i MTBF w raporcie zlecenia",
+          body: "Wskaźniki niezawodności liczone są według właściwych wzorów — wcześniej pola były zamienione, a MTBF wychodził mniejszy niż MTTF. Raport zlecenia obejmuje cały zadeklarowany okres, a nie tylko ostatnią dobę.",
+        },
+        {
+          category: "fixed",
+          scope: "Wykres pomiarów",
+          body: "Maszyna bez własnych danych w wybranym okresie nie pokazuje już wartości i stanów innych maszyn z tym samym tagiem.",
+        },
+        {
+          category: "fixed",
+          scope: "Pulpit, zlecenia i harmonogram",
+          body: "Widżet „Ostatnio wygenerowany raport” nie pokazuje OEE 0,00% ani normy „NaN s”, zlecenie wskazuje wygenerowany raport, a okno zlecenia w harmonogramie pokazuje „Wyprodukowanych” i nie wyświetla „Invalid date”.",
+        },
+        {
+          category: "fixed",
+          scope: "Zmiana hasła bazy danych",
+          body: "Po zmianie hasła bazy (set_pass.py, panel chmury) filtr i wzbogacanie sygnałów działają dalej — hasło połączenia między bazami aktualizuje się razem z hasłem bazy.",
+        },
+        {
+          category: "fixed",
+          scope: "Stopka w wersji angielskiej",
+          body: "Stopka wersji angielskiej pokazuje poprawny znak ©.",
+        },
+      ],
+    },
     {
       version: "4.12.0",
       date: "2026-11-18",
@@ -482,7 +533,7 @@ export const changelog: Record<"pl" | "en", Release[]> = {
         {
           category: "fixed",
           scope: "OmniEnergy — zafałszowane wykresy i wskaźniki",
-          body: "Migawki bez kompletu danych trafiały na wykres jako zero, tworząc pozorny spadek; mianownik równy zero dawał wskaźnik równy surowej energii bez żadnego ostrzeżenia. Migawki niekompletne są teraz pomijane na wykresie i blokowane w audytach oraz raportach.",
+          body: "Migawki bez kompletu danych trafiały na wykres jako zero, tworząc pozorny spadek. Migawki niekompletne są teraz pomijane na wykresie i blokowane w audytach oraz raportach. Sprostowanie: mianownik równy zero był w tej wersji nadal zamieniany na 1 przy liczeniu wskaźnika — poprawka weszła w późniejszej wersji.",
         },
         {
           category: "fixed",
@@ -573,6 +624,67 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "4.13.0",
+      date: "2026-11-19",
+      entries: [
+        {
+          category: "added",
+          scope: "ERP integrations",
+          body: "The new Configuration → ERP integrations screen connects OmniMES to your ERP system. Production orders reach OmniMES automatically — pulled from the ERP API every few minutes, pushed by the ERP to the OmniMES API with an integration key, or imported from a CSV or JSON file. OmniMES sends progress, completion and cancellation reports back to the ERP (webhook signed with HMAC). You map fields, units, statuses and work centres on screen and check them with a dry-run test; ready-made starting presets cover SAP Business One, enova365, Comarch Optima and XL, Symfonia, Subiekt and CSV files. The message log and the report queue show what came in from the ERP and what went out.",
+        },
+        {
+          category: "added",
+          scope: "Cycle time standard on orders",
+          body: "An order has a “cycle time standard” field (seconds per piece) — on the Orders → Entered screen, in the API and in the ERP mapping. The order report uses it to calculate OEE performance.",
+        },
+        {
+          category: "added",
+          scope: "3D hall: loading indicator",
+          body: "While the hall model loads you see a “Loading the hall model…” indicator instead of an empty area.",
+        },
+        {
+          category: "changed",
+          scope: "OEE in the order report",
+          body: "Performance is calculated from the cycle time standard: standard × pieces produced / run time. Before, it came out at almost exactly 100%, so OEE was in practice availability × quality. An order without a standard shows “no cycle time standard on the order” instead of a made-up 100%, and pieces produced means good plus scrap.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: consumption from meters",
+          body: "EnPI, the baseline and SEU calculate consumption from cumulative meters over the whole period, not from the latest 10,000 readings. A single faulty reading no longer zeroes the period, and a meter reset or replacement is recognised. Periods use local time (they were shifted by 1–2 hours), and manual values assigned to several machines are no longer added up several times. A signal that does not behave like a cumulative meter is flagged.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: no production, carriers and units",
+          body: "When an indicator's denominator (e.g. production) is 0 or missing, EnPI and the baseline show “waiting for data” or “no production” instead of dividing by 1. The SEU ranking and shares are calculated separately for each energy carrier, the EnPI unit comes from the meter and denominator definition, and a baseline configuration without a scope shows “No scope” instead of covering the whole plant. Tooltips on OmniEnergy screens work, and the hint under the SEU ranking shows numbers.",
+        },
+        {
+          category: "fixed",
+          scope: "MTTR, MTTF and MTBF in the order report",
+          body: "Reliability indicators use the correct formulas — the fields were swapped before and MTBF came out lower than MTTF. The order report covers the whole declared period, not just the last day.",
+        },
+        {
+          category: "fixed",
+          scope: "Measurements chart",
+          body: "A machine with no data of its own in the selected period no longer shows values and states of other machines with the same tag.",
+        },
+        {
+          category: "fixed",
+          scope: "Dashboard, orders and schedule",
+          body: "The “Last generated report” widget no longer shows OEE 0.00% or a “NaN s” standard, an order points to its generated report, and the order window in the schedule shows “Produced” and no longer displays “Invalid date”.",
+        },
+        {
+          category: "fixed",
+          scope: "Database password change",
+          body: "After the database password is changed (set_pass.py, cloud panel), signal filtering and enrichment keep working — the password of the link between databases is updated together with the database password.",
+        },
+        {
+          category: "fixed",
+          scope: "Footer in English",
+          body: "The English footer shows a correct © sign.",
+        },
+      ],
+    },
     {
       version: "4.12.0",
       date: "2026-11-18",
@@ -1020,7 +1132,7 @@ export const changelog: Record<"pl" | "en", Release[]> = {
         {
           category: "fixed",
           scope: "OmniEnergy — distorted charts and indicators",
-          body: "Snapshots without complete data were plotted as zero, creating an apparent drop; a denominator of zero produced an indicator equal to the raw energy with no warning. Incomplete snapshots are now skipped on the chart and blocked in audits and reports.",
+          body: "Snapshots without complete data were plotted as zero, creating an apparent drop. Incomplete snapshots are now skipped on the chart and blocked in audits and reports. Correction: in this version a denominator of zero was still replaced with 1 when calculating the indicator — the fix came in a later version.",
         },
         {
           category: "fixed",
