@@ -2,14 +2,14 @@
   {
     "title": "OmniMES 5.0: jeden moduł produkcji, utrzymanie ruchu i bezpieczniejsza instalacja",
     "slug": "omnimes-5-0-jeden-modul-produkcji-utrzymanie-ruchu-i-bezpieczniejsza-instalacja",
-    "description": "OmniMES 5.0: Produkcja jest jedynym modułem zleceń, a zlecenia z ERP trafiają prosto do niej. Dochodzi Utrzymanie ruchu z przeglądami oraz MTBF i MTTR ze zgłoszeń, alarmy z Teams, Slackiem i eskalacją, jedna konfiguracja AI, kopie zapasowe z testem odtworzenia i aktualizacja z automatycznym wycofaniem. Opisujemy zmiany i to, co sprawdzić przed aktualizacją.",
+    "description": "OmniMES 5.0: Produkcja jest jedynym modułem zleceń, a zlecenia z ERP trafiają prosto do niej. Dochodzi Utrzymanie ruchu z przeglądami, MTBF i MTTR ze zgłoszeń oraz osią zdarzeń maszyn z notatkami, alarmy z Teams, Slackiem i eskalacją, jedna konfiguracja AI, kopie zapasowe z testem odtworzenia i aktualizacja z automatycznym wycofaniem. Opisujemy zmiany i to, co sprawdzić przed aktualizacją.",
     "lang": "pl",
     "tags": "OmniMES, OmniEnergy, AI, CRA"
   },
   {
     "title": "OmniMES 5.0: one production module, maintenance management and a more secure installation",
     "slug": "omnimes-5-0-one-production-module-maintenance-management-and-a-more-secure-installation",
-    "description": "In OmniMES 5.0, Production is the only order module and ERP orders land straight in it. A new Maintenance area with inspections and MTBF and MTTR from failure requests, alarms with Teams, Slack and escalation, one AI configuration, backups with a restore test and updates that roll back automatically. What changes, and what to check before you update.",
+    "description": "In OmniMES 5.0, Production is the only order module and ERP orders land straight in it. A new Maintenance area with inspections, MTBF and MTTR from failure requests and a machine event timeline with notes, alarms with Teams, Slack and escalation, one AI configuration, backups with a restore test and updates that roll back automatically. What changes, and what to check before you update.",
     "lang": "en",
     "tags": "OmniMES, OmniEnergy, AI, CRA"
   },

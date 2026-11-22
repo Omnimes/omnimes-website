@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'omnimes-5-0-jeden-modul-produkcji-utrzymanie-ruchu-i-bezpieczniejsza-instalacja'
-description: 'OmniMES 5.0: Produkcja jest jedynym modułem zleceń, a zlecenia z ERP trafiają prosto do niej. Dochodzi Utrzymanie ruchu z przeglądami oraz MTBF i MTTR ze zgłoszeń, alarmy z Teams, Slackiem i eskalacją, jedna konfiguracja AI, kopie zapasowe z testem odtworzenia i aktualizacja z automatycznym wycofaniem. Opisujemy zmiany i to, co sprawdzić przed aktualizacją.'
+description: 'OmniMES 5.0: Produkcja jest jedynym modułem zleceń, a zlecenia z ERP trafiają prosto do niej. Dochodzi Utrzymanie ruchu z przeglądami, MTBF i MTTR ze zgłoszeń oraz osią zdarzeń maszyn z notatkami, alarmy z Teams, Slackiem i eskalacją, jedna konfiguracja AI, kopie zapasowe z testem odtworzenia i aktualizacja z automatycznym wycofaniem. Opisujemy zmiany i to, co sprawdzić przed aktualizacją.'
 coverImage: '/images/post-omnimes-5-0/cover-omnimes-5-0-pl.png'
 lang: 'pl'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"omniEnergy","label":"OmniEnergy"},{"value":"AI","label":"AI"},{"value":"cra","label":"CRA"}]
@@ -14,7 +14,7 @@ publishedAt: '2026-11-22T19:00:00.000Z'
 
 Od dziś dostępny jest OmniMES 5.0. Zmiana pierwszej cyfry ma u nas konkretne znaczenie: według [polityki wydań](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/instalacja-wersja-on-premise-2tAS575nLs) oznacza wersję, która przy aktualizacji wymaga dodatkowych kroków. W 5.0 jest ich kilka naraz: nowa wersja brokera MQTT z kontami urządzeń, nowy Redash, osobne konta bazy danych dla każdej usługi, Python 3.12 w API i aktualizacja, która przy błędzie sama wraca do poprzedniej wersji.
 
-Dla osób pracujących na co dzień w systemie najważniejsze są trzy zmiany. Produkcja stała się jedynym modułem zleceń, a zlecenia z ERP trafiają prosto do niej. Doszła grupa Utrzymanie ruchu: zgłoszenia awarii z panelu operatora, zlecenia serwisowe, przeglądy według kalendarza i motogodzin oraz MTBF i MTTR liczone ze zgłoszeń. Alarmy dostały reguły na sygnałach maszyn, powiadomienia w Microsoft Teams i Slacku oraz eskalację. Poniżej opisujemy wszystkie obszary po kolei, a na końcu to, co warto sprawdzić przed aktualizacją.
+Dla osób pracujących na co dzień w systemie najważniejsze są trzy zmiany. Produkcja stała się jedynym modułem zleceń, a zlecenia z ERP trafiają prosto do niej. Doszła grupa Utrzymanie ruchu: zgłoszenia awarii z panelu operatora, zlecenia serwisowe, przeglądy według kalendarza i motogodzin, MTBF i MTTR liczone ze zgłoszeń oraz Zdarzenia maszyn, czyli jedna oś czasu z notatkami przy awariach i postojach. Alarmy dostały reguły na sygnałach maszyn, powiadomienia w Microsoft Teams i Slacku oraz eskalację. Poniżej opisujemy wszystkie obszary po kolei, a na końcu to, co warto sprawdzić przed aktualizacją.
 
 ## Produkcja: jeden moduł zleceń
 
@@ -49,7 +49,15 @@ Przeglądy planuje się według kalendarza (co określoną liczbę dni, tygodni 
 
 MTBF i MTTR są liczone ze zgłoszeń awarii tą samą funkcją co wskaźniki z telemetrii w *Analiza → Czas pracy i OEE*, a opcja *Porównaj z telemetrią* pokazuje obie wartości obok siebie. Karta maszyny zbiera zgłoszenia, zlecenia, części i przeglądy na jednej osi czasu. Do katalogu raportów doszły trzy raporty: *Awarie i MTBF/MTTR*, *Realizacja przeglądów* oraz *Koszt utrzymania ruchu*.
 
-Opis modułu: [Utrzymanie ruchu](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/utrzymanie-ruchu-u0oBxfY3rk).
+### Zdarzenia maszyn
+
+Dawna Historia zdarzeń zmieniła się w ekran *Zdarzenia maszyn* w grupie Utrzymanie ruchu. To jedna oś czasu maszyny, linii albo całego parku: awarie i postoje z przyczynami, alarmy, zgłoszenia awarii i zlecenia serwisowe, pauzy operatora i zmiany przyczyn przestojów. Awarie i postoje to te same odcinki co w OEE, z tym samym początkiem, końcem, przyczyną i rodzajem straty.
+
+Przy awarii, postoju albo alarmie można zapisać notatkę: co się stało, co zrobiono, co sprawdzić następnym razem. Ta sama notatka jest widoczna na osi, na liście przestojów w *Czas pracy i OEE* i w historii maszyny na karcie w Utrzymaniu ruchu, więc nie trzeba jej przepisywać. Filtr *Bez notatki* razem z rodzajem *Awaria* pokazuje awarie, których nikt nie opisał. To gotowa lista na odprawę zmiany.
+
+Ze zdarzenia można od razu przypisać przyczynę przestoju (OEE i Pareto przeliczają się od razu) albo zgłosić awarię powiązaną z tym przestojem, także już zakończonym. Początek awarii w zgłoszeniu jest wtedy początkiem przestoju, więc MTBF i MTTR ze zgłoszeń liczą prawdziwy czas awarii. Zdarzenia z bieżącymi filtrami eksportuje się do CSV (do 20 000 wierszy), a jeden widok obejmuje okres do 31 dni. Do grupy Utrzymanie ruchu trafił też ekran Alarmy.
+
+Opis modułu: [Utrzymanie ruchu](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/utrzymanie-ruchu-u0oBxfY3rk), [Zdarzenia maszyn](https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/zdarzenia-maszyn-eOUkscxZYm).
 
 ## Alarmy, powiadomienia i stan systemu
 
@@ -124,7 +132,7 @@ Nowy rozdział dokumentacji, [Podręcznik administratora](https://docs.omnimes.c
 
 - **Aktualizacja z automatycznym wycofaniem.** Skrypt zapisuje kopię ustawień i baz, buduje nowe obrazy przy działającym systemie, wykonuje migracje w osobnym kontenerze i sprawdza, czy API odpowiada, bazy są dostępne, logowanie działa, a strona się otwiera. Gdy któryś krok się nie uda, wraca do poprzednich obrazów, ustawień i w razie potrzeby baz z kopii. Gdy nowa wersja zmienia bazę, API zatrzymuje się na czas aktualizacji, zwykle na 1–3 minuty.
 - **Kopie zapasowe.** Usługa kopii codziennie o 2:30 robi zaszyfrowaną kopię baz, plików systemu i ustawień, a kopię telemetrii raz w tygodniu. Zostaje 7 kopii dziennych, 4 tygodniowe i 12 miesięcznych. Kopie można wysyłać poza serwer, na serwer SFTP albo do magazynu zgodnego z S3. Raz w miesiącu usługa sprawdza, czy z najnowszej kopii da się odtworzyć bazy. Wynik widać w *Stanie systemu*, a nieudana albo zaległa kopia wywołuje alarm.
-- **Narzędzie administratora `omnimes`.** Jedno polecenie do obsługi instalacji: `preflight` (sprawdza procesor, pamięć, dysk i porty przed instalacją), `install`, `status`, `support-bundle` (paczka diagnostyczna bez haseł i kluczy), `update`, `rollback`, `backup`, `restore` i `uninstall`. Każde polecenie kończy się jednoznacznym wynikiem, a polecenia zmieniające instalację najpierw pokazują plan i proszą o potwierdzenie.
+- **Narzędzie administratora `omnimes`.** Jedno polecenie do obsługi instalacji: `preflight` (sprawdza procesor, pamięć, dysk i porty przed instalacją), `install`, `status`, `support-bundle` (paczka diagnostyczna bez haseł i kluczy), `update`, `rollback`, `backup`, `restore` i `uninstall`. Każde polecenie kończy się jednoznacznym wynikiem, a polecenia zmieniające instalację najpierw pokazują plan i proszą o potwierdzenie. Narzędzie mówi po polsku albo po angielsku: język wybiera opcja `--lang` albo zmienna `OMNIMES_LANG`, a przy nowej instalacji język systemu.
 - **Monitorowanie.** Adres `/health` zwraca stan baz, kolejki zadań, licencji i streamu. Wszystkie usługi mają kontrolę zdrowia w Dockerze, a niezdrowy kontener uruchamia się ponownie sam (poza bazą i brokerem).
 - **Kod w obrazach, konfiguracja w pliku `.env`.** Aktualizacja zachowuje pliki zapisane przez system: archiwum raportów, dokumenty OmniEnergy, załączniki, instrukcje stanowiskowe i katalog wymiany z ERP.
 
@@ -146,6 +154,7 @@ Liczby poniżej pochodzą z naszych testów, głównie na kopii bazy instancji d
 - **Aktualizacja do 5.0 ma więcej kroków niż zwykle.** Instalacje lokalne, które utrzymuje serwis OmniMES, aktualizujemy sami w uzgodnionym oknie serwisowym, a instancje w chmurze aktualizuje producent. Przy instalacji utrzymywanej samodzielnie trzeba wziąć z nowej paczki m.in. nowy plik `omnimes/api/dockerfile`; pełna lista jest w sekcji 8.2 rozdziału Instalacja.
 - **Urządzenia MQTT działają jak dotąd,** ale broker odrzuca tematy, dla których konto nie ma reguły dostępu. Urządzenia publikujące poza przestrzenią Sparkplug B warto sprawdzić przed aktualizacją.
 - **Dawne ekrany zleceń są wyłączone.** Lista zleceń i stary harmonogram nie są już dostępne, a ich adresy prowadzą do modułu Produkcja.
+- **Nowy układ menu.** Historia zdarzeń nazywa się teraz Zdarzenia maszyn i razem z Alarmami jest w grupie Utrzymanie ruchu. Adres i uprawnienia zostają, a nowy układ widać po ponownym zalogowaniu.
 - **Konta kiosku.** Tablety i komputery na hali, na których OmniMES ma być stale zalogowany, trzeba oznaczyć jako konta kiosku. Inaczej sesja wygaśnie po 12 godzinach bez aktywności.
 - **Własne integracje z Redashem.** Integracje, które wywoływały Redasha z przeglądarki kluczem administratora, przestaną działać. Wykresy typu Custom (z własnym kodem JavaScript) Redash 26.9 domyślnie wyłącza; włącza się je wpisem w pliku `redash/.env`.
 - **Historia analiz AI.** Zwykłe konta zaczynają z pustą historią. Starsze analizy, które nie mają przypisanego autora, widzi administrator.
@@ -156,6 +165,6 @@ Pełna lista zmian wersji 5.0 jest na stronie [Lista zmian](/pl/lista-zmian), a 
 
 ## Źródła
 
-- OmniMES, dokumentacja: Instalacja (sekcje 8, 8.2, 14, 15, 16), Podręcznik administratora, Utrzymanie ruchu, Alarmy, Stan systemu, Konfiguracja ogólna (zakładki AI i E-mail), Połączenie z asystentem AI, Kalendarz produkcji, Panel operatora, Pomiary: dane i eksport CSV, Hala 3D, Cyberbezpieczeństwo i zgodność (CRA) — https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/wstep-XMdRkBsh9c
+- OmniMES, dokumentacja: Instalacja (sekcje 8, 8.2, 14, 15, 16), Podręcznik administratora, Utrzymanie ruchu, Zdarzenia maszyn, Alarmy, Stan systemu, Konfiguracja ogólna (zakładki AI i E-mail), Połączenie z asystentem AI, Kalendarz produkcji, Panel operatora, Pomiary: dane i eksport CSV, Hala 3D, Cyberbezpieczeństwo i zgodność (CRA) — https://docs.omnimes.com/s/1c357062-fcc1-4fbe-a88e-09285cda6e02/doc/wstep-XMdRkBsh9c
 - OmniMES, lista zmian, wersja 5.0 — https://www.omnimes.com/pl/lista-zmian
 - Pomiary wydajności: testy zespołu OmniMES na kopii bazy instancji demonstracyjnej, listopad 2026 (wyniki przed zmianą i po niej porównane wiersz po wierszu).

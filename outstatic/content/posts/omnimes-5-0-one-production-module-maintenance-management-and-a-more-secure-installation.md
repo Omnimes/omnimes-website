@@ -5,7 +5,7 @@ author:
   name: 'Martin Szerment'
   picture: '/images/1645307189660-I1OD.jpg'
 slug: 'omnimes-5-0-one-production-module-maintenance-management-and-a-more-secure-installation'
-description: 'In OmniMES 5.0, Production is the only order module and ERP orders land straight in it. A new Maintenance area with inspections and MTBF and MTTR from failure requests, alarms with Teams, Slack and escalation, one AI configuration, backups with a restore test and updates that roll back automatically. What changes, and what to check before you update.'
+description: 'In OmniMES 5.0, Production is the only order module and ERP orders land straight in it. A new Maintenance area with inspections, MTBF and MTTR from failure requests and a machine event timeline with notes, alarms with Teams, Slack and escalation, one AI configuration, backups with a restore test and updates that roll back automatically. What changes, and what to check before you update.'
 coverImage: '/images/post-omnimes-5-0/cover-omnimes-5-0-en.png'
 lang: 'en'
 tags: [{"value":"omniMES","label":"OmniMES"},{"value":"omniEnergy","label":"OmniEnergy"},{"value":"AI","label":"AI"},{"value":"cra","label":"CRA"}]
@@ -14,7 +14,7 @@ publishedAt: '2026-11-22T19:00:00.000Z'
 
 OmniMES 5.0 is available as of today. A new first digit means something specific for us: under our [release policy](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/installation-on-premise-TERmBAyCCe) it marks a version whose update needs extra steps. Version 5.0 has several of them at once: a new MQTT broker version with per-device accounts, a new Redash, a separate database account for every service, Python 3.12 in the API, and an update procedure that rolls itself back when something fails.
 
-For the people who use the system every day, three changes matter most. Production is now the only order module, and orders from the ERP go straight into it. A new Maintenance area covers failure requests from the operator panel, maintenance work orders, inspections by calendar or running hours, and MTBF and MTTR calculated from failure requests. Alarms gained rules on machine signals, notifications in Microsoft Teams and Slack, and escalation. Below we go through every area, and at the end we list what is worth checking before you update.
+For the people who use the system every day, three changes matter most. Production is now the only order module, and orders from the ERP go straight into it. A new Maintenance area covers failure requests from the operator panel, maintenance work orders, inspections by calendar or running hours, MTBF and MTTR calculated from failure requests, and Machine events: one timeline with notes on failures and stops. Alarms gained rules on machine signals, notifications in Microsoft Teams and Slack, and escalation. Below we go through every area, and at the end we list what is worth checking before you update.
 
 ## Production: one order module
 
@@ -49,7 +49,15 @@ Inspections are planned by calendar (every so many days, weeks or months) or by 
 
 MTBF and MTTR are calculated from failure requests with the same function as the telemetry-based indicators in *Analyse → Work time and OEE*, and *Compare with telemetry* shows both values side by side. The machine card puts requests, work orders, parts and inspections on one timeline. Three reports were added to the report catalogue: *Failures and MTBF/MTTR*, *Inspection compliance* and *Maintenance cost*.
 
-Module description: [Maintenance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/maintenance-mfXqYdhBue).
+### Machine events
+
+The old History events screen has become *Machine events* in the Maintenance group. It is one timeline for a machine, a line or a whole park: failures and stops with their reasons, alarms, failure requests and work orders, operator pauses and downtime reason changes. Failures and stops are the same segments as in OEE, with the same start, end, reason and loss type.
+
+On a failure, stop or alarm you can write a note: what happened, what was done, what to check next time. The same note appears on the timeline, on the downtime list in *Work time and OEE* and in the machine history on the Maintenance machine card, so nobody has to copy it. The *Without a note* filter combined with the *Failure* type lists the failures nobody has described, which makes a ready agenda for the shift briefing.
+
+From an event you can assign a downtime reason straight away (OEE and the Pareto are recalculated at once) or report a failure linked to that stop, even one that has already ended. The failure start in the request is then the start of the stop, so MTBF and MTTR from requests use the real failure time. Events with the current filters can be exported to CSV (up to 20,000 rows), and one view covers a period of up to 31 days. The Alarms screen has moved to the Maintenance group as well.
+
+Module description: [Maintenance](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/maintenance-mfXqYdhBue), [Machine events](https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/machine-events-Pdr1EQyq23).
 
 ## Alarms, notifications and system status
 
@@ -124,7 +132,7 @@ A new chapter of the documentation, the [Administrator guide](https://docs.omnim
 
 - **Updates that roll back automatically.** The script saves a copy of the settings and databases, builds the new images while the system keeps running, runs migrations in a separate container, and checks that the API responds, the databases are reachable, sign-in works and the web page opens. If any step fails, it returns to the previous images, settings and, when needed, the databases from the copy. When the new version changes the database, the API stops for the duration of the update, usually for 1–3 minutes.
 - **Backups.** The backup service makes an encrypted copy of the databases, system files and settings every day at 2:30, and of the telemetry once a week. It keeps 7 daily, 4 weekly and 12 monthly copies. Copies can also be sent off the server, to an SFTP server or to S3-compatible storage. Once a month the service checks that the databases can be restored from the latest copy. The result is shown in *System status*, and a failed or overdue backup raises an alarm.
-- **The `omnimes` admin tool.** One command for running the installation: `preflight` (checks CPU, memory, disk and ports before installing), `install`, `status`, `support-bundle` (a diagnostic package without passwords or keys), `update`, `rollback`, `backup`, `restore` and `uninstall`. Every command ends with a clear result, and commands that change the installation show a plan first and ask for confirmation.
+- **The `omnimes` admin tool.** One command for running the installation: `preflight` (checks CPU, memory, disk and ports before installing), `install`, `status`, `support-bundle` (a diagnostic package without passwords or keys), `update`, `rollback`, `backup`, `restore` and `uninstall`. Every command ends with a clear result, and commands that change the installation show a plan first and ask for confirmation. The tool speaks Polish or English: the language comes from the `--lang` option or the `OMNIMES_LANG` variable, and for a new installation from the system language.
 - **Monitoring.** The `/health` address reports the state of the databases, task queue, licence and stream. Every service has a Docker health check, and an unhealthy container restarts by itself (except the database and the broker).
 - **Code in images, configuration in the `.env` file.** Updates keep the files saved by the system: the report archive, OmniEnergy documents, attachments, work instructions and the ERP exchange folder.
 
@@ -146,6 +154,7 @@ The figures below come from our own tests, mostly on a copy of our demo instance
 - **Updating to 5.0 takes more steps than usual.** On-premise installations maintained by the OmniMES service team are updated by us in an agreed maintenance window, and cloud instances are updated by the vendor. If you maintain your installation yourself, take the new `omnimes/api/dockerfile` and the other files from the new package; the full list is in section 8.2 of the Installation chapter.
 - **MQTT devices keep working as before,** but the broker rejects topics for which the account has no access rule. Devices that publish outside the Sparkplug B namespace are worth checking before the update.
 - **The old order screens are switched off.** The List of orders and the old schedule are no longer available, and their addresses lead to the Production module.
+- **A new menu layout.** History events is now called Machine events and sits in the Maintenance group together with Alarms. The address and permissions stay the same, and the new layout appears after signing in again.
 - **Kiosk accounts.** Tablets and PCs on the shop floor where OmniMES should stay signed in must be marked as kiosk accounts. Otherwise the session expires after 12 hours of inactivity.
 - **Your own Redash integrations.** Integrations that called Redash from the browser with the admin key will stop working. Redash 26.9 disables Custom charts (with their own JavaScript code) by default; you enable them with a line in the `redash/.env` file.
 - **AI analysis history.** Regular accounts start with an empty history. Older analyses without an assigned author are visible to the administrator.
@@ -156,6 +165,6 @@ The full list of changes in version 5.0 is in the [changelog](/en/changelog), an
 
 ## Sources
 
-- OmniMES documentation: Installation (sections 8, 8.2, 14, 15, 16), Administrator guide, Maintenance, Alarms, System status, General configuration (AI and Email tabs), AI assistant connection, Production calendar, Operator panel, Measurements: data and CSV export, 3D Hall, Cybersecurity & Compliance (CRA) — https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/introduction-98dAKUj3hP
+- OmniMES documentation: Installation (sections 8, 8.2, 14, 15, 16), Administrator guide, Maintenance, Machine events, Alarms, System status, General configuration (AI and Email tabs), AI assistant connection, Production calendar, Operator panel, Measurements: data and CSV export, 3D Hall, Cybersecurity & Compliance (CRA) — https://docs.omnimes.com/s/cb8b19e0-ec6d-4e1a-8690-b0ddd67ad1cd/doc/introduction-98dAKUj3hP
 - OmniMES changelog, version 5.0 — https://www.omnimes.com/en/changelog
 - Performance figures: OmniMES team tests on a copy of the demo instance database, November 2026 (results before and after compared row by row).
