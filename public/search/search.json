@@ -1,5 +1,19 @@
 [
   {
+    "title": "OmniMES 5.0: jeden moduł produkcji, utrzymanie ruchu i bezpieczniejsza instalacja",
+    "slug": "omnimes-5-0-jeden-modul-produkcji-utrzymanie-ruchu-i-bezpieczniejsza-instalacja",
+    "description": "OmniMES 5.0: Produkcja jest jedynym modułem zleceń, a zlecenia z ERP trafiają prosto do niej. Dochodzi Utrzymanie ruchu z przeglądami oraz MTBF i MTTR ze zgłoszeń, alarmy z Teams, Slackiem i eskalacją, jedna konfiguracja AI, kopie zapasowe z testem odtworzenia i aktualizacja z automatycznym wycofaniem. Opisujemy zmiany i to, co sprawdzić przed aktualizacją.",
+    "lang": "pl",
+    "tags": "OmniMES, OmniEnergy, AI, CRA"
+  },
+  {
+    "title": "OmniMES 5.0: one production module, maintenance management and a more secure installation",
+    "slug": "omnimes-5-0-one-production-module-maintenance-management-and-a-more-secure-installation",
+    "description": "In OmniMES 5.0, Production is the only order module and ERP orders land straight in it. A new Maintenance area with inspections and MTBF and MTTR from failure requests, alarms with Teams, Slack and escalation, one AI configuration, backups with a restore test and updates that roll back automatically. What changes, and what to check before you update.",
+    "lang": "en",
+    "tags": "OmniMES, OmniEnergy, AI, CRA"
+  },
+  {
     "title": "Studio aplikacji w OmniMES: własne narzędzia produkcyjne budowane rozmową z Claude",
     "slug": "studio-aplikacji-w-omnimes-wlasne-narzedzia-produkcyjne-budowane-rozmowa-z-claude",
     "description": "OmniMES 4.9.0 wprowadza Studio aplikacji (wersja Beta). Kierownik produkcji, utrzymanie ruchu czy dział jakości opisują w rozmowie z Claude, czego potrzebują, a Claude buduje interaktywną aplikację na bieżących danych zakładu. Pokazujemy, jak to działa, dwa przykłady z liczbami, zasady bezpieczeństwa oraz to, kiedy wybrać aplikację, a kiedy pulpit BI.",
