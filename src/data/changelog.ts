@@ -8,6 +8,8 @@ export type ChangelogEntry = {
 
 export type Release = {
   version: string
+  /** Nazwa publiczna wydania X.Y.0, np. „OmniMES 5.0” (instalacje/POLITYKA_WYDAN.md, sekcja 1); version zostaje X.Y.Z. */
+  name?: string
   date: string
   entries: ChangelogEntry[]
 }
@@ -25,6 +27,298 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
+    {
+      version: "5.0.0",
+      name: "OmniMES 5.0",
+      date: "2026-11-22",
+      entries: [
+        {
+          category: "added",
+          scope: "Utrzymanie ruchu",
+          body: "Nowy moduł dla działu utrzymania ruchu. Operator zgłasza awarię z panelu operatora — ze zdjęciem i powiązaniem z przestojem — a technik prowadzi zlecenie serwisowe: status, przydział, czas pracy, części z kartoteki z rozchodem z magazynu, przyczynę i wykonane działania. Przeglądy planowe według kalendarza albo motogodzin same tworzą zlecenia. MTBF i MTTR policzysz ze zgłoszeń albo z telemetrii (przełącznik źródła w Analizie). Karta maszyny pokazuje jej historię, technik ma ekran „Moje zlecenia”, a do dyspozycji są trzy raporty utrzymania ruchu.",
+        },
+        {
+          category: "added",
+          scope: "Utrzymanie ruchu: zdarzenia maszyn",
+          body: "Dawna Historia zdarzeń to teraz „Zdarzenia maszyn” w sekcji Utrzymanie ruchu: jedna oś czasu maszyny, linii albo parku ze stanami, przestojami, alarmami, zgłoszeniami utrzymania ruchu i pauzami operatora. Przy awarii, postoju i alarmie dodasz notatkę, ze zdarzenia przypiszesz przyczynę przestoju albo zgłosisz awarię, a listę wyeksportujesz do CSV. Alarmy też są w sekcji Utrzymanie ruchu.",
+        },
+        {
+          category: "added",
+          scope: "Alarmy i powiadomienia",
+          body: "Nowy ekran Alarmy z regułami, listą alarmów i historią powiadomień. Reguły: brak danych z maszyny, postój maszyny dłuższy niż zadany czas oraz reguły procesowe na dowolnym sygnale — próg, zakres, zmiana w czasie albo stan — z histerezą i czasem trwania. Powiadomienia trafiają e-mailem, do dzwonka na górnym pasku, do Microsoft Teams albo Slacka. Reguła może działać tylko w czasie zmian, ma przypomnienia, wyciszenia i eskalację do 5 poziomów, którą zatrzymuje potwierdzenie alarmu z komentarzem. Po aktualizacji aktywna jest tylko reguła „Licencja wygasa” (dzwonek dla Administratorów) — pozostałe reguły zakładasz sam.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: alarmy odchylenia EnPI",
+          body: "Dwie nowe reguły alarmów: „Odchylenie EnPI od linii bazowej” (próg w %, kierunek, kilka kolejnych okresów — doba, tydzień, miesiąc albo zmiana) i „CUSUM EnPI” (próg w % albo kWh, opcjonalnie zmiana trendu) z wykresem CUSUM w szczegółach alarmu. Reguły liczą się po zakończeniu okresu.",
+        },
+        {
+          category: "added",
+          scope: "Produkcja: kalendarz produkcji",
+          body: "Produkcja → Kalendarz produkcji pokazuje zlecenia i operacje w widoku miesiąca, tygodnia i dnia — zaplanowane według planu, a trwające i zakończone według wykonania — z linią „teraz”, panelem „Teraz w produkcji” i filtrami parku, linii i zasobu. Zastępuje dawny ekran Podgląd → Harmonogram produkcji.",
+        },
+        {
+          category: "added",
+          scope: "Produkcja: korekta meldunku",
+          body: "Operator poprawia swój ostatni meldunek ilości w panelu w ustawionym oknie czasu (domyślnie 10 minut), a kierownik — każdy meldunek, po upływie okna z obowiązkowym powodem. Korekta przelicza etap, partię, zużycie i wyrób, trafia do historii zlecenia i Dziennika zdarzeń z wartościami przed i po, a ERP dostaje meldunek z różnicą.",
+        },
+        {
+          category: "added",
+          scope: "Produkcja: czas pracy operatorów",
+          body: "Operator zaczyna pracę na zleceniu kartą na stanowisku albo przyciskiem „Zacznij pracę”, a sesja kończy się przyciskiem, wylogowaniem, końcem zmiany z kalendarza albo końcem operacji. Roboczogodziny widać w zakładce „Operatorzy” zlecenia (z podziałem na osoby i etapy), w raporcie „Realizacja zleceń” i w meldunku zakończenia zlecenia dla ERP.",
+        },
+        {
+          category: "added",
+          scope: "Produkcja: instrukcje stanowiskowe",
+          body: "Wersjonowane instrukcje przy maszynie lub linii, wyrobie albo etapie marszruty, z załącznikami PDF, obrazami i filmami MP4 (Konfiguracja produkcji → Instrukcje stanowiskowe). Wersja przechodzi od szkicu przez zatwierdzenie (osobne uprawnienie) do zastąpienia, obowiązuje zawsze jedna, a wersje można porównać. W panelu operatora instrukcje są przy zadaniu, a przed startem etapu operator potwierdza, że zapoznał się z obowiązującą wersją.",
+        },
+        {
+          category: "added",
+          scope: "Produkcja: powiadomienia e-mail o zleceniach",
+          body: "Zlecenie ma listę odbiorców powiadomień (konta i adresy e-mail), a ustawienia modułu — domyślnych odbiorców. Przy starcie i zakończeniu zlecenia wychodzi wiadomość z ilościami, czasem, energią i linkiem, w języku konta odbiorcy (PL albo EN).",
+        },
+        {
+          category: "added",
+          scope: "Analiza: pomiary — dane i eksport CSV",
+          body: "Analiza → Pomiary ma dwie zakładki: „Wykres” (jak dotąd) i „Dane i eksport CSV” — tabelę pomiarów wybranych maszyn z agregacją (surowe, średnia, minimum, maksimum, ostatnia wartość w przedziałach od 1 minuty do 1 doby), w układzie długim albo szerokim, z wykresem z osią dla każdej jednostki. Eksport CSV idzie strumieniem, więc obejmuje także miliony wierszy (do 5 mln), w formacie dla polskiego Excela albo standardowym; każde pobranie trafia do Dziennika zdarzeń.",
+        },
+        {
+          category: "added",
+          scope: "Raporty: energia i stany maszyn",
+          body: "Nowy raport w katalogu raportów (sekcja Energia): wspólna oś czasu stanów maszyny i profilu energii (15 min, 1 h albo doba), energia jałowa, średnia moc w pracy i poza pracą, koszt i CO2. Raport pobierzesz jako PDF, wyślesz e-mailem albo ustawisz jako raport cykliczny.",
+        },
+        {
+          category: "added",
+          scope: "Hala 3D: modele z pliku .glb",
+          body: "W Hala 3D – ustawienia halę zaimportujesz z pliku glTF 2.0 (.glb, do 48 MB) — np. z programu CAD, z Blendera albo od producenta maszyny, także z kompresją Draco lub meshopt i teksturami KTX2 — i przypiszesz do parku, linii albo wybranych maszyn. Maszyny podpinasz do części modelu ręcznie (klik w model), automatycznie po nazwie albo przez asystenta AI, a podpięta część pokazuje stan maszyny. Każdą halę wyeksportujesz do pliku .glb, np. do poprawek w Blenderze.",
+        },
+        {
+          category: "added",
+          scope: "AI: jedna konfiguracja",
+          body: "Konfiguracja ogólna → AI zastępuje zakładki „Asystent AI” i „MCP (AI)”. Łączysz Claude (zalecany), dowolne API zgodne z OpenAI albo lokalny model Ollama — klucze są tylko do zapisu, a test połączenia i lista modeli przychodzą od dostawcy. Modele dobierasz do zadań: Szybki (zapytania i wykresy Redasha), Standardowy (analiza danych, pytania, audyt energii) i Zaawansowany (czat Studia aplikacji). Zakładka pokazuje zużycie z 30 dni i listę rzeczy do ustawienia. Aktualizacja przenosi dotychczasowe ustawienia AI.",
+        },
+        {
+          category: "added",
+          scope: "AI: asystent na uprawnieniach użytkownika",
+          body: "Menu użytkownika → „Połączenie z asystentem AI” daje osobisty token i gotowe rozszerzenie Claude Desktop. Asystent widzi i zmienia tylko to, do czego masz uprawnienia, a każda jego zmiana trafia do Dziennika zdarzeń z Twoim nazwiskiem. Tryb pracy wybierasz: zmiany od razu, propozycje do zatwierdzenia albo tylko odczyt. Ustawień, kont, uprawnień, tokenów, licencji ani Dziennika zdarzeń asystent nie zmienia. Gdy administrator włączy logowanie OAuth, a instalacja jest dostępna publicznie przez HTTPS, połączysz też claude.ai i ChatGPT, logując się kontem OmniMES.",
+        },
+        {
+          category: "added",
+          scope: "AI: propozycje zmian do zatwierdzenia",
+          body: "Ekran „Do zatwierdzenia” z licznikiem na górnym pasku zbiera zmiany zaproponowane przez asystenta AI i aplikacje w Claude. Zatwierdzenie wykonuje zmianę z uprawnieniami osoby zatwierdzającej i zostawia wpis w Dzienniku zdarzeń; nierozpatrzone propozycje wygasają po 7 dniach.",
+        },
+        {
+          category: "added",
+          scope: "Asystent AI (MCP): nowe narzędzia i gotowe scenariusze",
+          body: "Asystent ma nowe narzędzia: przyczyny przestojów, scenariusze i Gantt harmonogramu, symulacja planu, SPC i zdolność procesu oraz diagnostyka integracji ERP. Wskaźniki (OEE, dostępność, MTBF) bierze z tych samych obliczeń co ekrany. Gotowe polecenia: „Analiza zmiany”, „Plan na jutro”, „Reklamacja partii” i „Energia w miesiącu”. Usunięcie konfiguracji z czatu archiwizuje rekord, który można przywrócić.",
+        },
+        {
+          category: "added",
+          scope: "Studio aplikacji: aplikacje dostarczane z systemem",
+          body: "Studio aplikacji ma zakładkę „Z systemem”: aplikacje producenta z numerem wersji, aktualizowane razem z OmniMES, o ile nie zmieniono ich lokalnie. Nowe aplikacje: „Planista co-jeśli” — porównanie do 5 wariantów planu (postój zasobu, dodatkowa zmiana, priorytety, terminy) i propozycja do zatwierdzenia w Harmonogramie, która może wpisać postoje i dodatkowe zmiany do Kalendarza zasobów oraz zmienić priorytety i terminy zleceń; „Kreator mapowania ERP” — podpowiedź mapowania z przykładowego pliku CSV, JSON albo XML i diagnoza błędów importu; „Analiza SPC i zdolności procesu” — ranking cech według Cpk, karty X̄-R i I-MR z regułami Western Electric i histogram z tolerancjami. Aplikacje działają też w Claude.",
+        },
+        {
+          category: "added",
+          scope: "Jakość: ranking Cpk w SPC",
+          body: "Zakładka SPC ekranu Jakość ma ranking zdolności procesu (Cpk) i filtr linii albo zasobu dla wyników kontroli na etapach produkcji.",
+        },
+        {
+          category: "added",
+          scope: "Poczta: test wysyłki i dziennik wiadomości",
+          body: "Konfiguracja ogólna → E-mail pokazuje stan poczty (z ostrzeżeniem, gdy nie jest skonfigurowana), pozwala wybrać szyfrowanie (STARTTLS, SSL/TLS albo bez) i wysłać wiadomość testową z czytelnym opisem błędu, a tabela ostatnich wysyłek pokazuje, co wyszło. Wszystkie wiadomości — raporty, automatyzacje OmniEnergy, audyty energii, alarmy — idą jedną usługą, która po błędzie przejściowym ponawia wysyłkę. Bez konfiguracji poczty wysyłka ma status „pominięto” zamiast błędu.",
+        },
+        {
+          category: "added",
+          scope: "Licencja: przypomnienia i okres karencji",
+          body: "Administrator widzi baner 30, 14 i 7 dni przed końcem licencji i dostaje powiadomienie w dzwonku. Po wygaśnięciu system działa w pełni jeszcze przez okres karencji (domyślnie 14 dni, z banerem), a potem pokazuje komunikat z kontaktem zamiast pustych ekranów. Licznik dni do końca licencji liczy poprawnie.",
+        },
+        {
+          category: "added",
+          scope: "Administracja: stan systemu",
+          body: "Ekran Administracja → Stan systemu pokazuje w jednym miejscu API, bazę danych, kolejkę zadań, stream, broker, pocztę, dysk, kopię zapasową, licencję, serwer MCP, Redash i wersję, z odświeżaniem co 30 s. Reguły alarmów systemowych powiadamiają m.in. o braku danych ze streamu, zapełnionym dysku, nieudanej kopii zapasowej, problemach kolejki zadań i błędach poczty. Adres /health podaje stan dla monitoringu zewnętrznego, wszystkie usługi mają kontrole zdrowia Dockera, a niezdrowe kontenery (poza bazą i brokerem) uruchamiają się ponownie same.",
+        },
+        {
+          category: "added",
+          scope: "Instalacja: kopie zapasowe",
+          body: "Usługa kopii zapasowych robi codziennie o 2:30 zaszyfrowaną kopię baz, plików zapisanych przez system (raporty, dokumenty, załączniki, instrukcje) i ustawień instalacji, a telemetrii — raz w tygodniu. Przechowuje 7 kopii dziennych, 4 tygodniowe i 12 miesięcznych, może wysyłać kopię poza serwer (SFTP albo S3) i raz w miesiącu sprawdza, czy z najnowszej kopii da się odtworzyć bazy. Stan kopii widać na ekranie Stan systemu.",
+        },
+        {
+          category: "added",
+          scope: "Instalacja: aktualizacja z automatycznym wycofaniem",
+          body: "Aktualizacja robi kopię ustawień i baz, buduje nowe obrazy przy działającym systemie, wykonuje migracje przed podmianą kontenerów i sprawdza, czy system działa (API, bazy, logowanie, strona). Gdy któryś krok się nie powiedzie, sama wraca do poprzedniej wersji, razem z bazami. Przerwa przy zmianach w bazie trwa zwykle 1–3 minuty, a problem zauważony później cofnie polecenie omnimes rollback. Kod API i interfejsu jest częścią obrazów, a ustawienia instalacji są w pliku omnimes/.env.",
+        },
+        {
+          category: "added",
+          scope: "Instalacja: narzędzie administratora omnimes",
+          body: "Jedno polecenie dla Windows, Linuksa i macOS zamiast wielu skryptów: preflight (procesor, pamięć RAM, dysk i porty przed instalacją i aktualizacją), install, status, update, rollback, backup, restore, uninstall oraz support-bundle — paczka diagnostyczna dla serwisu bez haseł i kluczy. Polecenia, które zmieniają instalację, pokazują plan i proszą o potwierdzenie. Komunikaty są po polsku albo po angielsku (opcja --lang albo zmienna OMNIMES_LANG).",
+        },
+        {
+          category: "added",
+          scope: "Dokumentacja: podręcznik administratora",
+          body: "Nowy rozdział dokumentacji PL i EN dla administratora: bezpieczne uruchomienie, lista kontrolna bezpiecznej eksploatacji (hasła i konta, TLS, zapora i porty, kopie, aktualizacje, uprawnienia, tokeny, monitorowanie, reakcja na incydent), kopie i odtwarzanie, rozwiązywanie problemów, wycofanie z eksploatacji i informacje dla integratorów — według załącznika II Cyber Resilience Act.",
+        },
+        {
+          category: "changed",
+          scope: "Produkcja: jeden moduł zleceń",
+          body: "Produkcja jest jedynym modułem zleceń na każdej instalacji: aktualizacja ją włącza i chowa dawną Listę zleceń, stary Harmonogram i Konfigurację czasu pracy, a stare adresy prowadzą do nowych ekranów. Zlecenia z ERP są na liście „Zlecenia produkcyjne” z filtrem „Źródło: z ERP”, kafelkiem „Meldunki z błędem” i kolumnami opóźnienia i ostatniego meldunku; odbiorcę i priorytet zlecenia ERP przesyła jako pola mapowania. Czas pracy zasobów ustawiasz na jednym ekranie Kalendarz zasobów: zmiany dla zakładu, parku, linii albo maszyny, wyjątki i podgląd dostępności. Monitoring i analizy maszyn działają jak dotąd.",
+        },
+        {
+          category: "changed",
+          scope: "Raporty w jednym miejscu",
+          body: "Raporty mają trzy ekrany: „Wygeneruj raport” (katalog, razem z raportami produkcji), „Wygenerowane raporty” (archiwum) i „Raporty cykliczne” (dawny „Harmonogram automatyzacji” razem z subskrypcjami raportów produkcji). Raport zlecenia liczy się na module Produkcja.",
+        },
+        {
+          category: "changed",
+          scope: "OEE i czas pracy: jedno źródło liczb",
+          body: "OEE, dostępność, czas pracy i MTBF liczą się w jednym miejscu, więc ekrany, raporty i asystent AI pokazują te same wartości, a Analiza → „Czas pracy i OEE” to jeden ekran. Maszyna z kalendarzem zmian jest liczona według ISO 22400, maszyna bez kalendarza — jak dotąd. Próg mikroprzestojów ustawiasz w jednym miejscu (Ustawienia systemowe → Mikroprzestoje), partie są na jednej liście, a Kartoteka wyrobów ma kolor, cenę i stan minimalny.",
+        },
+        {
+          category: "changed",
+          scope: "Wydajność: raporty, pulpity i analizy AI w tle",
+          body: "Długie raporty, zrzuty pulpitów i analizy AI liczą się w tle z paskiem postępu — ekranu można dalej używać. Zrzut pulpitu Redasha trwa kilkanaście sekund zamiast kilku minut, pulpity Redasha ładują się szybciej, a serwer API obsługuje więcej żądań naraz.",
+        },
+        {
+          category: "changed",
+          scope: "Wydajność: dane pomiarowe",
+          body: "Najnowsze wartości sygnałów — dla pulpitów Redasha, asystenta AI, Studia aplikacji, Hali 3D i reguł procesowych alarmów — liczy baza danych zamiast serwera aplikacji: zapytanie po całej historii trwa ułamek sekundy zamiast kilkudziesięciu sekund i nie obciąża pamięci. Telemetria korzysta z kompresji kolumnowej TimescaleDB i nowego indeksu, dzięki czemu typowe zapytania są kilka do kilkudziesięciu razy szybsze przy tych samych wynikach. Odpowiedź z danymi BI ma limit 100 000 wierszy (zmienna OMNIMES_BI_MAX_ROWS).",
+        },
+        {
+          category: "changed",
+          scope: "Stream: bez utraty danych i pełny Sparkplug B",
+          body: "Usługa stream odbiera pomiary z potwierdzeniem (QoS 1) w trwałej sesji, a gdy baza jest niedostępna, zapisuje je w buforze na dysku i dopisuje później. Obsługuje pełny Sparkplug B (BIRTH i DEATH, aliasy, numerację seq i bdSeq, rebirth, wartości puste) i oznacza urządzenia offline. Ostatnia wartość sygnału nie jest nadpisywana starszą wiadomością, duplikaty są pomijane, a po restarcie albo podmianie brokera stream sam odnawia subskrypcję.",
+        },
+        {
+          category: "changed",
+          scope: "Nowe wersje platformy",
+          body: "API działa na Pythonie 3.12 i Django 5.2 LTS (wcześniej Python 3.9 i Django 3.2), broker MQTT to EMQX 5.8, pulpity — Redash 26.9, a baza telemetrii — TimescaleDB 2.31. Wersje obrazów i zależności są przypięte, więc każda instalacja danej wersji ma te same składniki.",
+        },
+        {
+          category: "changed",
+          scope: "Usunięte ekrany Panorama parku i kreator szablonu raportu",
+          body: "Nieużywane ekrany Panorama parku i kreator szablonu raportu (ukryte w menu) zostały usunięte. Szablony raportów działają jak dotąd.",
+        },
+        {
+          category: "fixed",
+          scope: "Zmiana czasu (marzec i październik)",
+          body: "Doby 23- i 25-godzinne liczą się poprawnie: przestój w podwójnej godzinie nie znika, zmiana nocna ma 7 albo 9 godzin zamiast zawsze 8, migawki zmian nie scalają się w jedną (także w zwykłe dni), ekran Czas pracy nie pokazuje ujemnego przestoju, a raport „Energia i stany maszyn” pokazuje wszystkie 25 godzin doby. Planowanie, traceability, prognozy, alarmy i sesje liczą czas trwania według rzeczywistego upływu czasu. Czas w bazie jest zapisywany w UTC, a aplikacja i API pokazują daty jak dotąd w czasie zakładu. Zapisane wcześniej OEE z dób zmiany czasu przeliczy na życzenie polecenie administratora.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: migawki EnPI i EnB",
+          body: "Wykres migawek EnPI działa (wcześniej kończył się błędem), oś czasu pokazuje środek okresu, a podpowiedź — okres od–do. Filtry dat list EnPI i EnB obejmują ostatni dzień zakresu. Okresy migawek zapisane wcześniej z przesunięciem o 1–2 godziny (np. 22:00 zamiast północy) poprawia jednorazowe polecenie administratora: najpierw pokazuje plan, zmienia po zatwierdzeniu i można je cofnąć.",
+        },
+        {
+          category: "fixed",
+          scope: "Wyszukiwanie na listach",
+          body: "Wyszukiwanie na listach — m.in. maszyn, linii, użytkowników i pozycji rejestru SEU — działa; wcześniej kończyło się błędem.",
+        },
+        {
+          category: "fixed",
+          scope: "Produkcja: bilans materiałów, OEE według wyrobu i partie",
+          body: "Bilans materiałów zlecenia i raport „Strata materiałowa” liczą normę ze wszystkich partii zlecenia (wcześniej przy kilku partiach strata wychodziła np. 200%). OEE według wyrobu wlicza ilości zameldowane przy zakończeniu etapu, zakładka Proces zamkniętej partii wyrobu pokazuje podsumowanie zamiast „Partia w toku”, a kolumna „Od kiedy” w Kwarantannie liczy dni kalendarzowe.",
+        },
+        {
+          category: "fixed",
+          scope: "Tłumaczenia i formaty",
+          body: "Teksty z serwera (Studio aplikacji, OmniEnergy, Dziennik zdarzeń, dane startowe) pojawiają się w języku interfejsu, liczby i daty — w formacie wybranego języka, a brakujące tłumaczenia i teksty wpisane na sztywno są uzupełnione w PL i EN. Część ekranów, np. zakładka AI, pokazywała w wersji produkcyjnej klucze zamiast tekstów. Formularze mają jednolity układ, a pola wyboru, które wyglądały na puste, pokazują wartości.",
+        },
+        {
+          category: "fixed",
+          scope: "Konfiguracja ogólna: „Zapisz”",
+          body: "Gdy pole w innej zakładce ma niepoprawną wartość, „Zapisz” przechodzi do tej zakładki, podświetla pole i pokazuje komunikat — wcześniej zapis po cichu nic nie robił.",
+        },
+        {
+          category: "fixed",
+          scope: "Stream: wartości logiczne w historii",
+          body: "Sygnały typu Boolean trafiają do historii pomiarów jako 1 i 0 — wcześniej zapisywały się bez wartości.",
+        },
+        {
+          category: "fixed",
+          scope: "Aktualizacja zachowuje pliki",
+          body: "Aktualizacja API nie usuwa archiwum raportów, dokumentów OmniEnergy, załączników jakości ani plików wymiany z ERP — leżą w osobnych wolumenach, a pierwsza aktualizacja przenosi je tam sama. Aktualizacja usługi stream zachowuje jej identyfikator i bufor pomiarów.",
+        },
+        {
+          category: "fixed",
+          scope: "Ponowne uruchomienie instalatora",
+          body: "Ponowne uruchomienie instalatora albo przebudowa (recreated_omnimes.bat) na działającej instalacji nie nadpisuje baz czystą bazą z paczki i nie zmienia haseł, kont MQTT ani kluczy — użytkownicy, maszyny, menu i ustawienia zostają. Przerwaną instalację instalator dokańcza.",
+        },
+        {
+          category: "security",
+          scope: "Logowanie i sesje",
+          body: "Po 5 nieudanych próbach w ciągu 15 minut konto blokuje się na 15 minut, przy kolejnych dłużej (do 24 h); działa też limit prób z jednego adresu IP, a konto odblokujesz na ekranie Użytkownicy. Hasło ma co najmniej 12 znaków i sprawdza je serwer. Każde logowanie to osobna sesja, która wygasa po 12 godzinach bezczynności albo po 7 dniach; zmiana hasła i „Wyloguj ze wszystkich urządzeń” kończą pozostałe sesje i tokeny asystenta AI. Konto stanowiska na hali oznaczasz jako „Konto kiosku” (sesja bez wygasania), a kod operatora i karta RFID w panelu mają własny limit prób.",
+        },
+        {
+          category: "security",
+          scope: "Nowa instalacja bez wspólnych sekretów",
+          body: "Czysta baza w paczce nie zawiera tokenów, haseł ani kluczy, klucze Redasha są losowe dla każdej instalacji, a administrator OmniMES zmienia hasło przy pierwszym logowaniu. Aktualizacja wypisuje, czy instalacja ma jeszcze klucze znane z dawnych paczek — ich wymianę wykonuje serwis OmniMES.",
+        },
+        {
+          category: "security",
+          scope: "Pliki tylko dla uprawnionych",
+          body: "Raporty, dokumenty OmniEnergy i załączniki pobierzesz tylko po zalogowaniu, z uprawnieniem do zasobu, albo podpisanym linkiem ważnym 10 minut; nowe pliki mają losowe nazwy. Zapisane wcześniej adresy /media/… przestają działać, a dokumenty OmniEnergy pobierają się zamiast otwierać w karcie przeglądarki.",
+        },
+        {
+          category: "security",
+          scope: "Ochrona treści w przeglądarce",
+          body: "Treści wpisywane przez użytkowników (raporty, opisy OmniEnergy, monitoring) są oczyszczane przed wyświetleniem, a serwer WWW wysyła nagłówki bezpieczeństwa, m.in. Content-Security-Policy. Wzory i filtry danych są odczytywane parserem, bez wykonywania kodu.",
+        },
+        {
+          category: "security",
+          scope: "Połączenia z adresami zewnętrznymi",
+          body: "Zrzuty pulpitów są pobierane wyłącznie z adresu Redasha z ustawień, a adresy dostawców AI, ERP i drukarek są sprawdzane przed połączeniem. Raport cykliczny z adresem pulpitu spoza Redasha z ustawień (np. po zmianie domeny) kończy się czytelnym komunikatem — wybierz pulpit ponownie.",
+        },
+        {
+          category: "security",
+          scope: "Redash bez hasła OmniMES",
+          body: "Przyciski Redasha logują jednorazowym linkiem, konto w Redashu ma losowe hasło, a zapisane wcześniej hasła OmniMES zostały usunięte. Klucz administratora Redasha zostaje na serwerze — pulpity i zapytania idą przez OmniMES z kontrolą uprawnień.",
+        },
+        {
+          category: "security",
+          scope: "Historia analiz AI",
+          body: "Każde konto widzi tylko swoje analizy AI; wszystkie widzi superuser i konto z modułem Ustawienia. Po aktualizacji zwykłe konta zaczynają z pustą historią, a wcześniejsze analizy widzi administrator.",
+        },
+        {
+          category: "security",
+          scope: "Broker MQTT: konta urządzeń i szyfrowanie",
+          body: "Broker MQTT sprawdza logowanie i uprawnienia do tematów w bazie OmniMES: każde konto ma uprawnienia do określonych tematów, a pozostałe tematy są zablokowane. Na nowym ekranie Konta MQTT zakładasz osobne konta bramek i urządzeń, a połączenie może być szyfrowane (TLS, port 8883). Nowe instalacje startują z TLS i kontami bramek, bez konta wspólnego. Po starcie brokera porty MQTT otwierają się dopiero, gdy logowanie i uprawnienia są gotowe, więc dane wysłane zaraz po połączeniu nie giną.",
+        },
+        {
+          category: "security",
+          scope: "Konta bazy danych usług",
+          body: "API, stream, broker i Redash łączą się z bazą osobnymi kontami z minimalnymi uprawnieniami zamiast konta administratora. Aktualizacja przełącza istniejące instalacje, sprawdza działanie i przy błędzie wraca do poprzedniego konta.",
+        },
+        {
+          category: "security",
+          scope: "Panele administracyjne tylko z serwera",
+          body: "Panel EMQX, Adminer i Ollama nasłuchują tylko na serwerze (127.0.0.1), a Adminer startuje wyłącznie na żądanie. Nowe instalacje działają w trybie bezpiecznym API (dozwolone adresy i CORS z adresu instalacji, bez trybu debugowania) i wydają dane BI tylko z tokenem. Opis API (Swagger, ReDoc) jest dostępny po zalogowaniu.",
+        },
+        {
+          category: "security",
+          scope: "Zależności, SBOM i skan podatności",
+          body: "Zależności są zaktualizowane, a wersje obrazów i pakietów przypięte. Każde wydanie ma wykaz komponentów SBOM (CycloneDX) dla API, interfejsu www, streamu i serwera MCP, przechodzi skan podatności — podatność krytyczna albo wysoka bez udokumentowanej oceny zatrzymuje wydanie — i kontrolę, czy paczka nie zawiera sekretów.",
+        },
+        {
+          category: "changed",
+          scope: "Aktualizacja do 5.0: z której wersji",
+          body: "Do OmniMES 5.0 aktualizujesz bezpośrednio z wersji 4.5.1 i nowszych, bez wersji pośrednich. Wersje 4.1.0–4.5.0 aktualizujesz z pomocą serwisu OmniMES, a wersje 4.0.0 i starsze (baza MongoDB) wymagają najpierw przeniesienia danych na PostgreSQL z TimescaleDB.",
+        },
+        {
+          category: "changed",
+          scope: "Aktualizacja do 5.0: przed aktualizacją",
+          body: "Skopiuj z nowej paczki katalogi i skrypty wymienione w instrukcji (rozdział Instalacja, sekcja 8.2) — API na Pythonie 3.12 nie wystartuje ze starym plikiem omnimes/api/dockerfile. Wymagany jest Docker Compose v2 albo v1 w wersji 1.29 lub nowszej; klucza licencji nie trzeba wymieniać. Własne zmiany w docker-compose.yaml przenieś do docker-compose.override.yaml, bo aktualizacja zastępuje ten plik wersją z paczki. Sprawdź własne integracje, które wołały Redasha bezpośrednio z przeglądarki (przestaną działać), i urządzenia publikujące poza tematami spBv1.0/ i omni/raw/ — broker domyślnie je blokuje.",
+        },
+        {
+          category: "changed",
+          scope: "Aktualizacja do 5.0: przebieg",
+          body: "Aktualizacja API przenosi w tym samym przebiegu bazę na TimescaleDB 2.31, Redasha na 26.9 i broker na EMQX 5, z kopią i automatycznym wycofaniem, oraz przełącza usługi na osobne konta bazy danych. Broker jest niedostępny przez kilkanaście sekund, bramki i usługa stream łączą się ponownie same, a skrypt sprawdza, czy pomiary znów docierają — jeśli nie, wraca do poprzedniej wersji razem z brokerem. W zaktualizowanej instalacji konto wspólne MQTT i port 1883 działają jak dotąd, więc bramki nie wymagają zmian.",
+        },
+        {
+          category: "changed",
+          scope: "Aktualizacja do 5.0: po aktualizacji",
+          body: "Zapisz poza serwerem klucz kopii zapasowych omnimes/konfiguracja/kopie_age.key — bez niego kopii nie da się odtworzyć. Konta stanowisk na hali (np. tablety z panelem operatora) oznacz jako „Konto kiosku”, bo pozostałe sesje wygasają po 12 godzinach bezczynności. Wyślij wiadomość testową z zakładki E-mail — ustawienia szyfrowania poczty są teraz respektowane. Jednorazowo uruchom korektę okresów migawek EnB i EnPI (najpierw plan). Panele administracyjne zamyka pełna odbudowa w oknie serwisowym. Wspólny token MCP zapisany w instalacji działa dalej, ale serwer MCP nie przyjmuje już połączeń bez tokenu.",
+        },
+      ],
+    },
     {
       version: "4.14.0",
       date: "2026-11-20",
@@ -756,6 +1050,298 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "5.0.0",
+      name: "OmniMES 5.0",
+      date: "2026-11-22",
+      entries: [
+        {
+          category: "added",
+          scope: "Maintenance",
+          body: "A new module for the maintenance team. The operator reports a breakdown from the operator panel — with a photo and a link to the downtime — and the technician runs a work order: status, assignment, labour time, spare parts from the item master issued from stock, cause and actions taken. Planned inspections by calendar or operating hours create work orders automatically. MTBF and MTTR can be calculated from breakdown reports or from telemetry (source switch in Analysis). The machine card shows its history, technicians have a “My work orders” screen, and there are three maintenance reports.",
+        },
+        {
+          category: "added",
+          scope: "Maintenance: machine events",
+          body: "The former Event history is now “Machine events” in the Maintenance section: one timeline per machine, line or park with states, downtimes, alarms, maintenance reports and operator pauses. You can add a note to a breakdown, downtime or alarm, assign a downtime reason or report a breakdown straight from the event, and export the list to CSV. Alarms have also moved to the Maintenance section.",
+        },
+        {
+          category: "added",
+          scope: "Alarms and notifications",
+          body: "A new Alarms screen with rules, an alarm list and notification history. Rules: no data from a machine, machine stopped for longer than a set time, and process rules on any signal — threshold, range, rate of change or state — with hysteresis and duration. Notifications go by email, to the bell in the top bar, to Microsoft Teams or to Slack. A rule can be limited to shift time and has reminders, silencing and escalation up to 5 levels, which stops when someone acknowledges the alarm with a comment. After the update only the “License expires” rule is active (bell notification for Administrators) — you set up the other rules yourself.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: EnPI deviation alarms",
+          body: "Two new alarm rules: “EnPI deviation from baseline” (threshold in %, direction, several consecutive periods — day, week, month or shift) and “EnPI CUSUM” (threshold in % or kWh, optionally a trend change), with a CUSUM chart in the alarm details. The rules are evaluated once the period has ended.",
+        },
+        {
+          category: "added",
+          scope: "Production: production calendar",
+          body: "Production → Production calendar shows orders and operations in month, week and day views — planned ones according to the plan, running and finished ones according to actual execution — with a “now” line, a “Now in production” panel and park, line and resource filters. It replaces the former Overview → Production schedule screen.",
+        },
+        {
+          category: "added",
+          scope: "Production: correcting a quantity report",
+          body: "The operator can correct their last quantity report in the panel within a set time window (10 minutes by default), and a supervisor can correct any report — after the window, with a mandatory reason. The correction recalculates the stage, lot, consumption and finished product, is recorded in the order history and the Event log with before and after values, and ERP receives a report with the difference.",
+        },
+        {
+          category: "added",
+          scope: "Production: operator working time",
+          body: "The operator starts work on an order with their card at the workstation or with the “Start work” button; the session ends with a button, logout, the end of the shift from the calendar or the end of the operation. Labour hours are shown in the order’s “Operators” tab (split by person and stage), in the order execution report and in the order completion message to ERP.",
+        },
+        {
+          category: "added",
+          scope: "Production: work instructions",
+          body: "Versioned work instructions attached to a machine or line, a product or a routing stage, with PDF, image and MP4 video attachments (Production configuration → Work instructions). A version goes from draft through approval (a separate permission) to superseded, exactly one version is in force, and versions can be compared. In the operator panel the instructions are shown with the task, and before starting a stage the operator confirms they have read the version in force.",
+        },
+        {
+          category: "added",
+          scope: "Production: order email notifications",
+          body: "An order has a list of notification recipients (accounts and email addresses), and the module settings hold default recipients. When an order starts and when it finishes, a message with quantities, time, energy and a link is sent in the recipient’s account language (PL or EN).",
+        },
+        {
+          category: "added",
+          scope: "Analysis: measurements — data and CSV export",
+          body: "Analysis → Measurements has two tabs: “Chart” (as before) and “Data and CSV export” — a table of measurements for the selected machines with aggregation (raw, average, minimum, maximum, last value in buckets from 1 minute to 1 day), in long or wide layout, with a chart that has an axis for each unit. The CSV export is streamed, so it also handles millions of rows (up to 5 million), in Polish Excel format or standard format; every download is recorded in the Event log.",
+        },
+        {
+          category: "added",
+          scope: "Reports: energy and machine states",
+          body: "A new report in the report catalogue (Energy section): a shared timeline of machine states and the energy profile (15 min, 1 h or 1 day), idle energy, average power while running and while not running, cost and CO2. Download it as PDF, send it by email or set it up as a recurring report.",
+        },
+        {
+          category: "added",
+          scope: "3D Hall: models from .glb files",
+          body: "In 3D Hall settings you can import a hall from a glTF 2.0 file (.glb, up to 48 MB) — e.g. from a CAD program, from Blender or from a machine manufacturer, including Draco or meshopt compression and KTX2 textures — and assign it to a park, lines or selected machines. Machines are linked to parts of the model manually (click on the model), automatically by name or by the AI assistant, and a linked part shows the machine state. Any hall can be exported to a .glb file, e.g. for edits in Blender.",
+        },
+        {
+          category: "added",
+          scope: "AI: one configuration",
+          body: "General configuration → AI replaces the “AI assistant” and “MCP (AI)” tabs. Connect Claude (recommended), any OpenAI-compatible API or a local Ollama model — keys are write-only, and the connection test and model list come from the provider. Models are matched to tasks: Fast (Redash queries and charts), Standard (data analysis, questions, energy audit) and Advanced (App Studio chat). The tab shows 30-day usage and a list of things still to set up. The update carries over your existing AI settings.",
+        },
+        {
+          category: "added",
+          scope: "AI: an assistant with the user’s permissions",
+          body: "User menu → “AI assistant connection” gives you a personal token and a ready-made Claude Desktop extension. The assistant sees and changes only what you have permission for, and each change it makes is recorded in the Event log under your name. You choose the mode: apply changes immediately, as proposals for approval, or read-only. The assistant never changes settings, accounts, permissions, tokens, the license or the Event log. When the administrator enables OAuth login and the installation is publicly reachable over HTTPS, you can also connect claude.ai and ChatGPT by signing in with your OmniMES account.",
+        },
+        {
+          category: "added",
+          scope: "AI: change proposals for approval",
+          body: "The “Pending approval” screen, with a counter in the top bar, collects changes proposed by the AI assistant and by apps in Claude. Approval applies the change with the approver’s permissions and leaves an entry in the Event log; proposals not handled within 7 days expire.",
+        },
+        {
+          category: "added",
+          scope: "AI assistant (MCP): new tools and ready-made scenarios",
+          body: "The assistant has new tools: downtime reasons, schedule scenarios and Gantt, plan simulation, SPC and process capability, and ERP integration diagnostics. It takes KPIs (OEE, availability, MTBF) from the same calculations as the screens. Ready-made prompts cover shift analysis, tomorrow’s plan, a lot complaint and energy for the month. Deleting configuration from the chat archives the record, which can be restored.",
+        },
+        {
+          category: "added",
+          scope: "App Studio: apps shipped with the system",
+          body: "App Studio has a “Built-in” tab: vendor apps with a version number that are updated together with OmniMES unless they were changed locally. New apps: “What-if planner” — compares up to 5 plan variants (resource downtime, extra shift, priorities, due dates) and creates a proposal for approval in the Schedule, which can add the downtimes and extra shifts to the Resource calendar and change order priorities and due dates; “ERP mapping wizard” — suggests the mapping from a sample CSV, JSON or XML file and diagnoses import errors; “SPC and process capability” — ranking of characteristics by Cpk, X̄-R and I-MR charts with Western Electric rules, and a histogram with tolerances. The apps also work in Claude.",
+        },
+        {
+          category: "added",
+          scope: "Quality: Cpk ranking in SPC",
+          body: "The SPC tab of the Quality screen has a process capability (Cpk) ranking and a line or resource filter for inspection results from production stages.",
+        },
+        {
+          category: "added",
+          scope: "Email: test message and send log",
+          body: "General configuration → Email shows the mail status (with a warning when it is not configured), lets you choose encryption (STARTTLS, SSL/TLS or none) and send a test message with a clear error description, and a table of recent messages shows what was sent. All messages — reports, OmniEnergy automations, energy audits, alarms — go through one service that retries after a temporary error. Without a mail configuration a message gets the status “skipped” instead of an error.",
+        },
+        {
+          category: "added",
+          scope: "License: reminders and grace period",
+          body: "The administrator sees a banner 30, 14 and 7 days before the license ends and gets a bell notification. After expiry the system keeps working fully during a grace period (14 days by default, with a banner), and then shows a message with contact details instead of empty screens. The countdown of days left on the license is now correct.",
+        },
+        {
+          category: "added",
+          scope: "Administration: system status",
+          body: "The Administration → System status screen shows the API, database, task queue, stream, broker, mail, disk, backup, license, MCP server, Redash and version in one place, refreshed every 30 s. System alarm rules notify you about, among other things, no data from the stream, a full disk, a failed backup, task queue problems and mail errors. The /health address reports the status for external monitoring, all services have Docker health checks, and unhealthy containers (except the database and the broker) restart automatically.",
+        },
+        {
+          category: "added",
+          scope: "Installation: backups",
+          body: "The backup service makes an encrypted backup of the databases, files saved by the system (reports, documents, attachments, instructions) and installation settings every day at 2:30, and of telemetry once a week. It keeps 7 daily, 4 weekly and 12 monthly backups, can send a copy off the server (SFTP or S3) and once a month checks that the databases can be restored from the latest backup. The backup status is shown on the System status screen.",
+        },
+        {
+          category: "added",
+          scope: "Installation: update with automatic rollback",
+          body: "The update backs up settings and databases, builds the new images while the system keeps running, runs migrations before swapping containers and checks that the system works (API, databases, login, web page). If any step fails, it returns to the previous version on its own, including the databases. The break during database changes is usually 1–3 minutes, and a problem noticed later is undone with omnimes rollback. The API and interface code is part of the images, and installation settings are in the omnimes/.env file.",
+        },
+        {
+          category: "added",
+          scope: "Installation: the omnimes administration tool",
+          body: "One command for Windows, Linux and macOS instead of many scripts: preflight (CPU, RAM, disk and ports before installation and update), install, status, update, rollback, backup, restore, uninstall and support-bundle — a diagnostic package for support without passwords or keys. Commands that change the installation show a plan and ask for confirmation. Messages are in Polish or English (the --lang option or the OMNIMES_LANG variable).",
+        },
+        {
+          category: "added",
+          scope: "Documentation: administrator manual",
+          body: "A new chapter of the PL and EN documentation for administrators: secure start-up, a checklist for secure operation (passwords and accounts, TLS, firewall and ports, backups, updates, permissions, tokens, monitoring, incident response), backup and restore, troubleshooting, decommissioning and information for integrators — following Annex II of the Cyber Resilience Act.",
+        },
+        {
+          category: "changed",
+          scope: "Production: one order module",
+          body: "Production is the only order module on every installation: the update turns it on and hides the former Order list, the old Schedule and Working time configuration, and old addresses lead to the new screens. Orders from ERP are on the “Production orders” list with the “Source: from ERP” filter, a “Failed reports” tile and columns for delay and the last report; ERP sends the customer and priority of an order as mapping fields. Resource working time is set on a single Resource calendar screen: shifts for the plant, park, line or machine, exceptions and an availability preview. Machine monitoring and analyses work as before.",
+        },
+        {
+          category: "changed",
+          scope: "Reports in one place",
+          body: "Reports have three screens: “Generate report” (the catalogue, including production reports), “Generated reports” (the archive) and “Recurring reports” (the former “Automation schedule” together with production report subscriptions). The order report is calculated from the Production module.",
+        },
+        {
+          category: "changed",
+          scope: "OEE and working time: one source of figures",
+          body: "OEE, availability, working time and MTBF are calculated in one place, so screens, reports and the AI assistant show the same values, and Analysis → “Work time and OEE” is a single screen. A machine with a shift calendar is calculated according to ISO 22400, a machine without a calendar as before. The micro-stop threshold is set in one place (System settings → Micro-stops), lots are on a single list, and the Item master has colour, price and minimum stock.",
+        },
+        {
+          category: "changed",
+          scope: "Performance: reports, dashboards and AI analyses in the background",
+          body: "Long reports, dashboard snapshots and AI analyses run in the background with a progress bar — you can keep using the screen. A Redash dashboard snapshot takes a dozen or so seconds instead of several minutes, Redash dashboards load faster, and the API server handles more requests at once.",
+        },
+        {
+          category: "changed",
+          scope: "Performance: measurement data",
+          body: "The latest signal values — for Redash dashboards, the AI assistant, App Studio, the 3D Hall and process alarm rules — are calculated by the database instead of the application server: a query over the whole history takes a fraction of a second instead of tens of seconds and does not load memory. Telemetry uses TimescaleDB columnstore compression and a new index, so typical queries are several to several dozen times faster with the same results. A BI data response is limited to 100,000 rows (the OMNIMES_BI_MAX_ROWS variable).",
+        },
+        {
+          category: "changed",
+          scope: "Stream: no data loss and full Sparkplug B",
+          body: "The stream service receives measurements with acknowledgement (QoS 1) in a persistent session, and when the database is unavailable it keeps them in a buffer on disk and writes them later. It supports full Sparkplug B (BIRTH and DEATH, aliases, seq and bdSeq numbering, rebirth, null values) and marks devices as offline. The latest value of a signal is not overwritten by an older message, duplicates are skipped, and after a broker restart or replacement the stream renews its subscription on its own.",
+        },
+        {
+          category: "changed",
+          scope: "New platform versions",
+          body: "The API runs on Python 3.12 and Django 5.2 LTS (previously Python 3.9 and Django 3.2), the MQTT broker is EMQX 5.8, dashboards run on Redash 26.9 and the telemetry database on TimescaleDB 2.31. Image and dependency versions are pinned, so every installation of a given version has the same components.",
+        },
+        {
+          category: "changed",
+          scope: "Park panorama and report template wizard removed",
+          body: "The unused Park panorama and report template wizard screens (hidden in the menu) have been removed. Report templates work as before.",
+        },
+        {
+          category: "fixed",
+          scope: "Daylight saving time changes (March and October)",
+          body: "23- and 25-hour days are calculated correctly: downtime in the repeated hour no longer disappears, the night shift has 7 or 9 hours instead of always 8, shift snapshots no longer merge into one (also on ordinary days), the Work time screen no longer shows negative downtime, and the “Energy and machine states” report shows all 25 hours of the day. Planning, traceability, forecasts, alarms and sessions calculate durations by actual elapsed time. Time is stored in the database in UTC, while the application and the API show dates in plant time as before. OEE saved earlier for DST change days can be recalculated on request with an administrator command.",
+        },
+        {
+          category: "fixed",
+          scope: "OmniEnergy: EnPI and EnB snapshots",
+          body: "The EnPI snapshot chart works (it used to end with an error), the time axis shows the middle of the period and the tooltip shows the period from–to. Date filters on the EnPI and EnB lists include the last day of the range. Snapshot periods saved earlier with a 1–2 hour shift (e.g. 22:00 instead of midnight) are corrected by a one-off administrator command: it shows a plan first, changes data only after confirmation and can be undone.",
+        },
+        {
+          category: "fixed",
+          scope: "Search on lists",
+          body: "Search on lists — including machines, lines, users and SEU register items — works; previously it ended with an error.",
+        },
+        {
+          category: "fixed",
+          scope: "Production: material balance, OEE by product and lots",
+          body: "The order material balance and the material loss report calculate the standard from all lots of the order (previously, with several lots, the loss came out at e.g. 200%). OEE by product includes quantities reported when a stage is finished, the Process tab of a closed product lot shows the summary instead of “Lot in progress”, and the “since” column in Quarantine counts calendar days.",
+        },
+        {
+          category: "fixed",
+          scope: "Translations and formats",
+          body: "Texts coming from the server (App Studio, OmniEnergy, Event log, start-up data) appear in the interface language, numbers and dates use the format of the selected language, and missing translations and hard-coded texts have been completed in PL and EN. Some screens, e.g. the AI tab, showed keys instead of texts in the production build. Forms have a consistent layout, and selection fields that looked empty show their values.",
+        },
+        {
+          category: "fixed",
+          scope: "General configuration: “Save”",
+          body: "When a field on another tab has an invalid value, “Save” switches to that tab, highlights the field and shows a message — previously saving silently did nothing.",
+        },
+        {
+          category: "fixed",
+          scope: "Stream: Boolean values in history",
+          body: "Boolean signals are stored in measurement history as 1 and 0 — previously they were saved without a value.",
+        },
+        {
+          category: "fixed",
+          scope: "Updates keep files",
+          body: "An API update no longer deletes the report archive, OmniEnergy documents, quality attachments or ERP exchange files — they are kept in separate volumes, and the first update moves them there automatically. A stream service update keeps its identifier and measurement buffer.",
+        },
+        {
+          category: "fixed",
+          scope: "Running the installer again",
+          body: "Running the installer again or rebuilding (recreated_omnimes.bat) on a working installation no longer overwrites the databases with the clean database from the package and does not change passwords, MQTT accounts or keys — users, machines, menus and settings stay. An interrupted installation is completed by the installer.",
+        },
+        {
+          category: "security",
+          scope: "Login and sessions",
+          body: "After 5 failed attempts within 15 minutes an account is locked for 15 minutes, and longer after further attempts (up to 24 h); there is also a limit on attempts from one IP address, and you unlock an account on the Users screen. A password has at least 12 characters and is checked by the server. Each login is a separate session that expires after 12 hours of inactivity or after 7 days; a password change and “Sign out from all devices” end the other sessions and AI assistant tokens. A shared shop floor workstation account is marked as a “Kiosk account” (session without expiry), and the operator code and RFID card in the panel have their own attempt limit.",
+        },
+        {
+          category: "security",
+          scope: "New installations without shared secrets",
+          body: "The clean database in the package contains no tokens, passwords or keys, Redash keys are random for each installation, and the OmniMES administrator changes the password at first login. The update reports whether the installation still has keys known from older packages — support replaces them.",
+        },
+        {
+          category: "security",
+          scope: "Files only for authorised users",
+          body: "Reports, OmniEnergy documents and attachments can be downloaded only after logging in, with permission for the resource, or with a signed link valid for 10 minutes; new files get random names. Previously saved /media/… addresses stop working, and OmniEnergy documents are downloaded instead of opening in a browser tab.",
+        },
+        {
+          category: "security",
+          scope: "Content protection in the browser",
+          body: "Content entered by users (reports, OmniEnergy descriptions, monitoring) is sanitised before display, and the web server sends security headers, including Content-Security-Policy. Formulas and data filters are read by a parser without executing code.",
+        },
+        {
+          category: "security",
+          scope: "Connections to external addresses",
+          body: "Dashboard snapshots are taken only from the Redash address in the settings, and AI provider, ERP and printer addresses are checked before connecting. A recurring report with a dashboard address outside the configured Redash (e.g. after a domain change) ends with a clear message — select the dashboard again.",
+        },
+        {
+          category: "security",
+          scope: "Redash without the OmniMES password",
+          body: "Redash buttons log in with a one-time link, the Redash account has a random password, and previously stored OmniMES passwords have been removed. The Redash administrator key stays on the server — dashboards and queries go through OmniMES with permission checks.",
+        },
+        {
+          category: "security",
+          scope: "AI analysis history",
+          body: "Each account sees only its own AI analyses; a superuser and accounts with the Settings module see all of them. After the update regular accounts start with an empty history, and earlier analyses are visible to the administrator.",
+        },
+        {
+          category: "security",
+          scope: "MQTT broker: device accounts and encryption",
+          body: "The MQTT broker checks logins and topic permissions in the OmniMES database: each account has permissions for specific topics, and other topics are blocked. On the new MQTT accounts screen you create separate accounts for gateways and devices, and the connection can be encrypted (TLS, port 8883). New installations start with TLS and gateway accounts, without a shared account. After the broker starts, the MQTT ports open only once logins and permissions are ready, so data sent right after connecting is not lost.",
+        },
+        {
+          category: "security",
+          scope: "Database accounts for services",
+          body: "The API, stream, broker and Redash connect to the database with separate accounts with minimal permissions instead of the administrator account. The update switches existing installations, checks that everything works and returns to the previous account on error.",
+        },
+        {
+          category: "security",
+          scope: "Administration panels only from the server",
+          body: "The EMQX dashboard, Adminer and Ollama listen only on the server (127.0.0.1), and Adminer starts only on demand. New installations run the API in secure mode (allowed addresses and CORS from the installation address, no debug mode) and serve BI data only with a token. The API description (Swagger, ReDoc) is available after logging in.",
+        },
+        {
+          category: "security",
+          scope: "Dependencies, SBOM and vulnerability scan",
+          body: "Dependencies are updated, and image and package versions are pinned. Every release has an SBOM (CycloneDX) for the API, web interface, stream and MCP server, goes through a vulnerability scan — a critical or high vulnerability without a documented assessment stops the release — and a check that the package contains no secrets.",
+        },
+        {
+          category: "changed",
+          scope: "Updating to 5.0: from which version",
+          body: "You can update to OmniMES 5.0 directly from version 4.5.1 and later, without intermediate versions. Versions 4.1.0–4.5.0 are updated with the help of OmniMES support, and versions 4.0.0 and older (MongoDB database) first need their data moved to PostgreSQL with TimescaleDB.",
+        },
+        {
+          category: "changed",
+          scope: "Updating to 5.0: before the update",
+          body: "Copy the directories and scripts listed in the manual (Installation chapter, section 8.2) from the new package — the API on Python 3.12 will not start with the old omnimes/api/dockerfile. Docker Compose v2 or v1 version 1.29 or later is required; the license key does not need to be replaced. Move your own changes in docker-compose.yaml to docker-compose.override.yaml, because the update replaces that file with the version from the package. Check your own integrations that called Redash directly from the browser (they will stop working) and devices publishing outside the spBv1.0/ and omni/raw/ topics — the broker blocks them by default.",
+        },
+        {
+          category: "changed",
+          scope: "Updating to 5.0: what happens",
+          body: "In the same run, the API update moves the database to TimescaleDB 2.31, Redash to 26.9 and the broker to EMQX 5, with a backup and automatic rollback, and switches the services to separate database accounts. The broker is unavailable for a dozen or so seconds, gateways and the stream service reconnect on their own, and the script checks that measurements are arriving again — if not, it returns to the previous version together with the broker. In an updated installation the shared MQTT account and port 1883 work as before, so gateways need no changes.",
+        },
+        {
+          category: "changed",
+          scope: "Updating to 5.0: after the update",
+          body: "Store the backup key omnimes/konfiguracja/kopie_age.key outside the server — without it backups cannot be restored. Mark shop floor workstation accounts (e.g. tablets with the operator panel) as a “Kiosk account”, because other sessions expire after 12 hours of inactivity. Send a test message from the Email tab — mail encryption settings are now respected. Run the EnB and EnPI snapshot period correction once (plan first). Administration panels are closed by a full rebuild in a service window. A shared MCP token saved in the installation keeps working, but the MCP server no longer accepts connections without a token.",
+        },
+      ],
+    },
     {
       version: "4.14.0",
       date: "2026-11-20",
