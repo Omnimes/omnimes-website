@@ -789,11 +789,11 @@
     "exitFullscreen": "Zamknij pełny ekran"
   },
   "PromoVideo": {
-    "smallSubtitle": "Film · 1:09",
-    "heading": "OmniMES w 69 sekund",
-    "description": "Dane z maszyn, hologram 3D, OmniEnergy i ISO 50001, asystent AI i wdrożenie w chmurze — na prawdziwych widokach z wersji demonstracyjnej.",
-    "aria": "Film o systemie OmniMES (1:09)",
-    "play": "Odtwórz film o OmniMES"
+    "smallSubtitle": "Film · 0:56",
+    "heading": "OmniMES 5.0 w 56 sekund",
+    "description": "Produkcja i zlecenia z ERP, utrzymanie ruchu, zdarzenia i alarmy, Hala 3D oraz aplikacje MCP — na prawdziwych widokach z wersji 5.0.",
+    "aria": "Film o systemie OmniMES 5.0 (0:56)",
+    "play": "Odtwórz film o OmniMES 5.0"
   },
   "McpSpotlight": {
     "badge": "Nowość od wersji 4.3",

@@ -781,11 +781,11 @@
     "exitFullscreen": "Exit full screen"
   },
   "PromoVideo": {
-    "smallSubtitle": "Video · 1:09",
-    "heading": "OmniMES in 69 seconds",
-    "description": "Machine data, the 3D hologram, OmniEnergy and ISO 50001, the AI assistant and cloud deployment — shown on real screens from the OmniMES demo.",
-    "aria": "Video about the OmniMES system (1:09)",
-    "play": "Play the OmniMES video"
+    "smallSubtitle": "Video · 0:56",
+    "heading": "OmniMES 5.0 in 56 seconds",
+    "description": "Production and ERP orders, maintenance, events and alarms, the 3D Hall and MCP Apps — shown on real screens from version 5.0.",
+    "aria": "Video about OmniMES 5.0 (0:56)",
+    "play": "Play the OmniMES 5.0 video"
   },
   "McpSpotlight": {
     "badge": "New since version 4.3",
