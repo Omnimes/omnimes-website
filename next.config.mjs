@@ -69,6 +69,20 @@ const nextConfig = {
         permanent: true,
       },
 
+      // OmniMES 5.0 — wpis przeniesiony z bloga do aktualności (BO-1402, 2026-11-23)
+      {
+        source: "/pl/blog/omnimes-5-0-jeden-modul-produkcji-utrzymanie-ruchu-i-bezpieczniejsza-instalacja",
+        destination: "/pl/news/omnimes-5-0-jeden-modul-produkcji-utrzymanie-ruchu-i-bezpieczniejsza-instalacja",
+        permanent: true,
+      },
+      {
+        source:
+          "/en/blog/omnimes-5-0-one-production-module-maintenance-management-and-a-more-secure-installation",
+        destination:
+          "/en/news/omnimes-5-0-one-production-module-maintenance-management-and-a-more-secure-installation",
+        permanent: true,
+      },
+
       // === DE locale removed (2026-05) — 301 redirects to /en preserve SEO equity ===
 
       // Specific high-traffic DE blog post mappings (data from GSC audit 2026-05-07).
