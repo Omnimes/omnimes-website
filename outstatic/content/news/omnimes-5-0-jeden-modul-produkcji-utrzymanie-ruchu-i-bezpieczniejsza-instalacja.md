@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'omnimes-5-0-jeden-modul-produkcji-utrzymanie-ruchu-i-bezpieczniejsza-instalacja'
 description: 'OmniMES 5.0 jest dostępny. Zlecenia z ERP trafiają prosto do Produkcji, awaria przechodzi od zgłoszenia operatora do potwierdzonej naprawy w jednym module, a alarmy docierają przez Teams, Slack i e-mail z eskalacją. Do tego bezpieczniejsza instalacja, codzienne kopie z testem odtworzenia i aktualizacja, która przy błędzie sama się wycofuje.'
-coverImage: '/images/post-omnimes-5-0/cover-omnimes-5-0-pl.png'
+coverImage: '/images/news/omnimes-5-0/cover-pl.jpg'
 lang: 'pl'
 publishedAt: '2026-11-22T19:00:00.000Z'
 ---

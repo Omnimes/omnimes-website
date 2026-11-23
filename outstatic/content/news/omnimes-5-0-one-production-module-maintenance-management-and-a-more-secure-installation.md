@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/166378457?v=4'
 slug: 'omnimes-5-0-one-production-module-maintenance-management-and-a-more-secure-installation'
 description: 'OmniMES 5.0 is available. ERP orders go straight into Production, a failure moves from the operator report to a confirmed repair in one module, and alarms reach people through Teams, Slack and email with escalation. Plus a more secure installation, daily backups with a restore test and updates that roll themselves back on failure.'
-coverImage: '/images/post-omnimes-5-0/cover-omnimes-5-0-en.png'
+coverImage: '/images/news/omnimes-5-0/cover-en.jpg'
 lang: 'en'
 publishedAt: '2026-11-22T19:00:00.000Z'
 ---
