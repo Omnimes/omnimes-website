@@ -28,6 +28,22 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "5.0.1",
+      date: "2026-11-23",
+      entries: [
+        {
+          category: "changed",
+          scope: "Asystent AI tylko przez MCP",
+          body: "Rozmowa z AI o danych odbywa się w asystencie AI użytkownika połączonym z OmniMES przez MCP (menu użytkownika → Połączenie z asystentem AI) — z uprawnieniami użytkownika i zapisem w Dzienniku zdarzeń. Z ekranów analiz, Panelu głównego i Zdarzeń maszyn zniknął przycisk „Analiza AI”, z menu pozycja „Analiza asystenta AI” (stary adres prowadzi do Panelu głównego), a ze Studia aplikacji czat — aplikacje buduje się przez „Połączenie z Claude”. Zostają funkcje AI, których wynik trafia do formularza: „Podpowiedz SQL” i „Zaproponuj wykres” w Pulpitach oraz ustalenia, rekomendacje i podsumowanie w audycie energetycznym.",
+        },
+        {
+          category: "changed",
+          scope: "Zdarzenia maszyn: wartości sygnałów (diagnostyka)",
+          body: "Zakładka z surowymi wartościami sygnałów nazywa się teraz „Wartości sygnałów (diagnostyka)” i widzą ją tylko osoby z prawem konfiguracji statusów (Struktura albo Konfigurator statusów); pozostali widzą samą oś zdarzeń. Przy zdarzeniu „Stan nieznany” przycisk „Przypisz status” otwiera tę zakładkę z maszyną i okresem zdarzenia.",
+        },
+      ],
+    },
+    {
       version: "5.0.0",
       name: "OmniMES 5.0",
       date: "2026-11-22",
@@ -1050,6 +1066,22 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "5.0.1",
+      date: "2026-11-23",
+      entries: [
+        {
+          category: "changed",
+          scope: "AI assistant only via MCP",
+          body: "Conversations with AI about your data now take place in the user's own AI assistant connected to OmniMES via MCP (user menu → Connection with AI assistant) — with the user's permissions and an entry in the Event log. The “AI analysis” button has been removed from the analysis screens, the Main dashboard and Machine events, the “AI assistant analysis” menu item has been removed (the old address leads to the Main dashboard) and the chat has been removed from the App Studio — apps are built through “Connection with Claude”. AI functions whose result goes into a form remain: “Suggest SQL” and “Suggest a chart” in Desktops, and findings, recommendations and summary in the energy audit.",
+        },
+        {
+          category: "changed",
+          scope: "Machine events: signal values (diagnostics)",
+          body: "The tab with raw signal values is now called “Signal values (diagnostics)” and is visible only to users allowed to configure statuses (Structure or Status configurator); others see the event timeline only. For an “Unknown state” event the “Assign status” button opens this tab with the machine and the event period.",
+        },
+      ],
+    },
     {
       version: "5.0.0",
       name: "OmniMES 5.0",
