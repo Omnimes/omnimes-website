@@ -11,7 +11,7 @@ import { CONTACT, securityHref, SecurityNav } from "../securityShared"
 
 export const revalidate = 3600
 
-const VERSION_FROM = "5.0.2"
+const VERSION_FROM = "5.0.1"
 const ISSUED = { pl: "Kraków, 24.11.2026", en: "Kraków, 24 November 2026" }
 
 type Row = { label: string; value: string[] }
@@ -37,7 +37,8 @@ const content: Record<"pl" | "en", Content> = {
       title: "Deklaracja zgodności UE — OmniMES",
       description:
         "Deklaracja zgodności UE systemu OmniMES z rozporządzeniem (UE) 2024/2847 (Cyber Resilience Act): producent, przedmiot deklaracji, procedura oceny zgodności i oznakowanie CE.",
-      keywords: "OmniMES, deklaracja zgodności UE, CRA, Cyber Resilience Act, 2024/2847, oznakowanie CE",
+      keywords:
+        "OmniMES, deklaracja zgodności UE, CRA, Cyber Resilience Act, 2024/2847, oznakowanie CE",
     },
     heading: "Deklaracja zgodności UE",
     updated: "Data wystawienia: 24 listopada 2026",
@@ -50,10 +51,15 @@ const content: Record<"pl" | "en", Content> = {
           "Wersję identyfikuje numer w stopce aplikacji, plik VERSION w paczce instalacyjnej i znacznik wydania na liście zmian.",
         ],
       },
-      { label: "2. Producent", value: [...MANUFACTURER, `Kontakt w sprawach bezpieczeństwa: ${CONTACT}`] },
+      {
+        label: "2. Producent",
+        value: [...MANUFACTURER, `Kontakt w sprawach bezpieczeństwa: ${CONTACT}`],
+      },
       {
         label: "3. Odpowiedzialność",
-        value: ["Niniejszą deklarację zgodności wydaje się na wyłączną odpowiedzialność producenta."],
+        value: [
+          "Niniejszą deklarację zgodności wydaje się na wyłączną odpowiedzialność producenta.",
+        ],
       },
       {
         label: "4. Przedmiot deklaracji",
@@ -100,7 +106,8 @@ const content: Record<"pl" | "en", Content> = {
       title: "EU declaration of conformity — OmniMES",
       description:
         "EU declaration of conformity of OmniMES with Regulation (EU) 2024/2847 (Cyber Resilience Act): manufacturer, object of the declaration, conformity assessment procedure and CE marking.",
-      keywords: "OmniMES, EU declaration of conformity, CRA, Cyber Resilience Act, 2024/2847, CE marking",
+      keywords:
+        "OmniMES, EU declaration of conformity, CRA, Cyber Resilience Act, 2024/2847, CE marking",
     },
     heading: "EU declaration of conformity",
     updated: "Date of issue: 24 November 2026",
@@ -116,7 +123,9 @@ const content: Record<"pl" | "en", Content> = {
       { label: "2. Manufacturer", value: [...MANUFACTURER, `Security contact: ${CONTACT}`] },
       {
         label: "3. Responsibility",
-        value: ["This declaration of conformity is issued under the sole responsibility of the manufacturer."],
+        value: [
+          "This declaration of conformity is issued under the sole responsibility of the manufacturer.",
+        ],
       },
       {
         label: "4. Object of the declaration",
@@ -235,7 +244,10 @@ export default async function SecurityDeclarationPage({
           </p>
         ))}
         <p className="mb-2">
-          <a className="text-primary-500 hover:underline" href={securityHref(locale, "/security/support")}>
+          <a
+            className="text-primary-500 hover:underline"
+            href={securityHref(locale, "/security/support")}
+          >
             {locale === "pl" ? "Okres wsparcia i aktualizacje" : "Support period and updates"}
           </a>
           {" · "}
