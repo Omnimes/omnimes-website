@@ -6,7 +6,11 @@ import { pathnames } from "@/config"
 
 export const CONTACT = "support@omnimes.com"
 
-export type SecurityPageKey = "/security" | "/security/advisories" | "/security/support" | "/security/declaration"
+export type SecurityPageKey =
+  | "/security"
+  | "/security/advisories"
+  | "/security/support"
+  | "/security/declaration"
 
 export function securityHref(locale: string, key: SecurityPageKey): string {
   const entry = pathnames[key] as { en: string; pl: string }
