@@ -1,12 +1,12 @@
 import { pathnames } from "@/config"
 
 // Wspólne elementy podstron bezpieczeństwa (BO-1196): zgłaszanie podatności,
-// komunikaty bezpieczeństwa, okres wsparcia. Linki budujemy z mapy pathnames,
+// komunikaty bezpieczeństwa, okres wsparcia, deklaracja zgodności UE (BO-1355). Linki budujemy z mapy pathnames,
 // żeby PL i EN miały własne adresy (/pl/bezpieczenstwo/..., /en/security/...).
 
 export const CONTACT = "support@omnimes.com"
 
-export type SecurityPageKey = "/security" | "/security/advisories" | "/security/support"
+export type SecurityPageKey = "/security" | "/security/advisories" | "/security/support" | "/security/declaration"
 
 export function securityHref(locale: string, key: SecurityPageKey): string {
   const entry = pathnames[key] as { en: string; pl: string }
@@ -19,11 +19,13 @@ const NAV: Record<"pl" | "en", { key: SecurityPageKey; label: string }[]> = {
     { key: "/security", label: "Zgłaszanie podatności" },
     { key: "/security/advisories", label: "Komunikaty bezpieczeństwa" },
     { key: "/security/support", label: "Okres wsparcia i aktualizacje" },
+    { key: "/security/declaration", label: "Deklaracja zgodności UE" },
   ],
   en: [
     { key: "/security", label: "Vulnerability disclosure" },
     { key: "/security/advisories", label: "Security advisories" },
     { key: "/security/support", label: "Support period and updates" },
+    { key: "/security/declaration", label: "EU declaration of conformity" },
   ],
 }
 

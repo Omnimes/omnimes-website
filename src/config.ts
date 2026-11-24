@@ -138,6 +138,10 @@ export const pathnames = {
     en: "/security/support",
     pl: "/bezpieczenstwo/okres-wsparcia",
   },
+  "/security/declaration": {
+    en: "/security/declaration-of-conformity",
+    pl: "/bezpieczenstwo/deklaracja-zgodnosci",
+  },
   "/tags": {
     en: "/tags",
     pl: "/tagi",
