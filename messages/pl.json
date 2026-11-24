@@ -789,10 +789,10 @@
     "exitFullscreen": "Zamknij pełny ekran"
   },
   "PromoVideo": {
-    "smallSubtitle": "Film · 0:56",
-    "heading": "OmniMES 5.0 w 56 sekund",
-    "description": "Produkcja i zlecenia z ERP, utrzymanie ruchu, zdarzenia i alarmy, Hala 3D oraz aplikacje MCP — na prawdziwych widokach z wersji 5.0.",
-    "aria": "Film o systemie OmniMES 5.0 (0:56)",
+    "smallSubtitle": "Film · 1:12",
+    "heading": "OmniMES 5.0 w 72 sekundy",
+    "description": "Wszystko w jednym systemie: produkcja i zlecenia z ERP, utrzymanie ruchu, Hala 3D z rekomendacjami i własne aplikacje MCP Apps tworzone zwykłym językiem — na prawdziwych widokach z wersji 5.0.",
+    "aria": "Film o systemie OmniMES 5.0 (1:12)",
     "play": "Odtwórz film o OmniMES 5.0"
   },
   "McpSpotlight": {

@@ -781,10 +781,10 @@
     "exitFullscreen": "Exit full screen"
   },
   "PromoVideo": {
-    "smallSubtitle": "Video · 0:56",
-    "heading": "OmniMES 5.0 in 56 seconds",
-    "description": "Production and ERP orders, maintenance, events and alarms, the 3D Hall and MCP Apps — shown on real screens from version 5.0.",
-    "aria": "Video about OmniMES 5.0 (0:56)",
+    "smallSubtitle": "Video · 1:12",
+    "heading": "OmniMES 5.0 in 72 seconds",
+    "description": "All in one system: production and ERP orders, maintenance, the 3D Hall with recommendations and your own MCP Apps built in plain language — shown on real screens from version 5.0.",
+    "aria": "Video about OmniMES 5.0 (1:12)",
     "play": "Play the OmniMES 5.0 video"
   },
   "McpSpotlight": {

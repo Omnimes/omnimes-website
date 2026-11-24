@@ -8,7 +8,7 @@ import { Heading } from "./ui/Heading"
 import { VideoPlayIcon } from "./ui/Icons"
 import { SubtitleNormal } from "./ui/Subtitle"
 
-// Film promocyjny OmniMES 5.0 (BO-1403, 0:56; zastąpił film BO-1221/BO-1229) zaraz pod banerem: najpierw całość w skrócie, potem szczegóły.
+// Film promocyjny OmniMES 5.0 (BO-1403, wersja 4, 1:12; zastąpił film BO-1221/BO-1229) zaraz pod banerem: najpierw całość w skrócie, potem szczegóły.
 // Plik pobiera się dopiero po kliknięciu „odtwórz” (preload="none"); do tego czasu widać plakat z dużym przyciskiem.
 export const PromoVideo = () => {
   const t = useTranslations("PromoVideo")
@@ -31,7 +31,7 @@ export const PromoVideo = () => {
           controls={started}
           playsInline
           preload="none"
-          poster={`/videos/omnimes-5-0-${lang}.jpg`}
+          poster={`/videos/omnimes-5-0-v4-${lang}.jpg`}
           aria-label={t("aria")}
           onPlay={() => setStarted(true)}
           onEnded={() => {
@@ -40,7 +40,7 @@ export const PromoVideo = () => {
             video.current?.load()
           }}
         >
-          <source src={`/videos/omnimes-5-0-${lang}.mp4`} type="video/mp4" />
+          <source src={`/videos/omnimes-5-0-v4-${lang}.mp4`} type="video/mp4" />
         </video>
         {!started && (
           <button
