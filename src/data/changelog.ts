@@ -28,6 +28,52 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "5.0.2",
+      date: "2026-11-25",
+      entries: [
+        {
+          category: "added",
+          scope: "Sterowanie maszynami po MQTT",
+          body: "Nowy ekran Utrzymanie ruchu → Sterowanie maszynami: wysyłka do maszyn wyłącznie komend dopuszczonych przez administratora (maszyna, metryka Sparkplug B, typ, zakres albo lista wartości). Przed wysyłką podsumowanie „było → będzie”, ponowne hasło i opcjonalnie zatwierdzenie drugiej osoby; potwierdzenie z odczytu maszyny i każda próba w historii oraz w Dzienniku zdarzeń. Moduł jest domyślnie wyłączony — włącza go administrator w Administracja → Konfiguracja sterowania.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: ceny energii z rynku i taryfa dynamiczna",
+          body: "Opcjonalne pobieranie godzinowych cen energii z PSE (RCE albo cena SDAC) oraz taryfa dynamiczna: cena rynkowa × mnożnik + marża. Rachunek, koszt energii zleceń i wycena oszczędności planów działań liczą się z cen rynkowych; godzina bez ceny oznacza rachunek niepełny, a nie zerowy koszt. Ceny można też wczytać z pliku CSV.",
+        },
+        {
+          category: "added",
+          scope: "Instalacja: szyfrowany dostęp HTTPS",
+          body: "Instalator ma wbudowany, domyślnie wyłączony reverse proxy z TLS: OmniMES, API, MCP i Redash po HTTPS z certyfikatem samopodpisanym, certyfikatem firmy albo z Let's Encrypt, z nagłówkami bezpieczeństwa i przekierowaniem z HTTP. Aktualizacja niczego nie zmienia, dopóki proxy nie zostanie włączone (instrukcja Instalacja, sekcja 10.5).",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy: polskie skróty",
+          body: "W polskiej wersji OmniEnergy używa polskich skrótów: WEE zamiast EnPI, EnLB zamiast EnB i ZWE zamiast SEU — na ekranach, w komunikatach i raportach. Wersja angielska bez zmian.",
+        },
+        {
+          category: "changed",
+          scope: "Traceability: partia bez stanu na stanowisku",
+          body: "Gdy partia na stanowisku nie ma już stanu, panel operatora pokazuje ostrzeżenie. Nowe ustawienie „Blokuj start etapu przy wyczerpanej partii” pozwala zablokować start i wznowienie etapu. Zużycie ponad stan partii nie robi już stanu ujemnego — reszta idzie jako rozchód bez partii z oznaczoną luką w genealogii.",
+        },
+        {
+          category: "changed",
+          scope: "Zdarzenia maszyn: szybsza oś zakładu",
+          body: "Oś zdarzeń całego zakładu liczy się kilka razy szybciej (np. 97 maszyn z doby: z ok. 17 s do ok. 3–4 s); ekran domyślnie pokazuje ostatnie 24 godziny.",
+        },
+        {
+          category: "security",
+          scope: "Poprawki z wewnętrznego testu bezpieczeństwa",
+          body: "Zamknięte znaleziska z wewnętrznego testu penetracyjnego, w tym ważne: aplikacja Studia nie ma już dostępu do tokenów asystenta AI osoby, która ją ogląda. Ponadto układy Panelu głównego zmienia tylko właściciel, kod RFID/PIN operatora widać tylko na ekranie Użytkownicy, zmiana adresu Redasha usuwa zapisany klucz, a eksport CSV nie przenosi formuł arkusza.",
+        },
+        {
+          category: "security",
+          scope: "Redash na koncie tylko do odczytu",
+          body: "Zapytania Redasha do bazy OmniMES działają na osobnym koncie z prawem tylko do odczytu zamiast konta administratora bazy.",
+        },
+      ],
+    },
+    {
       version: "5.0.1",
       date: "2026-11-23",
       entries: [
@@ -1066,6 +1112,52 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "5.0.2",
+      date: "2026-11-25",
+      entries: [
+        {
+          category: "added",
+          scope: "Machine control over MQTT",
+          body: "New screen Maintenance → Machine control: send to machines only the commands approved by the administrator (machine, Sparkplug B metric, type, range or list of values). Before sending you see an “old → new” summary, re-enter your password and optionally get a second person’s approval; the machine’s reading confirms the change and every attempt is kept in the history and in the Audit log. The module is off by default — the administrator enables it in Administration → Control configuration.",
+        },
+        {
+          category: "added",
+          scope: "OmniEnergy: market energy prices and dynamic tariff",
+          body: "Optional download of hourly energy prices from PSE (RCE or SDAC price) and a dynamic tariff: market price × multiplier + margin. The bill, order energy cost and action plan savings are calculated from market prices; an hour without a price marks the bill as incomplete instead of counting zero cost. Prices can also be imported from a CSV file.",
+        },
+        {
+          category: "added",
+          scope: "Installation: encrypted HTTPS access",
+          body: "The installer includes a built-in reverse proxy with TLS, off by default: OmniMES, API, MCP and Redash over HTTPS with a self-signed certificate, your company certificate or Let's Encrypt, with security headers and redirection from HTTP. Updating changes nothing until you enable the proxy (Installation guide, section 10.5).",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy: Polish abbreviations",
+          body: "The Polish version of OmniEnergy now uses Polish abbreviations (WEE, EnLB, ZWE instead of EnPI, EnB, SEU) on screens, in messages and reports. The English version is unchanged.",
+        },
+        {
+          category: "changed",
+          scope: "Traceability: lot without stock at the workstation",
+          body: "When a lot at the workstation has no stock left, the operator panel shows a warning. A new setting “Block stage start with an exhausted lot” can block starting and resuming the stage. Consumption above the lot’s stock no longer creates negative stock — the rest is booked as an issue without a lot, with the genealogy gap marked.",
+        },
+        {
+          category: "changed",
+          scope: "Machine events: faster plant timeline",
+          body: "The event timeline for the whole plant is calculated several times faster (e.g. 97 machines over one day: from about 17 s to about 3–4 s); the screen shows the last 24 hours by default.",
+        },
+        {
+          category: "security",
+          scope: "Fixes from the internal security test",
+          body: "Findings from the internal penetration test are closed, including an important one: a Studio app can no longer access the AI assistant tokens of the person viewing it. In addition, Main panel layouts can be changed only by their owner, the operator’s RFID/PIN code is visible only on the Users screen, changing the Redash address removes the stored key, and CSV exports no longer carry spreadsheet formulas.",
+        },
+        {
+          category: "security",
+          scope: "Redash with a read-only account",
+          body: "Redash queries to the OmniMES database run on a separate read-only account instead of the database administrator account.",
+        },
+      ],
+    },
     {
       version: "5.0.1",
       date: "2026-11-23",
