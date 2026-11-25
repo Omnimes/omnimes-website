@@ -28,6 +28,48 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "5.1.0",
+      name: "OmniMES 5.1",
+      date: "2026-11-25",
+      entries: [
+        {
+          category: "added",
+          scope: "OmniEnergy: drzewko zużycia",
+          body: "Nowy ekran OmniEnergy → Drzewko zużycia pokazuje zużycie wybranego nośnika (np. energii elektrycznej, gazu, wody) w wybranym okresie w strukturze zakładu: najpierw cały zakład, po rozwinięciu parki, linie i maszyny — z udziałem każdej pozycji w poziomie wyżej, od największego zużycia, i z przeliczeniem na kWh. Nie wymaga konfiguracji: drzewo powstaje ze struktury zakładu i źródeł OmniEnergy.",
+        },
+        {
+          category: "added",
+          scope: "Sterowanie maszynami: propozycje od asystenta AI",
+          body: "Asystent AI połączony z OmniMES osobistym połączeniem MCP może zaproponować polecenie dla maszyny, ale go nie wyśle. Propozycja trafia do zakładki „Do zatwierdzenia” z oznaczeniem „Asystent AI”, uzasadnieniem i bieżącą wartością sygnału, a do maszyny idzie dopiero po zatwierdzeniu przez osobę z uprawnieniem. Każdy krok jest zapisany w Dzienniku zdarzeń.",
+        },
+        {
+          category: "added",
+          scope: "Informacja o nowej wersji",
+          body: "Raz na dobę OmniMES sprawdza na serwerze licencji, czy jest nowsza wersja. Administrator widzi wtedy baner z listą zmian, a Stan systemu pokazuje wersję produktu i informację o aktualizacji. Wysyłane są tylko identyfikator produktu, losowy identyfikator instalacji, wersja i stan licencji — bez danych osobowych. Ustawienie OMNIMES_UPDATE_CHECK=0 wyłącza sprawdzanie.",
+        },
+        {
+          category: "added",
+          scope: "Instalacja bez internetu",
+          body: "Paczka offline zawiera gotowe obrazy Dockera z sumami kontrolnymi, więc OmniMES zainstalujesz i zaktualizujesz na serwerze bez dostępu do internetu (instrukcja Instalacja, sekcja 17).",
+        },
+        {
+          category: "added",
+          scope: "Instalacja: dobór serwera i profile bazy",
+          body: "Instrukcja ma tabelę doboru serwera do liczby maszyn i sygnałów, opartą na teście obciążenia. Nowe ustawienie OMNIMES_DB_PROFIL (mała, średnia, duża) stroi bazę pod wielkość instalacji, a OMNIMES_DB_MEM_LIMIT ogranicza pamięć bazy. Bez tych ustawień baza działa tak jak dotąd.",
+        },
+        {
+          category: "changed",
+          scope: "Sterowanie maszynami w chmurze",
+          body: "W instancji OmniMES Cloud ekrany sterowania informują, że polecenia idą do maszyn przez internet — przez broker instancji i bramkę w zakładzie. W instalacji u klienta bez zmian.",
+        },
+        {
+          category: "security",
+          scope: "Sprawdzenie paczki instalacyjnej",
+          body: "Paczka instalacyjna zawiera plik SHA256SUMS, więc przed instalacją sprawdzisz ją poleceniem sha256sum -c. Każde wydanie jest też archiwizowane na serwerze licencji z sumą SHA-256.",
+        },
+      ],
+    },
+    {
       version: "5.0.2",
       date: "2026-11-25",
       entries: [
@@ -1112,6 +1154,48 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "5.1.0",
+      name: "OmniMES 5.1",
+      date: "2026-11-25",
+      entries: [
+        {
+          category: "added",
+          scope: "OmniEnergy: consumption tree",
+          body: "The new OmniEnergy → Consumption tree screen shows the consumption of a selected utility (e.g. electricity, gas, water) over a selected period across the plant structure: the whole plant first, then parks, lines and machines as you expand them — with each item's share of the level above, sorted from the largest consumer, and converted to kWh. No setup needed: the tree is built from the plant structure and OmniEnergy sources.",
+        },
+        {
+          category: "added",
+          scope: "Machine control: proposals from the AI assistant",
+          body: "An AI assistant connected to OmniMES through a personal MCP connection can propose a machine command but cannot send it. The proposal lands in the “Awaiting approval” tab, marked “AI assistant”, with its justification and the signal's current value, and goes to the machine only after a person with the permission approves it. Every step is recorded in the Event log.",
+        },
+        {
+          category: "added",
+          scope: "New version notice",
+          body: "Once a day OmniMES checks with the licence server whether a newer version is available. Administrators then see a banner with the list of changes, and System status shows the product version and update information. Only the product ID, a random installation ID, the version and the licence status are sent — no personal data. Setting OMNIMES_UPDATE_CHECK=0 turns the check off.",
+        },
+        {
+          category: "added",
+          scope: "Installation without internet",
+          body: "The offline package contains ready-made Docker images with checksums, so you can install and update OmniMES on a server with no internet access (Installation guide, section 17).",
+        },
+        {
+          category: "added",
+          scope: "Installation: server sizing and database profiles",
+          body: "The guide now has a server sizing table by number of machines and signals, based on a load test. The new OMNIMES_DB_PROFIL setting (small, medium, large) tunes the database to the size of the installation, and OMNIMES_DB_MEM_LIMIT caps the database's memory. Without these settings the database works as before.",
+        },
+        {
+          category: "changed",
+          scope: "Machine control in the cloud",
+          body: "In an OmniMES Cloud instance the control screens explain that commands reach machines over the internet — through the instance's broker and the plant gateway. On-premise installations are unchanged.",
+        },
+        {
+          category: "security",
+          scope: "Installation package verification",
+          body: "The installation package includes a SHA256SUMS file, so you can verify it with sha256sum -c before installing. Every release is also archived on the licence server with its SHA-256 checksum.",
+        },
+      ],
+    },
     {
       version: "5.0.2",
       date: "2026-11-25",
