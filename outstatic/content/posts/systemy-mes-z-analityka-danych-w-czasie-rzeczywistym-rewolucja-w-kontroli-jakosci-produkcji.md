@@ -259,4 +259,4 @@ Systemy **MES z analityką danych w czasie rzeczywistym** stanowią nie tylko tr
 4. Zainwestuj w szkolenia zespołu i change management
 5. Monitoruj KPI i kontinuuj optymalizację procesów
 
-Więcej informacji na temat wdrożenia systemów MES znajdziesz na [OmniMES kontakt](www.omnimes.com/pl/kontakt)
+Więcej informacji na temat wdrożenia systemów MES znajdziesz na [OmniMES kontakt](https://www.omnimes.com/pl/kontakt)

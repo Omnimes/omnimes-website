@@ -1,8 +1,9 @@
 "use client"
 
-import Link from "next/link"
 import { useLocale, useTranslations } from "next-intl"
 import { FaArrowRight, FaCogs, FaLock, FaPlug, FaTachometerAlt } from "react-icons/fa"
+
+import Link from "@/components/LocaleLink"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"

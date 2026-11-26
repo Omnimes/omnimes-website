@@ -330,4 +330,4 @@ Die Einführung eines MES mit Echtzeit-Analytik im Motorenwerk brachte:
 
 5. Überwachen Sie KPIs und optimieren Sie Prozesse kontinuierlich
 
-Weitere Informationen zur Einführung von MES-Systemen: [**OmniMES Kontakt**](www.omnimes.com/de/kontakt)
+Weitere Informationen zur Einführung von MES-Systemen: [**OmniMES Kontakt**](https://www.omnimes.com/de/kontakt)

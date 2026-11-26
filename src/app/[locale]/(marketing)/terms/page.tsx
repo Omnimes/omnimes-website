@@ -17,6 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     localeShort,
     locale,
     path: "/terms",
+    // BO-1426: placeholder page ("Już wkrótce...") — not indexed until it has content
+    noindex: true,
   }
   return genPageMetadata(obj)
 }

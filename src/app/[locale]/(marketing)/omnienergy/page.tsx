@@ -3,8 +3,9 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { useLocale, useTranslations } from "next-intl"
+
+import Link from "@/components/LocaleLink"
 
 export default function OmniEnergyPage() {
   const t = useTranslations("OmniEnergy")
@@ -751,8 +752,7 @@ const TONE_STYLES: Record<
   },
   green: {
     cardBorder: "border-green-100 dark:border-green-800/60",
-    cardBg:
-      "bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-950/40 dark:to-teal-950/40",
+    cardBg: "bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-950/40 dark:to-teal-950/40",
     iconBg: "bg-green-100 dark:bg-green-900/60",
     iconText: "text-green-600 dark:text-green-300",
     checkText: "text-green-500 dark:text-green-400",
@@ -796,12 +796,7 @@ function FeatureCard({
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d={iconPath}
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={iconPath} />
         </svg>
       </div>
       <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-neutral-100">{t(titleKey)}</h3>
@@ -874,21 +869,14 @@ function ScreenshotRow({
           </div>
         )}
         <div className="mb-6 flex items-center gap-3">
-          <div
-            className={`flex size-12 items-center justify-center rounded-full ${s.iconBg}`}
-          >
+          <div className={`flex size-12 items-center justify-center rounded-full ${s.iconBg}`}>
             <svg
               className={`size-6 ${s.iconText}`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d={iconPath}
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={iconPath} />
             </svg>
           </div>
           <h3 className="text-2xl font-bold text-gray-900 dark:text-neutral-100">{t(titleKey)}</h3>

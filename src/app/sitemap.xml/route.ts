@@ -1,84 +1,43 @@
 import { pathnames } from "@/config"
 import { siteMetadata } from "@/data/siteMetadata"
 import { defaultLocale, excludePaths } from "@/middleware"
-import { slug } from "github-slugger"
 import { getCollections, getDocuments } from "outstatic/server"
 
 import {
   generateURLObjects,
-  generateURLObjectsTags,
   generateURLObjectsWithoutAlternate,
   generateXML,
   transformPaths,
   URLObject,
 } from "@/lib/generateSitemapXML"
+import { SEO_LOCALES } from "@/lib/seo"
 
 const host = siteMetadata.siteUrl
 
+// BO-1426: the sitemap lists only canonical HTML pages that answer 200:
+//  - articles under their real URLs (/pl/news/<slug>, not /pl/aktualności/<slug>),
+//    with hreflang between PL and EN versions,
+//  - no tag pages (thin listing pages, noindex), no /de (language disabled),
+//  - no RSS/JSON feeds (they are announced with <link rel="alternate"> instead).
+const SKIPPED_COLLECTIONS = new Set(["courses"]) // moved to YouTube, pages return 404
+
 export async function GET() {
-  const collections = getCollections()
-  const prepareUrls: URLObject[] = []
-  const uniqueTagsByLang: { [key: string]: Set<string> } = {}
+  const articles: URLObject[] = []
 
-  collections.forEach((collection) => {
-    // Skip courses — moved to YouTube (https://www.youtube.com/@omni-mes), pages return 404
-    if (collection === "courses") return
-    const date = getDocuments(collection, ["slug", "lang", "tags"]).filter(
-      (entry) => entry.status == "published"
+  getCollections().forEach((collection) => {
+    if (SKIPPED_COLLECTIONS.has(collection)) return
+    const docs = getDocuments(collection, ["slug", "lang", "publishedAt", "status"]).filter(
+      (entry) =>
+        entry.status == "published" &&
+        SEO_LOCALES.includes(((entry.lang as string) ?? "pl") as (typeof SEO_LOCALES)[number])
     )
-    const results = generateURLObjectsWithoutAlternate(date, host, collection)
-    prepareUrls.push(...results)
-
-    date.forEach((article) => {
-      const lang = article.lang
-      if (Array.isArray(article.tags) && typeof lang == "string") {
-        const tags = article.tags
-          .filter(
-            (tag): tag is { label: string } =>
-              typeof tag === "object" && tag !== null && "label" in tag
-          )
-          .map((tag) => slug(tag.label))
-
-        if (!uniqueTagsByLang[lang]) {
-          uniqueTagsByLang[lang] = new Set()
-        }
-        tags.forEach((tag) => uniqueTagsByLang[lang].add(tag))
-      }
-    })
-  })
-
-  const result = Object.keys(uniqueTagsByLang).reduce((acc: { [key: string]: string[] }, lang) => {
-    acc[lang] = Array.from(uniqueTagsByLang[lang])
-    return acc
-  }, {})
-
-  const xmlFiles = [
-    "feed-news.xml",
-    "feed.xml",
-    "news.json",
-    "posts.json",
-    "rss-news.xml",
-    "rss.xml",
-  ]
-  const xmlFilesUrls: URLObject[] = []
-  xmlFiles.forEach((item) => {
-    xmlFilesUrls.push({
-      url: `${host}/${item}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.5,
-    } as URLObject)
+    articles.push(...generateURLObjectsWithoutAlternate(docs, host, collection))
   })
 
   const paths = transformPaths(pathnames, excludePaths)
-  const urlObjects = generateURLObjects(paths, defaultLocale, host)
-  const urlTags = generateURLObjectsTags(result, host)
-  const arrUrlObjects = [...urlObjects, ...prepareUrls, ...urlTags, ...xmlFilesUrls]
-  const xml = generateXML(arrUrlObjects)
-  return new Response(xml)
-  // return new Response(xml, {
-  //   headers: {
-  //     "Content-Type": "application/xml; charset=UTF-8",
-  //   },
-  // });
+  const pages = generateURLObjects(paths, defaultLocale, host)
+  const xml = generateXML([...pages, ...articles])
+  return new Response(xml, {
+    headers: { "Content-Type": "application/xml; charset=UTF-8" },
+  })
 }

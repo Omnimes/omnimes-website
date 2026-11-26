@@ -1,11 +1,14 @@
 "use client"
 
 import { Button, Link } from "@nextui-org/react"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
+
+import { localizeHref } from "@/lib/localizeHref"
 
 import { Heading } from "./ui/Heading"
 
 export const ContactTwo = () => {
+  const locale = useLocale()
   const t = useTranslations("Timeline") // możesz zostawić ten namespace albo zmienić na dedykowany
   return (
     <div className="my-12 md:text-center">
@@ -14,7 +17,7 @@ export const ContactTwo = () => {
       </div>
       <Button
         as={Link}
-        href="/contact"
+        href={localizeHref("/contact", locale)}
         showAnchorIcon
         title={t("contact")}
         role="button"

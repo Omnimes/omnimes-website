@@ -1,4 +1,4 @@
-import { NextRequest } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 import { withAuth } from "next-auth/middleware"
 import createMiddleware from "next-intl/middleware"
 
@@ -42,8 +42,10 @@ export const excludePaths = [
   "/project/administration",
   "/project/installation",
   "/project/subscription",
+  "/tags",
   "/tags/[tag]",
   "/verify-email",
+  "/terms", // placeholder page, noindex until it has content (BO-1426)
   // Auth-walled or low-value pages — keep out of sitemap to avoid GSC
   // "Page with redirect" warnings (auth middleware redirects them to /login).
   "/documentation",
@@ -127,7 +129,26 @@ const LoginAndRegisterMiddleware = withAuth(
   }
 )
 
+// BO-1426: the sitemap used to list PL news as /pl/aktualności/<slug> (404).
+// News articles live at /<locale>/news/<slug>; only the list is localized
+// (/pl/aktualności). Search engines already know the old URLs, so redirect them.
+const LEGACY_NEWS_DETAIL = /^\/(pl|en|de)\/(?:aktualności|aktualnosci)\/([^/]+)\/?$/i
+
 export default function middleware(req: NextRequest) {
+  let decodedPath = req.nextUrl.pathname
+  try {
+    decodedPath = decodeURIComponent(decodedPath)
+  } catch {
+    /* keep raw path */
+  }
+  const legacyNews = decodedPath.match(LEGACY_NEWS_DETAIL)
+  if (legacyNews) {
+    const target = req.nextUrl.clone()
+    const locale = legacyNews[1].toLowerCase() === "en" ? "en" : "pl"
+    target.pathname = `/${locale}/news/${legacyNews[2]}`
+    return NextResponse.redirect(target, 308)
+  }
+
   /* Dopasowanie do chronionych tras */
   const ProtectedPathnameRegexp = RegExp(
     `^(/(${locales.join("|")}))?(${protectedPages

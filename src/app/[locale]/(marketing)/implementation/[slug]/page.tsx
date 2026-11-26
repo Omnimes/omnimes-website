@@ -9,7 +9,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getDocumentSlugs, load } from "outstatic/server"
 import { LuCircleArrowLeft } from "react-icons/lu"
 
+import { localizeHref } from "@/lib/localizeHref"
 import MDXServer from "@/lib/mdxServer"
+import { articleLanguages, metaDescription } from "@/lib/seo"
+import { getArticleLanguages } from "@/lib/translationsServer"
 
 // typ z listy kursów
 import { ExtendedOstDocument } from "../page"
@@ -65,15 +68,22 @@ export async function generateMetadata({
     }
   }
 
+  // BO-1426: canonical to the article itself (was the list page), hreflang to the translation
+  const languages = articleLanguages(
+    await getArticleLanguages("implementation", course.slug, locale),
+    "implementation"
+  )
+  const description = metaDescription(course.description)
   return {
     title: course.title,
-    description: course.description,
+    description,
     alternates: {
-      canonical: siteMetadata.siteUrl + "/" + locale + "/implementation",
+      canonical: siteMetadata.siteUrl + "/" + locale + "/implementation/" + course.slug,
+      ...(Object.keys(languages).length > 1 && { languages }),
     },
     openGraph: {
       title: course.title,
-      description: course.description,
+      description,
       siteName: siteMetadata.title,
       locale: getLocalePrimaryDialects(locale),
       type: "article",
@@ -85,7 +95,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: course.title,
-      description: course.description,
+      description,
       images: [siteMetadata.socialBanner],
     },
     robots: {
@@ -123,7 +133,7 @@ export default async function CoursePage({
         <div className="flex justify-center py-6 lg:py-10">
           <Button
             as={Link}
-            href="/implementation"
+            href={localizeHref("/implementation", resolvedParams.locale)}
             aria-label={t("back")}
             aria-labelledby={t("back")}
             title={t("back")}

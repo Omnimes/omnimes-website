@@ -6,53 +6,63 @@ type HeadingProps = {
   colors?: boolean
   /** Nazwa marki wstawiana zamiast "OmniMES" (opcjonalna). Domyślnie: "OmniMES". */
   brand?: string
+  /** BO-1426: "h1" for the main heading of a page (one per page); default "h2". */
+  as?: "h1" | "h2"
 }
 
-export const Heading = ({ omnimes, text, children, partTwo, colors, brand }: HeadingProps) => {
+export const Heading = ({
+  omnimes,
+  text,
+  children,
+  partTwo,
+  colors,
+  brand,
+  as: Tag = "h2",
+}: HeadingProps) => {
   const brandLabel = brand && brand.trim() ? brand.trim() : "OmniMES"
 
   if (colors) {
     return (
-      <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
+      <Tag className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
         <span className="inline bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text font-semibold tracking-tight text-transparent">
           {text}
         </span>
-      </h2>
+      </Tag>
     )
   }
 
   if (partTwo) {
     // np. słowo brand (domyślnie OmniMES) kolorowe w środku
     return (
-      <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
+      <Tag className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
         {text}
         <span className="inline bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text font-semibold tracking-tight text-transparent">
           &nbsp;{brandLabel}&nbsp;
         </span>
         {partTwo}
-      </h2>
+      </Tag>
     )
   }
 
   if (children) {
     // np. z kropkami/ikonami przed tekstem
     return (
-      <h2 className="mx-auto mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
+      <Tag className="mx-auto mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
         {children}
         {text}
-      </h2>
+      </Tag>
     )
   }
 
   return (
-    <h2 className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
+    <Tag className="mt-2 font-sans text-2xl font-bold tracking-tight sm:text-4xl">
       {omnimes && (
         <span className="inline bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text font-semibold tracking-tight text-transparent">
           {brandLabel}&nbsp;
         </span>
       )}
       {text}
-    </h2>
+    </Tag>
   )
 }
 

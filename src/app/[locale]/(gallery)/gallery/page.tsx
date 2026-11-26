@@ -16,11 +16,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description,
     keywords,
     localeShort,
+    locale,
+    path: "/gallery",
   }
   return genPageMetadata(obj)
 }
 export default async function GalleryPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   setRequestLocale(locale)
-  return <GalleryMES />
+  const t = await getTranslations({ locale, namespace: "GalleryMeta" })
+  // BO-1426: page <h1>
+  return (
+    <>
+      <h1 className="sr-only">{t("title")}</h1>
+      <GalleryMES />
+    </>
+  )
 }

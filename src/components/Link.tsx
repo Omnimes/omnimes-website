@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import { AnchorHTMLAttributes } from "react"
-import Link from "next/link"
 import type { LinkProps } from "next/link"
+
+import Link from "@/components/LocaleLink"
 
 export const CustomLink = ({
   href,

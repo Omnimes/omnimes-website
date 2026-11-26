@@ -14,9 +14,11 @@ import {
   Switch,
   Textarea,
 } from "@nextui-org/react"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import { LuBuilding, LuMail, LuPhone, LuUser, LuUsers } from "react-icons/lu"
 import { useWindowSize } from "usehooks-ts"
+
+import { localizeHref } from "@/lib/localizeHref"
 
 import { DangerAlert, SuccessAlert } from "./ui/Alerts"
 
@@ -31,6 +33,7 @@ export type FormData = {
 }
 
 export const Form = () => {
+  const locale = useLocale()
   const t = useTranslations("Form")
   const { width = 0 } = useWindowSize()
   const [isPending, setIsPending] = useState<boolean>(false)
@@ -400,7 +403,7 @@ export const Form = () => {
                 {t("AgreeMessage")}&nbsp;
                 <Link
                   isExternal
-                  href="/privacy-policy"
+                  href={localizeHref("/privacy-policy", locale)}
                   className="text-primary-600 font-semibold"
                   size="sm"
                   showAnchorIcon

@@ -11,7 +11,10 @@ import { OstDocument } from "outstatic"
 import { getDocumentSlugs, load } from "outstatic/server"
 import { LuCircleArrowLeft } from "react-icons/lu"
 
+import { localizeHref } from "@/lib/localizeHref"
 import MDXServer from "@/lib/mdxServer"
+import { articleLanguages, metaDescription } from "@/lib/seo"
+import { findTranslatedSlugIn, getArticleLanguages } from "@/lib/translationsServer"
 
 export async function generateStaticParams() {
   const news = getDocumentSlugs("news")
@@ -46,21 +49,7 @@ async function getData(locale: string, slug: string) {
 }
 
 async function findTranslatedNewsSlug(slug: string, targetLocale: string): Promise<string | null> {
-  const db = await load()
-  const sourceNews = await db
-    .find<OstDocument>({ collection: "news", slug }, ["publishedAt", "lang"])
-    .first()
-
-  if (!sourceNews || sourceNews.lang === targetLocale) return null
-
-  const translated = await db
-    .find<OstDocument>(
-      { collection: "news", lang: targetLocale, publishedAt: sourceNews.publishedAt },
-      ["slug"]
-    )
-    .first()
-
-  return translated?.slug ?? null
+  return findTranslatedSlugIn("news", slug, targetLocale)
 }
 
 export async function generateMetadata({
@@ -89,16 +78,20 @@ export async function generateMetadata({
       : `${siteMetadata.siteUrl}${rawCover}`
 
   const baseUrl = `${siteMetadata.siteUrl}/${locale}/news/${news.slug}`
+  // BO-1426: hreflang to the other language version + x-default
+  const languages = articleLanguages(await getArticleLanguages("news", news.slug, locale), "news")
+  const description = metaDescription(news.description)
 
   return {
     title: news.title,
-    description: news.description,
+    description,
     alternates: {
       canonical: baseUrl, // canonical na konkretny news, nie na /news
+      ...(Object.keys(languages).length > 1 && { languages }),
     },
     openGraph: {
       title: news.title,
-      description: news.description,
+      description,
       siteName: siteMetadata.title,
       locale: getLocalePrimaryDialects(locale),
       type: "article",
@@ -116,7 +109,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: news.title,
-      description: news.description,
+      description,
       images: [cover],
     },
     robots: {
@@ -159,7 +152,7 @@ export default async function NewsPost({
         <div className="flex justify-center py-6 lg:py-10">
           <Button
             as={Link}
-            href="/news"
+            href={localizeHref("/news", locale)}
             aria-label={t("backToNews")}
             aria-labelledby={t("backToNews")}
             title={t("backToNews")}
@@ -184,7 +177,7 @@ export default async function NewsPost({
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: news.title,
-    description: news.description,
+    description: metaDescription(news.description),
     image: coverUrl,
     datePublished: new Date(news.publishedAt).toISOString(),
     author: {

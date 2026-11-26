@@ -64,6 +64,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 
 export default function ListLayout({
   posts,
+  title,
   initialDisplayPosts = [],
   pagination,
   imageFit = "cover",
@@ -84,6 +85,8 @@ export default function ListLayout({
 
   return (
     <div className="ol-root">
+      {/* BO-1426: one <h1> per list page (visible design has no page title) */}
+      <h1 className="sr-only">{title}</h1>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap"

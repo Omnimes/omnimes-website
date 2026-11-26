@@ -123,7 +123,7 @@ export default function PostLayout({
 
       <div className="oe-article-wrap">
         <article className="oe-article-body">
-          <MDXComponent content={content} />
+          <MDXComponent content={content} imageAlt={title} />
         </article>
 
         <aside className="oe-sidebar">

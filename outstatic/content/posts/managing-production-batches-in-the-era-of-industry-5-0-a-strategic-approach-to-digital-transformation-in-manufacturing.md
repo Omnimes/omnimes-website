@@ -93,4 +93,4 @@ Optimizing batch management in Industry 5.0 requires a holistic approach combini
 
 - sustainable growth.
 
-[Discover more about **Omnimes by Multiprojekt** – a system designed to harness Industry 5.0 and Sparkplug B for smart manufacturing](www.omnimes.com)
+[Discover more about **Omnimes by Multiprojekt** – a system designed to harness Industry 5.0 and Sparkplug B for smart manufacturing](https://www.omnimes.com/en)

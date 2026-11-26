@@ -1,12 +1,12 @@
 import * as React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import Logo from "@/data/logo.png"
 import { siteMetadata } from "@/data/siteMetadata"
 import { cn } from "@/utils/utils"
 import { useTranslations } from "next-intl"
 
 import { useLockBody } from "@/hooks/useLockBody"
+import Link from "@/components/LocaleLink"
 
 import { Separator } from "./ui/Separator"
 

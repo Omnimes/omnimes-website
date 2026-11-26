@@ -106,7 +106,7 @@ export default function PostLayout({
                               xs:prose-sm sm:prose-base lg:prose-lg 
                               max-w-none"
               >
-                <MDXComponent content={content} />
+                <MDXComponent content={content} imageAlt={title} />
               </div>
             </div>
           </div>

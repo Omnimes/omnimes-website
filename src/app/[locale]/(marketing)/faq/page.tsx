@@ -34,7 +34,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
     <main className="px-0 py-16 md:text-center">
       <AbstractBackgroundSecond />
       <SubtitleNormal text={t("subtitle")} />
-      <Heading text={t("heading")} />
+      <Heading as="h1" text={t("heading")} />
       <DescriptionPrimary text={t("desc")} />
       <Faq />
     </main>

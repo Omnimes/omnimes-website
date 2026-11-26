@@ -25,6 +25,10 @@ export async function generateMetadata({
     description,
     keywords,
     localeShort,
+    locale,
+    path: `/tags/${tag}`,
+    // BO-1426: tag pages are thin listings — keep them out of the index, follow links
+    noindex: true,
   }
   return genPageMetadata(obj)
 }

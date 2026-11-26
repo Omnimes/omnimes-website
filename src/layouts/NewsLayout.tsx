@@ -111,7 +111,7 @@ export default function NewsLayout({
       )}
 
       <article className="on-article-body">
-        <MDXComponent content={content} />
+        <MDXComponent content={content} imageAlt={title} />
       </article>
 
       <div className="on-share-strip">

@@ -160,4 +160,4 @@ Optymalizacja zarządzania partiami produkcyjnymi w erze Industry 5.0 wymaga hol
 
 Sukces w tej transformacji zależy od strategicznej wizji, systematycznego wdrażania oraz ciągłego doskonalenia procesów w oparciu o dane i analitykę.
 
-[Zapraszamy do zapoznania się z ofert systemu Omnimes](www.omnimes.com)
+[Zapraszamy do zapoznania się z ofert systemu Omnimes](https://www.omnimes.com/pl)

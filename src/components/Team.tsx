@@ -1,5 +1,6 @@
-import Link from "next/link"
 import { useTranslations } from "next-intl"
+
+import Link from "@/components/LocaleLink"
 
 import { Company } from "./Company"
 import { Heading } from "./ui/Heading"

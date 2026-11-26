@@ -632,6 +632,9 @@
     "of": "z"
   },
   "PostLayout": {
+    "allimplementation": "Wszystkie realizacje",
+    "implementationNotFound": "Nie znaleziono realizacji",
+    "implementationNotFoundDesc": "Ta realizacja nie istnieje albo została przeniesiona.",
     "publishedOn": "Opublikowano dnia",
     "authors": "Autorzy",
     "name": "Imię",

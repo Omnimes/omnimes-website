@@ -17,6 +17,8 @@ import {
   FaTachometerAlt,
 } from "react-icons/fa"
 
+import { localizeHref } from "@/lib/localizeHref"
+
 import { Heading } from "./ui/Heading"
 
 export const OmniProductsShowcase = () => {
@@ -201,7 +203,7 @@ export const OmniProductsShowcase = () => {
               {/* Zobacz więcej Button */}
               <div className="flex justify-center">
                 <a
-                  href={product.link}
+                  href={localizeHref(product.link, locale)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`inline-flex items-center bg-gradient-to-r px-6 py-3 ${product.gradient} group rounded-xl font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg`}
@@ -268,7 +270,7 @@ export const OmniProductsShowcase = () => {
               {/* Action Button */}
               <div className="flex justify-center">
                 <a
-                  href={option.link}
+                  href={localizeHref(option.link, locale)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`inline-flex items-center bg-gradient-to-r px-6 py-3 ${option.gradient} group rounded-xl font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg`}

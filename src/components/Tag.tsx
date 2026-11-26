@@ -1,5 +1,6 @@
-import Link from "next/link"
 import { slug } from "github-slugger"
+
+import Link from "@/components/LocaleLink"
 
 interface Props {
   text: string

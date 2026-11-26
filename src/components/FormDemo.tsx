@@ -6,6 +6,8 @@ import { Button, Card, CardBody, cn, Input, Link, Spinner, Switch } from "@nextu
 import { useLocale, useTranslations } from "next-intl"
 import { LuBuilding, LuMail, LuUser } from "react-icons/lu"
 
+import { localizeHref } from "@/lib/localizeHref"
+
 import { DangerAlert, SuccessAlert } from "./ui/Alerts"
 
 export type DemoFormData = {
@@ -290,7 +292,7 @@ export const FormDemo = () => {
                     &nbsp;
                     <Link
                       isExternal
-                      href="/privacy-policy"
+                      href={localizeHref("/privacy-policy", locale)}
                       className="font-medium text-[#FF1CF7] hover:text-[#b249f8] dark:text-[#b249f8] dark:hover:text-[#FF1CF7]"
                       size="sm"
                     >

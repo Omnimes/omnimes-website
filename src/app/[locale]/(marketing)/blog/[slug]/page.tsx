@@ -10,7 +10,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getDocumentSlugs, load } from "outstatic/server"
 import { LuCircleArrowLeft } from "react-icons/lu"
 
+import { localizeHref } from "@/lib/localizeHref"
 import MDXServer from "@/lib/mdxServer"
+import { articleLanguages, metaDescription } from "@/lib/seo"
+import { findTranslatedSlugIn, getArticleLanguages } from "@/lib/translationsServer"
 
 import { ExtendedOstDocument } from "../page"
 
@@ -47,44 +50,7 @@ async function getData({ params }: { params: { slug: string; locale: string } })
 }
 
 async function findTranslatedSlug(slug: string, targetLocale: string): Promise<string | null> {
-  const db = await load()
-  const sourcePost = await db
-    .find<ExtendedOstDocument>({ collection: "posts", slug }, ["publishedAt", "lang"])
-    .first()
-
-  if (!sourcePost || sourcePost.lang === targetLocale) return null
-
-  const translated = await db
-    .find<ExtendedOstDocument>(
-      { collection: "posts", lang: targetLocale, publishedAt: sourcePost.publishedAt },
-      ["slug"]
-    )
-    .first()
-
-  return translated?.slug ?? null
-}
-
-async function getAlternates(slug: string, locale: string) {
-  const db = await load()
-  const post = await db
-    .find<ExtendedOstDocument>({ collection: "posts", slug, lang: locale }, ["publishedAt"])
-    .first()
-
-  if (!post) return {}
-
-  const allVersions = await db
-    .find<ExtendedOstDocument>({ collection: "posts", publishedAt: post.publishedAt }, [
-      "slug",
-      "lang",
-    ])
-    .toArray()
-
-  const languages: Record<string, string> = {}
-  for (const v of allVersions) {
-    const lang = v.lang as string
-    languages[lang] = `${siteMetadata.siteUrl}/${lang}/blog/${v.slug}`
-  }
-  return languages
+  return findTranslatedSlugIn("posts", slug, targetLocale)
 }
 
 export async function generateMetadata({
@@ -107,18 +73,20 @@ export async function generateMetadata({
     ? post.coverImage
     : `${siteMetadata.siteUrl}${post.coverImage}`
 
-  const languages = await getAlternates(post.slug, locale)
+  // BO-1426: hreflang to the other language version + x-default
+  const languages = articleLanguages(await getArticleLanguages("posts", post.slug, locale), "blog")
+  const description = metaDescription(post.description)
 
   return {
     title: post.title,
-    description: post.description,
+    description,
     alternates: {
       canonical: siteMetadata.siteUrl + "/" + locale + "/blog/" + post.slug,
       languages,
     },
     openGraph: {
       title: post.title,
-      description: post.description,
+      description,
       siteName: siteMetadata.title,
       locale: getLocalePrimaryDialects(locale),
       type: "article",
@@ -136,7 +104,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: post.title,
-      description: post.description,
+      description,
       images: [cover],
     },
     robots: {
@@ -181,7 +149,7 @@ export default async function BlogPost({
         <div className="flex justify-center py-6 lg:py-10">
           <Button
             as={Link}
-            href="/blog"
+            href={localizeHref("/blog", resolvedParams.locale)}
             aria-label={t("back")}
             aria-labelledby={t("back")}
             title={t("back")}
@@ -204,7 +172,7 @@ export default async function BlogPost({
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
-    description: post.description,
+    description: metaDescription(post.description),
     image: cover,
     datePublished: new Date(post.publishedAt).toISOString(),
     author: {

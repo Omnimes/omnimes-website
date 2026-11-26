@@ -28,16 +28,29 @@ export async function generateStaticParams({
   }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; page: string }>
+}) {
   const resolvedParams = await params
   const locale = resolvedParams.locale
   const t = await getTranslations({ locale, namespace: "Metadata" })
-  const title = t("implementation_title") // ⬅ zmiana
+  // BO-1426: own title and canonical per list page
+  const pageLabel = locale === "pl" ? "strona" : "page"
+  const title = `${t("implementation_title")} — ${pageLabel} ${resolvedParams.page}`
   const description = t("implementation_desc") // ⬅ zmiana
   const keywords = t("implementation_keywords") // ⬅ zmiana
   const localeShort = getLocalePrimaryDialects(locale)
 
-  return genPageMetadata({ title, description, keywords, localeShort })
+  return genPageMetadata({
+    title,
+    description,
+    keywords,
+    localeShort,
+    locale,
+    path: `/implementation/page/${resolvedParams.page}`,
+  })
 }
 
 async function getData(locale: string, page: string) {
@@ -67,7 +80,7 @@ export default async function implementationPagePage({
   const { locale, page } = resolvedParams
   setRequestLocale(locale)
 
-  const t = await getTranslations("implementation") // ⬅ zmiana
+  const t = await getTranslations("Implementation")
   const { allimplementation, implementationLength } = await getData(locale, page)
 
   if (!allimplementation || allimplementation.length === 0)

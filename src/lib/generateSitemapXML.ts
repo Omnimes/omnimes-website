@@ -2,6 +2,14 @@ import { locales } from "@/config"
 import { OstDocument } from "outstatic"
 import { create } from "xmlbuilder2"
 
+import {
+  articleLanguages,
+  pairTranslations,
+  SEO_LOCALES,
+  TranslatableDoc,
+  X_DEFAULT_LOCALE,
+} from "@/lib/seo"
+
 export type changeFrequency =
   | "always"
   | "hourly"
@@ -31,10 +39,6 @@ export type URLObject = {
   }
 }
 
-type TagsPath = {
-  [key: string]: string[]
-}
-
 export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
   const transformedPaths: Paths = {}
 
@@ -56,62 +60,34 @@ export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
   return transformedPaths
 }
 
-export function generateURLObjectsTags(paths: TagsPath, host: string): URLObject[] {
-  const urls: URLObject[] = []
-  const pathMapping: { [key: string]: string } = {
-    pl: "tagi",
-    en: "tags",
-  }
-
-  for (const lang in paths) {
-    paths[lang].forEach((tag) => {
-      const pathTag = pathMapping[lang] || pathMapping["pl"]
-
-      const urlObj: URLObject = {
-        url: `${host}/${lang ?? "pl"}/${pathTag}/${tag}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly",
-        priority: 0.8,
-      }
-
-      urls.push(urlObj)
-    })
-  }
-
-  return urls
-}
-
 export function generateURLObjectsWithoutAlternate(
-  paths: OstDocument[],
+  docs: OstDocument[],
   host: string,
   collection: string
 ): URLObject[] {
-  const pathMappingNews: { [key: string]: string } = {
-    en: "news",
-    pl: "aktualności",
-  }
-
-  // Map outstatic collection name → URL path segment.
-  // Without this map the generator used to lump every non-"news" collection
-  // under /blog/, producing broken URLs like /pl/blog/instalacja for a course
-  // (real URL is /pl/courses/instalacja). Add new collections here when adding
-  // them to outstatic.
-  const collectionPathSegment: Record<string, string | { en: string; pl: string }> = {
+  // Map outstatic collection name -> URL path segment. Article pages of every
+  // collection live under the same segment in both languages (BO-1426: news
+  // articles are /pl/news/<slug>; /pl/aktualności is only the list page).
+  // Add new collections here when adding them to outstatic.
+  const collectionPathSegment: Record<string, string> = {
     posts: "blog",
-    news: { en: "news", pl: "aktualności" },
+    news: "news",
     courses: "courses",
     implementation: "implementation",
   }
+  const segment = collectionPathSegment[collection] ?? collection
+  const translations = pairTranslations(docs as TranslatableDoc[])
 
-  return paths.map((url) => {
-    const lang = (url.lang ?? "pl") as "en" | "pl"
-    const segment = collectionPathSegment[collection] ?? collection
-    const localizedSegment = typeof segment === "string" ? segment : (segment[lang] ?? segment.pl)
+  return docs.map((doc) => {
+    const lang = (doc.lang as string) ?? "pl"
+    const languages = translations.get(`${lang}:${doc.slug}`) ?? { [lang]: doc.slug }
+    const alternates = articleLanguages(languages, segment)
     return {
-      url: `${host}/${lang}/${localizedSegment}/${url.slug}`,
-      lastModified: url.publishedAt || new Date(),
+      url: `${host}/${lang}/${segment}/${doc.slug}`,
+      lastModified: doc.publishedAt || undefined,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.8,
+      ...(Object.keys(alternates).length > 1 && { alternates: { languages: alternates } }),
     }
   })
 }
@@ -122,34 +98,33 @@ export function generateURLObjects(
   baseURL: string
 ): URLObject[] {
   const urlObjects: URLObject[] = []
+  // Homepage is keyed as "/" in pathnames; emitting `${baseURL}/${locale}/`
+  // produces a trailing slash that Vercel/Next.js then redirects away. Strip "/".
+  const stripRoot = (p: string) => (p === "/" ? "" : p)
+
   for (const key in paths) {
     const path = paths[key]
-
     if (typeof path !== "object" || path === null || !(defaultLocale in path)) {
       continue
     }
-
-    // Homepage is keyed as "/" in pathnames; emitting `${baseURL}/${locale}/`
-    // produces a trailing slash that Vercel/Next.js then 301-redirects away,
-    // triggering "Page with redirect" warnings in GSC. Strip "/" for homepage.
-    const stripRoot = (p: string) => (p === "/" ? "" : p)
-    const urlObject: URLObject = {
-      url: `${baseURL}/${defaultLocale}${stripRoot(path[defaultLocale])}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-      alternates: {
-        languages: {},
-      },
+    // BO-1426: one <url> per language, each listing every language version
+    // (itself included) and x-default, as Google expects for hreflang in sitemaps.
+    const languages: Record<string, string> = {}
+    for (const lang of SEO_LOCALES) {
+      const localized = (path as LanguagePaths)[lang]
+      if (localized !== undefined) languages[lang] = `${baseURL}/${lang}${stripRoot(localized)}`
     }
+    if (languages[X_DEFAULT_LOCALE]) languages["x-default"] = languages[X_DEFAULT_LOCALE]
 
-    for (const lang in path) {
-      if (lang !== defaultLocale && urlObject.alternates) {
-        urlObject.alternates.languages[lang] =
-          `${baseURL}/${lang}${stripRoot(path[lang as keyof LanguagePaths])}`
-      }
+    for (const lang of SEO_LOCALES) {
+      if (!languages[lang]) continue
+      urlObjects.push({
+        url: languages[lang],
+        changeFrequency: "weekly",
+        priority: key === "/" ? 1 : 0.9,
+        alternates: { languages },
+      })
     }
-    urlObjects.push(urlObject)
   }
 
   return urlObjects

@@ -256,4 +256,4 @@ Skuteczna implementacja wymaga współpracy między działami IT, OT oraz operat
 System **OmniMES** firmy **Multiprojekt** wykorzystuje opisaną technologię w praktyce. Dane z maszyn i czujników są przekazywane w standardzie **Sparkplug B**, co zapewnia ich spójność, bezpieczeństwo i dostępność w czasie rzeczywistym.
 
 \
-Zapraszamy do zapoznania się ze szczegółami oferty systemu na stronie: [www.omnimes.com](https://www.omnimes.com/pl/projekt)
+Zapraszamy do zapoznania się ze szczegółami oferty systemu na stronie: [www.omnimes.com](https://www.omnimes.com/pl/oferta)

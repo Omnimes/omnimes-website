@@ -1,17 +1,19 @@
 import Image from "next/image"
 import Logo from "@/data/logo.png"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
+
+import { localizeHref } from "@/lib/localizeHref"
 
 import SectionContainer from "./SectionContainer"
 import { DescriptionSecondary } from "./ui/Description"
 
 export const Footer = () => {
   const t = useTranslations("Footer")
+  const locale = useLocale()
   const tl = useTranslations("HeaderLinks")
   const links = [
     "blog",
     "about",
-    "project",
     "contact",
     "faq",
     "offer",
@@ -26,7 +28,7 @@ export const Footer = () => {
     <SectionContainer>
       <footer className="mx-auto max-w-screen-xl pb-4 text-center md:p-8 lg:p-10">
         <a
-          href="/"
+          href={localizeHref("/", locale)}
           className="my-6 flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
         >
           <Image
@@ -44,13 +46,13 @@ export const Footer = () => {
 
         <ul className="my-6 flex flex-wrap items-center justify-center text-gray-900 dark:text-white">
           <li>
-            <a href="/" className="mr-4 hover:underline md:mr-6">
+            <a href={localizeHref("/", locale)} className="mr-4 hover:underline md:mr-6">
               {tl("home")}
             </a>
           </li>
           {links.map((link) => (
             <li key={link}>
-              <a href={`/${link}`} className="mr-4 hover:underline md:mr-6">
+              <a href={localizeHref(`/${link}`, locale)} className="mr-4 hover:underline md:mr-6">
                 {tl(link)}
               </a>
             </li>
@@ -100,7 +102,7 @@ export const Footer = () => {
 
         <span className="mt-4 block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2021–{new Date().getFullYear()}{" "}
-          <a href="/" className="hover:underline">
+          <a href={localizeHref("/", locale)} className="hover:underline">
             OmniMES™
           </a>
           . {t("rights")}

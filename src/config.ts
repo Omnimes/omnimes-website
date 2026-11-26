@@ -52,6 +52,8 @@ export const pathnames = {
   "/blog": "/blog",
   "/courses": "/courses",
   "/demo": "/demo",
+  "/omnienergy": "/omnienergy",
+  "/implementation": "/implementation",
   "/login": "/login",
   "/register": {
     en: "/register",

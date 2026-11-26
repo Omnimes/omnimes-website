@@ -1,4 +1,6 @@
-import Link, { LinkProps } from "next/link"
+import { LinkProps } from "next/link"
+
+import Link from "@/components/LocaleLink"
 
 export type CustomLinkProps = {
   href: string
@@ -15,6 +17,8 @@ export default function CustomLink({
   className,
   ...rest
 }: CustomLinkProps) {
+  // BO-1426: "www.omnimes.com/..." without a scheme was resolved as a relative path (500)
+  if (href && /^(www\.)?omnimes\.com(\/|$)/i.test(href)) href = `https://${href}`
   const isNewTab =
     openNewTab !== undefined ? openNewTab : href && !href.startsWith("/") && !href.startsWith("#")
 

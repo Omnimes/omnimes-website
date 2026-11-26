@@ -33,7 +33,7 @@ We appreciate your patience — the additional time will allow us to deliver an 
 The perfect solution for integrators, automation specialists, production directors and people managing traffic in industrial plants.
 
 - Flexible subscription plans – monthly and annual
-- Check out the details at: [www.omnimes.com](www.omnimes.com)
+- Check out the details at: [www.omnimes.com](https://www.omnimes.com/en)
 - Watch the video preview: [cloud.omnimes.com](https://cloud.omnimes.com)
 
 **Be ready for the new standard in production management.**

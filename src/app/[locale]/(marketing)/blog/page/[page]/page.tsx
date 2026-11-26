@@ -31,11 +31,17 @@ export const generateStaticParams = async ({
   return paths
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; page: string }>
+}) {
   const resolvedParams = await params
   const locale = resolvedParams.locale
   const t = await getTranslations({ locale, namespace: "Metadata" })
-  const title = t("blog_title")
+  // BO-1426: own title and canonical per list page (were duplicates of /blog)
+  const pageLabel = locale === "pl" ? "strona" : "page"
+  const title = `${t("blog_title")} — ${pageLabel} ${resolvedParams.page}`
   const description = t("blog_desc")
   const keywords = t("blog_keywords")
   const localeShort = getLocalePrimaryDialects(locale)
@@ -44,6 +50,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description,
     keywords,
     localeShort,
+    locale,
+    path: `/blog/page/${resolvedParams.page}`,
   }
   return genPageMetadata(obj)
 }

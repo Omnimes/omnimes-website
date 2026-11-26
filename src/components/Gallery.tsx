@@ -3,7 +3,6 @@
 import "react-image-lightbox/style.css"
 
 import { useEffect, useState } from "react"
-import Link from "next/link"
 import { sortImagesByDate } from "@/utils/utils"
 import { Spinner } from "@nextui-org/react"
 import { motion } from "framer-motion"
@@ -12,6 +11,7 @@ import { Image } from "react-grid-gallery"
 import Lightbox from "react-image-lightbox"
 
 import { importAll } from "@/lib/importImage"
+import Link from "@/components/LocaleLink"
 
 import { Gallery } from "./GalleryGrid/Gallery"
 import { ImagesSlider } from "./ui/ImagesSlider"

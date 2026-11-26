@@ -24,6 +24,7 @@ import { SessionProvider } from "next-auth/react"
 import { useLocale, useTranslations } from "next-intl"
 import { LuBook, LuChevronDown, LuFileText, LuHistory, LuMessageCircle } from "react-icons/lu"
 
+import { localizeHref } from "@/lib/localizeHref"
 import { Notification } from "@/components/Notification"
 
 import { UserAccountNavClient } from "./auth/UserAccountNavClient"
@@ -93,7 +94,10 @@ export default function Header() {
               className="mr-2"
               style={{ width: "40px", height: "40px" }}
             />
-            <Link href="/" className="hidden font-bold text-inherit min-[760px]:flex">
+            <Link
+              href={localizeHref("/", locale)}
+              className="hidden font-bold text-inherit min-[760px]:flex"
+            >
               OmniMES
             </Link>
           </li>
@@ -141,7 +145,7 @@ export default function Header() {
                   return (
                     <DropdownItem
                       key={item.href}
-                      href={resolveDropdownHref(item)}
+                      href={localizeHref(resolveDropdownHref(item), locale)}
                       target={item.external ? "_blank" : undefined}
                       rel={item.external ? "noopener noreferrer" : undefined}
                       description={t(item.desc)}
@@ -163,7 +167,7 @@ export default function Header() {
                   return (
                     <DropdownItem
                       key={item.href}
-                      href={resolveDropdownHref(item)}
+                      href={localizeHref(resolveDropdownHref(item), locale)}
                       target={item.external ? "_blank" : undefined}
                       rel={item.external ? "noopener noreferrer" : undefined}
                       description={t(item.desc)}
@@ -223,7 +227,7 @@ export default function Header() {
                 return (
                   <DropdownItem
                     key={item.href}
-                    href={item.href}
+                    href={localizeHref(item.href, locale)}
                     target={item.external ? "_blank" : undefined}
                     rel={item.external ? "noopener noreferrer" : undefined}
                     startContent={
@@ -245,7 +249,7 @@ export default function Header() {
             .map((link) => (
               <NavbarItem key={link.title}>
                 <Link
-                  href={link.href}
+                  href={localizeHref(link.href, locale)}
                   color="foreground"
                   isExternal={link.external}
                   showAnchorIcon={link.external}
@@ -289,7 +293,7 @@ export default function Header() {
         </NavbarContent>
         <NavbarMenu>
           <NavbarMenuItem>
-            <Link href={"/"} color="foreground" size="lg">
+            <Link href={localizeHref("/", locale)} color="foreground" size="lg">
               {t("home")}
             </Link>
           </NavbarMenuItem>
@@ -298,7 +302,7 @@ export default function Header() {
             .map((link) => (
               <NavbarMenuItem key={link.title}>
                 <Link
-                  href={link.href}
+                  href={localizeHref(link.href, locale)}
                   color="foreground"
                   size="lg"
                   isExternal={link.external}
@@ -314,7 +318,7 @@ export default function Header() {
           {headerNavLinksDropDown.map((link) => (
             <NavbarMenuItem key={link.title}>
               <Link
-                href={resolveDropdownHref(link)}
+                href={localizeHref(resolveDropdownHref(link), locale)}
                 color="foreground"
                 size="lg"
                 isExternal={link.external}
@@ -331,7 +335,7 @@ export default function Header() {
           {docsLinks.map((link) => (
             <NavbarMenuItem key={link.title}>
               <Link
-                href={link.href}
+                href={localizeHref(link.href, locale)}
                 color="foreground"
                 size="lg"
                 isExternal={link.external}

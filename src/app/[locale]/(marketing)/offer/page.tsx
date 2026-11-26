@@ -3,6 +3,7 @@ import { getLocalePrimaryDialects } from "@/data/locales"
 import { Button, Link } from "@nextui-org/react"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
+import { localizeHref } from "@/lib/localizeHref"
 import { DescriptionPrimary } from "@/components/ui/Description"
 import { Heading } from "@/components/ui/Heading"
 import { SubtitleNormal } from "@/components/ui/Subtitle"
@@ -173,7 +174,7 @@ export default async function OfferPage({ params }: { params: Promise<{ locale: 
     <main className="px-0 py-16 md:text-center">
       <AbstractBackgroundSecond />
       <SubtitleNormal text={t("subtitle")} />
-      <Heading omnimes={true} text={t("heading")} />
+      <Heading as="h1" omnimes={true} text={t("heading")} />
       <DescriptionPrimary text={t("descript")} />
       <section className="text-left">
         <div className="mx-auto max-w-screen-xl items-center gap-8 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16">
@@ -200,7 +201,7 @@ export default async function OfferPage({ params }: { params: Promise<{ locale: 
             </p>
             <Button
               as={Link}
-              href="/contact"
+              href={localizeHref("/contact", locale)}
               aria-label={t("buttonAria")}
               aria-labelledby={t("buttonAria")}
               title={t("contact")}
@@ -228,7 +229,7 @@ export default async function OfferPage({ params }: { params: Promise<{ locale: 
             </p>
             <Button
               as={Link}
-              href="/contact"
+              href={localizeHref("/contact", locale)}
               showAnchorIcon
               className="mt-8 bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
             >

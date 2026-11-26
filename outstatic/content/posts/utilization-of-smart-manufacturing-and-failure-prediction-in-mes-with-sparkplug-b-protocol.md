@@ -149,4 +149,4 @@ Successful deployment requires collaboration between IT, OT, and operations team
 
 **The OmniMES system by Multiprojekt implements this technology in practice. Machine and sensor data are transferred using the Sparkplug B standard, ensuring consistency, security, and real-time availability.**
 
-Learn more at: [www.omnimes.com](https://www.omnimes.com/en/project)
+Learn more at: [www.omnimes.com](https://www.omnimes.com/en/offer)

@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { cn } from "@/utils/utils"
 
 import getFormattedDate from "@/lib/getFormattedDate"
+import Link from "@/components/LocaleLink"
 
 export const BentoGrid = ({
   className,

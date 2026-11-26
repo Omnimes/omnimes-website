@@ -1,8 +1,9 @@
 import Image from "next/image"
-import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { OstDocument } from "outstatic"
 import { LuNewspaper } from "react-icons/lu"
+
+import Link from "@/components/LocaleLink"
 
 import { Alert, AlertDescription, AlertTitle } from "./ui/Alerts"
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid"
@@ -114,13 +115,7 @@ const Skeleton = ({ src }: { src: string | undefined }) => {
   }
 }
 
-const SkeletonCover = ({
-  src,
-  position,
-}: {
-  src: string | undefined
-  position?: string
-}) => {
+const SkeletonCover = ({ src, position }: { src: string | undefined; position?: string }) => {
   if (src == undefined || src == "") {
     return (
       <div className="flex h-44 w-full bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>

@@ -2,6 +2,9 @@ import { Metadata } from "next"
 import { pathnames } from "@/config"
 import { siteMetadata } from "@/data/siteMetadata"
 
+import { localizeHref } from "@/lib/localizeHref"
+import { metaDescription, pageLanguages } from "@/lib/seo"
+
 interface PageSEOProps {
   title: string
   description: string
@@ -13,20 +16,14 @@ interface PageSEOProps {
   /** App path key from src/config.ts pathnames map (e.g. "/about", "/blog"),
    *  or a raw path. Helper resolves it to the localized URL. Required for canonical. */
   path?: string
+  /** true for thin listing pages (e.g. tags): keep out of the index, follow links. */
+  noindex?: boolean
 }
 
 function buildCanonical(locale: string, path: string): string {
-  const config = (pathnames as Record<string, string | Record<string, string>>)[path]
-  let resolvedPath: string
-  if (!config) {
-    resolvedPath = path
-  } else if (typeof config === "string") {
-    resolvedPath = config
-  } else {
-    resolvedPath = config[locale] ?? path
-  }
+  // Resolves static keys ("/about" -> /pl/o-nas) and dynamic ones ("/tags/x" -> /pl/tagi/x).
   // Home page has no trailing slash: /pl/ redirects to /pl
-  return `${siteMetadata.siteUrl}/${locale}${resolvedPath === "/" ? "" : resolvedPath}`
+  return `${siteMetadata.siteUrl}${localizeHref(path, locale)}`
 }
 
 export function genPageMetadata({
@@ -37,8 +34,13 @@ export function genPageMetadata({
   localeShort,
   locale,
   path,
+  noindex = false,
 }: PageSEOProps): Metadata {
   const canonical = locale && path ? buildCanonical(locale, path) : undefined
+  // BO-1426: hreflang pl/en/x-default for every static page that has a pathnames key
+  const languages =
+    path && (pathnames as Record<string, unknown>)[path] ? pageLanguages(path) : undefined
+  description = metaDescription(description) ?? description
   const images = image
     ? [image]
     : [{ url: siteMetadata.socialBanner, width: 1200, height: 630, type: "image/jpeg", alt: title }]
@@ -46,7 +48,7 @@ export function genPageMetadata({
     title,
     description,
     keywords,
-    ...(canonical && { alternates: { canonical } }),
+    ...(canonical && { alternates: { canonical, ...(languages && { languages }) } }),
     openGraph: {
       title,
       description,
@@ -63,10 +65,10 @@ export function genPageMetadata({
       images,
     },
     robots: {
-      index: true,
+      index: !noindex,
       follow: true,
       googleBot: {
-        index: true,
+        index: !noindex,
         follow: true,
         "max-video-preview": -1,
         "max-image-preview": "large",
