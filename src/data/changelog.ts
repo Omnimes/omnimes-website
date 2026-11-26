@@ -28,6 +28,22 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "5.1.1",
+      date: "2026-11-26",
+      entries: [
+        {
+          category: "security",
+          scope: "OmniMES Cloud: osobny certyfikat agenta dla każdej instancji",
+          body: "Nowa instancja OmniMES Cloud tworzy przy pierwszym uruchomieniu własny certyfikat i klucz TLS agenta zarządzającego. Obraz, z którego powstają instancje, nie zawiera już wspólnego certyfikatu, więc połączenie platformy z jedną instancją nie może posłużyć do podszycia się pod inną.",
+        },
+        {
+          category: "changed",
+          scope: "OmniMES Cloud: bezpieczniejsza aktualizacja instancji",
+          body: "Instancje OmniMES Cloud aktualizujemy falami: przed zmianą powstaje pełna kopia serwera, po zmianie test sprawdza aplikację, API i spływ telemetrii, a przy błędzie instancja automatycznie wraca do kopii sprzed aktualizacji.",
+        },
+      ],
+    },
+    {
       version: "5.1.0",
       name: "OmniMES 5.1",
       date: "2026-11-25",
@@ -1154,6 +1170,22 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "5.1.1",
+      date: "2026-11-26",
+      entries: [
+        {
+          category: "security",
+          scope: "OmniMES Cloud: a separate agent certificate for each instance",
+          body: "A new OmniMES Cloud instance now creates its own TLS certificate and key for the management agent on first start. The image used to create instances no longer contains a shared certificate, so the platform's connection to one instance cannot be used to impersonate another.",
+        },
+        {
+          category: "changed",
+          scope: "OmniMES Cloud: safer instance updates",
+          body: "OmniMES Cloud instances are updated in waves: a full server snapshot is taken before the change, a test then checks the application, the API and incoming telemetry, and on failure the instance automatically returns to the pre-update snapshot.",
+        },
+      ],
+    },
     {
       version: "5.1.0",
       name: "OmniMES 5.1",
