@@ -28,6 +28,93 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "5.3.0",
+      name: "OmniMES 5.3",
+      date: "2026-11-27",
+      entries: [
+        {
+          category: "added",
+          scope: "Kamery: obraz na żywo przy maszynie",
+          body: "Na ekranie Konfiguracja → Kamery wklejasz adres kamery RTSP albo HTTP i przypisujesz ją do maszyny, linii albo parku. Obraz na żywo widać w szczegółach maszyny w Monitoringu i na Planogramie. Hasło kamery zostaje zaszyfrowane na serwerze, a obraz przechodzi przez serwer OmniMES (nowa usługa go2rtc w instalacji), więc przeglądarka nie łączy się z kamerą bezpośrednio.",
+        },
+        {
+          category: "added",
+          scope: "Kamery: kafelki w Monitoringu i warstwa na Planogramie",
+          body: "Kamera całej linii albo parku ma w Monitoringu własny kafelek z obrazem na żywo po kliknięciu „Pokaż obraz”; przycisk z ikoną kamery na pasku chowa i pokazuje te kafelki. Na Planogramie menu Warstwy ma pozycję „Pokaż kamery”: ikona kamery na kafelku maszyny, ikona nad maszynami linii i lista „Kamery parku” w rogu planu. Kliknięcie ikony otwiera okno z obrazem.",
+        },
+        {
+          category: "added",
+          scope: "Monitoring: edycja wyglądu kafelków",
+          body: "Przycisk „Edytuj wygląd” na pasku Monitoringu pozwala zmienić wygląd kafelka jednej maszyny bez zmiany profilu albo edytować cały profil, z informacją, ilu maszyn dotyczy. „Zastosuj do podobnych” przenosi wygląd na zaznaczone maszyny, linię albo park — z podglądem przed zapisem. „Duplikuj profil i edytuj” tworzy kopię profilu, zmiany z sesji edycji można cofnąć, a kolejność kafelków zmienisz przeciąganiem. Funkcja wymaga prawa zapisu w module Struktura.",
+        },
+        {
+          category: "added",
+          scope: "Konfigurator statusów: wybór profilu z podglądem",
+          body: "Przy przypisaniu sygnału wybierasz profil z listy z kolorem, ikoną, rodzajem widżetu, liczbą maszyn i podglądem kafelka. Nowy profil utworzysz od razu („Nowy profil”) albo skopiujesz istniejący („Duplikuj i edytuj”) bez opuszczania formularza, a przy profilu wspólnym dla wielu maszyn pojawia się ostrzeżenie.",
+        },
+        {
+          category: "added",
+          scope: "Monitoring, Planogram i Hala 3D: te same stany maszyn",
+          body: "Wszystkie trzy widoki pokazują stan maszyny według tych samych zasad: ten sam kolor i nazwa statusu, szary napis „Brak danych”, gdy maszyna jeszcze nic nie wysłała, oraz oznaczenie „Dane nieaktualne” z godziną ostatniego sygnału, gdy maszyna ucichła. Próg ustawisz w Konfiguracji ogólnej (pole „Dane nieaktualne po (min)”, domyślnie 15 minut).",
+        },
+        {
+          category: "added",
+          scope: "Planogram: legenda statusów jak na Monitoringu",
+          body: "Legenda pokazuje tylko statusy używane w parku, liczbę maszyn w każdym z nich, pozycje „Brak danych” i „Dane nieaktualne”. Kliknięcie pozycji wyróżnia te maszyny.",
+        },
+        {
+          category: "added",
+          scope: "Mikroprzestoje na osi stanów",
+          body: "Krótkie postoje i awarie na osi stanów Monitoringu są oznaczone jako mikroprzestoje według progów z ekranu Mikroprzestoje, tak jak w OEE.",
+        },
+        {
+          category: "changed",
+          scope: "Czas pracy i OEE: szybciej dla okresów z dzisiejszym dniem",
+          body: "Zakładki OEE (zmiany, wyroby, MTBF/MTTR) dla okresu obejmującego dziś wczytują się mniej więcej dwa razy szybciej — 7 dni w ok. 1–1,7 s, 30 dni w ok. 1–2 s — z tymi samymi wynikami. Seria statusu na wykresie Czasu pracy ma stały kolor, także gdy dwa statusy o tej samej nazwie mają różne kolory.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram: podstatusy według profilu",
+          body: "Pod kafelkami widać tylko podstatusy oznaczone jako widoczne, z nazwą wyświetlaną, liczbą miejsc po przecinku i kolorem progów z profilu. Zniknął napis zastępczy „Nazwa statusu”.",
+        },
+        {
+          category: "fixed",
+          scope: "Hala 3D: sygnalizator według typu zdarzenia",
+          body: "Kolor sygnalizatora wynika z typu zdarzenia w profilu statusu, a nie z barwy koloru. Etykieta OEE ma podpis „OEE dziś”, a na Monitoringu widać, której zmiany dotyczy OEE.",
+        },
+        {
+          category: "fixed",
+          scope: "Kilka sygnałów stanu jednej maszyny",
+          body: "Obowiązuje zawsze ostatni odebrany sygnał, także zaraz po otwarciu ekranu. Wiersze DataSet są liczone od 0, tak jak zapisuje je system, więc status „nazwa/0” zapala się na żywo.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram: kolor linii według statusu",
+          body: "Działa dla każdego zapisu koloru, także rgb() i nazw kolorów.",
+        },
+        {
+          category: "fixed",
+          scope: "OEE: ta sama granica wydajności w każdym widoku",
+          body: "OEE z kilku dni, linii i hali stosuje tę samą granicę wydajności (150%) co wynik pojedynczego dnia. Hala 3D i ekran Czas pracy i OEE nie pokazują już zawyżonych wyników przy błędnej normie (wcześniej nawet ponad 200%).",
+        },
+        {
+          category: "fixed",
+          scope: "Andon: brak fałszywego „Masz niezapisane zmiany”",
+          body: "Profil otwarty bez żadnej zmiany nie pyta już o niezapisane zmiany.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram: dymek maszyny po polsku",
+          body: "„Ostatnia aktualizacja” i „Podstatusy” zamiast tekstów angielskich.",
+        },
+        {
+          category: "fixed",
+          scope: "Tłumaczenia angielskie",
+          body: "Poprawione nazwy, m.in. „Profile name”, „Measurements” i menu „Access permissions”.",
+        },
+      ],
+    },
+    {
       version: "5.2.0",
       name: "OmniMES 5.2",
       date: "2026-11-27",
@@ -1227,6 +1314,93 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "5.3.0",
+      name: "OmniMES 5.3",
+      date: "2026-11-27",
+      entries: [
+        {
+          category: "added",
+          scope: "Cameras: live view next to the machine",
+          body: "On the Configuration → Cameras screen you paste an RTSP or HTTP camera address and assign it to a machine, line or park. The live view appears in the machine details in Monitoring and on the Planogram. The camera password stays encrypted on the server, and the video passes through the OmniMES server (new go2rtc service in the installation), so the browser never connects to the camera directly.",
+        },
+        {
+          category: "added",
+          scope: "Cameras: tiles in Monitoring and a Planogram layer",
+          body: "A camera covering a whole line or park gets its own tile in Monitoring with a live view after clicking “Show video”; the camera button on the toolbar hides and shows these tiles. On the Planogram, the Layers menu has a “Show cameras” item: a camera icon on the machine tile, an icon above the machines of a line and a “Park cameras” list in the corner of the plan. Clicking an icon opens a window with the video.",
+        },
+        {
+          category: "added",
+          scope: "Monitoring: editing tile appearance",
+          body: "The “Edit appearance” button on the Monitoring toolbar lets you change the tile appearance of a single machine without changing its profile, or edit the whole profile, showing how many machines it affects. “Apply to similar” copies the appearance to selected machines, a line or a park, with a preview before saving. “Duplicate profile and edit” creates a copy of the profile, changes made in an editing session can be undone, and you reorder tiles by dragging. Requires write access to the Structure module.",
+        },
+        {
+          category: "added",
+          scope: "Status configurator: profile picker with preview",
+          body: "When assigning a signal you pick a profile from a list showing colour, icon, widget type, number of machines and a tile preview. You can create a new profile right away (“New profile”) or copy an existing one (“Duplicate and edit”) without leaving the form, and a profile shared by many machines shows a warning.",
+        },
+        {
+          category: "added",
+          scope: "Monitoring, Planogram and 3D Hall: the same machine states",
+          body: "All three views show machine state by the same rules: the same status colour and name, a grey “No data” label when the machine has not sent anything yet, and a “Stale data” mark with the time of the last signal when the machine has gone quiet. Set the threshold in General configuration (“Stale data after (min)”, 15 minutes by default).",
+        },
+        {
+          category: "added",
+          scope: "Planogram: status legend as in Monitoring",
+          body: "The legend shows only the statuses used in the park, the number of machines in each, plus “No data” and “Stale data”. Clicking an item highlights those machines.",
+        },
+        {
+          category: "added",
+          scope: "Micro-stops on the state timeline",
+          body: "Short stops and failures on the Monitoring state timeline are marked as micro-stops using the thresholds from the Micro-stops screen, the same way as in OEE.",
+        },
+        {
+          category: "changed",
+          scope: "Work time and OEE: faster for periods including today",
+          body: "OEE tabs (shifts, products, MTBF/MTTR) for a period that includes today load about twice as fast — 7 days in about 1–1.7 s, 30 days in about 1–2 s — with the same results. A status series on the Work time chart keeps one colour, even when two statuses with the same name have different colours.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram: sub-statuses according to the profile",
+          body: "Only sub-statuses marked as visible appear under the tiles, with the display name, number of decimal places and threshold colours from the profile. The placeholder “Status name” is gone.",
+        },
+        {
+          category: "fixed",
+          scope: "3D Hall: signal tower by event type",
+          body: "The signal tower colour follows the event type in the status profile instead of the colour hue. The OEE label reads “OEE today”, and Monitoring shows which shift the OEE refers to.",
+        },
+        {
+          category: "fixed",
+          scope: "Several state signals of one machine",
+          body: "The most recently received signal always wins, also right after opening the screen. DataSet rows are counted from 0, the way the system stores them, so a “name/0” status lights up live.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram: line colour by status",
+          body: "Works for every colour notation, including rgb() and colour names.",
+        },
+        {
+          category: "fixed",
+          scope: "OEE: the same performance cap in every view",
+          body: "OEE over several days, for lines and the hall uses the same performance cap (150%) as a single day. The 3D Hall and the Work time and OEE screen no longer show inflated results with a wrong standard rate (previously even above 200%).",
+        },
+        {
+          category: "fixed",
+          scope: "Andon: no false “You have unsaved changes”",
+          body: "A profile opened without any change no longer asks about unsaved changes.",
+        },
+        {
+          category: "fixed",
+          scope: "Planogram: machine tooltip in Polish",
+          body: "“Last update” and “Sub-statuses” are shown in Polish in the Polish interface instead of English texts.",
+        },
+        {
+          category: "fixed",
+          scope: "English translations",
+          body: "Corrected names, including “Profile name”, “Measurements” and the “Access permissions” menu.",
+        },
+      ],
+    },
     {
       version: "5.2.0",
       name: "OmniMES 5.2",
