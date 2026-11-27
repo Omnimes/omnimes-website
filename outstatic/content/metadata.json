@@ -6,6 +6,80 @@
       "__outstatic": {
         "commit": "pending",
         "hash": "0",
+        "path": "outstatic/content/implementation/chp-group-sheet-metal-cutting-machine-monitoring.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "/images/chp/chp-group-wypalarki.png",
+      "description": "At CHP Group we implemented OmniMES with the OmniEnergy module, monitoring three sheet metal cutting machines: operating status and consumption of electricity and compressed air. The company knows the real cost of each cutting method and prices its services based on data rather than estimates.",
+      "lang": "en",
+      "publishedAt": "2026-11-27T10:00:00.000Z",
+      "slug": "chp-group-sheet-metal-cutting-machine-monitoring",
+      "status": "published",
+      "tags": [
+        {
+          "label": "CHP Group",
+          "value": "chp-group"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        },
+        {
+          "label": "Integration",
+          "value": "integration"
+        }
+      ],
+      "title": "CHP Group — monitoring of sheet metal cutting machines"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
+        "path": "outstatic/content/implementation/chp-group-monitoring-wypalarek-blach.md"
+      },
+      "author": {
+        "name": "OmniMES",
+        "picture": "https://avatars.githubusercontent.com/u/166378457?v=4"
+      },
+      "collection": "implementation",
+      "coverImage": "/images/chp/chp-group-wypalarki.png",
+      "description": "W CHP Group wdrożyliśmy OmniMES z modułem OmniEnergy, który monitoruje trzy wypalarki blach: status pracy oraz zużycie energii elektrycznej i sprężonego powietrza. Firma zna rzeczywisty koszt wypalania każdą metodą cięcia i kalkuluje ceny usług na podstawie danych, a nie szacunków.",
+      "lang": "pl",
+      "publishedAt": "2026-11-27T10:00:00.000Z",
+      "slug": "chp-group-monitoring-wypalarek-blach",
+      "status": "published",
+      "tags": [
+        {
+          "label": "CHP Group",
+          "value": "chp-group"
+        },
+        {
+          "label": "Omnimes",
+          "value": "omnimes"
+        },
+        {
+          "label": "OmniEnergy",
+          "value": "omniEnergy"
+        },
+        {
+          "label": "Wdrożenie",
+          "value": "wdrożenie"
+        }
+      ],
+      "title": "CHP Group — monitoring wypalarek blach"
+    },
+    {
+      "__outstatic": {
+        "commit": "pending",
+        "hash": "0",
         "path": "outstatic/content/implementation/relpol-partnership-smart-energy-metering-network.md"
       },
       "author": {
