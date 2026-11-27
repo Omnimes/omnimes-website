@@ -28,6 +28,63 @@ export const roadmap: Record<"pl" | "en", UpcomingFeature[]> = {
 export const changelog: Record<"pl" | "en", Release[]> = {
   pl: [
     {
+      version: "5.2.0",
+      name: "OmniMES 5.2",
+      date: "2026-11-27",
+      entries: [
+        {
+          category: "added",
+          scope: "Monitoring: nowy widok",
+          body: "Kafelki maszyn odświeżają się na żywo ze wspólnego źródła danych, a układ dopasowuje się do ekranu. Dla każdego podstatusu wybierasz w Konfiguratorze statusów jeden z 9 widżetów, m.in. prędkościomierz, wykres trendu z ostatnich do 240 minut i OEE z podziałem na dostępność, wydajność i jakość. Gdy połączenie z serwerem zostanie zerwane, ekran od razu o tym informuje.",
+        },
+        {
+          category: "added",
+          scope: "Konfigurator statusów: import CSV i wykrywanie sygnałów",
+          body: "Import przyjmuje pliki z nagłówkiem, separatorem średnik, przecinek albo tabulator, w kodowaniu UTF-8, UTF-16 i Windows-1250, także w formacie z poprzednich wersji. Przed zapisem pokazuje podgląd, pomija duplikaty i zapisuje wszystko albo nic. Automatyczne wykrywanie podpowiada sygnały z ostatnich odczytów i z nasłuchu na żywo, a eksport ma ten sam format co import.",
+        },
+        {
+          category: "added",
+          scope: "Harmonogramy raportów",
+          body: "Jeden formularz dla wszystkich rodzajów raportów: codziennie, co tydzień albo co miesiąc o wybranej godzinie zakładu, a raport zlecenia także co kilka godzin albo po zakończeniu zlecenia. „Uruchom teraz” działa dla każdego harmonogramu, a raport z ekranu Raporty zaplanujesz przyciskiem „Zaplanuj cyklicznie”.",
+        },
+        {
+          category: "added",
+          scope: "Hala 3D: OEE maszyn",
+          body: "Hala 3D pokazuje OEE maszyn liczone tak samo jak w module Czas pracy i OEE.",
+        },
+        {
+          category: "added",
+          scope: "Planogram: cofanie zmian i tło z pliku",
+          body: "Edycja planogramu ma cofanie i ponawianie zmian, zapisuje się sama i pokazuje stan zapisu, a tło wgrasz jako plik. Podgląd pokazuje szczegóły maszyny, a park bez planogramu wyświetla komunikat z przyciskiem „Utwórz planogram” zamiast pustego ekranu.",
+        },
+        {
+          category: "changed",
+          scope: "Raporty: spójne ekrany i nazwy",
+          body: "„Wygeneruj raport” nazywa się teraz „Raporty”, „Wygenerowane raporty” — „Archiwum raportów”, a „Raporty cykliczne” — „Harmonogramy raportów”. Wszystkie trzy ekrany mają te same sekcje i nazwy raportów, a archiwum ma zakładki, filtry i przycisk „Wygeneruj ponownie”. Stare adresy i zakładki przeglądarki działają. Raporty starego modułu zleceń i dwa nieużywane rodzaje raportów zostały usunięte razem z ich harmonogramami; ich kopia zostaje w bazie danych.",
+        },
+        {
+          category: "changed",
+          scope: "Czas pracy i OEE oraz Błędy: szybsze wczytywanie",
+          body: "Ekrany liczą z dobowych podsumowań, które system przygotowuje w tle co 15 minut: okres 7 dni wczytuje się w mniej niż 2 sekundy, a 30 dni w mniej niż 3 sekundy, z tymi samymi wynikami co dotąd.",
+        },
+        {
+          category: "changed",
+          scope: "Uprawnienia dostępu jako macierz",
+          body: "Ekran Administracja → Uprawnienia dostępu pokazuje macierz grupa × ekran. Zmiany zapisujesz jednym przyciskiem, każda trafia do Dziennika zdarzeń, a grupy Administratorzy nie da się przypadkowo ograniczyć.",
+        },
+        {
+          category: "changed",
+          scope: "Administracja: nowa kolejność menu",
+          body: "Pozycje menu Administracji są w kolejności: Użytkownicy, Grupy, Uprawnienia dostępu, Konfiguracja sterowania, Konta MQTT, Stan systemu, Dziennik zdarzeń. Pozycje dodane samodzielnie zostają na swoich miejscach.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy: Rozkład zużycia",
+          body: "Drzewko zużycia nazywa się teraz Rozkład zużycia i jest czytelniejsze, a komunikaty o braku źródeł i zbyt długim okresie są jaśniejsze. Menu OmniEnergy ma tę samą kolejność co OmniMES, a ustawienia planogramu i Hali 3D są tylko w OmniMES.",
+        },
+      ],
+    },
+    {
       version: "5.1.1",
       date: "2026-11-26",
       entries: [
@@ -1170,6 +1227,63 @@ export const changelog: Record<"pl" | "en", Release[]> = {
     },
   ],
   en: [
+    {
+      version: "5.2.0",
+      name: "OmniMES 5.2",
+      date: "2026-11-27",
+      entries: [
+        {
+          category: "added",
+          scope: "Monitoring: new view",
+          body: "Machine tiles update live from a shared data source and the layout adapts to the screen. For each sub-status you choose one of 9 widgets in the Status configurator, including a speedometer, a trend chart of up to the last 240 minutes and OEE broken down into availability, performance and quality. If the connection to the server drops, the screen tells you straight away.",
+        },
+        {
+          category: "added",
+          scope: "Status configurator: CSV import and signal detection",
+          body: "The import accepts files with a header, semicolon, comma or tab separators, in UTF-8, UTF-16 and Windows-1250, including the format from previous versions. It shows a preview before saving, skips duplicates and saves everything or nothing. Automatic detection suggests signals from the latest readings and from live listening, and the export uses the same format as the import.",
+        },
+        {
+          category: "added",
+          scope: "Report schedules",
+          body: "One form for every kind of report: daily, weekly or monthly at a chosen plant time, and the order report also every few hours or when the order is completed. “Run now” works for every schedule, and you can schedule a report from the Reports screen with “Schedule”.",
+        },
+        {
+          category: "added",
+          scope: "3D Hall: machine OEE",
+          body: "The 3D Hall shows machine OEE calculated the same way as in the Work time and OEE module.",
+        },
+        {
+          category: "added",
+          scope: "Planogram: undo and background from a file",
+          body: "Planogram editing has undo and redo, saves automatically and shows the save status, and you can upload the background as a file. The preview shows machine details, and a park without a planogram displays a message with a “Create planogram” button instead of an empty screen.",
+        },
+        {
+          category: "changed",
+          scope: "Reports: consistent screens and names",
+          body: "“Generate report” is now called “Reports”, “Generated reports” is “Report archive” and “Recurring reports” is “Report schedules”. All three screens share the same sections and report names, and the archive has tabs, filters and a “Generate again” button. Old addresses and browser bookmarks keep working. Reports of the old orders module and two unused report types have been removed together with their schedules; a copy stays in the database.",
+        },
+        {
+          category: "changed",
+          scope: "Work time and OEE and Errors: faster loading",
+          body: "The screens now read from daily summaries that the system prepares in the background every 15 minutes: a 7-day period loads in under 2 seconds and 30 days in under 3 seconds, with the same results as before.",
+        },
+        {
+          category: "changed",
+          scope: "Access permissions as a matrix",
+          body: "The Administration → Access permissions screen shows a group × screen matrix. You save changes with one button, each change is recorded in the Event log, and the Administrators group cannot be restricted by accident.",
+        },
+        {
+          category: "changed",
+          scope: "Administration: new menu order",
+          body: "Administration menu items are now ordered: Users, Groups, Access permissions, Control configuration, MQTT accounts, System status, Event log. Items you added yourself keep their places.",
+        },
+        {
+          category: "changed",
+          scope: "OmniEnergy: Consumption breakdown",
+          body: "The consumption tree is now called Consumption breakdown and is easier to read, with clearer messages about missing sources and periods that are too long. The OmniEnergy menu follows the same order as OmniMES, and planogram and 3D Hall settings are only in OmniMES.",
+        },
+      ],
+    },
     {
       version: "5.1.1",
       date: "2026-11-26",
