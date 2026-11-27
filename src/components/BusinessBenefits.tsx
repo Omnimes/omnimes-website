@@ -1,14 +1,7 @@
 "use client"
 
 import { useTranslations } from "next-intl"
-import {
-  FaBolt,
-  FaBoxOpen,
-  FaChartLine,
-  FaCogs,
-  FaTachometerAlt,
-  FaUserCog,
-} from "react-icons/fa"
+import { FaBolt, FaBoxOpen, FaChartLine, FaCogs, FaTachometerAlt, FaUserCog } from "react-icons/fa"
 
 import { Heading } from "./ui/Heading"
 

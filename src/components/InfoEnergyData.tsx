@@ -6,7 +6,6 @@ import { FaArrowRight } from "react-icons/fa"
 import Link from "@/components/LocaleLink"
 
 import { EnergyChart } from "./EnergyChart"
-
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
 import { Subtitle, SubtitleNormal } from "./ui/Subtitle"

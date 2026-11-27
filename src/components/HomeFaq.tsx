@@ -28,7 +28,11 @@ export const HomeFaq = () => {
   }
 
   return (
-    <section id="faq" className="mx-auto max-w-4xl scroll-mt-20 py-16" aria-labelledby="faq-heading">
+    <section
+      id="faq"
+      className="mx-auto max-w-4xl scroll-mt-20 py-16"
+      aria-labelledby="faq-heading"
+    >
       <div className="mb-8 md:text-center">
         <SubtitleNormal text={t("smallSubtitle")} />
         <div id="faq-heading">

@@ -30,12 +30,7 @@ export const EnergyChart = () => {
         </figcaption>
         <span className="text-xs text-gray-500 dark:text-gray-400">{t("period")}</span>
       </div>
-      <svg
-        viewBox={`0 0 ${W} ${h}`}
-        className="h-auto w-full"
-        role="img"
-        aria-label={t("aria")}
-      >
+      <svg viewBox={`0 0 ${W} ${h}`} className="h-auto w-full" role="img" aria-label={t("aria")}>
         <text x={LABEL + BAR_W + 20} y={14} className="fill-gray-500 text-[11px]" fontSize="11">
           {t("perUnit")}
         </text>
@@ -46,16 +41,18 @@ export const EnergyChart = () => {
           const wStop = scale(r.stop)
           return (
             <g key={r.key}>
-              <text
-                x={0}
-                y={y + 18}
-                fontSize="13"
-                className="fill-gray-700 dark:fill-gray-300"
-              >
+              <text x={0} y={y + 18} fontSize="13" className="fill-gray-700 dark:fill-gray-300">
                 {t(`m.${r.key}`)}
               </text>
               <g className="energy-bar" style={{ animationDelay: `${i * 0.12}s` }}>
-                <rect x={LABEL} y={y + 4} width={wRun} height={20} rx={3} className="fill-emerald-500" />
+                <rect
+                  x={LABEL}
+                  y={y + 4}
+                  width={wRun}
+                  height={20}
+                  rx={3}
+                  className="fill-emerald-500"
+                />
                 <rect
                   x={LABEL + wRun}
                   y={y + 4}

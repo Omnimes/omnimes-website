@@ -19,7 +19,11 @@ import { SubtitleNormal } from "./ui/Subtitle"
 // pod nią „jak to działa” i technologie dla działu IT.
 
 const ITEMS = [
-  { key: "machines", icon: <FaIndustry />, chips: ["MQTT", "Sparkplug B", "S7", "Modbus", "OPC UA"] },
+  {
+    key: "machines",
+    icon: <FaIndustry />,
+    chips: ["MQTT", "Sparkplug B", "S7", "Modbus", "OPC UA"],
+  },
   { key: "erp", icon: <FaExchangeAlt />, chips: ["REST / OpenAPI", "OData", "SFTP", "HMAC"] },
   { key: "data", icon: <FaServer />, chips: ["PostgreSQL", "TimescaleDB", "Docker", "offline"] },
   { key: "updates", icon: <FaCloudUploadAlt />, chips: ["rollback", "SFTP / S3", "/health"] },

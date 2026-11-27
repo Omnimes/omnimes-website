@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl"
 
 import { ProfitLossVisual } from "./ProfitLossVisual"
-
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
 import { Subtitle, SubtitleNormal } from "./ui/Subtitle"

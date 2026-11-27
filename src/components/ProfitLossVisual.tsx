@@ -47,9 +47,7 @@ export const ProfitLossVisual = () => {
   return (
     <figure className="overflow-hidden rounded-2xl border border-gray-200 bg-white p-5 shadow-md dark:border-white/10 dark:bg-neutral-900">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <span className="text-sm font-semibold text-gray-900 dark:text-white">
-          {t("title")}
-        </span>
+        <span className="text-sm font-semibold text-gray-900 dark:text-white">{t("title")}</span>
         <div
           role="tablist"
           aria-label={t("toggleAria")}
