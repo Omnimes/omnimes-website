@@ -1,7 +1,11 @@
 "use client"
 
-import Image from "next/image"
-import { useLocale, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
+import { FaArrowRight } from "react-icons/fa"
+
+import Link from "@/components/LocaleLink"
+
+import { EnergyChart } from "./EnergyChart"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
@@ -9,10 +13,6 @@ import { Subtitle, SubtitleNormal } from "./ui/Subtitle"
 
 export const InfoEnergyData = () => {
   const t = useTranslations("EnergyInfo")
-  const locale = useLocale()
-
-  const imgAlt =
-    locale === "pl" ? "Wykresy zużycia energii w OmniMES" : "Energy consumption charts in OmniMES"
 
   const cardCls =
     "relative box-border flex flex-col overflow-hidden rounded-large shadow-medium " +
@@ -42,16 +42,15 @@ export const InfoEnergyData = () => {
           <div className="mb-8 leading-tight md:text-center">
             <Subtitle text={t("collectionTitle")} size="3xl" />
           </div>
-          <div className="overflow-hidden rounded-xl shadow-lg">
-            <Image
-              src="/images/chartsEnergy.png"
-              alt={imgAlt}
-              width={1600}
-              height={900}
-              priority
-              className="h-auto w-full object-cover"
-              style={{ clipPath: "inset(14px round 12px)" }}
-            />
+          <EnergyChart />
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/omnienergy"
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 px-6 py-3 text-lg font-semibold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
+            >
+              {t("cta")}
+              <FaArrowRight className="text-sm" />
+            </Link>
           </div>
         </div>
 

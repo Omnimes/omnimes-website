@@ -1,7 +1,8 @@
 "use client"
 
-import Image from "next/image"
-import { useLocale, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
+
+import { ProfitLossVisual } from "./ProfitLossVisual"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
@@ -9,11 +10,6 @@ import { Subtitle, SubtitleNormal } from "./ui/Subtitle"
 
 export const WhatIsOmnimes = () => {
   const t = useTranslations("OmnimesInformation")
-  const locale = useLocale()
-
-  const imgSrc = locale === "pl" ? "/images/omnimes-schemat.png" : "/images/omnimes-schemat-en.png"
-
-  const imgAlt = locale === "pl" ? "Schemat działania systemu OmniMES" : "OmniMES system flow"
 
   // Wspólna klasa kafelka
   const cardCls =
@@ -44,15 +40,7 @@ export const WhatIsOmnimes = () => {
             {/* Duży, responsywny podtytuł */}
             <Subtitle text={t("subTitle")} size="4xl" />
           </div>
-          <Image
-            key={imgSrc} // wymusza podmianę po zmianie języka
-            src={imgSrc}
-            alt={imgAlt}
-            width={1200}
-            height={800}
-            className="h-auto w-full rounded-xl shadow-md"
-            priority
-          />
+          <ProfitLossVisual />
           <div className="mt-6 flex justify-center">
             <a
               href="https://www.multiprojekt.pl/komunikacja-przemyslowa/bramki-protokolow/"

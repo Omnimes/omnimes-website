@@ -4,7 +4,7 @@ import Image from "next/image"
 import NextLink from "next/link"
 import { Link } from "@/navigation"
 import { useLocale, useTranslations } from "next-intl"
-import { FaArrowRight, FaBolt, FaDatabase, FaEnvelopeOpenText, FaWaveSquare } from "react-icons/fa"
+import { FaArrowRight, FaBarcode, FaBolt, FaExchangeAlt, FaTools } from "react-icons/fa"
 
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
@@ -51,10 +51,10 @@ export const WhatsNew = () => {
   const lang = locale === "pl" ? "pl" : "en"
 
   const cards = [
+    { key: "maintenance", icon: <FaTools /> },
+    { key: "erp", icon: <FaExchangeAlt /> },
+    { key: "traceability", icon: <FaBarcode /> },
     { key: "energy", icon: <FaBolt /> },
-    { key: "reports", icon: <FaEnvelopeOpenText /> },
-    { key: "classification", icon: <FaWaveSquare /> },
-    { key: "open", icon: <FaDatabase /> },
   ]
 
   return (
@@ -134,7 +134,7 @@ export const WhatsNew = () => {
         {t("next.title")}
       </h3>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-6">
-        {["erp"].map((key) => (
+        {["latest"].map((key) => (
           <div
             key={key}
             className="rounded-2xl border border-dashed border-gray-300 p-6 dark:border-gray-600"

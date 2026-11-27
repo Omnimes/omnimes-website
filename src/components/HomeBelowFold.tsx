@@ -7,11 +7,6 @@ import { Skeleton } from "@/components/ui/Skeleton"
 
 const sectionSkeleton = () => <Skeleton className="my-16 h-64 w-full" />
 
-const Time = dynamic(() => import("./Time").then((m) => ({ default: m.Time })), {
-  ssr: false,
-  loading: sectionSkeleton,
-})
-
 const ContactTwo = dynamic(() => import("./ContactTwo").then((m) => ({ default: m.ContactTwo })), {
   ssr: false,
   loading: sectionSkeleton,
@@ -36,7 +31,6 @@ type Props = {
 export default function HomeBelowFold({ allNews, allPosts, locale }: Props) {
   return (
     <>
-      <Time />
       <ContactTwo />
       <WhatPeopleSay />
       <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />

@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "OmniMES - Manufacturing Execution System",
-    "description": "OmniMES is a Manufacturing Execution System with energy management: machine monitoring, OEE, kWh per unit, ISO 50001 support and an AI assistant over MCP. In the cloud or on your own server.",
-    "keywords": "MES system, Manufacturing Execution System, OmniMES, production digitalization, Industry 4.0, Industry 5.0, industrial automation, production efficiency, quality control, production data analytics, ERP integration, OEE optimization, production management, IIoT, predictive maintenance, MCP, AI assistant, kWh per unit, ISO 50001",
+    "title": "OmniMES – MES software: machine monitoring, OEE, energy",
+    "description": "MES with an energy module: live OEE and downtime, orders from ERP, maintenance, batch traceability, kWh per piece and an AI assistant. In the cloud or on your server.",
+    "keywords": "MES software, manufacturing execution system, OmniMES, machine monitoring, OEE, ISO 22400, machine downtime, micro-stops, ERP integration, production scheduling, maintenance, MTBF, MTTR, batch traceability, batch genealogy, product recall, kWh per piece, energy management, ISO 50001, ISO 50006, carbon footprint, ESRS, AI assistant, MCP, Industry 4.0, digital manufacturing",
     "postNotFound": "Post Not Found",
     "blog_title": "OmniMES Blog: Explore the World of Industry 4.0",
     "blog_desc": "Discover the world of OmniMES and Industry 4.0 on our blog! Explore innovative content, learn the secrets of production efficiency and modern technologies.",
@@ -16,7 +16,6 @@
     "implementation_keywords": "implementations, training, education, guides, OmniMES",
     "implementationNotFound": "No implementations found"
   },
-
   "DemoOmniMeta": {
     "title": "Demo Access - OmniMES System",
     "desc": "Get free access to the OmniMES system demo version. Test the most advanced MES solution for Industry 4.0.",
@@ -89,7 +88,6 @@
       "other": "Other"
     }
   },
-
   "Courses": {
     "title": "All Courses",
     "NotFound": "Coming soon",
@@ -112,7 +110,6 @@
     "no_date_title": "Can't make it on these dates?",
     "no_date_description": "Contact us to learn about upcoming training sessions."
   },
-
   "cookie": {
     "message": "We use cookies for analytics and advertising personalization. You can accept all, reject, or choose categories. See details in the Privacy Policy.",
     "details": {
@@ -130,398 +127,445 @@
       "accept": "Accept all"
     }
   },
-
   "Implementation": {
     "title": "Selected implementations",
     "NotFound": "Coming soon",
     "search": "Search..."
   },
-
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, pl {Polish} en {English} de {Deutsch} other {Unknown}}"
   },
-
   "OmniEnergy": {
     "meta": {
-      "title": "OmniEnergy - ISO 50001 compliant EnMS energy management system | OmniEnergy",
-      "description": "The module supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting."
+      "title": "OmniEnergy — ISO 50001 energy management, cost per unit, CO2",
+      "description": "OmniEnergy shows how much energy and money every machine, order and unit costs. Support for ISO 50001 and ISO 50006, CO2 and ESRS E1 report data."
     },
     "title": "OmniEnergy",
-    "subtitle": "ISO 50001 compliant energy management system",
-    "intro": "The system supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
+    "subtitle": "Energy management system supporting ISO 50001",
+    "intro": "OmniEnergy meters energy and utilities from the plant down to a single machine, calculates cost and CO2 per unit and organises data for the ISO 50001 energy review.",
     "hero": {
-      "badge": "ISO 50001 compliant energy management system",
-      "title": "Save energy with",
-      "titleHighlight": "OmniEnergy",
-      "description": "The system supports ISO 50001 standard implementation, optimization of energy and utilities consumption, energy data analysis, alerting and reporting.",
-      "ctaPrimary": "Check OmniEnergy Demo",
-      "ctaSecondary": "See features",
+      "badge": "OmniMES energy module · version 5.1",
+      "title": "See what energy costs",
+      "titleHighlight": "for every machine and every unit",
+      "description": "OmniEnergy collects meter readings and joins them with production data. You see where energy is wasted, what an order costs and what to change in your tariff. Data for the ISO 50001 review and the ESG report lives in one place, not in spreadsheets.",
+      "ctaPrimary": "See OmniEnergy in the demo",
+      "ctaSecondary": "What your company gains",
       "features": {
-        "iso": "Supports ISO 50001 implementation",
-        "reduction": "Less energy waste"
+        "iso": "Support for ISO 50001 and ISO 50006",
+        "reduction": "Cost and CO2 per unit, order and batch"
       },
+      "imageAlt": "OmniEnergy main dashboard: energy consumption, significant energy uses (SEU), EnPIs and energy target progress",
       "stats": {
         "monitoring": {
-          "label": "Real-time monitoring",
-          "value": "24/7"
+          "label": "Power profile calculated like your utility does",
+          "value": "15 min"
         },
         "savings": {
-          "label": "Annual savings",
-          "value": "even 200k PLN"
+          "label": "Regression baseline with model quality check",
+          "value": "ISO 50006"
         },
         "enpi": {
-          "label": "Reduction of energy consumption",
-          "value": "5-15%"
+          "label": "Emissions with official factors, ESRS E1 data",
+          "value": "CO2"
         }
       }
-    },
-    "features": {
-      "sectionTitle": "Comprehensive energy management system",
-      "sectionDescription": "The system supports the ISO 50001 requirements for measurement, indicators, objectives and documentation",
-      "dashboard": {
-        "title": "Energy dashboard",
-        "description": "Main starting point of the EnMS system with energy consumption charts, SEU, EnPI, action progress and threshold alerts",
-        "items": ["Real-time charts", "Tiles for all utilities", "Alerts and notifications"]
-      },
-      "sources": {
-        "title": "Sources and measurement points",
-        "description": "Tabular view with map/planogram of each device linked to production line and energy carrier",
-        "items": ["Monitoring of all points", "Sensor statuses", "Planogram visualization"]
-      },
-      "analysis": {
-        "title": "Consumption analysis",
-        "description": "Daily, weekly, monthly trend charts with year-over-year comparison and SEU view",
-        "items": ["Trend analysis", "Pareto and heat maps", "Multi-period comparisons"]
-      },
-      "enpi": {
-        "title": "EnPI indicators",
-        "description": "List of energy performance indicators with graphical trend view and baseline relationship",
-        "items": ["kWh/piece, MJ/ton", "Trends and baseline", "Advanced filters"]
-      },
-      "enb": {
-        "title": "Energy baseline (EnB)",
-        "description": "Defining baseline period and its values with ability to compare with current period",
-        "items": ["Baseline periods", "Data normalization (planned)", "Period comparisons"]
-      },
-      "goals": {
-        "title": "Energy objectives and actions",
-        "description": "Board with objectives, target values, responsible persons and deadlines with implementation status",
-        "items": ["Objective management", "Color-coded statuses", "Monthly reports"]
-      },
-      "audits": {
-        "title": "Audits and reviews",
-        "description": "Audit schedule with checklists, results history and PDF export capability",
-        "items": ["Audit schedule", "Audit checklists", "Report export"]
-      },
-      "documentation": {
-        "title": "Energy documentation",
-        "description": "File repository with energy policy, reports, procedures and links to ISO standards",
-        "items": ["Document center", "Version history", "ISO 50001 compliance"]
-      },
-      "seu": {
-        "title": "Significant energy uses (SEU)",
-        "description": "Identification and monitoring of areas with highest energy consumption with optimization capability",
-        "items": ["Pareto analysis", "Action prioritization", "24/7 monitoring"]
-      }
-    },
-    "iso50001": {
-      "badge": "ISO 50001 support",
-      "sectionTitle": "ISO 50001 requirements",
-      "sectionDescription": "OmniEnergy supplies data, indicators and documentation for the standard's requirements. An organisation's compliance is confirmed by a certification audit, not by the software itself",
-      "requirements": [
-        {
-          "number": "1",
-          "title": "Context of the organization",
-          "description": "Analysis of internal and external factors affecting the Energy Management System, determination of boundaries and scope of the EnMS system"
-        },
-        {
-          "number": "2",
-          "title": "Leadership",
-          "description": "Top management commitment, organizational energy policy, roles and responsibilities in the EnMS system"
-        },
-        {
-          "number": "3",
-          "title": "Planning",
-          "description": "Energy review, energy baseline (EnB), energy performance indicators (EnPI), energy objectives and action plans"
-        },
-        {
-          "number": "4",
-          "title": "Support",
-          "description": "Resources, competence, awareness, communication, documented information necessary for EnMS operation"
-        },
-        {
-          "number": "5",
-          "title": "Operation",
-          "description": "Operational planning and control, change management, design, procurement and actions regarding SEU"
-        },
-        {
-          "number": "6",
-          "title": "Performance evaluation",
-          "description": "Monitoring, measurement, analysis and evaluation of energy performance, internal audit, management review"
-        },
-        {
-          "number": "7",
-          "title": "Improvement",
-          "description": "Nonconformity and corrective action, continual improvement of energy management system and energy performance"
-        }
-      ]
     },
     "benefits": {
-      "sectionTitle": "Benefits for your organization",
-      "sectionDescription": "Implementation of energy management system brings tangible financial and environmental benefits",
+      "sectionTitle": "What your company gains",
+      "sectionDescription": "Money and obligations first, technology second. Every benefit below runs on data collected automatically from meters and machines.",
+      "howLabel": "How it works",
       "items": [
         {
-          "title": "Energy cost reduction",
-          "description": "Metering consumption at machine and line level shows where energy is wasted. That is the basis for cutting costs; how much you save depends on the plant and the actions you take",
-          "value": "kWh",
-          "label": "per machine, line and piece"
+          "title": "A lower energy bill",
+          "description": "The bill recalculated from the 15-minute profile shows what you pay for: energy, contracted capacity and reactive power. You see capacity overruns and whether your tariff pays off before the invoice arrives.",
+          "how": "Tariffs, power profile, contracted capacity and tan φ. Hourly prices from PSE (RCE) and dynamic tariff.",
+          "value": "kW",
+          "label": "contracted capacity and bill"
         },
         {
-          "title": "ISO 50001 compliance support",
-          "description": "Measurements, EnPIs, the baseline, objectives and documentation in one place make the energy review and audits easier. Compliance with the standard and the law is confirmed by an auditor or certification body, not by the software itself",
+          "title": "Energy cost per unit and order",
+          "description": "Energy, cost and CO2 assigned to the order, product and batch. Price products with the real energy cost and compare lines with each other.",
+          "how": "Meter data joined with OmniMES orders and machine states.",
+          "value": "kWh/unit",
+          "label": "per order, unit and batch"
+        },
+        {
+          "title": "Losses visible at once",
+          "description": "Energy used during breaks, idling and compressed-air leaks stop being invisible. The system points to the largest consumers and the places to check.",
+          "how": "“Energy and machine states” report, consumer ranking, saving hints, CUSUM alarms.",
+          "value": "kWh",
+          "label": "idle and standstill energy"
+        },
+        {
+          "title": "ISO 50001 review without spreadsheets",
+          "description": "SEU register, EnPIs, baseline, targets, action plans, audits and documents in one system. You come to the audit with data, not hand-made summaries.",
+          "how": "SEU register (clause 6.3), EnB baseline from regression per ISO 50006, energy audit report.",
           "value": "ISO 50001",
           "label": "data for review and audit"
         },
         {
-          "title": "Carbon footprint",
-          "description": "Lower energy use means lower emissions. Calculating CO2 emissions from consumption data is planned",
+          "title": "Carbon footprint and ESG report",
+          "description": "CO2 emissions calculated from actual consumption using official emission factors. Energy and emission data prepared for the sustainability report.",
+          "how": "Energy carriers and emissions, data for ESRS E1-5 (energy consumption) and E1-6 (scope 1 and 2 emissions).",
           "value": "CO2",
-          "label": "emission calculation: planned"
+          "label": "data for ESRS E1-5 and E1-6"
         },
         {
-          "title": "Return on investment",
-          "description": "The payback period depends on the plant's energy costs and the actions taken. Estimate it with the example below",
-          "value": "ROI",
-          "label": "calculate for your plant"
-        },
-        {
-          "title": "Process automation",
-          "description": "Automated data collection, reporting and alerting saves team time",
+          "title": "Less manual work",
+          "description": "Readings, summaries and reports build themselves. The energy manager works on actions instead of copying numbers. Ask the AI assistant about the month.",
+          "how": "Automatic reports and period comparisons by e-mail, PDF and PNG export, “Energy this month” assistant scenario.",
           "value": "24/7",
           "label": "automatic data collection"
-        },
-        {
-          "title": "Continual improvement",
-          "description": "PDCA cycle (Plan-Do-Check-Act) ensures systematic improvement of energy performance",
-          "value": "∞",
-          "label": "continuous process"
         }
       ]
     },
-    "roi": {
-      "title": "Calculate return on investment",
-      "description": "OmniEnergy implementation is not just a step towards digital transformation – it's an investment that can quickly pay off through savings.",
-      "formula": {
-        "label": "ROI formula",
-        "text": "ROI = (Gain - Cost) ÷ Cost × 100%"
-      },
-      "benefits": [
-        "15% efficiency increase",
-        "20% energy consumption reduction",
-        "60% audit time reduction"
-      ],
-      "example": {
-        "title": "Example scenario",
-        "investment": {
-          "label": "Total investment costs",
-          "value": "160,000 PLN",
-          "items": [
-            "Cloud services",
-            "Software licenses",
-            "Communication gateways, HMI panels, PLC controllers",
-            "System configuration service and implementation costs"
-          ]
+    "news": {
+      "badge": "New in recent releases",
+      "sectionTitle": "What's new in OmniEnergy",
+      "sectionDescription": "Features added in versions 4.11–5.1 (October–November 2026). The full list is in the changelog.",
+      "changelogLink": "Full changelog",
+      "items": [
+        {
+          "version": "5.1",
+          "title": "Consumption breakdown from plant to machine",
+          "body": "A consumption tree: plant, line, machine, with the share of each level. Works out of the box, no configuration."
         },
-        "savings": {
-          "label": "Estimated annual savings",
-          "value": "200,000 PLN",
-          "items": ["15% efficiency increase", "20% energy consumption reduction"]
+        {
+          "version": "5.0.2",
+          "title": "Hourly prices and dynamic tariff",
+          "body": "Hourly prices from PSE (RCE and SDAC) in the cost calculation. Check whether a dynamic tariff pays off."
         },
-        "result": {
-          "label": "ROI",
-          "value": "25%",
-          "description": "ROI indicator at 0.25 level means that the company will save 25% of invested funds value in the first year of system use."
+        {
+          "version": "5.0",
+          "title": "EnPI deviation and CUSUM alarms",
+          "body": "A notification when an indicator departs from the baseline. The cumulative sum (CUSUM) catches slow consumption growth."
+        },
+        {
+          "version": "5.0",
+          "title": "“Energy and machine states” report",
+          "body": "How much energy went into production and how much into idling and standstill. With cost and CO2."
+        },
+        {
+          "version": "5.0",
+          "title": "AI assistant: “Energy this month”",
+          "body": "A ready scenario for the AI assistant: month summary, deviations and places to check, in plain language."
+        },
+        {
+          "version": "4.14",
+          "title": "Baseline in line with ISO 50006",
+          "body": "Regression baseline on production and degree days, with model quality assessment (R², CV(RMSE))."
+        },
+        {
+          "version": "4.14",
+          "title": "Bill, contracted capacity and tan φ",
+          "body": "Tariffs and a bill recalculated from the 15-minute profile. Capacity and reactive power overruns are visible at once."
+        },
+        {
+          "version": "4.14",
+          "title": "CO2 emissions and ESRS E1 data",
+          "body": "Energy carriers, emissions using official emission factors (KOBiZE) and data for ESRS E1-5 and E1-6."
+        },
+        {
+          "version": "4.14",
+          "title": "SEU register and action plans",
+          "body": "Register of significant energy uses (ISO 50001 clause 6.3) and action plans with verification of the savings achieved."
+        },
+        {
+          "version": "4.14",
+          "title": "Meters, balance and manual readings",
+          "body": "Meter tree, virtual meters and loss balance. Fill in meters without communication by manual reading or CSV file."
+        },
+        {
+          "version": "4.14",
+          "title": "Energy, cost and CO2 per order",
+          "body": "Consumption and cost assigned to the order, unit and batch, together with OmniMES production data."
+        },
+        {
+          "version": "4.11",
+          "title": "Consumer ranking and saving hints",
+          "body": "The largest utility consumers at the top and hints on where to look for savings, e.g. consumption during breaks and leaks."
         }
-      }
+      ]
     },
-    "cta": {
-      "title": "Ready for energy optimization?",
-      "description": "Join companies that are already saving through intelligent energy management",
-      "ctaPrimary": "Contact us",
-      "ctaDemo": "Check OmniEnergy Demo",
-      "ctaSecondary": "Get in touch"
-    },
-    "modules": {
+    "features": {
+      "sectionTitle": "All OmniEnergy modules",
+      "sectionDescription": "From metering through analysis to documentation: the modules map to ISO 50001 requirements for measurement, indicators, targets and documented information.",
       "dashboard": {
-        "name": "Energy dashboard",
-        "description": "Main starting point of the system",
-        "features": [
-          "Charts: energy consumption [kWh], SEU, EnPI",
-          "Action progress and threshold alerts",
-          "Tiles for electricity, gas, compressed air",
-          "Navigation buttons: Analysis → EnPI → Objectives → Audits"
+        "title": "Energy dashboard",
+        "description": "One screen to start the day: all utilities, SEUs, EnPIs, target progress and overruns.",
+        "items": [
+          "Tiles for electricity, gas, water and compressed air",
+          "Target and action progress",
+          "Alarms and overruns"
         ]
       },
       "sources": {
-        "name": "Sources and measurement points",
-        "description": "Device and sensor monitoring",
-        "features": [
-          "Tabular view + map/planogram",
-          "Each device linked to production line",
-          "Statuses: active, no signal, sensor failure"
+        "title": "Meters and measurement points",
+        "description": "Every meter assigned to a line, machine and energy carrier. Virtual meters and the balance show losses between the main meter and sub-meters.",
+        "items": [
+          "Meter tree and virtual meters",
+          "Loss balance",
+          "Manual readings and CSV import"
         ]
       },
       "analysis": {
-        "name": "Consumption analysis",
-        "description": "Energy consumption charts and trends",
-        "features": [
-          "Trend charts: daily, weekly, monthly",
-          "Year-over-year comparison (energy, cost, production unit)",
-          "SEU view as Pareto or heat map"
+        "title": "Consumption analysis",
+        "description": "Daily, weekly and monthly trends, period comparisons and a consumption breakdown from plant to machine.",
+        "items": [
+          "Breakdown: plant → line → machine",
+          "Pareto and heat maps",
+          "Multi-period comparisons"
         ]
       },
       "enpi": {
-        "name": "EnPI indicators",
-        "description": "Energy performance indicators",
-        "features": [
-          "Indicator list (kWh/piece, MJ/ton)",
-          "Graphical trend view and baseline relationship",
-          "Filtering by line, device, period"
+        "title": "EnPIs",
+        "description": "Energy performance indicators such as kWh per unit or MJ per tonne, with trend and reference to the baseline.",
+        "items": [
+          "kWh/unit, MJ/t, cost per unit",
+          "Deviation and CUSUM alarms",
+          "Filters by line, machine and period"
         ]
       },
       "enb": {
-        "name": "Energy baseline (EnB)",
-        "description": "Baseline periods and comparisons",
-        "features": [
-          "Defining baseline period and values",
-          "Comparison capability with current period"
+        "title": "Energy baseline (EnB)",
+        "description": "Regression baseline per ISO 50006: accounts for production volume and degree days, so period comparisons are fair.",
+        "items": [
+          "Regression on production and degree days",
+          "Model check: R² and CV(RMSE)",
+          "Baseline snapshots for comparisons"
         ]
       },
       "goals": {
-        "name": "Energy objectives and actions",
-        "description": "Energy objective management",
-        "features": [
-          "Board: objective, target value, responsible person, deadline, status",
-          "Color coding: green – OK, yellow – in progress, red – delayed",
-          "Monthly progress report"
+        "title": "Targets and action plans",
+        "description": "Energy targets with owners and deadlines, plus action plans where you verify that the saving actually happened.",
+        "items": [
+          "Targets, deadlines and owners",
+          "Savings verification (M&V)",
+          "Statuses: green, yellow, red"
         ]
       },
       "audits": {
-        "name": "Audits and reviews",
-        "description": "Energy audit system",
-        "features": [
-          "Audit schedule + checklists",
-          "Audit history and results (date, auditor, findings)",
-          "Corrective actions",
+        "title": "Audits and reviews",
+        "description": "Audit schedule with checklists, results and corrective actions. The energy audit report is generated from data.",
+        "items": [
+          "Schedule and checklists",
+          "Energy audit report",
           "PDF export"
         ]
       },
       "documentation": {
-        "name": "Energy documentation",
-        "description": "Documentation repository",
+        "title": "Energy documentation",
+        "description": "Energy policy, procedures and reports in one place, with version history.",
+        "items": [
+          "Document centre",
+          "Version history",
+          "Documents for management review"
+        ]
+      },
+      "seu": {
+        "title": "Significant energy uses (SEU)",
+        "description": "SEU register per ISO 50001 clause 6.3: the largest consumers, relevant variables and the people who influence them.",
+        "items": [
+          "SEU register",
+          "Pareto analysis",
+          "Action priorities"
+        ]
+      },
+      "tariffs": {
+        "title": "Tariffs, bill and capacity",
+        "description": "Energy tariffs, a bill from the 15-minute profile, contracted capacity and reactive power (tan φ). Hourly PSE prices and dynamic tariff.",
+        "items": [
+          "Bill from the 15-min profile",
+          "Contracted capacity and tan φ",
+          "Hourly PSE prices"
+        ]
+      },
+      "emissions": {
+        "title": "Carriers and emissions (ESRS E1)",
+        "description": "CO2 emissions from actual consumption using official emission factors, plus data for the sustainability report.",
+        "items": [
+          "Official emission factors (KOBiZE)",
+          "ESRS E1-5: energy consumption and mix",
+          "ESRS E1-6: scope 1 and 2 emissions"
+        ]
+      },
+      "production": {
+        "title": "Energy in production",
+        "description": "Connected with OmniMES: energy, cost and CO2 per order, unit and batch, split into running, idling and standstill.",
+        "items": [
+          "Energy cost per order",
+          "Idle and standstill energy",
+          "Order notifications with energy"
+        ]
+      }
+    },
+    "iso50001": {
+      "badge": "ISO 50001 support",
+      "sectionTitle": "What OmniEnergy provides for each ISO 50001 clause",
+      "sectionDescription": "OmniEnergy supplies the data, indicators and documentation for the standard's requirements. Conformity is confirmed by a certification audit, not by the software itself.",
+      "requirements": [
+        {
+          "number": "4",
+          "title": "Context of the organisation",
+          "description": "The structure of plant, lines and meters describes the boundaries and scope of the energy management system."
+        },
+        {
+          "number": "5",
+          "title": "Leadership",
+          "description": "Energy policy, roles and target owners in the document centre, with version history."
+        },
+        {
+          "number": "6",
+          "title": "Planning",
+          "description": "A data-based energy review: SEU register, EnPIs, EnB baseline per ISO 50006, targets and action plans."
+        },
+        {
+          "number": "7",
+          "title": "Support",
+          "description": "Documented information, procedures and reports in one place, available to authorised people."
+        },
+        {
+          "number": "8",
+          "title": "Operation",
+          "description": "Operational control of SEUs: overrun and EnPI deviation alarms, energy per order and machine states."
+        },
+        {
+          "number": "9",
+          "title": "Performance evaluation",
+          "description": "Measurement and analysis of energy performance, audit schedule, energy audit report, input for management review."
+        },
+        {
+          "number": "10",
+          "title": "Improvement",
+          "description": "Corrective actions and action plans with savings verification close the PDCA cycle."
+        }
+      ]
+    },
+    "tech": {
+      "sectionTitle": "The technology in brief",
+      "sectionDescription": "For IT and automation teams: how data reaches OmniEnergy and where it is stored.",
+      "items": [
+        {
+          "title": "Connecting meters",
+          "body": "Meters and PLCs connect through communication gateways to MQTT (Sparkplug B). Meters without communication are filled in by manual reading or CSV file."
+        },
+        {
+          "title": "Time-series database",
+          "body": "Every reading stored with its exact time in PostgreSQL with TimescaleDB. 15-minute profiles and multi-year comparisons without a separate data warehouse."
+        },
+        {
+          "title": "Cloud or your own server",
+          "body": "The same system in the OmniMES cloud or on a server in your plant, including without internet access."
+        },
+        {
+          "title": "Reports and AI assistant",
+          "body": "PDF and PNG reports, period comparisons by e-mail and an AI assistant over the open MCP standard, with the user's permissions."
+        }
+      ]
+    },
+    "roi": {
+      "title": "Calculate the return on investment",
+      "description": "The return depends on your plant's energy costs and on the actions you take based on the data. Below is a sample calculation — plug in your own numbers.",
+      "formula": {
+        "label": "Formula",
+        "text": "ROI = (savings − cost) ÷ cost × 100%"
+      },
+      "example": {
+        "title": "Sample scenario",
+        "investment": {
+          "label": "First-year implementation cost",
+          "value": "PLN 160,000",
+          "items": [
+            "Licences and cloud services",
+            "Communication gateways and meter connection",
+            "System configuration and training"
+          ]
+        },
+        "savings": {
+          "label": "Sample annual savings",
+          "value": "PLN 200,000",
+          "items": [
+            "Less energy during breaks and idling",
+            "Lower contracted capacity and reactive power charges",
+            "Compressed-air leaks fixed"
+          ]
+        },
+        "result": {
+          "label": "First-year ROI",
+          "value": "25%",
+          "description": "(200,000 − 160,000) ÷ 160,000 × 100% = 25%. The investment pays back after about 10 months."
+        }
+      },
+      "disclaimer": "These figures are a calculation example, not a promised result. The real effect depends on the plant, energy prices and the actions taken."
+    },
+    "screens": {
+      "sectionTitle": "This is what OmniEnergy looks like",
+      "sectionDescription": "Views from the system. Click an image to enlarge it.",
+      "zoom": "Enlarge screenshot",
+      "close": "Close preview"
+    },
+    "modules": {
+      "dashboard": {
+        "name": "Energy dashboard",
+        "description": "The energy manager's start of the day: all utilities, SEUs and EnPIs on one screen.",
         "features": [
-          "Energy policy, reports, procedures",
-          "Version history and update date",
-          "Links to ISO 50001 standards / compliance reports"
+          "Energy consumption [kWh], SEUs and EnPIs on charts",
+          "Action progress and overrun alarms",
+          "Tiles for electricity, gas and compressed air",
+          "Quick navigation: analysis → EnPI → targets → audits"
+        ]
+      },
+      "sources": {
+        "name": "Sources and measurement points",
+        "description": "All meters and sensors, assigned to lines and machines.",
+        "features": [
+          "Table and plant layout view",
+          "Every device linked to a production line",
+          "Statuses: active, no signal, sensor failure"
         ]
       },
       "report": {
         "name": "Automatic energy report",
-        "description": "Detailed energy reports generated automatically – ready documents with trend analysis, ISO 50001 compliance assessment and corrective action recommendations.",
+        "description": "A report generated from data: consumption trends, indicators and actions to take. No manual assembly in a spreadsheet.",
         "features": [
-          "Automatic report generation without user intervention",
-          "ISO 50001 compliance analysis",
-          "Energy consumption trends and optimization recommendations",
-          "PDF export with version history"
+          "The report builds itself on a schedule",
+          "Consumption trends and EnPIs",
+          "Input for the ISO 50001 review",
+          "PDF export"
         ]
       },
       "summary": {
         "name": "Energy efficiency summary",
-        "description": "All media consumption in one place – electricity, water, gas, compressed air. Pareto PCT 80% analysis automatically identifies machines and lines with the greatest impact on energy costs.",
+        "description": "All utilities in one view. Pareto analysis (80%) points to the machines and lines with the biggest impact on energy cost.",
         "features": [
-          "All energy media in one view",
-          "Pareto PCT 80% analysis – automatic detection of significant positions",
-          "Breakdown by machines and production lines",
-          "Fully automated, no manual configuration"
+          "Electricity, water, gas and compressed air together",
+          "Pareto 80% — significant items found automatically",
+          "Summary by machine and line",
+          "No manual configuration"
         ]
       },
       "timeComparison": {
-        "badge": "New in v4.4.0",
-        "name": "SEU time window comparison",
-        "description": "Consumption breakdown per machine across many selected periods at once, with change relative to the previous period and a summary from the first to the last window. Comparing periods of very different length is blocked, because it would give misleading results.",
+        "badge": "Since version 4.4",
+        "name": "SEU period comparison",
+        "description": "Each machine's consumption in several periods side by side, with the change against the previous period. Comparing periods of clearly different length is blocked, because it would be misleading.",
         "features": [
-          "Multiple time windows compared side by side, per machine and per source",
-          "Delta (▲/▼) against the previous window plus a group total from first to last",
-          "Automatic zooming to the top-consuming machines, the rest kept in the table",
-          "Guardrails: comparing windows of very different length is blocked to avoid false conclusions",
-          "Ready for ISO 50001 review — every value traceable to source measurements"
+          "Several periods side by side, per machine and source",
+          "Change ▲/▼ against the previous period and the total from first to last",
+          "Comparison sent by e-mail, PDF and PNG export",
+          "Every value traces back to the source measurement — ready for the ISO 50001 review"
         ]
       }
     },
-    "isoRequirements": {
-      "title": "ISO 50001 requirements",
-      "description": "ISO 50001 standard defines organizational, process and evidence structure for energy management system",
-      "items": [
-        {
-          "title": "Context of the organization",
-          "items": [
-            "Understanding the organization and its context",
-            "Understanding the needs and expectations of interested parties",
-            "Determining the scope of the energy management system",
-            "Energy management system and its processes"
-          ]
-        },
-        {
-          "title": "Leadership",
-          "items": [
-            "Leadership and commitment",
-            "Energy policy",
-            "Organizational roles, responsibilities and authorities"
-          ]
-        },
-        {
-          "title": "Planning",
-          "items": [
-            "Actions to address risks and opportunities",
-            "Energy objectives and planning to achieve them",
-            "Energy review",
-            "Energy performance indicators (EnPI)",
-            "Energy baseline (EnB)",
-            "Planning for collection of energy data"
-          ]
-        },
-        {
-          "title": "Support",
-          "items": [
-            "Resources",
-            "Competence",
-            "Awareness",
-            "Communication",
-            "Documented information"
-          ]
-        },
-        {
-          "title": "Operation",
-          "items": ["Operational planning and control", "Design", "Procurement"]
-        },
-        {
-          "title": "Performance evaluation",
-          "items": [
-            "Monitoring, measurement, analysis and evaluation of energy performance",
-            "Compliance evaluation",
-            "Internal audit",
-            "Management review"
-          ]
-        },
-        {
-          "title": "Improvement",
-          "items": ["Nonconformity and corrective action", "Continual improvement"]
-        }
-      ]
-    }
+    "cta": {
+      "title": "Find out how much energy you lose",
+      "description": "We will show OmniEnergy on demo data and tell you which meters are worth connecting in your plant.",
+      "ctaPrimary": "Let's talk",
+      "ctaDemo": "See the OmniEnergy demo",
+      "ctaSecondary": "Contact us"
+    },
+    "breadcrumbHome": "Home"
   },
-
   "Error": {
     "title": "Something went wrong!",
     "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
@@ -685,57 +729,57 @@
     "play": "Resume animation"
   },
   "Benefits": {
-    "title": "What changes in your plant with OmniMES",
-    "increasedProductivity": "Increase production efficiency – produce the same amount in less time by minimizing micro-downtime and optimizing machine operations.",
-    "fasterReaction": "Faster problem response – monitor machine status in real time and make more accurate business decisions.",
-    "shorterCycle": "Shorter production cycle – use modules for scheduling, eliminating micro-downtime, and monitoring production efficiency.",
-    "betterQuality": "Improved product quality – reduce production waste and customer complaints, which also improve client relations.",
-    "dataAnalysis": "Historical data analysis – draw conclusions and optimize production processes based on historical data.",
-    "fasterOnboarding": "Faster onboarding of new employees – shorten onboarding time through standardized monitoring of production processes."
+    "title": "What changes in the plant after deploying OmniMES",
+    "increasedProductivity": "More pieces from the same machines – you see every micro-stop and its cause, so you know what to fix first.",
+    "fasterReaction": "Reaction in minutes, not after the shift – a stoppage alarm reaches maintenance by email, Teams or Slack, escalating to the manager.",
+    "shorterCycle": "A plan that holds – orders from ERP, a schedule with conflict detection and material checks, and confirmations returned to ERP automatically.",
+    "betterQuality": "Less scrap and a calm audit – inspection plans, SPC charts and full batch genealogy. Rehearse a product recall before a BRCGS or IFS audit.",
+    "dataAnalysis": "A lower energy bill – energy cost and CO2 for every piece, and an alarm when consumption deviates from the norm.",
+    "fasterOnboarding": "Faster onboarding of new staff – work instructions with acknowledgement and a simple operator panel on a tablet."
   },
   "OmniProducts": {
     "seeMore": "See more",
     "goToCloud": "Go to OmniCloud",
     "learnMore": "Learn more",
     "readMore": "Read more to see the difference",
-    "title": "Optimize Production with OmniMES Systems",
-    "subtitle": "Comprehensive solutions for modern production and energy management",
+    "title": "Two modules, one data set: production and energy",
+    "subtitle": "OmniMES runs production from order to confirmation, and OmniEnergy shows how much energy and money every piece costs.",
     "omnimes": {
-      "subtitle": "Production (MES)",
-      "statistic": "Increase production efficiency by 30%!",
-      "description": "Real-time machine monitoring, efficiency analysis (OEE), production scheduling, and AI-supported production management.",
+      "subtitle": "Manufacturing execution system (MES)",
+      "statistic": "Raise production efficiency by up to 30%",
+      "description": "From the ERP order to the confirmation sent back: live machine states and OEE, scheduling, the operator panel, maintenance, quality and batch traceability — plus an AI assistant on your data.",
       "features": {
-        "monitoring": "Real-time machine work monitoring",
-        "efficiency": "Efficiency analysis (OEE)",
-        "production": "Production scheduling",
-        "reporting": "AI-supported production reporting and analysis"
+        "monitoring": "Live machine states, downtime and OEE (ISO 22400)",
+        "efficiency": "Orders from ERP, scheduling and operator panel",
+        "production": "Maintenance: requests, inspections, MTBF and MTTR",
+        "reporting": "Quality, batch genealogy and an AI assistant"
       }
     },
     "omnienergy": {
-      "subtitle": "Energy management system compliant with ISO 50001(EMS)",
-      "statistic": "Reduce energy and media consumption by 20%!",
-      "description": "System supports ISO 50001 implementation, optimization of energy and media consumption, energy data analysis, and alerting with reporting.",
+      "subtitle": "Energy management supporting ISO 50001 (EnMS)",
+      "statistic": "Cut energy and utility use by up to 20%",
+      "description": "Energy, cost and CO2 per machine, order and piece. An ISO 50006 baseline, deviation alarms, tariffs with hourly market prices and data for the energy review and ESRS reporting.",
       "features": {
-        "iso": "System supports ISO 50001 standard implementation",
-        "optimization": "Energy and media consumption optimization",
-        "analysis": "Energy data analysis",
-        "reporting": "Alerting and reporting"
+        "iso": "Data for the ISO 50001 review and an ISO 50006 baseline",
+        "optimization": "kWh, cost and CO2 per piece, order and batch",
+        "analysis": "Tariffs, contracted power and hourly prices",
+        "reporting": "Deviation alarms (CUSUM) and ESG reports"
       }
     },
     "deployment": {
-      "title": "Cloud or your own server: choose how to run it",
-      "subtitle": "In the cloud you start in 5–10 minutes. On your own server the data stays with you.",
+      "title": "Cloud or your own server: choose how to run the system",
+      "subtitle": "In the cloud you start in minutes. On your own server data stays with you, even without internet access.",
       "cloud": {
-        "management": "Cloud for production management",
-        "saas": "SaaS Software",
-        "installation": "Quick system installation (5 to 10 min)",
-        "system": "Simple and fast system management"
+        "management": "OmniMES as SaaS",
+        "saas": "We take care of the server, backups and updates",
+        "installation": "Up and running in 5–10 minutes",
+        "system": "Updates with a backup and rollback to the previous version"
       },
       "premise": {
-        "infrastructure": "Installation on your infrastructure",
-        "storage": "Data stored on your server",
-        "control": "Full control over servers and system",
-        "integration": "Easy integration with systems"
+        "infrastructure": "Installed on your server (Linux or Windows)",
+        "storage": "Data never leaves the plant, even in offline mode",
+        "control": "Updates with automatic rollback and encrypted backups",
+        "integration": "Integration with ERP and plant systems"
       }
     }
   },
@@ -821,112 +865,120 @@
     "cta": "See how it works"
   },
   "WhatsNew": {
-    "smallSubtitle": "Product direction",
-    "heading": "What works today and what’s coming",
-    "description": "We’re developing OmniMES in three directions: energy down to the single unit, AI assistants and open integrations.",
+    "smallSubtitle": "Product development",
+    "heading": "What's new in OmniMES 5",
+    "description": "In the last two months OmniMES has become a complete MES: from the ERP order, through maintenance and quality, to energy per piece.",
     "featured": {
       "studio": {
-        "tag": "Version 4.9 · Beta",
+        "tag": "Since version 4.9",
         "title": "App Studio",
         "body": "Describe what you need in a chat with Claude, and Claude builds an app with charts and tables on live production data. Add the finished app to the menu and share it with chosen people.",
         "imageAlt": "Claude changing an app live in OmniMES App Studio"
       },
       "hologram": {
-        "tag": "Version 4.6",
-        "title": "Hologram — your plant in live 3D",
+        "tag": "Since version 4.6",
+        "title": "Live 3D plant",
         "body": "A 3D model of the production hall where every machine glows in the colour of its live state, and a simulation shows material flow and the bottleneck. An AI assistant builds the model for you.",
-        "imageAlt": "OmniMES Hologram — 3D model of a production hall"
+        "imageAlt": "3D plant in OmniMES — a model of the production hall with live data"
       },
       "readNews": "Read the news",
       "readArticle": "Blog article"
     },
     "cards": {
+      "maintenance": {
+        "tag": "Version 5.0",
+        "title": "Maintenance",
+        "body": "Breakdown reports with photos, work orders, inspections by calendar or operating hours, MTBF and MTTR, plus alarms with escalation."
+      },
+      "erp": {
+        "tag": "Versions 4.13–4.14",
+        "title": "Orders and ERP",
+        "body": "Orders from ERP, a schedule with conflict detection, material stock and confirmations sent back to SAP, Business Central, Odoo, enova365 or Comarch."
+      },
+      "traceability": {
+        "tag": "Version 4.14",
+        "title": "Batches and recalls",
+        "body": "Batch genealogy from supplier to customer, GS1 and SSCC labels, printing on Zebra printers and a product recall drill before an audit."
+      },
       "energy": {
-        "tag": "OmniEnergy",
-        "title": "Energy per unit",
-        "body": "EnPI indicators such as kWh per unit, plus energy cost by tariff broken down by machine state."
-      },
-      "reports": {
-        "tag": "Version 4.5",
-        "title": "SEU comparisons by email",
-        "body": "The system compares consumption periods and sends them by email. Reports can also be downloaded as PDF or PNG."
-      },
-      "classification": {
-        "tag": "Version 4.2",
-        "title": "Machine state from measurements",
-        "body": "Running, idle or stopped is derived from a measurement threshold, such as motor current, not only from digital PLC signals."
-      },
-      "open": {
-        "tag": "Version 4.1",
-        "title": "Open data",
-        "body": "MQTT and Sparkplug B on the way in, PostgreSQL with TimescaleDB for storage. In the cloud or on your own server."
+        "tag": "Versions 4.14–5.1",
+        "title": "Energy and CO2",
+        "body": "ISO 50006 baseline, CUSUM alarms, hourly market prices, contracted power and CO2 based on KOBiZE factors for ESRS reporting."
       }
     },
     "next": {
-      "title": "What’s coming",
-      "erp": {
-        "status": "Planned",
-        "title": "ERP: product codes, BOMs and material use",
-        "body": "The ERP integration already takes in orders and sends progress and completion reports back to the ERP (version 4.13). Planned next: product codes and BOMs from the ERP, and material use reported back to it."
+      "title": "Latest release",
+      "latest": {
+        "status": "Version 5.1 · November 2026",
+        "title": "Offline installation and consumption tree",
+        "body": "Install OmniMES on a server cut off from the internet, see consumption from plant down to machine with no configuration, and get notified about new versions. In the cloud, updates roll out in waves with a backup and rollback."
       }
     },
     "changelogLink": "Full changelog"
   },
   "Roi": {
-    "title": "Return on investment in MES – how to calculate?",
-    "intro": "Implementing an MES system is not just a step towards digital transformation – it is an investment that can pay off quickly. To demonstrate this, the ROI (Return on Investment) indicator is used, showing what percentage of the costs incurred you will recover in the form of profits or savings.",
-    "formula": "ROI = ( investment profit – investment costs ) ÷ investment costs × 100%",
-    "exampleTitle": "Example ROI estimation for MES implementation:",
-    "exampleIntro": "A Polish manufacturing company ABC is considering implementing an MES system in its production plant. The investment costs have been estimated as follows:",
-    "exampleList1": "Cloud services",
-    "exampleList2": "Software licenses",
-    "exampleList3": "Communication gateways, HMI panels, PLC controllers",
-    "exampleList4": "System configuration service and implementation costs",
+    "title": "Return on investment in MES – how to calculate it?",
+    "intro": "Deploying MES is an investment that should pay back. The simplest way to show it is ROI (return on investment): the percentage of money spent that comes back as profit and savings.",
+    "formula": "ROI = (gain from investment – cost of investment) ÷ cost of investment × 100%",
+    "exampleTitle": "Example: manufacturing plant ABC",
+    "exampleIntro": "The plant counts first-year costs: PLN 140k for deployment and PLN 20k for maintenance, PLN 160k in total. This covers:",
+    "exampleList1": "cloud subscription or licences",
+    "exampleList2": "communication gateways, HMI panels and PLCs where missing",
+    "exampleList3": "system configuration and machine connection",
+    "exampleList4": "team training and ERP integration",
     "investmentCosts": "Total investment costs: 140,000 PLN + 20,000 PLN for system maintenance in the first year, giving a total of 160,000 PLN.",
-    "effectsIntro": "Thanks to MES, the company estimates:",
-    "effectsList1": "Increase in efficiency by 15% (fewer micro-downtimes, shorter production cycle time)",
-    "effectsList2": "Reduction of rejects by 13% (better quality control)",
+    "effectsIntro": "After deployment the plant estimates PLN 200k in annual savings thanks to:",
+    "effectsList1": "15% higher output (fewer micro-stops, shorter cycle time)",
+    "effectsList2": "13% less scrap (better quality control)",
     "annualSavings": "Result: Estimated annual savings: 200,000 PLN.",
-    "calcFormula": "ROI = (200,000 PLN – 160,000 PLN) ÷ 160,000 PLN × 100% = 0.25",
-    "roiExplanation": "An ROI of 0.25 means that the company will save 25% of the invested funds in the first year of using the system.",
-    "conclusion": "MES is an investment that will not only increase the level of digitization of the factory but also bring real savings. Success depends on good plant preparation and the right choice of technology."
+    "calcFormula": "ROI = (PLN 200,000 – PLN 160,000) ÷ PLN 160,000 × 100% = 25%",
+    "roiExplanation": "Savings cover the whole investment after about 10 months and bring an extra PLN 40k by the end of the first year. From the second year only the maintenance cost remains.",
+    "conclusion": "This is an illustrative example. We will calculate the result for your plant from a few weeks of data from your machines — so we talk about numbers, not promises.",
+    "costLabel": "First-year cost",
+    "costValue": "PLN 160,000",
+    "savingsLabel": "First-year savings",
+    "savingsValue": "PLN 200,000",
+    "roiLabel": "First-year ROI",
+    "paybackLabel": "Payback",
+    "paybackValue": "≈10 mo."
   },
   "OmnimesInformation": {
     "smallSubtitle": "What is OmniMES?",
-    "subTitle": "More profit, less waste.",
-    "heading": "collects data from your machines and shows what slows production",
-    "description": "It is a manufacturing execution system (MES): it reads signals from controllers and energy meters, then shows machine states, downtime, OEE and energy use live and in reports. We implement it with you, from needs analysis to connecting the machines.",
-    "title1": "Unlock production potential",
-    "descriptionCard1": "We will guide your manufacturing company through the process of digital transformation.",
-    "title2": "Customer needs analysis",
-    "descriptionCard2": "We precisely identify what needs to be changed, adapted, or improved to make the system implementation as efficient as possible. This includes both technical aspects, such as machine integration, and organizational aspects.",
-    "title3": "Factory infrastructure preparation",
-    "descriptionCard3": "We will undertake the comprehensive preparation of the factory infrastructure, providing the necessary means for the effective implementation of digital solutions. Our goal is to create a solid foundation for modern production.",
-    "title4": "System implementation",
-    "descriptionCard4": "A team of experts will carry out the effective implementation of the system, tailored to the results of the analysis. Together, we will unlock the potential of your production by introducing innovative technological solutions.",
-    "gateways": "Discover our communication gateways"
+    "subTitle": "More profit, fewer losses.",
+    "heading": "collects machine data and shows what slows production down",
+    "description": "It is a manufacturing execution system (MES) with an energy module. It reads signals straight from PLCs and meters, runs orders from ERP to confirmation, and shows machine states, downtime, OEE and energy cost live and in reports. We deploy it together with you.",
+    "title1": "Plant and production managers",
+    "descriptionCard1": "OEE according to ISO 22400, a loss Pareto and a plan aware of material availability. You know why the shift missed the plan — and what to change tomorrow.",
+    "title2": "Maintenance",
+    "descriptionCard2": "Breakdown reports with a photo straight from the operator panel, inspections by calendar or operating hours, spare parts from stock and MTBF and MTTR for every machine.",
+    "title3": "Energy and ESG managers",
+    "descriptionCard3": "kWh and cost per piece, alarms on deviations from the baseline and CO2 emissions for ESRS reporting — without spreadsheets and manual readings.",
+    "title4": "IT department",
+    "descriptionCard4": "Cloud or your own server, updates with automatic rollback, encrypted backups, an event log and permissions prepared for the CRA.",
+    "gateways": "See our communication gateways"
   },
   "EnergyInfo": {
-    "smallSubtitle": "Energy media data collection",
-    "heading": "Cut costs and boost energy efficiency!",
-    "description": "OmniMES enables precise monitoring of electricity and other utilities across your production process.",
-    "collectionTitle": "Collecting data from energy media",
+    "smallSubtitle": "OmniEnergy in OmniMES",
+    "heading": "calculates energy for every piece",
+    "description": "Electricity, gas, compressed air and water flow into the same data as production. You see what a piece, an order and an hour of idling cost — and get an alarm before the invoice arrives.",
+    "collectionTitle": "Energy with a cause",
     "card1": {
-      "title": "Optimize product cost",
-      "body": "Analyze energy usage per line and SKU to lower unit cost and plan production against tariffs and load."
+      "title": "Production cost down to the piece",
+      "body": "kWh, cost according to your tariff and CO2 per order, piece and batch. Schedule energy-intensive production for cheaper hours using hourly market prices."
     },
     "card2": {
-      "title": "Identify energy losses",
-      "body": "Detect sources and events driving overconsumption: downtimes, startups, idle modes, and setup errors."
+      "title": "Losses you cannot see on the bill",
+      "body": "Idling, consumption during breaks, compressed air leaks and contracted power overruns. A ranking of consumers shows where to look for savings first."
     },
     "card3": {
-      "title": "Improve process efficiency",
-      "body": "Correlate energy data with production metrics (OEE, cycle times, work orders) to drive fact-based decisions."
+      "title": "An alarm before the invoice",
+      "body": "The system compares consumption with a baseline calculated from production and degree days (ISO 50006) and warns about deviations using CUSUM — by email, Teams or Slack."
     },
     "iso": {
-      "badge": "Compliance & sustainability",
-      "text": "OmniMES helps meet ISO 50001 (energy management) and ISO-14001 (environmental management) goals."
-    }
+      "badge": "ISO 50001, ISO 50006 and ESG reporting",
+      "text": "OmniEnergy provides data for the energy review: an SEU register, EnPIs, action plans with savings verification and CO2 emissions based on KOBiZE factors for ESRS E1 reporting. Conformity is confirmed by the auditor — OmniEnergy gives them the complete data."
+    },
+    "cta": "Discover OmniEnergy"
   },
   "CloudInfo": {
     "smallSubtitle": "Manage OmniMES in the cloud",
@@ -935,33 +987,59 @@
     "subTitle": "Fast start & simple setup",
     "blockTitle": "Launch, configure, go",
     "p1": "OmniPlatform is an intuitive web platform that lets you launch and configure OmniMES instances with ease. The entire process — including plan selection — typically takes 5–10 minutes.",
-    "p2": "Responding to strong interest in the system, we opened the platform to everyone. With a subscription you can get instant access to OmniMES and get started right away.",
-    "p3": "Gain freedom and convenience in infrastructure management: automation, fast deployments and full control — so you can focus on production, not servers.",
+    "p2": "Each instance has its own certificate, and new versions are rolled out in waves: with a backup before the update and the option to return to the previous version.",
+    "p3": "You get the system without your own server or administrator — so you can focus on production, not infrastructure.",
     "cta": "Go to OmniPlatform"
   },
   "Feature": {
-    "Monitoring": "Real-time machine status monitoring",
-    "Monitoring_desc": "Absolute control over machine status, enabling immediate response to potential failures and effective tracking of production efficiency in real-time.",
-    "Creator": "Intuitive configuration creator",
-    "Creator_desc": "Exceptionally easy customization of system settings through an intuitive configuration creator, allowing flexible adaptation of the system to individual needs and production specifications.",
-    "Analyse": "Rapid event analysis on the production line",
-    "Analyse_desc": "Immediate analysis of events on the production line, identifying potential issues and reducing reaction time, securing the smooth flow of production processes.",
-    "Schedule": "Production schedule creation capability",
-    "Schedule_desc": "Flexible production planning through schedule creation functionality, enabling optimal resource utilization and adapting production to changing conditions.",
-    "Pulpits": "Creation of dynamically changing data analysis dashboards",
-    "Pulpits_desc": "Building interactive dashboards with dynamically changing data analyses, allowing for instant assessment of production status and focus on key performance indicators.",
-    "Raports": "Flexible report creation in the creator",
-    "Raports_desc": "The report creator provides the ability to create flexible reports tailored to specific needs, facilitating the collection, analysis, and presentation of key production-related data.",
-    "Feature": "Feature",
-    "title": "What you get in OmniMES: monitoring, analysis, scheduling and reports",
-    "desc": "Six functions running on data collected automatically from your machines."
+    "Feature": "Features",
+    "title": "Production, maintenance, quality and energy in one system",
+    "desc": "Eight modules on shared machine data — no retyping numbers between programs and spreadsheets.",
+    "Monitoring": "Live machine monitoring and OEE",
+    "Monitoring_desc": "The state of every machine straight from the PLC, automatic downtime reasons, OEE according to ISO 22400 and a loss Pareto by shift, product and line.",
+    "Orders": "Orders, scheduling and ERP",
+    "Orders_desc": "Orders from ERP, a drag-and-drop schedule with conflict detection, material availability checks and a one-click plan proposal. Confirmations flow back to ERP automatically.",
+    "Maintenance": "Maintenance",
+    "Maintenance_desc": "Breakdown reports with a photo straight from the operator panel, work orders, spare parts from stock, inspections by calendar or operating hours, plus MTBF and MTTR.",
+    "Quality": "Quality and batch traceability",
+    "Quality_desc": "Inspection plans, SPC charts and Cpk, batch genealogy from supplier to customer, GS1 labels and a product recall wizard with a drill mode before a BRCGS or IFS audit.",
+    "Operator": "Operator panel and work instructions",
+    "Operator_desc": "Order queue, good and scrap quantity reporting, batch scanning with a tablet camera and work instructions acknowledged before the job starts.",
+    "Alarms": "Alarms and notifications",
+    "Alarms_desc": "Thresholds, ranges, missing data and stoppages. Notifications by email, Teams or Slack with up to five escalation levels.",
+    "Raports": "Reports and dashboards",
+    "Raports_desc": "Ready-made production, maintenance and energy reports, scheduled email delivery, PDF and CSV export and your own dashboards in Redash.",
+    "Ai": "AI assistant and App Studio",
+    "Ai_desc": "Ask in plain language — the assistant answers from your data and proposes changes for approval. Build your own apps on production data just by talking."
   },
   "Time": {
-    "smallSubtitle": "Save time on breaks!",
-    "heading": "How much does an hour of downtime cost you? With",
-    "heading_part2": "we can significantly reduce this cost.",
-    "description": "How do we achieve this?",
-    "text": "Instant information allows for effective identification of faulty elements in the machinery park, not only minimizing the time required for repairs but also reducing micro downtimes that can impact overall production efficiency. As a result, your company can operate more efficiently, saving both time and costs associated with machine downtime."
+    "smallSubtitle": "Count your losses",
+    "heading": "What do unrecorded stoppages cost you?",
+    "description": "A few minutes here, a few there — on paper the shift looks fine, but over a year they add up to hundreds of hours. Set the parameters of your plant and see what amount we are talking about.",
+    "timelineTitle": "One shift of one machine, as OmniMES sees it",
+    "timelineCaption": "Every break in operation is recorded automatically from the PLC — with time, duration and reason. Sample data.",
+    "legendRun": "Running",
+    "legendMicro": "Micro-stop",
+    "legendFail": "Breakdown",
+    "legendSetup": "Changeover",
+    "calcTitle": "Your plant",
+    "machines": "Number of machines",
+    "unitMachines": "",
+    "minutes": "Unrecorded micro-stops per machine per shift",
+    "shifts": "Shifts per day",
+    "cost": "Value of one machine hour (margin and fixed costs)",
+    "recover": "Share of that time you recover once you see the causes",
+    "assumptions": "Estimate based on 250 working days a year. The recovered share is your assumption — in practice it depends on the causes of stoppages and how fast the team reacts.",
+    "lossLabel": "Micro-stops cost you per year",
+    "lossHours": "that is about {hours} machine hours of downtime",
+    "gainLabel": "Recovering {pct}% of that time gains you per year",
+    "cta": "Check it on your machines",
+    "how1Title": "Data straight from the PLC",
+    "how1": "Machine state recorded every second, with no paper notes or manual entry. Older machines too, through a communication gateway.",
+    "how2Title": "The cause, not just the time",
+    "how2": "The downtime reason is assigned automatically from the machine signal, and the loss Pareto shows where to start improving.",
+    "how3Title": "Reaction in minutes",
+    "how3": "A stoppage alarm reaches maintenance by email, Teams or Slack — escalated when nobody responds."
   },
   "Team": {
     "company": "Automation of a business is a complex process that requires specialized knowledge and reliable suppliers. That is why the company MultiProjekt has set a goal to support Polish companies in industrial automation at every stage. MultiProjekt is a proven supplier of automation components and machine parts with 20 years of experience. However, what characterizes us the most is professional consulting and an individual approach to the customer.",
@@ -1112,7 +1190,7 @@
   "Performance": {
     "subtitle": "Monitoring production efficiency",
     "title": "Automatically collect data from your machines",
-    "desc": "The OmniMES system specializes in efficiently collecting data from various machines, regardless of their age or level of technological advancement. Its advanced module for machine communication is designed to provide secure and efficient communication.",
+    "desc": "OmniMES collects data from machines regardless of their age and manufacturer. Signals from PLCs and meters reach the system automatically, securely and without losing readings during network outages.",
     "heading": "Achieving full control over the production process becomes possible thanks to advanced machine communication with the OmniMES system. The system facilitates integration with over 300 communication protocols of controllers and HMI panels.",
     "heading1": "Monitor machines",
     "s1": "OmniMES displays production data in real-time.",
@@ -1122,7 +1200,7 @@
     "heading2": "Increase control over the production process",
     "s2": "The ability to monitor each machine individually and collectively in real-time provides detailed insight into the quality of your production.",
     "desc2": "With precise data collected from each machine, the system enables a precise understanding of the current production status. This allows for quick detection of potential issues, minimizing downtime, and optimizing the production process.",
-    "heading3": "Collect and analyze historical data",
+    "heading3": "Collect and analyse historical data",
     "s3": "Intuitive and clear display of production data saves your time on analysis.",
     "desc3": "Collecting and analyzing historical data is a crucial element in the process of production improvement. With the OmniMES system, gathering information regarding the production process occurs automatically and flawlessly. These data serve as valuable knowledge sources, allowing for trend tracking, pattern identification, and detection of any anomalies."
   },
@@ -1967,5 +2045,106 @@
     "list12": "establishing and pursuing claims or defending against them.",
     "list13": "when the legal basis for data processing is the performance of a contract – until the expiration of claims after its execution,",
     "list14": "when the legal basis for data processing is consent – until its withdrawal, and after its withdrawal until the expiration of claims."
+  },
+  "ProfitLoss": {
+    "title": "Shift 06:00–14:00 · Line 2",
+    "toggleAria": "Comparison of a shift without and with OmniMES",
+    "before": "Without OmniMES",
+    "after": "With OmniMES",
+    "shift": "480 minutes of a shift",
+    "unknown": "Loss with no known cause",
+    "seg": {
+      "run": "Running",
+      "micro": "Micro-stops",
+      "fail": "Breakdowns",
+      "setup": "Changeovers",
+      "material": "No material"
+    },
+    "beforeNote": "All you see is that the plan was missed. 180 minutes of loss have no cause, so nobody knows what to fix.",
+    "afterNote": "Every minute has a cause. The team starts with micro-stops and breakdowns, and the plan accounts for material and changeovers.",
+    "kpi": {
+      "oee": "OEE",
+      "pieces": "Pieces per shift",
+      "lossCost": "Loss cost per shift",
+      "kwh": "kWh per piece"
+    },
+    "currency": "PLN",
+    "note": "Sample data. Results depend on the plant and on the actions you take based on the data."
+  },
+  "EnergyChart": {
+    "title": "Energy per piece by machine state",
+    "period": "Week 47 · sample data",
+    "aria": "Bar chart: energy consumption of five machines split into running, idling and stopped, with kWh per piece.",
+    "perUnit": "kWh/pc",
+    "m": {
+      "press": "Press P-1",
+      "cnc": "CNC mill",
+      "molding": "Injection moulder",
+      "compressor": "Compressor",
+      "paint": "Paint shop"
+    },
+    "run": "Running",
+    "idle": "Idling",
+    "stop": "Stopped",
+    "insight": "Idling takes 19% of the week's energy, about 2,060 kWh. The compressor uses the most while lines are stopped: worth checking for leaks and its schedule.",
+    "note": "In the system the same view shows cost according to your tariff and CO2 emissions."
+  },
+  "TechTrust": {
+    "smallSubtitle": "For management and for IT",
+    "heading": "Business sees the results, IT sees solid technology",
+    "description": "Every benefit can be verified in the technology: open standards, your data and security prepared for the Cyber Resilience Act.",
+    "howLabel": "How it works",
+    "techAria": "Technologies",
+    "standardsAria": "Standards",
+    "securityLink": "Security and declaration of conformity",
+    "machines": {
+      "business": "Data from every machine, old ones too",
+      "value": "No need to replace machines or PLCs. We connect what you have, and from day one you see machine states.",
+      "tech": "Telemetry over MQTT with full Sparkplug B. Older PLCs (S7, Modbus, OPC UA and 300+ protocols) through communication gateways. On-disk buffering: no reading is lost during a network outage."
+    },
+    "erp": {
+      "business": "ERP without retyping",
+      "value": "Orders arrive from ERP, and confirmations, goods receipts and consumption go back without human effort. A retry after an error never posts anything twice.",
+      "tech": "Presets for SAP Business One, enova365, Comarch Optima and XL, Symfonia and Subiekt; direct connections to Business Central, SAP S/4HANA and Odoo. API described in OpenAPI, CSV/JSON files or SFTP, HMAC-signed webhooks."
+    },
+    "data": {
+      "business": "Your data, your choice",
+      "value": "Cloud up and running in minutes, or your own server where data never leaves the plant — even without internet access.",
+      "tech": "PostgreSQL with TimescaleDB (columnar compression of time-series data), Docker containers, the omnimes tool for Windows, Linux and macOS. Database profiles and a server sizing table."
+    },
+    "updates": {
+      "business": "Updates without downtime risk",
+      "value": "Get new features without worry: if something goes wrong, the system rolls back to the previous version on its own. The break usually takes 1–3 minutes.",
+      "tech": "Updates with automatic rollback, encrypted nightly off-site backups (SFTP or S3) with a monthly restore test, a System status screen and self-healing containers."
+    },
+    "security": {
+      "business": "Security that passes an audit",
+      "value": "Who changed what and when — recorded permanently. Permissions work the same in the app, in the API and for the AI assistant.",
+      "tech": "Server-side permission checks, an immutable event log with syslog export, account lockout and strong passwords, separate MQTT accounts with TLS, SBOM and vulnerability scans on every release, an EU declaration of conformity."
+    },
+    "ai": {
+      "business": "AI you stay in control of",
+      "value": "The assistant answers production questions and prepares plans, but changes and machine commands wait for human approval.",
+      "tech": "Open MCP and MCP Apps standards, user permissions, a log of every change. Your choice of model: Claude, an OpenAI-compatible API or a local Ollama, without sending data outside the plant."
+    }
+  },
+  "HomeFaq": {
+    "smallSubtitle": "FAQ",
+    "heading": "Frequently asked questions about OmniMES",
+    "more": "All questions and answers",
+    "q1": "How is OmniMES different from simple machine monitoring?",
+    "a1": "Monitoring shows that a machine has stopped. OmniMES also runs production: orders from ERP, scheduling, the operator panel, maintenance, quality and batch traceability, and energy per piece — all on shared data collected automatically from PLCs.",
+    "q2": "Can I connect older machines?",
+    "a2": "Yes. There is no need to replace or reprogram the PLC. Older machines are connected through communication gateways supporting 300+ protocols (including S7, Modbus and OPC UA) that send data to OmniMES over MQTT.",
+    "q3": "Cloud or my own server?",
+    "a3": "Your choice. In the cloud OmniMES runs a few minutes after you sign up. On your own server data stays in the plant, and installation is possible even without internet access.",
+    "q4": "How does OmniMES work with my ERP?",
+    "a4": "Orders arrive from ERP via API, file or SFTP, and progress confirmations, goods receipts and corrections go back automatically. There are presets for SAP Business One, enova365, Comarch Optima and XL, Symfonia and Subiekt, plus direct connections to Business Central, SAP S/4HANA and Odoo.",
+    "q5": "Does OmniMES help with ISO 50001 and ESG reporting?",
+    "a5": "Yes. The OmniEnergy module provides data for the energy review: a register of significant energy uses (SEU), EnPIs, an ISO 50006 baseline, action plans and CO2 emissions based on KOBiZE factors for ESRS E1 reporting. Conformity with the standard is confirmed by the auditor.",
+    "q6": "Does production data go to AI models?",
+    "a6": "Only if you want it to. The assistant works with the user's permissions and every change is logged. You choose the model — with a local Ollama your data never leaves the plant.",
+    "q7": "What about updates and system security?",
+    "a7": "An update usually takes 1–3 minutes, and if something goes wrong the system rolls back to the previous version on its own. Backups are encrypted and tested monthly. The release process is prepared for the Cyber Resilience Act: SBOM, vulnerability scanning and an EU declaration of conformity."
   }
 }

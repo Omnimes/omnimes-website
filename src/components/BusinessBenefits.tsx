@@ -2,10 +2,10 @@
 
 import { useTranslations } from "next-intl"
 import {
+  FaBolt,
   FaBoxOpen,
   FaChartLine,
   FaCogs,
-  FaSearch,
   FaTachometerAlt,
   FaUserCog,
 } from "react-icons/fa"
@@ -33,7 +33,7 @@ export const BusinessBenefits = () => {
       text: t("betterQuality"),
     },
     {
-      icon: <FaSearch className="text-primary-600 dark:text-primary-400 text-4xl" />,
+      icon: <FaBolt className="text-primary-600 dark:text-primary-400 text-4xl" />,
       text: t("dataAnalysis"),
     },
     {

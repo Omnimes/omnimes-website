@@ -4,9 +4,11 @@ import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
 
 import { BusinessBenefits } from "@/components/BusinessBenefits"
+import { DowntimeCost } from "@/components/DowntimeCost"
 import { EcosystemFlow } from "@/components/EcosystemFlow"
 import { Feature } from "@/components/Feature"
 import { Hero } from "@/components/Hero"
+import { HomeFaq } from "@/components/HomeFaq"
 import HomeBelowFold from "@/components/HomeBelowFold"
 import { InfoEnergyData } from "@/components/InfoEnergyData"
 import { InfoOmniCloud } from "@/components/InfoOmniCloud"
@@ -16,6 +18,7 @@ import { Performance } from "@/components/Performance"
 import { PromoVideo } from "@/components/PromoVideo"
 import { Roi } from "@/components/Roi"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
+import { TechTrust } from "@/components/TechTrust"
 import { Timeline } from "@/components/Timeline"
 import { WhatIsOmnimes } from "@/components/WhatIsOmnimes"
 import { WhatsNew } from "@/components/WhatsNew"
@@ -77,18 +80,23 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <Hero />
       <PromoVideo />
-      <EcosystemFlow />
-      <McpSpotlight />
-      <WhatsNew />
-      <OmniProductsShowcase />
-      <InfoEnergyData />
-      <BusinessBenefits />
-      <Roi />
+      {/* BO-1439: kolejność pod sprzedaż — co to jest i co daje, ile kosztują straty,
+          co nowego, potem technika dla IT, zwrot z inwestycji i pytania */}
       <WhatIsOmnimes />
+      <OmniProductsShowcase />
       <Feature />
-      <InfoOmniCloud />
+      <DowntimeCost />
+      <BusinessBenefits />
+      <WhatsNew />
+      <McpSpotlight />
+      <InfoEnergyData />
+      <EcosystemFlow />
+      <TechTrust />
       <Performance />
+      <InfoOmniCloud />
+      <Roi />
       <Timeline />
+      <HomeFaq />
       <ScrollTopAndComment />
       <HomeBelowFold allNews={allNews} allPosts={allPosts} locale={locale} />
     </>

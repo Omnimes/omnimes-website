@@ -611,3 +611,62 @@ img[data-testid="grid-gallery-item_thumbnail"] {
 .border-w-input {
   border-width: 1px !important;
 }
+/* BO-1439: oś zmiany w kalkulatorze kosztu postoju — skaner przechodzi po zmianie,
+   a każdy przestój rozbłyska, gdy skaner go mija */
+@keyframes downtime-scan {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes downtime-hit {
+  0%,
+  100% {
+    opacity: 0.85;
+    filter: none;
+  }
+  4% {
+    opacity: 1;
+    filter: brightness(1.35) drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+  }
+  20% {
+    opacity: 1;
+    filter: none;
+  }
+}
+.downtime-scan {
+  animation: downtime-scan 6s linear infinite;
+}
+.downtime-stop {
+  opacity: 0.85;
+  animation: downtime-hit 6s linear infinite;
+}
+/* BO-1439: słupki wykresu energii rosną po wejściu sekcji */
+@keyframes energy-bar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.energy-bar {
+  transform-origin: left center;
+  transform-box: fill-box;
+  animation: energy-bar 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .downtime-scan {
+    animation: none;
+    display: none;
+  }
+  .downtime-stop {
+    animation: none;
+    opacity: 1;
+  }
+  .energy-bar {
+    animation: none;
+  }
+}
