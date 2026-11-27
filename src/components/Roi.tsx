@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl"
-import { FaCalculator, FaCheckCircle } from "react-icons/fa"
+import { FaCalculator } from "react-icons/fa"
 
+import { Callout } from "./ui/Callout"
 import { Heading } from "./ui/Heading"
 
 // BO-1439: przykład ROI w czytelnym układzie (koszt vs oszczędności, ROI 25%, zwrot w miesiącach).
@@ -80,9 +81,8 @@ export const Roi = () => {
         </div>
       </div>
 
-      <div className="bg-primary-50 dark:bg-primary-900/20 border-primary-500 mt-8 flex items-start gap-4 border-l-4 p-4">
-        <FaCheckCircle className="text-primary-600 dark:text-primary-400 mt-1 shrink-0 text-2xl" />
-        <p>{t("conclusion")}</p>
+      <div className="mt-8">
+        <Callout text={t("conclusion")} />
       </div>
     </section>
   )

@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { OstDocument } from "outstatic"
 import { load } from "outstatic/server"
 
-import { BusinessBenefits } from "@/components/BusinessBenefits"
 import { DowntimeCost } from "@/components/DowntimeCost"
 import { EcosystemFlow } from "@/components/EcosystemFlow"
 import { Feature } from "@/components/Feature"
@@ -14,7 +13,6 @@ import { InfoEnergyData } from "@/components/InfoEnergyData"
 import { InfoOmniCloud } from "@/components/InfoOmniCloud"
 import { McpSpotlight } from "@/components/McpSpotlight"
 import { OmniProductsShowcase } from "@/components/OmniProductsShowcase"
-import { Performance } from "@/components/Performance"
 import { PromoVideo } from "@/components/PromoVideo"
 import { Roi } from "@/components/Roi"
 import ScrollTopAndComment from "@/components/ScrollTopAndComment"
@@ -80,19 +78,17 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <Hero />
       <PromoVideo />
+      <EcosystemFlow />
       {/* BO-1439: kolejność pod sprzedaż — co to jest i co daje, ile kosztują straty,
           co nowego, potem technika dla IT, zwrot z inwestycji i pytania */}
       <WhatIsOmnimes />
       <OmniProductsShowcase />
       <Feature />
       <DowntimeCost />
-      <BusinessBenefits />
       <WhatsNew />
       <McpSpotlight />
       <InfoEnergyData />
-      <EcosystemFlow />
       <TechTrust />
-      <Performance />
       <InfoOmniCloud />
       <Roi />
       <Timeline />

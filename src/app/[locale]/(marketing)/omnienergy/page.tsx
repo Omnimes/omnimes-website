@@ -122,12 +122,18 @@ const BENEFIT_ICONS = [
   ICONS.trend,
 ]
 
-const SCREENS = [
-  { key: "sources", src: "/screenshots/omnienergy-details.webp", w: 1437, h: 891 },
-  { key: "report", src: "/screenshots/omnienergy-report.webp", w: 1267, h: 897 },
-  { key: "summary", src: "/screenshots/omnienergy-summary.webp", w: 1238, h: 548 },
-  { key: "timeComparison", src: "", w: 1446, h: 903, badge: true },
+// BO-1439: zrzuty z OmniMES 5.1 (lokalna instancja, park WOODCRAFT) w wersji PL i EN.
+// Plik: /screenshots/omnienergy-<file>-<pl|en>.webp; wymiary takie same w obu jezykach.
+const SCREENS: { key: string; file: string; w: number; h: number; badge?: boolean }[] = [
+  { key: "analysis", file: "analysis", w: 2880, h: 1800 },
+  { key: "enpi", file: "enpi", w: 2880, h: 1580 },
+  { key: "bill", file: "bill", w: 2880, h: 1800 },
+  { key: "emissions", file: "emissions", w: 2880, h: 1800 },
+  { key: "timeComparison", file: "time-comparison", w: 2600, h: 1620, badge: true },
 ]
+
+const screenSrc = (file: string, locale: string) =>
+  `/screenshots/omnienergy-${file}-${locale === "pl" ? "pl" : "en"}.webp`
 
 export default async function OmniEnergyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -149,7 +155,7 @@ export default async function OmniEnergyPage({ params }: { params: Promise<{ loc
       softwareVersion: "5.1",
       description: t("intro"),
       url: pageUrl,
-      image: `${siteMetadata.siteUrl}/screenshots/omnienergy-dashboard.webp`,
+      image: `${siteMetadata.siteUrl}${screenSrc("dashboard", locale)}`,
       inLanguage: locale,
       isPartOf: { "@type": "SoftwareApplication", name: "OmniMES", url: homeUrl },
       featureList: FEATURE_KEYS.map(({ key }) => t(`features.${key}.title`)).join(", "),
@@ -164,11 +170,6 @@ export default async function OmniEnergyPage({ params }: { params: Promise<{ loc
       ],
     },
   ]
-
-  const timeComparisonSrc =
-    locale === "en"
-      ? "/screenshots/omnienergy-time-comparison-en.webp"
-      : "/screenshots/omnienergy-time-comparison-pl.webp"
 
   return (
     <main className="min-h-screen bg-white dark:bg-neutral-950">
@@ -234,10 +235,10 @@ export default async function OmniEnergyPage({ params }: { params: Promise<{ loc
             <div className="space-y-4">
               <div className="overflow-hidden rounded-2xl border-4 border-white shadow-2xl dark:border-neutral-800">
                 <ZoomableImage
-                  src="/screenshots/omnienergy-dashboard.webp"
+                  src={screenSrc("dashboard", locale)}
                   alt={t("hero.imageAlt")}
-                  width={1618}
-                  height={813}
+                  width={2880}
+                  height={1760}
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   zoomLabel={t("screens.zoom")}
                   closeLabel={t("screens.close")}
@@ -430,8 +431,8 @@ export default async function OmniEnergyPage({ params }: { params: Promise<{ loc
                   <div className={textFirst ? "order-1 lg:order-2" : "order-1"}>
                     <div className="overflow-hidden rounded-3xl border-4 border-emerald-100 shadow-2xl dark:border-emerald-800/60">
                       <ZoomableImage
-                        src={s.src || timeComparisonSrc}
-                        alt={`${name} — ${t(`modules.${s.key}.description`)}`}
+                        src={screenSrc(s.file, locale)}
+                        alt={t(`screens.alts.${s.key}`)}
                         width={s.w}
                         height={s.h}
                         sizes="(min-width: 1024px) 50vw, 100vw"

@@ -155,7 +155,7 @@
         "iso": "Support for ISO 50001 and ISO 50006",
         "reduction": "Cost and CO2 per unit, order and batch"
       },
-      "imageAlt": "OmniEnergy main dashboard: energy consumption, significant energy uses (SEU), EnPIs and energy target progress",
+      "imageAlt": "OmniEnergy main dashboard: the latest SEU report with the largest consumers and the EnPI trend (kWh/pc) against the baseline",
       "stats": {
         "monitoring": {
           "label": "Power profile calculated like your utility does",
@@ -503,7 +503,14 @@
       "sectionTitle": "This is what OmniEnergy looks like",
       "sectionDescription": "Views from the system. Click an image to enlarge it.",
       "zoom": "Enlarge screenshot",
-      "close": "Close preview"
+      "close": "Close preview",
+      "alts": {
+        "analysis": "Electricity consumption breakdown for October: a furniture plant, four lines and 11 machines with each one's share of the total",
+        "enpi": "EnPI snapshot chart: energy per piece on the CNC cutting line about 15% below the regression baseline since September (R² 0.99)",
+        "bill": "October bill and power profile on a C21 tariff: 15-minute profile, 115 kW contracted capacity and overruns",
+        "emissions": "Energy carriers and emissions for 2026: 441 MWh of electricity, 244 t CO2 in scope 2 and the ESRS E1-5 and E1-6 tables",
+        "timeComparison": "Four-month SEU comparison: each machine's consumption from July to October with the change against the previous period"
+      }
     },
     "modules": {
       "dashboard": {
@@ -516,33 +523,44 @@
           "Quick navigation: analysis → EnPI → targets → audits"
         ]
       },
-      "sources": {
-        "name": "Sources and measurement points",
-        "description": "All meters and sensors, assigned to lines and machines.",
+      "analysis": {
+        "name": "Consumption breakdown",
+        "description": "Energy use from the plant through lines down to a single machine. The largest consumers are on top, with their share of the total and of the level above.",
         "features": [
-          "Table and plant layout view",
-          "Every device linked to a production line",
-          "Statuses: active, no signal, sensor failure"
+          "Plant → line → machine tree for every energy carrier",
+          "Share of the total and of the level above",
+          "Period: yesterday, 7 days, previous month or a custom range",
+          "Calculated the same way as SEU and the meter balance"
         ]
       },
-      "report": {
-        "name": "Automatic energy report",
-        "description": "A report generated from data: consumption trends, indicators and actions to take. No manual assembly in a spreadsheet.",
+      "enpi": {
+        "name": "EnPIs and baseline",
+        "description": "Energy per piece compared with an ISO 50006 regression baseline. The chart shows when your actions started to pay off.",
         "features": [
-          "The report builds itself on a schedule",
-          "Consumption trends and EnPIs",
-          "Input for the ISO 50001 review",
-          "PDF export"
+          "Regression baseline on production, rated with R² and CV(RMSE)",
+          "Daily, weekly and monthly snapshots",
+          "Scope and per-machine indicators on one chart",
+          "Target progress calculated from the latest snapshot"
         ]
       },
-      "summary": {
-        "name": "Energy efficiency summary",
-        "description": "All utilities in one view. Pareto analysis (80%) points to the machines and lines with the biggest impact on energy cost.",
+      "bill": {
+        "name": "Bill and power profile",
+        "description": "Your energy bill calculated from the 15-minute profile with your tariff: supply, distribution, capacity charge and contracted capacity overruns.",
         "features": [
-          "Electricity, water, gas and compressed air together",
-          "Pareto 80% — significant items found automatically",
-          "Summary by machine and line",
-          "No manual configuration"
+          "Zones, rates and contracted capacity from your contract, dynamic tariffs too",
+          "15-minute power profile with the contracted capacity line",
+          "The 10 largest overruns and what they cost",
+          "Comparison with the previous month"
+        ]
+      },
+      "emissions": {
+        "name": "Energy carriers and CO2 (ESRS E1)",
+        "description": "Carrier consumption in MWh, GJ and toe, primary energy and scope 1 and 2 emissions with national emission factors. Data for ESRS E1-5 and E1-6.",
+        "features": [
+          "Scope 2 emissions, location-based and market-based",
+          "Energy mix: fossil, nuclear and renewable sources",
+          "Energy and emission intensity per million of revenue",
+          "CSV export for the ESG report"
         ]
       },
       "timeComparison": {
@@ -1659,48 +1677,197 @@
     "dashboard": "Dashboard"
   },
   "GalleryMeta": {
-    "title": "OmniMES - Gallery - Browse our album of unforgettable moments",
-    "desc": "Our gallery features carefully selected photos from various events we have organized or participated in. Each photo tells a unique story and captures the atmosphere of the moment. Browse our albums to see how we celebrated, learned, played, and collaborated during these unforgettable moments.",
-    "keywords": "gallery, photos, events, albums, photo reports, parties, conferences, workshops, festivals, meetings, photographs"
+    "title": "OmniMES gallery – trade fairs, lectures and events",
+    "desc": "Photos from Warsaw Industry Week 2026, Warsaw Industry Automatica 2024, Hannover Messe 2024 and lectures where we present OmniMES and OmniEnergy.",
+    "keywords": "OmniMES gallery, Multiprojekt, industrial trade fairs, Warsaw Industry Week 2026, Warsaw Industry Automatica, Hannover Messe, MES lecture, OmniEnergy, trade fair photos"
   },
   "Gallery": {
-    "eventMesse": "Hannover Messe 2024",
-    "eventWIA": "WIA Fair 2024",
-    "title": "OmniMES Gallery",
-    "desc": "We invite you to discover our collection of unique photographs that captured the most beautiful moments from various events.",
-    "titleHero": "Let's live this one more time",
-    "descHero": "Our community events are a time when we can meet, share experiences and celebrate our shared successes.",
-    "subtitle": "OmniGaleria",
-    "scroll": "Scroll down",
-    "contact": "Contact",
-    "nextLabel": "Next photo",
-    "prevLabel": "Previous photo",
-    "zoomInLabel": "Zoom in",
-    "zoomOutLabel": "Zoom out",
-    "closeLabel": "Close",
-    "alt1": "People gather around a trade show booth displaying technology and software solutions. The booth features screens with digital content, banners for various companies including 'Omnimes', and informational materials. The environment is busy and interactive.",
-    "alt2": "Three individuals are standing and looking at a computer screen displaying various charts and data. They appear to be discussing the content on the screen. Booths in the background show company names MultiProjekt and Omnimes",
-    "alt3": "Three people are standing in front of a digital display showing charts and graphs, discussing a 'Manufacturing Execution System' at the Omnimes booth. The surrounding area appears to be a trade show or conference setting focused on industry innovations.",
-    "alt4": "Three men in business attire are gathered around a screen displaying charts and graphs. One man is pointing at the screen, explaining the data to the other two. Behind them is a sign that reads 'omnimes industry 4.0'.",
-    "alt5": "A group of people stand inside a well-lit exhibition booth. They are engaged in conversation and looking at a large monitor. The booth features banners with Polish text, promoting technological audits and Industry 4.0 solutions. There are displays and brochures around.",
-    "alt6": "A man in a gray suit inspects two large monitors showcasing manufacturing software at a trade show booth for omniMES. The booth features the text 'Manufacturing Execution System' and a sign encouraging the trial of the MES system with AI in Polish.",
-    "alt7": "A man and a woman are conversing at an exhibition booth featuring a company called MultiProjekt. Behind them, a large screen displays colorful icons and text. The booth also has a secondary screen on the right showing an industrial scene.",
-    "alt8": "Two individuals stand in front of a booth with the sign omnimes. The booth features a large screen displaying charts and data and another touchscreen device. A poster in Polish invites visitors to try their AI-based MES system. The setting appears to be an exhibition.",
-    "alt9": "Photo of a trade show booth for Omnimes featuring a Manufacturing Execution System. A robotic arm is displayed in the forefront, with several screens showing data and graphics. Two men are conversing on the right, one holding a Cembre tote bag.",
-    "alt10": "Three individuals are engaging in conversation at a technology exhibition booth. A large screen displaying information is in the background, and the booth features displays and brochures related to robotics and digitalization. The setting is professional and modern.",
-    "alt11": "A man in a suit is standing in front of a display booth showcasing Omnimes Industry 4.0. He is holding a small red box with an item inside. Behind him, a large screen displays charts and graphs, and a sign reads Wypróbuj nasz system MES z AI.",
-    "alt12": "Five people stand in front of a display screen at a trade show booth. The booth features branding for MultiProjekt and banners with words like AUDYTY and MES. One woman holds a red award. All individuals are dressed in business attire and smiling.",
-    "alt13": "A close-up of an award displayed on a stand. The award features a silver medallion with the inscription QUALITY & INNOVATION Expo 2024, embedded in an orange case. The background is blurred, keeping the focus on the award.",
-    "alt14": "Four men in business attire are gathered around a large screen at the MultiProjekt booth during an exhibition. Other booths and displays are visible in the background.",
-    "alt15": "A trade show booth featuring modular robots, simulation software, and AI-enhanced manufacturing execution systems. A large display screen shows data analytics and system information, with various equipment around.",
-    "alt16": "Four people are engaged in a discussion at a technology exhibition booth. One man in a burgundy blazer and another in a grey jacket are speaking to two women, one wearing a white coat and the other in black. The booth features displays about modular robots and AI systems.",
-    "alt17": "A group of people are gathered and conversing in front of a booth labeled 'MultiProjekt' at a trade show or conference. The booth features various displayed materials and a monitor. One person has an orange backpack, and the atmosphere appears professional and engaging.",
-    "alt18": "A group of men in business attire stand at an exhibition booth, examining brochures and discussing. Behind them are displays and banners promoting a Manufacturing Execution System. The setting appears to be an industry trade show or conference.",
-    "alt19": "A trade show booth with various technology displays. A man in a suit stands by a small round table with chairs. Signage includes Audyt, Multi-Projekt and 'MES & AI.' A large screen and information boards are visible, displaying tech-related content.",
-    "alt20": "Slide with the text 'Artificial Intelligence and Big Data in Manufacturing Execution Systems' at a lecture at the polytechnic. Logos of Omnimes and MultiProjekt.",
-    "alt21": "Slide from a presentation discussing the integration of AI, Big Data, and Industry 4.0 into Industry 5.0. Illustrations depicting a human, AI, and production.",
-    "alt22": "Lecturer presenting an analysis of production data at a lecture. The screen displays the main panel of the Omnimes system with charts and data.",
-    "alt23": "Lecturer presenting a production schedule at a lecture from the system. The screen displays the production schedule calendar in the Omnimes system."
+    "kicker": "Gallery",
+    "title": "Trade fairs, lectures and events with OmniMES",
+    "intro": "Photos from events where we present OmniMES and OmniEnergy: trade fair stands, university lectures and conversations about digitalising production. The newest events are at the top.",
+    "eventsNav": "Events in the gallery",
+    "photoCount": "{count, plural, one {# photo} other {# photos}}",
+    "openPhoto": "Enlarge photo: {caption}",
+    "lightbox": {
+      "dialog": "Photo preview",
+      "close": "Close (Esc)",
+      "next": "Next photo",
+      "prev": "Previous photo",
+      "counter": "{index} of {total}"
+    },
+    "events": {
+      "targi-wiw-2026": {
+        "name": "Warsaw Industry Week 2026",
+        "place": "Ptak Warsaw Expo, Nadarzyn, Poland",
+        "desc": "At the MultiProjekt, Weintek and Fatek stands we showed OmniMES and OmniEnergy, HMI panels, PLCs and ROKAE collaborative robots. We came home with the Quality & Innovation 2026 medal."
+      },
+      "wyklad-wieik-2026": {
+        "name": "Business at the University: lecture “Energy and production management with Multiprojekt”",
+        "place": "Cracow University of Technology, Faculty of Electrical and Computer Engineering",
+        "desc": "A lecture for students of the Cracow University of Technology on monitoring production and energy use in a plant, based on OmniMES and OmniEnergy."
+      },
+      "wyklad-politechnika-krakowska-2024": {
+        "name": "Lecture at Cracow University of Technology",
+        "place": "Cracow University of Technology, Kraków, Poland",
+        "desc": "A lecture on artificial intelligence and big data in manufacturing execution systems for students and researchers, using OmniMES as the example."
+      },
+      "targi-wia-2024": {
+        "name": "Warsaw Industry Automatica 2024",
+        "place": "Ptak Warsaw Expo, Nadarzyn, Poland",
+        "desc": "The third edition of the automation and robotics fair. We showed OmniMES, our AI-supported MES, and Industry 4.0 technology audits, and came home with the Quality & Innovation Expo 2024 medal."
+      },
+      "hannover-messe-2024": {
+        "name": "Hannover Messe 2024",
+        "place": "Hanover, Germany",
+        "desc": "The world's largest industrial trade fair. At the MultiProjekt stand we showed our AI-supported MES, simulation software and modular robots."
+      }
+    },
+    "photo": {
+      "hannover-messe-2024": {
+        "01": {
+          "alt": "Four men in business attire are gathered around a large screen at the MultiProjekt booth during an exhibition. Other booths and displays are visible in the background.",
+          "caption": "Discussion by the large screen at the MultiProjekt stand"
+        },
+        "02": {
+          "alt": "A trade show booth featuring modular robots, simulation software, and AI-enhanced manufacturing execution systems. A large display screen shows data analytics and system information, with various equipment around.",
+          "caption": "Stand with modular robots, simulation software and an AI-supported MES"
+        },
+        "03": {
+          "alt": "Four people are engaged in a discussion at a technology exhibition booth. One man in a burgundy blazer and another in a grey jacket are speaking to two women, one wearing a white coat and the other in black. The booth features displays about modular robots and AI systems.",
+          "caption": "Talking with visitors at the stand"
+        },
+        "04": {
+          "alt": "A group of people are gathered and conversing in front of a booth labeled 'MultiProjekt' at a trade show or conference. The booth features various displayed materials and a monitor. One person has an orange backpack, and the atmosphere appears professional and engaging.",
+          "caption": "Visitors in front of the MultiProjekt stand"
+        },
+        "05": {
+          "alt": "A group of men in business attire stand at an exhibition booth, examining brochures and discussing. Behind them are displays and banners promoting a Manufacturing Execution System. The setting appears to be an industry trade show or conference.",
+          "caption": "Discussion over MES brochures"
+        }
+      },
+      "targi-wia-2024": {
+        "01": {
+          "alt": "People gather around a trade show booth displaying technology and software solutions. The booth features screens with digital content, banners for various companies including 'Omnimes', and informational materials. The environment is busy and interactive.",
+          "caption": "Visitors at the OmniMES stand"
+        },
+        "02": {
+          "alt": "Three individuals are standing and looking at a computer screen displaying various charts and data. They appear to be discussing the content on the screen. Booths in the background show company names MultiProjekt and Omnimes",
+          "caption": "Going through charts and data on screen"
+        },
+        "03": {
+          "alt": "Three people are standing in front of a digital display showing charts and graphs, discussing a 'Manufacturing Execution System' at the Omnimes booth. The surrounding area appears to be a trade show or conference setting focused on industry innovations.",
+          "caption": "Presenting the manufacturing execution system at the OmniMES stand"
+        },
+        "04": {
+          "alt": "Three men in business attire are gathered around a screen displaying charts and graphs. One man is pointing at the screen, explaining the data to the other two. Behind them is a sign that reads 'omnimes industry 4.0'.",
+          "caption": "Explaining data from OmniMES"
+        },
+        "05": {
+          "alt": "A group of people stand inside a well-lit exhibition booth. They are engaged in conversation and looking at a large monitor. The booth features banners with Polish text, promoting technological audits and Industry 4.0 solutions. There are displays and brochures around.",
+          "caption": "Stand presenting technology audits and Industry 4.0 solutions"
+        },
+        "06": {
+          "alt": "A man in a gray suit inspects two large monitors showcasing manufacturing software at a trade show booth for omniMES. The booth features the text 'Manufacturing Execution System' and a sign encouraging the trial of the MES system with AI in Polish.",
+          "caption": "Screens with OmniMES production software"
+        },
+        "07": {
+          "alt": "A man and a woman are conversing at an exhibition booth featuring a company called MultiProjekt. Behind them, a large screen displays colorful icons and text. The booth also has a secondary screen on the right showing an industrial scene.",
+          "caption": "Conversation at the MultiProjekt stand"
+        },
+        "08": {
+          "alt": "Two individuals stand in front of a booth with the sign omnimes. The booth features a large screen displaying charts and data and another touchscreen device. A poster in Polish invites visitors to try their AI-based MES system. The setting appears to be an exhibition.",
+          "caption": "Invitation to try the AI-supported MES"
+        },
+        "09": {
+          "alt": "Photo of a trade show booth for Omnimes featuring a Manufacturing Execution System. A robotic arm is displayed in the forefront, with several screens showing data and graphics. Two men are conversing on the right, one holding a Cembre tote bag.",
+          "caption": "Robot arm and data screens at the OmniMES stand"
+        },
+        "10": {
+          "alt": "Three individuals are engaging in conversation at a technology exhibition booth. A large screen displaying information is in the background, and the booth features displays and brochures related to robotics and digitalization. The setting is professional and modern.",
+          "caption": "Conversation about robotics and digitalisation"
+        },
+        "11": {
+          "alt": "A man in a suit is standing in front of a display booth showcasing Omnimes Industry 4.0. He is holding a small red box with an item inside. Behind him, a large screen displays charts and graphs, and a sign reads Wypróbuj nasz system MES z AI.",
+          "caption": "Quality & Innovation Expo 2024 medal at the OmniMES stand"
+        },
+        "12": {
+          "alt": "Five people stand in front of a display screen at a trade show booth. The booth features branding for MultiProjekt and banners with words like AUDYTY and MES. One woman holds a red award. All individuals are dressed in business attire and smiling.",
+          "caption": "The MultiProjekt team with the award"
+        },
+        "13": {
+          "alt": "A close-up of an award displayed on a stand. The award features a silver medallion with the inscription QUALITY & INNOVATION Expo 2024, embedded in an orange case. The background is blurred, keeping the focus on the award.",
+          "caption": "Quality & Innovation Expo 2024 medal"
+        },
+        "14": {
+          "alt": "A trade show booth with various technology displays. A man in a suit stands by a small round table with chairs. Signage includes Audyt, Multi-Projekt and 'MES & AI.' A large screen and information boards are visible, displaying tech-related content.",
+          "caption": "MultiProjekt stand: audits, MES and AI"
+        }
+      },
+      "wyklad-politechnika-krakowska-2024": {
+        "01": {
+          "alt": "Slide with the text 'Artificial Intelligence and Big Data in Manufacturing Execution Systems' at a lecture at the polytechnic. Logos of Omnimes and MultiProjekt.",
+          "caption": "Title slide: artificial intelligence and big data in manufacturing execution systems"
+        },
+        "02": {
+          "alt": "Slide from a presentation discussing the integration of AI, Big Data, and Industry 4.0 into Industry 5.0. Illustrations depicting a human, AI, and production.",
+          "caption": "Slide on how AI, big data and Industry 4.0 lead to Industry 5.0"
+        },
+        "03": {
+          "alt": "Lecturer presenting an analysis of production data at a lecture. The screen displays the main panel of the Omnimes system with charts and data.",
+          "caption": "Production data analysis on the OmniMES main dashboard"
+        }
+      },
+      "targi-wiw-2026": {
+        "01": {
+          "alt": "More than a dozen people in business attire pose for a group photo at the MultiProjekt stand. The wall reads OmniEnergy, OmniMes and Simultus – Digital Twin, next to screens showing system dashboards.",
+          "caption": "The team at the MultiProjekt stand (F3.22)"
+        },
+        "02": {
+          "alt": "A group poses at the Weintek stand labelled HMI · PLC · I/O. In front are three white pedestals with operator panels; the wall is lit in blue.",
+          "caption": "The team at the Weintek stand (F4.21)"
+        },
+        "03": {
+          "alt": "A group at the stand labelled Collaborative robots, with ROKAE robots and demo stations in the foreground.",
+          "caption": "The team at the ROKAE collaborative robot stand"
+        },
+        "04": {
+          "alt": "A silver Quality & Innovation 2026 medal in a red case held in a hand, with the MultiProjekt stand blurred in the background.",
+          "caption": "Quality & Innovation 2026 medal"
+        },
+        "05": {
+          "alt": "A ROKAE collaborative robot at a palletising station with 25 kg boxes, next to an iRAYPLE autonomous vehicle banner, with visitors at tables in the background.",
+          "caption": "A ROKAE robot stacking boxes on a pallet"
+        },
+        "06": {
+          "alt": "A white ROKAE robot on a demo table moves coloured balls into a tray, with the exhibition hall behind it.",
+          "caption": "A robot sorting coloured parts at a demo station"
+        },
+        "07": {
+          "alt": "A ROKAE robot mounted on a welding table with its controller cabinet below; other exhibition stands in the background.",
+          "caption": "A collaborative robot at a welding station"
+        },
+        "08": {
+          "alt": "Two people talk by a wall of Weintek operator panels lit in purple. In the foreground a sign reads Gateways / HMI modules.",
+          "caption": "Conversation by the Weintek HMI panels"
+        },
+        "09": {
+          "alt": "A staff member with a badge and notes talks to a visitor next to a LinMot linear drive station, with an OMRON sign and the exhibition hall behind.",
+          "caption": "Conversation at the LinMot linear drive station"
+        },
+        "10": {
+          "alt": "A camera operator with a tripod films a presenter showing a device at the stand labelled HMI panels | PLC controllers.",
+          "caption": "Filming at the Fatek stand (F2.19)"
+        },
+        "11": {
+          "alt": "The Quality & Innovation 2026 medal in an open red case on the robot table next to ROKAE boxes; the OmniEnergy and OmniMes stand is in the background.",
+          "caption": "The medal at the robot station with ROKAE boxes"
+        },
+        "12": {
+          "alt": "A silver collaborative robot on a demo table with a small red medal case at its base and a ROKAE screen behind it.",
+          "caption": "A collaborative robot and the Quality & Innovation 2026 medal"
+        }
+      }
+    }
   },
   "DashboardNav": {
     "home": "Home",
@@ -2146,5 +2313,10 @@
     "a6": "Only if you want it to. The assistant works with the user's permissions and every change is logged. You choose the model — with a local Ollama your data never leaves the plant.",
     "q7": "What about updates and system security?",
     "a7": "An update usually takes 1–3 minutes, and if something goes wrong the system rolls back to the previous version on its own. Backups are encrypted and tested monthly. The release process is prepared for the Cyber Resilience Act: SBOM, vulnerability scanning and an EU declaration of conformity."
+  },
+  "TrustedBy": {
+    "heading": "Trusted by",
+    "aria": "Logos of companies using OmniMES",
+    "cta": "See our deployments"
   }
 }

@@ -17,14 +17,14 @@ export const Company = () => {
       <div className="mt-8 grid grid-cols-2 gap-4">
         <Image
           className="z-1 size-full rounded-lg object-cover"
-          src="/images/gallery/fhd/13.jpg"
+          src="/images/gallery/targi-wia-2024/targi-wia-2024-stoisko-omnimes-08.webp"
           alt={t("photoAlt1")}
           width={600}
           height={800}
         />
         <Image
           className="z-1 mt-4 size-full rounded-lg object-cover lg:mt-10"
-          src="/images/gallery/fhd/15.jpg"
+          src="/images/gallery/targi-wia-2024/targi-wia-2024-stoisko-multiprojekt-10.webp"
           alt={t("photoAlt2")}
           width={600}
           height={800}

@@ -6,6 +6,7 @@ import { FaArrowRight } from "react-icons/fa"
 import Link from "@/components/LocaleLink"
 
 import { EnergyChart } from "./EnergyChart"
+import { Callout } from "./ui/Callout"
 import { DescriptionPrimary } from "./ui/Description"
 import { Heading } from "./ui/Heading"
 import { Subtitle, SubtitleNormal } from "./ui/Subtitle"
@@ -142,32 +143,8 @@ export const InfoEnergyData = () => {
           </div>
         </div>
       </div>
-      {/* ISO / Info box */}
-      <div className="flex w-full items-start gap-3 rounded-xl border-l-4 border-pink-500 bg-pink-50 p-4 dark:bg-pink-950/40">
-        <div className="shrink-0 text-pink-500">
-          {/* Ikona info */}
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            fill="none"
-            className="text-pink-500"
-          >
-            <path
-              d="M12 2a10 10 0 100 20 10 10 0 000-20Zm.75 15h-1.5v-6h1.5v6Zm0-8h-1.5V7h1.5v2Z"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-pink-700 dark:text-pink-300">{t("iso.badge")}</p>
-          <p className="text-default-600 dark:text-default-200 mt-1 text-base">{t("iso.text")}</p>
-        </div>
-      </div>
+      {/* ISO / Info box — wspólny wygląd objaśnień (BO-1439) */}
+      <Callout title={t("iso.badge")} text={t("iso.text")} />
     </>
   )
 }

@@ -670,3 +670,27 @@ img[data-testid="grid-gallery-item_thumbnail"] {
     animation: none;
   }
 }
+
+/* BO-1439: „Zaufali nam” — loga w pętli, wygaszone na brzegach */
+@keyframes trusted-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+}
+.trusted-track {
+  animation: trusted-scroll 40s linear infinite;
+}
+.trusted-mask:hover .trusted-track {
+  animation-play-state: paused;
+}
+.trusted-mask {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .trusted-track {
+    animation: none;
+  }
+}
