@@ -1848,6 +1848,60 @@
           "alt": "Srebrny robot współpracujący na stole pokazowym, u jego podstawy małe czerwone etui z medalem. W tle ekran z logo ROKAE.",
           "caption": "Robot współpracujący i medal Quality & Innovation 2026"
         }
+      },
+      "wyklad-wieik-2026": {
+        "01": {
+          "alt": "Pełna sala wykładowa Politechniki Krakowskiej widziana z tylnych rzędów; studenci słuchają trzech prelegentów MultiProjekt stojących przy ekranie ze slajdem „Partner technologiczny dla nowoczesnego przemysłu”.",
+          "caption": "Sala wykładowa WIEiK przed rozpoczęciem wykładu"
+        },
+        "02": {
+          "alt": "Trzech prelegentów MultiProjekt przy katedrze, za nimi slajd „Partner technologiczny dla nowoczesnego przemysłu” z hasłami automatyka, robotyka, intralogistyka i oprogramowanie przemysłowe.",
+          "caption": "Zespół MultiProjekt otwiera wykład"
+        },
+        "03": {
+          "alt": "Roll-up Wydziału Inżynierii Elektrycznej i Komputerowej Politechniki Krakowskiej obok katedry, przy której prelegent MultiProjekt omawia slajd o monitoringu produkcji.",
+          "caption": "Wykład na Wydziale Inżynierii Elektrycznej i Komputerowej"
+        },
+        "04": {
+          "alt": "Prelegent przy slajdzie „Oprogramowanie przemysłowe” z logo OmniMES i OmniEnergy oraz trzema obszarami: monitoring, analiza zużycia energii i tworzenie raportów.",
+          "caption": "OmniMES i OmniEnergy: monitoring, energia, raporty"
+        },
+        "05": {
+          "alt": "Slajd „Czym jest system MES?” z piramidą automatyki: urządzenia i czujniki, SCADA, MES oraz IT i OT; przy katedrze dwóch prelegentów, na pierwszym planie studenci.",
+          "caption": "Czym jest system MES — piramida automatyki"
+        },
+        "06": {
+          "alt": "Slajd „Dlaczego OmniMES?” z sześcioma zaletami systemu, m.in. łatwe wdrożenie, niskie koszty, współpraca z HMI i efektywność energetyczna; przed ekranem prelegenci i studenci.",
+          "caption": "Dlaczego OmniMES — gotowy system dla zakładu"
+        },
+        "07": {
+          "alt": "Prelegent MultiProjekt gestykuluje, tłumacząc studentom monitoring produkcji; obok przy katedrze siedzi drugi prelegent z laptopem.",
+          "caption": "Jak monitorować maszyny w zakładzie"
+        },
+        "08": {
+          "alt": "Prelegent na tle ekranu z OmniMES: wykresy kołowe stanów maszyn i schemat przesyłu danych z bramki Weintek przez MQTT Sparkplug B.",
+          "caption": "OmniMES na żywo: stan każdej maszyny"
+        },
+        "09": {
+          "alt": "Prelegent wskazuje na ekranie slajd „Jak dane trafiają do OmniMES” — drogę sygnału od sterownika przez bramkę i broker do systemu — obok pulpit z wykresami stanów maszyn.",
+          "caption": "Jak dane z maszyn trafiają do OmniMES"
+        },
+        "10": {
+          "alt": "Studenci i goście w ławkach sali wykładowej Politechniki Krakowskiej słuchają wykładu o zarządzaniu energią i produkcją.",
+          "caption": "Słuchacze wykładu"
+        },
+        "11": {
+          "alt": "Dwóch prelegentów przy katedrze, na ekranie slajd „Portfolio” MultiProjekt: automatyka, robotyka, intralogistyka i oprogramowanie przemysłowe.",
+          "caption": "Portfolio MultiProjekt"
+        },
+        "12": {
+          "alt": "Dwóch prelegentów MultiProjekt pochyla się nad laptopem przy katedrze, przygotowując pokaz OmniMES na żywo.",
+          "caption": "Przygotowanie pokazu na żywo"
+        },
+        "13": {
+          "alt": "Widok sali z boku: prelegent przy dużym ekranie pokazuje studentom OmniMES — od zlecenia do raportu.",
+          "caption": "Pokaz OmniMES dla studentów"
+        }
       }
     }
   },

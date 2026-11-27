@@ -1847,6 +1847,60 @@
           "alt": "A silver collaborative robot on a demo table with a small red medal case at its base and a ROKAE screen behind it.",
           "caption": "A collaborative robot and the Quality & Innovation 2026 medal"
         }
+      },
+      "wyklad-wieik-2026": {
+        "01": {
+          "alt": "A full lecture hall at Cracow University of Technology seen from the back rows; students listen to three MultiProjekt speakers next to a screen showing the slide “Technology partner for modern industry”.",
+          "caption": "The WIEiK lecture hall as the talk begins"
+        },
+        "02": {
+          "alt": "Three MultiProjekt speakers at the lectern in front of the slide “Technology partner for modern industry” listing automation, robotics, intralogistics and industrial software.",
+          "caption": "The MultiProjekt team opens the lecture"
+        },
+        "03": {
+          "alt": "A roll-up banner of the Faculty of Electrical and Computer Engineering, Cracow University of Technology, next to the lectern where a MultiProjekt speaker presents a slide on production monitoring.",
+          "caption": "The lecture at the Faculty of Electrical and Computer Engineering"
+        },
+        "04": {
+          "alt": "A speaker next to the slide “Industrial software” with the OmniMES and OmniEnergy logos and three areas: monitoring, energy consumption analysis and reporting.",
+          "caption": "OmniMES and OmniEnergy: monitoring, energy, reports"
+        },
+        "05": {
+          "alt": "The slide “What is an MES?” showing the automation pyramid: devices and sensors, SCADA, MES, IT and OT; two speakers at the lectern, students in the foreground.",
+          "caption": "What an MES is — the automation pyramid"
+        },
+        "06": {
+          "alt": "The slide “Why OmniMES?” listing six benefits, including easy deployment, low cost, HMI integration and energy efficiency; speakers and students in front of the screen.",
+          "caption": "Why OmniMES — a ready-made system for the plant"
+        },
+        "07": {
+          "alt": "A MultiProjekt speaker gestures while explaining production monitoring to students; a second speaker sits at the lectern with a laptop.",
+          "caption": "How to monitor machines in a plant"
+        },
+        "08": {
+          "alt": "A speaker in front of a screen showing OmniMES: pie charts of machine states and a diagram of data flowing from a Weintek gateway over MQTT Sparkplug B.",
+          "caption": "OmniMES live: the state of every machine"
+        },
+        "09": {
+          "alt": "A speaker points at the slide “How data reaches OmniMES” — the signal path from the controller through the gateway and broker to the system — next to a dashboard of machine states.",
+          "caption": "How machine data reaches OmniMES"
+        },
+        "10": {
+          "alt": "Students and guests in the lecture hall at Cracow University of Technology listen to the talk on energy and production management.",
+          "caption": "The audience"
+        },
+        "11": {
+          "alt": "Two speakers at the lectern with the MultiProjekt “Portfolio” slide on screen: automation, robotics, intralogistics and industrial software.",
+          "caption": "The MultiProjekt portfolio"
+        },
+        "12": {
+          "alt": "Two MultiProjekt speakers lean over a laptop at the lectern, preparing a live OmniMES demo.",
+          "caption": "Preparing the live demo"
+        },
+        "13": {
+          "alt": "Side view of the hall: a speaker at the large screen shows students OmniMES — from the work order to the report.",
+          "caption": "An OmniMES demo for students"
+        }
       }
     }
   },

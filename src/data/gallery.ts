@@ -53,11 +53,24 @@ export const galleryEvents: GalleryEvent[] = [
     ],
   },
   {
-    // Texts are ready; the section shows up once photos are added
-    // (SharePoint holds only RAW .ARW files for this lecture).
+    // BO-1446: wywołane z plików RAW (.ARW) z SharePointa, kolory dopasowane do JPG z aparatu
     slug: "wyklad-wieik-2026",
     start: "2026-10-28",
-    photos: [],
+    photos: [
+      photo("01", "wyklad-wieik-2026-sala-wykladowa-studenci-multiprojekt-01", 1920, 1292, 640, 431),
+      photo("02", "wyklad-wieik-2026-prelegenci-multiprojekt-partner-technologiczny-02", 1920, 1292, 640, 431),
+      photo("03", "wyklad-wieik-2026-wydzial-inzynierii-elektrycznej-i-komputerowej-03", 1920, 1292, 640, 431),
+      photo("04", "wyklad-wieik-2026-oprogramowanie-przemyslowe-omnimes-omnienergy-04", 1920, 1292, 640, 431),
+      photo("05", "wyklad-wieik-2026-czym-jest-system-mes-piramida-05", 1920, 1292, 640, 431),
+      photo("06", "wyklad-wieik-2026-dlaczego-omnimes-06", 1920, 1292, 640, 431),
+      photo("07", "wyklad-wieik-2026-prelegent-tlumaczy-monitoring-produkcji-07", 1920, 1292, 640, 431),
+      photo("08", "wyklad-wieik-2026-pokaz-omnimes-stan-maszyn-na-zywo-08", 1920, 1292, 640, 431),
+      photo("09", "wyklad-wieik-2026-jak-dane-trafiaja-do-omnimes-09", 1920, 1292, 640, 431),
+      photo("10", "wyklad-wieik-2026-studenci-sluchaja-wykladu-10", 1920, 1292, 640, 431),
+      photo("11", "wyklad-wieik-2026-portfolio-multiprojekt-11", 1920, 1292, 640, 431),
+      photo("12", "wyklad-wieik-2026-prelegenci-przy-laptopie-pokaz-na-zywo-12", 1920, 1292, 640, 431),
+      photo("13", "wyklad-wieik-2026-pokaz-omnimes-dla-studentow-13", 1920, 1292, 640, 431),
+    ],
   },
   {
     slug: "wyklad-politechnika-krakowska-2024",
