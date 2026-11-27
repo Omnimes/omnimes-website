@@ -12,15 +12,16 @@ const LOGOS = [
   { src: "/images/clients/eldrew.webp", alt: "Eldrew", w: 161, h: 160 },
 ]
 
-// Jedna „taśma” = loga powtórzone kilka razy, żeby wypełnić szeroki ekran; druga taśma
-// to jej kopia, dzięki czemu przesunięcie o -50% daje płynną pętlę.
-const STRIP = [...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS]
+// BO-1444: każde logo raz na „taśmę”, a miejsce na logo (.trusted-slot) jest tak szerokie, że
+// taśma jest dłuższa niż widoczny pasek — to samo logo nigdy nie pojawia się dwa razy naraz.
+// Druga taśma to kopia pierwszej, dzięki czemu przesunięcie o -50% daje płynną pętlę.
+const STRIP = LOGOS
 
 export const TrustedBy = () => {
   const t = useTranslations("TrustedBy")
 
   return (
-    <section className="my-16" aria-labelledby="trusted-heading">
+    <section aria-labelledby="trusted-heading">
       <h2
         id="trusted-heading"
         className="mb-8 text-center font-sans text-2xl font-bold tracking-tight sm:text-4xl"
@@ -28,21 +29,23 @@ export const TrustedBy = () => {
         {t("heading")}
       </h2>
       <div className="trusted-mask relative overflow-hidden">
-        <ul className="trusted-track flex w-max gap-6" aria-label={t("aria")}>
+        <ul className="trusted-track flex w-max" aria-label={t("aria")}>
           {[...STRIP, ...STRIP].map((l, i) => (
             <li
               key={i}
               aria-hidden={i >= LOGOS.length ? true : undefined}
-              className="flex h-28 w-60 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-neutral-900 px-8"
+              className="trusted-slot flex shrink-0 justify-center"
             >
-              <Image
-                src={l.src}
-                alt={i < LOGOS.length ? l.alt : ""}
-                width={l.w}
-                height={l.h}
-                sizes="180px"
-                className="max-h-16 w-auto object-contain"
-              />
+              <div className="flex h-28 w-60 items-center justify-center rounded-2xl border border-white/10 bg-neutral-900 px-8">
+                <Image
+                  src={l.src}
+                  alt={i < LOGOS.length ? l.alt : ""}
+                  width={l.w}
+                  height={l.h}
+                  sizes="180px"
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
             </li>
           ))}
         </ul>

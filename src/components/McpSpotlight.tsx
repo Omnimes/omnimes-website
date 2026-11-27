@@ -31,10 +31,11 @@ export const McpSpotlight = () => {
   return (
     <section id="mcp" className="mt-20 scroll-mt-20 sm:mt-24">
       <div className="md:text-center">
-        <span className="mb-3 inline-block rounded-full bg-pink-100 px-3 py-1 text-sm font-semibold text-pink-700 dark:bg-pink-950/60 dark:text-pink-300">
-          {t("badge")}
-        </span>
-        <div>
+        {/* BO-1444: plakietka z wersją i podtytuł w jednej linii */}
+        <div className="flex flex-wrap items-center gap-3 md:justify-center">
+          <span className="inline-block rounded-full bg-pink-100 px-3 py-1 text-sm font-semibold text-pink-700 dark:bg-pink-950/60 dark:text-pink-300">
+            {t("badge")}
+          </span>
           <SubtitleNormal text={t("smallSubtitle")} />
         </div>
         <Heading text={t("heading")} />

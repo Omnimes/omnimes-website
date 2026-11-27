@@ -63,6 +63,11 @@ export const WhatsNew = () => {
         <SubtitleNormal text={t("smallSubtitle")} />
         <Heading text={t("heading")} />
         <DescriptionPrimary text={t("description")} />
+        {/* BO-1444: zamiast karty „Najnowsze wydanie” tylko link do pełnej historii zmian */}
+        <Link href="/changelog" className={`${linkClass} -mt-4 mb-10`}>
+          {t("changelogLink")}
+          <FaArrowRight className="text-sm" />
+        </Link>
       </div>
 
       <div className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -130,35 +135,6 @@ export const WhatsNew = () => {
         ))}
       </div>
 
-      <h3 className="mb-6 mt-12 text-xl font-bold text-gray-900 md:text-center dark:text-white">
-        {t("next.title")}
-      </h3>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-6">
-        {["latest"].map((key) => (
-          <div
-            key={key}
-            className="rounded-2xl border border-dashed border-gray-300 p-6 dark:border-gray-600"
-          >
-            <span className="inline-block rounded-full bg-pink-100 px-3 py-1 text-xs font-semibold text-pink-700 dark:bg-pink-950/60 dark:text-pink-300">
-              {t(`next.${key}.status`)}
-            </span>
-            <h4 className="mt-3 text-lg font-semibold text-gray-900 dark:text-white">
-              {t(`next.${key}.title`)}
-            </h4>
-            <p className="text-default-500 mt-2 text-base">{t(`next.${key}.body`)}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-8 md:text-center">
-        <Link
-          href="/changelog"
-          className="text-primary-500 hover:text-primary-600 inline-flex items-center gap-2 text-base font-semibold"
-        >
-          {t("changelogLink")}
-          <FaArrowRight className="text-sm" />
-        </Link>
-      </div>
     </section>
   )
 }

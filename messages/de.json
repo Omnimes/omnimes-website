@@ -948,17 +948,6 @@
     "content": "Die <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> Messe",
     "ariaWidget": "Gehe zur Multiprojekt-Seite, wo wir die Ausstellung auf Messen zeigen"
   },
-  "Opinion": {
-    "opinion": "Meinungen",
-    "opinion1": "OmniMES ist eine Revolution in unserem Produktionsprozess! Dank dieses Systems haben wir nicht nur die volle Kontrolle über die Produktion erlangt, sondern auch neue Effizienzlevel erreicht. Dieses Tool ist unverzichtbar für jedes Unternehmen, das seine Standards erhöhen und operative Exzellenz erreichen möchte.",
-    "opinion2": "Die Erfahrung mit dem OmniMES-Team war äußerst professionell. Vom ersten Kontakt bis zur vollständigen Implementierung des Systems fühlten wir uns von kompetenten und freundlichen Experten unterstützt. Ihr Engagement für unseren Erfolg hebt sich wirklich von anderen Dienstleistern ab.",
-    "opinion3": "Als schnell wachsendes Unternehmen schätzen wir die Flexibilität und Skalierbarkeit, die OmniMES bietet. Das System passt sich perfekt an unsere wachsenden Anforderungen an und ermöglicht es uns, die Wettbewerbsfähigkeit auf dem Markt zu erhalten. Es ist ein Schlüsselelement unseres Erfolgs.",
-    "opinion4": "OmniMES liefert nicht nur Echtzeitdaten, sondern stattet uns auch mit analytischen Werkzeugen aus, die es uns ermöglichen, zukünftige Trends vorherzusagen. Dies ist zweifellos ein Wettbewerbsvorteil, der es uns ermöglicht, strategische Entscheidungen mit einem vollständigen Verständnis des Marktes zu treffen.",
-    "opinion5": "Die Implementierung des OmniMES-Systems verlief reibungslos dank des Engagements und Professionalität des Implementierungsteams. Jeder Schritt wurde sorgfältig geplant, und die Spezialisten waren immer bereit, unsere Fragen zu beantworten. Es ist ein Gefühl voller Zuversicht, dass wir in guten Händen sind.",
-    "opinion6": "OmniMES ist mehr als nur ein System - es ist ein moderner Ansatz für die Produktion. Dank dieser Plattform haben wir unsere Prozesse revolutioniert und Innovationen eingeführt, die zu erheblichen Effizienzsteigerungen geführt haben. Ein unverzichtbares Werkzeug für Unternehmen, die der Konkurrenz einen Schritt voraus sein möchten.",
-    "title": "Was sagen sie über uns?",
-    "other": "andere"
-  },
   "Timeline": {
     "step1": "Schritt 1",
     "step2": "Schritt 2",
@@ -2142,14 +2131,6 @@
         "tag": "Versions 4.14–5.1",
         "title": "Energy and CO2",
         "body": "ISO 50006 baseline, CUSUM alarms, hourly market prices, contracted power and CO2 based on KOBiZE factors for ESRS reporting."
-      }
-    },
-    "next": {
-      "title": "Latest release",
-      "latest": {
-        "status": "Version 5.1 · November 2026",
-        "title": "Offline installation and consumption tree",
-        "body": "Install OmniMES on a server cut off from the internet, see consumption from plant down to machine with no configuration, and get notified about new versions. In the cloud, updates roll out in waves with a backup and rollback."
       }
     }
   },

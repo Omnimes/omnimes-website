@@ -925,14 +925,6 @@
         "body": "Linia bazowa ISO 50006, alarmy CUSUM, ceny godzinowe z PSE, moc umowna oraz CO2 według KOBiZE do raportu ESRS."
       }
     },
-    "next": {
-      "title": "Najnowsze wydanie",
-      "latest": {
-        "status": "Wersja 5.1 · listopad 2026",
-        "title": "Instalacja bez internetu i drzewko zużycia",
-        "body": "OmniMES zainstalujesz na serwerze odciętym od internetu, drzewko pokazuje zużycie od zakładu do maszyny bez konfiguracji, a system sam powiadamia o nowej wersji. W chmurze aktualizacje przechodzą falami, z kopią i powrotem do poprzedniej wersji."
-      }
-    },
     "changelogLink": "Pełna historia zmian"
   },
   "Roi": {
@@ -1154,17 +1146,6 @@
     "textButtonSection": "Sprawdź szczegóły",
     "content": "Targi <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span>",
     "ariaWidget": "Przejdź do strony multiprojekt gdzie pokazujemy wystawe na targach"
-  },
-  "Opinion": {
-    "opinion": "Opinie",
-    "opinion1": "OmniMES to rewolucja w naszym procesie produkcyjnym! Dzięki temu systemowi zyskaliśmy nie tylko pełną kontrolę nad produkcją, ale także osiągnęliśmy nowe poziomy efektywności. To narzędzie jest niezbędne dla każdego przedsiębiorstwa, które pragnie podnieść swoje standardy i osiągnąć doskonałość operacyjną.",
-    "opinion2": "Doświadczenie z zespołem OmniMES było niezwykle profesjonalne. Od momentu pierwszego kontaktu do pełnej implementacji systemu, czuliśmy się wsparci przez kompetentnych i przyjaznych ekspertów. Ich zaangażowanie w nasz sukces naprawdę wyróżnia się na tle innych dostawców usług.",
-    "opinion3": "Jako firma dynamicznie rozwijająca się, doceniamy elastyczność i skalowalność, jaką oferuje OmniMES. System doskonale dostosowuje się do naszych rosnących potrzeb, umożliwiając nam utrzymanie konkurencyjności na rynku. To kluczowy element naszego sukcesu.",
-    "opinion4": "OmniMES nie tylko dostarcza bieżących danych, ale także wyposaża nas w narzędzia analityczne, które umożliwiają nam przewidywanie przyszłych trendów. To niewątpliwie przewaga konkurencyjna, która pozwala nam podejmować strategiczne decyzje z pełnym zrozumieniem rynku",
-    "opinion5": "Wdrożenie systemu OmniMES przebiegło płynnie dzięki zaangażowaniu i profesjonalizmowi zespołu wdrożeniowego. Każdy etap był starannie zaplanowany, a specjaliści byli zawsze gotowi odpowiedzieć na nasze pytania. To uczucie pełnej pewności, że jesteśmy w dobrych rękach.",
-    "opinion6": "OmniMES to więcej niż tylko system - to nowoczesne podejście do produkcji. Dzięki tej platformie zrewolucjonizowaliśmy nasze procesy, wprowadzając innowacje, które przyniosły znaczący wzrost wydajności. Niezastąpione narzędzie dla firm pragnących być krok przed konkurencją.",
-    "title": "Co o nas mówią?",
-    "other": "innych"
   },
   "Timeline": {
     "step1": "Krok 1",

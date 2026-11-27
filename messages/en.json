@@ -924,14 +924,6 @@
         "body": "ISO 50006 baseline, CUSUM alarms, hourly market prices, contracted power and CO2 based on KOBiZE factors for ESRS reporting."
       }
     },
-    "next": {
-      "title": "Latest release",
-      "latest": {
-        "status": "Version 5.1 · November 2026",
-        "title": "Offline installation and consumption tree",
-        "body": "Install OmniMES on a server cut off from the internet, see consumption from plant down to machine with no configuration, and get notified about new versions. In the cloud, updates roll out in waves with a backup and rollback."
-      }
-    },
     "changelogLink": "Full changelog"
   },
   "Roi": {
@@ -1153,17 +1145,6 @@
     "textButtonSection": "Check details",
     "content": "The <span class='inline bg-gradient-to-b  from-[#FF1CF7] to-[#b249f8] bg-clip-text tracking-tight text-transparent'>Hannover Messe</span> trade fair",
     "ariaWidget": "Go to the Multiprojekt page where we showcase the exhibition at trade shows"
-  },
-  "Opinion": {
-    "opinion": "Opinions",
-    "opinion1": "OmniMES is a revolution in our production process! Thanks to this system, we have gained not only full control over production but also achieved new levels of efficiency. This tool is essential for any company that wants to raise its standards and achieve operational excellence.",
-    "opinion2": "The experience with the OmniMES team was extremely professional. From the first contact to the full implementation of the system, we felt supported by competent and friendly experts. Their commitment to our success truly stands out among other service providers.",
-    "opinion3": "As a rapidly growing company, we appreciate the flexibility and scalability offered by OmniMES. The system adapts perfectly to our growing needs, allowing us to maintain competitiveness in the market. It is a key element of our success.",
-    "opinion4": "OmniMES not only provides real-time data but also equips us with analytical tools that allow us to predict future trends. This is undoubtedly a competitive advantage that enables us to make strategic decisions with a full understanding of the market.",
-    "opinion5": "The implementation of the OmniMES system went smoothly thanks to the dedication and professionalism of the implementation team. Every stage was carefully planned, and the specialists were always ready to answer our questions. It's a feeling of complete confidence that we are in good hands.",
-    "opinion6": "OmniMES is more than just a system - it's a modern approach to production. Thanks to this platform, we have revolutionized our processes, introducing innovations that have brought significant increases in efficiency. An indispensable tool for companies wishing to stay ahead of the competition.",
-    "title": "What are they saying about us?",
-    "other": "other"
   },
   "Timeline": {
     "step1": "Step 1",

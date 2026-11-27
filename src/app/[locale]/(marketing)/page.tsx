@@ -77,22 +77,51 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <>
       <Hero />
-      <PromoVideo />
-      <EcosystemFlow />
+      <div className="home-section">
+        <PromoVideo />
+      </div>
+      <div className="home-section">
+        <EcosystemFlow />
+      </div>
       {/* BO-1439: kolejność pod sprzedaż — co to jest i co daje, ile kosztują straty,
-          co nowego, potem technika dla IT, zwrot z inwestycji i pytania */}
-      <WhatIsOmnimes />
-      <OmniProductsShowcase />
-      <Feature />
-      <DowntimeCost />
-      <WhatsNew />
-      <McpSpotlight />
-      <InfoEnergyData />
-      <TechTrust />
-      <InfoOmniCloud />
-      <Roi />
-      <Timeline />
-      <HomeFaq />
+          co nowego, potem technika dla IT, zwrot z inwestycji i pytania.
+          BO-1444: każda sekcja w .home-section — jeden, równy odstęp między sekcjami */}
+      <div className="home-section">
+        <WhatIsOmnimes />
+      </div>
+      <div className="home-section">
+        <OmniProductsShowcase />
+      </div>
+      <div className="home-section">
+        <Feature />
+      </div>
+      <div className="home-section">
+        <DowntimeCost />
+      </div>
+      <div className="home-section">
+        <WhatsNew />
+      </div>
+      <div className="home-section">
+        <McpSpotlight />
+      </div>
+      <div className="home-section">
+        <InfoEnergyData />
+      </div>
+      <div className="home-section">
+        <TechTrust />
+      </div>
+      <div className="home-section">
+        <InfoOmniCloud />
+      </div>
+      <div className="home-section">
+        <Roi />
+      </div>
+      <div className="home-section">
+        <Timeline />
+      </div>
+      <div className="home-section">
+        <HomeFaq />
+      </div>
       <ScrollTopAndComment />
       <HomeBelowFold allNews={allNews} allPosts={allPosts} locale={locale} />
     </>

@@ -8,11 +8,6 @@ import { TrustedBy } from "@/components/TrustedBy"
 
 const sectionSkeleton = () => <Skeleton className="my-16 h-64 w-full" />
 
-const WhatPeopleSay = dynamic(
-  () => import("./WhatPeopleSay").then((m) => ({ default: m.WhatPeopleSay })),
-  { ssr: false, loading: sectionSkeleton }
-)
-
 const LastUpdates = dynamic(
   () => import("./LastUpdates").then((m) => ({ default: m.LastUpdates })),
   { ssr: false, loading: sectionSkeleton }
@@ -24,12 +19,16 @@ type Props = {
   locale: string
 }
 
+// BO-1444: „Co o nas mówią” usunięte. Każda sekcja w .home-section — ten sam odstęp co wyżej.
 export default function HomeBelowFold({ allNews, allPosts, locale }: Props) {
   return (
     <>
-      <TrustedBy />
-      <WhatPeopleSay />
-      <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+      <div className="home-section">
+        <TrustedBy />
+      </div>
+      <div className="home-section">
+        <LastUpdates allNews={allNews} allPosts={allPosts} locale={locale} />
+      </div>
     </>
   )
 }
