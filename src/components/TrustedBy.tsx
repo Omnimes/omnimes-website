@@ -36,7 +36,7 @@ export const TrustedBy = () => {
               aria-hidden={i >= LOGOS.length ? true : undefined}
               className="trusted-slot flex shrink-0 justify-center"
             >
-              <div className="flex h-28 w-60 items-center justify-center rounded-2xl border border-white/10 bg-neutral-900 px-8">
+              <div className="flex h-28 w-72 items-center justify-center rounded-2xl border border-white/10 bg-neutral-900 px-8">
                 <Image
                   src={l.src}
                   alt={i < LOGOS.length ? l.alt : ""}

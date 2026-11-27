@@ -681,19 +681,27 @@ img[data-testid="grid-gallery-item_thumbnail"] {
   }
 }
 .trusted-track {
-  animation: trusted-scroll 60s linear infinite;
+  animation: trusted-scroll 30s linear infinite;
+  will-change: transform;
 }
 .trusted-mask:hover .trusted-track {
   animation-play-state: paused;
 }
 .trusted-mask {
-  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(
+    to right,
+    transparent 0 5%,
+    #000 15%,
+    #000 85%,
+    transparent 95% 100%
+  );
   container-type: inline-size;
 }
-/* BO-1444: miejsce na logo ma ok. 1/3 szerokości paska + szerokość karty, więc trzy loga
-   zajmują więcej niż widoczny pasek i to samo logo nigdy nie jest widoczne dwa razy naraz */
+/* BO-1444: trzy loga zajmują całą szerokość paska (miejsce = 1/3 paska, karta 18rem), a brzegi
+   są wygaszone (5% całkiem, do 15% płynnie) — kopia tego samego logo pojawia się tylko w wygaszonym
+   brzegu, nigdy dwa razy w pełni widoczna */
 .trusted-slot {
-  width: max(16.5rem, calc(34cqw + 5.25rem));
+  width: max(20rem, 33.4cqw);
 }
 
 /* BO-1444: równe odstępy między sekcjami strony głównej. Opakowanie daje odstęp,
