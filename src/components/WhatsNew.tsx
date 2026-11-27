@@ -134,7 +134,6 @@ export const WhatsNew = () => {
           </div>
         ))}
       </div>
-
     </section>
   )
 }
